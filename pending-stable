@@ -1,28 +1,32 @@
-#!/bin/sh -eu
-PROJECT=$(basename "$(pwd)")
+#!/bin/bash -eu
+PROJECT=$(basename "$(git rev-parse --show-toplevel)")
 BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d/ -f2)
 INTERACTIVE="false"
 if [ "${1:-}" = "-i" ]; then
     INTERACTIVE="true"
 fi
 
+# shellcheck disable=SC2128
+SOURCE=$(dirname "$(readlink -f "${BASH_SOURCE}")")
+
 OLD_IFS=${IFS}
 IFS='
 '
 for line in $(git cherry "lxc/${BRANCH}" "lxc/master" -v); do
     IFS=${OLD_IFS}
-    set -- $line
+    # shellcheck disable=SC2086
+    set -- ${line}
 
     [ "$1" = "+" ] || continue
 
-    grep -q "^$2" "${HOME}/data/code/lxc/ignored-commits/${PROJECT}/${BRANCH}" && continue
+    grep -q "^$2" "${SOURCE}/${PROJECT}/${BRANCH}" && continue
 
     shift
     if [ "$INTERACTIVE" = "true" ]; then
         while :; do
             echo "$*"
             printf "(A)pply / (S)kip / (F)eature / (I)rrelevant / (D)iffers / (V)iew) / (Q)uit: "
-            read input
+            read -r input
             case "${input}" in
                 A|a)
                     git cherry-pick "${1}" || exit 1
@@ -40,7 +44,7 @@ for line in $(git cherry "lxc/${BRANCH}" "lxc/master" -v); do
                     else
                         LINE="${LINE}    DIFFERS     $*"
                     fi
-                    echo "${LINE}" >> "${HOME}/data/code/lxc/ignored-commits/${PROJECT}/${BRANCH}"
+                    echo "${LINE}" >> "${SOURCE}/${PROJECT}/${BRANCH}"
                 ;;
                 V|v)
                     git show "${1}"
