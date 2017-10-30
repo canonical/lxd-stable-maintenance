@@ -1,13 +1,61 @@
 #!/bin/bash -eu
 PROJECT=$(basename "$(git rev-parse --show-toplevel)")
 BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d/ -f2)
-INTERACTIVE="false"
-if [ "${1:-}" = "-i" ]; then
-    INTERACTIVE="true"
-fi
 
 # shellcheck disable=SC2128
 SOURCE=$(dirname "$(readlink -f "${BASH_SOURCE}")")
+
+run_conditional() {
+    read -r input
+    case "${input}" in
+        N|n|No|no)
+            return
+        ;;
+
+        *)
+            ${1}
+        ;;
+    esac
+}
+
+pull() {
+    (
+        set -x
+        cd "${SOURCE}"
+        git pull --ff-only
+    )
+}
+
+push() {
+    (
+        cd "${SOURCE}"
+
+        if git diff-index --quiet HEAD "${PROJECT}/${BRANCH}"; then
+            echo "Nothing to commit"
+            exit 0
+        fi
+
+        set -x
+        cd "${SOURCE}"
+        git commit -s -e -m "${PROJECT}/${BRANCH}: Update commit list" "${PROJECT}/${BRANCH}"
+        git push
+    )
+}
+
+INTERACTIVE="false"
+if [ "${1:-}" = "-i" ]; then
+    INTERACTIVE="true"
+
+    printf "Refresh the list of processed commits [Y/n]? "
+    run_conditional pull
+
+    commit() {
+        printf "Push the new list of processed commits [Y/n]? "
+        run_conditional push
+    }
+
+    trap commit EXIT
+fi
 
 OLD_IFS=${IFS}
 IFS='
