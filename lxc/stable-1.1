@@ -1,0 +1,112 @@
+dd267776ee265737520c2c661a51c2d29cf43cb0    FEATURE     add lxc.rebootsignal
+936762f3fb6cf10e0756719f03aebe052d5c31a8    IRRELEVANT  document lxc.rebootsignal
+22fb28a946397ec19b247efe170c15b263bf89af    IRRELEVANT  lxc-busybox: use lxc.rebootsignal = SIGTERM
+ea4cadbfac471dbdc5ab9ed6f04f6ae3f965a7ca    IRRELEVANT  doc: Add lxc.rebootsignal to Japanese man pages.
+d1dd9113762786a623cb5463821c8b3de42cda30    FEATURE     add bdevtype to lxc create procedure
+99a7b6f7bbeb71c292b5c311b034dd44c08432a6    FEATURE     autostart: Fix bug with containers being started in reverse order
+cff7b5eb80c5573dc8acba2c6816b10e7131edd7    FEATURE     Allow veth that is not attached to a bridge on unprivileged container
+42e56013ea756be668e6c74d3f45c72ee450a527    DIFFERS     logs: introduce a thread-local 'current' lxc_config
+fef9aa89e99285609d51848623f84ecd3a3109df    DIFFERS     do_lxcap_stop: wait until container is stopped
+d775f21bb14950614e31b1e101a85817d4988305    DIFFERS     Revert "do_lxcap_stop: wait until container is stopped"
+a16f71a1d10ba626eb87297b0391b03b54de76e9    DIFFERS     Revert (by hand) "logs: introduce a thread-local 'current' lxc_config"
+ed52814c776963efdcc9dcda1ec26fc09930ef93    FEATURE     lxc-busybox: add OpenSSH support
+858377e4d968c8a7254e22dc7167acf76ac91a48    DIFFERS     logs: introduce a thread-local 'current' lxc_config (v2)
+3043883c5ab38d92d68ab0fafdc5eab8ba8d6b06    FEATURE     Added support for user groups in lxc-usernet
+37cf711b2887dbce0921eb653b8bc7cb27a02fee    FEATURE     config : add lxc.hook.destroy option
+9985416197e02a7094aa9b457564a2fede721a24    FEATURE     macvlan: add 'passthru' mode
+02d25a9ea585a858db477b7966a369c71434fbad    FEATURE     Easy to read tiemstamp in log
+c15ea60706591a97d5c66137b74587549ef4d7e3    IRRELEVANT  doc: add 'macvlan' 'passthru' mode
+5a56eeb64d8536fc5ce2e2a8cc407597b87cf9b0    IRRELEVANT  doc: Add the description of macvlan passthru mode in Japanese lxc.container.conf(5)
+4432b512a280be289d0797bdbcc0a40fcb2635ce    IRRELEVANT  lxc-busybox: make some OpenSSH tools optional
+88e3899351cf9bef7b1285ed96c525cbadc0a420    IRRELEVANT  lxc-busybox: Prevent copying binaries from /usr/local to container
+1b7eaf072c9d37b820fc49634ba07ffdd7adf499    IRRELEVANT  Added check against negative malloc and cleaned up comments
+de0dc533073ce82701e392e97b86029dc0857338    IRRELEVANT  doc: Add the description of lxc.hook.destroy in Japanese lxc.container.conf(5)
+af59ff2eede78085760819ea8846702a87eaf4c6    IRRELEVANT  Changed parsing of allotments. Now parses top-to-bottom regardless of user or group
+a70a69e8a042d31e96258488f6d7228b8eac8d6b    IRRELEVANT  don't dereference a NULL c->lxc_conf
+905f8792e5f7d887ac447841aea121ef78aff782    IRRELEVANT  Indentation fix
+dc6bb7539b6622d9a407ccdff3b35868c744582a    IRRELEVANT  Fixed an error
+1940bff4d299fcc96966ee5878c3e604666a8c39    IRRELEVANT  Updated the documentation
+21002b3950923d0a283d74af51cf5908c1af579b    IRRELEVANT  Fixed memory checks and faulty loop in get_alloted according to comments
+2b371b262f7272266ff18cc2aff65176a2c16383    FEATURE     doc: Add Korean man pages
+6dc6f80bfd7cb169948f2ef9a95dcf6d2edee853    IRRELEVANT  Added container-cache option to templates
+680836fa520b0c977b9def6d03db0b33515525b4    IRRELEVANT  Make sure to cleanup and exit with an error if malloc fails in append_alloted
+d791668b9adf7a889a4ccec9069af5baaa66189d    IRRELEVANT  lxc_user_nic: free_groupnames: fix
+da7b32317aa7fa01f8adcba21ce903eb7d6e67ac    IRRELEVANT  plamo: Support LXC_CACHE_PATH
+b0c80583231d50bc05c2be34c999e5f29843d478    IRRELEVANT  doc: Update Japanese lxc-usernet(5) for supporting usergroups
+5d066f24e65ef482cdfee241ce65e060d1652efc    FEATURE     lxc-ubuntu-cloud: support passing vendor-data
+a4cd509bd809fda136b49991f90d66c1a2409a1c    DIFFERS     Add -P lxcpath and --version to lxc-ls manpage
+7b4a6f9779592b82a5fe0b6af1b14aec48a61281    DIFFERS     doc: Remove unnecessary common options from lxc-user-nic(1)
+ef44c2f674495acf883ee7a985fb5e68061136e9    FEATURE     Add option to rename container to lxc-clone
+996d777025067b255e9ababc68d879294b1da468    IRRELEVANT  doc: Update Korean lxc-usernet(5) for supporting usergroups Update for commit 1940bff
+347597fa536bf3c6d9faf7fa3cb8da01f831398e    IRRELEVANT  doc: Add the description for -P and --version to Korean lxc-ls(1) Update for commit 2cf7c05
+2aeb28ec17b8973de3b0d52463f661985a6332d6    IRRELEVANT  doc: Add the description for --version to Korean common_options Update for commit 7cab33b
+de2b7e655fb313125bc14c2c440e8a64e4a904c5    FEATURE     Add instanced systemd service
+710035fd43cffb7c50db7e5737a4e1f084f9b1e2    FEATURE     Bind mount at different location
+585f3c6b6942e82a25af1d68672fd4744ecfa09d    IRRELEVANT  doc: Add the rename option to lxc-clone(1)
+5d5da49be4dc5603c56042bf6f4393151e27c321    FEATURE     Refactor lxc-snapshot
+840d2afe82f6987e2506264ed3473d785c4ee2eb    FEATURE     Refactor lxc-clone
+eab218fbf7c70ab3143440ef1165e5bdd4f51a71    IRRELEVANT  Make LXC_CLONE_KEEPNAME work
+b2966d59acb9bfb8d02fe1e6427cdf27cbd9686b    IRRELEVANT  Fix grammar in some of the executables
+7909bb03e6fcc3f49e62aa455b903fdc74ddb6dd    IRRELEVANT  lxc-destroy: Remove container with all snapshots
+965ef7f4600e556a91db4f5ecd3f084a28ede6c1    IRRELEVANT  Revert "Refactor lxc-snapshot, lxc-clone, make LXC_CLONE_KEEPNAME work and add option to destroy container with all snapshots to lxc-destroy"
+3519a99c82e06ec38789829d9aeeb570f7874790    DIFFERS     Add long option for -P in documentation
+ab7efcf51d369a4dae93c14653f6519fc5ec4d47    DIFFERS     check for NULL pointers before calling setenv()
+513f23df5c0ebdb36954dc75d7bf293a7ec800aa    FEATURE     Refactor lxc-snapshot
+f29bb5d52b777248f6e94c26722a54522f98beef    FEATURE     lxc-destroy: Remove container with all snapshots
+0ea055b395656950608c9b82009a31344898a035    FEATURE     mod_rdep(): Write path and name of clone to file
+19712e0473f1caacb8833157a888f7efc3656ff6    FEATURE     Destroy container with snapshots & clone-snapshots
+c01859e8ac5fa51ae7f2dd42caafd5ff5070f743    IRRELEVANT  fix open() results check to include 0
+e54864d3632e3959bed6dd6b7e6d2cbd7eb8eec0    FEATURE     Clone bridge interface MTU setting
+e06155c9abc930daf5983f890057ad709fe958fb    FEATURE     Do not switch to root for lxc-execute
+56f8ff00e35b8729e66de46d3bdc5afa6a726f28    FEATURE     Set UID/GID to parent value for lxc-execute
+c5cd20ce8e2d36ff26da4deb22f0bc29484da74a    FEATURE     Pass UID/GID explicitly through flags
+fd9f399baceee40c44b6038fc3046ef374ade33a    FEATURE     Clarify struct field comment
+72bb04e4b879de066cef0445bfb7d79ac922d43e    FEATURE     Add support for setting lxc-execute init UID/GID via configuration file
+dbca9237db78eb462efcd17776cd2e44f84b4dd2    FEATURE     Update english docs for new lxc.init_uid and lxc.init_gid options
+62d0053955d433f7823d6cd7ea5cd30a74f6fd20    FEATURE     Update docs to reflect lxc.init_uid and lxc.init_gid options
+68d18db8d854ff395052684fa0245f4b3fdac9ae    FEATURE     Add support for get_config_item and set_config_item
+dedd4f67711d55fde065724638fa545f578fb6eb    IRRELEVANT  Adapt manpage for lxc-snapshot
+61111832cdfe6393034d93b3b022ecf14966fc61    IRRELEVANT  coverity: avoid use of NULL c1
+f08fee55a1f0ca62c2c97a2d2fd5ef1d7fbae8ee    IRRELEVANT  Do not use strlen() on non-null terminated buffer
+3635c5eee86309092d2a3636126401796e387529    IRRELEVANT  doc: Add the common and '-s' option in lxc-destroy(1)
+7ee64c0f21688b42ea4b82d4d1cf962325bc947f    IRRELEVANT  doc: Add lxc.init_(uid|gid) in Japanese lxc.container.conf(5)
+7c3d3950528671460bcd333af842a6158e4166b6    IRRELEVANT  doc: Update Japanese lxc-snapshot(1) for newname option
+b7349f15f76789ceef3ee3e1865c4e156bc760b6    IRRELEVANT  doc: Add LXC-specific mount option in Korean lxc.container.conf(5)
+0a05624e82005bd85086964559446d603ee57b34    IRRELEVANT  doc: Add the rename option to lxc-clone(1) in Korean manual
+3703aa9e73301bf46826b200b7ac353a8b56c43a    IRRELEVANT  doc: Update Korean lxc.cgroup.use in lxc.system.conf(5)
+5033e12328bbf0c140b64ef2c663ee66b22917c3    IRRELEVANT  doc: Add lxc.init_(uid|gid) in Korean lxc.container.conf(5)
+76072aec5c984b9e91bd4344ab013e38d8bff311    IRRELEVANT  doc: Update Korean lxc-snapshot(1) for newname option
+c4532a2036fd4a9283275b499b7a379fa9689172    IRRELEVANT  Add tests for snapshot clone dependencies
+8796becf362dda006e014bed3c7e3c7091e7728c    IRRELEVANT  Add lxc.ephemeral lxc.ephemeral indicates whether a container will be destroyed on shutdown Can be 0 for non-ephemeral and 1 for ephemeral.
+28272964d4897d4d9c8cf1c6b8fd1942e09d45e5    IRRELEVANT  Enable lxc_fini() to destroy container on shutdown
+42342bed255ed2cb72e371e1890c264f04201042    IRRELEVANT  Ensure that mmap()ed memory is 0-terminated (v3)
+3b63f6e487282c1858ea242990eb7d2c4f46db06    IRRELEVANT  gitignore: add strange lxc@.service file
+80a706b3616b32f02e623a11f71ca3eec390b436    IRRELEVANT  gitignore: add Korean man page output
+d825fff3cae40b89c26d838847021239e89df922    IRRELEVANT  Make mod_all_rdeps() public It will now also be called from start.c
+f01f7975c1bec35dea8e1d7412c3eed95dd4812c    IRRELEVANT  Remove ephemeral containers from lxc_snapshots
+776d170c5e831fa1609dd4cdbd9233ec059e3216    IRRELEVANT  Make ephemeral containers survive reboots
+af651aa9e1ae642a586884b7875df60351be2c75    IRRELEVANT  Fixing MTU calculation in instantiate_veth()]
+297c2d5893fc8f1290a90c8dc44295738dc0b0a3    DIFFERS     Destroy bdevs using bdev_destroy() from bdev.h
+d028235de9ec7664e1c2c904c541a447a768997a    DIFFERS     Fix indentation
+592fd47a6245508b79fe6ac819fe6d3b2c1289be    DIFFERS     CVE-2015-1335: Protect container mounts against symlinks
+df31363a0f3fb6bdd63986e81cbb53f70ff90731    IRRELEVANT  coverity: remove useless check
+793e387a9fd67c049c72749596dc00a5520d99b6    IRRELEVANT  Check return value of snprintf
+f2e4dddd71d427f9cacbab4016ffe18b0e4a4a0a    IRRELEVANT  Remove unnecessary call to free()
+3a05a669c1ad73fc57a5295d8aaae04b20e40c88    FEATURE     Add a slackware template.
+4e6eb26bf070921897c058b121a5395e292f0726    IRRELEVANT  Add lxc.ephemeral to lxc.container.conf manpage
+4f64d0db3f7c92252836a591dc06e59a876d6e43    IRRELEVANT  Cleanup parts of lxc-destroy
+7111ed68cb5f3a9547db0891fa6f2565f667fb1c    IRRELEVANT  Make lxc-start-ephemeral use lxc.ephemeral
+2c79e91b4b65d93685a8f6e28b8899b29a3a6307    IRRELEVANT  doc: Add the note related mount in Japanese lxc.container.conf(5)
+52492063b7865b460f5669a28027a5e17f0a5a09    FEATURE     added stop-hook entries
+8438bfbda7ce927d74438d0ed3cd7df314cb0758    IRRELEVANT  run stop hook between STOPPING and STOPPED states
+b3286b628b2a178d2f775a6d75ef1c0e7fe75ca6    IRRELEVANT  pass namespace handles to the stop hook
+0a2b5ab1e79912cd6afa52c829a3444da701a828    IRRELEVANT  document the stop hook
+b73f115f4142791d17bb51692367f2774fef0f39    IRRELEVANT  added the unmount-namespace hook
+7346eb3aabd7accc70b9255e811d502f4fa0868f    IRRELEVANT  doc: Add lxc.ephemeral in Japanese lxc.container.conf(5)
+5901bc791907c6c51f5c808f6b6a1c215dc9d472    IRRELEVANT  doc: Add the common and '-s' option in Korean lxc-destroy(1)
+73740a136b1c6b657aa2f8d78fe6a3fe38546bb3    IRRELEVANT  doc: Add the note related mount in Korean lxc.container.conf(5)
+97272aec0fd981ebacda1cf1fe0dd2d93f19b0a9    IRRELEVANT  Attempt to fix bionic builds of unmount-namespace
+4a459ee7bafe58b5c11c97eff39e2127f6172f96    IRRELEVANT  Update gitignore
+83d9344146b5c2bfd409c50d0daa4976135a1242    IRRELEVANT  Don't re-include config.h in lxcmntent.h
+36dd8426cbfc3262eddf38c0480c7ed0a8d811e9    IRRELEVANT  Don't include mntent when lxcmntent is used
+2d9ec00d61debe24da764273436f001909b77f5d    IRRELEVANT  Tell gcc about lxcmntent for the unmount hook

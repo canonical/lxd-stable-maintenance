@@ -1,0 +1,1507 @@
+8826716d2e3c33b8cd4dfda8419f7bb212cb3000    FEATURE     Add apply-add and apply-remove commands
+a006bc7d0c1ccdd3f25cdaf4aa9491a9ab0a8fef    FEATURE     zfs: Allow forcing snapshot removal through config
+1743d2c2c0241705978e10a9a6e033ccc08ce301    DIFFER      list: Fix basic filtering
+5161ddf32426df7a3f0f3889bbd555d71a70a262    DIFFER      command line: fix example in `lxc launch`
+518f9982640dd63a9b11522bcc8344a0e81c4157    DIFFER      Properly validate the server configuration keys
+e3a1cb6b0ac5e1cd5daffa801d377fccc673e94b    FEATURE     client: Init() supports passing in devices
+2eafc1f87c6c49c2b963f3b105d666af18838368    DIFFER      doc: make it explicit that devices on create are optional
+39751b85e083f3fa629e9be23f02d3e8b8097f1e    FEATURE     Add --format and json output for image list command
+225486f81ac4769e69226351b8542751485f34fa    IRRELEVANT  Test image list output formats in basic suite
+7aa64b60c985abf49fb4dd92b5bcdec0b7405c82    IRRELEVANT  Move JSON encoder out of append for loop
+29315d860de8481bcda8867449b2420fc04e8e61    IRRELEVANT  Update lxd.pot for lxc image list help output change
+3e280923813a4677a6bdec0d0ee637c3ef678ad1    FEATURE     add a `shell` alias by default
+3a6d6a56d214f7b212d283f6c7ba992ef99e618f    IRRELEVANT  rework `lxc profile apply*` cli
+0eb065623d76ab3947527426f19f987cbd2d9303    IRRELEVANT  s/apply/assign/ in examples
+c986ce4b69197214faf776808a9affdd611577b9    FEATURE     Add config key for container force shutdown timeout
+2f3b15e285f844c5c3dc3a0778d4e22ee8f6e59b    IRRELEVANT  s/lxc profile apply/lxc profile assign/ in the test suite
+ce100317d9b372f06677bf86736d345cf31a8f98    IRRELEVANT  Rename config key to boot.host_shutdown_timeout
+409001c5eef7279d895c27da0799da2a2cd83c63    FEATURE     add some seccomp knobs
+48b102c513b189919417405c5c6a95665cb40739    IRRELEVANT  restrict security.syscalls.blacklist_compat to {amd,arm,ppc}64
+188f73b17867964251c6aa949987f30d915d7f6a    IRRELEVANT  render seccomp policy correctly on other 64 bit arches
+1e14c97b92f7517c20648570f0a2db323ee3447b    IRRELEVANT  Update i18n
+e2a21a2af54f1588c3e3e95bf9e1018a8b7332cc    IRRELEVANT  Add test for deleting multiple images
+84d917bdcca6fe1e3191ce47f1597c7d094e1909    FEATURE     Implement PKI authentication
+959a8b3067c8a8d1f0b4ac634e4038c75633c8a9    IRRELEVANT  Properly export and document recent API additions
+814fc4920ecffb0e7253a6472deba2775f6b0eb9    IRRELEVANT  Allow deleting multiple images from different remotes
+65226219b457278104f0e0ee9f9f377c7a16f78b    IRRELEVANT  Update i18n
+857bb89aa944491527d9059de58f12ead29c44cc    IRRELEVANT  Update test to specify a remote in delete arguments
+e21fd940dcd63ad67a9f6ce5239650df41990f80    DIFFERS     Add support for os.SyscallError in client
+6bb9b925fd3eb6f49020944a2060577dd272b79b    FEATURE     Add last_used_at field to rest-api documentation
+22e53578e375dc3d54bc9b0ff54cc22ba3d1173b    IRRELEVANT  Add container_last_used_at extension to api_extensions list
+ec6e301956b1860d41d8c5405d9394b84c952f00    IRRELEVANT  Add last_use_date column to containers table
+ed2a7917f5e03f7a4912180e319ce6cf55d64367    IRRELEVANT  Add new db update to add last_use_date column
+f222e2b5154b2af82294e919a021b187bbf4d513    IRRELEVANT  Bump DB current version to 33
+8456602dea26eb0cd0ebe35787201b000b706580    IRRELEVANT  Add LastUsedDate field to containerArgs struct
+d7def43dd8c2790a6f436ddd0cb760889ba85d84    IRRELEVANT  Also get and set last_use_date column from containers DB
+9d03f180c37389e6ee63c432f8e8c222ae5fb74c    IRRELEVANT  Add DB function that updates last_use_date column
+33be38575fcd30d85b5a6d866cbbcb2621b1e1d9    IRRELEVANT  Update last use date when container is started
+8eb869c11a399dc4b026dad3e88e8889b3a0c02d    IRRELEVANT  Add LastUsedDate to ContainerInfo and SnapshotInfo structs
+689aa4b69f47079585ca0cf1ace0d4d5f2b6eb92    IRRELEVANT  Add Last Used At column to lxc list command
+37164867de993233fda9e146090416d1be259ad5    IRRELEVANT  Update i18n
+de0bfc8d962d019c9652308d888b916d33f815e4    IRRELEVANT  Add test to verify last_used_at field is working properly
+31d1e81e09bb401f453971fd504473eb8e3d4dee    IRRELEVANT  Don't show last used at column for remotes running old lxd
+69e8b4b165547d72475ab14ad55109ef8ddd3a48    IRRELEVANT  Move container_last_used_at to end of API extensions list
+a2e921665cba95576eaf2e21a33dc9aaec4bbbc8    IRRELEVANT  Add container_last_used_at info to api_extensions.md
+a76cfd3101229e360e4c07fcd6f0c555c75f8a17    IRRELEVANT  Init LastUsedDate to 0 epoch for new containerLXC structs
+78d1c4268bcfdbe37a9dd67b8736f5b451d50039    FEATURE     Generate the client certificate on-demand
+94eba19b2d3a229e4bb346eef20aa96822597c2e    DIFFERS     Tweak TLS cipher list a bit
+a2e94b756e1d1ed8a4d1cbf1984af71f4eb2cbf0    IRRELEVANT  actually load the LastUsedDate from the database on create
+10a826bb9e0694be25771037271038e685907a0a    FEATURE     Build unix-like aliases directly into LXC
+bbd4254fa035de7961c55488efd9997475f00af1    FEATURE     Implement ETag support
+d7a6b8ab42481c7204bc3a7ce6fd102f6add5035    FEATURE     Implement the PATCH method
+448c8b0f10120e2e45b36e97740981c12331070b    FEATURE     Add support for config key columns in 'lxc list'
+54e91afda782002038ad13652ddacf17a3cf7a7d    DIFFERS     Better handle PEM decoding errors
+f9d912456821c236b6950ba65f606b90800f6393    DIFFERS     Set Location on sync POST requests
+39ddc25cd0184d0e8597dd91aff78d7ec2582599    IRRELEVANT  Check errors from ioutil.ReadAll
+d866ddc07880251a088f53c3d7f72342a127f933    DIFFERS     Use defer to undo changes on failed update
+74c347fc7885b025ffa801feb0fa235d424f5a9e    IRRELEVANT  tests: fix hang
+27ff38d0a670c867a59cf292d2ee241423ddbee7    DIFFERS     add some additional help to `lxc pause`
+25629757e3648b32c9691c6ad64bebbf98dbdf84    DIFFERS     make i18n
+97c526777839221f8593f0937985401e521a12df    DIFFERS     Add "lxc profile unset" to help message
+40c5603da142a962e4f71053b770b08653737dbf    IRRELEVANT  doc: Document raw.seccomp
+375b788c9ffe85294ea36fcb68f8ff49936b7250    FEATURE     Do not show version command by default
+fde48d021612b84d54bb74b62bee7466f81c3dbc    DIFFERS     Update PO template for previous commit
+b512914d1f35da2f8a34a9d4c922ba6275bde8e4    DIFFERS     Update PO template for previous commit
+7967263fb5386ef2d2c876f1bb02d84c9d5a579a    FEATURE     initial implementation of the "usb" device type
+9068fc59bc2fb1b63e95a5dad1fd25a336947183    IRRELEVANT  downgrade log message to debug
+01a5882e94c75a9f4a1e09635909b4a440749709    IRRELEVANT  whitespace, my favorite topic
+83110f0517008ebdc49cb5ee03927a1b372d1375    IRRELEVANT  be really defensive about no USB devices
+23b2fdd1654f421c04db7fa12589f7c8b05257ad    IRRELEVANT  add "required" flag to usb device type
+1181f75306c94f4a52e09106d5d0df873bc968bb    IRRELEVANT  Add missing "patch" API extension
+b6eadad8e935c58d3dae04a7a2eb088b1f824ff2    FEATURE     Closes #2245 Added global key `core.https_allowed_credentials` with `bool` type.
+3df16b632cf187127b8401f8aa2cdad60f49ef93    DIFFERS     Document image export target behavior and fix bugs
+6b411d5aa7e968432dd52b7cc8824589ffc54d40    IRRELEVANT  Fix limits.cpu.allowance and limits.cpu.priority
+3b7c28158e7d74e83deda641b79516a80c6c7f9e    DIFFERS     Document and validate limits.*.priority values
+7b39b9900e91ca88e84ef8d132bfeb671d8b9871    DIFFERS     alphabetize device processing
+9d25d0341d32615643628ebcbaeb937856d5d797    DIFFERS     Prevent using invalid profile names
+1342bd8261349626122da0f3cf9663edaf952064    DIFFERS     Report download progress on image import
+9364a624fd1603bab6e5faf9504dec3b40063475    FEATURE     Allow "lxc copy" to pick a random name
+f424a7b5a942024391ac770371e916b2661e25e2    FEATURE     Allow additional profiles and config on copy
+745a48265e9eb38ca983791f0b1f748d65908c3d    DIFFERS     Fix unix-char/unix-block in nested containers
+0e226a2401c649b7f5817d20f86f1ae037cbeefc    IRRELEVANT  Release LXD 2.1
+b072390ac8eca2c6d7840100254b56ec2c301cf7    DIFFERS     fix spacing alignment in config.go's exmaples
+3d956c231bf79299ce121d3dc4234e32c0d0bece    IRRELEVANT  fix USB transposed major/minor
+9a2b1ba3a0ea9db93c345a228c52f9e3f633293e    IRRELEVANT  try to remove the usb bus dir after device disconnect
+9e86e8f6e5cff63f10744f4847f501f623b39320    IRRELEVANT  minor USB fixes
+e0774a3358a335cf820d2b992830fe9163004024    IRRELEVANT  Remove trailing spaces in api_extensions.md
+a1de72672b2aada8198e7793047e01a4e1e7d0e5    IRRELEVANT  Fix a typo in api_extensions.md
+920aebc57db1c201e90bf435275ae52227a12439    IRRELEVANT  lxc: Add plumbing for --man
+252b94732da87e7da6224897b2b6e6a90400a042    IRRELEVANT  lxc: Tweak to --man
+88815ad266c08411db9bc730423affb47b4be4c6    FEATURE     lxc: Add a "rename" alias
+8663865bb3caddbe8ba8c3411b40220df9ff0cfb    IRRELEVANT  Update po files and Japanese translation
+2f930572b261fdc411f2683a67c747452d808ce0    IRRELEVANT  doc: Rename api_extensions to api-extensions
+850c9975e2b027f41cf16805d2fea6ad5f7b6c96    DIFFERS     Rework container operation locking
+68bf68b847ed1a52a95274801383331c27a8a0ce    IRRELEVANT  test: Fix race in alias test
+98c8e566224c0447e9b815930710a68df48af24f    FEATURE     Allow overriding compression algorithm
+b8e182f761adcdfa98e6acc70384f28704ce1700    IRRELEVANT  Small fixes for image compression
+7e13a75bdba850b5aad2def11b59d32a23940af3    FEATURE     initial implementation of recursive file push/pull
+be2824a756f8a65f6e551b5a201460530ea74541    FEATURE     implement `lxc file push -p` to enable creating directories
+0225a2b23b4975b7aa07ffeca57f03c0ef3d15bb    IRRELEVANT  make i18n
+1548a96eec8e4136f81d9b712e16fbc26f2e8ab5    IRRELEVANT  fix typo
+3e575401512b2b1b216ff151e7afc7c3e2bdfb57    IRRELEVANT  add new directory API docs to rest-api.md
+f928fbd90e82de3f188f5ea6a5ebe7cfa52d7a2f    IRRELEVANT  add a test for directory perms checking
+d327d9e6ed79e6687361fa23ddb08139b00f2cf5    FEATURE     shared: add CPU info
+ab3ba50f9a6a07b260b679c8df698531fe7f5a59    IRRELEVANT  info: add cpu usage
+6307f50293a58d2b6a41d2952ef2b7c1b314c8d2    IRRELEVANT  doc: add cpu info to rest-api.md
+b8846c2d2225b1b6dc7c70dda04628d89683af77    IRRELEVANT  api: add container_cpu_time extension
+5ca71a73148faef5515b348ceae62493ec02f599    IRRELEVANT  doc: add container_cpu_time to api-extensions.md
+126101fda94e284f2ee4052a0ff12c882385ce50    IRRELEVANT  i18n: add cpu usage
+969120ad89224c20a6bdddfc2d16911d510c7cc2    FEATURE     lxd init: ask for images.auto_update_interval
+dda806c6408289a9afbaaa2cca7133a4b4ae996a    FEATURE     Add storage.zfs_use_refquota
+632d757e90f61e65d42da266be11b1977ce9c37c    IRRELEVANT  lxc: Don't force gzip compression
+fdfc578ebb422bbf7ab4b64cc0d343bd82d231a5    IRRELEVANT  Release LXD 2.2
+16f8e3e2b45f14260ae85d3787cdaf5b41244291    DIFFERS     doc: Spacing cleanup
+dc159a50f652f38149fd2464563aaa9807c81f91    IRRELEVANT  Update bash completion for current options
+78baea632bd7edd300ed4efc874dc9157cae8295    DIFFERS     lxd/devices: Debugf() --> LogDebugf()
+917e3b13c09c03295b4573922d811d4f078a27db    IRRELEVANT  shared: Export type checking functions
+502e52cb12d1b435566da27d3dbb550495b36c70    DIFFERS     lxd/migrate: Debugf() --> LogDebugf()
+ca60c9b1459f27dcd72680113d3511f3250b5824    DIFFERS     lxd/devices: Debugf() --> LogDebugf()
+866962f7779fa144fa6836335c83cc554f77a150    DIFFERS     lxd/db_update: Debugf() --> LogDebugf()
+2f5a1d04c8d30ce6d667b00de4f373c9d41cd93c    DIFFERS     lxd/container_lxc: switch to new logging functions
+2ace6bad04bfee9a8f3c6463c2f18f62f0792d98    DIFFERS     lxd/daemon: switch to new logging functions
+adf4057e2f107396874fc41603fc452711eaca2b    DIFFERS     lxd/devices: switch to new logging functions
+538e37544e6a2a9d86eb384828304a9eb7486255    DIFFERS     db: Rework DB schema updates
+81cafeba51a73d3b920c9e418dbb9389e5b40771    FEATURE     new config option, storage.lvm_mount_options
+1650380b91264a2d5ac7d7a48785f3081f0341fe    IRRELEVANT  Add API extension for lvm_mount_options
+cf635f959a579072040e37a456658d3de1dee9d0    DIFFERS     lxd/daemon: adjust log levels
+f14e179e9f85f7e6fc022c6187757565b2c3949a    DIFFERS     lxd/daemon: use more LogInfo*()s in Init()
+fd2f20fae5efa86a1979002fbe279c874ab6e85c    FEATURE     network: API extension
+94c3522cbd7f15a680ae0ebe98c6f4cb61caa5c7    FEATURE     network: Database schema
+32bb61f1b7081df938d793c6ddea9b3633d7ffc6    FEATURE     network: Implement GET
+d3b29ef46ae9af1da20c6664fd7bfaab7b28c748    FEATURE     network: Combine DB and system networks
+7236cc2ee1f36385a1f6544b5cc81620811f81e3    FEATURE     network: Implement POST
+4906c1ae77c5f58520c4929e2d75221458fbc579    FEATURE     network: Fix doNetworkGet for DB-only entries
+ba4daa639bb449967b2da7bee0bfcecd47a387c4    FEATURE     network: Implement DELETE
+c94e19f6153f2e06b9c6653d643ddd9247888525    FEATURE     network: Implement rename (POST)
+0cf2b8f56a5b73306cf2c023b6d0d4307b20ecae    FEATURE     network: Add ETag support
+c170d81fce391477367635441acc57114978458b    FEATURE     network: Validate interface names
+0e2d078a378d41b491dee83387da148ec96e56a7    FEATURE     network: Implement PUT
+c32d1d6e9c79fe9054b87818e864e17eae18369d    FEATURE     network: Implement PATCH
+559676dad95f93d8e1cf1bca5bf3e7da932506ac    FEATURE     network: Config validation
+39124d30b1052356d783a18b15743fbad3e15938    FEATURE     network: Automatic values
+d152edb02ed24f41727a351323f6c05d5e1eb74e    FEATURE     network: Detect IPv6 support
+92c4f7305fcab109332b5b0bdad56f04ace184ee    FEATURE     network: Consolidate utility functions
+2ab7f6982197373fbf42f5e9180c0420ceeeb59e    FEATURE     network: Add support for auto subnet generation
+4393cdac2df0e1d016a702d542723c67cd23ef2f    FEATURE     network: Add auto fan underlay selection
+3f08aa353fd79dba4678e0299ccde47408493e5d    FEATURE     network: Fill in auto values
+b101602391c0e4e1a381f6e3ce20d82101ac704a    FEATURE     lxc: Implement the network commands
+48e00e344602c6236ef1381be23ca18d57135930    FEATURE     lxd-bridge: Remove from codebase
+47089827449099c4342896c909dc1eb43ffda12c    FEATURE     profiles: Drop lxdbr0 from default profile
+d7d8be8c9aac1c91a79b5e31ec82bd130c9f3d14    FEATURE     lxc: Add warning when no network
+ed1024ba56621923619fc22be00f5bae8c09e38d    FEATURE     lxc: Add --network option to init/launch
+b5370bfc87f6d1e080ce2f11844195e1c4ce14bf    FEATURE     init: Add network creation
+0b2fc556d2e568b7670d1bd315288285cd306a7c    FEATURE     network: Implement initial network struct
+87342e1679e0b802042b73e707a17375c311f33b    FEATURE     network: Bring networks up on startup
+f771824313086c6f7ccd67cc4a09ce7d7a9958bb    FEATURE     network: Move the rest of the functions to utils
+ec02b7dc980c79c0be760414806119e6162a3eee    FEATURE     network: Move interface attach to separate function
+0deb93cbba3ad019c5fa2a19e7ee476ba6c90aff    FEATURE     network: Implement bridge create/destroy
+fb74e35f0f4b59b62f695bbbefaadcf3f78e0544    FEATURE     network: Add interface auto-add
+32ddd6f9c80b19774cd3fb7d200a31368c9acd26    FEATURE     network: Add IPv4/IPv6 configuration
+5165b7f2dc2c2a214ce8e3c16c691dba198634e8    FEATURE     network: Add iptables management
+8977a9f561333146b6e5d02c96b27c17be86dbf9    FEATURE     network: Setup sysctls
+aba823c1ec8111fa53961208023336e883526c14    FEATURE     network: Implement FAN support
+14c2040640f353e08268f90002e70e8861ef02e3    FEATURE     network: Don't prevent daemon startup on failure
+2032d5a3b43f4fe88996404493d24f6cf1281e02    FEATURE     network: Simplify MTU handling
+dd2b50bb0d732a8b9a19587d3fb79e8ae1141a2f    FEATURE     network: Check length of fan interface name
+73f3b028acae71f7de7b30bfad171b55ad55c7e7    FEATURE     network: Cleanup all existing sub-devices
+58eaef8422b3080f9be530e87c0bde992619f535    FEATURE     network: Rework IP validation functions
+6cbd755cd709fd2d2573c304bf65eb1bd2c61b69    FEATURE     network: Add tunnel support
+c002fa230d75fa6070f002921ac1cc6e89ad72c8    FEATURE     network: Better handle mtu
+81f2f7dcc5eb169fc180ddccbf6761e69902b901    FEATURE     network: Add dnsmasq configuration
+6391be823ef56972dd2f87e42a09271775e68366    FEATURE     network: Add static ipv4/ipv6 DHCP leases
+c180210971aa3194d60ec4335892c7226a08d941    FEATURE     network: Rename "d" to "daemon" for consistency
+c3cf9c259007ce48b647fd58a92c2ccf012c2d7c    FEATURE     network: Use smarterror when possible
+9f4fea0fcdc5e19e7547b77e591c2175e7e3d924    FEATURE     network: Fix variable name conflict with package
+196b43da57f0a16515b45b2734bcd5c87fc3e07d    FEATURE     network: Fail subnet generation after 100 tries
+c44c226d259f0e04501e1d484eb7e096bb2810ff    FEATURE     network: Reduce impact of sysctls
+3922187b94e523fe41cb0c39e5b346de1c356068    FEATURE     doc: Add network management API to rest-api.md
+4ab7fbd0a2dccc4319c059c5a5cd2719713af4b7    FEATURE     doc: Add ipv4.address and ipv6.address to nic
+aad51ff4474e181f8bb8a1fc546ce74957ad1c0b    FEATURE     doc: Document all the new network config keys
+794ca0014e2af47075c67a9b9668008249399209    FEATURE     tests: Add network test
+c450e82b606545ccf3413af9839fc88abebbbe8a    DIFFERS     use liblxc's new preserves_inodes feature
+1969eb6d6a8cece7579063e69d3f28974e9ef2d9    IRRELEVANT  go fmt ./...
+9edbb4af53ba2c25fd71e2aaa7251752517e41c4    IRRELEVANT  Append slice instead of individual elements
+31f1e20ca1c97e5a0b857502697fb1f9c6a8b5af    DIFFERS     simplify checkpoint/restore code everywhere
+cfd2d91af6a4d45c8f87ae3ebfba5c13d2126878    DIFFERS     pass preservesInodes on migrate restore too
+b8078bc35703bdf09062adfc3491bbc70ba2aa14    DIFFERS     resume dumped container on failed restore
+a7b2587cd8c205ea8a52c9d04cb0ea7b8d2affce    DIFFERS     lxd/container_lxc: improve log for container start
+838611c47e5ba86becbb34ab712a5b41c2e2fe65    DIFFERS     lxd/container_lxc: improve log for container stop
+64e431c620b1a7b8288bcd9ac462f546410b4162    DIFFERS     lxd/container_lxc: improve log on shutdown
+0374ef0cde7faf55679594aff8848f002169f843    DIFFERS     lxd/container_lxc: improve log on container freeze
+07757efc426e71057fd371d00dce33cbfb2c3e17    DIFFERS     lxd/container_lxc: improve log for unfreeze
+01888232657c19dfc0fe6fb25790bff20425d632    DIFFERS     lxd/container_lxc: smarter logs on container start
+63ebd1bf7ccbdca695fc5d7a56580ca3613c48af    DIFFERS     lxd/container_lxc: improve log for restore
+2db88de1f5aaa361d1de5d77fbe1b429e80c3df3    DIFFERS     lxd/container_lxc: improve log on container delete
+8c1613a50d3374eacb4b4715ea8e334c0db6994f    DIFFERS     lxd/container_lxc: improve log on container rename
+65d000ad64982c2be572d58c7d2c6aa29539cdea    IRRELEVANT  lxd/container_lxc: no spaces in log keys
+6d68dc9c46ab44e24bad0704ed6ff5b3994bd741    DIFFERS     lxd/container_lxc: improve log for export
+7c6dbddb67f6f124d788f2f18fe72e30160a2acb    DIFFERS     lxd/container_lxc: improve log for migrate
+673232d194f069660aafe87dce2a3682fc02f091    DIFFERS     lxc/info: make i18n after adding remote to info
+0f77459cdb1c457aee09a83aff8f8f18707541c6    IRRELEVANT  make the target directory on recursive pull
+9fd7f39ab849b74d94b0e3019ae32c35d66afb50    IRRELEVANT  Proper fix for #2403 - create target dir on recursive pull
+2aa44d7af4157e60acc4726dea27ab6310e0587e    DIFFERS     i18n: Update for previous commit
+140ad4cbe85f618219d59df7d6970c966a2245b6    IRRELEVANT  doc: Fix rest-api for PATCH addition
+e24bf440a8c8b991300961bca7de94525ad4fbd7    FEATURE     Introduce security.mac_filtering
+48fbe34449699b78c314b4fcf7db5a515357dfea    FEATURE     Release LXD 2.3
+260bfe42490af1b174a4b1a2f67a4d04985b540a    IRRELEVANT  Fix typo discovered by lintian
+dc64d8b126f8ec0f1406acee231b545723cc5713    IRRELEVANT  init: Typo fix
+926396f7dbcac0dc91520dc4bf8ab046825dcccc    IRRELEVANT  init: Actually add new network to profile
+d6bd2adc10a92a971774958095f8ba58c249ea8b    IRRELEVANT  test: Fix shellcheck warning
+8f856e40d65f3c3e2f60c7d945e11fcf27e7cbc3    IRRELEVANT  allow nil network config
+d094e2d08e255cfb7d51e0a1092b7b2e1b7d6a04    IRRELEVANT  network: Fix rare race condition with sysctl
+9069e59cf08949ba84c7363a0dae86b9f94cf4a5    IRRELEVANT  network: Fix IPv6 forwarding logic
+a97eca264e4526bd727ad730e057519d5e030efc    FEATURE     Add a new used_by property to profiles
+0b3f0fd8ae08fb2143e3bfbcc4494272461e066e    FEATURE     Update "lxc profile list" to show a table
+6168ae894a047522df7d5b45c0a3d95ee9cf2c92    IRRELEVANT  test: Make container cleanup more reliable
+9906b7ca4e0250dbb08d79156fd85457a1062e86    IRRELEVANT  network: Properly catch ENOENT
+3a8d2cc3953e09f83fe5cf2dcdc032b7ab037d00    IRRELEVANT  network: Better deal with partially disabled IPv6
+b67a8d46fdfafdeb4b8619af693f6151d932ff3c    IRRELEVANT  network: Fix automatic nat settings
+fd7561b335d8fcae5262c23626cd1709d9f1b8da    IRRELEVANT  init: Ask about NAT if needed
+93a5fb887faa4fd1f13abe0c61b6759787626742    DIFFERS     Add GetOwner stub for Windows (fixes #2438)
+d9e40ccb1008ea4097735a6721e10dbe90ed63fe    DIFFERS     Fix build failure on Linux
+95161a8403285f334518c77848fd58042277189b    DIFFERS     Generate client certificate with proper extended usage info
+cdfbdfdeb43cee9cd1f9c1d122a030e4398c54e4    FEATURE     lxd/containers_post: prepare for push support
+a737f2e4230afcb02bd397029ff0650ef29fb2ce    IRRELEVANT  lxd/migrate: push mode: migrationSink
+54c4f40ab79832e410bd472f82b3a77a0d3ab6ec    IRRELEVANT  lxd/migrate: MigrationSinkArgs push mode
+78239571f7e863a4f0e49bad05ae9accd95e75c2    IRRELEVANT  lxd/migrate: NewMigrationSink() push mode
+76daf0b9a10824d3f139541cf468ee6da24b2a89    IRRELEVANT  lxd/migrate: Metadata() push mode
+012dee43c1adb3cfb04874fa80ba6dbe528c1939    IRRELEVANT  lxd/migrate: Do() push mode
+da61b39474f63d240fb8e1b0c077d6f57d858cc9    IRRELEVANT  lxd/migrate: Connect() push mode
+cfb5d0ec76b4b52804484224ea50662cd52cd8b7    IRRELEVANT  lxd/containers_post: createFromMigration push mode
+0cfee5f5c12ee8aeb81a82613bb0b24265addf82    IRRELEVANT  client: MigrateFrom() support push mode
+de60ee4a92226f07151e728136c94f78cd4b4531    IRRELEVANT  lxc/copy: adapt to changes in MigrateFrom()
+6aa3f6958553921d62d70685f759293a2595e465    IRRELEVANT  doc/rest-api: add push mode for container creation
+756148345a4c31e6a29480acbdb0345aba702507    IRRELEVANT  doc, lxd: add container_push api extension
+d06bf8a76fcbd63149e2d9f48b214d0bd9b1f8c1    IRRELEVANT  doc/rest-api: remove unused fields
+78f6a84e65b2a648d467658cea6df2e769e222d1    IRRELEVANT  client: do not send secrets, only a bool
+e142d700527820030383387f00c2230d23bd1763    IRRELEVANT  migrate: let bool determine live migration on push
+b7a53d348f98a59d0316054bda8ff36e5a51d5cf    IRRELEVANT  lxc/copy: add comment about push mode
+e10bc595b8c770e671b5bb674fc6b9f58734f119    FEATURE     Release LXD 2.4
+c34db73f11cd42afb6d7bb752338d1ede46d4b88    IRRELEVANT  Added the command shell to lxc-client bash-completion
+c68238081e8e6a8d0eb425a854c947ac2f620973    FEATURE     Release LXD 2.4.1
+91f16b707e014bf960744256f12309e0051804b5    IRRELEVANT  usb: vendorid is mandatory, productid isn't
+3732eea1dbb9b94d7df0bd71620bf9d9ef650d3a    IRRELEVANT  Added the command network to lxc-client bash-completion
+a7c618ecb8e0ce85989c98e2d1e2218ce2ee07e8    DIFFERS     Fix _lxd_profiles in lxc-client bash-completion
+471eef7027a91127d4419c6e3c38ac06a37e979f    DIFFERS     More reliable container autostart
+e97d0c4aa612387ac51a92ac991a472b6c2a861f    FEATURE     Allow adding a remote just by FQDN/IP
+b2619c75968849afe94bd44c20080b5434118180    FEATURE     Implement exec output recording
+b922cf1df96e606970ff84763928cb47e9ddcd51    IRRELEVANT  network: Always pass --enable-ra with IPv6
+0fa3b9ca39f1b915325ee26121b502a90af036aa    IRRELEVANT  network: Fix IPv6 DHCP logic
+92baf6949134bf1ca66c2cd30f77fdee24662e0f    IRRELEVANT  Fix wording of seccomp error message
+0500eab878f4e6c0585a3001d4f506f986a739c0    DIFFERS     Properly validate memory limits
+3bde850596f6c1cf5ff54f6c795f3690bc4beebc    DIFFERS     Properly validate CPU allowance
+84910fd8907e88f51fba723dae6f5f2e7135f53f    DIFFERS     Improve config validation on update
+e7bb48989b05a635a7195430d0d770c2c612daba    IRRELEVANT  doc: Use spaces everywhere
+b618b152f45801d8539ee3a23f6e74264e7c7e76    DIFFERS     doc: Sort API endpoints in rest-api
+5de8041858c1985738c40892d4571e08cfb568fe    DIFFERS     doc: Use consistent method ordering in rest-api
+31c31c1f528e2deba48acbda9155afabf3175c56    IRRELEVANT  doc: Workaround github markdown renderer
+0e020ea821923a251996b1484e072645c0b81920    DIFFERS     Store the simplestreams cache to disk
+fc07a8593c9c24d0824efb916f83e7d381bf0114    DIFFERS     Remove legacy code from OnStop
+f45741c6c7d4920af8b249750975df0743175ab1    IRRELEVANT  lxc file: fix help typo
+343d9f69a6df3f6f712de08cd6337bb536f73300    IRRELEVANT  push: fix typo
+0c82691afc9b4d713b10e4f862a87f9a89853503    FEATURE     Add support for PUT/PATCH of certificates
+02a468fe436845bb06db92456d21ce322a056c7e    DIFFERS     examples: Use .yaml as the yaml extension
+3d0dbdb38efedb8c866260667ecf77d1f0bbd49b    IRRELEVANT  network: Always allow communication with dnsmasq
+5592c02e44faa010722724342cdf569bd55845ba    DIFFERS     lxd/container_lxc, lxd/container: add ExecNoWait()
+502cfa5ba9cf488efc2a8b59e9d2577afc44cf2c    FEATURE     lxd/container_lxc: add prepareExec() helper fun
+ff5bbc2504ebf88ce862f36edc3933cf04fdb249    FEATURE     lxd/containers: call RunCommandNoWait()
+3c095d6899e65dc4e3c348842354f2ffd2b50c7f    FEATURE     lxd/container_exec: switch to ExecNoWait()
+1220226aff1d796b2f864828f47b41da14480705    FEATURE     lxc/exec: add forwardSignal()
+7c130dfb829349e6fa25d6c86dde30925ad77c53    FEATURE     shared/container: add Signal field to exec struct
+f60f3a60e5e1fd3339d31ffb94c40de43bce11c4    FEATURE     lxc/exec_unix: add signals to forward
+7acb53443e7d4faefe4d3085565ce7d26832b7a8    FEATURE     lxd/container_exec: handle forwarded signals
+5fd47da8ec32f9d8a8f3a4d132dec8b666947f56    FEATURE     doc: api extension container_exec_signal_handling
+8788e6a6dfc50ce8ac58255d3b0e1c91c5076375    IRRELEVANT  Fix typo in nictype value for -n
+0d2c608cc54eb1709c7c2c52ac21f943ff6f9fe2    IRRELEVANT  network: Fill DHCP checksums
+ba4431fcbc34494ebccb6b338bedc5fbc355b7e0    IRRELEVANT  lxd/devices: use DEVNAME entry of netlink for usb
+78cf0f9a94615161a37653311aeef186635cfc0b    DIFFERS     copy: wait on the source operation too
+37fce5ac53f60f0675490debe34500db7f734c9e    IRRELEVANT  lxc/exec_unix: use buffered chan in sig forwarding
+e4eead7963ced7ec165e70474c444fe48ac645a0    IRRELEVANT  lxd/devices: be less optimistic about netlink info
+89c1be5869838d2751cf5ea84fcad13764ada1fa    DIFFERS     Only load kernel modules if not loaded
+ef5834691f797955e1eb8a824e87bf1f55ee1ca7    DIFFERS     Fix typo in lxc list help
+df39721a7eb05dd7897710e286d3e1325070b758    DIFFERS     set term to "dumb" on windows
+bf3aa0aab36c1854293274fa3981d8f04a5494fc    FEATURE     lxd/container: add gpu device type
+06194353ce480d5725021ed0741007d91b86c7dc    FEATURE     devices: add gpu device type
+9a1d323c60bc7b4eb31458de2b5bc6892358900c    FEATURE     doc, api: document gpu devices
+9304b5a60750388246b4897a9a908113dfd98ef4    FEATURE     doc/api-extensions: add usb_devices
+61e5407b5211748fc06331765eae809b780c2672    FEATURE     devices: improve nvidia gpu handling
+0d792055c454f4a9ac72a62eae083783f255a6e0    FEATURE     lxd/container_lxc: tweak device handling
+27f8d6b809bb31886b0de7709a49857628e3cd5e    FEATURE     lxd/container_lxc: tweak NVIDIA gpu handling
+138f8a85cae2a981428d445a92a7643a42a69363    FEATURE     gpu devices: correctly group devices + improve log
+fe94bc593cf531206517d17ff9c151ed59b1f1b2    IRRELEVANT  lxd/container_lxc: report correct dev type in log
+6f0d82f7209a5ce4cd533d1dc4c2d7574d8a717a    IRRELEVANT  client: fix mkdir -p /
+570d4de1803a125f4b818404374730660b71ae06    IRRELEVANT  lxc file: normalize paths before sending them to the server
+cc70113e1611d816f75687e8b1b5ab961f622e33    FEATURE     Release LXD 2.5
+8997c8458d402d312eb3e7f86d2fceafbde35892    IRRELEVANT  only normalize paths on linux
+38d794806a8ca781a0ed69798c8a6e9ea8ea7a70    DIFFERS     migration: start migration storage at the right time
+bf28ebf9616ccf775b8cddb135eb415019de23f9    IRRELEVANT  Parse remote and container first
+655cf3cbeab68c053a92931f39595a4ebb26ab35    IRRELEVANT  Explicitly detect if push destination is a directory
+c110d572c8984e6a123fe1cece7f62d185fa500d    DIFFERS     lxd: save properties on publish
+0e318af8cae405e7987c31e08785b6a190659302    IRRELEVANT  Cleanup
+95b3a56c7e7b10b84c94a112d91b3ad6c259b783    IRRELEVANT  Use targetPath everywhere
+1a4dca5a92f43da2d99e420c162c45e8654fc72b    IRRELEVANT  Avoid slash convertion in target path on Windows
+af252ecb763388dc9ca4f45c8572cafe17fda9f1    IRRELEVANT  Fix imported and not used
+3079d902059090a58c441c2966ded8caaa125b3b    IRRELEVANT  Fix /. border case on push
+c7485426a8b42a98998a12548e6db3ac57daedf8    IRRELEVANT  network: Spawn dnsmasq on FAN bridges
+5dca04f36e3f732d7fce10e0d30c425ec50b5604    IRRELEVANT  doc/configuration: add missing pci options for gpu
+58cd1899532c5c85c2dc29f0adcd2a7dbdcea284    IRRELEVANT  exec: remove ExecNoWait() and improve Exec()
+49259ddbf2355439010d10be9ca6b6bc25c6886e    IRRELEVANT  exec: Exec() return attached PID && take bool arg
+7cbed8ad3bd02bbc099df4a78a2bab9431d047e4    IRRELEVANT  Fixed minor typo in checkNetwork
+cfd465a9c27c5db99eb57a67d60e0c586d344857    IRRELEVANT  i18n: Update Japanese translation
+bc0cd3d67ecc81df0bf26181d99cdfad059d0d55    IRRELEVANT  Update po files
+896325ec531e675770559f8651627628e3c11c3c    IRRELEVANT  doc: Fix formatting
+dd98f13bce7553e116a2a0658185a81066af5cea    FEATURE     Store image properties in container properties
+f7b55179e6799507a4a92c926767cfd6db461fdd    IRRELEVANT  actually surface the last used update error
+77732dd077cfd28514d1dca7dec1664e608e1a0a    DIFFERS     Attach to userns on file operations
+b0777b2f8944da913837c5f08b4b49165f56190d    DIFFERS     client: Rework progress handling
+c3ebf6eb38a0458a40d06670b6e1ea7f06a6b171    FEATURE     Implement migration progress
+1da14f75258527b57777fc69d3f11765e839cae5    DIFFERS     doc: update 'delete' help text.
+39e813f3cc6f23e5e052a880cdb5de2f79763efe    DIFFERS     doc: update 'finger' help text.
+5c7c97038454c5226ad4c5e150391082ce9f1871    DIFFERS     doc: update 'restore' help text.
+ffdf03f7ad5d364d21dca5d15b7305b99ce13112    DIFFERS     Better handle concurent stop/shutdown
+13155790f605dc4e09972ed81530de8a4e0ed753    IRRELEVANT  doc: Exec recording needs an API extension
+090e2ecc9986848d7ca279502d199037a2c8e974    IRRELEVANT  doc: Fix escaping
+b80652fb052bb5e3384973089a4dc4e8a2c97f2d    DIFFERS     test: Cleanup leftover containers
+9b9249f5db4ca1ec039fda6b01d4c8bebd9e4894    FEATURE     Release LXD 2.6
+bfe7296daa4f89fabf0c41c21a54009dfb05a709    DIFFERS     add the id_map API extension
+206634fe4215d848e7c5ba5e2d365f240e6cc9f9    DIFFERS     add support for raw.idmap
+84507c5a5bb0bbdff7439a795242032819ae0fdc    DIFFERS     add configuration information about idmap
+e432e5e9a4eb73cb37d9ee03cc9eec3d1b0406d3    DIFFERS     tests: Reduce verbosity under LXD_DEBUG
+c3fab854c51d377d2619f2be24e5304feddd8466    DIFFERS     test: Better fix LXD_DEBUG
+8b0f9a3f9f0a1e01b3e589187df2c965c6aac2b4    DIFFERS     Improve container error handling
+477092caf3eea16065c418272e6cf6aacdc37569    DIFFERS     Always call Update() on profile updates
+c113bb10b43d69af02f5fa4df1697ef11738cdb3    DIFFERS     test: Test the idmap feature
+c2c7a2c12c9dd3007dcb0c23e944cdd3cc4dba64    IRRELEVANT  Remove unicode character from lxc warning
+47786aaded478582a17f4e6dae898b070307fc9f    DIFFERS     Make container copy more robust
+a1897fc8d32bc63babba06412c15f7696f9c750a    FEATURE     LXD 2.6.1
+58a1b1236b8a8414ddbaa8a3ede2051ba2ce7516    FEATURE     Release LXD 2.6.2
+c525050e54259eec47630b3fb7d10c440d86d61b    DIFFERS     Fix seccomp profile
+7c9a720702305f92cbb0d1ed9891ddbe29ec41c9    FEATURE     Allowing turning off iptables rule generation
+e82f45f6b7c8d018de8c4dd60a4c2929e23cedaa    IRRELEVANT  DHCP over TCP has never been implemented
+9eee78e57c86ee0900d4f94639d2136629e615b1    IRRELEVANT  Restrict ipv{4,6}.firewall to FORWARD rules
+0b84dd554b033c901b9fb0e357e6614ee3ebc631    IRRELEVANT  Cleanup leftover temp file
+335763775cf4a25492ed5a59070e2f9ce22f5233    DIFFERS     Add basic logging to container creation
+cf02ecaead9b1ce288ec3a8c7861c51258e96020    DIFFERS     Change ContainerStart to take the name and path to start
+189641641f1effe9d53449d3e0a14f08b91bff69    FEATURE     implement `lxd import`
+5a81fac70796480a400c210becd69a698af6317a    IRRELEVANT  switch PrintStack back to debug level
+62d91d84732a94ff48e24c73172ea4e31cb751c0    IRRELEVANT  save slurp file after a snapshot is created
+48089b33925960e41a20e0cf2e92439038d434fa    DIFFERS     Fix file push error handling
+c53d32e73d4378242dbed27b9b331912bb9e6a7b    DIFFERS     Fix logging for file_manip commands
+37deb0f241e1ecf412727da483ea1d51175022cb    DIFFERS     Return a clear error when replacing a directory
+a2065d1f29c58630e2b2ec1404bb46b8841bbe8c    IRRELEVANT  tests: Add pki test
+b18ea31e99b3360410c1298e02381a7fae96d0a4    DIFFERS     Fix container state recording
+f6eb1453be84bd7adf140ae0e98d4594f6ca3697    DIFFERS     lxc-to-lxd: switch to using whitelist
+de782f469b2cb12200925b18ef8b2acd70057e54    DIFFERS     tests: Simplify testsuite spawn code
+a20de0b51de06545dc3b067d4153e963a53fdad6    IRRELEVANT  file push: fix off by one error
+76bf9b704acf050b418d7359061d170f7d9baad5    IRRELEVANT  make i18n
+324e82e747cffb8cdbfa7f6d9bd8f3f3d7cc2a77    DIFFERS     Allow deleting multiple images at a time
+e5a85b4c0a5b61f0dbea4f3dc56462cd096f1d59    DIFFERS     tests: Shorten test name to fit on Jenkins
+f7ee8e4fdb79830111cdc39afded287e92ce717f    IRRELEVANT  tests: whitespace fix
+64061fff291ce31912d2e15c47213d2b7e921300    FEATURE     network: Allow adding static routes to a bridge
+70e9034cc9159a7f486caed81b0f6bfd9e55d3c1    IRRELEVANT  Make it easier to grep for the backup functions
+b5864b712071f884350e2651b6ca757d2b2e6b92    IRRELEVANT  Don't write backup.yaml if container isn't mounted
+6155a3be63050d70c068a64b3f6fb7d75faec23d    IRRELEVANT  shared/util_linux: add GetPollRevents()
+4e8abdd979ce633b17a2fe64a295c6c27c427fed    IRRELEVANT  exec: detect background tasks to allow clean exit
+66bca10b0afdcde6146d831ba2dc06447ac6399d    IRRELEVANT  shared/network_linux: ad WebsocketExecMirror()
+04cb5f2f13c80ab5f2012b9c850d6d3ec484ea3f    IRRELEVANT  lxd/container_exec: improve variable naming
+2625a42318ed767fcc4e0f95d2f13b41c90225dd    IRRELEVANT  util_linux: ExecReaderToChannel() use sync.Once
+4a7f0675083d2bbe1ef7186fc8b8fb5e6cab1b7d    IRRELEVANT  tests: only attach lxdbr0 if it is present on the host
+bda7e8a24029da6e3aa199e7c5e0d3cef4369e39    DIFFERS     do mounts in the right order
+0021e759f846203c7777917b8bec0ef8bbeb4125    DIFFERS     centralize all cert fingerprint generation
+0f9e1f1d43a7fd43025ea5e5a04f410ada0e697a    IRRELEVANT  main: Move import to own file
+292d2190d6d21f26b07dc4ed178e3fc6937d83a1    DIFFERS     main: Move daemon to own file
+43c1035ae02d295a4ec8c90bf04fbabefef0c6a3    DIFFERS     main: Move forkexec to own file
+26c8281ec7c91b218bb39fe3d930fe034705e6ad    DIFFERS     main: Move init to own file
+1d733c5b112ea0efe73ee16d485b4c8c49efd0de    DIFFERS     main: Rename nsexec.go to main_nsexec.go
+616c9ce14f134bd7f47cd5a653b6d3d3d4d624e1    DIFFERS     nsexec: Also call setgroups
+78639a3aadf9b420aeb97d8f9d70c65dfd1e880b    IRRELEVANT  Allow for network-specific lease updates
+edb45dfe76c986d7a7373236e494208c1b55d3d0    DIFFERS     copy: Update help
+17472904a7113f8f32a55ea11510c23de22e6256    DIFFERS     file: Update help
+315b7341aebbc01f8e9e2beceb9fa2ded293981a    DIFFERS     image: Update help
+910ba42af275533597069442584466ae412c8e24    DIFFERS     init: Update help
+63ad6ceb71be2a331d9cb70f415a1347df1579b1    DIFFERS     launch: Update help
+b9867d6bd2bcdb7ddfeb45ed237a6174ac98679a    DIFFERS     list: Update help
+7dc4cb450e569b48b2cdbb53485c56a797508908    IRRELEVANT  network: Update help
+e00c4413483495ec0ca9811654d2a3a896cfdb05    DIFFERS     profile: Update help
+58051445a2a05fc79ef758a2dc81c3aca1ff039c    DIFFERS     remote: Update help
+1eb8fd91a61883e84829202534eab4714b775438    DIFFERS     Update PO file
+524e330fb9670f71be23e2b2bc05647853ff1cc5    DIFFERS     daemon: Common codepath for http client
+1c3473ba68f08360b2ca16a7408dc7d5a50d470b    DIFFERS     Implement write tracking
+c3c611bceb1aa85d2d194c4debe286185e917e4d    DIFFERS     shared: Give IO progress tracker its own package
+9ad2a56d0f8697dabb9859a391d5f01c85364025    DIFFERS     shared: Give simplestreams client its own package
+a57aac3c27ef1c9d07939d5ebfd781790870d138    DIFFERS     shared: Give Architecture handling its own package
+46e11b62b7748bcab557d66e387a0cf677dac926    DIFFERS     simplestreams: Don't depend on custom http handler
+657265972a36d24ae8855eec57871307f4dd51b6    IRRELEVANT  Traduction intégrale (et cohérente) en français
+41a43c56ca96f72c36fe2dcc7c6b815a2ae55533    IRRELEVANT  Update PO templates
+1c7104aeccc1dc7a360a16aee4f9f92e9d97c983    DIFFERS     shared: Give version handling its own package
+0bcc7843b236be2be031e17fd4df3d6cec1b6b44    DIFFERS     just use init.go's flags()
+81eb14f4d4df3ef17b1e9b687107903e6d83014b    DIFFERS     cli: fix example in `lxc init`
+997900dd7412452d387e198817a5be4a6dc516c0    DIFFERS     Move FromLXCState out of shared
+46cb0f2508617e4af373bb9fd1244d2c93377d27    DIFFERS     util: GetByteSizeString() take precision argument
+2bf72f0f16a07020fa92e5a4e2f77487f0804491    FEATURE     Release LXD 2.7
+4d1335bf4ae050a3c4bca2ebdd2f393fe3a138b8    IRRELEVANT  Improved and completed french translation
+b38e119e447593f871f0f7a5f53d44c716ec9963    DIFFERS     Move Device/Devices types to lxd package
+fa5e24cb02fd88aa1b18d7906b9fa3da0c245025    IRRELEVANT  fix directory perms on recursive push
+94fab4ba2b9bc1e005bda1dc0ee0d7e0c15ead90    IRRELEVANT  Run dnsmasq with lower privilege
+31d05939da2ba35f895fbd92bd74037d9e3a0951    IRRELEVANT  lxc: Better handle network modifications
+3c1ad5952cd1cd2e57071b1195992b87c6f852c8    IRRELEVANT  lxc/network: sort UsedBy []string slice on show
+55e8178810b999eb8a5002138d4b9ffe97519857    IRRELEVANT  init: We need an address and subnet
+668d8c9e9ed568987af1566195e2a1373618b5e0    DIFFERS     shared: Move REST API to new package: image
+a57cdb04cf71dfa8097b53145e4cf6b8d2b26b32    DIFFERS     shared: Move REST API to new package: certificate
+008f7efe2ab8aa02298673934af04c9eac029cd7    DIFFERS     shared: Move REST API to new package: network
+63a8d48cd0c7d4010387e8b8b144d3879d912cbf    DIFFERS     shared: Move REST API to new package: server
+2990e11408384220d3cddefe79a59386516e5b25    DIFFERS     shared: Move REST API to new package: status
+d66c5b19eab54404c51b386f9fb99f89300d3953    DIFFERS     shared: Move REST API to new package: operation
+f708e0b44da7858663d60875f2edd3a12cfb664c    DIFFERS     shared: Move REST API to new package: profile
+37ddfb270987e0e44c8f8df7ded116da7a769823    DIFFERS     shared: Move REST API to new package: container
+b369f8b6c7102149e72c5977c840e973a186779e    DIFFERS     shared: Move REST API to new package: response
+b002f66f86c4609c3d99f89b6dada2d997eb2512    DIFFERS     Fix yaml rendering of composite structs
+04816c6355bdd897b65b0fc4d405768cdd760656    DIFFERS     api: comment style
+50f8cf7362a4168c315cccaa74fb983f1dba04c7    IRRELEVANT  api: Record API extensions
+dcd3704b15990de95cd2cc057c1629954442f127    DIFFERS     tests: Fix deadcode to work with new upstream
+40ad0cfa5c63621a756723817e139e5058e17de5    DIFFERS     remote: Update help
+e39940bbd6c4d0debd610e0a60408abae06997bc    IRRELEVANT  i18n: Update message catalogs and Japanese translation
+9ccf6c122e2e688e5dd09fc76c1888c154c782bb    DIFFERS     "gofmt -s" run
+6806e84600a407e13d71c54e2df63ab70f704908    DIFFERS     Fix typos
+3db681b63b14382683d8ad535663d114674cc02c    DIFFERS     Properly check yaml errors
+b37b5041e0867ae126caccc4fed17c7479956503    IRRELEVANT  list: Fix unused variable
+9a91acda7c628247ecb2bd8635c10f8ad4697c2e    DIFFERS     profiles: Fix unusued variable
+0e4aa6dcc89a5cf0c4b0620baedc6c3863507a41    IRRELEVANT  devices: Don't ignore regexp failures
+3ab485fc632ab89e355add9c1eadf27775386921    DIFFERS     migrate: Use the generate snapshot list
+16360ee793bcc90d2756294d6a315a498c88dc92    IRRELEVANT  Update translations from weblate
+78baad0725de8d9662d82a59f0c2232279443e3d    DIFFERS     exec: report -1 (255) on signal exit
+98056cc534ccf120c6d054a54a86cbd6e08e3c9e    IRRELEVANT  api: Add more API extension tags
+dc2e136f6c8664a7ad754667220503d198a9650e    IRRELEVANT  Fix typo
+e7f31632ba7f0ebf970826b539ec3e553977eee7    IRRELEVANT  network: Handle empty dnsmasq pid file
+b8d2cc5d750aa84fe4aaf4c273d0a7d6679518e3    DIFFERS     network: Properly detect vlans
+426461fb2b2aff59aa0a02f3caa970a80398b52a    DIFFERS     Better handle timestamps
+7fd66ac74411afa108cdd70f01bdfd3fc24da9b4    IRRELEVANT  network: Update permissions of network directories
+f4c1079ac1284652d62ef43d3b7e97ae5d5264b1    IRRELEVANT  network: Clean up leases for static assignments
+daf260d6bf0e0dde3b8e00bf75422cf674a8e5c5    IRRELEVANT  Update translations from weblate
+034658fc012771d6dfe48b37d2a346073d62f4f8    FEATURE     Release LXD 2.8
+2fff59997a83c3a3811113bb3afeb9764a295762    IRRELEVANT  tests: Empty and validate network tables
+4871754b24b61171844cae89a3ce8d4594bd1fe3    IRRELEVANT  doc: Update database.md to match current DB schema
+9b3a84583979587386e3df589b8eb7b4ee405ccf    IRRELEVANT  network: Skip ip6tables clear on non-ipv6 hosts
+91a607365786383f9d3e9dde38066e05f31518c3    DIFFERS     Disable IPv6 on host side veth when bridged
+e7b0a3e1ce6680b6ff3b613477c390110d9f4474    DIFFERS     db: Rely on CASCADE
+c0334e2f5ac5c33cfdd6488e9237ecf5afc074e4    DIFFERS     Clarify CRIU related errors
+839505976b4a0d6058c48d591b830e2152d42c9e    IRRELEVANT  cgo: close *DIR stream returned by fdopendir()
+c0844ddcf730957a27b24df4623d86d2de447aaa    FEATURE     db: implement and adapt db to storage api
+27fe991ea72ecb4a15707c55f0fb727951879624    FEATURE     api: implement storage api types
+ecbdeac120594524bd6cc3a32515e693d72b015a    FEATURE     storage pools: implement new api endpoints
+fb371a78cc0d57fe1688f05602c88bdc8d09e4f6    FEATURE     storage volumes: implement api endpoints
+a6e97955dee5ad968c86c334404111892eef0ade    FEATURE     storage backends: adapt to new storage api
+950805c4e328b0836b0991dc9a26cd76f11e0809    FEATURE     client: adapt to new storage api
+7586042072377a5eb7549def4b12cb65be6a9c5b    FEATURE     lxd/api: adapt to new storage api
+c676bb1c2232b8b4bf2aab812af853728a4c3909    FEATURE     lxd/container: adapt to new storage layout
+8a0e3ac452154f5cade974efeffdb0b77884b92c    FEATURE     daemon: adapt to new storage layout
+e5ca7305d75dab85b96fa275b191e5d531f64e90    FEATURE     images: adapt to new storage layout
+da8a3d3e11979f0bd9c4c2073017f8fbb0620f0d    FEATURE     migrate: adapt to new storage layout
+139b1d78d8bed31903942261e980847f8c899cae    FEATURE     profiles: adapt to new storage api
+d0b42e82fb42465058b05dd0bea36b34a5936543    FEATURE     lxd/main: adapt to new storage api
+7d252043bba5d0915d52a037db7ce48b06f6b518    FEATURE     patches: implement upgrade to new storage api
+509395bfe54f4c359a8d3b4efc24eefb905966f0    FEATURE     shared/util: add helpers for storage api
+06972574cc528e4676bde2ca4d9a4ed45db7cde3    FEATURE     lxc/storage: implement new storage client command
+4a9f90ec1c3438626c4cf0fbb84b92796dd50071    FEATURE     lxc: adapt to new storage layout
+d24f5dcbb5e2ba9cc851eaee76137acf0861d86e    FEATURE     doc: document new storage api
+0e51352d79e08175724b0105f4ee661756fc855e    FEATURE     test: adapt to new storage api and implement tests
+fa35a9d9eaa0fb45f67b23636bb244902ce7df82    DIFFERS     Don't include spaces in translated strings
+c77f2052231fc4b775df742289b644e2234f23f6    IRRELEVANT  Allow setting network interface name on attach
+6921c7caea7866c24a879b37eb315b834d18d8f1    FEATURE     Implement file DELETE
+62fc444868f2b1b180b3c0ec59a7686439ab7d0f    IRRELEVANT  doc: Clarify PUT vs PATCH
+37ddd2884e738b172fd85180198b1c0e827a3cb6    FEATURE     Make it possible to append to a file
+cb6860a19f938237be721c81454ff7eb30e9a3b9    FEATURE     network: Implement configurable DHCP lease time
+30442c88580d18f2703862f414c3cfba713caf13    IRRELEVANT  storage pools: return useful error
+f402ff834f2944e483c3b89cd22e06b8ab1c29e0    IRRELEVANT  storage: allow usage of a zfs dataset
+4124fd5eba208bdbad2ed9d2067525532f2fc339    IRRELEVANT  patches: allow upgrade from zfs dataset
+a370371dcf30f0d37b2e609a047b1749a5cecff1    IRRELEVANT  Update translations from weblate
+88590b77d0b526cbfd8757d14b9d462b4e22d751    IRRELEVANT  i18n: Refresh all templates
+a43cce8bcab390603784acdda1fef4d5bc3a82ad    IRRELEVANT  Fix storage help layout
+9461582866449d35c97860ebbf716081a68a41e9    IRRELEVANT  storage: Remove unreachable client code
+7352c85bceaad45349e4b7f8f21a4436451df464    IRRELEVANT  storage: Don't shorten image fingerprints
+2b3886a6105c3d7cbb3a28cabdc40ea181e0b7a9    IRRELEVANT  storage: Fix volume API for snapshots
+bf846e9d84d76692e88301072367469d6f5d94b6    IRRELEVANT  storage: Fix client to work with all volume types
+90d8034edb64ca4cdbb00b3c2e302b7332d3e480    IRRELEVANT  storage: Remove leftover debugging
+c7f405426d094d7af4a8802068ac99b1802599a7    IRRELEVANT  storage: Update help to include volume types
+764aa7c5f0c405a7388ade2c299216b299b57972    IRRELEVANT  i18n: Update translation templates
+46036a4e1f866a280153f8ffff99bf1167f0af33    IRRELEVANT  storage volumes: refuse removal if volume is used
+1ccc3a52b4cb7fd61e178e536168068a10fbda13    IRRELEVANT  storage volumes: check for volume tye on used_by
+1ade1edaa531630e029ccb12a6ad9840cc3fbc1a    IRRELEVANT  storage: remove obsolete zfs check
+01bc32994ac3528dd17dfe64b868d168ffa9ead3    IRRELEVANT  lxd/api_internal: document storage detection
+5f4f9c6bbadf58792bd707e2720385be67d9ffc0    IRRELEVANT  doc: Fix storage documentation
+8ac43624bfdb2393457429c617116ace94b4b47b    DIFFERS     api: Use consistent json and yaml field names
+164a1110270b2c67e2c3e9bbfbe45099ae20b741    IRRELEVANT  tests: Fix mixed tab/spaces
+c9e6c2000f1728c9dbb0767cd7ab7e8570502e69    IRRELEVANT  scripts: Remove lxd-setup-lvm-storage
+03e3601fbb42871925922f91eaeabcec2548b47e    IRRELEVANT  doc: Document the deprecated config options
+36bc483781a644471286bf6ed53831d10747cb19    IRRELEVANT  doc: Update README for new storage commands
+b56dfccf1e80a55690c4538c99b1a02ef8d7be1b    IRRELEVANT  storage: Remove references to deprecated options
+fa466a413dfe8945216b48f450323068d720fb71    IRRELEVANT  extra: Add ipv{4,6}.dhcp.expiry to bash completion
+8609b2ba658406c937cb2b4919ccbcb6dc63733f    IRRELEVANT  extra: Add "lxc file delete" to bash completion
+8c1c954e6dff0a7e5778aa6b136545810d50e581    IRRELEVANT  storage: lock Container{U,M}ount for zfs, lvm
+ddde090cd1ad3a7c78b973d96f7a7b83db26caca    IRRELEVANT  storage: remove deprecated zfs storage keys
+a37d54085e12702c3854698842c1c6eb657e288e    IRRELEVANT  storage: remove deprecated lvm keys
+e824ef5c4f955b6625a67589b01173002810e83c    IRRELEVANT  bash completion: add storage subcommand
+c83cc875f4247413e6c0c0c68a56bcfcf9f79bc4    IRRELEVANT  storage: ensure that zfs pools are deleted
+9480eb3cbe4bfb578bf26a96695e08c1761856fd    IRRELEVANT  storage: Sort volume list by type and name
+a155d0985b120fb0de1dbbbc5916e00baf3bcf89    IRRELEVANT  i18n: Update translation templates
+475df992914f695ce9ec72dac0cf8840ddc12b76    IRRELEVANT  storage: Fix error on container creation
+008fbaf41673ca7dec9fa7b0b59749e055b16cec    IRRELEVANT  Initialize the storage drivers on startup
+bbcdd1b1d63cc449a58e1f22242b315d744f3c70    IRRELEVANT  storage: Fix nested btrfs
+23da0234979fa6299565b91b529a6dbeb42ee36d    FEATURE     Release LXD 2.9
+13bb200194d276d4da68d1c17271a6edad830f44    IRRELEVANT  storage: rename and add opcode functions
+e52c4b9eafac2200a9a48c203469e3b227999829    IRRELEVANT  storage: use unified operation ids when locking
+9c1d0259403a2987bbfd43aaedf497afa65754c7    IRRELEVANT  storage: improve logging
+76a337cebeaf07a604d424298ec552c7eeac050d    IRRELEVANT  patches: add more comments to upgrade story
+701bad62c0123fe96cd04f44f7a02c5b971422b7    IRRELEVANT  storage: use existing {pool, dataset} or create it
+1de1944281284582f3778e4de992137b5964675f    IRRELEVANT  test: use dataset as pool || existing pool for zfs
+da9bc3aa80920ee700e8828d6b4d33429a6a4de0    IRRELEVANT  daemon config: allow unsetting deprecated keys
+5e2206b47aec5a73b0dd3d27c9db0c67cdc2d54c    IRRELEVANT  doc: explain "pool" property for disk devices
+758acd02b782bc5ad649259599280e935e11681a    IRRELEVANT  lxc/storage: fix help output for create
+137b11d56d784c0f68d836a2d92ac1ff32cc7822    IRRELEVANT  lxc/storage: simplify
+effc79097c18ccd476500bd73b4a7cae2f8c6468    IRRELEVANT  make i18n
+8f0ebc5201334107c1e5e56ea8c0629e6b5acced    FEATURE     Release LXD 2.9.1
+860398b44b7253df580b10ce99c9015d02483dda    IRRELEVANT  tests: Fix mixed tab/spaces again
+129c6fd60ee7863236663c03926c4fa91124558e    IRRELEVANT  init: Fix regressions caused by storage work
+0f1d2a8fb21f11d23b5aff9469d131d88e716eba    IRRELEVANT  lxd/main_init: small fixes
+c821d95a2e3058d6a5b4d1785906d0deff0d3f21    IRRELEVANT  test: execute tests based on available tools
+7fd88a7c07a723e4d9476e90b9ad0d4162d4c3c5    IRRELEVANT  btrfs: Enable quotas on the pools we create
+94ec6145980a38e0b31051bdf34567b4dd48f9ea    IRRELEVANT  container: helper to retrieve pool from devices
+8726e72ea3286812561cc604cc413c03f7def8a6    IRRELEVANT  migration: call helper to detect valid storage pool
+d8c319d23af261f4588a3372ad73d92272b30692    IRRELEVANT  lxd/container_lxc: ensure proper root disk device
+57e40208bdcf88fac7701aeb6b26173be8ffa432    IRRELEVANT  patches: handle partial upgrades + pool fixes
+2b3ab5d4bbb2e28efb9c6cd6a5b31b0447d50ccd    IRRELEVANT  migration: fix moving containers with storage api
+e539c53396d01a76b0d241b0d87c4df670a36601    IRRELEVANT  patches: handle partial upgrades + pool fixes
+9fb87aab00c6e1cd517c0272799127b8f7cf0998    IRRELEVANT  patches: only rerun pool updates
+2bc0782a6001b9418a9f5b0dadbe78c0c4901034    IRRELEVANT  dir: delete image from database
+3ee10d6167e975ea9d262d46fa6bd517be4fe224    IRRELEVANT  patches: improve dir upgrade
+f6845f00052a1549d94f94bbc0ce6c4274b83341    IRRELEVANT  patches: improve btrfs upgrade
+0b86249e6130c0f3c75dda1f1d2a8cb3e352d7c4    FEATURE     Release LXD 2.9.2
+26cb841a59e428da7387e1c524331b12149b2b4b    IRRELEVANT  lvm: Don't unmount the container twice on delete
+24bc80456f982c85401d3c4cef8b5637792d2938    IRRELEVANT  tests: Always use 10Mib volumes for LVM
+3555621ed0220dd06e7fba3262ee81e0ca0232cb    IRRELEVANT  btrfs: Always pass the mount options
+1a38f2813dc655e2efe39699bb7d885764f596d0    IRRELEVANT  btrfs: Drop dead code
+1bdf368b80e4c44764b71ecf262a152a1e4366ef    IRRELEVANT  lvm: remove volume.lvm.thinpool_name
+62037cdc0a9771df9a75db8b155caf9ab1ca14cd    IRRELEVANT  lvm: add lvm.thinpool_name + lvm.vg_name
+0e114cd87b8e9f365d259a878e555cf8196aeeb2    IRRELEVANT  lvm: allow to reuse existing volume groups
+2898c472e99d6fbef68ba5c6a1bb6839cad67898    IRRELEVANT  test: add lvm specific storage pool tests
+064218765a23fcd8c7038da2756ad537aff5f338    IRRELEVANT  patches: move to lvm.thinpool_name key
+e18c27ad6a19209ebdd2aee12f9b54ca58eec287    IRRELEVANT  doc: introduce lvm.{thinpool,vg}_name
+3ebe61a0965c6cc22c8b7ff9d77e5fef4f8ffb6c    IRRELEVANT  storage: Property report UsedBy
+a0e6e2aeb0bfa78293b44593501cbd1c56f1d467    IRRELEVANT  storage: Only fill in defaults on creation
+6e21ac0dd6d2676c8ef91de1e4457afaa8201f6d    IRRELEVANT  zfs: Remove very repetitive log message
+c167e76fcd19ee16c5f82834230fe5ad135446c7    IRRELEVANT  tests: Make sure all LVM volumes are 25MB large
+3474c6dae9bc8c58e515ec460c3bc1be8ebfcb50    IRRELEVANT  init: "lxd init" can now be run as a normal user
+27954b210d8c363f7dc9e94f832f073891e6f492    IRRELEVANT  storage-pools: leave some properties unset
+a1380d53b21832e488fcb6d04c1adcdb3170da3e    IRRELEVANT  lvm: unified command layout
+9831d585df043a7fd071ccd1454b9910e9b3f7ca    IRRELEVANT  test: adapt to command line unification
+808307130aefcfff48f5c6e8e2d545ddac0a3b4e    IRRELEVANT  zfs: unify command line
+07f67b99d25e351121be58417b7fe24d538fcdda    IRRELEVANT  btrfs: set loop file if "source" is empty
+64b408d49fa5ae559d466e43958d6c048c6a6be4    IRRELEVANT  storage: ensure keys are set correctly
+045ef19b9bc9c4c7b8311d24bc1a7a34388463fd    IRRELEVANT  btrfs: unified command line
+550ef9483e0311cbfd8f789fdaa49a5907529a7b    IRRELEVANT  dir: handle cross-device upgrade
+3962857e11d46001ff27f39591c59a78db5020c2    IRRELEVANT  btrfs: improve upgrade
+5b95e28efefc6f775239cf0ab352dcc0289d722c    IRRELEVANT  storage: add ContainerStorageReady()
+39a7ce13a3035288cd254513e5a3d9017ac7bd7e    IRRELEVANT  container: check whether we can set quota
+a7df0223efdaf106da9e96b0ced9187604b6590b    IRRELEVANT  zfs: set mountpoint=none on old images
+aee285ecb9b0a77d2074782a59dadb7c4a5ae2d0    IRRELEVANT  storage-pools: do not set values in config check
+0f6f3c2e04e8526d480bc8b5d84944128d1db972    IRRELEVANT  zfs: correctly handle configuration keys
+28c35a6c4ba855b104f4e09c434c6f4b743359a7    IRRELEVANT  storage-pools: implement correct inheritance
+a174de8af374d9f21dc34139430fb67cffcb1c35    IRRELEVANT  storage-volumes: implement correct inheritance
+89ba259011885841d80657b62841f7bba4c9a21d    IRRELEVANT  btrfs: only use size in the loop case
+ea62ca048add5faab293cb5879792a00f8fbb27a    IRRELEVANT  lvm: implement correct property inheritance
+99cbf19319639178f3e53ce5095ab0e9be10a668    IRRELEVANT  doc: add client tool illustration for storage api
+84de2abcf1b559003650912219e3c324c130966a    IRRELEVANT  zfs: only use size property in the loop case
+36fec7f4f6609476b1cb9f7683423561e045a973    IRRELEVANT  volumes: call storageVolumeFillDefault() on demand
+c358b7a341a94ca742b64f4504f495a3e020f3ce    IRRELEVANT  tests: Fix LVM to only be 25MB during tests again
+e2dfb7a0948ac459ad7cc2817da0b48e69fdbbe7    DIFFERS     Don't ignore snapshot deletion failures
+2cb6d171114f8d8b6721fec4da594ab90e06a2e4    IRRELEVANT  storage: ensure image is wiped from db on error
+19412c5bbf0f1e208aeba605a2fefb1979754d7e    IRRELEVANT  lvm: parse "volume.size" not "size" property
+c3235961ce7f90da63d8ec32c44d169d8a864b6f    IRRELEVANT  storage: fill in default configuration for images
+f42d83f09ea2b898334e1ca552d16aafe999aa80    IRRELEVANT  lxc/storage: make volume.size user friendly
+5f0e8ec3a7ca3681de85c5193d9264a620d1027f    IRRELEVANT  storage-pools: always set lvm.thinpool_name
+c3270e11218f17af3dfc327ab157569b3be42eb9    IRRELEVANT  storage-volumes: only set size property on lvm
+85597bbe69d4cc2d62fc4d825d0548ad0fb3ce93    IRRELEVANT  storage: return default mount option for lvm
+c2e661c0d705719bc607d4e17a29417f2347e2e7    IRRELEVANT  patches: set correct pool configuration for lvm
+76501f0ad701517ce4fc5f666670cd339a024245    IRRELEVANT  patches: correctly handle "{volume.}size" for lvm
+b45804c7a9ac2a0e865be8169798a7912e1e20cf    IRRELEVANT  patches: insert storage volume configs for lvm
+9d655d3eb215a3e5a2247af6f28448020fb40f3d    IRRELEVANT  patches: {set,update} pool configuration for btrfs
+058e1fda9db274d8f2f7a3f01fc449058b920742    IRRELEVANT  storage: insert storage volume configs for btrfs
+dadef329230c2a628fbce43660745b44a4671b13    IRRELEVANT  patches: {set,update} pool configuration for dir
+4e49059b38bb76fef30f405fc8e0ede065abc3ac    IRRELEVANT  patches: insert storage volume configs for dir
+bc276132c4852f65a48043335c432b09dbcc1fe6    IRRELEVANT  patches: {set,update} pool configuration for zfs
+ec044e60267b1a59239dbc97943208d965e5913f    IRRELEVANT  patches: insert storage volume configs for zfs
+4d923ee3acd23b895ab26a9aff62987a88453fb8    IRRELEVANT  lvm: handle "i" in sizes
+4667d7473ffee0c47303e6bcec0b44020d3fdeba    IRRELEVANT  patches: update storage config values
+63f01151319b786fb7fcf3b4c2ddbdea59bab79c    IRRELEVANT  storage: storage size values as given to us
+933fc78102b697c31f020896c9ad8f1c90a668b9    IRRELEVANT  storage: lock StoragePoolVolume{M,Um}ount for lvm
+da387d5883b02fec56bc6067170577a6b3a200c7    IRRELEVANT  tests: Define the base LVM volume as 25MB too
+861369854ffc60d9e32bd3bb8462a6cf37ab0c37    IRRELEVANT  storage: lock StoragePoolVolume{M,Um}ount for zfs
+c9f2da84c7683de1bd16cf2b2f3fa9f43f2f48a8    DIFFERS     Add extra validation for unix-block/unix-char
+4cf43bf57d84053d1ec0eb458486da90bd4ad6e0    IRRELEVANT  test: test custom storage volume creation
+c618e320301f00f7257b6c9752ae59f90447d430    FEATURE     Release LXD 2.9.3
+4cb473c23ede94b35bbf68cc4b3acc2b27af5a3a    IRRELEVANT  storage: improve storage volume attachment
+0fd451681ef60f7b339b3a69aba232269e94533c    IRRELEVANT  test: add test for storage volume {attach,detach}
+d91d11ec20e0098b6c4cf8b365fda04359d6043e    IRRELEVANT  lxd/storage: simplify
+9ed3c873541a0391bb924ca008b5b61b54166f95    IRRELEVANT  lxd/storage_core: move core parts to separate file
+b9b39629d70a4956dcd66634fb0095cf12359b28    IRRELEVANT  lxd/storage_shared: move shared to separate file
+7efaa844c7059c0b73c87a8cbf47280a626ac4f4    IRRELEVANT  lxd/storage_migration: move to separate file
+f3c00d45f8738d13e2bb309a03131ca831258808    IRRELEVANT  btrfs: adapt to new layout
+cef2fad677e529589cf286f1e9c1549a21bd9dc3    IRRELEVANT  dir: adapt to new layout
+283835b551f005eff3c877a230b70182357c95ba    IRRELEVANT  lvm: adapt to new layout
+eeb1cd10a59fd74c30f15eb1308689484df4d57a    IRRELEVANT  mock: adapt to new layout
+397640cac47a0d63685c3f98b776d4556ad50ced    IRRELEVANT  zfs: adapt to new layout
+371ad2036335e7c66f810698f4bbc081f186c8ff    IRRELEVANT  storage: add proper logging
+f0390134cbcf2ecd9f0bceaaae81f4eec03b9c6d    IRRELEVANT  btrfs: Quotas can't be enabled when unprivileged
+f83ca77d5a1d66bbe7014ebd1a327d7a5752c578    DIFFERS     Use int64 for uid and gid everywhere
+ea03f1b45205e05827630de3809e289bea754f0c    DIFFERS     lxd/profiles: verify root disk devices
+736bbab977f2a28f71f1d2c2d63f99b31ca8ca8c    DIFFERS     test: add lxd init --auto tests
+ae86af7b64b4f119b8ea22cfb47e3ebf7dfeb3e1    DIFFERS     test: add test for root disk devices in profiles
+87a6c70815d0e608c6999f7bfdff1b2cdc4a0fe4    DIFFERS     tests: Always cleanup loop devices
+957eb786ca7964c0a6c3eb99b85f1334072535a7    DIFFERS     test: fix lxd auto init test suite
+674d34c125217d905b25e9cb283ac5dcc8aeac02    DIFFERS     tests: Don't leak zpools in "lxd init" test
+4ff0d95761b016365f6f4d03af6126871a0c4624    IRRELEVANT  tests: Fix mixed tabs/spaces
+894b355fbf1d17dcd8a562d0e45435c71977c077    DIFFERS     Cleanup root device validation
+55a64978e6419a18e027c5c5bbd51301ab60f514    DIFFERS     btrfs: Always use the recursive subvol functions
+294e4255ede11710bd1b5251ee8b9e578b731b37    DIFFERS     btrfs: Properly handle nested subvolumes
+da64dac1ce7bdfe342bdb5c4925e5bfbca980bc3    IRRELEVANT  storage: Don't spam the INFO loglevel
+cc829595745ad805d567ede24de13798ebd1025c    DIFFERS     doc: Fix badly named example device
+20f2ca185dcf5c7eb213b15e2bad1168a2d1659b    IRRELEVANT  patches: fix zfs upgrade from existing dataset
+8fd23bb49d097408c25f571fcfd72d880831dd8f    IRRELEVANT  lvm: activate volume groups and logical volumes
+b9dc3e62085b81bd57420d72189caa1e3b6a672c    IRRELEVANT  patches: active volume group and logical volumes
+4ea3fba43db29926c6844ce5cfc1b99140dde7d8    IRRELEVANT  storage-volumes: do not set size for lvm
+7ca72c812b69efb6104fd0fe703bfe4c2a59ee5a    IRRELEVANT  patches: do not parse volume.size for lvm
+5b0b0f6adde351e0d8a1ac847dafab53f64899eb    IRRELEVANT  storage: remove unused function argument
+0ecd36a067c8893faed61afb1d832c82835cc521    IRRELEVANT  storage: simplifiy StoragePoolInit()
+a9a8c4057cb8bb018e3732a718fd3c77729d1b28    IRRELEVANT  storage: remove storage core
+01dcc0095d1928c86007ce7bcba13461732f3267    IRRELEVANT  storage: move storage drivers cache to storage.go
+2f253a7c1c9a5cd6687a0d88cd4c430a53f0e00f    IRRELEVANT  storage: simplify
+859ca21a2b6abcf182868796b57d93628e191ade    IRRELEVANT  storage: return correct error
+3e042c9f6131f514a75a4737352d74906cbe7045    IRRELEVANT  Remove wrong error message
+441e95c496b4feeec9a21de74d2aa4586db15886    IRRELEVANT  storage: Fix logging on image operations
+ef9cf0fe568dda8002acc3c8bc7cada7a64b6833    DIFFERS     Validate the expanded config at container create
+87ec1da613769c30d03e3df3f96eff680b8017c2    DIFFERS     Validate container idmap as early as possible
+78877d8c639a5b763a4db8a94364bd1df0d1b380    IRRELEVANT  storage: Simplify container storage init
+e7ff35e99039192ef35ff082a8c56fb28da5538f    IRRELEVANT  storage: Remove unused function
+030aa5224780add6e4b5f0b52cff0960cc7a63a1    IRRELEVANT  storage: Rename initStorageInterface to initStorage
+2674001dad57c7c7cb13e5c9f62c63116a578a9c    DIFFERS     container: Initialize idmap on demand
+806d55c88562ab82b32d2d8563c20a8ec9bdac98    IRRELEVANT  images: Properly handled non-optimized stores
+9763d114c541ee65cda0026b7dbc692a789ba564    IRRELEVANT  storage: minimal improvements
+c5839005f426d40908a9bf97e3cf80a74b18206a    IRRELEVANT  storage-pools: check if profiles use pool
+d4a4cb7c56845c817bea96b9d19c07915f9fb93d    IRRELEVANT  storage-pools: report profiles in usedBy
+007d46689c79b6baf04eee67bbe45629fced86ee    IRRELEVANT  db: retrieve subset of storage volume types
+b6165295b64506913dbb2e9515f55a1603e306e4    IRRELEVANT  storage-volumes: check if profiles use volume
+b071812ed617a6a50056aea8e5dd66c8146706e7    IRRELEVANT  storage-volumes: refuse delete if still used
+22176fb5343c0fb9393937ab3004c94f2d30afc3    IRRELEVANT  Fix uint32 check
+309df1398bb9755873ff332d0f8df06f1360e04f    DIFFERS     Properly validate architectures
+eacc98d6a7585b5d5e31ff412f78485b9da12530    IRRELEVANT  Detect and fail to transfer symlinks
+c6f95056f4e576c2e3ae0a3b87b1bd48595dcd52    IRRELEVANT  storage: change signature for StoragePoolUpdate()
+6d8123efd907404a0392037c367128833315050c    IRRELEVANT  lvm: implement volume group renaming
+27291ccd01aea292ab77feb01046dab3f177ff3b    IRRELEVANT  doc: document lvm volume group renaming extension
+8bb5287d27ed0a311e0cb4c8ff739cb89951e81d    IRRELEVANT  lvm: allow changing lvm.thinpool_name
+2de2f830b22765569d55a087e97fcc136a7d62d0    IRRELEVANT  doc: add lvm.thinpool_name renaming extension
+215a04c9a851998de591c5b9261074d5d9f1a7cb    IRRELEVANT  lvm: don't check in slice for noops
+a3be3277aac91653aa5af62e2d2928be3e20896e    FEATURE     lxd init: allow rerunning
+2cdbb02873a0bffec32e7c175d4c0ca64a43658e    IRRELEVANT  lvm: small fixes
+f138d45d3f753fb38f632c20e737907646effb84    DIFFERS     lxc: Move common functions/types to utils.go
+b10942bcd9b217e142f387cb41a138028fad27ce    IRRELEVANT  i18n: Refresh translations and templates
+c8e82645284a17f333b050ce60eb5b2294fdedf1    IRRELEVANT  storage_cgo: detect if loop file is already in use
+79a63c21b2f28971d61e2ea51ddd434f8049ed9a    IRRELEVANT  storage_cgo: make flag argument configurable
+2bfad6397b4b671224a900a3e74cbeddfcf5c95c    DIFFERS     Escape markdown
+e4440c8398089958fd7224fc54446032ef25a722    IRRELEVANT  Update translations from weblate
+8b7c40d28e834037c2f4e02f77ccc75df08c690a    FEATURE     Release LXD 2.10
+b7cff1de7fa2000ff243b94dc0f4d7ab224599de    FEATURE     "lxd init" can be run by trusted users now
+838f54b63536624ab4de83535da6df9c32a0d124    IRRELEVANT  Update i18n
+36ced25d40ead29924bd28e74dc8150c4dfb9bc9    IRRELEVANT  storage_cgo: add set_autoclear_loop_device()
+6d9dd00e2b225e8734b36b303f4b4afbeb48575c    IRRELEVANT  lvm: allow loop-backed lvm storage pools
+4a6148942dd5daf72cd38428b071e3fd28c0c17f    IRRELEVANT  test: rely on lxc storage create only for lvm
+8d25ece6652cef5413a70a1a9804b99976ef9cc3    IRRELEVANT  lvm: use lvmized container name
+c69b3c0c67538a30d580df93b1aaa7a206b0adce    IRRELEVANT  storage_cgo: tweak
+1c2ce4eacf104973cca47cc9bcb2d32d36872467    IRRELEVANT  lvm: give some trust to lvm
+b84d8fa67d89cfc0ddc220909ecb89e589dc720b    IRRELEVANT  lvm: make sure loop device stays around on delete
+a5fa8f60ee77c46d263b3960366c2420788925c2    IRRELEVANT  util: check for err in {UUID, BlockDev} lookup
+4a59c3ca532ff4b8ead8c727fa95252c37565ec1    IRRELEVANT  storage: call StoragePoolCheck() if pool exists
+3deb42ef97f00d5c2333f7e1b295e2e616aeb256    IRRELEVANT  lvm: cache loop device name
+e01fcc27235dad2c9a411460ac3ed2f59a9aec6f    IRRELEVANT  lvm: set LO_FLAGS_AUTOCLEAR before file removal
+df213031397d8cfb03c554c0ba9d095f9eceb98b    IRRELEVANT  tests: Fix yet another LVM pool's volume size
+cb71b76768970f53cad2de3bf6526339bf203f0b    IRRELEVANT  zfs: import loop-backed storage pools
+ed455db2fd3ff3867788a796fd244d990cae467d    IRRELEVANT  zfs: do not revert on success
+3125423e2f95beaa97832e4bdb7f368003fa3d4d    IRRELEVANT  storage: only call StoragePoolCheck() on startup
+33e898d1e194f1f66d4bd8a379ad534a7ff289bc    IRRELEVANT  lvm: remove loop device caching
+9ef4a9eb8bae7f439ac1477d2800610d2a16d803    IRRELEVANT  lvm: fix defer calls
+978a9e0b85cd5e3ebfbd64c648a0d88edfec7c63    FEATURE     Release LXD 2.10.1
+f0395f54e08a360d1c67f4c336066d39767944ef    IRRELEVANT  Fix typo
+0313f486461d0b90e928a4d6fe972ce1614fd42b    FEATURE     Add "vlan" property to "macvlan" interfaces
+9a1689417a381f8d8b99685e8cfe0b87a43da2e1    DIFFERS     doc: Add instructions to grow ZFS loop
+8ced01c7105317dbc3f0eb72d506f5baa4491bac    DIFFERS     Fix base image tracking
+c6dd45a3b16c4bcd39479cc4c467a0f184ac9e3c    DIFFERS     rsync: Tweak logging a bit
+c2e52d0be03c51d2ac402127cf4c6f793090e624    IRRELEVANT  doc: Improve storage doc
+ab09d77419c561083aad937108b7849ba6527851    IRRELEVANT  lvm: call {pv,vg}scan
+1737c6b270ac9607a9c238b374b7efcf2554c2e4    IRRELEVANT  test: improve lvm part of storage tests
+c3e14f24df81240958401af09132269e1a7ef5b8    IRRELEVANT  Update translations from weblate
+e95765d1559c35dd3444796a9550e12cd475c3ba    DIFFERS     lxc: Allow --version to be passed with any command
+c2577c921412fe73193e8c12358e0d197be3fefd    IRRELEVANT  lxc/network: Rework usage to be parsable by help2man
+b7b0ed07725b0aa2e04b1e5a9eba33fe26ad900a    DIFFERS     lxc: Rework for better manpages
+57110ce48bc9b9d1ec995504663a64962e4db400    IRRELEVANT  lxc/storage: Rework usage to be parsable by help2man
+3d31f3b3e24675c6cf2d1c6e2931c1c104975cfe    DIFFERS     lxc/copy: Rework usage to be parsable by help2man
+87ebb19cf89fa243303ea678c55fcc260ce47679    DIFFERS     lxc/file: Rework usage to be parsable by help2man
+93e5ec5394d00a19b438f81e24f382507628e32f    DIFFERS     lxc/init: Rework usage to be parsable by help2man
+85d6e01af698f3648c8eb6fcc5eab3ac8de85f73    DIFFERS     lxc/launch: Rework usage to be parsable by help2man
+51f6159e9bd2bc98aeb526d595f072d9b2832b03    DIFFERS     lxc/list: Rework usage to be parsable by help2man
+a506f1ed92f2d58043cbeebb2db9adee86b6c212    DIFFERS     lxc/profile: Rework usage to be parsable by help2man
+bd632a3700f7e1e34cf11877df6d16ad41d9283c    DIFFERS     lxc/remote: Rework usage to be parsable by help2man
+ab35a5cdaf168d395d35b7082193ec54557f6e8e    DIFFERS     i18n: Update translation templates
+edcac687951a98e49825d2a0a1df56c8486b8cb2    IRRELEVANT  btrfs: correctly handle loop-backed pools
+6172086acd9919e71f17f621591f6fb0b5338a77    IRRELEVANT  btrfs: handle custom subvolume paths
+071e3999239f6122a89c694976b17245e4ea2c36    IRRELEVANT  patches: fix incorrect btrfs source properties
+c67ce464e3efc0d57adb14431e0ae401acb17ee5    IRRELEVANT  dir: limit pool creation
+74a32e5d2a61262c749c2b0cf044b01668992dbb    IRRELEVANT  test: add more dir and btrfs tests
+ec684490fae84374e8ac6f1008c5855aa0a3ffea    IRRELEVANT  storage: report prepareLoopDev() error directly
+fa8ca6cd7f34776a13d31f55b1bc9c3524616057    IRRELEVANT  storage: Harden the btrfs migration code
+544e129b870d96f5ac70377e996f956bc50731b4    IRRELEVANT  storage: Deal with source not being btrfs
+d561345894db3e52ddde535ad2e2c8edfddd9ef4    IRRELEVANT  patches: use MNT_DETACH for lvm
+97039d5ef2dd63b136021fe4afdedac501f7a13a    IRRELEVANT  patches: conditionalize lvrename
+ef7dd7a0acdfc95cc0ed3401b27ad6d1a5e3b028    IRRELEVANT  patches: call tryMount() if not already mounted
+4c1383d198d17954d6f79aac995e6b441f62db95    IRRELEVANT  patches: tweak upgrade
+f5129da6b2f7e6a06a122fe162e6330f238e52c2    IRRELEVANT  patches: use RemoveAll() for lvm snapshots dir
+bfd2e9b7a042c468a53581c5789a1194e1f2ddea    DIFFERS     global: Use RunCommand everywhere
+670bc354f55bfff51df687a06ee10c737434fcbf    IRRELEVANT  lvm: dumb down functions from methods to functions
+9c0e5e8d8270ca8c5b696a6c4113547124adfe82    IRRELEVANT  patches: handle mixed-storage <lvm,dir> upgrade
+ae7f49e369f37ee66c820dbabfe01a993f2c060a    IRRELEVANT  patches: delete image db entry if lv is missing
+fa23309bb02473491c7be5db9e8220b786df614a    IRRELEVANT  patches: detect logical volume size
+ff244c678f2eee7beb7e2d6eaf58f8f6b0839c47    DIFFERS     Better handle rsync errors (subprocesses)
+e1bf66c098bc70532e5260603736adcedf070df6    FEATURE     images: Allow setting aliases on creation/import
+89f43c9035f1750d7725a6944c0efac149b1c3f8    IRRELEVANT  migration: actually unset the storage pool
+33b26a9bc19976eef0269fd40f373ff89c1c7109    IRRELEVANT  storage_migration: ensure correct pool for snaps
+ad907a84be94e838c020c874e72b1feb27776944    IRRELEVANT  migration: set correct pool propert for btrfs
+d9c2cf4bd236bb84ee6f98f33877c0a890f0349a    IRRELEVANT  migration: set correct pool propert for zfs
+77551da550502877f96a117091b7015774deeca1    IRRELEVANT  i18n: Refresh templates
+1c9db72a5a6533159c16c35e23b006506c8c6725    FEATURE     Release LXD 2.11
+c92e29571660d1c1b6793e82609144887d8328c9    IRRELEVANT  zfs: Create a volume entry for re-used images
+46a26dd7ab204789a825b4daf69dcc3f34429997    IRRELEVANT  Add a simple list formatting example
+9f541695b585d561fe03457585c8eaa5690ae5fa    IRRELEVANT  i18n: Update translations
+820f8ebed1ad379615d1f0c7e35b3c4afdff95d2    IRRELEVANT  daemon: skip StoragePoolCheck() broken patch
+e62bacb4f491b37934b0ffc4622a85c7ca2aa691    IRRELEVANT  patches: check if config is empty before update
+5ebc164f37ee42e253d676bc6d1914eb694d531f    IRRELEVANT  {daemon,patches}: adapt SetupStorageDriver()
+b1929cb80721300523708c15f1d0d8e94bd85e25    IRRELEVANT  lvm: force lvmetad cache update
+fe20d57f426a56e15be5af5fc89c866a0b392323    IRRELEVANT  patches: ensure existing pool config is kept
+eb6078a494ffa09e18ceef5d5e63645d0b71b898    IRRELEVANT  btrfs: add isBtrfsFilesystem()
+45ed98e9f2f9c2733f8fd13d365410a8501aa519    IRRELEVANT  storage: non-functional changes
+d99f83cbb563f88f60c2fb37d683ef34281c9077    IRRELEVANT  zfs: load kernel module in case it isn't
+f0092d6905adf52be82192f2b5c522f27b3aba02    FEATURE     lxd init: support all storage drivers
+ffd578dcb087f09848c1d7a8705c70dec807e7a3    IRRELEVANT  doc: Document that X-LXD-type is valid for POST
+ea00dec1e7158ec396ffd5a4dbfd9b68abd077bd    IRRELEVANT  Allow unsetting deprecated keys with default
+f30dc0e0b98c16979235d8de5375abe1c0f4e1cf    IRRELEVANT  zfs: try lazy umount if zfs umount fails
+5a534c56aeb7f8a04b99add88fbbf1a08e52b917    IRRELEVANT  api: Update storage.go to cover POST too
+81ef0d62e123ffad519cd5cbff73a6ae3228341c    IRRELEVANT  storage: Fix container_lxc to match shared/api
+a15ae9d781d18d1bafac35f5cc06f1aa9a13cf6d    IRRELEVANT  tests: Fix btrfs detection code
+3f57ed69b249f13911ea97a02c3bfded6f8482ed    IRRELEVANT  make Storage{Start,Stop}() return bool and error
+39ee47ddd8b731f2063cd59df77658bbb8056403    IRRELEVANT  api_internal: check for container storage volume
+fd05a6b3a6f7687b7cbc653629920a67014ce083    IRRELEVANT  Backup.yaml: record storage pool struct
+cf29758460baa45162e7c2ae35c32afc3f4593e9    IRRELEVANT  Backup.yaml: record container's storage volume
+26b2c5927f7fae226e7fcb0196c282eac8ca153b    IRRELEVANT  storage-pools: add internal helpers
+4f6ede5ee0bc3ff9ab98e4d55cd03e4abe47acb6    IRRELEVANT  storage-volumes: add internal helpers
+20928941e80f27bdca3cc343750c104eaf035dea    IRRELEVANT  api_internal: improve backup handling
+692d10c785559a4ded7aec774ef8a1d7c3df602c    IRRELEVANT  test: add tests for lxd import
+92ce7f1fbc94d8a393be8ed497ade5632b7ff245    IRRELEVANT  doc: document backup strategies
+5f4364010d3adacaf4713c1f5c69d34443635a76    IRRELEVANT  zfs: prevent removal of the snapshot mountpoint
+9ec18d41556aec884a571370855ce99993cd365b    IRRELEVANT  init: Better render available storage backends
+e411eff44a2b9055e3e49f9831e2b76c0cd4f7bc    FEATURE     Don't attempt to live migration on copy
+93524d0523edfbc7ed093c00cf12a46d6f7a58ca    FEATURE     lxc/exec: Implement ssh-style -t/-T/-n
+3fa44433c0f37afb755aa574093309664aac852f    IRRELEVANT  i18n: Update translation templates
+252469fca7992ec3a99fcfd4bdbc77df07a551da    FEATURE     Release LXD 2.12
+3551211753dcd197a3771aae33eb0e5e34b4fc2e    DIFFERS     i18n: Update translation templates
+3815b28ab13f271368bad6e7f560fbbb2465f89a    IRRELEVANT  migration: fix stateful restore
+8cecb1a6b7c2b582b13476339c874b396e249c14    IRRELEVANT  containers_post: better error message
+af884fd887539794737770fe8ae6e4e021742053    DIFFERS     Don't use FindProcess, just pass exec.Cmd
+b0fb1119faff5f02e458fb19d40530faf1d0d252    IRRELEVANT  test: improve import tests
+b24663294ff2a4492a7858f89745581c0e418cde    FEATURE     lxd: allow container only migration
+77ccc8e6d113051c992968068dee79904e79bda1    IRRELEVANT  lxc: allow container only migration
+d98fc65cb85017d90891f9f87d9f407cbbaf781e    IRRELEVANT  make i18n & make update-pot
+763b834fa5bd7f8ad9d8c4f230ebae5c95f8ccaa    IRRELEVANT  test: add migration tests for copy and move
+7a9f757144124a7357e8a43385767132d5045bb4    IRRELEVANT  lxd/container: Typo in securtiy.syscalls.blacklist
+f05d022dfa8390c01566b14e8728c2ad39078a71    IRRELEVANT  tests: Make sure we also delete dependent records
+1f082affd1d82d809364213e97d4041465b484a8    IRRELEVANT  tests: Stop containers before modifying the db
+5adf5cd1fc290c85a5c3c0113c8b7aa64adf5048    FEATURE     zfs: introduce zfs.clone_copy property
+a5890ac8fca573b87f2dcf0c01689ea1e526e249    IRRELEVANT  test: add migration tests with zfs.clone_copy
+1ca7b6666c4fb5691bd6b388fd435b64ce5ea20f    IRRELEVANT  doc: Update storage documentation
+dc5ffa241bc6022c79969e5ecbbb25328dc5e205    IRRELEVANT  doc: Properly escape markdown
+2ae9a1a210d70728d86db598018c947b86d72ffe    IRRELEVANT  storage: Check that pool exists on profile changes
+5d9938ed3aec614803414cf0726d7df87532f019    IRRELEVANT  doc: fix storage volume configuration
+e3aca579e445f4dcceb3f96d89d6f111fe12bea4    IRRELEVANT  profiles: Fix ETag handling
+a1b5cfea1724f642012d5e73a6c94e1bce84e3ff    FEATURE     Make "unix" devices renamable.
+6d186f1da622c2aacd27369bb1e42a82e4c3b545    IRRELEVANT  client: fix file push
+5329d1f86091dd6b8b240da0764ec2368b3c7c3c    IRRELEVANT  test: add additional that file push -p tests
+ed2dbdd036b7df6803f0ade8cceb36a274385bc0    DIFFERS     shared/i18n: Simplify and make golint clean
+028996d4cf50527f3e38b0220c347419db399dd7    DIFFERS     shared/gnuflag: Fix golint
+41bb7f743a65aae800e9582858e09c79974d6262    DIFFERS     shared/version: Make golint clean
+dcfdc1013e730a18dce9909a53798296e4db546b    IRRELEVANT  doc: Drop mention of PKI CRL
+91d85e7d6406b69fef15a7da711454eb62fe2c70    IRRELEVANT  storage pools: fix + improve config validation
+6024516c4219a126f2a9db9e092650d5970761c2    IRRELEVANT  tests: add additional storage pool tests
+1a64960b0ca8a8fc0f0be4086ed4197a5658c41a    IRRELEVANT  lvm: improve snapshot handling
+4d0d0bb36f34da53bbb086b447d681d8eb10338c    DIFFERS     Fix handling of devices with minor>255
+e2a8cdcf8c3ad6419c947d3a7de5f07096495f8c    FEATURE     lvm: implement non-thinpool lvm storage pools
+90973f23084c7e07bba2c54c651b82d13ea2211d    IRRELEVANT  test: add tests for non-lvm thinpools
+7ff664ef1e8e283f7a66193581ec74aceddc7677    DIFFERS     Document list format options
+3da689cb338652feb6a19400e55eabb4bb2df974    FEATURE     Add CSV format to list output (fixes #2363)
+7535df33aa5c7918c1d54b057670b0d7175a4545    IRRELEVANT  Fill missing csv docs
+011552dddad28f5ec0740694bfd54d08c34f45f5    IRRELEVANT  lvm: tweak {Try}RunCommand() calls
+09bf218e36da7216b247a6a73e23a4004aaad95c    DIFFERS     make i18n
+73a2651e21b0fe87f5971508354e3c6049abea36    DIFFERS     Properly invalidate the idmap cache
+6f3d99613ec5ff412c83eca6e7c022cb4ac9d2c5    DIFFERS     images: Refactor code a bit
+97b2ab6c907bbff9c5159df82fc34352de6a209b    DIFFERS     non-functional changes
+3210ab9b3bef4f8efa26a39b58682382bf1b6f75    DIFFERS     api: Properly define the image creation source
+41039e4baea654aec55bdc33e6e2eed7dace09ea    DIFFERS     tests: Run golint on client/ and lxc/config/
+691a15f3610c521d4814e364a8a9ca953dc374e0    IRRELEVANT  Port main_import to new client
+3b57301b9329088f61ebbc873f9bdc85a542e6d3    DIFFERS     api: Add the Stateful field to ContainerPut
+96db9f1489fc9e40ca4f77348874e881b5101d6c    IRRELEVANT  lxd init: allow to create subvolume for btrfs pool
+71127bd583a245b048973ad637b7bb5fcca4e405    IRRELEVANT  lxd init: add all storage options
+1a215c0bb0b378763d552d9eea97e9d47d076c79    DIFFERS     forkexec: remove os.FindProcess
+45ba87b67617777f2c4fbf85a8300beccb599230    DIFFERS     Move common data extraction to a helper function
+2d521481fc94dcd99b309db93a5271fd4c7111ee    DIFFERS     client: New client library
+b9467b2a40c8373e3d7e0aac454ba0104efd0df0    DIFFERS     lxc/config: Add new config handling code
+227f107227999ee0e0006e360d945e29043836b1    DIFFERS     lxc/config: Fix path handling
+cd7a3cb04c0c8d5656f877ea540b99748d9f1eea    DIFFERS     Port lxd-benchmark to new client
+f48ba64c026c302d49ba1801fb109c7dafc6ab72    DIFFERS     copy: wait asynchronously
+7d4869527f1cef579015a06258c93a33e76cc865    DIFFERS     Port main_daemon to new client
+fbb981ba793eb1c1a4b4fdc7135d6339fa64a45f    DIFFERS     Port main_init to new client
+74e96210ad59b722a602a26579a8b8b561e8251f    DIFFERS     shared/logger: Create new package for logger
+47f4509457056b6011e2076288f43ebf2aac9a89    FEATURE     storage pools: implement rsync.bwlimit property
+3b23276ad0d10fffe831db15e2fc8e1397591285    IRRELEVANT  test: test whether rsync.bwlimit can be set
+194c40460e5a4e0743da2229028772d8ccc75c54    IRRELEVANT  Update documentation around configuration.
+4e62c2eadaa645d71c75b0c1747c345c0a06b93a    DIFFERS     Use flake8 instead of separate pyflakes and pep8
+08fbd63fc8b3fae439b288fbe751d7b38819df6f    IRRELEVANT  Update translations from weblate
+0683675013503d82e97e0a50773422077389d9f5    DIFFERS     util_linux: add function to detect errno
+ebc81ed050238547b63da69c7ad4ba573bc7830a    IRRELEVANT  lxd import: handle non-existing snapshots path
+b7c5abc2cb51ddac2f7ae221aecf9d9354a22170    IRRELEVANT  test: add additional import tests
+11ab244ecca6ac4209d616389f2ac9cbda2b2650    DIFFERS     netcat: implement logging
+599022e6d0f6556e6ef2e63db7c685a57a096bbd    IRRELEVANT  i18n: Update
+7050be7348bca1d76e3fa4bb1c448b93d6493d97    DIFFERS     tests: Trailing whitespaces
+95927c0f8dd27d1ded3cc3725f9873ae53663a80    IRRELEVANT  tests: Mixed tab/spaces
+186a54a9b9c7df75672758a7e92497c5bcede737    IRRELEVANT  Improve PKI certificate handling
+bc8f6b3664fe25f33e298f0c4a0a24eaaf9ac270    IRRELEVANT  Extract storage documentation to storage.md.
+917bd4bcf0bf9f4ce43d90e4b1da4f6f92641966    IRRELEVANT  Extract networking documentation to networks.md.
+9e6be3071eb465510c6196ccc3996d0a1a67d992    IRRELEVANT  doc: FIx naming of bwlimit api extension
+5b5484b8ab68423f673bdced9666f97b19523928    IRRELEVANT  Allow overriding the VXLAN multicast interface
+653c476711a07e329d8e98cfd7ee9bda094b1a2a    IRRELEVANT  Update translations from weblate
+26cbed09b33f74f541635172ca55dde36796b735    IRRELEVANT  i18n: Update templates
+1bb639fae75d5ce9bb0315eabf9acfe46a8c72a3    FEATURE     Release LXD 2.13
+fc06a9cd9f1633b251758abe18b67bb15e72aa8d    IRRELEVANT  storage: make golint clean
+245137d91f09c8db10a64628d207c85d1840fb79    IRRELEVANT  Make sure a client certificate is generated
+1d9b18bf352234991db19b99c685b111b9d96a7a    DIFFERS     Drop unnecessary else statement
+7b90ab2e8ce08c8db0db2594b246f5ad27cc741a    IRRELEVANT  client: Require the volume type for storage volume
+2ddb4aa64b1a5d85aea15b0c92784d720eb3939a    DIFFERS     Extract containers documentation to containers.md.
+a1bef2d6277778b0403f0661d7766b68ae3029ca    DIFFERS     Extract server documentation to server.md.
+1b0a532a817bd383cad92451da2d8bee493f2182    DIFFERS     Update configuration.md with links to other documents.
+8644747f8ac41900328643855dec177b64520661    DIFFERS     Allow for stable host interface names
+13c47b40615dedf6e608469ab32f1b84e0885d5f    DIFFERS     doc: add not about escaping btrfs qgroups
+661bd69498aa401fea845a0ead6e9c18787746ce    DIFFERS     tree-wide: use containerGetParentAndSnapshotName()
+19947f02d81cecb64e73447d11f67cb9479f1f0b    DIFFERS     Honor the LXD_BACKEND environment variable in storage tests
+66b336253f30be73b150da2ca6be3776c76aead2    IRRELEVANT  storage: pass container struct to ContainerMount()
+6c6af18b4ab4720c802a61fa932179562446a4df    IRRELEVANT  zfs: try to work around zfs EBUSY bug
+4491abae06751fcdbdfd5ffa84f9d373b5b77410    IRRELEVANT  client: Allow passing custom headers
+575ba71280ef1d6eefea41b00e5548c3b5f52f04    IRRELEVANT  Revert "client: Allow passing custom headers"
+bb2b3f2fc57e28a7adb5b35cc2ac2944abceaeeb    DIFFERS     Allow random storage backend selection.
+e0090661fa39692fccfbd6e2338e9ac95b69efec    IRRELEVANT  Fix #3240 - file push broken on windows with 2.13
+da31a879b580607781d9491e7c069837c7cf5c32    DIFFERS     i18n: Update translations
+02aaffe66c6519a0b7db4a9759f4ba91b097fcf7    DIFFERS     Explicitly pass shell type to shellcheck.
+f86cbe65bd1c5ee34c9fef73691aa2098b38646b    IRRELEVANT  Use networkSysctl when possible
+456b27556497d7a56876644a6003bf1176de9696    IRRELEVANT  Disable IPv6 on created macvlan parents
+3a5f77e8e8df0bda2a1e9fdf863f54f5b2ff0938    DIFFERS     client: Implement image upload
+5219cbaa288f8b2c89c694ae00a70488bc8531fb    DIFFERS     client: Fix private image handling
+9731186af38d28c1f776cfd2dfaa9153ad98b41b    IRRELEVANT  Fix ETag for /1.0
+f09b4975938fedd214bc87f9b84340bc4da0d7a3    DIFFERS     lxc {copy,move}: improve error handling
+3a551bf31c922e49538bf36e750f516184d5deec    DIFFERS     Fix typos
+1b65db0982872a2fa9ac9aa66530e91249eb79f5    IRRELEVANT  lxc/storage: Don't ignore yaml errors
+a1158a873a22882193aba2c2c87b80044eff1931    IRRELEVANT  lxd/patches: Drop unused variable
+c98943f87690ef8ae0d0b4c5e5288b2eb28d7e13    IRRELEVANT  btrfs: remove unused variable
+fc4707298bf7847c4b704d795e7d54382c495ca3    IRRELEVANT  import: error on out missing name
+cc7faedb3fb595a9f21dae85043d790b7385d398    IRRELEVANT  db: return NoSuchObjectError
+a4c7c5c4bfc4b0d5807ba9a903b04e29ff4edfdf    IRRELEVANT  storage pools config: keep things alphabetically
+4db4a8cac18a59e18ea336b02174a9dad2693149    IRRELEVANT  btrfs: add getBtrfsPoolMountOptions(t)
+59cf63ba4763a8e96a219dbe0bdde3172265c755    IRRELEVANT  doc storage: fix ordering
+8797f9ae0f8c1a42fbc7c48b4393bf4cc685a008    FEATURE     btrfs: introduce btrfs.mount_options pool property
+224e13ba0c1836a927f9097f8941901fe671044c    IRRELEVANT  test: add btrfs.mount_options test
+16b3732a2633e7dddeb71f5764694dca7335505b    DIFFERS     test: make sure storage volume is mounted
+60eb9ddcb7896e6279f34d07da9055002a5310ec    DIFFERS     tree-wide: replace file Chmod() with os.Chmod()
+1a2889f1d0a9f1eda9ba569d51b340325be99252    DIFFERS     Check if the image already exists.
+7933ae23a72c30d0e0fc35e28c383db87fa7e5e9    IRRELEVANT  Correct device type name
+ad0d1bfbb45bd5a4421f049279e159eacb966059    FEATURE     Add description fields to database
+c92ccfd71934c1644ecd22849282dcb2ca682348    IRRELEVANT  Add description field to networks.
+da7061d46c7fd052ea20fdd5f227e3f0cf841f05    IRRELEVANT  Add description field to storage pools.
+a1be2a60efba99655b48a394c8209420bba8ce6a    IRRELEVANT  Add description field to storage volumes.
+5ec27ec417c5b2bc707bac59849fc0bbe2b8bf3b    IRRELEVANT  Add description field to containers.
+19f8f3061b73025b0e8f3376105f42f360c13b2e    IRRELEVANT  Add entity_description extension.
+81a5aff1f638b84d7cb1f69013d892edbf13410f    DIFFERS     storage: move mount helpers to storage utils
+7446f6ba9d34552f592a96e6158699677488f41b    DIFFERS     storage utils: add MS_LAZYTIME to mount options
+dc4dcce56879955d876dbd8bf1848bd0f68fd21d    IRRELEVANT  btrfs: use lxdResolveMountoptions()
+e01bf4e3dedb42479a55469bcb7c133e64a1b86d    IRRELEVANT  lvm: resolve mount options properly
+ebfa865b0d3a226a5f5dda87401519fdd6af2268    IRRELEVANT  test: add mount option test for lvm
+7e42a94e4e105c234c61a6c88eed99ec4b5a2b29    DIFFERS     storage: add lxdResolveMountoptions()
+88b76279c19115673bc6c9419f121f3fe0e08519    DIFFERS     Add a testify test suite for db tests, rework existing tests.
+b454c3d0c3a17f75daf8b4a258e88358e1be4970    IRRELEVANT  Fix recursive file push on Windows
+b97fa19d9f53cc627b09d3131800962b445742cb    IRRELEVANT  Calculate source dir length only once
+0dc0a4f7c1f8842a37cceeb9372a8c11ed1feb7c    IRRELEVANT  Simplify source dir len getter
+f23cbadf0a002cd42ed1301a7f97af3388623498    DIFFERS     daemon: Set ServerFingerprint
+bc05e3450c72b3a8ee74b20b390d118fb2bddf2d    FEATURE     Remove the Docker profile
+d2235b9074404e07f4f79920d55c8cb98fab9347    IRRELEVANT  maki18n
+50080717a01646e403cd3dbf6b5b27cb4a229444    IRRELEVANT  README.md update docker instructions
+3737098d4c18a971da865fe6e9f057aa305f1f41    IRRELEVANT  storage volumes: only delete custom volumes
+92888982ed4b570d3536f0d398e8d650e348d72b    DIFFERS     Save image source certificate and pass it to the download.
+fd69f4bfb500e04a0125d17c47204d8743dd5d9f    FEATURE     Add API to force an image refresh.
+7bc58a4fbd7db39c8a95488d4656d51c2961e910    IRRELEVANT  lvm: non-functional changes
+f88e381d2d7c63c3a35f82691cd3627bf029c2b8    FEATURE     lvm: implement lv resizing
+725f73b0745e1948ccdd5daf884d16c82aebb737    IRRELEVANT  test: add lv resizing tests
+ce0776dc3cb47960f4a47d91741571258fea9e38    IRRELEVANT  make i18n: for other branch
+88474743526b88ca2a092c01b925a45330ba222a    IRRELEVANT  Improve wording per review comments
+7bad0b036871bcae4c2771e6e5452ac729771f1c    DIFFERS     Split autoUpdateImage function.
+e2de098f1719cc336b41a39444968406110ed060    IRRELEVANT  tests: Drop jenkins-specific check again
+1d8e3681f7844a8c7030dc3b9107484634eba9c9    IRRELEVANT  storage: avoid infinite loop
+ca0a4efe9110e89e9a1e192c6b7176673a1d782b    IRRELEVANT  test: add quota tests
+79de144f492646454df37073352813b94184291b    FEATURE     If present, use cached images when launching containers
+bf238e9d38ca2fec5ad3d14ce980f94a37e7b602    DIFFERS     Support running individual testify test suites
+bc026c8d3f28af424ffc133fc35c7a037c1fcddb    IRRELEVANT  test: kill and restart
+902e02168f56cdb088d13c7c1c1462bd8dc6ad51    FEATURE     Implement initial support for "lxd init --preseed"
+ad8417cab64c35ea8896a007d5d759fcd7ec63f3    IRRELEVANT  Support for images auto-update in lxd init preseed mode
+766f4ca212b02e10dd8f416532cfb9e53836c9ca    IRRELEVANT  Support for preseeding networks in "lxd init"
+e0aed52252dfe548e1785eff9371d2437dfcd127    IRRELEVANT  Support preseeding of storage pools and new profiles
+c4de44bd5a5aaf1f3aaf69067660aa3db24a4613    IRRELEVANT  Rollback to initial state if anything goes wrong
+1452a5af5fbb144e1b56a9051b647609a810fe92    IRRELEVANT  Add documentation about the init preseed feature.
+ba6917d8158e8ee7e69d723a89f7151929ec1f05    IRRELEVANT  Rename pools to storage_pools.
+005e6f5750d910874895175f529fcdbdcef53f9d    IRRELEVANT  zfs: fix folder permissions after dataset creation
+4f72309199beee7e3cb1f95f6e1beecb7b03258d    IRRELEVANT  lxc: Fix obscure error on missing object name
+877744a1074985c5fa2f5954f95f2e71f72a7c3e    IRRELEVANT  lxd/containers: fillNetworkDevice is only for nic
+85a9930418eee961be4cd5b6e8d74b777a89c56e    IRRELEVANT  lxd/containers: Also clear the host_name volatile
+83bda7c1d00f0cfef52f93e0afa87e369effd211    DIFFERS     doc: Add section on macvlan vs bridge
+de3d27c831c3431facd9c57aee26ecdb81989932    IRRELEVANT  doc: Fix markdown escaping
+37cdc750ea9dd0ed44fd9e531545923a35f81df4    IRRELEVANT  storage: Fix bad internal types
+7f04cf742ddcf61f898434e8176a0989930c5c4d    IRRELEVANT  network: Fix ETag regression
+677eb260485f114efd0fffe8f3d212963098cbc0    IRRELEVANT  lvm: only delete vg when empty
+f0e3f0de7993bc47967d8d2442213cf42443184f    IRRELEVANT  lvm: disallow using non-empty volume groups
+bad3f9ea429b63d6c4d7eabbbe7d673ec92ed9b0    IRRELEVANT  lvm: allow re-using existing thinpools
+572aae20d44131fa8b75339e27b78a7c27e3efff    IRRELEVANT  storage: add helper to detect if pool is in use
+3d50945d5eed3b40681470b310c98a6be1e8a9a2    IRRELEVANT  lvm: check whether volume group is already in use
+29d2b06033d889cac4b45e38b164b21c9a79deb6    IRRELEVANT  lvm: simplify and improve pool creation
+4409d4e069b464d9b8c181f17522bdb983d74298    IRRELEVANT  doc: document zfs quota vs refquota
+8ef65ea898028427655d841cb6e0cbc5e4a33477    IRRELEVANT  doc: correct grammer in storage.md
+6ebdf3f68a680d0771ffa52707a2030d63b4b8e6    IRRELEVANT  zfs: create image dataset with mountpoint=none
+66b6228e90ae29120602e51a0e179605d4964ef0    DIFFERS     client: Use RemoteOperation for CopyImage
+5b6010e06a34596e7a9f47bc78f415ac8f50279d    DIFFERS     client: Move CopyImage to the target server
+76fadef65d8791894c640ecceb1275a496bda50b    IRRELEVANT  tests: Test suites use space indent
+a44bc7374b3ad0f48fb5873567fab651a59fd992    IRRELEVANT  Update translations from weblate
+f4d5f41ba66a46ba37448d22d226a10cdf603e9a    IRRELEVANT  i18n: Pre-release update
+4c32a1ff7267d4934870e2444dc1394fea5a78e4    FEATURE     Release LXD 2.14
+452ab117d9e8151c004ca4bb28b090b2e4de7410    IRRELEVANT  Document image refresh API call.
+d746deddb52a5419bf03b283878f94cbeec4cc08    IRRELEVANT  network: Always pass --conf-file to dnsmasq
+98c7c9bad04e0d856b5fd78b721f0b64a76ee3bc    IRRELEVANT  patches: make sure localdevices are updated
+13f17472649edff68633a66a6efc2c2a4e29971f    IRRELEVANT  Remove IPv6 leases on container delete
+89b210fa2b7831bdc500e054ad7f8c1c3f71e562    DIFFERS     Fix regression in image auto-update logic
+4e422268b0116e6e4544317a2af2fc2f9b83efb8    DIFFERS     Clear database state in the mock daemon after each lxdSuiteTest
+af09d582c96961feef6013d680ac5eff62f619ac    IRRELEVANT  storage: handle btrfs migration on different lxds
+d800e9ad969a05c27f6bc4d41881bb66b5ae180a    DIFFERS     Separate db-level update logic from daemon-level one
+d705f0b280a7a6882eb5895bfa5597d437912bcf    DIFFERS     storage utils: add permission helpers
+7e573af57ba31a377fbc1c37fdd7a471b7c3f74b    DIFFERS     lxd/containers: Cleanup volatile keys on update
+17656ab5a5fd87a316c020f15720248c0fb97113    DIFFERS     lxd/main_init: Properly set default port
+921b491c0eb7d2fadb5012b9303dc34df1e38834    DIFFERS     test: add helpers
+ffa4a6ccc5cfdeb138cea154178806422d2fc048    DIFFERS     Make the log cmdInit unit-testable
+eecbdcb3ac98e07b30d0014ef562b5ca711e1074    DIFFERS     Move state-changing inline functions to own methods
+55bdddca873afc848c95d607697c40c4b0173880    DIFFERS     Extract validation of --auto args into a separate method
+060583480644fc6d0678e4e09ad60bbe0d5ae9fe    DIFFERS     Consolidate interactive/auto init logic with the preseed one
+d269c9850e4986a20ea254a7e4152db23e318984    DIFFERS     Extract code asking init questions to individual methods
+33e4731d8a463a771daf00565329d0cd989749f6    DIFFERS     Extract logic to fill init data to standalone methods
+63d6122d96ae80da97e9808d358dea3d414324af    DIFFERS     Use in-memory db for tests (makes them faster)
+2c53a35bbbf55092347beebbb5f5b41eb5c41368    DIFFERS     Replace some uses of InternalError with SmartError.
+6338a6c27e98c312b5a152ff6998c896e6fbe0cb    IRRELEVANT  network: Tweak error in subnet auto detection
+82619ed22d56c8ad97cb042326619b7321e03393    IRRELEVANT  doc: Tweak storage formatting
+59b47070ecf3fe7122ecf643b3ac9c0fb64ace9c    DIFFERS     doc: Add a note for blkio limits
+755bc74f1d70e063bfdbf29235bb0ae9415549f9    IRRELEVANT  images: Skip cached images without auto-update
+cbccbc058999866a9c72c98c2932b65971a54463    IRRELEVANT  images: If multiple cache hits, pick the latest
+a2ac4b1e7e501cc560d9a51b237ef09b4e17b876    FEATURE     lxc: Implement "yaml" format and commonize formats
+052b0385f33429d301c10056f83c683c60cf8245    IRRELEVANT  i18n: Update for modified strings
+364e39f7eac3f35ea69db371d976d4a892965dc7    DIFFERS     network: use lxc.network.<n>.*
+da0a812a7daeeafde1ccac16a6d86d3da4d1aab4    IRRELEVANT  dir: create symlink on freeze failure
+4aaf11d9564b61b1da572f13f07b42ac38b1c328    IRRELEVANT  btrfs: enable quotas on demand
+9d8b7cd05b36eaf9525d36fad876061963993789    IRRELEVANT  test: don't run again on lvm when random backend
+0ffe2b2ef14b1c6fc66df9f04f6c23a761183a0e    IRRELEVANT  storage: insert driver correctly
+679aafe1fd65fed20fa3aa85359e6b053cecf276    IRRELEVANT  patches: fix upgrade
+b1eb7453d3911644a9b6d894de7e6dedd241b17d    IRRELEVANT  zfs: fix container copy
+17de1869158f22d7a77e6e33f46fa51100af9d1d    IRRELEVANT  storage: {copy,move} bugfixes
+4263ec402833cd45b0705e5448a560f610756691    IRRELEVANT  test: add more {copy,migration} tests
+365478bc8e738afb19581168ef0b0bd64e047e4d    DIFFERS     dir: unfreeze on rsync error
+09a1adb7fdf35318d49b96f922d098c78631b467    DIFFERS     rsync: handle sparse files when rsyncing
+b3bcea8c1ce7db1e1ab325c4f4b11309e77f1062    FEATURE     Add an option to list all aliases in "lxc image list" output
+865ec4ee242c6b6e1c44f440f686d1880e48afc1    IRRELEVANT  btrfs: Apply default flags BEFORE detecting type
+b7372bf6cbfd25acd5933588e5765f4b8cb7a3f3    IRRELEVANT  zfs: improve dummy dataset creation
+c3c43d510ee0ada36594d913112d682939557cde    IRRELEVANT  Fix crash when sorting images with custom columns.
+f9f47df4e71b8c369b69933ca70654480dbe10c1    IRRELEVANT  container_lxc: fail on ebusy on start hook
+a7db52dde2290ca42c3af080f5dbe98d5e63293b    IRRELEVANT  network: Only generate DHCP fw rules if enabled
+32ae26b8b7ff03538ebb75e02488c0a23601ebc3    DIFFERS     exec: detect POLLNVAL when poll()ing
+079639e13b3dc765f413a08c480cfa3a9c6a374a    IRRELEVANT  lxd/storage: Fix ETag calculation for pools
+b20d856f530afd6d2abd558c103f7e9a45ec84c4    IRRELEVANT  lxc/network: Port to new client library
+3348a52c6b33b630eee6f216413bc5c66262043c    IRRELEVANT  lxc/storage: Port to new client library
+e9502016ccf9cc283edfbe2c075b4bf87fd5f94b    IRRELEVANT  Add deprecation warning for old client library
+0134b50a8afc27d4b304a62e1a1a5c26ccec9d6e    IRRELEVANT  doc: markdown escaping
+c0326d502019fe1c90750d80d11b524ff7870d3c    IRRELEVANT  Update translations from weblate
+f6e9ad56025f2cd507562ec518a96d0c1accfda9    IRRELEVANT  storage: allow attaching storage volumes
+c37a745a3ebaa4a6afc8ee58c78e9d580b1ae0fe    IRRELEVANT  test: storage volume attach
+3e5210dc320ecc131d111e936bc877721abe2206    IRRELEVANT  lvm: allow non-empty VGs when thinpool exists
+93ab45ca2494683e3abe34694eab9c69cb3c86dc    IRRELEVANT  Clean source path for recursive push
+2b23320a876f8d1ec83694321fbf62392c35d9d6    IRRELEVANT  test: add tests for ./ file push
+d4dac03f25d40fabf71d5d6dba0732481d55248c    FEATURE     Release LXD 2.15
+48f751afeb9cff9b5cf37abcd5bdeb9b31730e0f    DIFFERS     Cleanup.
+c469b049b269a49dccfe0b15c60b85dd64baf1bb    DIFFERS     client: Fix non-interactive exec hangs
+aa14443c688345704ca08a264cc21a161ee3a463    DIFFERS     lxc: Port to lxc/config for config management
+b93a54fa193f4897ce86d59a1f77116c27315f12    DIFFERS     lxc/finger: Port to new client library
+615b1f5084960db6f382ea146593524bdf64aff1    DIFFERS     lxc/exec: Port to new client library
+514141c42d69109510ffd780afd4087ff98314dc    DIFFERS     client: Add extra exec option to block on I/O
+365ad9df047d08a06e2b851613ca7d2cd51c1e0a    DIFFERS     lxc/remote: Port to new client library
+c9ab4a47d0369af7045b5bf79995f0bbd9881b76    DIFFERS     container_lxc: use new network keys
+8ce98d80dd505dd71ab38921cbbb289a59123a10    DIFFERS     lxc/list: Port to new client library
+5122ef3775d5ad54d97b82e70baab1ba474d67d9    IRRELEVANT  lxc: Move common code to utils.go
+4ed307d6b4bc8f1f806473daf4b4c3c9666dfb8a    DIFFERS     lxc/image: Port to new client library
+6af32aaa909a976c29d116fe94b4e0d3054d580a    DIFFERS     lxc/publish: Port to new client library
+ed4b504edeb47326e0cb491164a1892b1bed475f    DIFFERS     lxc/init: Port to new client library
+e0082ac78630f44e7b71ee6dd6fc5c507ce5544b    DIFFERS     lxc/move: Port to new client library
+36f99546246b8388423de505ed105869ccec9237    DIFFERS     lxc/copy: Port to new client library
+d9cbaa82253e903528451666278ea294e2702101    DIFFERS     lxc/profile: Port to new client library
+aed82f789992db52d76b27ff04c0dfc3585099bc    DIFFERS     lxc/file: Port to new client library
+3990dcf6a08fe27819f2911ab8c366d9cf98b995    IRRELEVANT  i18n: Update translations
+3c6c483ca0a3d1e21e500a2dc6036fb649f9551f    DIFFERS     lxd/images: Always expand fingerprint
+a5c78fe94294d398cadc3524a5209cb013ad1277    IRRELEVANT  Make deprecation warnings visible in godoc
+23a328a454d00739206790c6375992d23ea1b854    IRRELEVANT  removed s.zfsPoolVolumeCreate() changed all s.zfsPoolVolumeCreate() to use zfsPoolVolumeCreate() added proper logging error messages
+959e7867575793f1aa0c29972152cf29644b841b    IRRELEVANT  Used s.getOnDiskPoolName() instead of s.pool.Name
+640fcbd73a8e094a98dd6a81776ba0134acd1a96    DIFFERS     Fix failure to launch containers with random names
+610ae92a7563b5ba5d41f0e4c1671e6835e6fc86    IRRELEVANT  Don't specify mode for intermediate directories created with `push -p`
+ccad5916cf0dfcdd2a9deee6b86cfa488ce3c097    IRRELEVANT  i18n: Update translation templates
+156cf14561ba750503e15b79f128b240e77b4991    IRRELEVANT  network: Don't fail on non-process PIDs
+7c52be62fe6059c7d513c9a4b818a0645514ac54    DIFFERS     Add a new security.idmap.base key
+1bc481188885fd99e08bbd9d28378da4cf68c325    IRRELEVANT  tests: Allow running tests without lxdbr0
+d95edcff8a8c99c85c74beaaf26ad7213c1064da    DIFFERS     Extend/rework security-related documentation.
+7eff96086e1b8167a6e77fa59c5a31170870513d    IRRELEVANT  i18n: Update translations
+004e7c361e1d914795d3ba7582654622e32ff193    FEATURE     Implement support for symlinks in file API
+b57e7306f58e4282a8212f96d0c65064676be14b    IRRELEVANT  i18n: Update templates
+e749e77876a3300507fd7aa35e018a105c5d51ce    IRRELEVANT  import: keep volatile keys
+af4f77cb8baf801794e96c0b74d495d8289cd128    IRRELEVANT  import: remove last dependency on symlink
+d1976feb7fdafb13381e894e201bd0b7165119c9    IRRELEVANT  test: import test when symlink has been removed
+cb33006b3f23c54b93a605ec8821e11613432882    FEATURE     lxc/copy: Make transfer mode configurable
+dd34386a3db23a48c334db645dfe1416af641cec    IRRELEVANT  tests: Add test for push and relay mode
+3c5866bc0d6159244ea10608b5adbcedb42af279    IRRELEVANT  i18n: Update templates
+665f9013f70ae99a92c6c8c8bd08892b5dfd6cbf    DIFFERS     Implement complete push migration
+5f86b71388f22ad26f48c0a8899c726d6ab57c4b    DIFFERS     Fix file push/pull with names containing spaces.
+3579b2e2ed392705ed30a49e1135788dacf2eff2    DIFFERS     Error if --columns and --fast are used together in lxc list
+8ada776b8fba15d3df47a6d1f91cde0b7667d882    FEATURE     vlan property added to physical nictype (issue #3375)
+d28bea60c37d82303cffe39d3017d0e29b545543    IRRELEVANT  lxc/image: Missing error handling
+7d3be5c1d60e7108f53b5035533ab88982623782    IRRELEVANT  lxd/container: Fix broken error handling
+86eb0196dbe67d972964d42490f7c3df72de3ad6    IRRELEVANT  storage/lvm: Fix broken error handling
+0ddbc6ad4e7aec470041fc2fa9396e426ffbee66    IRRELEVANT  i18n: Update templates
+7bcba143993f8956ef47c01e655501d9391fb806    DIFFERS     README: Seriously rework the content
+6003e6355113041bb11f27f168d88de779443ae7    IRRELEVANT  Remove extraneous backslash
+af42062e3db0c1dc1fdaaa71f9e917c6aafeb830    IRRELEVANT  Expand lxd import documentation
+75c1e15b794e5179de6d501cb6a3b7fdea246d68    IRRELEVANT  README: Fix broken links
+0c1a8baecf6068cdcb5ec9f1147a5ad69fbfa4de    DIFFERS     shared: Use custom error type for RunCommand
+219050766c5d6f98cb865916a18b945fcf6a74ea    IRRELEVANT  lxd/init: Detect LVM thin provisioning tools
+8b2e1085fe152ed6cec062edb55bb2cb2c5f76e2    DIFFERS     tests: Skip apparmor tests when no kernel support
+f715ba53bbac127f27413492ba0da5022f82e58a    DIFFERS     Fix spaces, commas, quotes, brackets where needed
+be7751ea3baf7c2f6b958d6d8eeb19fd933e82ce    IRRELEVANT  Need quotes for /1.0/networks/ "config"."ipv6.nat"
+cc43cc8e26f9177b8bfa07303742e55a64adc3a4    IRRELEVANT  lvm: Convert to RunCommand
+3aba2d7a553f5a89a1d842eec223094d93302a9f    IRRELEVANT  moved all the helper functions from lxd/storage_zfs.go to lxd/storage_zfs_utils.go Closes: #3471
+8611f8665c7c708c0c8860e39e5747ac5b5b5634    DIFFERS     tests: More apparmor presence checking
+082fbe2cafc72121d711ab8dea996c6b697cba00    IRRELEVANT  zfs: Set canmount=noauto on all mountable datasets
+399c0ccfa759646857a01d4a82190ef3768ab207    IRRELEVANT  tests: Always pass --force to stop/restart
+a3f1a50d2a8db5ee10f4bdb7fdf21a9f66d2fd1c    IRRELEVANT  i18n: update templates
+9d3e6c57e0374cd712723d23d890f84b81669b2c    IRRELEVANT  zfs: Use tryMount when mounting filesystem
+6cd32b10a924b27c8dba6f5fc5fe5f55e2d704df    DIFFERS     liblxc: lxc.seccomp --> lxc.seccomp.profile
+b488b1a82449331d16ebfe2a81471efd3123017d    DIFFERS     Show underlying error when container delete fails
+309fe95599ff46f47c0ab44759c6fcb44dde68b8    FEATURE     lxc/image: pack image on import if a directory is provided
+b9416c1cf7a28277d151b8764422acee01b014e9    IRRELEVANT  Whitespace cleanup in doc.
+1b88085bded5518de4c4a7327d8e7ed37d5110de    IRRELEVANT  Revert "Whitespace cleanup in doc."
+89a715f972439c99bebd7bc445a04379c01e3e7a    IRRELEVANT  storage: Fix ETag handling of volumes
+01ae142111d364f2daa4a1ab3cc116a5d3525d81    IRRELEVANT  tests: Add a test for "lxc storage volume set"
+b6ab338027ae54944e2489a7c061d368b89dd836    IRRELEVANT  storage: Fix UsedBy for containers and images
+505f183e842606e843d8896b100ed32eedebd0e6    IRRELEVANT  lvm: non-functional changes
+2e5121e83e3da92b3af9d8b301911d75f6a380ab    IRRELEVANT  New API extension added as discussed with stgraber
+da38899097b753a83d7b90040d4a112e9d0a8732    IRRELEVANT  storage volumes config: fix logic
+788dd25b289002f887c8faa95be19ee4169f1574    IRRELEVANT  storage: StorageEntitySetQuota()
+3df14456e43fd8c63f2b90e8a115f56b24497586    IRRELEVANT  storage: new signature StoragePoolVolumeUpdate()
+c2e945c1f27d4e5cde94ac058560d6ea2ef7718a    IRRELEVANT  zfs: generic quota support
+d6ecef3191fb56955c6b4abf427e0fcb97359eb6    IRRELEVANT  dir: generic dummy quota support
+ac1740d7092bf0dfb5e70cc66330e60b68e95613    IRRELEVANT  lvm: generic quota support
+99607488ca2976324ed66c9ea8e9832d3b79afa8    IRRELEVANT  btrfs: generic quota support
+14fd74148c03af6d9efedb9b3c7f4655e68073b6    IRRELEVANT  tree-wide: switch to StorageEntitySetQuota()
+26f55a6b33b0dd923a584c15f3a636ba57c818fa    IRRELEVANT  storage: remove ContainerSetQuota()
+66df7b6c67b7867f0035d6495a7360886e37837a    IRRELEVANT  lvm: fix non-thinpool container creation
+be0860bbdedb768a846ddea5474bb96e823aabe2    IRRELEVANT  btrfs: return nil on success
+289b17bea9c5a024f72351004d8a17bdb01d0fe5    IRRELEVANT  storage: add quota tests
+a883bab436b4880775e293cd50dfbb805a2a5975    IRRELEVANT  storage: move db deletion to driver implementation
+f1b1630cafc4a130e33fd00be723431c14248bdc    IRRELEVANT  storage: allow deleting images via storage API
+d996e988b8e7902eeeb5a2b8bebf059c0175eedb    IRRELEVANT  doc: document api extension storage_images_delete
+219a568d492b11bc77a58ce8745f46eaeb7a698c    DIFFERS     Fix image refresh when fingerprint is passed.
+236e60efa84653bacc9e6686be549a7304f39c44    IRRELEVANT  Replace use of fgrep with grep
+d9cb1381aad3cffee59da220aeb5033fc6529cb4    IRRELEVANT  storage: storagePoolVolumeUsedByContainersGet()
+98cc3cbd5a1d108353dc1bd089cd93b902c5e4b3    IRRELEVANT  storage: check idmaps of all attaching containers
+51654d115926b6b58dcdac88f990f8d872b7da3f    IRRELEVANT  Change compression_algorithm to compressionAlgorithm
+e4c5d38f79d157a54ce7040c5c0a8cafd7cedbcc    DIFFERS     Update image aliases when they already exist
+e066c5c223b8e7dcf07091c0c193570f7d9f27c7    IRRELEVANT  Update translations from weblate
+d2af30d1e8d935e723983df50a16e7c7abff8821    IRRELEVANT  lxc: Create missing config paths
+87934033f2086330b5f84717c1806c28cec297f5    IRRELEVANT  i18n: Refresh templates
+e957a4b6fd2d457ca21cd43704f3c4d18784ecda    DIFFERS     migration: state{ful,less} snapshot migration
+6212a636aa3df7a255039d7e5dcd309fce9f4ea6    IRRELEVANT  client tool: make i18n
+c1d4d4d0c1117d84c3a8804e3a2e851601bc6c61    DIFFERS     doc: Update containers.md
+51ca8e24b98597c9383ccb53ac830b30f497379e    FEATURE     storage: add ceph driver
+9900a7c870a067c51e54ec98aaa2c499c1a079d0    IRRELEVANT  storage pool config: add ceph properties
+1c266f5374e3b6ad188f2959e1d035f93265495b    IRRELEVANT  ceph: implement initializers
+9a5ca728e341964f5acd50b3bafb9ad85ac1c001    IRRELEVANT  ceph: add storage_ceph_utils
+35fa1517c1384c0c9be0542818a0e79cc1bd856b    IRRELEVANT  ceph: StoragePoolCreate()
+c119124fd0549036493b096b10adab9530a4d578    IRRELEVANT  ceph: StoragePoolDelete()
+a07897838e07c27674caab2f4bedac482d57cde8    IRRELEVANT  ceph: getRBDDevPath()
+86a33f168fa3549712826c2dffe9a834c6f38ccf    IRRELEVANT  ceph: cephRBDVolumeCreate()
+5579e35e99d213b660ddedee86b51d8f0f049460    IRRELEVANT  ceph: cephRBDVolumeMap()
+c144f2b84fe8e2a1045402d48dfd18356a44841e    IRRELEVANT  ceph: cephRBDSnapshotCreate()
+2543cf49922a67edb40ab615bcd7b9b1aef0a86c    IRRELEVANT  ceph: cephRBDSnapshotProtect()
+8a4e3d632373e1dd5dec20bef6b31e681355d66d    IRRELEVANT  ceph: cephRBDCloneCreate()
+e3b6c17cdfbc5e6072a4ecbea9bc7668e58d1b49    IRRELEVANT  pool config: restrict size property
+7aea1814f9f010d7f2bbe299e36697ef93886965    IRRELEVANT  ceph: set default properties
+3d90d147abbc4e4c0c6ec3e2df6305dcddb211b6    IRRELEVANT  ceph: cephRBDVolumeDelete()
+da82f3dc138c843013fc783dd2d58da117bc9984    IRRELEVANT  ceph: ImageMount()
+9542e65250a026d042c9e1ea605da73c0e9b0381    IRRELEVANT  ceph: ImageUmount()
+070237fe48e782c06db72eb01ffe25d656cc5f2c    IRRELEVANT  ceph: makeFSType()
+a0024104f8ac82652e03443c498a7130f51c17a5    IRRELEVANT  ceph: cephRBDSnapshotListClones()
+bd80c3669157d65402770e092a6a0512ec3c1666    IRRELEVANT  ceph: cephRBDVolumeMarkDeleted()
+1bd94840f9173b478d8a1725dfcf7a6e9a19dae2    IRRELEVANT  ceph: cephRBDVolumeUnmarkDeleted()
+7a94dd6a2df274c5f4825b02782c153a63b420f8    IRRELEVANT  ceph: cephRBDSnapshotsPurge()
+e53adb201885fd3c0828ea87e682289d204c5da1    IRRELEVANT  ceph: cephRBDSnapshotUnprotect()
+474d173f6b43c78293004cc5b60355d0f8e2fb41    IRRELEVANT  ceph: cephRBDVolumeGetParent()
+7a40eacf5a260ac3a9464dc04d2042bacdbf3551    IRRELEVANT  ceph: cephRBDVolumeUnmap()
+b321a4e38bc0963730786d1bc97b69ce994999fd    IRRELEVANT  ceph: ImageCreate()
+bd70881fd5e6c9c8e5a89b46757c426da2a67dea    IRRELEVANT  ceph: ImageDelete()
+33ecda9160bb18ceb10a13c5903991fc26ff3026    IRRELEVANT  ceph: ContainerMount()
+3ef61e92a0454e9bdec16c19a8eade309ab40844    IRRELEVANT  ceph: ContainerCreateFromImage()
+251bca6c7cb987cf57105d419a61673f94864656    IRRELEVANT  ceph: ContainerUmount()
+28f3d45ef51d20e16a67c3f180abe258ef64f3ae    IRRELEVANT  ceph: ContainerDelete()
+e2ae620d75204eec5e939e0afc1544d9a532e4d4    IRRELEVANT  ceph: ContainerSnapshotCreate()
+a058c066cfdb6ba21025736972038f99f1866853    IRRELEVANT  ceph: cephRBDSnapshotDelete()
+e82115fdbe12f79d9542c2fc4785449fd6cb9993    IRRELEVANT  ceph: cephRBDVolumeSnapshotRename()
+ae74ee14871bdd07e389821be30873a875b000e3    IRRELEVANT  ceph: ContainerSnapshotDelete()
+5e7a5f3ad80d148cb3dcf877d0d9afae9676d85a    IRRELEVANT  ceph: enable ceph.rbd.clone_copy
+28fc50cd99b73803b89d6644d784fa1087c7f77f    IRRELEVANT  ceph: cephRBDVolumeCopy()
+6e48ea8785ae13da17364a0c6afa5d6b9d211ce3    IRRELEVANT  ceph: copyWithoutSnapshotsFull()
+7646704237d9d6e76b4079e465cc7af61c2fe9e2    IRRELEVANT  ceph: copyWithoutSnapshotsSparse()
+bdec9fb8abe84aa73854f8eedf8c849e9b275901    IRRELEVANT  ceph: ContainerCopy()
+ccf5065f94ffc3b7aa9e05886803fc37757a9c99    IRRELEVANT  ceph: cephRBDVolumeListSnapshots()
+2f69b0937ae3b6d5192247f8b945acfb2a5e1071    IRRELEVANT  ceph: cephRBDVolumeSnapshotUnmap()
+7d56a0663e190c675be65bdb43d93d2ca925273c    IRRELEVANT  ceph: parseParent()
+349c79487765b82b781b22ce85cb4d156249ce05    IRRELEVANT  ceph: parseClone()
+5f2f29ab3ab54da0c4d90676565d796f1e67e6d3    IRRELEVANT  ceph: add container + snapshot delete helpers
+13e7989637883f19b72844dfc7e71859ffde33a0    IRRELEVANT  ceph: ContainerDelete()
+74dc676bc9d311110d41d3aae5cdf5d71ed5723e    IRRELEVANT  ceph: containerSnapshotDelete()
+f1ebb123c64b805ede1a4b31e2d182151f5fa400    IRRELEVANT  ceph: ContainerStorageReady()
+4d1ea7bea003b7956fe01712f78aa99f2ee5a1bb    IRRELEVANT  ceph: ContainerCreate()
+ebdfed64c5aff4cdce8902290acab578af3d21bc    IRRELEVANT  ceph: cephRBDVolumeRename()
+946d77c21892a205057a586813e9e0b25a88f0c8    IRRELEVANT  ceph: ContainerRename()
+0fb235041c4dc53f6e9830964ee4427c5c0ce0ea    IRRELEVANT  ceph: ContainerGetUsage()
+cde5ee024f566c25cda26554901c753cc5a1f7cc    IRRELEVANT  ceph: ContainerSnapshotRename()
+21efee003321ee88078d9ca83db6efea883f249b    IRRELEVANT  ceph: ContainerSnapshotStart()
+0126f0b77c7ec31045ce24d7d49fce36770ff8ff    IRRELEVANT  ceph: ContainerSnapshotStop()
+8cceae248927669fb314c277d37a71354c7cff22    IRRELEVANT  ceph: ContainerSnapshotCreateEmpty()
+8fb7d5bfeec1271d7d558fb17b375ad026597aa3    IRRELEVANT  ceph: cephRBDVolumeRestore()
+69888c96a47f36fc1d655248774c80f77f618d34    IRRELEVANT  ceph: ContainerRestore()
+1d750aa381448814bc6fec349d2311f08e32a291    IRRELEVANT  ceph: StoragePoolUpdate()
+9179868784a84a25b319f5990c7e88b8552b700e    IRRELEVANT  ceph: GetStoragePoolVolumeWritable()
+cda7e77d0f87f2ae8819233e902ed7aaf7483069    IRRELEVANT  ceph: StoragePoolVolumeUpdate()
+84ac2c11c440c21e134592eb53a7ac88f5463365    IRRELEVANT  ceph: StoragePoolVolumeCreate()
+2c3e1638e77a64f29d58eebb21759783ce5041ab    IRRELEVANT  ceph: StoragePoolVolumeDelete()
+57396b9fa87122cd406f467aac1875a7502c8191    IRRELEVANT  ceph: StoragePoolVolumeMount()
+3ab807c23d540b3dd02a92e3fd8d46544e078863    IRRELEVANT  ceph: StoragePoolVolumeUmount()
+050ce5640ffafe12818ca677d33f3ba1c0b2c441    IRRELEVANT  storage: non-functional changes
+8671052a42dabfe09d154cfb5508efc633da5d78    IRRELEVANT  ceph: allow to use existing osd pools
+cd6b44438231567a383192bce44580bcd987ae69    IRRELEVANT  ceph: check whether we own the pool
+90f62dbe800bb6f50ba6a6f48807c8f893364edd    IRRELEVANT  ceph: add storage_ceph_migration.go
+5fa45472092f24d90f9d41fbe63d1464ffd94758    IRRELEVANT  ceph: Snapshots()
+a9586a4475a242a2f71cf4ff3948e31322e17be0    IRRELEVANT  ceph: MigrationSource()
+4b03d075f4ddb6517f0dc3ef37975856a4ed9e0d    IRRELEVANT  ceph: rbd{Send,Recv}()
+cec904cdca4f2b5223dd6322973f34e385557b6d    IRRELEVANT  ceph: SendWhileRunning()
+c342bbc4771165de6396488e12dbbb718b28b536    IRRELEVANT  ceph: MigrationSink()
+25b871f7ea8a6cea48b0fcfb4b44446fe3c1043d    IRRELEVANT  ceph: SendAfterCheckpoint()
+9a2a36d00faf3773327ea44c9d9fe5fd0ca3f9a2    IRRELEVANT  ceph: copyWithSnapshots()
+d7dc44c8959ba6787215eb8ce510d9aa846cbaea    IRRELEVANT  ceph: ContainerCopy() with snapshots
+8cfc9fd21d35bbf187bfe727f186ec8c94dcf885    IRRELEVANT  ceph: non-functional changes
+85b33847073c813b2880410c2fbe31ce344ac3a1    IRRELEVANT  ceph: StoragePoolCreate() non-functional changes
+53b6464c0893cd78246938e86e7d937cc055b532    IRRELEVANT  ceph: StoragePoolDelete() non-functional changes
+ded2e3ad20d607d75588e5e81035c763f339f62d    IRRELEVANT  lxd init: adapt to ceph storage driver
+f1c21953618a9f9c0d939e0d06490b993d410994    IRRELEVANT  ceph: handle "source" and "ceph.osd.pool_name"
+c0018c2e94c470fbd99201671e16d3be8c8aff4b    IRRELEVANT  ceph: StoragePoolCreate() - revert on error
+49ee421457ebe82afc93947f8d313ac8e5e7673e    IRRELEVANT  ceph: StoragePoolVolumeCreate() - revert on error
+0f87dc5f0c61b523f83a5e1f78c268c5f781b74f    IRRELEVANT  ceph: ContainerCreate() - revert on error
+a936455825cfd6c32ffbb31376f9d2832c05bc48    IRRELEVANT  ceph: ContainerCreateFromImage() - improve logging
+839201ff3c9f46ac72a29044cb8fb4cbd41e1de4    IRRELEVANT  ceph: ContainerCreateFromImage() - revert on error
+8deb79bd0b7180dd357d110fe8711fa06c74d97b    IRRELEVANT  ceph: ContainerCreateFromImage() - chmod mnt point
+fe9daf14033e4ced69fb660a36ce12721ee18d19    IRRELEVANT  ceph: ContainerCopy + helpers - improve logging
+06e8edbb0ffd212ee351e2e5fa535e10a2ef0d82    IRRELEVANT  ceph: ContainerCopy() - revert on error
+156853b09119088d0114db0d5a95401264781e13    IRRELEVANT  ceph: ContainerRename() - revert on error
+265df11907139da059e5cfcf321ffb2ae0a6b36e    IRRELEVANT  ceph: ContainerRestore() - improve logging
+08c765154c0ccd670e86af80168acaed8ee1b7dc    IRRELEVANT  ceph: ContainerSnapshotCreate() - improve logging
+ba297e6b93871a0e58ccb9289663d8eda4535499    IRRELEVANT  ceph: ContainerSnapshotCreate() - revert on error
+a335cbd6741c78c05e33e9d4499e3cf6252d0f49    IRRELEVANT  ceph: ContainerSnapshotDelete() - improve logging
+dfb7150968fccd0296275d426cac3e9475cc31e3    IRRELEVANT  ceph: ContainerSnapshotRename() - revert on error
+1eb7e3c8a2920b39e098f78dc97d79f95b08771c    IRRELEVANT  ceph: ContainerSnapshotStart() - revert on error
+9c4ed2ea2961d6c954a3605f7724347bd9289e81    IRRELEVANT  ceph: ContainerSnapshotStart() - fix wrong revert
+717113814cdafcd4a2aa00651ac94974f03d4817    IRRELEVANT  ceph: ImageCreate() - improve logging
+e6ccb449d41135a0dd26940c03fb2b6e485f198a    IRRELEVANT  ceph: ImageCreate() - revert on error
+39db705d55bf1b21d19b39137a94638b4de95348    IRRELEVANT  ceph: ImageDelete() - improve logging
+869f243eadb3077d528600c570d844c38d5f7d5c    IRRELEVANT  ceph: copyWithoutSnapshotsFull() - copy template
+ae21cfa4b99a827776f4bbbd995856b5f95cf6e7    IRRELEVANT  ceph: copyWithoutSnapshotsSparse() - copy template
+88601489a859425fe55dbd40ea7fa1651a0a9c03    IRRELEVANT  ceph: ContainerCreate() - create template
+e9463277bda3d511c2ddfcbb5b586a041cbefd05    IRRELEVANT  ceph: ContainerCopy() - copy template
+4be898176535f83e19546cb78e021b5b81994ea3    IRRELEVANT  doc: update docs to reflect ceph support
+b2a831d0c8b50cd6f1a1dbbd0d43e9240fb23c54    IRRELEVANT  test: ceph storage driver
+5c5ebac083203741c994e95d488e7074f9203bb2    DIFFERS     doc: Document the exec control API
+534292ce83a987a6af1bdba3573e86ffad5c2b36    DIFFERS     Add API for editing containers metadata.yaml and template files
+3855fdb7fc765d97ac8d8e5e6e868d4511483e8c    DIFFERS     client: Add container template files operations.
+ff7cefc3a1ff4a80bd9661301eddc7647b171f39    IRRELEVANT  doc: Add note on use of previous image from cache
+4b2236160bc2b226ebf79a1e12e4b87b86d3cb7b    FEATURE     Release LXD 2.16
+d68dc9b52ae359ca9085e093c19e0f6a2c4f99b2    IRRELEVANT  Remove deprecated client code
+166683e7c24eba24b7f6eb9cc7ca818c2d858e38    IRRELEVANT  patches: fix canmount=noauto patch
+6928d74c6e7bff6f1c3bb9882f3c298f625b33e3    IRRELEVANT  test: use $storage_backends variable
+7aad31f988254db63ce80a3fce2e6250381be9a3    IRRELEVANT  ceph: add ceph.user.name
+9adc506dc5abd4b644135f0ba755bfb68423a1c7    DIFFERS     Implement instance types as proxy for limits
+bf18c74b9033807597f7ae4c1700c4701e60dd1d    IRRELEVANT  i18n: Update templates
+8d443e3f81a36b32caed05b6339dc3168f6c1e1d    IRRELEVANT  escaping path params in docs
+33b5ae3ed789308de79159b3405be7e8c5f15c3c    IRRELEVANT  ceph: use "/dev/rbd<idx>" via sysfs
+4d0416053f8424d67d1e4accc0e6a7e00924aaf6    IRRELEVANT  ceph: use minimal image feature set for clones
+192af6ad4e96c2ef12015e5fcb342246ed8c9c11    IRRELEVANT  ceph: unmap until EINVAL
+8661a5d35d55855ecab544080645af1126283ee5    IRRELEVANT  Don't use un-initialized structs in import
+d9fd6cf4cecfe468cc0ff34edb0ba4f0fc2e93c9    IRRELEVANT  Fix wrong driver name for log output
+061843cee61654cf13726ea132cd00948afd5672    DIFFERS     client: fix image copy
+3c78a5dcdf4c9608e0f72ff6f9e3815de84b717f    DIFFERS     network: Make "dev" work as a network name
+a85bb57356b8aa89a58dfda58304efee4bb4bf0c    IRRELEVANT  storage/ceph: Fix double --cluster
+09f5db0f09c771f9b5cf3cb65b37e1a1d8240958    FEATURE     lxc/query: Initial implementation of "lxc query"
+302364bb307085d677dc4afa03cdcf24760b5289    IRRELEVANT  i18n: Update templates
+253ae7534d36d2601221623b14951e8aaa9bf2a3    IRRELEVANT  networks: Stop networks on clean shutdown
+8d4208ef81731d0dac5659534b77ec742914c21b    IRRELEVANT  storage/zfs: move some helper functions to storage_zfs_utils.go
+413b08bcdeb6b743290cf487b5319e1fbd8a4c2d    IRRELEVANT  storage/zfs: make zfsPoolCheck a standalone function
+d785aba42beeaf375f412ba10dabd1f7e204e5cb    IRRELEVANT  storage/zfs: make zfsFilesystemEntityDelete a standalone function
+e87df547d40a3d3792039917700f50fc714b129b    IRRELEVANT  storage/zfs: drop zfsPoolVolumeMount
+f379576a30c3fa641a182a4b7768015050be0a20    IRRELEVANT  storage/zfs: drop zfsPoolVolumeUmount
+105d447947b07fb4de86c3614bd699c71b980981    IRRELEVANT  storage/zfs: make zfsPoolListSnapshots a standalone function
+9584d741868b19f6ef75fe9d504cbda0646a1459    IRRELEVANT  storage/zfs: make zfsPoolListSubvolumes a standalone function
+a9b41e81d94351236606439e10f714933d384cbd    IRRELEVANT  storage/zfs: make zfsFilesystemEntityPropertyGet a standalone function
+03cc6ba61304dcc6c87a6ad185d690af523408ba    IRRELEVANT  storage/zfs: make zfsPoolVolumeDestroy a standalone function
+abca18bf9295c05da834ed2d7bb390443c066b01    IRRELEVANT  storage/zfs: make zfsPoolVolumeSnapshotRemovable a standalone function
+55e250124fd4e5e701c9ae22be949bfd3951e0af    IRRELEVANT  storage/zfs: make zfsPoolVolumeCleanup a standalone function
+fdae529d644c4f028be4b393716c1c1d24a4f364    IRRELEVANT  storage/zfs: make zfsPoolVolumeSnapshotRestore a standalone function
+29b6ef3fc8af49c448d0eb3b823217d673a0df14    IRRELEVANT  storage/zfs: make zfsPoolVolumeSnapshotDestroy a standalone function
+f3a1073b648e03c35942407d0b4edf846d11d571    IRRELEVANT  storage/zfs: make zfsPoolVolumeSnapshotCreate a standalone function
+4f9e393a6d2c22726f7928d6e0c3d4d2a042bab2    IRRELEVANT  storage/zfs: make zfsPoolVolumeClone a standalone function
+90baa25bddcc8ab67f2b1106ca25e5984ca40e60    IRRELEVANT  storage/zfs: make zfsPoolVolumeSet a standalone function
+265e69ada96534b31726dfcfbe3ce6ee32372db0    IRRELEVANT  storage/zfs: drop unused zfsPoolGetUsers
+245fb1ac6c7e96c5ef0961ed49f395ef090a5a42    IRRELEVANT  storage/zfs: make zfsFilesystemEntityExists a standalone function
+3ce40ca7acc7a4e58faf6adbae48c8be8e44bcd9    IRRELEVANT  storage/zfs: drop unneeded param from zfsFilesystemEntityPropertyGet
+81034aa68848765a9bf49228c3f6f688750217bd    IRRELEVANT  storage/zfs: make zfsPoolVolumeRename a standalone function
+cb788dbb1b96bc9cbba9c0b86885c9247a025c58    IRRELEVANT  storage/zfs: extract some logic to a standalone zfsPoolCreate function
+06506a0e4a68d84fa775a13c44c878dba2238410    IRRELEVANT  storage: Count custom volumes in pool UsedBy
+f6595d97c95e0eaeaf0e390d40da378ce9f1f539    IRRELEVANT  gpu: fix gpu attach
+566cefab8d6e9fd167ee8d1f6c7005f4138b34c6    IRRELEVANT  i18n: Update templates
+81d5e787ddf46a3791eb1989ae0619f149b1363a    IRRELEVANT  doc: Fix bad JSON in rest-api.md
+a1173318fd424830fea6a86c19dd2555382bd960    IRRELEVANT  networks: Set dnsmasq.raw to be 0644
+4d6ad5664cf33990e6c78966d2f0a7c1b617f047    IRRELEVANT  zfs: Always require existing datasets to be empty
+a736b8401d9ff02f8c6ac829b80724ddfe54dd0b    IRRELEVANT  storage: add doc for volatile.pool.pristine
+cab723b66eabfda50e6fd342da5386bdbd1607a5    IRRELEVANT  storage: add volatile.initial_source key
+7dcf1049334336ed5821437ff8047f233845645f    IRRELEVANT  Make stateful snapshot restores work again
+555e6a7e59e6a842e4e897446cf258adacdd9d62    DIFFERS     shift xattr ACLs uid/gid
+e7202775af5dc122a845eea75b8c53a10ea11a4a    IRRELEVANT  lxc/config: Expose extra certificate functions
+790949910b51ea89c1f2e0eea0d578f90155e81f    DIFFERS     devices: handle empty isolcpus set
+1b83c2a137e8a30430bdbef09ab1ba54be01d906    IRRELEVANT  network: Allow starting LXD without dnsmasq
+1ec2aab643e51d212c8b7ecaabc810e573458d10    IRRELEVANT  Fix networkIptablesClear with missing ip{6}tables
+6c7605ef5c652abcbed349169cea0c943a30d916    IRRELEVANT  storage: fix "size" property
+7ab86a27fd2cf8ddb9193746ae4ef64209c93f40    IRRELEVANT  storage: non-functional changes
+7af4e9919bd12f236b7e6efe802b3fbe013724a3    IRRELEVANT  storage: enable "volume.size" for {btrfs,zfs}
+eae4a025d4677b47fce7e15ec5d51f2ede714e6f    IRRELEVANT  patches: unset "size" for ZFS containers + images
+93467346bb2ad67e50e32c85ab2b512bb85399f8    IRRELEVANT  zfs: coding style
+3950972a5d3df84514f6c710e4b4dcbd284f9798    IRRELEVANT  dir: check if directory is empty
+f6fe7537674c1704d375530d763bd70b459671a0    IRRELEVANT  lxc/image: Wait for the refresh to complete
+6661a8a6ee7b23857ac0c4f370a6e5b6bb400daf    IRRELEVANT  i18n: Update translation templates
+aa18be747e0515d04ba8e409a9ec085a67c483d4    IRRELEVANT  Update translations from weblate
+f9dcb845abd99a74a32618926cfacd06435cc899    DIFFERS     lxd/images: Carry old "cached" value on refresh
+83d933955a03b218d8c9b2a1a732340bda02b4bd    DIFFERS     Allow passing disk devices with the LXD snap
+829bdacefa01d495208c51547b98b3221d48d413    FEATURE     Release LXD 2.17
+a7251e5b526301b72c5d9dbd178ebffdd6b04bb9    IRRELEVANT  doc: Link to release notes and downloads
+4581ee963b87cd6e702909a2afd3a28bc6394b62    IRRELEVANT  doc: Tweak docker instructions
+16f0aecd767da415c961161f1931be150d795365    IRRELEVANT  network: Switch to a directory based dhcp-host
+24a519d3ea2b02bf5ab22501a8c162b420e12ccc    IRRELEVANT  network: Make dnsmasq quiet when not in debug mode
+25c3f6d305cfdcb22d335889560ba4c635d0b7e6    IRRELEVANT  ceph: add "ceph.osd.force_reuse" property
+20daeb655cad67ca36af65c656248fbd9181d3f3    IRRELEVANT  network: Allow for duplicate IPs
+e3920dfbd9919beff10c511808fdd2619e066195    IRRELEVANT  network: Fix bridging devies with IPv6 link-local
+62d951adfc55f210761ceaa8db55478afddda57d    DIFFERS     Fix handling of major and minor numbers in device IDs
+baba9d5e556f76a78dbd3be281c645949597cb2a    IRRELEVANT  ceph: sanitize path return from rbd map
+921a879281e5df197803a624e5c0e9804bd2014c    IRRELEVANT  ceph: add not about filesystems for Ceph cluster
+ac851c1f37263ea4497edf028a23747b7879485e    IRRELEVANT  dir: use bind-mount for pools outside ${LXD_DIR}
+23a2986e9d8c0299b3798f355ef39e31e46ac0b2    IRRELEVANT  patches: make dir pool use bind-mount
+c3f5daed9984a337342764ce3298d8bbdab9a756    IRRELEVANT  tests: resize to 200MB
+f8c137a2a6fe039a899ac47e2a2efc649dfed7e9    IRRELEVANT  ceph: generate new xfs UUID
+48511e4983b11fce5f1db6f17cd7bf3ee7416d93    IRRELEVANT  lvm: generate new xfs UUID on thinpool copy
+cd16ac1098b00c4f393e0671dfce376fd90db27e    IRRELEVANT  ceph: implement resizing
+1e6178955f5b9d8ac1b364b19d47a6f7a5d513e7    IRRELEVANT  lvm: report error on wrong storage type
+94b110e5c15a33747ef13140b65b8468ebc6be2c    IRRELEVANT  lvm: require resize request to be at least 1MB
+e72f794f0395472749c89a5373cea4fd2c1ee7bd    IRRELEVANT  tests: non-functional changes
+ec67d255f096b05e75ed8406c0de24cecb6ee8ec    IRRELEVANT  tests: ceph test volume resizing
+513d99c6846e4d9c85916353c488014850fd5ee8    IRRELEVANT  patches: Move patch to the right part of the file
+d02daa298911dd0a4b1b84e5ad1a627c9ff0e534    IRRELEVANT  patches: Fix broken directory migration
+fd719ced0531efb160d5f09277d60fd1b5d58d76    IRRELEVANT  Rebuild i18n
+4310ac962db40723a74529b00b4cd3f8ea94451d    DIFFERS     lxd/images: Fix private image copy with partial fp
+8a082d22c9b0adf544097a142f653b4b2e133626    DIFFERS     benchmark: move lxd-benchmark to top dir
+ac27120bb6facaa16f130ea193db5db70943532d    IRRELEVANT  ceph: set ACL on container copy
+683194a66fd17eaeca993048ddd4eeb70374e8dd    IRRELEVANT  ceph: use Storage{Start,Stop}()
+fc89ecc331ded4c316094ceab81117684791b481    DIFFERS     test: Don't copy running lvm/ceph containers
+3f3b08858735546747218dd42fd6138fe4326cf8    IRRELEVANT  tests: Limit ceph volumes to 25MB
+060cfc0070a0e704683c141421ade4ed0aced829    IRRELEVANT  storage: Don't mask error messages
+b3e61cbacd5d892a0f7860a23ebe077fd6784be8    IRRELEVANT  storage: Only validate config changes
+7cafa78b27ecde3de2a6402214d296a2f34fccaf    IRRELEVANT  ceph: use uuid when creating zombie storage volumes
+9716e5081ccf541c9add7440af34e1dbd8c786a0    IRRELEVANT  tests: add more ceph tests
+2e5b97927aeaf6a9bf46afb149370ee4171cdadb    IRRELEVANT  tests: container import fixes
+b46957b48cda3088ea7abb63763c999f0952f53b    IRRELEVANT  tests: lower pg number for OSD pools
+adc6d744b5849c5e9c075e65c54c3aab41ed5c73    IRRELEVANT  dir: use correct function
+7257f04e1ba417ac0a70ceb67ef89766f5dcee2d    IRRELEVANT  ceph: fix divide error
+a81eacbf79b4febdcaabf5606b6554ef1315f16e    IRRELEVANT  network: Don't require ipt_checksum
+0d028ea28c9ee6cf0e61a768e277c09fb9f41f12    IRRELEVANT  storage/zfs: use "referenced" property when zfs.use_refquota=true
+437416cf38745633a36e2d257a07ff9f444b1f60    IRRELEVANT  storage: extend makeFSType, remove duplicated mkfs.* code
+2ba5bd1f08147fb8da40b69afeaf4c6ea5878f61    IRRELEVANT  storage: support volume.block.filesystem=btrfs
+8b942c27ff9a203e335ee7950d2e7b3ac27c5c4a    IRRELEVANT  storage: add storage_block_filesystem_btrfs API extension
+9cb022f80613b5840a45ca910fab7f9129972d3c    IRRELEVANT  network: only add --quiet-* options to dnsmasq if version supports them
+f71426436dda81e7c811b88419ab970b967e5784    IRRELEVANT  shared: add helpers to parse/compare versions
+1df8524d921cee3bd0584e3e8e9c525c3a62b306    IRRELEVANT  init: Re-order btrfs questions
+aa9049fc27f260ccd42fbe83dd083427b87ee189    IRRELEVANT  init: Improve default storage backend selection
+ce97914885f2fbc15868a524076f1ed4c45e5fa1    IRRELEVANT  init: Fix btrfs subvolume creation
+1d616bf6637feae442ad30d76e8c678608d8fb40    FEATURE     Release LXD 2.18
+8a96416fca4985b69053e7010b402f10a7f39f0b    IRRELEVANT  storage/lvm: use DottedVersion for version comparison
+dc647553d1094f426ec68ed1337a6e23841efd84    IRRELEVANT  zfs: existence check before delete for pools
+35f6d813e964d3f861636fdd1a1cf760af6a6076    IRRELEVANT  zfs: existence check before custom delete
+1def4ffba5d73ca8a838af20527fbbb5bf740be7    IRRELEVANT  btrfs: existence check before custom delete
+f4cae1384524710b24d93fc3760a94a25f90374b    IRRELEVANT  btrfs: existence check before container delete
+563fe49a18a10d0c18a26092f90f546fcd902840    IRRELEVANT  btrfs: existence check before snapshot delete
+75d6a616bd90f12df8816f5ff64cada6df6bb735    IRRELEVANT  btrfs: existence check before image delete
+b68dd63deb02522e9e206cf084a34affda364ced    IRRELEVANT  lvm: existence check before pool delete
+559c04677c2f328313359686d225b0188319068d    IRRELEVANT  lvm: existence check before custom delete
+24b9aca92bd10ec04c04bc34bfa11d609159d8f2    IRRELEVANT  lvm: existence check before container delete
+05f5a82c64fcaa4c776fc7c1cca4f9335f02b2f6    IRRELEVANT  lvm: existence check before image delete
+6ecf25a3905d2bf700d5e3397eb5ca0bc95f3eb3    IRRELEVANT  ceph: existence check before pool delete
+c96077ac97ba329f0173ca734fa08372623d14db    IRRELEVANT  ceph: existence check before custom delete
+dea3a1a23d81f025563512483fe1ca9f8a09479f    IRRELEVANT  ceph: existence check before container delete
+b0a586b234e249c7b04c067b106e5af9fcaf5156    IRRELEVANT  ceph: existence check before snapshot delete
+bf2a221d1e8f7493dc8bb78cb7471966d1c34c5a    IRRELEVANT  networks: Update dnsmasq on container renames
+2b18196cb6f7fb97a5412cfbfd7a5018b2f1f638    IRRELEVANT  storage: rework storage pool updating
+51889313f94ef2337ab150c50cccf3366ca521d0    IRRELEVANT  storage: rework storage volume updating
+e2bbd734a2e83df57a03b5459b548ab0ec78a6c3    IRRELEVANT  storage/lvm: re-import image on thinpool-based pools if volume filesystem has changed
+fad80547a957ce84553aa2d6bd0507b52a5532ec    IRRELEVANT  storage/storage: re-import image if volume filesystem has changed
+2e272a3e3c65936d77e8a20420a355f1f17a0168    IRRELEVANT  ceph: handle volume.block.filesystem update
+cf8d748673e8ac4edbc8522715dc45affe58cf50    IRRELEVANT  ceph: check for mountpoint before calling umount
+13bea7e56f591a3d3faea1fa7f3aeae72b30bd7b    IRRELEVANT  tests: use 50MB as minimal block dev size for xfs
+02c93305a9d33b5ccf71b5dc5fd471451daf8fec    IRRELEVANT  network: Better handle dnsmasq version checks
+41f676942270591b35e5fb23ee2ad9438fa2b1a0    IRRELEVANT  lvm: non-functional changes
+563c1bba203e505295afd3e57af8e02d7b38e2a2    IRRELEVANT  lvm: mount xfs snapshots with "nouuid"
+41bb04eb3c847ef2ef099a8aaf91a47acabfc13b    IRRELEVANT  btrfs: remove dependency on symlink
+85fdec4de93db6ceede914dc1c9b6aff09b4254c    IRRELEVANT  btrfs: workaround btrfs bug
+2be3ec5d0d4afb355e99afceeab0d129e8eff8a7    IRRELEVANT  test/storage: add tests using btrfs on LVM and ceph volumes
+083ad93250fb7126edba9749398df933abacca2f    IRRELEVANT  storage/utils: add shrinkFileSystem helper
+871672b4325e2ff5568a4b015dd140e746d8fd6b    IRRELEVANT  storage/ceph: use [grow|shrink]FileSystem helpers
+dc93a29be5f3748fc84fc58e7785d34b6e2f66d2    IRRELEVANT  storage/utils: add shrinkVolumeFilesystem helper
+c10ec57e662a52a0a0b0e90c4508c272c710d2ab    IRRELEVANT  storage api: move check for type into api
+01f5bc816489cccbf0ba2d45aada9b3ff47a0a1b    IRRELEVANT  storage: rework container volume properties
+57ea3df9e6d299cf18bc94f558eb547df6a7c800    IRRELEVANT  tests: adapt tests
+f6f2850302950cec63a82a7b4cebaa7388e52e8f    IRRELEVANT  storage/utils: support resizing btrfs-based volumes
+aeab702e0adfd3b167345c319e554eab06406472    IRRELEVANT  add tests for btrfs resize
+7fe4c63609646a54220bf806719a45738b57b76b    IRRELEVANT  migration: stateless incremental containers
+2bf2ee2c635773177292b44de9100e75113e2789    IRRELEVANT  tests: add stateless live migration tests
+e118c75335decc1c37614a7ce09bd46f5cd22f38    IRRELEVANT  migration: fix lvm stateful restores
+f7fde4e33e4c58365a1ac272eef9b3b86dfe7bc2    IRRELEVANT  ceph: correctly implement (none-)live migration
+d27f5318951e6007649cf89d3ec96301a0ad5ecd    IRRELEVANT  lxd import: rewrite
+94f90b267e082b8f6af5baa91c855c121018a6a3    IRRELEVANT  import: check for on-disk only snapshots
+03f0fec629ad33e46336068688bf51511522a9aa    IRRELEVANT  test: update + expand container import tests
+a7b2cf65df7664bcc3392e377367a89f77f1ba04    IRRELEVANT  import: re-create mountpoints + symlinks
+80fab0a88c0fb5b26845bf2966181be984962189    IRRELEVANT  tests: test mountpoint + symlink recreation
+abef0b8bca5f384a4fa8285324a272489d0f62ef    DIFFERS     Move db*.go files into their own db/ sub-package
+dcceac7f964a7250e1e6184da3f9136f3fe00743    DIFFERS     Move lxd/util.go into its own lxd/util/ sub-package
+c3a2b3c4bf6cb3b129c4de1b05d55fd924fb1a96    DIFFERS     Extract Daemon.httpClient into a standalone HTTPClient function
+24ee237c8933859ae284ac396c11a9c3c44c1437    DIFFERS     Move Deamon.CheckTrustState and Deamon.isTrustedClient to lxd/util
+8729e8abc9920e383bd90782cf86c5dab28d2f7b    DIFFERS     Move Daemon.isRecursionRequest to the lxd/util sub-package
+788936ee8f06ccacf329c3d1ef4ed9a8c14372ba    DIFFERS     Extract Daemon.SetupStorageDriver into a standalone function
+c14e0d5f726992fe04d5ee7775e1a8176518d2d2    DIFFERS     Extract Daemon.PasswordCheck into a standalone function
+498787abb16df5a56d989d74d23c141fe771339e    DIFFERS     Add initial lxd/sys sub-package and OperatingSystem structure
+a56fdf9469049102efbd5972b6394b42981fb283    DIFFERS     Move filesystemDetect function into lxd/util subpackage.
+f5eecfab3f5cf67d9270463e6a0ed4003ec50f72    DIFFERS     Move Daemon.lxcpath to OS.LxcPath
+23e9b9de00660401dcee15a066108eb4e6ba151d    DIFFERS     Move Daemon.BackingFs to the OS struct
+230e5dfc71f13decc6830d2d054ea09fc0a56a00    DIFFERS     Move Daemon.IdmapSet to OS.IdmapSet
+282991ec138f3f2b624c938cceadadf11fe9efb2    DIFFERS     Move Daemon.MockMode to OS.MockMode
+beda1f47d2481edf2abef8afe478edc3a2b74539    DIFFERS     Use sql.DB or sys.OS instead of Daemon where possible
+2fe71e31137435e2c172781a89c0f780c7ffeb41    DIFFERS     Replace Daemon with State in all model entities
+524f049836529cf7dd11d8cb3d13177096944b5e    DIFFERS     Finish replacing Daemon with State also in higher-level entity APIs
+39faa5f73c3ece8e3dfd9af4cbfdc3111494c95d    DIFFERS     Wire new schema code into db.go
+6c259c63ba33c870924f9be83dda43cab1cc977d    DIFFERS     Automatically generate database schema from database updates
+04a37e8141475da71f3a55b8fb5fb3cff980da2e    DIFFERS     Plug cmd.Parser into main.go
+a486d7deab78a3724a8a6d0deb8aaa89156734e4    DIFFERS     Add a RunSubCommand helper for executing sub-commands
+b54ed9e30796ea060b11532a69d8283feaf47267    DIFFERS     Plug RunSubCommand into main.go
+f1454333e7720f778e0f6edbeda9040a82ef0bcb    DIFFERS     doc: move README.md to doc/index.md and add link as README.md
+08c930ac175c8a64bda15b1b05d590e23c23d719    DIFFERS     doc: fixes in index.md
+7282f437d06d804c5c7ef4d54d0bf0504f93f093    DIFFERS     doc: fixes in api-extensions.md
+ecca6f7d3b94c4b2292064d3225b547e4b5cc654    DIFFERS     doc: fixes in backup.md
+4c3a2a322b6eb6da47f5f8c5bba62639616bfc75    DIFFERS     doc: fixes in containers.md
+365f41fd2086f7afa97826038446e5e72e0a1836    DIFFERS     doc: fixes in image-handling.md
+70d62aecd917f72f8687a7b42fae7980a59b10e8    DIFFERS     doc: fixes in networks.md
+84bbcc25cdbdb84d11ed87fa0563a2be629f4216    DIFFERS     doc: fixes in preseed.md
+763486781d508a69febe334ed44fd98d408f3f6e    DIFFERS     doc: fixes in production-setup.md
+84ca91a3fd81abd21a7b971a5ce5c0626c92d3c1    DIFFERS     doc: fixes in security.md
+13d8488975a33f3a2738108badd8b37aadce8c8b    DIFFERS     doc: fixes in server.md
+c89e2418de7491d9c47bd0e63319f3294abf8c39    DIFFERS     doc: fixes in storage.md
+cb29648cb118fae7ed9e6312a7f2e1f93f605e43    DIFFERS     doc: fixes in rest-api.md
+69b496ea4077806db9d81b07436804af5e77ff54    IRRELEVANT  storage/utils: add growFileSystem helper
+8fe9c1948b58320a4201019c27be0c676cdb3820    DIFFERS     Fix error message when log path is missing
+646aa67e7c850589117f1b08011bd0082e478b17    DIFFERS     move: use force on delete
+fc6528884afba76fb96043f376d58f4f0271e991    DIFFERS     shared/util: extract helper to get uname
+0002355d93d88880ad708cb7f0cc84a82f573fe8    DIFFERS     shared/util: add helper to create tempfiles
+f512caac5b6f30fb6c226b73350d0180bdd41d38    DIFFERS     shared/version: include OS, architecture and possibly kernel and distro info in User-Agent
+a364b4d99ea6bacf6dabea42d584866746c2c380    DIFFERS     Fix uname handling on some architectures
+5392373b0f380166e9fc4e4c64f0ce8be82bc4d7    DIFFERS     container_lxc: check for container mountpoint too
+b216dd32020b654cd44b139fe149022eec7893aa    DIFFERS     container: remove from db on storage failure
+1eed640f74ac6bab9860dbeed73bdbec818752d0    DIFFERS     shared: move idmap/acl functions to a separate package
+d94af95359f1e5d797744bfabc3232f8fa427ce9    IRRELEVANT  storage: If volume creation fails, delete DB entry
+8949500b56603808f6555e8a49de7cfb765b246c    IRRELEVANT  migration: restore state when moving container
+81a4f459280619bfa4b5a5635bb8ab0eb70edf5a    DIFFERS     rsync: ignore vanished file warnings
+c2961169b1b705c56b96900daea98b82f9d1533e    DIFFERS     util linux: implement mountpoint checking
+7e6ab8682a301ba9fa80a41fd230ac81acb85522    DIFFERS     tests: split out storage-related helper functions
+22bd1212cf2aa21aec8b970a21c6c4dbb657014a    DIFFERS     tests: split out lxc and lxd related helper functions
+4e16d5d7d4139b3f65b78cc4525e8d9cc9709059    DIFFERS     tests: split out network-related helper functions
+26527dc6438ad439e05a8ce163ce2bf702fcb0d3    DIFFERS     tests: split out test setup related helper functions
+abbfddb4325ffc2619b7d2c8c2a0354c6772fc65    DIFFERS     tests: lints
+b6fbd33848c6c735e6e9fa12239a4bdfc1e38d1a    DIFFERS     tests: refactor cleanup functions
+4fd6b5a0ca8fe4a8877510372f6c86c2b3f2c5f9    IRRELEVANT  images: Fix bad error message
+4cdf58d6169fa452d269a589a6cb22eec98f8e85    DIFFERS     doc: Document instance types
+150daff0cad1e32d03e2d7e201dc85c9313fdf39    IRRELEVANT  init: Only nest btrfs if container is on btrfs
+3355a15db861ac1953d7398f2c00b63dd1658052    DIFFERS     tests: Fix shell return value masking
+eec0ae2613c4946182b7cf9407097501aeb9963f    DIFFERS     tests: Fix bad raw.lxc test
+e9312b0072a7b88fdfaa2121b4963288de6288ec    DIFFERS     images: Respect disabled cache expiry
+1f80dd55cc2499639131cc5df4a5286bcfad87aa    DIFFERS     patches: Convert UploadedAt to RFC3399
+f3a38c78342d0949bacc9a0c1edde9dab77bc1e2    DIFFERS     tests: Fix image expiry test
+7f945d1b6bfdb83ffd00fa026c7d42738b8b30e4    DIFFERS     images: Actually get the list of images to remove
+e01e79150ebf888966cbfc93ea3740f62ed22dd8    IRRELEVANT  lxc/storage: Fix remote operations
+8f08d992da6cfc9f82d3a28684e2c371cdaced1a    DIFFERS     test: Setup basic channel handler for triggers
+be3b8ec723fb549dec7fbb060e9889ccb9e881c2    IRRELEVANT  networks: Fix renaming networks
+82fc52a461ff8276fe182b038dd0594cf5a7c73d    FEATURE     resources: add server resource api structs
+e4d5b51799240a7f739afccbd2801ffacc813d82    IRRELEVANT  client: add GetServerResources()
+60736f64d3665aebae141c307a86c48873b2b253    IRRELEVANT  resources: add server resources helpers
+4a6a29f6c9578f21d8e8876b1afdb7c428b41ac0    IRRELEVANT  resources: add server resources api endpoints
+97abb6f419accc99ea1201e7e69e9e97eda8c46f    IRRELEVANT  resources: add storage pool resource api structs
+76a605bb1f0c5b6a8bfafb580efeab64d020300e    IRRELEVANT  client: add GetStoragePoolResources()
+ce01eb85ac9a3e61fcf70e977b7b81c795977053    IRRELEVANT  resources: add storage pool resources helpers
+91ecf21f5e2a54d033bcf82e3752234dd006a466    IRRELEVANT  resources: add storage pool resources api endpoints
+577d8d00bf775fa06af962a419c89c6ad0bf99eb    IRRELEVANT  api: add "resources" extension
+4211655f70577bd81f6b1f45c489772b0a074535    IRRELEVANT  lxc: add "resources" flag to lxc info
+4d0934998f0bbf2b53f814b9d0a782b5ff16064d    IRRELEVANT  lxc: add "resources" flag to lxc storage show
+950fc49bb103ef883355224fc2aab6bfc04f4f87    IRRELEVANT  lxc: make i18n
+d8036df489bb9c7515455ed05be94685c45b1cea    IRRELEVANT  tests: add simple resource api tests
+3c2edb6739cbbdd2e0435a7e3bfa4024628a48f2    IRRELEVANT  ceph: remove size property from osd pools
+e973b0f52d28a7c184bfd1f499505e2afd04b2b3    FEATURE     containers: add limits.kernel.[limit name] support
+d2ffef96dcfb86796453f2d23c7bd96a028f2edc    IRRELEVANT  tests: api extension kernel_limits
+945d48bd3fd5f0e95de19bcdea71e086db6e8aa9    IRRELEVANT  Update translations from weblate
+faad52c7921287f4e1c679d9b4e8dc307f9ea617    DIFFERS     lxd-benchmark: Change name of `spawn` command to `launch`
+aee12554058ecbb6b8c13f4a21c374d809ae2f87    DIFFERS     lxd-benchmark: Add "spawn" as equivalent but deprecated to "launch"
+8b95369d65b0fb87ff22af3263432b76bbae8f97    FEATURE     lxc/profle: add "profile rename" command
+964f5b4e274d8d23e5a496e41f75116b246498d2    IRRELEVANT  lxc/network: add "network rename" command
+f439ddc90e40a4ab616e22b6e6972e6d5c1d5bca    FEATURE     lxc/image: add "image alias rename" command
+950d12a56e1b4f0ec72adb5539151aba64877899    IRRELEVANT  lxc/main: make "rename" a proper command (with its own help)
+f5c252bcc7faddad282a1e3b558de8a3caaa1272    IRRELEVANT  update i18n
+9435722126df4b3fb9024664bd1589a0cb640350    IRRELEVANT  dir: make sure pool is mounted
+d4694e181a7a2879a66474b31916fe75de402dec    IRRELEVANT  dir: check whether pool is already mounted
+bf26aa3cf47c4a8d5105bb20426cc378ab2f4bba    DIFFERS     network: do not update limits unconditionally
+9c2c1e5e22974b20f9362acba1e783c641124418    IRRELEVANT  storage: have "usedby" functions return empty slice
+0a38c0c2b769806c4d77c2e40590b9d137868d0e    IRRELEVANT  api: add StorageVolumePost
+b5a34897d56309b17ddaafa2bf9f46b671eaadf8    IRRELEVANT  api endpoint: add storagePoolVolumeTypePost()
+8d58e80e4939c7eeee1b51359755571e68eef866    IRRELEVANT  storage: storage: add custom volume rename infrastructure
+e634408ac0ed585b21ee5b8a0e20e261090dc5f6    IRRELEVANT  client: add RenameStoragePoolVolume()
+d9853bdf9a67d55ced45c6f52b9e9f22917b0a92    IRRELEVANT  resources: Deal with missing cpufreq directory
+224373abb870b567c7f02d11ffa1ac3b4083eccb    IRRELEVANT  doc: add storage_api_volume_rename extension
+5bd6e88a1490d6682f3c51c86be96304b493e7df    IRRELEVANT  tests: add storage volume rename tests
+6caa9c5d576e12d80a15bb7fa7dcc65fee03d3a3    IRRELEVANT  lxc: implement lxc storage volume rename
+0d0b21eb71745ebc5753d582ef3de6b108e20fb1    IRRELEVANT  lxc: make i18n
+205a45586ad02df597b8bb51b090a08076bba6a3    FEATURE     Release LXD 2.19
+5b33b998a8894611ec24fab72f5f7c64d27ebffe    IRRELEVANT  seccomp: Fix security.syscalls.blacklist handling
+b387544e7cb5da5308abc1cf357582d7543f27b7    DIFFERS     daemon: Improve error on invalid config key
+2b85d657124b7f48843a827d3e12b0e826d1fe09    IRRELEVANT  server: support for macaroons-based authentication
+603ccb0b1f5f4788e72e4ee0f9fddb92f6082eb8    IRRELEVANT  client: support for macaroons-based authentication
+441a55b97f5949612513ba2a919b4a32e8c84a93    IRRELEVANT  config: add support for CookieJar
+829bb4ba709f7bedfbeb87faff4bf8c986f79164    IRRELEVANT  lxc: support for macaroons-based authentication
+80b1fb6cc574833d161c4d5e70f4e110401637bd    IRRELEVANT  doc: add macaroon login flow to security.md
+2caeee19d7627d314ceea51c7079904b107f3569    IRRELEVANT  tests: add tests for external authentication
+63005bd2efc8db0ee9e46206f183359a0af3defe    IRRELEVANT  lxd-benchmark: use NewConfig to get a default configuration
+f10a54063c0c59f685a99c6c68bf9cfee6bc9f98    IRRELEVANT  client: make the authentication Interactor configurable
+319d594848d12afb6be806e03cb0f584054ceab6    IRRELEVANT  client: rebuild i18n
+b9c2935e4f87b498c75234316f1685c601dc8ef6    IRRELEVANT  doc: Fix markdown escaping
+a45b50e732f2779334c45b3a46a31f26fba2384c    IRRELEVANT  Update bash completion
+1747ed4a224806aae2b332fa7355272af8041cf5    DIFFERS     doc: Sort server.md config keys
+b3a94124dda2433938f3b76f71d4ecdd9b1b3043    DIFFERS     doc: Sort container config keys
+33c489134aab55e73d101b44250779af4bbefcd9    IRRELEVANT  doc: Sort network config keys
+bb8e088b22a1ab21c0b2745b9253d4c9703c7baf    IRRELEVANT  doc: Sort storage config keys
+1e65c45577dbb0269c6f606ab242da30263d87c8    IRRELEVANT  tests: Don't use "go install" for bakery server
+332d1097b388a21ff3c1e6f4a6626fa94d7981e4    IRRELEVANT  lxd/daemon: Fix external auth with current bakery
+8eac1fcdc292ad98b3a0d8a6152f170f0b90d277    IRRELEVANT  doc/containers: add nictype=vfio
+0bd7bc0f3068fe5d69194a4d706142769e130202    IRRELEVANT  api extension: add "network_vfio" extension
+e7abce0b0281e38d0b3032b4a6997be1ca9b6b52    IRRELEVANT  container: fix vfio logic
+396cbb42eb9afdaf1037ce6e323c00cb62608c7f    IRRELEVANT  Rename nictype=vfio to nictype=sriov
+47b0b069a712687f4abeb70f177e288f4c0da91b    FEATURE     container: add nictype "vfio"

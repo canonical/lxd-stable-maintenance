@@ -1,0 +1,414 @@
+515fb8d20cde7a4b8179ca45647edc4607a5c35b    FEATURE     do not set the root password in the debian template
+d51f78ed31f88c0d69def88eec38d76cef685b9e    FEATURE     python-lxc: don't use private lxc/namespace.h
+0fbd2f6a8976d27743a532ac6d7cbf384a4cb307    IRRELEVANT  python-lxc: don't use private lxc/utils.h
+58a44782d9a9a24c4f671526918fc58c74fad48c    IRRELEVANT  python-lxc: don't use private lxc/confile.h
+00d98acd9fc067a590ef43d4c6eb02d567da923c    IRRELEVANT  python-lxc: pass include/library dirs as arguments to setup.py
+f2fec47531069731fe066e17a12dca3a5e5d4d9b    IRRELEVANT  python-lxc: search for lxc library and headers using pkg-config
+34c4f72b0137ec749f1e7aef9431d716b3128b75    IRRELEVANT  python-lxc: change distribution name _lxc -> lxc
+f6ab2204b7b2e5f114092ea312181a9aab314186    IRRELEVANT  python-lxc: use setuptools instead of distutils
+371cffc37af4e7af67bad4430d8535c09410a748    IRRELEVANT  python-lxc: always set --root for install command
+0e586abd44259afb501b32a288fe001cd3d858b9    IRRELEVANT  python-lxc: put egg-info into build directory
+2c500c107acf9b9e90d3d190c940a3c4660bce85    IRRELEVANT  python-lxc: follow global rpath setting for autotools builds
+d50cebd6974da307bc4fe8b7e28fbebd204b43ff    FEATURE     lxc-debian: allow to specify a binfmt interpreter
+6ffa329178118e52c79d97d066ee264beab79f99    FEATURE     lxc-debian: add --flush-cache
+4737d51a62570f28e98e4b9735a1aca493cb71ca    FEATURE     lxc-debian: add btrfs support
+60a77c182229855703f859d884ef9584c80fb987    FEATURE     lxc-copy: allow snapshots to be placed on tmpfs
+a361e56278d247ba1127e905130ee1c72ab68871    IRRELEVANT  lxc-copy: update manpage to include tmpfs option
+53a92bbcb6a10026d4fc171b0043ba5087d279ef    IRRELEVANT  doc: Update Japanese lxc-copy(1) to include tmpfs option
+a84c8ed15019bb25d6994bee90405d9b50dc8ca1    IRRELEVANT  doc: Update Korean lxc-copy(1) to include tmpfs option
+8c2e2e8f5319f5e66ca5920f50e835f3f31a908f    IRRELEVANT  bdev: include own getline function in bdev.h
+061f2b8a2b2ba6a6a37b67bece5585f7aa603eb7    IRRELEVANT  Revert "Merge pull request #1103 from brauner/2016-07-27/fix_android_getline"
+64c57ea1579b1832f65ffa41923ae146bb97a213    FEATURE     Add a new logger: syslog and Print the VM name in the logs
+204dfdf28b8461f7dc032cffe8529c49fbcc6fcf    IRRELEVANT  Add documentation for the new syslog logging mechanism
+917420ddcb6757a64b0cb203b502925f266a7dff    IRRELEVANT  doc: Add documentation of lxc.syslog to Japanese lxc.container.conf(5)
+df07390b0e6f306e83e4b857d56727ff3504e065    IRRELEVANT  doc: Add documentation of lxc.syslog to Korean lxc.container.conf(5)
+d8e4899290758cdafb2c33d65b5d319a5fe1ca9b    DIFFERS     bdev: add subdirectories to search path
+ca1e6c0227b53aa860f466b798a1f08509fbbcbd    DIFFERS     tools, tests: reorganize repo
+a8e279fd537184f2300d2b94822bf2a7c63e208b    IRRELEVANT  lxc-copy: do not use mkostemp and dprintf
+bf39edb39ecaea25801d716aebef798885277992    DIFFERS     templates: add more quotes to variables (at least $rootfs should now be covered)
+ade83cbfd1125a6b9ed0b58c67b529598855a6f3    DIFFERS     templates: make shellcheck (Ubuntu: 0.3.7-5 amd64) most possible happy
+c3ff6e245df51051a0e6cfb106e14b37f873fdfe    IRRELEVANT  log: fix log_append_stderr()
+b44c42e8f09eb78f85afb567b7ec847538156ae7    IRRELEVANT  tools: use fclose() after fdopen() + add newline
+487ea5f603996a63f34368cb6c7920a297f6d0b4    FEATURE     templates: add PLD Linux support
+6f943dd9abf5124b05d18db063f934cb45fb5c53    DIFFERS     templates: Add mips hostarch detection to debian
+6f94152de5d3b28e86e67b8fcf1415f9c051ece1    DIFFERS     cleanup: replace tabs wth spaces in usage strings
+76d0127f201400b4c6a32d2cb8114cf8033c4a8d    IRRELEVANT  syslog: simplify and model after lxc log functions
+83319023ca375e0c942ddc1397e214a618ffa7a7    IRRELEVANT  tests: add lxc.syslog tests to get_item
+5a46f2831ee8444c6146345dd0e0ec2a83e4e761    FEATURE     conf, confile: add option for PR_SET_NO_NEW_PRIVS
+029cdff5822b155245df6355e1a774ceb4f415f7    IRRELEVANT  start: set PR_SET_NO_NEW_PRIVS when requested
+1325da7eae056474fcb0e7362927d53e29e4ca2f    IRRELEVANT  attach_options: add LXC_ATTACH_NO_NEW_PRIVS
+ff07d7bb5a3e056eb51e5fe259c79d113435eca5    IRRELEVANT  attach: call lxc_container_new() earlier
+2e812c16a502b03abe79ee00025de50d1928ad5e    IRRELEVANT  attach: use PR_SET_NO_NEW_PRIVS
+222ddc91a818cba50fe23c5166f7662d3da84622    IRRELEVANT  doc: add lxc.no_new_privs to lxc.container.conf
+955e2a0237c7d914fc7561018ebff4970a8b12df    IRRELEVANT  attach, start: declare PR_{S,G}PR_GET_NO_NEW_PRIVS
+bca94305afabaa7c115d7732844230435b766169    IRRELEVANT  tests: add test for PR_SET_NO_NEW_PRIVS
+16e58f07bdd4b79ba7d15f58fc7f4664adb38059    IRRELEVANT  doc: Add lxc.no_new_privs to Japanese lxc.container.conf(5)
+15f919b9ccb2fb519c4fd69a80cc6872540a9ab9    IRRELEVANT  doc: Add lxc.no_new_privs to Korean lxc.container.conf(5)
+bd4307f0c154ace6560082cf449b08f2f567c98c    IRRELEVANT  tools: fix lxc-attach regression with -s USER
+d2d6b991b84353e955c10520840013ec5336a1be    DIFFERS     Define LXC_DEVEL to detect development releases
+adc9b24992995272f11c12bb308c243aea97ffba    DIFFERS     tools: make overlay valid backend
+f6bd219e6b4e373ab4bfb7624ab9d9a50abdeeff    FEATURES    Add voidlinux distribution
+26419a7a73a525ddc012c3e9aa15fbe8d2fcb4b8    DIFFERS     Use libtool for liblxc.so
+c223a53622d25f8753aa4c48313441dce512ec40    IRRELEVANT  Fix environment before importing setuptools
+c5ec44f28972bdc1292962b4a69cece472a06ddf    IRRELEVANT  cleanup: /usr/bin/bash vs /bin/bash consistency
+8467eee7070946dca9c9f2bfbd90fe9fecf35ad2    DIFFERS     add lxc.egg-info to gitignore
+9f99a33fa97a81d395b6522fe7bd51e0ef6af454    FEATURE     lxc-checkpoint: enable dirty memory tracking in criu
+a687256f1dbde991b7afaf8b8f63570ed4671781    DIFFERS     utils: add lxc_preserve_ns()
+738d0deb13040ad6026fd345063c43bd4291babd    DIFFERS     start: add netnsfd to lxc_handler
+64d2fcb5cfe9c82b71461efce42e5ae609730d71    DIFFERS     conf: use lxc_preserve_ns()
+383613cc36b285253fff6adbca2a79516c3e19e0    DIFFERS     attach: use lxc_preserve_ns()
+5d04811edfe9b9ef9aac6fb645560202575b96b8    DIFFERS     lxc_user_nic: use lxc_preserve_ns()
+198cbbaa1d1283cdac929c164f7b9d82503a647b    DIFFERS     conf, start: improve log output
+e97946ae96bccbc3bc36db5a3d4b952d14541171    DIFFERS     conf: explicitly remove veth device from host
+358daf49c0627d382a21fc03464464520218c8fa    DIFFERS     conf, start: be smarter when deleting networks
+4d8ac866fc29a555531029fec797ce7125dd0701    DIFFERS     start, utils: improve preserve_ns()
+408da065fb80f7932274225d6130f5c76ea16a07    DIFFERS     start, error: improve log + non-functional changes
+9662e444d9968b1329b2519d6c1b2855c882c5ba    DIFFERS     start, namespace: move ns_info to namespace.{c,h}
+a052913dd020b73a0881e9f5697e03885b3ca298    DIFFERS     attach, utils: bugfixes
+2681861894e7e64b5b740831c4e937db0b9a914a    DIFFERS     attach: use ns_info[LXC_NS_MAX] struct
+29ed9c13ac360aa5b053f935cee09ef62619ee20    DIFFERS     namespace: always attach to user namespace first
+6f9584d885d1617188321c0d82731c86b543f2cf    DIFFERS     cgroup: improve isolcpus handling
+65d29cbc57fccebdf553b01ba6e4694012d2469d    DIFFERS     cgroups: handle non-existent isolcpus file
+6bc2eafe9094f53fccc1607cab751c1046f83a39    DIFFERS     utils: add lxc_safe_uint()
+57c7adc3c8189a70ff6e4c46274ca9a9b25a8afc    DIFFERS     tests: add unit tests for lxc_safe_uint()
+b5f845e7e0793607837757ea02dac1ccb44e8796    DIFFERS     utils: add lxc_safe_int()
+aa75cefcef4109d636fd5f3cb4da5488a1b6ea88    DIFFERS     tests: add unit tests for lxc_safe_int()
+1c6333988f4b90cd81474e561d453046e27ac7ef    DIFFERS     conf/ile: get ip prefix via lxc_safe_uint()
+d1e5d63673765996b65a98edd3ae9bffe061ac6f    DIFFERS     confile: use lxc_safe_u/int in config_init_{u,g}id
+179199697979d3f5d912b9991f581ef06f93c9e6    DIFFERS     conf/ile: use lxc_safe_uint() in config_pts()
+3590152f01a8e1d4ce36073707f19333fc686c50    DIFFERS     conf/ile: use lxc_safe_u/int() in config_start()
+226dc30e4f007f1eb328c4ce882fc42fd504ef19    DIFFERS     conf/ile: use lxc_safe_uint() in config_monitor()
+1c30b4adbd2b6884bbe680ae794f28ae50a0ca30    DIFFERS     conf/ile: use lxc_safe_uint() in config_tty()
+91863d360bea96e2ff2f52f38c8a735291adadf4    DIFFERS     conf/ile: use lxc_safe_uint() in config_kmsg()
+a56e2df9cf7f319c8e593ad233ec997fd93f0d21    DIFFERS     conf/ile: avoid atoi in config_lsm_aa_incomplete()
+ff6cb4ed82e72bd301a50cc4fc783c13ee2bc5e8    DIFFERS     conf/ile: use lxc_safe_uint() in config_autodev()
+66ffdb1a200186831aedd4a013e0f6663ebe5f32    DIFFERS     conf/ile: avoid atoi() in config_ephemeral()
+e8ec7c9efce14398ec9611de5c04fd26e21cd38f    IRRELEVANT  conf/ile: avoid atoi() in config_no_new_privs()
+2d036ccac09afa4ba3ff031384e5903ef8d662df    DIFFERS     utils: use lxc_safe_int()
+7e5af997d30a75817c5ad9de046948383c914bdd    DIFFERS     lxc_monitord: use lxc_safe_int() && use exit()
+d4cff0d21a47b7de567b343a4de9695021eb5dfe    DIFFERS     start: use lxc_safe_int()
+b7b2fde48f2354fee449d45ed5cc8485e7fe517b    DIFFERS     conf: use lxc_safe_{u}int()
+fb111ba0ad77e0052cf641d229d9ee338afe8ace    DIFFERS     tools/lxc_execute: use lxc_safe_uint()
+0406409813d945d070fa1aa0a0ce515673a3fc39    DIFFERS     tools/lxc_stop: use lxc_safe_uint()
+8c57d93034bbe145df4acbd02c817b8b1bcc5819    DIFFERS     utils: add lxc_safe_long()
+cb9df6d4a795f5c6ebe27fbd162fb6a97f5613c6    DIFFERS     tests: add unit tests for lxc_safe_long()
+2a9a36aa0e94cd4026f47678bf878ea474c9cc84    DIFFERS     tools/lxc_stop: use lxc_safe_long()
+45419e74efb5e601d214db23804e6c4aa95a8822    DIFFERS     tools/lxc_top: use lxc_safe_int()
+98de68602c751ecc963603b30f8bc2faa69c16c7    DIFFERS     tools/lxc_ls: use lxc_safe_uint()
+63610340c20a32f23ad51d1555945123105da447    DIFFERS     tools/lxc_autostart: use lxc_safe_{int,long}()
+31299e70d8fbf403afdd51ba7bed39203a6f3a11    DIFFERS     tools/lxc_console: use lxc_safe_uint()
+d47f1b43c65374715774407f481e7722e17db178    IRRELEVANT  confile: non-functional change
+81f466d05f2a89cb4f122ef7f593ff3f279b165c    DIFFERS     attach: do not send procfd to attached process
+b4c424743aec447437a169837cfe3180a39f2331    DIFFERS     log: use thread-safe localtime_r()
+6a22e862589c9d3e42d2d79fdf7e73a62b8145bd    DIFFERS     configure: check whether gettid() is declared
+0dcdbf8a67534897275795edddd5550993ecc003    DIFFERS     log: fix race
+450b6d3d684000762dab8817825feb6da55b08f4    DIFFERS     log: use N/A if getpid() != gettid() when threaded
+413c294f756684cb683f78fc317c9c5c0953de18    DIFFERS     configure: check for memfd_create()
+c57dbb96588dbb8f79c40268a68fc38605e1f337    DIFFERS     log: drop all timezone conversion functions
+eab15c1ee61d4e71a57f8dd6d1cf85d0bf36b76f    DIFFERS     tree-wide: random macro cleanups
+8ce83369ef2eb2f981317f63cf885925c81e75c9    DIFFERS     attach: non-functional changes
+b420058dd3cbff38afc112a20b299399ce0bba06    FEATURE     attach batch mode with -b flag which prints csv output with a timestamp
+9dba726e16290ef7ca79ef0baf341f3ee2907e71    IRRELEVANT  tools: account for different architectures
+7d4c775a81885c7592b501ca7aa5734079f7997c    DIFFERS     templates/lxc-debian.in: Fix typo in calling dpkg with --print-foreign-architectures option
+576400e5e01b6634bbc8e8fa11beffa71cc4ef45    FEATURE     confile: support the network link string pattern matching
+37fbf44812d94184face96243c2f489a03bd1d77    FEATURE     do not set insecure passwords
+edef9b0e082b816d624d4dbfbcb3d0ee4e0a37a1    FEATURE     Rename fedora template to fedora-legacy
+3d7aa7887ac4ff1a1b01bdfcb5954688b7884c1b    IRRELEVANT  Complete rework of lxc-fedora template
+60fd46237e1d2c3f453b36c24ffd947f1927886b    IRRELEVANT  Also add lxc-fedora-legacy to AC_CONFIG_FILES
+df3e3fa11a6cd7e9a3e1fca781941f2893a9624a    IRRELEVANT  Explicitly mount squashfs in case autodetection fails
+7b40d7287eff585ec8673293bd8db4b70f521412    IRRELEVANT  Fix version comparison
+c172e264de76648f60d5d8f85b2f3e7027f752b5    IRRELEVANT  Fix installing multiple packages given with '--packages'
+f919f5ca113a9ad02624c06baa2416e0e4646732    IRRELEVANT  Fix chroot rpmdb path
+91a5f346123eec598f43932b71b80cc48a60e6da    IRRELEVANT  Restrict package locales to en_US
+11f88f10cd167b865e7dd9172352fb1028367f2b    FEATURE     Add LXC template script of Sabayon OS
+74e7574120b3ab8057f1bd00d3a812dcac102f0d    IRRELEVANT  [lxc-sabayon] Add common scripts for daily image generation.
+9b6fb5d4e33f070a8d9464e78fbaf83e259525c4    FEATURE     debian template: Allow to embed a SSH public key in the new container
+52c4c3682dc0194762949fe2b7318c908c2abb89    IRRELEVANT  Query Fedora mirror list over HTTPS
+577eb5e3e347df7a71b60c713443cad82b18e993    IRRELEVANT  Change Fedora mirror downloads to https by default, rsync optional
+4e133789e1f1f86bb476168d3c78dca7d7cdb053    IRRELEVANT  sabayon: Use /bin/bash
+c898497de8565717ad43d254a1d17df746d8f360    IRRELEVANT  Fix undefined arch on initial bootstrap setup
+509140b0cd3ef113d9b0e9e8c292fd9e7816460f    IRRELEVANT  Various fixes for bootstrap image download via HTTPS
+e93dfa9c34342b16b9698cfda793a2121e1bc916    IRRELEVANT  Adjust indenting
+3256fa1797d3e3cc7240ee809ad43b47122dbfa1    IRRELEVANT  Fix argument parsing for recently added parameters
+3ab18243f20f09272db632cf9339a383fd0ec454    IRRELEVANT  lxc-download: Bump compat level to 4
+288142218ae6cc24bf084fdd5768ad2c83086fb1    FEATURE     lxc-alpine: add community repository to default repositories
+3d288bbe3719fb700fb7ded81488bd0d413dd0b0    IRRELEVANT  [lxc-sabayon] Disable _unprivileged_shift_owner for create unprivileged container images for lxd and lxc-download.
+436ab4be72a2f1b362a7607b0aa1cbb6d4ac13c2    FEATURE     don't set a default password for altlinux, gentoo, openmandriva and pld
+e37dda715615d09543b9e15c181f9e0a422646da    DIFFERS     Add HAVE_LIBCAP
+091045f888b7d372f3f8d6870ca25a16109a9616    DIFFERS     conf/ile: make sure buffer is large enough
+e8672a9d71a2719201496ba45d6e2c1b6d17f40f    IRRELEVANT  fedora: Fix i386 handling
+c6d09e15c5a25fc1a16859e498af2af17b5dfb2f    FEATURE     conf: implement resource limits
+93f9e90d72da6f71e61b4812b94bb4065548cfa5    IRRELEVANT  doc: add lxc.limit to lxc.container.conf
+fe17b651c529c8ed3c1b67e8fb4eabe5b099ca98    IRRELEVANT  test: resource limit config entries
+84ff3af745462126e1a62894d536626056ed3f0b    IRRELEVANT  start: fix error handling when limits fail to apply
+a04f540725551023b016ab1d02a1faae8cb622b0    IRRELEVANT  android: add prlimit implementation for 32bit
+2e6e3febb1da0f631dd94d23496bb8033384f97b    IRRELEVANT  confile: fix musl build
+e7267b539ee4ce304a507b2ac46c7495d20b9a5b    IRRELEVANT  doc: add lxc.limit to lxc.container.conf(5)
+12461428889932e8918553a111bbedaf8fce2db6    FEATURE     lxccontainer: add lxc_config_item_is_supported()
+add40e6270ae06cbdde6ad5c19daa51d05fa3c42    IRRELEVANT  test: add lxc_config_item_is_supported() tests
+82b479119d77af9f0d8213f207133b7bd22ade57    DIFFERS     Merge `ubuntu` and `debian`case
+7c9d733f3de45c9f115c396cf78628db37d3c2c4    FEATURE     add more detail for blkio
+78625a5e3e5b0793eda269256a81804f9559e867    DIFFERS     conf{,ile}: allow to clear all config items
+6b6e702ac83a2bc92959c0dcae5149762826ef30    FEATURE     [lxc-top] Add memory+swap monitoring
+1b67456ce9ebea5a447dd7c198be72a2382bc4d6    IRRELEVANT  [lxc-top] Fix memory+swap output in batch mode
+259642322d5f399a63bcfac6df4acf50a62c75a8    DIFFERS     DO NOT add the handles of adjust winsize when the 'stdin' is not a tty
+7a18f48343ebd95bed5475d09217e16224947a04    IRRELEVANT  confile: config_limit()
+7ca56b841ab8a534acd59c0ceb09a89a48159473    IRRELEVANT  confile: config_syslog()
+809268452646d2d045cd9a59c537cce109ea1a51    IRRELEVANT  confile: config_no_new_privs()
+86444194487413b1eb488b4e082df2b2bd16ddec    IRRELEVANT  conf: clear lxc.syslog
+ee10a69cfc59165756b843d9d9e5df0351a7b42e    IRRELEVANT  confile: config_syslog()
+ebb80f95b8dd2ad5fdff107a040699cd7a21089b    DIFFERS     confile: config_start()
+cf3f8bf6058af54c6d4ab41189ed929526231c75    IRRELEVANT  confile: config_no_new_privs()
+c2e1b07ab72f4fc9b759b86634f12fa2f91bd4d1    DIFFERS     lxc-ls: return all containers by default, new filter - list only defined containers.
+c7b15d1e65ed343df5c39b9f54afa05f2d98508a    DIFFERS     conf: move clearing config items into one place
+0df888ba8856ea21aeaf43822d4e9635d354bca1    DIFFERS     confile: add lxc_get_idmaps()
+8beda89e6a2e172e50f6877c2c4500cfaa4caaeb    DIFFERS     confile: allow to retrieve lxc.haltsignal
+821a76f19c837c73625a43da2bc76aa90755b216    DIFFERS     confile: add prototype for getter
+713046e358fa3e64ee1665c8ac8eed233b339365    DIFFERS     confile: prefix setters with "set_"
+7b992a3ee713fc6e0e0a67f705cc7136ce461ca6    DIFFERS     confile: add getter for lxc.arch
+104c8e6c55ebc80b69c5871d8f4497bc850540d6    DIFFERS     confile: add getter for lxc.aa_profile
+d60d18c6640de76da3223bf2bf86ad7d01a55f2e    DIFFERS     confile: add getter for lxc.aa_allow_incomplete
+b863bf92ac6d81eb4d96ebc9a8c4d933c2a174af    DIFFERS     confile: add getter for lxc.cgroup{.*}
+5014ff2ee8df47d536dd04409d3ce5b0e94664c7    DIFFERS     confile: add getter for lxc.id_map
+466c2e93cc3dc489af003bc4cdb1a7e0d8e0c185    DIFFERS     confile: add getters for lxc.hook{.*}
+afee43246f722997cc7ea22a4558939f72368c36    DIFFERS     confile: add getter for lxc.haltsignal
+3aa8f359be61e37465cdf5eb2df55c2d9cc7e988    DIFFERS     confile: add getter for lxc.rebootsignal
+2e16269f8f288b869bff74049937969bc168ebaf    DIFFERS     confile: add getter for lxc.stopsignal
+54345299427a40649748366eb0bef5bcb5a69b6f    DIFFERS     confile: add getters for lxc.start.*
+de9df15ef50795793b435397433001c17dce00a0    IRRELEVANT  confile: add getter for lxc.syslog
+ac0f949c902d3bd5871e384d7250d47bdeaeb50d    DIFFERS     confile: add getter for lxc.monitor.unshare
+90ec7b6e175d075a4a094baa2fae52493b885fcc    DIFFERS     confile: add getter for lxc.group
+aa0db7d35666c7d5498f1151a4fcbf8a8b3da0fd    DIFFERS     confile: add getter for lxc.environment
+1398e9b102616a885e57770730a8424520c24d72    DIFFERS     confile: add getter for lxc.init_uid
+dfeb7e422eb6efc0f3c043c1ed7b6f799a87700c    DIFFERS     confile: add getter for lxc.init_gid
+62048afe3c8023aa917f4b3dd8478f1c11ef2480    DIFFERS     confile: add getter for lxc.ephemeral
+b09521ac54be365634223eb5ed0270566a254f6e    IRRELEVANT  confile: add getter for lxc.no_new_privs
+389f64669e840ae7b92b54a4a7d9a5c8c57a23f1    IRRELEVANT  confile: add getter for lxc.limit{.*}
+6bede80810610132e3af2873009d4c17aac48d02    DIFFERS     confile: adapt layout of getter callback
+9c61a6d6003146e7bc915ddd2e31ac952118614a    DIFFERS     test: add item clear and config file tests
+504a2217ec102a5e075f5ff54d189db90695ecd1    DIFFERS     confile: final cleanups
+e08cb9012ca38fb95775b563660cbcaa4d99afa2    DIFFERS     confile: add clearer for lxc.personality
+025718fb54e2008d46ab0dd0c7112f846d0a0f54    DIFFERS     confile: add clearer for lxc.aa_profile
+3061e04efe3a12240439c5751cbf4fb23710d339    DIFFERS     confile: add clearer for lxc.lsm_aa_allow_incomplete
+d3a178ded37f84ed74640cc597da0e5c0fecdfa4    DIFFERS     confile: add clearer for lxc.id_map
+d31d0103947881de98fa2305321ef95ccbdc6767    DIFFERS     confile: add clearer for lxc.utsname
+87b288d194309743bcb05bc1edf4b747ddebdb12    DIFFERS     confile: add clearer for lxc.haltsignal
+cae63cfafcbbe2aa5821ea394e125a155a287dee    DIFFERS     confile: add clearer for lxc.rebootsignal
+de45f3a838a192b40549d2e2aad3c60a64f5c412    DIFFERS     confile: add clearer for lxc.stopsignal
+c61822222dfbea8afa54662ccaa26912675a2090    DIFFERS     confile: add clearer for lxc.start.*
+998ca94fb6fbd332d5a407159029083e525d229c    IRRELEVANT  confile: add clearer for lxc.syslog
+adad12caa7703c5a4f74986d333109b7e2e05533    DIFFERS     confile: add clearer for lxc.monitor.unshare
+4850d2237e5d3e6c39f14fd4c1f087825f069afe    DIFFERS     confile: add clearer for lxc.group
+832fb63a0b46c6275ed1d02c0c8bec5e53afc41e    DIFFERS     confile: add clearer for lxc.environment
+8e90af3ecba04f079d88fc67125ed15b5945d9c7    DIFFERS     confile: add clearer for lxc.init_cmd
+ec76dcfb4bb8b81da02c39aa9a96953452a4e95d    DIFFERS     confile: add clearer for lxc.init_uid
+1044b247c42669d734c3625cdcd9df641d6e7df1    DIFFERS     confile: add clearer for lxc.init_gid
+59e370db1fdd22e01ab0bc868fb26dd1f6742f8b    DIFFERS     confile: add clearer for lxc.ephemeral
+b98c5ab00d87390a1f3058bdaa0dd71c8ab0ef9f    IRRELEVANT  confile: add clearer for lxc.no_new_privs
+715ccc969ce9d92d0bd3315d7eaf82a0dac9143d    IRRELEVANT  confile: add clearer for lxc.limit{.*}
+fdf3c5896ee4e711470e7b553c4719ba42fd2ea9    DIFFERS     confile: add clearer for lxc.include
+973082f5663a2768925efcb3e86e59462501ed3b    DIFFERS     confile: add clearer for lxc.include
+ae4ad10d18df504e9a99d837d25b1369d4afb717    DIFFERS     tests: comp retval to exp val whenever we can
+f8aa4bf3089e5c1e74f913bc057725128181c6ee    DIFFERS     conf: use minimal {g,u}id map
+c04f651ededff1d55081770686f57918763abb82    DIFFERS     tests: enforce all methods for config items
+5107af320ab1f5cddb99a423d2587ebd56d1bf69    DIFFERS     seccomp: export the seccomp filter after load it into kernel successful
+73b910a341c8903cb9dda334cc39cf14e46e6106    DIFFERS     API: expose function lxc_log_init
+4b73005c60449ae2c4327ffb5e7f39545cad425e    DIFFERS     tree-wide: priority -> level
+663e99165e10bc59e590f35b11c1ef3883c0b617    DIFFERS     network: mv config_value_empty() to confile_utils
+c7e27aaf3b7995bf4f0dc9a11a6b2476e41ff4d6    DIFFERS     network: add data arg to set callback
+2647140368c523f59881feba090143ccbbc1442c    DIFFERS     network: add arg to config clear method
+ce49441853e191d537ea275763241f2cdf603ea6    IRRELEVANT  confile: adapt warning
+420382d598fd477936e66bd6ef2cb5daaa84f706    FEATURE     default to CentOS 7
+26a38fb6aab5cc0519bf81828ae5e71273dc74f6    FEATURE     confile: remove lxc.kmsg
+39b8f404dcac37eef9bfd0dce5765dbc31a83c1f    FEATURE     confile: remove lxc.pivotdir
+953fe44f7cc25cfe290e8bf204f7baed62f28071    FEATURE     confile: properly namespace security keys
+7fa3f2e9eb31f574662a98041d1373c9af709bd1    FEATURE     replace all lxc.network* with lxc.net*
+82c3a0dc5761f37b9985a05dc2febd56415b61a5    IRRELEVANT  confile: update comment: replace p+12 with p+8
+240d4b74ced3fb9503fa181a3d0ef22fe8847d47    IRRELEVANT  confile: rename lxc.limit to lxc.prlimit
+42e53c29205fe6474239129134cdc617709a2635    FEATURE     confile: rename lxc.devttydir to lxc.tty.dir
+b67771bc26c999ac97028496e12dd2a4fb133d4e    FEATURE     confile: rename lxc.utsname to lxc.uts.name
+bffda95b20d9924046249eae43f2f51df507dbdb    FEATURE     Added '--apt-conf' argument for ALTLinux template.
+f7ac44594838cee9deaff585fef400a7ff08b367    FEATURE     storage: deprecate lxc.rootfs.backend
+3e01c200b1cce9dc42758ecb7c7d4216394d21db    IRRELEVANT  doc: remove lxc.rootfs.backend
+7a96a068f82e0661bb2b39712b7ac735eeda38c1    FEATURE     confile: lxc.rootfs --> lxc.rootfs.path
+3aed4934060af16a4a5509ebc671b95c3e780f31    FEATURE     confile: lxc.console --> lxc.console.path
+47148e96e3577d591400dcdc0d831e6f3fc317ba    FEATURE     confile: lxc.mount --> lxc.mount.fstab
+9ff60df25b8a83a7897b6bd96d06ffa2dc785482    FEATURE     confile: lxc.net.ipv4 --> lxc.net.ipv4.address
+2e44ae28dce6fd3e66c1bfdc442f4377b59370f2    FEATURE     confile: lxc.net.ipv6 --> lxc.net.ipv6.address
+fe1c588797e9103ce45a37435ce20e07d3b15a81    FEATURE     confile: lxc.tty --> lxc.tty.max
+232763d645a893c6dd16b9d41c2cd44b14bebfb8    FEATURE     confile: lxc.pts --> lxc.pty.max
+0b427da0e7dad5d3637b20e8aaaf448d4bff41a3    FEATURE     confile: lxc.seccomp --> lxc.seccomp.profile
+9dcf7b4d23c1014dc85c649786a58f128d3e3a1b    FEATURE     confile: namespace lxc.init keys
+46cc906dc0f1f030c3642a1a7d3e0b9294fe28e2    FEATURE     confile: namespace lxc.log keys
+55c84efcba718fb2b5390c1d2214ea0307e6ccdf    FEATURE     confile: namespace lxc.signal keys
+92e350183244023264af973092cccdb013dea394    DIFFERS     commands: make state server interface flexible
+69e38e009b8a79b1e48e6b32a3af2e8a0ea237a4    FEATURE     doc: s/aa_allow_incomplete/apparmor.allow_incomplete/g
+a1d5fdfd9be3d4aaf9e35f04ade20df555a6e802    FEATURE     doc: s/aa_profile/apparmor.profile/g
+b84702ab432bd44f6d5a649eb0b7a6263ba44d19    FEATURE     doc: s/se_context/selinux.context/g
+501cf9b019c7e47c4eb9f5e97ddf5ed4968477a0    FEATURE     doc: s/seccomp/seccomp.profile/g
+a64f3157a16952594bf9a84b30038178a037dbc2    FEATURE     doc: s/lxc.rootfs/lxc.rootfs.path/g
+5042d96d12bf2181d69864b236e796d884d3ccbb    FEATURE     doc: s/lxc.console/lxc.console.path/g
+0873f85ce7d44242eda1d878189a25298073d78a    FEATURE     doc: s/lxc.tty/lxc.tty.max/g
+e4075f83857c7a13cea1d8120b0d7a4aa05d0cf3    FEATURE     doc: s/lxc.pts/lxc.pty.max/g
+48d5fccf108843c9202607b477b8dbde0285e7aa    FEATURE     doc: s/lxc.mount/lxc.mount.fstab/g
+2c67dc79878ce1f85365ece17e9604546195f9f1    FEATURE     doc: s/lxc.net.ipv4/lxc.net.ipv4.address/g
+08d9d0e5bd76759c21e13304cfe416b0e05371ba    FEATURE     doc: s/lxc.net.ipv6/lxc.net.ipv6.address/g
+a7896f583645513faa931b4d3a67fac85016be94    IRRELEVANT  cgfsng: remove the old workdaround code
+bbc079cf87ed5c1f33e09119c40e972d779a845c    DIFFERS     network: use new network configuration parser
+40db5d2f960351baa63f8cc8db84281b314a867a    DIFFERS     network: abstract network handling
+ff6da29581a1dafb6581db1786e38e0d6b4c36c1    DIFFERS     network: implement network clearing
+519df1c1ac3a4fdd2fec94c91ec8c5c9cc6cd923    DIFFERS     network: clear whole networks
+cccd2219a47cd67d24fa683c16fa23d7f4fc45cc    DIFFERS     network: give getters a void pointer arg
+6bed0fb6008794fbee553dbbe54b9074beb1c755    DIFFERS     network: allow to unset by passing empty value
+9d4bf22d501693dd4e73359f09c35f83a4c401c3    DIFFERS     network: implement network getters
+e5d2fd7c2a97e3ae38085e8ad90ec8deb92a1a0b    DIFFERS     network: final cleanup
+b45e32f9722b383b10ab42a08fb0b7f9fb6b88b1    DIFFERS     network: remove obsolete logic
+ecbb37901e5f9e0911feade29fc21c08865b4374    DIFFERS     network: print deprecaton warning for networks
+0070b1c418211b9b81b72b1b0087d785ea1e6752    DIFFERS     network: switch to single find + allocation fun
+8c58265505fd432242a81b74c6616dddc7f30e61    DIFFERS     network: add test-suite for configuration items
+c302b476322ee7aadef41e0847e34220e5336ea0    DIFFERS     network: preserve backwards compatibility
+9b0df30f9d5d232595a8dff8d15c35da42f13a7c    DIFFERS     network: improve network logging
+e337179a0e6443cd39b8f90e2ca655ff4694c8be    DIFFERS     network: non-functional changes
+d1826cf12dbfb75e16179c1a3e5ed33eccf94c9a    DIFFERS     network: refuse to create unsupported net types
+f9373e40b33f03d242d866486e3b3b85a1257524    DIFFERS     network: new network parser part II
+01aebbc37539a8d25d7c1b7ba4e05c1fb351d9ac    DIFFERS     network: test new network configuration parser
+872e772da6b55526aa953f0c5cb978e1c02a7734    DIFFERS     network: return negative idx for legacy networks
+b61bb540423af86fa700475198a7ef139eed745c    DIFFERS     network: test legacy index based networks
+50a8555e99825bcac0098f550b0e6fc80befa659    DIFFERS     doc: Untabify Japanese lxc.container.conf(5)
+71e287cad386430c41f3a3edf035b63f3af25215    IRRELEVANT  refactor confile code
+e07629138fc4fc2a5698a36e5ddf6c61ceccdb9f    DIFFERS     confile: free netdev->downscript
+ce4be612ceeb5ed2f8243e460b80819cda7983f6    IRRELEVANT  confile_utils: add lxc_config_net_hwaddr
+4a787c27b2a4e42c42e68282a28c9c937765ad8e    IRRELEVANT  confile: supporting new net hwaddr key in network_new_hwaddrs
+ae1dc8b42ee19454205cf3a98a069185f7935bf6    IRRELEVANT  confile_utils: supporting new net hwaddr key in update_hwaddr
+935cfd3e36f0d4dbabd72b58ab63ff4ced294a23    DIFFERS     testcase: define a network before checks
+c2dbbbb6122e1ed1814dc076e4300d30ad3759e7    IRRELEVANT  confile_legacy: fix lxc_clear_nic error
+f2d5a09dcb5794a89d2a9eb6e91c27d9cc87104c    DIFFERS     storage: add storage_utils.{c.h}
+4b19d7429097bef3bd6aefc4087be9bdf4894b87    IRRELEVANT  test: fix tests
+e97055507f384122fe7731f45e1817df980e4662    DIFFERS     storage: prefix all dir paths
+6fc7d8b63ee1b44634010d626a6aad175ff6332b    DIFFERS     fix some cppcheck warnings
+6cd5db20bce261d493cdb9cdb3556fdff66ec777    IRRELEVANT  tests: create temp file before lxc_container_new
+df24d43699dbf1b48ed78e446be3b4c62842ac58    DIFFERS     tests: remove the temp container directory
+a6638e2e98b56e9d923a2a054ba9b5b14345b536    DIFFERS     tests: remove temp lxcpath for attach testcase
+3df9fa8211af2263ff77d235797e10167641e8e4    DIFFERS     test: shortlived daemonized containers
+3f7be9d079b3ff39cf1c5dbf1f80cb5452337c1b    DIFFERS     Sanitize lxc-download script with shellcheck
+e71b47b23995815e37ae0d9e741e2d2103281879    IRRELEVANT  doc: Update Japanese lxc.containers.conf(5)
+35a92cd7af2a2548610753f5b910d6bb3178ae79    IRRELEVANT  doc: Update Japanese lxc-ls(1)
+f30ab9fe2abe94b1f3e46e92014554b88acc3e7d    IRRELEVANT  tests: fix typo
+5ee0b2693e27fc68ecc90a7c6225e54bc80a5ca7    DIFFERS     Add test script to test the ro option of lxc.rootfs.options
+f4152036dd29d59c99e6a9415d6ea121f69c88ec    DIFFERS     start: lxc_setup() after unshare(CLONE_NEWCGROUP)
+c8bf519d7ec4a6e0aa996f8828b5b319b93d0483    FEATURE     Allow full path in lxc.devices.allow
+6273aef16b9409536045b2f337dac7799ed159ff    DIFFERS     Use "rsync -SHaAX" to copy the cached rootfs into place
+72add155247b1949fe69ee7c297b7a5ec8723ffe    IRRELEVANT  Fix up c8bf519d to fit our coding style
+2c2d6c49dd8873f6731e6299a7a64194be161479    IRRELEVANT  Fix some bugs in #1719
+31ee747baa110d3cea080005f773c786edacb3b1    IRRELEVANT  confile: use deindexed network keys
+4222a9f44b57af51d140350160877a807eea96a6    IRRELEVANT  lxccontainer: clear whole indexed networks
+bb461dcca6fa11b5d21d29e1b299dfc0dc1b4b26    IRRELEVANT  test: test for invalid network key
+ba1151756438bde89a4be3a107133656151a2646    DIFFERS     overlay: simplify and adapt to "overlay"
+d91e13d8b569a7c7112dce5e03f7dba252c6eccd    DIFFERS     storage: rework lvm backend
+3d2ae1e20ffd85c488a0b95d27bc716749a5de36    IRRELEVANT  storage: make detect method return bool
+f83dd99ebe5ad48ef4e5cf9d066f56cc741f85fc    IRRELEVANT  storage: add rbd, zfs as block devices
+3ef1df7c33d1da134bcb71949d928b3c4c28cbdb    IRRELEVANT  zfs: rework zfs storage driver
+241978fac5fcb8ed330f8cc90cf896943ac21536    IRRELEVANT  overlay: rework overlay storage driver
+28d832c4e43d16e85f2dfc376ddea1d0fd88c418    DIFFERS     storage: rename files "bdev" -> "storage"
+10bc186195d26e425705eaff84701fb6bee03170    DIFFERS     tree-wide: struct bdev -> struct lxc_storage
+07db51a27ccbe085af6185ff10e091174bee4288    IRRELEVANT  storage: non-functional changes
+79f4b264b6babcd0eba81d6a323438341bd088f3    IRRELEVANT  rsync: remove obsolete helpers
+56050adc92372e2698d61abe66abe0df840d60e4    IRRELEVANT  aufs: mark deprecated
+70e95c8d73384f3afdb569435ab09e6179063a4e    IRRELEVANT  overlay: correctly handle dependency tracking
+7f02248324840f602e2dd7811eea51a7c50b94c2    IRRELEVANT  overlay: simplify logic
+bc8ce5860451a07b8b6244acbb93680d054e500d    FEATURE     start: remove utmp watch
+9d28c4f980502f3bc5b7c6347d1af7bd165336a0    FEATURE     devpts: use max=<count> option on mount
+17a367d84154a248ba2d56aecde24f675399d54c    IRRELEVANT  overlay: correctly restore from snapshot
+307eba8ae3f9d1981bf0db7695cb3d3e28058f2a    DIFFERS     userns.conf: remove obsolete bind-mounts
+52c5ac5f2460bb4f214cbfc9fd72933e1b983893    DIFFERS     debian: Add buster as a valid release
+2a06d041bb9bd9162ef46eec228b84975dbe8404    IRRELEVANT  cgfsng: do not use uninitialized variable
+a3cbac329057e96c9688881a0b61d4678d915a1b    DIFFERS     android: fix includes
+49072f06f746b1957504c62133445ccf04ddb31c    IRRELEVANT  confile: cleanup
+e45d720486113a8f6029a51dae1109527880ebb6    IRRELEVANT  storage: add overlay as valid backend
+7451daf89dbe37deba08cee45ebd032ec6e6b174    IRRELEVANT  confile: improve get_network_config_ops()
+70c1e708fa948596e72d041738947f7e637cc9c7    IRRELEVANT  confile: non-functional changes
+01f55c40982b424ae56bd8753616faecfe8a3456    IRRELEVANT  confile: rework lxc_list_net()
+3aea1a764305bc8ce32aa1e33254e42186a9d171    DIFFERS     confile: non-functional changes
+cfc67626817dc65e397cfc9904498771536de82b    DIFFERS     confile: lxc_listconfigs -> lxc_list_config_items
+a5448c1530ba3778f8a14edc0c4a232db6cbe04b    IRRELEVANT  confile: move lxc_list_net()
+300df83ecfa049baf709251c22ef2b16a4a97aa0    IRRELEVANT  confile: lxc_getconfig() -> lxc_get_config()
+fe9b7349dde985300436c85b234b03cff839b92b    IRRELEVANT  confile: list namespaced keys
+c8313003e8c305c519576a8534c9171beee292ae    IRRELEVANT  test: add test to get subkeys
+35ec13c567c34b962266de4693beb01ceeaf1690    IRRELEVANT  confile: lxc.id_map --> lxc.idmap
+555200a6f4497215a566cb0c162d3b61afdace66    FEATURE     tools: add lxc-update-config.in
+7ec2e32ad779438481a8563f6584c004dde8857e    IRRELEVANT  conf{,ile}: warn user once about legacy config
+fd99824155bddb26749f0c5f3ff7969dad3b9722    IRRELEVANT  templates: remove legacy key from busybox
+861d1adaae13b76ff8d6802746c10ebf798f2370    IRRELEVANT  confile: non-functional changes
+71acf5d0f433c9771927ec1a07396e8522e0b3db    IRRELEVANT  confile: non-functional changes
+d5aba460912ce61cc049fc18690e977d36d88873    IRRELEVANT  confile: non-functional changes
+25a908b818c1fac5e00d710379f3ca0b836307e9    IRRELEVANT  confile: non-functional changes
+1a0e70ace85cbc4d25d4e5f85cc422673d94b583    IRRELEVANT  tree-wide: non-functional changes
+43654d3475f61c239b6b800e0ece6b28f3bfaa2c    FEATURE     confile: add "lxc.cgroup.dir"
+dae8c253dbdbe64702d288e48d06821be5c71f93    IRRELEVANT  tests: add tests for lxc.cgroup.dir
+ebc73a6772ee42453cecc82ed3fb439f89bda4d9    IRRELEVANT  network: non-functional changes
+e771c51d9fb8cd3aa4ab88a87a52f00142973bce    IRRELEVANT  lxc-user-nic: non-functional changes
+6f4f19370433b88557c860a4f5dc2ecbec297275    IRRELEVANT  attach: non-functional changes
+37694da4b5b3dc0ef17ae8372251bd26de58ee4b    IRRELEVANT  lxc-update-config: handle legacy networks
+581c75e7f4f6bb70acd3eb46ae6e52a9d3132661    DIFFERS     openvswitch: delete ports intelligently
+f5c0d3f2cc1566e3f9e35a15846c76c95a335979    DIFFERS     conf: refactor network deletion
+9c538d8a6d025594b22203efbdeee43d3e21cff5    DIFFERS     conf: do not check union on wrong net type
+7d531e9ba482947eaf9be3b19949f24b5e78bb44    IRRELEVANT  cgfsng: add container name to lxc.cgroup.dir value
+92c590ae1ea40bc094603ab49c20b785cc88bb1d    IRRELEVANT  cgfsng: try to delete parent cgroups
+d04e77c34a445dd9caee2a50a5c948e7af706d55    DIFFERS     lxc-user-nic: non-functional changes
+8285dcfb504e02520c9b4cac395dd5a45b1b08d5    DIFFERS     lxc-user-nic: fix memleak
+c92dfebd9eb246e1b0e159e41e903f66aeac5274    DIFFERS     lxc-user-nic: rework renaming net devices
+7a582518b38d6e712f82e0c2bb9b4ef84f29997a    DIFFERS     network: log ifindex
+a055595ca6ebc0d7b64b3b0fcd454a9443a044b9    DIFFERS     network: delete ovs for unprivileged networks
+af256970563c3e95e6cd6d396f2e27da8bd2756f    DIFFERS     lxc-user-nic: non-functional changes
+8b8e00a24d3eafa57bfd5db3f364c6570f0c8f10    DIFFERS     lxc-user-nic: check db before trying to delete
+811ef482114116b82376b6edad2df801ade0da36    DIFFERS     network: non-functional changes
+308a6c946d5226c043953e74f35f74c332e6764d    IRRELEVANT  Revert "cgfsng: try to delete parent cgroups"
+cf7faeb345bf7af7036b15d89652f5c76039ec44    IRRELEVANT  confile: remove unnecessary cleanup code
+3a12c64d9447556dfd6ac0f7e1b76be3e9586286    IRRELEVANT  configure: remove slash from cgroup pattern
+e6ecdcbe1759e74b607728adffd4e190987485d5    IRRELEVANT  Minimal kernel version is now 3.10
+594d6e30d6c86f55c340bf49f0aa15b761d7e627    IRRELEVANT  doc: lxc.sgml.in
+bdcbb6b377528e524094b6cefaae178c6240df51    IRRELEVANT  doc: bugfixes
+e94087c9859b77aa77847c1b474cc886a830001f    IRRELEVANT  change version to 2.1.0 in configure.ac
+b737ac4c8ca4e2a5617781a41db1bb91bf93b324    IRRELEVANT  Switch back to development
+35e21352688ee1072eacd0cb9de03a4e52e3c560    IRRELEVANT  doc: Translate lxc(7) into Japanese
+78be8d75a5972e7797a55ceec3b0aed910f65a84    IRRELEVANT  doc: Add lxc.cgroup.dir to Japanese lxc.container.conf(5)
+64dec99fe12258b11ab713c37ec53dc074a5cd9f    IRRELEVANT  tools: fix lxc-upate-config
+8ce727fcd97e114a44f2d528016efc20b1dda92b    DIFFERS     network: log veth_attr.pair and veth_attr.veth1
+de4855a8bc9cecfff180567889a784d938e4949b    DIFFERS     network: use static memory for net device names
+535e88591d30de27c56ffee0f7e95ffb3e143e7c    DIFFERS     network: non-functional changes
+c6012571f3b42d80b8400b149d57e1099de47a8f    DIFFERS     start: non-functional changes
+7ab1ba029bc91a035291f4b2cf60aafce58ab990    DIFFERS     network: remove netpipe
+d75c14e262cce3d5d200fc5a0c9e502d6301fa91    DIFFERS     utils: add lxc_nic_exists()
+966e9f1fc82662e4f9c330200490c121dacbd7c8    DIFFERS     network: remove allocation from lxc_mkifname()
+35a02107f2b7bbfd84a17499a4a67e29add9c459    DIFFERS     start: document all handler fields
+ed14a30f9012a614e5b5ea103f4a3f96058d1ca9    IRRELEVANT  cleanup: remove unnecessary zeroing
+ee484f7f6851088b16532ea82bce506b1434c05a    DIFFERS     lxccontainer: use userns_exec_full()
+0a29a3ef6a0d128087db842948694c454f7d20eb    IRRELEVANT  doc: add lxc-update-config manpage
+5c05427a60171963fa56d45150374080fe2f223f    DIFFERS     storage: use userns_exec_full()
+180c477a326ce85632249ff16990e8c29db1b6fa    IRRELEVANT  storage/overlay: do not write to invalid memory
+e10e9f59ac308d3e6de57cec3ef479eadb21767c    IRRELEVANT  overlay: fix use after free()
+3b13691dcac9ad02edb67ee067ab31d694ab8dc4    DIFFERS     confile: preserve newlines
+ed8704d040b48c7e248a98a694a39094957b741f    DIFFERS     execute: enable console & standard /dev symlinks
+45b4bb961820074ddee2cdebd3a5feec997e2906    DIFFERS     storage: avoid segfault
+b68c6a71d4e5ecd1def479c8215697a262602efe    DIFFERS     doc: document missing env variables
+eee1a9d7734bb9ad9caf077822a21af694491fa1    IRRELEVANT  Fix typo
+b3646d7e99abb30c526b1e0be72b7c4a373d3a95    DIFFERS     cgfsng: fail when limits fail to apply
+24f84f1e3142373169ee3f6d1d90b13e6cad65d3    IRRELEVANT  zfs: return error directly when zfs creation fails
+4280c0e46dc821d183651de4a82de2d72b7e8cad    IRRELEVANT  lvm: fix thinpool logical volumes
+607a8de5529fb761dba3a22655db0ece36405c5c    IRRELEVANT  doc: Translate lxc-update-config(1) into Japanese
+03df7ab598b6c0e865534c20e9618e5aa73956a0    FEATURE     Add support share pid namespace
+08dd280543e1013dc1a47176167a9572b5450eb8    FEATURE     add a start-host hook (v2)
+5cda27c18f15ca234fb46ed8a46f7e92984adbd4    FEATURE     support lxc.execute.cmd container configuration option
+0ef43a5c1d635835950335375f0dd71bf1abe384    FEATURE     Add OCI container creation template
+9b5396f9d55aa5a251bfeaba1cd4e97e3183f387    IRRELEVANT  cgfsng: check whether we have a conf
+3dca1af064e3ac25be7deeff1aca9f41ea935358    IRRELEVANT  implement lxc_string_split_quoted
+727fd34960b2635015e5e9b5780e0d67cbb08992    IRRELEVANT  tools: remove lxc.pivotdir and lxc.kmsg entries
+63bab717a81bcd5280442c902df8ac664de71244    IRRELEVANT  confile: ignore lxc.kmsg and lxc.pivotdir
+1e074e8ebec83a77176eae51736f1ff7e8052a89    IRRELEVANT  doc: Add lxc.hook.start-host to Japanese lxc.container.conf(5)
+fcd95ae926eb10a785d77112219272d7b9c5b494    IRRELEVANT  doc: Update lxc.{execute,init}.cmd in lxc.container.conf(5)
+70952c01b89c8faecb9e811428aacaffd2c9d4ab    IRRELEVANT  confile: make update warning opt-in
+a6f151a7ce1c67f75663e9f23a1ae6e691443d15    IRRELEVANT  init: rework dumb init
+0d9cd9c37a7fa1dabec171a2b2f95d21ad6d0730    FEATURE     lxccontainer: implement container live patching
+af54d8e68bfe5d85feb7ba5366084b5d3c3792ae    IRRELEVANT  tests: test container live patching
+dcf33b9471c180f485a1a9f114141508fd7ac5df    IRRELEVANT  lxccontainer: preserve ABI compatibility
+714608316e4dd6216c68b663666e98962b6a8bae    IRRELEVANT  Use the proper type for rlim_t, fixing build failure on x32.

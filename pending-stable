@@ -1,0 +1,62 @@
+#!/bin/sh -eu
+PROJECT=$(basename "$(pwd)")
+BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d/ -f2)
+INTERACTIVE="false"
+if [ "${1:-}" = "-i" ]; then
+    INTERACTIVE="true"
+fi
+
+OLD_IFS=${IFS}
+IFS='
+'
+for line in $(git cherry "lxc/${BRANCH}" "lxc/master" -v); do
+    IFS=${OLD_IFS}
+    set -- $line
+
+    [ "$1" = "+" ] || continue
+
+    grep -q "^$2" "${HOME}/data/code/lxc/ignored-commits/${PROJECT}/${BRANCH}" && continue
+
+    shift
+    if [ "$INTERACTIVE" = "true" ]; then
+        while :; do
+            echo "$*"
+            printf "(A)pply / (S)kip / (F)eature / (I)rrelevant / (D)iffers / (V)iew) / (Q)uit: "
+            read input
+            case "${input}" in
+                A|a)
+                    git cherry-pick "${1}" || exit 1
+                ;;
+                S|s)
+                    break
+                ;;
+                F|f|I|i|D|d)
+                    LINE="$1"
+                    shift
+                    if [ "${input}" = "F" ] || [ "${input}" = "f" ]; then
+                        LINE="${LINE}    FEATURE     $*"
+                    elif [ "${input}" = "I" ] || [ "${input}" = "i" ]; then
+                        LINE="${LINE}    IRRELEVANT  $*"
+                    else
+                        LINE="${LINE}    DIFFERS     $*"
+                    fi
+                    echo "${LINE}" >> "${HOME}/data/code/lxc/ignored-commits/${PROJECT}/${BRANCH}"
+                ;;
+                V|v)
+                    git show "${1}"
+                    continue
+                ;;
+                Q|q)
+                    exit 0
+                ;;
+                *)
+                    echo "Invalid input."
+                    continue
+                ;;
+            esac
+            break
+        done
+    else
+        echo "$*"
+    fi
+done
