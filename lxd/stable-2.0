@@ -1506,3 +1506,4 @@ e7abce0b0281e38d0b3032b4a6997be1ca9b6b52    IRRELEVANT  container: fix vfio logi
 396cbb42eb9afdaf1037ce6e323c00cb62608c7f    IRRELEVANT  Rename nictype=vfio to nictype=sriov
 47b0b069a712687f4abeb70f177e288f4c0da91b    FEATURE     container: add nictype "vfio"
 81592a91591ba36b4159dfe7ba5fc2a088f4609a    DIFFERS     all: move to bakery.v2
+e190d1203d8db03bf4e6b0be262b068330d8c9f1    DIFFERS     Make current gofmt happy
