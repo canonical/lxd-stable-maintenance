@@ -37,6 +37,7 @@ push() {
 
         set -x
         cd "${SOURCE}"
+        git pull --ff-only
         git commit -s -e -m "${PROJECT}/${BRANCH}: Update commit list" "${PROJECT}/${BRANCH}"
         git push
     )
