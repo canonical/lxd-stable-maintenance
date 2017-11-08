@@ -1510,3 +1510,6 @@ e190d1203d8db03bf4e6b0be262b068330d8c9f1    DIFFERS     Make current gofmt happy
 6d6850628de864ed24d3d502839621e150f33c92    IRRELEVANT  tests: Download dependencies for external auth
 086becec96b38020e1a9477f30ea070056464a74    IRRELEVANT  tests: Skip prlimits on liblxc < 2.1
 6901721595da86226bdc26be902c186889d9c852    IRRELEVANT  networks: Don't require a 1400 MTU with tunnels
+aa06bf79757eba85331610fe4e4b69afc957098e    DIFFERS     liblxc: detect version at runtime
+caaa92bd2df9bdbea7039521f0846f3802a64b86    DIFFERS     Update for newer ZFS releases
+a485b62f86b0c1e15bb134f15ea5ba99b5d7ecc4    DIFFERS     zfs: try pool import
