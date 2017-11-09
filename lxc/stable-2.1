@@ -11,3 +11,19 @@ fcd95ae926eb10a785d77112219272d7b9c5b494    IRRELEVANT  doc: Update lxc.{execute
 af54d8e68bfe5d85feb7ba5366084b5d3c3792ae    IRRELEVANT  tests: test container live patching
 dcf33b9471c180f485a1a9f114141508fd7ac5df    IRRELEVANT  lxccontainer: preserve ABI compatibility
 f749d524f18a8b8ae29df6ccbdb05c949f409cff    DIFFERS     utils: move memfd_create() definition
+f3d05ee66dbf0e8283a2eeb6321e1bc7dfcb3034    FEATURE     ringbuf: implement simple and efficient ringbuffer
+a04220de0b0f402b0f312ba514bc382d39d0e05c    FEATURE     confile: add lxc.console.logsize
+732375f5f5363f4eb0d4b4575f509f764c76ea1d    FEATURE     console: add ringbuffer
+47d556f517e4c32512eb9aac6e59f9d83722163c    DIFFERS     Call lxc_config_define_load from lxc_execute again
+28d9e29e18dcdae5bb9efb5613069d9fa658ea26    FEATURE     confile: add lxc.namespace.<namespace-key>
+fa3a5b220528f55c0e7eae4b708729256e71397c    FEATURE     start: rework ns sharing + add userns sharing
+baed7c1b584423a121cdf21c39d89cbb006b76bc    FEATURE     start: only preserve CLONE_NEWCGROUP when supported
+6e5fc7a5c7d264989fd1df256d0929a9cd3d382f    DIFFERS     start: close non-needed file descriptors
+fe84a562c2d0238f3a120f903d3b057c115e9177    DIFFERS     commands: non-functional changes
+191d43cca94ec7141c0f160715c1103dda969ec2    FEATURE     lxccontainer: add console_log() API extension
+3b988b33d924557b8ab88817ccf46f585a02cec6    FEATURE     console: move ringbuffer into lxc_console_create()
+40117d053194dafd05b24b361632d2f686ff639b    FEATURE     console: write ringbuffer to disk
+63b74cdaf799951309e17ef057dac73941090745    FEATURE     console: add "write_logfile" to console_log struct
+a52c1c68cfeeaaf27768608b7179d53d8efb8122    FEATURE     tests: add tests for console_log()
+e3db0162ff48d45b43ed94ff4ba4e6115df6d572    DIFFERS     utils: parse_byte_size_string()
+2ea479c9a6a40a8351b9781a6c87edaf561965c0    DIFFERS     confile_utils: add lxc_get_conf_uint64()
