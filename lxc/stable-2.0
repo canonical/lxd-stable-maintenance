@@ -440,3 +440,4 @@ f749d524f18a8b8ae29df6ccbdb05c949f409cff    DIFFERS     utils: move memfd_create
 e3db0162ff48d45b43ed94ff4ba4e6115df6d572    DIFFERS     utils: parse_byte_size_string()
 eef2ab44757d30cad48a1d8cbc0907fbf715be2e    DIFFERS     storage: switch to ext4 as default filesystem
 960f15bffef79b4359957e541250d671089f8181    FEATURE     lxc-oci: correctly handle --url
+be44259825f7ad5f878a9c57011699bd71937569    FEATURE     tools: add "--daemonize/-d"
