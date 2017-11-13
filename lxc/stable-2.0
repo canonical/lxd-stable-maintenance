@@ -441,3 +441,4 @@ e3db0162ff48d45b43ed94ff4ba4e6115df6d572    DIFFERS     utils: parse_byte_size_s
 eef2ab44757d30cad48a1d8cbc0907fbf715be2e    DIFFERS     storage: switch to ext4 as default filesystem
 960f15bffef79b4359957e541250d671089f8181    FEATURE     lxc-oci: correctly handle --url
 be44259825f7ad5f878a9c57011699bd71937569    FEATURE     tools: add "--daemonize/-d"
+d59f08f3acbc12b2de53f032ea8b415293275c46    FEATURE     lvm: generate new UUID for xfs + btrfs filesystems
