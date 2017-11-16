@@ -1516,3 +1516,4 @@ a485b62f86b0c1e15bb134f15ea5ba99b5d7ecc4    DIFFERS     zfs: try pool import
 9feefe38cbb2446403d81b0378264f87615da06e    IRRELEVANT  lxc/network: Fix error message
 ab8924e44d50478b3cf9e6a401c7ea6dc33b1447    FEATURE     lxc/operation: Add new command
 c64a1c834d82b6d848a0106f10410a858d42fdb4    IRRELEVANT  i18n: Update translation templates
+2432772abe4a5fe610db99e0100d0482da3f2ac1    IRRELEVANT  Drop support for "setup mode"
