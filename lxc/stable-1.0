@@ -1802,3 +1802,73 @@ a427e2686bd9f99c7c943590c2bec69d99acc340    IRRELEVANT  conf: error out on too m
 c86234b601b0bfe0f927f60ecae8884912f91da2    DIFFERS     Change locale "en-US.UTF-8" to "en_US.UTF-8"
 291f64ac27813451f4045e512a8f2c3e425af254    IRRELEVANT  Fix a format string build failure on x32.
 714608316e4dd6216c68b663666e98962b6a8bae    IRRELEVANT  Use the proper type for rlim_t, fixing build failure on x32.
+a254b67cf22802e62571a52e70fe9d5aa4d233b4    IRRELEVANT  Fix start of Sabayon unprivileged containers
+f749d524f18a8b8ae29df6ccbdb05c949f409cff    IRRELEVANT  utils: move memfd_create() definition
+b499121f1fd0729d84a64458038a01f7009d707c    IRRELEVANT  utils: add lxc_cloexec()
+127c6e703b0a10b68aef44e8951b0507d72efd90    IRRELEVANT  utils: add lxc_make_tmpfile()
+e46361235c04c10a9dfb5f2485e23a187fae9189    IRRELEVANT  utils: add lxc_getpagesize()
+f3d05ee66dbf0e8283a2eeb6321e1bc7dfcb3034    IRRELEVANT  ringbuf: implement simple and efficient ringbuffer
+b037bc675b33363ace7a244ae6e698d0638d2256    IRRELEVANT  utils: add lxc_safe_long_long()
+e3db0162ff48d45b43ed94ff4ba4e6115df6d572    IRRELEVANT  utils: parse_byte_size_string()
+6222c3f48b87940377dec082c300770b1c773611    IRRELEVANT  utils: add lxc_find_next_power2()
+2ea479c9a6a40a8351b9781a6c87edaf561965c0    IRRELEVANT  confile_utils: add lxc_get_conf_uint64()
+a04220de0b0f402b0f312ba514bc382d39d0e05c    IRRELEVANT  confile: add lxc.console.logsize
+7f135597a271499cd323899f9a5de099b2469db9    IRRELEVANT  conf: lxc_setup() -> lxc_setup_child()
+732375f5f5363f4eb0d4b4575f509f764c76ea1d    FEATURE     console: add ringbuffer
+a2028b8f5ff873ebee3a66cee9c2e99310b235f8    IRRELEVANT  namespace: use lxc_getpagesize()
+5e5129d75140fdf918b31a766f5ad891632548a9    IRRELEVANT  tools: allow lxc-attach to undefined containers
+47d556f517e4c32512eb9aac6e59f9d83722163c    IRRELEVANT  Call lxc_config_define_load from lxc_execute again
+09a4c380637e53f66a907071672ee1981d071b67    IRRELEVANT  Fix typo in lxc-net script
+299d11981846980e50d0c6ea50c4a9e8c9bca6a3    IRRELEVANT  attach: correctly handle namespace inheritance
+cdfe90a49f516b0f1210d181980f14a4765e10da    IRRELEVANT  cgfsng: fix cgroup2 detection
+b635e92d21d2a4d71a553388f18cfa08f44bf1ba    IRRELEVANT  cgroups: enable container without CAP_SYS_ADMIN
+f48b5fd8ab03c200eaf5e3a9b03bcd01b2659cf3    IRRELEVANT  Fix compilation on toolchain without prlimit
+baebdaf95a10f6e06913bc90768fd92152c6aa2a    IRRELEVANT  Add missing lxc_container_put
+f0ecc19d8f61a972a0b508a40bf021d91ef34bb3    IRRELEVANT  handler: make name argument const
+28d9e29e18dcdae5bb9efb5613069d9fa658ea26    FEATURE     confile: add lxc.namespace.<namespace-key>
+fa3a5b220528f55c0e7eae4b708729256e71397c    IRRELEVANT  start: rework ns sharing + add userns sharing
+686dd5d1142359d73090cbc964131f256a540b4f    IRRELEVANT  conf: reap child in all cases
+995accccbb07d59381aa60939cd44b41dc092dda    IRRELEVANT  lxc/start.c: Fix legacy PR_{G,S}ET_NO_NEW_PRIVS handling
+baed7c1b584423a121cdf21c39d89cbb006b76bc    IRRELEVANT  start: only preserve CLONE_NEWCGROUP when supported
+877f3a0452b0455e727142024c1d617e61974c45    IRRELEVANT  attach: handle namespace inheritance
+411ac6d85404ee835032693efffbe91f49624755    IRRELEVANT  cgroups/cgfsng: keep mountpoint intact
+ae5e6c085676e144212e0af91f7fc78ff9f060c2    IRRELEVANT  cgroups/cgfsng: make sure pointer is NULL
+058c1cb6313924501884c39ea77c084b0ff7a435    IRRELEVANT  cgroups/cgfsng: cgfsns_chown() -> cgfsng_chown()
+a760603e3b60e683fd6fd1c7759b10bfb0e432ad    IRRELEVANT  cgroups/cgfsng: support MS_READONLY with cgroup ns
+4e4832eeb388608b03dbda3bc3bf28a9072a72d3    DIFFERS     lxc-start: remove unnecessary checks
+2469f9b65e46b559e51ebeb3d1f6107f5408cfcf    IRRELEVANT  monitor: do not log useless warnings
+6b9f82a9f552a92698d15ab605468f757ccbd32c    IRRELEVANT  network: reap child in all cases
+eef2ab44757d30cad48a1d8cbc0907fbf715be2e    FEATURE     storage: switch to ext4 as default filesystem
+13bc61135937c304c991f1f90ffd6d3e5d8e4521    IRRELEVANT  tools: fix help output of lxc-create
+c2712f64d5c34c33bb155b958fbd3486f3e4a7c4    IRRELEVANT  cgroupfs/cgfsng: tweak logging
+e2695f0e02f770bec5e89fdcde6d28719c551df7    IRRELEVANT  cgroups/cgfsng: remove is_lxcfs()
+e2deb1d83d44346c8f52b2b7ea447b6abeec5c38    IRRELEVANT  cgroups/cgfsng: fix get_controllers() for cgroup2
+49ff3958828dbcebcdf0c3f071c2a79a02ad436d    IRRELEVANT  cgroupfs/cgfsng: improve cgroup2 handling
+fe84a562c2d0238f3a120f903d3b057c115e9177    IRRELEVANT  commands: non-functional changes
+191d43cca94ec7141c0f160715c1103dda969ec2    FEATURE     lxccontainer: add console_log() API extension
+69629c82436874e01a6eb50308a7657a298335d8    IRRELEVANT  console: non-functional changes
+3b988b33d924557b8ab88817ccf46f585a02cec6    IRRELEVANT  console: move ringbuffer into lxc_console_create()
+40117d053194dafd05b24b361632d2f686ff639b    IRRELEVANT  console: write ringbuffer to disk
+63b74cdaf799951309e17ef057dac73941090745    IRRELEVANT  console: add "write_logfile" to console_log struct
+33b4b4115f0d27b1f72c91c9c6f40a38ae4af910    IRRELEVANT  console: non-functional changes
+a52c1c68cfeeaaf27768608b7179d53d8efb8122    IRRELEVANT  tests: add tests for console_log()
+0e17357c37c79323b067f42258b863e3dbb6c18a    IRRELEVANT  cgroups/cgfsng: adapt to new cgroup2 delegation
+f0ccfa13714d81dc240d7bc045e54576cd7e12fc    IRRELEVANT  tools/lxc_attach: removed api logging
+960f15bffef79b4359957e541250d671089f8181    IRRELEVANT  lxc-oci: correctly handle --url
+6834f805776414a3c67bde327b2ca71f52d27b20    IRRELEVANT  console: fix console info message
+b79628fcfb076fa56d012a255b7434041817eebc    IRRELEVANT  Add missing dependency libunistring
+9605460f1cbaec5d65f6dc7bc6fa6aca9addfd3d    FEATURE     lxccontainer: enable daemonized app containers
+be44259825f7ad5f878a9c57011699bd71937569    IRRELEVANT  tools: add "--daemonize/-d"
+0519b5cce799cca7c1b493c27bdaacb1fe589906    IRRELEVANT  console: prepare for generic signal handler
+d59f08f3acbc12b2de53f032ea8b415293275c46    IRRELEVANT  lvm: generate new UUID for xfs + btrfs filesystems
+6e5fc7a5c7d264989fd1df256d0929a9cd3d382f    IRRELEVANT  start: close non-needed file descriptors
+a9e1109e0773b8197ec91ce962e3a4233a737050    DIFFERS     start: close data socket in parent
+be5c06ece41398ba2db4630c2a37c71cbfe466b8    IRRELEVANT  log: check for i/o error with vsnprintf()
+706f1101abad503c93442011f3a682d39472cd58    IRRELEVANT  lxc-test-unpriv: fix the overlayfs mount error
+ba773996a5ed0fb065f290d922767601b72f4315    IRRELEVANT  attach: allow attach with empty conf
+1349e92e4d23f72cc2969d54b77ade9b11eaddd1    IRRELEVANT  console: exit mainloop on SIGTERM
+61fa13293d735d922ba6e5ceb66f6d8718f1a829    DIFFERS     lxc-debian: allow creating `testing` and `unstable`
+c99055ea6d64e003b489e01a0379275699c794d0    DIFFERS     lxc-debian: don't write C.* locales to /etc/locale.gen
+dba285d5dfa7e9f3452dc180e64158d9bedfb410    DIFFERS     lxc-debian: don't hardcode valid releases
+0d8e40c687e3ac3078621fc18dab681560a8cae7    IRRELEVANT  config: remove SIGRTMIN+14 as lxc.signal.stop
+686df166906b62317cd82fdc94db7a6e29fee423    DIFFERS     console: report detach message on demand
