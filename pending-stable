@@ -9,13 +9,21 @@ run_conditional() {
     read -r input
     case "${input}" in
         N|n|No|no)
-            return
+            return 1
         ;;
 
         *)
             ${1}
+            return 0
         ;;
     esac
+}
+
+abort() {
+    (
+        set -x
+        git cherry-pick --abort
+    )
 }
 
 pull() {
@@ -48,11 +56,11 @@ if [ "${1:-}" = "-i" ]; then
     INTERACTIVE="true"
 
     printf "Refresh the list of processed commits [Y/n]? "
-    run_conditional pull
+    run_conditional pull || true
 
     commit() {
         printf "Push the new list of processed commits [Y/n]? "
-        run_conditional push
+        run_conditional push || true
     }
 
     trap commit EXIT
@@ -78,7 +86,11 @@ for line in $(git cherry "lxc/${BRANCH}" "lxc/master" -v); do
             read -r input
             case "${input}" in
                 A|a)
-                    git cherry-pick "${1}" || exit 1
+                    if ! git cherry-pick "${1}"; then
+                        echo ""
+                        printf "Skip this commit for now [Y/n]? "
+                        run_conditional abort || exit 1
+                    fi
                 ;;
                 S|s)
                     break
