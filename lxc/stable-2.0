@@ -442,3 +442,13 @@ eef2ab44757d30cad48a1d8cbc0907fbf715be2e    DIFFERS     storage: switch to ext4 
 960f15bffef79b4359957e541250d671089f8181    FEATURE     lxc-oci: correctly handle --url
 be44259825f7ad5f878a9c57011699bd71937569    FEATURE     tools: add "--daemonize/-d"
 d59f08f3acbc12b2de53f032ea8b415293275c46    FEATURE     lvm: generate new UUID for xfs + btrfs filesystems
+0519b5cce799cca7c1b493c27bdaacb1fe589906    IRRELEVANT  console: prepare for generic signal handler
+28f3b1cdbec39afc17843c12b018584e801fdf11    FEATURE     confile: add lxc.console.buffer.size
+3a784510e314b3d161663c5240ff32532c349c2c    FEATURE     confile: add lxc.console.buffer.logfile
+d91adfa6123ac2c884fac6dbe74c823cb4eafe5b    FEATURE     confile: add lxc.console.rotate
+5928191e83fdb99e45b830f0a7b95bd99eca1d4f    FEATURE     commands: only set ringbuffer datalen when needed
+a030916834aee82c34a015e9c24d8babe2f265c8    FEATURE     console: split console setup into logical parts
+cf685555b3817bfd0a69eefb7a08a3eec647bcc9    FEATURE     commands: truncate console ringbuffer log file
+966b9ecd95f5b6249ece8fdaae1610d10d17eec7    FEATURE     commands: rotate console log file
+8a2404e982ddff78d41599a5ae47242c69c6776c    FEATURE     test: expand console log tests
+716495668b9fc02fabee48fe2a24c70b88a8226b    FEATURE     Fix namespace config parse error
