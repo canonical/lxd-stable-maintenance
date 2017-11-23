@@ -1517,3 +1517,13 @@ a485b62f86b0c1e15bb134f15ea5ba99b5d7ecc4    DIFFERS     zfs: try pool import
 ab8924e44d50478b3cf9e6a401c7ea6dc33b1447    FEATURE     lxc/operation: Add new command
 c64a1c834d82b6d848a0106f10410a858d42fdb4    IRRELEVANT  i18n: Update translation templates
 2432772abe4a5fe610db99e0100d0482da3f2ac1    IRRELEVANT  Drop support for "setup mode"
+53f417c5a670a04e3e83e35cfda1d11a09cab600    DIFFERS     Move execPath global variable to sys.OS.ExecPath
+faa651caef06d73ef34fbba16ead978e5e20f261    DIFFERS     Move global runningInUserns global variable to sys.OS
+04915510ac48f6dda846d0f57e43f6ef9b422140    DIFFERS     Move global aaAdmin global variable to sys.OS
+0484d1123f566f53e5e720b5e0a3cc840b29835b    DIFFERS     Move global cgBlkioController global variable to sys.OS
+308179236c6f15848693760423c408ac39e6a116    DIFFERS     Move global cgCpuController global variable to sys.OS
+5a56b935c50fc5536d2288c6d46644ec999084d3    DIFFERS     Move remaining global cgXXX global variables to sys.OS
+1d146a2a6489a10a2eb8a6bbdd63a958ca0906d2    DIFFERS     Move directory initialization to sys.OS.
+680b3e7e2b8625d8066ab75215bd665f283605d5    DIFFERS     Drop unnecessary checks on MockMode
+a121b9d13cf941c3e1881641b0427bad8ef8786d    DIFFERS     Add a endpoints.Endpoints class for managing HTTP endpoints
+c42dad2d32f90240a5d0572cce3d0d0e7c8fd99b    DIFFERS     Wire endpoints.Endpoints into Daemon
