@@ -1527,3 +1527,8 @@ faa651caef06d73ef34fbba16ead978e5e20f261    DIFFERS     Move global runningInUse
 680b3e7e2b8625d8066ab75215bd665f283605d5    DIFFERS     Drop unnecessary checks on MockMode
 a121b9d13cf941c3e1881641b0427bad8ef8786d    DIFFERS     Add a endpoints.Endpoints class for managing HTTP endpoints
 c42dad2d32f90240a5d0572cce3d0d0e7c8fd99b    DIFFERS     Wire endpoints.Endpoints into Daemon
+e692dd9c31a1b8dfc189c730b5c57dbc2d8ae6f2    DIFFERS     Move optional Daemon config values to DaemonConfig
+fbbdee8661cfc69ff551295d12b486fdac5b511c    DIFFERS     Track the lifecycle of the goroutine performing log expiration
+07d673bc7450861370af936842613bd9379ffa68    DIFFERS     Streamline Daemon init and shutdownn
+55be74e65b0b8508913edde56875e6141ce2d7e5    DIFFERS     Control all goroutines spawned in Daemon.Ready() using task.Task
+4c84cfadd1b2767e42ccfad71fa04ed05b80c0b6    DIFFERS     Don't use global path variables in sys.OS
