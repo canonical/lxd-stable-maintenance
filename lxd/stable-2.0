@@ -1533,3 +1533,12 @@ fbbdee8661cfc69ff551295d12b486fdac5b511c    DIFFERS     Track the lifecycle of t
 55be74e65b0b8508913edde56875e6141ce2d7e5    DIFFERS     Control all goroutines spawned in Daemon.Ready() using task.Task
 4c84cfadd1b2767e42ccfad71fa04ed05b80c0b6    DIFFERS     Don't use global path variables in sys.OS
 5e7a9ba545e5e404028bc2734ce3931f9726bb12    DIFFERS     Complete moving schema creation logic to schema.Schema
+cbb30530ab5461409081632ed119b634f27dfec7    DIFFERS     Rename Daemon.db to Daemon.nodeDB
+49665800a7cfc5ac66fd91addc756a7a89638192    DIFFERS     Convert a few call sites of sql.DB.Begin to db.DB.Begin
+80a001d758eb29ae89296af8d7fbcc985205b8ab    DIFFERS     Rename State.DB to State.NodeDB
+b6747f3e4ba0e89e6eedd86f8d105eca922c07fb    DIFFERS     Convert remaining call sites of the low-level db.Begin function
+9555a68021069fcad1b397c95ebfb4ffa1fee67e    DIFFERS     Rename db.QueryScan to db.queryScan, making it unexported
+6733ca17bbf94e72c85d5eaaaf23819d0390cdbb    DIFFERS     Remove direct use of the low-level db.Exec() func outside of lxd/db/
+95626061b115d619de58f24c68cdb5898d446eea    DIFFERS     Rename db.Exec to db.exec, making it unexported
+a646db27304957b715e80d4164011f3a26d2ae86    DIFFERS     Move certificate db APIs to the db.Node facade
+7a9228dd90a61becaeeee2f1fd2a9a776ce57617    DIFFERS     Move container db APIs to the db.Node facade
