@@ -1532,3 +1532,4 @@ fbbdee8661cfc69ff551295d12b486fdac5b511c    DIFFERS     Track the lifecycle of t
 07d673bc7450861370af936842613bd9379ffa68    DIFFERS     Streamline Daemon init and shutdownn
 55be74e65b0b8508913edde56875e6141ce2d7e5    DIFFERS     Control all goroutines spawned in Daemon.Ready() using task.Task
 4c84cfadd1b2767e42ccfad71fa04ed05b80c0b6    DIFFERS     Don't use global path variables in sys.OS
+5e7a9ba545e5e404028bc2734ce3931f9726bb12    DIFFERS     Complete moving schema creation logic to schema.Schema
