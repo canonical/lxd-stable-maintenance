@@ -1542,3 +1542,6 @@ b6747f3e4ba0e89e6eedd86f8d105eca922c07fb    DIFFERS     Convert remaining call s
 95626061b115d619de58f24c68cdb5898d446eea    DIFFERS     Rename db.Exec to db.exec, making it unexported
 a646db27304957b715e80d4164011f3a26d2ae86    DIFFERS     Move certificate db APIs to the db.Node facade
 7a9228dd90a61becaeeee2f1fd2a9a776ce57617    DIFFERS     Move container db APIs to the db.Node facade
+6111916f400ac284fc98d1e2b820921f9b3483e7    DIFFERS     Move profile db APIs to the db.Node facade
+cbcc8deafe20ef32c4eaed79ad049509c917f114    IRRELEVANT  Move network db APIs to the db.Node facade
+9d32e740c1952e599f0dccd0a489af07e1dd03ed    IRRELEVANT  Move storage db APIs to the db.Node facade
