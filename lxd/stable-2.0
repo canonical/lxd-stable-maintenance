@@ -1601,3 +1601,4 @@ a2073ee478490cea4c7d3d563f639f35953ef1ed    IRRELEVANT  {ceph, lvm}: generate ne
 fd1d97b5e55f753007ae23ace7fc919fe818212a    IRRELEVANT  test: add test for unique btrfs UUID generation
 cd71102bef8b297a87a9fe367eb995371ed5db78    DIFFERS     lxc/file: Log downloads/uploads
 2cce8e1bf85424adb9d9bc3b4fc8a4ae5bdf0e2f    IRRELEVANT  i18n: Update translation templates
+445ae96e98d68dd2a65568b6f9fc4dc97dfff83a    IRRELEVANT  Fix some profile autocompletions
