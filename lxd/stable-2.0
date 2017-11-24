@@ -1569,3 +1569,28 @@ c27b2e756349c6874aacf8935b4fff8a14c8cfe0    DIFFERS     Switch to the built-in l
 d505b22ef6f9c90b301ef589c03a6c2a3c4a6811    FEATURE     lxd: add "forkconsole" subcommand
 799b33890ece15e0b29b6f639ddbbee89e5a5828    IRRELEVANT  container_lxc: add Console()
 43deb284f748bbdfa1c2aeb691b374e5296dca0b    IRRELEVANT  shared/network: add WebsocketConsoleMirror()
+3de106a35fea35eda98f31d5c31f6c62ffa0811a    DIFFERS     Gracefully cancel tasks on daemon shutdown
+6ed143ce7cf006c2bd220f84a8aec42232d840ac    DIFFERS     client: Name all the return values in interfaces
+a09aa131a2110a40cd0ca64bff4de704f14177b6    DIFFERS     Fix some typos
+d6e3d264bedbeb1f76878c8a5c745094cdd4b118    IRRELEVANT  lxd: add api endpoint containerConsolePost()
+2f8352370c5e41fdcdb6f140b13e2fe50c0b4fba    IRRELEVANT  containers: API endpoint containerConsoleLogGet()
+19000a514e07ca6b402b48ca09cd73b2e9a79d00    IRRELEVANT  containers: API endpoint containerConsoleLogDelete()
+1fa387f7fb90d7a0c3e8f53de68ab4daacea314f    IRRELEVANT  container_lxc: add ConsoleLog()
+e09052bf8d68209f428c1aa31cd2a02c2158b2b4    IRRELEVANT  containers: implement in-memory console log GET
+e056ac9b28f9b191421ebc833ca38a764874b2c4    IRRELEVANT  containers: implement in-memory console log DELETE
+fed48e4832b8087d2d2af4e7102c9879291db193    IRRELEVANT  doc: add "console" api extension
+f3097a615d5e3110787a0f1936c4a26772ca9a8e    IRRELEVANT  tests: API extension "console"
+6da19df27242100c4200162a6cfeffafa0227875    IRRELEVANT  lxc: implement "console" subcommand
+70f4c38d2f1ff43345e4858f3f4e43f93573beee    IRRELEVANT  lxc: add "--log" flag to "console" subcommand
+7f56ed2f64e62c73c5ed41f72058a57c14b9326c    IRRELEVANT  subcommand: adapt "forkconsole" to console detach
+4735c05343f67cac86447a1c65249faf3d90379e    IRRELEVANT  container: handle client detach from console
+d51792308e6d6a14a240ba9b3e6a9434b674050e    IRRELEVANT  lxc: handle console detach
+7469432cf57a3ce8ad90609eef961bf75725dc7e    IRRELEVANT  lxc: make i18n
+a60b277b62113872eebd5cae643b58fc34030cd8    IRRELEVANT  containers: remove gotos
+d7ae570e77017f85d8f879791d49b78ed31403ab    IRRELEVANT  lxc/console: Tell the user how to detach
+1b1753d6e4b9c873e6169c0f8c797dd7cfd55a69    IRRELEVANT  Update translations from weblate
+1cf89c99eb930125011ecb971117079af84084e6    FEATURE     Release LXD 2.20
+7b4df587d2db57fee2821617f05fb521d097c758    IRRELEVANT  lxd/containers: Fix typo
+b06daae65b932a19df1088b9d3ea42235fee7d26    IRRELEVANT  test: skip console tests on lower versions
+0383d8a85cd9ad6df2290257d6bca593b28f7ef6    IRRELEVANT  lxc/shell: Switch to using su -l
+de70922e68967569c6bbacec162b24cd1a9664a2    IRRELEVANT  gpu: skip non-existing Nvidia devices
