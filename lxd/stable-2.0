@@ -1547,3 +1547,12 @@ cbcc8deafe20ef32c4eaed79ad049509c917f114    IRRELEVANT  Move network db APIs to 
 9d32e740c1952e599f0dccd0a489af07e1dd03ed    IRRELEVANT  Move storage db APIs to the db.Node facade
 9f817fc6760a8623b2951f1a93733d4e291ca108    DIFFERS     Move patches db APIs to the db.Node facade
 8c5d85efed7bbacd945f49fdd94e312d1289d35b    DIFFERS     Move image db APIs to the db.Node facade
+745eb4353717d2c0ebc53508fa46b6813abd1a46    DIFFERS     Drop all references to Daemon.nodeDB
+578436d85713916284f6348a4ea5e15c50210a77    DIFFERS     Use instance-level var dir variable instead of the environment one
+7082fcc1f836dd752ba5cad94340eae0682e0d30    DIFFERS     Rename db_test.go to db_internal_test.go, since it's white box
+b826ea408e01e3d37b4b788630104690952f5e0e    DIFFERS     Add node.Config high-level API for modifying node-level config
+31da6b9fbf2d4de2398edca52ac810a68c308325    DIFFERS     Cleanup test state at every test, to improve isolation.
+9f3d36557aa6573774825e03687d570ebef6dccb    DIFFERS     Move node-level schema updates to their own db/local/ sub-package.
+ac8af109c7348f24beaa3872e77c4c2772f37ebf    DIFFERS     Extract the APIExtensions list from api10Get
+fc86474c02e21b9c76604689fe8488f933ae9d53    DIFFERS     Add error messages to lxdTestSuite setup and teardown
+53c8143d4fb47b374a80979f193024d5cbc8e427    DIFFERS     Extract initialization of the REST and /dev/lxd http Server
