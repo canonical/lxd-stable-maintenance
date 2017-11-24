@@ -1545,3 +1545,5 @@ a646db27304957b715e80d4164011f3a26d2ae86    DIFFERS     Move certificate db APIs
 6111916f400ac284fc98d1e2b820921f9b3483e7    DIFFERS     Move profile db APIs to the db.Node facade
 cbcc8deafe20ef32c4eaed79ad049509c917f114    IRRELEVANT  Move network db APIs to the db.Node facade
 9d32e740c1952e599f0dccd0a489af07e1dd03ed    IRRELEVANT  Move storage db APIs to the db.Node facade
+9f817fc6760a8623b2951f1a93733d4e291ca108    DIFFERS     Move patches db APIs to the db.Node facade
+8c5d85efed7bbacd945f49fdd94e312d1289d35b    DIFFERS     Move image db APIs to the db.Node facade
