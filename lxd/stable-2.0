@@ -1594,3 +1594,10 @@ d7ae570e77017f85d8f879791d49b78ed31403ab    IRRELEVANT  lxc/console: Tell the us
 b06daae65b932a19df1088b9d3ea42235fee7d26    IRRELEVANT  test: skip console tests on lower versions
 0383d8a85cd9ad6df2290257d6bca593b28f7ef6    IRRELEVANT  lxc/shell: Switch to using su -l
 de70922e68967569c6bbacec162b24cd1a9664a2    IRRELEVANT  gpu: skip non-existing Nvidia devices
+35519f3bbe9a6cf9f497b5eea343e820233118b0    DIFFERS     client: add client API ConsoleContainer()
+d8d6948021a974018a0f6422030390328f9e0f28    DIFFERS     Fix a number of unchecked variables
+71a913f868b4df40e56aea53177fa3baa75ce606    DIFFERS     lxd/containers: Only init the config if needed
+a2073ee478490cea4c7d3d563f639f35953ef1ed    IRRELEVANT  {ceph, lvm}: generate new UUID on thinpools for btrfs
+fd1d97b5e55f753007ae23ace7fc919fe818212a    IRRELEVANT  test: add test for unique btrfs UUID generation
+cd71102bef8b297a87a9fe367eb995371ed5db78    DIFFERS     lxc/file: Log downloads/uploads
+2cce8e1bf85424adb9d9bc3b4fc8a4ae5bdf0e2f    IRRELEVANT  i18n: Update translation templates
