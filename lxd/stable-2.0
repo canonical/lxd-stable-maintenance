@@ -1556,3 +1556,16 @@ b826ea408e01e3d37b4b788630104690952f5e0e    DIFFERS     Add node.Config high-lev
 ac8af109c7348f24beaa3872e77c4c2772f37ebf    DIFFERS     Extract the APIExtensions list from api10Get
 fc86474c02e21b9c76604689fe8488f933ae9d53    DIFFERS     Add error messages to lxdTestSuite setup and teardown
 53c8143d4fb47b374a80979f193024d5cbc8e427    DIFFERS     Extract initialization of the REST and /dev/lxd http Server
+57e2a7b9ac34e516ad71b5030de0555951712854    DIFFERS     Drop the containerLXC.OS() convenience
+ad7c5ff38de777c385b11ee4427913223b5f7ca3    DIFFERS     Rename container.StateObject() to container.DaemonObject()
+84dafa7b018e75052ca2abb03e322b78372afbc4    DIFFERS     Drop the storageShared.OS() convenience
+879046315adc3446900681e346543d7b7e8c8e5d    DIFFERS     Move util.AppArmorCanStack to a private appArmorCanStack in lxd/sys
+7acc457504cbce6e7c481e55a1b1f17abb48f32d    DIFFERS     Drop trailing slash from cgroup paths definitions
+fef7763d5e5517b54bfffb65674e011fa76f924e    DIFFERS     Drop pointless comments about function calls being no-op
+71054a934007c4078ee218ad1197c87a5ffc18cc    DIFFERS     Rename Cert to Certificate in API names of lxd/db/certificates.go
+0a5b498695011e911f3d2365ea1885fd3d847d02    DIFFERS     Split version declarations in shared/version into several files
+0d8afc22904b1843836051a10476910dc25f9857    IRRELEVANT  lxd/import: Use the right VG name on delete
+c27b2e756349c6874aacf8935b4fff8a14c8cfe0    DIFFERS     Switch to the built-in log15
+d505b22ef6f9c90b301ef589c03a6c2a3c4a6811    FEATURE     lxd: add "forkconsole" subcommand
+799b33890ece15e0b29b6f639ddbbee89e5a5828    IRRELEVANT  container_lxc: add Console()
+43deb284f748bbdfa1c2aeb691b374e5296dca0b    IRRELEVANT  shared/network: add WebsocketConsoleMirror()
