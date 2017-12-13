@@ -1602,3 +1602,29 @@ fd1d97b5e55f753007ae23ace7fc919fe818212a    IRRELEVANT  test: add test for uniqu
 cd71102bef8b297a87a9fe367eb995371ed5db78    DIFFERS     lxc/file: Log downloads/uploads
 2cce8e1bf85424adb9d9bc3b4fc8a4ae5bdf0e2f    IRRELEVANT  i18n: Update translation templates
 445ae96e98d68dd2a65568b6f9fc4dc97dfff83a    IRRELEVANT  Fix some profile autocompletions
+50bf4da7613b2ba9b119274b2fd211c850c5be11    IRRELEVANT  doc: Add example to create an storage pool from existing LVM thinpool.
+c0e1e0e1d3b70dd2193974fa02f0e99329bf4955    IRRELEVANT  i18n: update translation template
+215e8425299923da9ae1712ff70039d81cad97cc    IRRELEVANT  storage: Use HostPath for dir/btrfs
+3607e0a42e8dfd7ab828867aef693df83e72a622    IRRELEVANT  console: adapt to new liblxc changes
+f8379a10e12cfaea66aed30c79da79a2269456bf    IRRELEVANT  tests: adapt to changes in console API behavior
+b24d900b09e165a6b92e77f96ad7a2ae53c4f8f7    FEATURE     Introduce a new security.devlxd key to control visibility of /dev/lxd inside the container
+faafedf2bb930967057c025d6636f4326da2e658    FEATURE     migration: prepare for pre-copy migration (part 2)
+6af26af372d4a3f947ab25a7ea73f06523b4b8db    IRRELEVANT  migrate: prepare for pre-copy migration (part 3)
+8f56cc471d6406683dd276f84278298a2bc14dd6    IRRELEVANT  migrate: add option to specify max pre-dump iterations
+4a5f01df26aff68e8b0cf1b4b7e400e384a8240c    IRRELEVANT  migrate: implement pre-copy migration
+5d443c7dba8bf248504fd5afb854550ecb38e257    IRRELEVANT  migrate: finish pre-dumping if threshold reached
+5db15e0dc476312bff8b98996736db7c1d9a2cd5    IRRELEVANT  doc: add "migration_pre_copy" api extension
+f85d12532706346c031ce1a4da1618227d76c3fd    IRRELEVANT  doc: Move restrict_devlxd API extension to the end
+28882f64c98d861864102a1dee8645d6823b537e    IRRELEVANT  Allow live enabling/disabling of /dev/lxd
+c4441a537cd1257a525dbd9cee4acd9ced0077fc    IRRELEVANT  doc: Fix markdown escaping for prlimits
+edc4227e28b75775596324afda2eb62b06a83434    IRRELEVANT  networks: Extend allowed character set for interfaces
+34911368e3c11e414c1990bcac67ed67a7a348ea    FEATURE     devices: add "infiniband" device type
+74542ab9ba9e876b2f8544abc2d5a8190acbf2f4    IRRELEVANT  devices: implement infiniband device detection
+66aebebef03a25781468cdf29f4520126166d8b3    IRRELEVANT  container_lxc: handle infiniband devices
+7ce3812f61112953f7b254c83754356c79907d77    IRRELEVANT  doc: add "infiniband" api extension
+1978d577f009153d2d049f3a742fb68a2b53dd75    IRRELEVANT  infiniband: name devices inside container ib<idx>
+2543781446085d7b02f0892d886fbe139f3e2535    FEATURE     Shutdown order is now enforced
+dbc0ac4883e4cfc838c4a15721300be364ddd45f    IRRELEVANT  Added doc info for container_stop_priority
+f07484897465a22768a6a30e69c4bd102b8453b6    DIFFERS     lxd-benchmark: Change the default count of containers from 100 to 1
+fbedac3132aa96d698f09dde8f8f90925535ee1a    DIFFERS     migrate: older than lxc 2.0.4 will fail
+434a8710b669a7cb9e8211746fb716feb3286c2b    DIFFERS     client: URL escape all user input
