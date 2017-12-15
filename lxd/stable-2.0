@@ -1628,3 +1628,15 @@ dbc0ac4883e4cfc838c4a15721300be364ddd45f    IRRELEVANT  Added doc info for conta
 f07484897465a22768a6a30e69c4bd102b8453b6    DIFFERS     lxd-benchmark: Change the default count of containers from 100 to 1
 fbedac3132aa96d698f09dde8f8f90925535ee1a    DIFFERS     migrate: older than lxc 2.0.4 will fail
 434a8710b669a7cb9e8211746fb716feb3286c2b    DIFFERS     client: URL escape all user input
+8d0dc2b85950522e784831fa9c38ab358fe8eae3    IRRELEVANT  devices: pass the name of the device
+22de9e8037f66a3d61b59863042c76ce1cab0c66    IRRELEVANT  devices: add new unix-{char,block} format
+b012ca8687c6b47343290b680a356a30ce51cdf2    IRRELEVANT  devices: add new disk-{char,block} format
+db00c7ec52d004ad2c46abc7c6bb2a270daea6db    IRRELEVANT  patches: update to new device name scheme
+5e2a51061dd349bba22907acce419358c55e5552    IRRELEVANT  patches: Skip containers that don't have a devices dir
+f2119227bab8827f5fe1feff130a6493eab3bba9    IRRELEVANT  zfs: fix storage pool import
+bc352c300a43131e1bcd48e156a8616125994111    DIFFERS     Update LVM documentation
+cd54faabd341ae148610c1dfbc9bc7966db6c036    DIFFERS     zfs: fix argument order of zfs get commands.
+03d1e5881c79ca7687a9e8cd7dcd84d4deb15fcc    IRRELEVANT  zfs: Make sure to allow devices, setuid and exec
+11f0f51c58faa2b34b060d53a827de0f7ea19021    DIFFERS     network: fix insertNetworkDevice()
+b12cf5923207e7dfd5b12b091dfa5e540e7239df    DIFFERS     container_lxc: escape paths fstab style
+f2ef3a29bce7c66a7b2af28f5ae2fd100783f388    DIFFERS     migrate: prepare for pre-copy migration
