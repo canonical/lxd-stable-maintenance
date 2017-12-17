@@ -452,3 +452,109 @@ cf685555b3817bfd0a69eefb7a08a3eec647bcc9    FEATURE     commands: truncate conso
 966b9ecd95f5b6249ece8fdaae1610d10d17eec7    FEATURE     commands: rotate console log file
 8a2404e982ddff78d41599a5ae47242c69c6776c    FEATURE     test: expand console log tests
 716495668b9fc02fabee48fe2a24c70b88a8226b    FEATURE     Fix namespace config parse error
+27234deb3a87982b84381319595570f43f0b12f6    FEATURE     hooks: add dhclient hooks
+0cf42eddd2a49c37f8b0e930344fe8724c95073e    DIFFERS     lxc_init: set the control terminal in the child session
+ee3e84df78424d26fc6c90862fbe0fa92a686b0d    IRRELEVANT  confile_utils: fix overlapping strncpy
+51c80577e0def5cd1be761fa03fe21dce5859754    FEATURE     lxc-oci: support unprivileged umoci unpacking
+bc2c91ae99b4104f49827baeab32a71b5aa21d50    FEATURE     lxc-oci: write /etc/hostname
+b5236550572a1289d407c9703e5d42309333c0e0    FEATURE     lxc-oci: write /etc/hosts
+ece913fe14253c24d219ccdd1aaaa9979e3b5540    FEATURE     confile: improve legacy update message
+ce59e4ca3185105a76da400139786ac5e9289c69    FEATURE     lxc-oci: add utility function to retrieve the path of the config file
+996202e74ad7e421d7e16b9fb7ba2083c139a69b    FEATURE     lxc-oci: import the environment variables
+d7c685c6bee37da85069367db358c511276f6e5d    FEATURE     lxc-oci: import common.conf and userns.conf
+797f99c6c9f524fb06d3e752aad7c5f4ec112377    FEATURE     lxc-oci: add support for registry authentication
+f3c9f1229026c4ff3c5481cd6e9054729942db7b    FEATURE     doc: document lxc.namespace.[namespace identifier]
+928b1f04fc0c7579e19822e0f8a620ba121d7f97    DIFFERS     start.c: always switch uid and gid
+3ee26d1983818685643151c16496558ffcf5ced8    FEATURE     seccomp: filter syscalls based on arguments
+a81c46e99af01c4c944d9865c56110b91afdc943    DIFFERS     Use AX_PTHREAD config script to detect pthread api
+614db2e111aaba14d60e8933b2f295844a21da80    DIFFERS     tools/lxc_cgroup: remove internal logging
+9357140cab9c10b327e6a30c6fd834dbb260f2b4    DIFFERS     tools/lxc_execute: removed internal logging
+693dbdb975b6c6934e1b6c6e1547c0f72a9df25a    IRRELEVANT  confile: parse storage type
+63c9ffa070dc28016c39b4230b174ef037266e31    IRRELEVANT  storage: pass down storage type
+09f6f8c4d421925bf9f3eb639d75ebdc4825f335    IRRELEVANT  overlay: adapt to new config rootfs parser
+70d6bd97e65ff3644a03750ba7780c99d93a6a9c    IRRELEVANT  loop: adapt to new config rootfs parser
+068aa488b68de501f7e0dbc330969d4a3792cd02    IRRELEVANT  storage: make storage_dir() smart
+8a388ed4fcb727cc976b78749a71665465f204e3    IRRELEVANT  storage: make storage_init() smart and simplify
+e9e29a33cfce4f1e703550790617582fe5fcfcd5    DIFFERS     lxccontainer: various container creation fixes
+06d0056c0af3e5e4efd32d8c6659e0c2596ffb60    IRRELEVANT  storage: make storage_copy() cleaner
+41dc71558ec372f6e422a46948f35e69ff1cc5d9    IRRELEVANT  storage: constify where possible
+ec5d663c3ec3af0233486ceb7388e1de91d44f6c    DIFFERS     storage: remove unused declaration
+1c7222c084769a1d9406ca7dab943d8a5f016a56    IRRELEVANT  btrfs: fix btrfs_snapshot()
+4a296c63787563f41df1016ceca2b652be9b3824    DIFFERS     tools/lxc_copy: remove internal logging
+e54ecee4031e1bb085ca7ed0da68f3aa683fab8a    DIFFERS     tools/lxc_start: removed internal logging
+8052112c2306ffe6ac4842625134575413050d5b    DIFFERS     tools/lxc_top: removed internal logging
+8bc6d5393c6698e9803156f9eb977a748a1b510f    IRRELEVANT  tests: add a function for negative netdev tests
+076d1ba7fbb48eee7ff1727895c92dfb4667427e    DIFFERS     tools/lxc_unshare: removed internal logging
+26e92b0eabd5dbd99f958bd1e7f57d900d59a681    IRRELEVANT  log: fix infinite loop with multiple lxc.log.syslog keys
+24fa7df6f16755f52add95ba52edeb67c6cb9324    IRRELEVANT  confile: error out if a network configuration key has no subkey
+44047b2b200297c72187886b5f40d47dccc0b1b0    IRRELEVANT  confile_utils: simplify lxc_config_net_hwaddr
+81e38b00597be6880d232d8807cde33159b3dd68    FEATURE     lxc-oci: cleanup temporary download directory if umoci is interrupted
+4b42266dc6f08ef11475fd9fb2ba9a8e3b7cd1bf    FEATURE     lxc-oci: remove unhelpful comment
+ca1280fea4236f67d69920103804b1a0cb6a5645    FEATURE     lxc-oci: rely on jq instead of sed to transform values
+0fd2b679727bfcff36b7e08d87ccfcca744aa602    FEATURE     lxc-oci: support index files with multiple manifests
+52e31c07c8451074528bff5646c24cf93c2fd8d7    FEATURE     lxc-oci: support skopeo layer caching
+f39bcb70cf588386d96a93061a0b5ed9a6c39b2c    IRRELEVANT  confile_legacy: prevent null pointer deref
+3c4915534d16c6c32becfb7252997cb551a194eb    FEATURE     confile:add lxc.init.cwd
+4d94eb7d6b944975ce7bfa2651303b9959bebea8    FEATURE     doc: Add lxc.console.buffer.* and lxc.console.rotate to Japanese lxc.container.conf(5)
+615e68b2e52137b46a7d336c3e285d226bf61769    FEATURE     doc: Add lxc.namespace.[namespace identifier] to Japanese lxc.container.conf(5)
+3f6b1110c968219fe08ae1d0446b02ed685ea578    FEATURE     doc: Add lxc.init.cwd to Japanese lxc.container.conf(5)
+344c9d813cf9602fc831483b6407ed276c8f58e9    DIFFERS     lxc_unshare: Add uid_mapping when creating userns
+113ebd572991152e247ff0899a15d39335017242    DIFFERS     criu: initialize status
+98db3207f6e9341dbe22b6816f7690219b59fb71    DIFFERS     test: reenable Coverity integration
+a144d2883021e67d22412e11fb6d2ee2a6439798    DIFFERS     arguments: move to tools/ subdirectory
+d39b10eba1837e3638925e653eb7121d1563cbe3    FEATURE     lxccontainer: add reboot2() API extension
+c02c49ee3d01dec5c0cd558fe56725bb1a7df83d    FEATURE     test: add test for reboot2() API extension
+fc788340f7b336aba2b8cf6a06ba5ff0a8a43b67    DIFFERS     test: add state server tests
+bc631984fcc1c8b69cafbcce448f98961bca1e55    DIFFERS     commands: tweak locking
+44552fb2b794573334136209dc44a4270f3acf45    DIFFERS     commands: tell mainloop to reap client fd on error
+8f98ac7b0f3f25e42f6de50c4d43ec74bcb90c8d    DIFFERS     execute: pass logfile to lxc-init
+fa30091bb5bef1c1267357d876e5de51f3d990f5    DIFFERS     lxccontainer: handle execute containers correctly
+a72988017894faf56709ae1819f6b83a110498c7    DIFFERS     lxc_init: move up to src/lxc
+5ee606bc8e5a58d4d1aede744d7601a8a9c684d3    DIFFERS     lxc_init: add custom argument parser
+d51dde8ae7a318812c87e0ab8953163db9159aa8    DIFFERS     lxc_init: changed minor details
+77f76f316a9478e64654fe11ca233d485b1abe9f    DIFFERS     tests: expand tests for shortlived init processes
+5384511cea54bb5e37a4b4904ac9d28ad2bb9b0f    IRRELEVANT  coverity: #1425737
+3a29fb5546b20b4cbecbb3bce3511ba5c8b1ce41    IRRELEVANT  coverity: #1425740
+adcdf4e4a70eb8ea52508867591e401d17292036    FEATURE     coverity: #1425742
+070a05af284edb1a38a9c3e23e60cb162e8c04d5    FEATURE     coverity: #1425743
+3ee9e4fb38745f29a4f69528429f5f3be63dfd79    FEATURE     coverity: #1425928
+94f0035bf636ba853451d59c129e26d94850c04d    FEATURE     coverity: #1425924
+4be4832738cbcb376a65740e9641d63cdec6e641    FEATURE     add --share-$NS= support to lxc-execute
+e86dcc912f7b7dc0cf65a6e65e624fe0d43dcbca    FEATURE     lxc-oci: add basic handling of numerical uid/gid
+8f54d926c57b1c0b9b429da6841921bd8adc05ee    FEATURE     lxc-oci: add IPv6 support to /etc/hosts
+a787c33229a41c43d74979a56b571da324688c41    FEATURE     lxc-oci: add support for WorkingDir
+4bc717d6e3730d79a012d9d021ba953d7e058239    FEATURE     legacy confile: fix legacy network parser
+b668653c52132f76babe6d5bb10bda18348b4a9c    FEATURE     conf: fix lxc.prlimit clearing
+7edd05402cb54d9a7220e4390426054a86811348    FEATURE     confile: Add lxc.sysctl config
+e409b214020b334d1946a0cb8a11a39cfc58fc40    FEATURE     conf: lxc.sysctl coding style fixes
+b44c0a678797e965f731b3e2451d42c319e4a265    FEATURE     coverity: #1426029
+b826fe7df35100925ae14c1bcb96a1e5ff0cdb68    DIFFERS     travis: Fix build failure
+7fd3d418107fc8312b5c60820720b794cc322726    DIFFERS     coverity: #1428855
+bc9724f76c07c7bbaf8881d32969b9585671013e    DIFFERS     coverity: #1425879
+8deca6c986f1aaab084ab5bb6692c8a29068bba1    FEATURE     start: intelligently use clone() on ns sharing
+7acb5ce30ddfa114e7fee62aaa5dfe84b8df1071    FEATURE     tests: add namespace sharing tests
+fe3485479f6df2587bf9d7c4ab090ac9de534b19    FEATURE     overlay: fix out-of-bounds copy
+19bfbf6e94158c99bb093248d782ae7814b16d16    DIFFERS     tools: block using lxc-execute without config file
+acbfeda88b86990e2ded18ca4497637fb1b8738d    DIFFERS     lxccontainer: only attach netns on netdev detach
+f54f8d0b5808f03fcbdd4ce24b98ca4f23ef5f98    DIFFERS     coverity: #1425861
+a61b4e85846c9d87f24465f3023e9c5f620ee265    FEATURE     coverity: #1426028
+9e1329562b9f3be8d86e611c146895866d8a6d28    FEATURE     conf: non-functional changes
+6c84b5994ab0d3bbd9d1a7210c97cdf7084bb3fa    DIFFERS     tools: exit success when lxc-execute is daemonized
+5af9369bf39931908f87fd6ad1a55e15041fe5c6    DIFFERS     start: fix cgroup namespace preservation
+61d7a733c781e527727eaaf0710129399af18863    FEATURE     confile: add lxc.proc.* to set proc filesystem
+eeeb5865f55f22e97b6dadca6ca99c7a66049f40    DIFFERS     SHARE_NS options should be before OPT_USAGE
+44ae0fb6ca75338915276b9deeacf7cc4efb100c    FEATURE     confile: add lxc.hook.version
+a2c09be066863f047b6f1f54249a547530738706    FEATURE     start: set LXC_HOOK_VERSION
+3f60c2f749277b0dd08e850ac3dc3b38c7790e26    FEATURE     conf: execute hooks based on lxc.hooks.version
+18b3b9c17f40f5925225449e1fb1978a419aac49    FEATURE     start: pass namespaces as environment variables
+14a7b0f98aab292eac6f541790dac3dcda53425f    FEATURE     network: pass info in env if hook version is 1
+d08e57088e479dec028a57b919663c0e99e58c8a    FEATURE     conf: simplify run_script_argv()
+990b9ac345b03575fd8a3da16d7b00a9e515cb56    FEATURE     network: pass name of peer veth device
+c379af4c03c191984a53b4fc211cecbd04d20451    FEATURE     the bike shed should be brilliant purple
+3d8869c36987fe79bad34dbb934b58b63754952d    FEATURE     dir_detect: warn on eperm
+b5b12b9e75935836213b7637d018c93763183945    FEATURE     criu: add feature check capability
+739ef90c8233c7c2dd76e15985521bf05e6dc8e4    FEATURE     criu: add a test case for the criu feature check support
+f893d898079004d198064337a4879bce5b28c9d8    DIFFERS     commands: fix race when open()/close() cmd socket
+8ab93249a05499eb06ed326bc6f4fd4a0e800cbc    DIFFERS     namespace: add lxc_raw_clone()
+f4bdebfd8ebe0db6e99f0406a129f83da2e5a578    FEATURE     tools: add missing break to lxc-execute
+1933b53f591653fefb8c8f962fdc0aeaaddfdbfb    DIFFERS     lxc_init: fix cgroup parsing
