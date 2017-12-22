@@ -1640,3 +1640,21 @@ cd54faabd341ae148610c1dfbc9bc7966db6c036    DIFFERS     zfs: fix argument order 
 11f0f51c58faa2b34b060d53a827de0f7ea19021    DIFFERS     network: fix insertNetworkDevice()
 b12cf5923207e7dfd5b12b091dfa5e540e7239df    DIFFERS     container_lxc: escape paths fstab style
 f2ef3a29bce7c66a7b2af28f5ae2fd100783f388    DIFFERS     migrate: prepare for pre-copy migration
+edbf30afd0af16b8e8d3aca33247d2652e29db4b    DIFFERS     lxd/containers: Fix race condition in shutdown
+5b463e7131b4a5e29e000fcacc081f6832f63cee    FEATURE     lxc/action: add `--all` flag
+e41633aa6ba8ee68ddba87a4f79ce78dcb34d5e9    IRRELEVANT  lxc: make i18n
+2582ae0fa8e5f1d6fc91893bf242ab27df1b07a6    FEATURE     migration: add handler for CRIU feature checking
+29b84750eacb7e75ab25f18b1531c43ab4faa37a    IRRELEVANT  migration: remove obsolete TODO comment
+a6e77fd7b4c71e810dbe4525587515f97a7db975    IRRELEVANT  migration: move pre-dump check to its own function
+0d6db8981f2a4bba2b57f6aec419276b09fe454c    IRRELEVANT  lxd/daemon: Properly cache the storage information
+8b9422b3c6f028d0822a9b903d95eedbc09dffe7    IRRELEVANT  lxc: Detect first-run based on conf file not dir
+a1b2768c489abb99361984d5ca0171307499bedf    IRRELEVANT  migration: default to pre-copy migration if CRIU supports it
+42e329a09c67f9d8a10b621ba13d79993c1de608    FEATURE     lxd/maas: Add MAAS integration package
+8635340b25e554a04ad5447bc77cfb16bb51252b    FEATURE     Add the new MAAS configuration keys
+4ecc1523f2f4bfe7979f53304e7ca145df7129fe    FEATURE     lxd: Integrate MAAS controller with daemon
+36bb549421eefb6c89c4a001be72c1c51bd9509b    FEATURE     lxd/containers: Integrate MAAS with containers
+034398bc2714575c7bd531a01fa8add86b1b9a11    IRRELEVANT  Update translations from weblate
+9907f3a64b6b8ec9144e8be02d633b951439c0f6    FEATURE     Release LXD 2.21
+ccb9b42a926fb67d66cda94ad0e3abb145a230ce    DIFFERS     lxc/exec: Fix typo
+38f6bd198b4fc820a18f9a547bf1a3ff0637cce9    FEATURE     Add /1.0/events to the /dev/lxd/sock API
+419fa4c39bbe0f12a35520fe22afecb791a252d8    IRRELEVANT  containers: Fix device names containing slashes
