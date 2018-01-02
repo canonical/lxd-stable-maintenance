@@ -558,3 +558,33 @@ f893d898079004d198064337a4879bce5b28c9d8    DIFFERS     commands: fix race when 
 8ab93249a05499eb06ed326bc6f4fd4a0e800cbc    DIFFERS     namespace: add lxc_raw_clone()
 f4bdebfd8ebe0db6e99f0406a129f83da2e5a578    FEATURE     tools: add missing break to lxc-execute
 1933b53f591653fefb8c8f962fdc0aeaaddfdbfb    DIFFERS     lxc_init: fix cgroup parsing
+181437fd530cb1d2a9e1ce2afd8aaa5fca16b872    FEATURE     conf.c: add relative option for lxc.mount.entry
+4e2324665201b97132a6e96739f6be94c838a233    FEATURE     start: reap intermediate process
+58e29e9bf15cdf9ce217889524a4b24a048c7ece    FEATURE     hooks: add mount hook to configure access to NVIDIA GPUs
+d6bec4ab7b1934b439c0dfde23c2d0f099cd59b5    FEATURE     conf.c: small fix for args of mount_entry
+4aaf9b81e9e1199a03d6d038d9350b145efa54b2    FEATURE     btrfs: fix unprivileged snapshot creation
+b45e48f0970f5a33d0cb8958fad098586f24afa1    FEATURE     doc: Add sysctl section to Japanese lxc.container.conf(5)
+4eeecbdb08b7b85822b2b95628cb0fba8774cb23    FEATURE     doc: Add proc section to Japanese lxc.container.conf(5)
+efcbd1a05af46298ae29e5f7dadd324f8324b535    FEATURE     doc: Add the description of new style hook to Japanese lxc.containers.conf(5)
+b6feb9db850709fe7c2ea82cd92990973ac84269    FEATURE     doc: Translate the hook of network into Japanese in lxc.container.conf(5)
+a0a4f759b2fedf7ff62c26caa87bb2e2ae38289c    FEATURE     doc: Add relative option for lxc.mount.entry to Japanese lxc.container.conf(5)
+84bf5645ed0b0c4380ca0a05c148e4c833d1383c    FEATURE     hooks: dhclient hook improvements
+bbb8e190f1102e8c012533b706d56ace53f5cd79    FEATURE     lxc-net: add LXC_DHCP_PING boolean option
+1689c7cf9078b1f4ed7e66e96c7f22af444497e6    FEATURE     lxc-oci: read configuration from oci.common.conf if available
+9a962dc622b9473e7791ba81936c60ef62e09a8c    FEATURE     lxc-oci: add DHCP option leveraging dhclient hooks
+65d78313f27d6d09c6e333fbf3656ca0aca411b4    DIFFERS     cgfsng: Add new macro to print errors
+94ac256fbbd56063921a3d64910467d17c400f7b    DIFFERS     attach: simplify significantly
+a998454a2adac201728d3137869709710627ab19    DIFFERS     attach: use lxc_raw_clone()
+57de839fd507c5bed57e563c92225b208e1c4324    DIFFERS     attach: handle /proc with hidepid={1,2} property
+bb196a1aa09560c46b7cda62d53bed9d3781c958    DIFFERS     namespace: add lxc_raw_getpid()
+0059379ff44bd52cf17d72300e60432686f2fba0    DIFFERS     tree-wide: s/getpid()/lxc_raw_getpid()/g
+718dbb8c2ac9ec30834d74cb660d60342f172a21    DIFFERS     namespace: comment lxc_{raw_}clone()
+0c2a98bdc8db5094f78f5e8e65c84dccc5243623    DIFFERS     namespace: add lxc_raw_clone_cb()
+ac2ba69621f0529b163d3a86772ace9d6601c21a    DIFFERS     start: use lxc_raw_clone_cb() where possible
+c3184275ecd981cdaa6d53cb2e7f5ca1811f13a2    DIFFERS     start: log closing cmd socket and STOPPED state
+8bf3abfbd04670101dad7c2adc197a77054a3d70    DIFFERS     start: simplify cgroup namespace preservation
+18225d1985247a8df08d25d07b0797525847d502    DIFFERS     start: handle setting death signal smarter
+a529bc25cd7d4f80510f01b200d182be4e4815e3    DIFFERS     mainloop: add mainloop macros
+3c319edbb0b139f16ce213041f438c76fa7061fa    DIFFERS     mainloop: capture output of short-lived init procs
+f63ac53e318b82c8d43b3498d9a73d98dbe52a98    DIFFERS     lxc_config: Add -h and --help flags handler
+1cc8bd4b61988dcd73dac35243a6ed1591cc1299    DIFFERS     start: properly cleanup mainloop
