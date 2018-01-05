@@ -1658,3 +1658,12 @@ a1b2768c489abb99361984d5ca0171307499bedf    IRRELEVANT  migration: default to pr
 ccb9b42a926fb67d66cda94ad0e3abb145a230ce    DIFFERS     lxc/exec: Fix typo
 38f6bd198b4fc820a18f9a547bf1a3ff0637cce9    FEATURE     Add /1.0/events to the /dev/lxd/sock API
 419fa4c39bbe0f12a35520fe22afecb791a252d8    IRRELEVANT  containers: Fix device names containing slashes
+a1a0475defb8b051ccbcd3eb3967f1a28f61136b    IRRELEVANT  storage/btrfs: Fix handling of UUID-based mounts
+444808c3e492ca0d3e0e88a165119ca739058590    DIFFERS     doc: Add /images/<fingerprint>/secret to API list
+c7a011e6723689bdd82e20f8cdd0312cffcc9125    IRRELEVANT  doc: List /1.0/storage-pools API endpoints
+f78e6936d9b78313cbded7da42f3e3a6da84fd88    IRRELEVANT  i18n: Update translation template
+a0b4721a8bba360d7ef3a791bb49439547ab54e0    IRRELEVANT  lxd/storage: Don't allow slashes in pool or volume names
+51ea2cefdf5cd98fb54c3c60c9a030fe3be5e9e2    DIFFERS     lxd/containers: No slahses in snapshot names
+fcbbe21c0efc3eb8bb60c03232975a18e5651fe4    DIFFERS     change “your first time using LXD” to something less confusing
+29bca08458e461a58618aa98a311659457ffac8e    IRRELEVANT  i18n: Update translation template
+62efb7b9e0af3068c1dba25e88619df3806e3ffe    DIFFERS     doc/containers: Document CPU limits
