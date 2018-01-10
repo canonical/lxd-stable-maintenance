@@ -1667,3 +1667,21 @@ a0b4721a8bba360d7ef3a791bb49439547ab54e0    IRRELEVANT  lxd/storage: Don't allow
 fcbbe21c0efc3eb8bb60c03232975a18e5651fe4    DIFFERS     change “your first time using LXD” to something less confusing
 29bca08458e461a58618aa98a311659457ffac8e    IRRELEVANT  i18n: Update translation template
 62efb7b9e0af3068c1dba25e88619df3806e3ffe    DIFFERS     doc/containers: Document CPU limits
+a53fe55976f10bcaee9c279542b91400b27cf93e    IRRELEVANT  console: Don't prevent setting lxc.console.logfile
+c160898722dd9293690f5cfb4da50d981218aaa4    IRRELEVANT  console: Fix version check in log API
+1f90bc8a722ace1546e5a071e97577c1cbdd84d1    FEATURE     lxc_list: Option to display number of processes
+a0c232174b36fb882105de2643754b6f091329ad    IRRELEVANT  lxc_list_test: added N option to tests
+c28c8745024a328a31fdd327f7fa06eb12130a7f    IRRELEVANT  i18n: Update translation templates
+9bc2570820bc50937631ee9a20a6614afc5bd3e9    IRRELEVANT  Update translations from weblate
+d840004886b702b3bea15d4a1d6e4f32717a6b62    IRRELEVANT  network: Serialize network creation
+7be50c3b81311db6a7c9e3c9b7605885c5cffca4    IRRELEVANT  storage: Serialize storage pool creation
+0babee06e254eedd2db1a4ada6186ecff707d205    FEATURE     Added proxy device for forwarding tcp connections
+c53eaf9fbef3fba3d4a2293c1919d8ad842338fa    IRRELEVANT  Fixed proxy test script and general formatting
+aadad41571d5578e65dd9c0a69bafa12b6703502    IRRELEVANT  Improved killing of proxy, fixed doc, and rebased RunCommand
+e77f85904cf1477f0934292c504e4fc97b3f0684    IRRELEVANT  Fixed doc spacing and proxy process killing
+a4130c2189f0f26c3bcb792754d187b78bd8d146    IRRELEVANT  Daemonized proxy device
+c7cf32a1c5d7812def240847ca7a37135ca600e5    IRRELEVANT  Fixed test script formatting and removed unused functions
+da423b2f40a7bf3f44636182af378f23ea234ba9    IRRELEVANT  doc: Tweak proxy device documentation
+ec62211136dd0d6f4fa85a7641d7332f1e5f0b19    IRRELEVANT  api: Add API extension for "proxy" device
+8a888cb9d2ff3b9f0ab1c604d410585c3f90d4ea    IRRELEVANT  lxd/containers: Don't drop the description
+a5e117873d926a8d14b4bcdad07de3be9d07060e    DIFFERS     lxd/containers: Fix container shutdown on exit
