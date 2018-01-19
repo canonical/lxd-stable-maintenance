@@ -588,3 +588,23 @@ a529bc25cd7d4f80510f01b200d182be4e4815e3    DIFFERS     mainloop: add mainloop m
 3c319edbb0b139f16ce213041f438c76fa7061fa    DIFFERS     mainloop: capture output of short-lived init procs
 f63ac53e318b82c8d43b3498d9a73d98dbe52a98    DIFFERS     lxc_config: Add -h and --help flags handler
 1cc8bd4b61988dcd73dac35243a6ed1591cc1299    DIFFERS     start: properly cleanup mainloop
+d393e6452566a2b537cfc34b0bc3b67b04193a46    FEATURE     lxccontainer: revert set_running_config_item()
+46ad64ab261e01780b9058e26824b91d7fd5ceb6    DIFFERS     conf{ile}: detect ns{g,u}id mapping for root
+4160c3a08836bce8707e7cf89e84200c79f1402c    DIFFERS     cgfsng: use init {g,u}id
+f49007111ea2f1cffa6de43259ccf74e93a295c9    DIFFERS     conf: detect if devpts can be mounted with gid=5
+a3edf26779576d2d5017ee4caecc02f47b5f383b    FEATURE     commands: fully revert set_running_config_item()
+a19b974f42d4ceff13f605e5a7194502dee1dfa0    DIFFERS     conf: write "deny" to /proc/[pid]/setgroups
+a8b1ac78131ca089810f80adaccf3ba9a4c8eaa1    DIFFERS     add some idmap parsing error messages
+5f98011c3e1bf45e63bfea4e607521b460c4a252    DIFFERS     Include -devel suffix in version string
+f37d1c220ecfcd21d3e95d2eec8b946d415c4bfa    DIFFERS     confile: improve log messages
+5777fe903040edf470159a75c287649b31df6ce4    DIFFERS     console: move pty creation to separate function
+24945df77be5036e7f3c7a7b580a2af4ce8f3213    FEATURE     conf: move ringbuffer members to anonymous struct
+e98affdaa8c0588ad31338bbadca4d5544c38e35    DIFFERS     console: add some pty helpers
+b75c344c240587a2f5450fbeae8ff45f842c8c9a    DIFFERS     attach: cleanup attach_child_main()
+30a33fbd279c79f5d36266a09b80e02f3a8aab8b    DIFFERS     console: adapt lxc_console_mainloop_add()
+7cfeddd71543c36bbe8742123406e306dc4f6583    DIFFERS     console: add lxc_pty_map_ids()
+766a3b2ee95272b37609640acc019e06ab3249ab    DIFFERS     tools: honor --console and --console-log
+060adc61374895630ac4e004e514738a3381c592    FEATURE     tests: do not call close() on invalid fd
+dcea90a0333e24603b2bb28262caa14f74e37730    FEATURE     [console] return wrong console logsize
+99eafdd4f73bce953b161b5cf2bd5f2be3ef878f    DIFFERS     test: log error on failure
+974a8abaf32183e32dc6b43cec53129721f03fb1    DIFFERS     commands: add LXC_CMD_SERVE_STATE_CLIENTS
