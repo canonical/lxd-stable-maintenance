@@ -1707,3 +1707,4 @@ bc853cf3fc3f6a7d7782b652114bc2bd864fb980    DIFFERS     *: move download functio
 107beb0369b672f184dfe1483dabbde57d9af2c5    IRRELEVANT  container_lxc: ensure container is initialized
 3e02c0389476dfc927458c053f45394d8c4f0061    IRRELEVANT  migrate: check pre-dump only on live migration
 441aedc10ca4ce88f2d4f1c9678cb707b2ffa3dc    DIFFERS     lxd,shared: move archive functions to shared
+e4eeb81f4bfc0555a5a6ecda3cf6f167357b2775    IRRELEVANT  tests: Cleanup trailing whitespaces
