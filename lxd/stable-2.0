@@ -1685,3 +1685,25 @@ da423b2f40a7bf3f44636182af378f23ea234ba9    IRRELEVANT  doc: Tweak proxy device 
 ec62211136dd0d6f4fa85a7641d7332f1e5f0b19    IRRELEVANT  api: Add API extension for "proxy" device
 8a888cb9d2ff3b9f0ab1c604d410585c3f90d4ea    IRRELEVANT  lxd/containers: Don't drop the description
 a5e117873d926a8d14b4bcdad07de3be9d07060e    DIFFERS     lxd/containers: Fix container shutdown on exit
+6e49a472798a7d7693e1f493a5abb0563fa270ca    IRRELEVANT  tests/proxy: Pass -f on stop/restart
+82ccced4702f7736970fc3ff6ca72311f4d4faa3    IRRELEVANT  correct mistake in help
+aa4d066f2cf34de9bc72cefb22e0938dea69def7    IRRELEVANT  i18n: Update translation templates
+c950b4a06f525b100d681883e6909fb407a608eb    IRRELEVANT  lxc client: return errArgs on empty pool
+4a064e2f70595a30aef9bf1407aba34ad7792884    IRRELEVANT  networks: Drop all firewall rules when disabled
+27e8b22df3e914f3852ae44d581fee53f2a94522    IRRELEVANT  doc/containers: fix formatting
+3f7a013c3a935bba8a77736902e78f9162eaffc2    FEATURE     lxc: add 'lxc storage info' command
+5d06335ef9665790df3ab8f42f4ab67e02f8302e    IRRELEVANT  translations: new translations for 'lxc storage info'
+7459719f72affd429038da194e992ecf46183cdb    IRRELEVANT  lxc storage: add usage information for 'lxc storage info'
+0d8c56ea24b5a168c3d82e6bb5003fafd6e745ee    IRRELEVANT  translations: new translations after adding 'lxc storage info' description
+270d009f79856448df6af3ef0d55430f4c75ee9f    IRRELEVANT  Identation fix
+98fdb71bab9ed66f458d066d852c8a2cb3479a71    IRRELEVANT  fixed styling issues
+d8e23d9cfb1c47507197954543e378615e8a0ba9    IRRELEVANT  fix on translation files after applying identation fix
+97a053c190a7f4b2fa0618cd76f275902fb4902a    IRRELEVANT  proxy: Fix environment handling
+c8816b49aa1ed1bdf1a3908e3f2c2b0cc1ba575c    IRRELEVANT  The fifth argument of proxy add command should be connect and not listen.
+a4ae2539454cf794dec5b2dbeef90fbbb339c333    IRRELEVANT  lxc/config: Fix metadata edit
+77c5385ddc4e1880abd880af4c3ea83b54b050ca    IRRELEVANT  tests/basic: Pass -f on stop/restart
+7feb4e533e8589f2e5b38ff7bd5312647212abf2    DIFFERS     test: fix shellcheck complaints
+bc853cf3fc3f6a7d7782b652114bc2bd864fb980    DIFFERS     *: move download function to shared
+107beb0369b672f184dfe1483dabbde57d9af2c5    IRRELEVANT  container_lxc: ensure container is initialized
+3e02c0389476dfc927458c053f45394d8c4f0061    IRRELEVANT  migrate: check pre-dump only on live migration
+441aedc10ca4ce88f2d4f1c9678cb707b2ffa3dc    DIFFERS     lxd,shared: move archive functions to shared
