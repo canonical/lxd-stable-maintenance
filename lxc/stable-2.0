@@ -608,3 +608,24 @@ b75c344c240587a2f5450fbeae8ff45f842c8c9a    DIFFERS     attach: cleanup attach_c
 dcea90a0333e24603b2bb28262caa14f74e37730    FEATURE     [console] return wrong console logsize
 99eafdd4f73bce953b161b5cf2bd5f2be3ef878f    DIFFERS     test: log error on failure
 974a8abaf32183e32dc6b43cec53129721f03fb1    DIFFERS     commands: add LXC_CMD_SERVE_STATE_CLIENTS
+79bd76625d76fada09b2ea5677f97b964b7e1f39    FEATURE     attach_options: add log_fd argument
+ba2be1a8a619f90ebcddc44fc030a262461b7cfa    FEATURE     attach: move pty allocation into api
+7bc5a80badf339ccc14d6bfaa0ab666181f4696e    DIFFERS     Create console when the rootfs is NULL
+5757588f962664d9bbff06b7469c789b709696f4    FEATURE     manpage: correct lxc.log.file conf option
+3dc035f1abc9129597b4b54e202e2471923db022    FEATURE     Adapt lxc_setup_console() to bind mount 'console'
+f9eff9505328c1ec5ef05f07c0e27c0c51cf8361    DIFFERS     lxc-execute: actually exit with the status of the spawned task
+ed05aac829498161289d4f2da4002b42fb54bc32    DIFFERS     storage: treat return value from ops->destroy as int
+c948657b04506f18a572ce525cd2dbce8e84afca    DIFFERS     attach: init struct
+ce4a1a11c9d0ff0378a94ed91196c6e47f8a9f20    FEATURE     tools: non-functional changes
+0072887d775b18015f82637637769d390b743e56    DIFFERS     tools: fix android
+42b09f9429eb6b17c8245176c05ba1325f642fe3    DIFFERS     start: fix mainloop cleanup goto statements
+bb2ada6f4d1f2e813976b79bd128c59c6f273275    FEATURE     attach: setup /proc limits
+1cce35e649874b489b84a4223e096d681842cca9    FEATURE     attach: non-functional changes
+fb736bbe280c7136a6fbfbd34ef2cd6515dbf24b    FEATURE     doc: Update Japanese lxc-attach(1) and lxc.container.conf(5)
+86530b0ae1180a47fd0df6033f3685c5bb923d97    DIFFERS     Fix comments and add check in lxc_poll.
+c0a6d713b237db2fbb2a2e0a23885c32718071d2    DIFFERS     network.c: Remove ip_forward_set and callers
+4692c01af27c050f762026089efd17ddf717968b    DIFFERS     better unprivileged detection
+5384e99dee4f15835bfe995845c0fde722e3d662    FEATURE     rename am_unpriv to am_host_unpriv
+29cb26174d3183d47252f2a4d65e07f3d21a3d9e    FEATURE     seccomp.c: Use return instead of attribution and return
+70a82405f4fe81c73ba05d682f858fcca0658e06    FEATURE     confile_legacy: fix legacy network parser
+b87243830e3b5e95fa31a17cf1bfebe55353bf13    FEATURE     hooks: change the semantic of NVIDIA_VISIBLE_DEVICES=""
