@@ -1872,3 +1872,322 @@ c99055ea6d64e003b489e01a0379275699c794d0    DIFFERS     lxc-debian: don't write 
 dba285d5dfa7e9f3452dc180e64158d9bedfb410    DIFFERS     lxc-debian: don't hardcode valid releases
 0d8e40c687e3ac3078621fc18dab681560a8cae7    IRRELEVANT  config: remove SIGRTMIN+14 as lxc.signal.stop
 686df166906b62317cd82fdc94db7a6e29fee423    DIFFERS     console: report detach message on demand
+28f3b1cdbec39afc17843c12b018584e801fdf11    FEATURE     confile: add lxc.console.buffer.size
+3a784510e314b3d161663c5240ff32532c349c2c    FEATURE     confile: add lxc.console.buffer.logfile
+d91adfa6123ac2c884fac6dbe74c823cb4eafe5b    FEATURE     confile: add lxc.console.rotate
+5928191e83fdb99e45b830f0a7b95bd99eca1d4f    FEATURE     commands: only set ringbuffer datalen when needed
+a030916834aee82c34a015e9c24d8babe2f265c8    FEATURE     console: split console setup into logical parts
+cf685555b3817bfd0a69eefb7a08a3eec647bcc9    FEATURE     commands: truncate console ringbuffer log file
+966b9ecd95f5b6249ece8fdaae1610d10d17eec7    FEATURE     commands: rotate console log file
+8a2404e982ddff78d41599a5ae47242c69c6776c    FEATURE     test: expand console log tests
+716495668b9fc02fabee48fe2a24c70b88a8226b    FEATURE     Fix namespace config parse error
+c1a3e54736744b0a403f3fcda4f3466c727d6629    FEATURE     lxccontainer: non-functional changes
+f6fc156515a0368659c957831bd7acdad1ee95a3    FEATURE     commands: fix state socket implementation
+27234deb3a87982b84381319595570f43f0b12f6    FEATURE     hooks: add dhclient hooks
+ee3e84df78424d26fc6c90862fbe0fa92a686b0d    FEATURE     confile_utils: fix overlapping strncpy
+51c80577e0def5cd1be761fa03fe21dce5859754    FEATURE     lxc-oci: support unprivileged umoci unpacking
+bc2c91ae99b4104f49827baeab32a71b5aa21d50    FEATURE     lxc-oci: write /etc/hostname
+b5236550572a1289d407c9703e5d42309333c0e0    FEATURE     lxc-oci: write /etc/hosts
+ece913fe14253c24d219ccdd1aaaa9979e3b5540    FEATURE     confile: improve legacy update message
+ce59e4ca3185105a76da400139786ac5e9289c69    FEATURE     lxc-oci: add utility function to retrieve the path of the config file
+996202e74ad7e421d7e16b9fb7ba2083c139a69b    FEATURE     lxc-oci: import the environment variables
+d7c685c6bee37da85069367db358c511276f6e5d    FEATURE     lxc-oci: import common.conf and userns.conf
+797f99c6c9f524fb06d3e752aad7c5f4ec112377    FEATURE     lxc-oci: add support for registry authentication
+f3c9f1229026c4ff3c5481cd6e9054729942db7b    FEATURE     doc: document lxc.namespace.[namespace identifier]
+928b1f04fc0c7579e19822e0f8a620ba121d7f97    FEATURE     start.c: always switch uid and gid
+3ee26d1983818685643151c16496558ffcf5ced8    FEATURE     seccomp: filter syscalls based on arguments
+614db2e111aaba14d60e8933b2f295844a21da80    FEATURE     tools/lxc_cgroup: remove internal logging
+5f514ceea69c77c33afd36dcbbbdcff6c53bb197    FEATURE     tools/lxc_autostart: remove internal logging
+fdb9aa94df16766cca7cec77c29ec482a7573bef    FEATURE     tools/lxc_clone: remove internal logging
+84cb7e2b6cedc96b2497aac347127e3c7e099317    FEATURE     tools/lxc_console: remove internal logging
+72e2c30726e83ff85052caa268e23ff3d17b2f73    FEATURE     tools/lxc_create: remove internal logging
+525dcf890b5da989068e1894e3db579e3d8fb7e1    FEATURE     tools/lxc_destroy: remove internal logging
+f132fdbdc671bd83a4b5ca5dd0f884ac355cd8f5    FEATURE     tools/lxc_device: remove internal logging
+9357140cab9c10b327e6a30c6fd834dbb260f2b4    FEATURE     tools/lxc_execute: removed internal logging
+517c7681591e16c8d4ccf9853d39c348831c0d6e    FEATURE     tools/lxc_freeze: remove internal logging
+4fd8586c37d660ac1156675bac20d736a42e5820    FEATURE     tools/lxc_info: removed internal logging
+ea7f6b29bcb3de45442c459f82c960a823d5ddbe    FEATURE     criu: detect veth name
+693dbdb975b6c6934e1b6c6e1547c0f72a9df25a    FEATURE     confile: parse storage type
+63c9ffa070dc28016c39b4230b174ef037266e31    FEATURE     storage: pass down storage type
+09f6f8c4d421925bf9f3eb639d75ebdc4825f335    FEATURE     overlay: adapt to new config rootfs parser
+70d6bd97e65ff3644a03750ba7780c99d93a6a9c    FEATURE     loop: adapt to new config rootfs parser
+068aa488b68de501f7e0dbc330969d4a3792cd02    FEATURE     storage: make storage_dir() smart
+8a388ed4fcb727cc976b78749a71665465f204e3    FEATURE     storage: make storage_init() smart and simplify
+e9e29a33cfce4f1e703550790617582fe5fcfcd5    FEATURE     lxccontainer: various container creation fixes
+06d0056c0af3e5e4efd32d8c6659e0c2596ffb60    FEATURE     storage: make storage_copy() cleaner
+ec5d663c3ec3af0233486ceb7388e1de91d44f6c    FEATURE     storage: remove unused declaration
+41dc71558ec372f6e422a46948f35e69ff1cc5d9    FEATURE     storage: constify where possible
+1c7222c084769a1d9406ca7dab943d8a5f016a56    FEATURE     btrfs: fix btrfs_snapshot()
+d36ae708d39ea646a1c5a3fb240d1465d387794e    FEATURE     tools/lxc_ls: remove internal logging
+4a296c63787563f41df1016ceca2b652be9b3824    FEATURE     tools/lxc_copy: remove internal logging
+b4b4ff0b23faa7710a81f2b6e47500efd4d1398a    FEATURE     tools/lxc_monitor: removed internal logging
+8457116379378d5e86be01c631d405f758971950    FEATURE     tools/lxc_snapshot: removed internal logging
+e54ecee4031e1bb085ca7ed0da68f3aa683fab8a    FEATURE     tools/lxc_start: removed internal logging
+38d28c16d24aa567980787dbfe686c767ab69d19    FEATURE     tools/lxc_stop: removed internal logging
+8052112c2306ffe6ac4842625134575413050d5b    FEATURE     tools/lxc_top: removed internal logging
+feb34020235fcd4d668e3dfa0912d00581986e95    FEATURE     tools/lxc_unfreeze: removed internal logging
+076d1ba7fbb48eee7ff1727895c92dfb4667427e    FEATURE     tools/lxc_unshare: removed internal logging
+3eaff0ba584c32110d6f7aa887b94ef3f63cade0    FEATURE     tools/lxc_usernsexec: removed internal logging
+bc1fc88d006f172647be13b24d8856d1d45ee7e3    FEATURE     tools/lxc_wait: removed internal logging
+327500d449845f2694d87143925296a4a5d619b6    FEATURE     confile: fix memory leak
+8bc6d5393c6698e9803156f9eb977a748a1b510f    FEATURE     tests: add a function for negative netdev tests
+26e92b0eabd5dbd99f958bd1e7f57d900d59a681    FEATURE     log: fix infinite loop with multiple lxc.log.syslog keys
+24fa7df6f16755f52add95ba52edeb67c6cb9324    FEATURE     confile: error out if a network configuration key has no subkey
+44047b2b200297c72187886b5f40d47dccc0b1b0    FEATURE     confile_utils: simplify lxc_config_net_hwaddr
+81e38b00597be6880d232d8807cde33159b3dd68    FEATURE     lxc-oci: cleanup temporary download directory if umoci is interrupted
+4b42266dc6f08ef11475fd9fb2ba9a8e3b7cd1bf    FEATURE     lxc-oci: remove unhelpful comment
+ca1280fea4236f67d69920103804b1a0cb6a5645    FEATURE     lxc-oci: rely on jq instead of sed to transform values
+0fd2b679727bfcff36b7e08d87ccfcca744aa602    FEATURE     lxc-oci: support index files with multiple manifests
+52e31c07c8451074528bff5646c24cf93c2fd8d7    FEATURE     lxc-oci: support skopeo layer caching
+344c9d813cf9602fc831483b6407ed276c8f58e9    FEATURE     lxc_unshare: Add uid_mapping when creating userns
+824d600fc1a46c1389066f5f7f474be9738c666b    FEATURE     Add new dependency to Slackware template
+caba109477060d96abf289122540295de7e51102    FEATURE     Add bash completion to list backing store types for lxc-create -B - Backing Store types are hard-coded (Not sure how to get programmatically) - Closes #1236
+f39bcb70cf588386d96a93061a0b5ed9a6c39b2c    FEATURE     confile_legacy: prevent null pointer deref
+113ebd572991152e247ff0899a15d39335017242    FEATURE     criu: initialize status
+1ca0ee11291b99b3fc18da934e6f5ffa52484c3d    IRRELEVANT  confile: remove dead assignment
+223e30c16913721be7e4a47c4129951aa1f867f9    FEATURE     criu: silence static analysis
+134284c3ff235958150acca3588fba9c27c62b1c    IRRELEVANT  attach: do not fail on non-existing namespaces
+3c4915534d16c6c32becfb7252997cb551a194eb    FEATURE     confile:add lxc.init.cwd
+4d94eb7d6b944975ce7bfa2651303b9959bebea8    FEATURE     doc: Add lxc.console.buffer.* and lxc.console.rotate to Japanese lxc.container.conf(5)
+615e68b2e52137b46a7d336c3e285d226bf61769    FEATURE     doc: Add lxc.namespace.[namespace identifier] to Japanese lxc.container.conf(5)
+3f6b1110c968219fe08ae1d0446b02ed685ea578    FEATURE     doc: Add lxc.init.cwd to Japanese lxc.container.conf(5)
+a144d2883021e67d22412e11fb6d2ee2a6439798    FEATURE     arguments: move to tools/ subdirectory
+b1ca434ae52c6b1ac9f73030d022e2a2e537cb3f    IRRELEVANT  commands: don't traverse whole list
+e533be71c8a397ebc6d72c867ff8627d0a87260e    IRRELEVANT  commands: don't lock atomic operations
+f3a2945e8852a50550d00fc3510f669629c28702    IRRELEVANT  commands: don't lock the whole command
+20144819c4207911ac08654943e4273d7b97f353    IRRELEVANT  start: don't lock setting the state
+24b0bd9a80a1a83b292afa61b1970730d01d4963    IRRELEVANT  commands: allow waiting for all states
+d39b10eba1837e3638925e653eb7121d1563cbe3    FEATURE     lxccontainer: add reboot2() API extension
+c02c49ee3d01dec5c0cd558fe56725bb1a7df83d    FEATURE     test: add test for reboot2() API extension
+fc788340f7b336aba2b8cf6a06ba5ff0a8a43b67    FEATURE     test: add state server tests
+bc631984fcc1c8b69cafbcce448f98961bca1e55    IRRELEVANT  commands: tweak locking
+f8bdb6dcc4d85d1b25a5926917cd6f882a9170e0    IRRELEVANT  lxccontainer: restore non-blocking shutdown
+44552fb2b794573334136209dc44a4270f3acf45    IRRELEVANT  commands: tell mainloop to reap client fd on error
+fa30091bb5bef1c1267357d876e5de51f3d990f5    FEATURE     lxccontainer: handle execute containers correctly
+a72988017894faf56709ae1819f6b83a110498c7    IRRELEVANT  lxc_init: move up to src/lxc
+5ee606bc8e5a58d4d1aede744d7601a8a9c684d3    IRRELEVANT  lxc_init: add custom argument parser
+d51dde8ae7a318812c87e0ab8953163db9159aa8    IRRELEVANT  lxc_init: changed minor details
+77f76f316a9478e64654fe11ca233d485b1abe9f    FEATURE     tests: expand tests for shortlived init processes
+6b9be523370907f21ac6955271e9b4c268621e8c    IRRELEVANT  coverity: #1425734
+3a29fb5546b20b4cbecbb3bce3511ba5c8b1ce41    IRRELEVANT  coverity: #1425740
+070a05af284edb1a38a9c3e23e60cb162e8c04d5    IRRELEVANT  coverity: #1425743
+3ee9e4fb38745f29a4f69528429f5f3be63dfd79    IRRELEVANT  coverity: #1425928
+94f0035bf636ba853451d59c129e26d94850c04d    IRRELEVANT  coverity: #1425924
+8e0c6620515a9938d36590c5e839e9644281ecde    IRRELEVANT  coverity: #1425922
+dcbc861eda080f2729c7b25aa0b3aeaf78a909c6    IRRELEVANT  coverity: #1425895
+fd41e9b7bfaba80f55c8e01dced0cd434d99eb36    IRRELEVANT  coverity: #1425890
+2a7de7ea852ee64d6300d12f3c6595b3fd647902    IRRELEVANT  coverity: #1425889
+4be4832738cbcb376a65740e9641d63cdec6e641    IRRELEVANT  add --share-$NS= support to lxc-execute
+e86dcc912f7b7dc0cf65a6e65e624fe0d43dcbca    FEATURE     lxc-oci: add basic handling of numerical uid/gid
+8f54d926c57b1c0b9b429da6841921bd8adc05ee    FEATURE     lxc-oci: add IPv6 support to /etc/hosts
+a787c33229a41c43d74979a56b571da324688c41    FEATURE     lxc-oci: add support for WorkingDir
+4bc717d6e3730d79a012d9d021ba953d7e058239    IRRELEVANT  legacy confile: fix legacy network parser
+b668653c52132f76babe6d5bb10bda18348b4a9c    IRRELEVANT  conf: fix lxc.prlimit clearing
+7edd05402cb54d9a7220e4390426054a86811348    FEATURE     confile: Add lxc.sysctl config
+e409b214020b334d1946a0cb8a11a39cfc58fc40    IRRELEVANT  conf: lxc.sysctl coding style fixes
+b44c0a678797e965f731b3e2451d42c319e4a265    IRRELEVANT  coverity: #1426029
+8810408c6bf6cf03134938a86f63c5d54b9bcd8c    IRRELEVANT  coverity: #1425884
+bc9724f76c07c7bbaf8881d32969b9585671013e    IRRELEVANT  coverity: #1425879
+8deca6c986f1aaab084ab5bb6692c8a29068bba1    IRRELEVANT  start: intelligently use clone() on ns sharing
+7acb5ce30ddfa114e7fee62aaa5dfe84b8df1071    FEATURE     tests: add namespace sharing tests
+fe3485479f6df2587bf9d7c4ab090ac9de534b19    IRRELEVANT  overlay: fix out-of-bounds copy
+19bfbf6e94158c99bb093248d782ae7814b16d16    IRRELEVANT  tools: block using lxc-execute without config file
+6d1a5f93db91557afddd13575ffff647003af906    IRRELEVANT  conf: avoid spawning unnecessary subshells
+b69dfc9fcb4d4350ae065c7c1ac9874f67ba983c    IRRELEVANT  coverity: #1425874 + cleanup
+62de1db6ef2cca8671c9eb34dbe220a2189d1dd0    IRRELEVANT  coverity: #1425866
+41784e4ee493b52f3ade94fe40cd66eee4b5430e    IRRELEVANT  coverity: #1425862
+f54f8d0b5808f03fcbdd4ce24b98ca4f23ef5f98    IRRELEVANT  coverity: #1425861
+9dfa4041c7039c64052a988d85d2b9291a87f2d3    IRRELEVANT  commands: non-functional changes
+0cf42eddd2a49c37f8b0e930344fe8724c95073e    IRRELEVANT  lxc_init: set the control terminal in the child session
+e82021215fdbc70c78bd562ae9b48f85db29f5c1    IRRELEVANT  Fixed typo on lxc.spec.in
+478fb51d4e2793dceaa3bf315c3cb6fe7fbabec8    IRRELEVANT  conf: move CAP_SYS_* definitions to utils.h
+a81c46e99af01c4c944d9865c56110b91afdc943    DIFFERS     Use AX_PTHREAD config script to detect pthread api
+ac181b5c3cb8b243b1476919e5bf2142eb1082b7    IRRELEVANT  utils.h: Avoid duplicated sethostname implementation
+2650fb4d5ea9a0789f957f01bfd32c551e3ecf3e    IRRELEVANT  utils: declare sethostname() static inline
+23002e923e87bc6e12ec8f424ae77c7b7a236d2f    IRRELEVANT  Update gentoo.moresecure.conf.
+6f39c2a8a778f408c696a7b5ef0355206a14a18f    IRRELEVANT  Fix SETCOLOR_FAILURE evaluation
+edf3320cad7eca40b7682415c4415991d521db4b    IRRELEVANT  Insert missing "echo" after "is_enabled"
+0103eb53defb5864b56131f00f05ff2e69ad369e    IRRELEVANT  conf: prevent null pointer dereference
+98db3207f6e9341dbe22b6816f7690219b59fb71    DIFFERS     test: reenable Coverity integration
+4a03ded4b28c8cb54c058702060e0fd3b08fbbc8    IRRELEVANT  start: set loglevel correctly
+6b7f85cbcdce8bd5d6b1c4c719ae776d6b3ffb06    IRRELEVANT  commands: return -ECONNRESET to caller
+8f98ac7b0f3f25e42f6de50c4d43ec74bcb90c8d    IRRELEVANT  execute: pass logfile to lxc-init
+97ebced3e5171e2335d0d1ce49b6e789a2ec8e87    IRRELEVANT  coverity: #1425735
+5384511cea54bb5e37a4b4904ac9d28ad2bb9b0f    IRRELEVANT  coverity: #1425737
+cf2231318829a55fbf51f7740875a57b43de8ea7    IRRELEVANT  coverity: #1425739
+adcdf4e4a70eb8ea52508867591e401d17292036    IRRELEVANT  coverity: #1425742
+e1e7642342dc296626b3c9f4906c0a60924f8477    IRRELEVANT  coverity: #1425929
+9d6514f22230e3416f5e4b61359e962c8abdc4d0    DIFFERS     coverity: #1425923
+f4e1fa60b27cea4ec558d0a9b8cffebc99dd8d5d    IRRELEVANT  coverity: #1425921
+2d7bf7442c1f492f56417bf1d294ca162a2ad2ea    IRRELEVANT  coverity: #1425888
+81a14ca9443ea6934f6cb393b8dae206084ec43f    DIFFERS     lxc: Distinguish pthread_mutex_unlock error messages
+b826fe7df35100925ae14c1bcb96a1e5ff0cdb68    IRRELEVANT  travis: Fix build failure
+29f133bc330ef59e9f0951c04c9789e4013eb262    DIFFERS     coverity: #1425893
+edeb1836bac992f1a6c19a0810fc8274c3de542f    IRRELEVANT  coverity: #1425886
+7fd3d418107fc8312b5c60820720b794cc322726    IRRELEVANT  coverity: #1428855
+acbfeda88b86990e2ded18ca4497637fb1b8738d    IRRELEVANT  lxccontainer: only attach netns on netdev detach
+c7d76c09476d004754045d72f1c4711538ba8cbd    IRRELEVANT  lxccontainer: cleanup {attach,detach}_interface()
+de429548c46d9b668388777198715853be6ae46d    IRRELEVANT  coverity: #1425870
+3ca108148be86db02bfbcc71cbe4ae46091fc930    IRRELEVANT  coverity: #1425869
+d6d979bc2b5e1927d281e10419f5b0710c7e78c3    IRRELEVANT  coverity: #1425867
+d5590c8c70fd3dd817fcd9f4e93dffc08711d41c    IRRELEVANT  coverity: #1425860
+e8eb39565a94be7b744b7d15538b52a40937c6a3    IRRELEVANT  coverity: #1425859
+0e4adc1a3383921a67c506b5d04b45b3add5d898    FEATURE     coverity: #1425858
+a55f31bda279a36581eae84bb73c064ed101600e    IRRELEVANT  coverity: #1425857
+a61b4e85846c9d87f24465f3023e9c5f620ee265    IRRELEVANT  coverity: #1426028
+9e1329562b9f3be8d86e611c146895866d8a6d28    IRRELEVANT  conf: non-functional changes
+5d113f650c398eca1464084d8c42b00211265403    FEATURE     start: do not unconditionally dup std{in,out,err}
+5af9369bf39931908f87fd6ad1a55e15041fe5c6    IRRELEVANT  start: fix cgroup namespace preservation
+61d7a733c781e527727eaaf0710129399af18863    FEATURE     confile: add lxc.proc.* to set proc filesystem
+d76e3e1a5b70b46af860b9bf77fd1151ff3847c4    FEATURE     init: don't kill(-1) if we aren't in a pid ns
+eeeb5865f55f22e97b6dadca6ca99c7a66049f40    FEATURE     SHARE_NS options should be before OPT_USAGE
+44ae0fb6ca75338915276b9deeacf7cc4efb100c    FEATURE     confile: add lxc.hook.version
+a2c09be066863f047b6f1f54249a547530738706    FEATURE     start: set LXC_HOOK_VERSION
+3f60c2f749277b0dd08e850ac3dc3b38c7790e26    FEATURE     conf: execute hooks based on lxc.hooks.version
+18b3b9c17f40f5925225449e1fb1978a419aac49    FEATURE     start: pass namespaces as environment variables
+14a7b0f98aab292eac6f541790dac3dcda53425f    FEATURE     network: pass info in env if hook version is 1
+d08e57088e479dec028a57b919663c0e99e58c8a    FEATURE     conf: simplify run_script_argv()
+990b9ac345b03575fd8a3da16d7b00a9e515cb56    FEATURE     network: pass name of peer veth device
+c379af4c03c191984a53b4fc211cecbd04d20451    FEATURE     the bike shed should be brilliant purple
+3d8869c36987fe79bad34dbb934b58b63754952d    FEATURE     dir_detect: warn on eperm
+b5b12b9e75935836213b7637d018c93763183945    FEATURE     criu: add feature check capability
+739ef90c8233c7c2dd76e15985521bf05e6dc8e4    FEATURE     criu: add a test case for the criu feature check support
+f893d898079004d198064337a4879bce5b28c9d8    FEATURE     commands: fix race when open()/close() cmd socket
+8ab93249a05499eb06ed326bc6f4fd4a0e800cbc    FEATURE     namespace: add lxc_raw_clone()
+2d728b2fd66fee867a9c85a183c6db138d8108f0    FEATURE     utils: use lxc_raw_clone() in run_command()
+f4bdebfd8ebe0db6e99f0406a129f83da2e5a578    FEATURE     tools: add missing break to lxc-execute
+1933b53f591653fefb8c8f962fdc0aeaaddfdbfb    FEATURE     lxc_init: fix cgroup parsing
+72c94ff968f66081bd52b7bdf6758e87917925f0    FEATURE     tools: add UNPRIVILEGED field in fancy output mode
+181437fd530cb1d2a9e1ce2afd8aaa5fca16b872    FEATURE     conf.c: add relative option for lxc.mount.entry
+4e2324665201b97132a6e96739f6be94c838a233    FEATURE     start: reap intermediate process
+58e29e9bf15cdf9ce217889524a4b24a048c7ece    FEATURE     hooks: add mount hook to configure access to NVIDIA GPUs
+d6bec4ab7b1934b439c0dfde23c2d0f099cd59b5    FEATURE     conf.c: small fix for args of mount_entry
+4aaf9b81e9e1199a03d6d038d9350b145efa54b2    FEATURE     btrfs: fix unprivileged snapshot creation
+b45e48f0970f5a33d0cb8958fad098586f24afa1    FEATURE     doc: Add sysctl section to Japanese lxc.container.conf(5)
+4eeecbdb08b7b85822b2b95628cb0fba8774cb23    FEATURE     doc: Add proc section to Japanese lxc.container.conf(5)
+efcbd1a05af46298ae29e5f7dadd324f8324b535    FEATURE     doc: Add the description of new style hook to Japanese lxc.containers.conf(5)
+b6feb9db850709fe7c2ea82cd92990973ac84269    FEATURE     doc: Translate the hook of network into Japanese in lxc.container.conf(5)
+a0a4f759b2fedf7ff62c26caa87bb2e2ae38289c    FEATURE     doc: Add relative option for lxc.mount.entry to Japanese lxc.container.conf(5)
+84bf5645ed0b0c4380ca0a05c148e4c833d1383c    FEATURE     hooks: dhclient hook improvements
+bbb8e190f1102e8c012533b706d56ace53f5cd79    FEATURE     lxc-net: add LXC_DHCP_PING boolean option
+1689c7cf9078b1f4ed7e66e96c7f22af444497e6    FEATURE     lxc-oci: read configuration from oci.common.conf if available
+9a962dc622b9473e7791ba81936c60ef62e09a8c    FEATURE     lxc-oci: add DHCP option leveraging dhclient hooks
+65d78313f27d6d09c6e333fbf3656ca0aca411b4    FEATURE     cgfsng: Add new macro to print errors
+94ac256fbbd56063921a3d64910467d17c400f7b    FEATURE     attach: simplify significantly
+a998454a2adac201728d3137869709710627ab19    FEATURE     attach: use lxc_raw_clone()
+57de839fd507c5bed57e563c92225b208e1c4324    FEATURE     attach: handle /proc with hidepid={1,2} property
+b01b36e9ad01048a34de6d2b807a1e7041e657fa    FEATURE     tests: expand lxc_raw_clone() tests
+bb196a1aa09560c46b7cda62d53bed9d3781c958    FEATURE     namespace: add lxc_raw_getpid()
+0059379ff44bd52cf17d72300e60432686f2fba0    FEATURE     tree-wide: s/getpid()/lxc_raw_getpid()/g
+718dbb8c2ac9ec30834d74cb660d60342f172a21    FEATURE     namespace: comment lxc_{raw_}clone()
+0c2a98bdc8db5094f78f5e8e65c84dccc5243623    FEATURE     namespace: add lxc_raw_clone_cb()
+ac2ba69621f0529b163d3a86772ace9d6601c21a    FEATURE     start: use lxc_raw_clone_cb() where possible
+c3184275ecd981cdaa6d53cb2e7f5ca1811f13a2    FEATURE     start: log closing cmd socket and STOPPED state
+4b826b1fdc516c71c7222ef68a45c4f6ad964df1    FEATURE     start: make us dumpable
+8bf3abfbd04670101dad7c2adc197a77054a3d70    FEATURE     start: simplify cgroup namespace preservation
+18225d1985247a8df08d25d07b0797525847d502    FEATURE     start: handle setting death signal smarter
+a529bc25cd7d4f80510f01b200d182be4e4815e3    FEATURE     mainloop: add mainloop macros
+3c319edbb0b139f16ce213041f438c76fa7061fa    FEATURE     mainloop: capture output of short-lived init procs
+1cc8bd4b61988dcd73dac35243a6ed1591cc1299    FEATURE     start: properly cleanup mainloop
+a63fade55b1e091bc1933bff181a64c38a28e302    IRRELEVANT  console: do not allow non-pty devices on open()
+12c2798ed1143e45f7a42e56a57502ee5a6c0b68    IRRELEVANT  mainloop: use epoll_create1(EPOLL_CLOEXEC)
+d393e6452566a2b537cfc34b0bc3b67b04193a46    IRRELEVANT  lxccontainer: revert set_running_config_item()
+c433319551329ff709173bb08541d0fe015d7265    IRRELEVANT  conf: adapt idmap helpers
+db7cfe23abe4312af4b133cdac868ce696d822d3    IRRELEVANT  conf: adapt userns_exec_1()
+46ad64ab261e01780b9058e26824b91d7fd5ceb6    IRRELEVANT  conf{ile}: detect ns{g,u}id mapping for root
+4160c3a08836bce8707e7cf89e84200c79f1402c    IRRELEVANT  cgfsng: use init {g,u}id
+f49007111ea2f1cffa6de43259ccf74e93a295c9    IRRELEVANT  conf: detect if devpts can be mounted with gid=5
+a3edf26779576d2d5017ee4caecc02f47b5f383b    IRRELEVANT  commands: fully revert set_running_config_item()
+71ac47aba12dcbaba4cabac00626428fff2fd8fb    IRRELEVANT  gentoo: Add support for .xz tarballs
+a19b974f42d4ceff13f605e5a7194502dee1dfa0    IRRELEVANT  conf: write "deny" to /proc/[pid]/setgroups
+dcf0ffdf41990872151f8d33a9a81a93bbeb9d24    IRRELEVANT  conf: rework userns_exec_1()
+bd8ef4e4da956e0eba0cced93036a4edec20f8f6    IRRELEVANT  cgfsng: only establish mapping once
+a8b1ac78131ca089810f80adaccf3ba9a4c8eaa1    IRRELEVANT  add some idmap parsing error messages
+f37d1c220ecfcd21d3e95d2eec8b946d415c4bfa    IRRELEVANT  confile: improve log messages
+5777fe903040edf470159a75c287649b31df6ce4    FEATURE     console: move pty creation to separate function
+24945df77be5036e7f3c7a7b580a2af4ce8f3213    FEATURE     conf: move ringbuffer members to anonymous struct
+e98affdaa8c0588ad31338bbadca4d5544c38e35    IRRELEVANT  console: add some pty helpers
+b75c344c240587a2f5450fbeae8ff45f842c8c9a    IRRELEVANT  attach: cleanup attach_child_main()
+30a33fbd279c79f5d36266a09b80e02f3a8aab8b    IRRELEVANT  console: adapt lxc_console_mainloop_add()
+7cfeddd71543c36bbe8742123406e306dc4f6583    IRRELEVANT  console: add lxc_pty_map_ids()
+08ea927039120932189c45c6d58622b4f9fec1a2    IRRELEVANT  attach: minor tweaks
+79bd76625d76fada09b2ea5677f97b964b7e1f39    IRRELEVANT  attach_options: add log_fd argument
+ba2be1a8a619f90ebcddc44fc030a262461b7cfa    IRRELEVANT  attach: move pty allocation into api
+df0795b1bd7c92279e358a081437e2e2fc44a4d8    IRRELEVANT  start: non-functional changes
+060adc61374895630ac4e004e514738a3381c592    IRRELEVANT  tests: do not call close() on invalid fd
+dcea90a0333e24603b2bb28262caa14f74e37730    IRRELEVANT  [console] return wrong console logsize
+a13560af7e8f2332ebef6e2b3be269cd0443846b    IRRELEVANT  utils: do not rely on unitialized variable
+99eafdd4f73bce953b161b5cf2bd5f2be3ef878f    IRRELEVANT  test: log error on failure
+c2229b24f93797b459aba479a80fc4c244f92302    IRRELEVANT  utils: check suffix length
+f577e0613c7cf3d15ec479aec184b611f4ad46ac    IRRELEVANT  lxccontainer: restore blocking wait()
+974a8abaf32183e32dc6b43cec53129721f03fb1    FEATURE     commands: add LXC_CMD_SERVE_STATE_CLIENTS
+7bc5a80badf339ccc14d6bfaa0ab666181f4696e    FEATURE     Create console when the rootfs is NULL
+cd5177e9e36b36869c99ee8b850b9853a344b179    FEATURE     remember the exit code from the init process
+eb8085399ce511e976678a0012fbf0e5319efe32    FEATURE     start: don't return false when the container's init exits nonzero
+f9eff9505328c1ec5ef05f07c0e27c0c51cf8361    FEATURE     lxc-execute: actually exit with the status of the spawned task
+55e1311e4b8b113f1b99d6667414c58dd910aee0    FEATURE     set exit status to 1 in the unknown si_code case
+5757588f962664d9bbff06b7469c789b709696f4    FEATURE     manpage: correct lxc.log.file conf option
+3dc035f1abc9129597b4b54e202e2471923db022    FEATURE     Adapt lxc_setup_console() to bind mount 'console'
+ed05aac829498161289d4f2da4002b42fb54bc32    IRRELEVANT  storage: treat return value from ops->destroy as int
+c948657b04506f18a572ce525cd2dbce8e84afca    IRRELEVANT  attach: init struct
+0072887d775b18015f82637637769d390b743e56    IRRELEVANT  tools: fix android
+358b8c818bea4df683c05647fa7b165037a29776    IRRELEVANT  coverity: #1427639
+b21da190ec9a0d11f19d4e2c0d1fda9dd668d02f    IRRELEVANT  coverity: #1427638
+2388737b2a78af3df2f45e931607a3c0e809d05b    IRRELEVANT  coverity: #1427191
+a49cad59f833e57f647eb5358c9163147f075a39    IRRELEVANT  coverity: #1427190
+42b09f9429eb6b17c8245176c05ba1325f642fe3    IRRELEVANT  start: fix mainloop cleanup goto statements
+bb2ada6f4d1f2e813976b79bd128c59c6f273275    FEATURE     attach: setup /proc limits
+1cce35e649874b489b84a4223e096d681842cca9    IRRELEVANT  attach: non-functional changes
+fb736bbe280c7136a6fbfbd34ef2cd6515dbf24b    IRRELEVANT  doc: Update Japanese lxc-attach(1) and lxc.container.conf(5)
+86530b0ae1180a47fd0df6033f3685c5bb923d97    IRRELEVANT  Fix comments and add check in lxc_poll.
+47ce2cb727eb0e306ab652910cf0b3fdd5cf7e24    IRRELEVANT  lsm: add lsm_process_label_fd_get()
+d3ba7c987201cb461ed92c027e9f424737fbe341    IRRELEVANT  lsm: add lsm_process_label_set_at()
+05f0f93a93452070006524ac22a6f51e19f8271f    IRRELEVANT  autotools: do not link against libapparmor
+c0a6d713b237db2fbb2a2e0a23885c32718071d2    IRRELEVANT  network.c: Remove ip_forward_set and callers
+d1953b26c87864808ce77958cccaeac69440fd17    IRRELEVANT  [cgfsng] show wrong errno
+5384e99dee4f15835bfe995845c0fde722e3d662    IRRELEVANT  rename am_unpriv to am_host_unpriv
+29cb26174d3183d47252f2a4d65e07f3d21a3d9e    IRRELEVANT  seccomp.c: Use return instead of attribution and return
+70a82405f4fe81c73ba05d682f858fcca0658e06    IRRELEVANT  confile_legacy: fix legacy network parser
+d6337a5f9dc7311af168aa3d586fdf239f5a10d3    IRRELEVANT  cgroups: get controllers on the unified hierarchy
+0c3deb94f438ccf0d622440d80e27a41db465d8b    IRRELEVANT  cgroups: cgfsng_create: handle unified hierarchy
+c2aed66d0ff8440cae33b5c08ca055a234197c88    IRRELEVANT  cgroups: cgfsng_attach: handle unified hierarchy
+0069cc619ed2c9fc2405c1a500f6c9c211ee4bba    IRRELEVANT  cgroups: cgfsng_get: handle unified hierarchy
+8777796839ab754e22b088dbf4e681d903c68ce8    IRRELEVANT  cgroups: cgfsng_set: handle unified hierarchy
+54860ed02790c1c87bf1125c3b91b52ee1ee1c37    FEATURE     confile: add lxc.cgroup2.[controller].[property]
+6b38e644cb8d4942f16d9a82b72d56a72b9aa81d    IRRELEVANT  cgroups: handle limits on the unified hierarchy
+a3926f6a95938574379af8b2bc811349d6367abc    IRRELEVANT  cgroups: more consistent naming
+1fb5e888a6ef3fb29c315abc59552d8c46291e46    IRRELEVANT  lsm: do not #ifdefine
+b87243830e3b5e95fa31a17cf1bfebe55353bf13    IRRELEVANT  hooks: change the semantic of NVIDIA_VISIBLE_DEVICES=""
+60e324aa5b9aa75c41d750f975cd220ec95c854b    IRRELEVANT  lxc-init: use SIGKILL after alarm timeout
+d4b5d7a8b418a14f6f97bc00df9b529eb09ea4f8    IRRELEVANT  monitor: send SIGTERM to the container when SIGHUP is received
+186dfb166aeddb92ef2e52a3bcad17ae05fa2030    IRRELEVANT  lxc.init: ignore SIGHUP
+7385273fc415fe56d499e2bdfd628dfe0e06e10c    IRRELEVANT  attach: set the container's environment variables
+3d55242aa5652be365ff944f8b71038233c17ab7    IRRELEVANT  attach: non-functional changes
+f8c40ffa39c41c5b3885caa4f3830f0a899ab1d3    IRRELEVANT  cgfsng: do MS_REMOUNT
+886cac862bfb470aed652e70ea7421259dcbad8c    IRRELEVANT  cgfsng: non-functional changes
+ff5976cd546774dacdcc5ae75dabcf440af840bb    IRRELEVANT  templates: CentOS fixes
+6c84b5994ab0d3bbd9d1a7210c97cdf7084bb3fa    IRRELEVANT  tools: exit success when lxc-execute is daemonized
+94bc08e9ed6f4f2541bc710ab12d5c8e451c2e80    IRRELEVANT  [monitor] wrong statement of break
+912314fc9b63e8cffaf3d5160f9171fc6a0805d4    IRRELEVANT  start: fix death signal
+f63ac53e318b82c8d43b3498d9a73d98dbe52a98    DIFFERS     lxc_config: Add -h and --help flags handler
+c06ed219c47098f34485d408410b6ecc94a40877    IRRELEVANT  configure.ac: fix the check for static libcap
+c7e345ae1f1c6b976ec1e6ae47f188567846d829    IRRELEVANT  conf: non-functional changes
+78c164840c1e9a868b56d89fbadec6f2bb2d561a    IRRELEVANT  Fix broken indentation
+5f98011c3e1bf45e63bfea4e607521b460c4a252    IRRELEVANT  Include -devel suffix in version string
+d8208db47785d93d8dcb96a83c0b015587a77448    IRRELEVANT  fix up lxc-usernsexec's exit status
+4d1ffb0abb608d23ea399f36ed0b8d32e24935a8    IRRELEVANT  start: non-functional changes
+766a3b2ee95272b37609640acc019e06ab3249ab    IRRELEVANT  tools: honor --console and --console-log
+dc5f6125d63caa215f33df1174ddc86b25cdb230    DIFFERS     console: set SFD_CLOEXEC on signal fd
+ecef04af7104c39cfcd96f3c429afe51d59ac628    IRRELEVANT  lxc-alpine: allow retaining sys_ptrace per container
+3a9e949f6d4cad085d645b2efbc126cdbc48773a    IRRELEVANT  start: don't log stop/continue for non-init processes
+19cfa02c4c7bd29cdf10462878d06d025fcc3d27    IRRELEVANT  fix lxc_error_set_and_log to match the docs
+4f4530faa742e39fb0e0cd3d08de07f36e2b0fc8    IRRELEVANT  lxc.init: correctly exit with the app's error code
+58fb9c8efe1b4594379e35e1c9b6ced0dd550b52    IRRELEVANT  unlink lxc-init
+ce4a1a11c9d0ff0378a94ed91196c6e47f8a9f20    IRRELEVANT  tools: non-functional changes
+c8dcf77824ed41857f0e86f98f59038eadc7d6c0    IRRELEVANT  coverity: #1426734
+d7af33e24ea644eededb3f3be21cc7687e80bdb6    IRRELEVANT  coverity: #1426694
+adf077a3607bff9853e6c300e998fa40fb840367    IRRELEVANT  Modify .gitignore
+e6e899749af3a28323fe12499dbed1faef4cacca    IRRELEVANT  lsm: non-functional changes
+5288a74faaa59680cab48f339e97c4ed6ce2a139    IRRELEVANT  apparmor: do not call aa_change_profile()
+4692c01af27c050f762026089efd17ddf717968b    IRRELEVANT  better unprivileged detection
+817a0e46b663b9a3cd3fe8f49caed98fd9015c91    IRRELEVANT  tools: make "-n" optional
