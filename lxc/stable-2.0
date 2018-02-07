@@ -629,3 +629,10 @@ c0a6d713b237db2fbb2a2e0a23885c32718071d2    DIFFERS     network.c: Remove ip_for
 29cb26174d3183d47252f2a4d65e07f3d21a3d9e    FEATURE     seccomp.c: Use return instead of attribution and return
 70a82405f4fe81c73ba05d682f858fcca0658e06    FEATURE     confile_legacy: fix legacy network parser
 b87243830e3b5e95fa31a17cf1bfebe55353bf13    FEATURE     hooks: change the semantic of NVIDIA_VISIBLE_DEVICES=""
+72c94ff968f66081bd52b7bdf6758e87917925f0    FEATURE     tools: add UNPRIVILEGED field in fancy output mode
+d6337a5f9dc7311af168aa3d586fdf239f5a10d3    DIFFERS     cgroups: get controllers on the unified hierarchy
+0c3deb94f438ccf0d622440d80e27a41db465d8b    DIFFERS     cgroups: cgfsng_create: handle unified hierarchy
+54860ed02790c1c87bf1125c3b91b52ee1ee1c37    FEATURE     confile: add lxc.cgroup2.[controller].[property]
+6b38e644cb8d4942f16d9a82b72d56a72b9aa81d    DIFFERS     cgroups: handle limits on the unified hierarchy
+a3926f6a95938574379af8b2bc811349d6367abc    DIFFERS     cgroups: more consistent naming
+60e324aa5b9aa75c41d750f975cd220ec95c854b    DIFFERS     lxc-init: use SIGKILL after alarm timeout
