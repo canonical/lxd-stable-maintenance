@@ -636,3 +636,55 @@ d6337a5f9dc7311af168aa3d586fdf239f5a10d3    DIFFERS     cgroups: get controllers
 6b38e644cb8d4942f16d9a82b72d56a72b9aa81d    DIFFERS     cgroups: handle limits on the unified hierarchy
 a3926f6a95938574379af8b2bc811349d6367abc    DIFFERS     cgroups: more consistent naming
 60e324aa5b9aa75c41d750f975cd220ec95c854b    DIFFERS     lxc-init: use SIGKILL after alarm timeout
+b074bbf1795616341e96303e28627a88cef6a1ad    FEATURE     confile: lxc.namespace.* -> lxc.namespace.share.*
+1d8d3676381c1ae755f5bd80200e76e98617e425    FEATURE     confile: add lxc.namespace.clone
+abeb5bba94746237d039e4d3d614cc11541bffa6    FEATURE     confile: add lxc.namespace.keep
+8bc8c7159f0bc6b4d000ac6697abba7d3b0ebf8b    IRRELEVANT  start: resolve clone flags
+46186acdb011208db4e34beeca513391eb00aa8b    FEATURE     doc: add lxc.namespace.clone + lxc.namespace.keep
+9267beba7b74a6180cb43ea04e94ff2436664da2    IRRELEVANT  tools: move lxc-attach to API symbols only
+a6993015de23bd96bde3941e0f78ff921956f0b6    IRRELEVANT  tools: lxc-autostart: non-functional changes
+a9ff89baa0fe7cc3880fc8db34b61cfa074d1d93    IRRELEVANT  tools: move lxc-autostart to API symbols only
+744b1eec11a3d25e2990ebe29400375a157ca7fc    IRRELEVANT  tools: move lxc-cgroup to API symbols only
+844d9eac45e18cc4bafdff71d9653fefe54539a1    IRRELEVANT  cmd: move lxc-lxc_usernsexec
+2a5ee335a61e78a05cc7ff29ffb34abc3f417ee9    IRRELEVANT  cmd: move init.lxc{.static}
+48b1dc4cdcbafb7eae37873ccb9b97ac0acad94b    IRRELEVANT  cmd: move lxc-checkconfig
+1c7507cb443daa98b7813833f04294e2ab1f0788    IRRELEVANT  cmd: move lxc-user-nic
+b80939349c241d75f0d3d3d61e19607362eb9881    IRRELEVANT  cmd: move lxc-monitord
+6a342cab3692cd46b77853a9019c53d02dd63dce    IRRELEVANT  cmd: move lxc-update-config
+78485176fd49b03b8374aa449e11f60a4866ae09    IRRELEVANT  tools: move lxc-checkpoint to API symbols only
+2f9928f6381b4b49f6b3a77366efabe0c24b3a3b    IRRELEVANT  tools: move lxc-clone to API symbols only
+2e38dc377d9390a03c6737f05404f827c9ca1bb8    IRRELEVANT  cmd: move lxc-config to API symbols only
+8d313ae1dd66601b60f950b0ad4962098d695b53    IRRELEVANT  cmd: move lxc-console to API symbols only
+0cb3e3a6ddbe9de3817546870e6481ddd51694aa    IRRELEVANT  tools: move lxc-copy to API symbols only
+e6294545d11d237d17aca02cdc0778d8b078cc05    IRRELEVANT  tools: move lxc-create to API symbols only
+e3347eef56460e72b896c696ae9e5a81e5ecb0f2    IRRELEVANT  tools: move lxc-destroy to API symbols only
+23500ef53871020b673a062c8ce58f7c7b249a51    IRRELEVANT  tools: move lxc-device to API symbols only
+791e7a73a9bca8dbde19afb49f172a901ce0dd43    IRRELEVANT  tools: move lxc-execute to API symbols only
+49ac7514cf8b1ae257418445bc6b2fe9568c7adf    IRRELEVANT  tools: move lxc-freeze to API symbols only
+8765242a3b3856d383fa63df3112262da1ac8d48    IRRELEVANT  tools: move lxc-info to API symbols only
+4b7c0ef8b25d273e1e1b9359d6f7ff78c1cfd25a    IRRELEVANT  tools: move lxc-ls to API symbols only
+6a3ec2c51e29faeca69a378a39a84577bc416a8c    IRRELEVANT  tools: move lxc-snapshot to API symbols only
+9810df078547d8a5da363ff1cfaf8a25b71b59fc    IRRELEVANT  tools: move lxc-start to API symbols only
+52d27da510808c3e347d9fb059e24087a941a4b5    IRRELEVANT  tools: move lxc-stop to API symbols only
+adc0914195a224d9575a2ae99a825d0e43317751    IRRELEVANT  tools: move lxc-top to API symbols only
+81bba32eda50697d8d57b557bc378d1ea41d27bb    IRRELEVANT  tools: move lxc-unfreeze to API symbols only
+b678c6d8a7eb71723cf3af1cdbdf7293adb4c197    IRRELEVANT  tools: move lxc-wait to API symbols only
+d567a9a7e9c660ab821b26e45de7c31dc368348f    IRRELEVANT  tools: move lxc-unshare to API symbols only
+1194822f0bc92e15d9521ae0521f594d1383710f    IRRELEVANT  cmd: non-functional changes
+1a80fcdfc7894a5f404cce148007de77b81af7ac    IRRELEVANT  tools: non-functional changes
+6ecad2c49b40aff0156b5192a561c93af1742c2d    IRRELEVANT  tools: move lxc-monitor to API symbols only
+f71634fcc97e750bb7bf5b8dcf7dc431efa08476    IRRELEVANT  tools/lxc-ls: fix logic for unpriv containers
+c66687101f330bda1e10571d9a457fd02e9aabed    IRRELEVANT  include: remove getsubopt.*
+1323838283dd5859a5a6bec92088b210d270d4e5    IRRELEVANT  tools/lxc_unshare: satisfy Android
+477aa378e9050ed5d7de22b6ff05a83f38824036    DIFFERS     define am_guest_unpriv
+e0010464c71ddd81eb36f2532618945d0afe924c    DIFFERS     Restore most cases of am_guest_unpriv
+7bd05339e17fe304bc984aceff539c3f257a009e    IRRELEVANT  start: check for cgroup namespace support
+5b7f756a67b94f846e05210dd1695c1bbabd155e    IRRELEVANT  coverity: #1426126
+f38cf5b8f4a916f356a74c709fe26aa2fde8d0d2    FEATURE     coverity: #1426083
+90f2046676e99922495d91cae34187750f5d1c4d    FEATURE     conf: fix log message
+341ed84c47c18771fbe0bfeb0ff6ad710de1fbdf    IRRELEVANT  start: use goto instead of simple return
+cb8ff4d033397ff16fd4e75f99d40c1371370010    IRRELEVANT  lxccontainer: satisfy coverity
+ab1a6cacaf10ef0e6a892cf64ad813bd1fd75de5    IRRELEVANT  conf: fix clearing cgroup settings
+6fba98b52458cd94cd0590ec5d0d757ecfb39abe    IRRELEVANT  tree-wide: remove legacy codepaths
+18fff5e30ef57aa0d9e135f21d4b440f2ef2abc6    DIFFERS     Modify .gitignore
+d840039ecf7159920fc2457c0c9f0339253db814    DIFFERS     conf: support mount propagation
