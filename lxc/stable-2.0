@@ -688,3 +688,12 @@ ab1a6cacaf10ef0e6a892cf64ad813bd1fd75de5    IRRELEVANT  conf: fix clearing cgrou
 6fba98b52458cd94cd0590ec5d0d757ecfb39abe    IRRELEVANT  tree-wide: remove legacy codepaths
 18fff5e30ef57aa0d9e135f21d4b440f2ef2abc6    DIFFERS     Modify .gitignore
 d840039ecf7159920fc2457c0c9f0339253db814    DIFFERS     conf: support mount propagation
+df3c5314d2421da286fca412ae072795f0979bae    FEATURE     start: s/||/&&/ when mapping ids
+8353b4c90ed18e570521134f2c60bef56a082b55    IRRELEVANT  conf: non-functional changes
+327cce76ad2f435e84b7d53e64a1e0a5edbd568b    IRRELEVANT  conf: fix run_script_argv()
+6f8d00d27964e548f66218408515993814bdd37f    IRRELEVANT  conf: use malloc() in run_script_argv()
+586b1ce72bc8a262b508109b6ad0a062c1ea9819    IRRELEVANT  conf: s/argsin/argv/ in run_script_argv()
+59ee28f21d2fa4a43bf0bfa50ec9c63a6181264b    IRRELEVANT  lxc-sabayon: Fix handling of eth0
+e99cf4acfd12ec8053497495b937f465c4b1b530    DIFFERS     tests: remove lxc-test-ubuntu
+9bf5cd8dbb11075d8395192be78e3bf251517873    IRRELEVANT  lxc-sabayon: Remove broken/unused code
+a514f2d9432145afd50791e7cb27673956e7a64e    IRRELEVANT  cmd/lxc-update-config: check for empty arguments
