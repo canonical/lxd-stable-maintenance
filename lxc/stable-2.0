@@ -697,3 +697,20 @@ df3c5314d2421da286fca412ae072795f0979bae    FEATURE     start: s/||/&&/ when map
 e99cf4acfd12ec8053497495b937f465c4b1b530    DIFFERS     tests: remove lxc-test-ubuntu
 9bf5cd8dbb11075d8395192be78e3bf251517873    IRRELEVANT  lxc-sabayon: Remove broken/unused code
 a514f2d9432145afd50791e7cb27673956e7a64e    IRRELEVANT  cmd/lxc-update-config: check for empty arguments
+3f69fb12c1c3ccbc0f1354a16dd56edaba5fe741    DIFFERS     confile: add "force" to cgroup:{mixed,ro,rw}
+16a2cde9e036f8245392b0e257b830d083dfb728    DIFFERS     cgfsng: fully document struct cgfsng_handler_data
+09f3bb13cc449480f0e56d55d11c31384d361600    DIFFERS     cgfsng: fully document remaining variables
+90e9728449bf9225bbd2a2e559f2b498850f5d6a    DIFFERS     cgfsng: cg_legacy_set_data()
+b2ac2cb7557f264851af8db18f22fe5c773de979    DIFFERS     cgfsng: __cg_unified_setup_limits()
+1e1579672bffe0c711240a489fdd908ac7812333    DIFFERS     start: remove duplicate lxc_monitor_send_state()
+a5a70219bca5d8bf5ef21256d7a551c80b3eba52    DIFFERS     start: lxc_check_inherited()
+0e7ff52c929ca8a93e1d090c20b5d78336a53f43    IRRELEVANT  tree-wide: remove cgmanager
+5032bf399e41198d0607e0391a5b89ea1e299dd1    IRRELEVANT  start: simplify
+2170b2631f026238dff98ea606bdce63ba9ac841    DIFFERS     start: lxc_init()
+c097467fce5c503ad82b7867b190a18541b3c661    IRRELEVANT  start: lxc_fini()
+e96a536ceef24d2812c497b3056288d94a883f4c    IRRELEVANT  start: do_start()
+cfc62c603651e5f27e826603e40ddba6be489ed5    IRRELEVANT  start: lxc_spawn()
+c30e9b193e2ca8c88fdf53225bbbc4e424f9ae33    IRRELEVANT  start: lxc_start()
+46800e7713519ba5e1502c5b2633ad3775693ccd    IRRELEVANT  start: non-functional changes
+1fd0f41eff5c52bea00f031bd0764b121753c301    FEATURE     utils: add lxc_set_death_signal()
+becad0ec98580f2e111c9b0067e8f7c3741f0d1c    IRRELEVANT  start: cleanup namespace handling
