@@ -1729,3 +1729,8 @@ e4f374659f0dd9c935c86548b83d486579112b4f    DIFFERS     lxc: Make the <remote>/<
 c959f0b75795eb2f1c4d72b63ab1d0297b10773e    DIFFERS     i18n: Update translation templates
 e3629486fdb29cc74b457de1390bf0064d3e478f    DIFFERS     Make the test suite use lxc.apparmor.profile instead of lxc.aa_profile
 13e07959c3c6f1a1446373dd158f49faa3e43e46    DIFFERS     Check for LXC version to decide which apparmor profile config key to use
+5e40c98e1679523cfb936b93a7eedcc72bbe2d49    IRRELEVANT  vagrant: Remove vagrant integration (outdated)
+d717267dfd3474db053de09e68b5b0ee6d4afcb4    IRRELEVANT  Move bash completion under scripts
+5bc1159834697ebd05d1535bc9c80182cb3cbccd    IRRELEVANT  test/macaroon-identity: Fix golint
+31b98d61feca19097c1738caad059d6d8eb8e819    IRRELEVANT  zfs: Don't fail on missing image snapshot
+003457fd85336641c5b9604118218b037c30ddf1    FEATURE     container_lxc: add unix device hotplug support
