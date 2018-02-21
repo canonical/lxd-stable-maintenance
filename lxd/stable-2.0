@@ -1734,3 +1734,4 @@ d717267dfd3474db053de09e68b5b0ee6d4afcb4    IRRELEVANT  Move bash completion und
 5bc1159834697ebd05d1535bc9c80182cb3cbccd    IRRELEVANT  test/macaroon-identity: Fix golint
 31b98d61feca19097c1738caad059d6d8eb8e819    IRRELEVANT  zfs: Don't fail on missing image snapshot
 003457fd85336641c5b9604118218b037c30ddf1    FEATURE     container_lxc: add unix device hotplug support
+d31c4894aaeefe0188569dcdd7a89a6cbcef7f10    DIFFERS     lxd-benchmark: Fix golint
