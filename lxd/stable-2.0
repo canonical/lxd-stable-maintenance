@@ -1735,3 +1735,25 @@ d717267dfd3474db053de09e68b5b0ee6d4afcb4    IRRELEVANT  Move bash completion und
 31b98d61feca19097c1738caad059d6d8eb8e819    IRRELEVANT  zfs: Don't fail on missing image snapshot
 003457fd85336641c5b9604118218b037c30ddf1    FEATURE     container_lxc: add unix device hotplug support
 d31c4894aaeefe0188569dcdd7a89a6cbcef7f10    DIFFERS     lxd-benchmark: Fix golint
+40c18267366d37f09e6292fa45627e8c7c331116    IRRELEVANT  doc: s/zfs/ceph/
+46a6f734577562374f6cd9321823500c42284a08    IRRELEVANT  storage volumes: non-functional changes
+0d5b7daa1e0e7031605957b10e8505cd35427833    FEATURE     storage: local storage volume {move,copy}
+c9d94420d1f468f375133b2afac2b60ae0083e1e    IRRELEVANT  lxc: implement local storage {move,copy}
+6789e2aed2f02d4f6d6cccb0d9f30822f4ba223b    IRRELEVANT  doc: add "storage_api_local_volume_handling"
+89741f5e9c2602879c7f77dd496e80b8e11ed402    IRRELEVANT  test: add local storage volume handling tests
+2dac27d426fa215c6947069f7fbe93457e31f093    IRRELEVANT  tests: Drop lxd/sqlite golint test
+89d08e2c1a4cede676cf2d34b4a8e0910ac22cdc    IRRELEVANT  lxd: Set description field on all operations
+7414589c25b631b9a08b150a642748569498f715    FEATURE     lxc/operation: Add description column
+81a38447035e4a45ae304595a35e200f3b22a0b1    IRRELEVANT  i18n: Update translation templates
+ba7416db47182832740d95768ecbca457beba6d1    FEATURE     lxd-p2c: Add new tool
+e1dd2e56fa3d9d046a958018378f4220de9421d3    IRRELEVANT  fuidshift: Port to cobra
+54e445a82b7782d76b58b527f5de59d74548c05a    DIFFERS     shared/version: Include storage backends in agent
+2cdda9f00d9b083da18cc834bfc0927c2eea68dd    DIFFERS     lxc: Fix golint
+96715c32aa937c9a6c7c922bf9dc5f6e16fc4d1b    DIFFERS     lxd/util: Fix golint
+5f92b6469da921e2f07697c95666c9cbfe73be06    DIFFERS     tests: Update list of golint clean packages
+51eb1f60363f524daa87fcbe4fdce39ffc0c3d28    DIFFERS     lxd/daemon: Cleanup startup code a bit
+fceeeefa9c89ef228020d122704efade5ae6c876    DIFFERS     i18n: Look at all lxc files
+d3b81aab6c4abfd6540ad3a5a4434501727061d2    DIFFERS     lxc: Introduce a new utils package
+4de1243fe80fc9421d60c60c6ba176169195d68f    DIFFERS     lxd: Move migration code to own package
+241400755458169b2a1b2b1d96f80ead6a6dc7ad    DIFFERS     shared: Remove dead code
+979a7dedc7dfcdc97ca5e81355fee2bf5afd4973    DIFFERS     lxd: Make pongo2 look inside the container
