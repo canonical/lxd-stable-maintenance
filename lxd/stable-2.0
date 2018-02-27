@@ -1757,3 +1757,13 @@ d3b81aab6c4abfd6540ad3a5a4434501727061d2    DIFFERS     lxc: Introduce a new uti
 4de1243fe80fc9421d60c60c6ba176169195d68f    DIFFERS     lxd: Move migration code to own package
 241400755458169b2a1b2b1d96f80ead6a6dc7ad    DIFFERS     shared: Remove dead code
 979a7dedc7dfcdc97ca5e81355fee2bf5afd4973    DIFFERS     lxd: Make pongo2 look inside the container
+aaaec3206ee8a19e4bfcc2ab3fbfbc8c2c93a5bd    IRRELEVANT  lxd-p2c: Drop duplicate definition of Use
+c8606388f32adafe54b6e7b8f1c6f1fcc29e1d5c    IRRELEVANT  fuidshift: Drop duplicate definition of Use
+02672075f04241d74649b2d310ea62f21e2e10ad    IRRELEVANT  lxd-benchmark: Port to cobra
+432220433f07bd3e1bc0b66ee411071908a70c73    IRRELEVANT  fuidshift: Reshuffle code to match lxd-benchmark
+b809479a7092a577c284252713c931bd40b0d23d    IRRELEVANT  lxd-p2c: Reshuffle code to match lxd-benchmark
+5f9caa2c6566aa973e0ab4523b550b12f1bd1272    IRRELEVANT  gitignore: Add macaroon-identity
+dc52afe977c044a431ddb9f76ef08379eba9ab5f    DIFFERS     scripts/bash: tweak complete line for snaps
+ea28c1575ef263e21beb51387de4159716e371aa    IRRELEVANT  tests: Fix perf.sh after lxd-benchmark changes
+fd96e51d3f1a5d0c207fe01b6f5995c965f5172d    IRRELEVANT  tests: Fix pool conflict in preseed
+60f47dd5772de58fa7261bd1ce5b10da79ec0a35    DIFFERS     Add some missing "Return:" headings to make sample return values formatting right
