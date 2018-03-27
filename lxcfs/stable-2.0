@@ -1,0 +1,2 @@
+398ad1b91dce2efc80b6aead57c350605e50c8b8    FEATURE     pam: remove from LXCFS (is now in LXC)
+b871d3a4a50a884f018efc9075ecbc93b02adb27    FEATURE     Release LXCFS 3.0.0.beta1
