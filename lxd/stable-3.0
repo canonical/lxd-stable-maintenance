@@ -1,0 +1,28 @@
+2545886cc6deda870573de2b694632d2d69514f6    FEATURE     lxc remote list: add format option
+9535976ac4c27abda162cad819a13bba79cf6b86    IRRELEVANT  update translations i18n
+fd0700e62dd531cb110b60e7a901a4797b79aa40    IRRELEVANT  lxc remote list: add separate blank line for flagFormat, update translations
+100034a3e1d93e48f101384baf3434ea1b0db975    FEATURE     lxd/containers: Allow configuration of mount-propagation
+afe92547baa1d991727abcbc70255818997f89a6    FEATURE     db: Create containers_backups table
+1e08a6d40b03516bd7711b4a4870ce08d747151b    FEATURE     db: Implement backup functions
+ccb6af48de1cdce2c7d4526c97c7d9933f1da39f    FEATURE     storage: Add backup functions to interface
+cf8735833ff84a9bce5cb954311ac242330dd3e1    FEATURE     lxd: Add backup helper functions
+1351c51012f5da420eb4fb933a17447f5d0f7139    FEATURE     lxd: Add backup create/load functions
+34acc8168583b769ff460c42a06845ee95a5f080    FEATURE     api: Implement backup functionality
+e416772696679e3ce80d672c6697ad6a72eec8a3    IRRELEVANT  btrfs: implement backup logic
+84dc9e02938f19b9777b44cab285e04c167689c6    IRRELEVANT  ceph: implement backup logic
+bbacb5b1ad46c714f948a482045d714914aef32a    IRRELEVANT  dir: Implement backup logic
+bf082b76e43a676ea01ee534323be975e3392ada    IRRELEVANT  lvm: implement backup logic
+4d7d1e03142a56970f3cbaee6bf5010657c9244a    IRRELEVANT  zfs: implement backup logic
+818b9fb98a40e17375d2a54d456f4f3ddbd0ac2e    IRRELEVANT  lxc: Implement import/export commands
+eed9a428b3d2527096052ef74f0242b96efd11bc    IRRELEVANT  lxd: Use io.ReadSeeker for backup import
+134c9249d5230947fa4fafc1856d15b60afaff2f    IRRELEVANT  api: Add backup extension
+dcaeb52eaf4010f36ca1cefa08d5cfbaa69bf920    IRRELEVANT  doc: Document backup API
+4fdddaf706e77057d4f5fb2f17f87a3bbabe2c87    IRRELEVANT  test: Add backup tests
+2cb7e4313cf896ee55d761f852f45fbe01d2e10b    IRRELEVANT  i18n: Update translation templates
+ba13954d9ada7c69436e5bcccf4f2e0a2bb7e5b6    IRRELEVANT  storage: handle ContainerRename() correctly
+4c8bb8ca98bb806d163ccec6ac6aa0253773629d    IRRELEVANT  storage: handle ContainerDelete() correctly
+09a72c0286486cb6cb69283be345aea34082cb64    IRRELEVANT  Update translations from weblate
+d0d66b4842f459c6c3e039a9e2f25eff02174ab1    FEATURE     Release LXD 3.1
+d9c9fdd0fd31c365f018f1c7d35d2293e5ec1f2d    FEATURE     devlxd: Allow download of public images
+7f4f959d5c86a7e87cfb2fe27d71d021c6c024df    IRRELEVANT  devlxd: Add image download API
+7d31f08912d1483cd5bc60c4c0e57447510a8ab1    IRRELEVANT  Update translations from weblate
