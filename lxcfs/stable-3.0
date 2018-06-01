@@ -1,0 +1,4 @@
+46be8eed15b6d020ec68051a5579412f4e5fdd02    FEATURE     Necessary instructions for loadavg
+0e47acaa3d3131ff07fe8b37fb3bc839dbc3279e    FEATURE     Use hash table to store load information
+6db4f7a36aca41e2db91ac55f95ace1f27676db6    FEATURE     Calculate and read the average load.
+9c480eb7bc9e395fe150ba636837a94f0b75f723    FEATURE     Claim and use load_free() to free hash table.
