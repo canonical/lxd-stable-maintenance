@@ -26,3 +26,12 @@ d0d66b4842f459c6c3e039a9e2f25eff02174ab1    FEATURE     Release LXD 3.1
 d9c9fdd0fd31c365f018f1c7d35d2293e5ec1f2d    FEATURE     devlxd: Allow download of public images
 7f4f959d5c86a7e87cfb2fe27d71d021c6c024df    IRRELEVANT  devlxd: Add image download API
 7d31f08912d1483cd5bc60c4c0e57447510a8ab1    IRRELEVANT  Update translations from weblate
+243541ddc5a084651aadfac500769b066106ef45    FEATURE     btrfs: cross-pool container copy
+585be7523cd765182d2fd7f0b73c8ce393d2d771    FEATURE     dir: cross-pool container copy
+9defb15165b82be1a20d60dc9602716091a2ab69    FEATURE     ceph: cross-pool container copy
+4d8c5d892f3e3231deb2efab4c8f5bbc58a0ff76    FEATURE     lvm: cross-pool container copy
+779fee571adfebf9069c6926eb66433c9bf289fb    FEATURE     zfs: cross-pool container copy
+b7f807b72d3f580f14e68820e6e079d2f8166abf    FEATURE     doc: add container_local_cross_pool_handling
+7a6960a860dcc16cc9ddb19f5f83b47f6a003512    FEATURE     lxc: add -s/--storage flag to copy and move
+3604d93b38fe1bbf6bcc09960c55a5c93c1a6a23    IRRELEVANT  i18n: update
+37bf1f9941772719ffccf8784ae6474841900678    FEATURE     test: add cross-pool container copy tests
