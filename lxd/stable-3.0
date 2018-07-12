@@ -38,7 +38,6 @@ b7f807b72d3f580f14e68820e6e079d2f8166abf    FEATURE     doc: add container_local
 e802e03d6e7eb93b3560198e5554bf5b12a6f62e    DIFFERS     lxc/move: Support config and profile overrides
 ae9be8e1761431958ec4fb47ab0e8c6ffaab9feb    DIFFERS     i18n: Update translation templates
 f48004f196f927df13847164dfd62883ecf0fb08    DIFFERS     i18n: Update translation templates
-747dd1fb1f7069b20b79d1e7c3e41a6b17e81a01    IRRELEVANT  util linux: add abstract unix socket helpers
 3060cb029869df56e00b957753973730c289414a    FEATURE     api: proxy_unix
 e3e37602cb7320e7eb008beec7557ea55aaebffe    FEATURE     proxy: udp
 e6a57d8a4829512e23c37ea4224a95f9f2822e98    FEATURE     api: proxy_udp
@@ -78,3 +77,16 @@ a1c243ae27ef2ab958fb35919e3231fa0e5630fc    DIFFERS     allow uidmaps to be pars
 7d707d6cbe27e00a5f4ba5d8a733945e0071c464    DIFFERS     idmap: support skipping directories
 19e4780e5c4727e53a53436392aee8aea4f86e37    DIFFERS     certificates: move structs
 866f48b8ee239366770b5e1cd45e56978d4da49d    DIFFERS     lxd/storage/btrfs: Fix recursive snapshots
+45be3534d3ab110746c1981861d0605a6c189695    FEATURE     proxy: unix
+0d31d62d22af0a7d3700bb72e503f0acaf48130f    FEATURE     tests: add tcp proxy tests
+209cd29b8ba1f009e181c26985c0c795817f2ac9    DIFFERS     lxd: Cleanup logging
+ee28295f0e25f85885b32e7f59248f97aded21eb    DIFFERS     lxd: Improve error messages
+abdacc46a9a90bec9dabe9e8ee8eaf59b263faa3    IRRELEVANT  proxy: Genericize to handle multiple ports
+4212bb1fd15c3f6226b3e442c1f12516b2d7f904    DIFFERS     proxy: Properly handle relay errors
+a5e45eae024ab4583dcb7da66c4953ea6650505f    DIFFERS     tests: Port proxy tests to socat
+03e624533b7166f7622a6e3154e82ac8696d3e42    DIFFERS     lxd/certificates: Log password failures
+b753839304025313966aa9ce6d22b1962e6cf830    DIFFERS     proxy: handle full socket buffer
+8b9c88589b66e018bc939713e308323ec101bff4    DIFFERS     doc: Add links to REST API
+024c71f8655f6f0a0629eda00b8d8119e147dbeb    DIFFERS     lxd/operations: Forward to right cluster node
+f716d3d0cdbe51ae0ec4d06313d53c842f2a59ce    DIFFERS     lxc/{copy,move}: Allow overriding device config
+9065ed1d22759af0dba82c044d277f1dab2bd89a    DIFFERS     i18n: Update translations
