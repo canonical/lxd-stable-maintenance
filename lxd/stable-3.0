@@ -35,3 +35,46 @@ b7f807b72d3f580f14e68820e6e079d2f8166abf    FEATURE     doc: add container_local
 7a6960a860dcc16cc9ddb19f5f83b47f6a003512    FEATURE     lxc: add -s/--storage flag to copy and move
 3604d93b38fe1bbf6bcc09960c55a5c93c1a6a23    IRRELEVANT  i18n: update
 37bf1f9941772719ffccf8784ae6474841900678    FEATURE     test: add cross-pool container copy tests
+e802e03d6e7eb93b3560198e5554bf5b12a6f62e    DIFFERS     lxc/move: Support config and profile overrides
+ae9be8e1761431958ec4fb47ab0e8c6ffaab9feb    DIFFERS     i18n: Update translation templates
+f48004f196f927df13847164dfd62883ecf0fb08    DIFFERS     i18n: Update translation templates
+747dd1fb1f7069b20b79d1e7c3e41a6b17e81a01    IRRELEVANT  util linux: add abstract unix socket helpers
+3060cb029869df56e00b957753973730c289414a    FEATURE     api: proxy_unix
+e3e37602cb7320e7eb008beec7557ea55aaebffe    FEATURE     proxy: udp
+e6a57d8a4829512e23c37ea4224a95f9f2822e98    FEATURE     api: proxy_udp
+5c2bcd263606707cb4bc1dbbc1c90a6536d4779c    FEATURE     tests: add udp proxy tests
+dfd7906636f1b1ce52076acfad247fa78994e621    FEATURE     lxc/{import,export}: Deal with snap paths
+fdcc20a0facc9512fb3c554caacbfb05ed486180    FEATURE     Extend cluster join API
+bb463ef565492263cc256211272155111b5b6cc2    IRRELEVANT  Fix nits
+0061b6dff22c2c5ee550fe404689d7ac39dcba48    IRRELEVANT  Document new parameters in rest-api.md
+08abcdf742baef3eb53129327bfc53bddeb1fe59    IRRELEVANT  tests: ensure no lingering unix and udp sockets
+08da01fe9433d1bee21279b049925f8d68899ea0    IRRELEVANT  Replace tab with spaces
+2b40665ba1d906d886ec04bdf0c6a9258838cea7    IRRELEVANT  test: Remove UDP to non-UDP tests
+98faf0a0d708b62bf7503497dfdb893e6d9e4476    IRRELEVANT  tests: Make it easier to identify proxy test
+e1bba75a500b91df6633a3574f309653b3795544    FEATURE     proxy: Handle UDP and TCP port ranges
+cf8c08a5aa8516956d5dbcab588337a37fe0d199    FEATURE     proxy: {TCP,UDP} multi-port handling
+207ca05c6b83a04583912dc743bc00c2567505f0    FEATURE     proxy: Add multi-TCP <-> multi-TCP
+56f8ccffed61e07cb77b78580193fccf382cda5b    IRRELEVANT  doc: Add missing \-escapes for _
+8655511d51fdde61644ebfc84f23181c2653b211    IRRELEVANT  api: proxy_multi_listening_ports
+1e58bad9fc783197c8d56223e55ab01efda5a307    IRRELEVANT  proxy: Implement UDP session tracking
+d9f5366ab3cf87fbd7f85005a5f5db7e32e7dd58    IRRELEVANT  Update translations from weblate
+b0ead1fc5bf4111a406b366fe943934532834b35    FEATURE     Release LXD 3.2
+cb1f39e0a684301221c023e1c363f666b81e23ae    FEATURE     lxd,shared: Add network state API
+9e15bf6e5d480a7e817eecaa1477507b912dfaec    FEATURE     doc: Add network state
+3f427f57192ad768d93e0340559f1966590f3359    FEATURE     client: Add GetNetworkState
+c33e3c65f35846dab93999dc16be6f634148bcc4    FEATURE     lxc/network: Add new "info" subcommand
+ccb03c5661c57a84f328f4d3dc51ded0fec24991    IRRELEVANT  i18n: Update translation templates
+fc6996a42c9548388dc860fa6f7ed248f820747d    FEATURE     proxy: add non-abstract unix socket DAC properties
+636b427fbe039a43d8ca7a610ff5f2e631e4c6ec    FEATURE     api: proxy_unix_dac_properties
+dd30ac52615ddf22eb1bf9775dd205bde4ee434e    IRRELEVANT  Convert mode from string to octal
+06bcecd692d234b2b9e0d75b98a81ee9f83cc5b3    FEATURE     lxd: Add deletion protection
+031caf6c3b5b8b1143bd3a40daae796e4337c4d3    FEATURE     doc: Add deletion protection
+3ef38e59b8a30805bb21956e70400a48cf7b0a16    FEATURE     test: Add deletion protection
+5fe6f782a863a5ae7875e21a37f8ee728e695652    IRRELEVANT  doc: Document uid/gid/mode for proxy
+4ba2f3d894d3790dceaf11097eb496faa3953233    FEATURE     proxy: Implement security.{uid,gid} for priv drop
+45704a8dbc55e45f1bc97863d27fb67a2a588f04    FEATURE     lxd: Add built-in pprof server
+95c4c6472c5698f137d92f5e0b5854254b5e3732    IRRELEVANT  doc: Fix missing escaping in api-extensions
+a1c243ae27ef2ab958fb35919e3231fa0e5630fc    DIFFERS     allow uidmaps to be parsed from alternate roots
+7d707d6cbe27e00a5f4ba5d8a733945e0071c464    DIFFERS     idmap: support skipping directories
+19e4780e5c4727e53a53436392aee8aea4f86e37    DIFFERS     certificates: move structs
+866f48b8ee239366770b5e1cd45e56978d4da49d    DIFFERS     lxd/storage/btrfs: Fix recursive snapshots
