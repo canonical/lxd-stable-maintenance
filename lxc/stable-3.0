@@ -1,1 +1,22 @@
 5eab47bce5d5fd77c32143002b56c1b3606b5909    FEATURE     confile: expand lxc.environment
+258f80519f3bb0a41c26083020154e9a61df8468    FEATURE     confile: add lxc.monitor.signal.pdeath
+e53cd6d899bd50e07c8bb760371bfa2d5d4c56ef    FEATURE     tests: add lxc.monitor.signal.pdeath
+fd5de0292195a2a6ba9dc6c3727de202b015c02c    FEATURE     doc: Translate lxc.monitor.signal.pdeath into Japanese in lxc.container.conf(5)
+adf0ba1fc7c792346b71925656a3fdcbcbbec281    FEATURE     conf, confile: introduce basic structs for shared mount point
+0d190408c24e2ac78ddb449b1f1299f1afa6722d    FEATURE     conf, confile: add parsing of a shmounts config parameter
+f6310f1844ba5482dad66f3e5de0126098e17d13    FEATURE     utils: add shared mount point detection
+4d6cc24cbe182d0a06b8704ee5bc4fce6a4cf258    FEATURE     start: add shmount setup on container start
+29df56cda5e6b5b82cb76eb2a9cda59f111544f1    FEATURE     lxccontainer: add container API function and structs for injecting a mount
+d81423f2a0408c310be3667a0cdd40c6313b6b1d    FEATURE     tests: add mount injection tests
+d83da817b315903c2651af0e365411d92c9d1017    FEATURE     lxccontainer: add the umount API function
+c8c568c85f5bd4b46b5d04457d1afd64addbd7f3    FEATURE     tests: add tests for umount
+643bcac997bdf739e435eacaf3b9b44f5a971577    FEATURE     tests: tweak mount injection tests
+c6885c3f247528c65402d1c4362afd977bdae95a    FEATURE     lxccontainer: add handling of file mounts
+117deb709e9253ff71a48cce30bfb214519dfa6c    FEATURE     tests: add filesystem and char device tests
+3340f441729dd7e6f805dde39666526dfd7ee464    FEATURE     lxccontainer: do_lxcapi_mount() coding-style
+1f5a90f946492b43405557f69f8dc2dce2dfa31a    FEATURE     lxccontainer: reword create_mount_target()
+7a41e8578e39333b3c9ac1216e1b203926b423b0    FEATURE     conf, confile, lxccontainer, start: nonfunctional changes
+60534030e4d43e68943c582bfdb853ab6ecb9ca8    FEATURE     conf, lxccontainer: fix length checks in snprintf
+fd14fdb8272184155a965901e26170496b9de901    FEATURE     confile: add strdup failure check
+6b7413978051e6a51da9556c947f1a96fd1d80c7    FEATURE     conf: coding style fixes
+ea0e06dd74b2baf5f3830531887c734dd16756e5    FEATURE     start: coding style fixes
