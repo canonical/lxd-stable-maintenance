@@ -90,3 +90,18 @@ b753839304025313966aa9ce6d22b1962e6cf830    DIFFERS     proxy: handle full socke
 024c71f8655f6f0a0629eda00b8d8119e147dbeb    DIFFERS     lxd/operations: Forward to right cluster node
 f716d3d0cdbe51ae0ec4d06313d53c842f2a59ce    DIFFERS     lxc/{copy,move}: Allow overriding device config
 9065ed1d22759af0dba82c044d277f1dab2bd89a    DIFFERS     i18n: Update translations
+b18f316d76fe97fb93446a75ef05cac4edfb5ad9    FEATURE     lxc-to-lxd: Rewrite in Go
+5b20a05a6f4928e9dc0baad702a492c9dce1e776    IRRELEVANT  tests: Add lxc-to-lxd tests
+89c1fc9536b59e1e696a9569e073525f6b5ae8cd    IRRELEVANT  scripts: Remove lxc-to-lxd
+480543e5e207ebaf87e61835977b9e75acdcfa9a    IRRELEVANT  lxc-to-lxd: Address comments
+d448ca0221b145b7429480c87a3f2894e872868f    FEATURE     lxd: Introduce --dump flag to lxd init
+431b2874ae87564cc615bca26bfd686abc329aab    IRRELEVANT  test: Add test for lxd init --dump
+cb1adfe102f75c1883ee3679fc188ea6748bbe3d    FEATURE     lxd/proxy: Add support for PROXY header
+30f1e3e8470f3d2987b96fb72b1ac2f870c6ca22    FEATURE     lxd/network: Add bridge.hwaddr config key
+53d03a036a733c4f632cb4cfb09ccfd85a4d9899    IRRELEVANT  lxd: Make iptables logic usable for containers
+8c3de5c3c462dcb8504d7b501310ab4af6d63706    FEATURE     lxd/containers: Add NAT option to proxy device
+0c728138e8df34c4cadaf50f4f5e576c0b643066    IRRELEVANT  tests: Add tests for NAT option and parseAddr
+1b67e1cc9a9f4851695c898fbb16bc31b444dfe3    DIFFERS     Make lvm.thinpool_name and lvm.vg_name node-specific
+b961c740d3f31adbbc4e0e404f2a2b6ae2aebd3a    DIFFERS     This should have been a patch, for easier backporting
+67b1f6d5102d74dad0970fd7d7aec5fa0f77d514    DIFFERS     i18n: Update translation templates
+0ae5b1148d2ebf9086a70922283cf4f4e4e0d7e5    IRRELEVANT  lxd/containers: Validate proxy config early
