@@ -20,3 +20,10 @@ c6885c3f247528c65402d1c4362afd977bdae95a    FEATURE     lxccontainer: add handli
 fd14fdb8272184155a965901e26170496b9de901    FEATURE     confile: add strdup failure check
 6b7413978051e6a51da9556c947f1a96fd1d80c7    FEATURE     conf: coding style fixes
 ea0e06dd74b2baf5f3830531887c734dd16756e5    FEATURE     start: coding style fixes
+095b5c7d2e80cda9a9f370c7a2acd157856b14ac    FEATURE     lxccontainer: fix indendation
+1800f9247357948fd11c9da73b1943a8a7b6882b    FEATURE     apparmor: profile generation
+e7311a84e5bd0758931033b1a0ce649baa720a58    FEATURE     tests: add test for generated apparmor profiles
+62dd965e457ab1e1cb7c9c059a934bcda4d4e48f    DIFFERS     confile: s/strtok_r()/lxc_iterate_parts()/g
+b84eb74f954f1fd5f2558a6231cea1839670d80f    FEATURE     Makefile: add missing lxctest.h
+f994bc87afda7112e0cebe5ff67f37af673dfe06    FEATURE     tests: remove VLAs
+1fabf7d4ca97d7242cca1657a4449113ab2767da    FEATURE     apparmor: s/read()/lxc_read_nointr()/g
