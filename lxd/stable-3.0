@@ -112,3 +112,10 @@ ca485673d313fac4832cfc5c8dfac338d172bb06    FEATURE     Release LXD 3.3
 d65ea4c267fc6d49169abe34976d608cbcecdb77    IRRELEVANT  po: Update translations
 bcda42dabff0b1270f2d703fdf9ecd5ac8e16644    IRRELEVANT  tests: Fix lxc-to-lxd unit tests
 83386e1513fbefc096c345e112c2d8c79d037fc8    IRRELEVANT  forkproxy: use correct types for {g,u}ids
+511a7ddecaddb1d8d57eb61575d5d77afa59a3b7    DIFFERS     *: Unify error messages
+da142951b371d8fcaf88920b7b43ba1471d89790    DIFFERS     i18n: Update translation templates
+48b8b97c4a330b2de7ad2434f2dd8ddf998de042    IRRELEVANT  networks: Fix packet stats logic for containers
+6823718772401ffa9d30f4f9533f739cdb0a530a    DIFFERS     tar: Support xattrs
+dba5b3ed1afc915a67dbcbd3f1e250af3f426dad    DIFFERS     rsync: Support xattrs
+579d5d5adfad38c4d0897dcafa95b560db5e0f33    DIFFERS     test: Add test for cluster shutdown logic
+38778dfb6fbda86ddf2ec273968364e7d9d55bd7    DIFFERS     tar: Use --xattrs-include=\* during extract
