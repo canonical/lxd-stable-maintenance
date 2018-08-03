@@ -105,3 +105,10 @@ cb1adfe102f75c1883ee3679fc188ea6748bbe3d    FEATURE     lxd/proxy: Add support f
 b961c740d3f31adbbc4e0e404f2a2b6ae2aebd3a    DIFFERS     This should have been a patch, for easier backporting
 67b1f6d5102d74dad0970fd7d7aec5fa0f77d514    DIFFERS     i18n: Update translation templates
 0ae5b1148d2ebf9086a70922283cf4f4e4e0d7e5    IRRELEVANT  lxd/containers: Validate proxy config early
+8a12a5b2c6f70933138cce1ff37da491d142f979    FEATURE     Allow NAT rule to be appended to POSTROUTING table
+b04faf6e39b43a906a4c04aa8838c5a1394b5694    IRRELEVANT  Update translations from weblate
+124ff68da0b7b56401aef74b165bf83739c08701    DIFFERS     Don't include container name in backups/snapshots
+ca485673d313fac4832cfc5c8dfac338d172bb06    FEATURE     Release LXD 3.3
+d65ea4c267fc6d49169abe34976d608cbcecdb77    IRRELEVANT  po: Update translations
+bcda42dabff0b1270f2d703fdf9ecd5ac8e16644    IRRELEVANT  tests: Fix lxc-to-lxd unit tests
+83386e1513fbefc096c345e112c2d8c79d037fc8    IRRELEVANT  forkproxy: use correct types for {g,u}ids
