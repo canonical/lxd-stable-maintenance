@@ -2,3 +2,8 @@
 0e47acaa3d3131ff07fe8b37fb3bc839dbc3279e    FEATURE     Use hash table to store load information
 6db4f7a36aca41e2db91ac55f95ace1f27676db6    FEATURE     Calculate and read the average load.
 9c480eb7bc9e395fe150ba636837a94f0b75f723    FEATURE     Claim and use load_free() to free hash table.
+01d88ede4746a7ef08f38ce779799e4a9ddef105    FEATURE     bindings: fix memory leak in proc_loadavg_read()
+a83618e2cdb9abede47001f2bcb132fc569a0c9b    FEATURE     loadavg: restart thread on library reload
+8be92dd19ceecb0ab54f36cc69d5f3845ba29844    FEATURE     Per-container CPU usage in /proc/stat
+832904c17476619af8fa74dd25b5f2dd9c52d095    FEATURE     bindings: fix memory leak in calc_pid()
+beb5024eaef96e3fae7c8e13646cc7971a9ddc4a    DIFFERS     bindings: better logging for write_string()
