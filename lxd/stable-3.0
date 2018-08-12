@@ -119,3 +119,21 @@ da142951b371d8fcaf88920b7b43ba1471d89790    DIFFERS     i18n: Update translation
 dba5b3ed1afc915a67dbcbd3f1e250af3f426dad    DIFFERS     rsync: Support xattrs
 579d5d5adfad38c4d0897dcafa95b560db5e0f33    DIFFERS     test: Add test for cluster shutdown logic
 38778dfb6fbda86ddf2ec273968364e7d9d55bd7    DIFFERS     tar: Use --xattrs-include=\* during extract
+d8b7469619276f67dfec6213b1fa2aed8cb2d231    FEATURE     Make use of the new cluster join API in lxd init
+79336b72be4c58c4a5a638554b4b913a9a6b632a    IRRELEVANT  Allow for MemberConfig to be empty even when using the new join API
+7d967052e4257acfbcfcab12b71f43752595096d    FEATURE     lxc/remote: Rename set-default to switch
+25ea21da0ab9a68ae1f69fae70931a13138717fd    IRRELEVANT  i18n: Update translation templates
+42c494e6fa7bc1371577ab7a999f918c03c3675b    FEATURE     lxc: Allow aliases to external commands
+902b41557f5de2694c506fc407198acef5765e8c    IRRELEVANT  Update translations from weblate
+abd349546c227818eb11d012778a364b169576af    IRRELEVANT  lxc-to-lxd: Fix lxc.rootfs parsing
+b32122ec8f888294e76d02e6e3ff9c15ce51e614    IRRELEVANT  lxd/backups: No need for interfaces
+a820c231bd142aa8438ee9cb878e3b5b04ff7e65    IRRELEVANT  lxc/import: Show progress
+d8de0fbd9f063d8e2f2e57f78618d2da1522f389    DIFFERS     lxd/containers: Add helpers for retrieving containers
+177826757c5d6a233e91d7ee7306583ad3c99626    FEATURE     lxd/containers: Implement support for recursion=2
+1a8f1be4e3a2c150303b1af8c799fa74bb849286    FEATURE     lxc/list: Support for recursion=2
+2df5c1d593c3dbd5341ecfae5f52dda4c916cbe2    FEATURE     lxd: Add dns forwarder
+69bb128b2806a6a8d4c6d1db387ada6a2a78099e    FEATURE     lxd/networks: Add support for FAN clustered DNS
+d5e99058c559144d7b0484ba589954515bfb4c3f    IRRELEVANT  lxc-to-lxd: Fix rootfs tests
+b7851d333c16d67c8eb2020b5ec96604cce5d919    IRRELEVANT  lxd/cluster: Properly skip pending networks/pools
+35bb9480d2931a4a41ab62d5b333da52cbd08460    IRRELEVANT  lxd/networks/state: Skip non-existing interfaces
+45a62aa14cc8e6275906dbf3989fe5fe36e94f61    DIFFERS     i18n: Update translation templates
