@@ -27,3 +27,4 @@ e7311a84e5bd0758931033b1a0ce649baa720a58    FEATURE     tests: add test for gene
 b84eb74f954f1fd5f2558a6231cea1839670d80f    FEATURE     Makefile: add missing lxctest.h
 f994bc87afda7112e0cebe5ff67f37af673dfe06    FEATURE     tests: remove VLAs
 1fabf7d4ca97d7242cca1657a4449113ab2767da    FEATURE     apparmor: s/read()/lxc_read_nointr()/g
+279c45eed3b9f6a81a4298d543d272b203614027    DIFFERS     macro: add new macro header
