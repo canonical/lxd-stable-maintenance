@@ -137,3 +137,8 @@ d5e99058c559144d7b0484ba589954515bfb4c3f    IRRELEVANT  lxc-to-lxd: Fix rootfs t
 b7851d333c16d67c8eb2020b5ec96604cce5d919    IRRELEVANT  lxd/cluster: Properly skip pending networks/pools
 35bb9480d2931a4a41ab62d5b333da52cbd08460    IRRELEVANT  lxd/networks/state: Skip non-existing interfaces
 45a62aa14cc8e6275906dbf3989fe5fe36e94f61    DIFFERS     i18n: Update translation templates
+8a06d5325f15f83424f03fefb4698e3d73627211    DIFFERS     Support moving a container within a cluster, keeping the same name
+32069e07ceab16a1809a4930cf112eb1a4a5bf2f    IRRELEVANT  Update .pot files
+e5c6f738f46e3c0e99770de42c6db680c3a5cbf7    DIFFERS     *: Rename macaroon(s) -> candid
+6680fbaebf07868b36ffd4197d28ae3fe81816b3    DIFFERS     Update i18n
+8e130b23f17f863643a73dfcf98883fb21d47453    IRRELEVANT  Update translations from weblate
