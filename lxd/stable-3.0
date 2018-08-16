@@ -143,3 +143,4 @@ e5c6f738f46e3c0e99770de42c6db680c3a5cbf7    DIFFERS     *: Rename macaroon(s) ->
 6680fbaebf07868b36ffd4197d28ae3fe81816b3    DIFFERS     Update i18n
 8e130b23f17f863643a73dfcf98883fb21d47453    IRRELEVANT  Update translations from weblate
 520cea20acec17ec1031a2d84d3e9f8244e2b9bb    FEATURE     Release LXD 3.4
+d0f921b6896776c1e2522a94e0c44aa0f3fb2d44    DIFFERS     lxd/api: Sort list of endpoints
