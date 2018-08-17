@@ -144,3 +144,6 @@ e5c6f738f46e3c0e99770de42c6db680c3a5cbf7    DIFFERS     *: Rename macaroon(s) ->
 8e130b23f17f863643a73dfcf98883fb21d47453    IRRELEVANT  Update translations from weblate
 520cea20acec17ec1031a2d84d3e9f8244e2b9bb    FEATURE     Release LXD 3.4
 d0f921b6896776c1e2522a94e0c44aa0f3fb2d44    DIFFERS     lxd/api: Sort list of endpoints
+c86c608029ff19f42efb3824e94afc24a47c2e0a    FEATURE     Add type column to operations table
+f64f0392b8d6c15566d2d9ccabae8ac81667a84c    FEATURE     Fill the operations.type column when creating a new operation
+ed69d5ba4eb8d0afc497346c9a4a3b21499cd663    FEATURE     Consider pending containers when placing a new container
