@@ -147,3 +147,4 @@ d0f921b6896776c1e2522a94e0c44aa0f3fb2d44    DIFFERS     lxd/api: Sort list of en
 c86c608029ff19f42efb3824e94afc24a47c2e0a    FEATURE     Add type column to operations table
 f64f0392b8d6c15566d2d9ccabae8ac81667a84c    FEATURE     Fill the operations.type column when creating a new operation
 ed69d5ba4eb8d0afc497346c9a4a3b21499cd663    FEATURE     Consider pending containers when placing a new container
+887e76b65d05834ac840d3b9acd4861c346cf41c    IRRELEVANT  Add autocomplete phrase
