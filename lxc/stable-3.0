@@ -29,3 +29,4 @@ f994bc87afda7112e0cebe5ff67f37af673dfe06    FEATURE     tests: remove VLAs
 1fabf7d4ca97d7242cca1657a4449113ab2767da    FEATURE     apparmor: s/read()/lxc_read_nointr()/g
 279c45eed3b9f6a81a4298d543d272b203614027    DIFFERS     macro: add new macro header
 f26dc127bf5d66e8c29f8584c64bd97c9bbbc574    DIFFERS     CVE 2018-6556: verify netns fd in lxc-user-nic
+78852a0c17d1a39858f79ac7a96b2de057a30288    FEATURE     start: Fix net iface remaining issue
