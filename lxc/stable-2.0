@@ -743,3 +743,56 @@ a3740e805aacd1a02ac9bc70e611859f5753c86d    DIFFERS     lxccontainer: create_par
 5a24adb870135045612b47b64e40c4ff579a755e    DIFFERS     criu: do_restore()
 328a3f0f8b34ca11f5b1b6c9bcb3e40a15303255    DIFFERS     commands: remove mutex from state client list
 44dec7efcc34d99354dc70a34cf6a03aff446039    IRRELEVANT  parse: error out on invalid config key
+7ac43d3d21775b1fa20e695aa349f1e12b0f8435    DIFFERS     Revert "Revert "pam: create writable cgroups for unpriv users""
+fbbe5ff5b2904a1df0fbb676aa992a4c28dfb332    FEATURE     lxc-oci: remove executable bit
+35444f3827dd64cada79f1e68ecfd337faeed591    FEATURE     templates: add lxc-local template
+f7a8609fab02959bdcafbc19a140e92ab7e743c1    FEATURE     configure: add --enable-pam
+9e49a491de31bda9a5d1865657c2b4b8a06c5bcd    FEATURE     libpam: Drop mention to non-existing macro.h
+861813e52bdba0cda7e3b72ba4932db77d47b08b    FEATURE     confile: add lxc.console.size
+23e0d9af767dc78639cf9572c78be6c274e48b86    FEATURE     confile: remove lxc.console.buffer.logfile
+39c6cdb771a4375fb6cd465fbdcd005ca217f059    FEATURE     console: dump ringbuffer to disk on container exit
+89962c6c0c1f0d6f3b19401c5fbb87e6ead25421    FEATURE     console: always dump log file
+9785b5398c7cd71e97e19cebaf778bd01ebae272    FEATURE     tree-wide: s/struct lxc_console/struct lxc_pty/g
+4e9c033073d292fc4759eb46e958ad7e29cded89    FEATURE     console: lxc_terminal_winsz()
+7a10164ad827850371cf66ac4a6a6a55d6df463c    FEATURE     console: lxc_terminal_winch()
+dad4a0390d48930245333bad00667e6cab66a7c3    FEATURE     console: lxc_terminal_sigwinch()
+8ccbbf9404605541f58713076a6a5fc95ae972dc    FEATURE     commands: lxc_cmd_terimal_winch()
+9bafc8cb14eac921c017b389b6ebeb6b2b8d4371    FEATURE     console: lxc_terminal_signalfd_cb()
+dc8c7883501c663184063de1c6ed85e7861c6c18    FEATURE     console: lxc_terminal_signal_init()
+a8867251bcc68e70fafceb10904734578333dae8    FEATURE     console: lxc_terminal_signal_fini()
+de708fb77c3670428f701910431ec44267fd18e7    FEATURE     console: lxc_terminal_io_cb()
+22b183eafb099194a11dfbc1d29abdf826de19bb    FEATURE     console: lxc_terminal_mainloop_add_peer()
+093bce5f6635525b9f5d96b37c242b276d7b24da    FEATURE     console: lxc_terminal_mainloop_add()
+ec2a5cfc58ae49f0099bb6d47d7b416a03ce2b04    FEATURE     console: lxc_terminal_peer_proxy_free()
+93ed49903f1b39daee8f6ee9bc217c7fd3a89f9b    FEATURE     console: lxc_terminal_peer_proxy_alloc()
+c1ee47cd79506a5ee33543a219d45b8598c2dc7d    FEATURE     console: lxc_terminal_allocate()
+3dfe6f8dacfafe45884313d79d10183bbd0703c4    FEATURE     console: lxc_terminal_free()
+7c716661dcaa8f061d447c97051182fd5a774483    FEATURE     console: lxc_terminal_peer_default()
+7ef7427e3d2960a0db7cbc49c703c78d914490d6    FEATURE     console: lxc_terminal_write_ringbuffer()
+a8e363881efa8a9c10d8ebd9b388e2c3377ae7e5    FEATURE     console: lxc_terminal_init()
+2aac071b31aea0ab8c569cf313d7a9ae966088d9    FEATURE     console: lxc_terminal_delete()
+9bc780839bef0a0045014529902d93c7073416eb    FEATURE     console: lxc_terminal_create_ringbuf()
+43366ca2599f12b5b61eaae74b685ae5c87676dc    FEATURE     console: lxc_terminal_create_log_file()
+548029fa07d455e0c67da5b589266a96b2a9590d    FEATURE     console: lxc_terminal_create()
+ae6d39133f89fbbf541c75ee268888cfcfbcc52b    FEATURE     console: lxc_terminal_set_stdfds()
+52f9292f7ede9cab62064c84536e43dd9c229f17    FEATURE     console: lxc_terminal_stdin_cb()
+ee9102ff6e0512eb177075ae3c3c0d5584df08ab    FEATURE     console: lxc_terminal_master_cb()
+c86e25841c72eb055d7f4915f1b5997a773cd07d    FEATURE     console: lxc_terminal_getfd()
+2083d59d98d284188d2d788ed8f5afeadae2f992    FEATURE     console: s/console/terminal/g
+564e31c4b0a70e7ac2991d58c0795f18c17e3279    FEATURE     console: lxc_terminal_setup()
+96eee5643080613b8ae62635360ef424fc678690    FEATURE     console: lxc_terminal_create()
+780a7c82286e4d16178d26ad6924ec972171ddc8    FEATURE     console: lxc_terminal_info_init()
+fc26f08602d2b7f340dee591e4b3da59305012ab    FEATURE     console: lxc_terminal_init()
+aed105d52a5a00f6a1f7194fa0d70eb1ca959c39    FEATURE     console: lxc_terminal_conf_free()
+2f835b4b72ac5f7378223caaf1ca196804b3c7b1    FEATURE     console: lxc_terminal_map_ids()
+dcad02f87bd18031c1b17fa21c9ee6ba451be914    FEATURE     tree-wide: s/struct lxc_pty/lxc_terminal/g
+99a04585aba016e0a044dd81844f66c036ae39ef    FEATURE     tree-wide: struct lxc_terminal_info
+13bb312d24b653abd56e7c0742fccf9b55769b4b    FEATURE     console: move struct lxc_terminal{_info}
+2520facd017e3decfae79ecb49556b47afab183a    FEATURE     console: s/pty_info/tty/g
+0e4be3cf03efce2791415c2ba4b1aff686de38df    FEATURE     console: s/tty_info/ttys/g
+5b55021fa9de3debd47e7c068f7ff188fd243afd    FEATURE     console: struct lxc_terminal_state
+0ed9b1bc5ccad490807e19c9e71df3abb6380655    FEATURE     tree-wide: console.<c,h> -> terminal.<c,h>
+fb87aa6a94521517d332718c9fa83465da6ca57f    FEATURE     conf: s/peerpty/proxy/
+468724d31a1ff03e2b8226adf043b85ba7dc578f    FEATURE     terminal: lxc_terminal_rotate_log_file()
+a44ae1a9fcff2fc0da847e2f267b6abe148acd1b    FEATURE     terminal: lxc_terminal_write_log_file()
+8d0609371e8831fbe185452ee51f784200e52fbf    FEATURE     autotools: add --{enable,disable}-{commands,tools}
