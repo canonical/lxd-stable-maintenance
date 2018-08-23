@@ -714,3 +714,32 @@ c30e9b193e2ca8c88fdf53225bbbc4e424f9ae33    IRRELEVANT  start: lxc_start()
 46800e7713519ba5e1502c5b2633ad3775693ccd    IRRELEVANT  start: non-functional changes
 1fd0f41eff5c52bea00f031bd0764b121753c301    FEATURE     utils: add lxc_set_death_signal()
 becad0ec98580f2e111c9b0067e8f7c3741f0d1c    IRRELEVANT  start: cleanup namespace handling
+799566212468620fd0de3796c82447f002844419    FEATURE     pam: create writable cgroups for unpriv users
+1a8848b371cf2c86400f58fc64bf7ecc2cf5b261    FEATURE     cgroups: remove legacy cgfs cgroup driver
+d2a4d1db03276ecd820e549e0393d4cdda887145    FEATURE     cgroups: implement "driver" and "driver_version"
+e7806b2effd844992f2eb2215ea1497de1aa7ec9    FEATURE     doc: document cgroup-full:{mixed,ro,rw}:force
+20216658232f481654ef860de1a959facdbee660    FEATURE     doc: add lxc.cgroup2.* to Japanese lxc.container.conf(5)
+1fe33b7b9004674cdd4d1c6ec60f50e483c6d978    FEATURE     doc: Update to lxc.namespace.share.* in Japanese lxc.container.conf(5)
+a2fbabedb2609a26913bc06f588e6b602b3e3bfe    FEATURE     doc: Add lxc.namespace.{clone,keep} to Japanese lxc.container.conf(5)
+07410c63a43ebea689b99a9be5c9879b7894f2c7    FEATURE     doc: Add the describe of mount propagation to Japanese lxc.container.conf(5)
+3f163e459f85c7eee281f8a5f3491225686422de    FEATURE     doc: add "force" option of lxc.mount.auto to Japanese lxc.container.conf(5)
+3e2bb54b2ec74a8b57a4472178463e426ce6c95b    FEATURE     doc: Improve Japanese translation in lxc.container.conf(5)
+79cf25e826509e61cdda4c47d5aeb0e222439970    FEATURE     Revert "pam: create writable cgroups for unpriv users"
+dc55f0051a3ce9bf018fc547f3da448cf23c9318    FEATURE     doc: Add cgroup-full:*:force to Japanese lxc.container.conf(5)
+49beb65eb956aa831451ba6e1e420f739efb594a    IRRELEVANT  cgroups: remove cgroup_create_legacy()
+9994d1402c19f8de880f2a6ae361a460a04085d5    DIFFERS     confile: use mmap() to parse config file
+eb70aaf0d6d61a9f59a2557e2cf901dda4716c92    DIFFERS     lxccontainer: create_run_template()
+7e34710e5d6344391bcdd712e0ec44ed6ac4b2d6    DIFFERS     lxccontainer: non-functional changes
+47e558874cd8e2a694742227d7d1024543956d64    IRRELEVANT  lxccontainer: non-functional changes
+05ec44f84298dfd9ec31f888efa504b9855ca3b2    DIFFERS     network: lxc_netdev_rename_by_name_in_netns()
+ebd582aeea13e1167adf8892f81018c820f74a83    DIFFERS     network: lxc_netdev_move_wlan()
+0e1a60b0fb300d152681bd111a83188a15222ee7    DIFFERS     lxccontainer: do_lxcapi_save_config()
+238b3e5ea4a2747e06e887af7e13d917360d43ab    IRRELEVANT  lxccontainer: move macros to utils.h
+444249ea2f1e6a92d45fe4f47296c75a948524a0    DIFFERS     lxccontainer: ongoing_create()
+f5cd0252f79010ce60455ed9ed24c55da33fe192    DIFFERS     lxccontainer: create_partial()
+a3740e805aacd1a02ac9bc70e611859f5753c86d    DIFFERS     lxccontainer: create_partial()
+045552aabed24b39095bdd5da678c4bc0c0c08d2    DIFFERS     lxccontainer: lxc_container_{get,put}()
+4f43526d7465f14faf7ad6db0240810fc4f2649a    FEATURE     criu: __criu_check_feature()
+5a24adb870135045612b47b64e40c4ff579a755e    DIFFERS     criu: do_restore()
+328a3f0f8b34ca11f5b1b6c9bcb3e40a15303255    DIFFERS     commands: remove mutex from state client list
+44dec7efcc34d99354dc70a34cf6a03aff446039    IRRELEVANT  parse: error out on invalid config key
