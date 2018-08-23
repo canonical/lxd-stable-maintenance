@@ -796,3 +796,52 @@ fb87aa6a94521517d332718c9fa83465da6ca57f    FEATURE     conf: s/peerpty/proxy/
 468724d31a1ff03e2b8226adf043b85ba7dc578f    FEATURE     terminal: lxc_terminal_rotate_log_file()
 a44ae1a9fcff2fc0da847e2f267b6abe148acd1b    FEATURE     terminal: lxc_terminal_write_log_file()
 8d0609371e8831fbe185452ee51f784200e52fbf    FEATURE     autotools: add --{enable,disable}-{commands,tools}
+0011e0975c229e8a37aeaf3e21ebe4afa6201628    DIFFERS     lxc_init: don't mount filesystems
+a9145d622f9169581b499ec6841378d68f833b62    FEATURE     tree-wide: cleanup
+b52a5bef6fa56481a6d817f4c73cb91ed012fe2c    FEATURE     tree-wide: remove lua bindings
+e144a06bd792f99c96395a9d4c16cf7c656fb99d    FEATURE     tree-wide: remove python3 bindings
+98619a7362229198f28ee0cd682d9dea635bd3ce    FEATURE     autotools: remove --enable-deprecated
+aafb5ea2a849056f9866359996605af0290605bd    FEATURE     tree-wide: rm templates in favor of distrobuilder
+b80f86f2b54bffd20fa9e9ab554317bc35f2b8b4    FEATURE     templates: bump compat level to 5
+832cb1824ac2612f2de0ea37084ce157e1ea15a4    FEATURE     lxc-download: make POSIX shellcheck clean
+b62671d84965e4c3baf1d958154cc4a7e64f828f    FEATURE     lxc-busybox: make shellcheck clean
+a488502d83e27d27d35bb1392f989ed86028ec28    FEATURE     lxc-local: coding style
+4328e9e31691d520366e463a44fe6bf746686fd1    FEATURE     lxc-oci: make shellcheck clean
+ea8fa04fc89ae566a336514ef069ee66cf5330d2    FEATURE     lxc-local: add --mapped-{g,u}id flags
+2e943b7b469770be541ecabcdc0df922c20e6f3b    FEATURE     terminal: lxc_terminal_signalfd_cb()
+e62912bdbc8b4bc8cd3bc5719c627480ff3a84a8    FEATURE     terminal: non-functional changes
+b6d5de95f966064c0e9e29e4ff1470833abc76ae    FEATURE     terminal: error out when SIGTERM cannot be added
+8903fb08263ef70e69031690e9d74054d47aac2b    FEATURE     terminal: lxc_terminal_write_log_file()
+2b8bf299072ec9a26ed03decb919c39ef7e08404    FEATURE     terminal: lxc_terminal_io_cb()
+ea5b3c2335dbe9e3c891aae999c9455c6629825b    FEATURE     terminal: lxc_terminal_mainloop_add()
+e4953e62daff9089d7412142fd6dddcd101850de    FEATURE     terminal: lxc_setup_tios()
+e788f4ac5d8b77f33fd303274dbefd2628e611ad    FEATURE     terminal: lxc_terminal_peer_proxy_free()
+60dd8ef44f603b0345a60a51bd9e8be0cd8c3ee8    FEATURE     terminal: lxc_terminal_peer_proxy_alloc()
+12c2eaaa0aaa55f448542e29ee492949b54dec09    FEATURE     terminal: lxc_terminal_allocate()
+1b5e93c49f98e5207bb3e8a0bec78a9c2e260fe4    FEATURE     terminal: lxc_terminal_free()
+49cd0656687cb91897c133218b3b7ae403521c5b    FEATURE     terminal: lxc_terminal_peer_default()
+8ded924414293fb727859e20354cdcc9057d5077    FEATURE     terminal: lxc_terminal_create()
+1a443ac10cb88722bb6b171ebc1431c03bccdc73    FEATURE     terminal: lxc_terminal_setup()
+8ca7b3742216d3b5f294a596fdbd63eff03adbb1    FEATURE     terminal: lxc_terminal_set_stdfds()
+150852928a0bd951184223567ead4cd3f7da3a11    FEATURE     terminal: lxc_terminal_stdin_cb()
+5bd171bd777a6ab746f47adb32f40df6e6613c2a    FEATURE     terminal: lxc_terminal_master_cb()
+71ac3f071bc2f54a503167676e1bdfc50bb38a31    FEATURE     terminal: lxc_console()
+cd0a2b2f0bd0fbc16c3b40b96ab5c4c7a7e29426    FEATURE     terminal: lxc_make_controlling_terminal()
+d049f0e9d59be126acac0a0aa6694519f6dc5b1d    FEATURE     terminal: lxc_terminal_prepare_login()
+03700cab61c404709a0034af4baf46a9907dbc6e    FEATURE     terminal: lxc_terminal_map_ids()
+d712f9e8f42ea5878f95ae34c29144533755d0c5    FEATURE     terminal: non-functional changes
+e9a55b51b8d16858a10410cabd7314273d0a23bb    FEATURE     terminal: non-functional changes
+083bcf36ca58dd476e94cea21c879fba4c0ef603    FEATURE     Fix typo
+9e84479f4c386fce6253929ce85c891dc4b87e89    FEATURE     attach: rename to LXC_ATTACH_TERMINAL
+4cb53844bc9a591704a10606de1107f4f67b90dd    FEATURE     start: handle kernels without setns support
+282753c6c993402ed1f25059e66936d978bb8be4    IRRELEVANT  Release LXC 3.0.0.beta1
+d9874b217a98d169e2f11d08298c93acd1c5fad6    FEATURE     doc: Add lxc.console.size and remove lxc.console.buffer.logfile in Japanese man pages
+5c0d54cd8cb3986369ba2357b0c41b93de595700    DIFFERS     config: start with a full capability set
+2e607d1c13dc842d3617fb82b35c6a8f208f3f0d    FEATURE     tools: Include config.h in tool_utils.c
+e2eae7035443c1d3b9b26f983228ecfaebfa5aba    FEATURE     tools: fix usage of boolean function set_config_item
+2d22b22dd4840e141916e64c697e0a43c7b93c8c    DIFFERS     usernsexec: init log fd
+8560cd364bab452ed61d24df0674769b5a38de4a    DIFFERS     conf: fix clang warning when building w/o libcap
+1a2cf89d9976e11c089a7672de5adf89148742f5    FEATURE     conf: do not run the "mount" hooks twice
+a3b4f3d68054eb31b86a7192bfc8ffabba011bff    DIFFERS     fix handler use-after-free
+9d257a2a23f3c100c26881ff005e9cb5b9a02839    FEATURE     conf: order includes
+12e6ab5d2311ef0663462b4c75171e9b87ade41d    FEATURE     tree-wide: remove aufs storage driver
