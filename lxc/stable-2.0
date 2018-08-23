@@ -845,3 +845,74 @@ e2eae7035443c1d3b9b26f983228ecfaebfa5aba    FEATURE     tools: fix usage of bool
 a3b4f3d68054eb31b86a7192bfc8ffabba011bff    DIFFERS     fix handler use-after-free
 9d257a2a23f3c100c26881ff005e9cb5b9a02839    FEATURE     conf: order includes
 12e6ab5d2311ef0663462b4c75171e9b87ade41d    FEATURE     tree-wide: remove aufs storage driver
+a8984858e74401371897cca5e6255cc36309b1c6    FEATURE     terminal: s/Theh/The/
+07a911c854a3efe0cd644ed287da03504403382f    FEATURE     doc: Remove aufs in Japanese man pages
+14f16c417147a57906e2af81d25e997feaae7322    FEATURE     Release LXC 3.0.0.beta2
+4a0a5e89e1b77056ee1564861e502bd7dba59656    FEATURE     hooks: fix nvidia hook when running under the lxc-start AppArmor profile
+89f1ef110e727919d7f2bf591732fb20d6a8951a    FEATURE     hooks: implement passthrough for latest features of libnvidia-container
+0fd7309137a71c6e7e5811a89d832978b4c4e2d9    FEATURE     conf: coding style changes
+949d0338c6b93814f02c1ddbe87071b18aba94fa    FEATURE     conf: initialize pflags
+020c90b702da04cde6b67e9632b0b09f3427ba21    FEATURE     tools: fix container use-after-free
+512845bc109bb11009f4b7c1dd5705e2e4675b80    FEATURE     remove leading whitespace from log files
+60534f79d242184534e5f4cfb88865894792302d    FEATURE     pam: Fix missing symbols in module
+41be52e8ab9e3992eacf6fcf3d9b7de968039665    FEATURE     hooks: fix dhclient hook when an AppArmor profile is active
+10034af509cca0a4e5bccf9fa740888d2f2f2348    DIFFERS     lxccontainer: truncate config file
+b53a26168c7ce7b560d679f59b21f1d173689bb1    FEATURE     Release LXC 3.0.0.beta3
+769cf3c1ccf18ce61cd34f278654df4b9dd49a32    DIFFERS     Release LXC 3.0.0.beta4
+b195038dfcacfcffdb41255e7fe779c30fbed22c    FEATURE     configure.ac: Support redhatenterpriseserver
+590197542e3fa3a5a4b0f1d5e5dfc02d7d86759a    FEATURE     Allow passing action scripts to CRIU
+5b66b6ee3e3cd2575a4b9b2eb8190b2b05ab4b42    FEATURE     Release LXC 3.0.0
+9104c79a1d71e28ae56cbc68f6cbadf42eca6f71    FEATURE     tools: fix unitialized variable
+d99e3b2ea72f99c8d8809cb6d774d1cdcc6e8dda    FEATURE     lxc-oci: fix Cmd/Entrypoint parsing
+845ba283d6dedc4719096c4099e82e7517f074aa    FEATURE     lxc-oci: make umoci less verbose
+16c92537a5b481f4dbea7b1fee840c3011a99805    DIFFERS     storage: fix lvm fs uuid generation
+b19aabf5be93a9e9226875bd5d71b42db40a1ed7    DIFFERS     lxclock: use thread-safe *_OFD_* fcntl() locks
+5eab47bce5d5fd77c32143002b56c1b3606b5909    FEATURE     confile: expand lxc.environment
+09dd49ab20ef728526d6d197d20ff3d74c9d8984    FEATURE     doc: Tweak Japanese translation in lxc.container.conf(5)
+a324e7eba0d954ab6f9dafad09efaa67f4aeaa9e    FEATURE     conf: fix temporary file creation
+709384a02e74f76d59dc6f2903aab1679e9b2839    FEATURE     ringbuf: fix temporary file creation
+e599717bc50303fb2e45cc82bc8e0857cd6d61aa    FEATURE     conf: ensure umounts don't propagate to host
+63fc76c3e0d90bc6a3d9ea82a91b3fbc8a3552ef    FEATURE     rootfs pinning: On NFS, make file hidden but don't delete it
+49bc916b1daa79cffe38fae32059bcdd985c8c8e    FEATURE     Fix compilation with static libcap and shared gnutls
+74269047b49ff3fb9cd152274b2e817a0ad68af6    FEATURE     tools/utils: free memory on error
+96ec54acf8d40f23fbaf8c0c291607dbed7b29e8    FEATURE     attach: try to always drop supplementary groups
+24927339bd52856eba0cc5033893e036988ce369    DIFFERS     attach: always drop supplementary groups
+125a2e044cae5528b930d2b914632770d04e7059    DIFFERS     lxc init: remove dead code
+55d83a7c723a646f044d337e63481004c36a3352    FEATURE     storage/rsync: free memory on error
+d6d727aff11e49e2be9f8915a3153310efe08f34    DIFFERS     lxc init: coding style
+112930688bd306592a215180cf9b5801e5358eb8    DIFFERS     conf: ret-try devpts mount without gid=5 on error
+794248d09d3a60633c901becc9d985db697f2feb    FEATURE     execute: fix app containers without root mapping
+a81442634ed8ef08ba428a529e3ec83e6aad72be    FEATURE     conf: fix net type checks in run_script_argv()
+b5ed021bbc47efe77732b38b5946116be94367e1    DIFFERS     seccomp: handle arch inversion
+adfee3a873291bf2ec1ba0e079bccfd05eefdd1f    DIFFERS     seccomp: handle all errors
+d648e178f1b3fa9f261b890157d2ee6e9e5e14fa    DIFFERS     seccomp: cleanup compat architecture handling
+94d56054143a8634852989819acee06bf4aaf9f9    DIFFERS     seccomp: improve logging
+4160ef02e5bbabbf4f3d0ab002aa8afba4f680a1    FEATURE     tools: document -d/--daemonize for lxc-execute
+7e84441ec3f973609bc2462528d55888ab1a084f    FEATURE     seccomp: non-functional changes
+eca6736eb019f33a6243fc20a61c658da0662827    FEATURE     seccomp: handle arch inversion II
+8c7536ecf2f39a162041c2f43e6fef0a7ef159f6    FEATURE     lxc-oci: mkdir the download directory
+77d407537f57c3fb92787bdda1eeaec7941d344f    FEATURE     lxc/tools/lxc_monitor: include missing <stddef.h>
+c4a4578fa04d3428a1c9ac5ab43ab01f4367b1ff    FEATURE     pam-cgfs: ignore the system umask when creating the cgroup hierarchy
+497a78630cb6f4bb7f1863468d4225796a1bcc23    FEATURE     Also pass action scripts to CRIU on checkpointing
+09e6e41e05aee308c532bcbae66aeb13077840f8    FEATURE     Fix tool_utils.c build when HAVE_SETNS is unset
+13939498edf6936ebd4c5c39d016d7e25996fabc    FEATURE     coverity: #1435210
+46768cced9127002c7ee0fef3c63131c53692a65    FEATURE     coverity: #1435206
+205fc0103b0ef16e6acaae7175e63a8b01e59494    FEATURE     coverity: #1435200
+0e14584db8024539e9d7d0e1b4f5ab33bba09366    DIFFERS     lxccontainer: non-functional changes
+c1768f3f2527463af508aed60b5171bc7e82025a    FEATURE     coverity: #1435203
+d2b5aceceaf14b19895a64ec0d3ba1b422a4f92b    FEATURE     coverity: #1426734
+5647455516eaa745e37a32db8e839b6857cc77fb    DIFFERS     lxccontainer: use thread-safe *_OFD_* locks
+7cea5905852bf935fa486f05192a5cb13942ad51    DIFFERS     lxccontainer: use thread-safe open() + write()
+9640c6a76763a5dfa7b7fd268772b1b0d195d9a9    DIFFERS     lxccontainer: non-functional changes
+cd90db2c0ec7948a9a52dfc83d3a2b92ed522511    DIFFERS     fix logic for execute log file
+aa769a272f24d34d9190e04b7c6e93a6b8418376    DIFFERS     utils: add LXC_PROC_PID_FD_LEN
+321614a5da167f20bbafaaa1d2b3e8e365da953d    DIFFERS     execute: use static buffer
+b2efeb0bb95e35e5b597b91224d07e6496d0161e    DIFFERS     add some TRACE/ERROR reporting
+9c40b2d97829ce2afea4eed9cb4eac40ccec82e5    DIFFERS     execute: account for -o path option count
+410898489fb1ca8ed774ffc9ff030c64662f51a6    FEATURE     execute: set init_path when existing init is found
+0382c0da7b78acc007a1716e6471cc8f1b9ad804    FEATURE     coverity: #1248104
+023e2a307a092e1ce67b66d040061c9356959a3e    FEATURE     coverity: #1248105
+2b2655a8c5038d4519b82816f186edccb6b67e06    FEATURE     coverity: #1425744
+d3bdf12cf00e93e3b1df354dd4cc46356baedf24    FEATURE     confile: satisfy gcc-8
+39ebeb725b941323eac13d672eb4f94219b8399d    FEATURE     support case ignored suffix for sizes
+6d276edc1d69377a29fe1d877bf2cf7ce67cf37e    FEATURE     utils: fix parse_byte_size_string() coding style
