@@ -148,3 +148,18 @@ c86c608029ff19f42efb3824e94afc24a47c2e0a    FEATURE     Add type column to opera
 f64f0392b8d6c15566d2d9ccabae8ac81667a84c    FEATURE     Fill the operations.type column when creating a new operation
 ed69d5ba4eb8d0afc497346c9a4a3b21499cd663    FEATURE     Consider pending containers when placing a new container
 887e76b65d05834ac840d3b9acd4861c346cf41c    IRRELEVANT  Add autocomplete phrase
+4cbfa326463a21e4e988f3ca4b813f098675ec82    IRRELEVANT  lxc/export: Don't crash on failure to delete backup
+3252316f68acf35063b219926abe3f2c015f0689    IRRELEVANT  lxd/backups: Rework to behave as intended
+7d1dc81685f706dd3cfb79fbbf2a95fb9dadfc39    DIFFERS     tests: Fix mode of proxy.sh
+f8ae6f2fe4f4428cbb1cc7d444e7bd6b3f1c005c    IRRELEVANT  bash completion for 'lxc network info'
+70133cffa2e3c5eda80fd46657e141212242ef88    FEATURE     lxc: Add support for quiet mode
+9dc122af86b3eda293871a35ec2a499393329b5c    IRRELEVANT  i18n: Update translation templates
+1e3e5dad6c2947b7310f03dc5237dc02fbb96c10    IRRELEVANT  tests: Always pass --force to stop
+ef5cec59816facb2bebce6ceafd86a9c5ee4e4e9    FEATURE     lxd/backups: Make compression configurable
+22061ea99b7726fb5004c1b9e07ede58073c6ca6    IRRELEVANT  lxd/forkdns: Properly rewrite answer
+7dfc2939ac278d8436ff4b892599c795c5482007    DIFFERS     global: Advertise rsync features
+9b675c5d5e228d53cfdf5522b8e447c4222bb6df    DIFFERS     lxd/images: Add missing cleanup code
+8850f7ea5eb189baf2f55d4b2c43f2d0477f5d66    DIFFERS     lxd/db: Use NoSuchObject consistently
+5cbdcbb4b35f9fd5a311124e507c1ede3cf38ff1    DIFFERS     proxy: Only log errors
+5284cfbe7260816deadda03c1e6a6a790f038189    IRRELEVANT  lxd/proxy: Fix unix socket paths in snap
+e9d3402394ceba0b7df227c40f554c8018d46d7e    DIFFERS     lxd/import: Don't delete container on import failure
