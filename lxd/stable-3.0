@@ -163,3 +163,7 @@ ef5cec59816facb2bebce6ceafd86a9c5ee4e4e9    FEATURE     lxd/backups: Make compre
 5cbdcbb4b35f9fd5a311124e507c1ede3cf38ff1    DIFFERS     proxy: Only log errors
 5284cfbe7260816deadda03c1e6a6a790f038189    IRRELEVANT  lxd/proxy: Fix unix socket paths in snap
 e9d3402394ceba0b7df227c40f554c8018d46d7e    DIFFERS     lxd/import: Don't delete container on import failure
+d94ac66b91a281d29896821d721fb63ba58511cc    DIFFERS     Support --domain flag for lxc remote
+a813b2667a7f7a1637e747bd15afdae0456f9056    DIFFERS     Update Candid docs
+a111e85d8433fbf08edf12f44deac066a5519632    DIFFERS     Update i18n
+dd6b193754a13ed729c8fe63711adc6e8185e358    IRRELEVANT  Update translations from weblate
