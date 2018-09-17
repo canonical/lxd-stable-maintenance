@@ -167,3 +167,7 @@ d94ac66b91a281d29896821d721fb63ba58511cc    DIFFERS     Support --domain flag fo
 a813b2667a7f7a1637e747bd15afdae0456f9056    DIFFERS     Update Candid docs
 a111e85d8433fbf08edf12f44deac066a5519632    DIFFERS     Update i18n
 dd6b193754a13ed729c8fe63711adc6e8185e358    IRRELEVANT  Update translations from weblate
+a7325067a1e4119f831db42e88550066a961a5ad    FEATURE     Release LXD 3.5
+2325ba266da4ffa95084f4e38d1765047ce9b58c    FEATURE     Extend nvidia runtime options
+6e636b6101223e0fc7dc18fddd721431990ae387    DIFFERS     network: add NetworkGetCounters()
+d1c91e4a856c190b256b11eff7acc7850362f863    DIFFERS     container_lxc: switch to NetnsGetifaddrs()
