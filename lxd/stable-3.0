@@ -171,3 +171,18 @@ a7325067a1e4119f831db42e88550066a961a5ad    FEATURE     Release LXD 3.5
 2325ba266da4ffa95084f4e38d1765047ce9b58c    FEATURE     Extend nvidia runtime options
 6e636b6101223e0fc7dc18fddd721431990ae387    DIFFERS     network: add NetworkGetCounters()
 d1c91e4a856c190b256b11eff7acc7850362f863    DIFFERS     container_lxc: switch to NetnsGetifaddrs()
+7147ebd7e1c53c362c73009d5ba7914fe3d47bf4    IRRELEVANT  nvidia: Default to compute,utility
+d12a11f178e2b33f50630faa4c24b6dac07f5adc    FEATURE     shared: Add storage_api_volume_snapshots extension
+83ccf4dd6fe5fc6bd0ae1a64693516bd428d2496    FEATURE     db: Add storage volume snapshot support
+473ebb263a909c38b8a1a47c6cfe6661d70dd000    FEATURE     lxd: Add storage volume snapshot support
+f5f7d0ce9f277aa0cb9e0369ec93c1620f535b07    FEATURE     storage: Add storage volume snapshot support
+7860e92fdf31067aa35dd4944ecdb89024babb19    FEATURE     storage/btrfs: Add storage volume snapshot support
+73261d3c22f17f07326cb7357e9ecc31897aac3e    FEATURE     storage/ceph: Add storage volume snapshot support
+12b9f1d6729c2f4a73f2bd0636bbc9bfab2068a8    FEATURE     storage/dir: Add storage volume snapshot support
+76959372745a168af911cf56df278eb8718f3856    FEATURE     storage/lvm: Add storage volume snapshot support
+7f022d8e69e34b31508de2b5d99ee8f0991e3e6d    FEATURE     storage/zfs: Add storage volume snapshot support
+cdcbdd9a650fa9204841d338beac81cf4b141df1    FEATURE     storage/mock: Add storage volume snapshot support
+2d5c780e54bce0b666bfb2355bb34d310c5f61c9    FEATURE     doc: Add storage volume snapshot support
+9fa3b8b20aa1eb2c6388b2e58d0ad31419eddd5d    FEATURE     test: Add storage volume snapshot support
+70614bdf729af3b7be7bba3dc78e69f0aee8218e    FEATURE     lxc: Add storage volume snapshot support
+ea6f6704f6f33b2f67fe9a1088b0cf08f097b352    IRRELEVANT  po: Update i18n
