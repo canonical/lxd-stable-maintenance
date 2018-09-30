@@ -33,3 +33,33 @@ f26dc127bf5d66e8c29f8584c64bd97c9bbbc574    DIFFERS     CVE 2018-6556: verify ne
 95ef0d7c0de461a198d00ed2406c095004b45aa4    IRRELEVANT  start: add out_sync_fini cleanup label
 6e54330c46bdfedaedbf4b677e557d550bdcb276    FEATURE     conf: introduce lxc.rootfs.managed
 6e0045bdd83516c15d862a5433572308854c302a    FEATURE     tests: add lxc.rootfs.managed test
+a7c4ddea9f4677f65012502905842b9a9f26966c    DIFFERS     start: do not initialize cgroup_ops twice
+76f0e2e7395a4417330b8ed943b14194ba70622d    FEATURE     confile: add lxc.cgroup.keep
+5a087e056f945aa2112ebdcad7df05e57ce56c8a    FEATURE     cgroups: don't escape if lxc.cgroup.keep is true
+c8208ff034ed15f675ad1d707c15b5719d018685    DIFFERS     tests: add basic.c
+691544a0e421a99fe2750dacb8cbbc7c5508b5f2    DIFFERS     tests: cleanup Makefile
+ddd51fdb8e8c24e02d522e04c7342fa2c83f498d    FEATURE     tools/lxc-attach: add -u and -g arguments
+9caee129cddd66809d415462808d047c11af6a63    FEATURE     confile: s/lxc.cgroup.keep/lxc.cgroup.relative/g
+01c8b1cd9df92df0ea16bf5c68c9c432790e3ba1    DIFFERS     remove unused variables
+fb55e009005b44c832fc4876913e08f0a945b86e    DIFFERS     cgfsng: mark ops with __cgfsng_ops__ attribute
+aafa5f96f670858b1b829d53c02086f806f114b6    FEATURE     api_extensions: introduce lxc_has_api_extension()
+292b3910d565e02910a89becbde6d0d9c8ce26bb    FEATURE     cgroups: switch to lxc.payload as default pattern
+d39e9d8b046477e1f0ae0ed9a693bb075ece5950    FEATURE     cgroups: add monitor_cgroup member
+e09b62f9435cb5c48c866975ef889929925ae9a6    FEATURE     cgroups: add monitor_full_path member
+6439f06e788014cfeda5feb86e4347370502b538    FEATURE     cgroups: add monitor_create()
+72068e74704e8e83cf3147c65519f353212d0811    FEATURE     cgfsng: add cgfsng_monitor_create()
+634ab5ed7df9554adce05f047ee728c9c8111850    FEATURE     cgroups: add monitor_enter()
+eeef32bbda51c47e69a7316c6e9977ddef823bb4    FEATURE     cgfsng: cgfsng_monitor_enter()
+2d172fc734963f00afe59740e96832d2325b0537    FEATURE     tests: adapt cgroup tests to new layout
+d28779d94c596149608b0fa161fc6ec369baa898    FEATURE     cgfsng: add missing __cgfsng_ops__ attributes
+e8b181f5257f8216c1f66b366660030a210360c4    DIFFERS     cgroup: rename container specific cgroup functions
+b857f4be4ffd07751b1646e52f9d3a11d92b5088    DIFFERS     cgfsng: s/__cgfsng_ops__/__cgfsng_ops/g
+6333c915057b5cb7ef87dec0df4b347843251793    DIFFERS     tree-wide: replace sizeof() with SIZEOF2STRLEN()
+f83903274efba6cd454f87b2a798eafd2f9baf60    FEATURE     cgfsng: copy parent's cpu settings for monitor too
+3999f50bd2a86ad897fe267b99a676cc7a4a7fe8    DIFFERS     cgfsng: s/cgfsng_destroy/cgfsng_payload_destroy/g
+434c8e15c9821bce65d3bc1eefae0ecfa843ef1e    FEATURE     cgfsng: add cgfsng_monitor_destroy()
+625ad37b595868abb9c82fcf8665f2b4af522b5c    FEATURE     cgroups: introduce helper macros
+5ce03bc048212feae5de5a3f41fe189bb7f9ee58    FEATURE     cgfsng: ensure no-reuse in cgfsng_monitor_create()
+a3650c0c4d54aa09ac8a18a768dbae37d4733801    DIFFERS     cgfsng: s/25/INTTYPE_TO_STRLEN(pid_t)/g
+ebc10afe213872d92c3d4641e34e6bd3c6d826be    FEATURE     cgfsng: do not go into infinite loop
+a4a0bba4e2df0bb87d31ca26fee13a96cdc068ad    FEATURE     doc: Add -u and -g args to Japanese lxc-attach(1) and lxc-execute(1)
