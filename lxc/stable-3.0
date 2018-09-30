@@ -31,3 +31,5 @@ f994bc87afda7112e0cebe5ff67f37af673dfe06    FEATURE     tests: remove VLAs
 f26dc127bf5d66e8c29f8584c64bd97c9bbbc574    DIFFERS     CVE 2018-6556: verify netns fd in lxc-user-nic
 78852a0c17d1a39858f79ac7a96b2de057a30288    FEATURE     start: Fix net iface remaining issue
 95ef0d7c0de461a198d00ed2406c095004b45aa4    IRRELEVANT  start: add out_sync_fini cleanup label
+6e54330c46bdfedaedbf4b677e557d550bdcb276    FEATURE     conf: introduce lxc.rootfs.managed
+6e0045bdd83516c15d862a5433572308854c302a    FEATURE     tests: add lxc.rootfs.managed test
