@@ -192,3 +192,4 @@ eb7db100b87bb72adefbee5b7116fcbbdc65c123    FEATURE     lxc/image: add new colum
 21e677a678b27dd63502cf68c97730f2c43bf1a1    FEATURE     lxc/list: add new column "BASE IMAGE" for both short and long image fingerprint variants
 93b99562ecd6efcd2dd9956418ce239f6af24fbe    IRRELEVANT  i18n: Update translation templates
 2ee7778f4a6d19a744dcf03ef67c8c2350c4be74    DIFFERS     lxd/storage/ceph: Don't un-necessarily mount snapshots
+1c486ee458cdb1a975fe5a092ee7ead9b83488c3    FEATURE     lxd/storage: Implement security.unmapped
