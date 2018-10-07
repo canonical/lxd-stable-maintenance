@@ -193,3 +193,5 @@ eb7db100b87bb72adefbee5b7116fcbbdc65c123    FEATURE     lxc/image: add new colum
 93b99562ecd6efcd2dd9956418ce239f6af24fbe    IRRELEVANT  i18n: Update translation templates
 2ee7778f4a6d19a744dcf03ef67c8c2350c4be74    DIFFERS     lxd/storage/ceph: Don't un-necessarily mount snapshots
 1c486ee458cdb1a975fe5a092ee7ead9b83488c3    FEATURE     lxd/storage: Implement security.unmapped
+09438467f015db19283d9a2045532088946d4d6c    FEATURE     lxd: support uevent injection for USB devices
+72c3ce02ba88af903f23611b9422f072a3edb276    DIFFERS     i18n: Update translation templates
