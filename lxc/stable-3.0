@@ -63,3 +63,20 @@ f83903274efba6cd454f87b2a798eafd2f9baf60    FEATURE     cgfsng: copy parent's cp
 a3650c0c4d54aa09ac8a18a768dbae37d4733801    DIFFERS     cgfsng: s/25/INTTYPE_TO_STRLEN(pid_t)/g
 ebc10afe213872d92c3d4641e34e6bd3c6d826be    FEATURE     cgfsng: do not go into infinite loop
 a4a0bba4e2df0bb87d31ca26fee13a96cdc068ad    FEATURE     doc: Add -u and -g args to Japanese lxc-attach(1) and lxc-execute(1)
+d38dd64a511d744bbdac579a7fcb250d67f35237    DIFFERS     tree-wide: fix includes to fix bionic builds
+529822a46fe6afef439f640c4fd4cc4e11dc6551    FEATURE     cgfsng: log cgroup names for monitor and container
+4394ea17cbec9355b5789f15767f906772e93a7a    FEATURE     cgroup: make monitor_pattern const
+d7b58715b6f34f9aba010449225a47d374d6d5fa    DIFFERS     raw_syscalls: add lxc_raw_getpid()
+ee455be41cd127dd9fb37f35a2ee826e637bb76d    FEATURE     cgfsng: do not reuse another monitor's cgroup
+1f797c3a648863215a5c729d343e7fffd17d8559    DIFFERS     tests: add missing build dependencies
+17e55991744576bca20e370a6d829da99c3fc801    DIFFERS     cgfsng: avoid tiny race window
+c7f493aee01806ec154d2af5c84a41a9baeecbe2    DIFFERS     utils: fix lxc_set_death_signal()
+c5e7a7acbf23f0c267179b3318af41423b39493a    IRRELEVANT  Revert "cgfsng: avoid tiny race window"
+6099dd5a1384d821e8d5b3467f0f1acab9bfb190    IRRELEVANT  Revert "Revert "cgfsng: avoid tiny race window""
+ef1853605066aa15630424340f2d7777964ed5d9    DIFFERS     cgfsng: handle v1 cpuset hierarchy first
+5407d095e6c66a5437234520db0252cd570c8d71    FEATURE     cgfsng: use realloc instead of malloc+copy+free
+6b5a54cdfcd8e4b73d95a9cd4be721bd8aa1930b    DIFFERS     conf: s/MAXPATHLEN/PATH_MAX/g
+ec4f666f2322e2b3fb7db8d345205390e4f4b615    IRRELEVANT  doc: fix indent
+85d67fba9f9e450c3b97043d68aed010a8442fbb    IRRELEVANT  lsm: s/MAXPATHLEN/PATH_MAX/g
+8a22c168380fca1d5b880f470584a2c98d87faca    DIFFERS     lxccontainer: s/MAXPATHLEN/PATH_MAX/g
+737f5220a28fd0197ab93ca8923ab3e3f5f67e3d    FEATURE     doc: Add -u and -g args to Korean lxc-attach(1) and lxc-execute(1)
