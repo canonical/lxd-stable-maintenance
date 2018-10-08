@@ -80,3 +80,4 @@ ec4f666f2322e2b3fb7db8d345205390e4f4b615    IRRELEVANT  doc: fix indent
 85d67fba9f9e450c3b97043d68aed010a8442fbb    IRRELEVANT  lsm: s/MAXPATHLEN/PATH_MAX/g
 8a22c168380fca1d5b880f470584a2c98d87faca    DIFFERS     lxccontainer: s/MAXPATHLEN/PATH_MAX/g
 737f5220a28fd0197ab93ca8923ab3e3f5f67e3d    FEATURE     doc: Add -u and -g args to Korean lxc-attach(1) and lxc-execute(1)
+646e6c8b465fafde9447c87ca967da9e82f50f7b    DIFFERS     test: test invalid config keys
