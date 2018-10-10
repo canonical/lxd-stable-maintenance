@@ -195,3 +195,6 @@ eb7db100b87bb72adefbee5b7116fcbbdc65c123    FEATURE     lxc/image: add new colum
 1c486ee458cdb1a975fe5a092ee7ead9b83488c3    FEATURE     lxd/storage: Implement security.unmapped
 09438467f015db19283d9a2045532088946d4d6c    FEATURE     lxd: support uevent injection for USB devices
 72c3ce02ba88af903f23611b9422f072a3edb276    DIFFERS     i18n: Update translation templates
+888ad17d261a58a5c2142efd868a9dc22fd0ccdc    DIFFERS     checkfeature: simplify is_netnsid_aware() check
+cfbafeb80da87f447f5314aff3830603cb9e9f06    DIFFERS     checkfeature: Avoid double line break
+88088f4f407331fed42ae5dd7c90b1eba2b234fe    DIFFERS     doc: Rework backup documentation
