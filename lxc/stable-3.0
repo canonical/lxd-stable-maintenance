@@ -81,3 +81,7 @@ ec4f666f2322e2b3fb7db8d345205390e4f4b615    IRRELEVANT  doc: fix indent
 8a22c168380fca1d5b880f470584a2c98d87faca    DIFFERS     lxccontainer: s/MAXPATHLEN/PATH_MAX/g
 737f5220a28fd0197ab93ca8923ab3e3f5f67e3d    FEATURE     doc: Add -u and -g args to Korean lxc-attach(1) and lxc-execute(1)
 646e6c8b465fafde9447c87ca967da9e82f50f7b    DIFFERS     test: test invalid config keys
+23e5c04580e425a5194140da3a88c11ca54e4640    FEATURE     cgfsng: fix lxc.pivot directory creation
+d5fc4dd406b07a576d5d593a0b77c98ea0ecce7e    FEATURE     cgfsng: improve loggin on monitor cgroup destroy
+ecedb5dee9324a967a51b0fa73a6be0630250a42    FEATURE     cgfsng: ensure initialized cpuset controller
+e20f46f87fe968ef805c3d42850ae02c88e5007c    DIFFERS     checkpoint: fix running do_dump()
