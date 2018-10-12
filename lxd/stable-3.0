@@ -198,3 +198,105 @@ eb7db100b87bb72adefbee5b7116fcbbdc65c123    FEATURE     lxc/image: add new colum
 888ad17d261a58a5c2142efd868a9dc22fd0ccdc    DIFFERS     checkfeature: simplify is_netnsid_aware() check
 cfbafeb80da87f447f5314aff3830603cb9e9f06    DIFFERS     checkfeature: Avoid double line break
 88088f4f407331fed42ae5dd7c90b1eba2b234fe    DIFFERS     doc: Rework backup documentation
+697900cc76c1ed7f7c29f92726dcaa59aced7589    FEATURE     lxd/db: Add projects
+d2777a2470b176f2dba171ba70a10edc37d20e0b    FEATURE     lxd/projects: Add project API
+3dc92fe1db8e98f41982a8ae3aa2fcfc99abf78f    FEATURE     shared/version: Project API extension
+f7b7ef3a8c29c7eabb1d6d991b402913c6edaf6d    FEATURE     doc: Update for projects
+ef81ad165ada47dd156594c76fea27ca39fe7213    FEATURE     lxc: Add project subcommand
+8b7d29e88d0caf4cf7918bbd53df247c2fa91ef9    DIFFERS     Change query.SelectObjects signature to support a prepared statement
+cc432211e1e2f8b7fd975caf783bd5c2d14565e9    FEATURE     Database schema change for projects
+3913b26bc23172f355007f39cea670d17281b032    DIFFERS     Add Project.Config reference
+224aaf777f8c29649effee97cb2b1d825e3f0276    IRRELEVANT  Drop spurious print
+f2eb098ee549aedb3cecabbdabfd9a4c946727b8    IRRELEVANT  Add new shared/generate command to perform LXD-specific code generation
+710005c92d307e727937d60d6faf4a4451df0cc0    IRRELEVANT  Use go generate to trigger schema generation
+a6e9865eef4bb72e4138c7f4a8a8170a3994efee    IRRELEVANT  Add shared/generate file and lex sub-packages for writing source code files
+3f5e33e0457c036ded8bb9d299767f4aace10418    IRRELEVANT  Initial implementation of the lxd-generate db sub-command
+34e4a669f225638bb10ff9a1432ee457c1c9a2cc    IRRELEVANT  Generate several db APIs using lxd-generate
+d348a553e71cbc568f121d49d0557d20918442b4    IRRELEVANT  Add some smoke tests for auto-generated code
+7ac1326747a437d66f3ddee539fcfcccb1f47de2    IRRELEVANT  Wire initial auto-generated project db APIs
+d6df2c7feba00beac63f327535c55f230254692e    IRRELEVANT  Switch back to the default project after deleting a project
+8491536714d25f34aecee17c4cd2608d3382f097    IRRELEVANT  Drop hand-crafted project db access code
+1e1066f2f953a58455446cdc7578d405fafaf29b    DIFFERS     Improve some error messages around container creation
+d80a9b176fc48aeef78b9d64dbf0a7bb88130bab    DIFFERS     Lookup for the "target" API parameter only in the URL query string
+1a2dbf9c4e9efbbe28baebe71235554c69eb5f63    IRRELEVANT  Use the ID field from db.Container instead of a separate variable
+b800928c0f54ef466437a2088f07551dc5394a6e    IRRELEVANT  Replace containerLoadByName with containerLoadByProjectAndName
+2b4d1839ca69a83f8f9012fac20160c64226fc5f    IRRELEVANT  Add Type filter to ContainerList
+d8244601fcb0c4bd2619f1be818a0d70f6a76a49    IRRELEVANT  Allow filtering profile URIs by project
+4d57f10730bbaafe523b59e416612285ccfaeab3    IRRELEVANT  Drop virtually all remaining hard-coded "default" parameters for containerLoadByProjectAndName
+5144e18e8f41386b45f06434f0a0db4c05080ff1    IRRELEVANT  Add project parameter to ContainerGetSnapshots
+86767f6e01279ca3b5157af3e7c18f69af8b4c18    IRRELEVANT  Add project parameter to ContainerNextSnapshot
+75231fa3c4540ee9a90714bd3f5a37a764230839    IRRELEVANT  Rename ContainerList to LegacyContainerList
+87bb535feb974b9b8f4483f3c9685883574da000    IRRELEVANT  Create a default profile when creating a project
+ba82db0c58dfa21f7a1184c7a82ff80b81065dc5    IRRELEVANT  Use tx.ProfileCreate() instead of db.ProfileCreate()
+b2b4fd23990fc5835b71d11347f9d3328cc3b783    IRRELEVANT  Make GET /profiles return only profiles for the project
+58bea3db3298bcd9241afb86d48b8ddbe8bf2558    IRRELEVANT  Add project parameter to Cluster.ProfileGet
+dfe07838bee64ec37cc9dae3e0bab5f3bd6db4f3    IRRELEVANT  Add project parameter to Cluster.ProfileConfig
+a8d42099ffc3c791daaf5319736a842efc9055a8    IRRELEVANT  Use ClusterTx.ProfileDelete instead of Cluster.ProfileDelete
+3be3ee8c8f896ac444ae6a8b0894edc98ac334e4    IRRELEVANT  Use ClusterTx.ProfileRename instead of Cluster.ProfileUpdate
+bd29687138a82f691b2f2a2b576e9b5b439e1148    IRRELEVANT  Add project argument to Cluster.ProfileContainersGet
+47f1094dddf576139e73b629c09b4e53eb13f5bd    IRRELEVANT  More efficient profile delete API handler
+dfda52006244ec6c24e52dfa409670067ee3ee1e    IRRELEVANT  Use profiles from the default project if the profiles feature is on
+2c8bf0cc9ed7503703ebee47859dae29ec49d9c2    IRRELEVANT  Add project parameter to Cluster.ImagesGet and Cluster.ImageGet
+9b73fe3659a3c22668f84150c63c4fabf28ecafa    IRRELEVANT  Add project argument to Cluster.ImageExists
+e608e8528a1a09b5dc917131beb3250d14c458df    IRRELEVANT  Add project parameter to ImageInsert
+9cd2a91f09d08c4f39c5d567441dee29cef7c2ba    IRRELEVANT  Physically delete an image only if its refcount drops to zero
+25cae2e8da65b48efa37f49d6a8a7af5f7c50268    IRRELEVANT  Add project parameter to ImageAliasGet
+bbd98b968fc21760fd78ea95c7bb38c17df5f3ea    IRRELEVANT  Add project parameter to ImageAliasAdd
+bdbff48a9dd8bf3d5ff896c3596347ae00f98bd8    IRRELEVANT  Use images from the default project if the features.images config is not set
+15408debfbf7297293164436b2e08e8ae9bd5220    IRRELEVANT  Add project_id columns to the storage_volumes table
+dea4df217d1ab99d58fe9403f60b749fe50b5fe2    IRRELEVANT  Use profiles from the default project if features.profiles is not set
+d1cc67baa0402e55a4f3819bfb801728af445e4d    IRRELEVANT  Add project parameter to several volume-related APIs
+8b82b2b87d513c3d5d5ca39d73ab22d35e1ea125    IRRELEVANT  Add project parameter to getContainerMountPoint
+e0fb1d20845756f903fb7da1def0c9758f413c60    DIFFERS     Improve error reporting when creating a container
+cf088ffad83b59673b0649c158cae35bb0fa3e05    DIFFERS     Change ContainerStorageRead() to take a container object instead of its name
+315bc9115964f0759eae2e6db404329fb92753aa    IRRELEVANT  Make getContainerMountPoint honor project name
+67756c94c1f7d03f487a7c240b6c60c14374a957    IRRELEVANT  Add project param to ImageAliasesGet
+5d3021cf3f396f097662baae38e18910b1b6e2b2    IRRELEVANT  Honor project parameter in Cluster.ContainerNodeAddress
+5a6b70ecff54cc8e82441cece1ff477b4e58e54a    IRRELEVANT  Make more call sites of getContainerMountPoint honor the project parameter
+b59335d4694d27a1191b8cb141848db90acbf0c0    IRRELEVANT  Make most container.xxxPath() APIs honor project
+a21ed28597f46c91178d4ab7af92896389168586    IRRELEVANT  Change container paths to include project name when not default
+26cfe23744942e8b2581eae071a6fd86f2e94f1a    IRRELEVANT  Prefix LVM volume names with the project name, when not default
+a15bf6d249cddf99c5240ec1fc3c904903d174f2    IRRELEVANT  Prefix zfs container dataset with project name, when not default
+3c24dfbb636c4ced0f6d4b1c093f8d793a58168d    IRRELEVANT  Add projectPrefix() convenience to reduce boilerplate
+5f7ecb50b7984038b8cb713dffb5eba9165c502a    DIFFERS     Improve error messages around LVM volume creation
+c72f7dc65899e9a06693664f85c13c08a4a82c9b    IRRELEVANT  Prefix ceph container volume with project name, when not default
+5c3c36a50ed4b485e9f57d07abacd274869a840f    IRRELEVANT  Delete the project-specific default profile when turning off features.profiles
+e860561a7c7931f43a531748a61165ddb80debba    IRRELEVANT  Fix profiles db APIs checking for features.images instead of features.profiles
+e6f2b9c4a9eaa8ba6952412de836610a46c52adf    DIFFERS     Change Storage.ContainerUmount to accept a container vs a container name
+06c8b70633bb650b4f05155934318ecf5c4752d5    IRRELEVANT  Make Storage.ContainerUmount() honor project prefixes
+0909f4192d6cade2ef7d7fa306bb8e0417fa45f6    IRRELEVANT  Honor project prefix in storageLVM/storageCeph ContainerDelete()
+57d21576244331f97a7bd8668b8dbd16b9a54c1a    IRRELEVANT  Make snapshots honor projects
+42dcc1f854b7a04f4926d5627bfd092656d653c9    IRRELEVANT  Fix breakages after rebasing onto master
+114d1f87266daf665e7a2e66fb00d7a3088669df    IRRELEVANT  Make container backups code honor projects
+8d772c02b3771caed20235f9e8eea9a9d7d04760    IRRELEVANT  Projects integration tests
+6ced0e11871b865c28b0f630ab731c6c2c9f6ff2    IRRELEVANT  Include project name in container-related log messages
+81d07af20fe3f6c4f87bd38c60e30f70f6ebb17a    IRRELEVANT  Add project_id column to the operations table
+2143b8911a30e41fbd6c620d971e98caa5037c3b    IRRELEVANT  Include project ID when creating an operation
+65cc748cdc9c2aeb7a31051c90e6903af623306c    IRRELEVANT  Make the REST API return only operations of the provided project
+6d235ba415c23311f7228eb493c4f37c02302373    IRRELEVANT  Filter lifecycle and operations events by project
+42905de28103af61de540bc4d1c1f5c1f66c6dad    IRRELEVANT  Fix ceph test regression
+7f0d6083058b1253da7f61eff72950037ac79637    IRRELEVANT  Fix Description field in the REST API docs for GET /1.0/projects
+dbcc6c6fc951b80c8e8bfb03927771de91af02d9    IRRELEVANT  Add lxc project get command
+5becc5ef146c541fd09c708d6c364ebea1b8e0f0    IRRELEVANT  Add lxc project set command
+f0df5e5c8121702abfde6d67c64c2d36b1923e31    IRRELEVANT  Add --config option to lxc project create and use default values for features
+f49b40d1e60bdd9600faf075cfa49e20a292eaff    IRRELEVANT  Add lxc project unset command
+a18b71c564cea704c57b71b6626e17936a54dba1    IRRELEVANT  Update translations
+319d736bbb830fbd8e146e4cb5a37613efbbf9bf    IRRELEVANT  Pass project name in findContainerForPid
+9c912a17710b7b5b6812a4ac5ce56aadebf4d811    IRRELEVANT  lxc/import: Fix error handling
+d77d8f0b583e4308f8349ddaa7e3e9ed08858afb    DIFFERS     lxc/progress: Don't print empty lines
+4b703ddbe38ef43d08109c2828f672120652e7a5    DIFFERS     candid: Improve domain validation and pubkey
+f7d7b33aa2fb595ecf2fb30f7bf058a7ca82c3e1    IRRELEVANT  lxd/projects: Fix DB update
+cc3f24ee7e316464ebb5846c30554a3c2e8eb478    IRRELEVANT  lxc/project: Only switch as needed
+bc708f822c8ba216910cc11e9551451aff61a5d7    IRRELEVANT  doc: Fix project API examples
+2378825adde759981e6eb5461debd03827f1e596    IRRELEVANT  lxd: Don't regress URLs for default project
+321c4288fd25646ed52f05ffb03c1e5d6f88ead4    IRRELEVANT  Update translations from weblate
+a8186bbb537251c754924d47d9fce80f0144eabb    FEATURE     Release LXD 3.6
+b4d2bc4f83b0b830b91dc1b354425a17de0b2117    IRRELEVANT  Link an image to a project when downloading it to init a container
+9100528e831daf76d22cc116eb5c8aab28b3b61a    IRRELEVANT  Avoid downloading an image twice if it's already in another project
+9db6680000db02d5f5b45ce4e9090023646f4025    IRRELEVANT  Auto-update images also in projects other than the default one
+0e3141b38458491afa61020a6aa8dc7ad6baf488    IRRELEVANT  Associate a container with the profile from its own project
+34dafe871163b62a9c7bd13dbbc857f67368ec12    DIFFERS     Improve error messages
+99ac2e883a5376142e2b8d531a0b7a31ee5c308c    IRRELEVANT  Expand container devices and configs from the associated project
+89d67bc995a92b69f8bc1e29ceb6abdabcb9e8fc    FEATURE     lxd: Add an additional VXLAN TTL configuration key
+d8e2770a2b0034f28d3ee121f1d76cdd2b968bb7    IRRELEVANT  shared/api: Add API extension
+cdc7f34bba9e6e43d7311540e195dc3f939b2c22    DIFFERS     lxd/containers: Fix cluster shutdown
