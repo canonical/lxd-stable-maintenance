@@ -300,3 +300,10 @@ b4d2bc4f83b0b830b91dc1b354425a17de0b2117    IRRELEVANT  Link an image to a proje
 89d67bc995a92b69f8bc1e29ceb6abdabcb9e8fc    FEATURE     lxd: Add an additional VXLAN TTL configuration key
 d8e2770a2b0034f28d3ee121f1d76cdd2b968bb7    IRRELEVANT  shared/api: Add API extension
 cdc7f34bba9e6e43d7311540e195dc3f939b2c22    DIFFERS     lxd/containers: Fix cluster shutdown
+4ecedb87df3b9c39c66c6bdc02a6e35343c84070    IRRELEVANT  Make custom volumes visible from non-default projects
+73c6d1d8c48497af443c4a60c69d9539969fff17    IRRELEVANT  Include containers from all projects in the UsedBy field of a network
+4ded3eb9702236d1925c5e10bb35f1fc2eaeb24b    IRRELEVANT  Re-create the project default profile when turning on the project profiles feature
+d4789fcea99b2d08e25c8f939328bcb34ce8d8cb    IRRELEVANT  Fix project-aware URIs in the UsedBy field of api.Profile
+1df17d0bfacb72cb7cef051052b90488d597d9a9    DIFFERS     idmap: use global variable for vfs3 fcaps support
+ccd1ad703eafebe76239a189d49a32e6ca53efe1    DIFFERS     checkfeature: check for vfs3 fscaps support
+9fb92663b3e229966054b39815e3bf1f0c2897a4    IRRELEVANT  Add 'project' to lxc_cmds
