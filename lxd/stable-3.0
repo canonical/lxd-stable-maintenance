@@ -307,3 +307,4 @@ d4789fcea99b2d08e25c8f939328bcb34ce8d8cb    IRRELEVANT  Fix project-aware URIs i
 1df17d0bfacb72cb7cef051052b90488d597d9a9    DIFFERS     idmap: use global variable for vfs3 fcaps support
 ccd1ad703eafebe76239a189d49a32e6ca53efe1    DIFFERS     checkfeature: check for vfs3 fscaps support
 9fb92663b3e229966054b39815e3bf1f0c2897a4    IRRELEVANT  Add 'project' to lxc_cmds
+47eb327e0216bc30571eabc6e0fd9b524166a0d7    DIFFERS     lxd/db: Fix bad limits.cpu
