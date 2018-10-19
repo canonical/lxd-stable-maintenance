@@ -85,3 +85,4 @@ ec4f666f2322e2b3fb7db8d345205390e4f4b615    IRRELEVANT  doc: fix indent
 d5fc4dd406b07a576d5d593a0b77c98ea0ecce7e    FEATURE     cgfsng: improve loggin on monitor cgroup destroy
 ecedb5dee9324a967a51b0fa73a6be0630250a42    FEATURE     cgfsng: ensure initialized cpuset controller
 e20f46f87fe968ef805c3d42850ae02c88e5007c    DIFFERS     checkpoint: fix running do_dump()
+47903908f8f6d23fc45b64002169747ceba9de5a    DIFFERS     tree-wide: coding style fixes
