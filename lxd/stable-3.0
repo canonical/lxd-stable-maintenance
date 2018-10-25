@@ -308,3 +308,15 @@ d4789fcea99b2d08e25c8f939328bcb34ce8d8cb    IRRELEVANT  Fix project-aware URIs i
 ccd1ad703eafebe76239a189d49a32e6ca53efe1    DIFFERS     checkfeature: check for vfs3 fscaps support
 9fb92663b3e229966054b39815e3bf1f0c2897a4    IRRELEVANT  Add 'project' to lxc_cmds
 47eb327e0216bc30571eabc6e0fd9b524166a0d7    DIFFERS     lxd/db: Fix bad limits.cpu
+6137252f6012e54a5128389e2ba9f1d76f3fbc68    IRRELEVANT  Increase database timeout when creating indexes in db update 12
+b8d35a02146e163c7c44adce21824931ec6fa658    IRRELEVANT  Make containers on other nodes visible also in the non-default project
+36d5b09d1379369c32f21d367a34cbfc86bc93fb    IRRELEVANT  Propagate events about all projects to all cluster nodes
+25de9371ae0002e933e4bfbf29ab6906637a0516    IRRELEVANT  db: Fix listing container backups
+d6b03e0465c297d4f84026e8e1a2833df92682a5    IRRELEVANT  Speed up execution of update from v11 of the db
+906114c8c7db9efab2e7c96cbb82d7834c1e174d    IRRELEVANT  doc: add the appropriate titles to some documents
+f14cf6c867910bb24d70e76d8c4c32399c1048f7    IRRELEVANT  Sanitize references to containers table
+886bb9e63c4b6d89d00937dc307f1a2f8e467bb7    IRRELEVANT  Support creating project-bound container using an image on another node
+34ffc2fc0288005529c49640803a3d526129415e    IRRELEVANT  Fix lxc exec when using a container inside a project
+292fb931e2cbcc24a79b44a3ca1e8717a815f8b0    IRRELEVANT  Prefix the container name with the project name when invoking forkconsole
+055a41f71630f893017d910c04f20143cdb1bf23    IRRELEVANT  lxd/projects: Fix clustered exec/console
+2024096d4b906ab3f044e40a6794eb6a3ba0f5e1    DIFFERS     Prevent event listeners from lying around even after Disconnect()
