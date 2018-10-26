@@ -320,3 +320,5 @@ f14cf6c867910bb24d70e76d8c4c32399c1048f7    IRRELEVANT  Sanitize references to c
 292fb931e2cbcc24a79b44a3ca1e8717a815f8b0    IRRELEVANT  Prefix the container name with the project name when invoking forkconsole
 055a41f71630f893017d910c04f20143cdb1bf23    IRRELEVANT  lxd/projects: Fix clustered exec/console
 2024096d4b906ab3f044e40a6794eb6a3ba0f5e1    DIFFERS     Prevent event listeners from lying around even after Disconnect()
+b1e39f7d6b1f409724bb95f78a858ddfb4cb1ce5    FEATURE     shared/cert: Switch default key to EC384
+e27c89afcde9a38c92a940df55ad7a62c3c22cf3    IRRELEVANT  Destroy the correct ZFS volume when deleting a container in a project
