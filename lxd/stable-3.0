@@ -322,3 +322,71 @@ f14cf6c867910bb24d70e76d8c4c32399c1048f7    IRRELEVANT  Sanitize references to c
 2024096d4b906ab3f044e40a6794eb6a3ba0f5e1    DIFFERS     Prevent event listeners from lying around even after Disconnect()
 b1e39f7d6b1f409724bb95f78a858ddfb4cb1ce5    FEATURE     shared/cert: Switch default key to EC384
 e27c89afcde9a38c92a940df55ad7a62c3c22cf3    IRRELEVANT  Destroy the correct ZFS volume when deleting a container in a project
+35b1b9a5031e9a7712c1c0bab999275b62e7b9bd    IRRELEVANT  Consider the container's project when loading profiles in containerLoadAllInternal
+0b59b2909d526d237fd517bd2fe9331d49487b42    IRRELEVANT  Add logic to the db package to load and expand profiles
+a7df21734a03353d5dc43ce8ed3ae9084c936ff4    IRRELEVANT  Wire expand config logic fromt the db package
+eb663cd797707b262565deea88f70169aaa07744    IRRELEVANT  Add logic to the db package to expand devices
+af4dabd1e24cf1f34287d7797a75547fd3d764af    IRRELEVANT  Wire expand devices logic fromt the db package
+91739ea90a6159c252583b5ac5e5134757193382    IRRELEVANT  Add ContainerListExpanded to load containers and expand their configs/devices
+b7152056f7dcff0c2a1e14ad3a9deb9253547530    IRRELEVANT  Small unrelated cleanup in projects integration test
+bc611084ad0f11ea50f0411d68d20837eff9c443    IRRELEVANT  Make the db mapper code generator handle compound natural keys
+2dc82a4ace092b7187de510a6dbd76afca772aa0    IRRELEVANT  lxd: Set default expiry for backups
+811dc5d21c921b2b06259978ca0c98ce4780d4bb    IRRELEVANT  lxd: Remove expired container backups
+ccb0b591fbdd34759fc4266a8548d014532fcd82    FEATURE     container_lxc: use liblxc mount injection api
+a4655cdcd0018134eaee48f1fc5a90e8009731f1    DIFFERS     lxd/daemon: Improve logging of inherited fds
+64443f8623d4e2b6c93053f0df329dde0f32f735    DIFFERS     Detect and shrink large boltdb files
+37ccedc46928acaf908b6d545636c1b94b3ad988    IRRELEVANT  backup: Allow backups to not expire
+bf7ebb49c8e2fcd4ce3cc0267654e361a8f08e77    IRRELEVANT  lxd/projects: Fix profile updates
+3563dcd2a3d7f58be4b95342a92078a6a878ef97    IRRELEVANT  lxd/containers: Fix missing project in args
+ce2c7dbb1383ce2c125abfffae3a7108f7a3b934    IRRELEVANT  Update translations from weblate
+7441e7eb1eb514b30750d6a34aa144036fdf7f16    IRRELEVANT  i18n: Update translation templates
+304a432fe099d15359d38e763f6f78a268d630d7    IRRELEVANT  lxd/patches: Add missing transition for symlinks
+de60f1848b98357cfd680938399c42c9b073ddeb    IRRELEVANT  shared: Add API extension container_incremental_copy
+53401e767f5ea407ea19220392c22fc40f505e94    IRRELEVANT  doc: Add support for incremental container copy
+8f25de553bb9f68aacfe20d167e27f2fc98d4fbf    FEATURE     lxc: Add --refresh option to copy command
+91bcb6628bad314f05f5ff92b6d360cee935a786    FEATURE     lxd: Add support for incremental container copy
+81dc4511a982b5032919116f38c41851d4b63c72    FEATURE     storage: Add support for incremental container copy
+5da5c1be381b97e315dacafb6981aca2fa926fdd    FEATURE     storage/btrfs: Add support for incremental container copy
+0e872be23e081fa9405e71392e584814eff18740    FEATURE     storage/ceph: Add support for incremental container copy
+e6c99c56e91095ea065069bd0bc5f2b598262371    FEATURE     storage/dir: Add support for incremental container copy
+6b8557675e18fd5512c89b121fe3daf494c7dc59    FEATURE     storage/lvm: Add support for incremental container copy
+9793b51b591a259739f3997e624386ab67c0cac9    FEATURE     storage/zfs: Add support for incremental container copy
+4d1dbf4ab2875833aef0201ccef7144d91a9ee75    FEATURE     storage/mock: Add support for incremental container copy
+ae73276239be36ece6dbcea8d915620992a1957a    FEATURE     test: Add incremental container copy
+1e32ffe6e929ae9dd07802b6946eb42d81ac0341    IRRELEVANT  po: Update i18n
+67ecbf2b12f65c0fba6eb45ef735f0eb532922d1    IRRELEVANT  Update translations from weblate
+6cc0fc43bbfaca15dc6bc6474dd672405789eefb    FEATURE     Release LXD 3.7
+d4266326b4b78fc2219936a967252fdbd2a0df7e    IRRELEVANT  lxd/containers: Fix snapshot URLs in projects
+4453ec8bab05a0053350b6908d40e157b81dc8ac    IRRELEVANT  lxd/storage/zfs: Fix project copies
+a45f2d904801626c43d400a7cd463cea36c35ada    IRRELEVANT  lxd/projects: Fix copy of snapshots
+fe0fa4b39766d489a70dc9dee00b8bf5dc209be9    IRRELEVANT  lxd/storage/ceph: Fix copies within project
+efa9493704a2ec0ffcec69fc095b5afebac2335a    IRRELEVANT  lxd/networks: Fix projects in dnsmasq.hosts
+2e699d7174fb502669c98a4dd5a6f2da565f1c85    DIFFERS     lxd/storage: Improve loop device errors
+8fad7d097a224af38197dc0871d10d615e7dcb10    DIFFERS     doc: Add usb_optional_vendorid API extension
+dcecb9102bd62acf188bdeb478aad60d07e916ae    IRRELEVANT  db: Find next snapshot with pattern
+94707da658705c793b60cd279f40414bb21af702    IRRELEVANT  shared: Add pongo2 render function
+9f387ce66a6b1a382a0a7666f2d848a478966432    FEATURE     api: Add snapshot_scheduling extension
+f47db31e25b3234a5b75e55e38b62ccf62c12f0d    IRRELEVANT  shared/container: Add snapshots.* config keys
+70b66ee50fb69fb01d3a0c3c4b0dae527e9c354d    FEATURE     lxd: Support container snapshot scheduling
+4f91cb315c8171186f71e875e92c751b5d15b318    FEATURE     doc: Document snapshot scheduling
+5c099487f7e94455bca99a21c789d011e9791e84    IRRELEVANT  i18n: Update translations
+85268314f2bb82789eb9643e1da440698438d555    IRRELEVANT  lxc/project: Check existence on switch
+2dd76d08e0c7e7952aef91b5cf58fe6b9ff24643    IRRELEVANT  lxd/storage/zfs: Fix project migrations
+db194f91dbc416ff5f9742013717db89f6d71893    IRRELEVANT  tests: Test migration in projects
+7275b04969d3a6b2b5b08d04c599cf4710072ea6    IRRELEVANT  lxd/storage/btrfs: Fix project migrations
+df7dc7eff4a056599b92ac66ccbcd6641046a9ab    IRRELEVANT  lxd/storage: Fix snapshot migration with projects
+485e7bb0a9ef9f778cf4950f2c26b9af340b34a4    IRRELEVANT  lxd/storage/ceph: Fix project migration
+6cf5f5e7af2b4019040e052c819ae03adb1df6bd    IRRELEVANT  lxd/storage/dir: Fix project snapshot symlink
+d0ed6342961679c323cf6d88b1922f0dc2ca491e    IRRELEVANT  lxd/migration: Fix rsync project prefix
+d35ce769552fd58c9ad9dbf51f5a435e43a56a5f    IRRELEVANT  lxd/projects: Add config validation
+752860f3183953217381d0c1b2f1d5993fdc7ee0    IRRELEVANT  doc: Add project documentation
+c9e4538551e626f1cb9bd8bddd401c8830d4b349    IRRELEVANT  lxc: Allow overriding the current project
+75eded10a496c74eabf6964402348d73c3b7547b    IRRELEVANT  lxd/containers: Hide duplicate log entries
+4dfcff12eb278a6ce4598969bbeae9dcff94182f    IRRELEVANT  lxd/storage: Fix more project copy issues
+c92ca59b64c9e1ca414d605a175fa7832de8b39b    IRRELEVANT  tests: Support copy between projects
+6d4e8ec1b91a16a285744c2c9554cc123395ac67    FEATURE     lxc: Support copy between projects
+6918e2645665f5abb905b5da4fb833889c53f12d    FEATURE     lxd: Support copy between projects
+1973ced8e25629724db8ea5f14000284b1d4e95f    FEATURE     doc: Add container_copy_project API extension
+836e152d91f8dc6c25ab1eff17db712b608631fc    IRRELEVANT  i18n: Update translation templates
+032bab24eabb06664adf15a1c08bf6291e6775d9    IRRELEVANT  tests: Fix leftover file
+7f1c183bbb1bb2ce5f80d7eabc05b3244ed978c5    IRRELEVANT  lxc/import: gzip is the default
