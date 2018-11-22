@@ -86,3 +86,12 @@ d5fc4dd406b07a576d5d593a0b77c98ea0ecce7e    FEATURE     cgfsng: improve loggin o
 ecedb5dee9324a967a51b0fa73a6be0630250a42    FEATURE     cgfsng: ensure initialized cpuset controller
 e20f46f87fe968ef805c3d42850ae02c88e5007c    DIFFERS     checkpoint: fix running do_dump()
 47903908f8f6d23fc45b64002169747ceba9de5a    DIFFERS     tree-wide: coding style fixes
+9b10bef54ce7dfde831b2ff6b3182013e08388b7    DIFFERS     start: simplify
+a8b46a6bee4b2a33ea28f7a2b5c52819ba1ef087    IRRELEVANT  spelling: indefinitely
+b98318f4c29b9177b82478c4825808b4a3a28134    DIFFERS     spelling: portion
+594426ca1b9f916102b02899aaa756467b0192ce    FEATURE     conf: expand shmounts lxc.mount.auto option
+6437f1c1738d9ab0a51a75bccf3450c1352ccc8f    FEATURE     conf: don't setup shared mountpoint for shmounts
+ecce75a68ccbe347ce04a2c7e085dcb10aeb2251    FEATURE     lxccontainer: fix temporary path removal
+9395c7c215ba4479d6637e07d79127e040f4c69b    IRRELEVANT  confile: remove debug printf()s
+7be6bcd523d06a27fa6e611dd822142e9aea6da8    DIFFERS     utils: fix coding styles
+e6ec0a9e71aa68c9fd67c691a62aaae87e356cef    FEATURE     apparmor: allow various remount,bind options
