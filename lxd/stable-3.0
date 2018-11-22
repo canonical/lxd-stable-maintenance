@@ -390,3 +390,20 @@ c92ca59b64c9e1ca414d605a175fa7832de8b39b    IRRELEVANT  tests: Support copy betw
 836e152d91f8dc6c25ab1eff17db712b608631fc    IRRELEVANT  i18n: Update translation templates
 032bab24eabb06664adf15a1c08bf6291e6775d9    IRRELEVANT  tests: Fix leftover file
 7f1c183bbb1bb2ce5f80d7eabc05b3244ed978c5    IRRELEVANT  lxc/import: gzip is the default
+7f3fac7d14e94a834ce652df514443ceea326dcb    IRRELEVANT  lxd/snapshots: Always use snap%d as pattern
+0b47a151216f5b3d9899fbf5149bde8edeaea97c    IRRELEVANT  lxd/snapshots: Validate pattern
+58ec0b53bb94be59aa72ae2e39416771f2fe199f    IRRELEVANT  lxd/snapshots: Don't run on startup
+d14578dd06122c09b051cbafe8de816a94a1a5f3    IRRELEVANT  lxd/snapshots: Only spawn operation when needed
+dbfbea5bdca4bd792e00079d658e5d37c4a63a62    IRRELEVANT  lxd/snapshots: Remove debugging code
+03ecaf4b2da0816ee8d9d617648a35522d050ae4    DIFFERS     rsync: Tweak transfer options (delete & compress)
+bbb527b2198888368591e5a96b29a9ee97d3966c    DIFFERS     lxd/daemon: Improve logging of kernel features
+5c4534c3e6feb2ec3ba7f05db1f6cd79096dc5ed    DIFFERS     lxd: Register background tasks as operations
+8165c24cce7f27d1df3ce45c3355cb2014449dd6    DIFFERS     lxc: Switch all progress op handling to cancelable
+0b7d1bc213a235c7c53bcd2b81e823511a84eb63    DIFFERS     Increase go-dqlite client timeout when not-clustered
+5a6b7592892f3145b90fa0e4a3b5606e150d59b9    IRRELEVANT  lxd/main_forkmount: Use pkg-config
+d5f78aa746a9f9a5c41ffe5a943134861e8e7bc7    DIFFERS     lxd: Rework task handling
+ef371a7f1d48842978474558ca92ff3ead0548f6    DIFFERS     lxd/migration: Fix CRIU rsync option negotiation
+1fc712b0491505097d9ca91f22e8eb892e13cc66    DIFFERS     lxd/storage/btrfs: Tweak errors
+7146e447367e6ca867f22b75efa77ceff4ef1103    DIFFERS     Add StorageVolumeIsAvailable to check if a Ceph volume can be attached
+a6bd52e5432006ae2cdfbf70154e6ccbde548e20    DIFFERS     Wire StorageVolumeIsAvailable to containerValidDevices
+0a6cf157d9df0a59c1111c632bb2fe744654b3b6    DIFFERS     Add integration test
