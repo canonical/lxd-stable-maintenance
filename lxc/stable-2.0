@@ -916,3 +916,826 @@ b2efeb0bb95e35e5b597b91224d07e6496d0161e    DIFFERS     add some TRACE/ERROR rep
 d3bdf12cf00e93e3b1df354dd4cc46356baedf24    FEATURE     confile: satisfy gcc-8
 39ebeb725b941323eac13d672eb4f94219b8399d    FEATURE     support case ignored suffix for sizes
 6d276edc1d69377a29fe1d877bf2cf7ce67cf37e    FEATURE     utils: fix parse_byte_size_string() coding style
+91c272a571d1e0f1c91fa37102fffdd3540514ce    DIFFERS     strlcpy: add strlcpy() implementation
+9de31d5a1394fd0bed495fa7cde5e625a1d64b48    DIFFERS     tree-wide: s/strncpy()/strlcpy()/g
+2ec47d5149e73db97f7877d06d67cb11421097bb    DIFFERS     tools: s/strncpy()/strlcpy()/g
+50c6bb6b74d0414bc1b3bd5395b2bad6009a017d    DIFFERS     Revert "tools: s/strncpy()/strlcpy()/g"
+d96a98469176ab6064583331cab9f002632a4586    FEATURE     tools: s/strncpy()/memcpy()/
+f6300ff58018dd44cc076b60512b08628a0b5e85    FEATURE     doc: Add "-d/--daemon" option to Japanese lxc-execute(1)
+15c226877ebd32ac0c799a0519b786fa692a5b21    FEATURE     doc: Fix size unit style in Japanese lxc.container.conf(5)
+42cc40833c6a0e3ac01006c4ed35fb73ea958a93    DIFFERS     coverity: #1435604
+4b812aca236191cb86d18108102f750d9cd28c7f    DIFFERS     coverity: #1435602
+7d1cde93be367087b7e55554f71bd70ad15a22d8    DIFFERS     coverity: #1248106
+c6df6dd98b4290b7836a0207779ca4aee6e2a137    DIFFERS     config: allow read-write /sys in user namespace
+611ddd345e84ee67096eefac4a1529299f97a8d6    DIFFERS     capabilities: raise ambient capabilities
+2202afc960d7d90df1fd5a1bb27be2529fcc235b    FEATURE     cgroups: refactor cgroup handling
+dd66700c56d51604d0877daf31da943d02ec4733    FEATURE     cgroups: remove freezer_state()
+b1c428f9e8b41f7bc9aaf4fe2adabb2effbccaed    FEATURE     seccomp: #ifdef SCMP_ARCH_AARCH64
+395b1a3ed680438dc62323e50776d2ec447a4551    IRRELEVANT  conf: simplify write_id_mapping()
+c7b1705112bec95110d02b26a8016f7d6ed1cef5    FEATURE     log: enable per-thread container name prefix
+11c69d5e77a44f973632c649a6ed7cc961db8abc    DIFFERS     lxc-init: skip signals that can't be caught
+4b5b3a2a299b4633123f20f41e9c6188aa605e13    FEATURE     execute: use execveat() syscall if supported
+f6d79ec119739addc2a43109f7dd08b09f5bafa9    FEATURE     tools: only create log file when requested
+3a2cd4b95836130ca4a8bec9157eea52daaeba41    FEATURE     seccomp: fix off-by-one error in array allocation for sscanf
+9c7423ce2f9e96e8f62c3c529855a2b361406e8b    FEATURE     seccomp: remove confusing comment line
+30adf868bf08b8c2d3197b67fe61159514ff76b6    FEATURE     seccomp: remove unnecessary memset
+eacebcc3cb8cf5d29556c85fe826096723475242    FEATURE     seccomp: fix type mismatch when parsing syscall arguments filters
+5fdc4e77a6433b65ace7372e486b12363f344a32    FEATURE     lxcseccomp: cleanup header
+ccf8d128e43076d96ab8509a42dfb7bb2133ae59    FEATURE     seccomp: parse_config_v1()
+7ad3767052a663d6d2c4e4309cdac78ac388dca6    FEATURE     utils: add remove_trailing_newlines()
+30448a13abc70e4de7578bf8ca4a26a58655b0ea    FEATURE     seccomp: get_v2_default_action()
+f0fd80ae3d90185dc169f0871b6e1d08e0c9d8ff    FEATURE     seccomp: get_action_name()
+1ab6b4a12eb5c1ad55659886779d9ef864581d56    FEATURE     seccomp: get_v2_action()
+63a49b03f4fcc4b62cbd29bdfe6844cd248af7bd    FEATURE     seccomp: fix get_seccomp_arg_value()
+f67c94d00a0d6b34043d09927f551797cf64b2ca    FEATURE     seccomp: parse_v2_rules()
+0b5c590dcce50a6133c66ff19dd3665c40f944be    FEATURE     seccomp: move #ifdefines
+0197fe2e5e505f37f9464fba5fa62511949a94ce    FEATURE     seccomp: get_hostarch()
+04263914e58afa041472970d45b012ef811f71bc    FEATURE     seccomp: scmp_filter_ctx get_new_ctx()
+ad9a5b72a993ad8a2d307e91ed6b3b6658a40c8e    FEATURE     seccomp: do_resolve_add_rule()
+9c3798eba41cc14996509c1c85176b6ebc76955a    FEATURE     seccomp: parse_config_v2()
+6ca8172db2f0caea0793248dd9728064b549f3f3    FEATURE     seccomp: parse_config()
+47f6d547b21902aac955dbbb604011253a5abd39    FEATURE     seccomp: lxc_read_seccomp_config()
+b467714b33c6c132b38cbeb37c4f0d0b90d9f8f7    DIFFERS     tree-wide: s/sigprocmask/pthread_sigmask()/g
+9dd541531f9fe79a773f0220d358c0c679368def    DIFFERS     lxccontainer: fix fd leaks when sending signals
+c0b48eff1731a20dec8cb3f57acd08aca90c15dc    IRRELEVANT  start: log setns() failure
+97a9b25848e9f2f15e6c01f4757cb33965856908    IRRELEVANT  seccomp: leak fixup
+f858dd50cff72855f4fe305c150eeb02387f8fb5    IRRELEVANT  seccomp: re-add action parse error handling
+9dbd8ff383804094dc4059cc052d56b504ad3121    IRRELEVANT  seccomp: refactor line handling of parse_config
+7474b5b33f15e7769608df2a36f7f86274028c01    IRRELEVANT  seccomp: error on unrecognized actions
+cf6624c1fed1a2528f9316d8c44545f3cbb90788    IRRELEVANT  seccomp: lxc_read_seccomp_config()
+54a051c1663ad1b3216833eca2e7d309730d50bd    IRRELEVANT  seccomp: parse_v2_rules()
+dfddc8aa7ef3362212f8394995088a5f525730dd    IRRELEVANT  seccomp: make do_resolve_add_rule() more strict
+a579fa51bf9e65aa5a1f12d3a73860b7fc89fc89    DIFFERS     coverity: #1435806
+3ec12d39cda560d4054887d8755cdbe94d8c5c86    FEATURE     coverity: #1435747
+3a0e314db530d849c76d6d8660a9fdacf5804bad    IRRELEVANT  conf: non-functional changes
+4c496daa33d4725cd007e91d2eb7d5652dfdb98f    DIFFERS     coverity: #1435803
+07c4ea310d0f62f163bbfbb829752827691e2cd5    IRRELEVANT  conf: make is_execute a boolean
+edd64e17dcd4eba679c46b36fccc9d3a365073ca    IRRELEVANT  conf: non-functional changes
+b3187a814a4732689f4a08e1da760ff0e3a79e91    IRRELEVANT  conf: make close_all_fds a boolean
+448d7b0c0f14bf342b71dcf95e2a4b5369743905    IRRELEVANT  conf: reshuffle mount members
+885766f5d2840d4f28fac94b30447611725bc24d    FEATURE     conf: simplify tty handling
+e528c7356b99eb042567db786d59f36162c0b8a8    FEATURE     conf: pts -> pty_max
+a2db71c0412b91b29875e7d8c66704dde4a8ccda    FEATURE     conf: non-functional changes
+573ad77fc275bab72a5820c35b16c51139d556fc    DIFFERS     utils: fix task_blocking_signal()
+87c6e5db2a792fce7aab841d5880e5e22e63eb7d    DIFFERS     network: fix socket handle leak
+f3815517f22d39fbd3458f8559467c947b1e291b    FEATURE     start: do not init ns_clone_flags to -1
+386e676854f56268fae34cd84babae983c0d7f2e    FEATURE     conf: ensure lxc_delete_tty() does not crash
+80308d07b37387f718405a87fe908064c1969cdf    FEATURE     start: add reboot macros
+5173b71073dbb6b3290f969fab5ccd7a304d3c4f    FEATURE     conf: make root idmap structs const
+7a0bcca3105ca9c9987d5572bf72f02e35a28bcb    FEATURE     conf: make tmp_umount_proc bool
+32fd6cf390e04ebc43ca94d6df8ca99ce4cd2ecd    FEATURE     conf: non-functional changes
+7b5a2435a2c7ba0cc6bf5a28680bd2e2efea4890    DIFFERS     conf: va_end was not called.
+9496659c6b167951d0e1ae4109a9d08da0d1b31a    DIFFERS     confile: improve strprint()
+b2a48508539294c40bc03ae505bc4f620e6414ce    FEATURE     change defines for return value of handlers
+321db0260f6f0324425e9a027305ebec47fd23ce    DIFFERS     start: fix waitpid() blocking issue
+7af82fa828cf6012cdb80077c9400e5fec1f4728    IRRELEVANT  tree-wide: fix mode of some files
+1396b6109188f80899bd442a3ee92ce3bc9c933e    IRRELEVANT  confile_utils: apply strprint()
+6e62213e029497fad264ba0d48549ee5e6f5e92d    IRRELEVANT  templates: actually create DOWNLOAD_TEMP directory
+30c8676e15f8d45fe0451eea46ca50f8508ae15d    IRRELEVANT  templates: fix download template
+49b8273ffc47961eb303c7e32c5239221b6e1498    FEATURE     Patch lxc-update-config
+489f39bef7a3496704c8df9204c80411926269f4    DIFFERS     tree-wide: handle EINTR in some read()/write()
+73e3cb9a16e8a53e0e52b4682bdb3923cbc9f6f6    FEATURE     seccomp: drop misleading argument name inherited from the OCI spec
+f42183e68cfe5ee185e4ccc0330a22c02fc24597    FEATURE     seccomp: use a default value of 0 for the mask
+6a49f05eb8184827bef4ae4cb5d8ae7ba83496a0    DIFFERS     conf: copy mountinfo for remount_all_slave()
+fea3b91d09cbf10f31991d674c0f0ba08a0f5fd5    DIFFERS     conf: change some logs to print errno
+24b9874f7920a19e4c5ad385405703c2ace98aac    FEATURE     Revert "seccomp: make do_resolve_add_rule() more strict"
+8c26014b0c2b4ae845283e51a8d4b09d0e777145    FEATURE     seccomp: replace misleading warning messages
+951665a30e6e7ea78b46c99f1c6e5bb4f526c770    DIFFERS     coverity: #1425779
+8c440b3af04eb872d252141884498caa93ae9105    FEATURE     pam_cgfs: fix Logically dead code.
+98c7c8eb1f0fdcfa64efa82df9123d02913bfeda    IRRELEVANT  coverity: #1425753
+aa7c5841bd503942bd712367a2f35d987e934b2d    FEATURE     coverity: #1425811
+300ec7176bfd66c5fa68d2927da71541409cf304    FEATURE     terminal: enable local output processing
+c724025c5086519065420348288922a6469865fb    DIFFERS     conf: only use newuidmap and newgidmap when necessary
+4d7816815b4d21c684170e651da36647e445bbc4    FEATURE     fix bug: unpriv lxc will run lxc.net.[i].script.up now
+8f55c74292c5789bde980e2a2fbb2599c26bfa02    IRRELEVANT  coverity: #1425747
+928388738b2b8dfba0fa99dd8f77dfb466df8af4    IRRELEVANT  coverity: #1425801
+70cf33762530f36e8475504b4f764061b4513f92    DIFFERS     tools: restore lxc-create log behavior
+2dce415b621e4c7cc78f679f8ec54a5b401c785b    DIFFERS     fix getpwnam() thread safe issue
+2b65c74cf932095ef1ad3286cb3738d18c6fb40e    FEATURE     pam: fix typo
+cb7aa5e8cae121f2d63db60d9e3687a8ac554800    DIFFERS     fix getpwuid() thread safe issue
+3de9fb4c2fcf482a24a708545d82faa7639fe66c    DIFFERS     fix getgrgid() thread safe issue
+a5452e50b2106d86ffbe0094680fea6ce1db23e4    DIFFERS     coverity: #1437017
+b29e05d62973511aa6aed81f2787b6c451a3f43b    IRRELEVANT  coverity: #1425748
+d3ccc04e7921888f8debb57aa7088893891a1f35    IRRELEVANT  coverity: #1425758
+1f080b1d66ffef2207be0951beab04fdfdc29d99    IRRELEVANT  coverity: #1425764
+dd90a3bfabb71cd26fdf460db3e578929dcde6a5    FEATURE     parse: fix memory leak
+477e62b618ac4a17af0358fa238851ee726a738f    DIFFERS     include: add getgrgid_r()
+4250ef64b3ce38e437ad8f83db0383010014339c    IRRELEVANT  coverity: #1425764
+dd5c5a5d68fa22faea5feb9223d0bb7bec54efd0    DIFFERS     coverity: #1425792
+0b3410ee32fee4febe835e28ab9a41994fc55cdb    FEATURE     coverity: #1425804
+24c2a48d8c77527569e18cde870c34d2ef5a54f3    DIFFERS     coverity: #1425818
+e1cfe3e20af65eaa9948e504703cd0a9ed263136    DIFFERS     coverity: #1425819
+02a0e184e663e5447de86bf9819698e32db7613d    DIFFERS     coverity: #1425837
+ea75396037ee97b6a993584bd3d99196d87738e4    FEATURE     coverity: #1425850
+77f948545c2a6030fb872bec115aee24586046d4    FEATURE     coverity: #1425748
+a5ec15d9ee9c33a5e4b38ed77a1b1bfee9542d62    DIFFERS     coverity: #1425855
+64b0e15acd6f1c494af6bb86868610889f8dad21    DIFFERS     coverity: #1437027
+43f984ea59ad25c1b5bb692ce9997160e75f37c5    DIFFERS     secure coding: #2 strcpy => strlcpy
+663014ee7c151ef0920344c6d609042a7f4d7a57    IRRELEVANT  conf: remove unused argument
+18cd4b5484e17573498bbf848f8671c5a0856a70    IRRELEVANT  secure coding: #3 strcpy => strlcpy
+22417436da4ab51d85268edb8c04d2af918c0ff5    DIFFERS     fix fd handle leak
+5090cb06a00956df4513bd2d5625029d00aa39a0    DIFFERS     fix pointer c is dereferenced after checking null
+9a5e7ac4a9fe963349717592a5f642f213ab5dae    DIFFERS     include: add strlcat() implementation
+8b7681f354c0d22e35a3c13f98ab0e28cdc5e1f8    IRRELEVANT  templates: Fix busybox template
+3afafe55cc897f86b850795be630add1e277b164    DIFFERS     btrfs: s/strncat()/strlcat()/g
+efed99a42b93f620ef43efde8c310c47f078c4a4    IRRELEVANT  secure coding: strcat => strncat
+64e82f8b3a2b70ec88b1d5f41325886b911cfcf1    IRRELEVANT  secure coding: cgfsng: strncat, strlcpy
+2df5f6bfe991a89c8c5d97f91b21218592ecd257    IRRELEVANT  btrfs: fix wrong buffer size to append string
+3ebe2fbd2873d2fd52013b6b9c73d5f40ac939cc    IRRELEVANT  cgfsng: strncat => strlcat
+f1e05b90afaba0e4e070fce3ded88697983a46c6    IRRELEVANT  conf: strncat => strlcat
+9c8b2b1343cd5ada0b0e71ceade7a8ab8d0684fb    IRRELEVANT  pam_cgfs: strncat => strlcat
+e0576f178f4f8a63caa46d25c0bd60d6bc02e82e    IRRELEVANT  tool_utils: strncat => strlcat
+bd583214ab58feadf6476965cda36b9c40445732    IRRELEVANT  utils: strncat => strlcat
+ebcd5140b3c11cf7a3eab78495d80bcc11511b45    IRRELEVANT  confile: strncat => strlcat
+25aced9fc13e8544e3104f3514d5daa79a88e031    IRRELEVANT  btrfs: add to check return size of strlcat
+9d46514002e91e30bbe02b9ba2aa5aa9bb20c1bf    DIFFERS     log: add lxc_log_strerror_r macro
+a24c5678a91b66d7a1c6ca0e5ed3a958e57cd17d    IRRELEVANT  log: change WARN macro using strerror to SYSWARN
+7874d81a4df7f75391f3afb70b765d011a245dc4    IRRELEVANT  log: change DEBUG, INFO, TRACE, NOTICE macro using strerror to SYS* macro
+b5be6a7caa237450404751e2f23964c18eb438b7    IRRELEVANT  log: remove strerror() from SYSERROR call
+6d1400b572630247347318a2df2d8ee5219cabc5    IRRELEVANT  log: change ERROR macro using sterror to SYSERROR
+e5adb2b5593fafbd088f232568af72fe9a9b1406    IRRELEVANT  clear ONLCR flag for container pty
+a13daf8e7d0bf19e535ea2930ce4a4f6281788d5    IRRELEVANT  tools: fix quiet option is not working
+097268e12bef57afeb13006142721e0ee3ce031e    IRRELEVANT  tools: cgroup, freeze, unfreeze, wait: change fprintf => lxc_error
+eb0c9382b47e774a76235252cd6f3e834c778a33    FEATURE     tools: lxc-start: share internal API symbols
+19eacdc057f0a7937447fccce1e5ed49a1b6f16b    FEATURE     tools: lxc-stop: share internal API symbols
+a599e9c04357b8d3c1bc06c65e026a383183932d    FEATURE     tools: lxc-freeze: share internal API symbols
+7d6ee132a55b541d68e6b993f0afcf7d42a08cb1    FEATURE     tools: lxc-unfreeze: share internal API symbols
+df3ab009952f365d993e1febbbb1e910d7bb77e6    FEATURE     tools: lxc-wait: share internal API symbols
+93f81bc78d34c0aa66ab7e519a7ba45a5d67da6e    FEATURE     tools: lxc-cgroup: share internal API symbols
+1b36d9e9dda868a8070bb37c0ee870d05722302e    FEATURE     tools: lxc-attach: share internal API symbols
+3e04a6083eefe0b837db6d1b826721fd985ce052    DIFFERS     autodev: adapt to changes in Linux 4.18
+1cd7db650a9ad6d0e0010967733e7a5de9f191ac    FEATURE     tools: lxc-autostart: share internal API symbols
+b14fc1007ce9fc78b821a5631afeb3d71a0d5200    FEATURE     utils: code cleanups
+469711c520c6f3ed0984c2c43eca89361575258e    FEATURE     tools: lxc-info: share internal API symbols
+d2ba12a8afb116c10a8d71af3d46de22e784f8a6    FEATURE     tools: lxc-ls: share internal API symbols
+b27cdf66dcfbf294159dbe380073507fb9be53be    FEATURE     tools: lxc-config: share internal API symbols
+138eda996fb0ac0106ce3e4468227c0696d9a60a    FEATURE     tools: lxc-console: share internal API symbols
+75e607ba454eebd2b387ab2fd64307796abea84b    FEATURE     tools: lxc-destroy: share internal API symbols
+a9cb0fb86ff0680b8087a55305af33ab67d80417    FEATURE     tools: lxc-device: share internal API symbols
+d899f11b7bfb14c4b532bc801de89c8fb46307d4    FEATURE     tools: lxc-execute: share internal API symbols
+e9b0c679645df9e0a02ed0e0de8e4b2935690926    FEATURE     tools: lxc-copy: share internal API symbols
+e809eec64e1d55f15df55baa7b1b2083822ed442    FEATURE     tools: lxc-top: share internal API symbols
+4f66541cc6b1dbe554058b11b4ef7135d3475315    FEATURE     tools: lxc-unshare: share internal API symbols
+124fef5a835b4a61345cc1bc19530ec5398e5859    FEATURE     tools: lxc-checkpoint: share internal API symbols
+4888c7312f4ca1c249e5269e8105e3e69886a840    FEATURE     tools: lxc-checkpoint: fix log name
+ce9ed7c0c493e7dfff8f769f23ce371126a2635c    FEATURE     tools: lxc-snapshot: share internal API symbols
+9c382925a15d90bef73ecd734ae5e387992fff00    FEATURE     tools: lxc-create: share internal API symbols
+457e3c5dafd18cb99660da1e2dfcf2b3b90d3061    FEATURE     tools: lxc-monitor: share internal API symbols
+ae41d188ee1ae9dbd8de9251149e2687b787aead    FEATURE     tools: arguments: share internal API symbols
+03e6adc680f319e34228cb8e5ea3cc18b400ad36    FEATURE     tools: remote tool_list, tool_utils
+54d47131137cc679b756e93f3a92ecea980f5998    FEATURE     tools: lxc-autostart: remove the trailing . & fix coding style of strncmp
+8fb41a340f24ca59c8eb0aaf243b7b382d58cbf8    FEATURE     tools: lxc-checkpoint: remove the trailing .
+dc71fcca83ad45683c772eb65d8b810af8f6facd    FEATURE     tools: lxc-config: fix coding style of strncmp
+5dec9c3ede12badf0178342831b9d02ed1a00bc4    FEATURE     tools: lxc-copy: remove the trailing . & fix coding style of strncmp
+77e5da8e1e839a0c12c0c2209f1f6d0b04fce4cb    FEATURE     tools: lxc-create: remove the trailing . & fix coding style of strncmp
+8f0bdb05280145bebe581b4b39b80ac2a4020b28    FEATURE     tools: lxc-destroy: remove the trailing .
+80287d7d3507752f1ddd80b55da71d86d3f3adfe    FEATURE     tools: lxc-device: remove the trailing . & fix coding style of strncmp
+d5202ddf0b92fc1f9a9a2da572dab3f0c7f89ce9    FEATURE     tools: lxc-snapshot: fix coding style of strncmp
+28b7b0f01a94bab99a9ff9edbfc0f685747b8853    FEATURE     tools: lxc-start: remove the trailing .
+162ad1f6000f306c8e9ad05fc57caca86ca00a57    FEATURE     tools: lxc-top: fix coding style of strncmp
+1b087dab84b97a5b35554807b1196dd9dc902a6d    FEATURE     tools: lxc-wait: remove the trailing .
+882671aa99ffcc4ad29cede85d93701f2b94080d    FEATURE     conf: simplify lxc_setup_dev_console()
+3f15bdd9ca7bc2b163c272728f9cc3871800584b    FEATURE     terminal: safely retrieve path of slave device
+a9d4ebc1684044eccd7f9f50ad66cacd46e459b1    IRRELEVANT  utils: add fd_cloexec()
+408c18a185b17e9a3099e20a2d1d74742df03811    IRRELEVANT  terminal: set FD_CLOEXEC on pty file descriptors
+5b74eb3cd760f283659fa589de5a910f64a9aa90    FEATURE     start: delete terminal on error
+23c8a516764e15e9c4a1341654314754e1714742    FEATURE     attach: do not make terminal raw
+3d47b3b24d391df4fbaf314f8459169a4464d35d    FEATURE     tests: remove duplicate file_exists() definition
+d7ab03757c2d192d101e06ae1bbf3fc7df3735ec    FEATURE     utils: move recursive_destroy() from cfgsng to utils.
+abbec8b4c3ab544d290f920c3949579640c7467c    FEATURE     sync: modify error string
+2e338007c7801b52385dc4b061fd085199b069f0    FEATURE     tests: cleanup api_reboot.c
+1c95b732d896a40cd8c7af971085637b73bd943a    FEATURE     tests: cleanup clonetest.c
+fbeb7a1a24cef6899b6a4f505e81d53c05d405b3    FEATURE     tests: cleanup concurrent.c
+f120a741966670021a25517c5d8de480a52b5649    FEATURE     tests: cleanup config_jump_table.c
+9ace5308609cdb02a5af2c80ffba076b7f7cdecc    FEATURE     tests: cleanup console.c
+00e196f27a9d250d7d69fa9d3e5e1f2f30369c9c    FEATURE     tests: cleanup containertests.c
+56aff0c442029bd8bf0627ffca1cd31a8ec5fe50    FEATURE     tests: cleanup createtest.c
+17d11ff74423433156be8891f0ac75bf509a5720    FEATURE     tests: cleanup criu_check_feature.c
+8d72e58a24a94eacaf17e131499bf53e546b4c49    FEATURE     tests: cleanup destroytest.c
+e9432dfc50591a4d0048fd70b8e6cec49f57bb30    FEATURE     tests: cleanup device_add_remove.c
+b947e65737c934ab2d8f27e6933349040123c815    FEATURE     tests: cleanup get_item.c
+af8660599a8fd983c5773dd2cc0574b6ff068d19    FEATURE     tests: cleanup getkeys.c
+f0353f8b0b30feb52609274865aac658f74e5f28    FEATURE     tests: cleanup list.c
+3cc076dca1e59df26c0832e3970a1fff025257a3    FEATURE     tests: cleanup locktests.c
+b477d8303215ee163a3e3c119f4dbe549608cbad    FEATURE     tests: cleanup lxc-test-utils.c
+c3c504a8a9ccd0fe12163746d508508d9ebbac6e    FEATURE     tests: cleanup lxc_raw_clone.c
+915af839db145bc0f56e6d0b3bd6da056d56b325    FEATURE     tests: cleanup lxcpath.c
+fe142896b622ceb4e4bdec834cb793e1d1ee07d6    FEATURE     tests: clenaup may_control.c
+733666f840e8eecc4667db4afb2fa2935844ece7    FEATURE     tests: cleanup reboot.c
+b4edca7c7c98363f56f21acde9024cded99b8914    FEATURE     tests: cleanup saveconfig.c
+0ce5c91e606070f8d01dbe4e362337708a690290    FEATURE     tests: cleanup shortlived.c
+70b12b4a839d80d26bc84e9b0e236735c377ed2f    FEATURE     tests: cleanup shutdowntest.c
+63f769f9c52d0a094ad1a93c47678c8a68ab4506    FEATURE     tests: cleanup snapshot.c
+dcfbd1c07b988cfbd690b3bc9491f1bb7ab6fd52    FEATURE     tests: cleanup startone.c
+6ea8a4365bb265264bf2b0218efcd084df79b187    FEATURE     tests: cleanup state_server.c
+ac2cecc4b8727a970b805812efbe925307132cc4    FEATURE     tree-wide: remove unneeded log prefixes
+eba1ae766ea949cd92656c85f95f240ea63a14a3    FEATURE     log: cleanup
+7d20477698f49fc6b4b72664382665f849643442    FEATURE     log: remove the trailing .
+15dcdac4292636202705ec1f21cb99331aeaa22d    FEATURE     cgroups: remove is_crucial_cgroup_subsystem()
+b7b18fc567712b1b234f311c3f8e404194a63fd7    FEATURE     cgfsng: respect lxc.cgroup.use
+615f24ff503b0681cbb02a8156ff1fc05b206664    FEATURE     conf: use fd_cloexec()
+77a3980598a4d6553ffc0ac8b922189c83d03430    FEATURE     conf: safely retrieve path of slave device
+6947153da5c6251a567b06c42ff054fd2d22c963    FEATURE     conf: use mknod() to create dummy mount target
+3b7e332f923fda19a936f12620b063fa1a8cda91    FEATURE     conf: use mknod() to create dummy mount targets
+31ae165567764c36640195b6ba94cfa659bfeba3    FEATURE     terminal: don't garble output
+ec1dc633944469682a63148940acca0ea79e86c4    FEATURE     start: refactor match_stdfds()
+7288dfb69d3812fe635b57fc4773e243acbadacd    FEATURE     start: declare int array const
+57b1ab607175fc98a9e76370d6b78c8e9cc609eb    FEATURE     tree-wide: set MSG_NOSIGNAL
+42067d1852eb1e644d6110f46995fa180911f0d3    FEATURE     namespace: add api to convert namespaces to standard identifiers
+2d33090fba4892ace20390811e0f5f6c91d90470    FEATURE     tools: lxc-attach: replace converting standard identifiers of namespaces to api
+d1673d632f83a7fa41b42c15e08bd863ecd8628b    FEATURE     tools: lxc-unshare: replace converting standard identifiers of namespaces to api
+23ccbdeda820819729d379f3c82b873a733ac0c3    FEATURE     tools: lxc-unshare: replace write_id_mapping() to the same function in conf.c
+57d533fb399c7246fc94c508065f2496906ce915    FEATURE     autotools: build both a shared and static liblxc
+87e0e27360fafef4137096837d7ea298b57a0b1f    FEATURE     conf: create /dev directory
+f4c177c3b38db215940d099bd750e30ebf859e0e    DIFFERS     start: don't unconditionally open("/dev/null")
+3a3dcd343249e546ae2a4bc5512de0fce9deb2fd    FEATURE     tools: lxc-ls: fix signed_to_bigger_unsigned issue
+ba7bd8c8debc4c6e95763b5ed3e2c349b3558364    FEATURE     autotools: cleanup Makefile.am
+5067e4dd8594c3b1f8ee78f0e86edb480f84a156    DIFFERS     conf: handle partially functional device nodes
+d4db3d1441d15e8ce18760d5ebde929cd247c19c    FEATURE     attach: cleanup fetch_seccomp()
+bcbef73392726f432b9c8275dab986ed4420f793    FEATURE     attach: cleanup no_new_privs()
+3f62938a8a1f53711093c67ef6ebecc899c7651b    FEATURE     attach: use fd_cloexec()
+ae026f559341565238245323b182b22cbd7cdee5    FEATURE     attach: cleanup log messages in lxc_attach()
+a0ee564f646780b7aefc997f6fe04ebbad703bb6    DIFFERS     coverity: #1437935
+85d49873a659fdcf50f6ac487e14eddcdeb1776c    IRRELEVANT  confile: fix incorrect strncmp
+727b9b165986fb5b180932dbcada8ad5b7af9131    FEATURE     tools: lxc-unshare: apply argument parser of lxc and log system of lxc
+35bfea7ac7c84e61935e9c758674142ec3c7a326    FEATURE     tools: lxc-unshare: fix wrong coding rules
+59e1663ad0162c28f89ad2ffc8f7812e35277a2a    FEATURE     tools: lxc-unshare: use lxc list for interface names
+0240eb9dc5da855f2e69de8d5815f0051d7d4fdd    IRRELEVANT  coverity: #1437949
+f6e32eb05ba0b0565d67b63070a0f91da8729a28    IRRELEVANT  confile: move signal helpers to confile utils
+258f80519f3bb0a41c26083020154e9a61df8468    FEATURE     confile: add lxc.monitor.signal.pdeath
+e53cd6d899bd50e07c8bb760371bfa2d5d4c56ef    FEATURE     tests: add lxc.monitor.signal.pdeath
+fd5de0292195a2a6ba9dc6c3727de202b015c02c    FEATURE     doc: Translate lxc.monitor.signal.pdeath into Japanese in lxc.container.conf(5)
+733e3757603f37375bbd4a1b229e91a88036297f    FEATURE     apparmor: Allow /usr/lib /usr/lib32 paths for mount and pivot_root
+29c98ddd9b949357383665796331af35e38d8f09    FEATURE     confile_utils: fix return value & cleanups
+a73846d8935ca471939cc38f92f232806594608f    FEATURE     lxccontainer: coding rules
+69eadddb37352ff29fd785577b9d89c23f522657    DIFFERS     conf: the atime flags are locked in userns
+9044b79e191a09f9a6a41138e54a5fbf579a0a1a    FEATURE     af_unix: fix return value & cleanups
+ea918412a796ba346c34c091030b6ce0c8221e2b    FEATURE     attach: fix return value & cleanups
+ca5a12bb4d6e4b98e297d291ca5fccb20d36b9a0    FEATURE     docs: add long options of lxc-unshare
+21d0acc2a53ad5b52c82313f3cd8876d769fe2d6    FEATURE     attach: move errno handling
+280cc35f082c581dabb86e8a83d93cf35f6dc79f    FEATURE     thread safe: rand() => rand_r()
+b571ff38dae76d6ec453764f13407a02f53acc04    FEATURE     docs: tools: -d/--daemonize for lxc-execute
+adf0ba1fc7c792346b71925656a3fdcbcbbec281    FEATURE     conf, confile: introduce basic structs for shared mount point
+0d190408c24e2ac78ddb449b1f1299f1afa6722d    FEATURE     conf, confile: add parsing of a shmounts config parameter
+f6310f1844ba5482dad66f3e5de0126098e17d13    FEATURE     utils: add shared mount point detection
+4d6cc24cbe182d0a06b8704ee5bc4fce6a4cf258    FEATURE     start: add shmount setup on container start
+29df56cda5e6b5b82cb76eb2a9cda59f111544f1    FEATURE     lxccontainer: add container API function and structs for injecting a mount
+d81423f2a0408c310be3667a0cdd40c6313b6b1d    FEATURE     tests: add mount injection tests
+d83da817b315903c2651af0e365411d92c9d1017    FEATURE     lxccontainer: add the umount API function
+c8c568c85f5bd4b46b5d04457d1afd64addbd7f3    FEATURE     tests: add tests for umount
+643bcac997bdf739e435eacaf3b9b44f5a971577    FEATURE     tests: tweak mount injection tests
+c6885c3f247528c65402d1c4362afd977bdae95a    FEATURE     lxccontainer: add handling of file mounts
+117deb709e9253ff71a48cce30bfb214519dfa6c    FEATURE     tests: add filesystem and char device tests
+3340f441729dd7e6f805dde39666526dfd7ee464    FEATURE     lxccontainer: do_lxcapi_mount() coding-style
+1f5a90f946492b43405557f69f8dc2dce2dfa31a    FEATURE     lxccontainer: reword create_mount_target()
+7a41e8578e39333b3c9ac1216e1b203926b423b0    FEATURE     conf, confile, lxccontainer, start: nonfunctional changes
+60534030e4d43e68943c582bfdb853ab6ecb9ca8    FEATURE     conf, lxccontainer: fix length checks in snprintf
+fd14fdb8272184155a965901e26170496b9de901    FEATURE     confile: add strdup failure check
+6b7413978051e6a51da9556c947f1a96fd1d80c7    FEATURE     conf: coding style fixes
+ea0e06dd74b2baf5f3830531887c734dd16756e5    FEATURE     start: coding style fixes
+54fc984b50cb0a93232c26495795c5569a8f70d2    FEATURE     confile: add missing header
+d6523915861f2289505a11140874001099dfdfdc    FEATURE     tests: lxc-test-apparmor-mount: show a log on error
+39e2cbec3cc9f49e3edd65b2aa4bdd3983a25fea    FEATURE     tests: lxc-test-apparmor-mount: check environment early
+c68d5b0dd63ea8226698ae3ff8a5336a60c171c3    FEATURE     lsm: fixup lsm_process_label_set_at return values
+095b5c7d2e80cda9a9f370c7a2acd157856b14ac    FEATURE     lxccontainer: fix indendation
+7e556d185c49ff99825612bc7d6c93afc34113c8    FEATURE     apparmor: use fopen_cloexec
+eb5c2e6aeef233c4f3349d182e5c25315cca8de8    FEATURE     utils: add must_concat helper
+6e6aca3e3e71ae0cfad69456acd1dc503feaf964    FEATURE     apparmor: update current profiles
+1800f9247357948fd11c9da73b1943a8a7b6882b    FEATURE     apparmor: profile generation
+242a9fa7ee7e9f524de5a23917faa846ea525622    FEATURE     apparmor: allow start-container to change to lxc-**
+e7311a84e5bd0758931033b1a0ce649baa720a58    FEATURE     tests: add test for generated apparmor profiles
+521b4771a9c180ed1efffbb316f4c0ef514c6719    FEATURE     utils: add lxc_iterate_parts()
+0be0d78f42b02352ffce9511cc83f578182da717    FEATURE     cgroups: s/strtok_r()/lxc_iterate_parts()
+8db9d26faffa48fd3a4055bcd179e0b6e08732a7    FEATURE     conf: s/strtok_r()/lxc_iterate_parts()/g
+62dd965e457ab1e1cb7c9c059a934bcda4d4e48f    FEATURE     confile: s/strtok_r()/lxc_iterate_parts()/g
+3c1f04cdfa93f7d5f5af6368f01bf6c26230d248    FEATURE     lxccontainer: s/strtok_r()/lxc_iterate_parts()/g
+803fd7bffec50ad9fbc8051d56f36898e7a9ff45    FEATURE     namespace: s/strtok_r()/lxc_iterate_parts()/g
+834027f169b4f33772213663b9c34869dfe0f10e    FEATURE     parse: s/strtok_r()/lxc_iterate_parts()/g
+89aca5a5ee20e2d5cc00c5f9722e371e68eb599b    FEATURE     state: s/strtok_r()/lxc_iterate_parts()/g
+eb29852ff4e93346ab2372d6f3fbfad485d43210    FEATURE     storage: s/strtok_r()/lxc_iterate_parts()/g
+7de8e0a9b06cdb2405001dd01de95794feb2dcda    FEATURE     tools: s/strtok_r()/lxc_iterate_parts()/g
+84c5549b6626d699727d428c5fcb10ed828b20e0    FEATURE     utils: s/strtok_r()/lxc_iterate_parts()/g
+b84eb74f954f1fd5f2558a6231cea1839670d80f    FEATURE     Makefile: add missing lxctest.h
+f994bc87afda7112e0cebe5ff67f37af673dfe06    FEATURE     tests: remove VLAs
+dd94de5a875d612683d98a7712dba25333ec0147    FEATURE     include: remove VLAs
+81a56e8029e5c6815ed3ac9835a1d3822a22dae0    FEATURE     autotools: default to -Wvla -std=gnu11
+d23c6cc9968d23249c041ca134c8024a04cab908    FEATURE     Fix license of the nvidia hook
+8ce1abc28aeb33928bd3fbd2ef65f097715adf49    FEATURE     conf: improve rootfs setup
+3437f95c47cfad6b700413664e922cbb50b80f92    FEATURE     confile: split mount options into flags and data
+adaffdd7a664acfda1cebf5485fae86a941a51f4    DIFFERS     conf: always close pipe in run_userns_fn()
+9f4866a6f27db4adef438ad23930a6f034827786    DIFFERS     lxccontainer: cleanup do_lxcapi_get_interfaces()
+04dc1c0078d4f79865ad86de298feb120bcf061b    DIFFERS     cmd: s/pipe()/pipe2()/g
+ff50dd77b48dd2356a9b7dbda66eecb56a376a4e    DIFFERS     cmd: s/write()/lxc_write_nointr()/g
+243fdadf8ce4857f07a1bad7b0445b65d60695bd    DIFFERS     cmd: s/read()/lxc_read_nointr()/g
+2a2a676d04ba367c1222f409b278d8d59fd12429    DIFFERS     lxccontainer: s/write()/lxc_write_nointr()/g
+ba38ff8e4196a8da35f48ad02f14378710ee70bd    DIFFERS     sync: s/read()/lxc_read_nointr()/g
+03876f90e27fdb28cd7e4db8ddcbf3d42dd4b1c5    DIFFERS     sync: s/write()/lxc_write_nointr()/g
+7b6f89cd4c2e632238495a5627552cdb0f12eccf    FEATURE     tools: s/read()/lxc_read_nointr()/g
+8367b31ea5114e3299fb3f79529561cbf8a45224    FEATURE     tools: s/write()/lxc_write_nointr()/g
+1fabf7d4ca97d7242cca1657a4449113ab2767da    FEATURE     apparmor: s/read()/lxc_read_nointr()/g
+2a71131d33f6bb17207d5b52a67592f27a0e0a7a    FEATURE     monitor: s/read()/lxc_read_nointr()/g
+802e609aa9c1a7fd1b9222c99694c0b51ef908bf    FEATURE     monitor: s/write()/lxc_write_nointr()/g
+72f7c19b1afa3345f3bf4975ac9f11be23f57c1b    FEATURE     terminal: s/read()/lxc_read_nointr()/g
+a5bc6cb0e0ccf596390cb73565ed3ea4f7e9eb80    FEATURE     utils: s/read()/lxc_read_nointr()/g
+e4b3e369f8c31af5e63dce190e4af87695ea4100    FEATURE     Unprivileged's incompatibility with type=none docs
+e0c198063d88dcf155f0d59ffc4260104fe73c7e    DIFFERS     log: handle EINTR in read()
+dfbd4730392d069e9f06051779676411f81fa4ad    FEATURE     conf: mount devpts without "max" on EINVAL
+dccffc82694c26ac19b05cd6f3e94de32c2e71ae    FEATURE     conf: don't return a clobbered errno value
+e0e360c589723e46af5347e360ff7075ba100816    FEATURE     doc: Add incompatibility with network type=none into Japanese man
+aeba3f80050bb50385eac679c2dc1ffb0302ef62    DIFFERS     coverity: #438136
+6e54330c46bdfedaedbf4b677e557d550bdcb276    FEATURE     conf: introduce lxc.rootfs.managed
+2a6d08c6e196f67b06e7eda3d63e7647d5b9e34e    FEATURE     tests: cleanup get_item.c
+6e0045bdd83516c15d862a5433572308854c302a    FEATURE     tests: add lxc.rootfs.managed test
+7a6ecf65bf437ce3f26004e07e4edbc94cfad370    FEATURE     travis: build with -O0 for coverity
+de7187b6132f647b03c045bb2d5c8ee5ecb23672    FEATURE     travis: export CFLAGS=-O0 for coverity
+279c45eed3b9f6a81a4298d543d272b203614027    FEATURE     macro: add new macro header
+4e60664a9a2b26ff7a7885be64bac3072f201f79    FEATURE     caps: bugfixes
+202a334b47d2d9f6ddf7f44d74ff99d8b919590a    FEATURE     log: bugfixes
+b81689a103a39a115ea94cf4f95efb5a41397231    FEATURE     tree-wide: pass unsigned long to prctl()
+8273ba47c13a04a388a7807fd45e78dc936b17cf    FEATURE     log: function cleanups
+03c6d26669e5c44f8de4189972132ecc987bafef    FEATURE     log: add default log priority
+d67beb9e83732bd5c92db57354dc09796a1b89f6    FEATURE     tools: lxc-unshare: apply default log priority
+8ddce7df134615b1f7c1db296f8088fe3be60631    FEATURE     coverity: #1438236
+9159b38c434bf0bcc11f62c96a9aa6cfe727ab14    FEATURE     coverity: #1438235
+d97c3a345a7b474714333ddc670a405e9cf35844    FEATURE     coverity: #1438234
+90a170d8bed6e7f5b2f84260a666b16c011aaddd    FEATURE     coverity: #1438233
+8ae3983ed23b429234c57de368b05759b69fa19b    FEATURE     coverity: #1438229
+ea8bb2a9947053f075a13f3d4cc70b1003fc7f1c    FEATURE     coverity: #1438230
+03e7d72aeb93a3f51ede7326659de46b6d003465    FEATURE     coverity: #1438231
+2082ac625eb82a75e64b215b47b2e1b1d3bf1a7a    FEATURE     pam_cgfs: cleanups
+3a88eb8e6e7d2c63dcc40cbfe3af0fa0a8ca6f55    FEATURE     coverity: #1438232
+46a6646a833e26bb405c6f37d317b3b37e7b73c5    FEATURE     templates: avoid endless loop
+f26dc127bf5d66e8c29f8584c64bd97c9bbbc574    DIFFERS     CVE 2018-6556: verify netns fd in lxc-user-nic
+1cd952141702a33b1083ab0dadb1ea383882add5    FEATURE     netns: allocate network namespace id
+4fb34c047c0fe529d5fa4772f5ff3132bf82f741    FEATURE     macro: move network macros from utils.h
+e46c0642fc1bd1a2ff0f95b73b2439cf95747f1a    FEATURE     travis: add linux-libc-dev
+873c6e87a0f0c5a00003d91b088e0b099f59f260    FEATURE     netns: vendor NETNSA_*
+1cc84f44adba5a68a502c799e18ec2f593efb0b3    FEATURE     network: type fixes lxc_netns_set_nsid()
+12a1a8729678eaafb1114b79ce81077452a1ede5    FEATURE     tests: containertests: fix dereference pointer c
+92d5ea573a673993b0a56db6bc4c9ff7561f8661    FEATURE     fix tainted int loop bound issue
+fca23691eecee10666ce522e008ed5f8733646bc    FEATURE     fix assignment of signed to bigger unsigned issue
+4e3ed0d1969a31b977e8b88a44e30ce91ef5c1e4    FEATURE     macro: add NLMSG_ERROR
+0ce60f0d5f3d53d554572c144ca0c5c2fec742f9    FEATURE     netns: improve netnsid allocation
+b7986d0d1e7a4daee8663f2e876616f883b22afa    FEATURE     start: make netnsid allocation failures non-fatal
+9fbbc427914536b0fec13199f88cd0e0efa16ecc    FEATURE     netlink: add __netlink_{send,recv,transaction}
+f9572e9f18ef7fbaa9116937f92e40f7bb2fd3e8    FEATURE     macro: remove duplicated define
+df05fa0f04ff63429b3014f98415498944c2b4e0    FEATURE     fix thread safe issue(localtime => localtime_r)
+6926e3b80ede8f19d02ad58fc160b5b4b6aff58e    FEATURE     coverity: #1438392
+ec74f3f859dbe04a62e7dcb169ce6a5baf81841b    FEATURE     lxccontainer: fix F_OFD_GETLK checks
+d1bc8d484caa7b3157aa76da346badabf2a64d12    FEATURE     lxccontainer: improve file locking
+ecd8cb990ce56d24022871e4c1b48f403fa0f746    FEATURE     lxclock: improve file locking
+bafad468881e6440aaf8fc4b3894c6fb42545b69    FEATURE     lxccontainer: minor fixes
+746559f4611aeed3a3d4ec09c692f1f3b41c5fe1    FEATURE     state: s/sleep()/nanosleep()/
+eb4225a047a912a2ce2bbe26cdfba5fe80979335    FEATURE     doc: Fix minor grammatical errors
+ede912b440c579da4653ac9ded6d292b80e19f06    FEATURE     usernsexec: Make err out vebose for unshare error
+27fdb6bec5303a24e2f02693e7bd65dcf732ff6f    FEATURE     cmd: Correctly indent switch statement
+3c84faa377c3f9b1c7aab781b132f63d7ae40263    FEATURE     cmd: Do not initialise statics to 0
+2db65c2187bd82f036034ded2cadaba92fbd9e1d    FEATURE     cmd: Fix whitespace ERRORS
+f0a86c6d1c8288870a5e1c05cc12459ef356c3df    FEATURE     cmd: Move assignment out of if statement
+bb9623e70582bc734244acd91edee9d0b43fd6be    FEATURE     log: add CMD_SYSERROR()
+20029ee35ab294365b320a4adf047804dd367b5c    FEATURE     log: add CMD_SYSINFO()
+02af80662d17c2389cdcc737d0d09043f73d8470    FEATURE     lxc-usernsexec: cleanup and bugfixes
+e8fcdf3db293a7772390c4e289a03e04b9660237    FEATURE     cmd: Use parenthesis around complex macro
+2b360805d029058b99871dc6a5706231eee30236    FEATURE     cmd: Use 'void' instead of empty parameter list
+24d6fb8a271b604e6e4b98de79b1f9d80e5e8e28    FEATURE     cmd: Do not use braces for single statement block
+32cf169fab6758812d31dcc218738a82dbfd9c76    FEATURE     cmd: Fix whitespace issues
+7f5700e6aaf8dc15dbf2efe2039eda17cfbe9708    FEATURE     cmd: Use 'const' for static string constant.
+1d9f2743b25eeb87d236ef9f935a6a3dcad189be    FEATURE     cmd: Remove unnecessary whitespace in string
+75ca3dc6aa526c9b24dacb6107c7b1b43e756771    FEATURE     cmd: Put trailing config/ doc/ hooks/ src/ templates/ on a separate line
+2115d56671fb8574e9c513d3d0168d113a597394    FEATURE     cmd: Remove typo'd semicolon
+551865932ee6c5e70d310d56d89ddc5bee6b0348    FEATURE     cmd: Do not use comparison to NULL
+694756df3a768c4fd700b4a209f2ae6b4fa7bd7c    FEATURE     lxc_init: s/SYSDEBUG()/SYSERROR()/g in remove_self
+81b4606580f1269a9fbe0abbb848da99126bf555    FEATURE     tools: lxc-attach: add default log priority & cleanups
+62ebeb04effdb2a76a89dcd00beed7442db29579    FEATURE     tools: lxc-cgroup: add default log priority & cleanups
+c03b298128fbab4c5d0a6c27b21c3a35318fe74a    FEATURE     tools: lxc-checkpoint: add default log priority & cleanups
+a291ab7859914980ef9dbd586f8aa0106a8d1b50    FEATURE     tools: lxc-console: add default log priority & cleanups
+0e9dc035ddc43f247c2688d72c1ba9e66f2b50de    FEATURE     tools: lxc-create: add default log priority & cleanups
+a53759568ac01bd4c3f196f02f1ce0e8c8677f5b    FEATURE     tools: lxc-destroy: add default log priority & cleanups
+9fe163874276f1035a0428d2be90b2456bf0e82e    FEATURE     tools: lxc-device: add default log priority & cleanups
+e8c0bb81d3a292bc02cb8ccd7e71bdffb741e846    FEATURE     tools: lxc-execute: add default log priority & cleanups
+c7013c13035b601ea69bd440aa18e7a1a03301b5    FEATURE     tools: lxc-start: add default log priority & cleanups
+c2a23ef6e4cf9a18a4001f447601f46d59887a51    FEATURE     tools: lxc-stop: add default log priority & cleanups
+fe8c37efdbddfdf7ed2b780683c551362db42fb6    FEATURE     tools: lxc-freeze: add default log priority & cleanups
+34a10bfa348a559aa38d7ed6ab8c85d8baef4bda    FEATURE     tools: lxc-unfreeze: add default log priority & cleanups
+2b670dfeb01e571c341891632886344f26bd676a    FEATURE     storage_utils: move duplicated function from tools
+0044aab02aca5bb358eee719d00a48384aa590b9    FEATURE     tools: fix lxc-execute command parsing
+8737e2a8a56f2dc4c8f35ccc413d59b5c78c3a30    FEATURE     lseek - integer overflow
+3725a69c385f0b3d4a51bfa7624e9c0bf8af39ff    FEATURE     cmd: lxc-user-nic: change log macro & cleanups
+72a506941f86cee33b62bbe96335ade0a0bdf0bc    FEATURE     cmd: lxc-usernsexec reorder includes
+c881c8101b3e405c211fa93cf7905d9989e06800    FEATURE     cmd: move declarations to macro.h
+197c9293a6ffa066736e9125e268ea4db922f213    FEATURE     cmd: use utils.{c,h} helpers in lxc-usernsexec
+5ff0284480da1d1601c3980afefd307715786198    FEATURE     cmd: simplify lxc-usernsexec
+d3b413e7d59e95219b054742cfb90b7cdade8b64    FEATURE     cmd: use safe number parsers in lxc-usernsexec
+85de58d6e3590cf1aa3693ecc820948f71e3f79f    FEATURE     macro: add missing headers
+7b15813c33e49ed579eef6c261fc711e1da5e436    FEATURE     macro: add macvlan properties
+e3e70db364505a5f9e7eb5aa922f636300d3a0d1    FEATURE     tools: Indicate container startup failure
+2c70300ad8a77c560c615c676912ff2d0e613393    FEATURE     storage: exit() => _exit(). when exec is failed, child process needs to use _exit()
+75457df5dcead628135fa033cc3478fa2b8b8e24    FEATURE     tools: lxc-wait: add default log priority & cleanups
+adc1c7156ce35881d55bd51f9f6a390627011b05    FEATURE     conf: fix path/lxcpath mixups in tty setup
+62a38dfff0c37a62877f4fe80192ac140823d75f    FEATURE     cmd: use goto for cleanup in lxc-usernsexec
+ba464e9b6672cf1b3e96a0c0efb3ee55ad4156ee    FEATURE     cmd: Do not reassign variable before it is used
+aac44dc4ff44a70689f657829ccda2b3aeeb595f    FEATURE     cmd: Reduce scope of 'count' variable
+2ec1c4845378cce7184072be9bbc072606e861ca    FEATURE     cmd: Fix format issues found by clang-format
+ca9a25048b123bc80347d0f85a06acc3b8032298    FEATURE     list: fix indent
+78852a0c17d1a39858f79ac7a96b2de057a30288    FEATURE     start: Fix net iface remaining issue
+37ef15bbd2bf2ae188f0947d5d934e557d01ea81    FEATURE     utils: split into {file,string}_utils.{c,h}
+71174d464fd3798a181d7768441f80f1952d93e9    FEATURE     pam_cgfs: build from the same sources as liblxc
+ce155c606d45d28ad07ec0ebf24c33e0aa4daeb9    FEATURE     conf: fix devpts mounting when fully unprivileged
+c7ac2e1ca71c919ee3833faf0866317ab4f08f40    FEATURE     macro: s/rexit()/_exit()/g
+ef05d368873ffcea49d89f68d4ff0d93840310df    FEATURE     attach: move struct declaration to top
+604ca1c06bfc1473f459db0cadf2128921fcf999    FEATURE     macro: move macros from attach.c
+9089937b5e5c7be1aaabb5a0d6194bc274579fa1    FEATURE     Makefile: don't allow undefined symbols
+9b5724cd5808f45fd77edd6189a10f199d8f0153    FEATURE     autotools: check if compiler is new enough
+95ef0d7c0de461a198d00ed2406c095004b45aa4    FEATURE     start: add out_sync_fini cleanup label
+607e3fcae17f50b053ac51192cd28e49be278bbe    FEATURE     log: handle strerror_r() versions
+d6457631f07d028539a2fabb0c26bf03fd83051e    FEATURE     log: fail build on ENFORCE_THREAD_SAFETY error
+1b0575412af6016170820de67b5655fc1d1ef750    FEATURE     {file,string}_utils: remove NO_LOG
+bcf6424544597e45add24cf83938ff37eea22b76    FEATURE     initutils: remove useless comment
+8018dce8c7f1933611490d1d7f0bbee7cec6bb0b    FEATURE     string_utils: remove unnecessary include
+1f27e820654eaba8b17b07542f969ef412b7205c    FEATURE     string_utils: remove unused headers
+dca12ddf8d40f0f56c417ad3f0056b8637c0d209    FEATURE     string_utils: add remove_trailing_slashes()
+f4274ae8896474886063dc485331c3591cde52f4    FEATURE     Makefile: remove last pam_cgfs special-casing
+9e99997bd741e1bc7a525ca0c83fb889ff3ab361    FEATURE     conf: add missing headers
+e01516d78d3091cab473f3437e646601a3269d98    FEATURE     Fix typo
+59e9eabe0df224313387806a01b9e182f955113b    FEATURE     ifaddrs: add safe implementation of getifaddrs()
+d029e1defd5b790978cb0a7b053010cfbe4cb394    FEATURE     Makefile: conditionalize ifaddrs.h inclusion
+5c618243501b2c488f368920f1632549ddcfb6f2    FEATURE     execute: skip lxc-init logging when unprivileged
+bf58a9801305da3c79ec40e1b09d5c76999fd46a    FEATURE     execute: pass /proc/self/fd/<nr>
+a7c4ddea9f4677f65012502905842b9a9f26966c    FEATURE     start: do not initialize cgroup_ops twice
+76f0e2e7395a4417330b8ed943b14194ba70622d    FEATURE     confile: add lxc.cgroup.keep
+5a087e056f945aa2112ebdcad7df05e57ce56c8a    FEATURE     cgroups: don't escape if lxc.cgroup.keep is true
+2259663ca03d516dc4b2e71734a937075f1860ce    FEATURE     build: fix musl
+8bc781b4195e30e4b860d7b27ef67e5b34ccfe50    FEATURE     configure: reorder header checks
+d7f19646dfacc7bc7a9cb7af1a44033f6d7de84f    FEATURE     compiler: add compiler.h header
+8ed8a6265bcd8958f0d026b2168bd6ee2ea61b68    FEATURE     commands: return -1 on lxc_cmd_get_init_pid() err
+c8208ff034ed15f675ad1d707c15b5719d018685    FEATURE     tests: add basic.c
+691544a0e421a99fe2750dacb8cbbc7c5508b5f2    FEATURE     tests: cleanup Makefile
+e8cd1208869322472467311ef4ccc4a236124a5a    FEATURE     commands: ensure -1 is sent on EPIPE for init pid
+b1234129fba58edb85d85dd92c66a4b17c6c4bd8    FEATURE     macro: add LXC_AUDS_ADDR_LEN
+9b8d4c58d460efeae3773210db1a463635d5a3be    FEATURE     macro: move LXC_CMD_DATA_MAX from commands.h
+245532a2adc8eedd48c05d513b74fa9a7102b3f7    FEATURE     macro: add PTR_TO_INT() and INT_TO_PTR()
+f246d9b89f4e5c6d1ec18f704b95ddd40584b108    FEATURE     macro: add INTTYPE_TO_STRLEN()
+69623bfc3d0f0bee5097cc044c0a818b97141d27    FEATURE     caps: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+c19ad94b0af04a7c0533a626791fbc505a110154    FEATURE     cgfsng: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+c77aee6475026e8e404cc395b57a234a116652d6    FEATURE     confile: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+3a2c65f8778bfe93d410df35566a5b359a8b133d    FEATURE     log: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+c6de4db4f658bfd6b516cbd344f08fa52efe8093    FEATURE     lsm: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+2955a58ab426137544c5c6325e35f3ccb350fb07    FEATURE     macro: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+da07fe61fc389c7caeae37d9bfcfaab3ed91ea44    FEATURE     lxccontainer: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+397a8d30a8497aeafc992f4c596e54ee19037e94    FEATURE     monitor: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+8335fd40ef1012bec4bedfd42cda833b8174a436    FEATURE     network: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+f1eacafbc83aade26bd79b82fc93fe9448051f92    FEATURE     string_utils: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+40464e8ac60e151633aa605188278b21cd88c0c5    FEATURE     utils: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+9d6ade4ace278fa7c4ae59342237debe1a6f9c45    FEATURE     tools: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+d33968ade38d33826d08a701d686e9a825f8fadf    FEATURE     conf: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+84226232fbcfc6185520b9daa989b90e79dd2afd    FEATURE     tests: s/LXC_NUMSTRLEN64/INTTYPE_TO_STRLEN()/
+0c5ea884e892c4038724b3603431220f15978cdc    FEATURE     macro: final INTTYPE_TO_STRLEN() related cleanups
+ba2b6354b267324937e6f8d13d666fd0a4a80ec7    FEATURE     macro: coding style fixes
+9978b4d34208a0a4fab5c5f49bc0aa1da78df8fd    FEATURE     Makefile: correctly add ifaddrs to noinst_HEADERS
+3ef9b3d30fb94b6db8f1a06f8c3fdbbac8291e2b    FEATURE     start: remove duplicate macros
+1f207a5cd9a6df9796edafb101a3b6bb0b6b34b7    FEATURE     caps: move macros to macro header
+62fc84030b41e8df5bae6fb1cd64735611bdf485    FEATURE     string_utils: use UINT64_MAX macro
+81a3bb64b4147ac6da3087cb77ac67828a2f2b76    FEATURE     tree-wide: use sizeof on static arrays
+2fb7cf0b325d2e34cd6faa2758cbaba6b6c3b99f    FEATURE     Revert "tree-wide: use sizeof on static arrays"
+9234406bb1396a11c4985552fbe631b767289a93    FEATURE     commands: pass around intmax_t
+54dcfd8160056ba7da311da8d3c2cdce652cb7e5    FEATURE     commands: assign before converting to pointer
+0c9b1f826d3bb1d3a927b2b6f4d580cd7ff28852    FEATURE     macro: calculate buffer lengths correctly
+979a0d93545580aa2b69c6057ff7ea8dfdf48717    FEATURE     Revert "Revert "tree-wide: use sizeof on static arrays""
+6e5655e0db314259faa67e5ac5bb373703caad66    FEATURE     macro: move MS_* macros
+22b67bfa969b2d7f6f3f757e7401b1cc47302725    FEATURE     caps: fix illegal access to array bound
+91d9cab6dea7bbe93bf3a990b225c8fc8a45c39b    FEATURE     utils: defensive programming
+aa599d1f4848639c2b15b670474f8708761d375e    FEATURE     nl: remove duplicated define
+b8bcbe9b06329f70e823f45f5dc247eb4627ea8e    FEATURE     syntax error: mismatch brace
+a8007512f7f575e322f7c090906203e4f7b3dd38    FEATURE     commands: better error message
+de69edd15ebe96be6a30e8504748fb0240ef95f9    FEATURE     file_utils: add lxc_recv_nointr()
+2a850b2ca6dcda6b89cd656ff4764e79af12c593    FEATURE     commands: switch to setting errno and returning -1
+81c76cff14d4e1979d2abe3931b8535cb714e861    FEATURE     autotools: add --{disable,enable}-thread-safety
+b7051eb7e6072e15a9e47e1a889bbc1d9f2f166c    FEATURE     log: do not clobber errno
+a285b30814a8bcf149fd9e4a42fe5520b34264fb    FEATURE     log: save errno on strerror_r()
+e3233f26ceae65609b2195c28bf99f3872ade230    FEATURE     tree-wide: s/recv()/lxc_recv_nointr()/g
+28143f8862c3d5e1ed30e7a6bf4593b7725b5d41    FEATURE     file_utils: add lxc_send_nointr()
+7fbb15ec9c8762e29bc4e692a4773754aac41756    FEATURE     tree-wide: s/send()/lxc_send_nointr()/g
+bfcedc7ea07d360221c832ad94943057e3add923    FEATURE     nl: save errno on lxc_netns_set_nsid()
+a9d413798322eb41cb3dca99eefc8d1ea08082d3    FEATURE     log: log_append_logfile() add new error path
+5106ecd03299b96d043129d820f87eea790d6f46    FEATURE     lxccontainer: fix dereferenced pointer
+218e814412afe2857c118fc08759a943349f3ca0    FEATURE     lxc: fix build with --disable-werror
+b962868f4ca36b80dcc7bc4681586da0178eae0d    FEATURE     utils: improve get_ns_uid() and add get_ns_gid()
+db2d1af171b710abdb435e7526b33a7bb0289d3f    FEATURE     utils: improve lxc_switch_uid_gid()
+5c7bfc02315769b12ac47c7ba4d8601386ce9cca    FEATURE     log: support dlog
+936efc72f60c6e4b83daadcf834f81abced0eaa9    FEATURE     attach: handle id switching smarter
+ddd51fdb8e8c24e02d522e04c7342fa2c83f498d    FEATURE     tools/lxc-attach: add -u and -g arguments
+964581c210d456eea40362c31d293c25e1ea67a4    FEATURE     start: avoid unnecessary syscalls
+8af07f821c38224beac5f6d3e4970082c6732fc6    FEATURE     utils: make lxc_setgroups() return bool
+464c46115fe3f272c6114a76e1e6c647f475d661    FEATURE     utils: make lxc_switch_uid_gid() return bool
+b07ea13d4aa04808742ca92d5e9866fbbedf8148    FEATURE     lxccontainer: use correct pid_t type
+51a922baf724689ff3a0df938ca8975601c9c815    FEATURE     conf: remove extra MS_BIND with sysfs:mixed
+41a3300dbb16e8eddccda15d5a724921d5ba94e8    FEATURE     network: use correct type in lxc_netns_set_nsid()
+938980bac36ecff940df7374f73c7815234c9e1b    FEATURE     network: add lxc_netns_get_nsid()
+01c8b1cd9df92df0ea16bf5c68c9c432790e3ba1    FEATURE     remove unused variables
+8b7421f2e587c149a49e2ec99ad829264400c729    FEATURE     file_utils: remove unused function
+9d036caab35bef5aa8e73b125370f67c2a1e1cb8    FEATURE     network: minor tweaks
+a8eed52c173f90aed27a390460542fc13bb375b9    FEATURE     add compile flags for dlog
+8178adc6ad79ba6a98fd1cd22bb8fa51545c3a85    FEATURE     log: add common functions
+de1c05f33993e1559aa3ab2a52fd9756173a135e    FEATURE     log: add additional info of dlog
+5dc59a075516ccbcdd6333d6630d6fee578f5fe0    DIFFERS     attach: don't shutdown ipc socket in child
+e581b9b5f246d28325a9993b5974cdbc5cc0933e    FEATURE     security: fix too wide or inconsistent non-owner permissions
+06346bb04a00e5fa70d5ee221f4cb70201b8dd56    DIFFERS     attach: report standard shell exit codes
+c62fb5e023dc455c1f3813333378e26b6e146375    FEATURE     af_unix: add function to remove duplicated codes for set sockaddr
+03095169caecb4ca85ebb9dda5e634cb9cc28c27    FEATURE     lxccontainer: remove locks from set_cgroup_item()
+152508ba09adc41ec7199b395f4cbbdd4327399b    FEATURE     lxccontainer: remove locks from get_cgroup_item()
+b19c5d1237005d7319b3cef82d03ee6fa0e1f7fe    FEATURE     apparmor: account for specified rootfs path (closes #2617)
+74e7b6621905110e46a4bbc6b5b898328363fced    FEATURE     conf: realpath() uses null as second parameter to prevent buffer overflow
+bb955810ef4682069a53c73b2775a5994f858928    FEATURE     start: s/backgrounded/daemonize/g
+9caee129cddd66809d415462808d047c11af6a63    FEATURE     confile: s/lxc.cgroup.keep/lxc.cgroup.relative/g
+fb55e009005b44c832fc4876913e08f0a945b86e    FEATURE     cgfsng: mark ops with __cgfsng_ops__ attribute
+aafa5f96f670858b1b829d53c02086f806f114b6    FEATURE     api_extensions: introduce lxc_has_api_extension()
+cf0fd972be38fc9e567742533dfefa38d7b1edbc    FEATURE     autotools: add -Wimplicit-fallthrough
+e8b181f5257f8216c1f66b366660030a210360c4    FEATURE     cgroup: rename container specific cgroup functions
+292b3910d565e02910a89becbde6d0d9c8ce26bb    FEATURE     cgroups: switch to lxc.payload as default pattern
+eb6971363b98012bf654f8c3ddeb250bba858c30    FEATURE     cgroups: s/fullcgpath/container_full_path/g
+c72d45f71f15e30ee0a593cb3aeb1dc636de3dd2    FEATURE     cgroups: add missing string.h include
+bb221ad14f7d796860650c17a33ac8031953b47e    FEATURE     cgroups: s/base_cgroup/container_base_path/g
+d39e9d8b046477e1f0ae0ed9a693bb075ece5950    FEATURE     cgroups: add monitor_cgroup member
+e09b62f9435cb5c48c866975ef889929925ae9a6    FEATURE     cgroups: add monitor_full_path member
+6439f06e788014cfeda5feb86e4347370502b538    FEATURE     cgroups: add monitor_create()
+72068e74704e8e83cf3147c65519f353212d0811    FEATURE     cgfsng: add cgfsng_monitor_create()
+634ab5ed7df9554adce05f047ee728c9c8111850    FEATURE     cgroups: add monitor_enter()
+eeef32bbda51c47e69a7316c6e9977ddef823bb4    FEATURE     cgfsng: cgfsng_monitor_enter()
+2d172fc734963f00afe59740e96832d2325b0537    FEATURE     tests: adapt cgroup tests to new layout
+d28779d94c596149608b0fa161fc6ec369baa898    FEATURE     cgfsng: add missing __cgfsng_ops__ attributes
+23b44c365e1149da50ee0f8ef46e54172e48587a    FEATURE     autotools: fix wrong AX_CHECK_COMPILE_FLAG test
+cab25bd54d31c0b575f5da703ef3370c54e6a9f2    FEATURE     compiler: s/__fallthrough__/__fallthrough/g
+181a780fb66cc360a8fd0ef547354e8b9dd8a071    FEATURE     compiler: s/__noreturn__/__noreturn/g
+b857f4be4ffd07751b1646e52f9d3a11d92b5088    FEATURE     cgfsng: s/__cgfsng_ops__/__cgfsng_ops/g
+36dee4a2b6512e4564dfc87e9b5819c070f04378    FEATURE     macro: add STRLITERALLEN() and STRARRAYLEN()
+6333c915057b5cb7ef87dec0df4b347843251793    FEATURE     tree-wide: replace sizeof() with SIZEOF2STRLEN()
+f83903274efba6cd454f87b2a798eafd2f9baf60    FEATURE     cgfsng: copy parent's cpu settings for monitor too
+534aaf45d2d2852a5169b51bdeea59088c4ea65e    FEATURE     compiler: __attribute__((noreturn)) on bionic
+6ce39620fd0dd56c41cf8e09bc166bebf987ece1    FEATURE     autotools: support -Wcast-align
+246736be3842a698d644f5ab820a7acefdf58f9e    FEATURE     autotools: support -Wstrict-prototypes
+cc6119a0334a0debf43c4d2dffc9f549a67e315d    FEATURE     network: add netns_getifaddrs() implementation
+b1e44ed1254de2ba1b46c34162688bf2a7fad6d8    FEATURE     tree_wide: switch to netns_getifaddrs()
+d3d5554a972b9cc337a01445e2aeb722aecfdba9    FEATURE     netns_ifaddrs: mark casts as safe
+61204b93dd37c8b3df5026e0534d41397986b403    FEATURE     autotools: fix lxc_user_nic build
+d18d43da8955c327793c1b373c3abfee92f250ea    FEATURE     stop: Only freeze if freezer is available
+084010482f253935c2ffa0831375edf1d6b5945c    FEATURE     doc: tweak documentation a little
+27a5132c2221d44d293c4e8313732c6460b0e290    FEATURE     cgfsng: set errno to ENOENT on get_hierarchy()
+3999f50bd2a86ad897fe267b99a676cc7a4a7fe8    FEATURE     cgfsng: s/cgfsng_destroy/cgfsng_payload_destroy/g
+434c8e15c9821bce65d3bc1eefae0ecfa843ef1e    FEATURE     cgfsng: add cgfsng_monitor_destroy()
+625ad37b595868abb9c82fcf8665f2b4af522b5c    FEATURE     cgroups: introduce helper macros
+5ce03bc048212feae5de5a3f41fe189bb7f9ee58    FEATURE     cgfsng: ensure no-reuse in cgfsng_monitor_create()
+a3650c0c4d54aa09ac8a18a768dbae37d4733801    FEATURE     cgfsng: s/25/INTTYPE_TO_STRLEN(pid_t)/g
+ebc10afe213872d92c3d4641e34e6bd3c6d826be    FEATURE     cgfsng: do not go into infinite loop
+d17947f8f3f26f435e601c0af4753418eee9cfef    FEATURE     compiler: fix __noreturn on bionic
+afeec9b7397f862b535846f03be535677c5ce19c    FEATURE     compiler: add __hot attribute
+a3aba1102112d6bd45b06b35a0240d9746afa18b    FEATURE     netns_ifaddrs: fix missing include
+a4a0bba4e2df0bb87d31ca26fee13a96cdc068ad    FEATURE     doc: Add -u and -g args to Japanese lxc-attach(1) and lxc-execute(1)
+d38dd64a511d744bbdac579a7fcb250d67f35237    FEATURE     tree-wide: fix includes to fix bionic builds
+529822a46fe6afef439f640c4fd4cc4e11dc6551    FEATURE     cgfsng: log cgroup names for monitor and container
+4394ea17cbec9355b5789f15767f906772e93a7a    FEATURE     cgroup: make monitor_pattern const
+b8cfbbd140153e3787cd2a94e224e43ad3606496    FEATURE     template: oci template supports for char user info
+37aa48515b6dbe20b1611e24423f2ca62c59b9d5    FEATURE     btrfs: fix btrfs containers
+a2ade420c061173b9055e0db2efb225dcf267fe3    FEATURE     oci-template: Add logic for no /etc/passwd, group
+c73fbad129b65ba1a5e856f371c5aa233a3bb45f    FEATURE     configure: fix -Wimplicit-fallthrough check
+b25291da1466a6cf890cc8a428400776fa8628e9    FEATURE     utils: add lxc_setup_keyring()
+e6fe24e134a21cf907966c90eaba631901ea373b    FEATURE     autotools: support -z relro and -z now
+da5efb6f76bc96b801dc13bcdc228ccf14f9f6ed    FEATURE     netns_ifaddrs: handle IFLA_STATS{64} correctly
+6b3d24d716b065d4269f327f95d53ead576a47d7    FEATURE     syscall_wrappers: add pivot_root()
+13be27338ccb658586e8ace15aa8913b2f09e7f0    FEATURE     raw_syscalls: add lxc_raw_execveat()
+38e5c2dbbafbbca2779bd18d5265bae7ac8d506f    FEATURE     raw_syscalls: add lxc_raw_clone{_cb}()
+d7b58715b6f34f9aba010449225a47d374d6d5fa    FEATURE     raw_syscalls: add lxc_raw_getpid()
+2fe8b2a0630a47b16725715a7166918301be5eea    FEATURE     autotools: fix lxc init build
+253c403df5754008ede41d1ebab676c699adf5b4    FEATURE     autotools: fix lxc-monitord build
+47d720d13e3c81c49102e34de62f857f5b520df0    FEATURE     autotools: fix lxc-user-nic build
+49182c3280c2fca6f071c84b2ea8e5554bd3b4ca    FEATURE     autotools: fix lxc-usernsexec build
+1f797c3a648863215a5c729d343e7fffd17d8559    FEATURE     tests: add missing build dependencies
+3ccf815f79f8c12f98ad6e73c301930ddcb88fe9    FEATURE     netns_ifaddrs: only use struct rtnl_link_stats64
+99bb3fa8e8d064145ff4ab8a05cc1389927c0125    FEATURE     cgroups: remove unnecessary line
+c3d9796f1fc6babcf2bf7782d470bf3d178ca814    FEATURE     netns_iaddrs: remove unused functions
+2291ea4a1a40f67d76a108e96cee83cb65038f9a    FEATURE     parse: prefault config file with MAP_POPULATE
+ee455be41cd127dd9fb37f35a2ee826e637bb76d    FEATURE     cgfsng: do not reuse another monitor's cgroup
+17e55991744576bca20e370a6d829da99c3fc801    FEATURE     cgfsng: avoid tiny race window
+c7f493aee01806ec154d2af5c84a41a9baeecbe2    FEATURE     utils: fix lxc_set_death_signal()
+c5e7a7acbf23f0c267179b3318af41423b39493a    FEATURE     Revert "cgfsng: avoid tiny race window"
+6099dd5a1384d821e8d5b3467f0f1acab9bfb190    FEATURE     Revert "Revert "cgfsng: avoid tiny race window""
+ef1853605066aa15630424340f2d7777964ed5d9    FEATURE     cgfsng: handle v1 cpuset hierarchy first
+6a886ddf192885d6896f4f67cc94df8b68fbc560    FEATURE     syscall_wrappers: move memfd_create()
+59524108dd4342f2c99d8faac8145ab0c3c0208e    FEATURE     syscall_wrappers: move setns()
+364932cfae36feda321d20574ce25c12519b0f54    FEATURE     syscall_wrappers: move sethostname()
+e8f764b6bc74eefa31fe7e029cc7ce09f1f09471    FEATURE     syscall_wrappers: move unshare()
+303037d2f6793be350111180382d369a820f3bb6    FEATURE     syscall_wrappers: move signalfd()
+07a50156ed3e8ffdd0c7736a581f8e82903d2c09    FEATURE     raw_syscalls: move lxc_raw_gettid()
+720132e13e5f355fa8c2a3719bdfdae55d2f1d0b    FEATURE     tools: lxc-start: remove unused argument
+70e72c56277cc5327359fef75e19826598369773    FEATURE     tools: lxc-unshare: remove unnecessary initialization
+5407d095e6c66a5437234520db0252cd570c8d71    FEATURE     cgfsng: use realloc instead of malloc+copy+free
+46ac8c5b35089048e35b87f4ebdffb23649aa4cb    FEATURE     parse: remove access() check
+872c1f046a09b678b9c3c39c42ba5bb865b9dabb    FEATURE     parse: report errors when failing config parsing
+b35091695a195cfd4ffd0a2f67224ca7cbadc615    FEATURE     macro: add PATH_MAX
+eb22a12bbf0069a215d316a4784cf1973c359e29    FEATURE     cmd: s/MAXPATHLEN/PATH_MAX/g
+6b5a54cdfcd8e4b73d95a9cd4be721bd8aa1930b    FEATURE     conf: s/MAXPATHLEN/PATH_MAX/g
+18740311c1ba851be39ebe05691b06f181e3770b    FEATURE     confile: s/MAXPATHLEN/PATH_MAX/g
+52539fcc7783e417f724f51836ab3470776ea246    FEATURE     log: s/MAXPATHLEN/PATH_MAX/g
+ec4f666f2322e2b3fb7db8d345205390e4f4b615    FEATURE     doc: fix indent
+85d67fba9f9e450c3b97043d68aed010a8442fbb    FEATURE     lsm: s/MAXPATHLEN/PATH_MAX/g
+8a22c168380fca1d5b880f470584a2c98d87faca    FEATURE     lxccontainer: s/MAXPATHLEN/PATH_MAX/g
+3c7361878931006d05997875390ec59449ac2b90    FEATURE     macro: s/MAXPATHLEN/PATH_MAX/g
+419590daf4c759ff72320c219b1ccd6bff4f3101    FEATURE     network: s/MAXPATHLEN/PATH_MAX/g
+bb3c1e56128294b48a245bc3272dae7f7a77e5aa    FEATURE     pam: s/MAXPATHLEN/PATH_MAX/g
+245100a0cf39555348388a5d9b598a2f361f51dc    FEATURE     start: s/MAXPATHLEN/PATH_MAX/g
+8c880e57d76fb1c9accbe9360489d2f36bb6578a    FEATURE     terminal: s/MAXPATHLEN/PATH_MAX/g
+d726953a2397406a87878ec9f1a7383a3521abca    FEATURE     utils: s/MAXPATHLEN/PATH_MAX/g
+339de297af031e9d2cd48011a1072cb9ba4e5c37    FEATURE     storage: s/MAXPATHLEN/PATH_MAX/g
+3a5996ff0c3d06be182d1410a3eec5aac1a8934b    FEATURE     tools: s/MAXPATHLEN/PATH_MAX/g
+737f5220a28fd0197ab93ca8923ab3e3f5f67e3d    FEATURE     doc: Add -u and -g args to Korean lxc-attach(1) and lxc-execute(1)
+f157b05636194e74ebbd16f9fa167bbb6488f1f1    FEATURE     attach: reset signal mask
+4752343f8286b1ba6135847a70fb254fc3362241    FEATURE     start: change log level
+3e9bde7e8ee7048e5687d16f62d6039485ea083a    FEATURE     file_utils: fix too wide or inconsistent non-owner permissions
+0bece47700a1451e2d2094911475ea312379e72f    FEATURE     attach: fix missing pthread.h include
+8df6fa99bf2960014c9d53a5ec9b12270ba2ab6a    FEATURE     macro: add NETLINK_DUMP_STRICT_CHK
+d38f5b17b716667bb5edb0b306f4caca7c1029b5    FEATURE     macro: add SOL_NETLINK
+c6b647205d5cd56f24f6e4189d607dd0e80f3960    FEATURE     netns_ifaddrs: check for NETLINK_DUMP_STRICT_CHK
+576fb366f86f5ae33f1893026e948023476586ae    FEATURE     parse: do not mask failed parse
+646e6c8b465fafde9447c87ca967da9e82f50f7b    FEATURE     test: test invalid config keys
+23e5c04580e425a5194140da3a88c11ca54e4640    FEATURE     cgfsng: fix lxc.pivot directory creation
+d5fc4dd406b07a576d5d593a0b77c98ea0ecce7e    FEATURE     cgfsng: improve loggin on monitor cgroup destroy
+8392708ef3333ad1d7fab6c6bbfc12dadf4ffd08    FEATURE     confile: remove unused variable
+af5e7ee11b0b3ac00d44e6d64dbf61fdefc58e8c    FEATURE     parse: fix uninitialized pointer access
+7701a78d8fe54148b45f314bde89e7dc9c7cf7e7    FEATURE     fix rpm packaging error for static library
+3b1590416658385eff39a5d4696197704fedddbe    FEATURE     fix post section script error for rpm install
+ecedb5dee9324a967a51b0fa73a6be0630250a42    FEATURE     cgfsng: ensure initialized cpuset controller
+2de12765e2286ca59099fd22b27460ccfe575682    FEATURE     conf: log prlimit setup
+75193660db0ec9498512aaa6dcd030fd4348bf0d    FEATURE     conf: verify_start_hooks() after lxc.mount.entry
+e20f46f87fe968ef805c3d42850ae02c88e5007c    FEATURE     checkpoint: fix running do_dump()
+6dd32d35f9bbc39cc727fe32f7f7e5872ea4120d    FEATURE     monitor: log cleanups
+2f1264995f17ddb206164b31c1b2b222e4913f3a    FEATURE     monitor: checking name too long to make monitor sock name
+5b46db1a63dd0b663cce2cb8015c2a5aa05453a1    FEATURE     commands_utils: improve code redundancy to make abstract unix socket name
+95e523c8565b323973c50ee9c402f855cb78fcd5    FEATURE     monitor: fix coding standard
+a3bb6b8ed95013f9e7b21db833cd5d0da6671019    FEATURE     autools: use -fno-strict-aliasing
+c1e61eac485931822bf014aff599d557b4ccab4c    FEATURE     checkconfig: Handle missing kernel version
+b30b7eea56c4939ff78f689c8e1f18b09194f63e    FEATURE     lxc-init: log to /dev/console
+bb760b77dfacc30487e3ec9cfad4ba3186ff1533    FEATURE     autotools: fix --disable-commands builds
+7cfde20f987262acaf5250bfd305691ebe303fd6    FEATURE     string_utils: fix global buffer overflow issue
+27bd77920d39bc660e314ba0211d9f35e96076cf    FEATURE     include: simplify strlcpy()
+e4767d470df23fc51f90196d61ec3e0acdef3a5b    FEATURE     raw_syscalls: ensure function always returns value
+62a821f199d784546abcb059e7928fd581d930b7    FEATURE     confile: fix append_unexp_config_line()
+7c4d9466ad68f34a8993818c9e603243636c5fbb    FEATURE     parse: protect against config updates during parse
+9c3f0f02f85d7f0dac98a64067e1bf2848b6ae2c    FEATURE     parse: fix uninitialized value
+47903908f8f6d23fc45b64002169747ceba9de5a    FEATURE     tree-wide: coding style fixes
+9b10bef54ce7dfde831b2ff6b3182013e08388b7    FEATURE     start: simplify
+2268c27754152aa538db2c9e3753d72d19bcd17a    FEATURE     autotools: compiler based hardening
+b36673e712a08182a6bd7b0bdce80b155564c686    FEATURE     coverity: update .travis.yml
+8f9c6fd65a86a4a5951300cffbba047982e3c41a    FEATURE     coverity: update .travis.yml
+fcabf26fc057c372f12706b8e8992d9facffe199    FEATURE     coverity: update .travis.yml
+63b073896f1c0374f03ee1f998b1be442e26d399    FEATURE     coverity: update .travis.yml
+65322e5c52bc1792d81efd0076a995fc8a1c0042    FEATURE     coverity: update .travis.yml
+33eb2ec1862579b535cbc99db08c09f835bdba6d    FEATURE     confile: do not overwrite global variable
+00e5ca13848704f936bf822003f5976fe1cf4f63    FEATURE     commands: simplify
+edae86e922420b11a55932eb446b4cbeed48c9f1    FEATURE     cgfsng: move increment out of branch
+632ac690a9fc20c24c4b28d335a17750a22c5661    FEATURE     monitord: do not hide global variable
+f3c348587d068dcad30dffcc01f1bab291ce3570    FEATURE     tools/lxc_copy: do not hide global variable
+551105ff4639d1f64c97d6dd50dc30534e575c4a    FEATURE     tools/lxc_top: do not hide global variable
+e69abbb1fa8a3e3806da913291121783c103adfd    FEATURE     tools/lxc_info: do not hide global variable
+961b6f44314f320cbb96579869166cc21b73c995    FEATURE     state: remove tautological check
+e2d0c21b9a4d3cd0c114145c3ed18743abf440cd    FEATURE     conf: remove tautological check
+7806ebd74f88426ac88838224db74d157bad0f7c    FEATURE     conf: use O_CLOEXEC in lxc_pivot_root()
+3695b24384b71662a1225f6cc25f702667fbbe38    FEATURE     conf: remove tautological check
+b20e0599c64d64d877460f759b33ad526f82d3ee    FEATURE     lxccontainer: remove check from goto target
+8157e43740317612207e7bf0304c272638658d53    FEATURE     start: prevent values smaller 0
+489b0b2913ae464ca9f4bd50956910d316d20daf    FEATURE     tools/lxc_stop: use correct check
+c837120231c1c9fa4b54ea0d72e6c00dfbf97f0d    FEATURE     cmd/lxc_init: do not hide global variable
+637d38f2465eda9bfb0f56e43c99ba39bbe09e70    FEATURE     coverity: #1440391
+7d60776a32900598c75e7dace6787e70ab0593af    FEATURE     coverity: #1440389
+6d61f17dd64de9b030adf0e0ab0ed1b56b999603    FEATURE     coverity: #1426130
+ec3af0a4fb6ba94512ba62da6065baedc25105d9    FEATURE     storage_utils: add error handling
+ed2633521f8d0fa931595e6e752819e9838e55a7    FEATURE     storage_utils: cleanups
+c0b0c44b72c4aea396ea8da638d1ca46a4bada67    FEATURE     storage_utils: use _exit() instead of exit() in child process
+f66650808fe77ea6319324ebf9eca3f829dadd2e    FEATURE     parse: cleanups
+4c03724ef58d4f73639b727d10896fea5902b946    FEATURE     dlog: inherit dlog fds
+54d423b87459df9712595c0afa94f5742d57eddd    FEATURE     spelling: allocate
+8d47350bea9adbff9d9c97cbe84567cc39de0ee1    FEATURE     spelling: ambiguous
+b3b5b0ff382864a35fd970e11e9cfab568460705    FEATURE     spelling: answer
+a1e0e6df9c622b518b1883173b307939a46341f0    FEATURE     spelling: architecture
+3b034c39eb97538bc6c0c497746c9f24de986a1c    FEATURE     spelling: array
+f1e56364dddf6f78b9880bfae3272c5fed7132cb    FEATURE     spelling: asynchronous
+06d06ad43159a45e1f78f3024f5626c524ef128c    FEATURE     spelling: backingstorage
+ffc4030163a4fda0aab127d1dacb68e3fc4ed6fa    FEATURE     spelling: capabilities
+f510330c1aa323d490c634432d85c2c54cadfc96    FEATURE     spelling: character
+cfd1088d50b6a28ff96f78d40f41970ff6d8ecba    FEATURE     spelling: checkpoint
+18406e5a2a3ab7ec75dd6950860efbe97617457b    FEATURE     spelling: comma
+c050cfe3e656af16b94ea75443f590a6a6e4d6c6    FEATURE     spelling: command
+b35ddc5b6f8fe3f6209786ab44eee1c576e71c89    FEATURE     spelling: committer
+056da80e54fab499fe8550a18a01510899eec03e    FEATURE     spelling: configuration
+c0125e7950494e4684c3dbc88aaaa170c379f7d8    FEATURE     spelling: constant
+6f3fd27ffefb85e74bd8bd459996dba83b466b45    FEATURE     spelling: container
+25fa6f8ccbbf3b9ef50284d9524ac2af852b08b0    FEATURE     spelling: control
+46b3a2f6f036bfe9b11645d3b0de3f00aee55128    FEATURE     spelling: convenience
+2ed2e5ffb8bf3927778ab09a50cc6c9db6c3dd07    FEATURE     spelling: could
+13dff2194dc71e041dc24cdfaa64e9306fc10e73    FEATURE     spelling: describing
+9005a3ffae5eec17c382b59673f02e9e18b68b89    FEATURE     spelling: device
+52ab9e10f96e32c502a90d5fcda467ebe01191ff    FEATURE     spelling: exiting
+f5f14d41763a6dd79987f5696de9f904a97beb7e    FEATURE     spelling: explicitly
+e451a2a8a8b8f83ab1eaba837c3f5887779b7bb6    FEATURE     spelling: feature
+154f647486f62ed1ce4b1dbfcb7c1d8f65f4cf2f    FEATURE     spelling: github
+d0d684687adf0d9b5ccc285192f73e4a828c1f37    FEATURE     spelling: hierarchy
+b699117873a8cd30833bee1dbc73115572afe0b0    FEATURE     spelling: hoops
+ad2ddfcdb1db67c82e28d6a9315c24ef8a4c14a4    FEATURE     spelling: ifindices
+cc4c0832515f90b0f75c4a05722fbb951bfedcb7    FEATURE     spelling: implementations
+a8b46a6bee4b2a33ea28f7a2b5c52819ba1ef087    FEATURE     spelling: indefinitely
+aa899945e8585b23c8fb4af2ad6cda34aa0d7688    FEATURE     spelling: inherited
+95db7d8c5918e309781ca7a66c48665d0e793efd    FEATURE     spelling: initialize
+75b4629339da065267ccd22feef8bed8b980d30c    FEATURE     spelling: javascript
+fa18aaac6789ae0ef8576dbf4b0cfdf1925473e0    FEATURE     spelling: keepdata
+9efa12edfe1e5dbf72c5852e8cf55b1cbeab391d    FEATURE     spelling: libraries
+b99495385ffb30bc89b8f74aef00a3f2e1b36e19    FEATURE     spelling: loglevel
+af5ddde7df1ed1986810c007f872c1f41dca013d    FEATURE     spelling: namespace
+69e3b3bebf35568a6109046ae56d5110af61e230    FEATURE     spelling: otherwise
+d85813cd63369575c36fc9b728b73026d4c09e1f    FEATURE     spelling: output
+0b3b4011bd3b96f0e8c6c36ea5112a56065d948c    FEATURE     spelling: overlayfs
+7b6604652432ee54dc28485a1b0277d66bde9b36    FEATURE     spelling: overridden
+768f183c1cad9b8bb009da9b02f91931d1a1e4c3    FEATURE     spelling: override
+71cce97fc2784438f20b7aa46d10a382e60dbf80    FEATURE     spelling: passphrase
+529dfcbfd1e6793da75988401ec145774ae8ce4a    FEATURE     spelling: perhaps
+69ba0789a56df0883133db1a330564ace9f48ba2    FEATURE     spelling: pertains
+b98318f4c29b9177b82478c4825808b4a3a28134    FEATURE     spelling: portion
+1d801260c637ad72e204778cec7cebb0de714b67    FEATURE     spelling: potentially
+f3e65e7ba3d7dc5cf0e42888a2659ef96138e260    FEATURE     spelling: returns
+6226464d677e6ad429bf9bc7483a5b3d961577af    FEATURE     spelling: root
+c239013f8707d080599b36a56dc7fbefe9c44f67    FEATURE     spelling: securityfs
+bf86c00ad2f1efe9ba22871ab8be45025836f8b8    FEATURE     spelling: snapshotting
+98020c31c6c1de54944bf3f0c7879c3c85bb8aa6    FEATURE     spelling: specified
+915e3dbdf00255fd60051f8800a284ce2f7cc5af    FEATURE     spelling: specify
+29fa2d33b43a9bd2d92820a50adb19d562498102    FEATURE     spelling: subtracting
+59d8d30d9c3de6865d3a4852512bee21a6359c0a    FEATURE     spelling: successfully
+8927207bf415a5c54dc333a112147d629167f485    FEATURE     spelling: syscall
+da43e9e51ab34ae0d9d7055d8111d3418e129a24    FEATURE     spelling: timeout
+ae52f3964362382cb494f7f0f77563912fdaf0a0    FEATURE     spelling: unsigned
+7ded5fa706fc85123503aff8abb646428b4c9f1a    FEATURE     spelling: userns
+f4a4144e4ff5c9db0c2e4de12e5625a716770c92    FEATURE     spelling: without
+594426ca1b9f916102b02899aaa756467b0192ce    FEATURE     conf: expand shmounts lxc.mount.auto option
+6437f1c1738d9ab0a51a75bccf3450c1352ccc8f    FEATURE     conf: don't setup shared mountpoint for shmounts
+ecce75a68ccbe347ce04a2c7e085dcb10aeb2251    FEATURE     lxccontainer: fix temporary path removal
+9395c7c215ba4479d6637e07d79127e040f4c69b    FEATURE     confile: remove debug printf()s
+5f76b90f47ea88b3ec3e44fb945519bfbe2ba31e    FEATURE     lxcmntent: coding rules
+b9bb8bbbf35a388fda0f996c1116c4444fa5566e    FEATURE     string_utils: coding rules
+9b681921e597541226eb9ecccb4a7d9e3f410879    FEATURE     log: fix too wide or inconsistent non-owner permissions
+e814299f2d98d98ae16e03340744ee4d371e67bc    FEATURE     coverity: move to separate branch
+a9b8dbfa95f14d17ad014d3ee4400602933297ee    FEATURE     include: correctly include macro.h
+6e055cceb212d2a3bab201dbfdd5df7315343c30    FEATURE     Fix spacing error in namespace.c
+89882306f94fed5c053d4f74ee8379f64c3babcb    FEATURE     caps: replace read with lxc_read_nointr
+809d44495ac1aa217830405fb7d2ee7a50dc1a14    FEATURE     log: replace write with lxc_write_nointr
+1d5e5f26b8cba168cccb01dc5849cbbd782376f4    FEATURE     dlog: move match_dlog_fds()
+7d7333b3d0addc261dc23b1ea854393f25d8a965    FEATURE     conf: s/ty/tty/g
+a6de11a79b60a1be47df83cfaaf98b0d3f2734c5    FEATURE     pam_cgfs: remove redundancy file utils
+f25a2044bf08648a3c91d0b130069c8e96d4b099    FEATURE     cgfs: remove redundancy utils
+c4a090bebfb28a35975ee4317326e82bf2756707    FEATURE     pam_cgfs: remove dependency from cap & log
+7be6bcd523d06a27fa6e611dd822142e9aea6da8    FEATURE     utils: fix coding styles
+2f32e37ef41c97ae9d166457d7b0141df96dc3fd    FEATURE     utils: add errno logs for exception case
+d1acfd547132c6c11274849c5f2807cf79218ae5    FEATURE     Adds -qq flags to lvcreate commands to avoid answer 'no' to ant questions the LVM subsystem asks to avoid hanging lxc-create command
+e6ec0a9e71aa68c9fd67c691a62aaae87e356cef    FEATURE     apparmor: allow various remount,bind options
+6af699fc0e4e88fb3927b9623f8a721a55ca9eea    FEATURE     utils: make keyring allocation failure non-fatal
+04fe0512132e47ffc05c338a82f845cd475e8e75    FEATURE     autotools: fix lxc-{create,copy} build
+4143c201d1b06e27beb77707f7de9c6f4c9a6112    FEATURE     cgfsng: remove freezer requirement
+754076f5552c2a1c84f39f462e0ed89b05a43ee3    FEATURE     added allowrunning command line option for snapshotting alive containers
+1cfc8b9ab7326b5d0466a4e027f3ba4d219d22ac    FEATURE     doc: Add -a, --allowrunning arg to Korean lxc-copy(1)
+b73cea60885f818cc11018fbe05764dc5c267207    FEATURE     Add allowrunning option into Japanese lxc-copy(1)
+9760cfccf2a708476a0921d7405102948235cb8b    FEATURE     fix install error when using --disable-commands option
+c14ea11dccbfa80021a9b169b94bd86e8b359611    IRRELEVANT  lxc-usernsexec: fix default map functionality
+0e40f65d1df7267b0a9cfa4a94941aa1f4999ec8    IRRELEVANT  Add template-options to help output
+b7df06ad14c04f18b7db5b64d5142b802bf64cb2    FEATURE     stringutils: include stdarg for va_list
+3aa7271157d3c815a4426c1f8eaea2f3b6dafa6a    FEATURE     configure.ac: fix build without stack-protector
+4f08c8d46f7231635278aaa61025a1df0fa4d659    FEATURE     storage: remove unused function
+b8ac0dd14e8dccbdc19195d2f98392226feed9ab    FEATURE     fix lxc-cgroup not giving output
+6a5cc5609cac4521893bf4fbc232e1505cc8e707    FEATURE     tools: add newline to lxc-cgroup output
+2bd158cc0c79da7d48e36306d41b5677ec976fc6    FEATURE     terminal: remove sigwinch command
+4dcd858b92d4135024290d70534c245e9cdd8d6d    FEATURE     Release LXC 3.1.0
+8465a7f49ed64aceaebac7ca8c489575e7a65173    FEATURE     Re-enable lxc_devel
+92fa4347d7e13b586e11494201607083751bb6d3    FEATURE     storage: do not destroy pre-existing rootfs
+4e5a9657cafad69d8447a385abb1a384423b54f8    FEATURE     lxccontainer: fix mount api (mount_injection_file)
+370c786023e605bf7e2250a478b7dd2bee28ec42    IRRELEVANT  Set c to NULL after freeing it
+688e8982bced7f7bbfdc8a646a852890544917a4    IRRELEVANT  conf: use SYSERROR on lxc_write_to_file errors
+4bcf92a32ea648948d4a4452051d41da01b287b7    IRRELEVANT  Revert "Set c to NULL after freeing it"
+3d7e738a6befb76c47ba2c5fcc46d8cfa447171f    IRRELEVANT  lxccontainer: fix container copy
+50d86993a7d6bf913372e0514fc491ea49ebdc5c    FEATURE     confile: add lxc.seccomp.allow_nesting
+85e66fe856508d60c96de2fb063d08a152aa8273    FEATURE     cgfsng: do not free container_full_path on error
+8523344a390f6e6c6707358b84f27ab59a891b2c    FEATURE     fix: unprivileged veth devices (e.g. vethFWABHX) never contain 'Z' character in the randomly generated device name part because for modulo one does not need to substract 1 from strlen().
+69b4a4bbfdffc99053df289a1c1512b911072088    FEATURE     cgroups: try to handle layouts with no cgroups
+bca7c59caddb7568b27552cf0138bfafc1fa2d30    FEATURE     start: handle missing CLONE_NEWCGROUP
+aa2fdfd362586bdbedf0a5f7751d9237bf91afa9    FEATURE     network: prefix veth interface name with uid info
+575ea46728b10bdb1724b05b517beceb13eff567    FEATURE     start: __lxc_start return -1 when start fails
+a3ed9b811821e2c85a11edd941af97c7e984e510    FEATURE     conf.c: fix memory leak and mount error
+96a03c1f372a145bf170f38f903edadce7534ced    FEATURE     Fix memory leak in cgroup_exit
+f1bcfc796e0a4a04b36284f6261afff59123b1aa    FEATURE     seccomp: add rules for specified architecture only
+3e9671a15d68701b56a6722081aafb3ba0358f49    FEATURE     Revert "seccomp: add rules for specified architecture only"
+2341916a0367130d5a084a89884c15c3a835a4b4    FEATURE     Avoid double lxc-freeze/unfreeze
+71fc9c046816b2bae564481741658defafc01b62    FEATURE     Avoid risk of "too far memory read"
+db1228b35f3ea83f668b58dbec33e12623c5c4b1    FEATURE     Avoid hardcoded string length
+1c9bca6b88e63f7de45ebf8af91d84e6fea57447    FEATURE     Installation of default.script for udhcpc
+4765b926b137d6d8ed4f9a46df5f6e5782dca707    FEATURE     Use BUSYBOX_EXE variable in configure_busybox()
+c65973ad8940931ed3208fc1b5723d98023b67a0    FEATURE     Create /var/run
+567f8915962316dfee3b040bad404da7cdcbbe38    FEATURE     /etc/resolv.conf grows indefinitely
+0f3a3e1a47a6570fe950089114bd4457bb7c7b62    FEATURE     compiler: remove deprecated and unneeded header
+acad8485a0be5b8dfb1dd90f4bd00728bd243a64    FEATURE     prlimit: remove deprecated and unneeded header
+7a8f46e9557efe4c04bbad932942c09ee9625669    FEATURE     doc: Add lxc.seccomp.allow_nesting to Japanese lxc.container.conf(5)
+60018868a3a41f22245bdae90d52e52a92be0177    DIFFERS     Fixing compile error when compiling for android
+b11738d799321adfdb40f8af4cd758fe663e3805    DIFFERS     Handle alternative loop device location on Android
+9eb9ce3e4778b257a9245d9098052e6b08b54ff6    DIFFERS     Update freezer.c
