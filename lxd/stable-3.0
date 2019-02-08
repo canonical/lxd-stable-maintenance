@@ -407,3 +407,94 @@ ef371a7f1d48842978474558ca92ff3ead0548f6    DIFFERS     lxd/migration: Fix CRIU 
 7146e447367e6ca867f22b75efa77ceff4ef1103    DIFFERS     Add StorageVolumeIsAvailable to check if a Ceph volume can be attached
 a6bd52e5432006ae2cdfbf70154e6ccbde548e20    DIFFERS     Wire StorageVolumeIsAvailable to containerValidDevices
 0a6cf157d9df0a59c1111c632bb2fe744654b3b6    DIFFERS     Add integration test
+fac2f2fcd0967a9f51cbc2f96b02a25d0dbe56d1    IRRELEVANT  lxd/storage/lvm: Fix project handling
+aca0151ed1b54cfb819344cf5509e5eed36520a2    DIFFERS     lxd/migration: Bi-directional rsync negotiation
+e6198024b85ed488efcae9ad595ac9452439111d    DIFFERS     lxd/migration: Negotiate ZFS compression
+232a9a4f54de644922f4991312ae34a390358cfd    DIFFERS     lxd/migration: Simplify MigrationSource
+a46f1956c58b4a80445de62dc7cf873b919af351    DIFFERS     lxd/migration: Simplify StorageMigrationSink
+4ef6e87c5885b2c6d11a099036dc84a5e67ea322    DIFFERS     lxd/migration: Simplify MigrationSink
+21657bf1df0ebfa77b762304d39a0e9afcb7d53e    DIFFERS     tests: Always pass -w to iptables
+7555f492a4cb570e1d812ef5a7a70022af5aa2fe    IRRELEVANT  lxd/migration: Remove leftover debugging
+e514b2466705a6318b716badc4523251e06e84fa    DIFFERS     lxd/migration: Cleanup feature negotiation
+6c078b26da292306cc5a8f75bc23de9ebc454167    IRRELEVANT  lxd/storage: Fix check for custom volume restore
+4787b8e6fbae77ea95d0b20ad5fb727e96feed60    DIFFERS     shared: Fix import order
+aea1c72ff2ecb6c68875cc2a1201fd98a5e19562    IRRELEVANT  lxd/storage/zfs: Fix setting quotas on project
+bbb4cf8da28d8ea12c991367d7a59dc108c88591    FEATURE     Add cluster.https_address to node configuration
+271f5ffdf747efc2eddb1a6bcd821aba7b62662e    FEATURE     Copy core.https_address to cluster.https_address when upgrading clustered node
+4a79c8d788b3180c38654b5651ed33ae96d1def9    FEATURE     Modify node.DetermineRaftNode to look at cluster.https_address
+a2cccd38137e94478a971406f96989197ed6635a    FEATURE     Modify the lxd/cluster sub-package to look at cluster.https_address
+ff9a992cedd1774ef4c444b267e1cc0933987d35    FEATURE     Add util.IsAddressCovered to detect if a network address is covered by another
+60caf2110515962d2582e3625fdba1b85fd18dc7    FEATURE     Support for optional cluster TCP address in the endpoints sub-package
+9ad1700a80d637d89dbb922a163f69f9dd6eedcc    FEATURE     Make PUT /1.0 handle changes to cluster.https_address
+a15853c585e0d4502e4377b8893ecdfcf59d8621    FEATURE     Update PUT /1.0/cluster to honor cluster.https_address if provided
+9b359b70f133987f03e0b8aa5eb55a2fa2abac62    FEATURE     Change "lxd init" to also set cluster.https_address when bootstrapping a cluster
+2e0005fc24b05e2969dceffb555ba29d45a7d92a    FEATURE     Add integration tests exercising custom clustering address
+ddc412b53428e170a7ab18043c0b539011e49672    FEATURE     Add clustering_server_address extension
+2f783be6cf8089dff6424d9101ba9c365a4f344f    FEATURE     Add documentation about cluster.https_address
+92e2cd23063f2beded9353fb26e522498ab489d9    IRRELEVANT  storage/zfs: Fix arguments in function call
+c45d87f7daf6777cc4337f4f878a431a3ea20d35    FEATURE     shared/api: Introduce image replication
+0d146781f9ddf3b6c4a047148bf1de6cd07de19c    FEATURE     lxd/config: Introduce image replication
+339b23978904859b065862f8567c0047f13a2808    IRRELEVANT  lxd/images: Fix bad project handling
+1d2ffe852e04594c547fbe73075922ba37639578    FEATURE     lxd/db: Introduce image replication
+e2a65b7c905a324974f6ac5ba40dd125606d0160    FEATURE     lxd/images: Introduce image replication
+9be1e0cab3b1c2fcb5c52cefe50ad67f512d8181    FEATURE     doc: Introduce image replication
+3169b73860e286ee1269b6f77b5773ef3a59920c    FEATURE     scripts: Introduce image replication
+a02dd7110916407ce4c03a88fb72e207c567a869    FEATURE     tests: Introduce image replication
+095724e92192e3daff1803480ad7e071e8cebbeb    IRRELEVANT  Update translations from weblate
+a49ae38a410aa03d2c38f2ebc2e3d1d232b959d0    IRRELEVANT  lxd/containers: Drop needless function
+c3404b7aaee0648418c9935d0ee3fbab6af79c76    FEATURE     Implement shift protection
+ae0a67076b879e32620c4e31a993f14a4a167408    FEATURE     Release LXD 3.8
+f15cc8548129c5be54103e1ddbddde8ba80255f5    IRRELEVANT  Re-generate the fresh schema, bumping the schema version
+af340ced4793d4a6e067cb61691dcb7499e7a8f4    IRRELEVANT  lxd: Fix go test
+e211bdb1bb7c643607bf3ba4934e9e5b0c38b4bc    IRRELEVANT  bash: Add snapshot keys
+afbc671a4b96a33cc4e666cb74c10ad987027978    IRRELEVANT  lxd/projects: Fix crashes on project list
+db87d9468e251d3fc59a99fd092bf9a52e086394    IRRELEVANT  Update translations from weblate
+41a8bcbff8f12cb7861588bf881d6e3502581b43    FEATURE     Release LXD 3.9
+523480e19b0b1d2ef11b6a2057a7cc42246a28e5    IRRELEVANT  po: Update i18n
+1cb3e047c8a2b1d5d0a2a54fdad3b50b6befd4c9    IRRELEVANT  Update translations from weblate
+cbd270b0d8514b2237d833cc320719a77f5636d4    FEATURE     Allow to format output for lxc profile list
+6dbf7b4da90c9c5aca25289e1de19696fb1d39b1    IRRELEVANT  Update translations
+4bb6d8cd5865d241676dc09832e73284fac69eb5    FEATURE     api: Add snapshot_expiry extension
+34d20fb659b6914d94476ce13fe7f5c65304a85b    FEATURE     lxd/db: Add expiry date to container
+67a2d9a8f4ce610e1f3152fac9eafff345412dcd    FEATURE     lxd: Support container snapshot expiration
+85a9c66113ea39952902918f40ca5dd62fbd5509    FEATURE     shared: Add option snapshots.expiry
+48d4404565f4f6c7d82297b24d31277b8d0bcd7a    FEATURE     shared/api: Support updating container snapshots
+4ee6013f28ce6f3243c8241b05ac62862d12b7a6    FEATURE     client: Add UpdateContainerSnapshot
+5ca04abd216d7bcacfeb948582445f714140b232    FEATURE     lxc: Allow editing container snapshots
+646bc7f18c1c74cd758f09c6c3885da63318fee8    FEATURE     doc: Add container snapshot expiry
+4cd84e1504d289b32d707d64760eede988e7581a    FEATURE     test: Add more container snapshot tests
+9bd156b2accff5ec0912b1b7d7fa471a24654691    IRRELEVANT  po: Update i18n
+19d2229dce7da56d56370b1cfd207cfe4b5fcdec    IRRELEVANT  lxd/containers: Fix error handling for auto-snap
+22cb8492b4d222c1048285dcc9f7766843e3219d    IRRELEVANT  tests: Delete leftover container
+e673abb14938a93cd7a6f1c58b4211c13c8b0583    IRRELEVANT  tests: Prevent snapshot from expiring
+d87a9bc643059e66caa06fbf85431f969ac628b1    IRRELEVANT  lxd/storage/lvm: Use right VG name for exports
+f18362015da4fe468305a12036a7b624206b9ebe    IRRELEVANT  lxd/backup: Don't waste memory during unpack
+9a2e7f95b40081668ea81b42f15ab2cab8c8a46c    IRRELEVANT  lxd/backup: Fix fd leak
+24ce85eb28aeb5865d022b656c8fe7f8fd86b271    IRRELEVANT  lxd: Handle missing storage pool for backups properly
+b5196c3715469a9d012b95a468c25e636567d3c9    FEATURE     shared: Add API extension container_backup_override_pool
+9fb654494e94fb9b1117bca1cd79f003bcbce404    IRRELEVANT  tests: Fix negative tests in backup.sh
+893bfd9e416e1bcee0c7ea68f8da1974e60fb9f2    IRRELEVANT  tests: Fix volume list in projects
+e073f15face91b7ca5053679d6717489a11bb59a    FEATURE     client: Support overriding pool when importing backups
+d9fcd9bd56b07a760e91998e1e488654eff01831    FEATURE     lxc: Support overriding pool when importing backups
+374231a7112335dc9a53475b1357aa9a9041c918    FEATURE     test: Extend backup import tests
+5728c79e98eb28de32b91faee9af67963224e85b    IRRELEVANT  po: Update i18n
+73fb7afe8f214f24410f34f5187034651aebf066    IRRELEVANT  Update translations from weblate
+93f7abab785080b3a1dcb165e15462ef80ebe066    FEATURE     Release LXD 3.10
+03ae822a43506311b7d92a50665d8bf45a85ca23    IRRELEVANT  lxc/profile: Make json/yaml consistent
+378872da2d2832b80530dd3fc9e63710d25a3348    DIFFERS     lxd/containers: Adapt to go-lxc Release
+4b8d6db89437388548b7afbf69879a3faa9e9b2a    DIFFERS     lxd/storage: Fix broken error handling
+a2c5f268ed1012549b743a7b2489feb574178938    IRRELEVANT  lxd/storage: Fix custom volume copies
+9226b9f06883b19850a69e8d6d54651369a13438    DIFFERS     lxd: finish converting events to api.Event
+0050bb1d4c3bce0ff317a92148ab927b581d8150    DIFFERS     lxd/storage: Freeze containers during rsync
+3e882b135febdfce8cab493846cb0f8998113a02    IRRELEVANT  lxd/storage/zfs: Fix dataset handling on copy
+d18d1be0979fa30bf3f6f43f1f383bd2cbaf937f    IRRELEVANT  lxd/forkmount: Fix version detection
+b9968b09eb2f771129c6881f58074a30cc32bf6c    IRRELEVANT  lxd/containers: Handle projects in forkmount
+5317a941b42175c8f8caf2d684b4f1465a0db0eb    IRRELEVANT  lxd/main_forkmount: Remove debug statements
+ad885a5b1fffea841af04f9209c727b6c8906227    IRRELEVANT  lxd/forkmount: Require mount_injection_file
+47a0cbac9cd709fef2b02301090bfd64894468ff    IRRELEVANT  lxd/containers: bind default value is host
+7c017d6ec069ec2c24ddce7d0d89c6a1f10ed26f    IRRELEVANT  lxd/containers: Fix unix devices with liblxc 3.1
+01adf16f98d8a03a3460594a5764c2db5410a7e6    IRRELEVANT  lxc-to-lxd: Fix go test
+32b77d2c205a7dffaaf8888d41871b32ed4e7bc8    DIFFERS     tests: Reduce sleeps in proxy tests
+bef26be03d2bfd01a6dad02a572e78f4aa75c19e    DIFFERS     tests: Reduce clustering delays
+17c98fd381b402979127a91ce1e4d3fb21ac5aaf    IRRELEVANT  lxc/storage: Fix argument count check for delete
+3a39f15702d6b261f48ac62dcc9661b5be51769c    IRRELEVANT  Fixed typo in backup.md
