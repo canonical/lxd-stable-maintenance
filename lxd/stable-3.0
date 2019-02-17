@@ -498,3 +498,37 @@ ad885a5b1fffea841af04f9209c727b6c8906227    IRRELEVANT  lxd/forkmount: Require m
 bef26be03d2bfd01a6dad02a572e78f4aa75c19e    DIFFERS     tests: Reduce clustering delays
 17c98fd381b402979127a91ce1e4d3fb21ac5aaf    IRRELEVANT  lxc/storage: Fix argument count check for delete
 3a39f15702d6b261f48ac62dcc9661b5be51769c    IRRELEVANT  Fixed typo in backup.md
+0a28862a18e02a9a6f11541bc65458a54a2c19d8    DIFFERS     i18n: Fix duplicate language
+477a1c3dd221433da09d9c8cd1c3bf480c9e1fb0    DIFFERS     doc: Clarify measurement units
+fb4ffba49bcaef310cd135f498ed4ed385fc3d74    DIFFERS     lxd: Send metadata in CreateImage error response
+693ba1a4cf7831dfca668ee9742ca00b7c8c486c    DIFFERS     lxd: Fix possible segfaults in tasks
+0ed73c8a6fd08c2a83b2a58abbde404416c4b32b    DIFFERS     lxd: Send metadata in CreateImage error importing image
+bd6f52e467bc3bff78c426cf70e0700d77272a75    DIFFERS     lxd/images: change compressFile to take io.Reader and io.Writer
+310cc89d119c15aa3d16584c919438c417c4226d    DIFFERS     lxd/images: calculate sha256 as image is written
+3da2605fa47af4ea482d6a07f0bc5f8e0a2e57cd    DIFFERS     shared.Unpack: Add support for a ProgressTracker during unpack
+31c858fe97ace735ad9803975badc59da81af841    DIFFERS     storage: Add ioprogress.ProgressTracker field to storage
+d2c03c682dfcb8148281998883dd7026d32d1633    DIFFERS     lxd: Send progress info for export and import operations
+589583be1d7a23507a8b5909e00af31a6597c3cb    DIFFERS     tests: Fix negative tests in clustering.sh
+b220cbe5f2273023d3921430ffb37feb1ff3829c    IRRELEVANT  tests: Fix negative tests in container_local_cross_pool_handling.sh
+d5cdf2755845f9266cb9d2870a7e2e72610044bf    IRRELEVANT  tests: Fix negative tests in incremental_copy.sh
+a578f7772b9201e6eb71bfa6aa5168f15a739bdf    IRRELEVANT  tests: Fix negative tests in lxc-to-lxd.sh
+955b29d11746a5b2ad8e1232d784aacd5862e764    DIFFERS     tests: Fix negative tests in migration.sh
+5577e75a0df25bf748c54115d5d8405ddf98b37f    IRRELEVANT  tests: Fix negative tests in projects.sh
+5ebaba43943c4daf5dde9cc2d34310c9c91ec836    IRRELEVANT  tests: Fix negative tests in snapshots.sh
+22ea356db15f7e73abff9e06c982978a35a26ba7    IRRELEVANT  tests: Fix negative tests in storage_snapshots.sh
+2373347e71f9a51c5c12b6b04a86f5b4df8ba389    IRRELEVANT  tests: Fix bad test in security
+013b5df2ef485529f51d147e77f355a794e6e57b    IRRELEVANT  tests: Fix bad test in container local pool handling
+48ba638901a730fe3d14b25109aeda0d2c0d0af7    IRRELEVANT  lxd/containers: Refuse refresh on running containers
+f4f2a7b51a5693c027cce42ee310d61ba4b5eebf    FEATURE     lxd: Support overriding pool when importing backups
+27a60f7d1a609ae375cf3289e3424885b7942aff    DIFFERS     lxd/containers: Call storage unmount on detach
+6c9151b1307aaeb29d6a8ae1df504ee889b24cce    IRRELEVANT  lxd/cluster: Don't prompt for internal config keys
+56ae10944069220b922aa93f81e8b4833ff7f8f2    IRRELEVANT  lxd/storage/zfs: Fix missing dir on copy
+c0ba1d7234ff0c267b0b4f4284050be77fcb5be3    DIFFERS     tests: Fix negative tests in security.sh
+88ddb8cb1216350dc28e16583396b9a5a67d41fb    IRRELEVANT  lxd: Fix snapshot expiry for scheduled snapshots
+44f45ee9048739b445dbe07bba63f4573c36d92c    DIFFERS     lxd/network: Rework IP validation functions
+2149bdaf895a1145d49e7627b50e0097678de189    DIFFERS     lxd: remove /proc/self/cmdline parsing
+4f4b5c57c3d4bd75bde3035e3c8f3ece7b71b7d1    DIFFERS     Revert "lxd: remove /proc/self/cmdline parsing"
+eab4f0aafdc812fe5fecc91bca0f910eb1555cae    DIFFERS     nsexec: make cmdline parsing more reliable
+6cf20b3149c419a5dd842ce3f2c3e1e349771ec9    DIFFERS     lxd/storage/lvm: Call wipesignatures
+474e8c01aa3c89d5b42c2383af236303ce15bdd2    DIFFERS     lxc: Update for per-remote candid domain/cookies
+70cea30d57c4ebfafd90ad0872c04f5d2824a1bc    DIFFERS     lxd/storage/ceph: Rework df handling
