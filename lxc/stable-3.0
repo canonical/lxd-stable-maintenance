@@ -95,3 +95,61 @@ ecce75a68ccbe347ce04a2c7e085dcb10aeb2251    FEATURE     lxccontainer: fix tempor
 9395c7c215ba4479d6637e07d79127e040f4c69b    IRRELEVANT  confile: remove debug printf()s
 7be6bcd523d06a27fa6e611dd822142e9aea6da8    DIFFERS     utils: fix coding styles
 e6ec0a9e71aa68c9fd67c691a62aaae87e356cef    FEATURE     apparmor: allow various remount,bind options
+754076f5552c2a1c84f39f462e0ed89b05a43ee3    FEATURE     added allowrunning command line option for snapshotting alive containers
+1cfc8b9ab7326b5d0466a4e027f3ba4d219d22ac    FEATURE     doc: Add -a, --allowrunning arg to Korean lxc-copy(1)
+b73cea60885f818cc11018fbe05764dc5c267207    FEATURE     Add allowrunning option into Japanese lxc-copy(1)
+4dcd858b92d4135024290d70534c245e9cdd8d6d    IRRELEVANT  Release LXC 3.1.0
+8465a7f49ed64aceaebac7ca8c489575e7a65173    IRRELEVANT  Re-enable lxc_devel
+92fa4347d7e13b586e11494201607083751bb6d3    FEATURE     storage: do not destroy pre-existing rootfs
+4e5a9657cafad69d8447a385abb1a384423b54f8    FEATURE     lxccontainer: fix mount api (mount_injection_file)
+50d86993a7d6bf913372e0514fc491ea49ebdc5c    FEATURE     confile: add lxc.seccomp.allow_nesting
+85e66fe856508d60c96de2fb063d08a152aa8273    IRRELEVANT  cgfsng: do not free container_full_path on error
+69b4a4bbfdffc99053df289a1c1512b911072088    FEATURE     cgroups: try to handle layouts with no cgroups
+575ea46728b10bdb1724b05b517beceb13eff567    IRRELEVANT  start: __lxc_start return -1 when start fails
+a3ed9b811821e2c85a11edd941af97c7e984e510    DIFFERS     conf.c: fix memory leak and mount error
+f1bcfc796e0a4a04b36284f6261afff59123b1aa    FEATURE     seccomp: add rules for specified architecture only
+3e9671a15d68701b56a6722081aafb3ba0358f49    FEATURE     Revert "seccomp: add rules for specified architecture only"
+9eb9ce3e4778b257a9245d9098052e6b08b54ff6    DIFFERS     Update freezer.c
+2341916a0367130d5a084a89884c15c3a835a4b4    FEATURE     Avoid double lxc-freeze/unfreeze
+db1228b35f3ea83f668b58dbec33e12623c5c4b1    DIFFERS     Avoid hardcoded string length
+dc691e340e7e1fe032dd47822e460fa86d1dba58    FEATURE     conf: append 0 0 to nesting helpers mount entries
+7a8f46e9557efe4c04bbad932942c09ee9625669    FEATURE     doc: Add lxc.seccomp.allow_nesting to Japanese lxc.container.conf(5)
+02f71d7ef0a8f2b684f5bef2728bbf506521b27f    FEATURE     freezer: non-functional changes
+a6ca2ed8912748242e3654dcd7ec89d6c942bb09    FEATURE     cgroups: use of /sys/kernel/cgroup/delegate file
+af1dc7cd70494c08f8edd6e2b3c176768d1ed0b0    FEATURE     memory_utils: add memory_utils.h
+d97919abf22914ef3c2ef7cab64695515cb8b835    FEATURE     cgroups: partially switch to cleanup macros
+f2668eea509deccb77a90dac8a12f43bfcb6178f    FEATURE     cgfsng: coding style for cgfsng_monitor_create()
+d99d5c935a9ee2eb66ba9e55e85bd707d4c1647b    FEATURE     cgfsng: coding style for cgfsng_payload_create()
+c74da4abd20ede6a30c358dc275ba43b1d12e8d5    FEATURE     cgfsng: fix cgroup creation
+6400238d08cdf1ca20d49bafb85f4e224348bf9d    DIFFERS     CVE-2019-5736 (runC): rexec callers as memfd
+7fd02ed74da7d495a8a4bf5c797762d8ecab290c    DIFFERS     api_extensions: fix wrong licensing
+3877934c7af1edd982c5a01174ca2bdbb6f85d69    FEATURE     api_extensions: fix wrong licensing
+cd4a865dd697ecb245b3e58e54d053af89730a75    IRRELEVANT  memory_utils: fix wrong licensing
+d3a9befc86113228f77c89030336faa84a5557c0    DIFFERS     rexec: make rexecution opt-in for library callers
+0c816b346788afa9d601766e31544fdcce67d780    DIFFERS     rexec: remove needless /proc/cmdline parsing
+7a80606d7b3e31516d3cb223c899be25e67cbc0d    DIFFERS     Revert "rexec: remove needless /proc/cmdline parsing"
+cee55b59cd0f7446bae25d02bcd23805ce43aaa4    DIFFERS     rexec: remove envp parsing in favour of environ
+2b3153a88274c70584d97758b6d487169217fcac    DIFFERS     rexec: fix wrong licensing
+c00d0e3b2a06b34ebe25c27208ab38075bbf33d2    FEATURE     mount: Allow over-mounting
+71521317b2a4432fb5aa1878a7933d563b7020cb    FEATURE     mount: Cleanup allow over-mounting
+4101805bb23d3d9567050720fa2f7e8b85cf7774    DIFFERS     macro: introduce steal_fd()
+e236fe05d1e7a615c6a198a5fd0b5db0631484d4    DIFFERS     memory_utils: introduce __do_close_prot_errno
+8f350e637c0e8001398602a6b2f536de3905787d    DIFFERS     rexec: handle legacy kernels
+fed8112d04bea7d60c819e579c76b38fb440fc41    DIFFERS     rexec: use __do_close_prot_errno
+7cf89ee88db9d8f6d7bad81ccb6742501091ddc7    DIFFERS     Revert "rexec: handle legacy kernels"
+4aa90f60123ef6c926218f893f40d8c40c0ec566    DIFFERS     [V2] rexec: handle legacy kernels
+6aae19f7c8cc3ab036e078172c735cf058054dcf    DIFFERS     file_utils.h: fix wrong licensing
+e4edf5d7bcee31ee159d6943c741d7ef06814b66    DIFFERS     tree-wide: s/steal_ptr/move_ptr/g
+240fecd0e11feb3b72a2693c13917eb6c0248265    DIFFERS     tree-wide: s/steal_fd/move_fd/g
+5e6e38bd88eba1c8edde4c202542f78589b2b7d7    DIFFERS     rexec: try sendfile() fallback to fd_to_fd()
+d8bc14a762b1b710b221e3fa40f8de19816e062b    DIFFERS     Fix existing mount target check
+8cddb10fe12487057f25dca9740942a27bfd4d2d    DIFFERS     lxc-attach: switch to attach_run_wait
+79bcf5ee05b0a5a37ddf36ac19fcb7075cbe5d1e    DIFFERS     conf: cleanup macros make_anonymous_mount_file
+c85ced6517047d0a921afe4cc8ca1f24f3752525    DIFFERS     conf: cleanup macros setup_mount_entries
+c4382ee26600d3234fcf87fee80523980b94e31e    DIFFERS     utils: remove fgets() from is_shared_mountpoint()
+7717e175f5c6718a4e61bcc0171259b7b5b270c9    DIFFERS     cgroups: remove unused variables
+8839610197acf6b1604805fe3f18c9269fee33c8    DIFFERS     cgroups: shut up gcc
+7a99b5a03a840dca4c9d058687fdf64715be0893    DIFFERS     lxccontainer: shut up gcc and remove unused variables.
+5648fc191c92e7bb1a8427e3e27d3bdb66807ed3    DIFFERS     confile_utils: make update_hwaddr() static
+f766251429bf2e06edcbfd0c10f2d86b1fbe416c    DIFFERS     confile: make parse_limit_value() static
+908e0ee512d185da2c16ece0b829d34a985d3b15    DIFFERS     Fix lxc.cgroup2.<controller> on cgroup2-only systems
