@@ -7,3 +7,18 @@ a83618e2cdb9abede47001f2bcb132fc569a0c9b    FEATURE     loadavg: restart thread 
 8be92dd19ceecb0ab54f36cc69d5f3845ba29844    FEATURE     Per-container CPU usage in /proc/stat
 832904c17476619af8fa74dd25b5f2dd9c52d095    FEATURE     bindings: fix memory leak in calc_pid()
 beb5024eaef96e3fae7c8e13646cc7971a9ddc4a    DIFFERS     bindings: better logging for write_string()
+b077527b51904c6fa68da3a8998bdb93371d6808    FEATURE     calc_hash(): do not apply modulo LOAD_SIZE
+056adcefe4c6b345e91b1e8c38be4f02db970d3b    FEATURE     stat: use cpu views
+951acc94822c22e2129a9609e544b572c517fd06    FEATURE     CPU view: prune stale entries
+2f49b6629884d7e86d0378c8d9c9811be231f897    FEATURE     CPU view: add mutexes
+895f28e5f726fbb8ad2078cf55db5b82128f9b94    FEATURE     CPU view: handle CPU hotplug at runtime
+77005a6ce399017b3dc6f332242e6157918b3ec8    FEATURE     CPU view: handle disabling/enabling of physical CPUs at runtime
+79612c8bb4e76bdd9ad97e01688a4df6dbf9976a    FEATURE     stat: check for out of bound access to cpuacct usage data
+7e60aa1b15405bd8b0f90a0db2c44354948cbf2a    FEATURE     option to disable swap in meminfo
+3b763b53552ff529364e1071eba201086cb9e8cb    FEATURE     lxcfs: coding style update
+675dfbed921c8e73719162dea30880702cdffe5c    FEATURE     lxcfs: use close cleanup attributes
+4d260c443cb4ee7ab82ef7ddc3e354e79dae01bb    FEATURE     bindings: partially convert to cleanup macros
+71f17cd25bb74f30b89d82a55d326788d945e5bd    FEATURE     support /sys/devices/system/cpu/online
+36817cdd6e32ec8865ad1520fa8b407d1b82d39e    FEATURE     sys dirs do not need to implement 'read' method
+178c0334ac3a77d25972848ed19d2b9deb26fcab    FEATURE     remove unused function
+2a1a5c189d20e24b7c30abaec760d844194e02ef    FEATURE     Revert "Merge pull request #272 from brauner/2019-02-19/compiler_based_housekeeping"
