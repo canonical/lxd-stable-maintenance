@@ -153,3 +153,38 @@ c4382ee26600d3234fcf87fee80523980b94e31e    DIFFERS     utils: remove fgets() fr
 5648fc191c92e7bb1a8427e3e27d3bdb66807ed3    DIFFERS     confile_utils: make update_hwaddr() static
 f766251429bf2e06edcbfd0c10f2d86b1fbe416c    DIFFERS     confile: make parse_limit_value() static
 908e0ee512d185da2c16ece0b829d34a985d3b15    DIFFERS     Fix lxc.cgroup2.<controller> on cgroup2-only systems
+16824ba9ca192fb4cd315261ee0929e7d5b7d69d    DIFFERS     attach: Adds ATTR_UNUSED to fd variable assignment to avoid clang unused variable warnings.
+caab004fcffbcfbb0b49472aef4b868aee6c7c4f    DIFFERS     lxccontainer: check do_lxcapi_init_pid() for failure
+c3b7fd80d9617bf60c0c8772dfb45da68b8d2e26    FEATURE     doc: Add lxc.cgroup.relative to lxc.container.conf(5)
+e31362893b2cca5de275311939430ca3fd6b3ea6    FEATURE     doc: Add lxc.rootfs.managed to lxc.container.conf(5)
+8dca2bd3aee03129db01e5d94a3686bcd886dba9    FEATURE     doc: Add the description of apparmor profile generation to man pages
+97d8f4b77303404b873ffd113e11aa9328b6376d    FEATURE     Fix monitor pdeathsig handling
+427a80672ffa1459e68a6bcec2112b0f67754ce7    DIFFERS     attach: use tighter scope for fd variable
+b53a08535a8a7f1c8745466ae572886b3b4f5477    DIFFERS     cgroups: fix potential nullderef
+e7d7f2686a6c9a04009219cf3f79bd4748561325    DIFFERS     configure: s/LDLAGS/LDFLAGS/
+cdb2a47f9b0ffc004c6c92989fa10741481617d1    DIFFERS     seccomp: SECCOMP_RET_USER_NOTIF support
+86ce1da153fddccc5ae6c1ab86447a96e2520d93    DIFFERS     confile: add lxc.seccomp.notify.proxy
+e35b7bf81ca99e019d3957f422b15361473ea16d    FEATURE     seccomp: send default answer and try to reconnect
+8a6437599caa44264d671daf660bb0d40073000d    FEATURE     doc: add lxc.seccomp.notify.proxy
+6cc93f0ed6f45e1affa9cada2d1a7e84eb9d91c0    FEATURE     api_extensions: add seccomp_notify
+d4a7da4632329d06d7b25d36133d4b6fa8f42b7a    FEATURE     network: Adds support host side veth device static routes
+c3e3c21a10fcef31f484f7afb7807824eb4dccab    FEATURE     seccomp: cleanup
+7b766ddc3a6b5f38dcce3e7e24f74c87df97cde5    FEATURE     docs: Adds missing doc entries for seccomp related API extensions
+8f82874c8c850a2e65deed0822fe8e0c773fe213    FEATURE     network: Makes some routing functions static
+2ac0f627f5e010eadd24665d10d206f03b0a2a14    DIFFERS     seccomp: notifier fixes
+ebc1c319f6d4de710fd0eaa968625e8b3fb35eaa    FEATURE     seccomp: don't commit to an api just yet
+2a621eceddce438392be2a691abc36116defcb18    FEATURE     seccomp: remove alignment requirements
+c9f52382915b6b11086bacfeef53f2a6be7df05e    FEATURE     network: Adds IPVLAN support
+370460664ff4cac9976524c386000edd15fdcc52    FEATURE     seccomp: ensure fields are set to 0
+6509154de18b96f0e6f1eb5fb066a9d2bfff7b91    FEATURE     network: Adds layer 2 (ARP/NDP) proxy mode
+5ed06d3ad6a80a7a8efd10a9c01e90e0e7981306    FEATURE     seccomp: send process memory fd
+a2f9a6706d6363faa1fb6a091679799a1d41f374    FEATURE     network: Adds gateway device route mode
+b670016ac9e5f26cd7984a9cbfc21b8b9878feee    FEATURE     network: Adds ipvlan static routes for l2proxy mode
+18847d37dda145539a28c1dea291af03ec810163    FEATURE     seccomp: document path calculation
+006e135e225847ec29eb816c62ac6c22668de4d8    FEATURE     network: Adds custom mtu support for ipvlan interfaces
+3e2a7b083b9eb472f95ba8ed45313745f5a10f0f    FEATURE     network: Makes vlan network interfaces set mtu before upscript called
+009d6127485ff454543b333e05ef46910a5573f8    FEATURE     network: Re-works veth gateway logic
+7dd6ead90417723a3c9717b45728d701a36e9bff    FEATURE     doc: Update Japanese lxc.container.conf(5)
+c425edc6616aedb241465ae4593e7b8dc65c90c3    FEATURE     doc: Fix and improve Japanese translation
+3bef7b7b500e4750c97f3c0b2c62738a6f818011    DIFFERS     network: Adds mtu support for phys and macvlan types
+bc999107589c9246ecfc831d74855244aafc6d41    FEATURE     api: Adds the network_phys_macvlan_mtu extension
