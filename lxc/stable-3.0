@@ -188,3 +188,4 @@ b670016ac9e5f26cd7984a9cbfc21b8b9878feee    FEATURE     network: Adds ipvlan sta
 c425edc6616aedb241465ae4593e7b8dc65c90c3    FEATURE     doc: Fix and improve Japanese translation
 3bef7b7b500e4750c97f3c0b2c62738a6f818011    DIFFERS     network: Adds mtu support for phys and macvlan types
 bc999107589c9246ecfc831d74855244aafc6d41    FEATURE     api: Adds the network_phys_macvlan_mtu extension
+b280bc380c873c20e91326ea500281afcf632d4f    DIFFERS     utils: improve switch_to_ns()
