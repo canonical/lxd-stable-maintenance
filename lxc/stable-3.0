@@ -189,3 +189,14 @@ c425edc6616aedb241465ae4593e7b8dc65c90c3    FEATURE     doc: Fix and improve Jap
 3bef7b7b500e4750c97f3c0b2c62738a6f818011    DIFFERS     network: Adds mtu support for phys and macvlan types
 bc999107589c9246ecfc831d74855244aafc6d41    FEATURE     api: Adds the network_phys_macvlan_mtu extension
 b280bc380c873c20e91326ea500281afcf632d4f    DIFFERS     utils: improve switch_to_ns()
+02ca9d758e5e56cd1402ff5585bb2fde611ad192    FEATURE     seccomp: s/SCMP_ACT_USER_NOTIF/SCMP_ACT_NOTIFY/g
+da9c8317e855e756e4ea4d9061cf90252557d203    FEATURE     seccomp: s/seccomp_notif_get_fd/seccomp_notify_fd/g
+e3998402d63b7241d3d79ddedb2640c8ecc781d1    FEATURE     seccomp: s/seccomp_notif_receive/seccomp_notify_receive/g
+3c216fe27bd22b8194a8f19f2e63dc6cf2a666fe    FEATURE     seccomp: s/seccomp_notif_send_resp/seccomp_notify_respond/g
+72b101aedf6381fe7726093e3efbd232b6ca9a39    FEATURE     seccomp: s/seccomp_notif_id_valid/seccomp_notify_id_valid/g
+1f51fc702b7bb87d5d63a88f16a5c0a7e2da178f    FEATURE     seccomp: s/seccomp_notif_alloc/seccomp_notify_alloc/g
+996562064342caa5e980f00aa64981ebb2bc0144    FEATURE     seccomp: /sseccomp_notif_free/seccomp_notify_free/g
+d7d2d2d9a5077250b5d1f0b36d4764c751118503    FEATURE     seccomp: s/HAVE_DECL_SECCOMP_NOTIF_GET_FD/HAVE_DECL_SECCOMP_NOTIFY_FD/g
+2e5bcac329b6bc4f9881abb3834b2cef88214d03    FEATURE     seccomp: s/SCMP_FLTATR_NEW_LISTENER/SECCOMP_FILTER_FLAG_NEW_LISTENER/g
+fe02f63c0824b2ab104b31d978ccbf54e7578f9a    FEATURE     seccomp: add ifdefine for SECCOMP_FILTER_FLAG_NEW_LISTENER
+f73adb35fbbd164c2bfc975dc4a8b7e8292f4e37    FEATURE     seccomp: do not set SECCOMP_FILTER_FLAG_NEW_LISTENER
