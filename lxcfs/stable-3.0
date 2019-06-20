@@ -22,3 +22,4 @@ b077527b51904c6fa68da3a8998bdb93371d6808    FEATURE     calc_hash(): do not appl
 36817cdd6e32ec8865ad1520fa8b407d1b82d39e    FEATURE     sys dirs do not need to implement 'read' method
 178c0334ac3a77d25972848ed19d2b9deb26fcab    FEATURE     remove unused function
 2a1a5c189d20e24b7c30abaec760d844194e02ef    FEATURE     Revert "Merge pull request #272 from brauner/2019-02-19/compiler_based_housekeeping"
+24ee58a5c782561ed6f2118c63be4b7b8c8b23a4    FEATURE     mount hook: mount /sys/devices/system/cpu/online
