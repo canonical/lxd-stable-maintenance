@@ -532,3 +532,318 @@ eab4f0aafdc812fe5fecc91bca0f910eb1555cae    DIFFERS     nsexec: make cmdline par
 6cf20b3149c419a5dd842ce3f2c3e1e349771ec9    DIFFERS     lxd/storage/lvm: Call wipesignatures
 474e8c01aa3c89d5b42c2383af236303ce15bdd2    DIFFERS     lxc: Update for per-remote candid domain/cookies
 70cea30d57c4ebfafd90ad0872c04f5d2824a1bc    DIFFERS     lxd/storage/ceph: Rework df handling
+31546ecfb806a79d5b9d318d7a218b0f47e1735e    IRRELEVANT  lxd: Fix duplicate scheduled snapshots
+e7904f0862ce230988b02ef65261f0c3037f348e    IRRELEVANT  lxd: Fix failing backup import
+d77a65d0f2be7aaf11a16d33f2a2331db4bbc119    FEATURE     shared/api: Add snapshot expiry configuration on create
+e9ec1f1ee5d890ad9de2e722db31674067e1d0ae    FEATURE     api: Add snapshot_expiry_creation API extension
+95285d624ab5b8aeb5289ac2afc855f4517be20f    FEATURE     client: Add snapshot expiry configuration on create
+f7409cb458363d93cf3faec68b858f809bd2d5a6    FEATURE     lxd: Add snapshot expiry configuration on create
+291e83af3cc7f65e57326703226c24b14935cac3    FEATURE     lxc: Add no-expiry snapshot flag
+8c4dfdf7b66b4da38e681d04e04dca01c87f81e6    FEATURE     tests: Add snapshot expiry configuration on create
+899716314cb93a71415370e1f15f6ccdfddcf6c8    IRRELEVANT  i18n: Update translation templates
+761a3c2ad0e7abf7ef74ec5d2e5f0f928f56d567    IRRELEVANT  i18n: Update translation templates
+b7c75ab38b52663138484792cf11916598db3e5d    IRRELEVANT  Do not iterate all available nodes across the cluster for image synchronization.
+5b295829366662679dac03ddd9f672427fd40e83    IRRELEVANT  Add a task that auto synchronize images across the cluster and run it on the background.
+68eea39e9c8847c5ce87144f63ec19c93c666a75    IRRELEVANT  proxy: Add locking around UDP timer
+ccb9863269a1b69631d44caa8bfcd168a31081f2    IRRELEVANT  lxd: Remove backup directory after creating tarball
+e99d77697556977ced03bd363da3d704bf5b7549    IRRELEVANT  Import all images from the leader node to the new node after it's joined.
+f87f29b1ddc743e7100ef8e904b125e3d14b3a21    IRRELEVANT  Update the test case to cover the image sync scenario for joined node.
+a9ed46a903322b7c8ba08565660bb8ae3f8c5072    IRRELEVANT  i18n: Update translation template
+1336407af2d68fee772706353127a9e73297d898    IRRELEVANT  When starting up, use the cluster.https_address as key for updating the nodes table
+8e7fe4db2a29ecf03e560eca4db2a399c019ca29    IRRELEVANT  Update translations
+9f12b5598a9a764d1299e76f35653623e3486205    IRRELEVANT  i18n: Update translation templates
+50d0dff2131b921854884fa03f451b027d69e4fd    IRRELEVANT  lxd/profiles: Fix project update when clustered
+41b921cb3bc5ea11705ad2051bfb68159fb25d3b    IRRELEVANT  tests: avoid needless wait times during image synchronization when clustering.
+2432c4dcc39fce271c281c0a3747a72c76b982b1    IRRELEVANT  Only show the image auto-sync log when clustering.
+820b9bb7c656da5f44c55c5af861794c52f8f510    IRRELEVANT  Support to fetch a list of project for an image.
+2245629811c16ce8e2845e33ac75dd7b86153028    IRRELEVANT  Associate image with the right project on the joined node.
+865d4373387e3149c41c56b0738546c383b101a6    IRRELEVANT  lxd/daemon: Move autoSyncImagesTask to clusterTasks
+f39346b80b53bf0ec43f74925c5dfeccdddb8d68    IRRELEVANT  Update translations from weblate
+51007dad3f9f978e0692ec5439757606d478828b    FEATURE     Release LXD 3.11
+42443d43b943c142c6e72ca617aae3e567bb28e8    IRRELEVANT  i18n: Update translation templates
+a4b41c50a420f18a772d6f7dfd13fefe6e5fcd1f    FEATURE     api: Add network_leases_location extension
+e6ebb8a7639a4a9f6831209a2c9cfcae66271039    FEATURE     lxd/networks: Aggregate leases within cluster
+d4d67c8d8c7218b13220df2dba65f6c876049222    FEATURE     lxc/network: Show Location column in list-leases
+aa5b245cd28c49b960e8ab50659f48a3d29fa364    IRRELEVANT  i18n: Update translation templates
+3d75cf6a971c8f9107c43a5840cb46f8e8674bb9    FEATURE     lxc/info: Improve resources rendering
+18a673889612eeb8080b27067c700d3eb7015ec2    IRRELEVANT  i18n: Update translation templates
+da4a4f7239de54e6554b15fd0dd1bf403871e837    IRRELEVANT  tests: Update resources test
+299208700330c0a25aab0869b827365c22f5d335    FEATURE     api: Add resources_socket API extension
+9acaf51b128b11bf63a81b0cbd52c4c2df8e792d    FEATURE     lxd/resources: Export Socket number
+0bb9925f47cb3a645ea3ec6aec45abcf6101809b    FEATURE     lxc/info: Use socket information
+62508bcd4e66baa23a9c07969986f70ce9216ce9    FEATURE     lxd/devices: Track vendor/product names and driver
+49dd542bf576c77412cf891b2868ccf9494afd2d    FEATURE     api: Add resources_gpu API extension
+8c21afa8571078e47fa1fcd99b56d107f7b6f0f5    FEATURE     lxd/resources: Export GPU information
+f4f7cc13b8bdaf61c2c319c0dfb08df7fa3c494a    FEATURE     lxc/info: Add GPU to resources
+aaa9419ddc564d2899ee45d5627745d4e9b02aa2    IRRELEVANT  i18n: Update translation templates
+b7c6fe0df19a8d60966aec2e20a4f4fd02b0cca3    IRRELEVANT  doc: Fix typo in api-extensions.md
+fdccdae2ac5614ed38ea5dd18fca306225e9b6bf    IRRELEVANT  Update documentation for snapshots.pattern
+9735e6f8a481d02f7a77201554235993147500d1    FEATURE     lxd: Add more GPU info
+fe2d2908f85b4c72af0f7d3e45fa836039da9e10    FEATURE     lxc/info: Add more GPU details
+94ac1c47e9093a3e13b5fd07977ac1fcdb6f50d0    IRRELEVANT  i18n: Update translation templates
+a6885e4975427d5c81b770bfaea2a8c4adad199a    IRRELEVANT  i18n: Update translation templates
+0a410bf14b20cb6223182dd168e9e83d222e3b49    FEATURE     api: Add resources_numa API extension
+c7aba39e480fab61fcf223fb4ae3bfcf66de2e23    FEATURE     lxd: Export NUMA node for CPU & GPU
+3d27325cd4efb14b46a0fc1f62a2d6b8290539bc    FEATURE     lxc/info: Show NUMA information
+9ec5e733f136c0d45afc446e3fcd35f41fbb65b8    IRRELEVANT  i18n: Update translation templates
+cda193ac5b3e814718f7bb61e2cf4730d05f5da0    IRRELEVANT  lxd/backups: Cleanup on failure
+1905b9fbe29c8263549817640b55374001a9922b    FEATURE     api: Add kernel_features extension
+49d680b01ff84089eae469c8d167d56a655d3a54    FEATURE     lxd: Export kernel features
+dab536190322adaeb10102fc5fd0e2aec23562bf    IRRELEVANT  lxd/backups: Attempt to delete storage on failure
+1f9a064daeb0a318610cafcc7ba4cd436607f2ae    FEATURE     lxd: Detect shiftfs availability
+c2d69e3762bedd76deadc46507a86193c96c7a02    FEATURE     lxd/containers: Add shiftfs support
+bd48d0d73a5b2a77074e3875042999105da6d292    IRRELEVANT  tests: Make security tests work with shiftfs
+f93950ddfb2874ad3a8b11ee7c6dd9236b180910    FEATURE     api: Add event_location API extension
+c19d96d470bc0061ad7dd489d6f3d68894777a04    FEATURE     lxd/events: Expose Location of events
+f128521b51249e75cd4750a251ac248d1bd50443    IRRELEVANT  Update translations from weblate
+f51c28a3744372324480a92076dcaebf2d71ccac    FEATURE     Release LXD 3.12
+1a12314668bafd165ab50d9b8eca3d83ac9562b3    IRRELEVANT  tests: Handle built-in shiftfs
+9285e1ab6fc070c78f5289478e203c07f4a10dc4    DIFFERS     nsexec: cleanup macros do_setns
+75aed6e45d09a33c0d5131fff290a81ae7c630b5    DIFFERS     checkfeature: cleanup macros netns_set_nsid
+e7d52d3cccda6edb20f515490012fae53c79c937    DIFFERS     checkfeature: cleanup macros is_netnsid_aware
+f74710c79bf5c9f914439b65ad04a736f3fe54c3    DIFFERS     forkmount: cleanup macros
+cc95932b9799edc455cb2aa042edc4faa35abc74    IRRELEVANT  forkuevent: cleanup macros
+cec533d93db33aa158f1d67b7416f006041dda25    IRRELEVANT  Use proper the function names for the query of the image nodes.
+2f0b3828b07eef2091693f4792714bb56f9a6c61    IRRELEVANT  Fetch the images fingerprints of the current online node.
+0a1d2ae8a15cda8532deb6a59e24a9604d030c52    DIFFERS     lxc: Improve error handling in execIfAliases
+0a0c2aa42d7fb5d7a5b17195675e030e993ea0f5    DIFFERS     misc(rest-api.md): formatting
+345847ab5eedb6fe306521f18eafad2460112ee3    DIFFERS     lxd/backup: Re-order checks for backup.yaml
+761ec910d55901ac4516d7f50ae90f95e8879207    DIFFERS     lxc/config: Add targeting to 'lxc config'
+ea78743a3060a0b0d067056b1423b0b7ebbaba31    IRRELEVANT  lxc/network: Add targeting to 'lxc network info'
+36536b57d1f457456ab0ae17d7d2bb2aa291634c    IRRELEVANT  lxd/networks: Allow targeting for state
+ff86eb555832430ba2c338c56cadb683ea42fd74    DIFFERS     lxd/containers: Export container location
+ce085570005d161b075d8823373b568be6e822f8    DIFFERS     lxd/migration: Fix handling of missing profiles
+81132f8bc2cccfc612c4c93ef5e5cdc6a20f85a5    DIFFERS     lxd/storage/lvm: Pass nouuid for xfs backups
+3447e0b9cf8628203844248b248276205a655a60    DIFFERS     lxd/cluster: Initialize candid on join
+4d6ee05385f6789d1376c8cdc42521911e5af7e1    IRRELEVANT  forkproxy: fix epoll
+e0e4fdc4b7d1b1c37de16e3fe02584867c02ded6    IRRELEVANT  lxd/storage/ceph: Only freeze if needed
+e13536b05107fc354006f4bc2608d77c3c62586b    DIFFERS     lxd/storage/ceph: Always unmap after use
+abd3ab5c2abda28cdc1965b23321232a692973d8    DIFFERS     lxd: Add username/fingerprint to request context
+083722f5b52b9f9df932557d981997c0b114ce19    DIFFERS     lxd: Cleanup authentication code
+0da12addab789267082c6279e0624def452fd717    DIFFERS     lxd/storage: Rename shiftRootfs to initialShiftRootfs
+a383b8aaa8ba773eee73d3c775fd785919a69894    DIFFERS     lxd/storage: Remove setUnprivUserACL
+67df1839e482e854fe22b89badf2dbf8f24d0e07    DIFFERS     lxd: Drop initialShiftRootfs and always shift on start
+19a68fab6e7d83ddd186ac3faa31625566320c5e    DIFFERS     lxc/launch: Show start progress
+45a853a05b0165235c7c77683bbb6b98fa947be1    DIFFERS     lxd: Port to new idmap functions
+f7a5e23f978661ba10dae6f6d575cfd22b1b8b9c    DIFFERS     doc: Introduce volatile.idmap.current
+e9f79646430c8513ed01b7efdcd5f0cfdce44f50    DIFFERS     api: Add id_map_current API extension
+c5378b802b7fce4fbf28bf6d6970ffe0b35c753f    DIFFERS     lxd/containers: Cleanup shifting
+cdae442545a808b2e91ba838e6cb5fcb8301dcd1    DIFFERS     lxd/storage/zfs: Run rename in clean mntns
+db857ea0b04cbe75ef83b0779037b5e34c645f8c    DIFFERS     lxd/cluster: Limit log message forwarding
+c4c6dc5bc6cde5c138f9dc9a8699aeadddb9923c    DIFFERS     lxd/images: Don't keep an in-memory simplestreams cache
+a9b8da5a7162a616d7fa4f64a2a8081699604d85    IRRELEVANT  lxd/containers: Fix crash on refresh of non-existing
+4f249dd80a1a61d1d9e27292c3599dd950a02895    IRRELEVANT  storage/lvm: Fix LV naming
+3e723f8a5383b50bb18522b4f2b50b78340a314a    DIFFERS     patches: Fix names of pool volume LVs
+f8a09c30f40614a218e4757f9f7c19fef275f4bc    IRRELEVANT  tests: Remove dead code
+648370b25c0c81f65cd18cd98f8ccc294ca2ccfe    IRRELEVANT  lxc: Use shared.IsSnapshot
+2f0f328c1d97113666965bf645ea7ef42e3bc4d1    IRRELEVANT  storage: Add helper function to get volume snapshots
+152bd6a2c9c83856b89fb479c09e123a8583684e    IRRELEVANT  storage/ceph: Fix volume copy with snapshots
+c4de67332c1b01d17ae2883d024f64837aa34c8c    IRRELEVANT  storage/lvm: Fix volume copy with snapshots
+2a7a4b587b2907a5506d58fe6e2231ba7c0eda93    IRRELEVANT  storage/btrfs: Fix volume copy with snapshots
+9b3130dde1127229b3c7cd616211958557eea18d    IRRELEVANT  storage/dir: Fix volume copy with snapshots
+0db7ff91e2b96f933858d94da06629353fbb5f52    IRRELEVANT  storage/zfs: Fix volume copy with snapshots
+0679748f4a0408dec705bc4b51a7360137a18ff5    IRRELEVANT  test: Add volume copy tests
+e0786d243c73f5d2423584b7f0a707f2b6002dc3    IRRELEVANT  shared: Add storage_api_remote_volume_snapshots extension
+23e04ecaa858ee7a7f328337c5a0d3c7f66ed605    IRRELEVANT  doc: Add storage_api_remote_volume_snapshots
+8a8dde01b189ee342f2285feef23e3c9d7f85baa    IRRELEVANT  lxd: Fix volume migration with snapshots
+e77033904076a1fa891f7619ece5b0dc99289fec    IRRELEVANT  tests: Extend migration tests
+3b616ba52169a9dec20025f910db25ce4cbe1859    IRRELEVANT  lxd/storage: Don't hardcode default project
+d3625102a05ef8670ac232ceef74ea03d1d681f6    FEATURE     lxd/quota: Add new quota package
+640de3fd5781baefb0f3f7ff82fb2aef780ced63    FEATURE     lxd/storage/dir: Add quota support
+574ca8b060489acade72c03bd9a07164ac459236    IRRELEVANT  doc: Update storage documentation
+44c7d5d8094483f83d3055332e9688ad00ee5a88    IRRELEVANT  lxd/storage/quota: Build on older systems
+382fbd578fbabf6371267e22426217ea22363c29    FEATURE     lxd/network: Make NAT source address configurable
+3390c737e5386bd82d79ac72ea1dc5231063c4ca    FEATURE     api: Add network_nat_address extension
+19acff70ab4e5d9c47ed9048827cf1b36d320a6f    FEATURE     scripts: Update bash completion for nat source address
+013562e5488989fe30d45afef447291217438f02    IRRELEVANT  doc: Updates docs for SNAT addresses.
+2566b869d648de04efbdfc9efa10a47e4d14ac15    IRRELEVANT  forkproxy: don't wrap string literal
+61da4f5957bf1fbf89905920fa1bc8c7aedccdd3    IRRELEVANT  lxd/db/profiles: Fix cross-project updates
+77c90bb4ee68adf19af318790b441bef1c9f280e    IRRELEVANT  lxd/profiles: Optimize container updates
+20f194700b0032c4dda94d5f2e58f05dff63b77d    IRRELEVANT  api: Fix network_nat_address extension
+3a61c4c32d1217f6a351533f3d2e6bd3cc89fa0b    IRRELEVANT  lxd: Adds networkValidNetworkV6 helper function
+3613d71388376775887990f2d4180e9a8f97cadb    FEATURE     lxd/container: Adds support for nic device host routes
+16bad6b6484da87acf9cada18be161f6d1f9007c    FEATURE     scripts/bash: Adds bash completion for profile/container device get, set, unset modes
+21640467833f78d1735ae7ee9fbf87b07fce09ff    FEATURE     doc: API extension for ipv4.routes and ipv6.routes on nic
+bf99f41cbf0f1884175ce4341e46dd02390d7fca    FEATURE     doc: Adds container nic ipv4.routes and ipv6.routes properties to doc
+e954668a1741e2933ec51eb3af522266a51e8849    FEATURE     test: Adds tests for container nic devices
+0f8bb153682bf63b70a2cf5c63167eaf4e2ba813    IRRELEVANT  lxd/api: Sort API commands list
+1cba1ed4566a22ff389e55053618ce0e4f96cf4c    FEATURE     lxd/kernel: Detect seccomp user notification
+494038f96e6c9f8a63ff8e1458364b01fa7db4f4    IRRELEVANT  lxd/api: Rename apiProject* to project*
+a8225a11d0e8deffcc81f8345f918c158fef105b    IRRELEVANT  lxd/project: Port to APIEndpoint
+26409167ba9e7447928c887160378faf82969100    FEATURE     lxd/network: Filter leases by project
+9366106308b18ab8ab3a239017c29b22387094d8    IRRELEVANT  lxd/images: Fix project handling on copy
+b803e5ebd740399b5aa210b1e523d1c13c7a9cf6    FEATURE     shared/api: Add RBAC API extension
+dd5bf941850d1b535744adf9518964d85428be4d    FEATURE     doc: Add RBAC documentation
+eb2b72e91fd5e4f922578343342f90bd7a628779    FEATURE     lxd: Add RBAC server handling
+f159f31594d66060b495de62d4bcd2782ecefa63    IRRELEVANT  lxd/images: Replicate images to the right project
+0591dec40cae0bc967951c20a8ccd77d79d833ad    FEATURE     lxd: Add initial RBAC permission checks
+f0b21676b8bd4d9d1d22ececac03e28360419e3a    FEATURE     api: Add cluster_internal_copy API extension
+71ec16d85ffb5084d765f6540c749c320dbd4716    FEATURE     lxd/containers: Add support for internal cluster copy
+65c7815a6328d46cc3da4d7a4fc76df0501d957b    IRRELEVANT  lxc/copy: Don't strip volatile keys on refresh
+687cb53c88a78f1d2f3e6f7068d65e9cd68f8c46    IRRELEVANT  lxd/containers: Fix profile snapshot settings
+0e32aa23f9cd7349cb6c6fd04ce87970bff6b553    IRRELEVANT  lxd/storage/quota: Build on older systems See #5659
+5bd62d4608b63d94cd9d16aca47ce81efca407ec    IRRELEVANT  lxd/storage/quota: guard quota defs for compiling See #5659
+d9dcac2046a5f09139292d246128ab9d498663fd    IRRELEVANT  Revert "lxd/storage/quota: Build on older systems"
+2ead04d9a8044f7c27395c2c7106db7126e55cb0    IRRELEVANT  Revert "Revert "lxd/storage/quota: Build on older systems""
+9e49f2e144ad0a3c3ae224670ad52cf65af410b2    FEATURE     lxd/seccomp: Minimal seccomp server
+fe2923fc0a8c82a20a22935fe53614a14b488e74    FEATURE     seccomp: add support for SECCOMP_RET_NOTIF_USER
+3bc7e7df1df9f7acf211c1e829f300155cb05b88    FEATURE     api: add seccomp_notify extension
+f7db4bf41dfa03ee00a20407267d11cf63d508d7    IRRELEVANT  lxd/containers: Don't fail on old libseccomp
+0bb4473932b9371ad08c6dec8914be2e48e05e30    IRRELEVANT  lxd/seccomp: Really handle old libseccomp
+1be2f80afeed0ccee761f795d3c70c98d7f828a0    IRRELEVANT  lxd/container: Early check for running container refresh
+fec9f31b8da8f8ce3310c251daf591e24651e914    FEATURE     lxd/api: Add lxc_features to /1.0
+1336dc245ff430357a74eb551737de739b4dd889    FEATURE     api: Add lxc_features extension
+828fc6d2c5ca96c0426f6b6726efdb04fa190aee    IRRELEVANT  lxd: Port from HasApiExtension to LXCFeatures
+f8062b5d7303f6943cd5447f11b70e994c18d171    IRRELEVANT  network: Adds multiple IP validation functions
+801164a9dab6d7765c74152b4d100b323d3b3ccd    FEATURE     doc: IPVLAN docs
+87ebea450415de15c880ce97f6ad298f0549b28e    FEATURE     api: IPVLAN support
+a3c277fa11b93466060dbacea9a8f66d4b7250e8    FEATURE     network: IPVLAN support
+88513e7bc71c235fa1b920fb2c0c44ad85334868    IRRELEVANT  Update translations from weblate
+566ee206e3bdb88bfdb7cd83e1325558a1fea8ad    FEATURE     Release LXD 3.13
+cd02ec2f6caddba3e0320153f8488cef68961417    IRRELEVANT  tests: Make proxy tests work with shiftfs
+c39609039383748dc5db748cbdfaefd9850cf258    DIFFERS     tests: Fix race condition in proxy test
+d0bb47073771db0ae5521cbb4630cdc273626bf0    IRRELEVANT  lxd/storage: Make use of shared.IsSnapshot
+5f549f591ad83441dee6215fe6e06e31548f5082    IRRELEVANT  storage: Fix copying and moving volume snapshots
+97d98151a7e1322c177bb4bd17c67b7492779746    DIFFERS     lxd/storage/ceph: Don't mix stderr with json
+b7b68cf350698246f019ed302e39c7a3b97962f1    DIFFERS     lxd: Use idmap.Equals
+252228d2007b7cb71effec420a588981abdd49d3    DIFFERS     lxd/proxy: Fix goroutine leak
+6b00e2a8696bbb3611a1fb2190a86c311533e49a    DIFFERS     forkproxy: Retry epoll on EINTR
+acefbaa3a2766f36795c456b10430e23e7fed01f    DIFFERS     lxd/container: Moves network limits to be run as a network up hook rather than container start hook
+f331346b0b6673a20679f016c04ca37813a7c25d    DIFFERS     forkproxy: make helpers static
+906b72507c2ae2622c91ad1ac04379e5a8775b4f    IRRELEVANT  forkproxy: only attach to mntns for unix sockets
+44f9679e08025435a7b5590bc2409ae43000c650    DIFFERS     lxd: Rename parseAddr to proxyParseAddr
+4298974c25844be131211447cefd1e8c279aebb1    IRRELEVANT  lxd/proxy: Validate the addresses
+df4b6752875ab8e0c0e645d53b28b935aa93eded    IRRELEVANT  forkproxy: handle mnts for abstract unix sockets
+76a004266a4b3d962ae37245f48747edd4f1a978    DIFFERS     lxd/api: Rename serverResources to api10Resources
+ca022cbf401dd46fcec9320a99b89ef31fc71b0d    DIFFERS     lxd/api: Rename snapshotHandler to containerSnapshotHandler
+573e419cac25c5c96e19d9e02434b9c08a36eb91    DIFFERS     lxd/api: Rename operation functions for consistency
+4b8e15530a741c4a1881cb8701fc862482de1bd4    DIFFERS     lxd/migration: Fix feature negotiation
+67cabd5e8d551b0899a59ce5a7f01ef6f6b0c53e    DIFFERS     lxd/profile: Port to APIEndpoint
+109ff758492a3a0c7463216b3d41e5bb6c629404    DIFFERS     lxd/daemon: Port to APIEndpoint
+9fa2d7dba6e17e39ae7e04a54137424f43d3aaa6    DIFFERS     lxd/api: Rename alias* commands to imageAlias*
+11fda24b1e308baec75df8139547fa6ca2781e17    DIFFERS     lxd/api: Rename certificateFingerprint* to certficate*
+5e563a19db88a80f970e8dbfc128b602af18b046    DIFFERS     lxd/api: Replace Command with APIEndpoint
+cb36734282a1d53ecf2d5d1d69e0a957855b1bae    DIFFERS     lxd/storage: Port to APIEndpoint
+9412fcfb816fa9bed9a6abffd17feaca9c380609    DIFFERS     lxd/network: Port to APIEndpoint
+a083c53b81b4c9bb60d0a7a609886bed42ed1123    DIFFERS     lxd/container: Port to APIEndpoint
+ff1ad5c1108e3d298fdff65c7e4d2494330b35eb    DIFFERS     lxd/resource: Port to APIEndpoint
+437ad517e6dc4b09bb70f6d428562d458d5cb06a    IRRELEVANT  lxd/network: Fix DNS records for projects
+0e246fc917100a0b71bf4fe0f82928a168f9c2b5    DIFFERS     lxd/storage/btrfs: Don't make ro snapshots when unpriv
+af007e8edec1f17fd8a9efc294d5e7ced65f92b4    IRRELEVANT  forkproxy: correctly handle unix: path rewriting with empty bind=
+c1f7f15ee30b198fffa6d44f6370d334746119b2    IRRELEVANT  test: ipvlan test activates ipv4 forwarding
+bdc6452b5428066c8cb26fd14f40e874084c589f    IRRELEVANT  container/lxc: Moves IPVLAN init code into own function
+522dd1c2dcd54b7ea162e64074afcb902c29196b    IRRELEVANT  container/lxc: Fixes ipvlan support check
+503235a98c85ae8080331d56f094b6f8c6e52a4a    IRRELEVANT  container_backup: Fixes crash when renaming non-existent backup
+65fd26605997c0eaadda91a6bd3a29d585269f46    IRRELEVANT  test: Adds tests for container backup renames
+2f2c98db699df2b74f6880c402ec74a8c1a6a4c8    IRRELEVANT  lxd/container_lxc: Adds IPVLAN L3S mode l2proxy sysctl checks
+71fe696be005e2e96363f46129ace145d60a7911    IRRELEVANT  lxc/container: Fixes minute rollover issue in scheduled snapshots
+8b93014bc74f90b5088589a45a391baa2f8f7b5b    IRRELEVANT  lxd/storage/zfs: Fix snapshot restore on project
+eb3df6cdc2fb7faa4eae392cc6d19238ea768b36    IRRELEVANT  doc/containers: Adds IPVLAN required sysctls to docs
+1d8ce974d3da18ac1c2a04eebd5fe7f0ac4cbc7e    FEATURE     scripts: Add script to completely reset LXD
+0bc5e35850dc4b485c3ecae3321c927894e59095    DIFFERS     lxd/storage/ceph: Fix UUID re-generation
+a37a67dd17e214200dfcc4f7b6dc798e5afcf04f    DIFFERS     lxd/storage/ceph: Fix snapshot of running containers
+014302744d665c802690f33d10600a10da2a4865    DIFFERS     lxd/containers: Speed up simple snapshot list
+3e997a4a55349efd6a25cbaff92e3988d89696fa    IRRELEVANT  lxd/db: Parent filter for ContainerList
+beecf9619512b84b5ba3581f913ca5435ba4e692    IRRELEVANT  lxd/db: Fix substr handling for containers
+ee0af72069362b4e42b0625f4bf8cd317d07a5a8    IRRELEVANT  lxd/containers: Optimize snapshot retrieval
+22366b9bcbf124b6f36bab7055e05efc47f2a8e8    IRRELEVANT  lxd/containers: Fix bad operation type
+d6c693be5a5ad0baae947c0590f40e4f1312c32b    DIFFERS     lxd/storage/ceph: Only rewrite UUID once
+0b9966c9d50863dd48bfde72026c145dcc32e2b6    DIFFERS     lxd/sys: Cleanup State struct
+11ac89e4c1d99b561216b9c41766b5a18e08d042    DIFFERS     shared: Move network cgo to shared/netutils
+da5218430a48b5d8ca5763de7208cb6a8ceb1c8b    DIFFERS     shared/netutils: Move send/recv fd functions
+4c213df5c7df9383aa1dfcdf1d5431f4d486b880    DIFFERS     test: Added more tests for container nics
+a9fb5043cf6c157ed1f89618fed7af277dccae78    DIFFERS     lxd/containers: Be consistent with timestamps
+12d73ede9e4f51a977e7720dfe0c0504de8a55e3    DIFFERS     lxd/db: Introduce ContainerConfigUpdate
+e5096c84a34fa03882c1c5fac2185afb36422005    DIFFERS     lxd/containers: Replace ConfigKeySet with VolatileSet
+5067c06ac4b091c15b1bc516c7223cba67e83f51    DIFFERS     lxc/move: Start container when appropriate
+3b008075e71b4cb29f091ecd32b14a537012bd3b    DIFFERS     doc: Clarify API security and options to restrict
+8f8c2b7d7bbe98b9861866ff1e47dada18e91516    DIFFERS     doc: Add section on container security
+fa25c7b4731f626685b8b1954dbf41408fc7061e    DIFFERS     doc: s/HTTPs/HTTPS/g
+70780f22b1be8372bbf7922b48f8af9a7d625604    IRRELEVANT  doc: Fix typo in networks.md
+61b682c1d3472c1e5981f1273e0fb974e07ad0ca    IRRELEVANT  doc: Removes trailing whitespace
+d4e20c248f3263027bf6d4822596c1e328092739    DIFFERS     doc: Re-structures container nic docs into each nic type
+1489db5f80da5fd1b4f49b273c2ffcf0ddab1b53    DIFFERS     test: Re-works nic p2p and bridged tests to check for static routes working
+3bd063299f8dcea2f09a6cdd759b2f3da8032410    DIFFERS     lxd/container: Adds static routes for bridged veth devices
+e3ff176bc99a5c326740af263986820a0bc55295    IRRELEVANT  test: Adds further p2p nic tests for various scenarios
+96f32106de0f126f6cc8a77522ed5d51b0c8ba1b    DIFFERS     container/lxc: Runs network up hook for all p2p and bridged nics
+eb7c7e26370dd25c9a33597a32fd38fdd495a536    DIFFERS     container/lxc: Records host_name from LXC on p2p/bridged nic start
+7ab1162fb8cfef3a7d3241696ee0f806f20ba656    DIFFERS     lxc/container: Removes unused getHostInterface()
+2e7588f070ce18b046f5b0ddfddf742485f6108b    DIFFERS     container/lxc: Removes volatile host_name enrichment from fillNetworkDevice()
+dd4a2dda6b841e2c8fc54527692c19413139cf4c    IRRELEVANT  lxd/db: Sort container snapshots by creation date
+755d602256a6a4c2634c4624d9adb091930f299c    DIFFERS     lxd/containers: Fix bad error
+9eb14d0c2393d3a3c8bd1bdd6818b26fae256ecd    DIFFERS     lxd: Satisfy static analysis
+5ea205573d0c261db614e9f908fc2585185326a6    IRRELEVANT  lxc-to-lxd: Transition to golang.org/x/sys
+4ef925058ecfb79751d9f035145db5330e26ed08    DIFFERS     lxc: Transition to golang.org/x/sys
+5e3c982ef196317252973c38297c790916e4e2cb    DIFFERS     lxd: Transition to golang.org/x/sys
+6711de8f212f20f666fd18efc96975483797079d    DIFFERS     lxd/storage/btrfs: Delete any orphaned *.ro snapshots See #5763 During a publish, a *.ro subvolume snapshot copy is made whilst the original snapshot is set read-write. If lxd is killed before publish finishes, the *.ro copy can be left orphaned, and should be deleted when the associated snapshot is deleted.
+f1793c66fa0091216665a09106c8dd624f42a556    IRRELEVANT  zfs: Handle projects correctly
+7ac928727834660356135fb40ab97fcfcca722dd    IRRELEVANT  networks: Forwards fan RDNS zone to forkdns for cluster RDNS resolution
+22a8dfb8b321b941d6f1302fc96b7807c64585f1    IRRELEVANT  networks: Removes __internal dnsmasq domain
+0b0879fa31a29f24b09a0516d121dd0e2f3b2782    IRRELEVANT  networks: Removes own address from addresses passed to forkdns
+bf8c459b772f3b7ab4f105db4662eb5867560c6b    IRRELEVANT  dnsutil: Adds reverse dns utils from coredns dnsutil package
+e788e90e16ef357b8d052af6f93d092d68a9fa73    IRRELEVANT  forkdns: Answers PTR and A requests from leases file
+d00107297cdea0ed30803c70b446255441c68eb8    DIFFERS     idmap: shift ro btrfs subvolumes
+3991a3d8caf8febeb809e5d14b6f3386fa9c9c0c    DIFFERS     Drop unless call to createContainerMountpoint
+9952a2445d393e881795ded2583a7645725bfdaa    IRRELEVANT  networks: DNS clustered mode is correctly detected during LXD init
+d492abb2bdef61889357db201a6bc1cbb4824ca4    IRRELEVANT  main_forkdns: Adds constants for forkdns servers path and file
+240fb2a7f5a692fbee2feb21c7d9628ce59a5293    IRRELEVANT  networks: Creates forkdns.servers directory and empty config file
+4ee09214ebf31c070f4df5cabcaae9faf144f832    IRRELEVANT  networks_utils: Adds forkdns servers file refresh functions
+db5d40181133081d52c7e56d5974981f655ba2de    IRRELEVANT  main_forkdns: Updates forkdns to live reload from config files
+843bdb44c51a3635c106e4292c30f0fdba6f1492    IRRELEVANT  networks: Adds refreshForkdnsServerAddresses function
+dca878659ac8b003b16fa55cf8d37d2b4231c864    IRRELEVANT  networks: Simplifies spawnForkDNS to not get cluster server list
+164f8c931432a0bfef02e072ec09aa1bd60c4025    IRRELEVANT  networks_utils: Adds networkUpdateForkdnsServersTask function
+c8f98320526513f411a75d00e6904c651fe7b50f    IRRELEVANT  daemon: Adds forkdns server list refresh task to cluster tasks
+bd17b8ca0bed61ec3d2933369bbf9acce24439b8    IRRELEVANT  test: Adds DNS clustering tests
+de61d4f87bff91036b5c3a3fb649e76c3cde760e    IRRELEVANT  doc: IPVLAN doc tweaks for gateway and DNS nameservers
+29ae3445f064de895be9c1b9355d12416577e514    IRRELEVANT  main_forkdns: Ensures forkdns remains running when LXD exits
+fa9b06b9af67956188fc07cb631393648879b4f2    IRRELEVANT  test: Updates forkdns tests to work with double fork
+1137608321c43adaba14a573337be4942e20c443    IRRELEVANT  forkdns: implement logging
+a424fbfe3ac51c727ab6e1b7488fe15003d9abc1    IRRELEVANT  main_forkdns: Restores usage output text when running with no arguments
+5d374966e4fa28a5abd0bc6bfee5bbf73121117a    IRRELEVANT  main_forkdns: Removes unused includes
+33be42ff31d80f0a2cfd58bac69c55ca53f0a480    IRRELEVANT  lxd/seccomp: Allow overlayfs whiteout
+6813afb8bd2d5ab005017f536c93b9b95ab931a0    IRRELEVANT  lxd/seccomp: Fix building on older kernels
+ce33ba525789bf531ab3aee9cf789b8e9bdf2510    IRRELEVANT  seccomp: handle mknodat
+9da57583a972b6a7509fda4dcd817c47a8b873a2    IRRELEVANT  seccomp: filter based on arguments
+0448ceeffd9740be14a354573986b918e8ce6e65    IRRELEVANT  seccomp: fix missing ";"
+8fe6516139e75be1b333679d085f798307ca17a2    DIFFERS     container: Adds OnStopNS() function that is run by LXC's stop hook feature
+02766be5721533284ee9ca12b8e6cfdace27eeae    IRRELEVANT  api: Exposes LXC network_phys_macvlan_mtu feature
+9ad3f833f84511f79b004484d115aeca39442a01    DIFFERS     networks/utils: Adds networkGetDevMTU function
+af8b86cc5338b8c93b8a174abbfc37d078202c67    DIFFERS     networks: Refactors fan mtu detection to use networkGetDevMTU
+09361886bd5aeb231bf3ed0c282b8ca314674112    DIFFERS     container/lxc: Stores mtu and mac of parent physical nic before start
+043ae0e2c84492692813882054d52d6dee49bec3    DIFFERS     container/lxc: Restores physical parent mtu and mac on device removal
+fbd77f8a632751b16a08428aa1e2a3cb9f9e8a55    IRRELEVANT  lxd/volumes: Allow quota on ext4
+8c0ba0d7649858b3b0f75d6221c42ef7684581b1    IRRELEVANT  networks_utils: Adds container boot route functions
+4a4b9a9ca79bf258a76e86544653b8bda037b3df    IRRELEVANT  container_lxc: Makes static routes use boot proto to differentiate network level routes
+7d2332f728bb09f0668e21fa7c2330657bfc0ec3    IRRELEVANT  networks: Saves & restores container (boot proto) routes on interface when starting
+f5393211443c654b9af64c95998c688c18311c67    IRRELEVANT  Update translations from weblate
+6cf9e075c894c27abd9a6e73f5b9c0554e89562d    IRRELEVANT  forkmknod: attach to mntns when task is chrooted
+5b213d1b7de7790f7d0d801151953caf281dcc27    IRRELEVANT  lxd/patches: Fix handling of containers-snapshots
+d3ac182f55faae8f9540b6577ea78581f73a83a4    FEATURE     Release LXD 3.14
+a181ed43172755cf9fcd3e1068f914c373e7091b    IRRELEVANT  seccomp: define __NR_mknod if missing
+c655ed5575bec72fd6940770029d569a10e7f80d    IRRELEVANT  seccomp: rework missing syscall number definitions
+7f959ea7cfe4e1332832cd63bd14782c6eba6be1    IRRELEVANT  container_lxc: add insertMount() helpers
+f0cc1d5e8647f611460535ac18d38d369064b2cd    IRRELEVANT  networks: Fixes bug preventing 3rd party routes from being restored on network start
+6f60c7de66f11b889c1bd8df9e8424ec1fa6f5e1    IRRELEVANT  tests: Increases nic bridge ping sleep time to 2s
+af69204925d12cc7175c01bf67bac3f3185d637c    IRRELEVANT  tests: Updates nic bridge tests to check for route restoration
+1439827ebb7b95bd4563f55c941e78164722787e    FEATURE     api: Adds network_vlan_sriov API extension and doc
+c0d2500e8ad982b08e0688fa35d946d135e253d7    FEATURE     doc: Adds support for vlan and security.mac_filtering for sriov
+0ae8a28a130a57e6ecd1d19e92f0deb56da323fa    FEATURE     doc: Documents the volatile keys used by SR-IOV virtual functions
+e277189428c1bad992a33658cb41bdbb0da5be29    DIFFERS     lxd/storage/btrfs: Fix qgroup handling
+23e8886080ffee4b1c76f04c87dc96fb1d649ec8    DIFFERS     container/lxc: Disables auto mac generation for sriov devices
+e65c63e9e8b3fde3436f9988d8cba645047db1e0    FEATURE     networks/utils: Adds networkGetVirtFuncInfo function
+49b4c338d0d4413efbc06bceeb38d7d07b4e8629    FEATURE     networks/utils: Adds SR-IOV related PCI bind/unbind helper functions
+6dc2163d23a9caf83eaa860be3931be1ca6090de    FEATURE     networks/utils: Adds networkDeviceBindWait function
+714c01b26426fd7076460abe701789de50193ecf    FEATURE     shared/container: Adds volatile key suffixes for SR-IOV
+97a130d2747361d2bf53d4c2db2093d7365f2b26    FEATURE     container/lxc: Adds SR-IOV VLAN and MAC spoof check support
+9501c0fbf33b354f6d779108fdd3622ea8b0cc8b    FEATURE     container/lxc: Adds SR-IOV parent restoration
+fe679d940372882f9711577681f74efa35e37222    FEATURE     container/lxc: Ensure that sriov devices use volatile host_name for removal
+1d107de5460ea8430d1e5cf5036d5bfd54a0dd04    FEATURE     tests: Adds SR-IOV tests
+8861340d4ffe59218b328e4d50ff0f2d38a52593    IRRELEVANT  lxd/patches: Handle btrfs snapshots properly
+ef4901a6cf252e049212b803443399fdd07825c3    IRRELEVANT  seccomp: retry with mount hotplug
+9dc81e30b7020696d117353465b089dd76a60d71    DIFFERS     tests: Always pass --force to stop/restart
+9057eb9c8a374b6b7df27381e8e6ba0690835db8    IRRELEVANT  lxc/export: Expire the backup after 24 hours
+0d8b7b6b6beedd8fa4cf4974d8b1abe2d8115af2    IRRELEVANT  networks/utils: Cleaned up the device bind/unbind functions for SR-IOV
+8720f079723b2f610068fbf0af3e4aca1831aea6    IRRELEVANT  forkmknod: remove unused variables
+8a4e981b2fde1763924172a939c7e80e691b7bce    IRRELEVANT  forkmknod: simplify
+ab51129bd5d293353ab1ad7bf8a08348f15de26e    DIFFERS     networks/utils: Adds networkDHCPv4Release function
+fbd08205cab2ec20c4784a3122d8f8bf33be82ac    DIFFERS     tests: Adds DHCP lease release tests
