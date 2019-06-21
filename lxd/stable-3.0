@@ -847,3 +847,4 @@ ef4901a6cf252e049212b803443399fdd07825c3    IRRELEVANT  seccomp: retry with moun
 8a4e981b2fde1763924172a939c7e80e691b7bce    IRRELEVANT  forkmknod: simplify
 ab51129bd5d293353ab1ad7bf8a08348f15de26e    DIFFERS     networks/utils: Adds networkDHCPv4Release function
 fbd08205cab2ec20c4784a3122d8f8bf33be82ac    DIFFERS     tests: Adds DHCP lease release tests
+e983d088231d38dbf701fdd7f1792fc3e10f93e3    FEATURE     lxd-p2c: Add --storage-size option
