@@ -201,3 +201,49 @@ d7d2d2d9a5077250b5d1f0b36d4764c751118503    FEATURE     seccomp: s/HAVE_DECL_SEC
 fe02f63c0824b2ab104b31d978ccbf54e7578f9a    FEATURE     seccomp: add ifdefine for SECCOMP_FILTER_FLAG_NEW_LISTENER
 f73adb35fbbd164c2bfc975dc4a8b7e8292f4e37    FEATURE     seccomp: do not set SECCOMP_FILTER_FLAG_NEW_LISTENER
 fa2bb6ba532c5e7f92df8cbae50a68af519f9997    DIFFERS     Switch from gnutls to openssl for sha1
+679289bf5fcb6b2fdb061b9f2887c8c73333092d    FEATURE     lxccontainer: rework seccomp notify api function
+779b3d82e647c79a99e7cee42809b91e001e1024    DIFFERS     cgroups: move variable into tighter scope
+e389f2afd8509b0996bf83bf99303eea88a590f7    FEATURE     start: unify and simplify network creation
+e318f2c1a314f8507d3eebd2d65f51ef6efb6f61    FEATURE     network: remove faulty restriction
+3ebffb98965c6f1051253377ea09f5faa6eecb38    FEATURE     network: s/loDev/loop_device/g
+8021de256413a104eb5bc540ff7864bde1f4619e    FEATURE     network: simplify instantiate_macvlan()
+a9704f05210681a8693e9e426d8f6728e369c205    FEATURE     network: stash created_name in instantiate_macvlan()
+dd1192068de3dd605e973588abce87286c02eaeb    FEATURE     network: simplify instantiate_ipvlan()
+e7fdd504e91862d83e363aa93d4f1637bdcd6331    FEATURE     network: record created_name for instantiate_ipvlan()
+d4d684109c4ce9f6ba917ae60c9fb160ef84a8db    FEATURE     network: simplify instantiate_vlan()
+83530dba8960ce9f5457172c30166b8a8bb2822f    FEATURE     network: record created_name for instantiate_vlan()
+75b074eea0945e4ef263c6e47dee7665cd4c7451    FEATURE     network: simplify instantiate_phys()
+61302ef7dcf959561f21da95a8d0b71ff555a21a    FEATURE     network: record created_name for instantiate_phys()
+3c09b97cd578b8ab28b9d10797a6896f3a9ca0fd    FEATURE     network: send names for all non-trivial network types
+24190194c109767a30e974826b58fb557a70bd1f    FEATURE     network: simplify lxc_network_move_created_netdev_priv()
+03ca4af8fa4bf68239b78217b5b0da24f3ae4565    FEATURE     start: call lxc_find_gateway_addresses early
+1f77c35ecb882298537f5ecb4c9630dd36b484e4    FEATURE     lxccontainer: properly cleanup on mount injection failure
+e1726045d4ccd493e32e9b7c926ad8b6090734e2    FEATURE     af_unix: add lxc_abstract_unix_send_fds_iov
+dc85e31eca140c9b760fc75e811d748e74f920d8    FEATURE     af_unix: add lxc_abstract_unix_recv_fds_iov()
+970ef13dd2eed4c8dd24056045a1951d8c5f7696    FEATURE     af_unix: add lxc_unix_connect_type
+99d03dec11e289d9be60a4ad3ea95d7397629a5f    FEATURE     file_utils: add lxc_recvmsg_nointr_iov
+84cf6d259b24e4ad48e3f1fcbb92bf98713a2dbd    FEATURE     conf: add lxc.seccomp.notify.cookie
+4a094eec4a69b74782cb7ff968b88b102468c2bc    FEATURE     seccomp: update notify api
+f910c9e526eb8fbc80d61d56786b80f1b0a0587a    FEATURE     seccomp: assert that __reserved is 0 in notify responses
+045ee7210dbe4ca1f250128e3ea4dc2cf7ec519c    FEATURE     seccomp: use SOCK_SEQPACKET for the notify proxy
+8a99ab014aa5fc1c8d4830c00546e83e565cbb22    FEATURE     seccomp: remove reconnect-loop
+5357b872f7052936a58748b7a338a42c86c2a4fc    FEATURE     seccomp: don't ignore syscalls when there's no proxy
+3745ee0ec764367da195068dcea9dac0e4ba76e4    FEATURE     seccomp: retry connecting to the proxy once
+1370a882bcac001d8e61a152548cdbc3b0a600dd    FEATURE     seccomp: send default response when there's no proxy
+ed3a98c4c260fea0886da822fb5a11304cfa8d4d    FEATURE     seccomp: keep retrying to reconnect to proxy
+651e63a71980b7e778473f919df3d5580fb0073e    FEATURE     seccomp: defer reconnecting to the proxy
+214008eeb22f53c8d6c75853d240fc635fdb9fbc    FEATURE     doc: document lxc.seccomp.notify.cookie
+87e547d9c790ccb5c6d8d59da96c9f3082c0e867    FEATURE     seccomp: recvmsg with MSG_TRUNC
+637996a4c3c3597dd4c98ebac917f32af6f85e82    FEATURE     seccomp: send caller pidfd along with proxied requests
+b9dab9ef8fa6d7c68b997972e14bcea5c406e8a9    FEATURE     af_unix: remove unused variable
+cbbdd1dd351c4be53d7e9616d805b882e8c11722    FEATURE     seccomp: coding style
+5bc821d349632db5025d705ac5acecd7a68450d4    FEATURE     doc: Add lxc.comp.notify.cookie to Japanese lxc.container.conf(5)
+3f0ed090d62b491eff45fc0dcf7d33a053589ded    FEATURE     network: Adds mode param (bridge, router) to veth network setting
+6dfa9581aff00cc949b75a94760ad1503ba9d626    FEATURE     network: Adds veth router mode static routes and proxy entries
+3e5c2e691bc3993800a37591512ba3e0e88f1fd5    FEATURE     doc: Documents the lxc.net.[i].veth.mode option
+aad859c42c30dce269286503976d7cbab2142a62    FEATURE     seccomp: open memfd read-write
+65123ff553d7a5b5abcf3047410bcf50d25c9b55    FEATURE     Release LXC 3.2.0
+ad48c77c50cf7c3451177d665bbed9831ae6541e    FEATURE     Release LXC 3.2.1
+5c338ef44e911cdace56f11fa60ee28b4351a5a4    FEATURE     Re-enable devel flag
+6453ba565ed7e3be9b3c9fa74ac07cf8e06b9afc    FEATURE     tree-wide: initialize all auto-cleanup variables
+3dd7829433f63b2ec1323a1f237efa7d67ea6e2b    FEATURE     network: restore ability to move nl80211 devices
