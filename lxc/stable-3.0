@@ -250,3 +250,11 @@ ad48c77c50cf7c3451177d665bbed9831ae6541e    FEATURE     Release LXC 3.2.1
 1b5d4bd864bc3d62d8a98ab9feb423a85c642fe3    DIFFERS     Use file/directory names from macro.h
 e4103cf63f3e24667680544303e7c7230b3d508c    DIFFERS     lxccontainer: do_lxcapi_detach_interface to support detaching wlan devices
 f756a3501a0dc00775fa5a3bf045617ff66bb458    DIFFERS     Set minimun autoconf version to 2.69 and change obsolete function AC_HELP_STRING for AS_HELP_STRING
+b2963bf912c4cc4e47118d60682d5912369ceaa6    DIFFERS     allow users to configure the option --enable-feature or --with-package, if an option is given run shell commands action-if-given
+4d8bdfa0304fcf5a0355aa5ee4381c5c21a1bab1    DIFFERS     start: handle setting pdeath signal in new pidns
+63012bdd00a2888dfb313f08f02a75ce58d43828    FEATURE     Add autodev.tmpfs.size config parameter
+9c744e39c35b65e6c9ed7cc088297438058a069c    FEATURE     Add autodev.tmpfs.size to Japanese lxc.container.conf(5)
+95ad620e0c246f7bff395d4ce261ba96d6a52c18    IRRELEVANT  apparmor: Prevent writes to /proc/acpi/button /proc/acpi/ibm /proc/acpi/wakeup
+e4dffa2f972db6f92aa894bc0b103f8cd95c74dd    FEATURE     api_extension: add cgroup2_devices api extension
+0cf801fb65fc3c68e62b9da43daaa75dd7785d0a    FEATURE     doc: Add the lxc.net.[i].veth.mode option in Japanese lxc.container.conf(5)
+68a9e3ebcbaca166211eaca18e0e2106be345710    DIFFERS     configure: enable -Wunused-but-set-variable
