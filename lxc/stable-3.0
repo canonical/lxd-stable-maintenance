@@ -258,3 +258,4 @@ b2963bf912c4cc4e47118d60682d5912369ceaa6    DIFFERS     allow users to configure
 e4dffa2f972db6f92aa894bc0b103f8cd95c74dd    FEATURE     api_extension: add cgroup2_devices api extension
 0cf801fb65fc3c68e62b9da43daaa75dd7785d0a    FEATURE     doc: Add the lxc.net.[i].veth.mode option in Japanese lxc.container.conf(5)
 68a9e3ebcbaca166211eaca18e0e2106be345710    DIFFERS     configure: enable -Wunused-but-set-variable
+6b9e666f95fe2113d20a4084cf71d0b79fe0e9f3    DIFFERS     tree-wide: fix wrong copy-paste for licenses
