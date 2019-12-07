@@ -261,3 +261,4 @@ e4dffa2f972db6f92aa894bc0b103f8cd95c74dd    FEATURE     api_extension: add cgrou
 6b9e666f95fe2113d20a4084cf71d0b79fe0e9f3    DIFFERS     tree-wide: fix wrong copy-paste for licenses
 018051e37df71276980c6238eee44632a53f37e3    DIFFERS     cgroups/freezer: fix and improve cgroup2 freezer implementation
 cc73685dd09315b292968ee91a08a8f295376b35    DIFFERS     lxc: switch to SPDX
+c581d2a6732fa91f57731d9217004f871e80a2de    DIFFERS     cgroup2: rework controller delegation
