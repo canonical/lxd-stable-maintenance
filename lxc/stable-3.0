@@ -262,3 +262,9 @@ e4dffa2f972db6f92aa894bc0b103f8cd95c74dd    FEATURE     api_extension: add cgrou
 018051e37df71276980c6238eee44632a53f37e3    DIFFERS     cgroups/freezer: fix and improve cgroup2 freezer implementation
 cc73685dd09315b292968ee91a08a8f295376b35    DIFFERS     lxc: switch to SPDX
 c581d2a6732fa91f57731d9217004f871e80a2de    DIFFERS     cgroup2: rework controller delegation
+3d0327ed245ff14e8a33659ec82ef13b6b54fc55    DIFFERS     commands: replace logging helpers
+596a002c6846cc977c45e0fff595ed58278169b0    DIFFERS     network: replace logging helpers
+21fce08cb69ab6c912c68fb8aefcdfa1a6fbe166    DIFFERS     confile: replace logging helpers
+bf39128d818fcdf8248a029e711ae00e2e803329    IRRELEVANT  confile_utils: replace logging functions
+b18f6aac91dab359e43821b22ae46eb259ca5050    DIFFERS     lxccontainer: replace logging functions
+52d08ab033460d704466bf34b7b84ced3a1d7905    DIFFERS     cgroups/cgfsng: rework cgfsng_escape()
