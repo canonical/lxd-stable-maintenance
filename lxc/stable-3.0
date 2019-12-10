@@ -268,3 +268,4 @@ c581d2a6732fa91f57731d9217004f871e80a2de    DIFFERS     cgroup2: rework controll
 bf39128d818fcdf8248a029e711ae00e2e803329    IRRELEVANT  confile_utils: replace logging functions
 b18f6aac91dab359e43821b22ae46eb259ca5050    DIFFERS     lxccontainer: replace logging functions
 52d08ab033460d704466bf34b7b84ced3a1d7905    DIFFERS     cgroups/cgfsng: rework cgfsng_escape()
+fe70edeee575e7fd5e642d6994084865167e45bf    DIFFERS     cgroups: flatten hierarchy
