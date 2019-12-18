@@ -269,3 +269,4 @@ bf39128d818fcdf8248a029e711ae00e2e803329    IRRELEVANT  confile_utils: replace l
 b18f6aac91dab359e43821b22ae46eb259ca5050    DIFFERS     lxccontainer: replace logging functions
 52d08ab033460d704466bf34b7b84ced3a1d7905    DIFFERS     cgroups/cgfsng: rework cgfsng_escape()
 fe70edeee575e7fd5e642d6994084865167e45bf    DIFFERS     cgroups: flatten hierarchy
+ad92bbcd8134782ba3e4cb9b8a093c6209982e76    FEATURE     api_extensions: advertise cgroup2 support
