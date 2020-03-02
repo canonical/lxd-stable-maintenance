@@ -23,3 +23,22 @@ b077527b51904c6fa68da3a8998bdb93371d6808    FEATURE     calc_hash(): do not appl
 178c0334ac3a77d25972848ed19d2b9deb26fcab    FEATURE     remove unused function
 2a1a5c189d20e24b7c30abaec760d844194e02ef    FEATURE     Revert "Merge pull request #272 from brauner/2019-02-19/compiler_based_housekeeping"
 24ee58a5c782561ed6f2118c63be4b7b8c8b23a4    FEATURE     mount hook: mount /sys/devices/system/cpu/online
+db1b32f6ff056ce713c06b9d41bcc1eadd054abd    FEATURE     cpu: improve cpu info virtualization
+1c4b4e38696f4d4d4d4ba17408b98b6f1ef2d93c    FEATURE     bindings: enable higher precision uptime
+b1432bb4bedbfb4a887c850ea476931104234375    IRRELEVANT  Release LXCFS 3.1.0
+8145f1c3212169d2c642ec59eb8782fbd1f2a5bd    FEATURE     Makefile: Fix typo in file name
+ff590830f3a31c2c286b75452e264b9ee1271011    IRRELEVANT  Release LXCFS 3.1.1
+39b7df424120fa9c3c5dc209b37990fed57f1efd    IRRELEVANT  Revert "cpu: improve cpu info virtualization"
+b3aa7f1a115626f263f019ff6d8ef54f0132f025    IRRELEVANT  bindings: ensure that opts is non NULL
+83dad6a5693080de87f0a0d4e4e09c80cb688bf2    IRRELEVANT  Revert "Revert "cpu: improve cpu info virtualization""
+9d494a0fe8114e456329c532898eb35fbf57a229    IRRELEVANT  Release LXCFS 3.1.2
+5faa9af7e70a2f7a8df658eb54d24c6519b24b5f    IRRELEVANT  macro: fix lxcfs_{error,debug,v} build error when __VA_ARGS__ is empty
+a4bd57aefbaa714d5a41dcacba9e97f00b0822b0    IRRELEVANT  fix container run pid host mode /proc/stat error log
+1e14fd04716dede2e6be6965f0e46fcc2033a0d5    IRRELEVANT  fix /sys/devices/system/cpu/online in cpuset not correct bug
+8c23db36b8b5dc6bb2f3ff18d56bf78075646420    IRRELEVANT  fix the problem of counting the number of CPUs when using cpuset and cpuset or using cpuset alone
+030d022c5f1adfa7acdbb6deb5aad82d9580181d    IRRELEVANT  fix read_file second reading empty bug
+c9236032f87c3d8f4be9a76e29fe1fd0c623bba2    IRRELEVANT  bindings: handle shared pidns
+6e3637bb9d99b2acdefdab9fd14565edd1c190dc    IRRELEVANT  use is_shared_pidns helper
+bbf993985de952d29e1e476067e35c59bd03b28a    IRRELEVANT  Add compile method to README
+23b42f470f707e5f082efa8af7b00ee780d7b8f0    IRRELEVANT  Enhance version option
+e715dc606d8c92c209c88455ade2e1826a5de40d    IRRELEVANT  bindings: Adjusts the logic for calculating SwapFree to better handle conditions where swap usage is reported to be <0.
