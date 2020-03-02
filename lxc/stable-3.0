@@ -270,3 +270,8 @@ b18f6aac91dab359e43821b22ae46eb259ca5050    DIFFERS     lxccontainer: replace lo
 52d08ab033460d704466bf34b7b84ced3a1d7905    DIFFERS     cgroups/cgfsng: rework cgfsng_escape()
 fe70edeee575e7fd5e642d6994084865167e45bf    DIFFERS     cgroups: flatten hierarchy
 ad92bbcd8134782ba3e4cb9b8a093c6209982e76    FEATURE     api_extensions: advertise cgroup2 support
+0104c121a734f63d3304ee0210f7a7dc943ac173    DIFFERS     network: fix network device removal
+4fef78bc332a2d186dca6f1c29952a0ec5423217    FEATURE     container.conf: Add option to set keyring SELinux context
+8f818a845432b36b3b344a24ae9dee596bac4687    FEATURE     container.conf: Add option to disable session keyring creation
+ad36e96a3d54667dcde6f124a8c36d8e7bdbc4a3    FEATURE     doc: Add doc for keyring options
+9aee23ad1b96b8fbbaf11c6f4a77655b478fcc45    FEATURE     container.conf: Fix option ordering in config_jump_table
