@@ -1,1 +1,3 @@
 c40aa8c893886d5c3e7dd741bdfdd66f4d989340    IRRELEVANT  configure.ac: Reset devel flag post-release
+b62782546c6f71b375c52b0a7a518bcb4e466692    FEATURE     allow running lxc-monitord as a system daemon
+9409ea35a048c208cee0a3318fd7794fce8aeaac    DIFFERS     systemd: Add Documentation key
