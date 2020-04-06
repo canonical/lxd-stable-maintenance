@@ -1,3 +1,11 @@
 c40aa8c893886d5c3e7dd741bdfdd66f4d989340    IRRELEVANT  configure.ac: Reset devel flag post-release
 b62782546c6f71b375c52b0a7a518bcb4e466692    FEATURE     allow running lxc-monitord as a system daemon
 9409ea35a048c208cee0a3318fd7794fce8aeaac    DIFFERS     systemd: Add Documentation key
+a900cbaf257c6a7ee9aa73b09c6d3397581d38fb    FEATURE     introduce lxc.cgroup.dir.{monitor,container,container.inner}
+51b07b7036c2619e352d81f6c13512399fecf0f6    IRRELEVANT  doc: s/lxc.cgroup.container.namespace/lxc.cgroup.container.inner/g
+e93197e7ec5ed908fcffc126b54c3092a746a6e7    IRRELEVANT  confile: coding style fixes for set_config_cgroup_container_inner_dir()
+e9619d75b1e6646509f5a721839d875e602d6b5c    IRRELEVANT  api-extensions: add and document cgroup_advanced_isolation
+27f451e283eab7a6fdfa6bedc01a6a66b0b9361c    IRRELEVANT  doc: Add lxc.cgroup.dir.{monitor,container,container.inner} to Japanese man
+20e9ea04257863ef5bbd3842aa28efb9bff1ba6e    IRRELEVANT  confile: fix jump table order
+31691d1bd42fa1691fa98df3e7d1a287f729820d    IRRELEVANT  cgroups: remove unused variable
+29d652a9b9fafd464f314cc98c06c4cb1ad6a52f    IRRELEVANT  get the right path in get_cgroup command
