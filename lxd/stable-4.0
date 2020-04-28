@@ -16,13 +16,9 @@ d09855796574a3091add7d6b0e49c7562bace7d0    FEATURE     test/suites/container/de
 ea34ee3844c6d4e0e17e9a7b5b7178416f777613    FEATURE     shared/version/api: Add API extension images_push_relay
 dd95a2773a34df2ce8d3a173573ee2f81f090bb2    FEATURE     doc: Add images_push_relay
 d6eb928527767a7904e989b817da045297a10237    FEATURE     lxc/image: Add mode flag to image copy
-8f2c843bab2cb06c1f0bdb3f8ad48265b95f3646    FEATURE     client: Add relay mode for image copy
 775e49602c4cd6b3b0a99431516f3cf03f8afc1c    FEATURE     lxd/images: Return token response in push mode
 6d0a038216b14efaaadd67fbf4225c248ac83aca    FEATURE     lxd/images: Allow authentication using secret
-d39bab1119b7f9e1aef5a456faa4be0c651e92c4    FEATURE     client: Add ExportImage to ImageServer
 8bd8549bda9d42c41c591aceeff08e9df8bb69f8    FEATURE     lxd/images: Add POST /1.0/images/fingerprint/export
-b6de912f3031d940284ef22eb68573cc3a07200d    FEATURE     client: Add push mode for image copy
-a996061d5aaa0e1642af8c9b29bf740854b4b416    FEATURE     client: Add GetOperationWaitSecret
 ab1efe2407e19b66634f0cbcf483cfbaaba488e3    FEATURE     lxd/images: Use metadata from the client
 edbf66c8254f823ce8ee987164f0f501b90b4beb    FEATURE     lxd/images: Return operation on token validation
 20ee7d9b8cf4c6fcec288deba0f03337536ed005    FEATURE     lxd/images: Add secret metadata on image create
