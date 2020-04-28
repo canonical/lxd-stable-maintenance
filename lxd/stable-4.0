@@ -1,0 +1,33 @@
+165eed6f7d4e37d3f66e809fa3d8892ec0b66da5    FEATURE     lxd/device/nic: Adds host_table setting validation rule
+406b3d3359230633cc41ac4ba4eee0bb7dba5964    FEATURE     lxd/device/nic/routed: Add host_table support
+716c7f6721ec8293013979d9c6b0d63f65777a93    FEATURE     api: Adds container_nic_routed_host_table extension
+20e03e22a376feede7f8858fcb15750c7c4057d1    FEATURE     doc: Adds documentation for routed NIC host_table setting
+d0099310db7794619d3fd1b8aea240c7c9590c45    FEATURE     suites/container/devices/nic/routed: Adds tests for custom routing tables
+468b144f1028f9392c86e9a09217969f8e7f5955    FEATURE     lxd/device/nic/ipvlan: Adds host_table setting support
+1abd0dce0572f9e1ad3a1add7124a0a77ac68a0c    FEATURE     api: Adds container_nic_ipvlan_host_table extension
+cdb44209fa6094a4078a188f6dccd0429f39771a    FEATURE     doc: Adds documentation for ipvlan NIC host_table setting
+c7f991d03c6102bf1e738ffbdd2be8e988698088    FEATURE     test/suites/container/devices/nic/ipvlan: Adds tests for custom routing tables
+b83a8bc282a9a8cdfe33bc986902bbc002793c17    FEATURE     api: Adds container_nic_ipvlan_mode extension
+06cd98131d62deff83f56eee470b488e7048c48a    FEATURE     lxd/device/nic/ipvlan: Adds support for l2 mode
+b559f597833ff4efef877ae6b674efa90c41ba8a    FEATURE     doc/instances: Documents ipvlan l2 mode
+d09855796574a3091add7d6b0e49c7562bace7d0    FEATURE     test/suites/container/devices/nic/ipvlan: Adds l2 mode tests
+20c8d7e0d45b35cfe0bf862b5e68ae7eeeb0007b    DIFFERS     shared/version/api: Add resources_system API extension
+3c3d08a0aabeacf386758f103ba267667c4d6c15    DIFFERS     doc/api-extensions: Add resources_system
+ea34ee3844c6d4e0e17e9a7b5b7178416f777613    FEATURE     shared/version/api: Add API extension images_push_relay
+dd95a2773a34df2ce8d3a173573ee2f81f090bb2    FEATURE     doc: Add images_push_relay
+d6eb928527767a7904e989b817da045297a10237    FEATURE     lxc/image: Add mode flag to image copy
+8f2c843bab2cb06c1f0bdb3f8ad48265b95f3646    FEATURE     client: Add relay mode for image copy
+775e49602c4cd6b3b0a99431516f3cf03f8afc1c    FEATURE     lxd/images: Return token response in push mode
+6d0a038216b14efaaadd67fbf4225c248ac83aca    FEATURE     lxd/images: Allow authentication using secret
+d39bab1119b7f9e1aef5a456faa4be0c651e92c4    FEATURE     client: Add ExportImage to ImageServer
+8bd8549bda9d42c41c591aceeff08e9df8bb69f8    FEATURE     lxd/images: Add POST /1.0/images/fingerprint/export
+b6de912f3031d940284ef22eb68573cc3a07200d    FEATURE     client: Add push mode for image copy
+a996061d5aaa0e1642af8c9b29bf740854b4b416    FEATURE     client: Add GetOperationWaitSecret
+ab1efe2407e19b66634f0cbcf483cfbaaba488e3    FEATURE     lxd/images: Use metadata from the client
+edbf66c8254f823ce8ee987164f0f501b90b4beb    FEATURE     lxd/images: Return operation on token validation
+20ee7d9b8cf4c6fcec288deba0f03337536ed005    FEATURE     lxd/images: Add secret metadata on image create
+8d97e87763c9a28971895041b73db8c1164697cf    FEATURE     lxd/operations: Allow untrusted clients for /1.0/operations/{id}/wait
+e3f0434aa00103db5e13ea3856a6a5330b9b714a    FEATURE     doc/rest-api: Add POST /1.0/images/<fingerprint>/export
+da6ed7219d4303f5fb688b88c60f4adee356c694    FEATURE     test/suites/remote: Add image copy push and relay mode
+4947d304e4f1aed2ac312779ffd0f23d3a92064f    FEATURE     po: Update translations
+4870bc2f8cdbe9e26353e785c72b91a20469c4b3    DIFFERS     i18n: Update translation templates
