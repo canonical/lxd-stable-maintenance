@@ -30,3 +30,4 @@ da6ed7219d4303f5fb688b88c60f4adee356c694    FEATURE     test/suites/remote: Add 
 485d29c4d8e106a089df0d4e48d0a2d32a795e53    DIFFERS     lxd/db: Rename ImageGetFromAnyProject to GetImageFromAnyProject
 77abdfff431df548fdc8cb3dbcdf38cbf864d4a1    DIFFERS     lxd/db: Rename ImageAliasGet to GetImageAlaias
 fe228830c71a8817eb8b5cc49a67f0feb509a4f7    DIFFERS     lxd/db: Rename ImageInsert to CreateImage
+ac4a1f49fd151ea17f062746f6cf9db10d0f314d    DIFFERS     lxd/db: Rename ImageGet to GetImage
