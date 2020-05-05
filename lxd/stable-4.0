@@ -27,3 +27,6 @@ e3f0434aa00103db5e13ea3856a6a5330b9b714a    FEATURE     doc/rest-api: Add POST /
 da6ed7219d4303f5fb688b88c60f4adee356c694    FEATURE     test/suites/remote: Add image copy push and relay mode
 4947d304e4f1aed2ac312779ffd0f23d3a92064f    FEATURE     po: Update translations
 4870bc2f8cdbe9e26353e785c72b91a20469c4b3    DIFFERS     i18n: Update translation templates
+485d29c4d8e106a089df0d4e48d0a2d32a795e53    DIFFERS     lxd/db: Rename ImageGetFromAnyProject to GetImageFromAnyProject
+77abdfff431df548fdc8cb3dbcdf38cbf864d4a1    DIFFERS     lxd/db: Rename ImageAliasGet to GetImageAlaias
+fe228830c71a8817eb8b5cc49a67f0feb509a4f7    DIFFERS     lxd/db: Rename ImageInsert to CreateImage
