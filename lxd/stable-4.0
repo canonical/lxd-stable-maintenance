@@ -31,3 +31,5 @@ da6ed7219d4303f5fb688b88c60f4adee356c694    FEATURE     test/suites/remote: Add 
 77abdfff431df548fdc8cb3dbcdf38cbf864d4a1    DIFFERS     lxd/db: Rename ImageAliasGet to GetImageAlaias
 fe228830c71a8817eb8b5cc49a67f0feb509a4f7    DIFFERS     lxd/db: Rename ImageInsert to CreateImage
 ac4a1f49fd151ea17f062746f6cf9db10d0f314d    DIFFERS     lxd/db: Rename ImageGet to GetImage
+c8b183df26af95f662a56fe5a12656c8aafb3293    DIFFERS     i18n: Update translations from weblate
+c651a5e5816b73784276fbd9c0571f73c723dd50    FEATURE     Release LXD 4.1
