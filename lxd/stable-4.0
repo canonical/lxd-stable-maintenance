@@ -36,3 +36,6 @@ c651a5e5816b73784276fbd9c0571f73c723dd50    FEATURE     Release LXD 4.1
 1af356dffa8ae28743af7dc05e3ee94963bd8984    FEATURE     api: Add network_dns_search
 86bf750519e353cac343c855e7dcb92c2d9fa478    FEATURE     lxd/network: Support specifying search domain
 56bbf329f997a5b5fcb79756d82027bb0f609349    DIFFERS     i18n: Update translation template
+464ce02658ce93f962485331317501665cd75c51    FEATURE     lxc/network: Add IPv4/IPv6 columns
+6bc26a9ecbdd6fc918411476822c3185f22efefb    FEATURE     api: Add container_nic_routed_limits
+d56333ab8292a56daf9f98969c31219dc5b5cfd1    FEATURE     lxd/device/nic/routed: Add limits support
