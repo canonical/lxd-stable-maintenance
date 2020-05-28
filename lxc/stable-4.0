@@ -13,3 +13,4 @@ e9619d75b1e6646509f5a721839d875e602d6b5c    IRRELEVANT  api-extensions: add and 
 ec4d463d0ff5b1a4c0838de0aaa5cd51d5797c8d    IRRELEVANT  cgroups: adhere to boolean return
 04a49a1452fb542644d9a9ed37935fd00fa88c20    DIFFERS     cgroups: be less alarming when creating cgroups
 400d579e69f5f41a14d9fd0617f0e4972ae53dcf    IRRELEVANT  improve LXC_CMD_GET_CGROUP compatibility
+71d53a5ca715c923ae3949dcd1e13915ca77fdb9    DIFFERS     api_extensions: add "pidfd"
