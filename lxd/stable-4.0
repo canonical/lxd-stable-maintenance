@@ -41,3 +41,4 @@ c651a5e5816b73784276fbd9c0571f73c723dd50    FEATURE     Release LXD 4.1
 d56333ab8292a56daf9f98969c31219dc5b5cfd1    FEATURE     lxd/device/nic/routed: Add limits support
 475610ed23804d615209b590b347b2c5afa9cf84    DIFFERS     lxd/db: Use auto-generated GetImages() to implement GetImage()
 f74fee1df98e59e52e056957fe3015c531b896bd    DIFFERS     lxd/db: Use a single transaction in GetImageAlias
+f673b791bf96b3e81366f6fb365a5026b2763906    DIFFERS     lxd/images: Set CreatedAt on publish
