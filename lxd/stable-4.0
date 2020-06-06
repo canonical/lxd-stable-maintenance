@@ -42,3 +42,20 @@ d56333ab8292a56daf9f98969c31219dc5b5cfd1    FEATURE     lxd/device/nic/routed: A
 475610ed23804d615209b590b347b2c5afa9cf84    DIFFERS     lxd/db: Use auto-generated GetImages() to implement GetImage()
 f74fee1df98e59e52e056957fe3015c531b896bd    DIFFERS     lxd/db: Use a single transaction in GetImageAlias
 f673b791bf96b3e81366f6fb365a5026b2763906    DIFFERS     lxd/images: Set CreatedAt on publish
+445592ea535996aaa002ce3a180f127eed6d067f    FEATURE     lxd/network/network/utils: Adds linux bridge VLAN management functions
+de73747a946b735e0ab0feb5d9f35749fd7578b2    FEATURE     lxd/network: Enable VLAN filtering for managed Linux bridges
+c952656df955eeb7ee736bf0ed5ef8b9ca2375cf    FEATURE     lxd/device/nic/bridged: Adds vlan validation
+93beba09ee61f0bca86642cf4f77beeee0cfe0c0    FEATURE     lxd/device/nic/bridged: Adds support for untagged and tagged vlan membership
+5eee33b9e075da8fc26fa4efeed0f287f55f7fd0    FEATURE     doc: Documents NIC bridged vlan and vlan.tagged settings
+8d898bc66cf38ad3b6a856266fa97c0933d2595e    FEATURE     api: Adds API extension instance_nic_bridged_vlan
+1614e7c580a09157b46dd5df567ef4400a9a51a3    FEATURE     test: Adds bridged VLAN tests
+e1ca192063d262540c5c36f6945145e8716df311    FEATURE     lxd/device/nic/bridged: Corrects vlan comment
+607888d4a827eaa2c9cffd74bcd51140396e8e94    IRRELEVANT  test: Updates bridged vlan ID range tests
+1dca2b9e871f6b735d2cb2adbd748ed90e0176a5    FEATURE     lxd/device/nic/bridged: Adds openvswitch vlan support
+1b20cd74ea099362f554e38cdc19ea438de2e83a    IRRELEVANT  test: Adds LXD_NIC_BRIDGED_DRIVER test environment variable
+6debf6f1257d4a6a33afe055a6dd73a133b1effc    DIFFERS     lxd/device/device/utils/network: Adds networkValidVLAN and networkValidVLANList functions
+6f26c2b9db9d0730d7d6a27704455402b977281a    IRRELEVANT  i18n: Update translations from weblate
+d4a71e2d3f64f0b05683cd1b00339fbda5d74a16    FEATURE     api: Add network_state_bond_bridge
+e477afb652d467a80b2ca70f97a6dfbdb6beb55f    FEATURE     shared/api: Extend NetworkState for bridge/bond
+7da0caf9c3ce7e107a01d5c8f01f8d14643dd04e    FEATURE     lxd/networks: Add bridge/bond details
+9db3aec7aba5a6e2396c4a4d9a15376babc3a12c    FEATURE     Release LXD 4.2
