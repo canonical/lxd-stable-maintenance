@@ -56,6 +56,5 @@ e1ca192063d262540c5c36f6945145e8716df311    FEATURE     lxd/device/nic/bridged: 
 6debf6f1257d4a6a33afe055a6dd73a133b1effc    DIFFERS     lxd/device/device/utils/network: Adds networkValidVLAN and networkValidVLANList functions
 6f26c2b9db9d0730d7d6a27704455402b977281a    IRRELEVANT  i18n: Update translations from weblate
 d4a71e2d3f64f0b05683cd1b00339fbda5d74a16    FEATURE     api: Add network_state_bond_bridge
-e477afb652d467a80b2ca70f97a6dfbdb6beb55f    FEATURE     shared/api: Extend NetworkState for bridge/bond
 7da0caf9c3ce7e107a01d5c8f01f8d14643dd04e    FEATURE     lxd/networks: Add bridge/bond details
 9db3aec7aba5a6e2396c4a4d9a15376babc3a12c    FEATURE     Release LXD 4.2
