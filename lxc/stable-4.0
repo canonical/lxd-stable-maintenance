@@ -14,3 +14,27 @@ ec4d463d0ff5b1a4c0838de0aaa5cd51d5797c8d    IRRELEVANT  cgroups: adhere to boole
 04a49a1452fb542644d9a9ed37935fd00fa88c20    DIFFERS     cgroups: be less alarming when creating cgroups
 400d579e69f5f41a14d9fd0617f0e4972ae53dcf    IRRELEVANT  improve LXC_CMD_GET_CGROUP compatibility
 71d53a5ca715c923ae3949dcd1e13915ca77fdb9    DIFFERS     api_extensions: add "pidfd"
+d80ff1fac7c74a8e0b9f7910ad9f83da81b29cfa    FEATURE     api/extensions: Adds network_bridge_vlan API extension
+59315a06819e42f0e7f29c294ce0625ed4a616c6    FEATURE     macro: Adds bridge VLAN constants
+53a9ba7ff4e9b968b7d2e1f88413946a553cf4eb    FEATURE     macro: Adds constant for BRIDGE_VLAN_NONE mode
+2abd5206d769e4867794bb200d6b43a8f4d0a702    FEATURE     macro: Adds BRIDGE_VLAN_ID_MAX constant
+c96a27f7393fe12f50c8e1c71cc59242e85b085f    FEATURE     network: Adds veth vlan_id, vlan_id_set and vlan_tagged_ids
+fdf76c6df57b48a7a85292054ed9a99c3943baf8    FEATURE     confile: Adds validation for lxc.net.veth.vlan.id
+b8e06d332b6f4b8f0f99cb44dc2b54741f11a119    FEATURE     confile: Adds validation for lxc.net.veth.vlan.tagged.id
+134ded24d0135d5b394007aa04c586eadb07e15b    FEATURE     confile/utils: Adds veth mode and vlan ID tracing to lxc_log_configured_netdevs
+1f92ddc1a0b70b654f2f7f24db8e777648c3a646    FEATURE     confile/utils: Adds veth vlan tagged ID tracing to lxc_log_configured_netdevs
+3a0049f3d242d6dfb588fd0ee047bf7716af909b    FEATURE     confile/utils: Adds freeing of priv.veth_attr.vlan_tagged_ids
+8abd96020af8dde982d6f941042e99aabba85c5e    FEATURE     tests: Adds test for lxc.net.0.veth.vlan.id config key
+9262d646813bf8f3a25d769b2c14f8e9ac616fe9    FEATURE     tests: Adds test for bridge vlan "none" value
+5ca374db087529f69184daa54709ca409f6dda51    FEATURE     tests: Adds test for lxc.net.0.veth.vlan.tagged.id config key
+622f05c7383306726edb272cda425166a0a52e77    FEATURE     network: Adds bridge vlan management functions
+33320936d57e244b4e8a0cf2829475fd89551fe1    FEATURE     network: Updates instantiate_veth to set bridge vlan settings
+a789ca4c24190f903d80b077b3cae766e932b2ad    FEATURE     doc: Adds documentation for veth vlan bridge options
+8f7c3358ac07674029f104f2e97b7ed2ff98e029    FEATURE     network: Adds OVS VLAN setup functions
+38790036a81fe7088655408806e3e76c99260be8    FEATURE     network: Updates instantiate_veth to support OVS VLAN setup
+4e61b19d62ea7e9d4d2c11b863701b75e24c6ad9    IRRELEVANT  confile: Fix coverity issue, missing return in get_config_net_veth_vlan_tagged_id
+785e15403e7a004a285686342e6d4b973e278803    IRRELEVANT  network: Fix coverity issue, leaking data in lxc_ovs_setup_bridge_vlan_exec
+1ee07848e7cbfb9b0673167e8f40f20082e398b1    IRRELEVANT  network: Fix coverity issue, dont initialise string pointers in setup_veth_ovs_bridge_vlan
+d2f8b2720be301566290efa24f3b2aaee2968852    IRRELEVANT  network: Adds free_ovs_veth_vlan_args and allows trunks field to be freed
+72e8122b445909c94775f75e8121e987739ee043    IRRELEVANT  network: Fix int type in log message
+3fe6b5cf29ae903f01f18c72651ca508f0314e61    IRRELEVANT  network: Adds calls to free_ovs_veth_vlan_args in setup_veth_ovs_bridge_vlan
