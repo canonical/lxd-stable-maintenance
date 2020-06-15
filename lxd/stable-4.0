@@ -58,5 +58,6 @@ e1ca192063d262540c5c36f6945145e8716df311    FEATURE     lxd/device/nic/bridged: 
 d4a71e2d3f64f0b05683cd1b00339fbda5d74a16    FEATURE     api: Add network_state_bond_bridge
 7da0caf9c3ce7e107a01d5c8f01f8d14643dd04e    FEATURE     lxd/networks: Add bridge/bond details
 9db3aec7aba5a6e2396c4a4d9a15376babc3a12c    FEATURE     Release LXD 4.2
-0fb2ee4ed5fc11637bcb667b375ab624d1d939c5    FEATURE     lxd/vm: Add virtio-vga card
-2253e7c26bd7848f7cbe4c9187a215f88c1c61a5    FEATURE     lxd/vm: Add spice channel
+6f459040405e9936fad49f33669284f98c034c43    IRRELEVANT  lxd/network: Make setting bridge VLAN filtering & default PVID optional
+a148c525a797565ce4b88f78a448b1092a1ecf68    IRRELEVANT  i18n: Update translation templates
+a5e51e82b0e7f335a501d7166abab4bf603515a5    IRRELEVANT  i18n: Update translation templates
