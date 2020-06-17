@@ -61,3 +61,4 @@ d4a71e2d3f64f0b05683cd1b00339fbda5d74a16    FEATURE     api: Add network_state_b
 6f459040405e9936fad49f33669284f98c034c43    IRRELEVANT  lxd/network: Make setting bridge VLAN filtering & default PVID optional
 a148c525a797565ce4b88f78a448b1092a1ecf68    IRRELEVANT  i18n: Update translation templates
 a5e51e82b0e7f335a501d7166abab4bf603515a5    IRRELEVANT  i18n: Update translation templates
+d6a8dcd728b618cca893b47157f671b89595c412    DIFFERS     i18n: Update translation templates
