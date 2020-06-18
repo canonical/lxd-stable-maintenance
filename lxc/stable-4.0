@@ -38,3 +38,6 @@ a789ca4c24190f903d80b077b3cae766e932b2ad    FEATURE     doc: Adds documentation 
 d2f8b2720be301566290efa24f3b2aaee2968852    IRRELEVANT  network: Adds free_ovs_veth_vlan_args and allows trunks field to be freed
 72e8122b445909c94775f75e8121e987739ee043    IRRELEVANT  network: Fix int type in log message
 3fe6b5cf29ae903f01f18c72651ca508f0314e61    IRRELEVANT  network: Adds calls to free_ovs_veth_vlan_args in setup_veth_ovs_bridge_vlan
+9d05339487f4e9c4e7f700f963c161a4d9977ae4    IRRELEVANT  nl: fix memory leak
+3d88831c53f4b8f334bc45e689d7820dbcf176bf    IRRELEVANT  Revert "nl: fix memory leak"
+2410ff119c49c31c8ef709d68e9a22e2c9607695    DIFFERS     tree-wide: use "primary" in networking code
