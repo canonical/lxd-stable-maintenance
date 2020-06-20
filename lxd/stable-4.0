@@ -62,3 +62,8 @@ d4a71e2d3f64f0b05683cd1b00339fbda5d74a16    FEATURE     api: Add network_state_b
 a148c525a797565ce4b88f78a448b1092a1ecf68    IRRELEVANT  i18n: Update translation templates
 a5e51e82b0e7f335a501d7166abab4bf603515a5    IRRELEVANT  i18n: Update translation templates
 d6a8dcd728b618cca893b47157f671b89595c412    DIFFERS     i18n: Update translation templates
+cafae2434c4f0b64463f7abb9494f561549f5328    DIFFERS     doc/api-extensions: Fix escaping
+fb3583c9b612ede7dd7d49cae5b472c6b8ce3a0c    DIFFERS     api: resource_cpu_isolated
+e02cef7a9267a3379a7c8beabba0cece2679fddf    DIFFERS     i18n: Update translation templates
+6ca075cd2b56fd796477f37916019d9ce728db28    DIFFERS     api: usedby_consistency
+bbb08bc183f4ba5b31dfde30837a403a2e1d492a    DIFFERS     lxd/networks: Reports profiles in UsedBy
