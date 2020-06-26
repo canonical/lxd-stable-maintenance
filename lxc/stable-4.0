@@ -42,3 +42,10 @@ d2f8b2720be301566290efa24f3b2aaee2968852    IRRELEVANT  network: Adds free_ovs_v
 3d88831c53f4b8f334bc45e689d7820dbcf176bf    IRRELEVANT  Revert "nl: fix memory leak"
 2410ff119c49c31c8ef709d68e9a22e2c9607695    DIFFERS     tree-wide: use "primary" in networking code
 0dc9a1425e0925b7c80a04a86ee325b60eac2485    DIFFERS     network: Rename primary to master
+70fd7fc9ba5d1d88119c14d42bdb9d4d19801738    FEATURE     lxc: add time namespace support
+b1248e473bedd2d605e96f1fc27069b4ca59aeb9    FEATURE     api: add time_namespace extension
+7fb5a8dfd2dcacd840921fcecdaad34cefad7a68    FEATURE     doc: add lxc.time.offset.{boot,monotonic}
+6fcaba055997f89cddd47a910d564291f7ba7303    FEATURE     doc: Add veth vlan bridge options to Japanese lxc.container.conf(5)
+bb144af237e973211f26deb49ad6ed6077178e2e    FEATURE     doc: Add lxc.time.offset.* to Japanese lxc.container.conf(5)
+07f89c1e0e0718971e56189a71caafb35b046cab    IRRELEVANT  confile: handle overflow in lxc.time.offset.{boot,monotonic}
+f1c4343929136632683b7c4f4bfc854c47811dce    IRRELEVANT  start: preserve time namespace
