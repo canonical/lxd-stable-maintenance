@@ -67,3 +67,17 @@ fb3583c9b612ede7dd7d49cae5b472c6b8ce3a0c    DIFFERS     api: resource_cpu_isolat
 e02cef7a9267a3379a7c8beabba0cece2679fddf    DIFFERS     i18n: Update translation templates
 6ca075cd2b56fd796477f37916019d9ce728db28    DIFFERS     api: usedby_consistency
 bbb08bc183f4ba5b31dfde30837a403a2e1d492a    DIFFERS     lxd/networks: Reports profiles in UsedBy
+5caac03173a1de8f1eeee3a1368da8412290ad57    FEATURE     api: custom_block_volumes
+62135e0299ad9f2611ecb26c940e955b73373f6c    FEATURE     lxd/migration: Add ContentType to structs
+0df12d30b49ca38ad48ef1fdcac58260397cd0a4    FEATURE     lxd/db/cluster: Add content type to storage volumes
+20b71f2fc519ec5ee7956a293b2cd3b129f56696    FEATURE     lxd/db: Add content type constants
+39fa8ce3b9357a3e19367ebecd494f5aa75687a1    FEATURE     lxd/db: Add content type to storage volumes
+f0f5dbdf6f2c7fbd25de5375b88d3c63519d274a    FEATURE     lxd/storage/utils: Add content type conversion functions
+b255d850eb888d2f14d47c642b0213f789f91cc6    FEATURE     lxd: Support custom block volumes
+89a82613fe9f30f77400e129b8607eeb5fd43759    FEATURE     lxd/storage: Show type in error
+6a0fd6aed06a5e0b8fc7efebf6e00957516c3cce    FEATURE     lxd/device/disk: Handle custom block volumes
+0904c641321d37e594114d6e7149716a38b34a7e    FEATURE     lxc/storage_volume: Support custom block volumes
+f8ed8ced8e7481cd7560a240a70bb3b810f7dc8f    FEATURE     test/suites: Add tests for custom block volumes
+a4f13bdf93374c748ff4d817a3c897e36e829f80    IRRELEVANT  po: Update translations
+fbcadbb7b4b6a60ace7d9eab1a14ee5ad3294ea4    IRRELEVANT  lxd/storage: Backward compatibility for content types
+7d15c496bf0ee4b4c010b2c766e6d6bb20094eee    IRRELEVANT  doc/storage: Document block storage volumes
