@@ -83,3 +83,14 @@ fbcadbb7b4b6a60ace7d9eab1a14ee5ad3294ea4    IRRELEVANT  lxd/storage: Backward co
 7d15c496bf0ee4b4c010b2c766e6d6bb20094eee    IRRELEVANT  doc/storage: Document block storage volumes
 626a44136d5d5298b3ef9a92f08a0b80d0d7134f    IRRELEVANT  i18n: Update translations from weblate
 e08c64c33b89d123a70e512e1da4520095c712d1    FEATURE     Release LXD 4.3
+2ad5b5bf9ae75a4240abf3ce510d7baa2a5cc176    FEATURE     lxd/db: Add failure_domains table and nodes column reference
+52e45d258b1968c4395c92d14a555528c0c57739    FEATURE     lxd/db: Add UpdateNodeFailureDomain() and GetNodesFailureDomains()
+49b38eb933f7cde67144a8d5efc875af3363ea4c    FEATURE     lxd/cluster: Honor failure domains when changing roles
+0aa747565b1837b54bf818044c2cb3ea4078bb06    FEATURE     shared/version: Add clustering_failure_domains extension
+4100b45df557c06e7f800b2e9d30af7fb5ad5396    FEATURE     lxd/cluster: Populate FailureDomain field when listing cluster members
+3043c5a8596df68936b770bac7402a1c7aad56e5    FEATURE     lxd: Support changing failure domain in PUT /1.0/cluster/<node>
+30322a368e028943ea81b7c4b8ce4f069185ba18    FEATURE     doc: Add documentation about failure domains
+9338fdc335196388bc4361cc1adedae8694555f2    FEATURE     lxc: Add failure domain column in "lxc cluster list" output
+ec073ba343843b744beca9d710ee0c5453812e73    IRRELEVANT  make i18n
+2b6f6e6ea83fb518d54dbedb8c424c7df562df01    FEATURE     test: Add new clustering_failure_domains test case
+0c987f66b6f1cb7b59709365aa2f20bb8c3421d1    DIFFERS     instance: introduce container_syscall_filtering_allow_deny extension
