@@ -112,3 +112,4 @@ be7ef5d0a6b6e197fe1996c41968871dbed17be7    DIFFERS     lxd/device/nic: shared v
 a9b86adefdbfe7f174aba39ddb6eac1232a63d36    DIFFERS     lxd/networks/config: Removed
 3bec20eb556749c346e91ce158c6813acd15ef5e    IRRELEVANT  i18n: Update translation templates
 c38312397c6d916cc3f4ee222419a8fbb05f9b03    DIFFERS     lxd/network/driver/bridge: Updates to use contextual logger
+36a9cd84431c927e140b4971af918482388c65cc    IRRELEVANT  lxd/db/network: Provide way to identifty unknown network type in getNetwork
