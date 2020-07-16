@@ -100,3 +100,15 @@ e7c0b42bbb928bb23af0b37b2258533a8edf7697    DIFFERS     api: Add GPU mdev
 8590e0ce259f3dc78020f72e94b5b831cef8c766    DIFFERS     i18n: Update translation templates
 f1c59aacd78094b6240bf4517944856a331a59e3    DIFFERS     api: console_vga_type
 45da71992de4a57e8586b40bcfb3344348e79b25    IRRELEVANT  i18n: Update translations from weblate
+269f842da15b2d1607452248f659dc683369d845    FEATURE     lxc/network: Adds flagType to cmdNetwork
+ee270e1d8a40bf8672ce189e50354300c4f7782e    FEATURE     lxd/db/cluster: Adds type field to networks table
+7a88f6e6c9070d79c5794fbc4ac9891a29734d07    DIFFERS     lxd/db/networks: Updates CreateNetwork to accept a network type
+944c46f5dcd2aa3f5cec9e6d8d89d31e9786308c    DIFFERS     lxd/db/networks: Updates CreatePendingNetwork to accept a network type
+f5b2a1c738b0e73dcf9842bf642b33e5ee57461e    IRRELEVANT  lxd/db/networks: Populate network type in getNetwork
+52abcdfb98e20e5d42b14ee025cfc93de19db536    DIFFERS     lxd/network/driver/bridge: Renames network to driver_bridge
+3e8b01da1c7a2d2f956bc7b41db3085622ba3800    DIFFERS     lxd/networks/utils: Remove unused network validation functions in main
+be7ef5d0a6b6e197fe1996c41968871dbed17be7    DIFFERS     lxd/device/nic: shared validation function usage
+4502e3f620ab3d6b431e7858ad63c78208eb6d01    DIFFERS     lxd/device/nic/ipvlan: shared validation function usage
+a9b86adefdbfe7f174aba39ddb6eac1232a63d36    DIFFERS     lxd/networks/config: Removed
+3bec20eb556749c346e91ce158c6813acd15ef5e    IRRELEVANT  i18n: Update translation templates
+c38312397c6d916cc3f4ee222419a8fbb05f9b03    DIFFERS     lxd/network/driver/bridge: Updates to use contextual logger
