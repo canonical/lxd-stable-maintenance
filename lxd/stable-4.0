@@ -113,3 +113,5 @@ a9b86adefdbfe7f174aba39ddb6eac1232a63d36    DIFFERS     lxd/networks/config: Rem
 3bec20eb556749c346e91ce158c6813acd15ef5e    IRRELEVANT  i18n: Update translation templates
 c38312397c6d916cc3f4ee222419a8fbb05f9b03    DIFFERS     lxd/network/driver/bridge: Updates to use contextual logger
 36a9cd84431c927e140b4971af918482388c65cc    IRRELEVANT  lxd/db/network: Provide way to identifty unknown network type in getNetwork
+cefc0168f40f8c108f28f7d5250bbc380bdcc90c    DIFFERS     shared/version: Add projects_limits_disk extension
+8403c3afb2adf43f446f9f866c712613cea34f5c    DIFFERS     lxd/db: Add GetCustomVolumesInProject() to fetch custom volumes in a project
