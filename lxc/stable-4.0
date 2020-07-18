@@ -49,3 +49,4 @@ b1248e473bedd2d605e96f1fc27069b4ca59aeb9    FEATURE     api: add time_namespace 
 bb144af237e973211f26deb49ad6ed6077178e2e    FEATURE     doc: Add lxc.time.offset.* to Japanese lxc.container.conf(5)
 07f89c1e0e0718971e56189a71caafb35b046cab    IRRELEVANT  confile: handle overflow in lxc.time.offset.{boot,monotonic}
 f1c4343929136632683b7c4f4bfc854c47811dce    IRRELEVANT  start: preserve time namespace
+f7176c3ea944ce2b9968b7c4a18c266639927395    DIFFERS     lxc: support CLONE_INTO_CGROUP
