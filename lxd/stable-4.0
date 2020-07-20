@@ -115,3 +115,6 @@ c38312397c6d916cc3f4ee222419a8fbb05f9b03    DIFFERS     lxd/network/driver/bridg
 36a9cd84431c927e140b4971af918482388c65cc    IRRELEVANT  lxd/db/network: Provide way to identifty unknown network type in getNetwork
 cefc0168f40f8c108f28f7d5250bbc380bdcc90c    DIFFERS     shared/version: Add projects_limits_disk extension
 8403c3afb2adf43f446f9f866c712613cea34f5c    DIFFERS     lxd/db: Add GetCustomVolumesInProject() to fetch custom volumes in a project
+11fe9d6debc027ca19f78e60301f4cb536c5e406    DIFFERS     lxd: operations.Clone() usage
+b8642f7270a0e0fce1cfccb5f3965d9b9abf8aa9    DIFFERS     lxd/db/networks: Usage of api package's NetworkStatus constants in getNetwork
+37424c9234e31b4d5de2aeb4b8aadd82c951806c    DIFFERS     lxd/db/networks: CreatePendingNetwork comments and line spacing
