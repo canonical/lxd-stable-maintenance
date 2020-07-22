@@ -119,3 +119,26 @@ cefc0168f40f8c108f28f7d5250bbc380bdcc90c    DIFFERS     shared/version: Add proj
 b8642f7270a0e0fce1cfccb5f3965d9b9abf8aa9    DIFFERS     lxd/db/networks: Usage of api package's NetworkStatus constants in getNetwork
 37424c9234e31b4d5de2aeb4b8aadd82c951806c    DIFFERS     lxd/db/networks: CreatePendingNetwork comments and line spacing
 20e42f9d6c767a2e9e1ea7a8d8fa8c8168c92447    DIFFERS     lxd/networks/utils: Skip network load error in networkUpdateForkdnsServersTask
+0f305042c41c7629deed8bb64b4632b4b13802d8    DIFFERS     lxd/db/networks: Ensure that network type matches existing pending network in CreatePendingNetwork
+681af01dc86b12c9ce0a040b17536059eb7c3c4a    DIFFERS     lxd/network/network/utils: Usage of nictype.NICType and signature changes to accomodate it
+4f594ad453e64246a068d3b72e51e60742300ea7    DIFFERS     test: Updates tests to delete profiles before networks
+f6a3bed8879ee16d2ef01a217db93c30a64fa8e8    FEATURE     doc: Updates clustering docs with network parent optional per-node key
+3725a282a178df118ceb84796334f6ee48da087b    FEATURE     lxd/db/networks: Adds parent as optional per-node network key
+434e9a916085c8fa80747f70fd3a2bb9f005c080    FEATURE     lxd/db/networks: Adds constant for NetworkTypeMacvlan
+e71f086532675aa41871e6e3eaf67a13d1f29413    FEATURE     lxd/network/network/load: Adds macvlan driver as supported network type
+9a636069a000c7314fdbe524fdfbe81bf1af116d    FEATURE     lxd/networks: Adds macvlan support to networksPost
+a0b86654fc46545721c5c488c99b891aa14766c3    FEATURE     lxd/network/driver/macvlan: macvlan driver implementation
+adb81808e936e799a7bef7b74e4274b7a178f994    FEATURE     lxd/device/nic/macvlan: Adds support for network config key
+77d60e9b3b14916930f3109e2da8b925bc065c76    FEATURE     lxd/device/nic/macvlan: Only allow non-pending networks to be used
+c36b97199254632ccbde5b67109b77e794e4ba07    FEATURE     test: Adds macvlan network test
+9e6fa4e9098cb344e2964350daad251863621262    FEATURE     lxd: Adds NetworkTypeSriov constant and conversion handling
+b5b7234688b366a7f1f29c9761af5a1c0babe571    FEATURE     lxd/network: Adds sriov driver
+3f9271e1da1ec944577c256eace56091b45bc0b2    FEATURE     lxd/device/nic/sriov: Adds network key support
+7abacec2487d4c06b8af8635be36d5126c39b5db    FEATURE     lxd/device/nictype: Adds sriov support
+5846bd8ea334c5d1ddd87f7844b035b2b34993a4    FEATURE     test: sriov network test
+6726fe65c34b7d31cb548c590cd2f9c42340cf07    FEATURE     doc/networks: Adds doc for macvlan and sriov networks
+7856e96d3009d24504aab07da128539989cba766    FEATURE     doc/instances: Updates macvlan and sriov NIC to indicate network support
+d25670d5d05fbccb821f79bdfbe84b5958d8e680    FEATURE     doc/networks: Adds example usage of --type flag
+c88350d44c91b2de30e5e9f217eef5a7689479e0    IRRELEVANT  lxd/device/nic/bridged: ovs.PortSet usage
+911187f38bb693c4b646e0f90606a37d1fba6402    FEATURE     api: Adds network_type_macvlan extension
+a87374563d4ce76c5ed7f6be3915221954814608    FEATURE     api: Adds network_type_sriov extension
