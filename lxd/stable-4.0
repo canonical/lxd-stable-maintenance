@@ -142,3 +142,4 @@ d25670d5d05fbccb821f79bdfbe84b5958d8e680    FEATURE     doc/networks: Adds examp
 c88350d44c91b2de30e5e9f217eef5a7689479e0    IRRELEVANT  lxd/device/nic/bridged: ovs.PortSet usage
 911187f38bb693c4b646e0f90606a37d1fba6402    FEATURE     api: Adds network_type_macvlan extension
 a87374563d4ce76c5ed7f6be3915221954814608    FEATURE     api: Adds network_type_sriov extension
+2e4ae875236eae842aebc4e033a0a85ea35839f2    DIFFERS     i18n: Update translation templates
