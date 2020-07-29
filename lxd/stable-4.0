@@ -143,3 +143,10 @@ c88350d44c91b2de30e5e9f217eef5a7689479e0    IRRELEVANT  lxd/device/nic/bridged: 
 911187f38bb693c4b646e0f90606a37d1fba6402    FEATURE     api: Adds network_type_macvlan extension
 a87374563d4ce76c5ed7f6be3915221954814608    FEATURE     api: Adds network_type_sriov extension
 2e4ae875236eae842aebc4e033a0a85ea35839f2    DIFFERS     i18n: Update translation templates
+25f1af4540f2404746bf844b145e3331d3439564    DIFFERS     lxd: Updates use of validate helper functions now in validate package
+29af215073d02b49e38f6c86b3b388a73fd316f8    DIFFERS     lxd/device/device/utils/network: Removes networkValidVLAN
+6c666877ee442c802dbc2df94d64baf206969ae7    IRRELEVANT  lxd/device/device/utils/network: validate.IsNetworkVLAN usage
+8a390baed5bcf21af61567daf4ba4087e317cb22    DIFFERS     lxd/device/nic: validate.IsNetworkVLAN usage
+104547b7e190f5d3e8e50e0ea8e382c1438befda    FEATURE     lxd/network/driver: Adds mtu and vlan support for macvlan and sriov network types
+5d312f9284848c296d71a7cc299c4f97f486a29a    FEATURE     lxd/device/nic: Inherit mtu and vlan settings from network for macvlan and sriov NICs
+5a497e5d827e179ca3f8cf6ab1f4b7b9b1f13170    FEATURE     doc/networks: Adds mtu and vlan options for macvlan and sriov network types
