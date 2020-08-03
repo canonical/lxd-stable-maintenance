@@ -150,3 +150,9 @@ a87374563d4ce76c5ed7f6be3915221954814608    FEATURE     api: Adds network_type_s
 104547b7e190f5d3e8e50e0ea8e382c1438befda    FEATURE     lxd/network/driver: Adds mtu and vlan support for macvlan and sriov network types
 5d312f9284848c296d71a7cc299c4f97f486a29a    FEATURE     lxd/device/nic: Inherit mtu and vlan settings from network for macvlan and sriov NICs
 5a497e5d827e179ca3f8cf6ab1f4b7b9b1f13170    FEATURE     doc/networks: Adds mtu and vlan options for macvlan and sriov network types
+1ea421ead29df66024cb45f52d33a9f3a49ca822    DIFFERS     lxd/device/nic/routed: networkVethFillFromVolatile usage and other host-veth helper functions
+f917a3268ae6f50cc32f82cc4b3d9ffa89b0c7af    DIFFERS     i18n: Update translations from weblate
+60307841faaeeeadadea828b3790a8b25d77ca08    DIFFERS     i18n: Update translation templates
+c07bea6084aa1c7e6162879873bfd95ad95f81de    FEATURE     Release LXD 4.4
+a83d9c97fb9fbb6045a4bc48773968bb0f6628fa    IRRELEVANT  lxd/cluster: Fix failure domain updates
+9644ba8a40e02cec1adb2cacea67be10922e9797    IRRELEVANT  tests: Fix failure domain test
