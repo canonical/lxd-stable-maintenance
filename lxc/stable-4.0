@@ -52,3 +52,6 @@ f1c4343929136632683b7c4f4bfc854c47811dce    IRRELEVANT  start: preserve time nam
 f7176c3ea944ce2b9968b7c4a18c266639927395    DIFFERS     lxc: support CLONE_INTO_CGROUP
 c312db1110b56ea8cd20ba64cc8f591ef948ae51    DIFFERS     api-extensions: add seccomp_allow_deny_syntax extension
 99bf8f215582812e55f4e5de472f799259e56544    DIFFERS     string_utils: make all helpers hidden
+efb7e3041618ba8f4c5debbffa676795ab9d9a1b    DIFFERS     conf: hide unnecessary symbols
+4a9ee78a84589118d5ff3bf2fa94caa4adca2ffc    DIFFERS     file_utils: hide unnecessary symbols
+5f1b09866fee830291e3558262f5d71305888d69    DIFFERS     utils: hide unnecessary symbols
