@@ -156,3 +156,15 @@ f917a3268ae6f50cc32f82cc4b3d9ffa89b0c7af    DIFFERS     i18n: Update translation
 c07bea6084aa1c7e6162879873bfd95ad95f81de    FEATURE     Release LXD 4.4
 a83d9c97fb9fbb6045a4bc48773968bb0f6628fa    IRRELEVANT  lxd/cluster: Fix failure domain updates
 9644ba8a40e02cec1adb2cacea67be10922e9797    IRRELEVANT  tests: Fix failure domain test
+faa11bdadb31ce900e453a2a6fb55230584ac88f    DIFFERS     lxd: Wraps validate.IsUint32 in validate.Optional
+c7b46cd66149b0cb4d8e6091fff8bcb3b33eea7b    DIFFERS     lxd: Wraps validate.IsBool in validate.Optional
+081b4978f0ecd07bcec3dacad6a6560aadbee502    DIFFERS     lxd/device/nic: Wraps validate.IsNetworkAddressV4 in validate.Optional
+80a844dcc933e2158d6aa2811b318fde0a8c142b    IRRELEVANT  lxd/device/nic/ipvlan: Wraps validate.IsNetworkAddressV4 in validate.Optional
+b0627a1ed6fb4e903d56a327cfe6863990f1a293    IRRELEVANT  lxd/device/nic/ipvlan: Fixes incorrect IPv4 address check in IPv6 context
+71598156852bc60ea0a5b83466af1b84bf2112ed    DIFFERS     lxd: Wraps validate.IsNetworkAddressV6 in validate.Optional
+6b04417d5ee3dcc45e685f3a6723a5cecb3bec44    IRRELEVANT  lxd/device/nic/ipvlan: validate.IsNetworkAddressVX tweaks
+2cadfdc8f910461bb3a4f04a3c4a0ffff57a3c3d    IRRELEVANT  lxd/network/driver/macvlan: Implements ValidateName
+0ca49ed49ffde73fc192d99266f0ef6a4b7b5bfb    IRRELEVANT  lxd/network/driver/sriov: Implements ValidateName
+20f252e907a7efec64a87fd4276c7860c2d0be4c    IRRELEVANT  doc/networks: Fixes typo in bridge docs
+596e8ad5a3dd75378cfb9ec76ad461eb4a06bcfe    IRRELEVANT  lxd/device/nic/bridged: OVS function naming usage
+c92f86a06ec835011c0d2ad909ff23f2e527fc82    IRRELEVANT  lxd/network/driver: Removes ValidateName from sriov and macvlan
