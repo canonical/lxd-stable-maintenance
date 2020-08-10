@@ -168,3 +168,9 @@ b0627a1ed6fb4e903d56a327cfe6863990f1a293    IRRELEVANT  lxd/device/nic/ipvlan: F
 20f252e907a7efec64a87fd4276c7860c2d0be4c    IRRELEVANT  doc/networks: Fixes typo in bridge docs
 596e8ad5a3dd75378cfb9ec76ad461eb4a06bcfe    IRRELEVANT  lxd/device/nic/bridged: OVS function naming usage
 c92f86a06ec835011c0d2ad909ff23f2e527fc82    IRRELEVANT  lxd/network/driver: Removes ValidateName from sriov and macvlan
+b2f06e455ce2bcc9cb8222d798a31e5f6776e13e    FEATURE     seccomp: enable bpf in unprivileged containers
+94b5cafdbc0c8dd7225ade40a0c66ce7020e65c7    FEATURE     doc: add security.syscalls.intercept.bpf and security.syscalls.intercept.bpf.prog.devices
+575c24361ebae70c27eb70b54f36b7a2ceec7b68    FEATURE     api: add container_syscall_intercept_bpf_devices extension
+92a28791e1bfb73ac881690e5a722400203fdc52    FEATURE     lxd-client: add security.syscalls.intercept.bpf security.syscalls.intercept.bpf.devices to completion
+c2ef372b394b422dd725baac7d197d8c6f39107c    FEATURE     production-setup: mention bpf-specific memlock settings
+909c4302e909ea3a3a43285f8d31c24b86a1d028    IRRELEVANT  seccomp: check the return value of pwrite()
