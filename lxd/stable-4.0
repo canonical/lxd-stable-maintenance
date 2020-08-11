@@ -174,3 +174,4 @@ b2f06e455ce2bcc9cb8222d798a31e5f6776e13e    FEATURE     seccomp: enable bpf in u
 92a28791e1bfb73ac881690e5a722400203fdc52    FEATURE     lxd-client: add security.syscalls.intercept.bpf security.syscalls.intercept.bpf.devices to completion
 c2ef372b394b422dd725baac7d197d8c6f39107c    FEATURE     production-setup: mention bpf-specific memlock settings
 909c4302e909ea3a3a43285f8d31c24b86a1d028    IRRELEVANT  seccomp: check the return value of pwrite()
+ec86cc5cb5818e03424075912dd7854728cb2309    DIFFERS     lxd/network/network/utils: Adds randomHwaddr function
