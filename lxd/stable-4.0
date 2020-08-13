@@ -176,3 +176,5 @@ c2ef372b394b422dd725baac7d197d8c6f39107c    FEATURE     production-setup: mentio
 909c4302e909ea3a3a43285f8d31c24b86a1d028    IRRELEVANT  seccomp: check the return value of pwrite()
 ec86cc5cb5818e03424075912dd7854728cb2309    DIFFERS     lxd/network/network/utils: Adds randomHwaddr function
 35e8308708a4175445ad0e2dad1b1a12193b4eb2    IRRELEVANT  doc/networks: dns.search clarification
+a4ad0739d51f8a5a06da129490891e109917c9e8    IRRELEVANT  seccomp: cap instruction limit and log buffer to reasonable sizes
+86d385d3d1903e6345db22babc25c14b7b3d25aa    IRRELEVANT  seccomp: initialize almost everything
