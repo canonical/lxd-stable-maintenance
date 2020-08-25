@@ -202,3 +202,33 @@ a0adb9fca4d23ab7c04a8db43a5007af749fccd1    FEATURE     doc/networks: Adds initi
 bac862f5d632376b4968ab0881e033932f7e44bb    FEATURE     doc/networks: Add OVN range keys
 47ba307cba8da5b3920d30391c28e81a608c8a07    FEATURE     doc/networks: Fix key ordering
 9a00f870ac8427adea045d41b3be8c642593bac8    FEATURE     bash: Update completion profile
+3d8cf6fdae11c5c9b3fda5c7b553a4e0aea4a0df    DIFFERS     lxd/db/networks: Separates network type and status conversion into separate functions
+984b076140a02a12dad74a520a3c69a4ac040082    DIFFERS     lxd/db/networks: Adds ClusterTx.GetNonPendingNetworks function
+05af94244e81f3c8b2312515f53e819529f078a6    IRRELEVANT  lxd/network/driver/ovn: Use DB transactions to safely allocate OVN external IPs on parent network
+245443955eabede3bf8a5c91e20c4514363bf116    IRRELEVANT  lxd/network/driver/ovn: Include last IP in OVN range for allocatable IPs
+719e9e8265ea0b5b32661f5f0b7400edbcad027d    DIFFERS     lxd/db/networks: Populate description col with empty string in CreatePendingNetwork
+70c37f7c522c08f601b6ae6325939b5ca8d714ec    DIFFERS     lxd/network/driver: validates mtu using IsNetworkMTU
+106f1060c065dbdc1985bf4c0f93d075f262af74    IRRELEVANT  lxd/network/network/utils: Removes OVN specific helper functions
+ff3b902e56dd9d335ed97d85a6b98201c69da0e0    IRRELEVANT  lxd/network/network/utils/ovn: Adds OVNInstanceDeviceMTU function
+7daeb2c32a3ad6d52bbcb97021307cf4e11731d2    IRRELEVANT  lxd/network/openvwitch/ovn: Adds MTU support for DHCP and IPv6 RA
+121c3886c12d90eb591ee6c75dbcce00a4840aa4    IRRELEVANT  lxd/network/driver/ovn: Adds bridge.mtu config option and passes to DHCP/RA setup
+8b667d0f067acc93c949c9700fe870f26a8bba3e    IRRELEVANT  lxd/device/nic/ovn: Use parent network's bridge.mtu setting for setting device MTU
+5a3553377d5c066d94852b9ce1b1d9969fd00a7a    IRRELEVANT  lxd/network/ovn: Use snap path
+fb50fc4a964a1bfdd46b1abff82251a17c9fe0dc    IRRELEVANT  doc/networks: Adds link to OVN network
+522cedb58fd94649606a888b2e7e5be8c17a3c9e    IRRELEVANT  lxd/network/driver/ovn: Pings OVN external IPv6 router IP on bridge port start
+8b539a5a09ea25db45e875468215786f4c59462e    IRRELEVANT  lxd/network/openvswitch/dns: Adds LogicalSwitchPortSetDNS and LogicalSwitchPortDeleteDNS functions
+e6cb1ece6c6c8974dfceb7347235b659be4986a6    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchDelete to clear any remaining DNS records
+a4c2ef37b148f91496f48c0d7fca669801f45b44    IRRELEVANT  lxd/network/network/utils/ovn: Updates OVNInstanceDevicePortAdd to take instanceName for DNS records
+aa22aa7c6ebc90e51423db60eaf5783f364d5bea    IRRELEVANT  lxd/network/driver/ovn: Updates instance port functions to setup and remove DNS records
+9e0702680bc66af2312070350615363c22121278    IRRELEVANT  lxd/device/nic/ovn: Updates usage of network.OVNInstanceDevicePortAdd to supply instance name for DNS records
+3ae4e7b57583a8cf21cbca8a237f624e81ffc42b    FEATURE     lxd/db/cluster: Adds patch for adding project_id to networks table
+2f1848147bd33908571660c2bf129ac0e75e38f5    FEATURE     lxd/db/networks: Adds project support to CreatePendingNetwork
+3d75cd2ad2f3950b636815bf6ffd56921f36644f    FEATURE     lxd/db/networks: Adds project support to CreateNetwork
+cd2a5aff8225b9d0eb61b946302201a81a4f14e3    FEATURE     lxd/networks: Pass project.Default when creating networks
+e325a7fa8890c53bb924ed3338037d566f0bc78b    FEATURE     lxd/instance/test: Updates tests to use project.Default for new networks
+f3b07c410338658fd8ba343accb3891b308ce299    FEATURE     lxd/db/networks/test: Updates tests to use project.Default for new networks
+b6fa5e1a386adf08a07d7a73c3035e1ebc8c786c    DIFFERS     i18n: Update translation templates
+2f960621ae4c598a1c288733b49f98584ca5d48e    FEATURE     lxd/db/cluster: Update tables to allow null value for node ID
+d83e73d17b9a2b576ef436dc9bd8db319b8fe60e    FEATURE     lxd/db: Handle null value for nodeID
+ae337c2f3cab475658e56339cf0101d2cd2423c6    FEATURE     lxd/daemon: Make db aware of remote storage drivers
+ab77a10a2f239bbabae07381f63dddff09bbc7b1    FEATURE     lxd/daemon: Perform automatic snapshots on random node
