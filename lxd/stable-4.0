@@ -232,3 +232,16 @@ b6fa5e1a386adf08a07d7a73c3035e1ebc8c786c    DIFFERS     i18n: Update translation
 d83e73d17b9a2b576ef436dc9bd8db319b8fe60e    FEATURE     lxd/db: Handle null value for nodeID
 ae337c2f3cab475658e56339cf0101d2cd2423c6    FEATURE     lxd/daemon: Make db aware of remote storage drivers
 ab77a10a2f239bbabae07381f63dddff09bbc7b1    FEATURE     lxd/daemon: Perform automatic snapshots on random node
+4a1c3e61f862aef59c59baaae9f63faee5f4d176    IRRELEVANT  lxd/network/driver/ovn: Makes ping test in startParentPortBridge async
+03cd073e7d48cbd30445bb1ab1c6fd022074abdb    DIFFERS     lxd/network/driver: cluster.ClientType usage
+0d245ffd733f9ff10adc97d843398dff13a1a7b9    IRRELEVANT  lxd/network/driver/ovn: cluster.ClientType usage
+57bd5b22ad8102ff21125000a75e262ff6e6ce28    IRRELEVANT  lxd/daemon: db.StorageRemoteDriverNames usage
+c64e135e44d0e92e595539591b81ac2ffb82b096    IRRELEVANT  lxd/db: StorageRemoteDriverNames usage
+677f5a20f7f001a13e756e3d7bd241fd2fd9a73d    IRRELEVANT  lxd/db/storage/pools: Renames GetRemoteDrivers to StorageRemoteDriverNames for clarity
+165593ff16e3b2799360524467e686caeb8c9ffb    DIFFERS     lxd/storage/drivers/load: Remove references to "support" in AllDriverNames
+5a5b1c9b6d658be6890a6e0c7a5365ae7e1b210f    IRRELEVANT  lxd/daemon: storageDrivers.RemoteDriverNames usage simplifcation
+c2305e9c8e92abd2695edf562cf499eea806a520    IRRELEVANT  doc/networks: Rename OVN parent to network
+d33d5324fd700f28cf7979de627bd653d4729e15    IRRELEVANT  lxd/networks/ovn: Rename parent to network
+277712a8a4fd7c635a9e91443656b58c3c82b799    IRRELEVANT  scripts/bash: Add network config key
+c036e3b79f931df59ebe86c23c60674e2d7128d3    IRRELEVANT  i18n: Update translations from weblate
+467ce5ea78ad6445cd476e97f9bacebb466f8631    FEATURE     Release LXD 4.5
