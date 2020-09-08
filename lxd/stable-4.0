@@ -245,3 +245,19 @@ d33d5324fd700f28cf7979de627bd653d4729e15    IRRELEVANT  lxd/networks/ovn: Rename
 277712a8a4fd7c635a9e91443656b58c3c82b799    IRRELEVANT  scripts/bash: Add network config key
 c036e3b79f931df59ebe86c23c60674e2d7128d3    IRRELEVANT  i18n: Update translations from weblate
 467ce5ea78ad6445cd476e97f9bacebb466f8631    FEATURE     Release LXD 4.5
+024e87531934c3125f5a28eaa1d1cf5390debc09    IRRELEVANT  lxd/db/cluster: Fix incorrect storage volume node IDs
+fd75c703f8fee82529b7c41d1de4be0a6923b09a    IRRELEVANT  lxd/db/cluster: Fix node id nil values
+9807ba8fa2bb45e171d3a1b583f79fd5944ce2de    IRRELEVANT  lxd/network/driver/ovn: Removes unnecessary dnsmasq logic in deleteParentPortBridge
+1371927f2c9db61d5a880115eaa9e047417ccf0d    DIFFERS     lxd/device: network.RandomDevName usage
+bc55a7aab15b34287836706635838d4f432fee14    FEATURE     api: Adds network_bridge_ovn_bridge API extension
+0632782fa73855bac2f0a02abb5d4f690bd8937d    IRRELEVANT  lxd/network/driver/ovn: Updates parentPortBridgeVars to use ovn.ovs_bridge from parent network
+06425c9f62cc4365d568bb6f692b40466c5525b8    IRRELEVANT  lxd/network/driver/bridge: Adds ovn.ovs_bridge config key for OVN networks using bridge as parent
+cada30dcb200ab19d0d02a28d0327b4dee6bde62    DIFFERS     doc/api: Removes underscore escaping when used inside backticks
+b0084540e858a21147f85a1a9b3c9e3772fc0873    IRRELEVANT  doc/networks: Adds ovn.ovs_bridge key to bridge networks
+08d7f594064b70877433ede712919c8a6a2f9f21    FEATURE     lxd/db/cluster: Adds networks to project usage view
+801888ec1099bcb53b8c3220ff6de8f61ef2e8f3    DIFFERS     po: Update translations
+a3620edb4c9deeca588ab005321e9935098b2d61    IRRELEVANT  lxd/network/driver/ovn: Add and delete local chassis ID to HA chassis group on start/stop
+ec2c7eaf3a9f7c4f700f3da43953c1c5465861ed    IRRELEVANT  lxd/network/openvswitch/ovn: Adds ChassisGroupChassisDelete function
+a3ce774924f0ce526e44b9173b5a934081d65650    IRRELEVANT  lxd/network/driver/ovn: Adds ovn.name setting to store OVN logical network name
+1da05127ce526532196400a51fae93bfd751ea37    IRRELEVANT  doc/networks: Adds ovn.name to OVN network doc
+71898bd2654e8e0e977f5ba9c319c5e85b5c69fd    IRRELEVANT  api: Adds network_ovn_name API extension
