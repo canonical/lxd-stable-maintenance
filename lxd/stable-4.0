@@ -263,3 +263,4 @@ a3ce774924f0ce526e44b9173b5a934081d65650    IRRELEVANT  lxd/network/driver/ovn: 
 71898bd2654e8e0e977f5ba9c319c5e85b5c69fd    IRRELEVANT  api: Adds network_ovn_name API extension
 571f8d60ff099673facf7f99916b79ba29d11e72    IRRELEVANT  seccomp: fix compilation on kernels without proper bpf.h
 0c5654039abba595e6f7da86be8dc13ee8b45505    DIFFERS     i18n: Update translation templates
+512f9e63b8011e856a8504aae9b01ae90376446f    IRRELEVANT  db: Handle NULL storage_volume description column in patch 34
