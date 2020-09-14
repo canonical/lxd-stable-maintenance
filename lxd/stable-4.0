@@ -275,3 +275,55 @@ a18d44cd691cd764a422f548db21241a90c8435e    IRRELEVANT  lxd/network/driver/ovn: 
 bd7f533d2b648b973e4c59ad5370a5821348c89a    IRRELEVANT  lxd/network/driver/ovn: Adds pause between chassis group entry deletion and uplink port removal
 f32797af26bc8a69fbb6d88a32b0b3acc119ec70    IRRELEVANT  lxd/network/driver/ovn: parentPortBridgeVars whitespace
 79f27d32e57c3994650b05014c7157ef46ac7cc1    IRRELEVANT  Revert "api: Adds network_bridge_ovn_bridge API extension"
+817fe3ae600b01de2048fa20e4a283922ad45ac6    FEATURE     lxd/db/cluster/update: Adds features.networks to default project
+75edcfa375e911195dc9a752ca164bd48a838a6b    FEATURE     lxd/project: Adds NetworkProject function
+91b1e90e0eac914873a213c7a0619ffc2669bf37    IRRELEVANT  lxd/db/networks: Updates networkState and usage to support projects
+b3bb59d4f6ebb00933645e343e48c71052861d59    IRRELEVANT  lxd/db/networks: Updates getNetwork and usage to support projects
+5b085b1530334b7e60c1e028f3ef47bf643954c1    IRRELEVANT  lxd/network/network/utils: Updates IsInUseByInstance to translate instance's project to a network project
+72b48c2aea7e927e88a58c2d1749304254f3e4f8    IRRELEVANT  lxd/network/network/utils: Updates isInUseByDevices to support projects
+6770af3c83f3e90333adf7768c2d2e2bf2c62147    IRRELEVANT  lxd/network/network/utils: Updates IsInUseByProfile to accept a db.Profile rather than api.Profile
+7af3e9d4b25c10f3840b3efeb17bbeae2aa07ef9    IRRELEVANT  lxd/network/network/utils: Updates UpdateDNSMasqStatic to use default project
+a27b0365be71b80727e5fda5b5dadf8c093ec48e    IRRELEVANT  lxd/network/network/utils: Updates GetLeaseAddresses to use default project
+ebeb92e0c8de0c2d429c4ef12d99284005ae4103    DIFFERS     lxd/network/network/utils: Adds UsedBy function and unexports related functions not used elsewhere
+5fd8a668d3e49641af828cbf067ee7fece5a333b    IRRELEVANT  lxd/network/driver/ovn: Updates parentAllAllocatedIPs to use update GetNonPendingNetworks
+44c0169a25649348c861e4c4c8abc438ba991f0b    IRRELEVANT  lxd/network/network/utils: Adds network usage by other networks detection in UsedBy
+ba77062f0ce2188ec295edec4effc4c2b85d6d44    IRRELEVANT  lxd/network/driver: Removes duplicated "in use" check that is now done at top level
+b7922c059d0f45832b1d80fbf9a233ca726a5f94    IRRELEVANT  lxd/patches: Updates to support network projects
+1935db18d1f2936122510b431cee6ea223de1852    IRRELEVANT  lxd/networks/utils: Updates networkUpdateForkdnsServersTask to support projects
+d9a04b6953211590af2c57710f48de0f9421c2e6    FEATURE     lxd/networks: Updates networksGet to support projects
+8ec013b06c5d46a7b1300b1b326355bfeb0eed41    FEATURE     lxd/networks: Updates networksPost to support projects
+d6f28463f413faae60bf529b6b37a1e14d350ee0    FEATURE     lxd/networks: Updates networksPostCluster to support projects
+292d3eb5a29a180b9b4ad90b42b63484ce4a4d7f    FEATURE     lxd/networks: Updates doNetworksCreate to support projects
+1033b51136c40ad5b525d68838aded41e835696f    FEATURE     lxd/networks: Updates networkGet to support projects
+94937f6229488aae5eb12545e437a4c5594d0d55    FEATURE     lxd/db/networks: Updates GetNonPendingNetworks to return a map of project networks
+1790a44cb26476e626cfece75804a75cd9bb5696    DIFFERS     lxd/network/driver/common: Updates IsUsed to use UsedBy
+eac9cdf64e81837a2be7976848be4857042345f3    FEATURE     lxd/networks: Updates networkDelete to support projects
+4a0bfaab674b2898218e366d1b5c1aeb8bd4475e    FEATURE     lxd/networks: Updates networkPost to support projects
+f3009d7be87f03a6c96ec6d6ca1bf355609f7ee7    FEATURE     lxc/networks: Updates networkPut to support projects
+477cb968ce1c48cca719578d9b7ea816ef3f02c4    FEATURE     lxd/networks: Updates doNetworkUpdate to support projects
+a0914557eec1245c405710732bc7036a28bb071a    IRRELEVANT  lxd/networks: Updates networkStartup and networkShutdown to load networks from all projects
+029146b95e5ebe820de528f65241429374761a50    IRRELEVANT  lxd/network/network/load: Updates load functions to support projects
+0aeb6ac5fabe5473ff679c0b10c5de080f3fce95    IRRELEVANT  lxd/network/network/interface: Adds project name to init function
+331f2574a265195799176e70659eecb7bbb7d23e    IRRELEVANT  lxd/network/driver/common: Adds project support
+62295deaccf70eb33ec56cd1479245b701997bdc    IRRELEVANT  lxd/network/driver/ovn: Load parent network from default project
+f52117539fc08cbe49b53bed475f57fce75aafd4    IRRELEVANT  lxd/device/nictype: Adds conversion of device project to network project for NICType validation
+d4e5460b36f2ad006ca04363cfa4d51216e879a2    IRRELEVANT  lxc/instance/drivers/driver/lxc: nictype.NICType project usage
+07eb0e660ea7490f278756013ce0b1eef2eb199f    IRRELEVANT  lxd/instance/drivers/driver/qemu: nictype.NICType project usage
+82b196645e971c13871adfab5ef505d485b846e6    IRRELEVANT  lxd/device/device/utils/network: Use default project for veth route functions
+5d8ec48e3129ed9363b5ea7b08cbd90eeebf18a5    IRRELEVANT  lxd/device/nic/bridged: Use default project for bridge networks
+6adb111a10b6c8e5eda423555364d41857243efd    IRRELEVANT  lxd/device/nic/macvlan: Use default project for macvlan networks
+7d233eb1408673b5a2d37d5abf0b7ea9a0b3da7a    IRRELEVANT  lxd/device/nic/ovn: Load parent network's project from instance's project
+df849ba34765c33d4710e03c3c9a4c06cb417021    IRRELEVANT  lxd/device/nic/sriov: Use default project for parent network
+48a1270e0079555b63a4efda62a54a25e5c92ad9    IRRELEVANT  lxd/device/proxy: NICType project usage
+db71740d67f6e95ccb081b930742bf1c667904ca    IRRELEVANT  lxd/network/driver/common: Send project when notifying nodes of network changes
+a72e83546f30620263e079fc2f367e57da203b46    IRRELEVANT  lxd/networks: Send project when creating network on remote node
+4597b18689334fc82d2e98dee3010a741eb4bf51    IRRELEVANT  lxd/db/migration/test: Add network project support
+0bd468f50032ebdccc7b646a3f1d94265beae170    IRRELEVANT  lxd/cluster/membership/test: Add network project support
+3ca568c720f73d8616a050dcf1b698b46c7e0c67    IRRELEVANT  lxd/api/cluster: Uses default project for networks during cluster join
+2797cc36f15e0d78215b5a6283b2aa24c31c7787    IRRELEVANT  lxd/networks: Updates networksPostCluster to use tx.GetNetworkID with project
+65de143507712c72903e4e4fb42ccd6b2cbcc94d    IRRELEVANT  lxd/db/networks: Adds project support to CreatePendingNetwork
+4736cc07f82201bbfdc301171fe77948032e4cc0    IRRELEVANT  lxd/db/networks: Adds project support to GetNetworkID
+6c1689701d87711b554a60a2b9498a9c604acd87    IRRELEVANT  lxd/db/networks/test: Updates GetNetworkID usage with project
+a3dbc04d89b7421a35b3fbfe80c5e4b1a680053a    DIFFERS     lxd/device/device/load: Adds project support to load function
+c7c9ef494e0e95f186a2ac35772b5021b6cb5856    DIFFERS     lxd/networks: Updates doNetworkGet to support projects and to use network.UsedBy
+96ed6fcf8b4138dac74afb1d1b73c83246b16232    DIFFERS     lxd/networks: Updates networkLeasesGet to support network projects
