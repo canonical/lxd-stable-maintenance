@@ -264,3 +264,14 @@ a3ce774924f0ce526e44b9173b5a934081d65650    IRRELEVANT  lxd/network/driver/ovn: 
 571f8d60ff099673facf7f99916b79ba29d11e72    IRRELEVANT  seccomp: fix compilation on kernels without proper bpf.h
 0c5654039abba595e6f7da86be8dc13ee8b45505    DIFFERS     i18n: Update translation templates
 512f9e63b8011e856a8504aae9b01ae90376446f    IRRELEVANT  db: Handle NULL storage_volume description column in patch 34
+5742c8a094003fc32129c99badedf5c2da5500e8    IRRELEVANT  Revert "api: Adds network_ovn_name API extension"
+8f7a59c11ada33c5f53890355e92e6aafc096415    IRRELEVANT  Revert "doc/networks: Adds ovn.name to OVN network doc"
+da2cd398906410dbf43fbb7a4d66fa1d3c7c3d20    IRRELEVANT  Revert "lxd/network/driver/ovn: Adds ovn.name setting to store OVN logical network name"
+a724ed68d98cc2819532f094d67c8bc33277fb05    IRRELEVANT  Revert "doc/networks: Adds ovn.ovs_bridge key to bridge networks"
+e2770b2509b431fb1a1d43d541e9bff642c75933    IRRELEVANT  Revert "lxd/network/driver/bridge: Adds ovn.ovs_bridge config key for OVN networks using bridge as parent"
+21f75a25cc66db52875d9cf3f7074b3bf4f1ba30    IRRELEVANT  Revert "lxd/network/driver/ovn: Updates parentPortBridgeVars to use ovn.ovs_bridge from parent network"
+f9c37e0c92a2ea6e7de2e4560e5b4e34abe30136    IRRELEVANT  lxd/network/driver/ovn: Removes unused import
+a18d44cd691cd764a422f548db21241a90c8435e    IRRELEVANT  lxd/network/driver/ovn: Removes unnecessary network ID lookup
+bd7f533d2b648b973e4c59ad5370a5821348c89a    IRRELEVANT  lxd/network/driver/ovn: Adds pause between chassis group entry deletion and uplink port removal
+f32797af26bc8a69fbb6d88a32b0b3acc119ec70    IRRELEVANT  lxd/network/driver/ovn: parentPortBridgeVars whitespace
+79f27d32e57c3994650b05014c7157ef46ac7cc1    IRRELEVANT  Revert "api: Adds network_bridge_ovn_bridge API extension"
