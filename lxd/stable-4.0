@@ -327,3 +327,4 @@ a72e83546f30620263e079fc2f367e57da203b46    IRRELEVANT  lxd/networks: Send proje
 a3dbc04d89b7421a35b3fbfe80c5e4b1a680053a    DIFFERS     lxd/device/device/load: Adds project support to load function
 c7c9ef494e0e95f186a2ac35772b5021b6cb5856    DIFFERS     lxd/networks: Updates doNetworkGet to support projects and to use network.UsedBy
 96ed6fcf8b4138dac74afb1d1b73c83246b16232    DIFFERS     lxd/networks: Updates networkLeasesGet to support network projects
+68f2dbfbf5e16f2566ea0e994efc501706e34540    DIFFERS     i18n: Update translation template
