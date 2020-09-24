@@ -328,3 +328,34 @@ a3dbc04d89b7421a35b3fbfe80c5e4b1a680053a    DIFFERS     lxd/device/device/load: 
 c7c9ef494e0e95f186a2ac35772b5021b6cb5856    DIFFERS     lxd/networks: Updates doNetworkGet to support projects and to use network.UsedBy
 96ed6fcf8b4138dac74afb1d1b73c83246b16232    DIFFERS     lxd/networks: Updates networkLeasesGet to support network projects
 68f2dbfbf5e16f2566ea0e994efc501706e34540    DIFFERS     i18n: Update translation template
+68d2075434ac148dc17667f46162f27a65fa9540    FEATURE     doc/projects: Adds features.networks
+61876ea077cc4ea2befbfce60a4100c1cc8a5b9a    FEATURE     lxc/project: Adds features.networks to project list output
+b12382830752939715d2f4d2234590029153e51e    FEATURE     lxd/api/project: Adds features.networks support but does not enable by default
+73594351265243e467044c68d3574eab574806fc    IRRELEVANT  lxd/api/cluster: Adds project support for networks
+cf75ae65140cc0e21a49dcdd464320c86328eb63    IRRELEVANT  lxd/api/cluster: clusterPutJoin project support
+9f9e92d144ffeec60459fe529600149c9a2a73a5    IRRELEVANT  lxd/api/cluster: clusterInitMember project support
+50ab70b8bc005abc9802ad8fca5cfbd85f142068    IRRELEVANT  lxd/api/cluster: Adds NetworksPost to internalClusterPostNetwork
+34f184c07416d03d0baf1f1d256a218649829882    IRRELEVANT  lxd/init: Adds internalClusterPostNetwork to initDataNode
+d84fd7befc87a99518d3da9398a2bcf204923ae0    DIFFERS     lxd/api/cluster: Updates clusterPutJoin to use revert
+86e36289f6286224450a8230d76fb39ebef34489    IRRELEVANT  lxd/api/cluster: Checks network types match in clusterCheckNetworksMatch
+acc78f027e9f0495323925e088e37fd6e9f60aa7    IRRELEVANT  lxd/init: initDataNodeApply project support
+2833609d6d52a5155dd85b8894780cc8b285ec45    IRRELEVANT  lxd/init: initDataNodeApply comment consistency
+e098acab73af6549d5407e51a70140e7c3e14c0a    IRRELEVANT  lxd/main/init/auto: Updates RunAuto to send internalClusterPostNetwork
+3b39f3d7485a7d44c6bc096dbc21291547c21205    IRRELEVANT  lxd/main/init/dump: Updates RunDump to use internalClusterPostNetwork
+d8b51c8f180d2e076714db90188cf63c787b3eee    IRRELEVANT  lxd/main/init/interactive: Updates RunInteractive to use internalClusterPostNetwork
+c968e7055068c4322c872435a2f1288065f2aa8e    IRRELEVANT  lxd/main/init/interactive: Updates askNetworking to use internalClusterPostNetwork
+5da9c15380d323a81644f4d99c194063c6f6c3d2    IRRELEVANT  lxd/network/driver/ovn: Adds Info function
+3471ea55d126420245b18e4ef2315441696d3c22    IRRELEVANT  lxd: network.ValidateNameAndProject usage
+3b926e2262d3cf4e574ff461a779b40aeb666706    IRRELEVANT  lxd/network/driver/ovn: deleteParentPort fixed to allow deletion of network with no parent
+60fd710854c8de848c777cfed83af78d78dab9e6    IRRELEVANT  lxd/project: Updates NetworkProject to return project config
+9c6fc9b1d0519f1bb6d7450f85e55ee89392c017    IRRELEVANT  doc/project: Adds limits.networks setting
+d914c4cf6ab0b0fda190d0fe2ee03aa82d0a6eab    IRRELEVANT  lxd/api/project: Adds limits.networks setting
+cf70b6c52b90b888e1f0697e28c68293a433bf3d    IRRELEVANT  lxd/networks: Enforces limits.networks in networksPost
+3605a3b4d4a6607054d18beca2414034fca261a1    IRRELEVANT  lxd: project.NetworkProject usage
+88873c8a15cabb2b97cac333ba5aed9bce457d2f    IRRELEVANT  lxd/networks: Don't allow non-default network projects to access info about the physical interfaces in doNetworkGet
+637309bea56436059e8b7fa539da95328d111db8    DIFFERS     lxd/network: Adds Info struct and function
+69cadff10a88e573cf61e353a7a05247ba52de8e    IRRELEVANT  lxd/network/network/load: Renames ValidateName to ValidateNameAndProject
+dbd70bd3f22a518a02166d0e1b6856746d226336    IRRELEVANT  lxd/api/cluster: Create or update local node projects to sync with cluster in clusterInitMember
+37e4109efe4129c3f39cd39e7c247e3cb554b9b7    IRRELEVANT  i18n: Update translation templates
+08bff19060b35d02ffadb98bda52d08e7626f6c5    IRRELEVANT  i18n: Update translations from weblate
+bbdfe803cff93e70bae16c478a944c951e8e425c    FEATURE     Release LXD 4.6
