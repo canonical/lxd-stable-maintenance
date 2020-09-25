@@ -408,3 +408,32 @@ a8c46bcfb5690b4b147290fda2e7e4bd690d3261    DIFFERS     lxd/network/driver: Adds
 904349f08e1865c2b8534cca2062c051a23b624c    IRRELEVANT  lxd/sys/fs: Removes backups/instances and backups/custom from pre-storage mount setup
 bad724ab9e6d962c94cc6a844837c7996378364e    DIFFERS     lxd/sys/fs: Adds initStorageDirs to be called after storage pools and daemon volumes are mounted
 a954c9f88b750bbbdd8dcffc633decdc904a1290    DIFFERS     lxd/backup: Renames backup to backup_common
+d0ae93e802f66b9e7df9c53cd2a87f562b6d95a9    DIFFERS     lxd/networks: netType.DBType usage in networksPost
+c1da0f64ee2bfa0e1b921ee86b6c4e5973e14e52    DIFFERS     lxd/networks: Create pending network node entries when network driver doesn't support per node config in networksPost
+23f7b060e67e6ff36d2f078aeb664d4df6fcb54c    DIFFERS     lxd/networks: Comments in networksPostCluster
+df23ec594d2c743657b702634b8f3f63a935f96a    IRRELEVANT  lxd/networks: Start parent networks before dependents in networkStartup
+8db55cde37fa40df1b8dfb04329615a60018fd19    DIFFERS     lxd/network: Only adding pseudo pending node records when in cluster in networksPost
+8ca190120f9461048bb38537a7ba1f1883e11a41    IRRELEVANT  lxd/network: Removes client side default network type when creating network
+52a22db7d5b61e2474c69680dc2b1119ec0f064e    DIFFERS     lxd/network/network/load: Removes unused Validate
+ef5ca1af5dc14c21d1df3af384542024fc99705f    IRRELEVANT  lxd/network/network/load: Renames project arg to projectName for clarity
+363917f05be607db0d9d8dc1e0d0fb1d26113ee3    DIFFERS     lxd/backup/backup/common: Renames Backup to BackupCommon
+053333603e65344ec1cb51ad9e24e7954bf1d766    FEATURE     lxd/backup/backup/info: Adds TypeCustom backup type for custom volumes
+1da2e7f73b6943b37a92fa798eb076aff586efed    FEATURE     lxd/backup/backup/volume: Adds custom volume type
+c203ebd31f7e53a5c5332060e3465d23cf87027b    FEATURE     lxd/storage/volumes/backup: Adds custom volume backup route handlers
+426f4478335cb36a2359158947047dd972e0589e    FEATURE     api: Adds custom_volume_backup extension
+ffa98d96bd74a37f9c81ab82cbaeaa3fcf3f7d87    FEATURE     doc/rest-api: Documents custom volume backup routes
+ab1564c0f7865f2340395b7b48c9bbd6f7712397    FEATURE     lxc/storage/volumes: Add import and export for custom volumes
+e5679c296a9313f8a07c7b1defa3cdac86c8bf72    FEATURE     lxd/backup: Adds volumeBackupCreate and volumeBackupWriteIndex functions
+2886380586907c409a8524ef6218f73e70b653e8    FEATURE     lxd/api/1/0: Registers custom volume backup route handlers
+32e6c4f93e575aef033f01df4f3e9e4f78fe5b73    FEATURE     lxd/db/backups: Adds StoragePoolVolumeBackup type
+3b4ad391e7244130c6772454a8eefe34b10bc95d    FEATURE     lxd/db/backups: Adds custom volume backup lifecycle functions
+82dd2ae2ce8a4883aa026e5d262b356d9a0c6d54    FEATURE     lxd/db/cluster: Adds storage_volumes_backups table
+73a3c6645c52645e7b756e7f6755ce8a29d64eb5    FEATURE     lxd/db/operations/types: Adds custom volume backup operations types
+cbcf3b28074c9409b1957a88dacddf2926dd95a0    FEATURE     lxd/storage/backend: Adds BackupCustomVolume and CreateCustomVolumeFromBackup functions
+6bb147761b5126430f2bdd4b4c3ae4a80b889051    FEATURE     lxd/storage/backend/lxd: Renames custom volume backups in RenameCustomVolume
+371b17cd1ef95982f18a3b2444267f93fa90974c    FEATURE     lxd/storage/backend/lxd: Deletes custom volume backups in DeleteCustomVolume
+3b8fe3fc33da45f408acc6b2a26459b49254ab23    FEATURE     lxd/storage/pool/interface: Adds BackupCustomVolume and CreateCustomVolumeFromBackup
+049401097ed4f20a824d8e6a5293e42084e15564    FEATURE     lxd/storage/volume: Adds createStoragePoolVolumeFromBackup and hook in storagePoolVolumesTypePost
+1c834b487e77f3b2a725d2d53f52e507c088e784    FEATURE     lxd/storage/volumes/utils: Adds storagePoolVolumeBackupLoadByName function
+4fedd36531cbf6b11ac732e06d3f0d2bdb402365    FEATURE     test/suites/backup: Adds tests for custom volume backups
+9382c019f6d968492f627c65ddd7bef1485b7320    IRRELEVANT  i18n: Update translation template
