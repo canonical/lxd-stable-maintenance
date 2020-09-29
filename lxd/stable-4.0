@@ -437,3 +437,9 @@ cbcf3b28074c9409b1957a88dacddf2926dd95a0    FEATURE     lxd/storage/backend: Add
 1c834b487e77f3b2a725d2d53f52e507c088e784    FEATURE     lxd/storage/volumes/utils: Adds storagePoolVolumeBackupLoadByName function
 4fedd36531cbf6b11ac732e06d3f0d2bdb402365    FEATURE     test/suites/backup: Adds tests for custom volume backups
 9382c019f6d968492f627c65ddd7bef1485b7320    IRRELEVANT  i18n: Update translation template
+4707b90fa232df8c3d3843e6ec302443cf85a342    IRRELEVANT  i18n: Update translations from weblate
+2fc5e6a4a6afeba16c69e80b2d0d1a8adbaff4f7    DIFFERS     lxc: Always use HostPathFollow
+910b223480d2c5410364ed69ebb5a6f4bdc74bc4    IRRELEVANT  test/suites/backup: Use project argument in test_backup_volume_export_with_project
+b5bfae05b4b91830987a1a32ca559e599ebededb    IRRELEVANT  test/suites/backup: Comment consistency
+c22aa977491fb23fa3936c5c09df8a433d196294    IRRELEVANT  test/suites/backup: Add test for custom volume import
+41a3b5b2c4d1259bad54fdaa6eb3d9c03e16ecf0    IRRELEVANT  test/suites/backup: Add test for importing custom volume into other project
