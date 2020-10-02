@@ -443,3 +443,28 @@ cbcf3b28074c9409b1957a88dacddf2926dd95a0    FEATURE     lxd/storage/backend: Add
 b5bfae05b4b91830987a1a32ca559e599ebededb    IRRELEVANT  test/suites/backup: Comment consistency
 c22aa977491fb23fa3936c5c09df8a433d196294    IRRELEVANT  test/suites/backup: Add test for custom volume import
 41a3b5b2c4d1259bad54fdaa6eb3d9c03e16ecf0    IRRELEVANT  test/suites/backup: Add test for importing custom volume into other project
+cf10318c02dcac06091ee3bb6db63d4f17f73c1d    FEATURE     lxc/import: Adds optional instance name argument to lxc import command
+26e5c27f1f116bcf75f5ac44d1218aa08d21e685    DIFFERS     lxd/instance/drivers/driver/lxc: Whitespace
+6697599975c1199c226c00b68c7e3e278ea49c66    DIFFERS     lxd/instance/drivers/driver/qemu: Removes logic duplication in live update
+b0ea57a3fc1960684386114df5ecfd6e603bd73f    DIFFERS     lxd/instances/post: createFromBackup usage in containersPost for custom backup name restore
+afeb4447f109fadb85e7653518fcfb20054cf067    FEATURE     lxc/storage/volume: Adds optional volume name argument to lxc storage volume import
+07c268894ece1764dc5e93885beb7fdd37cd55a2    IRRELEVANT  lxd/storage/backend/lxd: Updates CreateCustomVolumeFromBackup to support custom volume import name
+744b5184781cceb1a3cfa3eb749f921f93d1367d    FEATURE     api: Adds backup_override_name extension
+432ef35b0f18e9e645d6bc70eb3bd9e798a819bd    IRRELEVANT  test/suites/backup: Adds tests for custom volume import name override
+ad422bc99da03ffb6842dc5c31a928e5fd583a82    IRRELEVANT  test/suites/backup: Adds instance import name override tests
+81b6594a73aac806f82e15db36b0c4634a2297d8    IRRELEVANT  i18n: Update translation template
+60b7118f46a296038b575a0d53275f22805f5d51    IRRELEVANT  lxd/storage/volumes: Adds volName arg to createStoragePoolVolumeFromBackup
+c434d4c4ffe76cc40a4bb557671dec9f2dc405ad    IRRELEVANT  lxd/storage/volumes: createStoragePoolVolumeFromBackup usage in storagePoolVolumesTypePost
+0bf336b3ecdafa531ee3c25c1018fe7dcfb6d4e5    IRRELEVANT  doc/networks: Simplifies OVN single node setup instructions
+de431347e046b65c443d8bff35d9e87e808f9cfd    IRRELEVANT  lxd/device/nic/ovn: Improves error message in Start
+a46531236c841f9fd01ca3161e1adc6f0763b887    IRRELEVANT  lxd/network/driver/ovn: Implements DHCPv4Subnet and DHCPv6Subnet to allow static IPs to be set
+0766ad84953fba91decadf04dbcfe96b1f4ad4b3    IRRELEVANT  lxd/network/openvswitch/ovn: Fix spelling of OVNIPv6AddressModeDHCPStateful and OVNIPv6AddressModeDHCPStateless values
+6aa321fb73571d9e2e43cfa345e6fa368b454a57    IRRELEVANT  lxd/network/driver/ovn: Adds support for ipv6.dhcp.stateful
+0d2cf135a5d60c5fa6623baa8b080197d0bb552e    IRRELEVANT  doc/networks: Documents ipv6.dhcp.stateful option for OVN networks
+d20e4d219057ca357b56257061de3e1cc6046a81    DIFFERS     lxd/device/nic/bridged: Implements NICState interface by adding State function
+6b8e0926e4b0f54d0bb03ffb4e89961fd3ac5abd    DIFFERS     lxd/instance/drivers/driver/qemu: Refactors RenderState to support multiple NIC types in the future
+12e8ea647ff42d71960ba60e37dc59c8cdbddb09    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchPortDynamicIPs function
+fd4135f6c6b9a5bd2e339f8d41c35f55469e082f    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortSetDNS to use LogicalSwitchPortDynamicIPs
+e0e4ea8a1326b0746b6085742b38e15e923e5219    IRRELEVANT  lxd/network/driver/ovn: Adds instanceDevicePortDynamicIPs function
+3c02b3e001c90996562eda94f6dccc5f02054f72    IRRELEVANT  lxd/network/network/utils/ovn: Adds OVNInstanceDevicePortDynamicIPs function
+d87da1a87b4d41b0ddad1b9b0b85b7b5793c84b7    IRRELEVANT  lxd/device/nic/ovn: Implements NICState interface by adding State function
