@@ -468,3 +468,5 @@ fd4135f6c6b9a5bd2e339f8d41c35f55469e082f    IRRELEVANT  lxd/network/openvswitch/
 e0e4ea8a1326b0746b6085742b38e15e923e5219    IRRELEVANT  lxd/network/driver/ovn: Adds instanceDevicePortDynamicIPs function
 3c02b3e001c90996562eda94f6dccc5f02054f72    IRRELEVANT  lxd/network/network/utils/ovn: Adds OVNInstanceDevicePortDynamicIPs function
 d87da1a87b4d41b0ddad1b9b0b85b7b5793c84b7    IRRELEVANT  lxd/device/nic/ovn: Implements NICState interface by adding State function
+b80a0d7ca2e05e4a68b8844f509256b639d21f0f    DIFFERS     lxd/network/network/utils: Updates GetLeaseAddresses to return only net.IP list
+f9b21d257a4e8deb79b36d1540d151b4d14bc242    DIFFERS     api: storage_rsync_compression
