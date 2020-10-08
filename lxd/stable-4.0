@@ -470,3 +470,37 @@ e0e4ea8a1326b0746b6085742b38e15e923e5219    IRRELEVANT  lxd/network/driver/ovn: 
 d87da1a87b4d41b0ddad1b9b0b85b7b5793c84b7    IRRELEVANT  lxd/device/nic/ovn: Implements NICState interface by adding State function
 b80a0d7ca2e05e4a68b8844f509256b639d21f0f    DIFFERS     lxd/network/network/utils: Updates GetLeaseAddresses to return only net.IP list
 f9b21d257a4e8deb79b36d1540d151b4d14bc242    DIFFERS     api: storage_rsync_compression
+4a50691e278f8bf9219669072ce27f83fc677bcd    IRRELEVANT  lxd/network/driver: Improve missing parent network error message
+36c2637c3259268e62dcec5c66dacb2630d31f08    IRRELEVANT  lxd/network/driver/ovn: Moves uplink type agnostic parent port allocation logic into allocateParentPortIPs()
+b30f975a6838367a1e117b27583666781d8903f1    IRRELEVANT  lxd/network/driver/ovn: Better error messages
+fdc703d3e3e83fea3c89da0c849b018ca7976da9    IRRELEVANT  lxd/network/driver/ovn: Moves parent port lock into deleteParentPort
+2d4c4be6b06d519a89f09ef1fd88405da094c412    IRRELEVANT  lxd/network/driver/ovn: Moves parent port lock into startParentPort
+8e821a1af8fdd708cd353b11d4daeb2933be836c    IRRELEVANT  lxd/network/driver/ovn: deleteParentPortBridge comments
+e8f50946eeed770926ef7648d730943bf23b8406    IRRELEVANT  lxd/network/driver/ovn: Don't setup SNAT if no external uplink IPs
+02cb55fc11e0d597d67a094858ccf9e478bb1988    IRRELEVANT  lxd/network/driver/ovn: Makes setting up external router port and switch conditional on having external IPs
+3099041494bec4a42bb53e75c5a85f30e50718f6    IRRELEVANT  lxd/network/driver/ovn: Removes old comment
+e9fc96df5e28540c5a213e5895134d7589c26c9a    IRRELEVANT  lxd/network/driver/ovn: Fix sentence in startParentPortBridge error
+137fcbb8b0813eba045c8f2972b2df465a9b9735    IRRELEVANT  lxd/network/driver/ovn: Fixes error message in setupParentPortBridge
+896679be6effa830345a836920db173bd3935210    IRRELEVANT  lxd/network/openvswitch/ovn: Updates RecursiveDNSServer to be list of IPs
+c775eceac72df08927c5f6799e9b88244b19ea9f    IRRELEVANT  lxd/network/driver/ovn: Updates allocateParentPortIPs to detect the parent network IP address and DNS settings
+6c99bdfd32f4cce8b6cb3032eda69113ee8b0b92    IRRELEVANT  lxd/network/driver/ovn: Updates n.allocateParentPortIPs usage
+11a0289883dbeb856344a803535cafb169e8edb3    IRRELEVANT  lxd/network/driver/ovn: Updates setup IPv6 RDNSS setting
+34e6e177bc7a030e0a6c7feffc80f3b5f4c9726d    IRRELEVANT  doc/networks: Clarifies use of ovn ranges settings in bridge network
+df0a848f3d9c889b7bd72e1401c850a1584a711a    DIFFERS     lxd/network/network/utils: Moves bridge related functions into own file
+1e4ed6c1e814180627181272395427f8407868ae    IRRELEVANT  seccomp: vendor bpf headers
+45deebb09bd0b07d7b0e157ebd2e2376a0ee6360    DIFFERS     lxd/network/network/utils: Adds VLANInterfaceCreate function
+3a952caf2fe6f08bc582c4c2edd66b70afc788b5    DIFFERS     lxd/device/device/utils/network: network.VLANInterfaceCreate usage
+0b09e17d6e7a98a231bc583c1caa290d6cac8de4    DIFFERS     lxd/device/nic: network.InterfaceRemove usage
+327c2b02debe5cfe4f70ceb349a9c70b252e0743    IRRELEVANT  lxd/network/driver/ovn: Remove dependency on sysctl command and use util.SysctlSet instead
+2cd2fb1d58e4f0cdf941ab2223749b99bc46cca1    FEATURE     api: Adds network_type_physical extension
+18402cc5a314da7790d7d1ec8e3e735aa5c04b27    FEATURE     doc/networks: Adds docs for physical network type
+a5a8edbb9c26bcdf95e014a61c53d7597cbb2cf7    FEATURE     lxd/db/networks: Adds physical network type constant
+f9d08044fa8d1ad66ba821dc1a5a2db70344e125    FEATURE     lxd/network/driver/physical: Adds physical driver
+197f134b7d5d82f4d2b5cf77985432387a71ca62    FEATURE     lxd/network/driver/ovn: Adds support for physical network as uplink
+2db259acd604381ea549eb478511ae512dd352c3    FEATURE     lxd/network/driver/physical: Change checkParentUse to return a bool if in use
+0e946c3876c80f8d1888e5d549023e1f0d14ad37    IRRELEVANT  lxd/network/driver/ovn: Changes uplink network in use check to look at LXD DB
+0b80500596841ea92b559217ea9a08d26befca65    IRRELEVANT  lxd/network/driver/ovn: Handle uplink network changing
+741b3bbd4a2384b42c093c80e1a97eeb9c519d45    IRRELEVANT  lxd/network/driver/ovn: Comment clarity
+f8ec913b5cff15574669ebea5cf87c9bc968bc6e    IRRELEVANT  lxd/network/driver/ovn: InterfaceExists usage
+2cdb6592c05de9126aff31e445f94d72734bf9b6    IRRELEVANT  lxd/network/driver/ovn: Inherit MTU from uplink bridge for OVS bridge and connecting veth pair
+76307995c04a1e77ec6397f545dd641bce006b25    DIFFERS     lxd/network/driver: Improves comments
