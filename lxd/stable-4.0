@@ -504,3 +504,7 @@ f9d08044fa8d1ad66ba821dc1a5a2db70344e125    FEATURE     lxd/network/driver/physi
 f8ec913b5cff15574669ebea5cf87c9bc968bc6e    IRRELEVANT  lxd/network/driver/ovn: InterfaceExists usage
 2cdb6592c05de9126aff31e445f94d72734bf9b6    IRRELEVANT  lxd/network/driver/ovn: Inherit MTU from uplink bridge for OVS bridge and connecting veth pair
 76307995c04a1e77ec6397f545dd641bce006b25    DIFFERS     lxd/network/driver: Improves comments
+c34ee20298981bedd5d392dad010907e5001a218    IRRELEVANT  doc/api-extensions: Removes mention of "parent" from projects_networks_restricted_uplinks feature
+6085a3da6a9ee8fb27b4e56fdd788165954b5b57    IRRELEVANT  lxd/network/driver/ovn: Replace parent terminology with uplink
+7a900762a1978b06297a1870514337de45f77cef    IRRELEVANT  lxd/device/nic/ovn: Comment
+1b2dc8eba3c670b5794af94fad0226668bc95cf3    IRRELEVANT  doc/networks: Switch to "uplink" terminology for external OVN network access
