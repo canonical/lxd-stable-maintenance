@@ -55,3 +55,11 @@ c312db1110b56ea8cd20ba64cc8f591ef948ae51    DIFFERS     api-extensions: add secc
 efb7e3041618ba8f4c5debbffa676795ab9d9a1b    DIFFERS     conf: hide unnecessary symbols
 4a9ee78a84589118d5ff3bf2fa94caa4adca2ffc    DIFFERS     file_utils: hide unnecessary symbols
 5f1b09866fee830291e3558262f5d71305888d69    DIFFERS     utils: hide unnecessary symbols
+f797f05e6e600e0c1ac8778ce750a81e6830778d    DIFFERS     terminal: safely allocate pts devices from inside the container
+2140576960c1cfc95db5724553b360f0b4daa247    DIFFERS     seccomp: add seccomp_notify_fd_active api extension
+65f0afdee28f1f867e48ad68cca2ef7e098bc03e    DIFFERS     utils: add safe_mount_beneath() based on openat2()
+43535b6d26945581df7216eb85e90142b380d5ad    DIFFERS     utils: introduce safe_mount_beneath_at()
+6f61472beac55a0ba4d01cd36f485dd2297793c5    DIFFERS     file_utils: add exists_dir_at()
+953db219dab62555dd9e515561a918db8f47ee4a    DIFFERS     conf: move /dev setup to be file descriptor based
+8ea93a0fa7b6a26894af61a56251e0698d1c3f54    DIFFERS     terminal: harden terminal allocation
+a7a92a06a47322dee45664db5c7bfa68b2b95edb    DIFFERS     Remove obsolete setting regarding the Standard Output
