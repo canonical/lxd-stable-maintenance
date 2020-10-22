@@ -508,3 +508,81 @@ c34ee20298981bedd5d392dad010907e5001a218    IRRELEVANT  doc/api-extensions: Remo
 6085a3da6a9ee8fb27b4e56fdd788165954b5b57    IRRELEVANT  lxd/network/driver/ovn: Replace parent terminology with uplink
 7a900762a1978b06297a1870514337de45f77cef    IRRELEVANT  lxd/device/nic/ovn: Comment
 1b2dc8eba3c670b5794af94fad0226668bc95cf3    IRRELEVANT  doc/networks: Switch to "uplink" terminology for external OVN network access
+ff15b7e3613e3f884c682acf62189c8d83b85559    FEATURE     api: Adds network_ovn_external_subnets extension
+4f7bb77fc7eb8fd3177f0935575b04f30146095e    IRRELEVANT  doc/networks: Adds ipv4.routes and ipv6.routes settings to physical network
+e787c24778d25503ca6df95a6d8a55886df03cc0    IRRELEVANT  lxd/network/driver/physical: Adds ipv4.routes and ipv6.routes config keys
+24e95fd33eb8d4339b94ff4da2e2a23dbd0e0256    IRRELEVANT  doc/projects: Removes trailing full stop
+96359cdeb7c0d39e08c60eef007da783e227381d    IRRELEVANT  doc/projects: Adds restricted.networks.subnets
+5d2e2617de7edc525c3caa96b7ddd1c5c1d3de9b    IRRELEVANT  lxd/api/project: Adds restricted.networks.subnets config key
+cf22482b065f22b6a65a677e1cb6a5f4ed8bd02b    DIFFERS     lxd/api/project: Moves projectConfigKeys inside projectValidateConfig and adds state
+fa7116c91e35d725f6e4bb89f08d9525e30564e7    IRRELEVANT  lxd/api/project: Adds projectValidateRestrictedSubnets function
+ccd9bf5c1d8f21f721182a0f185886ebe972b8a3    IRRELEVANT  lxd/api/project: Adds restricted.networks.subnets validation to projectValidateConfig
+9aa99ad2b0f14aef16c219b5c6df5f9f73fed30c    IRRELEVANT  doc/networks: Adds ipv4.routes.external and ipv6.routes.external to ovn networks
+f87b1e6ae20b8b40589d519945020afae5f0a961    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterRouteDelete function
+f345bce33ecf084472f4124c84700e0886afc3a9    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortSetDNS to return IPs used for DNS records
+9383d9a711db0765c7fd503fa5f496929b3c414a    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterDNATSNATAdd function
+cf7ccc7fbe8f680c6dda5300d47d856def283ea0    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterDNATSNATDelete function
+00cfd1e6fbfbf193880f25dee66b6cdbfde1bc66    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalRouterRouteAdd to support mayExist argument
+6bbceee8418e593a3617eb39fafa3b43da499900    IRRELEVANT  lxd/network/network/utils/ovn: Updates OVNInstanceDevicePortAdd to take an externalRoutes argument
+3c18ef7b5ef140e9692e3c664db44ceb57cac890    IRRELEVANT  lxd/network/network/utils/ovn: Updates OVNInstanceDevicePortDelete to accept an externalRoutes argument
+60c7fbc11ef1e939323923deb0e1cf3013e10dfd    IRRELEVANT  lxd/network/driver/ovn: Moves uplink network validation into validateUplinkNetwork function
+be1079cf42ce263697543bc744e86192f86b72d7    IRRELEVANT  lxd/network/driver/ovn: Updates Validate to check network exists and checks external IP routes
+7d82903924b38d274e67bc7cee33273d951f7eae    IRRELEVANT  lxd/network/driver/ovn: Adds DNS revert to instanceDevicePortAdd
+974b1a89f494dff5055e50b28439a77ef31afc48    IRRELEVANT  lxd/network/driver/ovn: client.LogicalRouterRouteAdd usage
+d1ac18662e9405121e73aac71eab0aa6a8535c5e    IRRELEVANT  lxd/network/driver/ovn: Adds externalRoutes support to instanceDevicePortAdd
+441f2fbf4b7204ef297abf5406e97ccc7e393d28    IRRELEVANT  lxd/network/driver/ovn: Delete externalRoutes in instanceDevicePortDelete
+a878586281ce684d91ff76d8f5c7df84c76549bd    IRRELEVANT  lxd/device/nic: Adds ipv4.routes.external and ipv6.routes.external to nicValidationRules
+81fc5a2641dd05c76064e008fcd1d04e5b9e7ad3    IRRELEVANT  lxd/device/nic/ovn: Adds support for ipv4.routes.external and ipv6.routes.external
+1f0096fcb30fcb36fb07af897299150091801a7a    IRRELEVANT  doc/instances: Adds ovn NIC documentation
+245bc141809033f8b803b459e2f2661f3e8eceb7    IRRELEVANT  lxd/network/driver/ovn: Adds support for OVN NIC internal routes
+6e3e3a08a5f864dcc45d9e6e7f089bbb8964eb2b    IRRELEVANT  lxd/network/network/utils/ovn: Adds OVN NIC internal route support to OVNInstanceDevicePortAdd and OVNInstanceDevicePortDelete
+c9ff0470b0984e7a09409d8bfe68be84d919aa5d    IRRELEVANT  lxd/device/nic/ovn: Adds ipv4.routes and ipv6.routes settings for internal route support
+e67455914b5fe60c4a16c7a102518f3358df7ebf    IRRELEVANT  api: Adds network_ovn_nat extension
+69e1cdff5f9b5e64db04ff731863b51c23f69251    IRRELEVANT  doc/networks: Adds ipv4.nat and ipv6.nat to OVN networks
+9d52d2f6597aa76df8dc7deb95903d2294cf3a21    IRRELEVANT  lxd/network/driver/ovn: Adds ipv4.nat and ipv6.nat support
+bb31ba1a1619f423580285ff581c89ea00635ac6    IRRELEVANT  lxd/patches: Adds patchNetworkOVNEnableNAT patch to enable NAT on OVN networks
+270825714d1b4bd742c1c5cf68637515c12d895b    IRRELEVANT  i18n: Update translations from weblate
+4f85a4e21a97e160135b6965276a0f7cf11e3a7e    FEATURE     Release LXD 4.7
+c470380fd10673ee00dd9bf1e28371bf4e3fb2bb    IRRELEVANT  lxd/device/nic/ovn: Improved error messages
+1666e7465339f83f126960324849268e495a4c71    IRRELEVANT  lxd/network/driver/ovn: Generates static EUI64 IPv6 address for instance switch ports in instanceDevicePortAdd
+85e45368bd5b530fb2277e19101ae1c8165bfa15    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchPortGetDNS to return switch port DNS info
+e8446e9a378c47580d8d22f43675fda8ddd4f248    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortDeleteDNS to only accept DNS UUID rather than port name
+f5e3e45b66b1e96430017c586ab70b47b7798e66    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortSetDNS to return the DNS UUID record ID
+d4fa12705775b6eeb9e06482f5d9b6eb36c5c192    IRRELEVANT  lxc/network/driver/ovn: Adds validateExternalSubnet function
+9a1db6c4a79565dc5f592ac86b3b5b207521ba67    IRRELEVANT  lxd/network/driver/ovn: Updates Validate to ensure ipv4.address and ipv6.address are allowed external subnets
+3cef49a5091b65c2c7a7b169eec014c2452abaa1    IRRELEVANT  lxd/network/driver/ovn: Adds support for publishing instance port IPs to uplink network
+686ecb7b357184e1b05db0c96a9417f0714435de    IRRELEVANT  doc/networks: Adds ipv4.nat and ipv6.nat to ovn network
+0e5c2730002452dbc53a11c3dab6e681cd19d3df    IRRELEVANT  lxd/network/driver/ovn: Allows "none" as value for ipv4.address and ipv6.address
+9d4ceec468a1fc0d1a81597cddba19793f97951b    IRRELEVANT  lxd/network/driver/ovn: Re-run validation of auto generated address used in FillConfig
+f3da8b57c47423616e6490c89fb820be6c5dd651    IRRELEVANT  lxd/network/driver/ovn: Modify setup() to support optional IP addresses
+78f3c3e7973932ae216bdb7d90ef0267021ed2a8    IRRELEVANT  lxd/network/driver/ovn: Updates instanceDevicePortAdd to support optional IP addresses
+71caae866af04c142dbb48cc19a4d7a126e3657a    IRRELEVANT  lxd/network/driver/ovn: Only call Validate in FillConfig if state is set
+fa2da560919d515ecd24a2aebc40b4a213c34fea    IRRELEVANT  lxd/network/driver/ovn: Converts instance port functions to exported
+d5351219834cbb9bb12faba3cf653f0751765898    IRRELEVANT  lxd/network/driver/ovn: Removes ipv4.routes.external and ipv6.routes.external
+e1668b6f4f92365854ad48eb4ee243186c87fa15    IRRELEVANT  lxc/network/driver/ovn: Adds projectRestrictedSubnets and uplinkRoutes functions
+bbfce066807e2491abe1bd281cccc0ac6c8f7b26    IRRELEVANT  lxd/network/driver/ovn: Simplifies Validate by using separate data loader functions
+d84254815bcb4e822fad4ef67f6a2c84a4c5a76e    IRRELEVANT  lxd/network/driver/ovn: Passes project into allowedUplinkNetworks
+bfd7ac77861bdc804e742948aa0c7c12b38946c2    IRRELEVANT  lxd/network/driver/ovn: Passes project into validateUplinkNetwork
+44e6104b2a3acccb81bbc4a6c2c8f5eca43da058    IRRELEVANT  lxd/network/driver/ovn: Load project in setup() to pass to n.validateUplinkNetwork()
+3efb1adc6d469353639768c632549ca846b65d38    IRRELEVANT  lxd/network/driver/ovn: Adds InstanceDevicePortValidateExternalRoutes function
+131a644a8507295a9c25882e88a48ba952e125bf    IRRELEVANT  lxd/network/network/utils/ovn: Remvoes unused functions
+08415e9d128c15abf020089325ba5c090ceb0e7d    IRRELEVANT  lxd/device/nic/ovn: Adds ovnNet interface and use OVN instance port functions directly from network
+b9b1964381a0851d00c552fac3519dd02daf28ad    IRRELEVANT  lxd/device/nic/ovn: Removes validation of external routes against network's external routes
+78d4ec8e820ad4f41f42887565b2f112442f3fff    IRRELEVANT  lxd/device/nic/ovn: Validate NICs external routes using d.network.InstanceDevicePortValidateExternalRoutes
+4a2a968c0e4e330d00d2c65d434bf9101f883c43    IRRELEVANT  doc/networks: Removes ipv4.routes.external and ipv6.routes.external from ovn network
+3ee8867b4053a187e587939a11dad878c60be1b4    IRRELEVANT  lxd/patches: Adds patch for removing ipv4.routes.external and ipv6.routes.external from ovn networks
+c046d94b22d37c6ba35422be759abf218d2ba33f    IRRELEVANT  api: Adds network_ovn_external_routes_remove extension
+913bdb4fe654fc2c566eea11855fe96ebd6b95f1    IRRELEVANT  lxd/network/driver/ovn: Fix project restricted subnets check in validateExternalSubnet
+9ba0b5a029cbf659553ff5be801afe542a97e645    DIFFERS     lxd/db/networks: Fix NULL description
+758005c96bed947b8322110e7f822e952f6e9010    DIFFERS     doc/instances: Re-works NIC device docs to explain nictype and network fields
+1ab08b9de91ede69ae939bacb97d7eb24fb48c7c    DIFFERS     lxd/patches: Adds patchNetworkFANEnableNAT to set ipv4.nat=true for fan networks missing the setting
+da33768610bbf27d4369806b4fdcad34336a152c    DIFFERS     doc/networks: Clarifies comment defaults for bridge ipv4.nat when not specified during creation
+a4bc53da158f25e442f6c165c78ca3bf77494ef8    IRRELEVANT  tests: Fix cleanup in backup
+24325b92af193e19e8b8d76bbd328ffa44a9b887    FEATURE     lxd/device/config: Add TPMDevice to RunConfig
+3c51e37d798f7bf01b6817d19a0cc0622675fa25    FEATURE     lxd/device: Add TPM device type
+bc25118f0457b74c6bdb94ab47a0426d090bb682    FEATURE     lxd/db: Add device type "tpm"
+511541ce72d4d0a8d5bbd6702b47fffd8af4fdcf    FEATURE     lxd/instance/drivers: Support TPM devices in VMs
+4df4b9822716b84e73ed1cfe2d8bb0d28cd2ecb5    FEATURE     api: Add tpm_device_type API extension
+3c487156e5a3a0423ae109149aef5dfb8eac28b7    FEATURE     doc: Add tpm device
+a65fbc271977b3a85d9d65d7580b9eb07ff899ab    FEATURE     test: Add TPM device
+ca3badc5dc32930ab754615b4eae6763b2f6149b    DIFFERS     lxd/storage/volumes: forwardedResponseIfVolumeIsRemote projectName argument usage
