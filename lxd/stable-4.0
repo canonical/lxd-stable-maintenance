@@ -586,3 +586,23 @@ bc25118f0457b74c6bdb94ab47a0426d090bb682    FEATURE     lxd/db: Add device type 
 3c487156e5a3a0423ae109149aef5dfb8eac28b7    FEATURE     doc: Add tpm device
 a65fbc271977b3a85d9d65d7580b9eb07ff899ab    FEATURE     test: Add TPM device
 ca3badc5dc32930ab754615b4eae6763b2f6149b    DIFFERS     lxd/storage/volumes: forwardedResponseIfVolumeIsRemote projectName argument usage
+1694cfd678f4eadeddda4831f3103a1d3aaed439    DIFFERS     lxd/daemon: Pass writer to Authenticate
+7b5459b6b2e27efec8c2db41dc9323bfcdabcd5c    IRRELEVANT  lxd/network/driver/ovn: Adds NIC external route overlap validation of other OVN external network subnets and OVN NIC external routes
+915e8f4e3790f581a87cfb9eed9d6556be26c1bb    IRRELEVANT  lxd/device/nic/ovn: Updates ovnNet interface's InstanceDevicePortValidateExternalRoutes to add instance argument
+adf25c88f888242b9e4b5f0b63da8ffde1dbba74    IRRELEVANT  lxd/device/nic/ovn: d.network.InstanceDevicePortValidateExternalRoutes usage
+cfedcd1035cfc272bee1f099ad1ed6b420ff6e9b    IRRELEVANT  i18n: Update translations from weblate
+f899806b77a562de10764e8f52afb0ac1d6d52fd    IRRELEVANT  lxd/network/driver/ovn: Adds ovnProjectNetworksWithUplink function
+c6d6045b8f43cf749666eefe99e6c4fa0d36d2e9    IRRELEVANT  lxd/network/driver/ovn: Updates ovnNetworkExternalSubnets to allow optional filtering of our own network's subnets
+7872cdf100bfb56814b20357c8d869da194d6db3    IRRELEVANT  lxd/network/driver/ovn: Updates ovnNICExternalRoutes to optionally filter our own NIC's external routes
+f412f79828a7f4eda4a2644695d06d2ffdf6ee44    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortValidateExternalRoutes to use new functions and signatures
+32caf54ea296696580b2f43e50a9c76a1b94356f    IRRELEVANT  lxd/network/driver/ovn: Updates Validate to check external subnets dont overlap with other OVN networks or NICs sharing our uplink
+e73ed20b8d9640347332a81ade7387a149204004    IRRELEVANT  lxd/network/openvswitch/ovn: Return ErrOVNNoPortIPs in LogicalSwitchPortSetDNS when no port IPs found
+30943207705f4424c01106cad890d2d7656e208f    IRRELEVANT  lxd/network/driver/ovn: Retry LogicalSwitchPortSetDNS up to 5 times to avoid missing dynamic IP allocation by OVN
+9c4d339af73fd45b79a0c594a3b41177a441c69a    DIFFERS     lxd/project/project: Adds StorageVolumeProjectFromRecord function
+4c1e883f9dbb88e9e4850ae9c98e5a23839d3f74    DIFFERS     lxd/project/project: Updates StorageVolumeProjectFromRecord to not return error (as never populated)
+607630cf470aff60ee95b78d3b22d7383873550d    IRRELEVANT  lxd/storage/volumes/backup: forwardedResponseIfVolumeIsRemote usage
+f606b247d9144d19e4a16c5ad2ec7014767cb863    DIFFERS     lxd: Replace use of tx.GetProject with cluster.GetProject
+fc7bc96c2bfd2e1de6eaa91a6542d7b858ef15de    DIFFERS     lxd/storage: VolumeTypeNameToDBType usage
+3131dcf05b8bfa137c0b93e8402866e7767b2bfb    DIFFERS     lxd/device/disk: storagePools.VolumeUsedByExclusiveRemoteInstancesWithProfiles usage
+a08291abaddfa475676fc07dc4723b9dab121e34    DIFFERS     lxd/storage/backend/lxd: Updates UpdateCustomVolume to check for online resize support when resizing
+94a12db197d93e724177c6e883aa2c8c4d77d66b    IRRELEVANT  lxd/project/project: Adds NetworkProjectFromRecord function
