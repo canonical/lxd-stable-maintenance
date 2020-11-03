@@ -606,3 +606,8 @@ fc7bc96c2bfd2e1de6eaa91a6542d7b858ef15de    DIFFERS     lxd/storage: VolumeTypeN
 3131dcf05b8bfa137c0b93e8402866e7767b2bfb    DIFFERS     lxd/device/disk: storagePools.VolumeUsedByExclusiveRemoteInstancesWithProfiles usage
 a08291abaddfa475676fc07dc4723b9dab121e34    DIFFERS     lxd/storage/backend/lxd: Updates UpdateCustomVolume to check for online resize support when resizing
 94a12db197d93e724177c6e883aa2c8c4d77d66b    IRRELEVANT  lxd/project/project: Adds NetworkProjectFromRecord function
+3f965e407fc42df23a43432721d24b106cd10d5b    FEATURE     api: Add storage_zfs_clone_copy_rebase extension
+a12c58c769865dba839680d63def728dcfc74991    FEATURE     doc/storage: Allow 'rebase' in zfs.clone_copy
+ca89ffbcbaeeb33bf4dd5fd2562aba77fe2aac2f    FEATURE     lxd/storage: Allow 'rebase' as value for zfs.clone_copy
+5b2865972244ebac85d521c666cd1526c6312839    DIFFERS     lxd/storage/zfs: Add support for clone_copy rebase
+9ec01f2daad31649135557aa9dd443c25a0609b6    IRRELEVANT  lxd/network/driver/ovn: Adds support for using uplink bridge using bridge.driver=openvswitch
