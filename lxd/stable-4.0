@@ -611,3 +611,10 @@ a12c58c769865dba839680d63def728dcfc74991    FEATURE     doc/storage: Allow 'reba
 ca89ffbcbaeeb33bf4dd5fd2562aba77fe2aac2f    FEATURE     lxd/storage: Allow 'rebase' as value for zfs.clone_copy
 5b2865972244ebac85d521c666cd1526c6312839    DIFFERS     lxd/storage/zfs: Add support for clone_copy rebase
 9ec01f2daad31649135557aa9dd443c25a0609b6    IRRELEVANT  lxd/network/driver/ovn: Adds support for using uplink bridge using bridge.driver=openvswitch
+157af1a6652763c135eec33ce156af906bb2737a    DIFFERS     lxd/storage/lvm: Properly make lvm.thinpool_name node-specific
+f151a8be2f78d3d4e82d5849111fe0a49e0c9e96    IRRELEVANT  lxd/db/storage/volumes: Renames GetStorageVolumeNodeAddresses to GetStorageVolumeNodes
+b836b85b55f334dd4498120e802e2a34897a8158    DIFFERS     lxd/device/disk: Updates validateConfig to use storagePools.VolumeUsedByExclusiveRemoteInstancesWithProfiles with vol arg
+97b6544f79d815444e39575da3ef13d1f86164f2    DIFFERS     lxd/storage/volume: Removes need for loading storage volume when doing lxc storage volume attach
+3772867f8cc468d020a9191fd2ba9daf7066a72e    IRRELEVANT  lxd/device/disk: Reject path property for block disk devices
+3261eed1658a0503a4ef4ecafb6a630da76a8f06    DIFFERS     lxd/storage/volumes/utils: Updates storagePoolVolumeUpdateUsers to use storagePools.VolumeUsedByProfileDevices and storagePools.VolumeUsedByInstanceDevices
+0d115c42674f248643817f157240f5ce2745080d    DIFFERS     lxd/storage/volumes/utils: Updates storagePoolVolumeUsedByGet to use storagePools.VolumeUsedByProfileDevices
