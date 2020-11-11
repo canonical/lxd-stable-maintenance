@@ -618,3 +618,4 @@ b836b85b55f334dd4498120e802e2a34897a8158    DIFFERS     lxd/device/disk: Updates
 3772867f8cc468d020a9191fd2ba9daf7066a72e    IRRELEVANT  lxd/device/disk: Reject path property for block disk devices
 3261eed1658a0503a4ef4ecafb6a630da76a8f06    DIFFERS     lxd/storage/volumes/utils: Updates storagePoolVolumeUpdateUsers to use storagePools.VolumeUsedByProfileDevices and storagePools.VolumeUsedByInstanceDevices
 0d115c42674f248643817f157240f5ce2745080d    DIFFERS     lxd/storage/volumes/utils: Updates storagePoolVolumeUsedByGet to use storagePools.VolumeUsedByProfileDevices
+7f8d26eb15ff1e5efaacc80372aa92743dbcbb1c    DIFFERS     lxd/db: Removes duplicated db.StorageRemoteDriverNames init from tests
