@@ -625,3 +625,8 @@ b836b85b55f334dd4498120e802e2a34897a8158    DIFFERS     lxd/device/disk: Updates
 62a6d400960cb1df43867fc75141f1e70c607e60    DIFFERS     lxd/patches: Adds patchVMRenameUUIDKey patch to rename config key from volatile.vm.uuid to volatile.uuid
 65c94d1fe79c6ac6e4cd17ace78d284251c07512    DIFFERS     i18n: Update translation templates
 fa1c0a21741cebb5ae7d6e4cd45fec6b0abc92e5    DIFFERS     i18n: Update translation templates
+0ba9d6475fe5961906f6ff0ac16085a1a6fba037    DIFFERS     doc: fix typos in instances.md
+7b1a23b7bcead297859ae3d2d3b5f49db2ca0ef4    DIFFERS     lxd/storage/pool/interface: Removes "our mount" bool return value from MountCustomVolume
+f8bfc5065ff106fa8f4f2f01c535d6b504e9fc23    DIFFERS     lxd/device/disk: Updates mount function usage in mountPoolVolume
+02249b25f207f647f1d63c7e60d919607ea81f0e    IRRELEVANT  lxd/device/nic/ovn: Removes unused Add function
+14ae58156cea7864c36880cb5356ac36b73b0577    DIFFERS     lxd/storage/backend/lxd: Improves comments when instantiating migration.VolumeTargetArgs
