@@ -630,3 +630,5 @@ fa1c0a21741cebb5ae7d6e4cd45fec6b0abc92e5    DIFFERS     i18n: Update translation
 f8bfc5065ff106fa8f4f2f01c535d6b504e9fc23    DIFFERS     lxd/device/disk: Updates mount function usage in mountPoolVolume
 02249b25f207f647f1d63c7e60d919607ea81f0e    IRRELEVANT  lxd/device/nic/ovn: Removes unused Add function
 14ae58156cea7864c36880cb5356ac36b73b0577    DIFFERS     lxd/storage/backend/lxd: Improves comments when instantiating migration.VolumeTargetArgs
+7e8adecfb1646698cdd491f1cf76b37661e0a576    DIFFERS     api: Add gpu_mdev
+e1f019f1e55e9a5f0371ef529978a1541e70ac73    DIFFERS     po: Update translation
