@@ -650,3 +650,4 @@ a82843c04e0b2e0733b31e954c576db6d53cbe41    IRRELEVANT  lxd/device/nic/ovn: Upda
 b730e82e3cba90255cc78987d5d615a6f0a1857e    IRRELEVANT  lxd/network/openvswitch/ovs: Adds InterfaceAssociatedOVNSwitchPort function
 89f2886ce4ffc80a2e4be3d3c3f63180fbf8232c    DIFFERS     lxd/instance/qemu: Replace vm with d
 234fb8f75b60d607c37939712ff5d3d918b9984b    DIFFERS     lxd/instance/lxc: Replace c with d
+de67bd53f68176aff23fe3aeeca08fc2176f6654    DIFFERS     lxd/resources: Add GetNetworkState and GetNetworkCounters
