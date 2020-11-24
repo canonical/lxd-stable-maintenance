@@ -632,3 +632,19 @@ f8bfc5065ff106fa8f4f2f01c535d6b504e9fc23    DIFFERS     lxd/device/disk: Updates
 14ae58156cea7864c36880cb5356ac36b73b0577    DIFFERS     lxd/storage/backend/lxd: Improves comments when instantiating migration.VolumeTargetArgs
 7e8adecfb1646698cdd491f1cf76b37661e0a576    DIFFERS     api: Add gpu_mdev
 e1f019f1e55e9a5f0371ef529978a1541e70ac73    DIFFERS     po: Update translation
+134e5336b33aaa0b936d8a3c69796b4f2003b829    IRRELEVANT  lxd/device/nic/ovn: Removes custom CanHotPlug function
+6b0c1bfb57a36d5c25feb849701f4f1b5877bad2    DIFFERS     lxd/device/nic/routed: Splits CanHotPlug function into new CanHotPlug and UpdatableFields functions
+f836a49fb901efdcfa06ae52d8081250ee334756    DIFFERS     lxd/instance/drivers/driver/lxc: Adds revert to lxcCreate
+6c8c8d5b0fc9ce660bbff1221ea75a0218177b30    DIFFERS     i18n: Update translation templates
+aeee0a8d5b2a057f70166952afcc6964102be4cf    DIFFERS     lxd/storage/utils: Updates VolumeDBCreate to accept a Pool and call driver.FillVolumeConfig
+b78d3f2c19a171dd32ae746e3e397ead685d04ff    DIFFERS     lxd/storage/backend/lxd: VolumeDBCreate usage
+0ba1df4f34d46a26f157ed453394cb0f11ccc53d    DIFFERS     lxd/instance/drivers/driver/lxc: Updates lxcCreate to use storagePool.FillInstanceConfig
+28bf8ac84bcb40351ab832c90c8dc75bd49fb03e    DIFFERS     lxd/instance/drivers/driver/qemu: Updates qemuCreate to use storagePool.FillInstanceConfig
+0e05f658031a0e447a1f5467f7d9435e6fbce74d    IRRELEVANT  lxd/network/driver/ovn: Updates Instance port functions to use instance UUID rather than instance ID
+c4b940b413307a714b99f6e471739008125c98c3    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortDelete to accept an instance UUID and a ovsExternalOVNPort hint
+a82843c04e0b2e0733b31e954c576db6d53cbe41    IRRELEVANT  lxd/device/nic/ovn: Update ovnNet interface to use instance UUIDs.
+347475e2f37ff2a382f61aadd93aefccb4acea33    IRRELEVANT  lxd/device/nic/ovn: Use volatile.uuid instance UUID rather than instance ID for OVN switch port name
+9cfdd8f33ca2a52a9956e3cdd891dc2b3e3185e0    IRRELEVANT  lxd/device/nic/ovn: No need for intermediate v variable
+0e6bbdfca3717af559f7cefe8e381a0e341d0532    IRRELEVANT  lxd/device/nic/ovn: Updates Stop to pass instance UUID and an OVS external OVN switch port hint to InstanceDevicePortDelete
+1eac64b4e340203f18ba3478b981ddf9b13c497a    DIFFERS     lxd/instance/drivers: Better errors in instance create functions
+b730e82e3cba90255cc78987d5d615a6f0a1857e    IRRELEVANT  lxd/network/openvswitch/ovs: Adds InterfaceAssociatedOVNSwitchPort function
