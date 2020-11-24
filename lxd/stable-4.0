@@ -648,3 +648,5 @@ a82843c04e0b2e0733b31e954c576db6d53cbe41    IRRELEVANT  lxd/device/nic/ovn: Upda
 0e6bbdfca3717af559f7cefe8e381a0e341d0532    IRRELEVANT  lxd/device/nic/ovn: Updates Stop to pass instance UUID and an OVS external OVN switch port hint to InstanceDevicePortDelete
 1eac64b4e340203f18ba3478b981ddf9b13c497a    DIFFERS     lxd/instance/drivers: Better errors in instance create functions
 b730e82e3cba90255cc78987d5d615a6f0a1857e    IRRELEVANT  lxd/network/openvswitch/ovs: Adds InterfaceAssociatedOVNSwitchPort function
+89f2886ce4ffc80a2e4be3d3c3f63180fbf8232c    DIFFERS     lxd/instance/qemu: Replace vm with d
+234fb8f75b60d607c37939712ff5d3d918b9984b    DIFFERS     lxd/instance/lxc: Replace c with d
