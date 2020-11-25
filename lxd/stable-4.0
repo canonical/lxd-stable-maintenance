@@ -653,3 +653,4 @@ b730e82e3cba90255cc78987d5d615a6f0a1857e    IRRELEVANT  lxd/network/openvswitch/
 de67bd53f68176aff23fe3aeeca08fc2176f6654    DIFFERS     lxd/resources: Add GetNetworkState and GetNetworkCounters
 a568ed4ecf40c9c9540ee8af54493408cebd472d    DIFFERS     lxd/networks: Whitespace
 84b6f012514ce052253c3489a26d53bb59178009    DIFFERS     lxd/network/driver/bridge: Adds some basic revert to setup()
+c0ce8e9f9adb2361d10e44d1c2eab9f1259ff7b6    DIFFERS     api: add resources_pci_iommu extension
