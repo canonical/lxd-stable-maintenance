@@ -63,3 +63,8 @@ f797f05e6e600e0c1ac8778ce750a81e6830778d    DIFFERS     terminal: safely allocat
 953db219dab62555dd9e515561a918db8f47ee4a    DIFFERS     conf: move /dev setup to be file descriptor based
 8ea93a0fa7b6a26894af61a56251e0698d1c3f54    DIFFERS     terminal: harden terminal allocation
 a7a92a06a47322dee45664db5c7bfa68b2b95edb    DIFFERS     Remove obsolete setting regarding the Standard Output
+7696c1f9d1aed98a54bf7acd4c48799c395cdc64    FEATURE     Introduce lxc.cgroup.dir.monitor.pivot
+8455e39efe383d520ac3936535630079bebdd2ad    FEATURE     lxc-attach: Enable setting the SELinux context
+65129087f4cd6c4d20ec22461423f871b200a645    FEATURE     attach: require that LXC_ATTACH_LSM_LABEL is specified
+eb60b5648bab973bbe69ae755b04ab6a3cade66b    FEATURE     Add missing free for monitor_pivot_dir.
+74f9fb2c9d09421056120e695261aaf3a702371d    FEATURE     doc: Add lxc.cgroup.dir.monitor.pivot to Japanese man page
