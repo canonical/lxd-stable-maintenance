@@ -654,3 +654,63 @@ de67bd53f68176aff23fe3aeeca08fc2176f6654    DIFFERS     lxd/resources: Add GetNe
 a568ed4ecf40c9c9540ee8af54493408cebd472d    DIFFERS     lxd/networks: Whitespace
 84b6f012514ce052253c3489a26d53bb59178009    DIFFERS     lxd/network/driver/bridge: Adds some basic revert to setup()
 c0ce8e9f9adb2361d10e44d1c2eab9f1259ff7b6    DIFFERS     api: add resources_pci_iommu extension
+50776e8202f878a89ea42f1244766d54660a29c5    IRRELEVANT  lxd/db/cluster: Adds state column to networks_nodes table and set existing rows to state=1 (created)
+b288c2cc6305afe8eb0524906efa9b10fbe2f680    IRRELEVANT  lxd/db/networks: Populate node state column in NetworkNodeJoin
+a0985a8773cb841e5497e1ff4cc567748c1e615a    IRRELEVANT  lxd/db/networks: Populate node state column in CreatePendingNetwork
+ff41cce90d5ce15a3cf76a2d627ede16b4fb0f91    IRRELEVANT  lxd/db/networks: Adds networkNodeState and NetworkNodeCreated functiond
+8fb9297037dcfc36c0f621f37844b0a6664caa34    DIFFERS     lxd/db/networks: Comments
+3a5dbed275b6fa1888c983cb16a492d9e75bd611    IRRELEVANT  lxd/db/networks: Populate node state column in CreateNetwork
+f07d08e79e342ca59c40deec663f7b496c081281    IRRELEVANT  lxd/network/driver: Remove check that prevents starting network in pending state
+a4c348cb30d98601254193f6bde1b4e5fde17e29    DIFFERS     lxd/network/network/interface: Updates init to take api.Network and network nodes map
+c547a99bc8fe6c509085b269f0265bd2ef2a1529    DIFFERS     lxd/network/network/load: Updates LoadByName to pass network nodes from s.Cluster.GetNetworkInAnyState to init()
+866ec3c0fa2754a5c25320d3d0403c6509d52b0e    DIFFERS     lxd/db/networks: Adds NetworkState type and uses it in place of int
+48ee7d2e59887aa7c2865dbb11ce9f88bc48c123    DIFFERS     lxd/db/networks: Renames networkFillStatus to NetworkStateToAPIStatus
+ea7ca0a62004a9210970a09a761024646c4fc7e2    DIFFERS     lxd/db/networks: Adds NetworkNode type
+21714097da2bbc52a45031a30dae8bf78afea366    DIFFERS     lxd/db/networks: Exports NetworkNodes and updates to return map of NetworkNodes
+b48c7c409be10743c99ee78b7f84054ff2e05bdb    DIFFERS     lxd/db/networks: Updates GetNonPendingNetworks usage of NetworkNodes()
+b7daabc90e92f88b1752b74c001434e740180e47    DIFFERS     lxd/db/networks: Modifies getNetwork and GetNetworkInAnyState to return map of NetworkNodes for network
+4fb076b73aae72b28c6267cbc3187a33383e2d5f    DIFFERS     lxd/db/networks: c.GetNetworkInAnyState usage
+ddef234a72898336f6b95b75802a15345bd34cbe    DIFFERS     lxd/db/networks: Updates comments to reference state constants
+52e7137fc039c3df2ede5cc14d33e5368c1fd9f0    DIFFERS     lxd/patches: d.cluster.GetNetworkInAnyState usage
+51a162a46528da30aa70a34fa2d172e04be8dacd    DIFFERS     lxd/api/cluster: d.cluster.GetNetworkInAnyState usage
+40ae933c6d4b6ed8358367be448d38b80c9fa517    IRRELEVANT  lxd/api/project: s.Cluster.GetNetworkInAnyState usage
+d939da5a0d5aa6d40849423e763ced1dd26d7be0    DIFFERS     lxd/device/nic: d.state.Cluster.GetNetworkInAnyState usage
+7dc9fe736bf50110ba5a9151d25d40c2fca43c89    IRRELEVANT  lxd/network/driver/ovn: n.state.Cluster.GetNetworkInAnyState usage
+53b8d4a0a4d0e821f4e1cc551ed32f38c8d63799    DIFFERS     lxd/network/driver/common: Adds LocalStatus function and store node info inside network via init()
+2716109c64ab2e8814a4da8d6e0c2ffcfad8e5ce    IRRELEVANT  lxd/network/driver/ovn: Only perform local date if local status is api.NetworkStatusCreated
+8320d783b204283fa6866847f7bbc1505b4cd5dc    IRRELEVANT  lxd/network/driver/physical: Only perform local date if local status is api.NetworkStatusCreated
+ac0cb30016ff337dc31ad1235aba86872542e7a7    DIFFERS     lxd/networks: Updates doNetworksCreate to skip creation if node is already marked created
+59890c87d837c735696ac4939a1b5c0bbd26eb80    DIFFERS     lxd/networks: d.cluster.GetNetworkInAnyState usage
+55c3c47d896990530565ca577df0c25aee6bab0d    DIFFERS     lxd/networks: Don't skip network clean up if network is pending in networkDelete()
+28f01a21f230199e613295e5abfa55091112c96c    IRRELEVANT  lxd/networks: d.cluster.GetNetworkInAnyState usage
+f28b233dd7ee2206dc7902c2f88845093809bffa    DIFFERS     lxd/db/migration/test: cluster.GetNetworkInAnyState usage
+3b3deb9ab6230aa40f832abfce2feacb52343ec8    DIFFERS     lxd/network/driver: Only apply local DB change in Update() when local node is in pending state
+62eb27629660b13080bed47136b5cb08c89942d4    IRRELEVANT  test/suites/clustering: Add network node state tests for bridge networking
+af55f46dce1c18dcfcb765ad1346ebb50e93cd4e    DIFFERS     lxd/networks: Updates networksPostCluster to only mark global network states as created once all nodes created
+5655b52f01fcfa8b2cc65b21a0b474dac3819ca5    DIFFERS     lxd/networks: Reduce duplicate query loading network in networkPut and doNetworkUpdate
+5b6a8cc24d97d0a2fac23b08adf63879747843de    DIFFERS     lxd/network/driver/bridge: Improve IP parsing errors
+6d3139e0d6f54541ef7e3319945ca7005a724aed    IRRELEVANT  lxd/network/driver/ovn: Improve IP parsing errors
+474a49584a6da7a336998214e76482dad86883d3    IRRELEVANT  lxd/network/driver/ovn: Don't fill default config on update
+4338899144beb466e063e171f9aca69f7ee50c2f    IRRELEVANT  lxd/network/driver/ovn: Regenerate auto values on update
+0f2cdb383a0392f99589d7d429860ab2a18c2dd9    IRRELEVANT  doc/networks: Clarifies default values for ovn ranges settings
+75cbff964c375a5521675d276628d6e4698e925e    IRRELEVANT  doc/networks: Clarify ovn default auto values
+1bf42210df92dbeff240ff68f5f743700c006020    DIFFERS     doc/networks: Clarify bridge default auto values
+ad7a463c814f0f072fcccb4677e8a0ee4a10952a    DIFFERS     lxd: Move to new RBAC helpers
+d97041090a02bfd27e21c6fd950cef4eaeaaf45e    IRRELEVANT  lxd/storage/volumes: Replace hardcoded "filesystem" with db.StoragePoolVolumeContentTypeNameFS in storagePoolVolumesTypePost
+f0047ce2de38b73355dd53a4272f7beb31361755    IRRELEVANT  lxd/storage/volumes: Set default volume content type to filesystem in storagePoolVolumesPost
+c353cb7bf4eba967b9058a9692d485076560eb8f    DIFFERS     lxd/storage/volumes: Error quoting in storagePoolVolumesTypePost
+fe4bfde7491f24c5d4f582df07240e58c971c085    DIFFERS     lxd/storage/volumes: Error quoting in storagePoolVolumesPost
+dce20f9484afb0f5fdd27464fd9869b14654d345    IRRELEVANT  lxd/storage/utils: Align error returned from VolumeContentTypeNameToContentType with similar functions
+bb31b61e3e2c4926fb8183fa860517f1d01501d2    IRRELEVANT  lxd/storage/volumes: Removes stuttering in errors in storagePoolVolumesTypePost
+1a3676f5e7feb197376c60b5646d70e2bb26ffce    DIFFERS     lxd/networks: Use SmartError for response when loading networks
+828623a3e28ed5995ec636135b1b2d3182e9b923    DIFFERS     lxd: Filter all UsedBy based on RBAC
+6a4602c302cfeac043d9981db330223579385157    IRRELEVANT  lxd/images: Fix incorrect RBAC on push
+bf53b25f1c975a2483941510df635549da1ec681    IRRELEVANT  i18n: Update translation templates
+ea788aa3029b417b67f70a31863417f5323c04e7    IRRELEVANT  i18n: Update translation templates
+57216f18d2fbbb5ebcfae0202fcc1c83bdd60e21    DIFFERS     lxd/networks: Fix bad logging level
+1f8887da2bd871a0ff58bf122ef7dcf70273353d    DIFFERS     lxd/network: Implement create wrapper
+340d1e4ec170b57a693ee6a2c9fbd6a48669aae5    DIFFERS     lxd: Updates use of ClientType now moved to cluster/request package
+c78422d501d957258fbb1e60c2fdba1b2386b8ce    IRRELEVANT  lxd/network/driver: Takes NetworkStatus safety patch from stable-4.0 and applies to master
+544a7c09bd05458ff3a8d5097e94058f43b96c9f    DIFFERS     lxd/networks: Corrects log level in networksPostCluster
+ced572e2f1f04dca363af1ee9db2ed796943b15b    DIFFERS     lxd/db/networks: Removes unused NetworkErrored function
+5e6870355aa39637cc29316bbf726ccb66e475ae    DIFFERS     lxd/network: Add lifecycle events
