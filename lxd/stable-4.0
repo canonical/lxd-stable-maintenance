@@ -714,3 +714,60 @@ c78422d501d957258fbb1e60c2fdba1b2386b8ce    IRRELEVANT  lxd/network/driver: Take
 544a7c09bd05458ff3a8d5097e94058f43b96c9f    DIFFERS     lxd/networks: Corrects log level in networksPostCluster
 ced572e2f1f04dca363af1ee9db2ed796943b15b    DIFFERS     lxd/db/networks: Removes unused NetworkErrored function
 5e6870355aa39637cc29316bbf726ccb66e475ae    DIFFERS     lxd/network: Add lifecycle events
+5e702acf1e79c6ea217dfc35b95c37574e0ca0ed    FEATURE     lxd/db/cluster: Adds state column to storage_pools_nodes table and set existing rows to state=1 (created)
+3ab93c8e6fc173a2ee442c9038420a3c79f68536    IRRELEVANT  lxd/db/storage/pools: Set storage pool node state to created in UpdateStoragePoolAfterNodeJoin
+d3c74abc648d89e19723b5d5cc6b78de7c148f83    IRRELEVANT  lxd/db/storage/pools: Set storage pool node state to pending in CreatePendingStoragePool
+0109c023ad66f3ad85afa3b7eb7c433059acb8b9    IRRELEVANT  lxd/db/storage/pools: Adds StoragePoolNodeCreated and storagePoolNodeState functions
+9e929416f424bc2ea1b32abe6f8109cb54a82f29    IRRELEVANT  lxd/db/storage/pools: Set storage pool node state to pending in CreateStoragePool
+3dc7be8bd72e556a0437729e01121e383dba1078    DIFFERS     lxd/db/storage/pools: StoragePoolState usage
+699ffe64adf0e9cbbe38312c114989b9cedb0100    DIFFERS     lxd/db/storage/pools: Adds storagePoolNodes function
+1e4ab764b4c094f0bcba48deb62c5df54560577d    IRRELEVANT  lxd/storage/volumes: GetStoragePoolInAnyState usage
+6aead1d1f1a5d92004b2f0e63e69d8379e90268f    IRRELEVANT  lxd/storage/volumes/backup: d.cluster.GetStoragePool usage
+8ff4006073fd26b647771fbb2b4a957a25472690    DIFFERS     lxd/storage/pools/utils: Removes unused storagePoolUpdate
+cdcac17a326b3959be095b59c0d20009a071f5ec    IRRELEVANT  test/suites/clustering: Add pool node state tests
+965bd5786f28a6df0b017b1cf26dc8b9652a53f5    DIFFERS     i18n: Update translation templates
+7cbdd62e06db2b2758a4d2b7ad620722fdc3f719    IRRELEVANT  lxd/network/driver/physical: Adds ovn.ingress_mode config key
+0e1537b591c9f317a47523eca3328c7bac5e058c    IRRELEVANT  lxd/network/driver/ovn: Updates uplinkRoutes to accept an *api.Network argument
+dce5376a83b39d371907e397c6390617e12cc347    IRRELEVANT  lxd/network/driver/ovn: n.uplinkRoutes usage
+20ea6d892ecbc259d7c0e0f41bcb5988fb489dea    IRRELEVANT  lxd/network/driver/ovn: Moves subnet size validation into InstanceDevicePortValidateExternalRoutes
+04e8ff8310be9061be802815bf8f19e3a34da0b8    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortAdd to only publish external IPs using DNAT when uplink l2proxy mode enabled
+dcfcb0ba11dcd2fea7a72b7a64b996af7f4e04b0    IRRELEVANT  lxd/device/nic/ovn: Removes external subnet validation
+8d53a17c87becce96218c4713550556597c75391    IRRELEVANT  doc/networks: Adds ovn.ingress_mode to physical networks
+5df59049978f77d9cbb99e88d60548edad1939af    IRRELEVANT  api: Adds network_physical_ovn_ingress_mode extensions
+75e468a1b01d3a5d6063e701578d095293731e87    IRRELEVANT  lxd/network/driver/ovn: Only delete DNAT rules in InstanceDevicePortDelete if ingress mode is l2proxy
+19b1f4ea200277bbcb3519e4ec630bee769b7156    IRRELEVANT  lxd/network/openvswitch/ovn: Exports LogicalSwitchDHCPOptionsDelete and adds optional UUID filter for deletion
+f893eb22808c247ac88fe0051bc53b91fc66dae8    IRRELEVANT  lxc/network/driver/ovn: Adds ipv4.dhcp and ipv6.dhcp boolean settings
+9067bf591633532827a2708cccdc3d779f92c7cc    IRRELEVANT  lxc/network/driver/ovn: Modifies setup to only activate DHCP/RA if its enabled on network
+1ba16cffc87d151eeece2fcacd548f09f8fdddb3    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortAdd to respect DHCP options on network
+33a6d4d8a6aac553bfbb7bbf15ad450e186fed3b    IRRELEVANT  lxd/network/driver/ovn: Updates DHCPv4Subnet and DHCPv6Subnet to use IP helper functions
+0b8ae947101f75bbd1d7423cbf7e2c8c8707bb21    IRRELEVANT  api: Adds network_ovn_dhcp extension
+567f795f599a26b30f5e06e43bc661a0152dbed9    IRRELEVANT  doc/networks: Adds ipv4.dhcp and ipv6.dhcp docs for OVN networks
+3bff5fac1e39e625ace73878bf4c182e6fb2f2dd    IRRELEVANT  doc/networks: Adds ipv4.routes.anycast and ipv6.routes.anycast to physical networks
+33ac2d80492c9efd3ab433c60dff755f607fd3e9    IRRELEVANT  lxd/network/driver/physical: Adds ipv4.routes.anycast and ipv6.routes.anycast options
+7ef94afe314e18d40723b71e73a993aa55884a0a    IRRELEVANT  lxd/network/driver/ovn: Adds uplinkHasIngressRoutedAnycastIPv4 and uplinkHasIngressRoutedAnycastIPv6 functions
+525fc9a2380b73f93a76d560c29aec53f250fb52    IRRELEVANT  lxc/network/driver/ovn: Skip overlap detection of networks external subnets when uplink is in anycast routed ingress mode
+5543ed07ae21f546db4d73ede1cf601a48c67348    IRRELEVANT  lxd/network/driver/ovn: Skip NIC external route overlap detection when uplink is in anycast routed ingress mode
+2f021596ab4f02ff63209f6dd8c3493e097daed8    IRRELEVANT  api: Adds network_physical_routes_anycast extension
+efabc7ee81743706ac3134d17da55e05cdd8c8ed    DIFFERS     api: Add resources_network_usb and resources_disk_address
+4ec52f656bb1c178a38f1bcffb489f12ad644a10    IRRELEVANT  lxd/network/driver/ovn: Improve error message
+0dd59e537dcc4603b7f834045f9044f06ea2df06    IRRELEVANT  lxd/network/network/utils: Don't reference ourselves in UsedBy
+68726dba9b00423316a0934f704ee7f45198da92    DIFFERS     lxd/storage/pools/utils: Updates storagePoolCreateLocal to mark local node state as created
+63b00ebb5c9aed8487ecccb530ccff860f40d489    DIFFERS     lxd/db/storage/pools: Removes unused function StoragePoolErrored
+e4ad8e7f361d3e8dc0c490452adb7fa4db1c22a3    DIFFERS     lxd/storage/pools: Adds doStoragePoolUpdate function
+802b808cd21c63f808498919fd89694291c073c3    DIFFERS     lxd/storage/pools/utils: Updates storagePoolCreateLocal to use GetPoolByName
+7fbb48df3b51d3d619cc6c04919b49549c310fb2    DIFFERS     lxd/storage/pools/utils: Switch to clientType
+6c1b7e66fec660cb10d1c1f4186e57af3f51fff5    IRRELEVANT  i18n: Update translations from weblate
+55e2051f529070acd275e399771ffd1e719a9801    IRRELEVANT  lxd/network/driver/ovn: Only add default route and SNAT rules to router after adding external router port
+ee5054d33efa90c516cd4b8c401c934a6f84e14c    IRRELEVANT  i18n: Update translations from weblate
+d52dd34db4ce8e95f63cefef6aaec249ef984e70    FEATURE     doc: Adds limits.instances key description.
+e9b15a2c8774a278dfd7637f2a6fb171163508cd    FEATURE     lxd/project: Adds 'limits.instances' configuration key
+3583124489fbbf75de34f94dedc4945e6f7bb331    FEATURE     api: Add projects_limits_instances extension
+6df4fd91d2f2ed645efb5e3aa3e5e6d6b0e28216    IRRELEVANT  doc/api-extensions: Fix escaping
+eace244b40c54cac12de0c9266c0790aba840a10    FEATURE     Release LXD 4.9
+acc09a9f09b307f4b02c4b0f43a8b24d32214575    IRRELEVANT  doc/networks: Add missing escaping
+4b48e17ab725d8bf598b1bcf75021e46ffeedb3e    DIFFERS     lxd/network/driver/common: Adds Project function
+4872518ed2b8a21197392e4445d84707aaa65484    DIFFERS     lxd/network/driver: Always delete when requested, ignore LocalStatus() pending
+8485fc2937ded3135e4272df869d4c7f3eb203db    DIFFERS     lxc/networks: Remove revert removal on failure of clustered network in networksPost
+0de956cd8e7ace5af4b454d8210c62ad5d25d2e6    DIFFERS     lxd/networks: Allow re-create of pending network when pending nodes already exist in networksPost
+5b23efe39ab897bcbea474d3abbb5623d0f25236    DIFFERS     lxd/networks: Adds revert to doNetworksCreate
+ab67f107629c64ca466ba24c84e537cf3805dbd1    DIFFERS     api: Add network_state_vlan
