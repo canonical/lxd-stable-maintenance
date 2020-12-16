@@ -773,3 +773,30 @@ acc09a9f09b307f4b02c4b0f43a8b24d32214575    IRRELEVANT  doc/networks: Add missin
 ab67f107629c64ca466ba24c84e537cf3805dbd1    DIFFERS     api: Add network_state_vlan
 40defa5130a86dedd14ec111ccd6bf0667519fc8    DIFFERS     lxd/network/driver/common: Remove cluster notification and DB record removal from delete() function
 0d413c57563eb91ac002458dc2b536dd0d5cded3    DIFFERS     lxd/networks: Moves cluster notification an DB record removal into networkDelete
+849aabe23e60d7186a9f56c93606f903297da988    IRRELEVANT  lxd/db/networks: Adds NetworkErrored function
+9f070059265055cbf509e0b75c78a04315e2fa67    IRRELEVANT  lxd/network/driver/ovn: Reject instance port start if cannot find DHCP options
+2d8461a5981024cfc661f76c974dbc6cd67cc4cd    FEATURE     lxd/device: Add support for bridge port isolation
+96dad201510ff6b0f17067ec3d4692110c2440b5    FEATURE     api: Add instance_nic_port_isolation extension
+5e507626b07034e4479ed3729152b2cc2cdd7e8d    IRRELEVANT  lxd/network/driver/ovn: Detect IPv6 DHCP options correctly
+ffc6845170d5e31b6df042a052c2518b4e464c83    DIFFERS     lxd/db/networks: Changes UpdateNetwork to not set created status
+2befe9020253c0fa30b783cb51185234e1942657    DIFFERS     lxd/networks: Updates doNetworksCreate to accept a Network rather than load its own
+06c96205c41ff05b6d3f2e0a0fc61913b80e2dca    DIFFERS     lxd/networks: doNetworksCreate usage
+4d7df81acbf8224857fdf74f9e8ac8bf4cd323cb    DIFFERS     lxd/networks: When auto creating pending nodes, don't pass global config into DB function in networksPost
+909778e8ad6a79ee8940ddb213ec95b8adae938d    DIFFERS     lxd/networks: Adds networkPartiallyCreated helper function
+953d5d19d1bb73897eac948f838311828de4b0e7    DIFFERS     lxd/networks: Updates networksPostCluster to detect existing global config and skip create if already exists
+d3ddb3d84a761b0cdbce15a3f1593902c1ab41bc    DIFFERS     lxd/api/cluster: Skip non-created networks when joining
+bf9996d85a7bb2f3eb2ff5647d6f958d7bb714cf    DIFFERS     lxd/device/nic: Don't allow NICs to use networks that are not created
+bb092653bdd324d00d0eaa0ce597e17a1a4376ca    DIFFERS     lxd/db/networks: Renames ClusterTx GetNonPendingNetworks to GetCreatedNetworks
+b852c82eafc6293fc08fa98db022ecd9f4e1c395    DIFFERS     lxd/db/networks: Renames Cluster GetNonPendingNetworks to GetCreatedNetworks
+528e7b030f949ccc7613eac58e00f09507a297b9    DIFFERS     lxd/api/cluster: cluster.GetCreatedNetworks usage
+0503808c6dcd6db26c6ff5c7bf7d27ee81492a0f    IRRELEVANT  lxd/network: tx.GetCreatedNetworks usage
+8d8bf0aeec2d1dcef99033b4e1f357b331092685    DIFFERS     lxd/networks: s.Cluster.GetCreatedNetworks usage
+d886bd00141641eaa05465ac6dcf94ea4444d54d    DIFFERS     lxd/patches: tx.GetCreatedNetworks usage
+6fe3aae2ddffb04f0c8be0a01724f0f86753b29b    IRRELEVANT  test/suites/clustering: More network clustering tests
+043583c2b084bb9b46335838087fb810d318f749    DIFFERS     lxd/db/networks: Tighten restrictions in CreatePendingNetwork to only allow pending nodes to be added while network is pending
+2f668a4900723b15cdd6ffd549b275bcafc67328    DIFFERS     lxd/networks: Allow single node cluster network create using --target
+0b928270abccc4e26b0b9b61a4cc90d10554632a    IRRELEVANT  lxd/db/cluster/update: Adds patch updateFromV41 function
+c05a393468a2d71cfb563e598a34efd7e15f5d89    IRRELEVANT  lxd/storage/pools/utils: Renames id arg to poolID in storagePoolCreateLocal
+189a76714ed38d22ace96e22b55bb7effaf5db6c    IRRELEVANT  test/suites/clustering: Updates storage pool status tests
+76a152c1f159eb1d0e497d4e2169bedb888bca39    IRRELEVANT  lxd/db/cluster/update: Adds patch updateFromV42 function
+4570a38da840f6bb0f1cae549927d91e58f06c1f    IRRELEVANT  test/suites/clustering: Adds additional storage pool state tests
