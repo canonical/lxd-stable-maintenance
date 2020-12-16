@@ -800,3 +800,6 @@ c05a393468a2d71cfb563e598a34efd7e15f5d89    IRRELEVANT  lxd/storage/pools/utils:
 189a76714ed38d22ace96e22b55bb7effaf5db6c    IRRELEVANT  test/suites/clustering: Updates storage pool status tests
 76a152c1f159eb1d0e497d4e2169bedb888bca39    IRRELEVANT  lxd/db/cluster/update: Adds patch updateFromV42 function
 4570a38da840f6bb0f1cae549927d91e58f06c1f    IRRELEVANT  test/suites/clustering: Adds additional storage pool state tests
+12ae61c323fd04f2b18a9076c88e2ca545484d93    IRRELEVANT  lxd/network/driver/ovn: Adds support for physical uplink interface to be a bridge
+c83abda1839a80b74b60d6a238b7e84968fd0eea    DIFFERS     lxd/db/networks: Corrects comment on GetCreatedNetworks
+a6117fba820ee013e9c645f54078766b8466fe38    IRRELEVANT  lxd/network/driver/physical: Clarify error when changing parent interface when in use
