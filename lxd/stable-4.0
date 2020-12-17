@@ -803,3 +803,4 @@ c05a393468a2d71cfb563e598a34efd7e15f5d89    IRRELEVANT  lxd/storage/pools/utils:
 12ae61c323fd04f2b18a9076c88e2ca545484d93    IRRELEVANT  lxd/network/driver/ovn: Adds support for physical uplink interface to be a bridge
 c83abda1839a80b74b60d6a238b7e84968fd0eea    DIFFERS     lxd/db/networks: Corrects comment on GetCreatedNetworks
 a6117fba820ee013e9c645f54078766b8466fe38    IRRELEVANT  lxd/network/driver/physical: Clarify error when changing parent interface when in use
+f0a4beb75365d2e5e78ab596aa2602cc5edc5c66    DIFFERS     lxd/network/driver: Don't apply changes to node if network is pending
