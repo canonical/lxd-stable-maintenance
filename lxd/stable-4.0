@@ -804,3 +804,9 @@ c05a393468a2d71cfb563e598a34efd7e15f5d89    IRRELEVANT  lxd/storage/pools/utils:
 c83abda1839a80b74b60d6a238b7e84968fd0eea    DIFFERS     lxd/db/networks: Corrects comment on GetCreatedNetworks
 a6117fba820ee013e9c645f54078766b8466fe38    IRRELEVANT  lxd/network/driver/physical: Clarify error when changing parent interface when in use
 f0a4beb75365d2e5e78ab596aa2602cc5edc5c66    DIFFERS     lxd/network/driver: Don't apply changes to node if network is pending
+d40d117be8d92ed56ef80b46a5ee3fd672c34c86    FEATURE     lxc/image: Add support for directly getting, setting and unsetting image properties
+a54e04a8a5b8daec374d24bf6da1f7f9d984d5fe    IRRELEVANT  i18n: Update translation templates
+354df8872444809406ccfd14bff49401b07e52de    IRRELEVANT  lxd/db/cluster/update: Modifies updateFromV43 and updateFromV42 to use IFNULL(node_id, -1) to avoid nodes with 0 ID
+245c92e80fa301ee429ec700aa800d97e357ff30    IRRELEVANT  lxd/db/cluster: Adds updateFromV43 patch that adds unique index to storage_pools_config and networks_config table
+df84fc868205fc77de7ac84f724e79b0ec43fec9    IRRELEVANT  doc: features.networks is not enabled by default for projects
+48df8c87eef5e4e106d1f8f740464773541d9233    DIFFERS     lxd/instances/post: Rename project to targetProject to differentiate between source.Project in containersPost
