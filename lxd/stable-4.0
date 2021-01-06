@@ -810,3 +810,22 @@ a54e04a8a5b8daec374d24bf6da1f7f9d984d5fe    IRRELEVANT  i18n: Update translation
 245c92e80fa301ee429ec700aa800d97e357ff30    IRRELEVANT  lxd/db/cluster: Adds updateFromV43 patch that adds unique index to storage_pools_config and networks_config table
 df84fc868205fc77de7ac84f724e79b0ec43fec9    IRRELEVANT  doc: features.networks is not enabled by default for projects
 48df8c87eef5e4e106d1f8f740464773541d9233    DIFFERS     lxd/instances/post: Rename project to targetProject to differentiate between source.Project in containersPost
+8579261d2e277121caebd9b275f9eef0ebd0f47f    IRRELEVANT  lxd/network/openvswitch/ovn: Adds mayExist argument to LogicalRouterAdd
+9097d2411397df5928c078dd481175600fbbbe04    IRRELEVANT  lxd/network/openvswitch/ovn: Adds mayExist argument to LogicalRouterSNATAdd
+78a40814325ddc67fdc6a073203dabd4e62b8a30    IRRELEVANT  lxd/network/openvswitch/ovn: Simplifies LogicalRouterRouteAdd
+949c8b843ed15527fbb609f29abddce1d4ed544c    IRRELEVANT  lxd/network/openvswitch/ovn: Adds mayExist argument to LogicalRouterPortAdd
+05b783751f05c3c7e3996584b83cce33054dc52a    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterSNATDeleteAll function
+fa33945ffe2b8b053e7f9fa69d259b5086658f5d    IRRELEVANT  lxd/network/openvswitch/ovn: Clear unused keys in LogicalSwitchSetIPAllocation
+2bbedf850b85622e6c364db6c0d74e92bffb559f    IRRELEVANT  lxd/network/openvswitch/ovn: Adds support for clearing unused settings in LogicalRouterPortSetIPv6Advertisements
+e36579466be2646cfd0b8bdc57d0eec7c5a698ce    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterPortDeleteIPv6Advertisements function
+57e7197aa551eac9049d3eee75ba32ab1b58a6d5    IRRELEVANT  lxd/network/driver/ovn: Enforce that ipv6.address if specified is at least a /64 subnet
+c4bcdcd180e28a6928ca244e73b60343a4e3bc74    IRRELEVANT  lxd/network/driver/ovn: Pass update flag to mayExist where possible
+ce583251dcbdf6f6f0f945c5fad96d8eda2de992    IRRELEVANT  lxd/network/driver/ovn: Delete SNAT rules from route before adding new ones
+14ef89b72000dbc90bf5797a171cccc8048f09b8    IRRELEVANT  lxd/network/driver/ovn: Improve SNAT failure errors
+eb7085cd1e9aa4b56c86a0493fcee94b25a2ce08    IRRELEVANT  lxd/network/driver/ovn: Pass update to mayExists when setting up default routes
+829bf4f4f42130febb3801e72aa6f1f3091d3e9b    IRRELEVANT  lxd/network/driver/ovn: Create internal router port before DHCP option setup
+08430e3939014392e12e1374f6d9b03c62e523e4    IRRELEVANT  lxd/network/driver/ovn: Modifies IPv6 RA settings and removes them entirely when IPv6 disabled
+43bf6e432c36bfe46522a30bc049afca6bbb15ab    IRRELEVANT  lxd/network/driver/ovn: Don't return DHCPv6 subnet if IPv6 prefix smaller than /64
+6b89151cb8eed7fb5a41a599dbb170e4e3c53a79    IRRELEVANT  lxd/network/driver/ovn: Adds handleDependencyChange function
+510e96786e6638b22443850c188c27fe2daec9b3    DIFFERS     lxd/network/driver/common: Adds notifyDependentNetworks function and no-op placeholder handleDependencyChange function
+a3578387854c9499138e56424add76152c4a95c6    IRRELEVANT  lxd/network/driver/physical: Calls notifyDependentNetworks when config is updated
