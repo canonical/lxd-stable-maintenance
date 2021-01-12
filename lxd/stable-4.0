@@ -829,3 +829,16 @@ eb7085cd1e9aa4b56c86a0493fcee94b25a2ce08    IRRELEVANT  lxd/network/driver/ovn: 
 6b89151cb8eed7fb5a41a599dbb170e4e3c53a79    IRRELEVANT  lxd/network/driver/ovn: Adds handleDependencyChange function
 510e96786e6638b22443850c188c27fe2daec9b3    DIFFERS     lxd/network/driver/common: Adds notifyDependentNetworks function and no-op placeholder handleDependencyChange function
 a3578387854c9499138e56424add76152c4a95c6    IRRELEVANT  lxd/network/driver/physical: Calls notifyDependentNetworks when config is updated
+63938502ebea14091fda14dbd709d107e99949be    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalRouterDNATSNATDeleteAll function
+2bb83212bff39a5f01986e5e13d0bfa69044fdf0    IRRELEVANT  lxd/network/openvswitch/ovn: Clarifies DNAT_AND_SNAT related function comments
+62324894f21bba2162ca498268045304a76a9654    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchPortExists function
+b127924f8af0083606c61d7f609d27edbe1939b7    IRRELEVANT  lxd/network/driver/ovn: Moves instance NIC port config parsing into InstanceDevicePortConfigParse function
+17a32d11fe56a35100343b67e8e420e6a8c0d2a5    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortAdd to accept an uplinkConfig argument
+b7558c5c99949106d2cccc72a69d31c865da373c    IRRELEVANT  lxd/network/driver/ovn: Clarifies argument names in the context of an OVN dependent network in handleDependencyChange
+a9fac51f2b1cfec7edf3e9152a4248cd0d0f3f2a    IRRELEVANT  lxd/network/driver/ovn: Updates handleDependencyChange to handle changes to uplink network's ovn.ingress_mode setting
+9af4558753dbb1d05a5af3349ec445b5a1e9db00    IRRELEVANT  lxd/device/nic/ovn: Updates NIC to use d.network.InstanceDevicePortConfigParse and updated d.network.InstanceDevicePortAdd
+87409c26e6499fd170bf40a2f5755b9d526e828d    IRRELEVANT  lxd/network/driver/ovn: n.state.Cluster.InstanceList usage
+411c97ce6e2fd8c540da90e01319968102bf2deb    IRRELEVANT  lxd/network/driver/ovn: Updates addChassisGroupEntry to generate chassis priority using stable random value
+2bbb876a7cef697d56ea8a5e3c32b91a18d13fdf    IRRELEVANT  i18n: Update translations from weblate
+8b2c22660f5a83711d8a1328d7095717fd732f23    FEATURE     Release LXD 4.10
+8b37dd9e312d882b00a1e8e224fbdd2782079adf    IRRELEVANT  doc: Fixes typo in macvlan NIC section
