@@ -842,3 +842,4 @@ a9fac51f2b1cfec7edf3e9152a4248cd0d0f3f2a    IRRELEVANT  lxd/network/driver/ovn: 
 2bbb876a7cef697d56ea8a5e3c32b91a18d13fdf    IRRELEVANT  i18n: Update translations from weblate
 8b2c22660f5a83711d8a1328d7095717fd732f23    FEATURE     Release LXD 4.10
 8b37dd9e312d882b00a1e8e224fbdd2782079adf    IRRELEVANT  doc: Fixes typo in macvlan NIC section
+376a136a0e3c6c61941099cce705fabcdf291db4    DIFFERS     lxd/network/network/utils/sriov: Adds network usage support to SRIOVGetHostDevicesInUse
