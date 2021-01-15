@@ -843,3 +843,5 @@ a9fac51f2b1cfec7edf3e9152a4248cd0d0f3f2a    IRRELEVANT  lxd/network/driver/ovn: 
 8b2c22660f5a83711d8a1328d7095717fd732f23    FEATURE     Release LXD 4.10
 8b37dd9e312d882b00a1e8e224fbdd2782079adf    IRRELEVANT  doc: Fixes typo in macvlan NIC section
 376a136a0e3c6c61941099cce705fabcdf291db4    DIFFERS     lxd/network/network/utils/sriov: Adds network usage support to SRIOVGetHostDevicesInUse
+7c57ba7d87800c43e791e1ac421c1088c9da48fd    IRRELEVANT  test/suites/container/devices/nic/bridged: Adds port isolation feature test
+719fd3887353b667c528413b769ce4e9f6ed09ae    DIFFERS     i18n: Update translation templates
