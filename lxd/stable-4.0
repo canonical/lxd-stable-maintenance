@@ -845,3 +845,5 @@ a9fac51f2b1cfec7edf3e9152a4248cd0d0f3f2a    IRRELEVANT  lxd/network/driver/ovn: 
 376a136a0e3c6c61941099cce705fabcdf291db4    DIFFERS     lxd/network/network/utils/sriov: Adds network usage support to SRIOVGetHostDevicesInUse
 7c57ba7d87800c43e791e1ac421c1088c9da48fd    IRRELEVANT  test/suites/container/devices/nic/bridged: Adds port isolation feature test
 719fd3887353b667c528413b769ce4e9f6ed09ae    DIFFERS     i18n: Update translation templates
+b368d1ab951c4472dc4ca966989da8fc5e9fd2de    DIFFERS     lxd/instance/drivers/driver/lxc: Copy parent volume config to snapshot volume config in lxcCreate
+9b8ef9a7eb3885d8911efa93ccfe81c47a05ea65    DIFFERS     lxd/instance/drivers/driver/qemu: Copy parent volume config to snapshot volume config in qemuCreate
