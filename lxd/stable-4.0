@@ -847,3 +847,14 @@ a9fac51f2b1cfec7edf3e9152a4248cd0d0f3f2a    IRRELEVANT  lxd/network/driver/ovn: 
 719fd3887353b667c528413b769ce4e9f6ed09ae    DIFFERS     i18n: Update translation templates
 b368d1ab951c4472dc4ca966989da8fc5e9fd2de    DIFFERS     lxd/instance/drivers/driver/lxc: Copy parent volume config to snapshot volume config in lxcCreate
 9b8ef9a7eb3885d8911efa93ccfe81c47a05ea65    DIFFERS     lxd/instance/drivers/driver/qemu: Copy parent volume config to snapshot volume config in qemuCreate
+afb1e0dd5ec3434ec7afd824f679dce52a8145c3    FEATURE     api: Adds support for bulk instance state change.
+a0876aca6cfde9992d8378350f60a9ca0b51c583    FEATURE     doc: Adds doc for bulk instance state change endpoint.
+f16eebefb1a8b708b0b39fb0b661a673bf999cfa    FEATURE     lxd: Adds support for bulk instance state change.
+8f8b2a9fddf5ca1dc33a453db8bd81c09201f06a    FEATURE     lxc: Adds support for bulk instance state change.
+962fd498dca4f2771bd958cf1c8c16eb79925fd3    IRRELEVANT  lxd: Process bulk action in parallel
+9f55844d6b1c83803b1e5393ab063465c1b257aa    IRRELEVANT  lxd/instances: Reduce code duplication
+fb82fa4fbcb183c64475dc7eb2080621bbdd7b61    IRRELEVANT  lxc/action: Update to new InstancesPut
+4b0e63f65062226d1ba25e624a88de63448ada8c    IRRELEVANT  lxd/instances: Update to new bulk API
+f65d1a258b90da683487e6f9c6c027a3bef4c00f    IRRELEVANT  doc/rest-api: Update for new bulk API
+a8ed29e60d5b248b58f5366d545d5c385593cb6e    DIFFERS     lxd: Rename container functions
+5053c28f5c21ff8cb5006c537cd987fa5b4ef8f7    IRRELEVANT  lxd/instances_state: Simplify logic
