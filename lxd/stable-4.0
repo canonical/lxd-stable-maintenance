@@ -869,3 +869,4 @@ b60be89c8ad50eab4f6de0b4d1b88e9d85eaa3aa    FEATURE     lxd/device/nic: Adds GVR
 df248aa56c744edc6acd9b9ba1cbe077a8c8d37a    IRRELEVANT  lxd/network: Add check for overlapping ovn.ranges and dhcp.ranges
 8896261d03fb6e0da22dcc4e010a48cf8ebd4493    DIFFERS     lxd/instance/drivers/driver/lxc: Updates FillNetworkDevice to use d.insertConfigkey
 abef6ef8392029644d1a141ff8ea03527dd343f5    DIFFERS     lxd/instance/drivers/driver/qemu: Updates FillNetworkDevice to use d.insertConfigkey
+ee0bddfc35d07d73885e5c1396f829c7f42c7d08    IRRELEVANT  lxd/network/driver/bridge: Only validate non-overlapping DHCPv6 ranges with OVN ranges when stateful DHPCv6 being used
