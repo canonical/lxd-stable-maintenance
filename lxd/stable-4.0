@@ -858,3 +858,14 @@ fb82fa4fbcb183c64475dc7eb2080621bbdd7b61    IRRELEVANT  lxc/action: Update to ne
 f65d1a258b90da683487e6f9c6c027a3bef4c00f    IRRELEVANT  doc/rest-api: Update for new bulk API
 a8ed29e60d5b248b58f5366d545d5c385593cb6e    DIFFERS     lxd: Rename container functions
 5053c28f5c21ff8cb5006c537cd987fa5b4ef8f7    IRRELEVANT  lxd/instances_state: Simplify logic
+99337ddb231538dd04db38a4a98072d7f647edb9    DIFFERS     lxd/storage/utils: Updates VolumeDBCreate to accept volume and content type typed arguments
+82f3317f104aa90dedf30edc85e3805ca7accf54    DIFFERS     lxd/storage/backend/lxd: VolumeDBCreate updated usage
+13648c86954576d2548f4157d9c61c7c996565d0    FEATURE     api: Adds network_gvrp extension
+6a185f75c58cc6921e7229285ffc86623d194063    FEATURE     doc: Adds gvrp option for selected networks and instance NICs
+c7ed85323e51b0c1b68d20e0b45aaff3c7e6ef12    FEATURE     lxd/network/network/utils: Adds GVRP support to VLANInterfaceCreate
+399e15d859eebe3693abdb175ba4d94ec93def30    FEATURE     lxd/network: Adds GVRP support to macvlan and physical networks
+ed1a82f010c733cd5cb39ace72586cf033d48dad    FEATURE     lxd/device/device/utils/network: Adds GVRP support to networkCreateVlanDeviceIfNeeded
+b60be89c8ad50eab4f6de0b4d1b88e9d85eaa3aa    FEATURE     lxd/device/nic: Adds GVRP support to ipvlan, macvlan, physical and routed NICs
+df248aa56c744edc6acd9b9ba1cbe077a8c8d37a    IRRELEVANT  lxd/network: Add check for overlapping ovn.ranges and dhcp.ranges
+8896261d03fb6e0da22dcc4e010a48cf8ebd4493    DIFFERS     lxd/instance/drivers/driver/lxc: Updates FillNetworkDevice to use d.insertConfigkey
+abef6ef8392029644d1a141ff8ea03527dd343f5    DIFFERS     lxd/instance/drivers/driver/qemu: Updates FillNetworkDevice to use d.insertConfigkey
