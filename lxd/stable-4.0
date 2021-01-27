@@ -870,3 +870,12 @@ df248aa56c744edc6acd9b9ba1cbe077a8c8d37a    IRRELEVANT  lxd/network: Add check f
 8896261d03fb6e0da22dcc4e010a48cf8ebd4493    DIFFERS     lxd/instance/drivers/driver/lxc: Updates FillNetworkDevice to use d.insertConfigkey
 abef6ef8392029644d1a141ff8ea03527dd343f5    DIFFERS     lxd/instance/drivers/driver/qemu: Updates FillNetworkDevice to use d.insertConfigkey
 ee0bddfc35d07d73885e5c1396f829c7f42c7d08    IRRELEVANT  lxd/network/driver/bridge: Only validate non-overlapping DHCPv6 ranges with OVN ranges when stateful DHPCv6 being used
+67f69749be3a824c974c0ca1107af4225f944284    FEATURE     api: instance_pool_move extension
+2efb865e91bd4494bf55e8303c5dc53f3cb4088f    FEATURE     lxc/move: Support server-side pool migration
+698f75d836815344115226150ff3d01aae28643b    FEATURE     lxd/instance: Implement pool migration API with instancePostPoolMigration
+b50ebe8416dd6144563ca432a5e8965e656e7dff    IRRELEVANT  i18n: Update translation templates
+910d0d07d12e819fd7c6b8b465b0ed9067b60f1e    IRRELEVANT  lxd/instances_put: Limit to local server
+5adfc6f4617d776abf553f5eec1c433cada5fd19    DIFFERS     lxd/storage/utils: Improves error in VolumeDBCreate
+c84070fd43deb81e05f42eddc84d5bff46fd356b    DIFFERS     lxd/device: Fix instance type validations
+c71338255f7cb271240f2e035d1fd20cd34a0fdf    IRRELEVANT  lxd/instances_put: Properly handle clusters
+4b92acf209805a4a9c12c4fc379ab96285ec1bfb    DIFFERS     api: gpu_sriov extension
