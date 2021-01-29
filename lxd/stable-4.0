@@ -879,3 +879,4 @@ b50ebe8416dd6144563ca432a5e8965e656e7dff    IRRELEVANT  i18n: Update translation
 c84070fd43deb81e05f42eddc84d5bff46fd356b    DIFFERS     lxd/device: Fix instance type validations
 c71338255f7cb271240f2e035d1fd20cd34a0fdf    IRRELEVANT  lxd/instances_put: Properly handle clusters
 4b92acf209805a4a9c12c4fc379ab96285ec1bfb    DIFFERS     api: gpu_sriov extension
+273619c27acf0a0b2a8c9e04c455d03c8d352831    DIFFERS     i18n: Update translation templates
