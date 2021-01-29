@@ -880,3 +880,8 @@ c84070fd43deb81e05f42eddc84d5bff46fd356b    DIFFERS     lxd/device: Fix instance
 c71338255f7cb271240f2e035d1fd20cd34a0fdf    IRRELEVANT  lxd/instances_put: Properly handle clusters
 4b92acf209805a4a9c12c4fc379ab96285ec1bfb    DIFFERS     api: gpu_sriov extension
 273619c27acf0a0b2a8c9e04c455d03c8d352831    DIFFERS     i18n: Update translation templates
+03107179ec4b8606424918885e0e8b623b623427    FEATURE     api: pci_device_type extension
+6c4b8f6b039c758d5c828e793eaaac3b03b7c430    FEATURE     doc/instance: Add pci device type
+30c9bb0cfbdfe94e9e68cd3391fe2b3486711692    FEATURE     lxd/device/config: Add PCIDevice
+857d190f886f41997f06808b81cc089d2deacd83    FEATURE     lxd/device: Add PCI device type
+3ec5cf7e77fc35b3cd3a2e7c62e645de39ba9b0a    FEATURE     lxd/instance/qemu: Add PCI device support
