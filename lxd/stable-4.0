@@ -885,3 +885,18 @@ c71338255f7cb271240f2e035d1fd20cd34a0fdf    IRRELEVANT  lxd/instances_put: Prope
 30c9bb0cfbdfe94e9e68cd3391fe2b3486711692    FEATURE     lxd/device/config: Add PCIDevice
 857d190f886f41997f06808b81cc089d2deacd83    FEATURE     lxd/device: Add PCI device type
 3ec5cf7e77fc35b3cd3a2e7c62e645de39ba9b0a    FEATURE     lxd/instance/qemu: Add PCI device support
+4c075c3d5579675323715edd2a17d7bf1d4100c4    DIFFERS     doc/instances: Tweaks to make device type linking work
+fa26391aa85bd6406c08eb6a7f7029a749032c88    DIFFERS     lxd/storage: Fix snapshot edit routes
+eef4690fb4d3b360817b316403a25d9c703b510a    DIFFERS     lxd/storage: Cleanup volume API endpoints
+2e3dfb562b691650c64eaa6c31889a3ff8f1e3eb    FEATURE     api: storage_volume_state extension
+8822ba6e252b0ed118df9fe8d2f48f85071ad2f7    FEATURE     lxd/storage: Add storagePoolVolumeTypeStateGet
+18100af655a158bdf05ce4a46d40717363e650db    FEATURE     doc/rest-api: Add storage volume state API
+813f09425e88a451acd6a2419323b6b4afafd9ee    DIFFERS     lxd/storage: Tweak volume snapshot etag
+1fd542d911ea1b3e73b37c9c225e489168614dc3    DIFFERS     lxc/storage_volume: Add support for column argument
+f98171ced591180d1f124a131c801c15014e350c    FEATURE     lxc/storage_volume: Add usage column
+7b22596aadc01a17fdb4b10c6c209f6e9145e4b1    FEATURE     lxc/storage_volume: Add info subcommand
+befc0b24e3adfac1e5f602316be90729c0899fd4    DIFFERS     i18n: Update translation templates
+5b32ae7a3f43b674c43b5c8139161878ac61d8bd    IRRELEVANT  lxd/db/images: Include remote storage pools in GetPoolsWithImage
+242515dfb7dbbbe2eb852b44e61cfa2a6969cb20    IRRELEVANT  lxd/db: Export function IsRemoteStorage
+55bb7340b16226e1c986ad35877b48d7574873ef    IRRELEVANT  lxd/images: Remove images backed by remote storage
+2476b93e9295b6c106422125754767efd15904d8    IRRELEVANT  i18n: Update translations from weblate
