@@ -900,3 +900,4 @@ befc0b24e3adfac1e5f602316be90729c0899fd4    DIFFERS     i18n: Update translation
 242515dfb7dbbbe2eb852b44e61cfa2a6969cb20    IRRELEVANT  lxd/db: Export function IsRemoteStorage
 55bb7340b16226e1c986ad35877b48d7574873ef    IRRELEVANT  lxd/images: Remove images backed by remote storage
 2476b93e9295b6c106422125754767efd15904d8    IRRELEVANT  i18n: Update translations from weblate
+bf50d54a15243b1bb2c0fc7382049818a9bf5a04    FEATURE     Release LXD 4.11
