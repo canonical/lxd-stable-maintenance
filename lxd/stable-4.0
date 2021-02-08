@@ -901,3 +901,4 @@ befc0b24e3adfac1e5f602316be90729c0899fd4    DIFFERS     i18n: Update translation
 55bb7340b16226e1c986ad35877b48d7574873ef    IRRELEVANT  lxd/images: Remove images backed by remote storage
 2476b93e9295b6c106422125754767efd15904d8    IRRELEVANT  i18n: Update translations from weblate
 bf50d54a15243b1bb2c0fc7382049818a9bf5a04    FEATURE     Release LXD 4.11
+752e2f43f7252ef15dd26cc152838185d35de460    DIFFERS     lxd/device/nic/ipvlan: Detach ipvlan interface back to random host name on stop, then delete
