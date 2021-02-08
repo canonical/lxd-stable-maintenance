@@ -902,3 +902,36 @@ befc0b24e3adfac1e5f602316be90729c0899fd4    DIFFERS     i18n: Update translation
 2476b93e9295b6c106422125754767efd15904d8    IRRELEVANT  i18n: Update translations from weblate
 bf50d54a15243b1bb2c0fc7382049818a9bf5a04    FEATURE     Release LXD 4.11
 752e2f43f7252ef15dd26cc152838185d35de460    DIFFERS     lxd/device/nic/ipvlan: Detach ipvlan interface back to random host name on stop, then delete
+b8529b37f47d7f1ec7ee9c30e4979ef61c03fa8b    FEATURE     api: Adds network_acl extension
+f01a3f8a258f5cfab2f18e36b8a62417a1d6c9cd    FEATURE     lxd/db/cluster: Adds networks_acls and networks_acls_config tables
+8301f82fb246b8e79c269eaa0b788191be0bd846    FEATURE     lxd/db/network/acls: Adds GetNetworkACL function
+3fd188957f1b82764d21c787fe0e4be03ce5bc15    FEATURE     lxd/db/network/acls: Adds CreateNetworkACL function
+1a3a11fd737ce3c96795befe6d825003fed5cbeb    FEATURE     lxd/db/network/acls: Adds GetNetworkACLs function
+cf9078a43631a601246bdc820a0514e00e4903be    FEATURE     lxd/db/network/acls: Adds UpdateNetworkACL function
+9184caaa4d3bd6007ef977825aacbfa7f2d35ff5    FEATURE     lxd/db/network/acls: Adds RenameNetworkACL function
+a6d61cb5d66ede0370cde88e0af842e67f4cfef4    FEATURE     lxd/db/network/acls: Adds DeleteNetworkACL function
+0b16801bad91b38fb18c5ca1f7a0d08463b34b84    FEATURE     lxd/network/acl: Adds ACL package for managing Network ACLs
+f4f8dbe40509c376f27a6a7c2c3051ae4d6278c1    FEATURE     lxd: Add network-acls API hooks
+4f3763cff029b0d192734b4f96ef6320970091ce    FEATURE     lxd/network/acls: Implements networkACLGet function
+e7dd65d9d0dd2fcb24b4a405c3553cb1aa6d4050    FEATURE     lxd/network/acls: Implements networkACLsPost function
+c42b4b9d25089cfaef29925f97b2e74ef31f8014    FEATURE     lxd/network/acls: Implements networkACLsGet function
+69fbaa6b95761f14d593e759a0f6bddc45ad0eee    FEATURE     lxd/network/acls: Implements networkACLPut function
+f7c78dd6a8bf921af7a2ec0214e421103bcc805e    FEATURE     lxd/network/acls: Adds PATCH support to networkACLPut
+b62cf260976409bca7ef418a33e2843c71182278    FEATURE     lxd/network/acls: Implements networkACLPost function
+b496f3178fbe28d33647cce444f2ede694aefdc0    FEATURE     lxd/network/acls: Implements networkACLDelete function
+996bfe293cb62da879868d6a4be957de72c7716d    FEATURE     lxc/network: Registers acl subcommand from network command
+38e4643760fc5075553dcbbb1b5cf567d51b2f7e    FEATURE     lxc/network/acl: Add network acl command section
+0d39e6e9279b90e8ea193ea334ff8dfae3b66f7a    FEATURE     lxc/network/acl: Adds cmdNetworkACLCreate command
+883dc415dab4b315ac586068db209fbd9f7ce25e    FEATURE     lxc/network/acl: Adds cmdNetworkACLList command
+50f0706ab81427c591707c89b05ad2efe8eb4f74    FEATURE     lxc/network/acl: Adds cmdNetworkACLGet and cmdNetworkACLShow commands
+5168a10f9a2ae6a906aa6f05fbd03afff43a1525    FEATURE     lxc/network/acl: Adds cmdNetworkACLSet command
+16266e9e6eccc55a8edc0fa580b618217789587e    FEATURE     lxc/network/acl: Adds cmdNetworkACLUnset command
+1a9ffaf3d9dc2e315121ff80478f05fdf65ef187    FEATURE     lxc/network/acl: Adds cmdNetworkACLEdit command
+971c031bc00bee41ba1a663b21b9d2021c966a5a    FEATURE     lxc/network/acl: Adds cmdNetworkACLRename command
+d8f39ead823e49ce1885f4835b8ef24445efe44e    FEATURE     lxc/network/acl: Adds cmdNetworkACLDelete command
+519bf622e6f1627e9fd29db8da52b56aab1367e0    FEATURE     lxc/network/acl: Adds cmdNetworkACLRule subcommand with add/remove rule commands
+29903dfdad30925c580c1aab5e5679cac8082293    FEATURE     doc/rest-api: Adds network ACL endpoint docs
+aa3a4bd4439758b7ded4c04bb646f53a6f4a2536    FEATURE     test: Adds network ACL tests
+83388748db1a90d974760ba015ddb6abe8ea24ca    FEATURE     doc/network-acls: Adds Network ACLs documentation
+96f474bd6fc34728dd17a37e60c60dc4cbb094c7    IRRELEVANT  i18n: Update translation templates
+c3350e90547f779a2446e2d91a75767e3f1cd280    IRRELEVANT  lxd/network/driver/ovn: Uplink loading error improvements
