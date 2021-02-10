@@ -941,7 +941,6 @@ c104c5b3260ee5f87f81d034d70bd1f0261c5542    DIFFERS     lxd/device: Add migratio
 66cdb1bfea10ce73ed7716d03db0b90377242506    DIFFERS     doc: Drop API extension columns
 445317ed8affaeb007233debd94c964539639fff    DIFFERS     api: storage_ceph_features
 0ac6f95b67a72082e4fc3bca2e68a68da38c2491    DIFFERS     doc: Fix bad Github action link
-eedc99cc242d2788718c95c607fed885cca9fa38    DIFFERS     lxd/device/nic/routed: UpdatableFields signature change
 df46d59b1573ab159e10c763c329e4c878f19c9e    IRRELEVANT  lxd/device/nic/ovn: Updates usage of network.SubnetParseAppend to use util.SplitNTrimSpace
 7686c87e8d080c6c9dbdf6b8942e10ec1ce474a8    IRRELEVANT  lxd/network/acl/acl/load: Adds Exists function
 c2e47f4507113bd4fa24f763d326e5ff3979d072    IRRELEVANT  lxd/network/acl/acl/load: Adds UsedBy function
@@ -953,3 +952,4 @@ f734c772d390e6a390c05687b47feac5769399e1    DIFFERS     lxd/device/device/utils/
 19b5b998f40d3cbd7024c756a2f24d5c7c950781    DIFFERS     lxd/instance/drivers/driver/qemu: Removes deviceResetVolatile provided by common
 19c825234f94220a1cd3e11fd667ffbedf115f0b    IRRELEVANT  lxd/network/network/utils: Adds optimisation to UsedBy when firstOnly is true
 adcdce5c63df9e2abf1a98b39f0688ea8ce82bc7    IRRELEVANT  lxd/api/project: Updates projectValidateRestrictedSubnets to use util.SplitNTrimSpace
+eedc99cc242d2788718c95c607fed885cca9fa38    DIFFERS     lxd/device/nic/routed: UpdatableFields signature change
