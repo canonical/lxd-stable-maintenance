@@ -953,3 +953,31 @@ f734c772d390e6a390c05687b47feac5769399e1    DIFFERS     lxd/device/device/utils/
 19c825234f94220a1cd3e11fd667ffbedf115f0b    IRRELEVANT  lxd/network/network/utils: Adds optimisation to UsedBy when firstOnly is true
 adcdce5c63df9e2abf1a98b39f0688ea8ce82bc7    IRRELEVANT  lxd/api/project: Updates projectValidateRestrictedSubnets to use util.SplitNTrimSpace
 eedc99cc242d2788718c95c607fed885cca9fa38    DIFFERS     lxd/device/nic/routed: UpdatableFields signature change
+c5a31041130be8215fdb9b05ad7e617fe838dbae    IRRELEVANT  lxd/network/driver/ovn: Adds OVNInstanceNICSetupOpts and OVNInstanceNICOpts types
+0e64a9a028a34a55cc4407490b3a6953334b2be9    IRRELEVANT  lxd/network/driver/ovn: InstanceDevicePortAdd updated arguments
+39069ebe520d6e63e6510bdb11f3b5c79b98ec45    IRRELEVANT  lxd/network/driver/ovn: InstanceDevicePortDelete updated arguments
+07340eca489cd74107337e05832801db30da083b    IRRELEVANT  lxd/network/driver/ovn: n.InstanceDevicePortAdd usage
+5fb2fd5a5fa26d34054c754a7a160607a11be8a7    IRRELEVANT  lxd/device/nic/ovn: ovnNet update of arguments
+a81e1876e2168b1c2df730081bb5e38f2c2b7448    IRRELEVANT  lxd/device/nic/ovn: d.network.InstanceDevicePortAdd and d.network.InstanceDevicePortDelete usage
+a74698d00ed9f5593784e96791698bea7633bda6    IRRELEVANT  lxd/network/openvswitch/ovn: Converts LogicalSwitchPortExists to LogicalSwitchPortUUID
+36f40fb9910e0dcd673ef0d9123b5d266c091afb    IRRELEVANT  lxd/network/openvswitch/ovn: Converts string UUID variables to their own dedicated types
+c02e7d10040c3cdfe4b0d44493f8402186dc4694    IRRELEVANT  lxd/network/driver/ovn: Updates usage of OVN UUID types
+56a0371ce026f8bd03398af6151b27d19797d4fc    IRRELEVANT  lxd/network/driver/ovn: client.LogicalSwitchPortUUID usage
+b6a43858fe72dbc435115e067d46dcec2432d653    IRRELEVANT  lxd/network/driver/ovn: Adds DNSName to OVNInstanceNICStartOpts
+603be37e9b69c6ada20f5e42f9065bd927fd2189    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortAdd with opts.DNSName field name change
+a5c92e30c3d1592f353b5220d3d07b325d7ffeb9    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortAdd with opts.DNSName field name change in handleDependencyChange
+e3317769b15a930a0faf156c621828fd73c77c27    IRRELEVANT  lxd/device/nic/ovn: Updates use of d.network.InstanceDevicePortAdd with DNSName
+244729b7a08dfde03f70f32b12c1e23fcaa1e29c    FEATURE     lxd/projects: Add backups.compression_algorithm and images.compression_algorithm
+c73c59a2053edf2281814e20e63a6580fed0bd0c    FEATURE     lxd/images: Add checks for images.compression_algorithm
+b078133a770ca4c03ad3992324cb10496bb0314c    FEATURE     lxd/backup: Add checks for backups.compression_algorithm
+ebd36ffff5fee89ea09c4f5318a82f7731883423    FEATURE     doc/projects: Add backups.compression_algorithm and images.compression_algorithm
+c32040948b5bc2d528becac7b403b50a36e1ceca    FEATURE     api: projects_compression
+6d22800cbc75c233a6097f6cbb4a081b5b4aac37    DIFFERS     lxd/instance: Move CreateInternal
+b4624cbda4aeb20e3359264c6a0eae8397fefc76    IRRELEVANT  lxd/device/nic/ovn: Removes non-ovn related limit code, use network.InterfaceExist
+5ff493d3e503539a06f5cfb69b6631e93d9de88b    IRRELEVANT  lxd/network/driver/ovn: Removes unnecessary calls to CloneNative in ovnNICExternalRoutes
+a9ad7a0703c4b71a6027d9189e49e6840cf0465a    IRRELEVANT  lxd/db: Fix bad indent
+fdbd4a43c77a789bc6f6f0f36edea60ceca9279d    IRRELEVANT  lxd/db: Fix projects_used_by_ref for remote storage
+2727c4057d288a8dc700fa8ed7bebc622dbb40d0    DIFFERS     doc/rest-api: Fix and clarify backup API
+b1e5719c41569203aef51ed534f86a893d7c7191    DIFFERS     lxd/network/network/utils: Converts UsedBy to use InstanceList function
+e6c789c01ae59f72177a551c29e5e035720f8885    DIFFERS     lxd/network/network/utils: Changes isInUseByDevices to isInUseByDevice
+7bc0450d7a4cf056d3b6bf0ca091019dbf497140    DIFFERS     lxd/network/network/utils: Adds usedByInstanceDevices function
