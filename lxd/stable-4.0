@@ -981,3 +981,50 @@ fdbd4a43c77a789bc6f6f0f36edea60ceca9279d    IRRELEVANT  lxd/db: Fix projects_use
 b1e5719c41569203aef51ed534f86a893d7c7191    DIFFERS     lxd/network/network/utils: Converts UsedBy to use InstanceList function
 e6c789c01ae59f72177a551c29e5e035720f8885    DIFFERS     lxd/network/network/utils: Changes isInUseByDevices to isInUseByDevice
 7bc0450d7a4cf056d3b6bf0ca091019dbf497140    DIFFERS     lxd/network/network/utils: Adds usedByInstanceDevices function
+240d3e0c9aa6cfda5b16f0bd33a0407f63a1fc58    DIFFERS     doc/rest-api: More fixes for backups
+48a6fed6f41e7654aa2b0176bbe3e7a7f75fed19    FEATURE     lxd/projects: Add images.remote_cache_expiry
+4b5ba96f19a7072b47dca7f3bf776ef15c4ff51d    FEATURE     lxd/db/images: Changes GetExpiredImages to GetExpiredImagesInProject
+06f6f0a23d0026b6d53bbf8395d3db22b1f2f8fb    FEATURE     lxd/images: Support images.remote_cache_expiry per-project
+96dfd050043781defdff2ed5cbadf239de9a3fcb    FEATURE     doc/projects: Add images.remote_cache_expiry
+780fa157690f2b9b068aa7e2a9305ec19875b7a2    FEATURE     api: projects_images_remote_cache_expiry
+1260f511bcf91b0e5cf5584dbd51f1fab07cdf59    FEATURE     api: certificate_project
+434116e3eded22da35e0239ee4764af3b5c7539c    FEATURE     lxd/db: Add support for restricted certificates
+16d570cf118dad2b50d6a5ba990c2ef3b7f749d5    FEATURE     lxd/certificates: Add support for restricted and projects
+2dd507e35fcc850dd332b9a71cf461b99ff4c110    FEATURE     lxd/daemon: Add TLS permission checks
+7c7e2cc9dce3940ef33317439417c64a26531391    FEATURE     doc/security: Cover TLS restrictions
+f37d23f7234318fa487060730100a8c279f363da    FEATURE     lxc/config/trust: Add Edit
+56b90ae6ed34166816cc2c73aa5776f8639c468f    FEATURE     lxc/config/trust: Add Show
+4cc7e3be10b00c0d1c6df58a53cc570bc6291d44    IRRELEVANT  i18n: Update translation templates
+574af5ba379a92544f0f0ed5d3eb47442a12a11e    FEATURE     tests: Validate TLS restrictions
+eec3b45316ddad80e32cc08075bbf694aa3042db    IRRELEVANT  lxd/db/network/acls: Makes slice allocation more efficient in GetNetworkACLs
+b16cdaf1d8c58980c450add49f9d599b60b897a5    IRRELEVANT  lxd/db/network/acls: Adds GetNetworkACLIDsByNames function
+b065108ada7b60911a2a1600dd247a0a6f9c491d    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupUUID function
+4e5fb0d0282bf618fbd7e7a4bd4894666b33a3cc    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupAdd function
+705f3830d7ebb1c3648cfd20d3fb3bcccedfecce    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupMemberAdd function
+1ed6894a64416b8dae4093b9b6986adc1a5d436a    IRRELEVANT  lxd/network/openvswitch/ovn: Adds OVNACLRule struct type
+adb0eeaea1035fb5e9585d4e55ca35959e4d83f8    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupSetACLRules function
+48ea12e7fc57247ca2a7a9bb9c0c2f6be2466c2d    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupDelete function
+cd8fd4220f9cd5e1fd02c33cf33e772ee7f4fcbc    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchSetACLRules function
+3d2c06956dd7549b7d3b4801dcff5fa6ec346e7f    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupMemberDelete function
+172a8e75935e789c75b126af5f2835542f1712c7    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVN ACL helper functions
+291b827263d0011269c1b60ca903ebb44aaeede2    IRRELEVANT  lxd/network/acl: Adds support for using state when creating ACL record
+c341b2dce86d80e5edfe236596600bae91f8cdd8    IRRELEVANT  lxd/network/acl/acl/load: Updates UsedBy to allow searching for multiple ACLs in one pass
+60778c69c2d4f026d56f2996ed41f0bb8b20663a    IRRELEVANT  lxd/network/acl/driver/common: Updates usedBy to use updated UsedBy helper function
+42e8d94dfdf44285f242ded658ebf3b79b29b0b3    IRRELEVANT  lxd/network/acl/driver/common: Makes Update apply new ACL rules to OVN port groups and instance ports
+cf6db26e6cfa86d7f59c77c5bcdbc07b1235f94a    IRRELEVANT  lxd/network/driver/ovn: Applies baseline network ACL rules in setup via acl.OVNApplyNetworkBaselineRules
+22ed028644bc63bbb37f66656efbc6b9ba32bc4f    IRRELEVANT  lxd/network/driver/ovn: Adds SecurityACLs and SecurityACLsRemove to OVNInstanceNICStartOpts
+ae60a1774ca21ca75d0a35bfd7286a6778cb43df    IRRELEVANT  lxd/network/driver/ovn: Adds Security ACL support to InstanceDevicePortAdd
+ec08855c334881c1bdba9ac661b0f2a7147006e8    IRRELEVANT  lxd/network/driver/ovn: Adds PortGroupDeleteIfUnused to remove unused ACL port groups
+f41188a1027edae9c46f91bebe27890546b50db7    IRRELEVANT  lxc/network/driver/ovn: Adds support for security.acls assigned to OVN networks
+59fd3a21b8f729c4feb93e9d01194972915a648b    FEATURE     lxd/device/nic: Adds security.acls optional field
+bae8493e80af2d716442d23fa370776d7e9469a0    IRRELEVANT  lxd/device/nic/ovn: Adds security.acls support for OVN NICs
+e2f5108ecb87c1c16f7a845062239c94075b0aa4    FEATURE     doc/metadata: Adds Network ACL left menu item section
+2970015d7a9d30dfb576fa12f80175917f48164d    FEATURE     api: Adds network_ovn_acl extension
+326713d57fc7bce262562781cf5c0ee98665685b    FEATURE     doc: Adds security.acls property to OVN networks and NICs
+31fca40a214b752c851a2f4faa799d59ae253e9b    IRRELEVANT  lxd/network/acl: Remove unused code
+dbefea183cd56d163c769450e430e415372bec3f    IRRELEVANT  lxd/network/driver/ovn: Don't delete port groups if their associated ACLs are referenced by rules in other ACLs
+be68a26627750d5b25b0e4b2c59a635109ffc584    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVNEnsureACLs function and unexports ovnApplyToPortGroup
+eafdf941b640eeee46d9de74e49f85d73a7c2e5d    IRRELEVANT  lxd/network/acl/driver/common: Switch Update to use OVNEnsureACLs
+afce5e9925914df9e890586a78020fd5bf04d18c    IRRELEVANT  lxd/network/driver/ovn: Switch setup to use OVNEnsureACLs
+aeefb0772180ad734529a24f01c230a2c3e92b80    IRRELEVANT  lxd/network/driver/ovn: Switch InstanceDevicePortAdd to use OVNEnsureACLs
+f8537be38fb8feb0a9b26014b6dee65ba87ca039    IRRELEVANT  lxd/db: Remove unused code
