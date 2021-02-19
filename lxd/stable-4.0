@@ -1028,3 +1028,11 @@ eafdf941b640eeee46d9de74e49f85d73a7c2e5d    IRRELEVANT  lxd/network/acl/driver/c
 afce5e9925914df9e890586a78020fd5bf04d18c    IRRELEVANT  lxd/network/driver/ovn: Switch setup to use OVNEnsureACLs
 aeefb0772180ad734529a24f01c230a2c3e92b80    IRRELEVANT  lxd/network/driver/ovn: Switch InstanceDevicePortAdd to use OVNEnsureACLs
 f8537be38fb8feb0a9b26014b6dee65ba87ca039    IRRELEVANT  lxd/db: Remove unused code
+a00cca8e9632026fefd4d34dd241e609754076c1    DIFFERS     lxd/network/network/utils: Reorder UsedBy logic to do cheapest searches first
+fd0d1410e1e0115cc050c4a713addf96a331fb8c    DIFFERS     lxd: Add / and /1.0 to swagger
+47619ea38f37ff2e819f7023df1fef583d24c77a    IRRELEVANT  lxd/network/openvswitch/ovn: Renames PortGroupUUID to PortGroupInfo
+efe74066ba30d024de482aad2a9fa653f3bf9a16    IRRELEVANT  lxd/network/acl/acl/ovn: client.PortGroupInfo usage
+a2c904ccd01d9d3d3547fdf0c677692872485d28    IRRELEVANT  lxd/network/driver/ovn: client.PortGroupInfo usage
+f5dc4ae487baa2f2034719772f7b74db80be4e66    IRRELEVANT  lxd/network/acl/acl/ovn: Refactors OVNEnsureACLs to be smarter in how it sets up referenced ACLs
+ee8b2e4046d6f29ff4ba36283438df3af4035b44    IRRELEVANT  lxd/network/driver/ovn: Don't check if port group exists when removing port member in InstanceDevicePortAdd
+0f148a408fed8d1e07d187229de996d4d39667dc    FEATURE     lxd/init: Add projects to dump/init preseed
