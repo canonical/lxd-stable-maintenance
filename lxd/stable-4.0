@@ -1036,3 +1036,14 @@ a2c904ccd01d9d3d3547fdf0c677692872485d28    IRRELEVANT  lxd/network/driver/ovn: 
 f5dc4ae487baa2f2034719772f7b74db80be4e66    IRRELEVANT  lxd/network/acl/acl/ovn: Refactors OVNEnsureACLs to be smarter in how it sets up referenced ACLs
 ee8b2e4046d6f29ff4ba36283438df3af4035b44    IRRELEVANT  lxd/network/driver/ovn: Don't check if port group exists when removing port member in InstanceDevicePortAdd
 0f148a408fed8d1e07d187229de996d4d39667dc    FEATURE     lxd/init: Add projects to dump/init preseed
+ab02cb39f306a4aea48670cd3b5ff956d780df69    IRRELEVANT  lxd/network/driver/ovn: Consistently use aclNameIDs var name
+987599e01574bd442fffab09e07c6d262d6cbff0    IRRELEVANT  lxd/device/nic/ovn: Clearer error message in validateConfig
+d8f93e24e148a28aaeb30f7514b7d0a1151c83a2    IRRELEVANT  lxd/network/openvswitch: Centralises DB OVN connection string retrieval in NewOVN
+40775b313fb5969d00c3688733ec23804bd11c27    IRRELEVANT  lxd/network/driver/ovn: openvswitch.NewOVN usage
+0c3c6d8de8daab7b448828d77ac33f9fb62a6729    IRRELEVANT  lxd/network/acl/driver/common: openvswitch.NewOVN usage
+353ffcb653208bec15621bae39f4abb79f301eb3    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVNPortGroupDeleteIfUnused
+a9da80895c855ca75c14e6cac550560ddbec90b0    IRRELEVANT  lxd/network/driver/ovn: Removes PortGroupDeleteIfUnused and acl.OVNPortGroupDeleteIfUnused usage
+7af0ac877bd039773ee831367048f4c3ff8cc304    IRRELEVANT  lxd/device/nic/ovn: acl.OVNPortGroupDeleteIfUnused usage
+33b43103c92f185b0ab66c291579dcd242627949    IRRELEVANT  lxd/network/acl/driver/common: Calls OVNPortGroupDeleteIfUnused during Update
+a118bf7fd7aed4d013218370a526b7a7356d7f02    IRRELEVANT  lxd/network/acl/acl/load: Only return unique list of ACLs when matching on ACL rulesets in UsedBy
+ceab2a30de13c640bdf83d58e8706f35c93ee794    IRRELEVANT  lxd/network/acl/acl/ovn: Create referenced ACL port groups when reapplying rules from an existing ACL
