@@ -73,3 +73,45 @@ b9965fd7b7940964707e2fb40b1c99889eb13724    FEATURE     confile: cleanup set_con
 8f204445b4bed00553cb1acaccf6727a7a44ac90    FEATURE     confile: cleanup set_config_time_offset_monotonic()
 a90dc552f12c158eb32947f317536388ae7ab020    FEATURE     confile: cleanup get_config_net_veth_vlan_id()
 ed75d76e70233986364da5a4186088ecff335c0d    DIFFERS     cgroups: initialize variable
+25c659d5000190c1d96b36a8ed935181fc99e65d    DIFFERS     attach: move to file descriptor only namespace interactions
+0450b7ce718ef9fbc2f0c606b55589a6de911889    DIFFERS     cgroups: use cleanup macro for consistency
+a60d8c4ea7e77897e79fe91421490a55bb850ea1    DIFFERS     file_utils: add fdopenat()
+bb6dbaf0dfbba308cd3e999f6a15a96dcb1bc7c4    DIFFERS     cgroups: remove pointless NULL checks
+7166ab759e3137cf338bb127f2e7400d7d0ce362    DIFFERS     file_utils: add open_at()
+cce677d168761da7a1e979bd396a63638c859c50    DIFFERS     syscall_wrappers: add PROTECT_LOOKUP, PROTECT_OPEN, PROTECT_LOOKUP_WITH_SYMLINKS, PROTECT_OPEN_WITH_TRAILING_SYMLINKS
+5129b2d3edcaef2feebdb80ae478f3268cfba454    DIFFERS     attach: harden open calls
+bcf9793d4351cd54f2de272fe52979e9fed2c1d4    DIFFERS     syscall_wrappers: add PROTECT_OPEN_W_* variants
+814983287ea58b20429341f3dbfc5bc9777bd930    DIFFERS     conf: harden open in lxc_fill_autodev()
+99ca563299f82cf0fb9e8e592fd8a96cf785bc4a    DIFFERS     conf: restrict open for lxc_mount_rootfs()
+e1b9d6af00b924b9f386da9dce99159163a84b0a    DIFFERS     conf: make lxc_create_tmp_proc_mount() static
+315f8a4e427d41ab609023cf0986ef856c6f41a1    DIFFERS     cgroups: fix cgroup mounting
+977687db1c288e3315d9aea56fc9ae10bdd1badf    DIFFERS     utils: add mount_from_at()
+bf31b3378f2feae908efb0ae094a3ec07dc69af6    DIFFERS     confile: add lxc.init.groups to keep additional groups
+c71f64cbe01b27a16c8275128f3dc91cc0349604    DIFFERS     confile: handle appending init groups
+6f6c71cdcaa9338fe6eea87e3ff7dff25d5dfcd2    DIFFERS     tests: improve lxc.init.groups tests
+7fe8120ecabd6305af130daf8d37881389079601    IRRELEVANT  confile: make garbage groups an error
+74ed30d721ccc569b4e09e67f97fa0a1b42fe2a8    DIFFERS     mount_utils: move mount_at() and mount_from_at() over from utils.{c,h}
+387c1c70a261360b7a508a95b02cdb35e01afdc5    DIFFERS     network: convert to strnprintf()
+d62177e99a5cc8a045d677a7e32d2f1eb863350f    DIFFERS     confile: convert to strequal()
+6ee997a743ac197e193449381b04099a96387e78    DIFFERS     network: convert to strequal()
+8db6be1ba59c30f81c472ec47ccca30c0e3baa92    DIFFERS     start: rework namespace preservation and path creation for hooks
+857ba1f0c595d4ac42e2f0ac37ce6f2d691dedea    DIFFERS     start: improve namespace preservation
+245066afbc64622cebeb93270bcda067d2d74e20    DIFFERS     start: fix comment about time namespace preservation
+8cdbef77df69c0a4b7e6c351b7ba47ce06add3b1    DIFFERS     utils: add development helper to quickly dump a directories contents
+ee94a8b5cfbb388e5e8b43c7fe8f2cf12989e20c    DIFFERS     confile: use set_config_path_item() for most cgroup layout modifiers
+0a48ee66c6e982657584a7df7ddc621d1fed9487    DIFFERS     confile: forbid walking upwards for confile items that modify cgroup layout
+f63ef155271b2848ae18fcdfb5550dddad9ec852    DIFFERS     confile: forbid absolute paths in config items that modify the cgroup layout
+600a016384af297d96a70018cbc159a40247f618    DIFFERS     cgroups: rework base cgroup parsing
+da42ac7b4b49f492da714bdabdc8032117396aa2    DIFFERS     cgroups: fd-based only cgroup creation
+033267c93a50b1162976c26d611d8ae5cd4f9849    DIFFERS     cgroups: rework legacy cpuset handling
+c55fe36d28129391f231ae9aeef7cd3b4db31b0e    DIFFERS     cgroups: fd-only cgroup tree pruning
+a6aeb9f1b927ce314c589e5b0db2cb4eb15aef6f    DIFFERS     cgroups: rework cgroup tree creation
+57abfbb640d7ccde951941c960ef383a2c183f27    DIFFERS     cgroups: don't move pivot cgroup under the monitor's cgroup
+928937b114adcde2fd72863a57db3a83c3134f73    IRRELEVANT  cgroups: remove compile-time bpf support detection
+a134099de529d5436a359b109dfdf44e13470451    IRRELEVANT  cgroups: make device cgroup handling smarter and simpler
+840eec19c3bd3d26b4bc38fab30339bfc43d0890    IRRELEVANT  cgroups: close dfd_mon but keep dfd_con and dfd_lim open for all cgroup hierarchies
+ebc548a1efe93cdd21e2258f4c74e78b603a2723    DIFFERS     commands: send ENOSYS response
+a9b642ee5c63ebdabe6ed89ac4201dced32be0b8    DIFFERS     commands: s/_LIMITING_/_LIMIT_/g and s/_limiting_/_limit_/g
+885bb002a595be4337f641e0b532ff8743da29c3    DIFFERS     commands: port misnamed functions to general style
+060aaa395a10e50c7b21df3b3e56a71720b20582    DIFFERS     tree-wide: s/syerrno_set()/syserror_set()/g
+bad2f9131a6b58bd13f2f3b72c479c85912a2030    DIFFERS     network: make callback naming consistent and understandable
