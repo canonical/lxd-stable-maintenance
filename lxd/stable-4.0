@@ -1048,3 +1048,15 @@ a9da80895c855ca75c14e6cac550560ddbec90b0    IRRELEVANT  lxd/network/driver/ovn: 
 a118bf7fd7aed4d013218370a526b7a7356d7f02    IRRELEVANT  lxd/network/acl/acl/load: Only return unique list of ACLs when matching on ACL rulesets in UsedBy
 ceab2a30de13c640bdf83d58e8706f35c93ee794    IRRELEVANT  lxd/network/acl/acl/ovn: Create referenced ACL port groups when reapplying rules from an existing ACL
 d0d4472cc4dd280cb8ccd5430a8e40e109dec5df    DIFFERS     doc/rest-api: Updates backup endpoint docs
+e4fbc6e08f7367de788aae5a0733a7c35d2d2eda    FEATURE     lxd/cluster: Remove AutoUpdateInterval and RemoteCacheExpiry
+37468659e3d52c7ef83582770928a49bc26f5bd2    FEATURE     lxd/daemon: Add daemon startTime variable, remove taskAutoUpdate
+12959992f5ded15682e0dcd8187f6030da751214    FEATURE     lxd/instances/post: Support images.auto_update_cached per-project
+87adc0a4724329ebb87ccec5bbb461df91f6d308    FEATURE     lxd/api: Remove taskAutoUpdate reset
+1c0091c8f5598d31b42d4c770c17159b70adb8a2    FEATURE     lxd/projects: Add images.auto_update_cached and images.auto_update_interval
+73c0b2d4806f269e17e2ce266cac64bb0374501d    FEATURE     lxd/images: Support images.auto_update_interval per-project
+c4d0c8564db695ca78d26395afb0d2fa2243b541    FEATURE     api: projects_images_auto_update
+b055ba27b3a3d23da764649dcbaf2fc7f0bfcff2    FEATURE     doc/projects: Add images.auto_update_cached and images.auto_update_interval
+c19768157f93a419e6469b685eca65c6b2193c3f    FEATURE     lxc/config/trust: Allow restricting on add
+04e5ea43800fa7a350d3f728f4beca3f5656c830    IRRELEVANT  i18n: Update translation templates
+e2a2684c626d960c915e5edcce2e6228dc44d281    DIFFERS     doc/projects: Projects aren't restricted by default
+2a9aa8f5bcd48517345476e730cc007baca92049    DIFFERS     Update for Go 1.17 go:build tags
