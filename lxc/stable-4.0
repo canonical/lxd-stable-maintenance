@@ -115,3 +115,5 @@ a9b642ee5c63ebdabe6ed89ac4201dced32be0b8    DIFFERS     commands: s/_LIMITING_/_
 885bb002a595be4337f641e0b532ff8743da29c3    DIFFERS     commands: port misnamed functions to general style
 060aaa395a10e50c7b21df3b3e56a71720b20582    DIFFERS     tree-wide: s/syerrno_set()/syserror_set()/g
 bad2f9131a6b58bd13f2f3b72c479c85912a2030    DIFFERS     network: make callback naming consistent and understandable
+3a197a1b63d010943fbc88c31d63c05b73f81682    DIFFERS     network: use two passes through networks
+cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace error
