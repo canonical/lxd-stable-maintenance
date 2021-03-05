@@ -1060,3 +1060,57 @@ c19768157f93a419e6469b685eca65c6b2193c3f    FEATURE     lxc/config/trust: Allow 
 04e5ea43800fa7a350d3f728f4beca3f5656c830    IRRELEVANT  i18n: Update translation templates
 e2a2684c626d960c915e5edcce2e6228dc44d281    DIFFERS     doc/projects: Projects aren't restricted by default
 2a9aa8f5bcd48517345476e730cc007baca92049    DIFFERS     Update for Go 1.17 go:build tags
+48e0d7d6ac90fa6c88540bc6205f93e7a4d085b1    IRRELEVANT  lxd/network/acl/acl/load: Adds NetworkUsage function
+6880849f464704099bef0bb0cb6c9c7dfcc89dea    IRRELEVANT  lxd/network/acl/driver/common: Adds ruleSubjectInternal and ruleSubjectExternal constants
+09b924f30b4747dd81ef543a992193dab21345ec    IRRELEVANT  lxd/network/acl/driver/common: Updates validateRule to allow ruleSubjectInternal and ruleSubjectExternal values
+5ed87babdaf830618549f6e33314b0a66dae2c12    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchDelete to delete associated port groups
+d224a86d1aed9074c6f54dd36b26a1d086b1c248    IRRELEVANT  lxd/network/openvswitch/ovn: Adds setACLRules to more efficiently set multiple rules in one command
+fb0d9676060810d9e0549290b38d8841380fbebe    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchSetACLRules to use o.setACLRules
+ea8f030e1502eaa837d2ab30eeae59df9e11ed16    IRRELEVANT  lxd/network/openvswitch/ovn: Updates PortGroupAdd to support associating to a project and optionally another port group and/or logical switch
+99e5cb9189a9ea2155e6148cad9135f6637ad8c4    IRRELEVANT  lxd/network/openvswitch/ovn: Updates PortGroupDelete to support multiple specified port groups
+c80ce9a85700ce944cad919c64e70485c6ea4239    IRRELEVANT  lxd/network/openvswitch/ovn: Updates PortGroupSetACLRules to use o.setACLRules
+08763ed364c484ca5f4c4e79673bffa8004518ed    IRRELEVANT  lxd/network/openvswitch/ovn: Replaces PortGroupMemberAdd and PortGroupMemberDelete with PortGroupMemberChange
+6f9ba8ba0f552fbd1ee689a5d6cce71264aac92c    IRRELEVANT  lxd/network/openvswitch/ovn: Adds PortGroupListByProject function
+2935f2d9953bafcbb8044b7cdc17ddc86a4970b8    IRRELEVANT  lxd/network/openvswitch/ovn: Use constants for OVN external IDs
+7b46ccf3e44bfb9988327b74e1e71cf50dceafe6    IRRELEVANT  lxd/network/acl/acl/ovn: Adds ovnACLPortGroupPrefix constant
+df53339f0f9ddf1f9e628c9ff5a14ab5755bb541    IRRELEVANT  lxd/network/acl/acl/ovn: Adds helper functions for entity name generation
+81fc66149c945bf12fd8845a0df3ea69cf80193e    IRRELEVANT  lxd/network/acl/acl/ovn: Updates ovnAddReferencedACLs to ignore ruleSubjectInternal and ruleSubjectExternal values
+45da5ed6c1551a91401e698856d469c176e14432    IRRELEVANT  lxd/network/acl/acl/ovn: Updates ovnApplyToPortGroup and associated functions to support network specific port group ACL rules
+01d3974632db4b4c2c77de478d129329bdec4d51    IRRELEVANT  lxd/network/acl/acl/ovn: Removes trailing space in generated rule in OVNApplyNetworkBaselineRules
+3dd13a59de11f3c3aae200dbf8b33e743ae72ac1    IRRELEVANT  lxd/network/acl/acl/ovn: Comment improvements
+a022882fa301b3992459558a59c62c06d24237d1    IRRELEVANT  lxd/network/acl/acl/ovn: Updates OVNEnsureACLs to support applying network specific port group rules
+328dec2315a77b0ca6c648b864cec06294cc4135    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVNPortGroupInstanceNICSchedule helper function
+cc14190c19a20d2aca22ec46608b66bb0f0799af    IRRELEVANT  lxd/network/acl/acl/ovn: Updates OVNPortGroupDeleteIfUnused to delete unused per-ACL-per-network port groups
+44f945663e242f0da7485860e6724347b8b17224    IRRELEVANT  lxd/network/acl/driver/common: Updates to use NetworkUsage and pass list of networks using ACL to OVNEnsureACLs
+0ed9d2837161863b838d95ee990ade7b14ef7ec1    IRRELEVANT  lxd/network/driver/ovn: Updates OVN driver to use helper functions from ACL package rather than duplicate logic
+29c810e37106e2b13caff92881ccb245a767eb65    IRRELEVANT  lxd/network/driver/ovn: Create internal port group for instance NICs on setup
+185b4546e92c1d1d0e76ce648164cda6feaf09db    IRRELEVANT  lxd/network/driver/ovn: acl.OVNEnsureACLs and client.PortGroupMemberChange usage
+ee7d099022526c8f86aaf39114e524b734808f99    IRRELEVANT  lxd/network/driver/ovn: client.PortGroupAdd usage in setup
+cece2806eee46ef64bceffe0ab77e0523732913f    IRRELEVANT  lxd/network/acl/driver/common: Adds support for default.logged and default.action ACL config properties
+b2b1671061e0c8f52c2c2a89adde900a51e2504c    IRRELEVANT  doc/network/acls: Documents default.logged and default.action ACL config properties
+4a895150b8a0ec28e06debe8a0c884e2237d3a5a    IRRELEVANT  lxd/network/acl/acl/ovn: Adds support for default.logged and default.action
+de6b9d91b16b58d0c7832a2dd9ef3c1b4d2a9f9d    IRRELEVANT  lxd/network/acl/driver/common: Adds reject support
+67e62bdf1b700c9ad0276440b8b497c7fcf3b9ed    IRRELEVANT  lxd/network/acl/acl/ovn: Allow IPv4 IGMP and IPv6 MLD reports in network baseline rules
+13bbc7f1e673272067b959ac016593e3aa4beabd    IRRELEVANT  lxd/network/acl/acl/ovn: Add network baseline rules to allow reject packets from ACL reject rules
+106db1402843943d09f11bc6f59bc7a61c4dfe9d    DIFFERS     doc/README: Drop readthedocs
+57c7bf5636f4de18c7958411c4e6041f0d2333df    DIFFERS     i18n: Update translation template
+b2cc127135bd053bf7791b6096877e9219e75574    DIFFERS     lxd/networks: Add to swagger
+63476bbd52c4f07002ea033c15ef93e59bfd97e1    DIFFERS     lxd/network/driver: validate.IsInterfaceName usage
+ba4474d0e74d78e04ecac6b1c85c5d2e178c71d4    DIFFERS     lxd/device: nicValidationRules usage
+601522b004ed984c01a82c0f9cf62d309f2a0c19    IRRELEVANT  lxd/network_acls: Add to swagger
+22a0bf168ba8819db2feef0328b552c73c27eca8    DIFFERS     doc/rest-api: Refresh swagger YAML
+c910cbbf2ac90f3498bb6b1689747e12b3d21067    IRRELEVANT  i18n: Update translations from weblate
+b99dd03524281d32bbae004bd27af7116b9f25f1    DIFFERS     lxd/db: Set nodes.id to auto-increment
+ee955fff84de2cbd521a3a92219188a70fe28d37    DIFFERS     lxd/images: Fix auto image updates
+b4d39441d80a59c8094f9b427551ce189b61f2db    DIFFERS     test/suites: Test image refresh in cluster
+fc7ad990c7e636809e5fd0b361da7f8bd1871e0b    DIFFERS     lxd/images: Properly spread replicated images
+62b1328c680801c565b55cfbf7a1a6bc3208696d    FEATURE     lxd/project: Add CheckClusterTargetRestriocion
+f3741a841744834038cd6cb4a634332e99594469    FEATURE     lxd/projects: Add restricted.cluster.target
+c8e50fefbb6bc70fcaef2d424fdab7ea3aa2389e    FEATURE     lxd: Support for restricted.cluster.target
+978e131b8b48111ae2b67d7002e48f90e7ed9069    FEATURE     api: projects_restricted_cluster_target
+0930553571f2dec76622919b309d8aa50361b8cd    FEATURE     doc/projects: Add restricted.cluster.target
+538ac3df036e4a8c0197d0f52d125be1b51879d0    FEATURE     Release LXD 4.12
+791e913458e708d98ec75bb867e1988d9d422e66    IRRELEVANT  lxd/network/openvswitch/ovs: Adds TCP flag constants
+7ed8d56d8d7ed6b9b4620eb98804f173eef95d94    IRRELEVANT  lxd/network/acl/acl/ovn: Switches to openvswitch TCP flag constants in OVNApplyNetworkBaselineRules
+fb68144aab0e3796ffc3775bc3e316dd99a3285b    IRRELEVANT  lxd/network/driver/ovn: util.GetStableRandomGenerator usage
+b272cf5ae51c44e0f2c64a39d6d8434811baa0c3    IRRELEVANT  lxd/storage/volumes/snapshot: util.GetStableRandomInt64FromList usage
