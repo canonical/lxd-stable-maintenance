@@ -1136,3 +1136,14 @@ da08b653a9fdc41a6a0c2adacd812477b90a48da    IRRELEVANT  lxd/network/acl/acl/ovn:
 6a0da58e91151bd1df9a784a10e332e84a668ad3    IRRELEVANT  lxd/storage/volumes/backup: Use requested project name for operation
 8f5206b9f3951f7079f33ab8abbd19246975717d    DIFFERS     lxd/storage/volumes: Use requested project name for operation
 a2246cd17216acf7119d670cdd24e764748c0406    DIFFERS     lxd: Renames project to projectName
+de1a21e6006a4c6181cd63aa60676cae81904215    IRRELEVANT  lxd/network/openvswitch/ovn: Work around ovn-nbctl NAT bugs in LogicalRouterDNATSNATAdd
+2d8be188c6b47ed112cd4e170c2fa6f7a40e2d05    IRRELEVANT  lxd/network/openvswitch/ovn: Use same technique as LogicalRouterDNATSNATAdd when mayExist is true
+c7a498e1d02c3e5f2c97d0268405dbdea732529f    IRRELEVANT  lxd/network/openvswitch/ovn: Merge LogicalSwitchPortAdd and LogicalSwitchPortSet
+78691df8e55bef8e71142aa661226e63fa30f2cb    IRRELEVANT  lxd/network/driver/ovn: client.LogicalSwitchPortAdd usage
+e8e7f3add7f8a19145c7f31370451f74a66e8548    IRRELEVANT  lxd/network/openvswitch/ovn: Reduce ovn-nbctl calls in LogicalSwitchPortDeleteDNS
+883c945c9c48d97ee39d450799669d1d0ea484d4    IRRELEVANT  lxd/network/openvswitch/ovn: Reduce calls to ovn-nbctl in LogicalSwitchPortLinkRouter
+1c036a166d0d95549c54cdbb04a9dea5c1e13d86    IRRELEVANT  lxd/network/openvswitch/ovn: Reduce calls to ovn-nbctl in LogicalSwitchPortLinkProviderNetwork
+387f0292448c6063f3fd12de2360a5d9df936ebf    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalRouterDNATSNATDelete to support removing multiple entries in single call
+4809668883f3ad96ea49e2e95726e85bbe0acbb1    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortDelete to always attempt to remove its IPs from DNAT entries
+ecb7184a1365b3cb728f5ee71bc001330f6901ba    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalRouterRouteDelete to support removing multiple routes
+80138e91d4103bebd41e597f8e241c1b0cfab2aa    IRRELEVANT  lxd/network/driver/ovn: LogicalRouterRouteDelete usage to reduce ovn-nbctl calls
