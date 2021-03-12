@@ -1123,3 +1123,16 @@ d3ca7851389e41fa366b5bbbb2eeef96472daad4    IRRELEVANT  Fix a typo in rest-api.m
 10b273673e3155ab2443f3a5051941a1e5818422    IRRELEVANT  lxd/network/acl/driver/common: Deprecates #internal and #external subjects and replaces them with @internal and @external
 2e9dad8b09b0d0c61fa5d1b43ac939d87670987a    IRRELEVANT  lxc/network/acl: Update field examples
 938e815ea4987a17eaf6dc1cd93be27a97a87dc6    IRRELEVANT  i18n: Update translation template
+7e2453ec7a5a0c5e281d62b0d6ac0209886ac29e    FEATURE     lxd/project: Add images.default_architecture
+042236adb320c7d93a8af297e53f98958e4193f4    FEATURE     lxd/cluster: Add images.default_architecture
+2297e5b7eb950539a3f1ad2ba74469e1700478f1    FEATURE     lxd/db: Support images.default_architecture
+bca9619210350379d8f78cb4332e7c6419cd82e5    FEATURE     lxd: Support images.default_architecture
+3c17099a8233be2698a3d6ba365842603ebd269a    FEATURE     doc: Add images.default_architecture
+8c9e772380af4c245f41f19ef87bf4da7d0a1f91    FEATURE     api: images_default_architecture
+ba4bd2650f991eff11069ff6d863f1b32fb5ebc3    IRRELEVANT  lxd/network/driver/ovn: Adds n.ensureNetworkPortGroup and use it in setup() and Start()
+926cb2712a33f0891caeef4159b4d103385e9ac4    IRRELEVANT  lxd/network/driver/ovn: Clarifies comment
+da08b653a9fdc41a6a0c2adacd812477b90a48da    IRRELEVANT  lxd/network/acl/acl/ovn: Ensure to parenthesised || when used with && in rule match
+83e5879e1f90cd45a1083d49d915f9afd92cf3a6    IRRELEVANT  lxd/storage/backend/lxd: Updates BackupCustomVolume to provide list of snapshot names to b.driver.BackupVolume
+6a0da58e91151bd1df9a784a10e332e84a668ad3    IRRELEVANT  lxd/storage/volumes/backup: Use requested project name for operation
+8f5206b9f3951f7079f33ab8abbd19246975717d    DIFFERS     lxd/storage/volumes: Use requested project name for operation
+a2246cd17216acf7119d670cdd24e764748c0406    DIFFERS     lxd: Renames project to projectName
