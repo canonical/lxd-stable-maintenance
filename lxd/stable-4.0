@@ -1119,7 +1119,6 @@ b272cf5ae51c44e0f2c64a39d6d8434811baa0c3    IRRELEVANT  lxd/storage/volumes/snap
 d3ca7851389e41fa366b5bbbb2eeef96472daad4    IRRELEVANT  Fix a typo in rest-api.md for renaming a network ACL
 74cf601bcf805c83c01c625a49f0bb9dd259e87d    IRRELEVANT  doc/network/acls: Changes reserved subject names
 8d2daff030419a08e6b945bd801e9e3241a99ac4    IRRELEVANT  lxd/network/acl/acl/ovn: Handles deprecated aliases for subjects
-4b03c01827ffb12208eb2faae4b12c2a18c57b4a    IRRELEVANT  shared/api/network/acl: Updates example with non-depcared reserved subject
 10b273673e3155ab2443f3a5051941a1e5818422    IRRELEVANT  lxd/network/acl/driver/common: Deprecates #internal and #external subjects and replaces them with @internal and @external
 2e9dad8b09b0d0c61fa5d1b43ac939d87670987a    IRRELEVANT  lxc/network/acl: Update field examples
 938e815ea4987a17eaf6dc1cd93be27a97a87dc6    IRRELEVANT  i18n: Update translation template
@@ -1147,3 +1146,68 @@ e8e7f3add7f8a19145c7f31370451f74a66e8548    IRRELEVANT  lxd/network/openvswitch/
 4809668883f3ad96ea49e2e95726e85bbe0acbb1    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortDelete to always attempt to remove its IPs from DNAT entries
 ecb7184a1365b3cb728f5ee71bc001330f6901ba    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalRouterRouteDelete to support removing multiple routes
 80138e91d4103bebd41e597f8e241c1b0cfab2aa    IRRELEVANT  lxd/network/driver/ovn: LogicalRouterRouteDelete usage to reduce ovn-nbctl calls
+c3c0d9c24ebf1ba3c7610cc4f68648f130f5dbe7    DIFFERS     test: Run test_clustering_image_refresh
+921bee51985082c6865c2177dfc443ffcf52b9c2    IRRELEVANT  lxc/network_acl: Fix example
+12c8f85c542287fcfb4ca6b1bfef38d594278d30    IRRELEVANT  i18n: Update translation templates
+f552899a1963c1110b909d4795d7b1fd7e500179    FEATURE     lxc/project: Show description
+32e72321ca8e13a6d0aa732884d68ff3f874586d    FEATURE     lxc/profile: Add description column
+cf9b1f612e7f94d6320e37949559703cbfd269cc    FEATURE     lxc/storage: Add description column
+07924ffe2966c89af170881b40c80882d314c53c    IRRELEVANT  doc: improve wording of network ACLs
+bd903412123f3907e6441449791df5b812d9bc48    IRRELEVANT  doc/instances: Adds ipv4.routes and ipv6.routes for OVN NICs
+cb9d4588716406f9c839247ee10792a06014185b    DIFFERS     test/main: Fix clustering test typo
+c8dd22b72ac7b5da8655b358623db3361683bcc7    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchPorts function
+9f3782d34902faed34d752ed6bbb6cf9b0a72285    IRRELEVANT  lxd/network/driver/ovn: Use client.LogicalSwitchPorts in handleDependencyChange and Update
+aadd351799f4a8a01680877667caf82ca6c78653    IRRELEVANT  lxd/network/acl/acl/ovn: Removes unused state arg from ovnApplyToPortGroup
+6fa2f710337712a47ed3eff535efdbd7bc29cfe6    IRRELEVANT  lxd/network/driver/ovn: Improved comment in InstanceDevicePortAdd
+2283780a45ed58ff6070a613c6446c1f495b44a1    DIFFERS     tests: Don't block on /dev/random
+1c2986ab1fdb04eef1eb24e5af12c838df4cdbf7    DIFFERS     doc: Added "Feature Requests" to Bug Reports section in /doc/index.md
+36a90fbc504dc238ba8d8acbf575c3f3e75051bd    DIFFERS     lxd/patches: Fix typo in patchNetworkClearBridgeVolatileHwaddr
+d36120c48c1ff9f653b7c15c8dbd771b18be6646    IRRELEVANT  lxd/patches: Adds patchNetworkACLRemoveDefaults to remove ACL default.action and default.logged keys
+64e619ed42b7b0a4df5127a561d8d525edd2cc96    IRRELEVANT  doc/network-acls: Removes references to default.action and default.logged
+f3227c948da844c6e5762773f933b71e9c80f68c    IRRELEVANT  lxd/network/acl/acl/ovn: Removes default.action and default.logged behavior
+7d8a2641d90405caeb341da344db982737cd6948    IRRELEVANT  lxd/network/acl/driver/common: Removes references to default.action and default.logged in config validation
+b52b755300d21f04b2f00117c4ad131a93728750    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+094354ba917fc2049f030c73d650ffa7c63e9654    IRRELEVANT  lxd/network/driver/ovn: Renames instance device structs to OVNInstanceNICSetupOpts and OVNInstanceNICStopOpts
+857c0cae123a512819f2d1b72680606cdf6ad923    IRRELEVANT  lxd/network/driver/ovn: Renames InstanceDevicePortConfigParse to instanceDevicePortRoutesParse
+19a9babe8e1db358a6f84f5bac4172180432085b    IRRELEVANT  lxd/network/driver/ovn: Renames InstanceDevicePortAdd to InstanceDevicePortSetup
+c516e0264b25f09d04bbbfd0a89f8512467d11b2    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortDelete to accept OVNInstanceNICStopOpts
+db8c723e3c8b4249c789de68ad5e9b7df3455785    IRRELEVANT  lxd/network/driver/ovn: Updates handleDependencyChange to use n.InstanceDevicePortSetup
+75bb95721cf13086b634373e5a3d0cdd97bfae65    IRRELEVANT  lxd/device/nic/ovn: Updates ovnNet interface
+9d440ea13d0eb59d6b8c3066d9d1e060b79548e6    IRRELEVANT  lxd/device/nic/ovn: d.network.InstanceDevicePortSetup and d.network.InstanceDevicePortDelete usage in Start()
+c4a171e86a7ff881f90a10a7850d40b47d8fc0b3    IRRELEVANT  lxd/device/nic/ovn: d.network.InstanceDevicePortSetup usage in Update()
+91a450e5b6a32248182d22a07bc4f3c08ad322f9    IRRELEVANT  lxd/device/nic/ovn: d.network.InstanceDevicePortDelete usage in Stop()
+82a0962bd3f0927926be7cfbd4bfeeb54689dc94    IRRELEVANT  lxd/network/acl/driver/common: Export ValidActions for network and NIC validation
+33a4a46951f182f3c5e7db6c5584a66f2b19f9ed    IRRELEVANT  lxd/device/nic: Add support for validating security.acls.default.{in,e}gress.{action,logged} config keys
+ba35e0a58dd8f3a7b04ec71bb0758f7a446b0b1c    IRRELEVANT  lxd/device/nic/ovn: Validates security.acls.default.{in,e}gress.{action,logged} config keys
+b168593c2d3b90f9cbcc9dc29c19c43468b4a0b8    IRRELEVANT  doc/networks: Adds security.acls.default.{in,e}gress.{action,logged} keys to ovn network
+6bc4948e15940ada64cd6fa1908f4955fc431a9c    IRRELEVANT  doc/instances: Adds security.acls.default.{in,e}gress.{action,logged} keys to OVN NIC
+6bc2ca13d098f14b7b9e39955fae906fdad570c5    IRRELEVANT  api: Adds network_ovn_acl_defaults extension
+aeebe15fe09719366232817d0bb7eb3891aba127    IRRELEVANT  lxd/network/openvswitch/ovn: space trimming cleanup
+0a94ea3445532891f6a2e04dd872906dd3ac3e2f    IRRELEVANT  lxd/network/openvswitch/ovn: Renames setACLRules to aclRuleAddAppendArgs
+2878728854388307a7380eab373cf2878dfe569c    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchSetACLRules to use o.aclRuleAddAppendArgs
+9fc0ec24afadf67f3870751cb6351e329749081d    IRRELEVANT  lxd/network/openvswitch/ovn: Updates PortGroupSetACLRules to use o.aclRuleAddAppendArgs
+20996e71f7efe14b56689fd80c16c35a5b2074b2    IRRELEVANT  lxd/network/openvswitch/ovn: Adds logicalSwitchPortACLRules function
+c8c3e712ab8d0531403eb1ceee4787a66feaa793    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortDeleteDNS to use o.logicalSwitchPortDeleteDNSAppendArgs
+44bd49e42cc2a0cd1017ecc1b822fe98fdd0182c    IRRELEVANT  lxd/network/openvswitch/ovn: Adds logicalSwitchPortDeleteAppendArgs function
+ebcd6d88f922521194b6463bf0d3d9946002c09d    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalSwitchPortDelete to use o.logicalSwitchPortDeleteAppendArgs
+029b45e6059a8f82b9b83a53211a82dbf1c502ac    IRRELEVANT  lxd/network/openvswitch/ovn: Adds LogicalSwitchPortCleanup function
+82de586e3411faec7defacea6e760943d14ff745    IRRELEVANT  lxd/network/openvswitch/ovn: Adds aclRuleDeleteAppendArgs, PortGroupPortSetACLRules and PortGroupPortClearACLRules functions
+93333a286f65bc3663a2b90b9f2cf0179e794ce3    IRRELEVANT  lxd/network/acl/acl/ovn: Renames ovnACLPriorityPortGroupDefaultReject to ovnACLPriorityPortGroupDefaultAction
+6538d9ab80f31b8b72425f2f31cb041b8b246b27    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVNApplyInstanceNICDefaultRules function
+a7c68c8c2a2c4ec62115e99ea135d3d19449ea04    IRRELEVANT  lxd/network/acl/acl/ovn: ovnApplyToPortGroup change default action to drop
+0a1b1fe6770d832c078e61e45f95dff4910d213d    IRRELEVANT  lxd/network/driver/ovn: Error improvement
+0219994526eec5e4b27065168ccaf11fd8887392    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortSetup to setup NIC port default ACL rules
+5c5d4356a4cd05866cdf375ce9d69f8b61d6a12b    IRRELEVANT  lxd/network/driver/ovn: Updates InstanceDevicePortDelete to use LogicalSwitchPortCleanup
+4385ccc44c0b12dc4b189e32405ebbd5bd231167    IRRELEVANT  lxd/network/driver/ovn: Adds security.acls.default.{in,e}gress.{action,logged} config key validation
+2413e952026cd0eb3d721d024615a04b78b6fac6    IRRELEVANT  lxd/network/driver/ovn: Adds default rule config change detection to Update
+c30663949187a6332d697a9196041137de54fa31    IRRELEVANT  lxc/move: Support for in-cluster progress information
+df00fc5cdd49fb4f98583a7fd07535fde7daeda9    IRRELEVANT  lxd/device/nic/ovn: Typo in comment
+c92554e8cb90c23e404005d1d3c37bb462ed8807    IRRELEVANT  lxd/network/openvswitch/ovn: Removes LogicalSwitchDHCPOptionsGetID
+c5d73b3b893e29dc80592a58c1b06cf75757b00d    IRRELEVANT  lxd/network/driver/ovn: Use client.LogicalSwitchDHCPOptionsGet in InstanceDevicePortSetup
+d0698a4e134e3254e786c6250e212b818429dec4    IRRELEVANT  lxd/network/openvswitch/ovn: Simplify LogicalSwitchDHCPOptionsDelete and make more efficient
+3942d9e549220fec2572f469fc582b0e2c92c3a8    IRRELEVANT  lxd/network/openvswitch/ovn: Use more efficient o.LogicalSwitchDHCPOptionsDelete in LogicalSwitchDelete
+e6fa4334f5959cf27b07b9c520f84109cc184d5a    IRRELEVANT  lxd/network/openvswitch/ovn: Makes logicalSwitchDNSRecordsDelete more efficient
+4ff5ceb78ee7e60758a378bd21a137a9b0057a03    IRRELEVANT  lxc/move: Support for quietFlag for in-cluster instance move
+1652ab7b9d3b51e913e41dfec5aafd7e62ceff1e    DIFFERS     lxd/db/cluster: Extend list of entities
+1a25cf6f7080833b4d32c593badaf22bf91f4830    DIFFERS     lxd/network/network/utils: Updates GetNeighbourIPs to return slice of NeighbourIP struct (with State)
+e6821bd58fef69c3ed5f821f0788aa4b58df39bb    DIFFERS     i18n: Update translation templates
