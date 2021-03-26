@@ -1211,3 +1211,4 @@ e6fa4334f5959cf27b07b9c520f84109cc184d5a    IRRELEVANT  lxd/network/openvswitch/
 1652ab7b9d3b51e913e41dfec5aafd7e62ceff1e    DIFFERS     lxd/db/cluster: Extend list of entities
 1a25cf6f7080833b4d32c593badaf22bf91f4830    DIFFERS     lxd/network/network/utils: Updates GetNeighbourIPs to return slice of NeighbourIP struct (with State)
 e6821bd58fef69c3ed5f821f0788aa4b58df39bb    DIFFERS     i18n: Update translation templates
+74cd2194a55f0f7f2d6cb858531a254e1b46db09    DIFFERS     lxd/operations: Add to swagger
