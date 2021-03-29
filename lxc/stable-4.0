@@ -117,3 +117,7 @@ a9b642ee5c63ebdabe6ed89ac4201dced32be0b8    DIFFERS     commands: s/_LIMITING_/_
 bad2f9131a6b58bd13f2f3b72c479c85912a2030    DIFFERS     network: make callback naming consistent and understandable
 3a197a1b63d010943fbc88c31d63c05b73f81682    DIFFERS     network: use two passes through networks
 cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace error
+642751ccd07d923c1645575d900a4cfabf8d4cb6    DIFFERS     confile: use lxc_list_new() everywhere
+5837aa84487df2938a7d6f04db40bb12fba0013e    DIFFERS     confile: fix returns in set_config_net_veth_vlan_tagged_id()
+299ddd1663b86eabb0080b0cca044d2b7850e3c8    DIFFERS     confile: improve network vetting
+12babd78e37d58850cf99f6b4e3faf104e0da2cd    DIFFERS     confile: vet keys more aggressively
