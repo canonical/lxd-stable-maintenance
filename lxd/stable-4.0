@@ -1212,3 +1212,22 @@ e6fa4334f5959cf27b07b9c520f84109cc184d5a    IRRELEVANT  lxd/network/openvswitch/
 1a25cf6f7080833b4d32c593badaf22bf91f4830    DIFFERS     lxd/network/network/utils: Updates GetNeighbourIPs to return slice of NeighbourIP struct (with State)
 e6821bd58fef69c3ed5f821f0788aa4b58df39bb    DIFFERS     i18n: Update translation templates
 74cd2194a55f0f7f2d6cb858531a254e1b46db09    DIFFERS     lxd/operations: Add to swagger
+30ff33c4a0b2397ec526edecb7d2fac51bae13aa    DIFFERS     lxd/operations: Cover public endpoints
+e6b639df0bdcfd9c287350d0762ce13123b6027d    DIFFERS     lxd: Add project arguments to swagger
+d397a5c35ea5bc4ae90080dc8f16ef6e7cd2f63f    DIFFERS     lxd/images: Add to swagger
+e3bd010e9b0ad1be7a9cf4ceceef4054ceaaf2cb    DIFFERS     doc/rest-api: Refresh swagger YAML
+c03b3709c26e4ba1b07fd6375ea14d656684b560    IRRELEVANT  lxd/device/nic/bridged: Comment typo
+8c122e21ace3b79dee954261120a7d0a11d0ee9b    IRRELEVANT  lxc/network/acl: Allow output of lxc network acl show to be used as input to lxc network acl edit
+c96fe2f4f775478025989185dc6b4a85210594c4    DIFFERS     lxd/device: Ensure type field in NetworkInterface is specified first for liblxc
+bbd129db2913fbc0c4f5bf2c43c9fd41ffb542fa    FEATURE     lxc/list: Add more instance filters
+aac980883e3b1442d806ab8b21a38e71215501ce    IRRELEVANT  i18n: Update translation templates
+c860b040e614ee5a10a966c73d3fb8e1e75ec90b    IRRELEVANT  lxc/list: Remove name filter
+048387798f2c5c397b036da3e3bba7c8fc56e342    DIFFERS     lxc/list: Rename state to inst
+30dc7c94a8550cdc4f03f61297b374ff5b2357c6    IRRELEVANT  lxc/list: Pass state to filters
+5092a65d7cc99d60fbc1f5bbe869ed5cc0d607c7    IRRELEVANT  lxc/list: ipv4/ipv6 filters apply to state
+122d19f2d7a5cf6669b26665bd1f0e36ab23733c    IRRELEVANT  lxc/list: Optimize filtering
+87b6e192dd86c173775402ff007e743d51f5817a    IRRELEVANT  lxc/list_test: Fix function signature
+441949061e801301c9e142e743bb364fb5021d4c    IRRELEVANT  lxc/list_test: Fix name filter
+ac64e112407d7921f5e42ff72c87ed315dbcec2a    IRRELEVANT  lxc/list_test: Add state testing
+63d34e12b199b613fc32534b7fd84813fb4473ae    DIFFERS     lxc/list_test: Rename state to inst
+50c5f1483657fd0dd339fda446335a537c47d994    IRRELEVANT  i18n: Update translation templates
