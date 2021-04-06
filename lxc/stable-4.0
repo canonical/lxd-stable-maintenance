@@ -121,3 +121,6 @@ cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace er
 5837aa84487df2938a7d6f04db40bb12fba0013e    DIFFERS     confile: fix returns in set_config_net_veth_vlan_tagged_id()
 299ddd1663b86eabb0080b0cca044d2b7850e3c8    DIFFERS     confile: improve network vetting
 12babd78e37d58850cf99f6b4e3faf104e0da2cd    DIFFERS     confile: vet keys more aggressively
+0abcc213e2291d718cb93484f87add9c4b640f9d    DIFFERS     confile: don't jump into the global table twice
+7707b0e06e35fa25dee42f9295d1707389b1676c    DIFFERS     confile: simplify get_network_config_ops()
+057d2caecbb11c7127a17d4eda33ba2e250a752a    DIFFERS     confile: fix lxc.namespace.share.[identifier]
