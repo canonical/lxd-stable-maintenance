@@ -1231,3 +1231,42 @@ c860b040e614ee5a10a966c73d3fb8e1e75ec90b    IRRELEVANT  lxc/list: Remove name fi
 ac64e112407d7921f5e42ff72c87ed315dbcec2a    IRRELEVANT  lxc/list_test: Add state testing
 63d34e12b199b613fc32534b7fd84813fb4473ae    DIFFERS     lxc/list_test: Rename state to inst
 50c5f1483657fd0dd339fda446335a537c47d994    IRRELEVANT  i18n: Update translation templates
+69973a17243f8162492b4f1ba5bd454eef725341    FEATURE     lxc/config: Add system-wide remotes
+9e2ee4cb261ab2487442f6e6929834253585dbc1    FEATURE     lxc/remote: Add system-wide remotes
+f8c17be705c26ef4b11c6f5e75f44febbaa028ed    FEATURE     doc: Remotes documentation
+57bbd7b0c5263ebf42ba8a1c1152abc10aaa28fb    IRRELEVANT  i18n: Update translation templates
+476fd78b7662de9cdb1d8a55e7b74e445ceec8fb    DIFFERS     lxd/storage/backend/lxd: Check custom volume type is supported by storage pool
+fdc4c2fa12a4bb6a378721487d125d882284dc55    DIFFERS     api: gpu_mig extension
+e2e13c3dd0d6328784566cbed2973ebdf1a81786    IRRELEVANT  doc/projects: Sort config keys
+18395e88ac5516cb5a4bbeda6c118446ed33c8cb    DIFFERS     lxd/project: Refactor instance counting
+0966f5412367f801ce2eec2f80d690a418cfee8c    FEATURE     api: project_usage
+b9ca361a9d307f47d146fec111b59166a1da48af    IRRELEVANT  lxd/project: Add getAggregateLimits
+2cb3e8b6182c430332871a11885f951e60626ab6    IRRELEVANT  lxd/project: Add GetCurrentAllocations
+9ba300c07f3c5da17289ffc0b31e307c93dd7fe0    FEATURE     lxd/projects: Add state endpoint
+3ca3bf1c86e76bc8079ca1deef1bdd06d8abc11c    FEATURE     lxc/project: Add info sub-command
+cdb2e6af1fbd8663580aeb9d20352e4bdfbf0772    IRRELEVANT  i18n: Update translation templates
+22275568aa85f40836f00c60cea83555db046fa5    IRRELEVANT  doc/rest-api: Add project state
+af1666ece060721f9b02953c786ef3015f75472f    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+eb14515905457c684e4a0cf7b4492f326bc10d73    IRRELEVANT  tests: Test for lxc project info
+263500a22a33c332de9527e3028aadea6b2a934e    IRRELEVANT  doc/metadata: Adds remotes section
+ff02ca4a056040fc22578bbc178d83bdfdc6bca8    IRRELEVANT  lxd/images: Use Hourly() in autoUpdateImagesTask
+f854dc7b5e360dda23517c9a7b077dc2e3e296d8    FEATURE     doc: Add aliases to snapshots.schedule
+16738248ec75d9e4728d02d875f54a1e9adaca9c    FEATURE     api: snapshots_schedule_aliases
+367cbcbecb395d7c20c3695746b88e4e71e4e9a8    IRRELEVANT  lxd/util: Rework random functions
+535b5ababd2589183d9b03c07a37d16802d5996e    FEATURE     lxd/snapshot: Add snapshot aliases
+98b4abdf38f29074bb667fd2556d59ce9fba76be    FEATURE     lxd: Use snapshot aliases
+e003c8a6687c66e97c2fbf5148477ad77c5cd9eb    FEATURE     lxd/instance: Add startup snapshot
+945ea09b34f9911c723386159f4a2e98bee7fb5d    FEATURE     tests: Add snapshot scheduling
+88a4e5f5a8d7367066aff8cded2d013c34e70ed1    IRRELEVANT  i18n: Update translations from weblate
+85ef0ca8d8b3805b822b05d363f0b6aa01ee787d    DIFFERS     shared/validate: Add IsCron validator
+75019bf015fbd40355c3d4111cf750e8aec6a16d    FEATURE     Release LXD 4.13
+d49dd782ef2a10316248b9fd67e023d3f045f0db    IRRELEVANT  lxd/network/acl/driver/common: Improve error messages in d.validateRuleSubjects
+b23192e38d84c087766014adaab6147943997f12    IRRELEVANT  lxd/network/acl/driver/common: Allow single IP addresses in source/destination subjects
+de927d3b272285a462211fde5f16c5aa4d92dfb9    IRRELEVANT  lxd/network/driver/ovn: Renames logName var to logPrefix
+deafab09222973cc21c0d2077749dc24f4c7f91a    IRRELEVANT  lxd/network/acl/acl/ovn: Handle single IP in source/destination subjects
+0f445f42ccaf08cd54827688c8765149ef7cfe48    IRRELEVANT  lxd/network/acl/acl/ovn: Renames logName arg to logPrefix in OVNApplyInstanceNICDefaultRules
+1b0a3594811725e8d1c1a3e665b7912709690c79    DIFFERS     lxd/images: Use CopyImage() in autoSyncImages
+2043219e75f3d2029e439e310bddebd3206aa1b1    DIFFERS     lxd: Sync images when cluster.images_minimal_replica changes
+b1633caa3ede0af3513cd65bc84a772210defb91    IRRELEVANT  lxd/network/acl/driver/common: Add check for incorrect use of mixed IP family subjects in validateRule
+2e59e184584216ed4bbb180693643ced6e6d1618    IRRELEVANT  lxd/network/acl/driver/common: Improve IP family validation for ICMP
+5f0dfb6797a873d37c6c4f064196e617bfc89aad    IRRELEVANT  lxd/network/acl/driver/common: Fix typo
