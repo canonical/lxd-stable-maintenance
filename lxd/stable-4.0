@@ -1270,3 +1270,22 @@ deafab09222973cc21c0d2077749dc24f4c7f91a    IRRELEVANT  lxd/network/acl/acl/ovn:
 b1633caa3ede0af3513cd65bc84a772210defb91    IRRELEVANT  lxd/network/acl/driver/common: Add check for incorrect use of mixed IP family subjects in validateRule
 2e59e184584216ed4bbb180693643ced6e6d1618    IRRELEVANT  lxd/network/acl/driver/common: Improve IP family validation for ICMP
 5f0dfb6797a873d37c6c4f064196e617bfc89aad    IRRELEVANT  lxd/network/acl/driver/common: Fix typo
+ff9cea6bbaee7aaec0fc238be3cbac0c8ae98201    IRRELEVANT  lxd/network/driver/bridge: Validate ACL options
+2bbd7973f6a0426ac545432204dd139b12f73ec6    IRRELEVANT  lxd/firewall/firewall/interface: Adds NetworkApplyACLRules function
+1c93576939c9e1d0d60563adfb0cf4ee87605b2a    IRRELEVANT  lxd/firewall/drivers/drivers/consts: Adds ACL field to Opts to indicate we should ready firewall setup for ACL rules
+25fa485d0b844079e0207c984ca97e4dab7644e8    IRRELEVANT  lxd/firewall/drivers/drivers/consts: Define ACLRule type
+d9e684f8f22e318a2fb29fd9c9a689c3290055d4    IRRELEVANT  lxd/network/acl/acl/firewall: Adds ACL firewall helper functions
+dbfe3d23516b689ce680726b3771ac6e92f9f80b    IRRELEVANT  lxd/network/acl/acl/interface: Adds clientType to Update
+d3d2aa8aa885b78128e8d3e5f4e63b394217334b    IRRELEVANT  lxd/network/acl/acl/load: Add Config field to NetworkACLUsage
+a5c66d134e96bd05273f97ae1482ad7893e00fad    IRRELEVANT  lxd/network/acl/acl/load: Update NetworkUsage to return bridge and ovn networks
+29d4578341554201673e7b78cb7613be20042135    IRRELEVANT  lxd/network/acl/driver/common: Modifies Update to support clientType arg
+bf74f7ccfaaaad7b47c548576e08860f117238e3    IRRELEVANT  lxd/network/acls: Pass clientType to netACL.Update
+65959c5474ec34b2214e370b958476d6050ad2b7    IRRELEVANT  lxd/network/driver/ovn: Populate acl.NetworkACLUsage Config field
+958c830e36a77f8f19c0e9f5a7b29c7d0e5d60df    IRRELEVANT  lxd/network/driver/bridge: Set ACL field in fwOpts if ACLs specified
+c2301ad5071329552bd70fa486f1d36cdd936510    IRRELEVANT  lxd/network/driver/bridge: Apply ACLs on network start
+ce649041519075411ad4a7a9b4b010fc8f871df9    IRRELEVANT  lxd/firewall/drivers/drivers/xtables: Add ACL support
+24bd83cfd5ffde0db070b0958ef2e9d871d82107    IRRELEVANT  lxd/firewall/drivers/drivers/nftables: NetworkApplyACLRules WIP
+efc7854635f793f4c6dfbcecdc40a76640fee363    IRRELEVANT  test: Adds container_devices_nic_bridged_acl test for bridge ACL tests with iptables and nftables
+4941b16beefba534b89d527910a8bcf15c250b0b    IRRELEVANT  api: Adds network_bridge_acl extension
+cfc5a2bae26679914e564287dcd8fd29c84580d3    IRRELEVANT  doc/networks: Adds security.acls* config keys for bridge networks
+46cde6041d48d13fe38f41373c7086c04a46758b    IRRELEVANT  doc: Adds network ACLs limitations section and links to it from bridge security.acls config key
