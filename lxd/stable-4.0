@@ -1250,15 +1250,7 @@ af1666ece060721f9b02953c786ef3015f75472f    IRRELEVANT  doc/rest-api: Refresh sw
 eb14515905457c684e4a0cf7b4492f326bc10d73    IRRELEVANT  tests: Test for lxc project info
 263500a22a33c332de9527e3028aadea6b2a934e    IRRELEVANT  doc/metadata: Adds remotes section
 ff02ca4a056040fc22578bbc178d83bdfdc6bca8    IRRELEVANT  lxd/images: Use Hourly() in autoUpdateImagesTask
-f854dc7b5e360dda23517c9a7b077dc2e3e296d8    FEATURE     doc: Add aliases to snapshots.schedule
-16738248ec75d9e4728d02d875f54a1e9adaca9c    FEATURE     api: snapshots_schedule_aliases
-367cbcbecb395d7c20c3695746b88e4e71e4e9a8    IRRELEVANT  lxd/util: Rework random functions
-535b5ababd2589183d9b03c07a37d16802d5996e    FEATURE     lxd/snapshot: Add snapshot aliases
-98b4abdf38f29074bb667fd2556d59ce9fba76be    FEATURE     lxd: Use snapshot aliases
-e003c8a6687c66e97c2fbf5148477ad77c5cd9eb    FEATURE     lxd/instance: Add startup snapshot
-945ea09b34f9911c723386159f4a2e98bee7fb5d    FEATURE     tests: Add snapshot scheduling
 88a4e5f5a8d7367066aff8cded2d013c34e70ed1    IRRELEVANT  i18n: Update translations from weblate
-85ef0ca8d8b3805b822b05d363f0b6aa01ee787d    DIFFERS     shared/validate: Add IsCron validator
 75019bf015fbd40355c3d4111cf750e8aec6a16d    FEATURE     Release LXD 4.13
 d49dd782ef2a10316248b9fd67e023d3f045f0db    IRRELEVANT  lxd/network/acl/driver/common: Improve error messages in d.validateRuleSubjects
 b23192e38d84c087766014adaab6147943997f12    IRRELEVANT  lxd/network/acl/driver/common: Allow single IP addresses in source/destination subjects
@@ -1289,3 +1281,15 @@ efc7854635f793f4c6dfbcecdc40a76640fee363    IRRELEVANT  test: Adds container_dev
 4941b16beefba534b89d527910a8bcf15c250b0b    IRRELEVANT  api: Adds network_bridge_acl extension
 cfc5a2bae26679914e564287dcd8fd29c84580d3    IRRELEVANT  doc/networks: Adds security.acls* config keys for bridge networks
 46cde6041d48d13fe38f41373c7086c04a46758b    IRRELEVANT  doc: Adds network ACLs limitations section and links to it from bridge security.acls config key
+5c4b8eb462a00b64ba43b03a73697d259ca041f3    IRRELEVANT  Renames container_devices_nic_bridged_acl test file to align with other tests
+d20fd341fc221de70bce3b0e018778f4f011a6c2    IRRELEVANT  test: Fix Udhcpc6 detection for nic bridged acl tests
+b962d3fee57d205c23bdd8c94780b8bb722cf52a    DIFFERS     lxc/remote: Only update URL in set-url
+1747fee56e32d0592765e36591a92b29f5c3246e    DIFFERS     lxc: Fix help for string arguments
+36813d3223c715e004e9029bdef256cbe3f49668    DIFFERS     lxd/db: Add cluster ToAPI
+8d62c8477ab990d761d745345ff5ad2bd61248c6    DIFFERS     lxd: Switch to using GetNodes
+681881e6fae11a19e57f4b945fe07f5d149a403d    DIFFERS     lxd/cluster: Drop List function
+94c6f352cd01c94238d1e859e49bf123f8a5d201    DIFFERS     lxd/lxd: Prevent multiple routed NIC devices from using "auto" gateway mode
+bb1a47f16aec1434c24b8b2c6dcb5ab73df1bd3c    DIFFERS     lxd/db: Add node ID to StorageVolumeArgs
+367cbcbecb395d7c20c3695746b88e4e71e4e9a8    DIFFERS     lxd/util: Rework random functions
+98b4abdf38f29074bb667fd2556d59ce9fba76be    DIFFERS     lxd: Use snapshot aliases
+85ef0ca8d8b3805b822b05d363f0b6aa01ee787d    DIFFERS     shared/validate: Add IsCron validator
