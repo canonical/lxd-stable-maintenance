@@ -125,3 +125,4 @@ cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace er
 7707b0e06e35fa25dee42f9295d1707389b1676c    DIFFERS     confile: simplify get_network_config_ops()
 057d2caecbb11c7127a17d4eda33ba2e250a752a    DIFFERS     confile: fix lxc.namespace.share.[identifier]
 6773e108515b6f595e0e43b806c52f834ec88467    DIFFERS     confile: make lxc_get_config() and lxc_get_config_net() always return non-NULL
+317410da66322814f5e68c2b02ebaa115633e61b    DIFFERS     Makefile: fix strchrnul() inclusion
