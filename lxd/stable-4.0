@@ -1293,3 +1293,11 @@ bb1a47f16aec1434c24b8b2c6dcb5ab73df1bd3c    DIFFERS     lxd/db: Add node ID to S
 367cbcbecb395d7c20c3695746b88e4e71e4e9a8    DIFFERS     lxd/util: Rework random functions
 98b4abdf38f29074bb667fd2556d59ce9fba76be    DIFFERS     lxd: Use snapshot aliases
 85ef0ca8d8b3805b822b05d363f0b6aa01ee787d    DIFFERS     shared/validate: Add IsCron validator
+2842f743a9fe74ee3f223424c7da2e9633181f76    DIFFERS     lxc/storage_volume: Add missing target
+e7f0e102266d0415390924c49b3ec5d7aa81859b    DIFFERS     lxd/db/certificates: Adds CertificateAPITypeToDBType and ToAPIType functions
+2a61cbbbfcd6deff5d8162965ee94f2031d6bba8    DIFFERS     lxc: Switch to CertificateTypeClient constant
+e1ffb2aef74690344a231cb4d7e73f65f8f99975    IRRELEVANT  tests: Removes use of -v flag for nc inside busybox
+1a6673828af94dabf8956c758958dd025b8b83eb    DIFFERS     lxd/certificates: Store certificateCache by certificate type
+1da382bfbff9c27e5e1dbd98a4236ee088c3cc85    DIFFERS     lxd/certificates: db.CertificateAPITypeToDBType usage and set certificate type to server
+2834b5a00609bb4076a9389af2e61eeda4ab79dc    IRRELEVANT  lxd/daemon: Ensure d.clientCerts.Projects isn't accessed without a lock
+6761341669c0cb7f015c8213624d4c781f3e818f    DIFFERS     lxd/images: Ignore intervals on manual refreshes
