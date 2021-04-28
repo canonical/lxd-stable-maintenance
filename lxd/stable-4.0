@@ -1301,3 +1301,22 @@ e1ffb2aef74690344a231cb4d7e73f65f8f99975    IRRELEVANT  tests: Removes use of -v
 1da382bfbff9c27e5e1dbd98a4236ee088c3cc85    DIFFERS     lxd/certificates: db.CertificateAPITypeToDBType usage and set certificate type to server
 2834b5a00609bb4076a9389af2e61eeda4ab79dc    IRRELEVANT  lxd/daemon: Ensure d.clientCerts.Projects isn't accessed without a lock
 6761341669c0cb7f015c8213624d4c781f3e818f    DIFFERS     lxd/images: Ignore intervals on manual refreshes
+ce374c6f5717525142e447c83f27d9a29a65cd1a    FEATURE     api: Add warnings
+05584642e59760ad04656d4f884bcacbbfbf73ec    FEATURE     lxd/db/cluster: Create warnings table
+70b7a852be443878681c986d7555d886735174bb    FEATURE     lxd/db: Add operation type OperationWarningsPruneResolved
+78ef6c0da718a45b638803a898a26d9be50d32b7    FEATURE     lxd/db: Allow object retrieval by ID
+3a83222460dcf2d79ee9534a6ad8b891a9a2536d    FEATURE     lxd/db: Add getURIFromEntity
+c972c4d440fda8b3bcd46ed1099fa444dfac3f14    FEATURE     lxd/db: Add warning severity
+111404a79773972ca9da11c6a9214ced1e48fea0    FEATURE     lxd/db: Add warning types
+02603d8079bf9e2eae458444b135b4efd294bf7b    FEATURE     lxd/db: Add warning status
+ef0675c10a4779ad554472d469f5f204901b4d2d    FEATURE     lxd/db: Add warning functions
+112cc7fb504728249bc06f8585109c1cd41f807d    FEATURE     lxd: Add warnings endpoints
+913da13ff87bb1921beb10f1e85fb9cb40196d4a    FEATURE     lxd: Prune resolved warnings
+c5853eb1d4d08568ea96b7f48439557c8736c0ee    FEATURE     lxd: Add internal /testing/warnings endpoint
+9e8f01f90eff8b115f39c09de22c29b101b56c9e    FEATURE     lxc: Add warning sub-command
+31a9886b65ce549d971cecf506e2d7f4fad8a4cd    FEATURE     test: Add warnings test
+a3f2c02ccf0c4559285ab9f2b9ffd5d6b446217d    IRRELEVANT  po: Update translations
+8e0c4e4e7a4abf199b27f3ae8bb896c725e7223b    DIFFERS     lxd/db: Fix typo in error
+af67e95aa7448a914f404f8a6e33c18858e89f63    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+d831af2e6bbf5599f021594d7edfd0ac59c71d30    FEATURE     doc/rest-api: Add warnings
+8068d32be4a8b4daef5ff3fdd5e60720b2e9fb18    DIFFERS     lxd/certificates: Adds comment about the importance of a check related to CA mode in certificatesPost
