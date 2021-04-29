@@ -1320,3 +1320,6 @@ a3f2c02ccf0c4559285ab9f2b9ffd5d6b446217d    IRRELEVANT  po: Update translations
 af67e95aa7448a914f404f8a6e33c18858e89f63    IRRELEVANT  doc/rest-api: Refresh swagger YAML
 d831af2e6bbf5599f021594d7edfd0ac59c71d30    FEATURE     doc/rest-api: Add warnings
 8068d32be4a8b4daef5ff3fdd5e60720b2e9fb18    DIFFERS     lxd/certificates: Adds comment about the importance of a check related to CA mode in certificatesPost
+1ac64c85a4ab67e2b54e1f737ff13abd26ca4028    DIFFERS     lxd/device: Replace ip command with ip package
+155ddb10b555c8eb81794fdc11d6fc1b66ac4adf    DIFFERS     lxd/network: Replace ip command with ip package
+f2253f3a712396a0b884234087066f975c776e5d    IRRELEVANT  lxd/openvswitch: Replace ip command with ip package
