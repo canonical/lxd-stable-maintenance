@@ -1375,3 +1375,10 @@ c6cdcad7c0aa8794080fb1e0b2f74e6456526e87    FEATURE     lxc/config_trust: Add ty
 ecc14c2b2dd037ba8bbed7f2fb08431f406d337d    DIFFERS     lxd/daemon: Adds taskClusterHeartbeat var and populates it
 eae462329f7e878ab8c4753fbe96c03d4c05fef2    DIFFERS     lxc: Update interactive editor fail message to indicate ctrl+c can be used to abort change
 18a69f634de8f56d9be8690cf6b8430d077252a5    IRRELEVANT  i18n: Update translation templates
+88d05888c9bee50a49230717c72f9b3167712f23    IRRELEVANT  lxd/network/openvswitch: Adds shared unquote function
+e41323e1468add7707471de2302360fb39eb4bc5    IRRELEVANT  lxd/network/openvswitch: Replace strconv.Unquote with unquote
+654107348f3de7c0670f75a20ec7d2b78b359781    DIFFERS     lxd/instances: Swagger for instances
+ec3a18b5c22ac1dd8204994722a9db276f58351a    DIFFERS     doc/rest-api: Refresh swagger YAML
+af8ba5a51a6278d0edbeddb08ce4e6b0abfef490    FEATURE     lxd: Support for location in devlxd api
+1dfc7b298f9218585b9611372677d45a0cbe5971    FEATURE     lxd/instance/qemu: Support for location in writeInstanceData
+8fa11297132a0d740fbd3491d41f05d3b351158e    FEATURE     lxd-agent: Support for location in devlxd api
