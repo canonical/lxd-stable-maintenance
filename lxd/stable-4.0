@@ -1323,3 +1323,55 @@ d831af2e6bbf5599f021594d7edfd0ac59c71d30    FEATURE     doc/rest-api: Add warnin
 1ac64c85a4ab67e2b54e1f737ff13abd26ca4028    DIFFERS     lxd/device: Replace ip command with ip package
 155ddb10b555c8eb81794fdc11d6fc1b66ac4adf    DIFFERS     lxd/network: Replace ip command with ip package
 f2253f3a712396a0b884234087066f975c776e5d    IRRELEVANT  lxd/openvswitch: Replace ip command with ip package
+b4f5d67f8ae11d8d5069259acf24ff070ad8e135    IRRELEVANT  lxd: Add function to resolve warnings by their type code
+95e71a287ccfb8506390e91b909758fe37112033    IRRELEVANT  lxd/db: Add GetWarningsByType
+de2fd57fe2748a33f5a8214e6e712d46bbb31de1    IRRELEVANT  lxd/db: Add CGroup warning types
+614d97006214feeffec8aea767a121c33b4cbe0f    IRRELEVANT  lxd/cgroup: Replace Log() with Warnings()
+daad71061b907f81ce7e7a99e3ef5182f18b4291    IRRELEVANT  lxd: Handle CGroup logging and warnings in daemon
+539f72bb8e1f81729a25f58cf7b95a66137ab2f2    DIFFERS     lxd/networks/utils: Log forkdns refresh task starting in networkUpdateForkdnsServersTask
+13f2499ebfa1c3e6a15c762491e8c9c5aa2e712c    DIFFERS     lxd/db/certificates: Adds DeleteCertificateByNameAndType function
+6a6b785d62dfcdd4d5856709a67728259b7d9fbd    DIFFERS     lxd/certificates: Updates updateCertificateCache to handle per-certificate upgrade
+e1f6455d8ee707439a709eedc0697fd9cd6fcec6    DIFFERS     lxd/certificates: Notify other cluster members of certificate update in doCertificateUpdate
+afc31b307dcda6da8abb5d6f2d22b8ca50252d3f    DIFFERS     lxd/certificates: Allow certificate type change in doCertificateUpdate
+1f6bbf645e5516108fbb0ecf86403262193a7bba    DIFFERS     lxd/certificates: Notify other cluster members of certificate deletion in certificateDelete
+d779f7665a25098f1399cdb9e4345730133ffd64    DIFFERS     lxd/cluster/membership: HasConnectivity usage
+72532dbfdc77172b6ffc4d426e0fa96a856d4501    DIFFERS     lxd: cluster.NewNotifier usage
+29cdd568e53a0519443837d29db9470d32dc0af9    DIFFERS     lxd: cluster.Connect and related function usage
+4d9ee80356e43f8e690a068779b91362ca398e04    DIFFERS     lxd/api/cluster: Updates clusterPutJoin to handle per server certificates
+5dd2a2dbbc6e31ada64286e3c03227fd8a3fe979    DIFFERS     lxd/patches: Adds patchClusteringServerCertTrust
+90e018485a82dd3c4037283ed37ec31202d2f278    IRRELEVANT  test/suites: Update warning tests
+d6af8b25b5a16e705b41dfa070e046b79addcdec    DIFFERS     lxd/db/operations: Adds GetOnlineNodesWithRunningOperationsOfType function
+73c2d60db1d8184c74eecaeeba54160cd1b89ac0    DIFFERS     lxd/images: Updates imageValidSecret to accept projectName and opType arguments
+ae5eff1705601915024632448aa3fe9bde25649a    DIFFERS     lxd/images: projectName argument in createTokenResponse
+2bcd59a503f5a0cf3f120f53551f560840bfcf72    DIFFERS     lxd/images: imageValidSecret usage
+4ee2335472d287d68442260d966c7f278f3c26d6    DIFFERS     doc/rest-api: Refresh swagger YAML
+390f57b87e7cedd0c95601fa400617bb587a81c4    IRRELEVANT  lxc/warning: Fix argument parsing
+f965b1e4b6b44514373bb2992035c5c0f36aa53b    IRRELEVANT  lxc/warning: Fix usage and comments
+7f53015538b5acccb93dd8a5675f12082ccddbf4    IRRELEVANT  i18n: Update translation templates
+56f65a40e5ebfcfbc5f3aa5bb490fb37e7df3dd2    FEATURE     lxd/project: Add AllowBackupCreation and AllowSnapshotCreation
+4738f205f8d00940f490b8120692f237bc120193    FEATURE     lxd/projects: Add restricted.backups and restricted.snapshots
+48084c12c113bc491a89148334496f97646e69bf    FEATURE     lxd: Support for restricted.backups and restricted.snapshots
+440a3677f5963e8cfa345d3a6d1d709bfacb96f8    FEATURE     api: projects_restricted_backups_and_snapshots
+79d79647ad8356978ee66ac64a8a6b745c9511d9    FEATURE     doc/projects: Add restricted.backups and restricted.snapshots
+41eac00a4715919a36b91937bffa0ca713e9860d    DIFFERS     doc/rest-api: Refresh swagger YAML
+c90e660f60bfef0bbd3fc0ddefd75f742cbe6364    DIFFERS     lxd/db/operations/types: Adds OperationClusterJoinToken type
+a0ec31e541b2e9721547f74cf31056ae49507d3e    DIFFERS     lxd/db/operations: Replace GetOnlineNodesWithRunningOperationsOfType with GetOperationsOfType
+d3dea9fa5f73448248c2eec1cb88be7c57ac4c34    DIFFERS     api: Adds clustering_join_token extension
+306769d4bc3fc3d803a49ce4296989fbc03c04fa    IRRELEVANT  i18n: Update translation templates
+c7d5b9bda21358ba8589270cd41e0b088b6a5290    IRRELEVANT  i18n: Update translations from weblate
+7f7a2c12afe971119a28e3a99876d1f5748f1ac0    IRRELEVANT  lxc/project: Use IEC units in info
+98753207bdc9f2aa2f3595982bd88532f44bea7d    DIFFERS     api: clustering_description
+83baea9240f662b15e1081e650ad4d3a6c7037c8    DIFFERS     lxd: Expose cluster member description
+a9ce0d444385e8495eb68d22b8fbc05758d80bef    FEATURE     lxc/cluster: Tweak cluster list, add description
+23596e2542f5f2d8c9ce8104b9e1a2ae6f79e829    IRRELEVANT  tests: Update for project info change
+0e88903d258e67b5cdaaf7c8b995b42dde944c13    DIFFERS     api: Adds description back for clustering_join_token extension
+b7b267dce200407418f2e8e47f140652fe82a172    DIFFERS     lxc: Add -f as shorthand for --format
+5ff45e701cb8805384a8ea010568979477b1adc5    FEATURE     Release LXD 4.14
+c6cdcad7c0aa8794080fb1e0b2f74e6456526e87    FEATURE     lxc/config_trust: Add type and name columns
+92d450b9f25a003f3420fef780d2f2a10799a914    IRRELEVANT  [Doc] fix description of PATCH warning in rest-api.md
+7080078e18410a807fe3515dd0308ecc80947a11    IRRELEVANT  tests: Update for trust list change
+822aa952a89beb9e7a9fb6c4cb12a90b3b117e91    IRRELEVANT  i18n: Update translation templates
+48e17555df67e3d7e36c4d5ccb44b8cfb8a97928    IRRELEVANT  [Doc] Fix remove duplicated sentences in doc/network-acls.md
+ecc14c2b2dd037ba8bbed7f2fb08431f406d337d    DIFFERS     lxd/daemon: Adds taskClusterHeartbeat var and populates it
+eae462329f7e878ab8c4753fbe96c03d4c05fef2    DIFFERS     lxc: Update interactive editor fail message to indicate ctrl+c can be used to abort change
+18a69f634de8f56d9be8690cf6b8430d077252a5    IRRELEVANT  i18n: Update translation templates
