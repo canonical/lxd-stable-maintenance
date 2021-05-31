@@ -1382,3 +1382,24 @@ ec3a18b5c22ac1dd8204994722a9db276f58351a    DIFFERS     doc/rest-api: Refresh sw
 af8ba5a51a6278d0edbeddb08ce4e6b0abfef490    FEATURE     lxd: Support for location in devlxd api
 1dfc7b298f9218585b9611372677d45a0cbe5971    FEATURE     lxd/instance/qemu: Support for location in writeInstanceData
 8fa11297132a0d740fbd3491d41f05d3b351158e    FEATURE     lxd-agent: Support for location in devlxd api
+30996190af7de85d87b0d0c93d6549c6275bf5fb    DIFFERS     lxd/instance/drivers/driver/qemu: Converts NICs to be added via QMP rather than static config
+df13a41876b9f536967803320982c06b740176b7    DIFFERS     lxd/device/nic/macvlan: SetMTU usage
+fe08fa97ed67933a5632f11fce328644c14159db    IRRELEVANT  lxd/network/driver/ovn: SetMTU usage
+204789ccbd47d67df66c4fb2db23ccc7575b8e7a    IRRELEVANT  lxd/network/driver/physical: SetMTU usage
+ff38a642cfdb1cf30415b622cfa5a8aea2c626b8    IRRELEVANT  lxd/network/driver/physical: Check that physical parent interface has no global unicast IPs configured on it before starting
+c9e9e63743e64009c40258dce870b97f4f5fa278    IRRELEVANT  lxd/network/driver/ovn: Updates startUplinkPortPhysical to check uplink has no global unicast IPs configured
+c9032a1b576f0414d9c797fef68e7ffba1767b7b    IRRELEVANT  i18n: Update translation templates
+7b1e8793c616a994699164df19b38928281f30d5    IRRELEVANT  lxd: Move ResolveWarningsByNodeAndType to separate package
+0300818f236258634345280c344596bcaad0da9f    IRRELEVANT  lxd/db: Add time skew warning type
+ca5facf9e31a664c829483ea105c438a40be16ab    IRRELEVANT  lxd/cluster: Add cluster time skew warning
+e749b3facfb89f1886fbc3fa5bf326818aeb619d    IRRELEVANT  lxd: Move warning creation to the end of init()
+d79efece0dba8d6897b9afa58918cef95d64dae0    IRRELEVANT  lxd/db: Add WarningAppArmorNotAvailable
+3da17b40bfe121416ad800104f20ed54980baefd    IRRELEVANT  lxd/sys: Have OS.Init() return warnings
+d9a5b599ae12d06f170197e7db7805df0ab10519    IRRELEVANT  lxd/sys: Add AppArmor warning
+99589959280c779203c8ab6f36c6718397698ce9    IRRELEVANT  Revert "lxd/network/driver/physical: Check that physical parent interface has no global unicast IPs configured on it before starting"
+ca0650d8749b51bb8e7cfb50502850321a7c3a17    IRRELEVANT  lxd/network/driver/ovn: Don't prevent the use of a physical uplink with IP addresses if the parent is a bridge
+359a7d168afebfea2bfe366ac9bb49036d5becc6    DIFFERS     lxd/device/disk: Rename reverter argument to revert in mountPoolVolume for consistency
+a48daae805428175dfd85e53730f393caa220723    IRRELEVANT  lxd/device/disk: Detect unsupported non-filesystem volumes for containers in mountPoolVolume
+ac53720527e854e2190b7dcbb3a6cadd3ed36a2f    IRRELEVANT  i18n: Update translation templates
+45960808a523e55734ef6ffea6c8ee9d0ae34979    DIFFERS     lxd/lxd: Record requestor as part of lifecycle events
+daee65e0e7ca60d33f18efb478c21eec1b636dbd    DIFFERS     lxd: Pass request to OperationCreate
