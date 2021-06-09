@@ -1403,3 +1403,58 @@ a48daae805428175dfd85e53730f393caa220723    IRRELEVANT  lxd/device/disk: Detect 
 ac53720527e854e2190b7dcbb3a6cadd3ed36a2f    IRRELEVANT  i18n: Update translation templates
 45960808a523e55734ef6ffea6c8ee9d0ae34979    DIFFERS     lxd/lxd: Record requestor as part of lifecycle events
 daee65e0e7ca60d33f18efb478c21eec1b636dbd    DIFFERS     lxd: Pass request to OperationCreate
+13a728ac5493725c410bac7c73dea0668d568513    FEATURE     lxc/publish: add --expire flag
+dd7c29d066f4d2a9409b14c97553c80754647bc3    IRRELEVANT  i18n: update translation templates
+5473104aace5ef7c9f0f1a951d6c1117f1f86310    IRRELEVANT  lxd/storage: Add swagger documentation for volume backups
+149f9351f98ff3a707a470b11e34ab4071049665    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+59b5fbb1b998a6f04efbfc08f6083032b09335dd    DIFFERS     lxd/storage: Fix operation type for snapshot rename
+36c6d50ce8d7f6a94cd62fd1850cc9b08b228fca    DIFFERS     lxd/swagger: Fix bad typing
+02b6af55de026f271ea3b37054912cb858b1910d    DIFFERS     lxd/storage: Add swagger documentation for volumes
+715121dfdcf607b154c5555015b22c3c9da6a403    DIFFERS     lxd/storage: Add swagger documentation for volume state
+d609c67be7edc380febcb2d20b7135cd8e740363    DIFFERS     doc/rest-api: Strip and point to swagger
+68b12da9c577bb06c2ac4318a6e5bfda07e4f59e    DIFFERS     doc/rest-api: Refresh swagger YAML
+74f93a62d841876d77e0f097675af7df04858cf8    IRRELEVANT  lxd/db/warnings: Adds UpsertWarningLocalNode helper function
+688fa2aebe6413e2ad8dba4c28e4a4ff711f200a    IRRELEVANT  lxd/warnings/warnings: Adds ResolveWarningsByLocalNodeAndType helper function
+ab8f76492e1660e0831528ea94c0af9e9b351562    IRRELEVANT  lxd/daemon: d.cluster.UpsertWarningLocalNode and warnings.ResolveWarningsByLocalNodeAndType usage
+5dc38fd5a4053cc2df0a973b52b914969a238dce    IRRELEVANT  lxd/cluster/gateway: Only create persistent warning for cluster time skew when cluster is operational
+259c4f99b89a2dd3016a2cef24152edf803faf40    IRRELEVANT  lxd/db/warnings: Convert Warning struct's TypeCode and Status to their custom types
+93e0726a2e920efc48c7663989dc1c8bfe84d141    IRRELEVANT  lxd/cgroup/init: db.Warning usage
+3026f47c27aaa071ee4ec9c0d947b939c6dc02ae    IRRELEVANT  lxd/sys/apparmor: db.Warning usage
+9615eeb327015e4d0f0bf1b698287d8ee2340f6b    IRRELEVANT  lxd/db/warnings: db.Warning field usage in UpsertWarning
+f36d1a5caf954db3922660edc5bc948ecacf366f    IRRELEVANT  lxd/db/warnings: Improve error in UpdateWarningStatus
+eb7f85ebe12c1bde503178933864663818f4d4d2    IRRELEVANT  lxd/db/warnings: Renames UpdateWarningMessage to UpdateWarningState
+d88b7e2b094e25bf53929ba872735ece268451e2    IRRELEVANT  lxd/db/warnings: Improve error in UpdateWarningState
+6c3ccec437bcc8249e2cd3b96a0a1f9cb0cf6c2f    IRRELEVANT  lxd/db/warnings: Switch to tx.UpdateWarningState and fix bug preventing reoccurring warning to reactivate resolved warning
+38dcf2a0b15fd621ebef58d6797ec6e6b355949c    IRRELEVANT  lxd/daemon: w.TypeCode usage
+8dc12ded641a82722e3b7b6766e27e2c04cc0e3a    FEATURE     lxc/remote: accept fingerprint as input on confirming new remote
+2d19038eddcc2d3007f7bdc1377b8f477464c4d9    IRRELEVANT  lxd/db: Add warning type WarningMissingVirtiofsd
+6cf7fe32bdca66219ea503f2bf50db7c9bad7b2e    IRRELEVANT  lxd/warnings: Add more resolver functions
+cc01987aa479e98515553080ff53ff145daba091    IRRELEVANT  lxd/instance/drivers: Add missing virtiofsd warning
+908d44d49e7797a107c564dfc20d151a3522b6eb    IRRELEVANT  lxd/device: Add virtiofsd warning
+2fc27dc6c0323ff0b9dc04c7b29254b801888376    FEATURE     lxd/main_init_interactive: accept fingerprint as input on confirming cluster join
+291cf67382da5203715721679cb37a8efa7ca315    IRRELEVANT  i18n: update translation templates
+90b07150af5bc9766d8fa9e791e95866d30bcb28    IRRELEVANT  lxd/main_init_interactive: replace empty validator for choosing cluster config with nil
+2788a73f388bacaf013ccf581482b57477f670aa    FEATURE     lxd/main_init_interactive: accept token as input on cluster join
+7ffe1dae19fb12e9932cece510d1d042a6f8d72f    DIFFERS     api: server_trusted_proxy
+eb7ed05eacfe440c437aa0255429629292d4df11    FEATURE     lxc/config_trust: Support stdin and allow name override
+e1059f929925f1ea36524ed9c8efc773044169fd    IRRELEVANT  i18n: Update translation templates
+61e60ab7846addf5087773cc1ecbf25fcf151d59    IRRELEVANT  i18n: Update translations from weblate
+dd46cb5f72e4b04d1aecb27f277738675d8c90a0    FEATURE     Release LXD 4.15
+5a244c97ae3fc93fadf3ef489346814031ad7c42    DIFFERS     lxd/instance/drivers/driver/qemu: Allocate 4 additional PCI slots for hotplugging in generateQemuConfigFile
+bcf09fd618565e06d08f32f250aec6d35c5629b8    DIFFERS     Remove white term
+2b587eacb9e09b5019a5f11a543197746b5c2677    DIFFERS     Remove sanity term
+5f19a991c6f1c08070f9d144befa6061d5c0ee2a    DIFFERS     Replace Sanity Checks with Quick Checks
+00f2088645b4515d4d8f9ce676178b501a081df8    DIFFERS     i18n: update translation templates
+bb02c6e663e9507b57ab96f9cc8cbc0f480e2ade    IRRELEVANT  lxd/db: Add UnableToConnectToMAAS warning
+0079a5d7a2cb8edfcb2018a4ea6fcda61fa8b0f7    IRRELEVANT  lxd: Add unable to connect to MAAS warning
+793ad22948be3f39486021820c4539cd7964089a    IRRELEVANT  lxd/db: Add WarningAppArmorDisabledDueToRawDnsmasq
+4033dee15b53ab2913474138c976c8c92ff8503a    IRRELEVANT  lxd/warnings: Add resolve and delete functions
+597412b9a20e7537c4666715e310ce6a0dc41aa4    IRRELEVANT  lxd/network: Add disabled AppArmor warning
+c1695ea762ba5a44830637961eb04470b83e96ef    IRRELEVANT  lxd/network: Delete warnings when bridge is deleted
+5322478e5f20d6299a2b708f8bad8c3f9a748945    IRRELEVANT  Revert "lxd/main_init_interactive: replace empty validator for choosing cluster config with nil"
+9cbe1128d6212f582cfdbc497e7816bc8cde390c    DIFFERS     lxd: instance.CreateInternal usage in tests
+f183b36ff7f526a1c615a8fb71faa7dc8faca76a    IRRELEVANT  lxd/db: Add WarningLargerIPv6PrefixThanSupported
+a56e8fb238e63146e6c33e209c6aa331313fbc44    IRRELEVANT  lxd/network: Create warning if IPv6 prefix is too large
+1c5db5e2b495c0170ccb18e93ac79194b3f61007    IRRELEVANT  lxd/network/network/utils: Fix error reporting bug in parseIPRange
+2a147af452bdb9393602a67d1eafeb80dc68adb8    IRRELEVANT  lxd/network/network/utils/test: Fix tests in Example_parseIPRange to work with Go tip
+d30dabe0aa577ae88d8860501eacd049599acede    DIFFERS     lxd/instance/drivers/driver/qemu: Switch to common MAAS handling functions
