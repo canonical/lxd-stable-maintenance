@@ -1465,3 +1465,6 @@ ca1d5e66dd6acc0c13ca6e77becd6bdf61659e54    IRRELEVANT  lxd/db: Add WarningProxy
 95d5450a7f7e39f133a725614c9e4515bec61368    IRRELEVANT  lxd/warnings: Add more delete functions
 a7ffcb6efdef40127cb2237a25e65dab0cd0a1eb    IRRELEVANT  lxd/device: Warn if netfilter is disabled
 d1369fb4526b6f23226e5275c89532cb7d10037e    DIFFERS     lxd: Use the new request package
+0093eccde66bf7124c2603612f4ea4d5c2d0e181    IRRELEVANT  lxd/db: Add WarningNetworkStartupFailure
+4171760ca662e6bce30b021f2093ba022142d071    IRRELEVANT  lxd/network: Warn on network startup failure
+7475a5cc900e0fcac6ac85a78c1f643065540214    IRRELEVANT  lxd: Delete warnings if network is deleted
