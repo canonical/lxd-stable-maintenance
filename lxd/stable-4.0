@@ -1458,3 +1458,10 @@ a56e8fb238e63146e6c33e209c6aa331313fbc44    IRRELEVANT  lxd/network: Create warn
 1c5db5e2b495c0170ccb18e93ac79194b3f61007    IRRELEVANT  lxd/network/network/utils: Fix error reporting bug in parseIPRange
 2a147af452bdb9393602a67d1eafeb80dc68adb8    IRRELEVANT  lxd/network/network/utils/test: Fix tests in Example_parseIPRange to work with Go tip
 d30dabe0aa577ae88d8860501eacd049599acede    DIFFERS     lxd/instance/drivers/driver/qemu: Switch to common MAAS handling functions
+9975de9c10ef9931aa69f8f35229f3c2e3361716    DIFFERS     lxd/init: Update for token based join
+743af8e283f2197d772b1fbfce8c2bf16e044e79    IRRELEVANT  lxd/instances: Fix requestor in bulk state changes
+ae3093323a6c1b46880fbdaee87afddec7c7e0b4    DIFFERS     lxd: Pass request around
+ca1d5e66dd6acc0c13ca6e77becd6bdf61659e54    IRRELEVANT  lxd/db: Add WarningProxyBridgeNetfilterNotEnabled
+95d5450a7f7e39f133a725614c9e4515bec61368    IRRELEVANT  lxd/warnings: Add more delete functions
+a7ffcb6efdef40127cb2237a25e65dab0cd0a1eb    IRRELEVANT  lxd/device: Warn if netfilter is disabled
+d1369fb4526b6f23226e5275c89532cb7d10037e    DIFFERS     lxd: Use the new request package
