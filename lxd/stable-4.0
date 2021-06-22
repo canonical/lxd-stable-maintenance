@@ -1468,3 +1468,25 @@ d1369fb4526b6f23226e5275c89532cb7d10037e    DIFFERS     lxd: Use the new request
 0093eccde66bf7124c2603612f4ea4d5c2d0e181    IRRELEVANT  lxd/db: Add WarningNetworkStartupFailure
 4171760ca662e6bce30b021f2093ba022142d071    IRRELEVANT  lxd/network: Warn on network startup failure
 7475a5cc900e0fcac6ac85a78c1f643065540214    IRRELEVANT  lxd: Delete warnings if network is deleted
+f70e47d99f9961963b2fd0ff8409e4812b4db64d    DIFFERS     lxd/firewall/firewall/interface: Adds parentManaged arg to InstanceSetupBridgeFilter
+fad5e90dd7a25a2292531a6a590e767152d18e6d    IRRELEVANT  i18n: Update translation templates
+9c9560698ff06743f6328bf3f7081ff640571cb3    DIFFERS     i18n: Update translation templates
+489e05e66685cb726eeaae4a9ace2dc90e97628e    DIFFERS     lxd/main/init/interactive: Use validate.Optional in askClustering
+6c0b11e1d570a65b85c123436fbb7b7231ca954f    DIFFERS     lxd/api/project: validate.IsOneOf optional usage
+3536af36f23c8de09777e958ea5f22cdebf1d179    DIFFERS     lxd/network: validate.IsOneOf optional usage
+f3cd3aa6fe6f09adef94eefc33b58716b77fc70e    IRRELEVANT  lxd/cluster/config: Wraps images.default_architecture with validate.Optional due to IsOneOf change in IsArchitecture
+cb416c8f3d29a663f9ad8e49060aeedd64e1ca13    IRRELEVANT  lxd/db: Add WarningOfflineClusterMember
+ac22775dc33de60409cb1f104e69c56f1ae426dd    IRRELEVANT  lxd/cluster: Add warning around heartbeat
+600cb4235b83cd550722f33209e744a7c9b4598c    DIFFERS     lxd/device/nic: Return -1 for Mtu in State() for bridged and ovn NICs if host interface not available
+d55b049256ea84ef721779f227b01857f89c78cd    IRRELEVANT  lxd/patches: Fix duplicate warnings
+395dd810e9b1a12ec57e975555db3e8d8594b77e    IRRELEVANT  lxc/warning: Introduce defaultWarningColumns
+a8a62b66948d1deb3351addf5035eba4ac068baa    IRRELEVANT  lxc/warning: Hide location if not clustered
+ee4500388bdecf7a6186c2eeef2e11936f17391a    FEATURE     lxd/db/cluster: Rename "pending" to "state" in nodes table
+62d86757e73037ab49cfd59698a80ed53bfe647f    IRRELEVANT  lxd/db: Use node's new State
+836919d1846d8d8c0f37bc469520a66faeebe214    DIFFERS     lxd/daemon: Usage of instanceDrivers.SupportedInstanceTypes() in State() and init()
+f88d278fa98ef8763c63e68ed085700f4caa334d    IRRELEVANT  lxd/db/cluster: s/pending/state/
+27c0dbd35f7502f90da9bedffb7f696f63220640    IRRELEVANT  lxd/patches: s/pending/state/
+e17427c6ded8fd09359a02f282bfe28f7f2719ea    DIFFERS     lxd/instance: Removes instanceDriversCacheVal and supporting functions
+05be585022a45590a68b3b28f78179ab0d941106    DIFFERS     lxd/backup/backup/instance: expose instance interface
+f8c0d5ad712f9c258f4b278da66abf983e0a19b7    DIFFERS     lxd/network/driver/common: use NetworkAction for lifecycle events
+8422eb77ddc7b1268709c773956ee87c1d429388    DIFFERS     lxd/instance/backup: handle InstanceBackupRetrieved lifecycle event
