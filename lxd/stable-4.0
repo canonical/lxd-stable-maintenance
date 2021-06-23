@@ -1490,3 +1490,10 @@ e17427c6ded8fd09359a02f282bfe28f7f2719ea    DIFFERS     lxd/instance: Removes in
 05be585022a45590a68b3b28f78179ab0d941106    DIFFERS     lxd/backup/backup/instance: expose instance interface
 f8c0d5ad712f9c258f4b278da66abf983e0a19b7    DIFFERS     lxd/network/driver/common: use NetworkAction for lifecycle events
 8422eb77ddc7b1268709c773956ee87c1d429388    DIFFERS     lxd/instance/backup: handle InstanceBackupRetrieved lifecycle event
+ff9be626ea9a0a5bb4e5612dd4141b233a75c91a    DIFFERS     lxc/config/trust: workaround for subcommand errors
+87d86338b33e314f7a48b1af60c852500a7869aa    DIFFERS     lxc/image: workaround for subcommand errors
+3888bfab292ee29eb14770a9a0aa964c584b1eb1    DIFFERS     lxc/network: workaround for subcommand errors
+22f5c149aa71babc6649e811f6ec01c9165d5c80    IRRELEVANT  lxc/network/acl: workaround for subcommand errors
+1fe24f4b8b1864ea85c325188f920110bf230dd3    IRRELEVANT  lxc/warning: workaround for subcommand errors
+cbe7a9d9efd5259fb6f03cbca9f69236b4b830f8    DIFFERS     lxd/firewall/drivers/drivers/xtables: Don't use ebtables --concurrent flag
+b4e1b16b1267ad40236555382ff84489fc590ddf    DIFFERS     lxd/api/project: handle ProjectCreated lifecycle event
