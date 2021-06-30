@@ -1497,3 +1497,20 @@ ff9be626ea9a0a5bb4e5612dd4141b233a75c91a    DIFFERS     lxc/config/trust: workar
 1fe24f4b8b1864ea85c325188f920110bf230dd3    IRRELEVANT  lxc/warning: workaround for subcommand errors
 cbe7a9d9efd5259fb6f03cbca9f69236b4b830f8    DIFFERS     lxd/firewall/drivers/drivers/xtables: Don't use ebtables --concurrent flag
 b4e1b16b1267ad40236555382ff84489fc590ddf    DIFFERS     lxd/api/project: handle ProjectCreated lifecycle event
+4b39492fa46be9b89463a84ad63b7b98ab94e248    DIFFERS     lxd/storage: Support for copy/move custom storage volume between projects
+4fc410545637e22f1b4131f4393c0af2afc1d3b6    DIFFERS     lxd: Support for copy/move custom storage volume between projects
+15e4da8e2a2b504dee6522bd56cec3e9c9af7d2e    DIFFERS     i18n: Update translation templates
+87ef4163e3deee859d3f49c12c1188e3835c7f92    DIFFERS     lxd/api/project: create requestor for lifecycle event
+be1dcfba31a4e69feb7dfb8d6668e1dd9f0af364    DIFFERS     lxd/network/driver/common: remove create function and references
+1cea390cae344cda997d079674aab4b60863e720    IRRELEVANT  lxd/network/driver/ovn: remove create references
+56a7ea91dbe19b22a0989b58aa007ac46a476caa    IRRELEVANT  lxd/network/driver/physical: remove create references
+1b6a1ccaf827b136e5054ab8207549be08ecf9ad    DIFFERS     lxd/network/driver/common: remove lifecycle event handling
+72c9e71376522fe214a190647c33eb98ec2013ad    DIFFERS     lxd/networks: use clusterRequest alias for lxd/cluster/request package
+ed56b263032dffdcf8ac4662e47698f3f1965166    DIFFERS     lxd/networks: add network lifecycle event handling with requestor
+2d5da083f6f33c59c8a357dd1b57f7f90e003372    IRRELEVANT  lxd/warnings: Add instance autostart failure
+2c34ef840ad7dc6892b70af1e2708bf1da94ee61    IRRELEVANT  lxd/instances: Create persistent warning
+f836e230b75b0b534bec888559bce94da2fcd88e    DIFFERS     lxd/instances: Rework instancesRestart
+e968d6450a6e45d1019255a6c6f477e1849a4027    DIFFERS     lxd/images: handle ImageDeleted lifecycle event
+cdef805c5c006533c5af717e438e5043af5d4cea    DIFFERS     lxd/images: handle ImageRetrieved lifecycle event
+a07db7a15887907aba2894373a677c5b56ed07fa    IRRELEVANT  lxd/images: handle ImageSecretCreated lifecycle event
+e233bb1e99ab371c6b9567db9fb2238b1f0d2e2e    DIFFERS     lxd/main_init_interactive: only ask for server host name when no joining token was provided
