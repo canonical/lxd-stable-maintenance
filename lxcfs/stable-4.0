@@ -1,2 +1,9 @@
 6cc153e698cc2f8e7cd356d0e6da1f89e8fa984e    FEATURE     proc_fuse: add /proc/slabinfo with slab accounting memcg
 ce554964ff34b635b037293e62a0f12c654f0953    DIFFERS     Determine the file size from the current system file size
+26b717d0849ba9f315f5e3ba5000c8e99bc282b5    FEATURE     sys: virtualize /sys/devices/system/cpu/cpu0 /sys/devices/system/cpu/cpu1 /sys/devices/system/cpu/cpu2 /sys/devices/system/cpu/cpu3 /sys/devices/system/cpu/cpu4 /sys/devices/system/cpu/cpu5 /sys/devices/system/cpu/cpu6 /sys/devices/system/cpu/cpu7 /sys/devices/system/cpu/cpufreq /sys/devices/system/cpu/cpuidle
+d9c820eeae8874f34026dee50c54793627701a35    IRRELEVANT  sys: rework get_st_mode()
+791adfe130cb3b7d1bb7f27818ac2b4207f105d1    FEATURE     lxc.mount.hook: adapt to new /sys/devices/system/cpu virtualization
+76a883b0d4e48d3d93c4b0105884d29007b3b662    IRRELEVANT  sysfs_fuse: create proper directories
+0d5383b73c6e03c677b92471bb3b33afe9e952b2    IRRELEVANT  sysfs_fuse: account for liblxcfs reload with identical lxcfs binary
+50c32b5e21bbf3a1cde437d0564f03dd18695b91    FEATURE     lxc.mount.hook: make shellcheck clean
+427caeddd86ad8f222deb4c624d91d24eff2d4a5    FEATURE     lxc.mount.hook: reduce calls to basename
