@@ -1514,3 +1514,37 @@ e968d6450a6e45d1019255a6c6f477e1849a4027    DIFFERS     lxd/images: handle Image
 cdef805c5c006533c5af717e438e5043af5d4cea    DIFFERS     lxd/images: handle ImageRetrieved lifecycle event
 a07db7a15887907aba2894373a677c5b56ed07fa    IRRELEVANT  lxd/images: handle ImageSecretCreated lifecycle event
 e233bb1e99ab371c6b9567db9fb2238b1f0d2e2e    DIFFERS     lxd/main_init_interactive: only ask for server host name when no joining token was provided
+4704220d78c06c402352dff14b7e273731318dd0    DIFFERS     lxd/instances: Fixes potential crash in instancesRestart and improves logging
+86a57cee814a2bb5a06d1332c870c41b43051300    DIFFERS     lxd/device: Use ip package instead of 'bridge' command
+fb45b0a9533201bf5a6314050409796fa0b7a480    DIFFERS     lxd/device/nic/bridged: Apply managed network validation checks when parent is set to a managed network
+f1ab348caaaceab039452943dccf84534d173fc2    IRRELEVANT  lxd/daemon: Warn if warnings cannot be created/resolved
+7a37a8b2b0a0ce8521cfd320f571ac086ddff97a    IRRELEVANT  lxd/db/warnings: Improve context in warning unknown entity errors
+5eeaa52030e9558b64609abb75b0ad9892e5313e    IRRELEVANT  lxd/db/warnings: Don't fail on failure to generate entity URL in ToAPI
+e326d63aed4b6331aa71d71c5a7d65ffd0d7eb1f    IRRELEVANT  lxd/db/entity: Use InstanceFilterAllInstances in GetURIFromEntity
+e5ffc7a4fa91ac135027a093c741068a05801a65    IRRELEVANT  lxd/db/warnings: Improve error in UpsertWarning
+ffe6a7f7bc3f61176e1ef19c8d513dfae658038e    IRRELEVANT  lxd/db/warnings: Add DeleteWarningsByEntity function
+5a9d48e7bbd5799bd94924dc881e79a1e3bc9f32    DIFFERS     lxd/device/nic/bridged: Add checks to validateConfig for existing NICs with same IPs specified
+6932eec8e9db16b8fbb32f245e8044eb0e0999a1    IRRELEVANT  lxd/instance/drivers/driver/common: Adds warningsDelete function
+61ccf382bd5e362b27f0994b6e36d76433f3e169    IRRELEVANT  lxd/instance/drivers: Delete instance related persistent warnings on instance delete
+352eeea389aee0b6d0f6818c840539510bfa2c0f    DIFFERS     lxd/storage/volumes: use empty operation with SetRequestor instead of nil
+e1544fa4952e6160d48cc340520b3b62c35868cd    DIFFERS     lxd/storage/backend/lxd: handle StorageVolumeCreated lifecycle event
+b141d58c7ef73948cb7759d29ddca800c682c02e    IRRELEVANT  lxd/lifecycle/storage/volume/backup: add storage_volume_backup
+42d11ff1df86376a7d6cc393751dbbb0541d2d19    IRRELEVANT  lxd/storage/volumes/backup: handle StorageVolumeBackupCreated lifecycle event
+210660392aedf03a116277b5bc09bb97b193682b    IRRELEVANT  lxd/storage/volumes/backup: handle StorageVolumeBackupRenamed lifecycle event
+18ce261049612fc456c14a85005305dca6c951f5    IRRELEVANT  lxd/storage/volumes/backup: handle StorageVolumeBackupDeleted lifecycle event
+1034e93fd2ed4635dc624355c41580b26c97f131    IRRELEVANT  lxd/storage/volumes/backup: handle StorageVolumeBackupRetrieved lifecycle event
+660cdb40da33db6da1f80fedc1c29c8ee8dff9bc    DIFFERS     lxd/storage/backend/lxd: handle StorageVolumeUpdated lifecycle event
+f6f7e1904f0e76256047edf98732abbd175fe66c    DIFFERS     lxd/storage/backend/lxd: handle StorageVolumeSnapshotUpdated lifecycle event
+8b3e34b527b561ef5091f5788d7610c223e67f1b    DIFFERS     lxd/device/nic/bridged: Improve performance of duplicate IP check in validateConfig
+46d1005dd1d8084d69380cb46af1fd53ca336bc9    DIFFERS     test: Adds tests for duplicate static DHCP assignment
+a9147aca027a9ca34e5542d052dd265d8049fc81    DIFFERS     lxd/device/nic/bridged: Check for duplicate MAC address in validateConfig
+89ce1b98c272ef475f0a61f710e26c25e7215e83    IRRELEVANT  lxd/lifecycle/network/acl: add network_acl
+b9c948ec1df79e3a29d925f94ccbf4336d6a489f    IRRELEVANT  lxd/network/acls: use clusterRequest alias for lxd/cluster/request package
+112fdc7a42ea30ca2035b53f1661e554bc81bbc4    IRRELEVANT  lxd/lifecycle/warning: add warning
+f26555791e59c40149d08463e8bfef33742e6c23    IRRELEVANT  lxd/warnings: handle WarningAcknowledged and WarningReset lifecycle event
+8630a405e342b4d0028ccb219e40dde4f39a866c    IRRELEVANT  lxd/warnings: handle WarningDeleted lifecycle event
+f6d2ec0d0f5b5b27305f2a8782f648a587a11a52    DIFFERS     doc/production-setup: ulimits tuning doesn't apply to snap users
+363d4efbd28b42751b31c00f08c73455b4f24657    IRRELEVANT  lxd/network/acls: handle NetworkACLCreated lifecycle event
+5ddeb6d5a022526487ff2330f74bb448790b4e5e    IRRELEVANT  lxd/network/acls: handle NetworkACLDeleted lifecycle event
+f0cd371097158da8434784bf622367335ee1c483    IRRELEVANT  lxd/network/acls: handle NetworkACLUpdated lifecycle event
+7e127d4e3abecc3c8b65e02be151e42e60064b15    IRRELEVANT  lxd/network/acls: handle NetworkACLRenamed lifecycle event
