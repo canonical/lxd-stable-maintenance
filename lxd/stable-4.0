@@ -1548,3 +1548,21 @@ f6d2ec0d0f5b5b27305f2a8782f648a587a11a52    DIFFERS     doc/production-setup: ul
 5ddeb6d5a022526487ff2330f74bb448790b4e5e    IRRELEVANT  lxd/network/acls: handle NetworkACLDeleted lifecycle event
 f0cd371097158da8434784bf622367335ee1c483    IRRELEVANT  lxd/network/acls: handle NetworkACLUpdated lifecycle event
 7e127d4e3abecc3c8b65e02be151e42e60064b15    IRRELEVANT  lxd/network/acls: handle NetworkACLRenamed lifecycle event
+1c274c0dffda53b01fb3b600f8717712912bd6ae    IRRELEVANT  i18n: Update translations from weblate
+5fb4c06e0093a55daee17de2f8ca6891144ced03    IRRELEVANT  lxd/lifecycle/network/acl: include object in source for created lifecycle events
+98484b33c3b30ce0aa30805c2ba6cdcfc3753ab0    FEATURE     Release LXD 4.16
+09ee6d0823440e68d28fea8062339a6943bc4d14    DIFFERS     doc: add events.md
+638444a96ea716774ace691ed4f7f5e2a48cd302    IRRELEVANT  i18n: Update translation template
+f4e6d43d9ca1e8c444a70d83af7fe1e21d3f7063    IRRELEVANT  lxc/list: Use EqualFold for case-insensitive compare
+a1f413d829bcb4ff98781d20fe697be03eac8e24    DIFFERS     lxc: Make staticcheck happy
+6320d09ce65be9320a6a6373ea73543879b652d7    DIFFERS     lxd: instance.CreateInternal usage
+7f3d31a973b8b12040fd27f182c16986f7150dbf    DIFFERS     lxd/db/certificates: add new entries for code generation
+dd88aec0e69a3e72dee63efd35bf6a5ad6cfb613    DIFFERS     lxd/db/certificates: remove old DeleteCertificateByNameAndType
+462ae0fc7354ec65177893f4655605cb3f7bda24    DIFFERS     lxd/db/certificates.mapper: add new generated code
+64a6110af5d0ce54f8e291e9440473df20cc415d    DIFFERS     lxd/db/operations: remove hard-coded functions
+ec88fb303b9fb1b1d564918ea9786c05c6e7829e    IRRELEVANT  lxd/db/entity: use filter parameter for generated operation methods
+79a40914d19c3d51feea83af220b2be0efa4e5b4    IRRELEVANT  lxd/device/nic/bridged: util.SplitNTrimSpace usage
+ea27b0837a29a06814abc2afcec5ba747d9b8599    IRRELEVANT  lxd/device/nic/bridged: Improve vlan tagged error message
+d1954baa5eb0e1812f03d7994b980343db953a13    IRRELEVANT  lxd/device/nic/bridge: Validate that vlan and vlan.tagged dont use VLAN 0 when using a managed native linux bridge
+cf01f823eba9331266ee4b673fb338daf306132a    DIFFERS     lxd/device/nic/bridge: Extend parent network exclusions for duplicate MAC/IP checks
+7b96afab59ae1bdc278a494a9b8d2f18fef73d09    DIFFERS     lxd: instance.CreateInternal usage in tests
