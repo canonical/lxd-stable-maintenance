@@ -1566,3 +1566,5 @@ ea27b0837a29a06814abc2afcec5ba747d9b8599    IRRELEVANT  lxd/device/nic/bridged: 
 d1954baa5eb0e1812f03d7994b980343db953a13    IRRELEVANT  lxd/device/nic/bridge: Validate that vlan and vlan.tagged dont use VLAN 0 when using a managed native linux bridge
 cf01f823eba9331266ee4b673fb338daf306132a    DIFFERS     lxd/device/nic/bridge: Extend parent network exclusions for duplicate MAC/IP checks
 7b96afab59ae1bdc278a494a9b8d2f18fef73d09    DIFFERS     lxd: instance.CreateInternal usage in tests
+a1fcd000d099eb7a456580ef0b16ccf2f50bfdc9    DIFFERS     i18n: Update translation templates
+b54ed10192959e1fc9140d1e90d9b01673d0a1b1    IRRELEVANT  i18n: Update translations from weblate
