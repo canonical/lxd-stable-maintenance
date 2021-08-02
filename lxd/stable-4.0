@@ -1568,3 +1568,52 @@ cf01f823eba9331266ee4b673fb338daf306132a    DIFFERS     lxd/device/nic/bridge: E
 7b96afab59ae1bdc278a494a9b8d2f18fef73d09    DIFFERS     lxd: instance.CreateInternal usage in tests
 a1fcd000d099eb7a456580ef0b16ccf2f50bfdc9    DIFFERS     i18n: Update translation templates
 b54ed10192959e1fc9140d1e90d9b01673d0a1b1    IRRELEVANT  i18n: Update translations from weblate
+3268ad2f0e6aea0bad486d0b90d8340694487da9    DIFFERS     lxd/main/init/interactive: Update usage of CLI asker functions to handle errors
+0430b55094d0ccc51954707d862c4527bf8a822f    DIFFERS     lxd: Switch to new IsOneOf
+3042104bd5ddabb6ddad563d910586f71daad9c1    DIFFERS     lxd/storage/utils: Adds VolumeTypeToAPIInstanceType function
+856fa7d31329899cbd3598158304c5a81cac7060    DIFFERS     lxd/storage/pool/interface: Add ListUnknownVolumes definition
+caeb5b39f2b209d790fd323850c0733f5d333e02    DIFFERS     lxd/storage/backend/lxd: Adds ListUnknownVolumes function
+b9bc4dfb702af6918253a516d06a153dd84a32c7    DIFFERS     lxd/storage/backend/lxd: Adds ImportInstance implementation function
+09da0e1323f94d70f03fc69a9161edb5203c119f    DIFFERS     i18n: Update translation template
+45940ff55a9f5f0e7c20d76d5f9ecdf3b47eddd1    DIFFERS     lxd/api: use db.Project instead of api.Project
+55b6a64c82d79f56a78acab9cca03f1721da4e12    DIFFERS     lxd/device: use db.Project instead of api.Project
+9fbef90c74087f6dbec03992321d246bba490fe4    IRRELEVANT  lxd/images: use db.Project instead of api.Project
+853a69028dee9a206205f8bfbc65772450ad417f    DIFFERS     lxd/device: use db.Project instead of api.Project
+786b8936c9a89cd46e228eba39f2c63b787d4414    DIFFERS     lxd/project: use db.Project instead of api.Project
+64d30982100706261c1c3c7ac35f60844742c85a    DIFFERS     lxd/db/certificates: add CertificateType for type of certificate
+4bfe6a9a7a5f28d944e0c13453cd03fed579bdf7    IRRELEVANT  lxd/certificates: use CertificateType instead of int
+70911d8250d9310019595ca17765e645c8a823c6    DIFFERS     lxd/db/mapper: generated code
+e84b024e4f560011f5b79de60db9cda8ca10eaf8    IRRELEVANT  i18n: Update translations from weblate
+baf89a71e21a57e3ead26744c2a44f7735327843    DIFFERS     lxd/device: filesystem.Detect usage
+36f7681f604252bc7e01f6e4060ad2a2387cc7a6    DIFFERS     lxd: filesystem.Detect usage
+f0800a911a6d1971fc9e87e852de8b02a05905de    DIFFERS     lxd/sys: filesystem.Detect usage
+0353d7a2e147bb6ec5c20f7ae1c153fa219036a0    DIFFERS     lxd/daemon: filesystem.IsMountPoint usage
+3d78d3d5179837605af488a064572bedea93e62d    DIFFERS     po: Update translations
+427abf4ce1348d7a28afbb044bd4ce385d079cfb    IRRELEVANT  lxd/backup: Only write snapshot only name to backup index in volumeBackupWriteIndex
+f331799f01e41e19d68eb1e16b7c54903c1ea666    IRRELEVANT  lxd/storage/backend/lxd: Handle both old (incorrect) <parent>/<snap> and <snap> only names in index file in CreateCustomVolumeFromBackup
+50876175746319e39d909e75bcc02e2f43964ed5    DIFFERS     lxd/api/internal/recover: Add custom volume support to recover feature
+8e5e4b0bb833d078a2955599854601ffc8542947    DIFFERS     lxd/instance/drivers/driver/qemu: Remove isImport TODO consideration as lxd import doesn't exist anymore
+d5cb5434aae291e932fa79882ff99fa143d39a29    IRRELEVANT  lxd/storage/backend/lxd: Fix type in comment in CreateCustomVolumeFromBackup
+2939506cfd1b3cce5e6a7f7f1982fbe280bf0df9    FEATURE     lxd/db: Add ClusterMemberStateEvacuated
+08fae365e6e5b459cc9ec855ff7c98b29fc20197    FEATURE     lxd/db: Add function to change node status
+cc735efd878b0fd60a0edf8c68fb592bb35fe91c    FEATURE     lxd/db: Ignore evacuated cluster members in GetNodeWithLeastInstances
+ab138e1b482ea4b72a551d8d5650d7794cce15f2    FEATURE     lxd/db: Include evacuated nodes and mark them accordingly
+8b61ccbcb4d631651a0b5427a9d2331a0404f398    FEATURE     lxd/db: Add OperationClusterMemberEvacuate and OperationClusterMemberRestore
+9091074bd1216719c2dfdfe126697c6e71386c8d    FEATURE     lxd/db: Add LocalNodeIsEvacuated
+992f2662b88604da22cfd640108edd21c6da5971    FEATURE     shared/instance: Add evacuation options
+ff23c1a9cb330eb0a14e036e985470e0717f75c0    FEATURE     lxd/instance/drivers: Add IsMigratable
+66ee0846287423a313c9bd540ceec4d1e2ed62c8    DIFFERS     lxd: Add migrateInstance function
+1a5b139adde6ee21e8369e01fccfd0178bd60cbd    FEATURE     lxd: Add /1.0/cluster/member/{name}/state
+679f640b08de2ccefcf8c2a23d5b930513890b69    FEATURE     lxd: Restrict operations on evacuated nodes
+1fa825aa023336c5f6882239e67bd35228647953    FEATURE     api: Add clustering_evacuation
+49181a6ac4542d084e841bafc4d0c2dae9c182af    FEATURE     lxc: Add cluster {evacuate,restore}
+23306c8b2ebb572f853980a2cd38cab6d093f7dc    FEATURE     doc/rest-api: Refresh swagger YAML
+a9a86ecf2643305a588ad5aaceb1a184ee9ed82f    FEATURE     doc: Mention new evacuation settings
+7033d464b9c7f26c95d8f94f7f38130bba6a8712    FEATURE     test/suites: Add evacuation tests
+afdd32e8d148d87d4b005478f280477821f8b299    DIFFERS     test/suites: Clean up clustering_image_refresh
+b3ac8b6bbf75729d875776ed73bcc821c9c94cad    IRRELEVANT  po: Update translations
+9a44f96e2ccc2d05cf0266dc51238dfd22d6cdbf    FEATURE     doc/clustering: Mention evacuate/restore
+667fa50cc4fa6f590dfe118b1d0addf1f988f9b6    DIFFERS     lxd/db/generate/db/method: use operations to parse method kind
+77d6cc9ebb26f888061c0d06afcb36ac35fae97c    DIFFERS     lxd/db/generate/db/method: use new Field argument parsing
+e17619a82624705a97afb80645521ce79fa83661    DIFFERS     lxd/db: use -by- fields for delete generation comments
+8af01f9c9907c345528889ea298a0cb19918064d    DIFFERS     lxd/api/internal/recover: Search unknown volumes list for any instance volume and use that for pool DB recovery
