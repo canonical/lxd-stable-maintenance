@@ -1617,3 +1617,175 @@ b3ac8b6bbf75729d875776ed73bcc821c9c94cad    IRRELEVANT  po: Update translations
 77d6cc9ebb26f888061c0d06afcb36ac35fae97c    DIFFERS     lxd/db/generate/db/method: use new Field argument parsing
 e17619a82624705a97afb80645521ce79fa83661    DIFFERS     lxd/db: use -by- fields for delete generation comments
 8af01f9c9907c345528889ea298a0cb19918064d    DIFFERS     lxd/api/internal/recover: Search unknown volumes list for any instance volume and use that for pool DB recovery
+13f76a838038b66861d0f9eb2b1d89cf9c65c58a    IRRELEVANT  lxd/device/disk: Update comment regading custom block volumes
+d0d6323188b8033152642cf18f8a7f2fe23bb889    DIFFERS     lxd/device/disk: Check path property for filesystem volumes
+4eecb89ea5e5130505184dd4dd32ed5b42b51a42    IRRELEVANT  lxc/storage: Allow attaching custom block volumes to VMs
+bf981412a62f96fb9cf9614fb0df68eda911e2c7    IRRELEVANT  po: Update translations
+1b0eca32550cc03ab95c29629cafbcbb557be2d3    IRRELEVANT  lxd/instance/post: instance.MoveTemporaryName usage
+ab7403520fb6caed96409773104723910d448125    IRRELEVANT  test: Update container local cross pool handling to test for duplicate NIC check handling
+35340ff59661ffe47091a7991307940d5dfdb487    FEATURE     lxc/info: Improve output
+ba5f0cdfc22397fad8ee11f907ed5a8962c07808    FEATURE     lxc/info: Rework network information
+3a44697517bea9c0878ccc824bd4818f3ddcbb13    FEATURE     lxc/info: Move to IEC units
+fd0babff7d459e9714a0be2bc8584d55a6f1a114    IRRELEVANT  i18n: Update translation template
+a1d5d5a857afaed7d0833d27d7a5138b58ecc65c    IRRELEVANT  tests: Update for lxc info changes
+7880a1ae23729c4f0b310be2c523ce1e72919513    IRRELEVANT  i18n: Update translations from weblate
+1c1f1e165c27a8ea05c9d7cd9567b803a6ab2e37    DIFFERS     lxd/instance: CreateInternal operationlock usage
+aa0d7b9ecd8b4e79c58278a52bf80b4430bbed5c    DIFFERS     lxd/instances/post: CreateInternal operationlock usage
+c4aa6edd1d99fb3e67c7c7ce877693bd2020b1cd    DIFFERS     lxd: Update tests for CreateInternal usage
+f723f42eae177f806cbc91fe37bbd5690f3bf410    DIFFERS     lxd/db/mapper: update generated code
+3c9b60ed82fc3e9b61a38a80447f71c3a87df27e    IRRELEVANT  lxd/firewall/nftables: Clarify comment
+629ea6d131643c3bff3b692813a7adc57d29e8d7    DIFFERS     lxd/db/mapper: update generated code
+dd6c33ffc05387ae3b92f81e07cbbb8b072292a5    DIFFERS     images: use pointers for ImageFilter
+0665a6aec34289741178a93222b791e9e20210d1    DIFFERS     operations: use pointers for OperationFilter
+eb59597049f4ceeb716f3eb79611923da79125da    DIFFERS     instances: use pointers for InstanceFilter
+7f23c41359ed28b17e572ee81e5d283b934652aa    DIFFERS     lxd/db/certificates: add manual query for fingerprint with wildcard
+e477382c6ec95c1737c642c9c5fec121377f57a0    DIFFERS     lxd/storage/pools: use ImageFilter for GetImages args
+7744894415698d0897c512a0ee6df95d19f2ee1f    FEATURE     Release LXD 4.17
+2173bc1bc21b61f4906b47d733294425cb9d2cee    IRRELEVANT  lxd/instance: Don't allow state changes when evacuated
+6d1c9e676a5fb6ad64cf04d84ae57b7229149d0b    IRRELEVANT  lxd/daemon: Don't auto-start instances when evacuated
+c7f9f43465efbbcc7434decf53a7dcd06153d343    IRRELEVANT  lxd/instance: Rework IsMigratable
+8c7f08217bec061771e53228cad097e39ecf9dac    DIFFERS     lxd/device: Add CanMigrate
+46b174bf435944e35fa781ed9653a5100b026b7b    IRRELEVANT  lxd/instance: Move IsMigratable logic to devices
+93bc5f414f386cc5de49381c0096af317a2e92cc    IRRELEVANT  lxd/cluster: Fix volatile race in restore
+e93766d427e034b53abfffb44eb71060934be66d    IRRELEVANT  tests: Fix expected clustering evacuation result
+8d7fc9760284c88d8c8ee9c80ff70b64a3d153ef    IRRELEVANT  i18n: Update translations from weblate
+ef8d9a022edffd32bf93391ca04e5bc2ef1558ba    IRRELEVANT  lxd/cluster/evacuation: Improve comments
+dcf16e379f72b44c006197313e46969e150a57cc    IRRELEVANT  lxd/cluster/evacuation: Use correct project in migration
+a34519755060297fd6eb65f0fa63e7a027a1fbb9    IRRELEVANT  lxd/cluster/evacuation: Don't start running instances
+e96e5aa2cd1bcfdddd0f470d820926c6075e1b0b    IRRELEVANT  lxd/cluster/evacuation: Improve status messages
+ead628804c92340a924bb21e8b7eabbedc49ba16    IRRELEVANT  lxd/cluster/evacuation: Fix shutdown during restore
+d38d63ba028425ec0635bca1477ecd4c92448eed    IRRELEVANT  lxd/cluster/evacuation: Start with restoring local instances
+683ae6db9fa83e519613e97da4073de645b30781    IRRELEVANT  lxd/network/driver/ovn: Error quoting in Validate
+e7dc17569056ae83205847c8d2dac8b750dcfc5b    IRRELEVANT  lxd/network/driver/ovn: Adds externalSubnetUsage type
+5874ac05cd55bc1e2bac1cddee1c4ee20ec1f4e5    IRRELEVANT  lxd/network/driver/ovn: Improve comments in Validate
+9f515eb424a1523f23fcd397ba22d51c8efdd539    IRRELEVANT  lxd/network/driver/ovn: Update ovnNetworkExternalSubnets to return externalSubnetUsage
+7655b9512c30a4955bf236a98b87fc6ded3e396c    IRRELEVANT  lxd/network/driver/ovn: Updates ovnNICExternalRoutes to return externalSubnetUsage
+f3448d8ffd429b3502b3c71570496a744354f2c6    IRRELEVANT  lxd/network/driver/ovn: Adds getExternalSubnetInUse function
+b7e8bbeda9222b1fd8eecb6ae240ddbf3c92aa6c    IRRELEVANT  lxd/network/driver/ovn: n.getExternalSubnetInUse usage in Validate
+7ddded10a07b66803960a6fe160e5bd70a924d75    IRRELEVANT  lxd/network/driver/ovn: n.getExternalSubnetInUse usage in InstanceDevicePortValidateExternalRoutes
+c7876ee17445aa2ad9b00caa52eeeede59f47a08    IRRELEVANT  api: Adds network_ovn_nat_address extension
+c5e651fe46231576cac9c78e69f0b96639e4b419    IRRELEVANT  lxd/network/driver/ovn: Adds network external NAT address detection to ovnNetworkExternalSubnets
+ee02c605fcb4d020c697b6541abc62aef8abaa80    IRRELEVANT  lxd/network/driver/ovn: Adds ipv4.nat.address and ipv6.nat.address support to OVN networks
+a9434fc921231ba28321f203cc48a2c0a2762421    IRRELEVANT  lxd/network/driver/ovn: Skip our own network's external NAT address during NIC validation of external routes
+fa93efe027136464f85b44fe87279967c4b4a8d1    IRRELEVANT  doc/networks: Adds ipv{n}.nat.address to ovn network
+aa57cdc98af84c49ee34375aef429c06988cba5f    DIFFERS     lxd/project/permissions: Removes defaultRestrictionsValues and merges into allRestrictions
+51c7428d4b38071e29c39189364df42881a26356    DIFFERS     lxd/project/permissions: Add restricted.devices.{pci,proxy} defaulting to block
+f9d6eb1c9cec0589789b4df93fe178cf49932c07    DIFFERS     lxd/api/project: Add restricted.devices.{pci,proxy} validation
+58c8be04a0f05ee08770742e436f65b243c38b28    DIFFERS     lxd/device/device/utils/network: Removes networkParsePortRange
+cca14d9624bc92e2cbb67f5e3173fe480cde15cb    DIFFERS     global: Use shorter uuid generation syntax
+a8a36cf0ab0daae97220a7207e8221a5715b18c1    IRRELEVANT  i18n: Update translation template
+92a81592b2a623849a3b6e16e2cd4d1b1e968fed    IRRELEVANT  lxd/db/network/acls: Convert to use tx.QueryScan and tx.tx.QueryRow
+2bd43020525e71499a56b8721b9bcd217e5f3c44    DIFFERS     test: Update tests with new error text
+619b8bee3bb4f772f878ddffb148636264c634d8    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+2baac7c9b0ad1488df582428f0a37bc13189edf9    IRRELEVANT  lxc/network/acl: Fix typos in RunRemove
+51b6096b5c0dc4a40b29a58628659d751512fdde    IRRELEVANT  lxd/network/driver/ovn: Update validateExternalSubnet to use api.StatusErrorf()
+a2f0016a98d613211d7c1bac41885a502799bfb9    IRRELEVANT  lxd/cluster: Drop translated string
+6b4037587659b303b7c0b8d4b04c1bd4353af053    DIFFERS     test/suites/clustering: add test_clustering_edit_configuration
+bee6049a0a04a53f21c4b49378030c831c73e2fd    IRRELEVANT  lxd/network/physical: Align with bridged
+8827ea124022642dbb72aec92e03b72c5643a85e    DIFFERS     lxd/api_1.0: Improve structure
+fdfc3742cd079bcdb0fd03b7a43ac82c13722668    DIFFERS     gomod: Initial port
+58d90482b6b743d346e0af39548dc3180f33a7cc    DIFFERS     gomod: Update dependencies
+4f93d1b18cb23f20d4cf1a0c808ef20dd4f993ac    IRRELEVANT  lxd/db/network/acls: Removes unnecessary function
+e97e84d7b7e8f0dcc8b8343319304ebe6a1e0224    IRRELEVANT  lxd/db/network/acls: Removes networkACLConfig from Cluster type for consistency with networkACLConfigAdd
+ee52c713494fa238f6e8b8f78bd9097cb26b1be8    FEATURE     gomod: Update for gobgp
+4b2df7c8b39a9350af1526a681fcaf22aa4a581a    FEATURE     api: network_bgp
+bcd1109b55f3a9bd3a37b26dd343cb648eeda7de    FEATURE     doc: Add new configuration keys for BGP
+dfa7edb901b9fdae0d92fd41194c448913841ce4    FEATURE     lxd/device/nic_bridged: Support ipv4.routes.external and ipv6.routes.external
+c082a71d618593ba50f459a508be4cefe4d68b2c    FEATURE     scripts: Add BGP config keys
+bd368a70267573a84a27ad2ce3a770494af22202    FEATURE     lxd/node: Add core.bgp_address and core.bgp_routerid
+7ddcdf5f4841a7434d5478dc2eafb9fe63255206    FEATURE     lxd/cluster: Add core.bgp_asn
+2dda4eb7d97d27fcf6d18efa288f30898752c956    FEATURE     lxd/bgp: Add BGP server
+7588e7779ccee177487cbd79d4e2302626eddce1    FEATURE     lxd/daemon: Integrate BGP server
+ddf2a99459584982f69c3e9c91c40f96532d5748    FEATURE     lxd/network: Add BGP config keys
+d4eee2cc8a5b19e19ac821e17648a19e3c0f87ea    FEATURE     lxd/network: Add BGP helpers
+2c5c996353e5527b958e44e36b04759495da1610    FEATURE     lxd/network/physical: Add BGP support
+bad4e575c826f0edc9ffe55fd5f43bde60cb1e7b    FEATURE     lxd/network/bridge: Add BGP support
+aeb5a1ca0954d688421f1966264728d47917763e    FEATURE     lxd/network/ovn: Add BGP support
+c517a9090540e4a94a8b68951a2edeec869fe293    FEATURE     lxd/device: Shared BGP functions
+25bf323fd1f5a526214a7051b5c22699c6535dca    FEATURE     lxd/device/nic_bridged: Add BGP support
+383571e208932fcf2e5e7461ae821e75766ad60e    FEATURE     lxd/device/nic_ovn: Add BGP support
+3b309db975fa8d46e467eb813b4e242166db7d36    FEATURE     doc/networks: Add section on BGP
+64d875d97a694c774881377710bf9a69971a3224    DIFFERS     lxd/firewall/drivers/driver/consts: Adds AddressForward type
+96cd8ad1d466be666b90948c9f2f12c2a806001e    DIFFERS     lxd/firewall/drivers/driver/xtables: Updates to support AddressForward
+d1d296f8aa8237f04c6f2d96ffd6b1accca83048    DIFFERS     lxd/firewall/drivers/drivers/nftables: Updates to support AddressForward
+c6abfe9150c5074bf2fd1f60e6ab57d0cbcea99d    DIFFERS     lxd/device/proxy: Updated to support firewallDrivers.AddressForward and ProxyAddress changes
+be314fda5347f16e7d92c420a99a6f035939c6df    DIFFERS     lxc/info: Use local timezone
+b835d040a2745f18c1eba807d02ffe117a3254fe    FEATURE     api: Adds network_forward extension
+6b085228818a44f157c950bd0ccb4a140ffac1d6    FEATURE     lxd/lifecycle/network/forward: Adds network forwards lifecycle helper
+582927233061c8e40002708f1e2d7a618ab149dc    FEATURE     lxd/db/cluster/update: Adds updateFromV49 to create networks_forwards and networks_forwards_config table
+eedc2e06d2a09beda42b944a4babbad2cc411149    FEATURE     lxd/db/network/forwards: Adds network forward management functions
+19dcb6f0d0f1eb724229080fbea153a7b42d1862    FEATURE     lxd/db/network/forwards: Adds GetProjectNetworkForwardListenAddressesByUplink function
+017c50fc488c7b5dacbb826ab2185f71e58394a9    FEATURE     lxd/network/network/interface: Adds network forward management definitions
+0f0ebd30c5302cb613124d8a954cf79a0cd6a32c    FEATURE     lxd/network/driver/common: Adds AddressForwards to Info
+eb3d169238d8edd3e2598c500c849048ccdc8f98    FEATURE     lxd/network/driver/common: Adds common network forward functions
+ec714fc39a59e1f95e53d119c6a3309fac1fe686    FEATURE     lxd/network/openvswitch/ovn: Adds LoadBalancerApply function
+69ca1f7b10adf0d947e414a001030b7c92e6a838    FEATURE     lxd/network/openvswitch/ovn: Adds LoadBalancerDelete function
+44b6451feb4d0064aaf663cc66c98ab15acaa126    FEATURE     lxd/network/driver/ovn: Updates getExternalSubnetInUse to detect network forward listen addresses
+54c01745171e1598ad8095b3c540f1805b5b82cc    FEATURE     lxd/network/driver/ovn: Adds network forward support
+e66a19acdf65b6c7257699cf53c05a26b6d61951    FEATURE     lxd/network/driver/ovn: Delete network forwards when network is deleted
+fbd57157409ebeb609d7f87629d9ef7e17348038    FEATURE     lxd/network/driver/ovn: Check that any existing forward target addresses are within the network's subnet(s) in Validate
+aea9304f29413874f97229babeeb116477e1ac6d    IRRELEVANT  lxd/network/driver/ovn: Update Info to get common defaults and override as needed
+52924f583d39dd47b9c34e80ecddd6f88425e300    FEATURE     lxd/network/forwards: Adds network forwards APIs
+bd0dc06a9dc39e8663492153b07c3caacdb3cefd    FEATURE     client/lxd/network/forward: Adds network forwards functions
+41984b670d509228978af3d63d9566cbffda1899    FEATURE     lxc/network/forward: Adds network forward CLI commands
+d3850a305da8e75505a33ddff99e24b7fa571fe2    IRRELEVANT  i18n: Update translation template
+8f7d6eada6a166b788431b5d84f97ef7c6df4d34    DIFFERS     doc/rest-api: Refresh swagger YAML
+4b198ded427c23538f878c6a57ba8eb4983fc41c    FEATURE     doc: Adds network forward docs
+0ed84331a54fb11fcf64aa7f9c1fce9943182370    DIFFERS     test/suites/clustering: add test_clustering_remove_leader
+c5cce5547843c484a1bf4c9d392abfdd8b7f5811    DIFFERS     lxd/api/cluster: replace daemon when disabling clustering
+7b4dafb8c5c990c66f3b565d47297dc083a9e12d    FEATURE     api: custom_volume_refresh
+3bdbf18d2e48b4ed276e2c92830c58b0a013f939    FEATURE     lxd/storage/utils: Add SyncSnapshotsVolumeGet
+45c3e1099c34557c1842c4bea2e5ef1e0f9e1921    DIFFERS     lxd/storage: Fix Refresh with CreateCustomVolumeFromMigration
+1bdc55febe4c143497cda002e59349315c8236fc    FEATURE     lxd/storage: Add RefreshCustomVolume method for lxdBackend
+24c085780421f9e03e57df71bf0e6a8bbbe061e9    FEATURE     lxd/migrate: Add refresh for custom volumes
+683e7ad5b3f83171765e914d24a3cc712e0fe1a5    FEATURE     lxd/storage: Add Refresh support for custom volumes
+f35b5bdf8aecfc9c28ca2fb01299622a89c3902e    FEATURE     lxc/storage/volume: Add refresh flag to copy
+96347781a0b0656c48b367a9753cacf68f63438d    IRRELEVANT  i18n: Update translation templates
+fe2b7097719458fd04938922cc3c173637b93ebd    IRRELEVANT  tests: Add test cases for copy operation refresh flag
+40d2315a69308550bdcb641de90a5d297a332f87    IRRELEVANT  lxd/network/driver/ovn: Parse mulitple CIDR routes in ovnNICExternalRoutes
+ef5409c52093889b8293f07a4efeff5ec43406aa    IRRELEVANT  lxd/network/driver/ovn: Removes externalSubnetUsage
+ecf6fb6b51e5108264675220a1e905757274b040    IRRELEVANT  lxd/network/driver/ovn: externalSubnetUsage updated usage
+1a4fb7b053f1d1ebdf16bc5c14b50c107bed4548    IRRELEVANT  lxd/network/driver/ovn: Updates ovnNetworkExternalSubnets to use nicUsesNetwork function
+51654638c9317c95703052a05233d4da524323a7    IRRELEVANT  lxd/db/network/forwards: Corrects description of GetProjectNetworkForwardListenAddressesByUplink
+5c27d96d55b112535ef4eba59a3b34ebb4c0d1fe    IRRELEVANT  lxd/db/network/forwards: Consistent formatting in GetProjectNetworkForwardListenAddressesByUplink
+1d961b76d5338df704cab7e3eae5ccdc00d7b93c    IRRELEVANT  lxd/db/network/forwards: Improve comments
+61d5011d613f760fa6af5ded48150c1dab891b11    IRRELEVANT  lxd/db/network/forwards: Adds memberSpecific arg to GetNetworkForwardListenAddresses
+b66dc910d244cd80d37d040ba0998d6b7b85f4b9    IRRELEVANT  lxd/db/network/forwards: Adds memberSpecific arg to GetNetworkForwards
+6d5346a30184cf7e20c1cdeb0985f95c9ac7d083    IRRELEVANT  lxd/network/forwards: cluster.GetNetworkForwards usage
+09c2bd9d61668365762780496770d9855fbdc721    IRRELEVANT  lxd/network/forwards: cluster.GetNetworkForwardListenAddresses
+8b5bde4a676fcb50a3e268f727af563167f6d1cc    IRRELEVANT  lxd/network/driver/ovn: n.state.Cluster.GetNetworkForwards usage
+2dd1c3cbb635fa3d17fcd8bc539901116b690a68    IRRELEVANT  lxd/network/driver/ovn: n.state.Cluster.GetNetworkForwardListenAddresses usage
+75bb51b22e31ec18d10c23d71f45325c0062c89b    DIFFERS     lxd/node/config: assign default port to listener addresses if none given
+ed2c6b0454b0e7bec1517ebc2162ca7493f97130    DIFFERS     lxd/firewall/drivers/drivers/nftables: Rework InstanceSetupProxyNAT to accomodate network forward support
+0d0bd0a9b9bb43c757a425627d16914d49c3c2e3    DIFFERS     api: Add network_counters_errors extension
+d1cf9ad2c22052ad928ca3aa320d61bd3c61f7b2    DIFFERS     api: Extend network_counters_errors API extension
+ea9043151e6d023f4343230aa047799a0c205943    FEATURE     lxd/firewall/firewall/interface: Add NetworkApplyForwards definition
+a11c81728bda673c1c5428e323bd6b04fbb277be    FEATURE     lxd/firewall/drivers/drivers/nftables: Adds NetworkApplyForwards implementation
+4499ee1ceb92e318d8f610631e2e6ae7577023b4    IRRELEVANT  lxd/firewall/drivers/drivers/nftables: Updates NetworkClear to remove address forward chains
+3c424073c644b79c5b99f4fad281ec5e7055d390    FEATURE     lxd/firewall/drivers/drivers/xtables: Adds networkForwardIPTablesComment and updates NetworkClear to remove rules with that comment
+7d460ac6f60098d686c5266b1bd4164f565ab522    DIFFERS     lxd/firewall/drivers/drivers/xtables: Adds iptablesCommentPrefix
+1ff509c9d74dc873481d1a99337651930c77caf4    FEATURE     lxd/firewall/drivers/drivers/xtables: Adds NetworkApplyForwards implementation
+28acea95d45636d2024ddc59111270092cdfb6ee    FEATURE     lxd/db/network/forwards: Adds GetProjectNetworkForwardListenAddressesOnMember function
+8eb5bd6452b711819f5d329bfc6796b93a9c769d    FEATURE     lxd/network/driver/bridge: Adds network forward support
+803d5d98c3922945d4d0eee3c86fb5dbf6193e16    IRRELEVANT  lxd/device/nic/bridged: Consistent comment ending
+4e736931efb28cdb9164dd6232b9be2eda2d0503    IRRELEVANT  doc: Add bridge network forwards docs
+235106c2871f0c19eb588833e0f06b43da4d4a5e    IRRELEVANT  test: Adds network forward tests for bridge nftables and xtables
+78702c7aca78f97d5aeac751d064ae664016f02d    DIFFERS     i18n: Update translation templates
+d44c29b9389373b0a7e06d82fa1955f56f8416ef    IRRELEVANT  gomod: Update dependencies
+6234b23b197ca8788800d8629f1ef7d45c973e22    IRRELEVANT  i18n: Update translations from weblate
+ed907d5a913757c1cf92aadfa07a3e557106c3fd    FEATURE     Release LXD 4.18
+5c32da6e4cf871aea88e4bab456e421a44bd8b46    IRRELEVANT  doc: Adds network forwards to left hand nav
+4748a79db4e65d5aec7699ca88fdeebb20dccebf    IRRELEVANT  doc/server: Fix incorrect default for routerid
+8821eeb931924850b7bcc659d57ab97729c0609e    IRRELEVANT  lxd/daemon: Move ahead startTime
+71d94a43066ce02809e24052365aa152538912c3    IRRELEVANT  lxd/warnings: Add ResolveWarningsOlderThan
+2f1ec93ae1ea0331717752e2e033e56949cc7bf4    IRRELEVANT  lxd/daemon: Resolve warnings earlier than startTime
+52c9b54e298e2c24c76216e2bc28a88e73025e13    DIFFERS     lxd/device/proxy: Improve post-start error messages to include device name
+2029bf42659f08bfc19bf26509364e2f2ac386e3    DIFFERS     lxd/storage/pools/utils: Wrap errors in storagePoolDBCreate
+7506934b731ddc2f7e9e284b219f0e3d1fcdaa6c    DIFFERS     lxd/device/nic_bridged: Load network during validation
+039f03e00c69b0d51de05b4c8900e345e6c637bd    DIFFERS     lxd/network/driver/common: Moves externalSubnetUsage to common
+1ccf8f51438a1746f5e616e97fcd61e989ffe796    DIFFERS     lxd/device/proxy: network.BridgeNetfilterEnabled usage
+c7d3a6c00710cb5673d55a59c0663acbcb13dd32    IRRELEVANT  lxd/device/proxy: Use structured logging for br_netfilter warning in setupNAT
+4e1b6883eeaf533308fbda75aa285b862edb6583    IRRELEVANT  lxd/network/driver/ovn: NICUsesNetwork usage
+babf8ad8cbaee9827ed44aa2299f253d53240079    IRRELEVANT  lxd/device/nic/bridged: Enable hairpin mode on NIC ports when network has forwards
+05a20633257a35de7e6616fcdc63edcf21202278    DIFFERS     lxd/cluster: handle Name field for RaftNode
+6ee336a24dd6ce69019bc8c7c17b83c8f176db0f    DIFFERS     lxd/cluster/gateway: populate RaftNode Name from global database
