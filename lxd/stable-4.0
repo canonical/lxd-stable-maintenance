@@ -1791,3 +1791,4 @@ babf8ad8cbaee9827ed44aa2299f253d53240079    IRRELEVANT  lxd/device/nic/bridged: 
 6ee336a24dd6ce69019bc8c7c17b83c8f176db0f    DIFFERS     lxd/cluster/gateway: populate RaftNode Name from global database
 734aa21251ad453cc1726a548cbaa43784c174da    DIFFERS     lxd: Fix swagger definitions to avoid conflicts
 9ec8bc5e0419baa88261ab3aaa1368dd83a31aa6    DIFFERS     doc/rest-api: Refresh swagger YAML
+5683c4deab0e95e2284ebb674b23c89cc0574fae    DIFFERS     doc/instances: Clarify default CPU/RAM for VMs
