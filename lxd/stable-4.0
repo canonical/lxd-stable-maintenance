@@ -1789,3 +1789,5 @@ c7d3a6c00710cb5673d55a59c0663acbcb13dd32    IRRELEVANT  lxd/device/proxy: Use st
 babf8ad8cbaee9827ed44aa2299f253d53240079    IRRELEVANT  lxd/device/nic/bridged: Enable hairpin mode on NIC ports when network has forwards
 05a20633257a35de7e6616fcdc63edcf21202278    DIFFERS     lxd/cluster: handle Name field for RaftNode
 6ee336a24dd6ce69019bc8c7c17b83c8f176db0f    DIFFERS     lxd/cluster/gateway: populate RaftNode Name from global database
+734aa21251ad453cc1726a548cbaa43784c174da    DIFFERS     lxd: Fix swagger definitions to avoid conflicts
+9ec8bc5e0419baa88261ab3aaa1368dd83a31aa6    DIFFERS     doc/rest-api: Refresh swagger YAML
