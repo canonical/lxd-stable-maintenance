@@ -1792,3 +1792,10 @@ babf8ad8cbaee9827ed44aa2299f253d53240079    IRRELEVANT  lxd/device/nic/bridged: 
 734aa21251ad453cc1726a548cbaa43784c174da    DIFFERS     lxd: Fix swagger definitions to avoid conflicts
 9ec8bc5e0419baa88261ab3aaa1368dd83a31aa6    DIFFERS     doc/rest-api: Refresh swagger YAML
 5683c4deab0e95e2284ebb674b23c89cc0574fae    DIFFERS     doc/instances: Clarify default CPU/RAM for VMs
+ba91f0d202af83b1de38d596b1346da7c070ede1    DIFFERS     lxd/device/nic: ensure instance device IP is different from parent network
+e191036358d3ea82634e4b3670e873d7dc29928e    IRRELEVANT  lxd/network/driver/common: Adds bgpNextHopAddress function
+a708bc9cd51d423aef761fa3f63fc493a3681fbf    IRRELEVANT  lxd/network/driver/common: Reduce duplication of logic in bgpSetupPrefixes and uses bgpNextHopAddress
+1a34a1fbf94529b77eca1b40db4c9f66bfbd2f42    IRRELEVANT  lxd/network/driver/common: Removes unnecessary function n.bgpClearPrefixes
+b95406574a264a4b526775abd63958ee0461a503    IRRELEVANT  lxd/network/driver/common: Improve errors in bgpSetup
+b7a55cfba5bd8834f793ff7121223204ff93e5fd    IRRELEVANT  lxd/network/driver/common: Clear address forward BGP prefixes in bgpClear
+fe269736fea6d67767191d78a6a71e1b6aae3170    IRRELEVANT  lxd/network/driver/bridge: Setup BGP prefix export in forwardsSetup
