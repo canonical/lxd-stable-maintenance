@@ -1799,3 +1799,17 @@ a708bc9cd51d423aef761fa3f63fc493a3681fbf    IRRELEVANT  lxd/network/driver/commo
 b95406574a264a4b526775abd63958ee0461a503    IRRELEVANT  lxd/network/driver/common: Improve errors in bgpSetup
 b7a55cfba5bd8834f793ff7121223204ff93e5fd    IRRELEVANT  lxd/network/driver/common: Clear address forward BGP prefixes in bgpClear
 fe269736fea6d67767191d78a6a71e1b6aae3170    IRRELEVANT  lxd/network/driver/bridge: Setup BGP prefix export in forwardsSetup
+bd6de75c4d49caa9674a8287222ce672e87917ad    IRRELEVANT  lxd/project: Change restrictions check function in CheckClusterTargetRestriction
+73bfbf1687d67a64ef029afb1f6bc2bb7d11effa    IRRELEVANT  lxd/network/network/interface: Adds clientType arg to Forward management functions
+3428fec584ee96fb0fc72d9af2d442948d581422    IRRELEVANT  lxd/network/driver: Add clientType to Forward management functions
+c301a1c938013d7a1444a08e5bdd2b7bfdc3e2be    IRRELEVANT  lxd/network/forwards: Pass clientType into Forward management functions
+210bbac24c6f9d31d4eab9e4adbf5a87bebe1e05    IRRELEVANT  lxd/network/driver/ovn: Update Forward management functions to only apply changes for ClientTypeNormal requests
+46bf5c0b80fe29a25527913d9eac263919f31d63    IRRELEVANT  lxd/network/forwards: Removes duplicate record check from networkForwardsPost
+63a6b1c1e77bf1e32202776b7cf8f8b7a5b79767    IRRELEVANT  lxd/network/driver: Moves duplicate forward record check into drivers
+dd80c144032274063c032f78e22ae877ff4cd19b    IRRELEVANT  lxd/network/driver/ovn: Adds cluster member notification to Forward management functions
+ad40d11717c590990d1e8cc50783c2c35af8e1d7    IRRELEVANT  lxd/network/driver/ovn: Refresh BGP prefixes on Forward management
+29629eeadb084049188338ed07a2270be6b6f51e    IRRELEVANT  lxd/network/driver/common: Include exporting forward addresses in bgpSetup
+d3a322420d56aa0e975713abaf0436b4901d38ea    IRRELEVANT  lxd/network/driver/bridge: Remove BGP forward address refresh from forwardSetup
+5820f3705a26c69ac9358236f5156d3986e3887f    IRRELEVANT  lxd/network/driver/bridge: Rename forwardsSetup to forwardSetupFirewall
+f351c38252290af60c7db11adb8f9ec3d26a4794    IRRELEVANT  test: Adds BGP prefix export checks to forward tests
+602c5cfe28b5025ed3a18423ce578cfc5e82d109    IRRELEVANT  lxd/network/driver/common: Remove empty newline
