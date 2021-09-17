@@ -1814,3 +1814,6 @@ d3a322420d56aa0e975713abaf0436b4901d38ea    IRRELEVANT  lxd/network/driver/bridg
 f351c38252290af60c7db11adb8f9ec3d26a4794    IRRELEVANT  test: Adds BGP prefix export checks to forward tests
 602c5cfe28b5025ed3a18423ce578cfc5e82d109    IRRELEVANT  lxd/network/driver/common: Remove empty newline
 e307d6057a2ec0f270d52deaa733ca393f30071c    IRRELEVANT  lxd/network/openvswitch/ovn: Work around a bug in lr-nat-del in ovn-nbctl in LogicalRouterDNATSNATAdd
+ccbe2a3876445ba2e2361fa09b1bc0492e2b18eb    IRRELEVANT  shared/api/network/forward: Fix api extension references
+b9346f2ac474fdc6644ebb9995b5fc933125c78a    IRRELEVANT  lxd/network/forwards: Use consistent terminology in network address forward swagger comments
+ab79253c542a9713c00cb826d2826367b5f1a4e9    IRRELEVANT  doc/rest-api: Refresh swagger YAML
