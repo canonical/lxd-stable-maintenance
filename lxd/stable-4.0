@@ -1813,3 +1813,4 @@ d3a322420d56aa0e975713abaf0436b4901d38ea    IRRELEVANT  lxd/network/driver/bridg
 5820f3705a26c69ac9358236f5156d3986e3887f    IRRELEVANT  lxd/network/driver/bridge: Rename forwardsSetup to forwardSetupFirewall
 f351c38252290af60c7db11adb8f9ec3d26a4794    IRRELEVANT  test: Adds BGP prefix export checks to forward tests
 602c5cfe28b5025ed3a18423ce578cfc5e82d109    IRRELEVANT  lxd/network/driver/common: Remove empty newline
+e307d6057a2ec0f270d52deaa733ca393f30071c    IRRELEVANT  lxd/network/openvswitch/ovn: Work around a bug in lr-nat-del in ovn-nbctl in LogicalRouterDNATSNATAdd
