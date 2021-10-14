@@ -127,3 +127,6 @@ cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace er
 6773e108515b6f595e0e43b806c52f834ec88467    DIFFERS     confile: make lxc_get_config() and lxc_get_config_net() always return non-NULL
 317410da66322814f5e68c2b02ebaa115633e61b    DIFFERS     Makefile: fix strchrnul() inclusion
 8ee2f36fc35966028823b15731c975ac644a108d    IRRELEVANT  lxc_monitord: remove monitord log
+58db1a61c88a41eec7e0dffe656d9ece53d899cc    DIFFERS     build: add src/include to build and simplify header inclusions
+b967f9e8d580f12ecab58cb41af98b05069eb09c    DIFFERS     tests: fix config file tests
+69f5d68a5ce5db5ba272532b3d1c378d8fbff26d    DIFFERS     lxc-monitord: use {} around ;
