@@ -7,3 +7,7 @@ d9c820eeae8874f34026dee50c54793627701a35    IRRELEVANT  sys: rework get_st_mode(
 0d5383b73c6e03c677b92471bb3b33afe9e952b2    IRRELEVANT  sysfs_fuse: account for liblxcfs reload with identical lxcfs binary
 50c32b5e21bbf3a1cde437d0564f03dd18695b91    FEATURE     lxc.mount.hook: make shellcheck clean
 427caeddd86ad8f222deb4c624d91d24eff2d4a5    FEATURE     lxc.mount.hook: reduce calls to basename
+2c6e12b7ede8437e802b81d7f3cbaa5404c6107a    DIFFERS     src: rely on config.h for fuse version
+3cf1e562fe5c2c8176a3eb627ba3a68ae27e5970    DIFFERS     tree-wide: fix type comparisons
+e01afbb75a314c800fdb781dd8f11c82fd93c497    DIFFERS     tree-wide: include own header file first
+a5681e523f06261e2534523f958ed2bef34197db    DIFFERS     build: remove autotools
