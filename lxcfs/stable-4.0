@@ -11,3 +11,19 @@ d9c820eeae8874f34026dee50c54793627701a35    IRRELEVANT  sys: rework get_st_mode(
 3cf1e562fe5c2c8176a3eb627ba3a68ae27e5970    DIFFERS     tree-wide: fix type comparisons
 e01afbb75a314c800fdb781dd8f11c82fd93c497    DIFFERS     tree-wide: include own header file first
 a5681e523f06261e2534523f958ed2bef34197db    DIFFERS     build: remove autotools
+1fbf55911c2cf2ed24fd115500577993f500b939    FEATURE     build: add meson
+693ef6c676a6f1195a16da89cfdb9df947523244    FEATURE     github: fix workflows for meson
+ff6b89e2ddfad56fc1a1db1a74006b9e4e8a503c    FEATURE     build: move some options to default_options
+0d2038cd9ef3d278860086742dddb48b21528fff    FEATURE     build: fix data directories
+26bc4c3f146f7b9b980a0f8234d9dabefcfe1963    FEATURE     build: remove -std=gnu11
+5f275367aa6933a8d47fcd9ac5a841543d47744e    FEATURE     build: use dependency() for fuse detection
+941928ef56bc8c10dc5a1c5dd5b47ce9f2a1aa88    FEATURE     build: remove -shared
+1314b3b8e83cd39c30ebcaee466d1d7f34ca29bd    FEATURE     build: introduce common dependency variable
+148ed806aa2529890ba5d205c01289f5bd071ed2    FEATURE     build: use correct minimal meson version requirement
+d89591230374490a52b6b70efa3bad64844decae    FEATURE     build: require fuse >= 2.6
+fb66efaf32f925b9c6ed541c01a04cf9552699d6    FEATURE     build: remove pointless prefixdir validation
+d18b5eb5742ad01a4d15d05bef5a51e9e5b21308    FEATURE     README: update build instructions
+1c376fe7c488011be093b73b2bc66f02f38b1a6f    FEATURE     build: generate lxcfs.spec file
+d511b24d84823df428e85e6ccd79982486cd966a    FEATURE     tree-wide: set _GNU_SOURCE in meson.build
+71c055b848a24ba59de50b831fd9c04e053b0b6d    FEATURE     build: add __STDC_FORMAT_MACROS
+a962e7a168c2e941806a72178248dfb779c2f4f9    FEATURE     meson: use shared_module()
