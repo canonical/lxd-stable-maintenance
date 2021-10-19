@@ -28,3 +28,4 @@ d511b24d84823df428e85e6ccd79982486cd966a    FEATURE     tree-wide: set _GNU_SOUR
 71c055b848a24ba59de50b831fd9c04e053b0b6d    FEATURE     build: add __STDC_FORMAT_MACROS
 a962e7a168c2e941806a72178248dfb779c2f4f9    FEATURE     meson: use shared_module()
 cb61c9e14569e6a94a8de4c97ff6ac1a04e363ec    DIFFERS     tree-wide: fix HAVE_FUSE3 checks
+a3c8d33cd7a110b711528717ad9cfd0cd7f62749    IRRELEVANT  sysfs: fix cpumasks
