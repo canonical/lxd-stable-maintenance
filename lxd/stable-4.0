@@ -1817,3 +1817,160 @@ e307d6057a2ec0f270d52deaa733ca393f30071c    IRRELEVANT  lxd/network/openvswitch/
 ccbe2a3876445ba2e2361fa09b1bc0492e2b18eb    IRRELEVANT  shared/api/network/forward: Fix api extension references
 b9346f2ac474fdc6644ebb9995b5fc933125c78a    IRRELEVANT  lxd/network/forwards: Use consistent terminology in network address forward swagger comments
 ab79253c542a9713c00cb826d2826367b5f1a4e9    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+326d8fa17f27cef7f053274d13c1021f093ec390    DIFFERS     lxc: Cleanup LXD client imports
+2f4b816f9d9836706a38aae3253c1350baf2d977    DIFFERS     lxd: Cleanup LXD client imports
+52ba7988fcb37bd9c5d6f0e96492f1e4d1aa578a    FEATURE     lxc/cluster: Show roles instead of database column
+459053958ffe4fab1fba7cb79c89ad48180b6bf5    IRRELEVANT  tests: Support for showing roles by
+b94905a435aabb5a3d5fedb20a8feff6d3f8a072    IRRELEVANT  i18n: Update translation templates
+ceb500db701cde418d00045ab06cae830dedbd6f    DIFFERS     doc: update link to rest-api.yaml
+7ba2324c9a1a7644fe1298de1cf63835221678fa    IRRELEVANT  lxd/device/tpm: Require `path` only for containers
+b336b30bbc667633b4d5e302d88e7290d78ef0f2    DIFFERS     swagger: Fix return code for operations
+1dec1a80e1ac4584946f281ffa38a2ddbd674952    DIFFERS     doc/rest-api: Refresh swagger YAML
+f87be2fce223c049ebd4a83469c54933e46045ba    FEATURE     lxd/db: Add CertificateTypeMetrics
+87b8f5354a5b757016a42d7ce3011b58107970ba    FEATURE     lxd: Check metrics certificates
+02ec0c53469f27876548ebc6100d302d536cef2c    FEATURE     lxc/config_trust: Allow adding metrics certificates
+5958881045613a7de0c0647c42814a002d4d71d5    FEATURE     lxd/metrics: Add API types
+a517c6cab6d97f965b6f6839960b942f5fd3caca    DIFFERS     seccomp: Add riscv64 syscall mappings
+a9f799ae06ed28293f4127693b164891dc74f54c    FEATURE     lxd/metrics: Add types
+8e58075cfacfa38ca476f3ba0480143136abd1da    FEATURE     lxd/metrics: Add helper functions
+330b1caa62b2924c333f7d53335399bcf3f80e98    FEATURE     lxd: Add metrics related fields to daemon
+5cfacdc4698dc8595c399b52e173e9b49d02163d    FEATURE     lxd: Add /1.0/metrics endpoint
+7c701ab70102ef4b04107848e66a98a9ed80b833    FEATURE     lxd/instance/drivers: Add Metrics function
+a3ebb765f4d3a6bf93091cb0bd746cf3974764ae    FEATURE     lxd-agent: Add metrics endpoint
+15b14a2a24b0024a686f372c76b6a833e6b8c6bc    FEATURE     api: Add metrics API extension
+2a5c63cff071c8812eb24f2ddd3c735dfcfc37f3    IRRELEVANT  i18n: Update translation templates
+64ba85c51e951d0b42740a6be455bfe1cd72477d    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+65352cbd1a7777b8e8dd246eb1d6637ce1001a20    FEATURE     doc: Add metrics.md
+796587f85d0bc036d86b1161bbb44815c22a1864    FEATURE     doc: Mention core.metrics_address
+1310c0f686b37ce46810a4924fe4ece839e4f4c8    FEATURE     test/suites: Add lxd/metrics to static analysis
+965129ece5393c3fb9373a3c9d5010038ea39dfb    FEATURE     shared/util: Add HTTPSMetricsDefaultPort
+e6495f4c80bdbcf3a893ef0481b07e286adb53a6    FEATURE     lxd/node: Add core.metrics_address config key
+e152bb61e666fe49ce9520aa6ab2dcff6a1a6a80    FEATURE     lxd/endpoints: Add metrics endpoint
+d79c23b102362a39952d50c35f3fe243b18fbd1d    FEATURE     lxd: Handle metrics server
+c2625efa57a9e20b5b414d841d96eafd63bf2bc9    FEATURE     test: Add metrics test
+41f66cffd38330a98f407a1ddc648630df7156d0    DIFFERS     lxd/instance/drivers: Move raw.lxc config load to separate function
+d99d0fada08fde1d4dac51edf3ec88f8162b11e3    IRRELEVANT  lxd/instance/drivers/driver/lxc: filesystem.FSTypeToName usage
+18d8525c5be975b98bfd18efe60a97942dcb590c    IRRELEVANT  lxd-agent/metrics: filesystem.FSTypeToName usage
+b23c335d2c3ff690f7ea1516b5363e30f9dba48e    DIFFERS     lxd/cgroup: Fix logging in cgroup init
+b0c3b0e61145d7170a94b17d334298a3ac153035    IRRELEVANT  lxd/db/network/forwards: Fix error handling in GetNetworkForward
+2e1b895d9ce4292872b1d589e6352867abe227cc    IRRELEVANT  lxc/network/forward: Add lxc network forward get command
+a14ab3c9afab1249f614308ca9d63537a123233a    IRRELEVANT  i18n: Update translation templates
+ba2bf5484334eea9d8a6b60fca52ec0beef6ad65    IRRELEVANT  lxd: Remove public facing errors that mention cluster "node"
+9d043594d7f22bc2194c6e39508a6d41a2b2bf16    DIFFERS     lxd/network/network/utils: Updates UsedBy to use api.URLBuild
+2433bd3df0739e2ce0c88a9a10255c3f41c6e15b    IRRELEVANT  doc/metrics: typo fix
+92c5c2568f3760311bdc9458c5b6d460c13a419f    DIFFERS     lxd/daemon: Adds shutdownDoneCtx context to indicate shutdown has finished
+3097a451ffecc607b9b6905233287e7be6006df0    DIFFERS     i18n: Update translation templates
+b14c29fac252fd840cd8adb586607096b87a8c86    IRRELEVANT  lxd/instance/drivers: Add instance type to metrics
+be601af08a49105525cf8e5448edfb3655cfe9d8    DIFFERS     lxd/daemon: Reworks shutdown sequence
+c5f4fe31a02a35a1d473dc244b6da8a847c4466f    DIFFERS     lxd/daemon: Reworks Stop
+a22d33d67a49a04b79f438590f5eb3d31e8e8792    DIFFERS     lxd/api/internal: d.shutdownCtx.Err usage
+a014c132a7b39c174c38e46938e36fc34317b39a    DIFFERS     test: Increase timeouts on ping tests
+f8e24e891c13f7e060689f4462f7933fac0051c3    DIFFERS     test: Addition test logging
+5a8e33271f4dcbbee180de53299065292b41189d    IRRELEVANT  test/suites/backup: Add cephfs
+f048510eb92e79b9cc372298566881518779b874    IRRELEVANT  test/suites/backup: Check file content for storage volume backups
+1eb5729bdc27b74d1e63762829121c7c5fde2337    DIFFERS     i18n: Update translation templates
+490383b6ef1ff61586a77df6080c8a650a5e2bf7    IRRELEVANT  i18n: Update translations from weblate
+a5b42733a6b22a8534fd390bb5b9cfc13946715f    DIFFERS     gomod: Update dependencies
+71fe94be1e89614a0544ed0ae6ca52d6b5502bdf    FEATURE     Release LXD 4.19
+9cd3895702548f48849495b436956d2a6bbeef3d    IRRELEVANT  lxd/metrics: Change ProcsTotal to gauge
+1ac47b83982ee3267fcee7e7ad70b71889135db8    IRRELEVANT  lxd/instance/drivers: Log metrics failures
+30b510aa6fa7202328f9836cb9d86aeb1e6bbaa6    IRRELEVANT  lxd-agent: Log metrics failures
+8d71e2dcc25184e739c938e44b1cedc35e88a7dc    IRRELEVANT  lxd-agent: Drop aggregated cpu stats in metrics
+30dab2aae3590a7e4ea1620ba0353a60db1b3aa7    DIFFERS     lxd/daemon: Don't fail shutdown if fail to close cluster DB
+aa76a9c4b53677730067b39d01089ac23a4b8784    DIFFERS     i18n: Update translation templates
+116e09eec300a5e9474df7a6e79cf180a482e828    DIFFERS     i18n: Update translation templates
+69fcd148ea22ff9ba50ad9321f1df1c244eb8360    DIFFERS     lxd/certificates: remove explicit calls to UpdateCertificateProjects
+7f23433471e97e82242bb10ce9341dfa8d8582c2    IRRELEVANT  lxd/db/certificates: remove Cluster.UpdateCertificateProjects
+b44e4af8eb7b0b4661bb783bf85ca421df6bc9b6    DIFFERS     lxd/instances: Reworks instancesOnDisk to return slice of instance.Instance
+ca33599990a7fde967d6dd610e1124f5b7c765ce    DIFFERS     lxd/daemon: Updates Ready to use updated instancesStart
+6eaf0acd23ecaa7736fac89fad1a3e1e5bf64167    DIFFERS     lxd/instance/drivers/driver/common: Adds recordLastState function
+06e95e64ec201933ff37ff34fdf8343ef5cff4c9    IRRELEVANT  gomod: Update dependencies
+80637669b64b6d77d5279db0b46202757dd438b0    IRRELEVANT  doc/network: Avoid referring to releases by name
+92e2eeb156679097dcf46f03e66ff8b99f1e74e5    IRRELEVANT  lxd/networks: Report uplink networks in leases
+46e0183d4871b941f05db6bc60f66e427f3c9533    DIFFERS     test: Don't use pid files in test_clustering_shutdown_nodes
+f3e88a67c8e1068e04fa5e4ba5330941b0829542    DIFFERS     test: Actually ensure cluster DB isn't reachable after its lost quorum in test_clustering_shutdown_nodes
+477ab8d4c2bb0b2b8442ce3050b168710869ca29    DIFFERS     tests: Unify how the instance's PID is looked up
+3263c37317ec5dd20dbe5ead571d8ec7386c8bf7    DIFFERS     tests: use grep -F when the match pattern contains regex/wildcard
+69630e56307c2026ad41b4d90b71646dfa1fa3ae    DIFFERS     tests: replace `grep | cut` by awk
+f6c148e55b3ee690baa3a79f76f3714b4f9fff5e    IRRELEVANT  test/suites: Always provide project arg in volume test
+0ba1adc54d8c7e3131874f909cdbc4cead5011b9    IRRELEVANT  test/suites: Fix cephfs backup test
+3ba27654ea493fa0f6595e74753568658c5a7c21    DIFFERS     lxd/network: Move Leases to network package
+fc2f88f7773da610f589a92e8fd61fc4811c462a    IRRELEVANT  lxd/instance/lxc: Properly report mapped memory
+d5964df6826558144b91dd4a159305cb07495766    DIFFERS     lxd/cluster/membership: Adds unavailableMembers support to Rebalance and newRolesChanges
+de5b31820949249856fa960865db39292a13b97f    DIFFERS     test: Reduce sleeps and offline threshold in clustering tests to speed them up
+9ce3dd4fe6ed3728c179b2b8015b428a08db5e7b    IRRELEVANT  lxd/network/driver/ovn: Fix comment on getLoadBalancerName
+6784f3530e8a60be70e2f7a745cfca8a7ac509c8    IRRELEVANT  lxd/network/ovn: Add support for leases
+c9590b2497841c28fe184949519d68cdb6eddf2a    IRRELEVANT  lxd/network/openvswitch/ovn: Adds OVNRouterRoute type
+bff6998e86089726ee21d518edcfd5e9b7b9d379    IRRELEVANT  lxd/network/openvswitch/ovn: Updates LogicalRouterRouteAdd to accept multiple OVNRouterRoute args
+88416d31d3774bc2b72803603a6b07863b15d3e7    IRRELEVANT  lxd/network/openvswitch/ovn: Harmonise naming conventions in LogicalRouterRouteDelete with OVNRouterRoute type
+688591eea81e7075cd06556315b19d548a17555b    IRRELEVANT  lxd/network/openvswitch/ovn: Update LogicalRouterRouteDelete to accept net.IPNet rather than pointer
+1fd5bbce76b3660c59ad803d390386a7acb5fc15    IRRELEVANT  lxd/network/driver/ovn: Remove default routes and re-add as needed in setup
+07277d15bbff7d1e09261f39e0587a2b9dd7df20    IRRELEVANT  lxd/network/driver/ovn: Update InstanceDevicePortSetup to use static route port hints
+8b81a73675431b3634ecf3b0ea7ce81a9fc7c0f3    IRRELEVANT  lxd/network/driver/ovn: InstanceDevicePortDelete updated to handle non-pointer IPNets
+b807ce8710dcaca490d3bcae4aa33b31ec4b920e    DIFFERS     lxd/cluster/heartbeat: Use api.StatusErrorf in error returned from HeartbeatNode
+314575c723b900117ffd1422f07773b85a6ec600    DIFFERS     lxd/db/networks: Reworks GetNetworkInAnyState and its ilk to split the functionality out into separate functions
+ef0b86f305bde10c76d2b86883e9cd041229b527    DIFFERS     lxd/networks: Use api.StatusErrorCheck to check for not found error from d.cluster.GetNetworkInAnyState
+c1c9348f30cb7f33bdbffb3c0dd80aa764703dc8    DIFFERS     api: Add image_source_project extension
+4612e52aaea862f38a5e8bffb99f0a2c044a58bf    DIFFERS     lxd/network/network/utils: Removes unnecessary DB lookup via NICType function in isInUseByDevice
+94565f4c51b315783c17267464dada20b7092684    DIFFERS     lxd/network/network/utils: Updates UsedBy to use usedByInstanceDevices
+3cdca5022f2a42b7ee07f52cb707e6ed7157b501    DIFFERS     lxd/network/network/utils: Updates usedByInstanceDevices to use updated isInUseByDevice
+45b482f75edd79917f2dc74ca8eed797a2c06011    DIFFERS     lxd/network/network/utils: Updates isInUseByProfile to use updated isInUseByDevice
+dfd55eb325dd18b6373eeaf9d474489fc3476c3d    DIFFERS     lxd/network/network/utils: Renames isInUseByProfile to usedByProfileDevices
+e74b32b9b3acf4ba7702720bef1c4c5ae3a69f45    IRRELEVANT  lxd/images: properly return project name in error
+82ce8cdf97a689f64188bd6a8e908c11963c4e38    FEATURE     lxd/db/cluster/update: updateFromV50
+a1d36fdb2990a1a1bebaad1a7f5dd2e670344a3a    FEATURE     lxd/db/cluster/schema: Update schema
+ebdbe2fc6b054a3848c1dcd56a8c453372d59224    FEATURE     lxd/db/node: add Config field to NodeInfo
+9af9d0287030c2d14f48b6be2c5ea56d1a27e6bd    FEATURE     lxd/db/node: populate config on Get
+ec77a93ab2d801a95b0e2e1d29d24bba847c378d    FEATURE     lxd/db/node: add UpdateNodeConfig method
+64a962459866db7d7231e06f0e4c5e5cacea6424    FEATURE     lxd/db/node: add default config on Create
+a3f561bca3b809a5a3702dfe8b795f717b0f8683    FEATURE     lxd/db/node: bootstrap nodes with BootstrapNode
+a8d792b8ae29884f6e41a3812b8db249239615b0    IRRELEVANT  lxd/db/node: skip database-standby in UpdateRoles
+e706458053e5b76bc6b253734a9864127859936b    IRRELEVANT  lxd/db/node: skip nodes with manual scheduler
+1afc875d3f5b46b498b2e7f3dda4ddddd6940133    DIFFERS     lxd/device: Make sure vfio-pci is loaded
+593c01df60268ff3bd1a585e44dd6ea010e12a60    FEATURE     shared/version/api: add clustering_config
+9edebdbda3d9efdc88923f641214fd3ffa81564b    FEATURE     lxd/api/cluster: use updateClusterNode for PUT/PATCH
+207e6a26918793ebed8a9d74cbf3c97617057f43    FEATURE     lxd/api/cluster: validate and update config on PUT/PATCH
+164da269ef683468fc340d6216d2765e7efd8a66    FEATURE     lxc/cluster: add cluster member get/set/unset
+6921c2ba1ad2f1b40beafb13f423270b4b4b7458    IRRELEVANT  i18n: Update translation templates
+9719bc0895248ce12187781d2e753bf276b16891    FEATURE     doc/clustering: add clustering configuration docs
+e9b1403f7beb0c28690814ab632452283fc259aa    FEATURE     test/suites/clustering: add clustering_autotarget
+9cb57a9544f04f0e6ab5faf57ea8acf571761833    DIFFERS     lxd: Initialize DevMonitor in daemon
+dd01a97ea9476f8eeee80bf22f75608003718d88    DIFFERS     lxd/db/networks: Fixes getStoragePool to support NULL description fields
+5930ff07c174e93cf77a96c8d4ca67d669cd3779    IRRELEVANT  lxd/device/nic/ovn: Improve error in Start
+c06d7c0c8938503102f27718907d73ed0432294f    IRRELEVANT  lxd/network/acl/acl/ovn: Adds OVNIntSwitchPortGroupAddressSetPrefix function
+9d3fdb4e9949577ac87b5167c7f75ee8ac545e04    IRRELEVANT  lxd/network/openvswitch/ovn: Adds address management functions
+698c244eda454c129685daf1ae3bbfb88b9956c7    IRRELEVANT  lxd/network/openvswitch/ovn: Adds router policy management function
+07f5b8944e44b1703a541e1e00e46cbfd57af9ab    IRRELEVANT  lxd/network/driver/ovn: Move logical switch creation after internal network IP validation
+2e34e84bcdf02af7ac4f72a9c35283d8b4ed4c98    IRRELEVANT  lxd/network/driver/ovn: Add address set that represents internal switch subnets and NIC routes
+cee7b2f17b6e2e2cc3783f82a481e4659309ff65    IRRELEVANT  lxd/network/driver/ovn: Adds instanceNICGetRoutes function
+6610476491019cc1a2318507029ca2c8b02822a4    IRRELEVANT  lxd/network/driver/ovn: Reworks Update to populate active NIC routes into internal switch's address set
+eefa4c07f1979ba3a546e9e950dbf9430cf4687b    FEATURE     api: Adds network_peer extension
+0208d08dc501fc5e4a714d0f33668d382bc7cdc4    IRRELEVANT  lxd/network/acl/driver/common: ValidName usage
+0ca281c1733eb89295cb3299e88ed2c12f6b1ced    IRRELEVANT  lxd/network/acl/acl/validation: Adds ValidName function
+f00b17a5a6c4e182dfe6ec013abcd63e844f6b04    IRRELEVANT  lxd/network/acl/driver/common: Adds ReservedNetworkSubects slice
+f420487375fa793197f103e3dbb2b1eff6e2ee6e    FEATURE     lxd/db/cluster: Adds networks_peers and networks_peers_config tables
+e71ac32fcf8b6114971a449a11ed46947a188a9b    FEATURE     lxd/db/network/peers: Peer management functions
+c1fd824ec7f931e7b8805cd4f3d8cb59184ab72d    FEATURE     lxd/lifecycle/network/peer: Peer lifecycle type
+29a0d3065d41b6ea7b223ae5e836ffd2d55a56fa    FEATURE     lxd/network/network/utils: Updates UsedBy to check if the network has any created peers
+fad2a235667d042655a0b96ef4073828932ff155    FEATURE     lxd/networks: network.UsedBy usage
+5b1b37b3ed6d7b5655f6bd602f1506dde0726326    FEATURE     lxd/network/driver/common: UsedBy usage
+3dc18422e0c25aab021b5bf310e172ac69d9c483    FEATURE     lxd/network: Adds peer management function definitions and common not implemented implementation
+785f21b9254349ba3b24746871e658267b1d9b63    FEATURE     lxd/network/driver/common: Adds Peering feature indicator
+33a4c5d20806228f01c32506823f2ccacbb95b09    FEATURE     lxd/network/driver/common: Adds common peer validation function
+77161cf3eef86b019acea20d4a9509d7e13941f5    FEATURE     lxd/network/openvswitch/ovn: Adds peer management functions
+47b6e1ad1abe8ebd2915c7d3d1f1502285a0fe9e    FEATURE     lxd/network/driver/ovn: Adds peering management functions
+237ba48e2ab672a88f72d0a60b18abf4cab4626b    FEATURE     lxd/network/peer: Network peer API endpoints
+753c5fc0a19b3667658494448fad5fa3d9194f56    FEATURE     lxc/network/peer: Adds network peer CLI commands
+7f0a64b9b12956a6f6b49696f10a08b217c0e844    IRRELEVANT  i18n: Update translation templates
+612c05bfe57b31fbcf37591f8b9b2937cacd3bf5    FEATURE     doc: Adds network peers documentation
+ffb10243eacef14285798b829dccba77cdb55b03    DIFFERS     doc/rest-api: Refresh swagger YAML
+bcceb32c67692c4bb35ce67883d051ad5b7fc8cb    IRRELEVANT  lxd/move: Adds stateful migration support for cross-pool instance migrations
+447cbf21b1f044f2fe7742d8d0c0053d1b74f30a    IRRELEVANT  i18n: Update translation templates
+8b58820a1e0754d6c4da0ed14bdbfd3bf1986902    IRRELEVANT  lxd/move: Consistent comment line endings in moveInstancePool
+41a41748922669d1ae474e16ffb012efa51c384d    IRRELEVANT  lxd/instance/post: Comment typo in instancePostPoolMigration
+9f791b81f963a6e3e3832907a5837bd0e317a2a1    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostPoolMigration
+4668d8bf8a06adc1d2269870a7f944c7728c3459    IRRELEVANT  lxd/api/cluster: inst.CanMigrate usage
+e407e8faa57eefeb967a85c065902b29a89c6a75    IRRELEVANT  lxd/move: Add stateful move support to moveClusterInstance
+dd18f4dc109ad39bd71ec15af63298c42a3545ca    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostClusteringMigrate
+36c33b501865a1fdd740187fa474a915a1def87a    IRRELEVANT  i18n: Update translation templates
+03054115eca413b632985ff0a4edaf93b36ce9fc    IRRELEVANT  lxd/instance/instance: Renames IsMigratable to CanMigrate
