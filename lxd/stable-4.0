@@ -1974,3 +1974,5 @@ e407e8faa57eefeb967a85c065902b29a89c6a75    IRRELEVANT  lxd/move: Add stateful m
 dd18f4dc109ad39bd71ec15af63298c42a3545ca    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostClusteringMigrate
 36c33b501865a1fdd740187fa474a915a1def87a    IRRELEVANT  i18n: Update translation templates
 03054115eca413b632985ff0a4edaf93b36ce9fc    IRRELEVANT  lxd/instance/instance: Renames IsMigratable to CanMigrate
+37b812206d02d6e7e03a80fd574cf0f2ee9f1b8f    IRRELEVANT  lxd/db/node: don't autofill node config
+3be487fd5f2bf1b3aee968e599cb0876dff8e4a0    IRRELEVANT  lxd/api/cluster: make scheduler.instance optional
