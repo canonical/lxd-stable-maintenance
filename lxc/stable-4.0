@@ -130,3 +130,5 @@ cfe6f43599b10951ac59fcb2ccc84a4eece8aa16    DIFFERS     start: fix whitespace er
 58db1a61c88a41eec7e0dffe656d9ece53d899cc    DIFFERS     build: add src/include to build and simplify header inclusions
 b967f9e8d580f12ecab58cb41af98b05069eb09c    DIFFERS     tests: fix config file tests
 69f5d68a5ce5db5ba272532b3d1c378d8fbff26d    DIFFERS     lxc-monitord: use {} around ;
+be538b8b279bec726dd0d4db1f9c9ceb7d737197    FEATURE     Make number of rx and tx queues configurable for veths
+cc6a34b9da9a536e41898237ffabe7831d482f60    FEATURE     doc: add way to specify broadcast address to Japanese lxc.container.conf(5)
