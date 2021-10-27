@@ -1976,3 +1976,32 @@ dd18f4dc109ad39bd71ec15af63298c42a3545ca    IRRELEVANT  lxd/instance/post: Adds 
 03054115eca413b632985ff0a4edaf93b36ce9fc    IRRELEVANT  lxd/instance/instance: Renames IsMigratable to CanMigrate
 37b812206d02d6e7e03a80fd574cf0f2ee9f1b8f    IRRELEVANT  lxd/db/node: don't autofill node config
 3be487fd5f2bf1b3aee968e599cb0876dff8e4a0    IRRELEVANT  lxd/api/cluster: make scheduler.instance optional
+d4ed9c47cc3ae37b5038b5658a9cdfd4abfd6a71    FEATURE     shared/instance: Add linux.sysctl.*
+b1f91f30a194d9bc297f4d04af41e3cf39d59d99    FEATURE     lxd: Support for linux.sysctl.* configuration keys
+191201ab5d0a3e707fb13d9e5e37e7a215297d3e    FEATURE     doc: Add linux.sysctl.*
+031da8ba9bc0bbe5f61a4f01312ba02124f395b8    FEATURE     api: Add linux_sysctl extension
+349c62cc5a57bea3e5696f490b4ff1c39b04b864    IRRELEVANT  lxd/instance/drivers: Check swap for metrics
+da2495bf792a380b07595de57d00a775730b9a72    IRRELEVANT  doc: Move metrics under API
+d0577735708f2cb76d0fab728265228ec9436c47    FEATURE     api: network_dns extension
+def25013f0685a1823a6de8981ab0c4d38bb1cf0    FEATURE     doc/projects: Add restricted.networks.zones
+f682718e464d869f6cc85c541f864654387de946    FEATURE     lxd/projects: Add restricted.networks.zones
+c5c8b4bd1f6690f3554c2ca608c4c807b1490c77    FEATURE     doc/networks: Add dns.zone
+9ea57b77d15d72bdd2d17aad38ec69cad633357a    FEATURE     lxd/network: Add dns.zone
+72d04291568f7c8122f1dc8848374cda8fc43048    FEATURE     doc/server: Add core.dns_address
+cee5d75e7d3728565ab48fc12628bb7055b917be    FEATURE     lxd/node: Add core.dns_address
+fc612aaa69d33a91d3ca38cde6d3becad90bc178    FEATURE     lxd/db: Add networks_zones schema
+7ee656fc22a37f2c77eb4d48ad55d35b329693bc    FEATURE     lxd/db: Add network zones helpers
+9d7e2cd938b4e2652e37cc8268bc4dff4b6d085d    FEATURE     lxd/network/zone: Initial package
+908468ec261b5070943843f5386f875ed8fcbc92    FEATURE     lxd/lifecycle: Add network zones
+fc0bc1adf0f56f7d1e8dd747dd132a7cbf16118a    FEATURE     lxd: Add network zone API
+d790e8500323037948aece2994224068f61594e4    FEATURE     lxc/network: Add zone sub-command
+96f9e5d503fcb2bae24704e44c1e157d48501146    IRRELEVANT  seccomp: Pass the caller TGID to pidfd_open instead of TID
+566d0a3b3cbe288787886c2f3bf5b250ceb930b0    IRRELEVANT  seccomp: verify retrieved fds when
+929c8a0705200158faaad1b086fd583ef7a892f9    DIFFERS     doc/rest-api: Refresh swagger YAML
+6dd33f91700c64df99980d29db9554a1dfa3de10    IRRELEVANT  i18n: Update translation templates
+5f70e3067ce9a5225b34cd0b26a91366fec8431d    FEATURE     lxd/dns: Add DNS server
+e29b38a07e789f9d8732c5246e5658736e96f6da    FEATURE     lxd/daemon: Integrate DNS server
+d9d47e0ab4c2f6aa05f490e3a7fc980ead511bc9    FEATURE     tests: Add DNS zone tests
+cd8c841f734b48e8b61339c9e00788933afeee27    FEATURE     doc: Add network zones documentation
+c5ac73895d40279d1ba51eddce4dfd5b62e5d90c    IRRELEVANT  lxd/instance/drivers: Use existing DeviceTotalMemory
+a720726731f72a565933b8095ed3c8b6f5ef9838    IRRELEVANT  lxd/instance/drivers: Check memory limit value for metrics
