@@ -1964,16 +1964,8 @@ fad2a235667d042655a0b96ef4073828932ff155    FEATURE     lxd/networks: network.Us
 7f0a64b9b12956a6f6b49696f10a08b217c0e844    IRRELEVANT  i18n: Update translation templates
 612c05bfe57b31fbcf37591f8b9b2937cacd3bf5    FEATURE     doc: Adds network peers documentation
 ffb10243eacef14285798b829dccba77cdb55b03    DIFFERS     doc/rest-api: Refresh swagger YAML
-bcceb32c67692c4bb35ce67883d051ad5b7fc8cb    IRRELEVANT  lxd/move: Adds stateful migration support for cross-pool instance migrations
 447cbf21b1f044f2fe7742d8d0c0053d1b74f30a    IRRELEVANT  i18n: Update translation templates
-8b58820a1e0754d6c4da0ed14bdbfd3bf1986902    IRRELEVANT  lxd/move: Consistent comment line endings in moveInstancePool
-41a41748922669d1ae474e16ffb012efa51c384d    IRRELEVANT  lxd/instance/post: Comment typo in instancePostPoolMigration
-9f791b81f963a6e3e3832907a5837bd0e317a2a1    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostPoolMigration
-4668d8bf8a06adc1d2269870a7f944c7728c3459    IRRELEVANT  lxd/api/cluster: inst.CanMigrate usage
-e407e8faa57eefeb967a85c065902b29a89c6a75    IRRELEVANT  lxd/move: Add stateful move support to moveClusterInstance
-dd18f4dc109ad39bd71ec15af63298c42a3545ca    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostClusteringMigrate
 36c33b501865a1fdd740187fa474a915a1def87a    IRRELEVANT  i18n: Update translation templates
-03054115eca413b632985ff0a4edaf93b36ce9fc    IRRELEVANT  lxd/instance/instance: Renames IsMigratable to CanMigrate
 37b812206d02d6e7e03a80fd574cf0f2ee9f1b8f    IRRELEVANT  lxd/db/node: don't autofill node config
 3be487fd5f2bf1b3aee968e599cb0876dff8e4a0    IRRELEVANT  lxd/api/cluster: make scheduler.instance optional
 d4ed9c47cc3ae37b5038b5658a9cdfd4abfd6a71    FEATURE     shared/instance: Add linux.sysctl.*
@@ -2005,3 +1997,171 @@ d9d47e0ab4c2f6aa05f490e3a7fc980ead511bc9    FEATURE     tests: Add DNS zone test
 cd8c841f734b48e8b61339c9e00788933afeee27    FEATURE     doc: Add network zones documentation
 c5ac73895d40279d1ba51eddce4dfd5b62e5d90c    IRRELEVANT  lxd/instance/drivers: Use existing DeviceTotalMemory
 a720726731f72a565933b8095ed3c8b6f5ef9838    IRRELEVANT  lxd/instance/drivers: Check memory limit value for metrics
+f6cf33a8ed2fc96642ebb898f270c574f54c976e    IRRELEVANT  lxd/device/nic/ovn: Remove setting accept_ra sysctl unnecessarily as disable_ipv6 is set
+4df03eab9401bc759758503c1bd4a7a4dff67873    DIFFERS     Replace 'which' with 'command -v'
+c83a765e91e1ec7ada13fabbb7b8b0a01abed8b1    DIFFERS     i18n: Update translation templates
+71a3b25a70989dfe5344487818f765e55773c69d    FEATURE     api: Add ovn_nic_acceleration extension
+181182f3a1649f11f926b5a9aa6cfbb9fc811f7e    FEATURE     doc/instances: Add network acceleration config
+a735c5476e79d86572e5e484526ec59240661dbb    FEATURE     lxd/network: Adds SRIOVFindFreeVFAndRepresentor
+1cb9f8df3f9c24633fc05982d839ed5fd306eba8    FEATURE     lxd/device/nic_ovn: Add SR-IOV support
+c67e61623aae2e978f1b84f6d917553c54a6d1dd    IRRELEVANT  lxd/device/nic/ovn: Remove incorrect call to networkSetupHostVethLimits
+0d47e7049f75bff7d60fe0551a4bd29209b50cc0    IRRELEVANT  lxd/cluster: Fix forceful stop on restore
+8068ff2632bcc17e3473aac99b21b37d551ad6d2    IRRELEVANT  lxd/network/driver/ovn: Comment typo
+ac8fe54a53b345f95d5a41ca38dc89f7674dd179    IRRELEVANT  lxd/network/driver/ovn: Add external inbound peer address spoof protection to logicalRouterPolicySetup
+9f8fe4f7c8fa832d6c677d453f093a3aacfa1e40    IRRELEVANT  lxd/network/driver/ovn: Update PeerDelete to remove security policy rules from local and target routers
+b559120807d88450133d0c787bcc86193efd861e    IRRELEVANT  lxd/network/acl/driver/common: Small optimisation in validateRule
+0ec77eca8537289098b304e8c6794e976d75eba9    IRRELEVANT  lxd/network/acl/driver/common: Allow named peers starting with @ in validateRuleSubjects
+7aa20d17306c8f566afdd18c48d88641f9ffd27a    IRRELEVANT  lxd/db/network/peers: Adds GetNetworkPeersTargetNetworkIDs function
+adb666b910248e688d50da0d47d561be5c1fb6f4    IRRELEVANT  lxd/network/acl/acl/ovn: Adds support for peer subjects using @<network_name>/<peer_name> in OVNEnsureACLs
+d96b2f0dfa85714c0f520e54f84d2494b4f80ff3    IRRELEVANT  doc/network-acls: Adds concept of peer network subject selectors
+77f46b19ba4925cb450c0f5a5df53258d1c62ace    IRRELEVANT  lxd/network/network/interface: Adds PeerUsedBy function
+66f241db123ff9b8c9dedfdf928069b5a681773c    IRRELEVANT  shared/api/network/peer: Adds UsedBy field to NetworkPeer
+79f364ee88fb3913f0454aee82b04fc22eed6273    IRRELEVANT  lxd/network/peer: Populate UsedBy field
+2ca60dff8bff43d6346c7cc9d76f713ad2225a69    IRRELEVANT  lxd/network/driver/common: Adds peer used by functions
+55e627608ea2ee30c36905810769804d43398a3e    IRRELEVANT  lxd/network/driver/ovn: Prevent peer from being deleted if in use
+e3ad56efe78c8b7d29d564dc165755d62d1e3db4    IRRELEVANT  gomod: Update dependencies
+1e31d17594b24163518430249d5ee18a8f39d791    IRRELEVANT  i18n: Update translations from weblate
+be09b4bba7fc485db7202b4b48566f54c424547e    IRRELEVANT  gomod: Pin x/net to version supporting 1.13
+9c58f4b36a8f85bb0dd4fccaeeafb67c20541f29    IRRELEVANT  gomod: Update dependencies
+d39301794f88e29a658af0f6624676a6d4fd13d8    IRRELEVANT  gomod: Downgrade dqlite to 1.10.0
+1e699cf13afb82980ef27ccdd35513c446b1b87b    FEATURE     Release LXD 4.20
+12016eb368e9a605b9b12e4ce0e39ed833e3c9b3    IRRELEVANT  gomod: Upgade to go-dqlite v1.10.1
+5a31a63b0d1f9f8e44ab855181a8413c33a443d3    IRRELEVANT  Doc: fix typo for hardware offload
+5fb6199f5563ae8141390b3ebb7ddbc6cb413141    IRRELEVANT  Doc: fix remove non-existent anchor in link to network-peers.md
+89402d9d28c56fdfcce789f48861f8f57d98df9a    IRRELEVANT  lxd/network/openvswitch/ovn: Update LogicalRouterPortAdd to accept gatewayMTU arg
+cc12c960c13ed86221053e7cfb098d6ede66290e    IRRELEVANT  lxd/network/driver/ovn: client.LogicalRouterPortAdd usage
+51da38d0b0615026b4ff0fd5d2d911dfeb31dfe9    IRRELEVANT  gomod: Update dependencies
+b76c02b2312e9e5e986333ebcf88860b788702bf    IRRELEVANT  gomod: Update dependencies
+bfbb053453829d661da9ff6d6632d647bff779e9    IRRELEVANT  lxd/api/project: Standardises restricted.networks.uplinks validation
+c9ce09b2609e611bb53524a01ae50f6b4100d549    IRRELEVANT  lxd/network/driver/ovn: Switch to n.state.Cluster.GetProject in InstanceDevicePortValidateExternalRoutes
+33db1b50489e509a7e3a53004764ad01079de1a9    IRRELEVANT  lxd/db: Add WarningInstanceTypeNotOperational warning
+b9694aec25dbbbb213c8b77468e0cd5275af187d    IRRELEVANT  lxd: Add warning entry for missing instance driver
+2fe67aae69fe6989458cce901284996d601b94a6    IRRELEVANT  lxd/drivers: Add warning entry for missing instance driver
+9670633e82b6f82aa278f4e9d17f96fdfbdaa22e    IRRELEVANT  lxd/network/ovn: Support SSL
+bcceb32c67692c4bb35ce67883d051ad5b7fc8cb    IRRELEVANT  lxd/move: Adds stateful migration support for cross-pool instance migrations
+8b58820a1e0754d6c4da0ed14bdbfd3bf1986902    IRRELEVANT  lxd/move: Consistent comment line endings in moveInstancePool
+41a41748922669d1ae474e16ffb012efa51c384d    IRRELEVANT  lxd/instance/post: Comment typo in instancePostPoolMigration
+9f791b81f963a6e3e3832907a5837bd0e317a2a1    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostPoolMigration
+03054115eca413b632985ff0a4edaf93b36ce9fc    IRRELEVANT  lxd/instance/instance: Renames IsMigratable to CanMigrate
+4668d8bf8a06adc1d2269870a7f944c7728c3459    IRRELEVANT  lxd/api/cluster: inst.CanMigrate usage
+e407e8faa57eefeb967a85c065902b29a89c6a75    IRRELEVANT  lxd/move: Add stateful move support to moveClusterInstance
+dd18f4dc109ad39bd71ec15af63298c42a3545ca    IRRELEVANT  lxd/instance/post: Adds stateful migration support to instancePostClusteringMigrate
+2e1492ce0d6d3813c9ed9b45950c66dabc62cab6    IRRELEVANT  lxd/instance/drivers/driver/qemu: Implements Migrate to support stateful start after migration
+00212e9517cbc46b69b1a4dc29e480181e713d31    IRRELEVANT  lxd/migrate/instance: Update new migration source and sink functions to detect container instance type for CRIU
+999c7e96bc25758f506d93bd4fb2520b85a07aa7    IRRELEVANT  lxd/migrate/instance: Move predump setup logic inside CRIU section
+a95883071df68d7316cf27de4a3961982f810bf6    IRRELEVANT  lxd/migrate/instance: Keep vol source arg setup logic together
+32b3f2d73f90eab051d6d17f63999c560faab874    IRRELEVANT  lxd/migrate/instance: Make CRIU logic conditional on container instance type
+196b42e70146469f58929b54c5f177dda6cbedaa    IRRELEVANT  lxd/migrate/instance: Statefully stop running VM for live migration in migrationSourceWs
+36f0e7030b24d1bcf250067e1811a98749ba8bc6    IRRELEVANT  lxd/migrate/instance: Update migrationSink Do to support VM stateful migration
+337ec36b19c682869f8d162b9245380cfd96d292    IRRELEVANT  lxd/migrate: Update critieria for live migration to detect container instance type
+2b2941ea0e942c86151804b07a9b2e58cf92047d    IRRELEVANT  lxd/instance/post: Simplify arguments to instance migration functions
+fb07b8efacd40fc5789f08f3ddc1378560a64206    IRRELEVANT  lxd: migrateInstance usage
+d4149af5ce457bf88f14313b74eeb77af6edf47c    IRRELEVANT  lxd/instance/post: Remove container references in migrateInstance
+55760546db33846d5aa558fd91d629ce438ace05    IRRELEVANT  lxd/instance/post: Improve comment in instancePostClusteringMigrateWithCeph
+18261267876136f0ee17294d442c0de4cd00f50a    IRRELEVANT  lxd/instance/post: Avoid loading storage pool twice in instancePostClusteringMigrateWithCeph
+b7d1aa3ecfd2b361d4aefa34c0c1ed1c849942a5    IRRELEVANT  lxd/instance/post: Remove out of date comment from instancePostClusteringMigrateWithCeph
+e80f0a4eaa8dcc28e617789e3465340d2c5f2ea5    IRRELEVANT  lxd/instance/post: Remove container reference in error in instancePostClusteringMigrateWithCeph
+b6e1debd129a86d8319de4147114d9a00c0a47c2    IRRELEVANT  lxd/instance/post: Switch to api.NewURL() in instancePostClusteringMigrateWithCeph
+6c822766ae8a4488040b00f4dd43965bb8df32e8    IRRELEVANT  lxd/db/instances: Adds volumeType argument to UpdateInstanceNode
+af5e4f09bf5a3101c7fd01a15730b856c199407d    IRRELEVANT  lxd/instance/post: Rework instancePostClusteringMigrateWithCeph to support VM stateful migration
+12d77fee8e817960a5ee7090d752232f37340f8f    IRRELEVANT  lxd/instance/post: Update instancePostCreateInstanceMountPoint to accept an instance
+f9b2957b791fb73b992b06fc680980fb167589c6    IRRELEVANT  lxd/instance/post: Update instancePostClusteringMigrate with support for starting instance during stateless migration
+597ca446468c1e77ab719e28d8ae2dd3e85db879    IRRELEVANT  lxd/instance/post: Don't allow migration to same location of instance in migrateInstance
+0a4bef2e9434a247271f9877b196099cbf187f6a    DIFFERS     lxd/device/nic: Split up SR-IOV functions
+bb7718a5a265b3f705adac6dae07c5aaba023aac    FEATURE     lxd/network/openvswitch: Add HardwareOffloadingEnabled
+b974d33b044c3776217927480b5784f17e7eb188    DIFFERS     lxc/import: read from stdin
+22f063a06231776c59e4616284b78e0674fb7c98    DIFFERS     cleanup: remove subtest
+781e3a9cea49911cc1d5857b3e374feec407b4c3    DIFFERS     lxd: Move to new protobuf when possible
+c714298faddfc04478715e50f347613f377271d6    DIFFERS     lxd/daemon: Adds systemdSocketActivated
+b35d88372507024dbd31fbae234efdc668ce114d    DIFFERS     lxd/instance: Instance sql.NullTime field usage
+fbee10f6b8798699f034726aa7d85395601248f1    DIFFERS     test/suites/clustering: Change test_clustering_remove_leader to test_clustering_remove_members
+8a014165f31623f0161e5d17256889d83501497e    DIFFERS     lxd/api/cluster: Reformat clusterAcceptMember function
+270e16e2eecafb5a2d8ac54bde60a5cc006c04a9    DIFFERS     lxd/db/cluster/update: Fix upgrade from 2.0/3.0 when using go-dqlite v1.10.1 NULLable fields
+4b5a3ac89ab48f09ee1c053dec35ea6f94b06f9d    IRRELEVANT  lxd/instances: Use correct project in live migration
+95b8e0acec79ee8f07c4290040604ac388733402    DIFFERS     lxd/instances/qemu: fix usb pass-through with more than one device
+7e0575d875f80364ebc9ca25c7e17a3a3a75b45a    IRRELEVANT  lxc/storage_volume: Use consistent units
+955dba8deec7102d197b898ddc5871667da3aa01    FEATURE     api: Add certificate_self_renewal API extension
+4fbdc6f4481523b40907e850b2702643708c53d0    DIFFERS     shared/api: Allow cert modification
+2404c22f2f998d41a968dfa2316861d4d235bc17    DIFFERS     Update default volume.size from 10GB to 10GiB
+0d42ab9fb9053849edd82f4d7c6da07f0f0b0539    FEATURE     lxd: Support certificate update
+9ebee1f7e5fdf8c12bf62519cee146b0cb161a0c    DIFFERS     doc/projects: Improve doc on restricted key
+3acafc9299b75ab1b450435005d62221aaa7969f    DIFFERS     seccomp: use stricter regexps when looking for Uid/Gid/Tgid in /proc/$pid/status
+c49bbcc8a045df1bf29f261a9734409098864099    DIFFERS     lxd/device/config/device/runconfig: Add Revert reverter field to RunConfig
+7526ff475c1a34c7e9baefd0b080d588ea7dd08d    IRRELEVANT  test: Add test_certificate_edit
+c839a1b6f78b3fae33930f7e91d287891facbc0f    DIFFERS     lxd/device/disk: Update createDevice to use []string for mount options
+66fa7b1a2a32e389093d821681675e26d545d03d    FEATURE     doc/projects: Adds restricted.devices.disk.paths setting
+7b0deedaffb733e0ce410979f09aa2ef268507b6    FEATURE     lxd/api/project: Adds restricted.devices.disk.paths validation
+14814f5b0b4c23ad4a6d843b16ecf896313f6c04    FEATURE     lxd/project/permissions: Adds CheckRestrictedDevicesDiskPaths function
+510ea763577a6181197cf0599fb33ae77f597071    FEATURE     lxd/project/permissions: Check for valid disk source path in checkRestrictions using CheckRestrictedDevicesDiskPaths
+3526bbeb1b17e872f5faf81a85e4a9497cb2b58c    FEATURE     lxd/device/disk: Update d.validateEnvironmentSourcePath to check for allowed paths from project
+d30f787469f8ca19a734888fe1259a65f909d4c6    FEATURE     test: Add restricted dish tests
+3b9e18ba0e5016b49052b3b05ac8f917b404ec96    DIFFERS     lxd/device/disk: Adds localSourceOpen function
+12b785d0cae21e93c78333d6181cb5247836e523    FEATURE     lxd: Support for moving instances and custom volumes between projects
+bf22ec85c09366217bc01e7e4b28313401c031a3    FEATURE     lxc/move: Support for moving instances between projects
+5bc55eff719d4d8ee3ad054e1ce95ed5422432fb    FEATURE     lxc/storage_volume: Support for moving custome volumes between projects
+7bd6e5237b9ee1748b907a05b5a6bde8de112f09    FEATURE     api: instance_project_move and storage_volume_project_move
+8036e323e5834ce4b36dc8833e3e407547c7c3c4    FEATURE     tests: Add test for moving storage volume between projects
+ad10ab8cc105d550c842f5995d3ca74daa57c542    IRRELEVANT  i18n: Update translation templates
+044d0ae32e8075a80a7c52e38e49e3831ed75463    DIFFERS     tests: Split cluster and standalone
+055d01f7c12d4c8be045a9132cc66d35d3a56ff8    DIFFERS     lxd/device/disk: Change mountPoolVolume to return a revert function
+4a3c014570cbdd755e567c268aa314991325835b    DIFFERS     lxd/device/disk: createDevice should always return a non-empty device path or an error now
+74e5bde5723e2938bc9e577c735ccba93177c474    DIFFERS     lxd/device/disk: DiskVMVirtiofsdStart revert usage
+b8bf708486ab722d89d0fb70ecde30514a516f36    DIFFERS     lxd/device/disk: Close virtiofsd unix listener after VM start
+aaefd4b4180d76e64697db4ccda6fbc8964282f4    IRRELEVANT  lxd/device/disk: Consistent comment line endings
+65d0ceb7ff72f75c9e34e521135524b289bccd58    IRRELEVANT  lxd/instance/drivers/driver/qemu: Consistent comment line endings
+e990c8f71378512c4a280000c1dafee4ed3ba062    IRRELEVANT  lxd/project/permissions: Updates AllowSnapshotCreation to accept a DB project record
+2c3af7153f62c6ac49be6f45989cf6db19bf23d7    IRRELEVANT  lxd/storage/volumes/snapshot: project.AllowSnapshotCreation in storagePoolVolumeSnapshotsTypePost
+aaa8111a6404fcf73ae8a87fe002a5e1c0a38ba7    IRRELEVANT  lxd/storage/volumes/snapshot: project.AllowSnapshotCreation usage in autoCreateCustomVolumeSnapshotsTask
+df260ce42d276dbcfaa7bd6538655cb82c470578    IRRELEVANT  lxd/instance/snapshot: project.AllowSnapshotCreation usage in instanceSnapshotsPost
+410c9de48123a5c517095695a15229736f0869e6    IRRELEVANT  lxd/instance: project.AllowSnapshotCreation usage in autoCreateContainerSnapshotsTask
+be537d877fe392be2a34cf6ed06e6897fec41d41    IRRELEVANT  lxd/network/acl/driver/common: validate.IsNetworkPortRange usage updated
+5bac2579e71aaec3285fa6eef9dc544129c15992    DIFFERS     gomod: Update dependencies
+7d6dc0134e3b5afd0d268bda40d1d56086b1ff77    FEATURE     shared/instance: Add support for raw.idmap to VMs
+e8f32a57236c0b050479493d4e19de4bc43de8ec    FEATURE     lxd/project/permissions: Adds raw.idmap key to isVMLowLevelOptionForbidden
+90de38996092c69e826f1f5a1c57901a6ac42b28    FEATURE     lxd/device/device/utils/disk: Adds diskAddRootUserNSEntry function
+293c065976f19067ee4d784f9822389f2bc1e1df    FEATURE     lxd/device/device/utils/disk/test: Adds tests for diskAddRootUserNSEntry
+6c48dc9ebe7def7a3c8179578e32d6519c767dd7    FEATURE     lxd/device/device/utils/disk: Adds forkusernsexecWriteIdmaps function
+79f9eae39b61f6cf09b085ba53716d4f9388f3b9    FEATURE     lxd/device/device/utils/disk: Adds forkusernsexec idmap support to DiskVMVirtfsProxyStart
+d0c31f4c5e9e09cb9499408f4578795a108d1b86    FEATURE     lxd/device/device/utils/disk: Adds forkusernsexec idmap support to DiskVMVirtiofsdStart
+59863b526d4914bbe6b9302a96f3999ab3652bf4    FEATURE     lxd/device/disk: Adds raw.idmap support for DiskVMVirtfsProxyStart and DiskVMVirtiofsdStart
+e8acece78031a68dc93ab54251ce1f2cf4a93d25    FEATURE     lxd/instance/drivers/driver/qemu: device.DiskVMVirtiofsdStart usage
+0396eff113f4c20a0100f02378b6de66cf668944    FEATURE     lxd/api/project: Adds restricted.idmap.uid and restricted.idmap.gid config keys to projects
+49b4e0437deeec94aa27b40c21d03b19c6b79989    FEATURE     lxd/project/permissions: Adds restricted.devices.disk.paths to allRestrictions
+28669b4aaa2ec896f60e84cc672bb3a022252ce8    FEATURE     lxd/project/permissions: Adds restricted.idmap.uid and restricted.idmap.gid to allRestrictions
+86c59c9b1eebecc0cddfcfd0ad4cef308e95d33c    FEATURE     lxd/project/permissions: Adds parseHostIDMapRange function
+d821cd89e7c5cb33f8a663b2cd11e32d7c7c919d    FEATURE     lxd/project/permission/internal/test: Adds tests for parseHostIDMapRange
+ec9b259c27975d58bea670a1063e1ba8a0a2f21e    FEATURE     doc/projects: Adds restricted.idmap.{u,g}id settings
+e54cda13de6f32e9118df5cbe6a9c58dfa9efe62    FEATURE     lxd/project/permissions: Validate the raw.idmap setting uses only allowed host UID/GIDs when unrestricted low-level features not enabled in project.
+ecfe1ceccd3e33973657da5e1298f5f9d1d9c878    DIFFERS     lxd/project/permissions/test: Fix import ordering
+9d8f0cf5beeadfb43e92abef50aed6332f4c9562    IRRELEVANT  test: Fix comment typo inn devices disk restricted tests
+5a7d0afe2919ed7b940f145ee8d24012203ecd47    FEATURE     test: Adds tests of project restricted.idmap.{u,g}id settings with instance raw.idmap
+5a4172780b0bb8360f2819ae848c15620e6d264a    DIFFERS     lxc/storage_volume: Add destination target flag; Respect target flag
+cf0681476aa011dc0922f2ddc67396e0b0f5cef8    DIFFERS     i18n: Update translation templates
+7d44dc5a8433ff9d2a773d7b86d35835d33088e8    DIFFERS     doc: clean up headings in files
+ca9b04c7598dbdb48c406fe0391b9f803e7b7be4    IRRELEVANT  lxd/network/driver/ovn: Fix allowedUplinkNetworks to return only compatible uplink networks
+69520de7260cf5af27a8f460d368efe4e0e3f5af    IRRELEVANT  lxd/db/networks: Adds getCreatedNetworks to support filtering created networks by project name
+8d2f833db132d8664c1915ca609313d41318ee90    IRRELEVANT  lxd/db/networks: Adds GetCreatedNetworksByProject function
+1d2c7d1458ac1ac8a30c4240a9c2922e0fb1ccf1    FEATURE     shared: Add cloud-init config keys
+5b75c71703f809b1c311f92b38557978d9c01d1c    FEATURE     lxd: Expose cloud-init config keys through /dev/lxd
+77b0e4f368b68d27f5dca6c621eed4d539b5dfa1    FEATURE     lxd: Expose instance type through /dev/lxd
+d719e9a1a822e9dc9e5031d1722668a652275ddd    FEATURE     lxd: Add /1.0/devices to devlxd
+8955eb8b6c3711f90b2e7c69defa9fc35660bd9f    FEATURE     lxd/device: Use new cloud-init config keys
+ef1a77e57064ee86b42c623cb900ec433cbe15a5    FEATURE     lxd/instance/drivers: Use new cloud-init config keys
+a2490c63d33d7aa5943f0f481a00c3be783ec687    FEATURE     lxd-agent: Expose instance type through /dev/lxd
+6691fde3d0f9e00ec910a03d4984a5cc772bb7d4    DIFFERS     lxd/instance/drivers: Remove cloud-init from config share
+6eb9a6d1336dc5c848957e6d298131d2bcc4c2fa    FEATURE     lxd/instance/drivers: Add devices to instance-data
+a0dbbdc3ca74003cf7ab57fd47394fa2c6567831    FEATURE     lxd-agent: Add /1.0/devices
+be785cd586cf6c384e751aeaf0695c934cee9550    FEATURE     doc: Add cloud-init instance config keys
+934cbf5b4854103b6becdfc150383407dfbeb001    FEATURE     doc: Update cloud-init doc
+c8476f079bbe4349f58649b6b52bc3df071bbd0f    FEATURE     scripts/bash/lxd-client: Update keys
+54b0e2c986fe1c4692e97e8265fe659072d601a3    FEATURE     api: Add cloud_init API extension
+8c9f0f25189a88a022d0400cd9d31101f412a48d    FEATURE     doc: Update devlxd
+5d7f3e4e0ef9c85723d04a643d9e9dac76c48a22    IRRELEVANT  lxd/network/driver/ovn: Rename getLogicRouterPeerPortName to getLogicalRouterPeerPortName
+abd1dd4720e9cf26fdb590ed95a8ec238869201f    IRRELEVANT  lxd/network/driver/ovn: Use fmt.Errorf error wrapping
+5b99464b0a6cc5adea976ce1a9907a2e331c57cf    IRRELEVANT  lxd/network/driver/ovn: Fix bug with incorrect instance peer routes being added on NIC start
+5cf64f032b4b2f81a10e4fef7f3d59348e1ea588    IRRELEVANT  lxd/device/disk: Support snap packages when opening restricted disk paths
+57628fd35baa456af5ab82a44824d6a35b603d4d    DIFFERS     doc: Add sphinx navigation
+e7e998284b97d639f09b2b4d71340c96683d615a    DIFFERS     lxd/device/nic/routed: Re-work NIC driver to not depend on liblxc router NIC type
+d40776f2b553fc5e66ddd2fe0915933c6726b177    DIFFERS     lxd/device/nic/routed: Adds VM support
+0b33490896f42dbc8449d2394ee11b74740fbd8d    IRRELEVANT  doc: Fix typo in ToC entry
+310a370b24a0ab5512f3484893da8a4a6d684eeb    DIFFERS     doc/instances: Remove unnecessary full stops from routed NIC table
