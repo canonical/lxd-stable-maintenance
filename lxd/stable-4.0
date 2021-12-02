@@ -2167,3 +2167,5 @@ d40776f2b553fc5e66ddd2fe0915933c6726b177    DIFFERS     lxd/device/nic/routed: A
 310a370b24a0ab5512f3484893da8a4a6d684eeb    DIFFERS     doc/instances: Remove unnecessary full stops from routed NIC table
 e68be64af5749ea4423f70f32eb06e2508deb13f    DIFFERS     doc: clean up support information on doc start page
 66a7f5edc2d9a0d6e5b3af6b4a9240fa21c9390f    DIFFERS     doc: clean up doc start page
+6e85b94893aeb1ae37963dad0204ae9c0d6cfca5    DIFFERS     i18n: Update translation templates
+db8df8b04dbaefb3b4b9d22f6224ea020df0508a    DIFFERS     lxd: log basic idmapped mount support
