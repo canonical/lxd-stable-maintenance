@@ -2169,3 +2169,21 @@ e68be64af5749ea4423f70f32eb06e2508deb13f    DIFFERS     doc: clean up support in
 66a7f5edc2d9a0d6e5b3af6b4a9240fa21c9390f    DIFFERS     doc: clean up doc start page
 6e85b94893aeb1ae37963dad0204ae9c0d6cfca5    DIFFERS     i18n: Update translation templates
 db8df8b04dbaefb3b4b9d22f6224ea020df0508a    DIFFERS     lxd: log basic idmapped mount support
+4e513c8e2481f4071f7d8b5aaa457778feb828f5    IRRELEVANT  doc/network-zones: Add default column
+be6204568051d2569b241f2a3e175f38d74d6e65    IRRELEVANT  lxd/network/zone: Cleanup IPv4 logic
+d51bfbf2a8ede1f00ef50fe2c2ef5d75c5785080    FEATURE     api: network_dns_nat
+59bfdbe5c7631572fa0d11b059e68889007648f0    FEATURE     doc/network-zones: Add network.nat
+4a4ded237257a568fcd11022dbda3985bea1f822    FEATURE     lxd/network/zone: Add new config option
+2efb0d677e31a735bf78e1ced822963b11f467a5    FEATURE     lxd/network/zone: Support network.nat
+3c2e117bf56cccc8a792451f9866f848c14aeaa8    IRRELEVANT  lxd/device/nic/ovn: Clear up OVS integration bridge port earlier in stop sequence
+9651bc4afb8df0a20dda966f475f6ba36ff75464    IRRELEVANT  lxd/db/certificates: remove UpdateCertificateProjects
+2fd4f501bd5723b57ad8e12ca312226584051e4d    DIFFERS     lxd/db: remove unused generator comments
+13def65775a19f38fd268ad720605a97e3c3d282    DIFFERS     lxd/db: update generated code
+7e0ae1abe8f08ee55574853012082fb96a50ae68    DIFFERS     lxd/db/devices: add Devices struct and generator comments
+efa9510e5bd601ad83ae147af1cfe9b1fc2158c3    DIFFERS     lxd: convert between db.Devices and API map format
+a31d82078564cba51c44b58772409ce511b99033    DIFFERS     lxd/db: add manual get-URI methods for networks/acls/storage volumes
+ca76ba6769042aa67a2f80b547cf1583bbe36515    DIFFERS     lxd/db/snapshots.mapper: update generated code
+0a1ca61de281f22ca68dae3e6b0e725e5d8004b0    DIFFERS     lxd/db/cluster/constants: format used-by uris to drop default project
+01bc99fb593f61007be9b07e0b8a03d2353589fe    DIFFERS     lxd/db: add association table files
+3698083872b06f93419b764b4cc5f0c0fe5d6ee8    DIFFERS     lxd/db: add non-generated GetProjectUsedBy and GetProfileUsedBy
+e53e22714543049666c2545efda7688a540c6b2f    DIFFERS     lxd/db: update generated code
