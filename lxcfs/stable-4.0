@@ -29,3 +29,9 @@ d511b24d84823df428e85e6ccd79982486cd966a    FEATURE     tree-wide: set _GNU_SOUR
 a962e7a168c2e941806a72178248dfb779c2f4f9    FEATURE     meson: use shared_module()
 cb61c9e14569e6a94a8de4c97ff6ac1a04e363ec    DIFFERS     tree-wide: fix HAVE_FUSE3 checks
 a3c8d33cd7a110b711528717ad9cfd0cd7f62749    IRRELEVANT  sysfs: fix cpumasks
+18cde097e635b66f9fd4cfb5b5882f3c9ae3f7c2    IRRELEVANT  build: remove newline
+d90ab57e62f43b42410e67a83506232c70939f1f    IRRELEVANT  build: add share/ directory
+4d7f58e18a36b79a48bd5c3873948aaad0aceb1c    IRRELEVANT  github/workflows: meson compile -C build everywhere
+c96acf9eb6dab687ab1f6ca3acdadf9ab2326030    IRRELEVANT  meson: Include lxcfs_fuse.h into source files
+f1c461893ec319f495463c02077b923b0cd08670    IRRELEVANT  build: add LXCFSTARGETDIR to configuration data
+e5af758b3693057e4a9eee1893aa6d2982d92ffb    IRRELEVANT  build: use jinja2 templating
