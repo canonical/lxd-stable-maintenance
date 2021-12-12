@@ -2187,3 +2187,51 @@ ca76ba6769042aa67a2f80b547cf1583bbe36515    DIFFERS     lxd/db/snapshots.mapper:
 01bc99fb593f61007be9b07e0b8a03d2353589fe    DIFFERS     lxd/db: add association table files
 3698083872b06f93419b764b4cc5f0c0fe5d6ee8    DIFFERS     lxd/db: add non-generated GetProjectUsedBy and GetProfileUsedBy
 e53e22714543049666c2545efda7688a540c6b2f    DIFFERS     lxd/db: update generated code
+bc1a0155786f74622f01c40e437c23b0f4062890    DIFFERS     lxd/db: Add database-leaader role
+9f851d605b8547be9cebae6352ecb6afa6a12625    DIFFERS     api: Add database_leader extension
+f3c252e597737e7e73040f68e18561a6423923f8    IRRELEVANT  lxc/cluster: Comma as delimeter for csv format
+a27a164892506e1ba11bfafadb95c7cdae4a1c38    DIFFERS     i18n: Update translation templates
+64a2c2c684bd4a90d4cd3d6cf7f0f328744e887b    FEATURE     lxc/list: Support for all-projects flag and PROJECT column
+8adfd4218b07ce20240428fc966142d2ab6e973a    DIFFERS     api: Add instance_all_projects extension
+0736fc8dd96e7da41461704908159de16b739df8    IRRELEVANT  i18n: Update translation templates
+437abf504bbdee8115828e9ff34f1cde34a8ceb4    DIFFERS     lxd/firewall/drivers: Optimises SNAT rules in nftables.
+719b89486b8aaa8ed2156595b6859a45c985e3dd    DIFFERS     tests: Make reboot test more reliable
+f60ece9dbd7c4e9b68852f9ecd18d6d4e739a97f    FEATURE     doc: Add ipv{n}.routes to routed nic type config
+487008a576925ea6bb05e7e4b513cf890a8ecb35    DIFFERS     lxd/firewall/drivers: Optimises DNAT rules for nftables.
+c7bd2daa311f417070cb4d842a9949b92b4872fc    FEATURE     api: Add clustering_groups API extension
+656ed868d46631a877bd29b845a3d8a76dd070f8    FEATURE     lxd: Add restricted.cluster.groups config option
+766d347b556e5501d9f96ed44446037aae6ee6a1    FEATURE     lxd/db/cluster: Add cluster group tables
+582f0d6e6a473e658c5b2f391dfd90a1b825edee    FEATURE     lxd/db/cluster: Add cluster group constants
+52dc49e65f6285145a9eb5ac436053b820ae7baf    FEATURE     lxd/db: Add cluster groups
+7453e5c13833202e4243bfbba9397f604f3e9351    FEATURE     lxd/db: Fix node retrieval
+d57b95b2f4c69444409f8224d83d8d25681b62e7    FEATURE     lxd/db: Add Groups to NodeInfo
+76a018125583ff213a0c4bb9143d3234fe2c2e8f    FEATURE     lxd/db: Add UpdateNodeClusterGroups
+077183824012a730ef0c2e939b96668b07d9fbce    FEATURE     lxd/db/cluster: Add default cluster group on start
+85d8be8fce9e393398e8ce7842ce21d7dceda1dc    FEATURE     lxd/lifecycle: Add cluster groups
+9ac214ba881d2f618f48be9f388c736083db1d1b    FEATURE     lxd: Add /1.0/cluster/groups endpoints
+58288ff6202aa8beaa634dffecca0b5d125db22b    FEATURE     lxd: Add new node to default cluster group
+4648345cdcc94ff1153caf30d69e0d2d6b3509de    FEATURE     lxd: Update cluster groups on node update
+bfc54ce66f15e6647bdf706e12a287e2e8a86931    FEATURE     lxd: Allow "group" value for scheduler.instance
+cf63a322fe0cd4699e7c72b414947314f5ff4de1    FEATURE     lxd: Enable cluster group targeting
+80acb23b6c6768c71f1267295c831ab67bb03fcb    FEATURE     lxc: Add cluster group
+f85b140418507ac16be4d6ceb2cc55c36630182a    IRRELEVANT  i18n: Update translation templates
+982b1d28b679e9d010b0edc3e0abc9c383db9338    FEATURE     test: Add clustering groups
+d7360644c700fd8b9b661b77462a0a05dbaa8dc3    FEATURE     doc: Add cluster groups
+1abcb690101817ef9e8b14b3437ba49e1f3fff2f    DIFFERS     doc: fixed typo in gpu_mig section. Signed-off-by: Dillon Samra <dillonsamra9@utexas.edu>
+d18d04942ad2fda8d731e5fa481464c980101829    DIFFERS     doc/storage: Split storage driver config tables
+caf8c1d3b3c7b38485cdf8f2fd769eeec1680296    DIFFERS     doc/storage: Consistent line endings
+3f8c645788be29030571266bf3a9cc41116ea802    FEATURE     lxd/device/nic/routed: Add ipv{n}.routes setting for routed NIC type by routing via first static IP specified
+3fdc3ea129425a8376f4ee6d106e190489c01469    FEATURE     test: Ensure routes are created for nictype routed
+724bfe2345ea10754c9581451b84073ac87c2af9    FEATURE     lxd/device/nic/bridged: Allow ipv{n} filtering when ip is set to none
+4161a0d32a289ac5b2371b8d439aceb9382f7de7    FEATURE     test: Add test for filtering with no ip assigned on an unmanaged bridge
+3518c0c66c18d59b3af5e9a85c9c0672d0d9f019    FEATURE     doc: Add that ipv{n} address properties can be none when filtering is set
+913d3e3b0d4e4f4b1112ec1beafa39fc607c9085    DIFFERS     lxd/db/node: Update nodeIsOffline to consider a node offline if time now is equal to offline threshold
+7884040e5be84766607bf9536472f459074c6400    DIFFERS     lxd: Adds save connection in context function to api and dev servers.
+78a7a1cc5f44e2c0a56c5a824bd2638c59bc81c6    DIFFERS     lxd/api/cluster: Don't start clustering tasks until member has actually joined the cluster in clusterPutJoin
+03f1d17258d89c2011253be80823193381fa93d6    DIFFERS     api: Add ceph_rbd_du
+942eeafec4e1332cd2258d378bc3ad22a113dfbe    IRRELEVANT  i18n: Update translations from weblate
+51979900f3a17508100c695c83cbdadeb521e11e    DIFFERS     gomod: Update dependencies
+30500c962f8e4e8e061bc4cbcafe8877de45a488    FEATURE     Release LXD 4.21
+951e58d212f8f6ed64875a4e1d4f6dd0e099877e    IRRELEVANT  lxc/list: Better handle --all-projects
+dc995e7e70501aea98badb2cb37e465189ddde30    IRRELEVANT  lxd/cluster: Handle no available migration target
+1fc16a44320c193f12ea99840817ca413603fa4d    DIFFERS     lxd/db: Update comments
