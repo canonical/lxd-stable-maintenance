@@ -2235,3 +2235,53 @@ caf8c1d3b3c7b38485cdf8f2fd769eeec1680296    DIFFERS     doc/storage: Consistent 
 951e58d212f8f6ed64875a4e1d4f6dd0e099877e    IRRELEVANT  lxc/list: Better handle --all-projects
 dc995e7e70501aea98badb2cb37e465189ddde30    IRRELEVANT  lxd/cluster: Handle no available migration target
 1fc16a44320c193f12ea99840817ca413603fa4d    DIFFERS     lxd/db: Update comments
+591bdccaa39cce23b4a1815758a945b4bda26547    FEATURE     lxd: Add recursion=1 support for instanceGet
+afdc3f53cec121ff47cfac441b4a9a4ee7a7875f    FEATURE     doc/rest-api: Refresh swagger YAML
+76eb543bc12b0dd2753c67d2414ad8e0d93260dc    FEATURE     api: Add instance_get_full extension
+f0a8d297b9a4caa5a4a570d341613d0629dfc11c    DIFFERS     lxd/device/nic/bridged: Don't depend on dnsmasq pid file existence to write static allocation file
+cb464e21abc09cae53c23f5a708882ee8e0296fe    DIFFERS     lxd/db/projects: Pass both project ID and Name to networks
+d1d4f25ba748b25467b8363fa8dd890b1c8c4a84    DIFFERS     lxd/db: Use api.NewURL for non-generated GetURIs
+0489299d2700772e509985c6eb71d98c91d59751    DIFFERS     lxd/db: Remove unused URI fetching methods
+94e3940edff1884600be3f118552626fe21b06d4    DIFFERS     lxd/db: Update generated code
+cd117d7074e1f636d3748c89761bb159cfb2cb46    IRRELEVANT  lxd/db/node: Fix handling of groups
+f4d77aeb3b634140778ffcdb9ff9f7364358f62d    IRRELEVANT  lxd/db/node: Support limiting to set of groups
+c264fca82233465838d19cb7e0eaacf306486c4e    IRRELEVANT  lxd: Update GetNodeWithLeastInstances usage
+c62463e44763f6f849e21a8e1f1635cdbd1407d8    IRRELEVANT  lxd/instances: Rework cluster group handling
+02bc9cbe9f1ae1ea969f139ea1b2dfa8c18c3ab7    IRRELEVANT  tests: Fix clustering_groups tests
+56f458b8ea42cf497d16e2958cb7915dc7915f19    FEATURE     lxd/db/cluster: Removes unused database views.
+ddcb587db96c20922e5eccd2b2505eb976b416aa    DIFFERS     lxd/daemon: Adds heartbeatHandler function
+ac8dd32154ea3e98e0e64ebc8ead754a68737802    DIFFERS     lxd/cluster/gateway: Pass HeartbeatHandler into HandlerFuncs
+8ba75e2b67c92d0f97d6ba0c3cf5a4e74aa22531    DIFFERS     lxd/api: d.gateway.HandlerFuncs usage
+b2a6f1093c0e3bba3f9d367a156caab7dbbce8c1    DIFFERS     test: Adds tests for passing through unix socket with disk device
+328a4e015935a66701b2627489cc23b3d2a7ec3b    DIFFERS     lxd/device/disk: Open source with O_PATH to support directories and unix sockets
+e3605110ecbf59ea5e741166e6328e380c7c8dad    DIFFERS     doc: reuse content from the repo README in the doc index
+67a83cf5ee397bf98f171c7a834c4c59121b54c1    IRRELEVANT  lxd/bgp: Port to v3 of gobgp
+1fa5da0b48d8df2b552bf9064e9364260d2d1a12    IRRELEVANT  gomod: Update dependencies
+54349f9b2c8a7d45817610379d2056e25f604c48    DIFFERS     lxd/instance/drivers/qemu: Move network state to separate function
+dd7f1ff4ba1f0b5e529e3e1b9b206ebaa5f173a7    FEATURE     lxd/db/cluster: Adds not null constraint to all description columns.
+fcc5795c77b85dabe33d2e9a54331752ef926993    DIFFERS     lxd/db: Adds empty description where null constraints are violated.
+28bc452b94d4e41fa7c265c453e9aaaac70b415e    IRRELEVANT  lxd/db: Removes usages of sql.NullString with descriptions.
+41a421889ccce226c29e2ea9b0f64fec36effed3    IRRELEVANT  lxd/instance/drivers: Add QEMU metrics
+d09b81c8e7171c8ef94c25c925c454ca2fa42f4f    IRRELEVANT  lxd/instance/drivers/qemu: Use qemu metrics if set
+abcecadd6b1bf4d10dd97421be32923f7a4f3504    IRRELEVANT  doc/api-extensions: Fix header formatting
+bb13999810b403d0fbfa028e385d8a9f83ad6c0c    DIFFERS     api: Add qemu_metrics extension
+781f3b67b2378410128e6739a4cc3cf57ee2e227    DIFFERS     lxd/clustert/heartbeat: Logging improvements in Send
+4866b6c00266edb7072eef9e730aa7d3758ec608    DIFFERS     lxd/migrate: Change allConnected channel in migrationSourceWs to be struct{}
+381dbcff997d57367726745ddadf4922ea63fcf1    DIFFERS     lxd/migrate: Change allConnected channel in migrationSink to be struct{}
+89a6ec69def2f8fefeb3c87fca8a576d9c2df8a6    DIFFERS     lxd/migrate: Updates migrationSourceWs to use util.ExtractTCPConn and util.SetTCPTimeouts
+3c92f26af8e5e507d8fce1ab359adcaad574de65    IRRELEVANT  doc: Bump minimum Go to 1.16
+9e2e2bef3b895b24cac85bec07eeffbfcd7189b1    IRRELEVANT  doc: Bump minimum LXC to 4.0.0
+6ddac7defef7f705bbfbb2136bb2a6d50d14cd64    IRRELEVANT  doc: Bump minimum kernel to 5.4
+2a8d4cc07a6f7f9072966ffbc41dd613901bae6e    IRRELEVANT  gomod: Update dependencies
+26bc2cc01becaee7812454cd8cc84ec8abd9156b    DIFFERS     api: gpu_mig_uuid
+6d6dfca9190f07c42b30f711528abd140a64e759    IRRELEVANT  daemon: fix feature indentation
+7de86d96b61b9e6ad1a7149c69b139b06ae5a803    IRRELEVANT  lxd/db/backups: Fixes GetStoragePoolVolumeBackups to handle null StoragePoolVolumeBackup.ExpiryDate
+9c0b711667812a3e90b359db4bd57d99bb428b0e    DIFFERS     doc: fix links in contributing docs
+44b9a7dbbc445704d76ef420e8cc11da3f0a9799    DIFFERS     doc: change file inclusion to use comments instead of text
+a30ad49e904a470f7ceafc89c4be8bea165aa68b    DIFFERS     i18n: Update translation templates
+d15bbb5f7c2bab91f0c65db28e47f239372a9859    DIFFERS     lxd: Update imports for log15
+3bebac4fe312012ab7805a7ae34ea86485f674f4    DIFFERS     lxd-agent: Update imports for log15
+3d9a046bcea895eed3bf6a38752c50a671369b7b    DIFFERS     gomod: Update dependencies
+3150af9ba8c2fe402ad9374c133d6d5efa6d2cf6    DIFFERS     gomod: Update go-dqlite dependency to include fix for local timezone conversion removal
+2c0ebf6d95517c9ba8509bab06ad3a022d955d01    DIFFERS     doc: remove spaces at the end of the line
+e56317a50beb924973148a46645b7e8356c2f2cc    DIFFERS     api: Adds event_project extension
