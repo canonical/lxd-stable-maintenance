@@ -132,3 +132,5 @@ b967f9e8d580f12ecab58cb41af98b05069eb09c    DIFFERS     tests: fix config file t
 69f5d68a5ce5db5ba272532b3d1c378d8fbff26d    DIFFERS     lxc-monitord: use {} around ;
 be538b8b279bec726dd0d4db1f9c9ceb7d737197    FEATURE     Make number of rx and tx queues configurable for veths
 cc6a34b9da9a536e41898237ffabe7831d482f60    FEATURE     doc: add way to specify broadcast address to Japanese lxc.container.conf(5)
+3eacbe106b956e5f75ae1be7399293ee83f76e39    DIFFERS     api-extensions: don't advertise seccomp notify support if it's not compiled in
+331ef062bebf48532c610b7aa18369fe2651caa2    DIFFERS     seccomp: only guard seccomp notify behind HAVE_DECL_SECCOMP_NOTIFY_FD
