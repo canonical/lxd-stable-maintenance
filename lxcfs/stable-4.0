@@ -35,3 +35,4 @@ d90ab57e62f43b42410e67a83506232c70939f1f    IRRELEVANT  build: add share/ direct
 c96acf9eb6dab687ab1f6ca3acdadf9ab2326030    IRRELEVANT  meson: Include lxcfs_fuse.h into source files
 f1c461893ec319f495463c02077b923b0cd08670    IRRELEVANT  build: add LXCFSTARGETDIR to configuration data
 e5af758b3693057e4a9eee1893aa6d2982d92ffb    IRRELEVANT  build: use jinja2 templating
+915700c3f4fcda33d987f500b87d0ca5e0e8e511    IRRELEVANT  build: move global options further up
