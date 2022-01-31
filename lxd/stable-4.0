@@ -2285,3 +2285,92 @@ d15bbb5f7c2bab91f0c65db28e47f239372a9859    DIFFERS     lxd: Update imports for 
 3150af9ba8c2fe402ad9374c133d6d5efa6d2cf6    DIFFERS     gomod: Update go-dqlite dependency to include fix for local timezone conversion removal
 2c0ebf6d95517c9ba8509bab06ad3a022d955d01    DIFFERS     doc: remove spaces at the end of the line
 e56317a50beb924973148a46645b7e8356c2f2cc    DIFFERS     api: Adds event_project extension
+a7c24af97aad560c056c66765e6c09817e9767a2    DIFFERS     lxd/device/disk: Ensure disk FDs are marked CLOEXEC
+9c27ee3b27c3b3b1e6dfb6283388c5576c069870    IRRELEVANT  lxd/seccomp/seccomp: Ensure FDs are marked CLOEXEC
+acca884cc01cbf643847e10566768d963a75f818    IRRELEVANT  lxd/main: Automatically attempt live-migration during cluster evacuation.
+007e277b1301bc35e024b37d2dce531e32474c56    IRRELEVANT  doc: Update cluster.evacuate to include new 'live-migrate' option
+6c936194d322ff56528a3cc6c5d7df8308df0802    IRRELEVANT  api: Add 'live-migrate' config option to cluster.evacuate.
+d8049133d3ab3e3373f8be133245d8b76afb4b64    FEATURE     lxd-user: Initial implementation
+933c08bd638fe8cbee9920e654c94b0c4e11b9d7    IRRELEVANT  lxd-user: use atomic operations
+c2d2479c3bcb61e870167cc33403bbd99865a117    IRRELEVANT  lxd-user: Fix default network name
+23028b52e5d5b0c71a99f74300d2ee0850d4e61e    IRRELEVANT  lxd-user: Reduce verbosity
+a7ac088ef4ba36da4b82561f3c1b9ae6ec23779f    DIFFERS     api: Adds instance_allow_inconsistent_copy extension.
+bd091bab21b988dd5dfacb70f6188ee9cd3de8f1    DIFFERS     lxd/migration: Adds AllowInconsistent flag to VolumeSourceArgs.
+98191f63572a05e2e3a517d0d8c8c08580f1dd9f    DIFFERS     lxc/move: Adds --allow-inconsistent flag.
+a5474ed94abeec0fc41285528cc0cca2a49b5a7e    DIFFERS     i18n: Updates translation templates.
+2cf23c2922fffe8ae0c8042e71f080b5a5d00937    DIFFERS     lxd/device: Adds ping check for nic routed device.
+f67ce242a3aad2e6ec0081267b9703b76e7465a5    IRRELEVANT  i18n: Update translations from weblate
+142d6fdee3b8af42e0c94b1db8bee5c0b586e2f3    DIFFERS     gomod: Update dependencies
+d4d07c14314c60cff8dab5d8331c90c142083850    FEATURE     Release LXD 4.22
+ef0cd5067c5a46590bcf4488fbd248213d4d7130    DIFFERS     lxd: Applies patch to add device names to dnsmasq files.
+6f7ea93cb951f6fadc92d77aa8227454cc7554c7    FEATURE     lxc/info: Port to using GetInstanceFull
+e2c6b471d7a47229690da2bb7fc190cc7436583d    FEATURE     lxc/list: Add InstanceFull shortcut
+8b0066f40d9053967819dd89784826eef7022e8d    IRRELEVANT  lxd/instance: Allow stopping during evacuation
+9fee37cf6838dc04bcddeab055344bbde30ddf74    IRRELEVANT  lxd/cluster: Don't start the instance after live-migration
+67b8a6ee67d05d13563e234edda39800c886ccfa    IRRELEVANT  lxd/cluster: Add evacuateClusterSetState
+3e712d81ef89516cc2a08111fd33c2f767f3ea24    IRRELEVANT  lxd/cluster: Use instance architecture instead of cluster member
+a63bff8e0115ba36335c29822e92f1354fe06c5a    IRRELEVANT  lxd/cluster: Use evacuateClusterSetState
+3dceb1d31d2ad102122dc3786ccc558ad667e5a7    IRRELEVANT  lxd/cluster: Fix incorrect reverter
+ac36e59522eed88aa790ee03d1524dac79ae702c    IRRELEVANT  lxd/cluster: Fix live-migrate on restore
+d2697f579080c57007e9008be57d6d492d37b1d8    DIFFERS     lxd: Refresh all dnsmasq hosts during patch.
+f1ae9fe023d1217adc6bea86bf61c6495a8f47bd    DIFFERS     doc: add an authentication section
+f2b137a6e76b8789e5b2238f35c9a2b08f8cd793    DIFFERS     doc: clean up security documentation
+290d6eebb5a2c08e3c9cba47b7b90288c17eb7a8    IRRELEVANT  lxd/db: Fix volume sequence regression
+f2173bd0e00ec14477b4b1143a3a12525c6b4cc4    DIFFERS     doc: clean up links in README
+5fa631fc85d1338603ebe03fc7ca66b1343d58e6    IRRELEVANT  doc: fix broken links
+74a491d145378de3d4778d36a1bf3346b8c7bfd2    DIFFERS     lxd/network: Adds State function to interace with common implementation.
+aadcba9fd1e286f9d78a630f2bea4083a55fd66f    FEATURE     lxd/device: Introduce networkVLANListExpand
+e1129d04cead3680ab06ab479cbabcbde6fec0e6    FEATURE     lxd/device/nic: Enable VLAN ranges in vlan.tagged
+73c1cb2bd8db2afdf3e16c29d3a9b8aba6978860    FEATURE     tests: Add tests for VLAN ranges
+49a956c5280627af37ab94c7b7dcc8bc4dae0355    FEATURE     doc/instances: Mention support for ranges in vlan.tagged
+8fe6ed7604a014ad97bb09fe728e243c33cc0097    FEATURE     lxd/device/nic: Fix VLAN range validation
+21bb646f3cc6823075c7f827951ae68364407b2e    IRRELEVANT  lxd/device: Update for ParseNetworkVLANRange change
+d2d41cc52ea49fd8a580ed1d8cd9d2da487cc955    DIFFERS     lxd: Call the networks 'State' function if it can be loaded.
+4a36f2153a0c510ac66a1fefdea1318c19f72d4a    IRRELEVANT  lxd/db: Fix storage_volumes sequence again
+f2971e261d03d3da3d613210cabdf2eb5fbba8a3    IRRELEVANT  lxd: Use projectParam function in networkStateGet.
+3254719310b161f488faeca4810900b5e3de25c9    IRRELEVANT  lxd/network/openvswitch: Adds methods for extracting OVN data.
+b184844518d53e854c0ab090a776d97b781e6d8a    FEATURE     lxd/network: Implements 'State' for the ovn driver.
+b57988e4b29ef539d41b0126865b094d611f2df5    FEATURE     api: Add network_state_ovn extension.
+81fcb783b82716ade24ae2e405d268b468ac31bd    IRRELEVANT  doc/rest-api: Update swagger YAML.
+a8b20d2fcae9ecfeeda0b409485754324185ac6f    IRRELEVANT  lxd/network/acl: Port to using fmt.Errorf
+1d079d19ebecd040a122c0694d2f551f22ee9c8e    IRRELEVANT  lxd/network/zone: Port to using fmt.Errorf
+b36add8bff09ed09755971576e7901ef0d9e7a82    IRRELEVANT  lxd/network/openvswitch: Port to using fmt.Errorf
+83b3c2066cae45c135646745dfae3ea923f0b346    DIFFERS     lxd/network: Port to using fmt.Errorf
+8305ef8c62f417130c982fb1cf73043d88cabbc3    FEATURE     lxd: Add server-side API filtering for storage volumes
+6693bb73a97074bc45b7df7642b11a5d22f99366    FEATURE     api: Add storage_volume_api_filtering extension
+378d53b8e24a2cdbeaf6cc3a885d754167bae55e    FEATURE     doc/rest-api: Refresh swagger YAML
+5e44cd2bb143cfca106796d5ba674a14229bb61a    FEATURE     doc: Update rest api filtering doc
+a4c5020939963a9d0e7e7254e7778ea08d654a3e    DIFFERS     api: Add image_restrictions extension
+43e78f5b381e4d023da5d198f98fa977eb1ed65c    FEATURE     lxd: Add zfs.export
+add503e65dd961d20ef0737107b854f366716261    FEATURE     lxd/storage/drivers: Support zfs.export
+459f0f28df0c47744254c303d361b1354d3028d8    FEATURE     doc/storage: Add zfs.export
+95a6b9fbf30eaa3a955a075b2b6e3d687c5d8435    FEATURE     api: Add storage_zfs_export extension
+99c0ff668d56651efb3fc923749d5218e7880f1b    IRRELEVANT  lxd-agent: Fix bad network metric
+1c7dbbaa234790d44419ef556f764fa61ef28cc2    DIFFERS     lxd/ucred/ucred: Use new listeners package
+0280d611e5c78f1a59afbfcd432a2aa384aea228    IRRELEVANT  lxd/db: Fix stoarge_volumes sequence (again)
+c42dade9e4cd9b937264dc30f783ecc47d46133f    IRRELEVANT  lxd/dns: Better handle errors
+b4af121a067ed4c19cd255a1759aa4d0c549630d    FEATURE     api: network_dns_records
+59972c0de342226ad725e0f16cb47431aa3210dc    DIFFERS     doc/rest-api: Refresh swagger YAML
+c9132afbb142d6d374d54d202128136710858908    FEATURE     lxc/network_zone: Add record sub-command
+c0c891cdf0cb6d49450c65961c7c140ecc28f21b    FEATURE     i18n: Update translation templates
+e6f215e836387ad28b9eaf6840fa7445f8120fa3    FEATURE     lxd/db: Add the networks_zones_records tables
+9d63e2c02d53935a1ff803935b2354629c7e7dee    FEATURE     lxd/db: Add network zone records DB functions
+fbf6f3a3ddd68a270bd7e46c490d4e6e34f73ed6    FEATURE     lxd/lifecycle: Add network zone record events
+38268abb79e58fc99835ade7d8e84fcfe892cd4d    FEATURE     lxd/network/zone: Add record functions
+f797898fe97f8bb5a0fdc6a07165df06948420a0    FEATURE     lxd/network: Add zone records API
+28205f36a2a19610bc13388e21749cf64782138c    FEATURE     lxd/network/zone: Extend template for TTL
+bce555908325f5fce901c30d4373240eb44a9f14    FEATURE     lxd/network/zone: Add extra records to DNS
+b3f169677d3a4cee857218d0b95f7a920825483d    FEATURE     tests: Add tests for network zones records
+77beab4e1439c05e4987f6fe48fd02aa59eb4089    FEATURE     doc/network-zones: Add section on custom records
+885bd7c74592888a08a4bd3d2af749ac3617a730    FEATURE     api: storage_zfs_reserve_space
+863976f472267ce27b71856193dcf24e97420001    FEATURE     lxd/storage: Add zfs.reserve_space
+e6c0969e70a762a6437a5ccf5ccf76aa68bf5b3e    FEATURE     doc/storage: Add zfs.reserve_space
+0534ff0183360dc39c9b842dd9261a80b884bc78    FEATURE     scripts: Add zfs.reserve_space to completion
+5b9cee389041eebf696482483a02d23f7f9b0856    FEATURE     api: network_acl_log
+c9ef6f71a5ba332dc7ff0a83f089f98fad7d5665    FEATURE     lxc/network_acl: Add show-log
+64844ec4c93133d4406b9f27666d38bb1abe3672    FEATURE     i18n: Update translation templates
+28ba59c8d6251eb7033779e0c3dd2322c229ef93    FEATURE     lxd/network/acl: Add log endpoint
+9e696ebbe90455b7a6e3bb8794ba2ab864085678    FEATURE     doc/rest-api: Refresh swagger YAML
+283a56edbc122efebafd7418b2a60b18085d746b    FEATURE     lxd: Add validation for volume.zfs.blocksize
+087083a70d8ba9638e88a6b933526e6307659de5    FEATURE     doc: Add zfs.blocksize
+6e47b526915eed587ca774f63a334f18efd5ecd2    FEATURE     api: Add storage_zfs_blocksize extension
