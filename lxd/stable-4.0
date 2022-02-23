@@ -2374,3 +2374,49 @@ c9ef6f71a5ba332dc7ff0a83f089f98fad7d5665    FEATURE     lxc/network_acl: Add sho
 283a56edbc122efebafd7418b2a60b18085d746b    FEATURE     lxd: Add validation for volume.zfs.blocksize
 087083a70d8ba9638e88a6b933526e6307659de5    FEATURE     doc: Add zfs.blocksize
 6e47b526915eed587ca774f63a334f18efd5ecd2    FEATURE     api: Add storage_zfs_blocksize extension
+01ae38f8e3cc5604b48353df16d9f177465db118    IRRELEVANT  api: metrics_cpu_seconds
+4f9d92fd1cb29cfa970d06e65938b5daf22088e1    IRRELEVANT  lxd/metrics: Convert to using float64
+2aa52d6183889cbdade7fa873b88061547fc649e    IRRELEVANT  lxd/metrics: lxd_cpu_seconds_total is in seconds, not ms
+e1a2443531f5ffeec7d03bcc287f600b8315a839    IRRELEVANT  lxd/instance/lxc: Fix filesystem metrics
+e8f07d66701f9020f4f28b843ef567cd5227a2f2    FEATURE     Rename lxd-p2c to lxd-migrate
+633a84c43797160a565ce37f3e8fb01c6ff8a746    FEATURE     Makefile: s/lxd-p2c/lxd-migrate/
+275896f326731401f22fc386f1cc184c9abe770a    FEATURE     test/suites: s/lxd-p2c/lxd-migrate/
+3e4d65c466e670ddc6e9bd0705cccb1df40bdea5    FEATURE     .github/workflows: s/lxd-p2c/lxd-migrate/
+d2242e2e793cfdac0e5b25b91bd8fb96b7ce884e    FEATURE     .gitignore: s/lxd-p2c/lxd-migrate/
+9db4beae70c9a1208a35e477f9e113125255f3f8    IRRELEVANT  doc/metrics: switch to ECDSA with longer validity
+c557985b6e1d9dfccdc400ed6acb138593a64756    IRRELEVANT  doc/metrics: tune scrape_interval to deal with default caching done by LXD
+f943e850a3661486dccd0596310478bbdf0a47f3    IRRELEVANT  doc/metrics: alpha sort prometheus.yml snippet
+a8e80ef41c777f8a91ac99ca67c8761087b86d64    IRRELEVANT  lxd/instance/lxc: Fix missing fs metrics on bind-mount
+b208593c6dc4bd633fad75289deb9213a1896e37    IRRELEVANT  lxd/instance/metrics: Fix incorrect memory metrics
+fe6c1dc617c682bc26720d605d49dd613249bc55    IRRELEVANT  lxd/metrics: Invert condition as all existing metrics have labels
+57499acfafba683b696e0b612d298df318a60a3b    IRRELEVANT  lxd/instance/lxc: Cast statfs.Bsize only once
+20fbc9427567938e2131096e7429c417b47e498d    IRRELEVANT  lxd/instance/lxc: Only convert CPU ID once
+74707d5618cf42f1bee07935efa55bb493cdd911    IRRELEVANT  lxd/instance/lxc: Cache labels in for loops
+7331d8e64c34358146fa8dcfae169a04709c5211    DIFFERS     api: instance_snapshot_never
+460aca37c689bbefb99133cbfe4b5006e392c467    IRRELEVANT  lxd/instance/qemu: Fix agent-less memory metrics
+536097df1efaa00608eed929f1ba656727030619    IRRELEVANT  lxd/metrics: OpenMetrics says to end with EOL
+2c76e0ccd6f7f806fe0cdb1622b6c9f5ae6df3d8    IRRELEVANT  lxd: Rename metrics to api_metrics
+5c9e93848aaa07e19eb25600a7512906444f0668    IRRELEVANT  lxd/daemon: Drop metrics from main struct
+d047b5ee728faeffe32aba3b3a882554d3766d69    IRRELEVANT  lxd/metrics: Rework caching and locking
+e55ed719913812a4d94157b122a5e26f6e287461    IRRELEVANT  lxd/metrics: Reduce cache to 8s to accomodate 10s intervals
+16d4b3c26d33f0267923cbfc7ca4f7e9be70f151    IRRELEVANT  doc/api-extensions: Remove trailing whitespaces
+caadea22c9cc6053344c71c3b7b50111cb335b18    DIFFERS     lxd/storage: Expose GetVolume
+6e1f3ea58ef1ef5282a04e41a60f5a2570557fe9    DIFFERS     lxd/db: Refactor storage pool used by to get info on all nodes.
+bbdf9f436ff6a3804aa093093b8b78cd0027bd27    DIFFERS     doc: Add basic instance exec information
+7463aae27cf2049e9835a4d859a928ed05967866    DIFFERS     go.mod: use github.com/mdlayher/vsock@v1.0.0
+871cfd818011fa221ca90ba424e15ae479907000    IRRELEVANT  lxd/network/driver/ovn: Don't attempt to configure IPv6 setting is not enabled
+523f6d05210c32666d7cd76ce5ca14a024aa57d0    IRRELEVANT  doc/instances: Fix bridged NIC ipv{n}.address docs indicating none is valid value
+14a7a202917a83122e592f3518284b15156b3eca    DIFFERS     lxc/config_trust: Don't remove extension from cert
+ff3ac70432b548ac7879e0ca44005d32563c5ce1    DIFFERS     lxd/certificates: Rework certificate name logic
+fb66550d99358dfd87b44da3ae93acbc50f52f29    IRRELEVANT  lxd/project/permissions: Updates CheckClusterTargetRestriction to accept a project record
+ae98904cce3b0854f0fddd107b5b4ee49b899e1b    IRRELEVANT  lxd/project/permissions/test: project.CheckClusterTargetRestriction usage
+9fcd72c6759818af3e4a953c1ffdf97b9418d142    IRRELEVANT  lxd/instances/post: project.CheckClusterTargetRestriction usage
+6d284387e073d565c672e0d0ad951b23f01924d8    IRRELEVANT  lxd/instance/post: project.CheckClusterTargetRestriction usage
+8b91d7c4543fefcbb5114bd05aad1082df632ff9    IRRELEVANT  lxd/cluster/config: Add ImagesDefaultArchitecture function
+9592b0a7514debc1f6f27d8160b6389865f43bda    IRRELEVANT  lxd/instances/post: Uses config.ImagesDefaultArchitecture
+3637768684a21401c5ef997932a6683b7038ee96    DIFFERS     api: Add certificate_token
+8a468f04359ef53500b4a256e178dc7320f718c2    DIFFERS     lxd/db: Add OperationCertificateAddToken
+e36d4266c7dfe577abab07abadd76b07eb228bf2    DIFFERS     lxc: Support client tokens in lxc config trust
+483607d5d5c401c27dee16dfd280fb76ed9a0ca4    DIFFERS     lxc: Add lxc config trust revoke-token
+ec31c274670779867de8cd8088f4b4371d93bc98    DIFFERS     i18n: Update translation templates
+49f6e9443dc7d495440854b67f410a794733c5f1    DIFFERS     lxd/instances/post: Renames targetProject to targetProjectName and p to targetProject
