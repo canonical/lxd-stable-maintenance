@@ -2420,3 +2420,140 @@ e36d4266c7dfe577abab07abadd76b07eb228bf2    DIFFERS     lxc: Support client toke
 483607d5d5c401c27dee16dfd280fb76ed9a0ca4    DIFFERS     lxc: Add lxc config trust revoke-token
 ec31c274670779867de8cd8088f4b4371d93bc98    DIFFERS     i18n: Update translation templates
 49f6e9443dc7d495440854b67f410a794733c5f1    DIFFERS     lxd/instances/post: Renames targetProject to targetProjectName and p to targetProject
+9c7e21fab819b610a08e5740c2e5f0d8d5995fb4    DIFFERS     lxd/db/networks: Update network load functions to share transaction
+13ba5f55737e2cb0998db06d0188a09eb73d0b54    DIFFERS     lxd/db/storage/pools: Reworks getStoragePool to use a single transaction internally
+405f020f3b1b49296775d82a33d4da39c5f42813    DIFFERS     lxc: Translate all errors
+2e624308103b8127f5d586e0f1161fc2095bafcd    DIFFERS     i18n: Update translation templates
+6d8ebcdb5fea0f088becd031560a1030e7b35af5    DIFFERS     lxd/db: Uses api.URL to build used-by urls for storage pools.
+b23a7a8d985c4c6475386bdcc439c5791f51447c    DIFFERS     i18n: Update translation templates
+ce538d23271336761015af0ae9c924ee427fbfd1    FEATURE     lxd-migrate: Create interactive tool
+28e19ce4d77bfd958f55ac776f25c988914ed596    IRRELEVANT  i18n: Update translations from weblate
+7bf2c99dafce9bf6067a56c7f38608d95ee85a8a    DIFFERS     gomod: Update dependencies
+b29334016f171e630f796acf142818e4cf4d5624    FEATURE     Release LXD 4.23
+a1095a786c0e4ce3a53c1d8ee1781cca0f0741b0    IRRELEVANT  lxd-agent: Fix bad copy/paste
+c1628b9d2158621f28a9a07af5d2a8f87c64927c    FEATURE     lxd-migrate: Support certificate tokens
+5aa02c2f54e5a6b2255589944db135b5d9aeed11    DIFFERS     test: Adds basic cluster event tests
+5026739709de5ffc900c9c372d976aa685eba3e0    IRRELEVANT  go.mod: bump github.com/mdlayher/vsock@v1.0.1
+2c7cf1527a540c6990b227d796741e6a44e21b23    IRRELEVANT  doc/metrics: stop tuning job's scrape_interval now that results are cached 8s only
+0fb7d7f94352201dc9d32c432ddfb61fe79d0ce9    IRRELEVANT  doc/metrics: don't assume any default scrape_interval value
+7e142227344d5236dda03f29c7df2170ac783059    DIFFERS     lxd: Update for FileResponse changes
+8d0433248565580b769083de87dd751214eee149    DIFFERS     lxd/response: Rename FileModify to FileModified
+fba364628849020a13e5dc5e585581d04f3c3ada    DIFFERS     lxd/device: Remove state.State dependency from apparmor package
+746005969ecf027f678dd6511f026bbf5dd408ea    DIFFERS     lxd/network: Remove state.State dependency from apparmor package
+11a112452df1701107fd0b777c27f1c2d431d421    IRRELEVANT  lxd/cluster/heartbeat: Only upsert member offline error in APIHeartbeat.Send if context not cancelled
+53d2c3417418c7502ff85713f03e45f8d1af3466    IRRELEVANT  lxc/network_zone: Fix typo (entriess to entries)
+057aa36f92a5436efd9151d2e0ec48ccaf29831d    IRRELEVANT  lxc/cluster: Fix typo (doest to does)
+351db4d531dc9594fd0c2256fb37a517d88a87ad    IRRELEVANT  i18n: Update translation templates
+e518305777e439f130905af8b218b9e2f854e7e2    IRRELEVANT  lxd/api_metrics: Rename resp to metricSet
+caaaf811857a868f5f5a15d9001559447d38a964    IRRELEVANT  lxd/api_metrics: Support target
+6d2d806299873fdae6c1ce816b8d638ddf50b92e    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+e8fd59ee44cd486a4873df1a52c4fc138c77b5cd    DIFFERS     lxd/certificates: Fix token generation over HTTPS
+2ad2addcf2f225961f53731f12d49547f990d653    IRRELEVANT  lxc/cluster_group: Update long descriptions
+0eec93d2bdd6ce018a58dc7f7aae793752bd418c    IRRELEVANT  i18n: Update translation templates
+4589538d1a7c1e8960c24f3aa48ddd8152c4899b    IRRELEVANT  lxd/device/nic/routed: Comment ending
+08a9808252f7c697c545c63a949e32d6d31873d6    DIFFERS     lxd/device/nic/routed: Adds d.effectiveParentName to cache result from network.GetHostDevice
+0fc17d04afc953f557434f0d3d586b24c0c3f78f    IRRELEVANT  doc/metrics: use secp384r1 curve with SHA384 signature
+eca144c69ad9fdfa80bc989feb416c08967422e8    FEATURE     lxd/device/nic/routed: Adds ipv{n}.neighbor_probe option
+ebcc179836efc268d734dab74dd93eb4c77c50e8    FEATURE     doc: Adds routed NIC ipv{n}.neighbor_probe setting
+fc68913aeff627bd527ef75446bb08d76580b186    DIFFERS     lxd/device/device/utils/network: Change isIPAvailable signature to return bool for found and separate probe errors
+284156782fe0ac924d838da73ed5d66e25886149    DIFFERS     lxd/device/nic/bridged: Update setupHostFilters to return a reverter
+0fe96ec46a8754a9ea313a869d3a0078180595ab    DIFFERS     lxd/device/nic/bridged: Only call d.removeFilters in postStop if filtering enabled
+88a792ca56009e9f1e5fe919b0fb7520bdde9ee7    FEATURE     api: Adds instance_nic_routed_neighbor_probe extension
+68c6646083776a8e2422754e714c8f4144294c91    FEATURE     test: Adds tests for routed NIC IP available detection
+2e34e6f92ea2fbcfb276dad30f78f21135e5dc69    IRRELEVANT  lxd/instance/qemu: Allow live update of cluster.evacuate
+405fe387411fe2e5988b549044960245821700cd    FEATURE     lxd/db/node: Adds ClusterRoleEventHub constant and ID entry
+bfd24ab18efbe3bf5b7db0840c57a86fa737b44f    DIFFERS     lxd/db/node: Changes Roles field type to []ClusterRole in NodeInfo struct
+9d2b6c82c4620df6e7a61edf2d86a4336e4bacc1    FEATURE     lxd/cluster/events: Adds eventHubMinHosts constant
+6355fd019e9a76e484079f945ee69ba782992190    FEATURE     lxd/cluster/events: Adds EventMode type and constants
+f27fab343fe8d5c0acebdfd99c3c7607225e234e    FEATURE     lxd/cluster/events: Adds ServerEventMode function
+0ebecfd49047308e78f0056f40f85cf77a08cfae    DIFFERS     lxd/cluster/events: Adds RoleInSlice function
+42694cd9dbdc85ba31aba5916e877e6451c02e60    FEATURE     lxd/cluster/events: Updates EventsUpdateListeners to only connect to event-hub servers
+0e08d548b45d2ae099be0dddf4a4c2c8baf5a2ff    FEATURE     lxd/cluster/events: Rework listener connect notification to support hub addresses
+b48f3ef65ad008f5e3abb079caa917192ba4fa62    FEATURE     lxd/cluster/events: Store remote event listener client in eventListenerClient type.
+f5825f3fdd8479c7c133efa304b25fe0b970c4f7    FEATURE     lxd/cluster/events: Use localAddress rather than networkAddress var name
+e3cca305615233060cc4ac12d7493235c0854829    FEATURE     lxd/cluster/events: Adds SetEventMode to eventListenerClient
+4dd871b121f7a8a0714a880f16a56a5f6d7bc516    FEATURE     lxd/cluster/events: Ensure logging inside EventsUpdateListeners is done outside of listenersLock lock
+6cd249cbcafededcca7061642bf56489d1853f77    FEATURE     lxd/cluster/events: Log an error when there are no active cluster event listeners
+f2fbc2001abc9e026bec3ea8efbc20c36720511e    FEATURE     lxd/cluster/events: Adds EventHubPush function
+a3257489bee915c072b154dca14d0d2a89607bdd    FEATURE     lxd/events/events: Adds InjectFunc type
+055ed280191590f38ced2e8f465ff2ff47940a7a    FEATURE     lxd/cluster/events: EventsUpdateListeners InjectFunc usage
+24dd834cbf63eb74c7eec986196ade0cbc343b44    FEATURE     lxd/events/events: Renames Forward to Inject to better reflect what it does
+eded4df894ac7065616a756a6391ef8384581e6a    FEATURE     lxd/events/events: Adds NotifyFunc support
+a9ea629f1cbcf0f963510dcd32f7f1e0f9813cff    FEATURE     lxd/events/events: Adds ability to exclude events from certain locations from being broadcasted
+2ce38d022a5a3491b9881f30afff079222fafdaf    FEATURE     lxd/api/cluster: Trigger notify heartbeat on event-hub member change in updateClusterNode
+4845993d3d1878f3f4b27e02cfa7cee34b6d23e6    FEATURE     lxd/cluster/membership: state.Events.Inject usage
+6a4b1188bcf7274551762aafbdcf3648d55d81e9    FEATURE     lxd/daemon: d.events.Inject usage
+2243292388099e04f7c3ac8a87dea0be13beb738    FEATURE     lxd/daemon: Wires up cluster.EventHubPush to events.NewServer notify handler
+cf4e780d530460dc9c6cb5f45a51a4769ae098fa    FEATURE     lxd-agent/daemon: events.NewServer usage
+8ddbc893562e31a0a5275ab8c6913de752341f91    FEATURE     lxd-agent/events: d.events.AddListener excludeSources usage
+a6eac3223166f2da84833443e525a13f3253e7f3    FEATURE     lxd/events: Adds support for receiving events from cluster members in eventsSocket
+92c38f6e56b185f496ef4a226fe0356e7957e7a1    FEATURE     lxd/api/1.0: Populates ServerEventMode in server environment struct
+e2bbfc261934cf3db6c9de2cae760bfefb5c16e2    FEATURE     api: Adds event_hub API extension
+6fdb370c790e42c1b53590e49fc55ccf23b744f9    FEATURE     lxd/cluster/events: Move state update in EventsUpdateListeners to end
+72ec8c990a9a08946414c2bafaa169f67baa7d8b    FEATURE     lxd/cluster/events: log No active cluster event listeners
+65b7de4a560f99a04f640a837e11f259f0c4a9a9    FEATURE     test: Updates clustering events tests to with event-hub support
+4a6848ba93012bb357a79fa7240bba4d3de8cbce    DIFFERS     shared/validate: Moves ValidHostname to validate package.
+f35df174ce795f79c194d386503cece7d400f4af    DIFFERS     lxd-agent: Replace file API with SFTP
+001f1c842fb719c690bc369f0f53522ffcee00fc    DIFFERS     gomod: Add pkg/sftp
+f3789baa653f2d298f1d74a825f6c49295710ee6    DIFFERS     lxd/instance/lxc: Implement FileSocket
+e2727f825132c29985860d5de9b08c1edf144f22    DIFFERS     gomod: Update dependencies
+3524b1e4ac271cdfd624a5663483965ebfe59619    IRRELEVANT  lxd/device/nic/routed: shared.IsTrueOrEmpty usage
+153cfc4312e3d5f194b94191b205e17f8f52c55e    DIFFERS     lxd/device/nic: Replace !shared.IsTrue with IsFalse or IsFalseOrEmpty
+3e5abaac8f3389423292e96a73883a947286eb9a    IRRELEVANT  lxd/api/cluster: Replace !shared.IsTrue with shared.IsFalseOrEmpty for features.networks
+18172464212f884cfea90d4dfccc609002215e2b    IRRELEVANT  lxd/networ/driver: Replace !shared.IsTrue with shared.IsFalseOrEmpty for ipv{n}.nat
+9f2dd7a8429f447f95839983f5cb3ffe86a82a55    IRRELEVANT  lxd/network/driver/ovn: Replace !shared.IsTrue with shared.IsFalseOrEmpty for restricted option for projects
+eccc623bc9910f37631839555b46f1e107a8152a    IRRELEVANT  lxd/network/driver/ovn: Replace !shared.IsTrue with IsFalse for ipv{n}.dhcp
+427acd64db2237260918faecfd8e8fa080c18665    IRRELEVANT  lxd/network/driver/physical: Replace !shared.IsTrue with shared.IsFalseOrempty for volatile.last_state.created
+ad1406a087c3016ad41e292df6b51bfb2e546c29    IRRELEVANT  lxd/network/zone: Replace shared.IsTrue usage for NAT logic
+b6e1495457a77afa5dd255ca59bd9686006ed6ce    IRRELEVANT  lxd/project/permissions: Replace !shared.IsTrue with shared.IsFalseOrEmpty for restricted
+197d049729b9a8799cf15d305e684fa9771be52a    DIFFERS     lxd/seccomp: Replace !shared.IsTrue with shared.IsFalseOrEmpty for syscall interception settings
+4216bd7669a08d935229396960859ea8a27efa48    DIFFERS     lxd/db/generate: Fix bad loop logic
+046daaadb100fee334dcf31c6582548b88e59702    IRRELEVANT  lxd/instance/lxc: Use contextual logger in Metrics
+7247fd79be1bc54a20d8cb2c95dcba7971b32d4b    DIFFERS     lxd: AppArmor support for extractors
+84a1126b9f6b2c066e62d4b5e74129b47e2e275a    IRRELEVANT  lxd/db/warnings/types: Removes unused WarningTypes and population code
+4b01f9e1d4d0915c6b857e86323592bad73d3217    IRRELEVANT  lxd/warnings: Renames ResolveWarningsOlderThan to ResolveWarningsByLocalNodeOlderThan
+2d7304d3bb11396944e3d2c613f5f98fc1b3c6f4    IRRELEVANT  lxd/daemon: warnings.ResolveWarningsByLocalNodeOlderThan usage
+377975255083ef8bf0e07d63bdc4084c9dfc737d    IRRELEVANT  lxd/warnings: Fix entityID logic bugs in resolve and delete functions
+e3faca4345d5df793f97b8570851e658d0b59899    FEATURE     shared: Adds agent.rename_interfaces config key for VMs.
+673685450263008c448655e37b3ee979e6f3e952    FEATURE     lxd/device/config: Adds NicConfig struct for passing data into VM.
+e23ffdb76a6cbb84d57051aa3799204863952d0e    DIFFERS     lxd/device/bridged: Returns interface MTU as part of run configuration.
+06ee1530dc0f9b1c9fd8b92ef675fc7643226440    FEATURE     lxd/instance/drivers: Writes nic data to VM config share.
+b65af086cc591c45ae868795993df5c6caf5b214    FEATURE     lxd-agent: Reads nic configuration and applies it at startup.
+964cdf61ee7b451cc2f4de4e7d92f5b87739ddba    FEATURE     doc: Adds agent.rename_interfaces config key.
+de6fb78c96ef07f787e48d1137f7bd3dfe6e490a    FEATURE     api: Adds agent_rename_interfaces extension.
+cad07147c2d5806d343429574173c3301171fc8b    IRRELEVANT  lxd/device/config/device/runconfig: Adds NICConfigDir constant
+744eb03c5a2ea439196a7785dc05d468b4253f01    IRRELEVANT  lxd/device/config/device/runconfig: Adds DeviceName and NICName to NICConfig struct
+9f0e02da289c69b07f8412de073e0e800d68d0d1    IRRELEVANT  lxd-agent/network: Updates NIC config parsing to use map of deviceConfig.NICConfig
+5a6b3970fbf51c6f0a0a24ba8b0008b3ec7d80bd    IRRELEVANT  lxd/instance/drivers/driver/qemu: deviceConfig.NICConfigDir usage
+007cca12ed9a5f19e89390899cb92c2da148c9d3    IRRELEVANT  doc: Fix cert pathing in metrics.md
+f5ef2c0525840cce7398183126383df65485a755    IRRELEVANT  lxd/instance/drivers/driver/qemu: Reworks writeNICDevConfig
+76411615992ce51551217622ba7ecff9e3b0578d    IRRELEVANT  lxd/instance/drivers/driver/qemu: Removes device name used as nic name in addNetDevConfig
+c9033a1c6d5c6b72419c2c126aef845e96f86b22    IRRELEVANT  lxd/device/nic/ovn: networkCreateVethPair and networkCreateTap usage
+96a957e1bf5ea4bfc35830a611eee5d75850b315    IRRELEVANT  test: Work around very intermittent ip: RTNETLINK answers: File exists error
+d2b469512dfcb24df0960cce6993cedec901293d    IRRELEVANT  api: Renames agent_rename_interfaces to agent_nic_config
+1feed9e191898ae77ed1abd0e15d4be4da7bbb7f    IRRELEVANT  lxd: Rename agent.rename_interfaces to agent.nic_config
+5c19122699e5edf73a3ad7877e741a9f5e68df44    DIFFERS     lxd/util/sys: Move RuntimeLiblxcVersionAtLeast to instance package
+e6bed9f04dab87a0dd46c1a4820c63dac1dcdff9    IRRELEVANT  lxd/db/warnings: Uses DB generator for warnings functions
+28ef66040f12a06848f9ac532fb84840693b63c8    IRRELEVANT  lxd: tx.GetWarnings usage
+9a44dd176acf5d5733c164325088cd081b3419aa    IRRELEVANT  lxd/instance/drivers/driver/common: tx.DeleteWarnings usage
+c2f52ed0cde4641c56af87734350b71f09bd3526    IRRELEVANT  lxd/db/warnings: Avoid duplication results in UpsertWarning
+d4ac80270e34b1a91f4139a48d59fd49ef628856    DIFFERS     lxd/instance/qemu: Add checkFeature
+b2645184c18aee2eacb76d25cca53c9ff2a45b54    IRRELEVANT  lxd/instance/drivers/driver/lxc: Remove duplicate import of github.com/lxc/lxd/lxd/storage
+d2219bdf5db82002874b1c8304558025907c4546    IRRELEVANT  lxd/db/warnings/types: Adds WarningStoragePoolUnvailable, description and severity
+34f108fb7d61cff92595b4662528fedd9c0100fd    DIFFERS     lxd/instance/test: Fix inconsistent import name of github.com/lxc/lxd/lxd/storage
+c65667bed2aef7bbe3f9ed47feaa885265144e4b    DIFFERS     lxd/storage: Update setupStorageDriver to retry initializing failed pools
+f558aa1eea704e71964de628471852b0a1c2c293    IRRELEVANT  lxd/storage/backend/lxd: Description typo for GetVolume
+6c4fbf46a9495b892650697b6b651e074062948d    DIFFERS     lxd/instance/qemu: Detect and use io_uring
+8bcadecc35b66beaf9b399a60e282b5972f5f94f    DIFFERS     lxc/storage: Add STATE column output even in non-clustered environment
+2dba117969f5cd407d63e24bd7d4fcf68d294ef2    IRRELEVANT  lxd/storage/backend/lxd: Delete persistent warnings on pool delete
+e8768ac2e60c8933d7f807b2d74e127fd53bdc8c    FEATURE     Add the Grafana dashboard (15726)
+c7b7105e4c0ec231e4f5c6f180cba177e3d2c3ed    DIFFERS     lxd/storage/backend/lxd: Adds isStatusReady function to check if pool is ready for use
+ba506e12cbf13dddeec6bf5e227da4cca3a2edb0    IRRELEVANT  lxd/network/driver/common: Fix typos in errors
+d970cd64aaa7e5ce9f1f80b22b85c8cf367bf1fb    DIFFERS     i18n: Update translation templates
+4bd77b78c6cca07807695ff735464d250a0819e5    IRRELEVANT  lxd/warnings: Removes unused functions
+ea11624e4c6ba9c7bf11d2094391fd28dd4173c3    IRRELEVANT  lxd/network/driver/bridge: As network ID is globally unique, delete warnings by ID on delete
+3b0f0f5ab407897236b463df7dc3b13b11fb9835    IRRELEVANT  lxd/networks: Removes duplicated warnings delete call
+4d8a69225027fd2142db8913cbd8c25910d5c9c0    IRRELEVANT  lxd/network/driver/bridge: Don't refresh BGP prefixes during forward update
+acf9868878cb1c32e6d90c22f458e46c77e38c00    IRRELEVANT  lxd/bgp: Fix RemovePrefixByOwner when multiple matches
+f5a9fd495202d1a4fa4ad2b30e4c2a600f489e36    IRRELEVANT  doc: whitespace changes
+73f23d47c6c3f0e0c98a367e1206698b9c452027    IRRELEVANT  doc: moving content
