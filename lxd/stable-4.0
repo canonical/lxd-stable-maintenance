@@ -2557,3 +2557,7 @@ ea11624e4c6ba9c7bf11d2094391fd28dd4173c3    IRRELEVANT  lxd/network/driver/bridg
 acf9868878cb1c32e6d90c22f458e46c77e38c00    IRRELEVANT  lxd/bgp: Fix RemovePrefixByOwner when multiple matches
 f5a9fd495202d1a4fa4ad2b30e4c2a600f489e36    IRRELEVANT  doc: whitespace changes
 73f23d47c6c3f0e0c98a367e1206698b9c452027    IRRELEVANT  doc: moving content
+55c7e31775b9aac4c39fadd76a380d1163eb6130    DIFFERS     Replace github.com/pkg/errors with fmt and errors
+7f820af90a754ed695fcf1e404958bd2a0c24d53    DIFFERS     Replace errors.Unwrap() with errors.Is()
+a4f7f056e7854193b65264c5f1dab42e936bffd5    DIFFERS     Use %w in fmt.Errorf to wrap errors
+d4a81593e05a120eb32c0ea6094e863f68daf9ae    IRRELEVANT  gomod: Update dependencies
