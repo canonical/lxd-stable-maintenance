@@ -1,0 +1,63 @@
+080a53d07b8e379805d42aa41a0f7a16a4dbf786    FEATURE     lxd/cluster: Add instances.nic.host_name config key
+63fb0e29884225ac8b51658455ae86f2013cbfe0    FEATURE     lxd/network: Support for instances.nic.host_name config key
+05267c9560f5acbd457eef80c74d6a78db014953    FEATURE     lxd/device: Support for instances.nic.host_name config key
+82a06a9305660bb648abdd6ebe7ad25276752700    FEATURE     doc: Add instances.nic.host_name
+1242a5401e0f2b7ad973bba0618d21d9c7f32535    FEATURE     api: instances.nic.host_name
+a55551ab595bc7327e81b78e0bed40c6a5187e07    IRRELEVANT  tests: Add test for instances.nic.host_name
+7046185e615fbf170741546a80f3c456521b10b8    FEATURE     lxc/image: Add a '--profile' option to lxc image copy
+7c80bd7cb640c6a5b6848451b6e1ae7693b74f6c    FEATURE     api: image_copy_profile
+51175aa231bb6a4520eb17104ee5fced3f9dc35d    FEATURE     tests: Add tests for '--profile' option in image copy
+0a0ae8e0e18743dfeda5d6230843cf4a13e1d903    FEATURE     i18n: Update translation templates
+d589f1d6034351d975f72230f3f0b74d512195e5    FEATURE     lxd/db: Support for profiles in CreateImage
+20a9af539317b22007e60f1be548de20f5821cfc    FEATURE     lxd: Support for profiles in image copying
+d8205a20e247036cf07143009f80d242856db05a    DIFFERS     i18n: Update translation templates
+5a6d04527f9051e9cb25804f1d607b8b0b916bc7    DIFFERS     i18n: Update translation templates
+a531bc52b62a9711ccdc8454f20200eefa3c9850    DIFFERS     lxd: Use new DB type and Transaction method
+86183b3420482d4d566ec8c75121567d3d11222b    DIFFERS     i18n: Update translation templates
+bbd81e63655f409264692bb8ed3a148414b98286    FEATURE     api: Adds container_syscall_intercept_sysinfo extension
+5c79f187db6df6bb85e9e6ccc52d3d7de960e06e    FEATURE     doc/instances: Adds security.syscalls.intercept.sysinfo documentation
+6e0a65fca62fb8abaa39f3ffb2eaef5cf3e0bd6e    FEATURE     doc/syscall-interception: Add sysinfo
+1ed08e516f6501da14aacf237fee60c4fde5cde5    FEATURE     scripts/bash: security.syscalls.intercept.sysinfo
+e8c94b5f010cd23cf958dee46f89d6b0da73978b    FEATURE     shared/instance: Add security.syscalls.intercept.sysinfo
+bc86ec37c6e454731f9c05e3bd09aaeabb97c7d8    FEATURE     lxd/seccomp: Add sysinfo handler
+14f35b0a0963e67eab4fad449ca25c53600492a4    FEATURE     test: syscall interception
+bdf429060518930409c4fa3e01f20a5072468a42    FEATURE     test: Adds syscall sysinfo interception test
+03c65e09eb8762fe2f2a13dab30e362e8173ac41    FEATURE     lxd/project: Allow sysinfo intercept
+c9f1a4e0223accc06be5fc41e045feb37c585071    IRRELEVANT  i18n: Update translations from weblate
+d0402d258d2047525036057848b92b5a9bcf7da8    FEATURE     api: clustering_evacuation_mode
+ae2fadc34abfcf73fd1145580cea2a9342eab157    FEATURE     lxd/cluster: Support evacuation mode override
+4cc47d8415e7b5c13f676f59bcfca4691a96983a    FEATURE     lxc/cluster: Add --action to evacuate
+a758e5bce4b1de7bcdb65ec355b6fc12369054f9    IRRELEVANT  i18n: Update translation templates
+af989f395a30d69c9f7c50c3e1344a5c47944eb0    DIFFERS     i18n: Update translation template
+4ced7b7e4b02c2a39fe29ca22c832e02c43a8dd5    IRRELEVANT  test: Skip seccomp notify tests if seccomp notify not supported
+aadefa76d14d58b991ddfb0ab8bf0761281762a5    DIFFERS     i18n: Update translation templates
+be2e2d38c65555880689da833c93d1e9d55ae94d    FEATURE     Release LXD 5.1
+fd6845ddda3f80cdd24a8f94c42acce6bff0c41f    IRRELEVANT  lxd/secommp: Fix sysinfo syscall interception on 32 bit platforms
+755622e22b4312e9563c12486ea4837722df771f    DIFFERS     i18n: Update translation templates
+f50b3352e06dd6d0a601762c64dd88cb66d0a7c2    DIFFERS     i18n: Update translation templates
+5ba747ae0b6f58e2c0b862cf4f7fb783f248615f    DIFFERS     i18n: Update translation templates
+5e63eb17b68f640ac6d9f33ec2c6c9d3d63835ab    DIFFERS     i18n: Update translation templates
+290eee27fb1bb87a820c91548f965048e32f182a    DIFFERS     api: resources_pci_vpd
+80c6c4a96dd83deff177dfa1a44b07dc32a0197f    DIFFERS     i18n: Update translation templates
+757575b2b0ab568f26d3bbdd4e75880e6df47e5b    DIFFERS     i18n: Update translation templates
+82017f00372e625a81a9b5bbd6d2654f54f3b547    DIFFERS     i18n: Update translation templates
+3595d07939a82dd6f67275e67f6e2009f9bea3e9    DIFFERS     i18n: Update translation templates
+bf8db6380eeac1c195b1b8a32affc07a34fff166    DIFFERS     i18n: Update translation templates
+8b66972fcfb41c3d5cf96a4544a078695dbb3f19    DIFFERS     lxd/db: Checks or explicitly ignores errors.
+a79b7cba4a69b5d02e456b8374306b466b2c6772    DIFFERS     i18n: Updates translations.
+e9f36ae433904f040c0525b1cd40add80f073c50    DIFFERS     lxd/cluster/config: Split to separate package
+a7f2a08e8cae3259607d78d8e75fc07c51e874dd    DIFFERS     lxd: Update for config function names
+2dfb1de832655616ad0e1bc7a16be8d87bd13109    DIFFERS     lxd/api_cluster: Reduce calls to State
+a0aa688ccc5894fa946c02f715ce7ab5823271d1    DIFFERS     i18n: Update translations from weblate
+11ace6e6c1b35bde172d661a8e24758938e8b8d3    FEATURE     Release LXD 5.2
+78ac0b1c4423723e09a137704a97a921390ad648    DIFFERS     lxc/image: Update for Profiles in ImageCopyArgs
+38a64e157e564a91d27f336db6937a8975df2364    DIFFERS     lxd: Use new cluster.Profile methods
+e61b4e2688b9fe71a38af3fb770eb3850811ec6c    DIFFERS     i18n: Update translation templates
+8336ff82b6d23ba438e86d33b214d1ed9627a9a6    DIFFERS     api: qemu_raw_conf
+e6cd14887a041d74336ee0beedfef3f80845b096    DIFFERS     lxd/db/cluster/profiles: Make GetProfileIfEnabled GetProfilesIfEnabled
+7b942f25e79cf048fc62077d5c67836c1a9b4904    IRRELEVANT  lxd/seccomp: Align uptime with LXCFS
+774946388fec558826de2431a235769b3b00dfb1    DIFFERS     lxd/db/images/test: Fix tests
+268f329b3f99e745040f5caabdda760629c1b748    DIFFERS     i18n: Update translation templates
+2a6cfec032d9349a293df79eb15ae6a279f0d19c    IRRELEVANT  test/syscall/sysinfo: Fixes gosimple lint errors.
+e455c7dfe5c87d16913c83036d65d051bdea8895    DIFFERS     lxd/seccomp: Fixes gosimple lint errors.
+29ed6cc46522c3ddf4d78c073757f07aa9c5f8c0    DIFFERS     tests: Add tests for conflicting instance device validation behaviour
