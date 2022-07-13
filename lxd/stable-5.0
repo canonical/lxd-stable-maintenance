@@ -61,3 +61,30 @@ e6cd14887a041d74336ee0beedfef3f80845b096    DIFFERS     lxd/db/cluster/profiles:
 2a6cfec032d9349a293df79eb15ae6a279f0d19c    IRRELEVANT  test/syscall/sysinfo: Fixes gosimple lint errors.
 e455c7dfe5c87d16913c83036d65d051bdea8895    DIFFERS     lxd/seccomp: Fixes gosimple lint errors.
 29ed6cc46522c3ddf4d78c073757f07aa9c5f8c0    DIFFERS     tests: Add tests for conflicting instance device validation behaviour
+4df650c45d8837f32943bb8d68bc49eed007277e    DIFFERS     api: storage_cephfs_fscache
+7c4c55477ca9fc971d7c884a0036f4390af63ee0    DIFFERS     doc: Rename refquota config key name for proper one
+07ae97ceb580ef344802e7655598bc1c549b2ebc    DIFFERS     i18n: Update translations from weblate
+181fa10a337d197e710d27bf6c44a5222a9f8834    FEATURE     Release LXD 5.3
+ef045d7c82a440929d83f9b66d6fc8e9e91512f2    DIFFERS     lxd: Update to github path for go-lxc
+3cf5f4f947caa83809dc93ba43e66a119aa7444a    DIFFERS     lxd/db: Removes unnecessary whitespace.
+3fb9ca33bf053fa16f4cd76b3ca637fdb5381e93    DIFFERS     lxd/seccomp: Fixes imports.
+ed3a0ada91245922a6a4454e2404456b94d3fc47    DIFFERS     shared/version: Ends all comments with a full-stop.
+6be73fe475d3366c82711360a153131b0c5961a4    DIFFERS     lxd/db: Inserts newlines after blocks.
+11303ad6fb0fcf4e0258801f9acb7665be75e29a    DIFFERS     i18n: Update translation templates
+5a8247b0a12b01b79d2808ac60f19c08328073d8    FEATURE     api: Adds network_load_balancer API extension
+585520b8a1d824fb6748f15457775e04588ade27    FEATURE     lxd/lifecycle/network/load/balancer: Adds network load balancer lifecycle helper
+490c4c418c90dd8b74f0ebb290a892c33a9019e5    FEATURE     lxd/db/cluster: Adds networks_load_balancers and networks_load_balancers_config tables
+88bc73a3e4b5328dded122ae0912e2ad8ec7283e    FEATURE     lxd/db/network/load/balancers: Adds network load balancer DB functions
+b4c0d594fa167defc68ce7daf6635f864fc6a4b0    FEATURE     lxd/network: Adds LoadBalancers field to Info and enables it for OVN networks
+4fed4ca14e9a755066a1f3df287464601f4b866f    FEATURE     lxd/network/driver/common: Adds loadBalancerPortMap type
+c869af41a3d8846d2b25cd418f5d58f2c6dad34a    FEATURE     lxd/network/driver/common: Adds subnetUsageNetworkLoadBalancer constant
+706b2ffbe81fbff21ea8e4f1b320d07fa14515da    FEATURE     lxd/network: Add load balancer functions to interface and common driver
+ba8f85e43c132b06a681b2e1d13706affdeeb375    FEATURE     lxd/network/driver/ovn: Updates getExternalSubnetInUse to account for load balancers
+22115d6c241b82f1bbe7e77a306efeb58cd20f82    FEATURE     lxd/network/driver/ovn: Load balancer management functions
+0a08ad25b6d10ec277a0f6043001c71494aea4dd    FEATURE     lxd/network/load/balancers: Adds load balancer API endpoints
+6eb25ef08b9c8ec01365cfbfec02ff5ff7a37dd9    FEATURE     lxc: Adds network load balancer commands
+69f12294039c3ff88c4c59a43410d82e807b834c    DIFFERS     doc/rest-api: Refresh swagger YAML
+5423da61765cf7bd245990f433e52850697f9e48    DIFFERS     i18n: Update translation templates
+a05b810cf933373a953cd324a433fcb1c92cdc84    FEATURE     doc: Adds network load balancer documentation
+90add719ce7f2b28d8f9840b7cfdd655113b8e4a    IRRELEVANT  doc/networks: small fixes to load balancer docs
+66719338954d0d3dc93c888be8ab6e3bfa52dd1e    IRRELEVANT  doc/networks: move load balancers documentation under OVN
