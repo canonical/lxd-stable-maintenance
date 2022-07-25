@@ -88,3 +88,10 @@ ba8f85e43c132b06a681b2e1d13706affdeeb375    FEATURE     lxd/network/driver/ovn: 
 a05b810cf933373a953cd324a433fcb1c92cdc84    FEATURE     doc: Adds network load balancer documentation
 90add719ce7f2b28d8f9840b7cfdd655113b8e4a    IRRELEVANT  doc/networks: small fixes to load balancer docs
 66719338954d0d3dc93c888be8ab6e3bfa52dd1e    IRRELEVANT  doc/networks: move load balancers documentation under OVN
+d0f0141838790bc664d4418fa2c0e725001c3d2c    DIFFERS     api: Add vsock_api
+9b6e16098ec636371aa5bdde21b5e2b6b3927dbf    DIFFERS     i18n: Update translation templates
+79bff057bc70ccbf00112b2d44ba95280346777f    FEATURE     lxd/db/cluster: Make config table value fields NOT NULL
+c39ef0a69640cbad992d456af0a715db388c587d    IRRELEVANT  lxd/db/node: Make config table value fields NOT NULL
+1b075b5617343977f0b8ff0b85bc9cc166c3d33f    IRRELEVANT  lxd/device/device/common: Updates generateHostName to use d.state.GlobalConfig.InstancesNICHostname
+bb57b3c390bfd7f912cc06630d8cd0afdeaa559c    IRRELEVANT  i18n: Update translations from weblate
+fee89073a8bf865a04cd9175bb39fa41040cab80    FEATURE     Release LXD 5.4
