@@ -2561,3 +2561,9 @@ f5a9fd495202d1a4fa4ad2b30e4c2a600f489e36    IRRELEVANT  doc: whitespace changes
 7f820af90a754ed695fcf1e404958bd2a0c24d53    DIFFERS     Replace errors.Unwrap() with errors.Is()
 a4f7f056e7854193b65264c5f1dab42e936bffd5    DIFFERS     Use %w in fmt.Errorf to wrap errors
 d4a81593e05a120eb32c0ea6094e863f68daf9ae    IRRELEVANT  gomod: Update dependencies
+01c7842e7aed7c7c6525fae016c3f0b14ad031e6    DIFFERS     i18n: Update translation templates
+d2758540aa3e12567b7c16e08ab472641cbe7e5f    IRRELEVANT  doc: add some headings
+7fe365d0cb6f428bcaae0972e979c5423d69b4b2    FEATURE     lxd/instance/sftp: Adds /1.0/instances/<name>/sftp handler
+177d9672c47e9eddee8e91bc7d4b1074cee477a7    FEATURE     lxc/file: Adds mount command
+c3aba03560ed6786da67f23e90c053044cb8c7d8    IRRELEVANT  i18n: Update translation templates
+112a1633464db7a3085a500abb16016fb47c358e    IRRELEVANT  doc/rest-api: Refresh swagger YAML
