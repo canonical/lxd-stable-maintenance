@@ -848,3 +848,40 @@ ef4901a6cf252e049212b803443399fdd07825c3    IRRELEVANT  seccomp: retry with moun
 ab51129bd5d293353ab1ad7bf8a08348f15de26e    DIFFERS     networks/utils: Adds networkDHCPv4Release function
 fbd08205cab2ec20c4784a3122d8f8bf33be82ac    DIFFERS     tests: Adds DHCP lease release tests
 e983d088231d38dbf701fdd7f1792fc3e10f93e3    FEATURE     lxd-p2c: Add --storage-size option
+76b7db6e38ee3dbc114ded2ce8d5170e7e4cd5dc    IRRELEVANT  lxd/storage/dir: Fix quotas on dir
+e17431af5adb977f79d1dd3d67460dfdeaaaf60d    DIFFERS     lxd/rsync: Allow disabling xattrs during copy
+c1bd3e1f0a547ea15db2addb4b2f867b39b6662b    DIFFERS     Turn patchShrinkLogsDBFile into a no-op
+199a503db242ecb7279acdb9a76e7a841c2581b9    DIFFERS     Extract container list logic from containersShutdown into containersOnDisk
+9e19255198b766263c2892c013c56d07b025a7f6    DIFFERS     Don't use the db in legacy patch 12
+16a0f94ce4a06977311f41c06deaaa2b7e080fb2    DIFFERS     Only use the schema db transaction in legacy patches
+a19fd0058f2a650773b3db95897aebf4bf0d888b    DIFFERS     Move container taring logic into standalone class
+9c17bdb75dfeb91a70702218c69095bbefa5bc04    DIFFERS     lxc/copy: Always strip volatile.last_state.power
+a83bcf21f6e19aff1f37a672c6584e43d3abe354    IRRELEVANT  lxc: Fix renaming storage volume snapshots
+0d300f3eea25a9dfac6e46264a0b2c9f7699c8ff    IRRELEVANT  lxd: Fix renaming volume snapshots
+4809e3fa13e15fa6ea422f3d3196108f34e8540f    IRRELEVANT  lxd/storage/ceph: Fix snapshot deletion cleanup
+9f93afbdbcb41476367a6313591641f64b5fdbc0    IRRELEVANT  tests: Test renaming storage volume snapshots
+e440c31ac53b132dbc2a3dbd58d076c2c8c70cc6    IRRELEVANT  lxd/storage: Fix copies of volumes with snapshots
+4fbcbf4213fca2fc935e5c4ad58e4d05a657f4f1    FEATURE     api: Add storage_cephfs API extension
+95102227550d176a72b4b80e684502cdc564c7ec    FEATURE     doc: Add cephfs
+89a8db5d0d109ea54aff1763cde8dee04b73092b    FEATURE     lxd/storage: Introduce new CEPHFS backend
+f13f489ca75e2028e8beacbbedea5cd3503e74cc    FEATURE     lxd/cluster: Add cephfs
+465528d85fa495422c12bcf219a299b676c5e5fa    FEATURE     tests: Add CEPHFS tests
+4ba67c04cd4404aea877bc9ec16b56fcb97f09cd    IRRELEVANT  lxd/storage/cephfs: Cleanups
+b471656a86a0cd73bab28aefcb14c971a27ca6df    FEATURE     container: Adds security.ipv4_filtering and security.ipv6_filtering nic device keys
+1f097c3e997bf06f77e862f9950eb67e122fb1f1    FEATURE     container/lxc: Adds ipv4_filtering and ipv6_filtering functionality
+a66b86e0e1370880081c33ad987e4e3b8eb26cc0    IRRELEVANT  test: Adds tests for security.ipv4_filtering
+3a83f67ce21b6663470ed5057f92ff4bad6687b8    IRRELEVANT  test: Adds tests for security.ipv6_filtering
+f4432f875e740665271e1c94f778db8709727f6b    IRRELEVANT  container: Validates security.ipv4_filtering and security.ipv6_filtering
+4185cac035a21c55066fafa01df50e6bcdceded0    IRRELEVANT  doc: Updates container device with IP filtering keys
+57b74026e100dbcd9fc47051c659ec76fed16624    FEATURE     api: Adds API extension for IP filtering
+a424173df72fd49e3b4ba27863485e26121c35cc    IRRELEVANT  lxd/networks: Allow querying state on non-managed
+cd21241f20074f9a4f1200577f6e1e4e7fd791a3    IRRELEVANT  seccomp: ensure correct owner on __NR_mknod{at}
+57c831e448512e6a36a755c0d579e824aed530b5    IRRELEVANT  container: Relaxes validation for security.ipv4_filtering and security.ipv6_filtering
+d973198378966980f615d9ccf2ff4273ee6e212d    IRRELEVANT  container/lxc: Better detect and alert missing br_netfilter module
+176a52ba4f4d1a079a6ed5a30147f65fc4851897    IRRELEVANT  container/lxc: generateNetworkFilterEbtablesRules to accept IP info as arguments
+bff7c9e348242b0d680427850ac72f21fa49cabd    IRRELEVANT  container/lxc: generateNetworkFilterIptablesRules to accept IP info as arguments
+7fdee65b748c74fc6b9926b0d1ea43cb447872c7    IRRELEVANT  test: Updates tests for dynamic IP filtering
+bd2e6ad0471b7a747e6c789b64e4218749494273    IRRELEVANT  doc: Fix underscore escaping
+9c67952e29fda363e30a76d29ec3f6f3c9cb3822    DIFFERS     lxc: Move to units package
+daa6750bbcefa1ed5c11ed9933e9037ade8744d6    DIFFERS     shared: Move to units package
+b9dfa4f999d0f2fc3624036e605b6e75ed27c679    DIFFERS     lxd: Move to units package
