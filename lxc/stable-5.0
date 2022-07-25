@@ -1,0 +1,3 @@
+f4d02217ee2baf7275175d2c6610de4908a9addf    FEATURE     tools: Provide multicall lxc binary
+e73520adf4fd6a7548872ac4097adb67b7cd1314    IRRELEVANT  meson: Set DEVEL flag post release
+32a07151939c6c251def2a1e5e04973e4c64103a    FEATURE     lxc-usernsexec: allow to select which {g,u}id to switch to
