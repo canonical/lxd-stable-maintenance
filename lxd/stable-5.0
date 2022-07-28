@@ -103,3 +103,5 @@ df55120483f11031266ab67c5a35f977813e11db    IRRELEVANT  lxd/db/network/load/bala
 6de3139072bc6c74cfe672d33d30b0778670eace    IRRELEVANT  lxd/lifecycle/network/load/balancer: Fix load balancer lifecycle types
 f9e5058f652db516e5862278c6396c5054779fee    IRRELEVANT  lxd/network/load/balancers: Add missing networks segment to URL response in networkLoadBalancersPost
 6494353de00fc5b69b79351b1c90795e14abb6a9    DIFFERS     lxd/lifecycle: Reworks URL generation to use api.NewURL()
+137687f7457b9394391ee69220bf978241620e6f    DIFFERS     lxd: Use lifecycle URL in SyncResponseLocation
+fb06087603f0cde649fd26cd326b2185d87df978    IRRELEVANT  lxd/db/network/load/balancers: Use query.Params in GetNetworkLoadBalancers
