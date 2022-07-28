@@ -95,3 +95,11 @@ c39ef0a69640cbad992d456af0a715db388c587d    IRRELEVANT  lxd/db/node: Make config
 1b075b5617343977f0b8ff0b85bc9cc166c3d33f    IRRELEVANT  lxd/device/device/common: Updates generateHostName to use d.state.GlobalConfig.InstancesNICHostname
 bb57b3c390bfd7f912cc06630d8cd0afdeaa559c    IRRELEVANT  i18n: Update translations from weblate
 fee89073a8bf865a04cd9175bb39fa41040cab80    FEATURE     Release LXD 5.4
+ab77b4f9a180b877eae35d5c72a05693e3a99e60    DIFFERS     i18n: Update translation templates
+3d5031854587fd72c44eab8332b633cc76cb8955    IRRELEVANT  lxd/db/storage/buckets: Fix member specific filter bug in GetNetworkLoadBalancers
+17afd9a652d28fcc8ec35db085cb2861ab0a48fe    IRRELEVANT  lxd/db/network/load/balancers: Adds context argument to GetNetworkLoadBalancer and GetNetworkLoadBalancers
+ddf01698534606fda914be4b4577bb4c3a8a2a4b    IRRELEVANT  lxd/network: Usage of GetNetworkLoadBalancers and GetNetworkLoadBalancer
+df55120483f11031266ab67c5a35f977813e11db    IRRELEVANT  lxd/db/network/load/balancers: Adds optional listenAddresses filter to GetNetworkLoadBalancers
+6de3139072bc6c74cfe672d33d30b0778670eace    IRRELEVANT  lxd/lifecycle/network/load/balancer: Fix load balancer lifecycle types
+f9e5058f652db516e5862278c6396c5054779fee    IRRELEVANT  lxd/network/load/balancers: Add missing networks segment to URL response in networkLoadBalancersPost
+6494353de00fc5b69b79351b1c90795e14abb6a9    DIFFERS     lxd/lifecycle: Reworks URL generation to use api.NewURL()
