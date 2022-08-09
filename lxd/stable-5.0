@@ -105,3 +105,27 @@ f9e5058f652db516e5862278c6396c5054779fee    IRRELEVANT  lxd/network/load/balance
 6494353de00fc5b69b79351b1c90795e14abb6a9    DIFFERS     lxd/lifecycle: Reworks URL generation to use api.NewURL()
 137687f7457b9394391ee69220bf978241620e6f    DIFFERS     lxd: Use lifecycle URL in SyncResponseLocation
 fb06087603f0cde649fd26cd326b2185d87df978    IRRELEVANT  lxd/db/network/load/balancers: Use query.Params in GetNetworkLoadBalancers
+8d6a722665b24cb66800e056ad558a34cc67cbca    DIFFERS     doc: fix spelling api-extensions.md
+330cb3bcd3a7601abb84b92e95e9461391561109    DIFFERS     doc: fix spelling instances.md
+80ffd27e075856bd5ae29d341065357a983db87f    DIFFERS     doc: fix spelling server.md
+2c68f04d1e45219f0946a6ef92e700323ad7466e    IRRELEVANT  doc: fix spelling network_load_balancers.md
+9fe2935e298c568d8328d36021955e164fc8467d    DIFFERS     doc: fix spelling syscall-interception.md
+157cc1aad3d3cb3130c39a988bd85aa5536774ff    FEATURE     shared/instance: Allow volatile.last_state.ready key
+ad8f65c7c513a7a70ac14f11b4b50c2fbcbefacd    FEATURE     lxd/db: Add function to remove volatile.last_state.ready key
+f63f4d66b84f45a848294fb020027dba14a7b317    FEATURE     lxd: Unset volatile.last_state.ready on daemon init
+c1f9b825d2e02baa4b1c1849533e499be5d8eee7    FEATURE     lxd/instance/drivers: Set volatile.last_state.ready on stop/shutdown
+381416a4b3b7658e9c42090152be5d468158a2e8    FEATURE     lxd/instance/drivers: Return api.Ready when ready
+084d2fdfc3bb95da18a3c28f38f90040ac54fa33    FEATURE     lxd/devlxd: Add instance state to /1.0
+cf72b6417d0b104b9d8ca7b5d928381923608db9    FEATURE     lxd/devlxd: Allow setting instance state in /1.0
+26db01778d3b8b237428698df091fd72e4887b5c    FEATURE     test/deps: Add ready-state subcommand
+3abdd57e2f2bc0e9f4a14e49a7c27f962c9dd967    FEATURE     test: Test instance Ready state using devlxd
+14d53cad2a17b4e8523f11279d6c33c18a0f496f    FEATURE     api: Add instance_ready_state
+aa9634261d8e01d4b93bab67b7b58c6f88c04d73    FEATURE     doc/devlxd: Add PATCH /1.0
+49240f603a3c44382817a12dd2fdee24140bee74    FEATURE     doc/devlxd: Update GET /1.0
+f0da9e6ecd194062d49506192fd0672b9df09942    FEATURE     lxd-agent: Handle PATCH /1.0 in devlxd
+89db882737c39cf01cf4de551aba96bccf06d0de    DIFFERS     doc: mark up default values correctly for instances.md
+d9cf2b51440fae9ea83680941af7d802b728a0da    DIFFERS     doc: mark up default values correctly for server.md
+7bdee58e6ad3bcbc675a91284ab3d4c92ac64ffc    IRRELEVANT  lxd/network/load/balancers: Add support for config patching in networkLoadBalancerPut
+4017ea896f0777f5cd2af86a481ef019b5caacad    IRRELEVANT  test: Move devlxd-client into its own directory
+547b45744a8d86ade097294c52b892bce77e030b    IRRELEVANT  lxd/db/network/load/balancers: Fix regression in GetNetworkLoadBalancers
+69092d47634a0b7dfeeebc8d4d715a7ed7a037a5    DIFFERS     i18n: Update translation templates
