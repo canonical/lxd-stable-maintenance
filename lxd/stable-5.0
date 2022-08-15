@@ -129,3 +129,11 @@ d9cf2b51440fae9ea83680941af7d802b728a0da    DIFFERS     doc: mark up default val
 4017ea896f0777f5cd2af86a481ef019b5caacad    IRRELEVANT  test: Move devlxd-client into its own directory
 547b45744a8d86ade097294c52b892bce77e030b    IRRELEVANT  lxd/db/network/load/balancers: Fix regression in GetNetworkLoadBalancers
 69092d47634a0b7dfeeebc8d4d715a7ed7a037a5    DIFFERS     i18n: Update translation templates
+7a7a71c1f93a206bd8ab6d173b332d4386436bb7    FEATURE     api: network_bgp_holdtime
+53d37fcdbb5b18d3728f71711b3b59ba3758270b    FEATURE     doc: Add bgp.peers.NAME.holdtime
+34629f25825cc7ffd9a9f7d240cec5c88711847b    FEATURE     lxd/bgp: Add configurable hold time
+60698b4b0fee49346341c5f25c591da24ceb7f2b    FEATURE     lxd/network: Add configurable BGP hold time
+f3ea3b99b7a85cc4700270c48f0847d47659d96a    IRRELEVANT  lxd/bgp: Only set HoldTime if set by the user
+738684c7b4422e02caa26dfdc8dc29926badeb09    DIFFERS     api: Adds storage_volumes_all_projects extension
+c357168275506877186e7227b2c87a7a6b4add24    DIFFERS     i18n: Update translation templates
+bb2d1e9b05a342d98909511f88a6a7d88bd22166    IRRELEVANT  lxd/network: Fix BGP without hold time
