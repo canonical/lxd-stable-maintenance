@@ -137,3 +137,4 @@ f3ea3b99b7a85cc4700270c48f0847d47659d96a    IRRELEVANT  lxd/bgp: Only set HoldTi
 738684c7b4422e02caa26dfdc8dc29926badeb09    DIFFERS     api: Adds storage_volumes_all_projects extension
 c357168275506877186e7227b2c87a7a6b4add24    DIFFERS     i18n: Update translation templates
 bb2d1e9b05a342d98909511f88a6a7d88bd22166    IRRELEVANT  lxd/network: Fix BGP without hold time
+51a239502d917caa64d901bae7fe7f3fff508c7f    IRRELEVANT  lxd/db/cluster: Adds remote storage aware unique index to storage_volumes
