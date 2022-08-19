@@ -173,3 +173,5 @@ cdda4cfaa7d9e6af053eb92770d9df26c2280de5    IRRELEVANT  lxd/storage/drivers/driv
 e151a40e7e57a513ba8c37ffb5d354f40c01c508    DIFFERS     lxd/db/warnings: Remove unnecessary statement prepares
 187db6455003446da74507ab9c8fe069eba584c3    IRRELEVANT  lxd/storage/drivers/driver/cephobject/buckets: Create admin radosgw-admin user if missing in CreateBucket
 45850c07403e30204bdf151e8ecb3b3de61dd10b    IRRELEVANT  i18n: Update translations from weblate
+884139c75830b8363521781d39f32fab656f14bf    DIFFERS     gomod: Update dependencies
+f94291c528facf80dab9289add252fb8bd405a26    FEATURE     Release LXD 5.5
