@@ -138,3 +138,38 @@ f3ea3b99b7a85cc4700270c48f0847d47659d96a    IRRELEVANT  lxd/bgp: Only set HoldTi
 c357168275506877186e7227b2c87a7a6b4add24    DIFFERS     i18n: Update translation templates
 bb2d1e9b05a342d98909511f88a6a7d88bd22166    IRRELEVANT  lxd/network: Fix BGP without hold time
 51a239502d917caa64d901bae7fe7f3fff508c7f    IRRELEVANT  lxd/db/cluster: Adds remote storage aware unique index to storage_volumes
+6b318c84e969d60ccdf4d6b6d674a715f25293af    DIFFERS     lxd/db/storage/volumes: Update usages of QueryScan
+ca3e42ea5e119a1ad8213e133627d334f6e12562    FEATURE     metrics: new metric: lxd_memory_OOM_kills_total
+177c7c91cfdbc8c8e3170a572ddc5f6a31c23477    FEATURE     api: metrics_memory_oom_total
+3f10d1c0f5c366a796e4379fadb05926268c8c6e    FEATURE     api: Adds storage_buckets extension
+118e7c761f10359defa54a8ac7ad964d7d31b6a7    FEATURE     lxd/db/cluster: Adds storage buckets tables
+3a55b98fa54911f92613497da97843420f635a29    FEATURE     lxd/db/cluster/projects: Adds "features.storage.buckets" to ProjectFeaturesDefaults
+23eb07ac9def0a4c328de4e450efd401e8378037    FEATURE     lxd/project/project: Adds StorageBucketProjectFromRecord and StorageBucketProject functions
+64b40036fcaf381d566f75f153eb3f43fdb85fe8    FEATURE     lxd/project: Update cmdProjectList with features.storage.buckets support
+140aedc0a9560a46a8e235613d55b241c2a68a1f    FEATURE     lxd-user/lxd: Enable features.storage.buckets in projects
+d88278ccd57f6a97d577b3a00f207e545aa7bac4    FEATURE     lxd/api/project: Add features.storage.buckets project setting
+a5983fdfbb1c2e163fcde0c175501f6f814472f1    FEATURE     doc/projects: Adds features.storage.buckets setting
+edb555a3bc4095790518d6683457331d7dcb82f8    FEATURE     lxd/storage/drivers/driver/types: Adds Buckets field to Info
+a6b06060fbab90ebd262132a4520d4d8c8a2f344    FEATURE     lxc/storage/bucket: CLI commands for bucket management
+054ad3118e05121a540676a4656a28b6884e993a    FEATURE     lxd/lifecycle/storage/bucket: Add lifecycle helper and types
+262e43e325207048213768714ddb30c7f1c4e038    FEATURE     lxd/storage/pool/interface: Add bucket management definitions
+b484a9f13d01c2d0da36be029a5c9bb43d737315    FEATURE     lxd/storage/drivers/bucket: Adds bucket type
+a5764c8bd127f006192093850a50a1a976cdfff6    FEATURE     lxd/storage/drivers/bucket: Add S3Credentials type
+6967729af010220f72412f20de9e3e5117482537    FEATURE     lxd/db/storage/buckets: Adds storage bucket management functions
+9340135735becbf463d6ad27a3bf50f1fb5b442f    FEATURE     lxd/storage/backend/mock: Add storage management functions
+b69bedcdc1eee461fa14f81d94626d18306a3dc8    FEATURE     lxd/storage/backend/lxd: Add bucket management functions
+511f6c6e6f80c829c244efe3599c624a8f4157b2    FEATURE     lxd/storage/drivers: Adds bucket management functions
+7f413e866d8bea1cdcdf6dffc015c41f209852f8    FEATURE     lxd/storage/buckets: Adds storage pool bucket management API endpoints
+06c7fcf4fcc54905bb1f97eff1d1f41ca151fdf4    DIFFERS     doc/rest-api: Refresh swagger YAML
+b6925940b534d21bb587091774258e7fa77015a4    FEATURE     gomod: Adds minio client and depenencies
+bbbb3223d12f89acf507b2d354a185b7275b98ff    FEATURE     lxd/storage/drivers/driver/cephobject: Adds cephobject storage pool driver type
+e5ba03bbee4e97f72612d8ca53adb97b0886e2ff    FEATURE     lxd/storage/storage: Adds buckets to storage pool UsedBy output
+3502a25c622103167c5fb894359db916f2bed62e    IRRELEVANT  i18n: Update translation templates
+1ac8844bd77f13668c47b6dfd03c5d31ba0931a2    FEATURE     test: Adds cephobject tests
+0a14b889d69ee009e34a71f49a590a43d6c099c8    FEATURE     doc: Adds cephobject documentation
+cdda4cfaa7d9e6af053eb92770d9df26c2280de5    IRRELEVANT  lxd/storage/drivers/driver/cephobject: Fix detection of missing lxd-admin radosgw user
+6f563dcd59f0e2fc708c65bb7f71adbaf63c8eff    IRRELEVANT  lxd/db/cluster/update: Add ID to nodes_cluster_groups table
+208487bed76284b8b138b8ae43beff2cf8784072    DIFFERS     lxd/db/storage/volumes: Rename QueryScan to Scan
+e151a40e7e57a513ba8c37ffb5d354f40c01c508    DIFFERS     lxd/db/warnings: Remove unnecessary statement prepares
+187db6455003446da74507ab9c8fe069eba584c3    IRRELEVANT  lxd/storage/drivers/driver/cephobject/buckets: Create admin radosgw-admin user if missing in CreateBucket
+45850c07403e30204bdf151e8ecb3b3de61dd10b    IRRELEVANT  i18n: Update translations from weblate
