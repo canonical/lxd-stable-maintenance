@@ -153,25 +153,287 @@ edb555a3bc4095790518d6683457331d7dcb82f8    FEATURE     lxd/storage/drivers/driv
 a6b06060fbab90ebd262132a4520d4d8c8a2f344    FEATURE     lxc/storage/bucket: CLI commands for bucket management
 054ad3118e05121a540676a4656a28b6884e993a    FEATURE     lxd/lifecycle/storage/bucket: Add lifecycle helper and types
 262e43e325207048213768714ddb30c7f1c4e038    FEATURE     lxd/storage/pool/interface: Add bucket management definitions
-b484a9f13d01c2d0da36be029a5c9bb43d737315    FEATURE     lxd/storage/drivers/bucket: Adds bucket type
-a5764c8bd127f006192093850a50a1a976cdfff6    FEATURE     lxd/storage/drivers/bucket: Add S3Credentials type
 6967729af010220f72412f20de9e3e5117482537    FEATURE     lxd/db/storage/buckets: Adds storage bucket management functions
 9340135735becbf463d6ad27a3bf50f1fb5b442f    FEATURE     lxd/storage/backend/mock: Add storage management functions
 b69bedcdc1eee461fa14f81d94626d18306a3dc8    FEATURE     lxd/storage/backend/lxd: Add bucket management functions
-511f6c6e6f80c829c244efe3599c624a8f4157b2    FEATURE     lxd/storage/drivers: Adds bucket management functions
 7f413e866d8bea1cdcdf6dffc015c41f209852f8    FEATURE     lxd/storage/buckets: Adds storage pool bucket management API endpoints
 06c7fcf4fcc54905bb1f97eff1d1f41ca151fdf4    DIFFERS     doc/rest-api: Refresh swagger YAML
 b6925940b534d21bb587091774258e7fa77015a4    FEATURE     gomod: Adds minio client and depenencies
-bbbb3223d12f89acf507b2d354a185b7275b98ff    FEATURE     lxd/storage/drivers/driver/cephobject: Adds cephobject storage pool driver type
 e5ba03bbee4e97f72612d8ca53adb97b0886e2ff    FEATURE     lxd/storage/storage: Adds buckets to storage pool UsedBy output
 3502a25c622103167c5fb894359db916f2bed62e    IRRELEVANT  i18n: Update translation templates
 1ac8844bd77f13668c47b6dfd03c5d31ba0931a2    FEATURE     test: Adds cephobject tests
 0a14b889d69ee009e34a71f49a590a43d6c099c8    FEATURE     doc: Adds cephobject documentation
-cdda4cfaa7d9e6af053eb92770d9df26c2280de5    IRRELEVANT  lxd/storage/drivers/driver/cephobject: Fix detection of missing lxd-admin radosgw user
 6f563dcd59f0e2fc708c65bb7f71adbaf63c8eff    IRRELEVANT  lxd/db/cluster/update: Add ID to nodes_cluster_groups table
 208487bed76284b8b138b8ae43beff2cf8784072    DIFFERS     lxd/db/storage/volumes: Rename QueryScan to Scan
 e151a40e7e57a513ba8c37ffb5d354f40c01c508    DIFFERS     lxd/db/warnings: Remove unnecessary statement prepares
-187db6455003446da74507ab9c8fe069eba584c3    IRRELEVANT  lxd/storage/drivers/driver/cephobject/buckets: Create admin radosgw-admin user if missing in CreateBucket
 45850c07403e30204bdf151e8ecb3b3de61dd10b    IRRELEVANT  i18n: Update translations from weblate
 884139c75830b8363521781d39f32fab656f14bf    DIFFERS     gomod: Update dependencies
 f94291c528facf80dab9289add252fb8bd405a26    FEATURE     Release LXD 5.5
+218ee70424ea07073eed3a0f5a4fe901d81c3b94    IRRELEVANT  doc: backquote mac in doc/api-extensions.md
+68c114d832cede6d05867433767a429f92fc5b27    IRRELEVANT  doc: Correct typo in cephobject.radosgw.endpoint*
+25486061c179a0cf9c62ce06b5f2a57e96299774    IRRELEVANT  lxd: Correct typo in cephobject.radosgw.endpoint*
+c7c2acfbf8f8d49fa58451b0b745e171da04040a    IRRELEVANT  test: Correct typo in cephobject.radosgw.endpoint*
+acca6ba87c3abc13856423d03571fac0b5831563    IRRELEVANT  lxd/db/cluster/update: Adds patch to correct typo in cephobject.radosgsw.endpoint*
+350c4dfdf76943b31ef30c15faf52d807d5198c5    DIFFERS     doc: Use more backquotes in documents
+84e2feada49d78cb9bc7f218eaf6447e952479d6    DIFFERS     doc: Improve uses of backquotes in documents
+b18104deb0d3d4976b539b8972959aa0a157624d    DIFFERS     lxd/db/cluster/mapper: Update generated code
+c12b591ab1b66e579946d4bd9e01461ec4ce1319    DIFFERS     lxd: Remove usage of empty filter structs
+0c9c975e4f06197a1a07752fd3e7cc4c07adeb22    IRRELEVANT  doc/storage: small cleanup to the storage bucket documentation
+b77073cfec4517b7365951ecd71465c8ca0da9e7    DIFFERS     doc/storage: group the pool/volume/bucket information
+8287dd3304948fa3eec882962a89ec511f61c332    FEATURE     api: Adds storage_buckets_create_credentials extension
+2fa8fd920c091e4359e4bdc2e71acab250974e50    IRRELEVANT  lxd/db/cluster/schema: Apply schema patch version for bucket config typo fix
+e2f3e54c392db5176c20cc5f36ed92ead238e920    IRRELEVANT  lxc/storage/bucket: Display generated admin key in cmdStorageBucketCreate
+ed7e8a1748188c8df934fbbe18f2383bef2bdc3b    IRRELEVANT  lxd/storage/buckets: Generate admin key on bucket creation
+51623ae4c9f71aac7c4eebbcad177306bf2bf12e    IRRELEVANT  test: Update storage buckets tests to check for initial credentials
+3ae939789690fda47115970381bc11a3697c56c5    IRRELEVANT  i18n: Update translation templates
+ec67337161c9c1b420db8eb6728ab1ed8d9b528e    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+d855354acc26870f8f13d04481c15bdbeb95032e    DIFFERS     doc/storage: make navigation titles more consistent
+7ea996c22cfae0b5421501cb73d5db004d8e4801    IRRELEVANT  lxd/storage/buckets: Handle missing URL in storagePoolBucketsGet
+661a213cbbe2ee972652e9b61b227d10e2e8a35c    IRRELEVANT  lxd/storage/buckets: Detect missing bucket URL in storagePoolBucketGet
+1f5d6663703e9a3caa182c97a79108c71fca70d6    IRRELEVANT  lxd/storage/utils: Adds BucketDBCreate and BucketDBDelete functions
+b68c952d207039edda67905929e1377ae062a3d4    DIFFERS     lxd/storage/drivers/driver/cephobject/buckets: Updates to use Volume type for bucket config
+f112a97a7341867391ebc892ace54a2ba15939e2    IRRELEVANT  lxd/storage/backend/lxd: Switch to using Volume for buckets
+cfbb3174315b0f400c527f2b097f8473f2b9b192    IRRELEVANT  lxd/storage/backend/lxd: Removes unused GetBucket
+9f0ac08d344aaf822d2e6671dd82a8762240683f    FEATURE     lxd/cgroup: Add GetEffecticeCPUs
+2fb8678ea2673097d70773203c3d1dff8e97c397    FEATURE     lxd/metrics: Add lxd_cpu_effective_total
+9614ee6a1be0962538b96093f3336e70e3f1bca9    FEATURE     api: metrics_cpu_effective_total
+c75a2824ee60bbe4deff48b2f0c5b1817811b101    IRRELEVANT  lxd/db/storage/buckets: Allow cross-pool bucket listing in GetStoragePoolBuckets
+a6061c6449ee9e002e4904d271eeffc78b710bce    IRRELEVANT  lxd/storage/buckets: tx.GetStoragePoolBuckets usage
+6ece9e2a4ff66324b27b691c32e9890abdb2cb88    IRRELEVANT  lxd/storage/storage: tx.GetStoragePoolBuckets usage
+3b77fbc5d1977a9fa013303456504de285ee3586    FEATURE     lxd/lifecycle: Add InstanceReady lifecycle event
+2fb4411f2279fe0bb2a40a591c0743fa05171b24    FEATURE     lxd/devlxd: Send InstanceReady lifecycle event
+cda00bc0a113a5c489e5eaa2051384cf95ea26ee    FEATURE     doc/events: Add instance-ready lifecycle event
+c650b84e3c9ce0d6e8e3b37b9e5b318acba06d70    FEATURE     test: Test InstanceReady lifecycle event
+c701e37967fa44d5658bf3fba239f9c69411ce94    DIFFERS     doc: fix markdown errors for MD022
+44503ee6c949b439ae2bc3ded275e2efea5cafb9    DIFFERS     doc: fix markdown errors for MD004-MD007
+ee6fb0d36699d6f4e1e282a070b49d16accf910f    DIFFERS     doc: fix markdown errors for MD034
+67214a6c3a46f3884da21210734264820db59a88    DIFFERS     doc: fix markdown errors for MD031
+244840ebe6dfe61bbad94a14cc3eb4890a71a4b3    DIFFERS     doc: add related links to the start page
+5a030e9d7bb4e6fcf94440241b11cdda2e6b448f    DIFFERS     test: Add clean up of storage buckets in kill_lxd
+02dc67ea0e4992fa282e29701c05af94512f8c63    DIFFERS     scripts/empty-lxd.sh: Add emptying of storage buckets
+c88e72728e93661e20db97d387d85c715bdd0ade    DIFFERS     lxd/project/project: Updates NetworkProject to return requested project's info
+4a945d7a46a53ae0c9b4e0eb2a505947f3b07300    IRRELEVANT  lxd/project/project: Align StorageBucketProject with StorageVolumeProject return values
+4fe80e67d2ed741a440bf6fbd26ac5ee06f2813a    IRRELEVANT  lxd/storage/buckets: project.StorageBucketProject usage
+fd0546f17e7ecbac224699bb1762a7bdb0be68b5    DIFFERS     lxd: inst.Project() usage
+c9c8a14ee62e2eb6d1a3c7f79f630b4d3950c6da    DIFFERS     lxd/storage/drivers: Renames BucketURL to GetBucketURL for consistency
+5a766f5a29fc1e2c52c1d453754256d1be052565    DIFFERS     lxd/db/cluster/mapper: Update generated code
+4f502b32a53e34bb7130845646ebe4bff8f0e715    DIFFERS     api: Adds projects_networks_restricted_access extension
+86e86bf77b421b7f73fa94360bef6384455425fc    DIFFERS     lxd/network: Uses project.NetworkAllowed to check access to networks
+cba8cce230ba9d8643efeb844c3ffec5283e4da1    FEATURE     api: Adds storage_buckets_local extension
+e3c3313d292a5afd4ab8da1c81c3e69621b62bb0    FEATURE     shared/util: Adds HTTPSStorageBucketsDefaultPort constant
+08957fa8ce57b82b5a61d63a07c3029354562b9b    FEATURE     lxd/endpoints: StorageBucketsServer listener
+3b0c83d125361fc598a5b75353176f72195a3e7b    FEATURE     lxd/api/1.0: Updates doApi10UpdateTriggers to handle core.storage_buckets_address
+99fc93e68afad676450a9f2e25e8999fe5fd5c3d    FEATURE     scripts/bash/lxd-client: Adds core.storage_buckets_address
+58cbd544abd4e7595dbd0d4abf4bb7359860126c    FEATURE     lxd/node/config: Adds core.storage_buckets_address support
+ebea8f72f76528c10ae51be1cef46846a3d91e49    FEATURE     lxd/storage/s3/types: Add S3 types
+65911f031764c0273d97a365a4f0535055b182aa    FEATURE     lxd/storage/s3/headers: Adds AuthorizationHeaderAccessKey function
+5153a66f94c5b05ae39caf6f78ffaa72ce2c9edf    FEATURE     lxd/storage/s3/policy: Adds policy generator
+47b98b469a67154c7d40ade569d97925a004080e    FEATURE     lxd/storage/s3/miniod: Adds miniod package
+cfce51d4926e93db33d2de90213c70a37428db94    FEATURE     gomod: Adds github.com/minio/madmin-go
+2edc8cb108eea433976ecc62f3f719e5d8d422d3    FEATURE     lxd/db/storage/buckets: Adds GetStoragePoolLocalBucket function
+951b150b3f344bfd4b590f66cda1ed124d5bcad0    FEATURE     lxd/db/storage/buckets: Adds GetStoragePoolLocalBucketByAccessKey function
+0e942e7699eb4da0a3715b466d06912333aa75e4    FEATURE     lxd/db/storage/buckets: Uses GetStoragePoolLocalBucketByAccessKey in CreateStoragePoolBucketKey and UpdateStoragePoolBucketKey
+c5e98c1ba5b9a88e7fc317bf1305abf77f5ea4a4    FEATURE     lxd/storage/pool/interface: Adds ActivateBucket
+74f4d28ccad366935b2bb4d3df953b5bce8c257c    FEATURE     lxd/storage/pool/interface: Adds GetBucketURL definition
+fd34bc715bbda40e5c0c2ed9402f246fdc17912a    FEATURE     lxd/storage/backend/mock: Adds ActivateBucket
+0f9595569939211a725bb3997ece6b80e1e5ed0b    FEATURE     lxd/storage/backend/mock: Adds GetBucketURL
+1fdec0871838fd01b99ae6cf34a9dd41262b4652    FEATURE     lxd/storage/backend/lxd: Implements local bucket support
+f12c2fd26d43f3c371de38e4f4ae759c2a3a839c    FEATURE     lxd/storage/buckets: Use pool.GetBucketURL()
+f7ef4c6db6b2d50ffe0c635bfd9e50775cd08021    FEATURE     lxd/api: Adds storageBucketsServer
+acec67169f887a12ee82f221eec14b51b62a4cf8    FEATURE     lxd/daemon: Initialise StorageBucketsServer listener in init
+b1908a714757c749e9c52727d80001bd4de06c7a    FEATURE     lxd/daemon: Shutdown minio processes during Stop
+a1e4cf6cde91327ac6ce66fa3ce135b8ba523034    FEATURE     doc: Updates docs for local storage bucket support
+6ef7de504cbc8657d7d7e80c21ebd3aaaba123b6    FEATURE     test: Update storage buckets tests
+76595cf469af89bc566c39b17720afdb763f5091    DIFFERS     lxd/db/cluster/mapper: Update generated code
+8e66ccc9d07415b221a08366f8bb672ed20f0be4    IRRELEVANT  lxd/storage/s3/miniod: Use a sub-directory for minio on storage volume
+9be115aef6717797719abce0fcc4fc5f9fc3617d    IRRELEVANT  gomod: Updates dependencies
+98244308c57ece78160d94a73f4f057e270e5c37    DIFFERS     lxd/storage/backend/lxd: Replace b.state.DB.Cluster.GetLocalStoragePoolVolume with VolumeDBGet usage
+68556ba1af9323334a67e27fed98dc1170b3aa00    DIFFERS     gomod: Adds github.com/pkg/xattr
+ec472d4c1bc8194a006a2e62d7900a94d445e971    DIFFERS     lxd/db/cluster/mapper: Update generated code
+b8031b9fc18dc2f87804d888f42b30181f63aaf9    DIFFERS     lxd/db/cluster/mapper: Update generated code
+7c62299e658af8a6dd9de036839eeafe72ec7e9a    DIFFERS     lxd: Pass transaction ctx through to query helpers
+b4570e514790c0e17dad618f02cc6daed416b382    DIFFERS     lxd/db/schema/schema: Add context to schema updates
+1bc134092a2d011459e3c4a6af61cf1d97d168d2    IRRELEVANT  gomod: go mod tidy
+13fea7103b87eac6df02343bd14838c7be73ba30    DIFFERS     lxd/db/images: Make CreateImage project argument and explicit string type
+3827dba4a078d025862aa796fd04e1d79b7886e9    DIFFERS     test/README: Use backticks for test env var options
+01eab82e51db9ece85973bd0592107ea0159fe33    DIFFERS     test/README: Clarify options which enable tests
+9f35acfe32055a03eed899bdf682fc81193a9590    DIFFERS     lxd/db: Replace usage of QueryRow with QueryRowContext
+45bbaba27954e37f4c2b9e27531f5363eb28ae0c    DIFFERS     lxd/db: Add context arg to more tx methods
+c5ee25a83d0d2eddf22271f9821b9540facf39f6    DIFFERS     lxd: Pass transaction ctx to QueryContext
+f58aa8902c602292c68603a6090708ec7e8ac5ed    DIFFERS     lxd/db: Replace tx.Query with tx.QueryContext
+6c2433026de44bdb179929f07f929ef92f8a62be    DIFFERS     lxd/db/cluster/mapper: Update generated code
+646fdecba3a7be85cc2cb3d734d48e6024ac9548    IRRELEVANT  lxd/storage/backend/lxd: Delete local volume if bucket creation fails
+f62976a79274733490d7fd25a8cc543ba7784d81    IRRELEVANT  lxd/storage/s3/miniod/miniod: Run MinIO as LXD's unprivilged user
+0e1db0994f5f720b36897288250885a2b0049e21    IRRELEVANT  lxd/storage/backend/lxd: miniod.EnsureRunning usage
+a11a61b9902651110f821055169facd7cda44f1a    IRRELEVANT  test: Updates test_storage_buckets to check for minio command
+eb3e8840c877aa2573bfc474f07d163dbbbece65    DIFFERS     Drop `replace` directive in go.mod
+8764a1825f51677d8192e65a266848eacb0c12b1    IRRELEVANT  Update gomod
+4dc2ed5c257b3fe8d93ecdc4357e49407c18eb24    DIFFERS     doc/storage: add links between storage documentation
+587cb8b0cd5872b9fbd8769607921275ac9bc84f    FEATURE     lxd/cluster/config: Add Loki config keys
+7180948ce81d979193834e463412c84d296a0b7a    FEATURE     Update gomod
+f1cca40900d9dcd5e1222e4ba59857c8ebcf9ac2    FEATURE     lxd/loki: Support Loki server
+c7c45c64cc4935788fac9a9791775052d8cd7579    FEATURE     lxd: Support Loki server
+b5b809504e3dafee970ae2df7f10e16c49943bdc    FEATURE     doc/server: Add Loki config
+192e0f6c8b373db4e9531f4ab8921aec2ad2af3f    FEATURE     api: Add loki API extension
+3904bf4ed4702df069895006a4549b93b152caa2    IRRELEVANT  i18n: Update translations from weblate
+652c745624972b93c2833f450784344ff9aca503    IRRELEVANT  gomod: Update dependencies
+c76bc42c639329606419440c6b57a8e908e28686    FEATURE     Release LXD 5.6
+26e651ad0c8ade5574382f068ae6941ccf179331    IRRELEVANT  doc/metrics: add `lxd_cpu_effective_total` to the list of metrics
+4d2715b14b18faad1208680b8d72d747d820a0f3    FEATURE     lxd/cluster/config: Set default values for loki config keys
+7b0e3a02b2a4ae1ec9090cd93f2d734bde9f2c83    DIFFERS     lxd/api: Don't serve API requests that cause volume mounts until daemon is fully started
+116bd11d522989ecf7c50a30367c23c2061cd767    IRRELEVANT  lxd/storage/s3/miniod/miniod: Expose minio start up error to client
+143587935edb1972d2599fa02cb1431c44a773d4    DIFFERS     lxd/network/network/utils: Exports UsedByInstanceDevices
+b2b582724135d2c3e7529d158a87178b1ba8cf24    DIFFERS     doc/rest-api: Refresh swagger YAML
+676be8d6789a7b35b91df4fdf519b9f7632a5ac7    DIFFERS     lxd: use go-criu/crit for dump statistics
+0373d598c874cf9900d89f481a3e3a9c223ae8de    IRRELEVANT  doc/server: update Loki config
+5a1cb687e7befb66165927d2b2920ef38a1b3ac3    DIFFERS     lxc: move from io/ioutil to io and os packages
+c5328180224353c91c0dd186a53abd1fee4e2dd7    DIFFERS     lxd/seccomp: move from io/ioutil to io and os packages
+fe5f33bc41eb16bd64e9d3eee1b6985041a52acf    DIFFERS     lxd/storage: move from io/ioutil to io and os packages
+176f207d1966290c44bcd41016f0f0ee91552559    DIFFERS     lxd: move from io/ioutil to io and os packages
+7bc7e48d759175a00eadc301ac813609420ecdc5    DIFFERS     scripts/bash/lxd-client: Add missing network sub-commands
+b13b76b7c6b234c2c5ed9cc541e94bf4ca079b1e    DIFFERS     lxd/daemon: Add localConfig to Daemon struct
+77833cf3bb8c37f48edd349ba15c4953d1eb6d86    DIFFERS     lxd/daemon: Consistent naming of local config variables
+7b14064c9c457aa2cd7b316ce7c19ebd00612e51    FEATURE     lxd/cluster/config: Add ACME config keys
+c6a8f60b2338481fe855b70b570e4534d12fdbd1    DIFFERS     doc/storage: add video links
+b4161b3f7ce73679fbe546de5d3de861eaff86b8    IRRELEVANT  Update gomod
+3fe3f52958348926c345c1fbd6ec61d2e6772db0    FEATURE     lxd/db/operationtype: Add RenewServerCertificate
+ede2ee0ab9d623886edb5884c3c7f087f340f3d8    FEATURE     lxd/acme: Add acme package
+bb6e3a6b1aa88ebc899d1e0df71e3f1aa60ad5c0    FEATURE     lxd: Add updateClusterCertificate function
+9fab9bb816c2a35cfbc8e90fd6ae17ecf7427047    FEATURE     lxd: Add ACME support
+366b5c94372ead5ced71a9cfc3b6c4241338bb6f    FEATURE     lxd/api: Add ACME endpoint
+65af73608eda8408bbd10e21b0f6164140f141dd    FEATURE     lxd: Run server certificate renewal on config change
+a4e512be014526acb1b6077dab65e9fa8db2bd18    FEATURE     api: Add acme extension
+774b0e3109528427a011ac092bfd61f4992bf284    FEATURE     doc: Add acme config keys
+be778615851234486b62e40eba3f973e81a95f5e    FEATURE     test: Add test for certificate reversion in clusters
+0901cd61cc4b3d313a0be41f4d4e8e25f04b849e    FEATURE     doc: Add ACME
+72cd1266a33615eb328f9797af60defd7333e05d    FEATURE     doc/authentication: add http-{301,403} backends to HAProxy example
+154e4d40eebe431182558745fb11f13de9bacdeb    FEATURE     lxd/db/warningtype: Add UnableToUpdateClusterCertificate
+7cfcadc92310ac0492517a854c4ec03dfca5cdde    FEATURE     lxd/metrics: Add internal metrics
+24ca5c439b66020be285a2f982c21ec7127dc98d    FEATURE     lxd: Add internal metrics
+6ed7b0f7b20047d02e023de9ff1c9899dd494702    FEATURE     lxd: Add warning if cluster certificate cannot be updated
+027869a139714f166fd606b70bec88cd4d0b8808    FEATURE     test: Check warning of cluster certificate test
+3543241d3fe42accf12af70f9d4788f5e3ca6e68    IRRELEVANT  doc/server: alpha sort the config namespace list
+50d47f88a4fdfff03b548206b9b210f5da445876    DIFFERS     doc/server: add `network` and `storage` to the config namespace list
+bbc72f807badecf071d01c7d1cde006d85f3cfb7    FEATURE     api: Add internal_metrics API extension
+9ef8195d41b0faa399aa8126eca335e7707d80c3    DIFFERS     doc/clustering: clean up "How to manage a cluster"
+96341679af25f784e8bf499001026713c5611454    DIFFERS     doc: Update metrics
+2629d4c31ddfa7b57029bef1cf136fbc0922ae9b    IRRELEVANT  doc/rest-api: Add missing Ready state
+e2c2f721255abecb899d2eee247dec8626fd7471    DIFFERS     lxd/cluster/config: Add cluster.join_token_expiry
+c4e1fc2ad4bafd3804527b87ea1d296940d65572    DIFFERS     lxd/db/operationtype: Add RemoveExpiredClusterJoinTokens
+e30d09d4b631766a0660bff1b024abe094c1e0b5    DIFFERS     lxd: Add cluster task to remove expired cluster join tokens
+fd6d0a8f68642ca06a38b53d8e91ff04dbc9070e    DIFFERS     api: Add cluster_join_token_expiry API extension
+41035330dedaf0af49239d00b0adc6108a760896    DIFFERS     i18n: Update translations
+199ef9c3513b4b86b029aa8e6ed7a875d4539a29    DIFFERS     doc: Add `core.remote_token_expiry`
+5f434b998de3866f8dab31922358f304a1c5b88b    DIFFERS     api: Add remote_token_expiry API extension
+a000b0212326456600b13e44c0463e277ea2ee37    DIFFERS     i18n: Update translations from weblate
+bb4efe678934c93d5fdcc5b1870f33473bf23858    IRRELEVANT  gomod: Update dependencies
+31accc5f09209ce7f473d8f1c7f59b75b364e35f    DIFFERS     doc: Clarify that remote token expiry default to no expiry
+54e8f960d82b78e90c924d6e0d85de672a024283    DIFFERS     lxd: Remove auto removal of cluster join tokens
+9de4831fb23946a7e8dcc619cfab5d5306543612    DIFFERS     lxd: Add tasks for expired token removal
+c34d22ec6329f4c71d6ad3e426dd7bec34e1c15f    FEATURE     Release LXD 5.7
+4d4311d097681b38e516d5ce3691e6b9ed6a9e16    DIFFERS     shared/version/api: Update api extensions
+25deb4361d29af363e4fa5c283f7142ffdce1b7c    IRRELEVANT  i18n: Update translation templates
+ec92fff113ca99522ade759c23203157b641ae61    FEATURE     api: Adds storage_volumes_created_at extension
+40add9c003ec0bea87d8a17a7395f6d1214a578f    FEATURE     lxd/db/cluster: Adds creation_date column to storage_volumes and storage_volumes_snapshots table
+a18588e01e5c40735486fd47ff8d1948c87eb0cf    FEATURE     lxd/db/storage/volume/snapshots: Adds creationDate argument to CreateStorageVolumeSnapshot
+f05661ba1cd199e64e74cc68871f0dc810d3be24    DIFFERS     lxd/db/storage/volume/snapshots: Clarify projectName argument in CreateStorageVolumeSnapshot
+cea5020710373e6409f0e480ff5389a3435bd421    FEATURE     lxd/db/storage/volumes: Adds creationDate argument to CreateStoragePoolVolume
+56b1e657bff2e5d521722bc8de42d56b7b8431b8    FEATURE     lxd/storage/utils: Adds creationDate argument to VolumeDBCreate
+ed6206c465ff584586d855b386211d6ed46205c4    FEATURE     lxd: Update storage volume tests
+259e5965c06ba10eda322b0779e9713d42719698    FEATURE     lxd/storage/utils: Adds creationDate argument to VolumeDBCreate
+3299c7b1c410822177aea8a6b0e17a335071c02b    FEATURE     lxd/db/storage/volumes: Updates GetStoragePoolVolumesWithType to populate creation date
+bf6ac5ee426346adab938b64971c2b97d159d4f4    FEATURE     lxd/db/storage/volumes: Updates GetStoragePoolVolumeWithID to populate creation date
+c05bf5e8c6ee9b283404823e31b81f6009e492cd    FEATURE     lxd/db/storage/volumes: Updates GetStoragePoolVolumes to populate creation date
+9d3a13f7cc8e35fbbcb1e674b0ad48d3cd23a075    FEATURE     lxd/db/storage/volumes: Updates GetLocalStoragePoolVolumeSnapshotsWithType to populate creation date
+749f7b2575b1605be21e5ffd996a6bb4c48c224a    FEATURE     lxd/db/storage/volumes: Updates GetCustomVolumesInProject to populate creation date
+8c6b83b5c6e8b85a4db750d9b2a53b1d062cc4f9    FEATURE     lxd/db/storage/volume/snapshots: Updates GetStorageVolumeSnapshotWithID to populate creation date
+2471b5d29b7c89ec8f88c516ddee4d8574f32572    FEATURE     lxd/db/storage/volume/snapshots: Updates GetExpiredStorageVolumeSnapshots to populate creation date
+631f94fdb7023342b092938faabe61358c7fee9e    FEATURE     lxd/storage/backend/lxd: Use instance's creation date for storage volume creation date in CreateInstance
+75463a514d1a9ee8d4b38ef1542d4f8859104071    FEATURE     lxd/storage/backend/lxd: Updates CreateInstanceFromBackup to populate creation date
+4a7b884ab5b1c1d088bc2d197afc269a3a5251d4    FEATURE     lxd/storage/backend/lxd/patches: Updates patchMissingSnapshotRecords with VolumeDBCreate usage
+a31dfe8c8d5332558620d435e36048719ae96f75    FEATURE     lxd/storage/backend/lxd: Use new instance to populate creation date in CreateInstanceFromCopy
+d8bec3744d8f26bdf50e68c92d3e1a4653a1d258    FEATURE     lxd/storage/backend/lxd: Use source snapshot for creation date in RefreshCustomVolume
+de9dceb9f3a6a2c5c6e19305b4638cf6760ef346    FEATURE     lxd/storage/backend/lxd: Use source snapshot for creation date in RefreshInstance
+e77b422e3ebd822fd3dccf9719ec8a7ca576de5b    FEATURE     lxd/storage/backend/lxd: Use new instance for creation date in CreateInstanceFromImage
+a3fc53e7fdc10cb8c49812fdc503177f1c133dfe    FEATURE     lxd/storage/backend/lxd: Use new instance for creation date in CreateInstanceFromMigration
+a8e7da9a8b3a1894517d794cb5602d9964a89cc9    FEATURE     lxd/storage/backend/lxd: Use new instance for creation date in CreateInstanceSnapshot
+fa8dcf072e239f405cf1ef20522069268232c447    FEATURE     lxd/storage/backend/lxd: Populate creation date in EnsureImage
+130fdb7eaf940bfd8857be26b9f3b9dd26416df3    FEATURE     lxd/storaga/backend/lxd: Populate creation date in CreateCustomVolume
+8c98d9605cccf682f9bb85ab568922a3ac15ad36    FEATURE     lxd/storage/backend/lxd: Populate creation date in CreateCustomVolumeFromCopy
+caf8a476efb353f81735b250ba9fcd403651111a    FEATURE     lxd/storage/backend/lxd: Populate creation date in CreateCustomVolumeFromMigration
+6be6bc5d2dae3cfc24d5dd2424a304884c29c6da    FEATURE     lxd/storage/backend/lxd: Populate creation date in ImportCustomVolume
+ac3f5033a552452c8fd9a0562334bfb6c1534861    FEATURE     lxd/storage/backend/lxd: Populate creation date in CreateCustomVolumeSnapshot
+3ce0c85c647fc5e3255b1429537dd2bd34315b34    FEATURE     lxd/storage/backend/lxd: Populate creation date in GenerateInstanceBackupConfig
+45cef6bf9ace4ab401bea448db56058d52646378    FEATURE     lxd/storage/backend/lxd: Populate creation date in ImportInstance
+c9666181775d13aa31871253b83c593e94141855    FEATURE     lxd/storage/backend/lxd: Populate creation date in CreateCustomVolumeFromBackup
+2cfe7dbf4f3ed74c4f5d06637d80ce2bc1a6e35d    FEATURE     lxc/storage/volume: Adds Created output to cmdStorageVolumeInfo
+e2c7d4ae6d52c265a7da0f26a3a19ced0c38e6d6    FEATURE     lxd/storage/volumes/snapshot: Add creation date to the API output
+98fcd420b4baec474f4e76f37c1ab6421df22fec    FEATURE     test: Add storage volume creation date tests
+381c5cfab81569697692ee1171b74f1608c0a224    DIFFERS     lxd/api/metrics: inst.Metrics usage
+0e221da87fc9f2aa1b14a54bf17963912ffb345b    DIFFERS     po: Updates pot files.
+47c50839def213409eabd1a19af308b8bab7520c    IRRELEVANT  lxd: Sets Location field to hostname for GET /1.0 in devlxd API.
+bd695eb02657883f7cd73efe17c0472c32a743bd    DIFFERS     devlxd: Do not return devlxd info if turned off
+1380ee3e93afc6a76544afb6b1affbdccbede248    DIFFERS     lxd-agent: Return correct error when querying devlxd
+55280b40c01d5a9b485ea746597d381e6c6259f6    FEATURE     scripts/bash/lxd-client: Add missing file mount sub-command
+a7dcf1707941c5d674e349678ab8530db9987048    DIFFERS     lxd: Use shared devlxd structs
+d6108e56493a3916f16ec23069acdfc271973990    IRRELEVANT  doc: the location is set in responses from GET /1.0 in devlxd API
+4eb2dbd9dc31d1d6b36f3ecf811829f2e4ad3435    IRRELEVANT  lxd/acme: Switch to github.com/go-acme/lego/v4
+c29fb9e9dd162309cd6d29b700bcc96d9f7a75ad    IRRELEVANT  Update gomod
+0710f51fdd4ebe494da3fabf95b41b19a2529476    DIFFERS     test: Adds devlxd NIC devices hwaddr check
+f7cfebdcc2b0d301ae50e42f84e7f361a4cc92c1    DIFFERS     api: Add cpu_hotplug extension
+f487cb0e6b1a58aac0094fc0cf0e7aad0b59d96a    DIFFERS     lxd: Move to current bakery version
+a3b072423671671a697e2d901976e5bda5137701    DIFFERS     doc/instances: restructure content
+7150eaa2bc0133286fed3b837e7a8647707a6faf    IRRELEVANT  test: Updates migration tests now that migrating custom volumes uses creation date comparison
+e61dadee340837e7234a7a8ab07a5806bdc9f08d    IRRELEVANT  gomod: Update dependencies
+b336a098c750f2ba303eba806212c6c684415cb8    IRRELEVANT  i18n: Update translations from weblate
+690be048c59e9778a5f4ef30cca242cd4089f13c    IRRELEVANT  gomod: Fix minio build
+9c4e8dac9ca643b4fc20b533f42b0b0cb9f85607    FEATURE     Release LXD 5.8
+52ca04b0d9b147bd7360618f057b7fc02009d8fb    DIFFERS     lxd: Fix use of inst.Project() in logs with inst.Project().Name
+4770441206c7fa248bbae7011bfff611f2569440    DIFFERS     lxd/db: Fix default profile assigment on image creation in the default project
+229a643daaf2f328fd99b5e3f693b6f03b41a76b    IRRELEVANT  scripts/bash/lxd-client: fix autocompletion not working
+9f217d074910f42132958de1ae17e9515b923126    IRRELEVANT  lxd/util: Skip cephobject in AvailableStorageDrivers
+57a36e5311d97e56599c0d5abcac18e96c842e3a    DIFFERS     Replace "the the" with "the"
+9f82b8d73b7fb9ae5af9417b4c6df3f2d2291ac9    DIFFERS     gomod: Adds k8s.io/utils
+f8989d4a84f5c24b4fffb8e8ea2d1049181d0f8b    IRRELEVANT  config: Fix inconsistency with acme.agree_tos option
+c934a297b9f3bc354d89e99fe4c3adbfcd3739f3    DIFFERS     i18n: Update translation templates
+fd534eda347e0180d5f12ca205613a3a4849f42b    FEATURE     api: Adds projects_networks_zones extension
+634d8aa67954a3ee642ccfc66e8c6e4168be1e0a    FEATURE     doc: Adds features.networks.zones project feature and updates networks dns.zone.forward setting
+ecf01a3dd1ffb388fc848732ba2e47aeccd945ce    FEATURE     doc: Update network zones howto with multiple forward zones info
+f0da07ab038eb7d99ad849460a36af739cfc7747    FEATURE     lxd/db/cluster/update: Patch to add features.networks.zones=true to any project that has features.networks=true
+c2121685edbbb8d6aab3bd142a6ca15608b1a1d5    DIFFERS     lxd/db/cluster/projects: Reworks project features info and adds features.networks.zone feature
+18dd83d6348e5008aee486cfac55af7feb50cf7d    FEATURE     lxc/project: Adds features.networks.zones support to cmdProjectList
+cd702e6b2e1cb375264bf8bab02b5c642be9356d    FEATURE     lxd-user/lxd: Enable features.networks.zones project feature by default for user projects
+2145a586ecee5f13a45cbb5b45079e5db82da20a    FEATURE     lxd/api/project: Add validation for features.networks.zones
+d7dbb1dbefcba7cfb638e399292bc0b04184750b    IRRELEVANT  i18n: Update translation templates
+6e675b5cbf65efec2d4f5fdae18228bb44a5bfb5    FEATURE     test: Update tests to check for network zones project views
+044994b214f4640658f9e6f918609ff8ca1fa1d8    DIFFERS     lxd/db/cluster/warnings.mapper: Update generated code
+4c4c69a0f2fb733b3a0177e7025809b2c7bae53d    DIFFERS     lxd: locking.Lock usage
+f6459c02ebf6fb50301a27b13e537ddd6c807eeb    IRRELEVANT  i18n: Update translations from weblate
+8e9d1e15799de817943c4bda3803dd38723f01b5    IRRELEVANT  gomod: Update dependencies
+e7d33e9707e9941935f716e1a658a28155197992    FEATURE     Release LXD 5.9
+964865ba94abcc8a9eb7d45e32dad912e99d8f01    DIFFERS     doc/instances: reorder instance options docs
+7bba79921336e8e24a079ba6178ddffd549643c0    DIFFERS     doc/instances: clean up instance options
+4e769d2ae918fe7bf799d93752caa8b92dbb684d    DIFFERS     doc/snapshots: add information about snapshot pattern format
+79b2f70c7484e009513c85d28fbc1ecedad4f331    DIFFERS     doc/initialization: add page for `lxd init`
+26c1ebce7422cba0e538903103b3202d54676a57    DIFFERS     doc/storage: add links to MicroCeph
+6ef9df0c00cb54aa0b23e24636708639f37df48b    DIFFERS     doc/security: move to a separate section
+78cb1f058cacd193773a01a77b3496465666bba2    DIFFERS     doc/security: clean up section
+dc945794ba4839f350a7b3fd04cd35bca4f01109    IRRELEVANT  gomod: Update dependencies
+d765a15c2605dcece4b302cbb6e392fc762cb6cf    IRRELEVANT  lxd/storage/s3/miniod: Wait 10s for minio process to start
+bce1a4e109a9d83477d018d3f377793b62cb25a9    IRRELEVANT  lxd/storage/backend/lxd: Improve bucket errors
+35af84276af83bff3523960454c0fa4d3889211a    IRRELEVANT  lxd/storage/s3/miniod: Wait for config to be available before considering ready
+df3244532ad47567643fde121802647ff3715994    IRRELEVANT  gomod: Update github.com/shirou/gopsutil/v3
+f7ccf033064017ed1d96b15515674ed6d3c4bb17    IRRELEVANT  gomod: Update dependencies
+decad29d464372b82004b7d424a4bcc6b03d2b74    DIFFERS     lxd/api/metrics: Get internal metrics using existing DB transaction in metricsGet
+5d995c2ab9ff9dd811366c8d187b641e44a4788e    DIFFERS     lxd/instances/post: Move target group check into initial transaction
+eeb4d79b8cd2fe70c9de87d2db4b421045f837dd    DIFFERS     lxd/instances/post: Move InstanceType and Source instance logic earlier in instancesPost
+a51ec4ee848e52280c70ca4e0041cbe9238ed179    DIFFERS     lxd/instances/post: Move cluster member targetting checks higher up
+3b58b071d29261203d58069b12def497b174ae0b    IRRELEVANT  lxd/project/project: Adds NetworkZoneProjectFromRecord and NetworkZoneProject functions
+5204b87ec290d62dd71faaa35aec489a2abb827e    IRRELEVANT  lxd/network/zones: Make network zones belong to their effective network zone project
+91845a86954416c68423ce559f5f08103c088e2b    IRRELEVANT  lxd/network/driver: Update validatation of network forward zone key
+9938731455b8fea352e727694ee5d674d8e3990b    IRRELEVANT  lxd/network/zones: Use project.NetworkZoneProject in networkZonesGet
+368a0f388fa8e07b04469b58a7c8f2ecc01ebdaf    IRRELEVANT  test: Make network zones more strict
+d6538f2ebf17ebf6c67631fc7e8e08630623cfc2    DIFFERS     lxd/instances/post: Allow targeting all cluster groups if project restricted.cluster.groups is empty
+cabb257b16253b0b0b672b345a13beb313776d56    IRRELEVANT  lxd/api/cluster: Updates evacuateClusterMember tx.GetNodeWithLeastInstances usage
+047fa5fd433906d1255dbfe86527d58224a5468c    DIFFERS     lxd/api/cluster: Improve logging in evacuateClusterMember
+fe85e9c83ea6c7cbf834c907def4d9bc2796c211    DIFFERS     lxd/api: Add support for serving the UI
