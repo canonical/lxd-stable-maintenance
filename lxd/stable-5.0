@@ -437,3 +437,10 @@ d6538f2ebf17ebf6c67631fc7e8e08630623cfc2    DIFFERS     lxd/instances/post: Allo
 cabb257b16253b0b0b672b345a13beb313776d56    IRRELEVANT  lxd/api/cluster: Updates evacuateClusterMember tx.GetNodeWithLeastInstances usage
 047fa5fd433906d1255dbfe86527d58224a5468c    DIFFERS     lxd/api/cluster: Improve logging in evacuateClusterMember
 fe85e9c83ea6c7cbf834c907def4d9bc2796c211    DIFFERS     lxd/api: Add support for serving the UI
+c4732a68a5e6edaee1f9158585da179cef4e2409    FEATURE     lxd/device Add support for setting txqueuelen on veth based NICs
+20c94fad64f8034fb45cb5b3611d67fa92524519    FEATURE     test: Add test for setting txqueuelen of nic bridged device
+040955e1c1e8b00d2ad4645afd49ff515c0df041    FEATURE     api: Adds txqueuelen api description
+e52a8150c9b849d4d85967c824e6f4b9011afd1e    DIFFERS     doc/server: struture the server options page
+4e31972b618a0ff4020472e4cff644a9ea3f0e2e    DIFFERS     doc/server: split up configuration table
+2c0d9055a135d2cec7b465943ae5eb50516ce7df    DIFFERS     doc/server: update links to point to more specific sections
+84e1b3b7e6718fa0a24f1890280bb2becb199900    DIFFERS     doc/server: clean up configuration options
