@@ -444,3 +444,27 @@ e52a8150c9b849d4d85967c824e6f4b9011afd1e    DIFFERS     doc/server: struture the
 4e31972b618a0ff4020472e4cff644a9ea3f0e2e    DIFFERS     doc/server: split up configuration table
 2c0d9055a135d2cec7b465943ae5eb50516ce7df    DIFFERS     doc/server: update links to point to more specific sections
 84e1b3b7e6718fa0a24f1890280bb2becb199900    DIFFERS     doc/server: clean up configuration options
+09cd98ff8697b9394b2ddc300e6fa38c2d666494    IRRELEVANT  gomod: Update dependencies
+9f724666f1c9a471ec9d1a1da4dac85aa1194712    IRRELEVANT  i18n: Update translations from weblate
+b058577fdbf5f6c29c8c2d5e56fe78dacc71972a    FEATURE     Release LXD 5.10
+c305d50136ffcd92caa54ca818bd3d80f2fbdc27    IRRELEVANT  lxd/network/load/balancers: forwardedResponseIfTargetIsRemote usage
+2508dfb91c05fbcecd73aa56584ea57bf97dfad7    IRRELEVANT  lxd/storage/buckets: forwardedResponseIfTargetIsRemote usage
+929d178860cbbc1ac21e33733dd5c8992cd4ee45    IRRELEVANT  lxd/acme: Reduce calls to d.State()
+82e10a8b068fd96c7711835fd6f0145615f1798b    IRRELEVANT  lxd/api: Reduce calls to d.State()
+cf17400475d0844e875952ac16e5ecd33f2dbcfe    DIFFERS     lxd/api/cluster: Reduce calls to d.State()
+35264c71ffdf382f5a2a892e8f08f6c604439214    DIFFERS     lxd/daemon/images: Decouple imageOperationLock and ImageDownload from daemon
+c3160121cd68150f6ef5a567923d81da828bc2e1    IRRELEVANT  lxd/network/load/balancers: Reduce calls to d.State()
+87c6037a181c557b51c788badc17526a2a87d21b    IRRELEVANT  lxd/storage/buckets: Reduce calls to d.State()
+a93c477f06c762932e57d2c10c4883bc2c2f8171    IRRELEVANT  doc/ref/devices_nic: Add queue.tx.length
+f4b9a7c507475ad9819b2393fba52a4289e60087    DIFFERS     lxd: liblxc.HasAPIExtension usage
+b71260ec805b956b6479833d28a215fd2b96727e    FEATURE     api: Adds cluster_member_state extension
+ebe0b0277327b6f46f81ed2f8ea5993036454e96    FEATURE     lxd/cluster/member/state: Adds MemberState function
+80dd9a3999ac2969466cfa16c02c8f17eade28ee    FEATURE     lxd/api/cluster: Adds clusterNodeStateGet handler
+d24c5d88efa7f4041e812eba8ec98a4cb022d5a8    DIFFERS     doc/rest-api: Refresh swagger YAML
+5a266e1de75826395459b069c953ca2b88ee62db    FEATURE     lxc/cluster: Adds `lxc cluster <member> info` command
+49a4079f96d838754f24c5c8fc95611d068b524b    IRRELEVANT  i18n: Update translation templates
+2d9a8ec037be95344e8d629a4d82f479be12dd48    FEATURE     test: Add basic test for `lxc cluster info <member>` command
+777e37922de5b524168e5d9c7de0d90fa400e5cd    IRRELEVANT  lxd/cluster/member/state: Fix TotalRAM field in MemberState output
+b322ba699060887dddcf756fc18a34f6218e9b2f    DIFFERS     lxd/api/cluster: Adds evacuateHostShutdownDefaultTimeout constant
+0ec3b6993d95049fe6efc187c9c1a74c9b7129f7    DIFFERS     lxd/instance/drivers/driver/qemu: Use constants in statusCode
+2acf0208c9371fc7b180a7264f9062bea1bc9bae    DIFFERS     i18n: Update translation templates
