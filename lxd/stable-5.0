@@ -468,3 +468,4 @@ d24c5d88efa7f4041e812eba8ec98a4cb022d5a8    DIFFERS     doc/rest-api: Refresh sw
 b322ba699060887dddcf756fc18a34f6218e9b2f    DIFFERS     lxd/api/cluster: Adds evacuateHostShutdownDefaultTimeout constant
 0ec3b6993d95049fe6efc187c9c1a74c9b7129f7    DIFFERS     lxd/instance/drivers/driver/qemu: Use constants in statusCode
 2acf0208c9371fc7b180a7264f9062bea1bc9bae    DIFFERS     i18n: Update translation templates
+9d22416fee67dd93b4f8cf0470c4afa3bcd68b2d    IRRELEVANT  doc/clustering: document `lxc cluster info`
