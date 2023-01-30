@@ -469,3 +469,16 @@ b322ba699060887dddcf756fc18a34f6218e9b2f    DIFFERS     lxd/api/cluster: Adds ev
 0ec3b6993d95049fe6efc187c9c1a74c9b7129f7    DIFFERS     lxd/instance/drivers/driver/qemu: Use constants in statusCode
 2acf0208c9371fc7b180a7264f9062bea1bc9bae    DIFFERS     i18n: Update translation templates
 9d22416fee67dd93b4f8cf0470c4afa3bcd68b2d    IRRELEVANT  doc/clustering: document `lxc cluster info`
+04f33d5f6372b801fb87779a31b59620272160b4    FEATURE     api: Adds instances_placement_scriptlet extension
+f1875d69a3f706ecd88ecd44bc667f4fbb594848    FEATURE     gomod: Adds go.starlark.net/starlark
+5572efd8bd099e03d5873a933c30fa4612536479    FEATURE     lxd/scriptlet/starlark: Adds StarlarkMarshal function
+f3c2e95e24d8ea46835cb536de9b893504067985    FEATURE     lxd/scriptlet: Adds instance placement scriptlet functions
+9c51ce76e907e935cbf8d50d7b8b14cffb032efa    FEATURE     lxd/cluster/config/config: Adds instances.placement.scriptlet global config option
+8a00230884eb886a41b8c8e5ba60491b2c3a2fbd    FEATURE     lxd/cluster/config/config: Adds InstancesPlacementScriptlet function
+a5ed36f0eef182a310da4996af7cfe3085d98ca0    FEATURE     lxd/api/1.0: Adds handler for loading scriptlet when instances.placement.scriptlet changes
+dad111af6cda690957cb4f437dee71eda4da17d1    FEATURE     lxd/daemon: Load instance placement scriptlet at start up
+c7a63492d9b4b99f93f5ce644b5ad6b365a441b6    FEATURE     lxd/instances/post: Integrate instance placement scriptlet into instancesPost
+db95bdfbc66465d67bf8a4f8c028720ca371617c    DIFFERS     lxd/api/cluster: Consistent import of github.com/lxc/lxd/lxd/instance/drivers
+ddde382a121712bdb4170048a9493d05da909208    FEATURE     lxd/api/cluster: Integrate instance placement scriptlet into evacuateClusterMember
+1b3f69316232e1baf0bab71aefd6c82ca89437de    FEATURE     test: Adds instance placement scriptlet tests
+1c1a5b56713f5957f7ccab39586ca2cb023f7bd6    FEATURE     doc: Adds instance placement scriptlet documentation
