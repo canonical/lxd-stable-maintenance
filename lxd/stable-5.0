@@ -482,3 +482,70 @@ db95bdfbc66465d67bf8a4f8c028720ca371617c    DIFFERS     lxd/api/cluster: Consist
 ddde382a121712bdb4170048a9493d05da909208    FEATURE     lxd/api/cluster: Integrate instance placement scriptlet into evacuateClusterMember
 1b3f69316232e1baf0bab71aefd6c82ca89437de    FEATURE     test: Adds instance placement scriptlet tests
 1c1a5b56713f5957f7ccab39586ca2cb023f7bd6    FEATURE     doc: Adds instance placement scriptlet documentation
+93f153cc3a536016399794ac90a52e92dfc2185e    DIFFERS     storage: Add hasSource option to VolumeDBCreate
+081d26228e95f550a5a97eb0eeca13d4290f3092    DIFFERS     storage: Update VolumeDBCreate usage
+27c6e2c04568b273bd4ea473edfaf3dfc56c27ea    DIFFERS     doc/storage: explain how optimized instance transfer works
+7d04ad424567451d6ac95816620c1e1a39973667    IRRELEVANT  lxd/scriptlet/instance/placement: Updates InstancePlacementRun to accept scriptlet.InstancePlacement argument
+e16570025dcf16711d8d45596761379ee5a3da67    IRRELEVANT  lxd/scriptlet/instance/placement: Removes unused constants
+a1100faa4d045c4235f394b1bb818edb5fc1dc4c    IRRELEVANT  lxd/api/cluster: Pass apiScriptlet.InstancePlacement to InstancePlacementRun
+ba67c05f6acce51629f731220d5dd1c74ecb3cf2    DIFFERS     lxd: allow IdmappedStorage() to detect filesystems
+b040f681ecf96aa2a1064807e9557f7ca4071127    IRRELEVANT  lxd/api/cluster: instProject.Name usage
+c4f814dc0b2f90a97f17cca192ccc8a6205da3a8    IRRELEVANT  lxd/instances/post: Pass apiScriptlet.InstancePlacement to InstancePlacementRun
+1294f66b5704df15d78b404203390aaee45f8bca    IRRELEVANT  test: Updates instance_placement tests for new function signature
+e7c8eed107904a25ba334f3273eec707b76705c2    IRRELEVANT  doc: Updates instance placement scriptlet documentation for new placement function signature
+41052afb8be38963739e39b4e151561864f8e76c    IRRELEVANT  lxd: Scriptlet API constant usage
+b9d9d41ceff71bb3df2c499480afe09919c2ea61    IRRELEVANT  lxd/scriptlet/instance/placement: Tweak error prefix when scriptlet fails
+4eb59888ac7d458a5dd361156b999005a088fe48    IRRELEVANT  test: Updates instance placement tests to show usage of fail() call to end scriptlet with error
+39fcd191f44cd38a04e8d7e3c3a02e085d1fd4d3    IRRELEVANT  test: Updates instance placement tests to check for config in embedded struct
+cd8c9197540e4d40b10fa2bb92101eaa963a98cd    IRRELEVANT  lxd/scriptlet/starlark: Updates StarlarkMarshal to handle more starlark.Value types
+579080e090a959fb20dce6789a985ef8aae8ebc4    IRRELEVANT  lxd/scriptler/starlark: Update StarlarkMarshal to sort map keys
+786a78e34adaa12b33c5a36e36d73fe88ee80d60    IRRELEVANT  lxd/scriptlet/starlark: Update StarlarkMarshal to support anonymous non-struct fields
+a109667be55ad4ebd4597b36e2408e1873dd9fd6    IRRELEVANT  lxd/scriptlet/starlark/test: Adds tests for StarlarkMarshal function
+d026cfb288f61ddd4abe21115bbd59476ac895f7    IRRELEVANT  lxd/scriptlet/starlark: Updates StarlarkMarshal to handle multi-level embedded structs
+c8e3157fcc561c84212405ce1c1da2c9aca73a2e    DIFFERS     storage: Use Volume.Clone() in Pool.GetVolume()
+c767de33674bf9ef0bf4b18a97820bebe0b23d7e    DIFFERS     i18n: Updates translations.
+5876e3e30b6b4a7b8f3a5f80aebc945db195f7f9    DIFFERS     backend_lxd: Handle zvols in EnsureImage
+05541390e0709e2b29e7178f2b0e579314ad6d24    DIFFERS     test: Add zfs storage tests
+d3aacfd5fbaa3a61c3ff0e0c8ab7731e344718d1    IRRELEVANT  lxd/scriptlet/starlark: Updates StarlarkMarshal to marshal structs to Starlark objects
+21cda16d71358728f80324330414f97aee4c8e35    IRRELEVANT  lxd/scriptlet/starlark/test: Updates StarlarkMarshal tests to account for struct->object conversion
+87bb106dee64da3840158ef40d094c94f2c68c4c    IRRELEVANT  test: Updates test_clustering_instance_placement_scriptlet to account for struct->object conversion
+8054085215fde2fad71b8ff27e6b9a25a20dc46b    IRRELEVANT  doc: Updates instance placement scriptlet documentation to account for struct->object conversion
+517157f39d84ef47eabed8158994793a1b2d126d    DIFFERS     lxd/api/1.0: Improve errors
+d3ac06084dbae136e11de914f28d7cace4da8777    FEATURE     device: managed network support physical nic
+b6f5b28b1c2806f96b077d675d91803d996d7bb8    FEATURE     doc: managed network support physical nic
+0d64f3b9d19f8a8f6e672258f85ed9fe81b0b444    FEATURE     test: managed network support physical nic
+d8a7afe62c4e74787c180985afb14f3902acee28    IRRELEVANT  lxd/db/db/cluster: Fixes incorrect UNIQUE index on name field of networks_zones_records
+afbd100d48f90ff7fd0a6b49d2ad0786473ab568    IRRELEVANT  tests: syscall_interception: disable if seccomp filtering is active
+0fc72d8244a81029773f14549b653f286c7cdd1d    DIFFERS     lxd/db/network/load/balancers: Updates GetProjectNetworkLoadBalancerListenAddressesByUplink to handle load balancers defined on the uplink network itself
+15dd4ca0084d648641fd75b8b5eabae5987cec9f    DIFFERS     lxd/network/driver/common: Adds shared getExternalSubnetInUse function
+b558eda84c6e95384c9707540a3eb92b9549ebb4    IRRELEVANT  lxd/network/zones/records: Fix zone record management for non-default project zones
+03e1486ae6d816f691485f0e59c3d5f04a33b5cc    IRRELEVANT  test: Updates dns zones tests to check for non-default project zone records
+ad74aac6181adf9c065617a7e4b0e3e8f80d55b2    IRRELEVANT  lxd/network/driver/ovn: Updates getExternalSubnetInUse to use n.common.getExternalSubnetInUse
+8bcd3e5845d09823710d0f817370473c45708cfa    DIFFERS     lxd/network/driver/ovn: Clarify address conflict errors
+e68975d3bb3df880e952a731476a34de0b8a74d8    IRRELEVANT  gomod: Update dependencies
+e4bd87851cf3266ea3737a1cf70e62ef8ce352e8    IRRELEVANT  i18n: Update translations from weblate
+3ee687474e01254e3bdd2454b166f3cf8ab89892    FEATURE     Release LXD 5.11
+293385dba37aada229ee8083aa5ecac2f503cfa9    DIFFERS     i18n: Update translation templates
+10d07394e69123947da7fbacb69807f61c196c05    IRRELEVANT  doc/clustering: add link to scriptlet specification
+326a8a9228766f8351aa2e12e1bfb1cea13a5d17    IRRELEVANT  lxd/scriptlet/starlark: No need to check all map key types
+595590842934d3773161d3fa7e5c6c098cd6b2e5    IRRELEVANT  lxd/scriptlet/starlark: Use predictable ordering of Starlark dict keys
+b6badefd7c5b556d025717d5a8d38d1fa192f1a4    IRRELEVANT  doc/explanation/clustering: Show use of fail() in instance placement scriptlet
+10efb02d7cb1faf24a404ae7062645916e13989b    DIFFERS     instance: Check that there is no collisions between `proxy` device and a network fwd listenAddr
+af62c8bdc5e5899a59b56f9993831faf4ef4893a    DIFFERS     lxd/device/device/utils/network: Reworks networkCreateVethPair to use ip.Veth settings
+f468e6b5c9c987bbd81bc9fdbfe88857ccf6f6a7    IRRELEVANT  lxd/device/device/utils/network: Updates networkCreateTap to support queue.tx.length setting
+5eac48bc34cd53b2c4a538ba1ed4fd0b882104fb    DIFFERS     lxd: Indent swagger docs to indicate preformatted blocks.
+285af58244f5d8e990495ea8873054933e812510    DIFFERS     lxd/ip/link: Update SetAddress to take net.HardwareAddr
+1811cf8c0816661ec63ce2c4d72aaff2aed4d48f    DIFFERS     lxd/db: Updates comments to ensure they are properly gofmt'd.
+703b4ac0fd6831e542bb0852c1c63e1896220427    IRRELEVANT  lxd/storage/s3/types: Adds ErrorInvalidRequest constant
+ee58c300ede47d123560acda2ec7f99300f78757    IRRELEVANT  lxd/api: Fixes storageBucketsServer to parse URL to properly extract bucket name from path
+f1ffc13bd01a90ae4fc5def1a31c6ce70fd06b94    DIFFERS     api: storage_pool_source_wipe
+b9eadfab34f09a66d008ef05c792ab9058c274a3    DIFFERS     api: Add zfs_block_mode API extension
+9573997dd3e03435a1970e79748109a590fe26c2    DIFFERS     lxd/shared/version: Add the `instance_generation_id` API extension
+483278189a79c55a578352f1bf79a76e03a214b1    FEATURE     api: disk_io_cache
+cf73188410e2032101cdfb86548facc34e4c2fe3    FEATURE     lxd/device/disk: Add io.mode
+acbec9f2848b3b42e8de3156ecc4bcbda2fc39e7    FEATURE     lxd/instance/qemu: Add support for io.cache
+ecc74271ef028326d7da1bae240352605e244958    FEATURE     doc: Add io.cache to disk devices
+5ca3b57ba15e44f1e6e8e753d7db6c94aadf845f    IRRELEVANT  i18n: Update translations from weblate
+5e382e7849d1d126f5bba8baae6b7546e8acada6    FEATURE     Release LXD 5.12
+b0d4c50bab615949e3cb0b480a32f5079b821188    IRRELEVANT  gomod: Adds golang.org/x/sync/errgroup
+1b7b7de3cf3dd3459c428fa47264552128d2c0e2    IRRELEVANT  gomod: Update dependencies
