@@ -557,4 +557,3 @@ f5c98cedc742b726913f1239bd7c5a08ecd40c70    FEATURE     lxd/device: Skip virtiof
 d2cd6702afcd3ec9c48f30bfd69d19ca608bb3b5    FEATURE     shared/instance: Add security.sev config options
 e316cb152abee604c6535a7655ef35e2cda15fd2    FEATURE     doc: Add security.sev
 20cec766c0f0e00b1ec76063359c1f1d1acbf1e6    FEATURE     api: amd_sev
-0a5dcaf16ac6412fea86701fef7c71a253c18615    DIFFERS     lxd/storage/backend/lxd: Adds CleanupInstancePaths function
