@@ -549,3 +549,12 @@ ecc74271ef028326d7da1bae240352605e244958    FEATURE     doc: Add io.cache to dis
 5e382e7849d1d126f5bba8baae6b7546e8acada6    FEATURE     Release LXD 5.12
 b0d4c50bab615949e3cb0b480a32f5079b821188    IRRELEVANT  gomod: Adds golang.org/x/sync/errgroup
 1b7b7de3cf3dd3459c428fa47264552128d2c0e2    IRRELEVANT  gomod: Update dependencies
+daa56990513c2f286ebc93e16bffa5ef30a7ed76    FEATURE     lxd/apparmor/qemu: Add /dev/sev and /tmp/lxd_sev_* to profile
+83f0251b13affd4989101778694a6cfd783d1eda    FEATURE     lxd/instance/qemu: Add QEMU config definition for SEV
+f5c98cedc742b726913f1239bd7c5a08ecd40c70    FEATURE     lxd/device: Skip virtiofs when SEV is enabled
+69c04641679c54c11deb6337bbc491da7d8df16d    FEATURE     lxd/instance/qemu: Check if SEV is supported on host
+9800f8403740555daa131a17868ae79124278a2d    FEATURE     lxd/instance/qemu: Enable SEV if `security.sev=true`
+d2cd6702afcd3ec9c48f30bfd69d19ca608bb3b5    FEATURE     shared/instance: Add security.sev config options
+e316cb152abee604c6535a7655ef35e2cda15fd2    FEATURE     doc: Add security.sev
+20cec766c0f0e00b1ec76063359c1f1d1acbf1e6    FEATURE     api: amd_sev
+0a5dcaf16ac6412fea86701fef7c71a253c18615    DIFFERS     lxd/storage/backend/lxd: Adds CleanupInstancePaths function
