@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 PROJECT=$(basename "$(git rev-parse --show-toplevel)")
-BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d/ -f2)
+BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref @{upstream} | cut -d/ -f2)
 
 # shellcheck disable=SC2128
 SOURCE=$(dirname "$(readlink -f "${BASH_SOURCE}")")
@@ -69,7 +69,7 @@ fi
 OLD_IFS=${IFS}
 IFS='
 '
-for line in $(git cherry "lxc/${BRANCH}" "lxc/master" -v); do
+for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
     IFS=${OLD_IFS}
     # shellcheck disable=SC2086
     set -- ${line}
