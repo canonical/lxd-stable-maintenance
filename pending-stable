@@ -91,6 +91,10 @@ for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
                         printf "Skip this commit for now [Y/n]? "
                         run_conditional abort || exit 1
                     fi
+			LINE="$1"
+			shift
+			LINE="${LINE}    APPLIED     $*"
+			echo "${LINE}" >> "${SOURCE}/${PROJECT}/${BRANCH}"
                 ;;
                 S|s)
                     break
