@@ -710,3 +710,9 @@ f77b38ac3f2168888f235b05f9f64c828d78f82b    DIFFERS     lxd/device/nic/ovn: Remo
 d4b9f8e65385bdab49da5333dd8424e7b81b4b47    APPLIED     lxd/device/nic/ovn: Fix VF interface cleanup on Stop when using acceleration=sriov
 ff09a2ef4cb85dde880f4b73b80036dd0778e9ed    IRRELEVANT  gomod: Update dependencies
 ab50301a4c3e36c5d260359687b96a86086541a2    IRRELEVANT  i18n: Update translations from weblate
+4df6edbd8c95f22492d2daf7470524614d044e30    APPLIED     lxd/metrics: Don't duplicate entries
+1b92c04257973408b0889951ee152aa3c6239ea2    DIFFERS     lxd/metrics: Also cache empty projects
+c102b54bb05a18d711c9382d75bcd3d59b50cd17    APPLIED     lxd/instance/qemu: Only use KVM mode for feature detection on X86
+5a91642ffc27d027fb51672035e4eb03b055efa8    DIFFERS     lxc/launch: Extend examples
+71e75412e061e800fe9b119f240b94eb5cc26726    IRRELEVANT  i18n: Update translations
+8ebb921cfff5dd5d3e60b901df7211ee6968a93e    APPLIED     doc/cheat-sheet: update with more markup
