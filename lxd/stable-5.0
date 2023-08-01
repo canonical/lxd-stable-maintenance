@@ -682,8 +682,31 @@ f7136d34b1d3c511c13c75db725aba2806695fcb    APPLIED     lxd/device/nic/ovn: Impr
 5140a942f7f3de0e74e7f531bbcafb4c6015f0f0    APPLIED     lxd/device/nic/bridged: Improve same instance multi-NIC DNS name conflict error in checkAddressConflict
 67d7cf5a55eaadafd9953cfe2e8e1ae7fa6c1685    FEATURE     api: Adds ovn_nic_nesting extension
 b7294e14426c94be90f9de23da28c147ffea9ba1    FEATURE     doc: Adds nested and vlan properties to the ovn NIC
-4db5b1ac5d3da96e53f8c7f5c1fc4452324bd7ee    FEATURE     lxd/network/openvswitch/ovn: Add nested VLAN port support OVNSwitchPortOpts and LogicalSwitchPortAdd
-fbc8f2ba4fe977865742d5a78de7c6f3d1bbcb42    FEATURE     lxd/network/driver/ovn: Add nested VLAN port support to InstanceDevicePortStart
+a2e00923c51d392c97ddce350434a97563f0923b    DIFFERS     lxd/auth/candid: Move candid to own package
+3f50f8b5b3f23fbc0ebe08e97cea3f20423fe88d    APPLIED     client: Move candid to own file
+6e7b6cbe55957cbbb4a3d9a36377011382c5c3b7    FEATURE     api: Add oidc extension
+04e3b844562a1300b985b31d3dad5b85a4d08b58    FEATURE     lxd/auth/oidc: Add new package
+71204424d225f0dcefacee924a6192ce0feadf4f    FEATURE     lxd/cluster/config: Add OIDC config keys
+2fb442cf0105d3bc5413edb33d86b08af0d5ea63    FEATURE     lxd/daemon: Add OpenID Connect support
+d5416329e3636737451a724d4f39ad1035aeda64    FEATURE     client: Add support for OIDC
+f33a89e2b7a3e871494a6a3a03f44b6a0fb5c928    FEATURE     lxc: Add support for OIDC
+bff2cdf04477f9c2109edb93b6ef49b9a3a4a950    FEATURE     doc: Add OIDC subsection
+ff06444dbd83823c32f0ffdf85955e9bba37ee0a    FEATURE     doc: Add `OpenID` and `OIDC` to sphinx wordlist
+0df66dc72d1b2fc9314c25b5684d2b7534f410ca    FEATURE     tests: Update godeps.list
+2fa386846bf949e1d273bc3946f49a3786c0bf3d    FEATURE     gomod: Update dependencies
+14e9e9c6f66350d410bc71f203509d143c9647c5    FEATURE     i18n: Update translation templates
+95645f35ab000c4204914da51ceecae75969d124    APPLIED     lxd/device/device/utils/network: Improve errors in networkSRIOVSetupVF
+4ae2cf0831a001e40d2edea67335756ef2c1fc07    APPLIED     lxd/device/device/utils/network: Use combined probe and interface wait via networkPCIBindWaitInterface
+42d520063f43e5ee1ed6ef1a04581421ded7589c    APPLIED     lxd/network/network/utils: Removes unused InterfaceBindWait
+cac230da030315783aed5f2ddd4d0b1269ec31b2    APPLIED     lxd/network/network/utils/sriov: Split SRIOVFindRepresentorPort into its own separate function
+4db5b1ac5d3da96e53f8c7f5c1fc4452324bd7ee    APPLIED     lxd/network/openvswitch/ovn: Add nested VLAN port support OVNSwitchPortOpts and LogicalSwitchPortAdd
+fbc8f2ba4fe977865742d5a78de7c6f3d1bbcb42    APPLIED     lxd/network/driver/ovn: Add nested VLAN port support to InstanceDevicePortStart
 e6a459998f21a2f489df5f3d3fb53791ceffb3cf    FEATURE     lxd/device/nic/ovn: Adds validation for nested and vlan combination settings
-c2db5c16daad2279dacace3fdbdb02995326aff7    FEATURE     lxd/device/nic/ovn: Don't perform DNS name conflict checks on nested NICs in checkAddressConflict
-8deec808bffdf415b2d970039429659d193ab27c    FEATURE     lxd/device/nic/ovn: Add support for nested VLAN ports
+c2db5c16daad2279dacace3fdbdb02995326aff7    APPLIED     lxd/device/nic/ovn: Don't perform DNS name conflict checks on nested NICs in checkAddressConflict
+8deec808bffdf415b2d970039429659d193ab27c    APPLIED     lxd/device/nic/ovn: Add support for nested VLAN ports
+0fa8a9871112ad15babc91ae3989c6cbbed9a0c2    APPLIED     lxd/device/nic/ovn: Improve errors in Start
+7efb189213a1f5c19cb125dd9f042bba18e64fc1    APPLIED     lxd/device/nic/ovn: Clean up allocated VF on failure in Start
+f77b38ac3f2168888f235b05f9f64c828d78f82b    DIFFERS     lxd/device/nic/ovn: Remove representor port from integration bridge when using acceleration=sriov
+d4b9f8e65385bdab49da5333dd8424e7b81b4b47    APPLIED     lxd/device/nic/ovn: Fix VF interface cleanup on Stop when using acceleration=sriov
+ff09a2ef4cb85dde880f4b73b80036dd0778e9ed    IRRELEVANT  gomod: Update dependencies
+ab50301a4c3e36c5d260359687b96a86086541a2    IRRELEVANT  i18n: Update translations from weblate
