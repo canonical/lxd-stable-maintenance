@@ -716,3 +716,181 @@ c102b54bb05a18d711c9382d75bcd3d59b50cd17    APPLIED     lxd/instance/qemu: Only 
 5a91642ffc27d027fb51672035e4eb03b055efa8    DIFFERS     lxc/launch: Extend examples
 71e75412e061e800fe9b119f240b94eb5cc26726    IRRELEVANT  i18n: Update translations
 8ebb921cfff5dd5d3e60b901df7211ee6968a93e    APPLIED     doc/cheat-sheet: update with more markup
+da1ed9f4b7dba15939183b56722ae9d99089c5d0    FEATURE     api: Adds network_ovn_l3only extension
+77c0cfa5cc3cee155af9c974eb1d0c534fba8cb0    APPLIED     lxd/network/openvswitch/ovn: Support indicating netmask in DHCPv4 options
+fa24894e209d3b3ecf86450f5ec5dbe962f4a228    APPLIED     lxd/network/openvswitch/ovn: Add Discard support to LogicalRouterRouteAdd
+dd5faf523e27ef1a18327a5c8be58a30c2dbd13e    APPLIED     lxd/network/network/utils: Adds IPToNet function
+4f55f40abe819f460532681138cce1bc34875a21    FEATURE     lxd/network/driver/ovn: Add l3only mode
+df3ef55400c667aa902664604155d3a6bcb47a2e    FEATURE     doc: Adds l3only settings to ovn network
+a0373327ccc7954fa17e44fc82ef9f57c1143959    APPLIED     doc/authentication: mention that RBAC is covered by Ubuntu Pro
+1eaf1019c580435cad40be079343748a5afac19b    APPLIED     doc/footer: add community links
+1b66c69c3d0d4e380aa792caa7a9c65e183dbf33    APPLIED     lxd/response: Add support for compression
+b04323250ad1b5e6cf2a573007cdde1408cd71c5    APPLIED     lxd/metrics: Add compression support
+654f5a0be23aa643b17570ff66b14e050f0edf91    FEATURE     lxd/ip: Add utility functions for vDPA device create/list/delete
+19c8a7cd996590a34c0633819591c519f838cab5    APPLIED     shared/version: add regexp.Compile() error handling, avoid unneeded capture group and trailing pattern
+ab9ae228dd60e08dba788038b76f70774b8102e0    APPLIED     lxd/sys: version.Parse ignores trailing stuff, no need to split on "-"
+b43154f573e6835cfbb41e7ec0200a42e164430f    FEATURE     api: Add the `ovn_nic_acceleration_vdpa` extension
+e0688511a872d3c35d0c1b4368f192a4e56767ee    FEATURE     shared/api: Add vDPA net card to resources API
+e59ccc92f10c18de0de28c7315de71e9fd5b5ae8    FEATURE     lxd/resources: Expose VDPA to the resources API
+fd7317f1c8e0ba4c14fee77b79a67510dd43f3d5    FEATURE     lxd/device/nic: Add support for vDPA in OVN NIC device
+af4e975efc87a4869aa417c103d91b4ac779c928    FEATURE     lxd/instance/qemu: Add vDPA QEMU parameters to create net device
+d4a3b5cdab43251af9260b335929c3f0f1162ff1    FEATURE     doc/reference: Add VDPA related options
+af685ab685345e7c0f8ebf7041464bf6c30c8dcd    APPLIED     lxd-agent/metrics: avoid unneeded capture group and use raw string
+54577bad6267de7b123609ac268eb43409adfcdc    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+0f8dcfad270d064c5dc3d1cf670dbce6a2e5c6a0    IRRELEVANT  gomod: Update dependencies
+6c600741040fccdd8ebb717e820fe49e257fc680    IRRELEVANT  i18n: Update translations from weblate
+36cc5751ea497990327a66df11900824410f2223    FEATURE     Release LXD 5.13
+d8e7b7f28d54f6093716efb53bd6eb0b180d0d91    APPLIED     lxd/apparmor: fix AppArmor forkdnsProfile
+6c8ca0fd190721b3c39cd3b597a653ab8a2de044    APPLIED     lxd/instance/drivers/driver/qemu: Comment whitespace
+22a022422d3ee027426b397f4404764747a7cf54    APPLIED     lxd/instance/drivers/driver/qemu: Rename snapshot file handle for clarity in migrateSendLive
+c8cf40368303c3f4209e9f0302e9fa8db62ad9d0    APPLIED     lxd/network/openvswitch/ovn: Add support for storing instance port location in external-ids
+31b92835b0d2ae4054db44b64aaf90aae638b2f9    APPLIED     lxd/network/openvswitch/ovn: Adds LogicalSwitchPortOptionsSet function
+963caa538a63858ebdf27959178198ddf5e3be8a    APPLIED     lxd/network/driver/ovn: Set instance switch port Location in InstanceDevicePortStart
+5f04a8e260959025ca09c275854548fad802a53e    APPLIED     lxd/network/driver/ovn: Skip clearing up logical switch port if last active host wasn't local in InstanceDevicePortStop
+f794d08e942862fc39c217c5f1940fe1d36d6a00    APPLIED     lxd/device/nic/ovn: Start setting requested-chassis ID for logical switch port in post start hook
+c5ffacc0e394e2b93fa98dfcab124722bdd9a71a    IRRELEVANT  doc/metrics: update metrics documentation
+d5b48742c9bbc26db8756a567d67a8b6618ebe51    APPLIED     lxd-agent/metrics: use strconv.ParseUint() instead of regexp matching for PID
+ec963b2151b4108dffb21fc46800bf3b834f1529    APPLIED     lxd/db/db: add regexp.Compile() error handling, require segment numbers and use raw string
+3e38fac77b79b53b64de12fa43a23cea0a7f292a    APPLIED     shared/validate: use simpler regexp.MatchString(), avoid unneeded capturing groups and use raw strings
+7a59d3b2af51c8f2af4f7d777e26faff1ff30b58    APPLIED     lxd/devlxd: use regexp.Compile() with error handling instead of MustCompile() and anchor regex
+da84055baa23e89421ec8be8eba92a40c41e3c72    APPLIED     lxd/seccomp: use regexp.Compile() with error handling instead of MustCompile()
+23c831a300135854ba410e29ef70dd20a6c2684b    APPLIED     lxd/ip: use regexp.Compile() with error handling instead of MustCompile()
+c41caad6dc3341cb2be6f432d01f361a4890e4e8    APPLIED     lxd/storage/ceph: use regexp.Compile() with error handling instead of MustCompile()
+ecf7ab2433f80f5ae4681a8fc5f4698a49bc6ebe    APPLIED     shared/util: use regexp.Compile() with error handling instead of MustCompile()
+4da89d40078c37ec4c01e3f5e22ead97a5144e09    APPLIED     lxd/network/acl/driver/common: Fix comment on Project
+7580a36a4e191e562bf18773df86cc563eb5d36a    DIFFERS     lxc: Fix missing "be" word in comment
+b44376a594977511f46790511bc02d2a2074972e    APPLIED     doc: Fix OVN peers doc incorrectly listing a ports option
+23859f3c71a45aafa2bb922afc4b4302464043a4    DIFFERS     lxd/device/config/devices/sort: Fix device sorting for nested NICs
+0c32104d19ccf68cdcdd453984ce4b4df88bea4d    APPLIED     lxd/device/config/devices/test: Rework device sorting tests to check for more scenarios
+80352c20dc892acc542d7a37face47f67f80bb33    APPLIED     lxd/instance/drivers/driver/lxc: Forcefully stop SFTP forkfile processs when forcefully stopping container
+096acfa7636482526c17a346415a95f2774144fb    APPLIED     lxd/device/nic/ovn: Fix unnecessary warning when stopping instance that has nested OVN NICs
+dc3a03227c4ef7e3033138b5fce805ca8ad55cc3    APPLIED     lxc/query: Handle empty plain-text files
+375e888d4e071127893f06bec57a10e36083d908    APPLIED     lxd: Pass state to migrateInstance
+6bd7a7a533c6890b3b994d4ee87d31e4a5d5b785    APPLIED     lxd/storage/backend/lxd: Only add profiles the instance is using to backup config
+901132ee10cdddbec8c20ac007ad0fe44942e805    APPLIED     lxd/rsync: Don't use a shell wrapper
+ac2673b0dce7b05c699d1d106d21a6c897ece0f2    APPLIED     lxd/rsync: Introduce RunWrapper
+335708b2f6b49537416135ad7c4ffc0367207838    APPLIED     lxd/apparmor: apparmor profile for rsync
+3444070ac8dcc9ff5281a0eb4840acd9b40fdf92    DIFFERS     lxd/daemon: Setup rsync to use AppArmor
+5db04f37973fc54ff9d969f04c4964eda2a61d9e    DIFFERS     lxd/device/config/devices/sort: Start non-nested OVN NICs before nested OVN NICs
+b5c62a163ec7f9bcd152aba99ab33fd551c140c0    FEATURE     lxd/db/storage/buckets: Fixed comment in StorageBucketKeyFilter
+c21e7b561af3f5a709f1c97baef100c70726921b    APPLIED     shared/api/storage/pool/bucket: Adds StorageBucketKey URL function
+74d0b09d19f196052574cb738adda7518b842456    FEATURE     lxd/storage/buckets: Reduce transactions in storagePoolBucketKeysGet
+53638d3d706d213fa65e404da882473532b53b1d    FEATURE     lxd/storage/buckets: Use URL function storagePoolBucketKeysGet
+e8b6243ccaad36d2610944f309b66ac82cc49d97    FEATURE     lxd/storage/buckets: Only return api.StorageBucketKey to client
+4bb04da567c8794a1ad77b346eb824662aa4a451    DIFFERS     instance: no timeout on the operationlock for creating an instance
+38a06d3c240c2656aae7b56056e27de93e5869c4    DIFFERS     lxd/api_cluster: Split up evacuateClusterMember
+28eca6f3301d1c3b0c1d14811f77fcb2d1482698    FEATURE     config: Add cluster.healing_threshold config key
+aafd8bc65e45d21c07ef7abef66192e56dfe20ef    FEATURE     lxd: Add internal cluster healing endpoint
+d782ff1169cfd508ba83bf11da883379ef3818a1    APPLIED     db: Add ClusterHeal operation type
+bc2dabef1a797096038da653d38b2f4f345c0205    FEATURE     lxd: Add cluster healing task
+eec83dcc740b2855c11c5d315f81f69eeafadfea    FEATURE     api: Add cluster_healing API extension
+fb80f15aa3280b1c49b9c9d62d5b1228a7cc7b1e    FEATURE     doc: Add `cluster.healing_threshold` config key
+1932ead7d3765a640e2bfd299f033cbd2ed8868c    APPLIED     instance_post: Drop srcMember from instancePostClusteringMigrateWithCeph
+f00710c59b1806943700475a68881a1f8e0ea488    APPLIED     instance: rename `common.snapshot` to `common.isSnapshot`
+5ca7a3ea9b97439483aa0a2e884872729e280a50    DIFFERS     instance: stop API races while creating/deleting snapshots
+6a7102cec8ea74f2c77eff17297316e52835fb0a    FEATURE     api: instances_state_total
+ed95507028f2bbc9e819e43e4b52280593c2a951    APPLIED     shared/api: Add total for disk and swap in instance state
+48aa1d4c15e9e23b25cead608adf9e8984894ed0    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+6f772c99ba2f3adb33112b9092790bd7976fcacb    FEATURE     lxd/instance/lxc: Add memory total to state
+f4fbcaae87aa54837144ffd1840020f9e21a675c    FEATURE     lxd-agent: Add memory total to state
+fe7bfb5e7fe928da228070622dd9d22d0fbbaaf0    FEATURE     lxd/storage: Introduce a VolumeUsage struct.
+4b0d9989dc746aecb46e454df34a7f5031e7835b    FEATURE     lxd/storage: Update GetInstanceUsage to return VolumeState and corresponding callers.
+a3ffa283636b310b09b4919a9b0bb3295fb39434    FEATURE     lxd/instance/lxc: Add Total field to InstanceStateDisk
+5bcf11e7a76b35781a2499b828bd58edd1ea8b1e    FEATURE     lxd/instance/qemu: Add Total field to InstanceStateDisk
+c04c5c55f41e3afc47d9726582eef4d550157546    FEATURE     lxd/storage_volumes_state: Update for VolumeUsage
+151dc06d97785dadcae6cb01311062740fed38f3    APPLIED     lxd/apparmor/rsync: Allow locking and linking
+54d325e673b90785957ddcc349c26f577c4bb16d    APPLIED     lxd/apparmor/rsync: Add setfcap for fscaps setting
+aeb0208350cf9cd90d22b64f44bd32162f5c9fe7    APPLIED     lxd/network: Skip ovn/dhcp range overlap check when DHCP is off.
+f4cf1f4c70144e001f02ca2d0c7fb90ae2728972    APPLIED     lxd/instance/drivers/driver/common: Adds deleteSnapshots that accepts custom snapshot delete function
+3ae9ae44259d203b48782351ffafd965b9fc834d    APPLIED     lxd/instance/drivers/driver/lxc: Adds missing call to d.updateBackupFileLock in Stop
+3b66e89a07362fe8862123f1dc6e8428377acdc8    APPLIED     lxd/instance/drivers/driver/lxc: Use non-locking d.deleteSnapshots function when deleting snapshots as part of instance delete
+31e9a9e64cbe5e55d946cd08734fb22079bee171    APPLIED     lxd/instance/drivers/driver/qemu: Use non-locking d.deleteSnapshots function when deleting snapshots as part of instance delete
+8d19745ace6597cd16f8ca719869637208e042d6    APPLIED     lxd/instance/drivers/driver/lxc: Only update instance backup file when handling a request to delete a snapshot
+a10e790968fb210300fda3669e4c24e2a7a0149e    APPLIED     lxd/instance/drivers/driver/qemu: Only update instance backup file when handling a request to delete a snapshot
+8195a57b3253011f348735929a9f4882c5918ef2    APPLIED     lxd/instance/instance/utils: Removes unused DeleteSnapshots
+4d7cc06c0f022239243edaeca4f59b552b1ed947    APPLIED     lxd/instance/drivers/driver/lxc: Removes redundant revert in LockExclusive
+a1f9470261981ed8bd3e0b83f2c3151d80202565    APPLIED     lxd/instance/drivers/driver/qemu: Adds version function
+f2592715752c4d4d54bf4be6bfc3ba3da9cadc49    APPLIED     lxd/instance/drivers/driver/qemu: Updates addCPUMemoryConfig to use d.version function
+adee83e35b1b7871f70b44023589098edbe8f415    APPLIED     lxd/instance/drivers/driver/qemu: Disable vhost-net network accelerator for veth devices on QEMU 7.2 and later in addNetDevConfig
+496824c176977a4de161e8bae6e48e7b1fad7e0f    FEATURE     lxd/instance/drivers/driver/qemu: Don't call d.checkFeatures again in setupSEV
+04fa24f2f1c288873b87715041831df380f067b4    APPLIED     lxd/instance/drivers/driver/qemu: Use DriverStatuses Info directly
+81a1abfae45a4d81a1d859d388255da95eb31e0b    APPLIED     lxd/apparmor/rsync: Fix snap use inside of containers
+159a5c343b91cf6a80351a345c518992976d81c7    IRRELEVANT  doc/network: clarify the difference between default and initial value
+cbcc0585515d7d78dc813007d50e9decdf2544c2    APPLIED     lxd/db/snapshots: Delete expired snapshots when expiry time is reached rather than exceeded
+1a8621be1f8f06bf33d6f0e884fce0694d48d59c    IRRELEVANT  github: Fix static-analysis workflows
+36e8138efbec3c3fa5368f49c880143a5df28123    APPLIED     lxd/instance: Fix expired snapshot pruning when no new snapshots being created in autoCreateAndPruneExpiredInstanceSnapshotsTask
+bd2ae246241391a53b304be9622c1132c7f8090f    APPLIED     instance/logs: Add qemu.conf to log list
+5f1ac96b4b8058043d88f1e2c030bf902c86a42e    APPLIED     doc/devices/proxy: add video link
+3fb8b3cc82b6147f33267e1e2647c15ba59866ac    APPLIED     doc/migration: add link to spec for live migration
+51a0fcc5af8fba969ccd61423b3114f538ac9081    IRRELEVANT  doc/storage: clarify that you cannot shrink your storage pool
+e3fb0f6b5fb541749e9679c10c892297d7c36784    FEATURE     doc/authentication: add info about OpenID Connect
+db0cc8d8db2aa9094d03e56567405485f433f549    APPLIED     lxc/storage_volume: Set target before getting storage volume
+2778721d9f68878c6cbd8955c880f0c1f62a8afd    APPLIED     client: Update return type of GetStoragePoolVolumeNamesAllProjects.
+6d18e39b2028f90b3c3bf4090779607a75b70f89    APPLIED     client: Updates urlsToResourceNames to use strings.Cut.
+d07dd8f19067453bc067d3acca1891cd052e73f0    APPLIED     shared/ws: Introduce new websocket package
+c02c5c5c5d9f79d97a4ef65038396f77774c736a    APPLIED     shared/ws/rwc: Merge duplicate implementations from shared
+1cf66d3b327c61ecf4dabfbdc6ce4eee0e4d28d6    DIFFERS     lxd/instance/exec: Switch to ws.Mirror* and don't immediately stop mirror when child process ends
+50acb631170b66c02b0555fd7a3f03d634fbdacf    DIFFERS     lxd-agent/exec: Switch to ws.Mirror* and don't immediately stop mirror when child process ends
+5baddf7a1fc39caf2b9789575bed565de6c9ccaf    DIFFERS     lxd-migrate/utils: Switch to ws.NewWrapper
+3e05f5f2edb9b84d8663b55cbe92d3f0cc170bc9    DIFFERS     lxd: Switch to ws.NewWrapper
+7381410dba034d89c9e1c002c6ea42c02d765502    DIFFERS     shared/netutils/network/linux: Removes unused WebsocketExecMirror
+54e3da881103c42d6b4813e8930bde1b10edb236    DIFFERS     shared/util/linux: Removes unused ExecReaderToChannel and GetPollRevents
+a313d0a9ea9ed2b67c09c07be983f31d0c524e5e    APPLIED     shared/network: Removes unused WebsocketIO
+476782a5ed7ec6ea1ea87da0d809a2bb58d86a6d    DIFFERS     lxc/export: Rename backup file based on file type
+0cc926df89d9f9cd36fe2dd35b862a024f6b4442    APPLIED     doc/storage_backup_volume: Update file naming for backups
+11e993b35fd79a4dbb415b75897f63f566431d95    DIFFERS     lxc/export: Revert change to import statement
+9f6be6b1f8d6767fa7e42c00f9dc1ba2ecb20aa0    FEATURE     doc/storage/buckets: add info on configuring the S3 address
+602286d4af8bd6aeb542bcf2fb5d7b65a8320e2e    APPLIED     lxd: Use protobuf helpers to avoid panics
+e135c5cb9181513c17ff7df31044dc700e1128bf    APPLIED     scripts: add missing oidc.* keys to bash completion
+5c6e7060fa64c713965122dc24cb386f60aea4c5    APPLIED     lxc/utils: Add IsAliasesSubset and GetCommonAliases
+f46d5de2563460fc974a1aca85b4313cd7b7a00b    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Clean up volume on failure in CreateVolumeFromCopy
+a4044f3dcb25f9cd5143b7f5665b902a50b447ab    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Don't block on receive error in CreateVolumeFromCopy
+5c4f1109bcb984e7bac5ffcd41d47ead9852b37d    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Pass true to allowUnsafeResize when setting volume size in CreateVolumeFromCopy
+5740bcdb7e9afe9dfd87e213f2753d33e77f0593    APPLIED     doc/storage: clarify that "attach" is an alias for "device add"
+861e20663bfe499cec4cede65544fb54b4350954    APPLIED     lxd/db/query: Adds marshaling interfaces.
+5f838a869576d92113a14784e512fcb9bd46fdc6    DIFFERS     lxd-generate: Update scanner function to use the unmarshaler when specified.
+2ad8c0d871f48c5aaa15d09b41b777734a9cd00c    APPLIED     lxd-generate: Add method to get different field params if marshal is true.
+8fa9ca23f7f5e06208297da2601a8843e8af19b8    DIFFERS     lxd-generate: Updates GetMany to marshal a filter before using it.
+fdd6d473eb5e32ca95e63a430f20377dca4d4b2f    APPLIED     lxd-generate: Updates ID to marshal field when necessary.
+84474847a5557a8e06678ae362dfd12bf97b2dc3    APPLIED     lxd-generate: Updates Create to marshal fields when necessary.
+001dc049bf83508cfaa7b806a936e0e193ef94a4    APPLIED     lxd-generate: Updates Rename to marshal fields when necessary.
+75e534f39e1b5052bf514a326448a672d8caeb82    APPLIED     lxd-generate: Updates Update method to marshal fields when necessary.
+8925b513e5f0cf53c89f6d28a688d014a711c7c5    APPLIED     lxd-generate: Updates Delete method to marshal fields when necessary.
+9f89bf8c37c7aad06947d9cdba9e6cc42452298a    APPLIED     lxd-generate: Updates comment to match generated method signature.
+cead1dd28b9fe01ab47d865a5a4a332cb27b5ef4    DIFFERS     lxd/db/cluster: Regenerates mapper files.
+4ffc791ddac24b9b67aac05d35e7d5ac09c72a3e    APPLIED     lxd-generate: Updates README with marshal tag.
+19d810393f6857841ee05c27c4a13430b310db5f    APPLIED     doc/devices/nic: add link to video and missing info about macvlan
+3a7bc1032639c6e53b5f1d3cf5322f77ddb7ab2f    APPLIED     Revert "instance: no timeout on the operationlock for creating an instance"
+a97f202a150c9441dc2b0754c6bab816c7e1df14    APPLIED     lxd/instance/operationlock: Remove concept of automatic lock timeout
+0992f6d482de49713fdaf230b1e6d77db8b83dcb    APPLIED     lxd/instance/drivers: Update operation lock usage without automatic timeouts
+9376a68d8838b9f0385780041e22ac3d64a0e5e1    DIFFERS     lxd/instance/drivers: Move more common restart functionality into restartCommon
+31a227a934d27f882558f389747424e93c3b4f99    APPLIED     lxd/instance/state: Set a 10 minute default shutdown timeout if no timeout specified in doInstanceStatePut
+0d634274890f7df25e3e24b392e514969d9a5aa4    DIFFERS     lxd/storage/drivers/driver/zfs/volumes: Removes operation lock timeout constant dependency
+2422eff17aabe8b1c8004624230ec25f705fb1b7    FEATURE     lxd/auth/oidc: Add support for code flow login in browser
+8f471b5a89aaa6a8352af71bdc309af9f6f589db    FEATURE     lxd/daemon: Update for change to oidc Auth function
+4c67e1bc96e23bb193c1724ca4e01fb71f5f4161    FEATURE     lxd/api: Add OIDC login/callback/logout routes
+e0c0aa9b0285c70a561215f001594d1fcc00d9f5    APPLIED     test: Extend storage pools tests on cluster
+3585c7aa6c27c243c2313db36a049bb785fb349f    APPLIED     lxd/db: remove the old snapshot records in the storage_volumes table
+0dde781a79dadb05db03c98e232255b347181942    APPLIED     lxd/db: remove useless `RemoveStorageVolumeImages` function
+4db4eb51d8b84de682ede4b38ddd8df93a45a44b    FEATURE     lxd/auth/oidc: Return email address if available
+d466e1adf438857974c1eb6d390348d2ea52cf55    FEATURE     client/oidc: Add Email scope
+a8d5639e446b102e04d19131e2e545f9165afd1c    FEATURE     tests: Clean storage pools in scriplet tests
+a7018556d2756985a4cceaa7319b166153e3ed40    IRRELEVANT  SECURITY: Add GPG keys
+ea323703e1016b84c8d2d3ec5aca8526c90c0fe6    APPLIED     lxc/action: Add freeze as alias to pause
+468c42587e83dd5f1ca5e1ae08bd23ea8d522720    FEATURE     oidc: Always set OIDC headers if needed in case of an error
+d8cdd7226d585bfeaea35de70837b9e6830b6a56    APPLIED     lxd/cgroup: Better matching of devID and io stats
+ac09cfaff41cb30872ba69aaa455d8741959b886    APPLIED     lxc/publish: Add support for 'reuse' flag
+aa78dea276b0f093970c67d060673ec6e16bb5d2    APPLIED     tests: Add and fix tests for 'publish --reuse'
+be45226b7f83d6537b714280538f6260605eb167    IRRELEVANT  i18n: Update translation templates
+965d2918f6541a2d318a9f9267ca162db1041752    APPLIED     lxd-generate: Fix declaration order of unmarshalable variables.
+f0620cb0c50a240cc1676dc1890efc8abd34d61e    APPLIED     lxd-generate: Change call order of update method to match other methods.
+f278c9a958ba5dab9ecaf945669b2e694411bcc2    APPLIED     lxd/storage/backend/lxd/patches: Fix storage_delete_old_snapshot_records so it runs on older sqlite versions
+1a20441b109663b0844d074a4a3b71adb1613a40    APPLIED     lxd/srorage/backend/lxd/patches: patchDeleteOldSnapshotRecords
+5594f380f016c11db74158060daf05caa15ba02e    APPLIED     response: Add Unauthorized response
+f3b4ca9011a2a664f893c29d4b40f20d74ee5bdd    FEATURE     oidc: Have Auth() return an AuthError
+d28655d6b3bda9006f3c0c0782f2a24aaa675b4c    FEATURE     daemon: Handle OIDC AuthError
+6bec37e4de2c56f73d08fa3ce72896e5bf9385d0    FEATURE     client: Only perform OIDC authentication if Unauthorized
+adcaff5cfa1c6c154428b852af7ae2029de6a65b    APPLIED     lxd/cgroup: err of `strconv.ParseInt` should return -1 for consistency
+d180bec9fbbb817c967e63c7ee2d0d1054f590c3    FEATURE     lxd/seccomp: use `GetProcessesUsage` to get process count
+2d34e839062afcaa1412400e1f87ea87fa762f55    APPLIED     lxd/instance/lxc: use `cg.GetProcessesUsage` (through `processesState`) instead of `cg.GetTotalProcesses`
+8acc4e21e780769bfd90ee63638a70f161f0b489    APPLIED     lxd/cgroup: remove useless `cg.GetTotalProcesses` function
