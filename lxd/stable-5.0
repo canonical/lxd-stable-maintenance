@@ -894,3 +894,169 @@ adcaff5cfa1c6c154428b852af7ae2029de6a65b    APPLIED     lxd/cgroup: err of `strc
 d180bec9fbbb817c967e63c7ee2d0d1054f590c3    FEATURE     lxd/seccomp: use `GetProcessesUsage` to get process count
 2d34e839062afcaa1412400e1f87ea87fa762f55    APPLIED     lxd/instance/lxc: use `cg.GetProcessesUsage` (through `processesState`) instead of `cg.GetTotalProcesses`
 8acc4e21e780769bfd90ee63638a70f161f0b489    APPLIED     lxd/cgroup: remove useless `cg.GetTotalProcesses` function
+55c363dfb5643d0bb11fb53ce1238d6aecce674f    DIFFERS     lxd/endpoints: Rename vsock socket to vmvsock to avoid naming conflicts
+ad142e0bba320a55c5874385d3aba1851af8b90e    DIFFERS     lxd/endpoints/vsock: Always listen on vsock host context ID in createVsockListener
+81ccffbbc7d1728a1c7f9ed22b69ded3e37c35d9    APPLIED     lxd/instance/drivers/driver/qemu: Push vsock host context ID to lxd-agent in getAgentConnectionInfo
+1be528987695093f51d2f641e2f8460176c81652    DIFFERS     lxd-agent: Use vsock.Listen function directly
+5347c1ce270c73584aaabf5a75139b36faf9e917    APPLIED     lxd/vsock/vsock: Removes unused Listen function
+ab14e97005a372b978d8b3abd155e23ce4f8cec6    APPLIED     lxc/config: Don't crash on nil map
+001c4fe5f9404cd0b9398f4c91946b4e60063c0d    APPLIED     cluster: Disable cluster group creation by anyone authenticated
+27ee8542eb1f3f81c6f8fa88f39165a7e1cbfbdb    DIFFERS     lxd-agent/devlxd: Improve client errors
+b3c5bf8eb64c36afc012b1672f257a4fcb8663fd    DIFFERS     lxd/endpoints/vsock: Update createVsockListener to use listeners.NewFancyTLSListener
+bbb3bf201195d00ec71359cca7e44af9eeaee66c    APPLIED     lxd/endpoints/network: Update NetworkUpdateCert to also update vmvsock, metrics and buckets listeners certificate
+84ece2224d18a393da5908f05a7a294562749715    DIFFERS     lxd/nic/p2p: Disable accept_ra on host
+eb728c16bfbd585749c5b0692f363233bc7b05d4    FEATURE     lxd/api: Redirect /ui to /ui/
+fe783fe435be777f05687bc936f4edf34909c240    DIFFERS     events: Pass state to eventsSocket
+30717fe979fdcbe37091c0be1f7a45f8e2cb237d    DIFFERS     operations: Pass state instead of daemon
+1825ffb5eae9b211a43e7971eb6e81cfa142210f    DIFFERS     api_cluster: Pass state instead of daemon
+024c10aeb5b0e659e0ae2b7c87aa373635493598    APPLIED     api_internal: Pass state instead of daemon
+40dc4eb0d48bd9c489fd0c714052ff03c0650771    APPLIED     project: Pass state to projectChange
+4b04ea502fd3e2888b3b6e318f416f761927f85a    DIFFERS     api_vsock: Pass state to authenticateAgentCert
+b1a73a62650ab36aa9c9f40badc865101c4f9329    DIFFERS     images: Pass state instead of daemon
+9c0107810628a1b4346484a225512a8f74e29b72    DIFFERS     instance: Pass state instead of daemon
+97c0c89095fab479735a3d2c941054eebf0c794f    APPLIED     networks: Pass state instead of daemon
+85f143bbba9b3847d9adc7fc9c455c6877e7dd3c    DIFFERS     certificates: Pass state to instead of daemon
+64fc973b183c24539a7b1f60ced29f5ca476bb7d    APPLIED     operations: Pass state to autoRemoveOrphanedOperations
+ab1acf250a957a7ead7686a5ffb1b8a34cbdd6f4    DIFFERS     profiles: Pass state to profile update functions
+4fedd5c4453a49413814112f0d1f441e8997b5fb    APPLIED     response: Pass state to instead of daemon
+1b9b304e47cafa947a94bc2a5afd877009b3fe8e    DIFFERS     storage: Pass state instead of daemon
+dc19e805bf56c8315efff85d1dd412da71f7fd10    DIFFERS     tokens: Pass state to autoRemoveExpiredTokens
+bb324c875438371f7d17cc3549b55d181f10fcb0    DIFFERS     warnings: Pass state to pruneResolvedWarnings
+39cb5ce7452dbe668e213daa8ba351839bd633f5    APPLIED     lxc/config_device: Don't panic on nil device map.
+fa86bd97e68747e23e6ac6852201beef641a7820    FEATURE     client: Always set Authorization if using OIDC
+853628e28f7efb930835d991d0819bdc53d770d9    FEATURE     client: Simplify response check in OIDC
+93e0c1d5809dd5c98101f6d80413c16870de6287    FEATURE     acme: Use state if possible
+aade766c63ecc99587d40b85d9605699108fef77    DIFFERS     api: Use state if possible
+adab8fc8c7c499b2e733ab3a81e701abd432c5d1    DIFFERS     api_cluster: Reduce calls to d.State() and use state if possible
+f6d207c05212ad64f959444f5b4fbbcb20ccdc49    APPLIED     api_internal: Reduce calls to d.State() and use state if possible
+0c87f4496d22849abfb87f4e6ec8a1842a36702d    IRRELEVANT  api_metrics: Use state if possible
+908c702f8dacb37fc3baf8012a3a337c361e50be    APPLIED     api_project: Use state if possible
+d76e33a275b462a19d1070307b27a3498650c7ef    APPLIED     certificates: Reduce calls to d.State() and use state if possible
+fc2269821c01b33eb8b87a6d4518014afce274c3    IRRELEVANT  devlxd: Reduce calls to d.State() and use state if possible
+55eb04bfad9b335328be20fd7912341ac459e59f    APPLIED     images: Reduce calls to d.State() and use state if possible
+88e7d83e8621864b065727cbf947379000780505    APPLIED     instance_sftp: Drop unused Daemon field from sftpServeResponse
+e8296c056b2a5e44a150d1ad5f62f9c5c9196508    APPLIED     instance: Reduce calls to d.State() and use state if possible
+00209ee31f71289590a65d322e49a66beeff737b    DIFFERS     network: Reduce calls to d.State() and use state if possible
+f2cc27635045fe5e21224e2d39ffa9febd81387d    APPLIED     operations: Reduce calls to d.State() and use state if possible
+0cf48d6b4ebfda1904f8630d2451865866f1f014    APPLIED     profiles: Reduce calls to d.State() and use state if possible
+b07740cfbfbb3dcdc338199f4839af286790a581    DIFFERS     storage: Reduce calls to d.State() and use state if possible
+18a1dd843db5c21570b16665009e8561bf50e759    APPLIED     warnings: Reduce calls to d.State() and use state if possible
+84cf1ab18f8335cde1734afe2ed6b0241170f505    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Fix block volume shrink regression
+824b86d123cd5f2a4562f2071aaba3c2c17fae6d    FEATURE     doc/images: add new `--reuse` flag for publishing images
+6c55b349d0b919b6a9d816cd9539020ac06b2eda    APPLIED     lxd/certificates: Allow non-admin users to delete only their certificates
+ed6cbdf0f8e81ca4819c9d9a7576d93ebbc810da    APPLIED     test: Add test for removing trusted certificate
+f45990bed566e270ea38be1b6f217cd5b71221e6    FEATURE     doc/getting started: add information about how to access the web UI
+43339d85cac2f86cb67866a3f3ed186503858489    APPLIED     lxd/endpoints/listeners/fancytls: Update doc block description
+472b1ce4c72f026dbb9003080f30b15b509b9e00    APPLIED     lxd/endpoints/network: Clean up NetworkUpdateTrustedProxy
+8805eea5237fbae4254a6d0e2cdf4f20d8fdadd3    DIFFERS     lxd/endpoints/endpoints: Move tertiary listeners into own Up functions
+4c7896dc2b39655a1b4f199e88e9f4bfd7934652    DIFFERS     lxd/daemon: Start storage buckets and metrics listeners after managed networks
+56524af3622073c7572d88704c3874d9fd246015    APPLIED     doc/instance options: clarify CPU limits
+8df670ebf05b58cdb78ab2e74981fef2c4b406c1    APPLIED     doc: clarify TSIG key name generation for network zones
+90a9d8152b3d810fe77011b905dac30729ed514c    APPLIED     doc: Update doc/howto/network_zones.md
+f49ffc75472e3528f15658e480d97d5541abcaf0    APPLIED     doc/bridge/resolved: clarify use of "~"
+a7151b59e01a5943aee3e2c70fee57874e53aa7b    APPLIED     lxd/network_zones: Use `zone` for consistency
+1b55e980233d96dafc4e9034b28806856cfc46f5    IRRELEVANT  doc: Update REST API
+561425d2af6069b9cfb244506a67ca490646df31    APPLIED     doc/storage: add `lxc storage info` command
+f5eb24080d0e522173ec5daec24a3f69c4436d6c    APPLIED     shared/subprocess/proc: Respect LXD_SECURITY_APPARMOR env var
+6db3b50c82c88b692de9ddfdfc8d1f46cd8415bc    APPLIED     lxd/sys/apparmor: Use shared.IsFalse when detecting LXD_SECURITY_APPARMOR env var
+3681713008d8d376115d766535f401935619ff3e    APPLIED     lxd/network/openvswitch/ovn: Adds switch name to logical switch ports in LogicalSwitchPortAdd
+98465949d96a35ce7078ac120e48a2978d285a65    APPLIED     shared/instance: Adds .last_state.ip_addresses to ConfigKeyChecker
+e74eeee56828562ce9910fb483623aebd306d454    APPLIED     lxd/network/openvswitch/ovn: Fixes issue with LogicalSwitchDHCPv4RevervationsGet when no reservations exist
+358b0453982316dafd0be80d009be21dc9d447e9    APPLIED     lxd/network/openvswitch/ovn: Adds LogicalSwitchPortIPs function
+b6812d3001bd0f7bb460ae193c7cac72cd931006    APPLIED     lxd/network/openvswitch/ovn: Updates LogicalSwitchPortSetDNS to accept list of IPs
+54d3583131c85c8d4f1eb22788c85d8ff27f672d    APPLIED     lxd/network/driver/ovn: client.LogicalSwitchPortSetDNS usage
+bb9ed64f60d42b64743a7102c2138f2518c776bb    APPLIED     lxd/network/network/utils: Adds IPInSlice function
+001096b6d98dff9e9259754751f938fe739094cf    APPLIED     lxd/network/driver/ovn: Adds LastStateIPs field to OVNInstanceNICSetupOpts
+663435c6426e1d5fe1972a3a545f8ca3b7c192bc    APPLIED     lxd/network/driver/ovn: Refactor DHCPv4 reservation logic
+6bd9618cb85379c768ed321e3cf963e70e57f3f8    APPLIED     lxd/network/driver/ovn: Updates InstanceDevicePortStart to return list of IPs associated to port for DNS
+d58657a78ec33e7c935fef99e1acd3a7eb08f06e    APPLIED     lxd/network/driver/ovn: Comment spacing
+766b2ba53f675eb4d191a10317d1c92a36238e4e    APPLIED     lxd/device/nic/ovn: Update InstanceDevicePortStart definition and usage
+7a23913a25c5eb341e8235ebd8129c3ed914426b    APPLIED     lxd/network/driver/ovn: Update InstanceDevicePortStart to use last state allocated IPs as sticky DHCPv4 hint
+9d298b32f18d6db44bf7d907d3cec033abd92253    APPLIED     lxd/device/nic/ovn: Populate and use volatile last_state.ip_addresses config to use sticky DHCPv4 allocations
+65e6001b050c66960af405c5b28719a3dc5d3601    DIFFERS     doc/reference/instance/options: Document volatile.<name>.last_state.ip_addresses
+e9a44264f77b6b99ff4357694c8e4f0f639bd442    APPLIED     lxd: Drop storageGetVolumeNameFromURL function
+9272f5f71ad863811680c39754c765e756febacf    DIFFERS     client: Switch to shared/ws websocket package
+3a4bb7adb4e42bd6e11bf0ed87b629a387960376    DIFFERS     lxd/operations/websocket: Switch to shared/ws websocket package
+804a41ea8be5d36d333a72735aa594de0f01f365    APPLIED     shared/ws/mirror: Comment improvements
+7069b2d5c9d9eaef488c70d8c465a63da806d01d    APPLIED     shared/network: Removes unused websocket functions
+ed94584b6a9d93eb300523a080a3fa7d767ff614    DIFFERS     test/godeps.list: Adds github.com/lxc/lxd/shared/ws
+b6195e42a76a5fa63ae1d579e76d5ff45c3b5a2d    APPLIED     lxd: Use consistent route variable names
+3ca4750b9d250ae15cb8c889c60e6e741f647844    IRRELEVANT  doc: Update REST API
+8f8a410b980e8fd07c15b5d7b5df630faa90b7be    APPLIED     lxc/storage: Rework cmdStorageInfo.Run() to be more resilient to used by resource URLs
+b98593deb94d44087c384535b9a34aecf732995c    APPLIED     doc/faq: clean up existing FAQ
+931c80bf906a12077d8be639676ad4b83af8a253    APPLIED     doc/faq: add an entry for common firewall issues
+52d40e07b8f02f1ccfaa9b8f3fc327cfae0e9f3f    DIFFERS     lxd: Improve errors for image record creation
+b80463a5c7d191ba374c30cb2c98ae6ee4ac583c    APPLIED     lxc/export: Fix export rename when run inside snap
+779b0ee933c6523616413d8a1d03ebf98daa0328    APPLIED     lxc/project: Corrects project edit help text to match reality
+7ec049341ffa275bf30afc8f4933c2651c41cfaa    IRRELEVANT  i18n: Update translation templates
+d39dcc77312767a006e94ad35f2bcf5d11bf102e    DIFFERS     lxd/instance/console: Switch to ws.Mirror in connectVGA
+83d4da72caebc6eb15fa1dbb896a551af443e9e8    APPLIED     lxd/instance/console: Switch doConsole to ws.Mirror
+82848cd645601e04eeeb9b4740c767740c8be2b5    APPLIED     lxd/instance/console: Use logger.Debug instead of logger.Debugf
+778d73a434565f4e6b1c992280e12e6982982c54    APPLIED     shared/network: Removes unused WebsocketConsoleMirror
+90383f42625fa6137d8040e39711d2c63d405e5f    DIFFERS     lxd-agent: Switch to ws.Upgrader
+61deb3ca621a8c2f834abcc64ee95edb8776884b    DIFFERS     lxd: Switch to ws.Upgrader
+f896c2c02781eb98339023092670ff285f0c2064    APPLIED     shared/network: Removes unused WebsocketUpgrader
+2ae8a6a51d214e57c108f1aa307478f6704b0e65    DIFFERS     lxc-to-lxd/transfer: Switch to ws.Mirror
+f373f7c6e32a6e39e0a6abbadb03bad25af80340    DIFFERS     lxd-migrate/transfer: Switch to ws.Mirror
+3933232d17fdb0fb4ddb86a4363f1d740722fe86    DIFFERS     shared/network: Removes unused WebsocketMirror and associated functions
+815b0586758ffb1af28c395c390c12fecdc41bc7    APPLIED     lxd/storage/volumes: Prevent moving volumes to projects that dont have features.storage.volumes enabled
+ddf00cf521ff515f20d737cc4f1c89d8c0677f0d    APPLIED     lxc/storage: Exclude entity snapshots from lxc storage info output
+a11e9e99e219d11ed0a968d41d2ed6ed6f54e384    APPLIED     lxd/instance/post: Fix comment in instancePost
+16c92bb006f19a0797d39acd40ba357fff02812a    APPLIED     doc/howto/network/bridge/firewalld: Updates docker firewall fixes to include easier forwarding option
+f987a3a8a835b16af4b7b49e62e25e734d37d387    APPLIED     lxd/instance/drivers/qmp/monitor: Define the events we use as constants
+21c42ce2d7ea540fdb7bc13b931634fe89beb490    APPLIED     lxd/instance/drivers/driver/qemu: qmp event constant usage
+2b376d12deeb8ecfd839fc9192224db84f57ed37    APPLIED     lxd/instance/drivers/qmp/monitor: Log when monitor connects and disconnects
+ac6f54891e220a46c9594277dd97cc7602e28513    APPLIED     lxd/instance/drivers/qmp/monitor: Trigger shutdown event if monitor unexpectedly disconnects
+1845505d95ab7affa5bec848b12228945eb58f3f    APPLIED     lxd/instance/drivers/driver/qemu: Log warning when instance stops due to monitor disconnect
+421eda293d9a72f1a12e1cc34227dbeb72e41ead    APPLIED     shared/logger/toplevel: The toplevel AddContext should use the top level logger
+9003c69e811b80f66a37727fda5940d839764735    APPLIED     lxd-agent/exec: logger.AddContext usage
+8ccf3627043cb86e15ae1e200cc5c6f26e87da83    DIFFERS     lxd/storage/backend/lxd: b.logger.AddContext usage
+3dde14476ce9f410c5f40509a6f17f466632f432    DIFFERS     lxd: logger.AddContext usage
+916d019c5d912432881a823dceea0e157662a5d6    FEATURE     lxd/api/cluster: Refactor cluster healing logic so it doesn't create an operation (and logs) every minute
+2bb672ba00b2cea54f0d08c3dfd6d1d78f370891    APPLIED     lxd/storage/drivers/utils: Clarify comment on loopFileSizeDefault
+8e9746b5a9dd8b7f02fda43d15d6bff3c8385753    DIFFERS     lxd/db/storage/volume/snapshots: Populate NodeID field returned from GetExpiredStorageVolumeSnapshots
+a95eac0c9de6bf2761ab1a88fad5f95e4b83c818    DIFFERS     lxd/db/storage/volume/snapshots: Adds memberSpecific filtering to GetExpiredStorageVolumeSnapshots
+c255ff3b1a1aff1043ffba8c66196a5d0ca67231    APPLIED     lxd/storage/volumes/snapshot: Fix pruneExpireCustomVolumeSnapshotsTask to understand cluster members and remote pools
+c82e2627cebbaa917feff40bed64f7590a47ce7e    APPLIED     lxd/storage/volumes/snapshot: Don't start taking snapshots if daemon is shutting down
+5c6a2b0d9bd840be3e0ba36e295e0b9bb0cb3add    DIFFERS     lxd/db/storage/volumes: Adds memberSpecific argument to GetStoragePoolVolumesWithType
+3cbfa02732cedfa5a2a793cfd2778432d4e33e9c    APPLIED     lxd/main/activateifneeded: tx.GetStoragePoolVolumesWithType usage
+3520dcfbd788fbb0632c9d0d0cff66502aaf2911    APPLIED     lxd/storage/volumes/snapshot: Merges auto create and auto prune custom volume snapshots into single task
+482f56f4b36509485a7e0f8687b0b172fd92c01f    APPLIED     lxd/storage/volumes/snapshot: Update autoCreateCustomVolumeSnapshots to return an error
+01d7376b8b7ca91223755c5d93a16b51adb61985    APPLIED     lxd/storage/volumes/snapshot: Updates errors from pruneExpiredCustomVolumeSnapshots to align with autoCreateCustomVolumeSnapshots
+573ec0a2ccecac114d958f0fb22829c61b3291ab    APPLIED     lxd/instance: Don't start any more instance snapshot tasks if context is cancelled in autoCreateInstanceSnapshots and pruneExpiredInstanceSnapshots
+66307bed16ca0d7fa852d7255352dde092fefdb1    APPLIED     lxd/instance: Rework instance snapshots task to prune first and then create scheduled ones
+9ce4f2ddad774a86eaf987cb282d7ff34ee79de0    FEATURE     lxd/api/cluster: Fix cluster healing for non-default project instances in internalClusterHeal
+8cf30520e3e10c64a3b406085ae523cbcba2f0f0    FEATURE     lxd/api/cluster: Fix cluster healing so instances are started in internalClusterHeal
+dac2a955245c328a7622d80c64198a8057ac12cc    FEATURE     lxd/api/cluster: Fix cluster healing so that state variable isn't held forever in autoHealClusterTask
+8d1987b863f1698f97f929305fb2da158cfad55c    FEATURE     lxd/api/cluster: Fix cluster healing to use task's context in autoHealClusterTask
+bb20d31c3cb23fd59705dc22f09e4eb7e8112b6e    FEATURE     lxd/api/cluster: Improve logging in autoHealClusterTask
+85cae2eb0941a944a036c7273a31f6668b0bdc4b    FEATURE     lxd/api/cluster: Improve logging and errors in autoHealCluster
+899cacc70c3255561dc1a8e46e8b383ffc158fa4    APPLIED     lxd/api/cluster: Fix member rename in clusterNodePost
+278cabd47fb5346ede945b930b8df8e452daf763    APPLIED     lxd/instance/drivers/qmp/monitor: Add ability to enable/disable on disconnect shutdown event
+8ef3dcc35e90f42f61362e5b27aed983afb4a659    APPLIED     lxd/instance/drivers/driver/qemu: Don't log warning if no child processes found in killQemuProcess
+8ca942cd235b3973461e4994819b9081cd5db9c6    APPLIED     lxd/instance/drivers/driver/qemu: Disable monitor disconnect event during VM start
+d9856cbd7353be70e94f4ed771bc6fd2bf1c934c    DIFFERS     lxd/instance/drivers/driver/qemu: Enable vhost-net for TAP devices in addNetDevConfig
+dbd58083a9929992bf06d72a4b079cfaad18c7c5    APPLIED     lxd/network/driver/bridge: Simplify ipv{n}.routing logic
+14a5882905bfe79a24dddd7733d1a417d6b8b94a    APPLIED     lxd/api/internal: Remove force argument from internalImportFromBackup
+9f2f59ee3aa9e0dfa3f9d34c1f8c994e157e8c54    APPLIED     lxd/instances/post: Fail import if conflicting DB records are present in createFromBackup
+6c1485b60dead503b901bf481df941843fa14d06    APPLIED     lxd/device/unix_common: simplify check logic
+1463b2fe7f2826ec8b315a085e1c3cf5ee63db36    APPLIED     lxd/instance/drivers/driver_lxc: simplify check logic
+742d18c7dab86fd065de809ef84b03794ab99dec    APPLIED     lxd/network/driver_bridge: simplify check logic
+d19221e543aab130cbf07dc4c914baa844eeb3d7    APPLIED     lxd/network/network_utils: simplify check logic
+90099abe5511956c19eb2f8eb0794a22c20581e7    APPLIED     lxd/storage/drivers/volume: Don't copy zfs.block_mode setting in NewVMBlockFilesystemVolume
+0b9e3f4f0430fca205570c33fce7cf21241d7c5b    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Use vol.NewVMBlockFilesystemVolume for image volume creation in CreateVolume
+710b9e9bfc9a9f67037978977daf159eead2c2af    APPLIED     doc/network/bridge: clarify options for using LXD with Docker
+91c152c3fab55a1614e5aea9d31d39d607bf8152    APPLIED     doc/cluster: clarify `lxc cluster group assign` command
+354eb45e269ede771eeec4dc2d2649e77d1200c5    APPLIED     Document how to enable manual testing of zone DNS.
+8e66a4e70c3dd4510613df617fdde520f8003429    APPLIED     lxd/instance/drivers/driver/qemu: Move lifecycle stop & shutdown event generarion into onStop function
+9b2e33621e906cc57a226be995f3e84fb7ad4cf0    APPLIED     lxd/instance/drivers/driver/qemu: Remove unused operation argument from pidWait
+04d85844c53e58f908d01bd717adc5b0fea26fe0    APPLIED     lxd/instance/drivers/driver/qemu: Reworks VM Stop and forceStop functions to better handle non-response QEMU processes
+155ec5fda5f8ae63247728a87e9598043e1776d3    APPLIED     lxd/storage/drivers/driver/lvm: Fail if conflicting PV or VG exist when creating loop-backed pool
+23e90d979edf48540c5e969fc2a89a4ced043316    APPLIED     lxd/storage/drivers/driver/lvm: Make providing a size when using existing PV or VG for non-thin pools an error
+ba50801bd7e9b5f62aa92c533faff827e88ec16c    APPLIED     lxd/storage/drivers/driver/lvm/utils: Updates createDefaultThinPool to consistently use settings from d.config
+df70b3b21adb4ed55756144dae1b4cec0906fa28    APPLIED     lxd/storage/drivers/driver/lvm: d.createDefaultThinPool usage
+03484d66036a85fae3840c8830a4f00123c152b0    APPLIED     lxd/storage/drivers/driver/lvm: Make providing size an error when the thinpool already exists
+96db53c9e592cf0702c65fe557e8cf4a5218e665    APPLIED     lxd/storage/drivers/driver/lvm: Updates createDefaultThinPool to accept thin pool size argument
+a0b924bd56273f336f1afe25462a3c59454bcade    IRRELEVANT  gomod: Update dependencies
+4589dc7ac396f01ca032d62da4891b571935d05d    IRRELEVANT  i18n: Update translations from weblate
+c0b7d6b0c8ccf70988f24e574dfbfbf914c2acbe    IRRELEVANT  LXD 5.14
