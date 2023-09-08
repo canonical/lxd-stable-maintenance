@@ -1060,3 +1060,143 @@ df70b3b21adb4ed55756144dae1b4cec0906fa28    APPLIED     lxd/storage/drivers/driv
 a0b924bd56273f336f1afe25462a3c59454bcade    IRRELEVANT  gomod: Update dependencies
 4589dc7ac396f01ca032d62da4891b571935d05d    IRRELEVANT  i18n: Update translations from weblate
 c0b7d6b0c8ccf70988f24e574dfbfbf914c2acbe    IRRELEVANT  LXD 5.14
+21a62d811d8eddcc2af789248ad0edc830db4477    DIFFERS     lxd/storage/backend/lxd: Switch to errgroup for migration in CreateInstanceFromCopy
+27d2ba4872e148fbc25d1b16d9923de3aa0a6907    APPLIED     lxd/storage/backend/lxd: Switch to errgroup for migration in RefreshInstance
+2bc027e10848318d06507a51de7845bdf41cc85c    APPLIED     lxd/storage/backend/lxd: Use source pool to indicate if source instance needs to be frozen in CreateInstanceFromCopy
+5460947a67125164169d6e086021e12d71755419    APPLIED     lxd/storage/backend/lxd: Allow copying running VMs in CreateInstanceFromCopy
+cdfc697827b33d80e0eae9fab14c3665f5bbb742    APPLIED     lxd/storage/backend/lxd: Use same instance freezing logic from CreateInstanceFromCopy in RefreshInstance
+c292277cd87d032499b6b3099e161d8d07a82d9f    APPLIED     lxd/storage/backend/lxd: Allow migrating running VMs when using raw block mode transfer in MigrateInstance
+db08f9ffe3db15e7478d35ab28bc0cfb5540edae    APPLIED     lxd/storage/drivers: Record future improvement areas for non-optimized consistent migrations in MigrateVolume
+6bbb1303153be9bc414143df166c6d730537c19f    APPLIED     lxd/instance: Clarify lock exclusive error for target instance in instanceCreateAsCopy
+a3818a6c506c7341bb716ebeb06f5ad816af8f39    APPLIED     lxc/copy: Remove pointless error check in copyInstance
+774b9056b058a3077c0e59319e568f9b3e02991c    APPLIED     lxc/copy: Don't try and modify root disk's pool when doing refresh in cmdCopy
+c7d17bdfbb0de5c309034040da02e3069deb8b3d    DIFFERS     lxd/instance/drivers/driver/qemu: Fixes crash if /dev/vhost-net not available
+1f1dfd316e355e3520fef6c12a00c369ab638288    IRRELEVANT  doc: Fix descrption for lxd_memory_Inactive_anon_bytes metric
+f1959d3813a16b3a4ab6a9dbb19f73ae50b8cbe0    APPLIED     lxd/metrics: fix copy-n-paste error for MemoryInactiveAnonBytes help text
+b80f06f6cd517edb6bfece563c3b377d72935ee6    APPLIED     lxd/storage/drivers/utils: Updates loopFileSizeDefault to consider non-root free space
+7a62450e842b63ce4af4d6e2a22e4bcacbc77468    APPLIED     doc/faq: Drop reference to eth1
+307b5a7045889e08222d996d1a9c3e9fd8c2cb6e    DIFFERS     shared/instance: Separate some instance type specific config key validation
+9071290a2de88e66c5318b7fab9919c4e75fdff6    APPLIED     shared/ws/mirror: Allow passing nil to Exec
+76493f38d709caca169b6f8747e979a2e04c97cb    APPLIED     lxd/device/nic/ovn: Enable hotplug for VMs
+a5f32054a43aacd0bd275c93e227111b4a6c34e2    IRRELEVANT  doc: restructure the Manage LXD and Internals sections
+23591bccc889e06e09b99c9dffd9dfd7b58d70ac    IRRELEVANT  doc/server: clean up content of new server/client section
+c74bafc01b625c02632de9d803ef835df68ebccc    IRRELEVANT  doc/internals: very quick cleanup
+3d70b8c5727c6efb32509100b02a49cda2f7be62    APPLIED     doc/instances: clean up "Container runtime environment"
+d92294b451db84e696098cedfa0158e54c854b2f    APPLIED     doc/cluster: link directly to cluster options instead of server options
+8e377c4216f1ed2dc06ce4e3a010bbcab52dbef1    APPLIED     doc/cluster: add information about automatic evacuation
+f32d540e5804a6dc7cdb2099ad1c479752b1624d    FEATURE     doc/UI: update instructions for enabling the UI
+46c2691df521440e99f19835f5fef65040fe3b72    APPLIED     doc/CPU limits: clarify what live update means for CPU limits
+b0ce91cf99ca7aabbf49070e0b2f633fd06e0045    APPLIED     lxd/instance/instance/interface: Adds PowerStateRunning and PowerStateStopped constants
+aef2cd8359ce4e273d3e03fba7b2c8c068190e15    DIFFERS     lxd: instance.PowerStateRunning and instance.PowerStateStopped usage
+6e7b1381a4c29dede567730bbd619cdfb2ed82fb    APPLIED     lxd: Unifies instance auto start logic
+911a02ff5c9f9941d9b44e2d916204b32218559a    APPLIED     lxd/api/cluster: Fix instance start after cluster heal in evacuateInstances
+0e407b76bcee7462b3292a4e17e19a90364c417e    APPLIED     doc/faq: add information about `lxc monitor`
+103769a9a90ad3150d5249aac587ad0c6f2ba699    APPLIED     lxc/init: Accept Description field from stdin
+0a36372424e0dd112cccb88f2dd94faa370d7ce0    APPLIED     doc/API: add video link and small updates
+aa573d550c24016258932849e140d08c49a1a31a    APPLIED     lxc/publish: Perform alias and image deletion after image creation
+68b0e52ec46e3db5dd7b56d897a7f99c80b24fe2    APPLIED     lxd/storage/pool/interface: Updates ImportInstance and ImportCustomVolume to return reverter
+77ac5f4369184d237693f7e971353eaa686e4576    APPLIED     lxd/storage/backend/mock: Update ImportInstance and ImportCustomVolume signatures
+dd73b3e9cf971059b046feed3f04ba62f8ecf78e    APPLIED     lxd/storage/backend/lxd: Return reverter from ImportCustomVolume
+f198b7b576e6859aea544d92c92a945dd9f3883f    APPLIED     lxd/storage/backend/lxd: Return reverter from ImportInstance
+ed607a23141a2775da8cb6bc8e0b49c2e120693a    APPLIED     lxd/instance/post: ImportInstance usage
+a6a016e8ea4f347d24f05817237c206fd76bd385    APPLIED     lxd/api/internal/recover: Use pool.ImportInstance and pool.ImportCustomVolume reverters in internalRecoverScan
+432b99c3d9f0c307b1eb141343ed41a7b5fb9ed4    DIFFERS     lxd/daemon: Use dbCluster as alias to github.com/lxc/lxd/lxd/db/cluster
+d23916f044789d3d93677e2dd2bb1d2e2479467c    DIFFERS     lxd/cluster: Use dbCluster as alias for github.com/lxc/lxd/lxd/db/cluster
+18926beecd48b3d8138183d8262d0609b1084343    APPLIED     lxd/daemon: Pass shutdownCtx to transaction during startup
+2d0dc2e1e51a9eb7d4bd82cb6bc77847fc977666    APPLIED     lxd/daemon: Clear any left over operations for member when starting up
+0659a5e3f5cb45957b576d7af01c53bf380bdbde    IRRELEVANT  doc/storage/zfs: add missing storage volume configuration
+2a49639ec7db1d34ff026be9aafee91748337b68    APPLIED     doc: update SSL to TLS
+2a4788cddfbbb8f91be1b27223abe9cb9ebcb798    IRRELEVANT  test/backends: Don't use default 5GiB size for lvm pool
+c478e4a0551cdc1a70799ad75dcb429247a9b658    IRRELEVANT  gomod: Updates github.com/canonical/go-dqlite
+2973b7bd0ca8a2096dddf3b83e391331b77baf8d    APPLIED     lxd/db: `UpdateImageLastUseDate` is a `ClusterTx` method
+a831d85e2c352a1554677f75d6e8dadc2c43ed4d    APPLIED     lxd/instance/operationlock: Fix comment typo
+ca23112b4cea36f2e1742985e57dc96073560847    APPLIED     lxd/locking/lock: Clarify comment
+b3bbe2b05429a0e641a47ebf8635f52bc8bfa4b5    APPLIED     lxd/events/internalListener: Clarify comment
+c766259a9489786df6e0252135fe6928c93f1a3a    APPLIED     lxd/db/images: Don't say node in user facing error message
+9b220bad75ce5e521432a9b139440e6237bfdf20    APPLIED     lxd/instance: Move image distribution logic from instanceCreateFromImage to createFromImage
+29c99ef50c3b4948938901db40677cd95ef21e74    APPLIED     lxd/instance/drivers/driver/qemu: Set shutdown and panic actions in start
+8a4ee0caf1f77f99aa6de9e8e60740207ab8c507    DIFFERS     lxd/instance/drivers/driver/qemu: Handle more QMP statuses in statusCode
+0988f14f1575b62103e0caadcbc1262d7c0add75    APPLIED     lxd/instance/drivers/driver/qemu: Comment improvement
+3ca657fa22bb770d5e2f9634386b8a1938ba3fe1    IRRELEVANT  test: Use smaller pools and volumes in GIB and MiB respectively
+0fca2fea8b7603610a9d02baf3e1ca7f79adbf65    DIFFERS     lxd/storage/drivers/driver/btrfs: Adds revert to Create
+64e272a62557eabac7b2a457644a597d8cc0de38    APPLIED     lxd/storage/backend/lxd: Delete newly created storage pool if mount fails in Create
+7a14780d6dd628026a4a5019b8f80cdcd6cad15e    APPLIED     lxd/db/images/test: Fix image test
+e370d8c6d13e4bfbc68ff770bd1f7e5ad464ce00    APPLIED     lxd/instance/drivers/driver/qemu: Pause on panic
+4f91c575d6f5afde1473b936a8541a7b4fc98b1e    APPLIED     lxd/operations/operations: Return operation result error from Wait
+8b035afa6889783b40da340a2fc15fe91781cb4a    FEATURE     lxd/acme: op.Wait usage in autoRenewCertificate
+62ce63880e4a9e432944a68f36b0124db73a9df3    FEATURE     lxd/api/cluster: op.Wait usage in autoHealClusterTask
+1ac2c276d731d525a9e5113485655b2a6cbc7bd2    APPLIED     lxd/backup: op.Wait usage pruneExpiredContainerBackupsTask
+ad0fbb2f740c8087d133bd9c46524ae127a189ba    APPLIED     lxd/images: op.Wait usage in autoUpdateImagesTask
+04b569962c71722836939b139542913cbf004e07    APPLIED     lxd/images: op.Wait usage in pruneExpiredImagesTask
+47265d2e70bb08ef1e29919409fb026fe9810521    APPLIED     lxd/images: op.Wait usage in pruneLeftoverImages
+92bead1ab7d8d971b6cde2e72ff3dea4d9e71641    APPLIED     lxd/images: op.Wait usage in autoSyncImagesTask
+3055e275200cf2dac6f82fb72ab43835ef6e4383    APPLIED     lxd/instance: op.Wait usage in pruneExpiredAndAutoCreateInstanceSnapshotsTask
+8e2b843cdaea119fd975573ae853c27f0c4bc64d    APPLIED     lxd/instance/instance/types: op.Wait usage in instanceRefreshTypesTask
+b14f07365254d34bd3e42939f21e4d39a45836e6    APPLIED     lxd/instance/post: op.Wait usage in instancePostClusteringMigrate
+b737607fc87304f982d98d57bb8c7ce534dcd64e    APPLIED     lxd/logging: op.Wait usage in expireLogsTask
+eec2e8fa62b0e2d358c0571092003d3438c65e08    APPLIED     lxd/operations: op.Wait and SmartError usage in operationWaitGet
+f92c9bf59b15f125b46ad48cb85f23510bea605a    APPLIED     lxd/operations: op.Wait usage in autoRemoveOrphanedOperationsTask
+bb62030a4d1df4cdf73d83f50cc0515c99c596c3    APPLIED     lxd/storage/volumes/snapshot: op.Wait usage in pruneExpiredAndAutoCreateCustomVolumeSnapshotsTask
+3fffe4762cb5dddfbc2295c691cb40534d410bc1    APPLIED     lxd/tokens: op.Wait usage in autoRemoveExpiredTokens
+a9a3704f5cc72f4531f1f6750da99a8a756ea24b    APPLIED     lxd/warnings: op.Wait usage in pruneResolvedWarningsTask
+c23586c081c5a515c3e7aa57bd8ca5533bb9aa06    APPLIED     lxd/instance/instance/types: Remove pre Go 1.8 check in instanceRefreshTypesTask
+e556f5d8b45470d71ad2b647ae40f3fdf840f38b    APPLIED     api: Set correct instance resource path for snapshot operations
+2314c2983f2f555350e2ef22a12e8fa5dd5f47ff    APPLIED     doc/faq: add info about hanging instances
+28cedd837ff198ee663ecfbe421629ee550e350e    APPLIED     lxd/instance/drivers/driver/qemu: Fix potential race condition with context being cancelled too early in restoreState
+70ec5dd844d881324aefc2c83b2155a8f7ebdb8a    APPLIED     lxd/storage/drivers/driver/zfs: Fix zfs list recommendation in Create
+2c4a76d178cf93c43e2e99818e9a65e2ca16af71    DIFFERS     lxd/storage: Honor target storage config when migrating
+c7746b6b935e5674aeac520d97831371b373f515    APPLIED     test: Add zfs specific cross-pool copy
+a50af7e8434bcc0cd0b6766efa2ee6ab3726f677    DIFFERS     lxc: Add func `getImgInfo` and move `guessImage`
+893a73d052da3fa573ee621b8e2c0755b7a359dc    APPLIED     lxd: Add function `getSourceImageFromInstanceSource`
+a2a235da12b5df5a14ee735e3ac5d82d315c1bfc    APPLIED     lxd/client: Add `getSourceImageConnectionInfo`
+f2bf373e9254716d551bfa9df0a477b5aa889e4d    APPLIED     lxd: Add function `ensureImageIsLocallyAvailable`
+b777549cb65b5ca7c3a74d7b0735727f354bb047    APPLIED     lxd: Add function `ensureDownloadedImageFitWithinBudget`
+a42a70651de6ea2b1173ca07e644ae38be142a3e    IRRELEVANT  i18n: update translation files
+8698fe9a3dfe4d27212aaabd162c878fbd8bedde    APPLIED     lxd/network/utils/sriov: Fix SRIOV representor port lookup
+cd85d0b6307d7c0a569dba9c813e57010ea1f4ec    APPLIED     lxd/network/utils/sriov: Add SRIOVGetSwitchAndPFID
+cb16e7850f5954085348c76e1f2b8b06a2fe93e1    APPLIED     lxd/network/utils/sriov: Fix typo in comment
+a2689e49ed73112cc0ed9fe0f02fab3fa181526f    APPLIED     doc: Update max value of `net.core.bpf_jit_limit`
+02f4422db4785b9d5a6a0d83df26be397eb5ff36    IRRELEVANT  lxddoc: Introducing lxddoc, a swagger-like documetation tool
+0e86b7540bfede48d9b1ddbad98aa1c5ffb4860b    IRRELEVANT  lxddoc: Add README
+280a168fd7749cbf6e82477476f698727fc24eaf    IRRELEVANT  lxddoc: Integrate lxd-doc to `make doc`
+fb8a90ba68ca1557a0458bb1926d79ee4e2f60a4    APPLIED     lxd: cluster config doc
+4be362ae9b09b7c9a21991658f28ce8fb5248ea8    APPLIED     lxd/storage: Call QemuImg with both image and destination path for unique apparmor profile generation
+a63880f9e402aa5e81c1f939f265683c55b60115    APPLIED     lxd/apparmor: Use a unique apparmor profile for qemu-img unpacking
+00295be9b68652fcc1ae854717a6ec7af1751e4c    FEATURE     lxd/instance: Add ExecOutputPath helper function
+20fe7feaa1d670e0cc72f60847ec339668777836    APPLIED     lxd/instance/drivers/driver/qemu: Fix addNetDevConfig to match the tap interface settings that qemu uses
+bdca0c1f6fe2bc893b93cc8e9e06d0bc977b3c6c    APPLIED     lxd/instance/drivers/driver/qemu: Don't load vhost_net module in checkFeatures
+9a6bbf9b054a7bd53b6febea1fa1e0455c353a32    DIFFERS     lxc/utils: Change sort ByName interface name to SortColumnsNaturally
+262d7719d13a248e74243eb2351b8964f303efa5    APPLIED     lxd/apparmor/qemuimg: Add profileName argument to qemuImgProfile
+386ebcb960ebe78809d44ecf7e929546b8daf5f8    APPLIED     lxd/apparmor/qemuimg: Updates qemuImgProfileLoad to return the profile name
+7145d4f87b72fc8f18671a86103dd455ad2feb8a    APPLIED     lxd/apparmor/qemuimg: Removes unused getProfileName
+500488f98dd580561bc5b11e0bea9b8581b92819    APPLIED     lxd/apparmor/qemuimg: Call deleteProfile directly in QemuImg
+1de54a1fde8251fa19d1a749f6b9a206b7bef52b    APPLIED     lxd/apparmor/qemuimg: Removes unused qemuImgDelete and qemuImgUnload
+97cdf3b1119d0adc40e7b6fbba03573466d1cd4a    APPLIED     lxc/copy: Don't try and modify volatile.idmap.next on refresh if not set in source
+82968ea27e97700cb26425feb9ac08a8a5ccc042    FEATURE     lxd/instance_exec: Fix exec record-output location
+6a5f4fbd974b97951d2fb4adb6588540065d1764    APPLIED     doc/devices/nic: `ovn` NICs support hotplugging for VMs now
+21c3bc8544581d22b846e3c93d8c0829c601c899    APPLIED     lxd/network/network/utils: Update pingIP to accept context and return error
+635babfd1b1575b65ed98a72a0774f1cec189573    FEATURE     lxd/api: Add exec-output endpoints
+55167a0fc43b2c84aecbfee1adb2c3f4870b5c2f    APPLIED     lxd/network/driver/ovn: pingIP usage
+ba3f6e50aa0e8d3261e424abb91828a8d76b9dbe    APPLIED     lxd/network/driver/ovn: Rename pingOVNRouterIPv6 to pingOVNRouter
+c1b66324d5104ddd419c4a4572b45951f652c914    APPLIED     lxd/network/driver/ovn: Ping OVN virtual router external IPs when using physical uplink in startUplinkPortPhysical
+ce57be11f218122a6d8a8bf5b665a18e231129cd    APPLIED     doc: Update wrong description for return value of validatePCIDevice
+d0514e3c80b9bac62e0499b5532c329201ec4bf1    DIFFERS     lxd/device: Add helper function to check if the requested device matches the given GPU card
+7bcc825c546f33ac8c0b59accd1aebbd07014ffb    APPLIED     lxd/device: Use the new helper function gpuSelected to check if a GPU for a container should be skipped
+5f23504977a81dd8d0be17e4b450d22c2203d89a    APPLIED     lxd/device: Remove obsolete if statement since the check for GPU id is already performed in the gpuSelected function
+6a36fc6cb2c512ce651797c6c0da77f6ba1fe00e    APPLIED     doc: Update godoc to resemble the actual functionality after moving out logic
+d30bdc65e1c458cec700b10141ad2f8861015014    DIFFERS     lxd/device: Make gpuSelectd generic to support all kinds of GPU device types
+a99d50279dbd9ece6bec0e5872139bae82d325e3    APPLIED     doc: Extend notes to define which id exactly is meant by GPU card id
+bd0d96ff2f790b6b524e0f0b14278eb298682eb9    APPLIED     doc: fix typo in error message affecting all GPU types when trying to use multiple device settings that interfere with each other
+c8b4449e528547ed5afa09f0b7078bbcde6e67be    APPLIED     lxd/storage/utils: Improve errors in ImageUnpack
+3d33cdf370cd81d81a3d2ecf3ead8aadeedb2d19    FEATURE     lxd/instance_logs: Add exec-output handlers
+8d1efa16b4b910525207cbd4183b1c8b89d64e62    APPLIED     lxd/response: Fix cleanup called before file is closed
+03831d50499b6fc507886769ade5cf4716db43e8    APPLIED     lxd/daemon: No need to delete left over operations in init as this is done in OpenCluster
+d135933d0e76af741576dd28979356c36fbcdc71    APPLIED     lxd/operations/operations: Don't log warning when deleting operation if record not found
+d83b96f9def24c0bad38421575c95c4ea4e460fa    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+d7d439788e34f75b0c2bebe082789aeb4704fd6d    FEATURE     lxd/instance_logs: Call cleanup.Fail directly
+d7202ef13feeb630602c311ff15722786c29ae2f    APPLIED     lxd/response: Call cleanup at the end of each processed file
+0c66a3ad60673a494807ce5e24d2e8eb635d3cee    DIFFERS     shared/cmd: Moves lxc/utils to shared/cmd.
+6bc9778c7d544e21c14a9ec87331857a6282bcf6    APPLIED     shared/cmd: Adds RenderSlice method and sorting utils.
+c9c37eea9fd96ad3206a2c097a0f69bd78f8d9a4    APPLIED     shared/cmd: Adds tests for SortByPrecedence.
+b4bfc14f39943bc5da2b89a610b274fb3f0b2c29    APPLIED     shared/cmd: Adds tests for RenderSlice.
+22a2d7c9c6bec6d0d1637672606d0284f0d5072e    IRRELEVANT  i18n: Updates pot files.
