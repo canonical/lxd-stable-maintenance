@@ -775,7 +775,6 @@ fb80f15aa3280b1c49b9c9d62d5b1228a7cc7b1e    FEATURE     doc: Add `cluster.healin
 1932ead7d3765a640e2bfd299f033cbd2ed8868c    APPLIED     instance_post: Drop srcMember from instancePostClusteringMigrateWithCeph
 f00710c59b1806943700475a68881a1f8e0ea488    APPLIED     instance: rename `common.snapshot` to `common.isSnapshot`
 5ca7a3ea9b97439483aa0a2e884872729e280a50    DIFFERS     instance: stop API races while creating/deleting snapshots
-6a7102cec8ea74f2c77eff17297316e52835fb0a    FEATURE     api: instances_state_total
 ed95507028f2bbc9e819e43e4b52280593c2a951    APPLIED     shared/api: Add total for disk and swap in instance state
 48aa1d4c15e9e23b25cead608adf9e8984894ed0    IRRELEVANT  doc/rest-api: Refresh swagger YAML
 6f772c99ba2f3adb33112b9092790bd7976fcacb    FEATURE     lxd/instance/lxc: Add memory total to state
@@ -1206,3 +1205,841 @@ d801b903602260214f0907beecabed03dfbaaa01    APPLIED     lxd/api: Add auth_user_n
 9b9a3ce09b44585002e379b5a72d5c0962ef2ba1    IRRELEVANT  doc/rest-api: Refresh swagger YAML
 d083c4d50f27801bb314d8bc813f5a071342c038    DIFFERS     lxd/db: return an error in `UpdateWarningStatus` is no row is affected (ID does nott exist)
 7542624bc9595a8a2c2fa50fa84c3dc50ec40315    DIFFERS     lxd/db: return an error in `UpdateWarningState` is the warning is not found
+b48da0010e4a29e414d760a27bf95c1715b6656c    APPLIED     lxd/storage/zfs/utils: Add helper function to get multiple dataset properties
+6a88b8aba3ee3ac7cbb9a5ce6d41c853530d5c97    APPLIED     lxd/storage/zfs/volumes: Fix ZFS does not respect atime=off option
+09716a038a08dda345d8eb7f45ab58d41c108ea2    FEATURE     api: security_csm
+0d30c56b4545869863fa079143d4854c718a38cf    FEATURE     shared/instance: Add security.csm
+d64781521277355e8aa96301655617e46f812c69    FEATURE     scripts/bash: Add security.csm
+542e7c22a94ae886745c2ec50d6f0072b062bfda    FEATURE     doc/instance: Add security.csm
+7e4932a50a3536d8b7873d78f0ec6291f06eb5e8    APPLIED     lxd/instance/qemu/bus: Introduce allocateDirect
+50d9d96b8ddf4138d5edbdf822c5d844360d42ab    APPLIED     lxd/instance/qemu: Move SCSI to root bridge on CSM
+fa81dc9255cc9659ef6c6597c0b4074a13e54db5    APPLIED     lxd/instance/qemu: Move GPU to root bridge on CSM
+01bbfa28e4baa7010f5380e371bdc768fac3e21c    APPLIED     lxd/apparmor/qemu: Add support for multiple OVMF builds
+a10fe694bc0d4df579fda0ce00cc8cabf0a037d4    APPLIED     lxd/instance/qemu: Support multiple OVMF firmwares
+d3489099477945be0f3b3274503e6cd6de451ab2    APPLIED     lxd/endpoints: make sure to not access passed the end of the slice
+18745fe6188222b23d0df17bd3ed6b45efae40a7    APPLIED     lxd/apparmor/archive: Fix snap handling
+cb6da8857c3913cbea0f553e51dd5a19e9e2cb56    APPLIED     lxc/remote: Fix rename of global remotes
+45808170c333007f0d245836eb97b2e84c9cbc3e    APPLIED     lxd/main/forkproxy: use %v consistently when printing errors
+e431cb161a2cc91551253c4c210db7f6f628b679    APPLIED     lxd/main/forkproxy: use Println() when no format specifier is used
+31eec27b8c92809155873c257006b7139b599594    APPLIED     lxd/main/init/interactive: use Print() and Println() when no format specifier is needed
+29350d6f957a8e39accba9edcaa5209dd1a72954    APPLIED     lxd/main/sql: use Println() when no format specifier is used
+99342d7751228e862b21b1190cac0d72b3e12d02    APPLIED     lxd/main/recover: use Println() when no format specifier is used
+0f3ba9945e1568838f4a9d3f6db79a899422c8c0    APPLIED     lxd/main/cluster: use Print() when no format specifier is needed
+70b12686c38fbaf3574c2a32ea4314ca3cf9f840    APPLIED     lxd-benchmark: use Println() instead of Printf()
+c5503c8792ffb637e04eea31f289dfdeea4db9d4    APPLIED     lxd-migrate: use Print() and Println() when no format specifier is needed
+7fd41d2131aa445019ef42ef83f6f8155e8e9ab6    APPLIED     lxc/info: use Print() when no format specifier is needed
+16eadeb600c0ac6614fe0d0bead78f33067e5648    APPLIED     lxc/file: use Println() when no format specifier is used
+84523f52f9ec2d36d4ff9a8b822f5bc423475b51    APPLIED     shared/cmd: use Print() when no format specifier is used
+a768651b770ecde014154c54950f3503f0c6ce1c    APPLIED     lxd/instance/drivers/driver/lxc: Update initLXC to return a pointer to liblxc.Container
+3f92e9c73bdf22650b0b16484af607e38981a60b    APPLIED     lxd/instance/drivers/driver/lxc: Update cgroup to require being passed a liblxc.Container
+679e2baa9ab1b20d8a792a59c76956b886444821    APPLIED     lxd/instance/drivers/driver/lxc: Updates loadRawLXCConfig to accept a liblxc.Container
+bea7db9a99310b6e3f13ea90c92fe7623cf31b2c    APPLIED     lxd/instance/drivers/driver/lxc: Update to use local liblxc.Container returned from d.initLXC
+2b695e5d1bcd61953a7b7afa6cc2d8b6e8e09dd8    APPLIED     lxd/instance: Don't return instance.Instance from instanceCreateFromImage
+7a7f2be7042ec0cf5cee8065ff5acc668b5f32ed    APPLIED     test: Improve liblxc file handle leak detection
+5b6578a5766973a5c15d16608ed0b9d082ce0c05    APPLIED     lxd/isntance/drivers/driver/lxc: SetFinalizer for clearing liblxc.Container reference once in initLXC
+62c8d74f840a12ce4721bab3f12456d3d4143b0f    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Only delete volume on failure if not doing refresh in createVolumeFromMigrationOptimized
+29a3deb0f4da2ca59a63e1f0c87782b8a67f0393    APPLIED     lxd/device/gpu/physical: Fix panic when GPU device doesn't have DRM support in startContainer
+1f29b95ac3b19fc2374f8da8ab348dff3701cbe2    APPLIED     lxd/device: Fix regression for not properly checking for GPU DRM information
+c0db70d48adde2845c3c6b65dceac1d5b8e4910d    APPLIED     lxd-migrate: Fix SecureBoot handling
+6a7102cec8ea74f2c77eff17297316e52835fb0a    DIFFERS     api: instances_state_total
+4b8571b7c5356e784f4e44d1f4942cabebb3f1c5    APPLIED     shared/api: New InstancePost attributes to handle instance rebuilding
+1c63db26cf3765abd4079fb607644e22356c8bef    FEATURE     api: Add `instance_rebuild` API extension
+7bcfc4e8b49fb268999094f68f4d960475c009a6    FEATURE     lxd/db/operationtype: New operation for instance rebuild
+ca943c42bca5a5110177bba053f1ad2096ec6252    APPLIED     lxd/client: New client method to handle instance rebuilding
+46084a9f0d0e49cca0deddddbc013c1b3a55045b    FEATURE     lxd/instance: Driver level rebuild logic
+b34a854487c0187a3d7b22447ca3f094732e09b4    FEATURE     lxd: Add instance rebuild server endpoint
+68f4e12cc4715437c5c13b8360cdc2603e933963    FEATURE     lxc: Add `rebuild` command in CLI
+08de425436468957693378398e339bfb3e46eedd    IRRELEVANT  doc: generate rest-api.yaml
+d94f7c4ffb482507d57aa21ddaf08c3083b5c584    FEATURE     doc: instance rebuild howto
+abefdfdbddb7c1aaf3dbebd71200f07497136bc2    FEATURE     tests: Adding instance rebuild testing
+203fe394fc9e987dff068f0ca162fa3cd84685f0    IRRELEVANT  i18n: update translation files
+19f19d06dafd12d441b7221fc1cdf3eb4e3a740b    APPLIED     Revert "lxd/device: Fix regression for not properly checking for GPU DRM information"
+af06010eca84fad4f3b32df79aa4165a542cdba2    IRRELEVANT  github: Simplify static-analysis tests
+3786bbdf01036f76ee5499f0f57b6a240921339a    DIFFERS     lxd/sys: Remove loading vhost_vsock module on init
+80e2b1d4f692c687b2cc835c2829148a57de4b46    APPLIED     lxd/instance/drivers: Get vsockID during qemu chectFeatures
+bfedeb94764b90a0cb2533f8d5d2382a5339eb93    APPLIED     shared/util: Add `StringPrefixInSlice(key string, list []string) bool`
+cf2b57e91177a6892e837d8ccd3e794d1254c129    APPLIED     lxd/operations: Use `map[string][]api.URL` as resources
+8c648efb5dddfe544fbbf0cab13f775576db1c03    APPLIED     lxd/operations: include project name in resource URL
+e4f469700830e6cdac586744137b532053567fdb    APPLIED     lxc: Use api.URL in resources passed to `OperationCreate`
+8c9ac3804764f16dc33bd88acdc0219b0e3f9fb7    DIFFERS     lxd: Use api.URL in resources passed to `OperationCreate`
+4b7dceb525940d34234c22b4d3a6b9a2bca7da60    APPLIED     lxd: replace "1.0" API version by `version.APIVersion`
+8b8eea0b270a7ec5c9d6c6c59af4de1aaa3c28e8    APPLIED     lxd-agent: Use api.URL in resources passed to `OperationCreate`
+d7dc8bc8bc8a462db323402edbb1547002cfa9d1    APPLIED     Makefile: ensure that update-po fails on any error
+cecb1e8d10b7b294c59ad2995f0abeb4a725c7fd    APPLIED     Makefile: tell msgmerge to not create backups that we delete afterward
+53d9707099787e5ed5d0c1820a92606e34ec6693    FEATURE     Makefile: update lxd-doc target to not exit a subshell on error
+c1a25c6f00b661cd770368ad513be4585b567be4    IRRELEVANT  github: re-add gettext package as static-analysis needs it
+11bb1c0324dbb2d46a04f912fb0cfe16813a5ef5    APPLIED     lxd/storage/drivers/driver/btrfs/utils: Don't fail on failure to set subvolume readonly during delete
+3e2f36d670fc6b623a62e8cab63c763e6a84aeaa    APPLIED     lxd/storage/drivers/driver/btrfs/utils: Don't try and delete subvolume twice if failed first time and recursion not enabled
+867e3f3eb836e5f947149927421df9e791fc0880    APPLIED     test: Add debug logging for clustering events tests
+f8caf5e47de96a7db04e941a12a288886d1ee5df    IRRELEVANT  github: Add system tests
+f88fd1fd5693f970fda0591d19f09536a545e3b9    FEATURE     lxd/instance/rebuild: Fix operation resources type in instanceRebuildPost
+916f032b62036c3f4a42ddd02db78285d0f70fa0    IRRELEVANT  test: skip cleanup if executing from a GitHub Action runner
+a27d7eef5599018508fbc7d6c954f4c37d046968    APPLIED     lxd/storage/drivers/btrfs: Add FillConfig function
+e53b9e59e793f8d60a5a78e39ad776af0754ec04    APPLIED     lxd/storage/drivers/ceph: Add FillConfig function
+4a793c12c90ccd34d5723ce5cc3dec103e863030    APPLIED     lxd/storage/drivers/cephfs: Add FillConfig function
+7bbf72799cf5756a9227a0c945670e9c91322fdf    APPLIED     lxd/storage/drivers/cephobject: Add FillConfig function
+7b31f3faf3361dfe91db38ab5f10c3636e4df958    APPLIED     lxd/storage/drivers/dir: Add FillConfig function
+75898fefe0c2f237adeeec665a889208b7d5f19e    APPLIED     lxd/storage/drivers/lvm: Add FillConfig function
+170efc0dc991e2a322c0d816a67b8a515996a547    APPLIED     lxd/storage/drivers/zfs: Add FillConfig function
+7ad10b938b5daeadbe3f4eaf2c4cbbe9927d1bd0    APPLIED     lxd/storage/drivers/mock: Add FillConfig function
+0e5e6413da71393f33bb757b6864e0d3cd453595    APPLIED     lxd/storage/drivers: Add FillConfig function to the storage driver interface
+831d0a88ff1f69906cf1b9e5e8fcab11a83e1972    APPLIED     lxd/api_internal_recover: Populate config defaults
+ff14c40f6379506ed998aec1ba91f0ee49e9cf0a    APPLIED     lxc/info: Show mdev profile name
+71b67aaa8da88a640b699dd4d7888b9cec7bb81d    IRRELEVANT  i18n: Update translation templates
+86f396731d2d9e34677cdf282c54db8cd90279e6    APPLIED     lxd/device/gpu/mdev: Add locking
+42584927245e5f20d425455f1c483e737b12a2dd    APPLIED     lxd/instance/qemu: Disable x-vga on mdev GPUs
+f2a9e6b4d2545195f4a313b034e2519a274f3c6f    IRRELEVANT  doc: move .sphinx directory and conf.py file
+1090dcb09ae3c31cf0ba7009610aebd4d835df91    APPLIED     lxd/bgp: Allow one hour for LXD restart
+9abdfa7079e9ccbe97569f306c79daf18bb3cb60    FEATURE     lxd/ip: improve performance of `getVhostVDPADevInPath`
+2c885398ba6d0bee68fba692fee46998d9d187db    APPLIED     lxd/instance/drivers/driver/qemu: Load vhost_vsock kernel module if /dev/kvm is available
+20145c05d7fa8357bcab23b1d73c40fffc281611    APPLIED     shared/util: Use more efficient ReadDir in PathIsEmpty
+f37431d537857073976087ba361a7b8448bd8f3b    IRRELEVANT  doc: fix symbolic link to rest-api.yaml after moving the directory
+de7cb3ac4b2e523a97c6daec78470b7e7418dc3a    APPLIED     lxd/resources: Refactor `resources.ParseCpuset`
+e90750d7dc05755d0ce9fee359a5e2c1ae8949b1    APPLIED     lxd/resources: Add `resources.ParseNumaNodeSet`
+f88067084665ec42ee8dd8a0ddf3212b1dfb8c1d    APPLIED     lxd: schedule instance on NUMA nodes if specified
+084d36040fe0e78b2affc82d5186becdb317b87a    APPLIED     lxd/instance: Reschedule instance if `limits.cpu.nodes` is updated.
+3da1ab1723511a7f18dbdd1529b4b522ce2c4ecd    APPLIED     shared/instance: Add `limits.cpu.nodes` field to instance config keys
+4d7514e778fa2817b840fded56f8efac68793450    APPLIED     doc: Add `limits.cpu.nodes`
+0f129efd0576a155e5531964db48a0af0ab603aa    DIFFERS     api: Add `limits.cpu.nodes`
+905acc718f05f1f4bf5b70a901fd6d6463fe4233    IRRELEVANT  github: Switch to setup-go v4
+d7d64e1173b618af319fc1192c3cddff004f66e4    IRRELEVANT  github: Checkout code before setting up Go
+960ad5583c54561c648d60f0aaa703cf0fc5d022    IRRELEVANT  github: Add latest stable Go version test for LXD system tests
+756275cd6020832eb0937b051a3094299cc14288    IRRELEVANT  github: Adds support for running LXD unit tests and renames Static Analysis to Code tests
+fac5de4d30bc1bce3ac80e743d75835b15121216    IRRELEVANT  github: Rename Unit tests (client) to Client tests
+20895b99979de94a68b7e5be6e5e193d09aca9ce    IRRELEVANT  github: Add random pool backend test
+da8ba821b9c08048eb2e91c8f1a65855b08d41c9    APPLIED     test: Add sleep between restarting instance and checking monitor logs in clustering_events
+743b6f8b613be4f8b18e023a7d0235c3981a2745    APPLIED     *: replace Seek(0, 0) by Seek(0, io.SeekStart) as the later is clearer
+27debd2243fe0c9d48ba03c5dea4bdc72e3fdb85    IRRELEVANT  github: Adds ceph support
+8c9577cd3ed1c18d5d8ef0053e695e24f5ca0b75    IRRELEVANT  github: Add support for Go tip
+33187672d567cc804fa1af0be546f7dc70ec9ecc    IRRELEVANT  github: Use apt-get autoperge
+4ad230da76cece575c12e8a96f7cf5a8f819d462    IRRELEVANT  github: Combine documentation steps into a single job
+e7f94972739c980fbca34a71d9669402d69c2afc    IRRELEVANT  doc: move installation instructions from the website
+be983b0924f5d1e6aea165fb3339f3c53d42f285    APPLIED     doc: clean up doc about NUMA node IDs
+9eefff35de0456fd1c44fa8d0a94c7cd89535367    IRRELEVANT  github: Add some ceph test optimisations
+f502af79ee59afb574fc7bf60756918ac679c840    APPLIED     lxd/instance/qemu: Fix vsock id type
+c4873e0cb916994fd64747007a733f93733915b8    APPLIED     lxd/instance/lxc: Fix live cgroup updates
+c4ee4f07f8b2091073f41d95e6831ab60fdacb92    IRRELEVANT  i18n: Update translations from weblate
+f73f44e1f92a11c1c9a9d0606d7b7fd8d766b20c    IRRELEVANT  gomod: Update dependencies
+d0d0845860d3fdb12745afa975f0161d2fd1816f    IRRELEVANT  github: move dependency review (~0s) to Code tests job
+0c2f4271a6326a2a24bc57b50abe0456ae94e7f1    IRRELEVANT  Release LXD 5.15
+cb2aba5f253f2d5efa94a8e0b716057963f9ed59    APPLIED     lxd/filter: Support custom filter operators
+500445fff5185bc0e233f6e15b8495875bc2f82c    APPLIED     shared/filter: Move filter to shared package
+359cbe7a94da16571d3da63cb684f3f27b691a2a    DIFFERS     lxd: update filter usages
+fc7ef5bbb6c9ad096a4aec2885bc9984f7a4c9b5    IRRELEVANT  github: Check all .md files even those at the root
+47d4869b154b5bed50443753f0ac902bea36c902    IRRELEVANT  github: inclusive naming should fail on error
+ec6bd2b4cbff7ba832da76c5987a2aeee88e78a9    IRRELEVANT  CONTRIBUTING: ignore the offensive name of our primary git branch
+e0e40cad0163154476a047e2f0fd934982600792    APPLIED     lxd/instance/drivers/driver/qemu: Fix VMs on filesystems that do not support direct I/O
+686ff7c16c616bde0d71774d99a517eb29b91a24    APPLIED     lxd/shared: Add utility function to parse the target query param
+b31e02623d7ee649116bba1a03a57639245c2e60    APPLIED     lxd/project: Add functions to validate projects cluster member and group restrictions
+3a594aa6797997ac47ad47507d74b86c317cea6b    APPLIED     lxd/db: Return a not found error if there isn't any node with least amount of instances
+0ff0233a7d3dd0fc0f3d4e6accb16efef2498123    IRRELEVANT  github: Wait 30s for ceph to initialize
+20f1f971ad71e2700839e27a7e74fbe2e020850c    FEATURE     lxc/rebuild: Don't stop all instances on force
+2fecce3fe3351bc5db70f08c6a7e3aef6abfd636    IRRELEVANT  github: use shellcheck package (22.04 has 0.8.0)
+c4be1381e66f21e7d52ec172b1afa78beaf315cd    APPLIED     lxd/api/cluster: Handle error if no evacuation target can be found
+2521a170fb12a4b3df43c41452c35b361b2bbbb4    DIFFERS     lxd/api: Restructure the cluster permission checks and use central functions for the instances endoint
+108ac7b087d1cf7de64015af12980541d91b84db    FEATURE     doc/instance options: clarify usage of security.csm
+d8002b88b5b71bb0aacf6b2ed2975510505f8f9f    APPLIED     lxd/api: Allow the basic selection of cluster groups when moving instances
+05eb9a230078b1adaf2d9bdfb6ee51b38a589cc8    FEATURE     lxd/api: Add the scriptlet scheduler for the movement of instances
+29557e27923c570b0068291ba644c35567f04237    DIFFERS     tests/cluster: Add tests for instance movement
+34ab8c8c794b6967864a6a8a63f85566dea40682    APPLIED     doc/cluster: Add comment on how to move instances to cluster groups using the target flag
+31ef2a31a91cc5bfca3ff8dda9a1e2ed046a4063    FEATURE     lxd/instance/rebuild: Fix getSourceImageFromInstanceSource usage
+d6b87a9e60e6bf1e9c5e45172801a91ee10745ca    FEATURE     lxc/rebuild: Restart instance if it was stopped
+a449a65f9c47776e3b518fe56c58c6bc53514131    FEATURE     tests: Update for force rebuild change
+af5bccdd510b68b3e67de53037ce7791e98c8b43    IRRELEVANT  github: Simplify test suite invocation command line
+1264d61c8d6b1245a69ba13d3a62e5258175a0ba    IRRELEVANT  doc: add missing information from website to docs
+2c1544678394fc9a207bbd9a0f5a032787ba0842    APPLIED     lxc/storage/volume/show: Add missing documentation in help message
+602173c44edd2627ab593d22cbe1e9de1a147f54    APPLIED     lxc/storage/volume/edit: Add missing documentation in help message
+8aa741a9124eb63c27916b3350d27dc64c036f52    APPLIED     lxc/storage/volume/set: Add missing documentation in help message
+b0a76d02b0c91b4343c6a67e196c62d9bdaf04bf    APPLIED     lxc/storage/volume/get: Add missing documentation in help message
+019ca933797bad685d827391bbc40f6dd586af57    APPLIED     lxc/storage/volume/info: Add missing documentation in help message
+0942f8d228b2b972c9f7c71f11000209f02a2046    APPLIED     lxc/storage/volume/unset: Add missing documentation in help message
+c841f7b16ac6d2e52a55e671ea3d9eec426765ce    IRRELEVANT  i18n: Update translation templates
+a62078ba253283ee67ed85deb3d3e93c7199f8a5    IRRELEVANT  github: Adds storage bucket tests
+3930536cc477b945f202df8716cc9ab1e2cac8e4    DIFFERS     lxc/launch: use aws:t2.micro as t1.micro is no longer available
+40b4f0d97b5704d3042a2fad883b2c5d768d3612    APPLIED     lxd/storage/util: use a power of 2 unit for address space limit
+3be064b6efc76b2833ff26fe9d707c724bee03e8    IRRELEVANT  doc/*: use power of 2 units for memory/storage (MB -> MiB, GB -> GiB)
+4d63f31b06efa589b6d797bc7f9c5fe0f01eb67a    DIFFERS     test/*: use a power of 2 units for memory/storage
+2617377a889d0ff7bbe7956e65f71e18574a46c7    IRRELEVANT  i18n: Update translation templates
+dcb140ff2f3246a825c0dee97eeceb08de619c12    IRRELEVANT  github: Enable cephfs tests
+96f30ab1d8a045a9fb0bd25efe2f89f6339d2d2c    APPLIED     lxc/delete: Allow deleting multiple snapshots
+643ccbe34bdebefb043e6f80236d555e5e6f7652    APPLIED     test: Test deleting multiple instance snapshots
+2f31acb00257f136c10e7f9c4e3dbb7fa0778ee4    FEATURE     lxc/storage_bucket: Add missing target flag for bucket key list command
+53b983cd6cd6521b023bdb4e4f292e040973e7ef    APPLIED     doc: exclude pages from search index
+a0ef37cd0d6124fdd5bc70f911a2eee2df6aef8c    APPLIED     lxd/storage/drivers: Don't add filesystem suffix to VM images
+c4f9cd60220914c2f176a9d58d4339ce9fca8a6e    APPLIED     lxd/storage/drivers: Drop block options from VM block volumes
+d8937db9aeb101998c9d3f0baf775c450860b358    APPLIED     lxd/patches: Drop filesystem suffix from ZFS image volumes
+2a0777fe85f7ce2f8b321a1fe8a6fb7a52094fd6    APPLIED     lxd/storage/drivers: Drop FS suffix on VM image block volumes
+2126d73eecbfbc52d44216a8b20b85de85e3295c    APPLIED     lxd: Fix deviceEventListener resource scheduling when joining cluster
+9fc9883cf6d0177780dcd1b92bf610ade4390db8    FEATURE     lxd/storage_buckets: Forward response for bucket key list if target is remote
+449fc1ebbaf4c12c60e2e42b7fdb0330055192ba    IRRELEVANT  i18n: Update translation templates
+c23cf2f0c03dad916f8fe2de38fcd1aaaac79b3f    IRRELEVANT  doc: change favicon
+e1313377f7caca7abc7bae92b8c74d7f0989c72a    APPLIED     lxd/instance/drivers: Ensure root disk device
+f340f60d26354c5f0255f58ee35543ec6aeff693    DIFFERS     test: Test assigning empty profile to instance
+7a127748a3d548ad9812ad4514aadd1b419c2ed4    APPLIED     lxd/instance/drivers/qemu: Use uint32 for vsock Context ID
+67f40160bd96b9e1e32a68188677c54b64f46314    APPLIED     lxd/instance/drivers/qemu: Add function to retrieve the vsock Context ID
+90ea2ce206377bb9f48d14968d89b8e467d365e0    APPLIED     lxd/instance/drivers/qemu: Pick a random vsock Context ID
+952b54a111f03e09be04ada2b9ed154fd5fbad3e    DIFFERS     lxd/storage/drivers/btrfs: Add reverter for volume snapshotting
+1b79d993d2d5b5073b2a30cffe63de53f20b5224    APPLIED     lxd/storage/drivers/btrfs: Change misleading comment in snapshot creation
+490288306eaef21bb1de6b5d0bc9d199d26cecba    APPLIED     lxd/storage/drivers/btrfs: Expect volatile files when performing snapshots
+d8c791507f7ea7bb1623abaeda52a4681b7d608e    APPLIED     lxd/storage/drivers/btrfs: Mark btrfsIsSubVolume as deprecated
+f7d19be6b8d626dda81fb98b087e4d4aa302efb4    APPLIED     lxd/storage/drivers/btrfs: Expect volatile files when performing snapshots
+e39da06e7bc273beb062b85574ecb8c5a7ee7ef5    APPLIED     lxd/storage/drivers/btrfs: Use IsSubvolume consistently
+4d7f28df166d9b7f831c072e4865b50d2146765a    FEATURE     lxd/storage/backend: Use project as a prefix for bucket volume names
+ee68f4abe903b3aa706faa47218b4813de15bbf2    FEATURE     lxd/api: Pass project name when activating a bucket
+d6e27e93c8b3e6984fd2c2d5d40ae306bec01117    FEATURE     lxd/storage/pool_interface: Update ActivateBucket function
+d149ed8833d998558fc354b9da6290074dc6ab06    FEATURE     lxd/storage/mock: Update ActivateBucket function
+809ae56ab57bf5e0c5c7ea6618801ab43b1de4a5    FEATURE     lxd/patches: Add patch for bucket names prefix
+fce654490de04a646cbc80c18a58a07522b599a0    FEATURE     lxd/storage/backend_patches: Patch bucket names
+30352806dc024c9fde244a43d993c6ea2f40c94f    FEATURE     lxd/storage/driver/btrfs: Add empty patch reference
+88bc87c4610892a91fbc8d29702741bdd0b2ff4a    FEATURE     lxd/storage/driver/ceph: Add empty patch reference
+eff16f6dd7ecd08d4817bc90477792076ebbdebc    FEATURE     lxd/storage/driver/cephfs: Add empty patch reference
+32e17a0703502c852a95c00c28adf4009d22f1cd    FEATURE     lxd/storage/driver/cephobject: Add empty patch reference
+4d289fdd9f2a32701bbc66b3aaef6f392a7fd262    FEATURE     lxd/storage/driver/dir: Add empty patch reference
+7a2cc99babf9b63e3a3913c2bee63ddecce420d2    FEATURE     lxd/storage/driver/lvm: Add empty patch reference
+3a9e4904803ba53df71266a3235403c773bab383    FEATURE     lxd/storage/driver/zfs: Add empty patch reference
+7a63aff27549991127f90b609d6e5297b7da3403    FEATURE     lxd/storage/driver_common: Trim project name in bucket name validation
+22998ee8541eb401ea0caa17a46e9bbc49c53dc4    FEATURE     lxd/storage/utils: Prefix bucket volume name with project name
+338b2b0ff62e4d0134a38c9837f42e9eee4751b9    FEATURE     lxd/storage/driver_cephobject_buckets: Trim project prefix from storage bucket names
+6c186ed536e64c10487545c806717964b78de25b    APPLIED     lxd/db: Add new content type "iso"
+0de80e3cdd1b7ae719a2f8ef3e1f719f43f5805c    APPLIED     lxd/storage: Add ContentTypeISO
+4740f8e40b12c653188d91cfcb64a14af79ce56c    APPLIED     lxd/storage/drivers: Add IsContentBlock()
+249d3b59d3db9090a9c4195cc9135630cb98d20e    APPLIED     lxd/storage/drivers: Handle volume disk path of ContentTypeISO
+a37c773e895457894d9015ede44143917f3c29f4    APPLIED     lxd/storage: Add CreateCustomVolumeFromISO
+b4432f481f8d0e3e854c6ca7be28a7c6307348ec    APPLIED     lxd/storage: Disallow some actions on ContentTypeISO volumes
+9cf74b118494b5c524b16fcbe78fa37d10fa3c81    APPLIED     lxd/storage: Support copying ISO storage volumes
+f38cd47588650832b968041e6493f9740470a179    APPLIED     lxd/storage: Handle migration of custom ISO volumes
+605870e53028c8840b52cf6ca551ab9fa3e38dae    APPLIED     lxd/storage/drivers/common: Handle ContentTypeISO
+35ad67be00d257f396760b06c0dc2660b2c75b1d    APPLIED     lxd/storage/drivers/generic: Handle ContentTypeISO
+27f8c95b8b1ccdcb0c71aa85d6b1ba23ed41b740    APPLIED     lxd/storage/drivers/dir: Handle ContentTypeISO
+4b30022d569f73c0b1f423bce94090161753cf37    APPLIED     lxd/storage/drivers/btrfs: Handle ContentTypeISO
+9ec1ff849d712ff21830d3dd570a820dd6488c20    APPLIED     lxd/storage/drivers/ceph: Handle ContentTypeISO
+c97c41008b6f7d1398b5650d9daabc5a5b1a02f5    APPLIED     lxd/storage/drivers/lvm: Handle ContentTypeISO
+ddb3b6be8093d850055e2e65ea42698f73c52990    APPLIED     lxd/storage/drivers/zfs: Handle ContentTypeISO
+81ffb0146a5cc770b3a0fa130c4e9b716cf6323e    APPLIED     qemu: Set media=cdrom for ISO 9660 images
+15bbc178d32c3db5235e02512c2762a922ec28af    APPLIED     lxd/device/disk: Handle ISO custom volumes
+f1182b99224eaa71e6251caf7e602067caafc11d    FEATURE     api: Add custom_volume_iso API extension
+3b227d76a03c4f746af050f04f0eab3de4bf3f87    FEATURE     lxd: Handle creating custom volumes from ISO
+65ea6a7e96055c3687a35a70bbd114ad106a8f3b    APPLIED     client: Add CreateStoragePoolVolumeFromISO
+65f7eec26b81bcf02e564455c329d57c500ada4c    FEATURE     lxc: Support importing ISO images
+2d5c0522d174b0fa59e68225ca79e3f3d4fa3e90    FEATURE     test: Add storage volume import tests
+51db25b2be1545a110e4b0f74cb0f940ae4972dc    IRRELEVANT  i18n: Update translations
+b687a1971512c5ce8d77c866b75edb96dd600584    FEATURE     doc/explanation: Add `iso` content type
+ea02795aeb80b7f7f8ee127b1aa1e6e0c22ca2c5    FEATURE     doc/howto/storage_volumes: Add custom ISO volumes
+8fd520628a2cfaf5fcf38f6dc9a3a713018554fb    FEATURE     doc/howto: Launch VM and boot from ISO
+80598d1c708e18f26de38b1a5fbc103025714338    APPLIED     lxd/storage: Rephrase restriction of snapshots
+7e986fa4c5931645170b362b376a5b3799a8c348    FEATURE     oidc: Don't fail if server is not reachable
+6ed5dccc0913cff892855219e4d8e033d197158e    APPLIED     lxd/device/veth: Fix MTU handling
+569da41bfb23b9dd1194d8b15b2fc3077fedf223    APPLIED     lxd/device/tap: Fix MTU handling
+d05d299413c0e51b81b2a0aa029d1c005b481525    APPLIED     tests: Update for bridged host MTU behavior
+00da3715c9ac1a06581b7e1d23fc4a0f9607a3d7    APPLIED     added a heading in the client/operations file that was missing
+cec4fa1363ee262eae76d631ab16f22a0b22fae8    APPLIED     some functions in the client/lxd.go file were missing the documentation headings
+df67050e971f888f6b1b371a6b72f45f6a6b1510    APPLIED     Added a heading in the client/lxd_candid.go file that was missing
+224be291fe403dab6eab33868a2302b529d49c7a    APPLIED     Added a heading in the client/lxd_containers.go file that was missing
+5300208cc1b50ba96ed179733c24d0ab35804f93    APPLIED     doc/howto/instances_create: give an example of VM launch with a bigger root disk
+e76327d2faaf563ca08654e723fc105b28191368    APPLIED     doc/howto/instances_create: s/a Ubuntu/an Ubuntu/
+facf81d8b19ba6e374407d5b5691fdc747a90dcc    IRRELEVANT  doc/howto: replace images: by ubuntu: remote where applicable
+8a3c6a29c53b699c79ee4ac8ce9dd8efb8e70961    APPLIED     doc: Fix typo in edit a profile section
+c72cff5b858ce14322677f2d8c617118799c3867    IRRELEVANT  doc: update header
+5cea2ca9b00f53b38d9cb06c429b32a8adfe4691    IRRELEVANT  doc: update links
+212ee7fc6d4c38a0ec7cfecad94206b715184721    DIFFERS     SECURITY.md: update security policy
+c71364da3c8122331d5b6ca0a8d143504f2011e5    IRRELEVANT  actions: fix main branch name in GitHub check
+fa0571c4cc08d2720b6a38e2794fc3d9da129061    APPLIED     client: Rename imports to new go module
+a88f7d9c871cee60d5ed3d2f285d3dc2f7e70352    DIFFERS     lxd: Rename imports to new go module
+adb697c4e189aecff1d31c10e0f726d645aead06    APPLIED     shared: Rename imports to new go module
+6a257190f966f6d1f3d47e4d55fca7fcc9e5b93e    APPLIED     lxc: Rename imports to new go module
+3f8e90177f0f610e1af4451296846929524faa27    DIFFERS     test: Rename imports to new go module
+6d08492c7c7dc936882e54c273f9131d758589d4    APPLIED     cmd: Rename imports to new go module
+35ade0f920a129bdb37a54cee6e78e58ccf54c32    APPLIED     test: Fix checks after module rename
+4285d3c4a3adafcd50d77c2f2bbea95f328f3b3a    IRRELEVANT  doc: generate rest-api.yaml
+9aeae537fec9d616f03dea8fffec610120fd3a63    APPLIED     lxd/instance/drivers/qemu: Skip container config keys
+b8a4987af5f3ea2a5d94cdb3cbbd89bf3cf44d91    IRRELEVANT  doc: Update links to new locations
+d79ffc269e75b4b2e6fced992d5b177112ad43e6    APPLIED     lxd: Update links and addresses to new locations
+11fd54bb9f8f81c2ceac14ce8b19ef37b3e6b3d3    IRRELEVANT  doc: fix broken links
+d0440c5b7991d297f0d6f1dbcf94a37d8cda3a9c    IRRELEVANT  actions: make linkcheck fail
+a9fa472c674f9dce4813490d7a95d4b0ed22d827    APPLIED     In the lxd_instance.go file, I added the heading to the rebuildInstance() function
+8e2ae3b8d8e3feb37fe73c265cc7b274ab24b996    APPLIED     In the lxd_instance.go file, I added the heading to the tryRebuildInstance() function
+5326a844cfc9184344ad145d3d15e06a121c9431    APPLIED     In the lxd_instance.go file, I added the heading to the tryCreateInstance() function
+e1ea0e729d3f485f6c00e94dafc9bfb32224a845    APPLIED     In the lxd_instance.go file, I added the heading to the tryMigrateInstance() function
+23c61d4edf7465204929a2ebe9031c7c14ea9290    FEATURE     added headings in the lxd_oidc.go file functions that were missing
+4de32757923689f7460e530ed22b53bf52ec7d54    APPLIED     added headings in the lxd_storage_volumes.go file functions that were missing
+cc1bc6aefa0b65aad1069df1a873662e83eb8d1c    APPLIED     added headings in the util.go file function that was missing
+7de0d438dc5039f7a6036c19e0899a9a6ece35f6    APPLIED     lxd/api/cluster: Remove obsolete group delete/create for post
+1434daf915e48c0fb986303045aaaed1358608ea    APPLIED     tests/cluster/groups: Add test for cluster group edits via PUT
+7b94f65f44af3944da7a2d5d1afd8374f0a73802    IRRELEVANT  Correct `sysinfo` system call header level
+d4550f9178d0760e960eb641cff1a1ea67b9ffd6    IRRELEVANT  i18n: Update translation templates
+d1220e9aa5c2ef4568d808498db37f96aa5bd992    APPLIED     lxd/device/disk: Disable hot plugging of directory disks from VMs
+0f149b0825f1f6eed2ae9cca7db5165db64b8830    APPLIED     lxd/instance/drivers/qemu: Remove obsolete directory disk check
+b284f3c14a9fcd9407a8b376ab1896bdfb720e98    APPLIED     lxd/device/disk: Use functions to check for Ceph RBD or FS
+67be7f035208a8d3c277c9fc37d5d2fe76680445    APPLIED     added multiple headings in the files of lxc directory
+0d70cc17969654874409485a7c48393f0b5b9ec0    APPLIED     added multiple headings in the action.go file of lxc directory
+5ffadd884e462f8ccfa4c02c0a36617fcc14bca2    APPLIED     added multiple headings in the alias.go file of lxc directory
+9ba765fe0b6cba8c5aec21f95a753ccc9b220a7b    APPLIED     lxd/instance/drivers: Update system unit documentation
+fa595dea7577c4848537cea863b12021384c355e    APPLIED     lxd/instance/drivers/qemu: Restructure live updateable keys prefix check
+043c7256b8ca2dbdbdd25d4609db6d28816051c0    IRRELEVANT  doc/metrics: mention that metrics authentication can be disabled (not recommended)
+4235481254fd746497f0b488bb1a0cfb1dba905d    IRRELEVANT  github: Move documentation builds to the end of the documentation test workflow
+a890172b520d0e56072a14fbbaf33921b61e61eb    IRRELEVANT  github: Move lxc client builds to test workflow
+a6b092676bb3ed92dfdc23e665dd1820ae6ba10e    IRRELEVANT  github: Removes unused builds.yaml
+3a86e4667645ba8e81746c9e91e783242cd86a2d    IRRELEVANT  github: Use ubuntu 22.04 in commits workflow
+6f1571bcd7b6ac7b0ac4fbebe1a17aa6096f48cc    APPLIED     test: Sleep for 2s when making clustering event hub changes
+d56198cd04f103c245318f95158d18d9741be67f    IRRELEVANT  github: Add launchpad snap package workflow
+b9ce71e86bd2ca8c6e21f16e70d0dbc94b3363a3    IRRELEVANT  github: Remove newline from fromJson call
+c1a4f63e25880e3c2fb9bee22dbf111cc1ba2443    IRRELEVANT  github: Run launchpad build workflow when Tests workflow succeeds on main branch
+47656608458afe35bf6df3ff639de150edb090f7    APPLIED     Added headings in the cluster_group.go file of the LXC directory
+a8eda0329e0f0b24adae648491afebd81d46363e    APPLIED     Added headings in the cluster_role.go file of the LXC directory
+fb4b68d5d9a44fc1d48044f95cbcd2f42baece5b    APPLIED     lxd/db: Return instance type from GetInstancesByMemberAddress
+b30784f901fcb07f78ad16db03d3e5c25e7867cd    APPLIED     lxd: Add instance type to instances of offline cluster members
+2ce647c54ec08e6787c2a902632ae18145a8a6b6    APPLIED     lxd/storage/drivers/zfs: Don't delete the target volume when migrating
+e71a91da57ebe1783893318a81d184c2d0debbe7    IRRELEVANT  doc/metadata: update link to our logo
+e99513bb2c0a66eee253dc912468f6e24fef8d76    APPLIED     doc/contributing: the default branch was renamed to 'main'
+f7487203d1df3951fb5589769c6342d9abdb8b57    APPLIED     lxd/resources: update link to systemd github repo
+4e3b543061fd9a85c83792cd2381fdd5809c9626    APPLIED     lxd/migrate: update link to doc (new path and branch name)
+1342e756d36ce650a07981e8a764884569b4995d    APPLIED     lxd/main_cluster: update link to online doc
+f16c47c8cd4fec7523b71238ff14c0b058c21ca6    APPLIED     grafana: update link to online doc and dashboard ID
+e16ae38800852e786b01a472f92f91796c83fa3b    IRRELEVANT  doc/metrics: update link to Grafana dashboard
+15667c778c90ddf880bc46598016eeec402a95b8    APPLIED     lxd/util/http/test: Update hostname s/linuxcontainers.org/example.com/
+005c9ed22f93b1256501fcdd6e348dfcef6551d5    APPLIED     shared/api/url/test: Update hostname s/linuxcontainers.org/example.com/
+602ab661dc0585b0169fb7528af891f3eaa3feb1    APPLIED     shared/cert: replace org name by "LXD"
+5aa4ff8f4dce9102491ab28275f99f5befdcf6f4    APPLIED     lxd: Check project permissions when importing from backup
+3f2ec86a408a5a8063fb1cedf711cb948aa2d987    APPLIED     lxd/instance/drivers/qemu: Skip every other vsock syscall error except ENODEV
+242bd2c2df4c0dc3f7cf4a2cc2943d897db36388    APPLIED     test: Check project limits when importing instances
+bbfa286c95992afb4dab1b79ddc45134626f4bb3    APPLIED     lxd/firewall/drivers: Optimize xtables network forward rule generation.
+fbd48034cecc8aac4ae8a3fcb7480ef5b204b011    APPLIED     lxd/firewall/drivers: Optimise nftables network forward rule generation.
+8356c0f77cd3b8536c8fcadcccfaff232183d516    APPLIED     test/suites: Updates network forward suite for optimised xtables rules.
+724ca2274ecc3f602ddd1aedf6f2f99b9688eae4    APPLIED     test/suites: Updates network forward suite for optimised nftables rules.
+5c60a70e26912d80aa63439333c897bf06905a73    FEATURE     doc/metadata: Drop now unused file
+db9ea327e1c3ea3e10ab903f92d353d2b88f953c    APPLIED     Added the headings in multiple functions of the config.go file
+bd39e8a8625f80b1da0404d9b6d4e2ea80942d02    IRRELEVANT  github: Adds launchpad snap build trigger to tests workflow
+8be84b83672336e2aeda7aeb8d057095cf48b9d0    APPLIED     doc/storage: clarify when to specify storage volume type
+f0342e3ed92a8589c10b45ba030279bbac38f3e4    IRRELEVANT  github: Testing logic for LP push
+3a7a9c8bd7d7bde8990ecc8a786fa73ad4a06393    IRRELEVANT  doc: use `systemctl reload` instead of `snap restart`
+6dc6fbfb95eedb192510a831d96f57675c0523c3    IRRELEVANT  github: Fix vars
+8a2689e6c77869f8577c37e6223a0e8e7ace1d91    IRRELEVANT  github: investigate gh vars
+21cf1d72c8ef9093e4a1d68a693d321b9594ed28    IRRELEVANT  github: Push to LP when tests pass from a push on the canonical/lxd repo
+3f6dd9444d86ca3eb1baab3cb06f13b2049cb1e9    IRRELEVANT  github: Remove builds workflow
+e117a162679e94f120745888e61ac8e11a7e5ef2    IRRELEVANT  gomod: Update dependencies
+6fd58a951690c1816122ad94b7d2d828853a48c8    APPLIED     lxd/migrate: Fix go routine leak in disconnect if client never connects
+284e7c3e0c295c9acd1719ce98cb8f0440bf3dc5    APPLIED     shared/subprocess/proc: Fix go routine leak in start
+ee842dc54024cf1c82cf51eb2adabd35ed66246e    APPLIED     test: Cleanup instances at end of metrics test
+668471a4a251bc1ab0bf0479124e0654c91c320f    IRRELEVANT  gomod: Updates dependencies
+601e0f1dd842dc5c2de79755842123d3b8266d8c    IRRELEVANT  github: Add stable-5.0 LP push support to test workflow
+99aa19928eeb4080e8570c940fc9a67c842d0d9f    APPLIED     lxd/instance: Prevent MAC/address conflict for imported instances
+3c450d23b30170561ef79986f0c56e175e5af046    APPLIED     tests: Add container export/import address conflict test
+5f555ceb15e73444052575628d0f81f02a284fc2    APPLIED     lxd/storage/drivers/zfs: Fix content type detection for custom block volumes
+c4f1d679a2c9c5ee080fb2e7c5ca26b903c74866    APPLIED     test: Test recovering custom block volumes
+1ffdb454c2d231b22f186aff07257c1ca7bfbef6    IRRELEVANT  doc: update to use the ubuntu: image server
+68dd6be59beadde69876299d20f6327b63094e7c    IRRELEVANT  doc/storage/zfs: clarify ZFS block mode
+4321ca664d2da003346c7c0e464a121ec2ec4f13    IRRELEVANT  doc: update information about provided/supported images
+7a41e668a04535fa904aab3a50ec4c7cc3abc6bc    APPLIED     lxd/instance/driver/qemu: Use happy path style
+e64aa4f6d2a317020e7db3788f2c010b8b7354ce    APPLIED     shared/ws/mirror: Remove unused MirrorWithHooks and use MirrorRead and MirrorWrite in Mirror function
+d9cf61e6158aec31d898d19fe6b07b148fff9a4a    APPLIED     client/lxd/instances: Don't wait for remote viewer to finish when LXD connection finishes in ConsoleInstanceDynamic
+e2bafaeea0c02e2ba5df2107e867c3bafa7fa81f    APPLIED     lxd/instance/console: Improve logging in connectVGA
+b64024f7a8213cd7495a3dcd90a0ca72c272819e    APPLIED     lxd/instance/console: Improve logging in doConsole
+49835255ad35c378b29f512041488196bfde839c    APPLIED     client/lxd: Use ws.Mirror in ConsoleContainer functions
+c16f628ad134e743a2e10a6498279ee9caaca459    APPLIED     test: Reset rsync compression mode in migration
+28a1f9273579b6736662221f48244d6641b5c2ee    APPLIED     test: Force delete instance in migration
+0de997b28037fcb67636b2214e2073c3a4ed48d3    APPLIED     test: Fix lxc-to-lxd tests
+d1e3f0bb4c10742daf1320637eb87b35f5c4d7ef    APPLIED     test: Enable lxd-to-lxd test
+a3a16a4abc93c5eae849bf8b588a849063cc949b    IRRELEVANT  github: Install lxc-utils for lxc-to-lxd test
+5e9340023a8bc40c084f0731e7664f5cc88bf388    APPLIED     lxc-to-lxd/transfer: When remote websocket reaches EOF close connection to rsync
+ecf381bd4b17e52abf7afbccd4da786902dccc5f    APPLIED     lxc-to-lxd/utils: Use abort function earlier on
+172ab37c952dd3a620f6eee67597aef2aa745251    APPLIED     lxc-to-lxd/utils: Detect and fail if negotiated rsync features don't match
+b60b43ab0af847c10e6c04074d4b22c91819fa71    APPLIED     lxd/storage/drivers/generic/vfs: Improve logging in genericVFSCreateVolumeFromMigration
+7223e82a5efed45c73ecdf2bfdec0eb9982e7b9a    APPLIED     lxd/storage/drivers/driver/ceph: Update MigrationTypes to support rsync xattrs
+1b8f857f8ff9a44c9f41dddeb9cfdfe4ac2c4213    APPLIED     lxd/cluster/membership: Apply MemberConfig to storage config table
+fa34341b13873940d1f9986c10a77bd00489a39e    APPLIED     shared/ws/mirror: Don't send normal close message at end of MirrorWrite
+af0b258a83dc10cd22c23b9f599a36dba6f741f7    APPLIED     shared/ws/mirror: Setup defer to close channel first
+435598f76ca04a2aa643bb56e2d5c42af29accce    APPLIED     lxd-migrate/transfer: Pass context into rsyncSend
+215690488b4b59c418ec3d394b22beaac066d0df    APPLIED     lxd-migrate/utils: Improve errors in transferRootfs
+46385e4b521d10a045ade161d8f2bab751c397c6    APPLIED     lxd-migrate/utils: Use abort cleanup function earlier and more often
+206db3347918a0e12466bd39ae23cfeafd71b887    APPLIED     lxd-migrate/utils: Detect and fail if negotiated rsync features don't match
+611d427befb6231678913aca1a183c94db26310a    APPLIED     lxd-migrate/transfer: When remote websocket reaches EOF close connection to rsync
+293f36fc9fffde644e2eabcae2babb4576c39b2b    APPLIED     lxd/instance/drivers/qemu: Occupy vsock Context ID through syscall
+9a1457a8b126ff6c8b313d0bd27c5f30bd106ff0    FEATURE     test/storage_buckets: replace which by command -v
+20efaf21d6e2297758ac77425bfe32ba9eab1806    APPLIED     lxc/profile: Add refresh option for copy
+cc3022beadc866f6e8e0fa36dda5b00626644e58    APPLIED     doc: Add busybox-static requirement for running test suite
+8bb5f1dd32e88b3cadb85e67957830bb9bf63b5b    APPLIED     test: Fix flaky clustering image refresh
+3a3541c8115205a52d3ded6da2d276d50ac11ef0    APPLIED     ceph: Detect custom ISO volumes
+8fa454dc614de1e21f3efebe4afe12836d5a5759    APPLIED     btrfs: Use suffixed volume name when deleting custom ISO volumes
+9a99db650bb24045803beabd57a0167e1c903e09    APPLIED     lvm: Detect custom ISO volumes
+1476639bab9bd7499623b12b8236a9889fc82511    APPLIED     zfs: Detect custom ISO volumes
+567f412d7e2fd4a42d8516445eb1868545f3d596    APPLIED     generic: Detect custom ISO volumes
+71e4a522142a4fe725f41f443e1e7f9e7bc4381a    APPLIED     volume: Get mount path for custom ISO volumes
+508bbd4f478f0b57752075768d0eee9543c83929    DIFFERS     patches: Rename existing custom ISO volumes
+522dce2bcd6afabedbe2414fe328721f7436f272    APPLIED     storage: Detect unknown ISO custom volumes
+20d50a091b53b8e87d1a80a6f323a1c6c5db6409    FEATURE     test: Extend ISO import test
+fa6e26c65195618b58adf932d83589e1e6c5d822    FEATURE     test: Recover custom ISO volume
+e5fb2b197782f16bf348a7e4ef6bee1d0b3d4e24    APPLIED     lxd/device: Add `checkAttachedRunningProcesses` function
+543441731d605a3c4e5e7460ddc4ff1e61f2fac8    APPLIED     lxd/device/gpu: for VM, if `gputype=physical`, check that that no procs are tied to card before unbind
+24a2e3fc69bd29aeb7fba456f218155f48358172    APPLIED     client: Add `getInstanceExecOutputLogFile` and `deleteInstanceExecOutputLogFile`
+3c3958a9e7e4fa148243b0e57d7752b26c95bc7c    IRRELEVANT  workflows: Remove golangci-lint install from workflow.
+763b387f8ce4485c1ac0f976e6052c675e11e9eb    APPLIED     client: stream the content of the exec log file to stdout/stderr within the `ExecInstance` func
+b0fe90df931f3dca164bd34c78fc6a9cc3696d74    IRRELEVANT  i18n: Update translation templates
+3f5a1db2b645bb4f0803a550781c84b1f3da370c    APPLIED     tests: add tests for lxc profile copy with refresh flag
+3e00eb980f5ddae26effb7d3a375eec887f8412c    APPLIED     Makefile: Install latest golangci-lint if not already installed.
+f34ef7d589f29fdd997662ee5d534781d8deea58    APPLIED     lxd: Fix gosimple false positive.
+b561413f03c8ce6f147bfbe3e9d07560c860e9bc    APPLIED     shared: Remove BuildNameToCertificate.
+4f89bb0ce9360579b49d9e17165a87f91f90de6e    APPLIED     lxd/util: Remove BuildNameToCertificate.
+26abf94b3276eed5cf24ed6d32077161f1f169cf    APPLIED     shared/netutils: Move C code to top of file (gci).
+c6f39ed0147c87899c86a0154c0c6bf8663f88f8    APPLIED     shared/linux: Move C code to top of file (gci).
+fd9a5eb5cb97efbe68c08d5d12617d8c9249bac3    APPLIED     shared/idmap: Move C code to top of file (gci).
+0901f6c1d08e8d64574d42d56748e3079f4317aa    APPLIED     lxd/storage/quota: Move C code to top of file (gci).
+88db17fbcdbf4397c7611f518360ebc450148c58    DIFFERS     lxd/seccomp: Move C code to top of file (gci).
+d3561b169bc953242a3843ab1c61631f422c32d2    APPLIED     lxd: Move C code to top of files (gci).
+7a91dfc4672b20cf9608b51bd945a071133cab62    APPLIED     lxc-to-lxd: Move C code to top of file (gci).
+278e530685a3700cab389929d4b6139afd280053    FEATURE     lxd/storage/utils: Add util to get bucket from DB
+889a816805b66f58b15af724de3630a11e428c61    FEATURE     lxd/backup/config: Add field bucket to the backup config
+cf81416af99ebb85755a54119d050c378990b0a6    FEATURE     lxd/storage/pool_interface: Add ImportBucket function to the Pool interface
+0159832e7e8c9aedaa364c7362a15793dd93cb27    FEATURE     lxd/storage/backend_mock: Add ImportBucket function
+9d1f858ffea7ce7c4b1fd977d45e126949aa0e82    FEATURE     lxd/storage/backend_lxd: Detect and import unknown buckets
+c609974de4ab49415cc8e7bcb86aaaa1e711d366    FEATURE     lxd/api_internal_recover: Add bucket recovery
+9231a8470b17ab795460a0fe7a0626c180c4a0f7    FEATURE     lxd/storage/s3/policy: Add function to retrieve role from policy
+de3f0aefefd573042bdc4ba52e5ef3629ff78178    FEATURE     lxd/storage/backend_lxd: Recover bucket keys during bucket recovery
+f2a38217e15b0d7323345553f71cdc775c422c20    FEATURE     test/suites/backup: Add test for bucket recovery
+d55b2dffd390bdf74c46d82b7d38edacd21ef491    FEATURE     test/main: Add bucket recover test
+d8cf88d59b128f9bfe5e0ed0b1da2052f4d04dea    APPLIED     lxd/api_internal_recover: Skip unsupported storage drivers during recovery
+5ccfe971c9734795900f4e0e811edaef9cdb4b4b    APPLIED     doc: Use JSON object as term instead of dict
+30fa22b190642661a5032d9a1cf36235c3fbb64d    APPLIED     shared/api: Use JSON object as term instead of dict
+fe651fd670d98451b9bb745cc8297767b2079891    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+e1e9f376763ae2e77a0d6d59e15787df199b2e8a    APPLIED     lxd/operations: Use JSON object as term instead of dict
+0835f6a06b9c9ed6429423a413e2fca93d7e41b7    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+ff00111ba541a1f765777a87bad42768208fb1ca    IRRELEVANT  doc: explicitly state title of related link
+65ccda820e3030e55a112a9c949a4f59fcdff33f    IRRELEVANT  i18n: Update translations from weblate
+b5ac538272870863c974a0fc4b1b5afe32ac7bff    APPLIED     lxc/cluster_group: Added lxc cluster group add
+a5118c6d14f38f51af04bb6364d92e3f2d48f1b0    APPLIED     doc: Added lxc cluster group add
+c448958c681ebb53b2f59cf6aa9ad00f86c4350c    APPLIED     test: Added tests for lxc cluster group add
+868a4ce68bbe3607453fe14b8ab12fea8f474601    IRRELEVANT  i18n: Update translations
+a02702d861011dd01e08f4d7a4481d26b3ff6964    IRRELEVANT  doc/getting started: add a tutorial based on the LXD demo
+6356ca028749b9dc74aa74e7a86eec243d7160c8    APPLIED     lxc: Add `stringTo{ Type }HookFunc` utils func
+995a814e5c52a25742b8ec134148a864968aabd5    APPLIED     test: Add unit tests for `utils_properties.go`
+dcf3015e5ae7ccbff1d26031feee8ad36914aa26    APPLIED     lxc: Update `get/set/unset` command for `cluster` properties
+a6d6d4b7e7aaa4c502b9483b87418375a6f62c24    APPLIED     lxc: Update `get/set/unset` command for `instance` properties
+03fb831a79d6a6a943249f681621ad00513a6214    APPLIED     lxc: Update `get/set/unset` command for `network ACL` properties
+d6a41d391573c79c739ae5d3f8453bc620e567ec    APPLIED     lxc: Update `get/set/unset` command for `network forward` properties
+2dd1c1a01884c84ee4969fbbdd13a6603c7dc999    FEATURE     lxc: Update `get/set/unset` command for `network load-balancer` properties
+a0cbef2de9de9eb4d59b7ce204808d0a33ae0210    APPLIED     lxc: Update `get/set/unset` command for `network zone` properties
+69affc427de0bbde1a09c6b84001c341eb7f29c6    APPLIED     lxc: Update `get/set/unset` command for `network peer` properties
+aeefded93e44f48a9f683d789e6ab36298f35236    APPLIED     lxc: Update `get/set/unset` command for `network` properties
+f5d7da5bd5177a583a836d6434452a782e9feb88    APPLIED     lxc: Update `get/set/unset` command for `profile` properties
+e275eadd5aa34e3d6a8b60f3010743d3fc073c08    APPLIED     lxc: Update `get/set/unset` command for `project` properties
+e1407692cff8b97de495af946883ce2991369c82    FEATURE     lxc: Update `get/set/unset` command for `storage bucket` properties
+74586089a9c198f54614616a229bc2bec989aadc    APPLIED     lxc: Update `get/set/unset` command for `storage volume` properties
+99e08ce5ceec0a50b3ab8a3a2d850e6385e747af    APPLIED     lxc: Update `get/set/unset` command for `storage` properties
+23810db696d13e98897c7dfd3326ef3e4f5a92de    APPLIED     zfs: Add lxd:content_type user property
+1bd29a6c21ad00a47abebaae7b42a2795ae19467    APPLIED     zfs: Get content type from lxd:content_type property
+7668b98632c4b07a26f12a2bb051359829f4b672    APPLIED     patches: Add patchZfsSetContentTypeUserProperty
+9d5052b4752802358180282fed1b1295785f18e9    APPLIED     test: Recover zfs block_mode custom volumes
+41d3ac13b860d42bbd77575e0bdc913131b1e9d2    APPLIED     lxd/network/common: Prevent unspecified network forward address
+3b59cead3587b07bd7b8e91ed1194dfb93c7bac6    APPLIED     tests: Check unspecified network forward addresses
+20ad200ec460ea4f0a0f9729a8c4168a42ef04bc    IRRELEVANT  doc: Clarify documentation on restricted.cluster.target key
+9f1ac9047e63b86e2394984bf64cd045c297db9a    APPLIED     lxd/shared/instancewriter: Use right header key for tar ACLs
+610e784fcc3714776acc1f8d7f854b5d5f9ee75b    APPLIED     tests: Add file ACL test for image publishing
+3c90a681bf541fed1edd4aad208a398c121e8e3b    APPLIED     test: get/set/unset of instance properties
+e4ef5c105a63c5865334acbdffb49b56ae97deb3    APPLIED     doc: Update the doc to describe how to get/set/unset instance properties
+f2f8d41a120d83fcda4988ef45403ce5f63bd740    IRRELEVANT  i18n: Update translation files
+b66eac71b94a647f1f72ee5df33c6b29741b2450    APPLIED     lxc: Show storage volume info regardless of state
+77f3bf180ed0bf51a4ec75c87716fc7779e9d2cc    FEATURE     doc: Specifies the type of OIDC authentication flow more explicitly.
+bea59bcb2f31604649f7e6435bb1c951de35bf9b    IRRELEVANT  gomod: Update dependencies
+a656c264857967cd335eace18b621888c9d13eac    DIFFERS     lxd/db: Move GetStoragePoolVolumeWithID to ClusterTx
+e754ee3df9da113c43c474b6de5d05339bc8d66f    APPLIED     lxd/db: Fix URI of TypeStorageVolumeBackup entities
+bb14f610d9ca080b9a77c30752a3641fe9b94cb2    DIFFERS     lxd/db: Fix column name in storage volume query
+cf7d8ca9733e737e130e00c56461d63fceb3cb42    DIFFERS     api: Add `network_allocations` API extension
+7b53f9bfc5a2a5a4f68406096137eb3a3c1b8e10    APPLIED     shared/api: Add new `NetworkAllocations` API type
+1447f7e8fc2e650d1d881b616c0b9c16bc81a414    APPLIED     lxd/client: Add `GetNetworkAllocations` function
+4165a869db16769c4ad69f341027d87166bf9eec    APPLIED     lxd/db: Drop unused Cluster.storageVolumeConfigGet
+27f32fdafd82a7988c36ab92ef8368cce9f994df    APPLIED     lxd: Implement `networkAllocationsGet` API endpoint
+374c3f59637102c40211c1213a36ad1f3a8e40ff    APPLIED     lxc: Add `network list-allocations` command
+e80dcdaf6d3093cba95dddff2e13d43d90a146fc    APPLIED     test: Display IPAM information and check it is correct
+36b1687b32165d9394c97263440943fdfbf924ca    APPLIED     doc: generate rest-api.yaml
+3c2205cd49a2b6b337c5cfa2c07646b43b2b3c09    APPLIED     doc: Add IPAM howto section
+b8a1b173a3fc06acabdd3f73b2a3db9c3aaa90fb    IRRELEVANT  i18n: Update translation files
+c8bddac97945c08d7bff07553693ddc8ca76ee1f    APPLIED     doc/clustering: update MicroCloud information
+dc84835c228ebe8e32aa96af8e776ad4870d431a    IRRELEVANT  github: Pin curl at 7.81.0-1ubuntu1.10
+c291a05227cc78243334ab8154c78f461dd10ee4    APPLIED     lxc/volume: Fix docstrings to clarify volume operations
+af5e4b82dbaca0777bb6e705e465035657a276e2    APPLIED     doc/lxd-migrate: add an example for importing to a VM
+10fce808567534e96d77dbcb1a367c13eeffcab1    APPLIED     lxd/instance/drivers/driver/lxc: make limits.memory.swap work properly
+712f119d62605a965e8dc519f0af44a8151da3b7    IRRELEVANT  doc/metrics: add missing line break
+be5b80cd57c11bc0a3087fd3f09f89b974caaf1f    APPLIED     inclusive identities
+9f738f20fe9a670ac996dd2e1fafa499f8d70f7b    DIFFERS     lxd/db: Return nodeID in GetStoragePoolVolumeWithID
+cdaa9e67d9bd6e172c1085a4aac7cef4ce20f61a    APPLIED     lxd/db: Add function to get expired storage volume backups
+f28e9bd558aa7eb0cd34feab957bd0f756be4160    APPLIED     lxd: Add hourly job pruning expired storage volume backups
+fec375c5b9a7ccdff4d1b4c5831af7cecc977d00    APPLIED     operationtype: Change description of BackupsExpire
+63d8be8f9b9ced7405d6e3a905ce9b1f03d8a1c7    APPLIED     test: Check backup volume expiry
+6c73159511fd1248cf08f9f0382f07b01045f7e6    IRRELEVANT  Revert "github: pin curl to older version"
+6c8d444b275139a74fbca8ac42424e489e946ad6    APPLIED     lxd/network/allocations: Handle networks that don't implement the Leases functionality
+c47556a08b9f4a63e7bb7d42e6f59d1802a4e3ff    DIFFERS     lxd/network/allocations: Renames getDefaultCIDRAddr to ipToCIDR for clarity
+7c1d9e94857f33f8cc25551b0a4eb0ab8081acfa    DIFFERS     lxd/network/allocations: Use better wrapped errors in networkAllocationsGet
+2a1927c4d5a82eba4f1156624292234e044ec353    APPLIED     test: Fix integration tests to support network allocation listing with a tabular format
+3cb403356f357c72c7267a20d2911de988db2382    APPLIED     shared/api/network/addresses: Reworks NetworkAllocations struct to allow for the concept of NAT being enabled/disabled on a per-IP family basis
+bf80c96fe7cd974c56398365bdcc783ccc776b1e    DIFFERS     lxd/network/allocations: Fixes networkAllocationsGet NAT output
+869f9d7c4474c82689312d817e34dac21ca1b11b    APPLIED     lxc/network-allocations: Output a tabular format instead of JSON format
+19135daf92116bc949cb48de0aebe7f676b76baf    IRRELEVANT  i18n: Update translation files
+955b31c002ebd98160367afd730c0bc1cb10e16b    APPLIED     doc/rest-api: Refresh swagger YAML
+c755971a22be2cef1fd960c61c968a236c76d592    APPLIED     doc: Update `lxc network list-allocations` output format
+fa2ec65c7e2e3c97fee6725f16e1433452619d4c    IRRELEVANT  Release LXD 5.16
+d137d3f99a8526a5c007ae02d86a72cfce2e1b8d    APPLIED     lxd/client: Mark HasExtension as deprecated
+5a34cdde8c6adb412241ea27956b99dda9f49bb3    APPLIED     lxd/storage/drivers/zfs: Allow volume snapshot refresh
+48ace1068191987ec6288bde766366229d5d9d6e    DIFFERS     api: Add storage_api_remote_volume_snapshot_copy extension
+dd23d9a48b37508a2183eb244b4b12086ed248f1    APPLIED     lxd/shared/api: Extend StorageVolumeSnapshotPost for remote copy
+c94a3c2777852346f6281128a2d24c08d65916c5    APPLIED     rest-api: Extend StorageVolumeSnapshotPost for remote copy
+92eee56a69cb354510a8a22ff6129e3d6f50ac32    APPLIED     lxc/volume: Use the right path when copying volume snapshots
+d79715e96f7a61cc9bd3f70687751cb564414fea    APPLIED     lxc/volume: Check for storage_api_remote_volume_snapshot_copy extension
+19524f4e9bf6f049fc2e9389f898fc9e67ff8788    APPLIED     lxd/api/storage: Add support to copy volume snapshots between remotes
+e6bd9e251a09ebdcd7df11525a43bd0cf8da736c    APPLIED     lxc/volume: Block --volume-only flag when copying volume snapshots
+1e157db15056a669e597f7c1410910c6b50d63b4    APPLIED     tests: Check various volume snapshot copy operations
+1e5e3073647ac8d612fc7b4a00e28879d8b048e7    APPLIED     tests: Check various volume snapshot remote copy operations
+4ad14cdd50d4106ec98131389ea092a2c9223688    FEATURE     lxd/config/generate: Update lxd-doc to support yaml type assertion
+e083ecd6e259ded38db457aac2889311bbce15a4    IRRELEVANT  doc/backup: Clean up backup documentation
+3bfe42fd6441db5a72b9a66135ed4bd8b5dcd78d    IRRELEVANT  doc/backup: add information about using snap snapshots
+d797a124e50df8ffbb63b373c18c53f00446baaa    FEATURE     lxddoc: no default .txt output if path not specified
+0f1052d8bc3e99e068777d077bf46ad5d6a3da4a    APPLIED     doc: add a link to Ubuntu Discourse
+6d7b7ef0170e10cef1cea077965e600c049c810f    APPLIED     lxc/utils: Support parsing of anonymous nested structs
+2da3564720a0fbb0ca5fe48ffece64546f613dd2    APPLIED     test: Add get timestamp property test with instance snapshot
+d9af6209e19f097459e24b1b6a23f231db043563    APPLIED     shared/proxy: allow SOCKS5 proxy
+01e492aaad056c2548e764b7cf869e8376f88ce7    APPLIED     lxd/device/disk: Fix boot from Windows ISO by setting correct FSType for .iso files
+4c14fcc6d641c3f1a86dc9a064fe075c0bf5020b    APPLIED     lxd/storage/drivers/volume: Use vol.IsBlockBacked() in ConfigSize
+dc968cbcdffef4cba0b178835292ea51b49eb316    APPLIED     lxd/storage/utils: Use vol.IsBlockBacked in ImageUnpack
+2fe1cc62fa8d47c92e3e97e40a702c9d8b53f534    APPLIED     lxd/storage/backend/lxd: ImageUnpack usage
+c2ff32d6beb03891a9439afebcfec116666de75e    APPLIED     lxd/storage/backend/lxd: Use the result of FillVolumeConfig in EnsureImage when comparing cached volumes
+b33cbdb957f60a0dd9bdc1b21f1664aac7312663    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Don't populate block volume settings for VM volumes in FillVolumeConfig
+7b0b57f9aa9b7aa3f25d9df76f31e0c18b45ec79    APPLIED     lxd/storage/backend/lxd: Removes unused poolBlockFilesystem function
+e232727f065661e39d9e5680de2b771185d33a32    APPLIED     lxd/backup/backup_config_utils: Change helper function to update multiple backup file properties
+6dccca3f4e0478a22ba2682275b16b6f1498d7da    APPLIED     lxd/storage/backend: Update instance backup file on instance import
+4673546eef472281097316f2f100b463e5560d72    APPLIED     test/suites/backup.sh: Add test for backup export, import, and recovery
+c6f15d0a6f5e4ce50bd1a1833f53d5407d1f086a    APPLIED     test/main.sh: Reference test for imported instance recovery
+03ffe6cf082cedd8026d43bc70cf3a91e6c9e4a1    APPLIED     lxc/init: Remove project query parameter from instance name
+1dd88860f4ff656d922310e21cc0e17b0cc8111b    APPLIED     lxd/storage/drivers/zfs: Tweak getDatasets
+0aba3ee76c491b4c5732f400112ffc4aa9260b4b    APPLIED     lxd/storage/drivers/zfs: Clarify comment
+7c2005a5211ed320763d39073fe307fab3bf447e    APPLIED     lxd/storage/drivers/ceph: Fix typo in comment
+d234248318c26ee10438844d863a803cf29b566c    APPLIED     lxd/storage/zfs: Don't strip leading slash on snapshots
+d820f3970661c622d5b950ea2efe4ef6b759d1e6    APPLIED     lxd/storage/drivers: Handle newer losetup
+7343b31866640c95a145bc65e40e5ab90c6f8831    DIFFERS     tests: Skip LVM project test when not on LVM
+d110549754b6e6eb37a774c66d9f17c5f8ef6822    IRRELEVANT  tests: Skip tests on missing commands
+f9675c6c7601a7a899001d050fb5fa8ef125af81    APPLIED     lxd/storage/pool_interface: Add PostHooks to MountInfo
+b81a56f497e5be3ecc3a5af0902a46dcf7c17295    DIFFERS     lxd/storage: Add MountInfo to MountCustomVolume
+e8b3c8afcb2cabdd0dffa04bcc41ba3b9879633f    APPLIED     lxd: Update for MountCustomVolume change
+b00894eb809a5032c4ca01a1616a6e89ace9b66f    APPLIED     lxd/device/disk: Update for MountCustomVolume change
+912f6ebea0108d2b3363287e0c6cf65e729090b1    APPLIED     lxd/instance/lxc: Update for MountInfo change
+f1853cc7515b381e8011351cf231be809e3fb488    APPLIED     api: zfs_delegate
+d49308511afabada7957be1adf0e7b1e0e8bd07d    IRRELEVANT  doc: Add `zfs.delegate` for ZFS
+157dfd24f3d3d21a8431d1ed075224930a1329af    APPLIED     scripts: Add `zfs.delegate` to bash completion
+b4cf4bb69f06066e3ff37538648c9b58450373fa    APPLIED     lxd/storage/drivers/zfs: Detect support for delegation
+f072e922aedfe79bf0eabfd92f44547d5ed7f805    APPLIED     lxd/storage/drivers/zfs: Add `zfs.delegate`
+49dbde8f70cd7893c055b203024cf25b226c6e12    APPLIED     lxd/storage/drivers/zfs: Implement recursion
+6896b18345ee225b9bb5c61fc8e01ae8ac4b5520    APPLIED     lxd/instance/lxc: Add /dev/zfs when delegation is supported
+ddaef0b0c52ebe5955e337f0382d870c3c0db1c7    APPLIED     lxd/storage/drivers: Add DelegateVolume and CanDelegateVolume
+a5c4ae18ff368109ec2d04466f1dc7bbc11c38db    APPLIED     lxd/storage: Add DelegateVolume to PostHooks
+4bb5f1df38a3465b869f8d832ea4f17730dfc851    APPLIED     tests: Add basic ZFS delegation test
+bb35b906d10327e5e5cf54d48841c73d64d4d2fc    APPLIED     test/suites/clustering: Add test case for storage config on create vs cluster join
+1f44c9f2773fc7c985f9e250c88ad51b092a9e2f    APPLIED     lxd/instance/lxc: Restrict /dev/zfs to unprivileged containers
+c0f1457bb23aadb36d3e95f3d1f892475c0fa8cb    APPLIED     doc/installing: update link to tutorial on Discourse
+883806b888058f60b646ecbbe5bc048f9cd2eeda    APPLIED     doc/cluster: add an example for a ZFS storage pool to preseed
+9c2587bc7a4d7c562017ea870105b683f11610f0    APPLIED     lxd/device/device/utils/disk: Look for virtiofsd in /usr/lib/
+3a137fb8a802fed71c0c93cf4632fef9bc60a598    APPLIED     SECURITY.md: update the security policy
+f8426ecea2763267a58be85f47b7d5a3f76e271d    FEATURE     lxddoc: unmarshal yaml + double-quotes processing
+68e733e17a71de6123d3c7fa295a0e6612619937    APPLIED     lxd/networks: Don't filter config on project owned networks
+4869c09a9e0becf683d2b4a1e2af04bb2f3cf98d    APPLIED     test/suites/config.sh: LXC 2.0 is EOL
+36304467ad5c334f87c22c7324a1fbb39cbc1a54    APPLIED     test/suites/kernel_limits.sh: LXC 2.0 is EOL
+12632b61e6b2e466a19bf4dc8e24d8b31629fded    APPLIED     test/suites/console.sh: LXC 3.0 is EOL
+15520d0f2aba100a71cb24e836173601152fe7a8    APPLIED     test/suites/storage_driver_zfs.sh: be extra careful when parsing zfs --help
+12cb0e8a15c887ca941d848ca698ebe7eb20e7b6    IRRELEVANT  doc: change to Diataxis navigation
+48d8b342cf23886c8f59b1ee71b01e137cb21c59    IRRELEVANT  doc: add a link to switch between topical/Diataxis navigation
+f78c402dea72c3e1c583b317c26847c8d4acd8e7    IRRELEVANT  doc: move configuration options one level up
+b413cc928bbf84903c3b8670118993d1366d15bf    DIFFERS     github: Install additional packages to enable PKI and concurrent exec tests
+96016f61b73145cc3c0ad47e8bc125e03ecd10cc    APPLIED     test: Improve skip message
+811c64771400e5dbd7858eafa876bfa4eb6a161f    APPLIED     lxd: Move rbac package to auth
+52534e293ec6c3b9b11b7859d6c921e16ea39661    APPLIED     lxd/auth: Add Authorizer interface
+2d09161e3a523d00e11963c0fc5aedb8ee8a8c3b    APPLIED     auth: Add common authorization driver
+8e8bd69dd4a8286244f36f751510ac468e65db85    APPLIED     auth: Add tls authorizer
+51eeb0e5c2de1123af1305d8b3c5bc7f16940b55    DIFFERS     lxd: Add Authorizer to daemon
+2720fbc69a833e69d2e1dc7368f08d7db93c4f59    APPLIED     state: Add Authorizer to state
+3ef847db91f38a4528a46ed9dd413cfc60822b62    APPLIED     rbac: Make rbac use the new Authorizer interface
+85b03d5765b04662069e6a4ced5ffb0261a5a204    APPLIED     Use Authorizer interface across the code base
+ea20800c92185ea55f857d518c24d818deab02df    APPLIED     lxd: Stop status check if RBAC is disabled
+b615c5a3e945e96be2cecf7414124abfd52fbd74    APPLIED     shared/simplestreams: avoid out of bound array access in GetFiles()
+141d2d63dafcdbf910e7a4041adbbcb7a1ab572c    APPLIED     lxd/util/kernel: avoid out of bound array access in HugepagesPath()
+9a1981d20042a92c1246cb7a5f136f556d2da57f    APPLIED     lxd-agent/metrics: avoid out of bound array access in getCPUMetrics()
+d72a02b9d557e3dcb5d943c687def92fa07cf43f    APPLIED     lxd-agent/metrics: avoid out of bound array access in getDiskMetrics()
+ef4aa0861d045191613d17ed444a9f9d2e46906e    APPLIED     lxd-agent/metrics: avoid out of bound array access in getFilesystemMetrics()
+98a919d1fb8f90bf813dcff5dddbc72cef21b7bb    APPLIED     lxd-agent/metrics: avoid out of bound array access in getMemoryMetrics()
+c538eef66ddc28452bec75e274524b05f9191fe9    APPLIED     doc: Update IPAM cli output to use documentation-specific IP addresses
+8ae2a2e917618527f15da8162aadf11c7e4fd72f    IRRELEVANT  doc: Add a readthedoc pre-build hook to build and generate codebase doc
+51d870674e551522840071c1b4549177cce5e67e    IRRELEVANT  makefile: don't use the `lxd-doc` target in the `doc` target
+b71c6048f1c6b6e7624396cf13e51a62dbd2bdd9    APPLIED     client/simplestreams_images: avoid out of bound array access in GetImageFile()
+9578f091a30f9b53433ebb6d6c6b5f3336ce18e4    APPLIED     auth/rbac: Fix uninitialized permission lock
+606444cce63cbf8a8789a262970cc6f446640e9e    APPLIED     rbac: Validate API URL
+21862639097cdedcd961756fd900307994ece486    APPLIED     lxd: Pass RBAC agent username to authorizer
+c59ac2269f58e83abb1d2ad260ae6396b852fb85    APPLIED     rbac: Mention config keys on validation error
+65685bff1b9949d5f2dd35ca67b4c292a4932a13    APPLIED     doc: Remove DNS subheading.
+8ef0a04b3a57ce96456719aafd256555c48334a6    APPLIED     rbac: Use correct function to get projects
+22e3fe535902a367770a1ae42cfde5d5392bb2fd    APPLIED     Change RaftSpare node to RaftVoter
+f24fd264f384f67c24fb57077e0f53b79d51e90c    DIFFERS     doc: add an index.html redirect for topical navigation
+9068c40fb9fdf7c8fa99e15141ec0e829e0c57dd    FEATURE     lxddoc: Within a config group, alphabetically sort the config options
+2706a0f09106d37a0412cc47ee19fd953e0edf77    FEATURE     lxddoc/test: Add unit test for `sortConfigKeys`
+5dbb03dea0cb77dbb865ade225b74e22f5dfa2b9    DIFFERS     github: keep GITHUB_ACTIONS in the test env to skip cleanup
+8f1cf3405f64331585b26e577e323adc666693ba    APPLIED     doc: Add a how to for routed nic devices on VMs.
+d55602774e5a11e172f1b5ff83af9189c93e06b7    DIFFERS     test/container_syscall_interception: supported releases have seccomp_notify support
+d2ee44c981c40b566312265764f0602a6967098e    IRRELEVANT  doc: Add the routed nic how to to the toctree.
+2192e0c5cf6cac01908155f8a0df1e8a3dddbfe5    APPLIED     doc: Link to the VM routed nic how-to from the device reference.
+0e1126fca4050ce1f2155c1c9c4ec56a27ea1026    APPLIED     Update .deepsource.toml
+c5d8c24427471f80625d9cb9fa209d922c08052d    APPLIED     static-analysis: Fix shellcheck 0.9.x complaints
+b711653e2eb17201e993777883be9929581a601c    FEATURE     test/migration: use a smaller ISO file
+2be1e586b5e240478907c1242fa0740321f78c3b    FEATURE     test/backup: use a smaller ISO file
+cb27843a2b059f0fef68fa168032b4b15a8d19bf    FEATURE     test/storage_local_volume_handling: use a smaller ISO file
+16f7e1a4997cac0a721648ecbb098e228eb1a1da    FEATURE     test/storage_volume_import: use smaller ISO files
+7836e08c99fb1887b252a8cb3c39cf4970976502    DIFFERS     github: run "apt-get clean" to reclaim some space
+6ad0451350696e6830bcf9a4afe68e9388feff75    DIFFERS     github: the sphinx config moved to doc/
+dd5f850dda61c640f88bb84f7e7d5703cb4598bd    APPLIED     test/includes/lxc: avoid printing LXC_LOCAL=1 lxc_remote ...
+f06164b68e287a4fa677528a84c041e69611487a    APPLIED     test/includes/lxc: avoid printing the eval line in DEBUG
+d279ff3df2667077f4c4c4a89c08b2e629651fc6    APPLIED     lxd/endpoints_exported_test: s/sss/ss/
+9245a604ad803af0436e5e5b771e9e2983def6b8    APPLIED     lxd/endpoints/network: s/sss/ss/
+a9aac929f2d36b79f32759c49b45688a9f3cf6dd    APPLIED     lxd/endpoints/pprof: s/sss/ss/
+28ff998660a2568bf528a48b4c0ea77d3b6a0659    APPLIED     lxd/networks: s/sss/ss/
+c1e85a6e16eed0d067389e338b62e60768a931e1    APPLIED     shared/validate: s/sss/ss/
+62a6ab34840cd626d89cbbd085e6c646205c2184    APPLIED     test/basic: s/sss/ss/
+9cd17cfed7870ab74ce150b4a0814066fa64a7c9    APPLIED     lxd/device/nic_macvlan: s/suppprt/support/
+11bf4b3abb6f076da797d05e51a9ff13c234dcb2    APPLIED     lxd/device/nic_macvlan: s/suppprt/support/
+01a8ef0a8ebbd8eb876295d537f3a5976bf40f9d    APPLIED     lxd/storage/drivers/driver_dir_utils: s/ppp/pp/
+73d6c1736a04c1016d153695c2ec5a482ba9ebae    APPLIED     lxd/util/http: s/fff/ff/
+b3efbdb19726b0eee51d8e760c708b4457170b73    APPLIED     lxd/network/bridge: s/dbUpdateNeeeded/dbUpdateNeeded/
+6e39aaf0efe9ac903b891b2a28f688df1152f769    APPLIED     lxd/network/macvlan: s/dbUpdateNeeeded/dbUpdateNeeded/
+7cae7a3a290112cbc87d6ae10b4136e9d6633fb5    APPLIED     lxd/network/ovn: s/dbUpdateNeeeded/dbUpdateNeeded/
+c79922f285900a96af37782e4afa9e7f7be6e34b    APPLIED     lxd/network/physical: s/dbUpdateNeeeded/dbUpdateNeeded/
+597ce268cc3a39e73f5175734357473a383041ce    APPLIED     lxd/network/sriov: s/dbUpdateNeeeded/dbUpdateNeeded/
+5c1cdca0a71dc8a63b538bb3dae899c34d149299    APPLIED     lxd/api_internal_recover: s/neeed/need/
+43767ef1c724c82e94c13907be26d34e6f703401    APPLIED     lxd/firewall/nftables: s/adddress/address
+9214e9c45dd58eca3aa3d1b59068fe3d163ee420    APPLIED     shared/util: fix RandomCryptoString()'s description
+f4041d91ab01933a7bdbaa6163a9cd58f8ef06c3    APPLIED     shared/util: fix JoinTokenDecode()'s description
+c91f21bdd7eccb98cedc3f35acb9b9a8152d3552    APPLIED     lxd/api_internal_recover: Recover database entry for empty storage pools
+39d6818b7dd1fa39998d5901231511d161e75515    APPLIED     lxd/main_recover: Allow recovery of empty storage pools
+5083d3f95f6953d7f6bd55d1bd5395baef3a13ed    APPLIED     test/suites/backup.sh: Update expected no-op recovery output
+831e2ff61896705b3e3d6deaea6a825ea56209dd    APPLIED     doc: Clarify scope of nexthop config keys in BGP extension
+7692fecda9cdb1cbcced61f29a45d5e6492bfc70    FEATURE     lxd/instance/drivers: update instance config if rebuild as empty
+5b8f1ce884921c71c6772c0ef556d8437305db2a    APPLIED     doc/api-extensions: fix extension name for VM support
+3bffc1e32771f6b676379dc10c22c64664cbdab1    APPLIED     client/lxd_server: use StringInSlice() in HasExtension()
+0c64aefb6a8621d4836e42bc1b94a6bf562fd3b4    APPLIED     lxc/copy: replace strings.Contains() and .SplitN() by strings.Cut()
+9e6fb2e6f8c80d9e6ad375445216da37d1ff914b    APPLIED     lxc/init: replace strings.Contains() and .SplitN() by strings.Cut()
+f59052b1f0e8681756c7619e12c97c13e099b648    APPLIED     lxc/project: replace strings.Contains() and .SplitN() by strings.Cut()
+80f09e738427efc875560827458df9c5375710a7    APPLIED     lxd-migrate: replace strings.SplitN() by strings.Cut()
+62e0f584c723798e6bd78c39034ccfaab52d06d8    IRRELEVANT  i18n: Update translation files
+2604e6cbd246741d8f7e00e5c6f7dfe09aba664a    DIFFERS     Makefile: "command -v" doesn't output to stderr
+6add57415867b99f3223fd1f6b348eaee44fa9ba    IRRELEVANT  doc/security: fix wrongly formatted link
+cc0f116710444269afdae7f470b3539c9d09e156    IRRELEVANT  doc/storage: mark ZFS as usable inside a container
+555271c5eff1596d4310bec6fcce4faa0e5fb151    APPLIED     api/instance: Fix instance movement node selection
+9b8a18843f93daa79325e4ff37535c2fcbad3af4    APPLIED     lxd/network: fix bgp.ipv*.nexthop keys not being recognized
+de7b259b7f62cb7058602e5eeb641e0c20fd2d98    APPLIED     doc: Align header of macaroon_authentication
+58e3e9be9489f7592382c87ea326121bb7c9fdf5    APPLIED     test/migration: Check instance node when moving within cluster group
+d2ab9955cf3d68c38ddb49736007724d54af7134    FEATURE     test: Check that a container rebuilt as empty does not contain image config fields
+689e6c4570dd65d5ad16bd5ad4189d76b19cdc3e    FEATURE     lxd: update swagger description in rebuild endpoint
+5adb102366e2a56c2840b80f5c1bad1499805c5a    IRRELEVANT  doc: update rest-api.yaml
+305c650835d0df09101b20dd3669cabc77908e38    IRRELEVANT  doc: restrict Sphinx version
+8a714d94378e5bcb550107aefd37d44068f1ddc6    IRRELEVANT  doc/security: add a missing redirect
+09e263f879b8fbeb769c7d59b41b3cce88d581c9    IRRELEVANT  readme: update link
+aebd56441c06a5fb5a298d994c766ed9696d1583    IRRELEVANT  doc: temporarily pin Sphinx requirement
+f10e79897a0a6e5bfc3421cca8f63a095dbbfdd6    IRRELEVANT  doc: update link to IRC tutorial
+adf3c2132357b66bfbf9bb512f2364de84a0baa4    IRRELEVANT  doc: update download links
+fc9788cec2238f15abc34a314808b65392ba55ff    APPLIED     fix: helper message typo
+33f0cc0b3893f49b388767636c21f34de9728a51    APPLIED     shared/termios: Use golang.org/x/term instead of golang.org/x/crypto/ssh/terminal
+46a12bbcede722de1fbfd3b231a718c57e8b94a0    DIFFERS     gomod: Adds golang.org/x/term
+271db1be185ee9af6d687044a0f90f42de510072    IRRELEVANT  i18n: Update translations from weblate
+817abd5c38d7964fcc1f07582fcff40286e3f968    IRRELEVANT  gomod: Update dependencies
+d301c61452a1e6a3010a65d7f701232c3c1d5df3    APPLIED     lxd/api_cluster: document `cluster` options
+1bfd00f62134ad0163f2513032ff08de3b22fed2    APPLIED     shared/instance: document instance `miscellaneous` options
+9d461b5ea453bf46aff1fcbcb469594a1325d7a4    APPLIED     shared/instance: document instance `boot-related` options
+0db00797bdb5b7399937b2c8f4a2252d19806325    APPLIED     shared/instance: document instance `cloud-init` options
+4b7e2145056e377f74d5cd5451754e4dfbd9cd4b    APPLIED     shared/instance: document instance `limit` options
+bbe6edbc10f118547a8dd0fae36be9d4e5592b4b    APPLIED     shared/instance: document instance `nvidia` options
+4c316a3aacb4594a4b72f1757c69b6d78cf4f590    APPLIED     shared/instance: document instance `raw` options
+591a2e1d7f097a4cd2d6aa1637608fb72dd6005d    DIFFERS     shared/instance: document instance `security` options
+f9239c4c7aa34ff9831177016d10aaff77e5af9c    APPLIED     shared/instance: document instance `snapshots` options
+7ed32239e5cd8fa07b5ba8c80177fe38bfff8f18    DIFFERS     shared/instance: document instance `volatile` options
+11afa83da937fb6e735801edd0b7128fee2e4f7b    DIFFERS     server: Document the `core` server options
+a4d2601346500867945a3cb780196684822dfd8f    DIFFERS     server: Document the `acme` server options
+89dc3adfb07bbdecb4cf3300ebe9317469686f49    DIFFERS     server: Document the `candid and rbac` server options
+3036d9a67768a4bf81671165c0c8d3d29b6853b2    DIFFERS     server: Document the `oidc` server options
+4feebebe32f1855b3e79ae67fe476d8f3f52f744    DIFFERS     server: Document the `cluster` server options
+91d1f87bbfa744e696260b0a12f6c56739a65843    DIFFERS     server: Document the `images` server options
+c1a5fd8e172e2da20de662d706b44ea0c03c526f    DIFFERS     server: Document the `loki` server options
+6e461938fd29629244fb096a736a7759d36333b8    DIFFERS     server: Document the `miscellaneous` server options
+29cefc96da72f2bc7384cf37ec9dc05fe61bb5c8    APPLIED     doc/cluster: review config option documentation
+41fcf8f8cf01c5b035960e889f486cd1555c670d    FEATURE     doc/cluster: use automatically generated config options
+8581c36e82f1c117b5e35e5a05cef9ce2b0d238d    DIFFERS     doc/instances: review config option documentation
+7436edc8d12250df8448e578ecf646cbd2dc9db7    FEATURE     doc/instances: use automatically generated config options
+481c28dcffa157474b6492ce5991cb952a1758fa    IRRELEVANT  doc/instance: fix spellcheck
+dc58af7632401a2a440828f50cb7b7e9cabd759d    IRRELEVANT  doc/server: review config option documentation
+99e6d49d2021d264a127546bf9297279a3cc2374    IRRELEVANT  doc/server: use automatically generated config options
+9615722f436fd9324d0843d19a1c14a7cdecc0e0    FEATURE     doc: add configuration option index
+796825e438c956e9fd148b969f054397d4c9595d    APPLIED     doc/css: add an orange color to the doc styling
+6716033ea29f4d1c2e3af1e13c35b759dce90014    FEATURE     lxd-metadata: rename folder to avoid `go install` issues with other tools
+3afae2bfd532c00d3a4ce0b368901486e9fb9afc    FEATURE     doc: update readthedoc hook
+7c23e9b0c375cb7229c7fc61c4b1cbbfd3169ebd    FEATURE     makefile: update install target of lxddoc
+321e65c5edbf371e2d78adde961bb4110c26574f    APPLIED     doc: update link to distrobuilder docs
+99c52e6c7822773be6705a7369ec31d542cfe662    APPLIED     lxd/devices: adjust network device hotplug check
+cfc4312e827afc8f6061f1f6b2f224be4d97fe5e    APPLIED     lxd/instance/drivers/driver_lxc: wait for container to start before setNetworkPriority
+11be7dc5cb4e49088428f9f67b1b36833ca936be    APPLIED     api: add operations_get_query_all_projects extension
+aacad14c54aab85d02f632cbeb5daaa18f95dcd5    APPLIED     lxd/db: add support for getting nodes without project name
+55c2d3c37c008179fdc8b1edf913e8e5152ad037    APPLIED     lxd: add all-projects param for operationsGet
+80266ceba4e1c26d6f7b689536a3066f0ac817d6    APPLIED     lxd: add param swagger doc for operationsGet
+f6447a83ad8a238fe9671a7a70063c585410a114    APPLIED     doc/rest-api: Refresh swagger YAML
+d202ce7bcbc73c35d4497e405f5b81fc5e09341d    APPLIED     client: add GetOperationsAllProjects
+52c11db1fa406d7664dbcf933ff3e1419ff55135    DIFFERS     tests: add standalone test cases for operations_get
+21a3fed92f4b5ecdbc9fcf1eb1e58e8e33b71280    APPLIED     lxd/device/nic_bridgeed: Allow migration if nic parent is managed network
+1f79e03cebc0d4d84d4ecc4a9e11aeb3d4d2bfeb    APPLIED     lxd/instance/drivers/driver_common: Log warnings when auto-migration is prevented by a certain device
+6354555fb29dfa2134f22ebb8c02fff477bdd7da    FEATURE     shared/instance: Improve docs of the cluster.evacuate setting
+f531774aeeae45ae5333cdae8c313c9d3c495c93    IRRELEVANT  doc: directly link to config options
+17477b49d881f3d2a73e9838da0ed7e8788aad08    IRRELEVANT  Release LXD 5.17
+826edf318ffc7ffffc15f689b459921e19d365f2    FEATURE     doc: fix breaking build
+8b7f9497d3b455d9b2006226fc74577e1effb677    DIFFERS     doc: update woke URL and add a target to the Makefile
+7da8009896c2e32b3ef97aacff13afc43a2f74e7    IRRELEVANT  doc: update Contribution section
+7396ebf7393f304498f5ee853cadca176739d0ce    IRRELEVANT  doc: add instructions for documenting configuration options
+eff325a387a7c5aa3569c26922bf8c8a1822de14    APPLIED     lxd/auth/rbac: Fix regression
+ff40cf3febc6fe6245aa2401d1a1120c7277b684    IRRELEVANT  doc/manpages: add the man pages to the docs
+8b0defc874b55c2656189cd54b2446f9fec7508f    IRRELEVANT  doc: exclude manpages from automatic doc checks
+f8f21e824c1b10a13cbe1a2c620709db8cb6efe5    IRRELEVANT  doc: link lxc commands to man pages
+e7874fd0fbd52ffdcc6e42a6ef27d521041abed4    IRRELEVANT  doc: add manpages to topical navigation
+a0837b566828d1d689d8695f649c5c73f00eff44    APPLIED     lxd/storage/zfs: Fix version handling
+92563dfd4898dc1d3ba78c0806d55f94156ded2f    APPLIED     shared/version: Show parsed version on failure
+7832e935d1640da1d923c2717215a7659daf626d    APPLIED     lxc: Un-hide `lxc pause` command
+6b805f3110d27e9fa85b4f4b5a1fca2ea4367665    APPLIED     lxc: Un-hide `lxc init` command
+3b935fc656f502cac5abfd980cfa1bae4c37cde5    IRRELEVANT  doc: unpin Sphinx version
+826561f4c1be5d8807e36b9dc2f899f7f3afaf16    APPLIED     lxc: Un-hide `lxc monitor` command
+4ed95ada322d0963f93f92104df4e3d8871bf5fe    APPLIED     lxc: Un-hide `lxc query` command
+57d243ff3473b4c64adc4d808d38bbc6657550cb    IRRELEVANT  doc: add a way to link to Swagger sections
+daf49922f8a4a6cd149aeebb600ff7e4122f5fe4    IRRELEVANT  doc/instances: add API instructions
+a853c1cd52fa745b1a3c66ae3f1504fa6abc9810    APPLIED     scripts/bash/lxd-client: fix completion to work for non-default projects
+bca525ff6d1f7866fe038c700c3c0799b348d533    DIFFERS     scripts/bash/lxd-client: use parentheses around grep -E alternations
+2c307e6010fdbb13b42c8dc01573f131d3874594    APPLIED     scripts/bash/lxd-client: don't propose "(current)" as valid project
+a9d4ce1e1e69b39b4e64ad2f1d29655c95c2db45    IRRELEVANT  doc: don't check validity of GitHub anchors
+05e1d76099a1457b25e11da0b78822ad0187bdf8    APPLIED     doc: add guide about virt-v2v
+a748515add0b33288eb595733e8b69a2f96fdde4    IRRELEVANT  doc: link to manpages
+c65cf36ae295a667e1d35c6079ed3be2dc11d674    APPLIED     lxd: Use instance lock when updating instance
+2eb11f63f75e8656fea302e49ad966e8c4ea863b    APPLIED     shared/util: use LC_ALL instead of LANG in RunCommandCLocale()
+16ec502b13185b0550d7291fc9be3d9e98d48236    IRRELEVANT  github: Initial foray into using Canonical's test runners
+fae15d76b30ea7ef1bf3699ed92ca952ab6068a6    FEATURE     metadata: add `entity` metadata key, update `lxddoc` to `lxdmeta` and `default` to `defaultdesc`
+c1aefd02aa183f4e20c88112ae22d9f398971f6b    FEATURE     lxd-metadata: fixes to generate JSON and sort .txt values at every levels
+ba9c3c9894a5d31931110ae7fafad73277ac18c6    FEATURE     lxd-metadata: Update unit test with the new JSON structure
+847cf48bb56f244de5c229903cd703509cea986d    FEATURE     lxd/metadata: initial `metadata/configuration.json`
+0f5f89b23bba24576990ac163e10d4c8ac5cf432    IRRELEVANT  update .gitignore to not ignore `doc/config_options.txt` anymore
+49cf74d8bb8fbeb6dac0ff657acef11600b6861f    FEATURE     doc: Add initial `doc/config_options.txt` file
+ec0b73fcca9109ba09f9f878348e6d3a001c1d56    FEATURE     doc: update documentation to mention the `cluster-cluster` group and `lxdmeta:generate`
+c3e7fc000dd3b8256307c87ea4bfc1dc8917f457    FEATURE     doc: remove useless readthedoc hook
+0ca976fbc01d4a32042a23c7ffa152cc6e5d994f    APPLIED     lxd/resources: Use `lshw` if DMI is not available
+f7ec5c248553d273ce99aa93f499500c46d3cb31    APPLIED     lxd/config: Add ubuntu-minimal and ubuntu-minimal-daily remotes
+075a1afd8cfcc8145273941923dbc4345a272818    IRRELEVANT  docs: Add description of ubuntu-minimal remote image servers
+1f78e44a728f5227e0a8462386013786dfba0405    APPLIED     zfs: Disallow block.* settings for regular custom block volumes
+85b146a3e8e60e180a476ff00030307a631e706d    APPLIED     test: Check that custom block volumes cannot set block.*
+0e023300e2a3e800103943e23eee9ad3dad5b462    FEATURE     makefile: add `update-metadata` to generate JSON documentation and .TXT config options to the source
+6f7489bbaf9ed1f0e58113871f810c4c2f2e106e    FEATURE     test/lint: Add `metadata-up-to-date.sh` to ensure commit has the latest metadata and doc config options
+56b3aa7ae1c7669078e10bea187903e81de6a41a    FEATURE     lxd: New API endpoint to expose JSON generated metadata configuration
+0cf863d03dd560ef29845c6e13e6672ca9177b28    FEATURE     api: Add `metadata_configuration` API extension
+caf060a2684a179a47f456992db26c1db003449c    FEATURE     doc: generate rest-api.yaml
+0c84a216a650730086cb625103f6b47fcb9b4714    APPLIED     doc: Updates routed nic how-to to use pass netplan config via stdin.
+2c39e99295555c4f460de2aee3fb74eb78234ab3    DIFFERS     doc: exclude doctrees from the documentation output
+0bb954ae82e91d777f9a1538fac6af2b3a3770b1    IRRELEVANT  doc: move header CSS into a separate file
+964e5e63e69ffdd0e7c708bfed43cc8ee3d74f6f    IRRELEVANT  doc: move color variables into a CSS file
+1c4d3f6c332fd71f5a1a85ebe09221e617e9c4a2    APPLIED     lxd/resources: Use RunCommandCLocale when calling `lshw`
+8432c3ceab4fbadfa2d0399d697520acd9d41a3f    APPLIED     drivers: Use StatusError to ensure error code consistency
+95d5a1e6f331c33692dcfc0a8682feb2e19fe9da    IRRELEVANT  doc: hide toctree for man pages
+ca316dfb61ac28ed762655c0ce9d02462009baf0    IRRELEVANT  doc: pin Sphinx version again
+86896e251d9647f9ef4b5be07fde8e76424b66db    APPLIED     instance_exec: Add contraint validation
+6caa6030dae5028ffbd01d0163e88c44f5ef5ea9    APPLIED     lxd/cgroup/abstraction: skip loop devices from cgroup2's io.stat
+abee1b9c9b67e210ffae0bdc60d2feeefb6221f7    APPLIED     lxd/cgroup/abstraction: skip loop devices from cgroup1's blkio.throttle.{io_service_bytes_recursive,io_serviced_recursive}
+75080683b038af0b42a3531fbc5a6e7cdaa8c292    APPLIED     doc/zfs: remove limitation
+c9dcd86b48ca790c7b65557fefb4cebb67eb86ce    DIFFERS     Makefile: fix "tags" target and don't make it PHONY
+b78533d9c906fb92146eda8faea2c6701055e0f4    DIFFERS     Makefile: don't use xargs in "tags" target
+8bd48f47cc370183eb460691e9aa8b6f53b6fc0d    FEATURE     test/lint/metadata: don't use fifo to diff before and after files
+49a0d248a17bb1c64599bd7a54c9953a47787483    FEATURE     test/lint/metadata: use unified diff output and don't abort if diff returns non-0
+bc433f8dba7140628ffd8405f33ce31bce733a26    IRRELEVANT  Update storage_volumes.md
+7a3d436ab0db51359156062b84175a519594057d    APPLIED     btrfs: Mention detected FS on detection error
+ce92b323cff2cc177498dd12020fe2224035af72    APPLIED     lxd/device/disk: Refactor CanHotPlug
+95c03235813b87130da31aa5692236e5b0a0794b    APPLIED     lxd/device/disk: Check that filesytem disks being attached to VMs have a mount path inside guest
+07fcc64446d28f62828df0868c2807aead385581    APPLIED     lxd/device/disk: Removes unused sourceIsDir function
+7e59781b70ef18cd61855e60c0bb945fbbaa5d3a    FEATURE     lxd: serve documentation on the `/documentation/` endpoint
+8b12f942f2b29cb236498a65cc83d69abc062a37    FEATURE     doc: general documentation on how to access the LXD documentation
+a7173db17bfbc4b8717aaf3e876a99bd3099c8e5    IRRELEVANT  Update storage_volumes.md
+5777ff0f6da7ad63fdab95686ec223fae4936bfc    APPLIED     storage/drivers/ceph: Differentiate between a true non-existent OSD pool and a Ceph internal issue
+77bc8896fb42d88e19a54782e2add2b66f300680    IRRELEVANT  Update storage_volumes.md
+838733b52cd2df1ec540b26ead17f2ede518860e    DIFFERS     build(deps): bump actions/checkout from 3 to 4
+60f09ce53232dcba87ea37e6d79620500f163e5b    IRRELEVANT  doc: add information about LXD 4.0 EOL
+8bcc79706b40a1411d2cc6cfcf3e84befad53fbf    DIFFERS     Makefile: check `shellcheck`'s version only if present
+69d27dee8d32b9741c1b0a6d1afc91dd8fa5839b    APPLIED     shared/cmd/ask: Add Asker type with CLI helpers as methods
+1d0ec0ff58abe10b76d307c65306e4162569a9a2    APPLIED     lxd: Setup global Asker for lxd commands
+4ab0b7d14774da35db5650091a2dbb62325d358d    APPLIED     lxc: Setup global Asker for lxc commands
+18f87d3a4cc81255b15ba7c97f8b1ec1f0be5e0d    APPLIED     lxd-migrate: Setup global Asker for lxd-migrate commands
+af60348332f552ff8baa8da0d43a088002c9aa54    FEATURE     doc/instances: add UI instructions
+26759f63311a3501e6d081006a0cedad07ef0469    APPLIED     doc/zfs: document that some features require ZFS 2.2
+6a5fdb12051877dbc6b64a18a0328d5ab640b298    IRRELEVANT  gomod: Dependency updates
+9a72a631c06b9d146622ee6bcd382bcee5ee1094    IRRELEVANT  gomod: Pin some dependencies for compatibility with Go 1.18
+c619d1ee78ca9aad4597c8124891f696a321ac1b    APPLIED     lxd-agent: Skip when already mounted
+662b2b18cf30bb9f116079ebb22a103a5e90af06    APPLIED     lxd/instance/qemu: Fix bootorder when using -kernel
+0241bb1cf34b7c3c30b4842cdff73eb7a35252ec    DIFFERS     Revert "test/storage_local_volume_handling: use a smaller ISO file"
+97a768b4e94d96f25ac08e6d61fc1b1cde7e4a99    FEATURE     Revert "test/storage_volume_import: use smaller ISO files"
+b503bc48c89cefdc9753de3c566b31d6955597d8    APPLIED     github: Adds CODEOWNERS file
+9728d1cc82785602bcc7cfe1b784a459bcd1c429    APPLIED     lxd/apparmor/instance/qemu: Allow /etc/machine-id
+6408fa829645af22a035135990b5a73fabfddbb8    DIFFERS     Makefile: Allow setting custom version
+f47e7594a212c66f2e1121f1433f19730d4ecd5c    APPLIED     lxd/instance/qemu: Avoid old -bios syntax
+913475120a3d222a74fcd53f15bd4d4c6a04667f    DIFFERS     actions: Test LXD tarball is produced correctly
+c3e2ad8a8344eced1c37b8c575cc1275908f48dd    IRRELEVANT  test/main: report disk usage (df -h) prior to actually cleaning up
+69596da1d647f812859dd6383d9bb008d9d7b88f    APPLIED     test/backends/ceph: lower OSD pg_num to 8
+1879ed5a01b9ae45d6986c1c2d6292ced3f5d51d    DIFFERS     github: action runners already have snapd installed
+cdac28d44cacda39732e1f2c5341242ba3bfe2e6    DIFFERS     github: remove core20 to reclaim some space in the rootfs
+af97ea43f6bc6cc43f49af64b51d3e44ee4a144e    DIFFERS     github: use the whole ephemeral disk as ceph OSD
+65695816a095de0cfef91f475cc0e9d75a3a1019    DIFFERS     github: instruct curl to fail on error when downloading gotip
+dcd4fc0e7bf14239bde7809a697fe69081af8bf6    APPLIED     lxd/network/openvswitch/ovn: Add function to retrieve all logical switch port IPs
+b5587183191db2fe41e46ec74c145a491107058f    APPLIED     lxd/network/driver_ovn: Fix OVN leases not showing static ips
+ed7172129cd36ff6d696e4f8c5000ea036d59d46    APPLIED     lxd/device/nic_ovn: Use all allocated IPs as dynamic when static IP is not set for a device
+8a9f19fa7eeb60c361e051bb1bebfd5ba0e28661    APPLIED     lxd/network/driver_ovn: Remove redundant InstanceDevicePortDynamicIPs function
+d63bfd69093909b09994de39cf7acefe48d02ce5    DIFFERS     github: bail if the rootfs and the ephemeral one are on the same disk
+a2ad473547162b64a87f702dbcacfea1049e2f44    APPLIED     lxd-agent: Validate fields only for CPU info
+5744abea1b75b395e26a0ba832e01b943385cfcc    IRRELEVANT  doc/storage: clarify that `block.*` options are for filesystem volumes
+7ebca54656208a4d24f7fd488271d677b8882c16    APPLIED     lxd/storage/drivers/btrfs: Use command instead of walking dir to get subvolumes
+ee0ce570cd4b5a8bdc119199a1b3480e710a3059    APPLIED     lxd/auth: Exit goroutine if RBAC has been disabled
+3e9acc4af8af4c97a98b43cc28454913e98e1e8d    APPLIED     shared/simplestreams/products: Adds support for incus.tar.xz items
+430bdcc1f287ca47e5c1e846af074569668c18a0    APPLIED     shared/validate: names starting with a digit are valid
+ef22f0449634f3a2556457cff97a07ae23bbcb83    APPLIED     test/basic: 12test is now a valid instance name
+d26c3cd7ed673e2a5a4c5198e54b3b3f0b728411    APPLIED     test/basic: test invalid instance name with a period
+aca9cac1048b425c08698ae1d9c7e8b681abbb32    DIFFERS     lxd: Revert server config if it cannot be set
+1cda5ac857ce50606d1719c48fe47d888836edce    IRRELEVANT  doc/faq: add info about VPN cgroup1 issues
+cf48612888ad8aa6023a6ea294da1c5bf23401e9    APPLIED     lxd/device/device/utils/network: Improve error handling and messaging in networkSRIOVRestoreVF
+c534cd136f67bed33f4ec459fe43e0d7d6502dc2    APPLIED     test/network: test DNS resolution of instance names
+1b4014a35145df22d61645891ea3003e2880d95d    DIFFERS     github: dnsutils pulls bind9-dnsutils since 20.04
+1c3feaed46ac23f361d087d2a817442421f88f8a    APPLIED     lxd: Return http 429 on repeated shutdowns
+003226cd8cb9a28075d0190d64026fde2ecaa55b    APPLIED     lxd: Fix type field formatting
+145a27a481ee686a0055b74d31b16fc4708eaedf    FEATURE     lxd/cluster/config: add a long desc to `loki.api.url`
+cc2068af0b09ee69cbe479025566f8b0af42f696    FEATURE     lxd/metadata: add a long desc to `loki.api.url`
+002a5fc93d02bf100b850989956ec05ff0144bb3    FEATURE     doc/config_options: add a long desc to `loki.api.url`
+1d0f272dcb2a9f213fedb2d6cbb9c79b61a90583    FEATURE     doc/api-extensions: explain the expected format of loki.api.url
+dacc8d175cdfc931b747f6efcb7c82a65e48efd5    FEATURE     doc: Update docs on loki.api.url
+6e1d55d8166fa408f64a4811323596d8368fb340    APPLIED     lxd/storage/drivers/driver_zfs_volumes: Disallow setting zfs.block_mode for VM block volumes
+0d16fe726c1005ce6ba308a4233417efb2feefd4    APPLIED     lxd/main/forknet: Remove altname if preventing rename of NIC interface
+5e54a400ec6ee1aa56f9dbd689a09c5b0102fa87    FEATURE     lxd: Add syslog listener
+bc125bff493bc604aa1c93c85f7f4c87561719b2    FEATURE     shared/api: Add new EventTypeOVN
+28a441b35d166cda1e7d15887744b1622d769493    FEATURE     config: Add `core.syslog_socket`
+8bea951516116b021fbe3f1d64b777d24c2cce00    FEATURE     lxd: Setup syslog listener
+91b2fe74f7129d71dd1d73bbbb000d3e248866cc    FEATURE     events: Include EventTypeOVN when querying events
+1c97531901ee6e9c0cccab2ec4c5fe0ba3ae3b74    FEATURE     config: Allow `ovn` value in `loki.types` setting
+f7bb52a3b5df00acc6b5aa63d9aae2ddd1f46645    FEATURE     loki: Handle OVN events
+8d4d7c9ddad52706ed0dc0466ed93ca75a39a78a    FEATURE     events: Add event type `ovn` to internal listener
+245d790ddc3011c116d925a1da5af4b5344d33ba    IRRELEVANT  doc: Extend wordlist
+61154f114558ab0e751ac6e68c7bab706de46908    FEATURE     api: Add syslog_socket API extension
+59ad79104de81205e19fe64e4bdb795622872f9e    FEATURE     doc/howto: Explain how to use core.syslog_socket for OVN
+69b1dac0ed6547084140f92b46335752c3f0e85b    IRRELEVANT  Update metadata
+0515097dee883b87c816db067fe7e0b7085bee25    FEATURE     test: Add syslock socket test
+4ef2e84ef2448602b97032dfca68f03872e7d6fd    IRRELEVANT  lxd/drivers/zfs: supported zfs versions all have "compress" support
+4eb885f039c0da8ed9f4211b97befbfa1edc1610    IRRELEVANT  lxd/drivers/zfs: supported zfs versions all have "volmode=none"
+94e64d7eef895e71bddc58bf3c6190ab33a627a6    IRRELEVANT  lxd/drivers/zfs_utils: drop slow path for unsupported zfs 0.6 in setDatasetProperties()
+345ecb0ce26ca87e1af20549908532036d822cbf    FEATURE     grafana: add Loki logs section with lifecycle and logging events
+cbe39c5d3f1410c88d33691fe53e5048f3b78cb8    IRRELEVANT  doc: align with current doc starter pack
+a40d126c6670583374558b728c11c3e49fe38828    IRRELEVANT  doc: remove lxc from the wordlist
+13ccc6b731e93f82c3cfdd9b3aca000dce162340    APPLIED     lxc/operation.go: Add missing flag all-projects for command operation list
+6554cde2bfe6d2df9ba7def59cc37e7f68ec6717    IRRELEVANT  i18n: Update translation templates
+e652351f1f58bbc9e9c3788cd06765a91012aa96    FEATURE     shared/api/event: Add support for OVN logs in lxc monitor --pretty
+3374a42943a8fc8e5682f269e5a3fe6ed5b28a66    FEATURE     docs: Improve OVN syslog integration setup steps
+d7c2a5113344ea497e2953ccbf1cec99ea74877c    IRRELEVANT  Release LXD 5.18
+5ccebec7d2a4f2e98ded41fac891504e3072daf3    APPLIED     patches: Don't fail if no storage pools were found
+c5a691c13a2f589c2f72f16edc2817f29639e77a    APPLIED     shared/simplestreams/products: Fix regression in lxd_combined.tar.gz handling
+11dfea96fbed63041720173c7627bdad8a0b8cac    FEATURE     loki: Sort context keys alphabetically
+12df3cff9033a73fe0432065afb690505bd35457    APPLIED     client: check API extension for `instances_rebuild`
+a625e3709c4f1987fabf72e2ebf9da25fab58374    FEATURE     loki: Check return value of reflect.TypeOf()
+e99ae89aefa78538d1898b8f60b37a18276c7227    FEATURE     loki: Fix labels names with hyphens
+3697117cdefb9ecf133802e27a704df8b75e3402    APPLIED     doc: add link to Windows VM tutorial
+8e745b8cef45365586f05d2c95ce1bd7fc44b0ed    IRRELEVANT  doc: include the cheat sheet again
