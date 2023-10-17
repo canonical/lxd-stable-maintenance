@@ -2043,3 +2043,18 @@ a625e3709c4f1987fabf72e2ebf9da25fab58374    FEATURE     loki: Check return value
 e99ae89aefa78538d1898b8f60b37a18276c7227    FEATURE     loki: Fix labels names with hyphens
 3697117cdefb9ecf133802e27a704df8b75e3402    APPLIED     doc: add link to Windows VM tutorial
 8e745b8cef45365586f05d2c95ce1bd7fc44b0ed    IRRELEVANT  doc: include the cheat sheet again
+df5d04ba440e0d1bc17871146cbab382040a2990    IRRELEVANT  doc: update topical navigation
+1c57a8bdce52c493e35a42ed30f215dfe107e9aa    IRRELEVANT  doc: unpin Sphinx version
+73d181ccfa46b673981f689fbfe6fb6702f7e595    DIFFERS     api: Add event_lifecycle_name_and_project
+1084d217b0d7fd77ee55c00d5be1a62781d8777e    APPLIED     lifecycle: Add name and project for instance lifecycle events
+875411ae6c0032e3b27c436d37ee6ce4111fdbf8    FEATURE     loki: Set `name` and `project` labels if present
+a4ee9ec9be437c007eb3cc84647d64649973e04a    APPLIED     doc/api-extensions: Use `lifecycle` consistently
+7957ad67b7564a7e132f2a596ee143a9c5f997ed    FEATURE     loki: Add hostname as `instance` label value
+a1a0707f56b8d4279415fb2fc49d2642e3f39fbe    APPLIED     lxd/main_init: use GiB instead of GB for storage-create-loop
+cd02832da3fb5ebb484acc4d172661d4027af285    APPLIED     lxd/firewall: add support for InstanceSetupNetPrio/InstanceClearNetPrio
+d23780c3d9340b9d10636da0a6568d44ad55880b    APPLIED     lxd/device: extend networkSetupHostVethLimits signature
+daef95d37f7bf81584a7f082ce9f5e26fb7ca2c4    APPLIED     lxd/device: add support for network device limits.priority option
+a1d670f5a315f1d3e64f3a934f8ffcede5f680a2    APPLIED     test: add test for limits.priority per-device setting
+e570caa3e4deb91d84639b6d56c0be708d666c87    APPLIED     api: instances_nic_limits_priority
+51c6b6f103f5c2afdba8123a90e8c025a8ffe95d    APPLIED     lxc/cgroup/init: change warning that network priority will be ignored without NetPrio cgroup
+47d6d6f33d8ab7bce5b83df816b1375b254d691e    IRRELEVANT  doc: clarify that limits.network.priority option is deprecated
