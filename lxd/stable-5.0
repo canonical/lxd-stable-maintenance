@@ -2058,3 +2058,112 @@ a1d670f5a315f1d3e64f3a934f8ffcede5f680a2    APPLIED     test: add test for limit
 e570caa3e4deb91d84639b6d56c0be708d666c87    APPLIED     api: instances_nic_limits_priority
 51c6b6f103f5c2afdba8123a90e8c025a8ffe95d    APPLIED     lxc/cgroup/init: change warning that network priority will be ignored without NetPrio cgroup
 47d6d6f33d8ab7bce5b83df816b1375b254d691e    IRRELEVANT  doc: clarify that limits.network.priority option is deprecated
+e1aa490d828f3fd3955b2c956bf120872649c5a4    FEATURE     shared/version/api: Add device-initial-configuration API extension
+0fab028ff988cabc950a1ba69758a42b7cd4c97f    FEATURE     doc/api-extensions: Add documentation for device-initial-configuration extension
+50fd251c99c47486056f40d53c275932623ef526    FEATURE     lxd/device/config/devices: Allow initial.* configuration keys
+f4b224dfe77fddaffdbb466aae78f5c69034d8a4    FEATURE     lxd/storage/lxd_backend: Apply initial configuration when new instance is created
+167b4e676d521cef496b2b236a1ec8b33672d733    FEATURE     lxd/device/config/devices: Add helper function that applies profile root device with initial values to the instance devices
+d083b0236d9c81bce13dac1f2f80fb84b3cbbe2c    FEATURE     lxd/instances_post: Apply profile root disk device with initial configuration to instance devices
+a31663dd86b36160ebb8af99432cf1b8c1eb9214    FEATURE     lxd/instance/drivers/driver_lxc: Prevent updates of initial configuration values
+31da75cbb62eb2b32382159214fd4b48a57ba79f    FEATURE     lxd/instance/drivers/driver_qemu: Prevent updates of initial configuration values
+d2129860bfeffba37dee50669faa6992d0ac090f    APPLIED     lxd/device/nic_ovn: Prevent setting static IPv6 if static IPv4 is not set
+9459ff3236d9e2de1d7feaf640147d27fe160c90    FEATURE     test/suites: Add initial configuration test
+1b9d3dfa949d668f14fc8909d450e125beed93eb    FEATURE     test/main: Reference initial configuration test
+085d44a64d6d2171a95736cee48771b31948e278    FEATURE     lxd/device/disk: Validate profile's device initial configuration
+33f867fae63f224287a53c7b50eea946dec191d8    FEATURE     doc/reference/devices_disk: Add documentation for initial configuration
+61894c93e34df9d4e62132293af87b772a5cb83a    IRRELEVANT  lxd/storage/backend_lxd: Prevent usage of optimized image if zfs.blocksize differs
+af2a3939e04ce024217de8b785fbf74a9613c09d    FEATURE     makefile: use venv pip and not global pip
+e53d45a74b11d43e7a31dc8f7fdadd5748f01d04    APPLIED     lxd/storage/drivers: Adds further validation to common driver.
+bb8a85aa76ee6c52d3c4c7dbb8e9b8fc3671adaf    APPLIED     lxd/storage: Remove check for mutually exclusive config options.
+527479bceac9b464ad8f43390c326b70da4c556c    APPLIED     test/suites: Adds checks for mutually exclusive config options.
+57ac8b8ff3355664d306f63829730ac24e23c56e    FEATURE     lxd: annotate project config options
+3dd5b81f6de741a727b764517b3ed0e178842839    FEATURE     lxd/metadata: update configuration metadata
+b0f3393d43d86fe6948a234b79e68bfc8108ed3c    FEATURE     doc: update doc config options
+73c5e60f21e7b92231d4a505b1b1ead84af999eb    FEATURE     doc: update project configuration table references
+d6403c5de740d2c671e379c355d33027819bf2e9    IRRELEVANT  shared/util: Add generic ValueInSlice function
+4843f2438413c42e4508e8279a56ff6bd04602b4    IRRELEVANT  Replace StringInSlice with ValueInSlice
+34a108012a4b47c045503c9651a37091ddb8bacb    IRRELEVANT  Replace IntInSlice with ValueInSlice
+88ce76cbc2fd9b9ddd13787646a28b9d96a60c22    IRRELEVANT  Replace Int64InSlice with ValueInSlice
+b2c70dc574d676b74b0e0831d2ad7c7123b39d01    IRRELEVANT  Replace Uint64InSlice with ValueInSlice
+0d26d15be45b67efece496bf7691ca0a2e7bbbb1    IRRELEVANT  lxd/resources: Use shared.ValueInSlice
+f8a6014ca663c4ab056f6ba4f411c881126d0a77    APPLIED     Replace RemoveElementsFromStringSlice with RemoveElementFromSlice
+68db5c486c9d42e201c31cccf9201a6fe53ba890    IRRELEVANT  doc: fix swagger display
+5467ffada5e65be3ce3e80d865f57f4c27dceed1    APPLIED     github: add differential shellcheck to get in PR feedback
+1c111bbc2d9d3b12fefc2f217157e3e4bfe57557    APPLIED     github: only try to upload differential shellcheck result if it ran
+fb7c9fa8c0aa7014c4b6b874409c1ddcc8e0c906    APPLIED     lxd/firewall/drivers_nftables: fix hostVersion() description
+f71bd5d539f6f2a4146a28848e9fe90b9386e2b3    DIFFERS     patches: Remove invalid block settings from existing volumes
+8b9ae526660b7dfc01ac09cae975ad91e481601b    APPLIED     test/suites: Check that we can list allocations in a remote server.
+b2f085b488ccba7c268af7a0574b4187fc2b003f    IRRELEVANT  README: Update test status badge so it accurately shows status of tests.yml workflow
+eb6b4ffd5502f116aeff3e6440bbc43886f6b755    IRRELEVANT  README: remove CII Best Practices badge link
+10f6cd4bf1a0d6d2ea2ac7c3458d794101f53069    IRRELEVANT  Fix info --resources for wwan devices
+fe67eed0ef243fee5a4ba8807844dd33b905a02e    APPLIED     doc/networking/firewall: add more restrictive UFW rules
+5b226f7a1a35507fc73afd9fbaa009f74b3d9d7c    APPLIED     client/lxd/images: Propagate error (if any) when streaming split tarballs
+1f4959267fa6090228caf811017de543954dfefe    APPLIED     github: add more quotes around subshell
+daa0ec31fbb9aeb08f1eaea2276c1229e9991b47    APPLIED     github: run fsck on git objects (safety feature)
+2aa187d75a227f410ab737e8d8e8ea49dba92ab3    APPLIED     github: sign commits (with SSH key) to repo on git.launchpad.net
+11ac19812abac5b83ce0076ab7f5dd190997223c    APPLIED     github: set -eux on shell snippet
+6315fcf9f3dde42c8006f9c4b11075103bfa4943    APPLIED     lxc: Handle volume rename in `lxc storage volume move` command
+1bc30652cc5284fe721a9e6aa8effef6e88c0056    DIFFERS     lxd: Fully configure new node from cluster config after it is added.
+0314fc2312acae8c8834829b89e79ededb7d0d35    APPLIED     test: Rename custom volume using `lxc storage volume move`
+dd74ccb51c5ce488ab5c4e3d30d522541d44b869    APPLIED     lxc/storage: Initialise storage pool config map if nil.
+8cdc49ca72cb4af319e49b833b0e36a71a73b6e9    APPLIED     build(deps): bump redhat-plumbers-in-action/differential-shellcheck
+03c4b14fda45d5eba7a440868b661d28499efd61    APPLIED     client: Remove project from format string API path.
+f57bee09b30ab412e14c71718dcab82be90d20f0    APPLIED     scripts/bash: add missing `lxc config trust` subcommands
+83262569836e8eb6980f5d4b68a25bbbbea4a5de    APPLIED     github: build static lxc and lxd-migrate bins for arm64
+1ea8b0a3332aeb8b31d14c337a1a44e09831d44e    IRRELEVANT  doc: allow customising which anchors to ignore
+14f563379ef59a096f185f9bdc4b7531e0ab0684    APPLIED     lxd: Move certificate type to certificate package.
+1d5f840a76c58f823ead2c9b2ddac61d46ccb1d5    APPLIED     lxd/storage: Prevent duplicate usedBy profile device entries
+667d88067becd0f2b69041930da584954331608a    APPLIED     lxd/certificate: Adds a thread-safe certificate cache.
+b3a5fe8db116cc40b7c877989f68f9dfe1d1c1d9    APPLIED     lxd: Use certificate.Cache in the daemon.
+8a4e27160e9741483a8012d8079f20dd1f3a382f    IRRELEVANT  doc: add information about managing the snap
+61a9a3db570b7a7354ae7becdecb3387cdfb2314    IRRELEVANT  doc/projects: fix typo "profiles" instead of "projects"
+3eb7f8591a6eedf99aaa68df7740097c06f70d06    IRRELEVANT  doc/projects: point out that new projects don't have a profile
+9dcb50a1cdbdc48c5e440bc1cd8fc7ae308eb0d9    IRRELEVANT  doc/support: clarify information about LTS releases and timing
+95ffbb2c82bf1b4c4db821a214a30d556fe6aa15    FEATURE     lxd: Properly forward rebuild requests
+19399b236801e5bc44b0cb31df909252c999ac58    APPLIED     Revert "github: build static lxc and lxd-migrate bins for arm64"
+380e4db2ed404ea4f812fe84c0f967212388dcc9    APPLIED     github: build static lxc and lxd-migrate bins for arm64
+55c5e719878f449058951c967e61d3c04de721f5    IRRELEVANT  build(deps): bump golang.org/x/net from 0.15.0 to 0.17.0
+6433343602f5df2fe40ac146103718c7a767fd6f    APPLIED     lxd/resources: if `SCSI_IDENT_SERIAL` is available, use it as serial nr before `ID_SERIAL_SHORT`
+2f7dacf9e7f1c97c107c663e7f0b581d45cc1c32    DIFFERS     tests: Fix storage volume recovery test
+3214d0c552a8a05e419b972cbc430d97f575ce06    FEATURE     tests: Fix syslog test
+ebd3060926b8a7fffa9f27cc9e6345b0de9c0bd5    DIFFERS     tests: Add lxd-user test
+ab513c7c59ff6c1733015f92972a1119749ab0bf    APPLIED     client: Adds a flag to operations to skip event listener setup.
+1c1169d26eb09c905861ccb933758a031f6a11be    APPLIED     client: Pass useEventListener flag into queryOperation.
+ad6628070869536f7b903370a6c40b4c24c619c3    APPLIED     client/certificates: Update calls to queryOperation.
+704b8b5bc878be568a95af95c5fc66cce5c832e6    APPLIED     client/cluster: Update calls to queryOperation.
+b022a2076198d41ba73ac1291ae9802b71da726b    APPLIED     client/containers: Update calls to queryOperation.
+510508ac0b81d46ad0040d086f2ecd8aff582323    APPLIED     client/images: Update calls to queryOperation.
+ca017ffa674cb537715872063d089329819db725    APPLIED     client/instances: Update calls to queryOperation.
+3817d9326233ebd59a34eeaabf873f6126a1429f    APPLIED     client/projects: Update calls to queryOperation.
+d812961ad66300315a584ce3002c70ad1150c77a    APPLIED     client/storage_volumes: Update calls to queryOperation.
+5aeb90c702f36e452613ecbe4f8f8a218db1747b    APPLIED     client: Check for operation wait extension and conditionally revert to events API.
+aa0e924231db3ff64c45cc930d0235afa5035cec    IRRELEVANT  doc: remove lxd.{ogg,wav} now that mp3 support is ubiquitous
+365c30f51242f8ef62b85e9ec9dd9c7de1126072    APPLIED     github: improve ceph test reliability
+f31e7834bcf9e643473d4d2a1e60448e254e9224    APPLIED     github: reorder microceph setup steps to remove a sleep
+ad72da08214500da40701508be9df6ba632829a6    APPLIED     github: tune ext4 for speed and reclaim some space
+604ab634607514872e4a1991646022969da7c81f    APPLIED     lxd-agent: Adds an operation wait endpoint.
+a467cbf1dd404d46f1f159e3a4e93392b297e46e    DIFFERS     shared/version: Adds API extension.
+2ff1b95fd32652a562c55d5cfe1d8bf595384a3e    APPLIED     lxd/locking/lock: Return error if context got cancelled
+68c8a7e478d0e5dcee5a793ec257758f96bbc221    APPLIED     lxd/api: Handle error from lock
+223ef404d3a6053d011c08febd5163d5d5fe7762    APPLIED     lxd/daemon: Handle error from lock
+25e188ca7813efbf99f228ed9bc105d1656dd61c    APPLIED     lxd/images: Handle error from lock
+c4169510f558ccbc47141b827e6fc0c14a097571    APPLIED     lxd/instance: Handle error from lock
+d49e117ecdd417a11484bd001c5e749038f25739    APPLIED     lxd/instance/drivers: Handle error from lock
+50e053a295d73e7f7a183b0cc87706a1964e708a    APPLIED     lxd/storage/drivers: Handle error from lock
+87ec308394a9ac568a33e357ae9b2b1d55949e77    APPLIED     lxd/network/driver/ovn: Handle error from lock
+8e5bc46afbbb46831c35967291ee13dea8dd8063    DIFFERS     lxd/storage/backend: Handle error from lock
+d481a784e95317cd7169b93c4fa880ef8871bc78    IRRELEVANT  lxd/storage/s3/miniod: Handle error from lock
+3dc6d41f53de65b63fb634b1bd3b319f2b6eed63    APPLIED     shared/ws/mirror: Log as soon as io.Copy has finished in MirrorRead
+27f5e1f325cd1054ecbaf91b9afd393c0bd04dff    APPLIED     shared/ws/mirror: Removes unused context argument from Mirror*()
+8f886dfde3f72d3c9f0ad58d8386b3b7a962876e    APPLIED     client: ws.Mirror*() usage
+907d1d4dda7b257796a83e6d49d94e51e8345846    APPLIED     lxc-to-lxd: ws.Mirror*() usage
+134353ae1ecb34ab3fa7f047f4b66f64bcbf9207    APPLIED     lxd-agent: ws.Mirror*() usage
+4f1d94c62875cc169acb3e5f479d5dee3a97c42e    APPLIED     lxd-migrate: ws.Mirror*() usage
+318dc3d726b62969a13a057482383850f0ffbf88    APPLIED     lxd: ws.Mirror*() usage
+f568f66725864f500c9eb04db2c3c4837a76203b    APPLIED     shared/util/linux: Partially reverts 54e3da881103c42d6b4813e8930bde1b10edb236 and reintroduces GetPollRevents
+735d93298078988c8e5c1cf075f720582d725204    APPLIED     shared/util/linux: Adds execWrapper for use with ws.MirrorRead() and ws.Mirror()
+9059b612d3961365bec295a07b25785009347797    APPLIED     lxd/instance/exec: Use context.WithCancel rather than cancel
+0144131b913c82401233b942c2ded322e63f9956    APPLIED     lxd/instance/exec: Use shared.NewExecWrapper
+351a73b76ef5c0abd52a7b528ecb72482022ad68    APPLIED     lxd-agent/exec: Use shared.NewExecWrapper and bring into line with container exec
+19618cc0d3b4bb4c9d49e2d878b21e5c3b403484    IRRELEVANT  i18n: Update translations from weblate
+467047e66b9ff750165e9a2276195a09c9c6704c    IRRELEVANT  gomod: Dependency updates
