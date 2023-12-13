@@ -2167,3 +2167,55 @@ f568f66725864f500c9eb04db2c3c4837a76203b    APPLIED     shared/util/linux: Parti
 351a73b76ef5c0abd52a7b528ecb72482022ad68    APPLIED     lxd-agent/exec: Use shared.NewExecWrapper and bring into line with container exec
 19618cc0d3b4bb4c9d49e2d878b21e5c3b403484    IRRELEVANT  i18n: Update translations from weblate
 467047e66b9ff750165e9a2276195a09c9c6704c    IRRELEVANT  gomod: Dependency updates
+e850cf5c4df2903bdec3b7625685129d1ba85d18    APPLIED     patches: Fix patch regarding unsetting zfs block settings
+4b193a19dff2b3d08d4a6c419fa24a2811740420    APPLIED     lxd/storage/backend_lxd: Allow generating backup configuration w/o volume snapshots
+5aa3e9da5ddec16795efa54a4083dbde08a01d0e    APPLIED     lxd/instance/drivers: Update func call
+cc559cff6fd8a6a8ab535c091997f51210708569    APPLIED     shared/osarch: Add loongarch64
+bddc18fa7f94558b5c39a6679bc69d05d7f44f78    APPLIED     internal/server/seccomp: Fix clang build
+d0a5d0074c7005a239d5a4f12e043789012d67f0    APPLIED     client: Unset response header timeout when waiting for operations.
+11148d58417ecf443b00ff5959cd56ec2afa0f05    APPLIED     test/suites/backup: Test instance export with instance-only flag
+371b55f2484246b2883cdc3ccadf8d34e812b020    APPLIED     test/main: Add invocation of instance export test
+8c962f9b7fee7e16acadbaacd0b6723b6342fa18    APPLIED     github: use ppa:ubuntu-lxc/daily instead of ppa:ubuntu-lxc/lxc-git-master
+cf7af9454354fc53da989ece9fae6d701763b93a    FEATURE     loki: enable TLS verification if a CA cert is provided
+dd1c285a07fd9d13ec54291d0af0d19db86ea757    APPLIED     test/container_devices_unix: Make unix device checks less flaky
+e62ac52195048706d73e31d84ee109519ef4ee38    FEATURE     storage/backend_lxd: Replace ioutil.ReadAll() by io.ReadAll()
+a063187b20458bc7788dc359d2e7e64a52efb74d    FEATURE     lxd-metadata: Replace ioutil.{Read,Write}File() by os.{Read,Write}File()
+0e62d0e08ec924dcb41ddb942d305f166dac7c2f    APPLIED     lxd-agent: Fixes vsock listener restart on boot due to vsock module not being fully initialised
+888cbeb5802550dd5047cebb9b9b6196955febbf    APPLIED     lxd/vsock/vsock: Removes unused ContextID function
+4a98234684fab8480d070db989d9a445cd0ea5d8    APPLIED     lxd-agent: Fixes intermittent exec EOF closure when vsock listener is restarted just after boot
+144a6c2c598ebedf202992aabe61eb603fb5c914    APPLIED     shared/api/url: Fix double path encoding issue
+b3321e2fb95c40e4d489ece2afcdebf76fb10135    APPLIED     lxc: avoid returning early when multiple ephemeral instances are to be deleted
+bc23e311547621be3e638e8b57c001ed17fdf03b    APPLIED     test: test multiple ephemeral delete
+6c70cc3a1d509df5f7315d1920cb79b50f3366ea    APPLIED     lxc/storage/volume: Move volume if a destination cluster member name is set
+95a9e54c68a5c0dd2916513c792993fe369c0245    APPLIED     test: Rename storage volumes in a cluster
+f4f0697751b2e6be04454a9a58ba43481433ea98    APPLIED     lxd/network/driver/bridge: Don't consider an IP parse failure of a proxy listen address an error
+b84c2c922f61366390489dac1fcdeda5fe5cb771    APPLIED     test/remote: switch to cloud-images.ubuntu.com URLs
+26f0a93813db76d7f6ba48922dff434d0dee6a20    APPLIED     client/doc: use https://cloud-images.ubuntu.com/releases for simplestreams example
+ff5926c3b519757ba1aec04a253d3c3fb980f84b    IRRELEVANT  Release LXD 5.19
+9a916ab0fbd2467e13896ba3d6f816536a6d31bb    APPLIED     gitignore: Ignore pycache
+56fa98f726a1b844e637ff1a821c2e614e55eb12    APPLIED     lxd/daemon: Initialise server name and global config before patches
+f044be9c10d2df8b9e8b70ed51a5aa30b9b7ddff    APPLIED     doc: add a note about go-lxc build issue when LXC_DEVEL=1
+5235a06231b92fa4f2ef2775bfc3e98b59aaf103    APPLIED     lxd/patches: Only update volumes that need updating in patchStorageZfsUnsetInvalidBlockSettingsV2
+942350ef274622e1857002f86902c964d61c111d    APPLIED     lxd/patches: Only update volumes that need updating in patchStorageZfsUnsetInvalidBlockSettings
+89d4048db8c35f0ec11a8cb1cb97f22534380150    APPLIED     lxd/firewall: Fix nftables ACL template
+546eb3b571683d665c82bcad564270e6a650bf4a    DIFFERS     lxd/api: replace numeric literal 301 by http.StatusMovedPermanently
+1d0aa6c9edbfc9ba6f64f6e3abed560d09ffdb0d    FEATURE     lxd/auth/oidc: replace numeric literal 301 by http.StatusMovedPermanently
+b1cb755aafcf58658a6906d7b199b63bfa68fbb6    DIFFERS     doc: update link to tool downloads
+bb35821ea49ebd8a0e446e69bdb5f9650a818e11    APPLIED     lxd: Update certificate cache again after cluster join.
+c525e53aa59edaa8838dcd9b6fe853f4f595a57f    DIFFERS     lxd/patches: Add cluster check for patches fixing volumes
+e39b6ded6fd6883f215b1322cbaba921ad034cf9    APPLIED     doc: update broken MAAS link
+7e2091edb621363520de7cc95b2521931f528ed5    APPLIED     lxd/storage_pools: Fix etag when retrieving storage pool
+9f034b5af8d26bec8abf30856b2d06e69c4c2aec    DIFFERS     Makefile: add staticcheck target
+de13b204b0b8e69d504cd4215de0a79b33b9f4f6    FEATURE     doc/instances: clarify initial volume configuration
+e3488518a3a4830a2ada38a5b2ca768b690e9009    FEATURE     doc/instance options: mark limits.network.priority as deprecated
+c1053c7dadb9e3ae2fd8d722a9e0d7e24b387b62    APPLIED     shared/cliconfig: Nicer error on missing socket
+cddcbf58165689302e682e5274b3d44fcd6d7287    IRRELEVANT  doc: remove link to topical navigation
+6db718815a3191ef5bea177694c5d4056b2aecee    IRRELEVANT  doc: remove Security section from the start page
+cd91a40931fee4e42a18fc988507b2483905d4f2    APPLIED     lxd/instance/drivers: Check running status with `InitPID` for cgroups
+6136424a2fe3b57f7f10893ab1246e7fbcf2f10a    APPLIED     lxd/instance/drivers: Extend error message in deviceAddCgroupRules
+92279f65949567dc99d50827df90270fee33fb9c    APPLIED     btrfs: Add function to check subvolumes in a given path 
+2eecf24b293d52d2ecbf869c25c3061ae96c7b86    APPLIED     btrfs: Use hasSubvolumes when creating a new pool 
+7b4272fd43da3d4691bd0e6841279dd398672c5f    APPLIED     test: Btrfs pool with a subvolume as its source
+ba41e149192445b6dce2dc10007c3d70208a1eac    APPLIED     lxd/storage/drivers: Collect subvolumes via filepath traversal if in nested container.
+7b4272fd43da3d4691bd0e6841279dd398672c5f    APPLIED     lxd/instance/drivers/qemu_cmd: Return clean EOF error
+d654ae68733005689bca3bd0fb4f7ef58d4f0b58    APPLIED     client/lxd/instances: Consume ping messages from server for exec control and stdin channels
