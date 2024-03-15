@@ -1,0 +1,23 @@
+49091aa16892dcb08256ed0fc3e46cfa3e25714d    APPLIED     test/suites/basic: check version number format (X.Y.Z for LTSes, X.Y otherwise)
+8e78eec76284167132489f6d95bf3c2e4fbd40a6    APPLIED     lxd/storage/s3/miniod: Specify a port for minio --console-address
+37faf2eadd37b6ec608d47bd7996476e9b9ee912    APPLIED     lxc: Add context to socket access errors
+3d1c5f44fd5ccb2a3aac7ab02e4aa285134d7209    IRRELEVANT  Release LXD 5.21.0
+1bc078a4189184e1db26d2bb4a300e9a995f3fca    APPLIED     doc/devices/nic: add missing spaces
+c7ab423241cdce498923da40ba13fcc2f06b8703    APPLIED     doc/devices/unix-*: add configuration examples
+d1d106bd68158814c4739ae526211853434c7768    APPLIED     doc/explanation: Add authorization explanation page.
+57d2b73cf404cda4612c224e854604bc1d9a35c0    APPLIED     doc: Add instructions for OIDC clients post 'access_management' extension.
+6ef254b8a658cce4a83095f61e8449d0fd3b714d    APPLIED     doc: Update authentication page for authorization.
+0e4a7a9ddf686743a5503ea95c6e96f45e0df64c    APPLIED     doc: Add links to authorization page.
+c7979707247a8d07a0ef5336dac9ab046fbd78cf    APPLIED     doc: Add IAM related words to wordlist.
+405249e19f7ab1e18ad011e1c09c0480ed7bdca1    APPLIED     lxd/auth: Remove no-op methods from authorizer interface.
+290c689282c1ebc5c8f8ce64e31bb38cf0efad36    APPLIED     lxd/instance/drivers: Remove authorizer calls to no-op methods.
+2baa42e2ee4572a9329076207f50cfecab517843    APPLIED     lxd/storage: Remove authorizer calls to no-op methods.
+53bd124b5887f92f68110812b5aef21f2117e204    APPLIED     lxd: Remove authorizer calls to no-op methods.
+b46da51ce7b199e0961726d6f214733c2a55a20b    APPLIED     doc/devices: add CLI examples for more device types
+b61d84ce25ab5c82bc91465db6bc7e3cbc65cd52    APPLIED     doc: except commands from the spelling check
+8ef0e2b0b4cf588333e1ce5167f82dc5549a5370    APPLIED     lxc: Correctly parse remote when listing permissions.
+caf6a8a65b221312b11610df31db7d261753810a    APPLIED     doc/devices/proxy: add CLI examples for proxy device
+7d7e2cec64f98d32280a690533aad90d540d7781    APPLIED     doc/devices/gpu: add configuration examples for gpu devices
+52bb283947d9076431ea383bd4ab6e55f5a90f93    APPLIED     lxd/patches: Add patchStorageSetVolumeUUIDV2
+f1cd147d391758f5e761f1f4cd0da28dd6c24459    APPLIED     lxd/patches: Deactivate patchStorageSetVolumeUUID
+3e4eb17b75524684cfe08c81a1077b0c9aff6cb4    APPLIED     lxd/storage/backend_lxd: Ensure new images have a volatile.UUID
