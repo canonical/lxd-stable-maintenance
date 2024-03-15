@@ -21,3 +21,8 @@ caf6a8a65b221312b11610df31db7d261753810a    APPLIED     doc/devices/proxy: add C
 52bb283947d9076431ea383bd4ab6e55f5a90f93    APPLIED     lxd/patches: Add patchStorageSetVolumeUUIDV2
 f1cd147d391758f5e761f1f4cd0da28dd6c24459    APPLIED     lxd/patches: Deactivate patchStorageSetVolumeUUID
 3e4eb17b75524684cfe08c81a1077b0c9aff6cb4    APPLIED     lxd/storage/backend_lxd: Ensure new images have a volatile.UUID
+9471a6cad8d8132d9033977c22e46ed91681fdcc    APPLIED     lxd: Pre-check permissions when performing bulk state update.
+26d7065a09dd0b5594a636ffd1aa6b176270e17e    APPLIED     scripts: Add bash completions for `lxc auth`
+767b3426739247b44ccb626e346c67d52f83a78b    APPLIED     lxd: Improves efficiency of operation cancel with permission checker.
+ade55fcb324df2c8ea035a7c29721aa9b0b10a03    APPLIED     lxd: Update `X-Xss-Protection` (deprecated) for `Content-Security-Policy`
+6dbf63d959f452842d64541b8d0b35ace51e912d    APPLIED     lxd: add explanations on the security headers provided for the UI responses.
