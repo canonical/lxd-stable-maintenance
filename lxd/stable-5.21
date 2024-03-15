@@ -29,3 +29,24 @@ ade55fcb324df2c8ea035a7c29721aa9b0b10a03    APPLIED     lxd: Update `X-Xss-Prote
 fa20b9972d8ab7997569b0f476a0d29536ef6190    APPLIED     lxd/storage/drivers/btrfs: Add createVolumeFromCopy for copy and refresh
 1293f237cbf8e6a9f6da3e16ef687bf6c88797c1    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when copying a volume
 609437c6c8c67cc8f18601489e89e8ba877698fa    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when refreshing a volume
+28fd912f2bd6012a1178a0f4508a9bd154bd9ae0    APPLIED     shared/api: Implement xerrors.Unwrap for StatusError.
+441333a7b4a479def590381a79b7bfebf74952b0    APPLIED     lxd/auth: Wrap errors in api.StatusErrorf.
+ce76c7ec07cea457f0cacc38a5ba3aa7be90adc1    APPLIED     lxd/response: Wrap errors in api.StatusErrorf.
+938699d4bcb8829fb23fbe9a91ea55282a692c3b    APPLIED     lxd: Wrap errors in api.StatusErrorf.
+471d0c5d832b1e1660646a5a2ca4dcefee87329e    APPLIED     lxc: Wrap errors in api.StatusErrorf.
+4dedb4a4b91751cee1ccfb10014a8205c6b549ef    APPLIED     lxd/auth: Return appropriate HTTP error codes when getting request details.
+071ab676b1310a265d17976a5d74b59535d92e32    APPLIED     lxd/request: Add a `CtxTrusted` context key.
+0793beaba8bbcb15db45b63074ad3482a848f70e    APPLIED     lxd/auth: Get authentication status from request.
+53e1c9d29984653720a110405fc68ef8c27e55b7    APPLIED     lxd/auth: Handle untrusted requests in authorizer.
+1820774c7ac655f02590c63d1325e5d1eae615a9    APPLIED     lxd: Add `trusted` value to context.
+dc3e74396350e51ae86d949af5d208d4352a7cdd    APPLIED     lxd: Remove checkTrustedClient method.
+12701c588deb94ad39fbffffdcd5d01b99d135e7    APPLIED     lxd: Update allowAuthenticated access handler.
+306573d869e48615bfa93237fdcabec4f3a48153    APPLIED     lxd: Remove call to `checkTrustedClient`.
+a523f15501590ae4d04bb7c315696efe2c2b7a3e    APPLIED     lxd: Handle certificate creation from untrusted users.
+3e49dafe52963e35cac4fcc301cb07969e668860    APPLIED     lxd: Remove `Authenticate` call from operation wait handler.
+592043b5b4b368e61030c78b10e9da6d58955b11    APPLIED     lxd: Remove `isTrustedClient` call from image export handler.
+68fbb0ea1a3f3f2064e64171176d8fd24647c0ff    APPLIED     lxd: Remove `isTrustedClient` call from image alias get handler.
+2d01718d3df3657bbf417f2129e51ed9d637d3d4    APPLIED     lxd: Remove `isTrustedClient` call from image get handler.
+90ef1c699a6b6f08c13ebff2ab9da465b646ecb5    APPLIED     lxd: Remove `isTrustedClient` call from images get handler.
+abc681446fff0e5631a8b0414ff5fefeee1f9e2c    APPLIED     lxd: Remove `isTrustedClient` call from images post handler.
+862893682c552360eab073cf2be87efbd1013fe8    APPLIED     lxd/project: Update cluster target restriction tests.
