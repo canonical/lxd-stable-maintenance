@@ -26,3 +26,6 @@ f1cd147d391758f5e761f1f4cd0da28dd6c24459    APPLIED     lxd/patches: Deactivate 
 767b3426739247b44ccb626e346c67d52f83a78b    APPLIED     lxd: Improves efficiency of operation cancel with permission checker.
 ade55fcb324df2c8ea035a7c29721aa9b0b10a03    APPLIED     lxd: Update `X-Xss-Protection` (deprecated) for `Content-Security-Policy`
 6dbf63d959f452842d64541b8d0b35ace51e912d    APPLIED     lxd: add explanations on the security headers provided for the UI responses.
+fa20b9972d8ab7997569b0f476a0d29536ef6190    APPLIED     lxd/storage/drivers/btrfs: Add createVolumeFromCopy for copy and refresh
+1293f237cbf8e6a9f6da3e16ef687bf6c88797c1    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when copying a volume
+609437c6c8c67cc8f18601489e89e8ba877698fa    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when refreshing a volume
