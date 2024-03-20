@@ -2644,3 +2644,211 @@ d9483c3ff6c983450ce15ff085984dbe9217ba33    DIFFERS     build(deps): bump action
 c56676d5ac42c3e378ff21611fd7ddeb0bab0e3c    APPLIED     client/lxd/instances: Discard non-interactive stdout/stderr output if writer(s) not supplied in ExecInstance
 0c6465a5f5ba7fd06b643dc947c96e0f6ac6a53e    APPLIED     client/lxd/instances: Remove unnecessary args nil check
 ffef4f3f8cbdb13175eca2661d0bdeaa59c38a84    FEATURE     doc/storage/cephfs: specify that you can automatically create pools
+b24934fa9db1f30113f8f0dced6d5df7040134b3    IRRELEVANT  doc/projects: clarify restricted.devices.disk
+9efc8d61b6c1d0550b4960dc1fd5bbb844d00702    FEATURE     shared/version/api: ovn_ssl_config
+89e755bb13f36ae41380527bc6aa8234b335784f    FEATURE     lxd/cluster/config: Add OVN SSL config keys
+511ded1bca5b4c5ea841d7215e7c9c1974f4221a    FEATURE     doc: Update configs
+a0c41ff518753a0aea7406a129f1fbdb072bd11b    FEATURE     lxd/network/openvswitch: Support OVN SSL config keys
+c2216e39120d126e739d915ef13585568d8bf75b    IRRELEVANT  shared/linux/memfd: Implement CreateMemfd
+9a6fa36ade9107084a3ab829292f801100fb57bd    IRRELEVANT  shared/linux/memfd: mark as being linux only
+e45ed064b61f205d899cad114cc38f633242bbe5    FEATURE     lxd/network/openvswitch: Port to memfd
+086df2c9d79784e10e6168e2a89788577c730763    IRRELEVANT  lxd: Clarify restricted.containers.privilege config option
+466669e759710117034875b8200ed6c7f5f9547c    IRRELEVANT  Update metadata
+b8ff449ddb44dee98105b292d531584e34d3a889    IRRELEVANT  Change license to AGPLv3
+b5f0f4aa5557e6eef29dcf774b62d826491eb295    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+c527f4b6c22b9aaee6ccdcc606fe9f6c810ee512    IRRELEVANT  doc: Adds AGPLv to word list
+6b2c9592e968db7d200cfdeba56acd1394654c36    IRRELEVANT  Release LXD 5.20
+258c80b876e495b3dc70e2efb3e4438f5ca7cedd    APPLIED     lxd/instance/drivers/qemu: make it clear that CCW devices (s390x) don't have device bus nor bus address
+40dd1dde89c185ac815c8af3fe5968b3ad8b7860    APPLIED     lxd/storage/drivers/driver_zfs_utils: fix typos
+e86d00c5998e02195c523457c541305bff2e7896    APPLIED     lxd/storage/drivers/driver_zfs_utils: make it explicit that blocksize is in bytes
+6a5d38549c8ad4bbad88d85de26512120a91bf84    IRRELEVANT  doc: clarify some wording around the license
+e6034463ad7780dfd6e428466dd1ce62a65965a6    IRRELEVANT  doc: update lxd-sphinx-extensions to canonical-sphinx-extensions
+f5ca28fc82798bef2eba98c54a904efa9581135e    IRRELEVANT  doc: update webpage URL
+a38f3e2f9f4c5ec6b17470ab6f385fa9b9fd1590    APPLIED     doc: fix typo in CONTRIBUTING.md
+ed54ac577ad3c7a6ec9ade3fd3c976f10c9e9521    APPLIED     doc/instances: correct the image server name in the example intro
+82e34ed4878f5c313e7f6ac34efe55fe124a1ed7    APPLIED     lxd/instance/drivers/qemu: don't try to enable the lxd-agent.service
+07588d77f158d0775221df1d585069846cccae18    IRRELEVANT  doc/reference/devices_disk: document how to enable lxd-agent on old Ubuntu images
+d4c975ad30906b96867863538f34f6e2db4e9752    DIFFERS     lxd/apparmor/instance_qemu: only allow QEMU system emulator
+ce24649a9164a7eecc4fcc4d9f7ec98bf29b2ec8    APPLIED     lxd/apparmor/instance_qemu: remove partial duplication of unix rule
+0da5141a5f859e189e16feb5c3d9a0dd762c81dd    IRRELEVANT  build(deps): bump golang.org/x/crypto in /test/mini-oidc
+502707a8ee851ab861541badaf0fcafe9f9223a7    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.16.0 to 0.17.0
+78fb3cb5852e19a6bbf6d1c924f72248184c862d    IRRELEVANT  doc/security: include info on privileged/unprivileged containers
+74991d878b057c5237abe3e0a7e40cbf4134d07b    IRRELEVANT  doc: use proper SPDX identifiers for licenses
+b3922a4db4453e8c9ecbf9b99efd059393ffabf6    IRRELEVANT  swagger: use proper SPDX identifier for license
+e8cfecf29845e74b2e9b278b83ae15d64c1aa85e    IRRELEVANT  doc/backup: improve linking between pages and mention `--refresh`
+425c13a8e64905ada1fa9b3289bf362caf019bc7    IRRELEVANT  doc/cloud-init: mention that old Ubuntu images need some special handling for cloud-init
+3491688606cdb5a65fccc88619636cc20e5c61aa    IRRELEVANT  doc/security: link from security.privileged to container security section
+5da0c729b11dccf10f1be1ece5f02dae3c0ec758    IRRELEVANT  doc/reference/devices_disk: document needed workaround for 16.04 and lxd-agent
+d8d74149a811a1876f487c0ba9cca1f142b85cfe    IRRELEVANT  doc: Add HWE to word list
+34b67b7963bae0a9c729e9d7fe1a75ac395500dd    FEATURE     doc: decode the objects.inv file
+eacad7b2fd2257f3daa51da5193d22d8052e566f    APPLIED     lxd/task/group: Make cancel type of context.CancelFunc for clarity
+d68887aa7f061e8cdc6156f92c5f4a80c99534db    APPLIED     lxd/task/group: Remove unnecessary use of defer unlock calls in Add
+5a4d4bd46afeb99589e306a2bd4737e462a279c8    APPLIED     lxd/task/group: Remove unnecessary use of defer unlock calls in Start
+b20ee405e9245b07308c1ca314dff84a13dcb92a    APPLIED     lxd/task/group: Remove unnecessary use of defer unlock calls in Stop
+ca4b661ee9b88a97183ae0680972d0326f78ba4f    IRRELEVANT  test/golangci: Handle some common upstream branch names
+ca6c4fb4b57a2cd0cf967c3d0df36071e63aed8b    IRRELEVANT  test/golangci: Better handle Github refs
+6f4c6fa85ab224b7821ded3adf180d19e69eca3f    IRRELEVANT  test/golangci: Fetch GITHUB_BEFORE reference
+7cbb9d594a6d4149de5c9ce4832627a725b1ac5b    IRRELEVANT  doc: add sudo to set lxd ui.enable=true
+698a553acedf5946bf992f2ce7fbbaf2557c8011    APPLIED     lxd/task/group: Adds NewGroup function
+8017e9ef0892beb22aa32899b9b76227b7da6a1d    APPLIED     lxd/task: NewGroup usage
+c9ce466195c1dd82e9115a4179388e3546a0538a    APPLIED     lxd/daemon: Initialise task group using NewGroup
+2702d08c718f126fb6960549afd375cb754f9d99    APPLIED     lxd/task/group: Remove unnecessary running nil check
+dbae5337361a50fbc521fd465f54a56003e5ba78    APPLIED     doc: Add paragraph on how to delete images
+4a9298b82759ec5abfc50fc7e62d63b661b9d0a2    APPLIED     test: Add exec exit code test
+be930d736fb58dc8bcf91f1623e7521f273c5dc3    APPLIED     lxd/sys: handle apparmor unconfined profile mode appropriately
+148876f05843288a8611cf5c1183585866d4ba56    APPLIED     lxd/apparmor: allow confined services to receive required signals
+e6901cde38f6d53fcaae906681582338da6fa899    APPLIED     lxd/sys: add comment clarifying AppArmor unconfined profile mode
+41ce93d1d460c15ac4694dc17713012fb96376ce    APPLIED     lxd/rsync: Consistently compare files on nanosecond basis
+da9bf5b6fc75efcf650c1532dd8ea6d6d8547aa3    APPLIED     test/suites/migration: Check for file contents after refresh
+58aaef46d101421fa73734bdd6532742fab8c58b    APPLIED     test/suites/migration: Check local and remote instance refreshes based on nanoseconds
+8940ff8a6bd6337bfd1a1f53f7a997b8fa835440    APPLIED     shared/idmap: handle "both" idmappings in raw.idmap properly
+237f32bfc2590fea25c745000f31ee98579bab96    IRRELEVANT  doc: Clarify optimized volume refresh
+fdf9b9e0d2917700456152448ff8ab7883de78fa    APPLIED     test/suites/idmap: test "lxc file push" and raw.idmap config combo
+40d9c2bd2229c209305908bb11debd9af9c1e571    IRRELEVANT  Updates CONTRIBUTING file to describe licensing of some sub-packages and imports
+d46aba3f790e9d9abd13e12d8d47229cb853c183    IRRELEVANT  License the Go client SDK and dependent shared packages as Apache-2.0
+311edaf2d83283dbf5e8d3dd3eaf0ba34c45c4dd    APPLIED     Add information about the client SDKs to the README.md file
+c8c711681dd6690b9562276d7749415168090e57    APPLIED     lxd/response: Watch for liveness of the TCP connection for single file response
+897ad29fb4786f18f560c903f16759e7ded5e8d1    APPLIED     lxd/instance_post: Update comments in instancePostClusteringMigrate function
+908e12b1032ec9fd370727385deac627fc7dc21f    APPLIED     lxd/instance_post: Rename container to instance in instancePost function
+167f231bda506393659b6cb593e6daba4bc88b99    APPLIED     lxd/instance_post: Prevent live migration of instances with custom volumes
+8739ec2f48515396a7a2371dfc01dd7d3ff556f2    IRRELEVANT  lxd/instance/drivers/driver_lxc: Remove handling of limits.network.priority
+0b297b27aedf832fade1aefb3d62f59ae3d63de3    IRRELEVANT  lxd/devices: Remove handling of limits.network.priority on new network device
+44d15d4dc726624824b2b60a178899bd5eac9f9e    IRRELEVANT  lxd/cgroup/abstractions: Remove unused SetNetIfPrio function
+3a0ea66d670b89fbba94b5acbe8ef9b4a8d96eba    IRRELEVANT  shared/instance: Remove instance config option limits.network.priority
+f199440f8e753dc95136b2d1a3112630d6e682cb    IRRELEVANT  scripts/bash/lxd-client: Remove limits.network.priority from container keys
+453e30e446493db2f27a8b9bbe1a429132d8a350    IRRELEVANT  Update documentation metadata
+ee8a111b2cec7724346054ee7d2d0297ec34bb3e    IRRELEVANT  lxd/instance/qemu: Start using seabios as CSM firmware
+c24b218ae0a90e295f7541b8eeb1433e47e5a1ee    APPLIED     idmap: Move from shared to lxd directory
+004b0175ca05da0679c97724fea9b385db702d75    APPLIED     fuidshift: Update usage of idmap package
+cc1135cd06b49e64aac98fa033a7081b88e5d55b    APPLIED     lxd: Update usage of idmap package
+d89d808dd658add7dfbd6ff9b200b3870bf89273    APPLIED     shared: Update usage of idmap package
+0fda9939715a9be8fffd48bbdfbc09d105564a83    APPLIED     subprocess: Moves from shared into lxd directory
+584bf42c1e280a4fd448fda8227e7bba81e0bc28    APPLIED     lxd: Update usage of subprocess package
+00c354cedbde6e12d2c5d80d6db847254f6e5650    APPLIED     instancewriter: Moves from shared to lxd directory
+69d4fa9d6aa4954bcf0c24eaf2116a888f243361    APPLIED     lxd: Updates usage of instancewriter package
+b695d5c0c36912b4b36a316d81a012ac16e95aa8    APPLIED     instance.go: Moves from shared to instancetype directory
+b3418ec3f4d29fb08fef19cd051f38b950f8221b    FEATURE     api: Add init_preseed_storage_volumes api extension
+5b8adfdc2abbbef019fb87fb0bcc17199950efc7    FEATURE     lxd/init: Add support for storage volumes in preseed init
+0a1444144bfc267fa4270f76c40d2f5ec27aff0d    FEATURE     doc: Update rest api and init sample config
+e76ed34c7082f521fdb2b47f924fe2424f35dbbd    APPLIED     lxc: Updates instancetype usage
+b94c8d188af94f5faa852d6c5f07e0a839965bd3    DIFFERS     lxd: Updates instancetype usage
+639eca4d52250024a249fe88c9c4efe45a952a5b    DIFFERS     linux: Moves from shared to lxd directory
+2905726c5b737ebaecd33501ca3f78fb094a7573    APPLIED     lxc-to-lxd: Update usage of linux package
+e76c45cf1b053793f3787692bbfecb07ac7698d2    APPLIED     lxd: Updates usage of linux package
+904471d7b56c151b19dbe28c686c7d3dfafd85de    APPLIED     lxd-migrate: Update usage of linux package
+adbe4e17d07c588a283e71f7dabc932260b851bf    APPLIED     revert: Moved from lxd to shared directory
+e9d97076561c872cef64d7c3919fe661586ba22c    DIFFERS     lxd: Update usage of revert package
+cbd65adc84d918588074d78651a07db7fdc30c05    DIFFERS     lxd-agent: Updates usage of revert package
+3667a52694dc33ffcca43b784019444cd17c8c49    DIFFERS     lxd-migrate: Updates usage of revert package
+53e8f8232dfbdca28957c85912fd1521c78c3dd3    DIFFERS     lxd-user: Updates usage of revert package
+f73dbfe017d4e204f72287e6ceb8852b538010f4    DIFFERS     shared: Updates usage of revert package
+b07b1475081de95dbb1e8128ca3b6032209137fd    FEATURE     test: Add storage_volumes in init preseed
+183817502c7eefc19adf26247a4d4eff71e54a1c    APPLIED     Makefile: Don't use verbose go install call for non-lxd deps
+5335dabb9a2b330d9364d4db044ac2622c94843c    IRRELEVANT  tests: Add license check
+51267fc25f62376ab56cfc9fdb5987f64719c60c    IRRELEVANT  test: Check client and shared packages do not use non-permissively licensed packages
+8adcd9aebf9bf42f9e0337979fde66916c8475cf    APPLIED     doc: add paragraph on how to delete images
+4d3a4c081f3e4f19391db5f708ccb51fca4eaee4    IRRELEVANT  test/lint: Always fetch the target branch if it cannot be found.
+695ea34bbe80599d5a636fb636e73a04441ceff7    FEATURE     shared/version/api: add metrics_instances_count
+cc970b9ddb044dd4aae1abb580aee3e6975efd3d    FEATURE     doc/api-extensions: document metrics_instances_count
+44802497c9188f71ba8c2c838a76c2beab94823e    FEATURE     driver_lxc: Include running state in metrics
+4bb2942d5376a3447192edcdffb44e2526d6389d    FEATURE     driver_lxc: Check running state when retrieving metrics
+9fe72207812868367719a149da42d66ed7246e20    FEATURE     driver_qemu: Add running state to metrics
+6634d25be96ae58d03e1c94794de83fb93df5dde    FEATURE     metrics: Don't require instance name for metrics filtering
+a4b5c4db37ef6515e295073b571e57eb65a311cd    FEATURE     metrics: Filter metrics by project only
+28e0f9da1234f97e29d3272848fb8eef77f57d29    FEATURE     metrics: Add container and VM count
+c4761a9e2ed0535537d0a475a273bcdf15c7e9fd    FEATURE     test: Fix metrics tests
+a7655bc6059e983c55b8c571be03eee06e9e83b7    FEATURE     lxd/api_metrics: move the instance counting to metricsGet()
+06d01e30d3ea5c7ce30ea8938dc29b15b56bac8e    IRRELEVANT  Makefile: stop pinning openfga/go-sdk
+0b6b496c2dfd2f2831166655b7ed744d75d4c800    IRRELEVANT  gomod: Update dependencies
+6d7c14cbb4ce048c38ecd41ec88f9948dc070168    IRRELEVANT  mini-oidc: Implement user store
+4dac736e3fae0403b6304b5fe4615b3d70d6e49e    IRRELEVANT  test/lint: Abort test if target revision can't be found.
+ccf7cba6d3349131680d52cf4f222be411898988    IRRELEVANT  lxd/lxd-metadata: now supporting multiple entities per comment
+d3e8b6b23234a91f645a497f7d467caa52f2d012    IRRELEVANT  refactor: update `cluster` entity comments
+5cf9085ec270fcfe7eb7890740e428ffa028be2b    IRRELEVANT  refactor: update `project` entity comments
+eb8a50299c9e52cab27c7189e64e65309226173e    IRRELEVANT  refactor: update `server` entity comments
+db1eb0e32b89f2b4730585ba27e5074618090040    IRRELEVANT  refactor: update `instance` entity comments
+159f0b17f04f81451afc7d4f54fb6348fcc6b9b0    IRRELEVANT  refactor: update 'server' entity comments
+90fb0c1072546b7690f51f38358af58aa4ac49ef    APPLIED     lxd/storage_volume_snapshots: Use the `snapshots.pattern` option for manual snapshots
+4541c0aa9e3b0bb8678158978bbeb0aa9a2ebe79    APPLIED     tests: Test that manual snapshots of custom storage volumes use the `snapshots.pattern` option
+0de644a3605a3a3c43a1c0a20e5e73615c71d735    APPLIED     doc/api-extensions: `security.devlxd` applies to both containers and VMs
+514e2c6f4a220f99e4c9adb6434c02312274647a    DIFFERS     api: Add server instance type info api extension
+9a5554e6311549c61d6dda4efd4cebf9a1f6efb3    APPLIED     shared/api/server: Add supported instance types in ServerEnvironment
+986856f712ca04b04c35b8e030d4ed3bce55bf47    APPLIED     lxd/api_1.0: Indicate supported instance types on server
+cdd786d52665bd1a9273130d191c09adebfe4619    APPLIED     doc/rest-api: Update api definition
+f3e2858e47c7796c09e3a30c8fed34368b144403    APPLIED     tests: Add server info instance type test
+de23359a87c138b83f27f758990c28082a824b3f    IRRELEVANT  README: remove extraneous empty lines
+8fb2988f8c926ab773d1a2e2ad3f772c90ff6dcc    IRRELEVANT  lxc/config/file: Remove loading of images remote
+9ee455979684f2f9bf4a87e529bc34599c6c46bc    IRRELEVANT  lxc/config/default: Remove images remote
+4b660d6a95459224393b67e302f0fb3720e9d272    APPLIED     lxd-benchmark: Use image from ubuntu remote in description
+21b2f533b63c765abcd4f84a3e53f52192f44d98    IRRELEVANT  docs: Remove occurances of images remote
+8d07fe72bfc59362437b9434f458b75eef2e653f    APPLIED     shared/api/image: Use ubuntu cloud url for remote example
+707f7d59961578d334dbfebb51f3042f427cae6d    APPLIED     shared/api/instance: Use ubuntu cloud url for remote example
+02d77576a7e4958e002dd74e2d0cd0ffd065d48e    APPLIED     shared/util_test.go: Update test data with ubuntu cloud url
+a58bb416d0105f72994500716e57169ae2c772cc    APPLIED     doc: Regenerate rest-api.yaml
+d4645f6b5fd809ac0cf365145c996753a57206ad    IRRELEVANT  i18n: Update translations
+9db4edffe11ffb507754ec75fb3b81dc294c7c4d    IRRELEVANT  lxd/storage: document common storage options
+37b27901bcf7dc627ecd1787ffa23f39dbb84d50    IRRELEVANT  lxd/storage/btrfs: document `btrfs` config options
+5d0a7835c0d73501fe9a6bbd5edf20073bd6ff0e    IRRELEVANT  lxd/storage/ceph: document `ceph` config options
+29f97ce3675f9e76bb6c56256858f31ab682608c    IRRELEVANT  lxd/storage/cephfs: document `cephfs` config options
+0c1c54c95423589fced3097a86570a00456d7d68    IRRELEVANT  lxd/storage/cephobject: document `cephobject` config options
+ec7a7dd49fa5e66c3a1afdc3eac7f8b83ad6d702    IRRELEVANT  lxd/storage/lvm: document `lvm` config options
+b7eb8f4073a5241cce0f0f2f55c1ece3735cf0ec    IRRELEVANT  lxd/storage/zfs: document `zfs` config options
+de67b23a3141497e45ef3f7d9c0240b566cb34e3    IRRELEVANT  doc/storage: include automatic config options in the docs
+2346fef8c277625cbaab626d77b4c0c0998854a6    IRRELEVANT  doc/storage: replace references to config options
+15a78af8c7f5b2a3f112c7103130ac20512aa9bf    IRRELEVANT  lxdmeta: update `configuration.json` and `config_options.txt`
+1441e5956285d65a9d79c9d402b761e0813b40aa    IRRELEVANT  lxd/instance/drivers/driver_qemu: force SeaBIOS CSM firmware instead of OVMF
+bbf6cf7c0db696a32c11cf546acca01f37b0fa7d    APPLIED     README: add sections on recommended tools to manage LXD at scale
+bb5403536b1c2f8e5d228df9af087443ff1d90f6    FEATURE     shared/api: Add Mounted status to disk/part info
+468e38e1e8141a22488201874ba0a035a1021bee    FEATURE     lxd/resources: Check /proc/self/mountinfo for mounted status
+0b0935c410771be0d9cf901937dda31952cd7747    FEATURE     lxc: Update CLI
+1cc3ea154d8988e29b9dd75f8f6b36ed3800c817    FEATURE     doc: Update swagger
+3d5509ae3a4cd7d458c15ab5a7d0f89f0d874cdb    FEATURE     api: Add resources_disk_mounted api extension
+b9d12f3912e810ab2e4c3f57a485d1dc49731d2e    IRRELEVANT  po: Update i18n
+8f8f17f91e052cefdcd51091dbc258c1aecf3721    FEATURE     instance/qemu: support extended firmware search algorithm
+7e61b93e5116c2ec3804dbe40afee308fc786320    IRRELEVANT  instance/qemu: rename ovmf mentions
+be489048500718a3a6b96f1a786d4be7568be6cc    FEATURE     instance/qemu: do some sanity checks around enabling security.csm
+62ee9ff4c4baa0412b316f55e1eed9a15d9a79c4    FEATURE     lxd/instance/drivers/driver_qemu: use bios-256k.bin instead of seabios.bin
+d0c61c37605bba6500463de8c12b2f13dbc68497    APPLIED     doc: enable multiprocessing for pyspelling
+ac7ffd2c5b880735f7b4691032e68fc7cfaa989f    APPLIED     Makefile: have run-parts report which script it runs
+c91b18ddcedebdee4740ed600754e583e8e7097e    IRRELEVANT  test/lint/golangci: simplify commit hash extraction
+5ea3fb5fc24b297b77e0f2e95829b938c66692d8    IRRELEVANT  test/lint/golangci: remove duplicated --quiet argument
+1005fab047e0a494b4e11b7d827c2171cfceac66    IRRELEVANT  test/lint/golangci: faster/smaller clone unshallow'ing
+5fb0e64d134fabb589e57a54acfffd5663b73517    IRRELEVANT  test/lint/golangci: undo default branch guessing logic
+a438f42c93932a74c3d3b561e1ad57f5d29f24e9    DIFFERS     doc: use all processors for spelling check
+76fbbb9ef03d7295ef125ae51434ce3a1bd976a3    IRRELEVANT  test/lint: Treat GITHUB_BEFORE as a revision.
+e54e9fd6fdb6c1c283b1802b469a10edc1f76c9d    DIFFERS     Add note about scrape_interval and update examples
+3c6032462e26d2671a47dd0c076687f86b562726    IRRELEVANT  lxd/auth/oidc: Adds constants for cookie names.
+6e575422146211376d50696a31c05a54a82c76d6    IRRELEVANT  doc/metrics: fix indentation and wording
+60e5f0a1b60b5bb7585fca3f67718622f763aead    APPLIED     client/lxd_certificates: Replace HasExtension with CheckExtension
+60e506924cc8b134137a785bac18896f83bf0c8b    APPLIED     client/lxd_cluster: Replace HasExtension with CheckExtension
+12d2e48a0ad201b09b0c2a107bce403d0ba42c1a    APPLIED     client/lxd_containers: Replace HasExtension with CheckExtension
+74d9f98bb43d328af13b826bb1d915b82955f18f    APPLIED     client/lxd_images: Replace HasExtension with CheckExtension
+14ad1258ede7bf4b7e8dc8254102735c2f8b2cbb    FEATURE     lxd/auth/oidc: Adds methods to get/set cookies.
+8a02cc62939fa42d1cbff479fc141a8284a8cf2c    FEATURE     lxd/auth/oidc: Adds methods to set OIDC fields on Verifier.
+c1cd244e02c1ee46e791c97e38911071cad7c32f    FEATURE     lxd/auth/oidc: Request is OIDC if refresh cookie is present.
+998a3a5f29df369dac68e314a41b4d4ef0057140    FEATURE     lxd/auth/oidc: Update callback handler.
+92f3e9bfe2302cc112cbab6c3ace55d04306e004    FEATURE     lxd/auth/oidc: Update logout handler.
+b2b094e44a928613e31f000c7fb2b792069b1470    FEATURE     lxd/auth/oidc: Updates login handler.
+bbd56a5a8b2241325f31a1a102dafdef18bd2ead    FEATURE     lxd/auth/oidc: Adds method to authenticate ID tokens.
+ee15385861928181ca31dde7cfda905275683593    FEATURE     lxd/auth/oidc: Adds method to authenticate access tokens.
+b0042f064e14b90653f0f11c569d6f51276acb3b    FEATURE     lxd/auth/oidc: Refactors Auth method to use new methods.
+f8985cdc74edc8a8e37f7a85e641bdc51891a331    FEATURE     lxd/auth/oidc: Adds comments for exported methods on AuthError.
+bbfc94b96c07bef53a1b4c57c8fee6a89f7ca530    DIFFERS     client/lxd_instances: Replace HasExtension with CheckExtension
+60db116260f386fc19a62ff3462d734c6eb4bcd3    APPLIED     client/lxd_instances: Fix typo in api extension check error message
+fbf8db6ff8918fabc4f6606eada0aefa6504933a    APPLIED     client/lxd_network_acls: Replace HasExtension with CheckExtension
+b231c1c616e8cb3a0f8adbc3d678ba39ee97eb62    APPLIED     client/lxd_network_forwards: Replace HasExtension with CheckExtension
+4f991c22abef5a486caa7e65a7f849b4346c38a4    APPLIED     client/lxd_network_peer: Replace HasExtension with CheckExtension
+b24a12cb1d71dae74c10399cbb69844de9dbc380    APPLIED     client/lxd_network_zones: Replace HasExtension with CheckExtension
+d7fcb94c3f4fc088fc8a2548e56b58e9bd773bae    APPLIED     client/lxd_networks: Replace HasExtension with CheckExtension
+2a73c78500308d3dd5345d662f23677d012ce635    APPLIED     client/lxd_projects: Replace HasExtension with CheckExtension
+1f39fdf763ad22b32044f4e2f22f7e33ebab5126    APPLIED     client/lxd_server: Replace HasExtension with CheckExtension
+c71586bd7aaecb2176bed409420312c42b104bfe    APPLIED     client/lxd_storage_buckets: Replace HasExtension with CheckExtension
+23ad4ab3aa109f769ffc04e071bf14780310ac01    APPLIED     client/lxd_storage_pools: Replace HasExtension with CheckExtension
+a485dc293a211a93d94f7593e6fe5e69f6551903    APPLIED     client/lxd_storage_volumes: Replace HasExtension with CheckExtension
+cd42b6fc39a781ee457509f407b00bb56564ed10    APPLIED     client/lxd_warnings: Replace HasExtension with CheckExtension
+7564a8b6200e86c5cb04f01b7f8e65389dc783ec    APPLIED     shared: Add helper for obtaining a CertInfo struct
+2408c66e1b158dc2780b47468fc48adb91f160fa    APPLIED     lxd/endpoints: Return a copy of the network cert
+aee7b782941e21952875926a53d5eafd14bd9c2d    DIFFERS     lxc/cluster: update restore help text for --force
+84636a31bbc0cc204291757e885347c17c6e3418    IRRELEVANT  po: Update i18n
+53f15d917fb592db70964bba2362846888ec07ba    IRRELEVANT  doc: add additional information to config option index
+55ae6020e84beb4fdc2111f773bd3b568cba5af7    APPLIED     doc: speed up processing
