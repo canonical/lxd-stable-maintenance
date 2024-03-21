@@ -50,3 +50,22 @@ a523f15501590ae4d04bb7c315696efe2c2b7a3e    APPLIED     lxd: Handle certificate 
 90ef1c699a6b6f08c13ebff2ab9da465b646ecb5    APPLIED     lxd: Remove `isTrustedClient` call from images get handler.
 abc681446fff0e5631a8b0414ff5fefeee1f9e2c    APPLIED     lxd: Remove `isTrustedClient` call from images post handler.
 862893682c552360eab073cf2be87efbd1013fe8    APPLIED     lxd/project: Update cluster target restriction tests.
+1b2a3cd978b2d58e4812e9b788614d3ceb81784c    APPLIED     lxc/file: Get owner mode only if `--gid` or `--uid` is unset
+aecd42d3dcd678266dd3e376903ff3e21ba7a8f5    APPLIED     lxd/device/nic: fix default IP for routed NIC (`ipv4.host_address`)
+fc198ec1e76b4969f626c14e366e74878f4a806a    APPLIED     lxdmetadata: update metadata
+d8a9be3e80424162a0c4349e9f6faadca706bd34    APPLIED     github: Add stable-5.21 branch to dependabot config
+f88e17e3c62e9d83ea07e3036920dbae0e3d7ff1    APPLIED     lxd: Add security response headers to documentation
+26e61c005f634d999fa490a170e2109181cb7de4    APPLIED     lxd: enable server side gzip compression on all API routes
+aae8654468ad247029c8abd6720c5dd846d5d510    APPLIED     scripts/bash/lxd-client: use column to select the image alias
+53a74fd0cef5bc338cfc6c722ab232e7fdfbed5b    APPLIED     scripts/bash/lxd-client: fix `lxc storage <TAB>`
+f4427f87394fe78e56daa25a5e944d4c75e02765    APPLIED     scripts/bash/lxd-client: add missing keys to `lxc storage <TAB>`
+c7b59e181ef6b655a182cb59a344b600ff93e447    APPLIED     scripts/bash/lxd-client: show pool names on `lxc storage info <TAB>`
+60c134a7ea111cefab913a483cfafbfd45be98d9    APPLIED     scripts/bash/lxd-client: Use long option names
+81156fe90a28ff42688b434909f27956ce2d911f    APPLIED     lxd/instance/drivers/common: Clone the device config
+1a11af259681f7ef65c4405d398eca49e47014fd    APPLIED     scripts/bash/lxd-client: add missing args to `lxc network` completion
+860c719fb2ce83551ff6537f016a16f5d636f46e    APPLIED     lxc: handle `GetImage` logic inside `dereferenceAlias`
+aeb045acf1b274bbe6b9ab8d39e7c2f2cd721096    APPLIED     i18n: update .pot files
+de3c4aa64494850bdd24306cdfcd81259e14246a    APPLIED     doc/reference: reorder pages and update the landing page
+f91090f7518bc24386e7afe4d65d67073788f127    APPLIED     doc/explanation: reorder pages and update the landing page
+79c17806506cef4a8c4a72cadc13fbe5050c5b2f    APPLIED     lxd/storage/drivers/btrfs: Clarify fallback in case UUID discovery times out
+6aaafed4f1db9e5c1d77c389be68df76cec314b5    APPLIED     lxd/storage/drivers/btrfs: Move config modifications into FillConfig
