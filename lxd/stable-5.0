@@ -2852,3 +2852,173 @@ aee7b782941e21952875926a53d5eafd14bd9c2d    DIFFERS     lxc/cluster: update rest
 84636a31bbc0cc204291757e885347c17c6e3418    IRRELEVANT  po: Update i18n
 53f15d917fb592db70964bba2362846888ec07ba    IRRELEVANT  doc: add additional information to config option index
 55ae6020e84beb4fdc2111f773bd3b568cba5af7    APPLIED     doc: speed up processing
+924e07cc59b44d9a47b61dcd7c058523cd991b74    IRRELEVANT  github: Pin MinIO to the version before ServiceV2 API
+21c88d593510a32617f760f59ababcc340e30b0b    IRRELEVANT  lxd_metadata: Handle templating with a substitution database
+6f8bd61faacdf953f0817ca6ceb692e1fb561e9a    IRRELEVANT  Makefile: update `lxd-metadata` to use the substitution database
+8840f5cb3722e57fbda51b88ca3f635315111af6    IRRELEVANT  lxd-metadata: update metadata
+841c023dad44872c89cd193e52ae3b98fa8c0334    DIFFERS     api: Add api extension server_version_lts
+121cd7e4d1a9155cdacbf0c17917854cf369cb59    DIFFERS     shared/version: Add boolean indicating whether this is an LTS release
+d7f51b5dce8a27d3b5ffeaa30c5c3a481ff703d7    APPLIED     shared/api/server: Add server lts indication in ServerEnvironment
+a69a0ea11109e3c1650820b56bfc3631c1b19af2    APPLIED     lxd/api_1.0: Indicate lts version on server
+9b8986d14fc2c884b26ad48d9ccaa54a0272c53f    FEATURE     lxc/version: Indicate LTS version of the client and/or server
+eaaf5bb51ae6642b40a2b4c21300435018b7f5d2    FEATURE     lxd/main_version: Indicate lts version of the server
+5700f3e8568554e80779b59133de51a3c38a5824    APPLIED     doc: Update rest definition
+ac92eccdde1bea54c893c529b5259ef92c083b65    IRRELEVANT  i18n: Update translations
+a54b213abe12fe94d47d50355ce18ffe34c68cf2    APPLIED     lxd/storage_volumes: Properly target refreshes
+e89155e06e74c767bc1a5e2f30d125aceafa6734    DIFFERS     lxd/storage_volumes: Use a single POST handler
+1144a480e11c7a234cc1df8feeed2623a3263982    IRRELEVANT  github: the CLA check already exempts bots
+9a52a792d03fffc770273c76464968fad9438fc7    IRRELEVANT  github: exempts Apache-2.0 contributions from CLA signing
+7711954eaf66a001c6f3d807e664c8c7f08bee36    IRRELEVANT  doc/installing: 5.0 is the last LTS release shipping lxd.migrate
+83b796d2aca776a80af754e426b2837d69f65748    IRRELEVANT  test/lint: Fail if running locally and branch not present.
+cfd837552854ca562bf367ab20e6f0cb87d8a137    IRRELEVANT  test/lint: Use the golangci-lint --whole-files flag.
+218af928ac399d840dc33447147f45a79cb7018e    IRRELEVANT  Makefile: Removes unnecessary pin of github.com/mdlayher/socket@v0.4.1
+8a957df54de61c55616477004eede430d93bc4c4    IRRELEVANT  gomod: Update dependencies
+df6c9923aafc63c67192829530d38cbd54b31b23    IRRELEVANT  github: check DCO last as it fails on big PRs
+3cca1c35af529e52e55a19b322d1468b0494322e    APPLIED     golangci: Remove/update some overly-pedantic revive lint rules.
+1fc2f8967ea7942bcc3f49c5a3602326fbfdaa0c    DIFFERS     README: point to lxd-pkg-snap repo
+6ea56021a6a82579966071a6568f61c3c0e3ec16    APPLIED     doc/installing.md: update link to snapd install doc
+4570f832da50f4e6e9ec71593151ea3c45af4fe7    IRRELEVANT  doc: readthedocs now supports Go 1.21
+46ac9e7155752638272f5745d898e5339c619e9e    APPLIED     lxd/storage/drivers/ceph: Disable filesystem config keys on block volumes
+0b0bf2649081ef477c9dcfe86b8f1d6316ecab50    APPLIED     lxd/storage/drivers/lvm: Disable filesystem config keys on block volumes
+6e132ac9bd6b2e9d329b8b2c534baa8620e4a833    APPLIED     test: Add check to restore custom volumes of type block
+8af2754c47b770bcab4b7d9c9f05f58185bafed3    APPLIED     lxd/storage/drivers/ceph: Update UnmountVolumeSnapshot docstring
+51b05428f7a7e80c2f80d432ddafa17df48b2972    DIFFERS     github: consistently use set -eux in all script snippets
+b538013549cd6e88045559d68ac0a824f886affa    DIFFERS     github: make sure bash is always invoked with `-eo pipefail`
+6367a483ab60031ea0271c27de50e6699bb8f45a    DIFFERS     github: merge building doc and printing warnings
+b98760fc9cfec458901f5413e5ebf5e651b2cc20    IRRELEVANT  Revert "github: Pin microceph to quincy edge"
+a42c5a9d5fcf94efd1581b005ef0c519d9253bcc    DIFFERS     github: workaround microceph busy disk issue by freeing the ephemeral disk early
+6fe3d35b82c19619caf0690f4156044a34a55f54    APPLIED     lxd: Improve error check for existing certificates
+67d47ab0702d2e4749cdfd5200463a81efbfaa93    APPLIED     lxd/cluster: Revert database setup if cluster join fails
+661c6b8160f7738e985c0f7b041dfbfe2aae4167    APPLIED     lxd/cluster: Fix linter errors
+08b4ca0152811d5b02bb363ed261c68d9d195b74    APPLIED     lint: Exclude 'deep-exit' linter rule for cluster node removal
+001f29c8dfc0b83a93df3f08b249fa69cbf3e87d    APPLIED     shared/api: Updates swagger description for certificate field.
+54281e6b419b644bcd74f40894bbaf0d3ac3bf46    APPLIED     shared/api: Fix lint errors (receiver-naming).
+a2dd1815251f8d9acee32f1147ee6b46309cfc2b    APPLIED     doc: Updates OpenAPI spec.
+403afabe4a60ef0849a94e32571229229b5ef516    IRRELEVANT  doc/requirements: bump minimum Go to 1.21
+6a746095845fd826b041ad04e6e602df1aacef87    IRRELEVANT  doc/requirements: bump min kernel to 5.15 and note that older kernels may work
+5c750c46eae9c816d09bfbde9fd20be618bc424c    APPLIED     doc/requirements: mention that SKBPRIO/QFQ qdiscs require 5.17+
+6c8c4099acf8012c5d167689d389c4b662b80ccd    IRRELEVANT  doc/requirements: bump min LXC to 5.0.0
+83b26e609ed26202d965d0d31e49f499b9dba65d    IRRELEVANT  doc/requirements: bump min QEMU to 6.2 (same as Jammy)
+ae183bf44df4a7a8a6ce00a96654825ef7445e8f    IRRELEVANT  doc/requirements: mention that newer QEMU/kernel are needed for Confidential Guest support
+6cf6d682e2a2faf3cf0a7aab11b0c7b443c73c79    IRRELEVANT  doc/requirements: bump min libsqlite3 to 3.37.2 (same as Jammy)
+e5cfbc53105d007209ee5bde849d46d4917e6350    APPLIED     doc: add QFQ, qdisc, qdiscs and SKBPRIO to wordlist
+8a8d326f933a74d18b09be2cbf518c17bdea96a4    DIFFERS     doc: alpha sort the wordlist
+a87fdcf37e4f3599551676e504c2080be95be4d3    FEATURE     lxd/auth/oidc: Add constants for session cookie and config refresh interval.
+e76aca7d837d727bdf24500c2a73de39de1bff76    FEATURE     lxd/auth/oidc: Add fields for secure cookie handling.
+177bad4de46f2a8e3b75f219f9594e80deaa5482    FEATURE     lxd/auth/oidc: Initialise Verifier with fields for cookie encryption.
+e183169dbd03151cd56136d2f114fc3be715c360    FEATURE     lxd/auth/oidc: Add method to get securecookie from session ID.
+0695289dbe189bdf730dd637f0ec277ed43bea75    FEATURE     lxd/auth/oidc: Updates methods for getting and setting cookies.
+87e9296139b219f470df89f9f4581750e8819263    FEATURE     lxd/auth/oidc: Updates calls to get or set cookies.
+db3433c6c98add3c39a782c340a51209d8febe61    FEATURE     lxd/auth/oidc: Rotate the encryption key of the relying party.
+8311ab9adb94735821d9bb771b7c4c39e43ce67e    FEATURE     lxd: Update calls to NewVerifier.
+fa47a23c95c1310130c4d1643e98b109bad5e03c    FEATURE     lxd/auth/oidc: Request is not OIDC if session cookie not present.
+e0a44046555dbe51627c43a9da944ab0f5b2949f    APPLIED     lxd: Fix lint error (revive: confusing-results).
+bb4410808f68356bd26ca5f2eb8edd02012e9bfb    APPLIED     lxd: Fix lint errors (var-naming).
+8d4b2e4c3ff6157d8a88fe0f4e01e4e613e9eaa8    APPLIED     lxd: Fix lint errors (revive: unchecked-type-assertion).
+0661597f3beb4d536e764f383781bab98413ca8e    FEATURE     shared/api: Adds identity type constants.
+9e61ed54f55523cadb5974453ab5651245bedb3f    FEATURE     lxd/db/cluster: Add schema update.
+1ae8d43c6756228a3270868d49e9d22e8844f63a    FEATURE     lxd/db/cluster: Add types for identities and identities_projects tables.
+d9b286fd0aaf0817905c296d8b6cea693c802c1c    FEATURE     lxd/db/cluster: Runs make update-schema.
+efd92d16bdaa58b35a873608fd89950e84de8518    FEATURE     lxd/db/cluster: Removes generated certificate methods.
+82d0453a523ff7715e6f8d1c7e339a682d61b928    FEATURE     lxd/db/cluster: Updates certificate methods to call identity methods.
+dae9373ff6fe2876ff6b49d8a415349ff834c33e    FEATURE     lxd/db/cluster: Adds test for schema update.
+55337aefd30ccfc90ebc3c469cea2217bb5fc6ab    APPLIED     lxd/db/cluster: Fix lint error (revive: var-naming).
+f35271ee4cf11c61afad2f83d4c56b767926f90d    FEATURE     lxd/db/cluster: Update clustering test to select from identities table.
+8e1647637ad83adee283c2f406b4fcea2b47e733    FEATURE     lxd/db: Update certificates test.
+0ab30dbebd0a2a8050be8fabc2b331219bee9f20    APPLIED     lxd/patches: Add patch to remove block.* settings from type block volumes
+bb59a4153e9d7b3a1423458856115f4d17ae97ce    APPLIED     lxd/patches: Satisfy the linter
+524cd4228bc7644a5e7bcab6a868932f0dfcfe3c    FEATURE     lxd: Remove Candid from list of supported authentication methods.
+3681d5e54649fcc2fc9375b6820c1133f140228d    DIFFERS     shared/simplestreams/products: Fix regression in parsing version files
+bea66388da3b4545200468e3f6291bec42f5065f    IRRELEVANT  lxd: Remove Candid and RBAC from config update logic.
+e472cefea491d0ba750ebc5a49ae98de2e82aeae    IRRELEVANT  lxd: Remove candid from http handlers.
+e862e343a5024504ff1caa75093717a8cdedc808    IRRELEVANT  lxd: Remove Candid and RBAC from daemon init logic.
+448e29ccdb5493f60697db299444fa02adad8d70    IRRELEVANT  lxd: Remove Candid verifier from daemon.
+66aa5848f26ab5624183531337de98152e9d51fb    IRRELEVANT  lxd/auth/candid: Remove Candid verifier logic.
+34087c28ecb005791678dec6099073ca1c0d3bc8    IRRELEVANT  lxd/auth: Remove RBAC authorization logic.
+d2650536cc08a181710b52ec76b915983f409750    IRRELEVANT  lxd/cluster/config: Remove RBAC and Candid config keys.
+3cdc4aab1927f1e9a62b6de96c79f9ccf65985ac    IRRELEVANT  Runs make update-metadata
+8c94b2075b30bcd150c346b0374c130824a76f2b    IRRELEVANT  lxd: Remove candid from swagger doc.
+1003801c827a657249754fe9d8c1a350b50cbcf7    IRRELEVANT  shared/api: Update swagger example authentication methods.
+3a69738045c3102199c04dd98c5f6176e83c7ed9    IRRELEVANT  doc: Runs make update-api.
+0e8bffb7b0b08d496751f9e33faca8f0a8541fa5    IRRELEVANT  client: Don't set macaroon fields when using a target or project.
+f43bd71c30f4afb5e6d36c0d8910d11bd7f7313f    IRRELEVANT  client: Do not use bakery client for HTTP requests.
+d5b55bce3342202c7a0427896212f444a7336cfa    IRRELEVANT  client: Ignore candid auth type when connecting.
+5969eaa4eddee1f5721ab8115e690e3cf15d4999    IRRELEVANT  client: Remove bakery client.
+670f1049b553b32834b7ec6e864879cf982a749e    IRRELEVANT  lxd-migrate: Remove candid auth.
+c121a1047e38e0cc14db0d32175e7ef7d2b32163    IRRELEVANT  lxc/config: Remove candid from lxc remote helpers.
+998d45e5883465a3ae61003063a6985a892beeb0    IRRELEVANT  lxc: Remove candid --auth-type from `lxc remote add`.
+ed3f3b68500892633c89fe3d4b189dfd079c4f34    IRRELEVANT  shared/api: Remove candid authentication method const.
+06916e3efd874c4f2d1365de56c686b5d8c8e18b    IRRELEVANT  shared/version: Remove RBAC and Candid API extensions.
+a5a04ef40d15dff364b5d260078a2921b78ed3cb    IRRELEVANT  gomod: Runs go mod tidy.
+70eb266d9e56cbeeeec677aef8ef9eb9b95a6efd    IRRELEVANT  i18n: Runs make i18n.
+6e81d3a95b6d756c8465bfa9670af0f0372ca32a    IRRELEVANT  scripts/bash: Remove Candid and RBAC config keys from bash autocomplete.
+412a6391756a802d020b654311b6cb7a040248c1    IRRELEVANT  test: Remove Candid and RBAC test suites.
+45773e916b7ad46af488c0e36a04c10a6d1e4a1c    IRRELEVANT  test: Remove Candid and RBAC test helpers.
+c4c221684bb478719c97cea69858ae2d2a16a80d    IRRELEVANT  test/suites: Remove candid reference from server config test.
+59bc2b462e344e0ff1f5407ffce23957279141eb    IRRELEVANT  gitignore: Remove rbac test helper.
+91f6a0b7211fa214caeb9e1ee52bd049305b89ae    IRRELEVANT  doc/howto: Replace `candid` with `oidc` in --auth-type example.
+3eaa480f43dee9c0cabaf9d46d84688766fb3616    IRRELEVANT  doc/howto: Remove RBAC from projects confine howto.
+aa456589dc6d0474f5daff2cfe45ab639330b016    IRRELEVANT  doc/explanation: Remove RBAC from projects explanation.
+a1f677a9ba80f760bf7088525dda9accb5f29f93    IRRELEVANT  doc: Remove Candid and RBAC config options.
+f8934b26e648124644d24dcc60fe845941956226    IRRELEVANT  doc: Remove Candid and RBAC from authentication methods.
+74bd1310737c75f0fab1d1e9cb7815ebd3b489f9    IRRELEVANT  doc: Remove RBAC and Candid API extensions.
+0ef2fc58171119d3012683df8366d6b1e7cdd829    IRRELEVANT  doc: Remove RBAC from wordlist.
+194f4dfc3645ed6e3a66a53c7e161e5dd5ad1530    IRRELEVANT  test: Remove Candid dependencies from allowed client imports.
+fe5e210f19c4f30faaf20a7a76aa1a1dc4da914b    APPLIED     lxc/config: Fix lint error (revive: confusing-results).
+fe6ed2001dd4fffe00b940d204d1364beafb3ca3    APPLIED     lxd-migrate: Fix lint error (revive: receiver-naming).
+2a1e192ed6ab515cf15b9365650c3213158ba856    APPLIED     lxd-migrate: Fix lint error (revive: exported).
+08afa7621b9267f20064e709b6d7fd93d6cc814d    APPLIED     lxd-migrate: Ignore lint error (revive: deep-exit).
+9f07fbf8b53e5493f1b1ed9fa296b2fd5805a987    IRRELEVANT  lxd/auth: Ignore lint errors (revive: exported).
+93578472556ffa19617353bf93215e2b3a406f64    IRRELEVANT  lxd/cluster/config: Fix lint errors (revive: confusing-results).
+a7d4f4a223c5bac62a851e7e49908912c020ee40    APPLIED     lxc/remote: Fix lint errors (revive: exported).
+a11ee6f721c6437072f06b620806777e553c696e    IRRELEVANT  doc: additional options recommended for running Docker
+08da388687630f44227026d75581d0f84926a4fa    IRRELEVANT  github: run system-tests with LXD built with Go 1.21
+c45ac17b5342e8ac826d47de1c80573290cdf4e7    IRRELEVANT  github: run some system-tests with LXD built with Go 1.20
+6344260538c9f422a07c9a1d222704928e3fd53b    IRRELEVANT  github: use matrix.go in Install Go section names
+17c7d2db5ca5e186ffc6a1b072867257d915e39a    IRRELEVANT  github: check compat with min Go version when compiling with 1.20.x
+e687097120930e2a881f585aca7cfc8becad478f    IRRELEVANT  github: run code tests using Go 1.21.x
+61bebdd4786b7f87b79c08f4861493f9089a7a55    IRRELEVANT  Revert "Makefile: Removes unnecessary pin of github.com/mdlayher/socket@v0.4.1"
+14a416cbdbe46290d4a880d3a7deeb455b3a6e0f    IRRELEVANT  github: build all client binaries with Go 1.21
+0a16fe1b606e3eda14abd21fca84ebbac6e18e71    IRRELEVANT  github: build doc with Go 1.21
+4fd1164bf06d63f292fd93b87729f33876052ba6    IRRELEVANT  github: build lxd-snapcraft with Go 1.21
+f29af612f1919636960f6fc8eec77673045c486f    IRRELEVANT  gomod: Update dependencies
+7212f7f2e7b339cc47d11cd7923736e9fa121fdf    IRRELEVANT  doc: update versioning scheme and snap channels
+16e3b990caac989c8023c1081fd2e71b2584a986    FEATURE     shared/auth: Adds common methods for identity types.
+76182f3874bbd867f69fa406ce796f7905eea174    FEATURE     lxd/db/cluster: Remove IsRestricted method in favour of new shared/auth function.
+d6a5a21f4ab3ba15cc5f7448b74c44e1587cf980    FEATURE     lxd/identity: Add identity cache.
+3c18b6ffef56d573afde79e6c75febc8c342e4c3    FEATURE     lxd/auth: Check for PKI authentication when getting request details.
+3e389f86bf49db5d19a24d46559f4dfb19cac102    FEATURE     lxd/auth: Check for PKI authentication in TLS authorizer.
+79566c703305c3a325ef1570ed44da4ef7b7ba24    FEATURE     lxd/auth: Update authorizers to use identity cache.
+a975d56dcb2f98afed99325af06c64a1b146a3ed    FEATURE     lxd/cluster: Update TLS check to use identity cache.
+5782b317431065075b06f6264f4e823dd20f5b59    FEATURE     lxd/cluster: Update gateway to use identity cache.
+e319c238b4662611ac9c9c34e46fba7f961d6ab4    FEATURE     lxd/cluster: Update cluster tests for identity cache.
+4cb9d30bea123bc1396bf3775d940c98bdc15733    FEATURE     lxd/project: Update project permission tests for identity cache.
+999bbcd3e8173e41a5477d8d2b90a446b1971548    FEATURE     lxd/db/cluster: Add methods to extract x509 certs from identity metadata.
+075db0c52c9f083abf9a2c456c7f6587c613d9aa    FEATURE     lxd: Update daemon to use identity cache.
+ca3e14dbb1346762890c5db28a40c2b531a4f47f    FEATURE     lxd: Update certificatesGet handler to use identityCache.
+24c37414ebbc274082d029f8bbe2446c2b40998d    FEATURE     lxd: Pass identity cache into gateway handler funcs.
+c2c021e278d253500eda05274068bab9e0906205    FEATURE     lxd: Move certificate cache update functions to new file.
+283c8c16753761ba2dcdfad428feb481980d2424    DIFFERS     lxd/instance/drivers/qemu: fix linting issues
+01c947772a21ec1ed3e19585826e1892f35dfd58    APPLIED     lxd/instance/drivers/lxc: fix linting issues
+8ffff7b207720eff6c7e6ecb4aaa14db91c47452    IRRELEVANT  lxd: Remove RBAC and Candid config keys (patch).
+413d00f6defdd4385de78d27bec362c9e18ab251    IRRELEVANT  github: drop DCO check now that we have the DCO app enabled
+8d56121db6abdd2049ab9dc79853c73b52ef412a    IRRELEVANT  doc: fix extraction of version number
+d27247f1989eb2d484fe35b6fa1a2393a827cf92    FEATURE     lxd: Update cache refresh functions.
+02c6765811e203b5e5526e18938f6c950dbae677    FEATURE     lxd: Rename cache update methods.
+9f4dffc76e2a72f4fc8fc6b55c93e1b8875375c6    FEATURE     lxd/certificate: Remove certificate cache.
+70fd4c3e1af90c217dc3e3d4c0750407f8354c91    DIFFERS     lxd: Fix lint errors (var-naming).
+daeac3283591548708e98636677c619769a10a50    APPLIED     lxd/cluster: Fix lint error (var-declaration).
+7ee6955cbbe1e1fb4c946119c742ff692d25c65b    APPLIED     lxd/cluster: Refactor leader address logic (revive: defer).
+d8804dcd171f5269a09fd0a68c15508ad8f8467a    APPLIED     lxd/cluster: Fix lint error (reduntant-import-alias).
+9c2ce4550672e088105b6eb5d8dd3edad7c6ed6a    APPLIED     lxd/cluster: Fix lint error (exported).
+43b67da33a604fe7e39dccb8f2be7905217e7093    IRRELEVANT  lxd/auth: Fix lint errors (missing comment).
+4ea61558b59ff2e5f14f137a95f81accfc6b98d0    IRRELEVANT  lxd/auth/tls: Return falsy permission checker when client is restricted.
+afe9c4a2bd50bfad6e1ad9a620b30a8af864dee3    APPLIED     test/suites: Ensure we can still list storage pools when restricted.
+7268552d9a5e2d376b530158c87e738df806e7f8    IRRELEVANT  doc: no need to sudo for snap info
+21990d7ff3b8ff73c7ef90248131e317a304911d    APPLIED     test/suites: Ensure restricted certs cannot view storage pool config.
+574c538bb74160755f05edde66eb2028b382fbf2    APPLIED     lxd/device/disk: Satisfy the linter
+1ab0827b0de4abcd7ebc59bc5b4f5f5867f2e705    DIFFERS     lxd/storage/backend_lxd: Satisfy the linter
+b0e0519d54650bb19b749495f9d83b97aeb1f8d5    APPLIED     lxd/storage/drivers/generic_vfs: Satisfy the linter
+805551d9e103fd6386eb41b98a3ec86813c1a90c    APPLIED     lxd/endpoints: Hide read errors from proxies
+8e22091af07f29c0c626b1746689491c8bedbaa8    APPLIED     incusd/instance/qemu: Cap hotplug CPU slots to 64
+eff4a63e9b5804066437df995fbc4fbcddf4daf0    APPLIED     incusd/instance/qemu: Fix handling of > 64 limits.cpu
