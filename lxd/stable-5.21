@@ -69,3 +69,15 @@ de3c4aa64494850bdd24306cdfcd81259e14246a    APPLIED     doc/reference: reorder p
 f91090f7518bc24386e7afe4d65d67073788f127    APPLIED     doc/explanation: reorder pages and update the landing page
 79c17806506cef4a8c4a72cadc13fbe5050c5b2f    APPLIED     lxd/storage/drivers/btrfs: Clarify fallback in case UUID discovery times out
 6aaafed4f1db9e5c1d77c389be68df76cec314b5    APPLIED     lxd/storage/drivers/btrfs: Move config modifications into FillConfig
+ebd437ed27151ae640de2b6099d97440cbe0fcf5    APPLIED     doc/howto: reorder pages and update the landing pages
+e91e73484c928157685c6c9c5d177d7a4cad6c40    APPLIED     doc: update the start page and add links to sections
+2da4d301eff289409bec52a7df5aa0b7e132de57    APPLIED     doc: fix exceptions for Markdown linter
+67cd0cad76f475c092b20e6a2d1fb016a0921704    APPLIED     lxd/patches: Add selectedPatchClusterMember for patch coordination
+05902a4b696062a5fd2bc6412738652553533fee    APPLIED     lxd/patches: Add patchStorageRenameCustomISOBlockVolumesV2
+edcc1f3b3af7ff5eeeaf8ecccda00646ba3ab76e    APPLIED     lxd/patches: Supersede patchStorageRenameCustomISOBlockVolumes
+5ed491f8609e66a363a97e6a7b9878daf7225830    APPLIED     lxd/patches: Add patchStorageUnsetInvalidBlockSettingsV2
+87c17837ffe1fb620c0ac1713f7f796aef1a7fdf    APPLIED     lxd/patches: Supersede patchStorageUnsetInvalidBlockSettings
+43dfdce8d90bd029a503fe94d7609cb34359c1c2    APPLIED     instance/drivers/driver_lxc: do not set "soft" limit when hard limit is set
+41937c15b6bff328c21b5a45865ec0ac180fe3c7    APPLIED     incusd/instance/qemu: Fix handling of > 64 limits.cpu
+79bb4ea07c4bd2f9dbe88f1750bf45e1bbfd3335    APPLIED     doc: workaround for undefined references
+5c8c90ff5cea9799d83854fff7bf3cd6c1a7f597    APPLIED     lxd/api: Revert gzip compression on API
