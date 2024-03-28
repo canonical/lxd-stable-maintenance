@@ -3429,3 +3429,461 @@ cb129a4d5cdfb3f535d53c0403875d5751319577    IRRELEVANT  doc/instances: clarify h
 0288d48dc229148fc760370bc54a63e118a87772    IRRELEVANT  doc/api: pin Swagger version
 ef99994fd883e112b9ddddc3780827edb5fa3985    IRRELEVANT  Minimum Go version 1.21
 7cf3a26b4c4f0aa194f4efeb8458c217a5b399e5    IRRELEVANT  gomod: Update depdendencies
+843d7d69b738edb7bc160fe7ad7344aab9341807    FEATURE     api: Adds `authorization_apis` API extension.
+a804d5827bcd42491a9d2d4ed940f95679dde064    FEATURE     shared/entity: Add identity, auth group and IDP group entity types.
+42f74fc3e176614ab3ca7af5e70d3680a5cb69cb    FEATURE     lxd/db/cluster: Add schema update for auth APIs.
+2d95698cefd5a9c9f93df2b8915d183046cac279    FEATURE     lxd/db/cluster: Run make update-schema.
+fdcd9e546f70b25c57a1301e0502fe8d860aec20    FEATURE     lxd/db/cluster: Add database types for groups and permissions.
+1435f2ea7fd504beb734ae19b694dd1c748893a1    FEATURE     lxd/db/cluster: Runs make update-schema.
+d33b148f00f447fc78687a28b5c58b1c48970030    FEATURE     shared/api: Adds auth API types.
+f584c6ef1d7f971ae9ff08b651a42d8da7398926    FEATURE     lxd/db/cluster: Adds database methods for auth groups.
+3175a3ba8df3046fd22459a350c4fa1a0fdba2cb    FEATURE     lxd/db/cluster: Adds methods for populating api.IdentityInfo data.
+40925ddd3054e0c746a6113c8bfb0114a3dcd48a    FEATURE     lxd/db/cluster: Adds methods for populating api.IdentityProviderGroup data.
+6c9a474fe2d8fd2587e063828acd94f25e9804f9    FEATURE     lxd/db/cluster: Adds methods for populating api.PermissionInfo data.
+b4c0415f6fc25e03062612d02b0cb88e10e823fb    FEATURE     lxd/db/cluster: Add auth types to EntityType scanner/valuer implementation.
+d555ac4581025f5a0efc470dd3c1172cd035c694    FEATURE     lxd/db/cluster: Add queries for generating URLs for new entity types.
+76af03caf0bfaf5a89d1905a6f58a454c81af34c    FEATURE     lxd/db/cluster: Export the EntityRef type.
+5a75b47ee3051774712687fa474f22a1529bcf05    FEATURE     lxd/db/cluster: Add queries and methods for resolving entity URLs to IDs.
+078a57e4df8393b6c0db37c17659f552e22b31e9    FEATURE     lxd/db/cluster: Update tests for entity queries.
+499864a8f4c62dd175acf78fc22543bac58a8e5b    FEATURE     lxd/identity: Adds groups and IDP groups to identity cache.
+fee4f54f48b3857110d0e4713a4c48edf8f0e04d    FEATURE     lxd: Update calls to (*identity.Cache).ReplaceAll in tests.
+0e15f7945012ec1be515ff4679fc17339f007593    FEATURE     lxd: Update identity cache refresh handlers to include groups.
+235ca4b117501241dee0435fbf869531cf0c18f6    FEATURE     lxd/auth: Add function to validate an authentication method.
+955bf0b75dc457a7a26b89578da7485bd08c470b    FEATURE     lxd/auth: Update Entitlement validation.
+e1a32f1cdbead13cf16e0235b4fe4c985dffd8cc    FEATURE     lxd/auth: Add `can_view_permissions` entitlement to server.
+1166f484ac22547ff0afb05f0eedcf233cabaa82    FEATURE     shared/api: Define lifecycle events for auth groups and IDP groups.
+375c223448ecbae2e8e957964cb079cc91374401    FEATURE     lxd/lifecycle: Define lifecycle event actions for auth and IDP groups.
+96e19baf091ece0d4b8b69124199cc7eabaef6d2    FEATURE     lxd: Add the identities API handlers.
+7fd6dd1d20428f23ac2851f1e38e7e9bd389cc0a    FEATURE     lxd: Add APIs for auth groups.
+6fd833eed3ebd7faddf582ddfa116ddc85e492aa    FEATURE     lxd: Add APIs for identity provider groups.
+85635957768022a2a6a0886d34d6865d21ad8d62    FEATURE     lxd: Add the permissions handler.
+df05ddf7b253939eaf17e0cf888e9a8218623b01    FEATURE     doc: Runs make update-api.
+4505203fe58992e308072e781431c5332526a0c8    FEATURE     client: Add client methods for auth APIs.
+ac50d77d2aa70bcfd28706df074c998afb7709c7    FEATURE     shared/entity: Export (entity.Type).RequiresProject method.
+c0718aa6cd99a2c667df5e868d3ea84d0c10bab4    FEATURE     lxc/auth: Add authorization commands to CLI.
+ca11d031da25819b7121b65623eb82d62b5069e5    FEATURE     i18n: Runs make i18n.
+c6af7ec4eef43230026c72651662a63aa2e72713    FEATURE     test/suites: Adds authorization test.
+97ad6ea497167c382511c072a3113a8e61af5a70    APPLIED     lxd/db: Don't propagate expected errors
+18265f6e1c0a746d2ed6114071fce19b38ed1640    IRRELEVANT  Makefile: Switch back to using go mod tidy for min go version checking at 1.21
+d36afe729e74359d7fb18c86b821e5b2b0d91e98    IRRELEVANT  Update minimum Go version to 1.21.5 to accomodate forthcoming openfga package
+8d45a7203d5df20d59418ba9d10c2a25998fab5e    IRRELEVANT  github: Update workflows to enforce min Go as 1.21.5
+20f6c2538145e3bb7709c96308ca52f8783c21c1    IRRELEVANT  gomod: Update dependencies
+61e89caaaa952ee859496f28e11e2a0624b97ac1    FEATURE     lxd/db/cluster: Clarify comment and SQL queries.
+f771499aeab03f22c6bf3acc909d122b857bc013    FEATURE     lxd/db/cluster: Add columns to identities table for auditing.
+2743f98f7d4f9d1b47435eaba76f74177a421051    APPLIED     lxd/device/disk: Remove config.iso file when the cloud-init:config disk device is removed
+277196adbfb9c6530370f0c7d36e28df0d67951e    IRRELEVANT  lxd/db/cluster: Runs make update-schema.
+6c4660f131a82178d8869cc55b34df3e2fa58652    IRRELEVANT  lxd/auth/oidc: Remove config refresh interval from options.
+4b5c8ab62f8ec931cb0c3912f7c1005b7910552f    IRRELEVANT  lxd/auth/oidc: Add a httpClientFunc field to the oidc verifier.
+6e7fa9b3141c31762c2e238beaf812b818999e2d    IRRELEVANT  lxd/auth/oidc: Get a new HTTP client when refreshing configuration.
+7d93afb5b428206b38cb6f581d895bf6afd523d4    FEATURE     api: Rename `authorization_apis` extension to `access_management`.
+c3b4135145c9609d979f3279268368e83b0b9c4f    FEATURE     shared/api: Update API extension for auth API types.
+66a9d3bb6d04aa7955c9a8d7b0e2f52f2cfb26b7    FEATURE     client: Update API extension checks for auth APIs.
+2ea33200d912aac3f740bf4c7f9239974c0f8146    IRRELEVANT  doc: Add OpenFGA to wordlist.
+1e958d480b08d63f35d6cdd6785c35e4bb2f2bc1    IRRELEVANT  doc/howto/migrate_from_lxc: 5.0 is the last LTS release shipping lxd.lxc-to-lxd
+6b2dab613b798c91d8aecb60773186b42ae369a7    APPLIED     github: wait longer before retrying to download go-tip
+cf666587a10338bc973daba20fb61ba91471ed3e    IRRELEVANT  github: don't test against go-tip on push events
+89d30418dfd3c7bfd6a900b5cde17c9ca61ea9f2    FEATURE     lxd/auth/oidc: Export a method to expire the relying party config.
+9ffdb007a37b10eae735388a80595bb10bd8565c    FEATURE     lxd: Pass a HTTP client func into NewVerifier.
+37545b39c72ccbcd6acc9f62b4c897e40a3bc0fe    FEATURE     lxd: Expire OIDC verifier config on proxy setting change.
+28c2dadd7b0c10c292c8baf5bccdff45c5b4b6d9    APPLIED     lxd/storage/backend_lxd: Pass custom storage volume snapshots in the right order
+1282237fb8cc8046e2a99272116cfeff09efce50    IRRELEVANT  lxd/db/cluster: Fix query for storage volume snaphot.
+842274053ad37fa31ceb95b7ea46ed2d654edbac    DIFFERS     incusd/images: Fix potential race condition
+3091462ad80937a0ec3da054deafa2c27d7fea25    APPLIED     lxd/images: Add project to error in autoSyncImages
+8f59cec2f45fd4cf13fb47fbfc6b91fdb2143b7f    IRRELEVANT  lxd/images: Use context in autoSyncImages
+9b829e9c3d46ca27e4f17f834efe38c51da3c16f    DIFFERS     lxd/images: Adds ctx arg to imageSyncBetweenNodes
+64d38043fa1f50245a8eec748b94f2b508ef0622    IRRELEVANT  lxd/device: Annotate the `pci` device config options
+7f83eb4411c308faff0d3ab359dc45d20c128d13    IRRELEVANT  lxdmetadata: update metadata
+de5deba3d73206821f9aca7998ee975cd59885f3    IRRELEVANT  doc/pcidevice: include automatic config options in the docs
+05c783ab6317b769dc74f77ed3a282d9b290f9a1    DIFFERS     lxd/project/project: Remove optimisation from StorageVolumeProject
+f174f7bd2301e51d066495273ffd5012b96d940e    IRRELEVANT  lxd/storage/volumes: Use request context where appropriate
+2e50ba1eebbb9f0bf5ba28c4e068c35fd7df9f4d    IRRELEVANT  lxd/storage/volumes/backup: Use request context where appropriate
+37099ba025f919489e8ed834aacbf876675033d8    IRRELEVANT  lxd/storage/volumes/snapshot: Use request context where appropriate
+d7078a5b8ac8fe470542c78fc16de245a767c159    IRRELEVANT  lxd/storage/volumes/snapshot: Use shutdown context where appropriate
+17c39c6bc262a795ad3567aa3df84f9005ca9edc    DIFFERS     lxd/storage/volumes: Standardise project name and request project name variables
+f3a9b97ec30d2a5d6650937f654cbec592a580d5    DIFFERS     lxd/storage/volumes/backup: Standardise project name and request project name variables
+1984a8b082a96c24dd97c741cd6bf5fe522e374d    APPLIED     lxd/storage/volumes/snapshot: Standardise project name and request project name variables
+ad33d6832d623f4a80f01be64ec6a896223e16b2    APPLIED     lxd/storage/volumes/state: Standardise project name and request project name variables
+26b15b19897cc895dfc570d1bbddfeb9c0e34d0c    IRRELEVANT  github: add codeql config to run on PRs
+553daec6aef0d12d51d6b1505b632d8f6d56e932    IRRELEVANT  github: stop monitoring C/C++ with CodeQL as it's not buildable
+9e0a6233ad05be4637139bf505ea0c4e75accf76    IRRELEVANT  github: use more stringent ruleset with CodeQL
+467a84e15d6da9a200d7186e600f81c607fc6eb3    IRRELEVANT  Revert "github: use more stringent ruleset with CodeQL"
+cb1f0b7b8c273b99857cd27cc09e6938f1cbc77e    IRRELEVANT  lxd/storage: remove reference to "ceph.osd.force_reuse"
+e96cadf86a09b7044bc2d4327fe60425f652e48f    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.67 to 7.0.68
+3d8376dcd972e50f35c685e6b75187542927194e    IRRELEVANT  build(deps): bump github.com/stretchr/testify from 1.8.4 to 1.9.0
+3d0720eb1dfcc40fe20d818187a661651b314367    APPLIED     lxd/storage/volumes: Remove unnecessary 2 line variable definition in doCustomVolumeRefresh
+bcc061ede78aa1e5ac2d7fe6616819f445fa4500    APPLIED     lxd/storage/volumes: Remove unnecessary 2 line variable definition in doVolumeCreateOrCopy
+dc00eaa8ba4190bd5786ab12b522363f663fc69f    APPLIED     lxd/storage/volumes: Validate source project in doCustomVolumeRefresh
+bdf7d87166359b3ec5ef6521c86103f5168643a3    APPLIED     lxd/storage/volumes: Validate source project in doVolumeCreateOrCopy
+0358094e504d279312391495b7b1c5534f33f2b6    APPLIED     lxd/migration: Accept offered rsync features for BLOCK_AND_RSYNC
+d873bf6caaa1000c4a3e0cd4a6556b7fa3332fa6    FEATURE     lxd: Fix entitlement for group list request.
+1bac9feeb209f14c5f7b5d3c381e2bab699451be    IRRELEVANT  lxd/db/cluster: Check for sql.ErrNoRows in correct place.
+db858d8129824750da84b35b88ffb0fbac6dc282    IRRELEVANT  lxd/db/cluster: Remove permissions table.
+aa19d7bf0c9a09218ca98ffc18829fa6c5285b23    IRRELEVANT  lxd/db/cluster: Runs make-update-schema.
+b8e13d0668885b73f592d4c01736047c9beac5c6    IRRELEVANT  lxd/db/cluster: Delete generated permission queries/methods.
+9b322fa686292e971d54ff3ea713a7e79840c057    IRRELEVANT  lxd/db/cluster: Add GroupID field to Permission.
+a235136f058fef8215c3bae7bce863aa740aae98    IRRELEVANT  lxd/db/cluster: Remove AuthGroupsByPermissionIDs method.
+c19ec4886e98f84a765f61b74fa42bae0202c5d8    IRRELEVANT  lxd/db/cluster: Update GetPermissionEntityURLs method.
+335991df83330fca326a29dc026d7b2874472841    IRRELEVANT  lxd/db/cluster: Refactor auth group DB methods for schema change.
+727e4795ce45cdf0afe687458a21c3416fa9c468    IRRELEVANT  lxd: Refactor upsertPermissions to use new db methods.
+0a3b4b91fcc021c531ab2841fe65e8ac3e354665    IRRELEVANT  lxd: Refactor auth group handlers to use new db methods.
+8bb1798ccf8cde8a4dc6844dae4650ba25426047    IRRELEVANT  lxd: Refactor permissions handler to use new db methods.
+b7fb05389b8ac6170d8810cabaf89210b028baa7    APPLIED     Revert "lxd/migration: Accept offered rsync features for BLOCK_AND_RSYNC"
+de573c58773d65ac4de2a70d48dafefa142a6ab1    IRRELEVANT  github: Whitespace
+8543c93a8480f794763260e6067c63fda7d53187    IRRELEVANT  github: Pin minio to RELEASE.2024-02-24T17-11-14Z
+c223a4d430c49e21200bfbcdc896d767e33ddd2f    FEATURE     lxd/db/cluster: Add SQL triggers for deletion of each entity type.
+5217c704b7f3f803d42ea9554c7f210c80668bf6    FEATURE     lxd/db/cluster: Add an ApplyTriggers function.
+7e51e3f6fb3694170e87a22f1f42078d17797152    FEATURE     lxd/db/cluster: Apply triggers when cluster DB is opened.
+ef209cb4cf241fb23f52781e01d040285c8fad3a    DIFFERS     lxd/migration: Accept offered rsync features for BLOCK_AND_RSYNC
+d60e007498138383b8fbf98773c0607ccf59c82d    APPLIED     lxd/util: Rename 'node' to 'cluster member'.
+801ae37143a1f970085990c213095126a9b3d748    APPLIED     lxd/db/cluster: Remove redunant parentheses.
+bda30c021795e9bbbae34f6f3575bb196609afcd    APPLIED     lxd/db/cluster: Rename "node" to "cluster member".
+e8fd0b5b7b8bfb970f961e62899444c84c0988c7    APPLIED     lxd/db/cluster: Update error messages in unit tests.
+fcde91b791a945682bf89c3ac7e2ef0524c156ff    IRRELEVANT  test/suites: Check that permissions are deleted when entity is deleted.
+58c9336ae997cddfcf9799590d85ac5e574c2469    DIFFERS     lxd/instance/drivers/lxc: Remove LXD 3.7 rsync feature exception
+1551cb5d6e5aa259683e6dd4de9f40eae8d7f508    FEATURE     lxd/db/cluster: Fix IdP group query.
+48b85c8dcec139c9ed68503e1cc13397b478b7d3    FEATURE     lxd/db/cluster: Fix error messages when setting an identity's groups.
+3d951ffc662f27a32fb6944aeff6257283040aef    FEATURE     lxd/db/cluster: Update query for setting an identity's groups.
+fa1f311886de5105b5bbfce9a5a5ac54f0af65bb    FEATURE     lxc: Fix info message when an IdP group is deleted.
+f7779427663a1551c2478ab1bcc81ec5957148b8    FEATURE     i18n: Updates translations.
+dd83c48d7d3e4f2953eaa1cdd97dcf7d5f9c2e71    IRRELEVANT  .github/workflows: Use latest minio
+50e6f8e937833e8c40d627137b37730ff9c2739f    IRRELEVANT  Set minimum Go version to 1.22.0 to accomodate OpenFGA.
+d724c310b00cacb5d38d83a416ff4ad34d1bb2af    IRRELEVANT  workflows: Remove go1.21.x from strategy matrix.
+1d44977e0a269dcf9ddca94f55e2f04758cc74e6    IRRELEVANT  workflows: Set minimum Go version to 1.22.0 to accomodate OpenFGA.
+6eeeaf0330628916e99231353ca3ea595941ecfd    IRRELEVANT  doc: Set minimum Go version to 1.22.0.
+f8180dec5cba69ec066e7444a65ae021a3941cbb    IRRELEVANT  test/lint: Disable licence check.
+37846c829a3b5a97ab403bf05aa870807e4a609e    IRRELEVANT  github: on push events, don't include additional tests to the matrix
+e305e2e41d3d484edbe7eed3d10a8a51609a6b1c    IRRELEVANT  github: Restore testing latest stable version of go rather than go tip
+f067b3c9d1c4aa82548415d61773504408c607d5    IRRELEVANT  lxd-metadata: Support 'compressed expression' in `entities` list
+736855ff1cfb9cf58205812fd685eccc108a6955    IRRELEVANT  lxd/device: Annotate `unix-{char,block,hotplug,usb}` devices config options
+ce1fd551f92f6696bf0be057441f184a60860d1f    IRRELEVANT  lxdmetadata: update metadata
+1eb1754ce07e3fa67784366a4398569d993b7883    IRRELEVANT  doc/unixdevice: include automatic config options in the docs
+e5367f9dadd37308b948cc6831897c7868bf21bb    IRRELEVANT  lxd-metadata: Support 'compressed expression' in `entities` list
+d163c6a4c2392999354487c874ccf0c15a5e7f01    IRRELEVANT  lxd/device: Annotate the `gpu` device config options
+67805f8af7d83be8961b0bf4065c8517a23faea9    IRRELEVANT  lxdmetadata: update metadata
+24a33980bd76c8829548e846ff026a09406f9d4a    IRRELEVANT  doc/gpudevice: include automatic config options in the docs
+e9877b669b5bb17eba279e572d92c49a8460f2c1    IRRELEVANT  doc/devices/gpu: reference options
+06b88cba93472063a95671f2a63e5b1fe48a079d    IRRELEVANT  lxd/device: Annotate the `tpm` device config options
+af634285d0e05dc24e5cb674ba24acbe2fd081d3    IRRELEVANT  lxdmetadata: update metadata
+d13c583391a7d5fc0bdea2c0e9b25c88be1d4720    IRRELEVANT  doc/tpmdevice: include automatic config options in the docs
+37511cf4c0740bfb3d59952f19de8771f4b00807    IRRELEVANT  github: Removes downloading go tip as not needed
+109723497a47b853ee55ab28e4329745b8285a07    APPLIED     lxd/storage/backend/lxd: Use volume name from the database in RefreshCustomVolume and CreateCustomVolumeFromCopy
+ae2b36c086d6503efe3cd1441e818dd5abfd15e2    IRRELEVANT  lxd/db/cluster: Actually swap argument order in SQL statement.
+6fff77b16f7344a7333c26e2c9843f719b81bee3    DIFFERS     lxd/instance/drivers/qemu: Use a pointer for tracking operations
+337967ed403997cf5dd384048d917cc5f022fb52    IRRELEVANT  lxd/device: Annotate the `disk` devices
+a4319282200f1f980517458874c52c375806d819    IRRELEVANT  lxdmetadata: update metadata
+7f947d32c437702633655443363ccaa424117e65    IRRELEVANT  doc/diskdevice: include automatic config options in the docs
+0c39ae912fb1942f4e5509427038b18b282373d8    IRRELEVANT  doc: replace references to config options
+a634890720cede6e812c2b4b884fca3480b8661e    APPLIED     lxd/migrate/storage/volumes: Use volume name from DB in migrationSourceWs.DoStorage
+8625ec8926684117df1c578e5bac4cc8b71cb777    IRRELEVANT  lxd/device: Annotate the `nic` devices
+9c694e95c30197a54a5f84568454b543ed398489    IRRELEVANT  lxdmetadata: update metadata
+bc8e8f1e8ca060428b9bf9eb1cbe18895bf6df7e    IRRELEVANT  doc/nicdevice: include automatic config opptions in the docs
+a16ab4a9d46b6ec6d11d9dae52bc7b22f4131496    IRRELEVANT  doc/devices/disk: update reference file
+ba87566e293fd7861a99dd3cac5c5d56ac1944cb    IRRELEVANT  shared/api: Update `identities` field of AuthGroup.
+8ce0797dbf686d5303954aacc06c7e682b560e8c    IRRELEVANT  shared/api: Include groups in the identity API type.
+6dab04fefff7f3816c9aefb4886ebae0224b0767    IRRELEVANT  shared/api: Add effective groups and permissions to IdentityInfo.
+e4d2f3d64e6fd613b827b02e5b3f33c9319572a6    IRRELEVANT  lxd/db/cluster: Update AuthGroup.ToAPI to return identity map.
+f90b4f223ade3327bab8f2d968c2ac6d6222f61a    IRRELEVANT  lxd/db/cluster: Update Identity.ToAPIInfo method.
+c5b2e80fadda38df7555b5e7e65c9e643bf7b549    IRRELEVANT  lxd: Return identity map when listing groups.
+a5150f9a6b8604f91db81c898a97f8715656359b    IRRELEVANT  lxd: Remove recursion=2 from GET /1.0/identities.
+e210d08cd5181dc1e690fa7237bb720892e7112b    IRRELEVANT  lxd: Update calls to Identity.ToAPI.
+d318ad00e70f12104fe927bfd35a04b6b1cd855c    IRRELEVANT  lxd/db/cluster: Don't return dangling permissions (log a warning).
+ea82ac9c4be436b712729a420a2282714a3c96df    IRRELEVANT  lxd: Update call to GetPermissionEntityURLs.
+32964a3c9d2b989afe07cd5a0922273e0d2338a3    IRRELEVANT  lxd/db/cluster: Add function to get all LXD groups from IDP groups.
+6e684fa083f5f10057b46f8353ee97cc6bbccc13    IRRELEVANT  lxd/db/cluster: Add function to get distinct permissions from list of group names.
+81367d73cb71b917a7a2006ba39107334b22ab8b    IRRELEVANT  lxd: Adds handler for getting the current identity.
+596a8afbf37224381de1dccef16bb62197543407    IRRELEVANT  lxd: Call current identity handler on GET /1.0/auth/identities/current.
+23265f10003a3c370e423e5c161985ba0f16bccd    IRRELEVANT  client: Update client for modified identities endpoints.
+d0c1c834d496e9482d8dab3b05d4f3540176576f    IRRELEVANT  client: Update client for modified identities endpoints.
+edd855d457ba22f016b52b4a2144893e99632905    IRRELEVANT  lxc: Update client call when listing identities.
+857bc1508096040768a34ff2046bad86873354e6    IRRELEVANT  lxc: Add 'info' command to lxc auth identity.
+e8cc7df2859dbbcec2274a680e3eefc2aa671685    IRRELEVANT  test/suites: Test the 'lxc auth identity info' command.
+45a6bfb46ea7a79914548ffa506a3c0ddca46748    IRRELEVANT  i18n: Update translations.
+6a622a58679ea728d9cac90c2a27817a1dfeb891    IRRELEVANT  doc: Runs make update-api.
+c53b36cdd761356ed121c5233fafeabc5e2279f9    IRRELEVANT  lxd/device: Annotate the `infiniband` device config options
+95ff63a733f1c0c0f3ebf74e081d6b28697516d6    IRRELEVANT  lxdmetadata: update metadata
+4c977d57522275911d4c0ba95083c0abc9d85acc    IRRELEVANT  doc/infinibanddevice: include automatic config options in the docs
+9c26773afcb2209693982cfd8f9f031046ffb1d6    IRRELEVANT  lxd/db/cluster: Filter out identities and idp groups we can't view.
+4c8e192d6a62a8226442b1d4f7bff3d76c99fb11    IRRELEVANT  lxd/db/cluster: Filter out groups we can't view.
+4b51241090ef459a3d1a2ff0ad0a4d4b99471917    IRRELEVANT  lxd/db/cluster: Filter out groups we can't view.
+2b071549a395dc7820079faa900a861474557cee    IRRELEVANT  lxd/auth: Add entitlements for IdP groups.
+17f01038283a8af6cd9428ed38909d420194d480    IRRELEVANT  lxd: Filter out identities and IdP groups we can't see from groups API.
+e2b2e3f35f86e6012667c911aeffbf0821beffcd    IRRELEVANT  lxd: Use fine-grained permissions for IdP groups.
+6ccfa9518a1619e6812f1c3db0c6aab30f99817c    IRRELEVANT  lxd: Filter out groups and IdP groups we can't view from IdP groups API.
+f6e0545a500e78e6f28486d6cadaf4edf16d5b60    IRRELEVANT  lxd: Filter out groups we can't view from identities API.
+4c9ac88cf7e10423bed8f457cc60a5c9f526b219    IRRELEVANT  shared/api: Unembed instance Put from Get entity
+f8f2b66a3e41fd4cdc65e965a4119228b5fad84f    IRRELEVANT  shared/api: Unembed instance snapshot Put from Get entity
+5bc2d079b4700e6952c16aa9995cd5e16bccfeb8    IRRELEVANT  shared/api: Unembed project Put from Get entity
+25544617382c0914a6c4a55189f7a41bacb097e3    IRRELEVANT  shared/api: Unembed profile Put from Get entity
+e12e707a6bfc185b91022cc3280c50279c1f1db2    IRRELEVANT  shared/api: Unembed image Put from Get entity
+d5b83d50bb581cd7282d1ba9fa099b3a6fc3efef    IRRELEVANT  shared/api: Unembed warning Put from Get entity
+39bc8c21d8645b4c7c66bbeec63f3a974db21355    IRRELEVANT  shared/api: Unembed cluster member Put from Get entity
+b2a0f32c35ac21e02fdf08f19922894f6ecafbac    IRRELEVANT  shared/api: Unembed storage_pool Put from Get entity
+827caaa247b1420a39d8b93cd04a7fb323074cca    IRRELEVANT  shared/api: Unembed network Put from Get entity
+4cc150712088ef66d2c73f34e0b05acb35d622c9    IRRELEVANT  shared/api: Unembed certificate Put from Get entity
+4ed55c7432068df4965d7bd86f49ec4d5a0a25a3    IRRELEVANT  shared/api: Unembed auth Put from Get entities
+3f1b9b5b52a8a4c7444decb50a2cb4c4121e5e26    IRRELEVANT  shared: Update cerificate api entrity
+de33901e89b5576af299aa5bef831bc35e0f6ce7    IRRELEVANT  shared/filter: Update api entities
+a4f5fceb1f2214f876786fca778d426e7b374666    IRRELEVANT  lxd/cluster/connect: Update references to certificate entity fields
+b49d96d37e33336388ee748f5c46365a5f01d143    IRRELEVANT  lxd/db/cluster/auth_groups: Remove trailing spaces from SQL queries
+35245d19b116042c68fe8fdbf4fd5584c0b224de    IRRELEVANT  lxd/db/cluster/identities: Remove trailing spaces from SQL queries
+215c22771636cdcc40051f7b1f377fec1108a807    IRRELEVANT  lxd/db/cluster/identity_provider_groups: Remove trailing spaces from SQL queries
+bce2ad1acfb91c694cae043b5818e6544c956f57    IRRELEVANT  lxd/db/cluster/*: Update fileds of api entites
+89a6b4ee552e4bb624c151cb9e28c9b23d0fdeff    IRRELEVANT  lxd/db/cluster: Update fileds of api entites
+483077e83529b35afb56fe497a8ecaa32667f6e7    IRRELEVANT  lxd/db/network_acls: Accept non-pointer api struct in network acl update function
+21b256b2084513a5314ebb18f4e48470508c8d93    IRRELEVANT  lxd/db/network_acls: Update references to network acl entity fields
+2894df5b063db52101a84e15f5f689512b5c53ce    IRRELEVANT  lxd/db/network_forwards: Accept non-pointer api struct in network forward update function
+319c2dc79a50866d14b038f1cecddfdf75195570    IRRELEVANT  lxd/db/network_load_balancer: Accept non-pointer api struct in network load balancer update function
+8c670bcc50a8b606928870cff57ab89cb423e6f9    IRRELEVANT  lxd/db/network_peer: Accept non-pointer api struct in network peer update function
+feeb5d390c1d2c3ae2d0580808d624a1fc2661d8    IRRELEVANT  lxd/db/storage_buckets: Accept non-pointer api structs in update functions
+d9518cc34eb0e4f8d2f98826f4c952e24c5dd9d1    IRRELEVANT  lxd/project/permissions: Update reference to instance entity fields
+d0588b0ec0077edbd637ea27d0c007417b47af38    IRRELEVANT  lxd/instance/drivers: Update references to instance snapshot entity fields
+4014653cc0718274e5751b4c808027fe94f6044b    IRRELEVANT  lxd/instances_post: Update references to instance entity fields
+d282513445f83bff66a878ec048be1cc3636331c    IRRELEVANT  lxd/patches: Update fields of api entities
+a7b7c6e5493b19b13186a4cfeaaf20b8ff9bc5f0    IRRELEVANT  lxd/profiles: Update references to profile entity fields
+cbd08b7a97e7bd7fc0c282589bf21965aacfdc8e    IRRELEVANT  lxd/api_internal_test: Update references to profile entity fields
+0588643dde8573126fbc176a09ea8c7698a6bd13    IRRELEVANT  lxd/api_cluster: Update fields of api entities
+e321fa78385f2ba7c5f89d7d11118d01284ed3cd    IRRELEVANT  lxd/api_internal_recover: Update fields of storage pool api entities
+52f964cc04a60341e7b66b164ec4f9e9bdf7d901    IRRELEVANT  lxd/storage/backend_lxd: Update references to storage_pool entity fields
+0d308d1ee0dfa993b0f0f66658cf633a18c02d96    IRRELEVANT  lxd/network/*: Update references to network entity fields
+82ac4dab351559e4767281eb20b7e8fd0493278b    IRRELEVANT  lxd/auth_groups: Update fields of api entities
+7a1581240c1d2edbb9279b7022b916fd047e13cd    IRRELEVANT  lxd/identities: Update fields of api entities
+757e0d0ac5362aff71ae3d25a23add3488e703ea    IRRELEVANT  lxd/certificates: Update certificate post struct
+5c1b82c839eb628385ff805b60fb309b681e7e17    IRRELEVANT  lxd-user/lxd: Update certificate post struct
+0631dd47b3dd6bc96a57325b87a62d98e21e1f20    IRRELEVANT  lxc: Update fields of api entities
+8d54ceb53a54bc2a41d5c7218bd474459e6598e4    IRRELEVANT  i18n: Update translations
+b8cbda853eceb625c6c3eef24810b707e51a0fc7    IRRELEVANT  doc: Update api definition
+cb024d384f6b0d2599fc0b8e9d7681443a1bc00c    DIFFERS     lxd/migration/volumes: Revert adding rsync features for BLOCK_AND_RSYNC
+eed2b219aac069e0c5fbf947a5fcb1806d5e5c7f    APPLIED     lxd/storage/drivers/ceph: Rename copyWithSnapshots to copyVolumeDiff
+6913eafc6eb8b65e139d0a3f2e33625c14e89a61    APPLIED     lxd/storage/drivers/ceph: Add findLastCommonSnapshotIndex function
+022f315aff80ed4c8401b618f6feea86784dee17    APPLIED     lxd/storage/drivers/ceph: Add restoreVolume to skip a VM's filesytem volume
+6a35f79382e318a908708ff352e23df94a5415bf    APPLIED     lxd/storage/drivers/ceph: Add optimized volume refresh
+44887c25645ac0c7c431a0886f417537d242dd34    APPLIED     lxd/migration/protobuf: Add RBD_AND_RSYNC migration type
+4f0c26e2efaae244be5a9b613adde6f184348659    APPLIED     lxd/migration/volumes: Support exchanging RBD_AND_RSYNC migration type
+648cbf4d2ed2880a679b9cfad44fa35a4be0f350    DIFFERS     lxd/migration/volumes: Append rsync features for RBD_AND_RSYNC type
+c65976b90de76ccc1d3ef20e79b8d343b428dc35    APPLIED     lxd/storage/drivers/generic: Allow RBD_AND_RSYNC type to use the generic migration
+c910c5a412ef60ec61a186d2b01676120de17862    DIFFERS     lxd/instance/drivers/lxc: Indicate multi sync for RBD_AND_RSYNC
+5dc6fc03a99aaff7df1bb3aee15648a59c6ae63c    APPLIED     lxd/storage/drivers/ceph: Add optimized volume refresh for migration
+9c9440400385ce019688b3e1e41ea113a79573ef    APPLIED     lxd/storage/drivers/ceph: Allow RBD migration type for volume refreshes
+0aca263591fff69b343d7932750ac3c3b3a9b72c    IRRELEVANT  doc: Update Ceph RBD support for optimized refresh
+664a309562b239e5ffc13eff5a0cba1e6b2b027d    IRRELEVANT  lxd/network: Annotate the `sriov` network
+aa808d06913d4f1a936a91ed3858d595b8294af3    IRRELEVANT  lxdmetadata: update metadata
+a9e250bbd12c51aa9eb4fe7d239f01ed8309b483    IRRELEVANT  doc/sriov_network: include automatic config options in the docs
+2d3ff00571c8fef4ef8a9fd3230df2185d604b43    APPLIED     lxd/storage/drivers/ceph: Use fixed size slices to improve performance
+4f5b50e01b9dab6785fc052cb05bbbfe4439f55c    APPLIED     lxd/storage/drivers/ceph: Clarify snapshot refresh behavior
+5f54dc8591330f128c26470d402c996b9289e164    APPLIED     lxd/storage/drivers/ceph: Add RBD block copy and transfer log messages
+0b0cea9cda270295e700543fc05f731ba7fbd569    IRRELEVANT  lxd/device: Annotate `proxy` device config options
+3cd9eae015d6afe78ae4334545513809bd5344c1    IRRELEVANT  lxdmetadata: update metadata
+35bd641765113c23b4d2ca1d6ea7a2e802099f65    IRRELEVANT  doc/proxydevice: include automatic config options in the docs
+cf9ebcaff780872b5c0ddbfef62e49cf3d92ee70    IRRELEVANT  lxd/network: Annotate the `macvlan` network
+5e21c1010f1f2e11dd7ba59db06bf0ca09042ffb    IRRELEVANT  lxdmetadata: update metadata
+4eedda53c95f4e43775ad50a6ac059ce0a9e4000    IRRELEVANT  doc/macvlan_network: include automatic config options in the docs
+5d1ab06926d2cfa9d91324a832a3eca5544fd507    FEATURE     api: Add vm_disk_io_limits extension
+37c3aa1773189b430ee97161d3092b88e309c355    FEATURE     lxd/drivers/qmp: Add SetBlockThrottle
+721660ed62ab0751d80667bf1198aa993973c1dc    FEATURE     lxd/device/disk/config: Add DiskLimits
+56e71f5895bb445ac1346bc394fd252b079335f3    FEATURE     lxd/device/disk: Re-shuffle limit parsing
+05c2aa97789c0aa49784a0034378a345d8ee4399    FEATURE     lxd/device/disk: Add disk limits on VMs
+6da96774b92c6665ed035eed7edac084064ec581    FEATURE     lxd/device/disk: Support live limits update for VMs
+a814c0ae25ae8972e4f10fac67fcd02922817718    FEATURE     lxd/instance/qemu: Support disk I/O limits
+cfc2bf21fe252577483f4a774d31060f7e5bb313    IRRELEVANT  lxd/auth: Adds util for checking authorization errors.
+df512eab645e810788df9ecb4820c92e9960a2ab    IRRELEVANT  lxd/project: Update auth error code check.
+916c11e87fe8690b9c69332bf198b7782bd013f9    IRRELEVANT  lxd: Update error code checks on calls to CheckPermission.
+0dcce9db94843c0941e061c80cc02fc7d6a200d6    IRRELEVANT  lxd/identity: Update AuthenticationMethodFromIdentityType method.
+7301ae789844ba0aa5910dfeb5803002b429101c    IRRELEVANT  lxd/identity: Add method to get IDP group mappings from the cache.
+f9fc183908fd4abc81b01cac6c3cfb1f025ab76d    IRRELEVANT  lxd/network: Annotate `bridge` network
+17398991cf1582ae5c039fcef75c56ae9381679d    IRRELEVANT  lxdmetadata: update metadata
+f8567562df24076a967d6a0fcc7e6ef539d72d74    IRRELEVANT  doc/bridge_network: include automatic config options in the docs
+e3ed4061b257f0f3e478816a142965ca2cd87b09    IRRELEVANT  lxd/network: Annotate `physical` network
+b7ccadaea2d4ffcf102d443e8a30ad82af444677    IRRELEVANT  lxdmetadata: update metadata
+f2d319c081e3033c65fbf63242fc95a45ad0855d    IRRELEVANT  doc/physical_network: include automatic config options in the docs
+7c1b81a11b68caf0cb10003482ca099e983e9ccf    IRRELEVANT  lxd/instance: Annotate instance properties
+d6d23f79e8ffa25521b806f543820410bd0ba295    IRRELEVANT  lxdmetadata: update metadata
+736242ca9612585e2fda4b612d644a7fe3b3fa22    IRRELEVANT  doc/instance_properties: include automatic config options in the docs
+2be581663d27b4fe3690b7207dc440bf88342e10    IRRELEVANT  lxd/network: Annotate `ovn` network
+45d1bdb7d5ae3c987e954d0b8c9cdc30839d7475    IRRELEVANT  lxdmetadata: update metadata
+0c763b4a60378c1d1f4e669a4a17fc749be92682    IRRELEVANT  doc/ovn_network: include automatic config options in the docs
+f99234945222d1ef8b7efe19bdda5640c94f1517    IRRELEVANT  build(deps): bump github.com/go-jose/go-jose/v3 in /test/mini-oidc
+c9a0a32abfff1f6fc966d953f35f984bebc0cd53    IRRELEVANT  build(deps): bump github.com/go-jose/go-jose/v3 from 3.0.2 to 3.0.3
+14a3743a904b2474d828ccf5966a0b638cc95caa    IRRELEVANT  lxd/project: Update FilterUsedBy function.
+bb68fd82897f9840ae6dc91077b5a9bc40327ef1    IRRELEVANT  lxd: Move calls to FilterUsedBy out of transactions.
+c32608f20cd6c307782026b0784e375158a25e77    IRRELEVANT  lxd: Simplify project used-by function.
+8e4166d9b40721623f0f00e9a690bc8ab3ce1b57    IRRELEVANT  lxd: Filter project used-by field by what the user can view.
+f27030b7778d344e47b664dca0ef228eb1f34472    IRRELEVANT  lxd: Filter network ACL used-by field by what the user can view.
+271536434ab7715a0405240de817ca84d16e9dbb    IRRELEVANT  lxd: Filter network peer used-by field by what the user can view.
+302b782f678afd461fa5865964fe30f4c6438c8a    IRRELEVANT  lxd: Filter network zone used-by field by what the user can view.
+17463732b90cb71a20699217f3b966a434c161f8    IRRELEVANT  lxd/db/cluster: Add a method to get a single entity reference from a URL.
+e51f12c0fe0eeaee4c0a6c65b26d7c77383b9653    IRRELEVANT  gomod: Add OpenFGA dependencies.
+57b95ea7df25faa92b1d37a7629fcd9e65fa477f    IRRELEVANT  lxd/db: Adds the OpenFGA datastore implementation.
+be6b406552a266f45a724ed4ff2cff0b05572651    IRRELEVANT  lxd/auth: Add the OpenFGA model.
+61ad209ab6fdd722a2eb8e6693392e4f61011378    IRRELEVANT  lxd/auth: Add identity provider groups to request details.
+8389cf51076955f58a9a073a3dc85ce685943ca5    IRRELEVANT  lxd/auth: Update requestDetails method.
+74aff1a065579d07e39b3c3ff7ed5b7ee12e39fc    IRRELEVANT  lxd/auth: Add the embedded OpenFGA authorization driver.
+1bbd4954f8edc17c5cf06afdffe7d8f0fd5d56e4    IRRELEVANT  lxd: Load the embedded OpenFGA driver by default.
+0270135ec6133a1a314cef6864e1450760bc8d1c    DIFFERS     test: Add a util for getting the fingerprint from a certificate.
+a0fdce49dd8d34c42152e01facd43a43232576da    IRRELEVANT  test/suites: Add tests for fine-grained authorization.
+28b5fd2571efb624b21ae93f2f3328107c0bc0ec    APPLIED     Makefile: Exclude dependency from spec generation.
+d4c4889036b0300dabb2fbf7a84d709c0ebd73f8    IRRELEVANT  lxd/auth: Fix comments.
+921213174ec0d6a8e3ebfa3c05332ba01a5b5e2f    FEATURE     lxd/storage/drivers/powerflex: Unmap the volume before performing resize
+0c9ae89fb835ae815c0c44034e60ec4c7669d047    IRRELEVANT  lxd/db/cluster: Clarify placeholder argument.
+e05a8a4c5caaa0b19cc23f98e76eb0c9bd6ab28b    IRRELEVANT  lxd/db: Clarify 'user' in openfga context.
+a63ffd3ccd7718e2956a563c305f597ef219c400    IRRELEVANT  lxd/db: Improve not found error handling.
+a81fc4bea2aa831659ca9457916ae58e3338d635    APPLIED     lxd/seccomp/seccomp: Fix incorrect conversion from uint32 to int in FindTGID
+ce097971f2860a9b17365f85450e53e6e7b0ca02    APPLIED     lxd/instance/drivers/driver/qemu: Fix incorrect conversion of uint32 to int in acquireVsockID
+ceec90f95d8a551d5565e367fa445136274a17d7    APPLIED     lxd/network/network/utils: Fix incorrect conversion from int64 to int in inRoutingTable
+3a720002bf967b57018c151ff481dd3baf983a13    APPLIED     lxd/util/net: Update CanonicalNetworkAddress and CanonicalNetworkAddressFromAddressAndPort to use platform agnostic int64 for port
+bd2f8edaeb8c78ad073196057a097564b02afcb3    APPLIED     lxd/main/init: Update usage of CanonicalNetworkAddressFromAddressAndPort and CanonicalNetworkAddress
+c5cea668baa95d739ffffa85f3b755feed60aa49    APPLIED     lxd/storage/drivers/ceph: Send the actual block vol when migrating snapshot
+ca2798ef0632c7e9786542b502a2653fcc11def6    APPLIED     lxd/network/network/utils: Remove unnecessary call to fmt.Sprintf by passing base to ParseInt
+55f9fe48b1d40565f86823f1a9cb7108c79b15b2    IRRELEVANT  gomod: Dependency updates
+a651465352ead0424bcc239407568dab306e7fd4    FEATURE     lxd/storage_volumes.go: add all-projects paremeter
+c2b4dab9ed4df4f4148ea866bac02846535b70ac    IRRELEVANT  doc: run make update-api
+d77e0cbae97c6d5b8e0b96312c4eeecef02bc2e1    APPLIED     lxd/response: Use SmartError if SyncResponse success=false
+78b85b2442428b3c80b7ad17c332668d96148258    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.15.0 to 4.16.1
+cb0c96dca55830ccc0d48e8d4faf1108d89ce86b    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.68 to 7.0.69
+bbbf40ad2a9551765c467595ff3fca6a5360ca34    APPLIED     lxd/storage/drivers/ceph: Lock concurrent migrations
+2d47b4f1a72b0468c9edeb7439820070e345a924    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Fix error scoping in CreateVolumeFromCopy
+20f6a56c1c2b6eb8fa552b016f22182a112e0222    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Define send/receive channels together in CreateVolumeFromCopy
+084f7be2ea0438c6d5cfca7e77e0a3fc25fecd24    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Kill sender if receiver fails in CreateVolumeFromCopy
+b2a8e72309d8dae572d9b434d7a934ba26c1440d    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Handle multi-line errors in CreateVolumeFromCopy
+438a18d05ebe10029e206347505b5335019039c2    APPLIED     lxd/storage/drivers/driver/btrfs/volumes: Fix hang when btrfs receive fails in RefreshVolume
+74cce6d823d4fbce5225c3dfd7d0cc0be7eb592b    APPLIED     lxd/storage/drivers/driver/btrfs/volumes: Handle multi-line errors in RefreshVolume
+88c224f3af51b9dac86adff1cbbcde6dd051f28e    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Aligns RefreshVolume with BTRFS driver
+29d7ae8aa694d9279d1e54b3f1b405308aca6ca8    FEATURE     lxd-agent: Indicate LTS in version output
+16080a9b053aff67b9aa9c650c63aa1b50bbae8b    APPLIED     shared/version: Include LTS flag in useragent
+f7470cfcb8b23c39d3efe177bb71aefb83b1a415    APPLIED     lxd/response: Fallback to error response after setting headers
+86651aeeafc37bcc9f5abc0d822a8eeb6876ae1e    APPLIED     lxd/storage/backend/lxd: Use volume name from VolumeDBGet in BackupCustomVolume
+50cb9daa1aa151a199ccc6c5b17442730e617788    IRRELEVANT  update go dependencies
+5757a250a3b5d20598ec74fd0d2bbfbbd53bd3d1    APPLIED     lxd/storage/drivers/driver/btrfs/volumes: Cleanup on failure in RefreshVolume
+c9ffbb29e01b0c0198ec93e8d17ac4c71061174d    IRRELEVANT  lxd: Add security headers and gzip compression for the `/ui/` API route
+6c9763c06acd847da587c3136c76d0c333f43cc1    IRRELEVANT  lxd/auth: Remove `can_view_configuration` entitlement.
+6c51467cc297517f2dff381ff40ed10bf9795207    IRRELEVANT  lxd: Populate server config for `can_edit` on `server`.
+62759c5fe04c9e394cf92a766f3b74768efac435    IRRELEVANT  lxd/auth: Decrease log verbosity on `GET` requests with `can_edit`.
+20defe1ea762d25e87f20fee1cab8459d8c2b05b    IRRELEVANT  test/suites: Remove `can_view_configuration` from expected permission list.
+f552008574da8509b6774efa871ac1047127cf75    IRRELEVANT  lxd/auth: Prevent project modifications
+25c44d16ba1ff363af2d61b6d1f1b2e77998d3d1    IRRELEVANT  test/suites: Add test cases for project modification.
+32b20655a986af90f862480e4e77efceb8dada48    APPLIED     lxd/device/nic_ovn: Only stop device if network is populated
+d5d0794e6a4cdcd71fb5d280d0e86753aa94ab5d    IRRELEVANT  client: Unset project when querying permissions.
+3bc43efa9f554e83269ef483030b258e01df7e4e    IRRELEVANT  doc: change link colour for dark mode
+33c35d0f85d61b792d38a467d049f327a3e2159c    APPLIED     lxc/copy.go: remove impossible condition
+c29f2501727386423fbade4f38207c957939c9c7    IRRELEVANT  doc: update to the current version of the starter pack
+5db8be49dd6303456850b610a8432c5429406473    IRRELEVANT  doc: work around circular dependency
+fe578745b3d7298b14aba1c65f913a6dc0af2334    IRRELEVANT  doc/images/alias: fix CLI instructions for changing an alias
+d855d527c285ebd788176184da6d204c3b7ca885    IRRELEVANT  doc: install extra tools inside the environment
+b25817cab1d2a1e63c9cc94c55be35c3b6ce75cb    APPLIED     lxd/instance/drivers/driver/qemu: Restore 50MB tmpfs for lxd-agent as it will likely exceed 25MB
+1948349f46fb19349567c952c18b6a232af5d8bb    IRRELEVANT  doc/UI: reword status of the LXD UI
+a09dd52fe614e60a1a67d046f459574cca939be4    IRRELEVANT  lxd/db/openfga: Strip whitespace
+11a483a222a2405ba41a5702c657f7c7dd262720    IRRELEVANT  lxd/auth: Don't build authorizer drivers into lxd-agent
+1d3b87ff672b69f578215150e5287318aa499821    IRRELEVANT  Makefile: consistently use pip
+49091aa16892dcb08256ed0fc3e46cfa3e25714d    APPLIED     test/suites/basic: check version number format (X.Y.Z for LTSes, X.Y otherwise)
+8e78eec76284167132489f6d95bf3c2e4fbd40a6    IRRELEVANT  lxd/storage/s3/miniod: Specify a port for minio --console-address
+37faf2eadd37b6ec608d47bd7996476e9b9ee912    APPLIED     lxc: Add context to socket access errors
+1b2a3cd978b2d58e4812e9b788614d3ceb81784c    APPLIED     lxc/file: Get owner mode only if `--gid` or `--uid` is unset
+3d1c5f44fd5ccb2a3aac7ab02e4aa285134d7209    IRRELEVANT  Release LXD 5.21.0
+1bc078a4189184e1db26d2bb4a300e9a995f3fca    IRRELEVANT  doc/devices/nic: add missing spaces
+c7ab423241cdce498923da40ba13fcc2f06b8703    IRRELEVANT  doc/devices/unix-*: add configuration examples
+d1d106bd68158814c4739ae526211853434c7768    IRRELEVANT  doc/explanation: Add authorization explanation page.
+57d2b73cf404cda4612c224e854604bc1d9a35c0    IRRELEVANT  doc: Add instructions for OIDC clients post 'access_management' extension.
+6ef254b8a658cce4a83095f61e8449d0fd3b714d    IRRELEVANT  doc: Update authentication page for authorization.
+0e4a7a9ddf686743a5503ea95c6e96f45e0df64c    IRRELEVANT  doc: Add links to authorization page.
+c7979707247a8d07a0ef5336dac9ab046fbd78cf    IRRELEVANT  doc: Add IAM related words to wordlist.
+28fd912f2bd6012a1178a0f4508a9bd154bd9ae0    APPLIED     shared/api: Implement xerrors.Unwrap for StatusError.
+441333a7b4a479def590381a79b7bfebf74952b0    IRRELEVANT  lxd/auth: Wrap errors in api.StatusErrorf.
+ce76c7ec07cea457f0cacc38a5ba3aa7be90adc1    APPLIED     lxd/response: Wrap errors in api.StatusErrorf.
+938699d4bcb8829fb23fbe9a91ea55282a692c3b    DIFFERS     lxd: Wrap errors in api.StatusErrorf.
+471d0c5d832b1e1660646a5a2ca4dcefee87329e    APPLIED     lxc: Wrap errors in api.StatusErrorf.
+4dedb4a4b91751cee1ccfb10014a8205c6b549ef    IRRELEVANT  lxd/auth: Return appropriate HTTP error codes when getting request details.
+071ab676b1310a265d17976a5d74b59535d92e32    IRRELEVANT  lxd/request: Add a `CtxTrusted` context key.
+0793beaba8bbcb15db45b63074ad3482a848f70e    IRRELEVANT  lxd/auth: Get authentication status from request.
+53e1c9d29984653720a110405fc68ef8c27e55b7    IRRELEVANT  lxd/auth: Handle untrusted requests in authorizer.
+1820774c7ac655f02590c63d1325e5d1eae615a9    IRRELEVANT  lxd: Add `trusted` value to context.
+dc3e74396350e51ae86d949af5d208d4352a7cdd    IRRELEVANT  lxd: Remove checkTrustedClient method.
+12701c588deb94ad39fbffffdcd5d01b99d135e7    IRRELEVANT  lxd: Update allowAuthenticated access handler.
+306573d869e48615bfa93237fdcabec4f3a48153    IRRELEVANT  lxd: Remove call to `checkTrustedClient`.
+a523f15501590ae4d04bb7c315696efe2c2b7a3e    IRRELEVANT  lxd: Handle certificate creation from untrusted users.
+3e49dafe52963e35cac4fcc301cb07969e668860    IRRELEVANT  lxd: Remove `Authenticate` call from operation wait handler.
+592043b5b4b368e61030c78b10e9da6d58955b11    IRRELEVANT  lxd: Remove `isTrustedClient` call from image export handler.
+68fbb0ea1a3f3f2064e64171176d8fd24647c0ff    IRRELEVANT  lxd: Remove `isTrustedClient` call from image alias get handler.
+2d01718d3df3657bbf417f2129e51ed9d637d3d4    IRRELEVANT  lxd: Remove `isTrustedClient` call from image get handler.
+90ef1c699a6b6f08c13ebff2ab9da465b646ecb5    IRRELEVANT  lxd: Remove `isTrustedClient` call from images get handler.
+abc681446fff0e5631a8b0414ff5fefeee1f9e2c    IRRELEVANT  lxd: Remove `isTrustedClient` call from images post handler.
+862893682c552360eab073cf2be87efbd1013fe8    IRRELEVANT  lxd/project: Update cluster target restriction tests.
+405249e19f7ab1e18ad011e1c09c0480ed7bdca1    IRRELEVANT  lxd/auth: Remove no-op methods from authorizer interface.
+290c689282c1ebc5c8f8ce64e31bb38cf0efad36    IRRELEVANT  lxd/instance/drivers: Remove authorizer calls to no-op methods.
+2baa42e2ee4572a9329076207f50cfecab517843    IRRELEVANT  lxd/storage: Remove authorizer calls to no-op methods.
+53bd124b5887f92f68110812b5aef21f2117e204    IRRELEVANT  lxd: Remove authorizer calls to no-op methods.
+fa20b9972d8ab7997569b0f476a0d29536ef6190    APPLIED     lxd/storage/drivers/btrfs: Add createVolumeFromCopy for copy and refresh
+1293f237cbf8e6a9f6da3e16ef687bf6c88797c1    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when copying a volume
+609437c6c8c67cc8f18601489e89e8ba877698fa    APPLIED     lxd/storage/drivers/btrfs: Use createVolumeFromCopy when refreshing a volume
+b46da51ce7b199e0961726d6f214733c2a55a20b    IRRELEVANT  doc/devices: add CLI examples for more device types
+b61d84ce25ab5c82bc91465db6bc7e3cbc65cd52    IRRELEVANT  doc: except commands from the spelling check
+8ef0e2b0b4cf588333e1ce5167f82dc5549a5370    IRRELEVANT  lxc: Correctly parse remote when listing permissions.
+9471a6cad8d8132d9033977c22e46ed91681fdcc    IRRELEVANT  lxd: Pre-check permissions when performing bulk state update.
+26d7065a09dd0b5594a636ffd1aa6b176270e17e    IRRELEVANT  scripts: Add bash completions for `lxc auth`
+caf6a8a65b221312b11610df31db7d261753810a    IRRELEVANT  doc/devices/proxy: add CLI examples for proxy device
+767b3426739247b44ccb626e346c67d52f83a78b    IRRELEVANT  lxd: Improves efficiency of operation cancel with permission checker.
+7d7e2cec64f98d32280a690533aad90d540d7781    IRRELEVANT  doc/devices/gpu: add configuration examples for gpu devices
+52bb283947d9076431ea383bd4ab6e55f5a90f93    IRRELEVANT  lxd/patches: Add patchStorageSetVolumeUUIDV2
+f1cd147d391758f5e761f1f4cd0da28dd6c24459    IRRELEVANT  lxd/patches: Deactivate patchStorageSetVolumeUUID
+3e4eb17b75524684cfe08c81a1077b0c9aff6cb4    IRRELEVANT  lxd/storage/backend_lxd: Ensure new images have a volatile.UUID
+ade55fcb324df2c8ea035a7c29721aa9b0b10a03    IRRELEVANT  lxd: Update `X-Xss-Protection` (deprecated) for `Content-Security-Policy`
+6dbf63d959f452842d64541b8d0b35ace51e912d    IRRELEVANT  lxd: add explanations on the security headers provided for the UI responses.
+aecd42d3dcd678266dd3e376903ff3e21ba7a8f5    IRRELEVANT  lxd/device/nic: fix default IP for routed NIC (`ipv4.host_address`)
+fc198ec1e76b4969f626c14e366e74878f4a806a    IRRELEVANT  lxdmetadata: update metadata
+94058553022b683043ec8e1b35fa9ac83f7fcb16    IRRELEVANT  build(deps): bump github.com/mdlayher/ndp from 1.0.1 to 1.1.0
+d8a9be3e80424162a0c4349e9f6faadca706bd34    IRRELEVANT  github: Add stable-5.21 branch to dependabot config
+f88e17e3c62e9d83ea07e3036920dbae0e3d7ff1    IRRELEVANT  lxd: Add security response headers to documentation
+26e61c005f634d999fa490a170e2109181cb7de4    IRRELEVANT  lxd: enable server side gzip compression on all API routes
+aae8654468ad247029c8abd6720c5dd846d5d510    APPLIED     scripts/bash/lxd-client: use column to select the image alias
+53a74fd0cef5bc338cfc6c722ab232e7fdfbed5b    DIFFERS     scripts/bash/lxd-client: fix `lxc storage <TAB>`
+f4427f87394fe78e56daa25a5e944d4c75e02765    APPLIED     scripts/bash/lxd-client: add missing keys to `lxc storage <TAB>`
+c7b59e181ef6b655a182cb59a344b600ff93e447    APPLIED     scripts/bash/lxd-client: show pool names on `lxc storage info <TAB>`
+60c134a7ea111cefab913a483cfafbfd45be98d9    APPLIED     scripts/bash/lxd-client: Use long option names
+81156fe90a28ff42688b434909f27956ce2d911f    APPLIED     lxd/instance/drivers/common: Clone the device config
+1a11af259681f7ef65c4405d398eca49e47014fd    IRRELEVANT  scripts/bash/lxd-client: add missing args to `lxc network` completion
+860c719fb2ce83551ff6537f016a16f5d636f46e    APPLIED     lxc: handle `GetImage` logic inside `dereferenceAlias`
+aeb045acf1b274bbe6b9ab8d39e7c2f2cd721096    IRRELEVANT  i18n: update .pot files
+de3c4aa64494850bdd24306cdfcd81259e14246a    IRRELEVANT  doc/reference: reorder pages and update the landing page
+f91090f7518bc24386e7afe4d65d67073788f127    IRRELEVANT  doc/explanation: reorder pages and update the landing page
+79c17806506cef4a8c4a72cadc13fbe5050c5b2f    APPLIED     lxd/storage/drivers/btrfs: Clarify fallback in case UUID discovery times out
+6aaafed4f1db9e5c1d77c389be68df76cec314b5    APPLIED     lxd/storage/drivers/btrfs: Move config modifications into FillConfig
+ebd437ed27151ae640de2b6099d97440cbe0fcf5    IRRELEVANT  doc/howto: reorder pages and update the landing pages
+e91e73484c928157685c6c9c5d177d7a4cad6c40    IRRELEVANT  doc: update the start page and add links to sections
+2da4d301eff289409bec52a7df5aa0b7e132de57    IRRELEVANT  doc: fix exceptions for Markdown linter
+67cd0cad76f475c092b20e6a2d1fb016a0921704    APPLIED     lxd/patches: Add selectedPatchClusterMember for patch coordination
+05902a4b696062a5fd2bc6412738652553533fee    DIFFERS     lxd/patches: Add patchStorageRenameCustomISOBlockVolumesV2
+edcc1f3b3af7ff5eeeaf8ecccda00646ba3ab76e    DIFFERS     lxd/patches: Supersede patchStorageRenameCustomISOBlockVolumes
+5ed491f8609e66a363a97e6a7b9878daf7225830    APPLIED     lxd/patches: Add patchStorageUnsetInvalidBlockSettingsV2
+87c17837ffe1fb620c0ac1713f7f796aef1a7fdf    DIFFERS     lxd/patches: Supersede patchStorageUnsetInvalidBlockSettings
+43dfdce8d90bd029a503fe94d7609cb34359c1c2    APPLIED     instance/drivers/driver_lxc: do not set "soft" limit when hard limit is set
+79bb4ea07c4bd2f9dbe88f1750bf45e1bbfd3335    IRRELEVANT  doc: workaround for undefined references
+5c8c90ff5cea9799d83854fff7bf3cd6c1a7f597    IRRELEVANT  lxd/api: Revert gzip compression on API
+5acf1fa0fefd576bc486bedc32dbae183b9efb15    APPLIED     lxd/storage/drivers/generic: Return cleanup hooks from genericVFSCopyVolume
+89d949885a4cc78ac0de6af5f92d6c1a922c3dd4    APPLIED     lxd/storage/drivers/ceph: Use the revert pattern for local refreshes
+d4985c8fc2859bd9dd895e68e8afa1127b70bf5a    APPLIED     lxd/storage/drivers/dir: Use cleanup hooks from genericVFSCopyVolume
+07558b99865f961852c12546cf174c92d9c1edd2    APPLIED     lxd/storage/drivers/lvm: Use cleanup hooks from genericVFSCopyVolume
+30eeb22f824117b837d09eb6e458dda1324e2a2d    IRRELEVANT  lxd/storage/drivers/powerflex: Use cleanup hooks from genericVFSCopyVolume
+34946fb79de4e35faea810b746c71698f5443bf7    APPLIED     lxd/storage/drivers/zfs: Use cleanup hooks from genericVFSCopyVolume
+de9714c95202f000cf1714c6d2cd472167a185c3    DIFFERS     lxd/storage/drivers/generic: Return cleanup hooks from genericVFSCreateVolumeFromMigration
+ee8db4339516e6ca4525449091d3f9a51276307a    DIFFERS     lxd/storage/drivers/ceph: Use the revert pattern for migrations
+c12ea4780d43a51febc28064140ece1f2d7d157d    APPLIED     lxd/storage/drivers/btrfs: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+3dbc0f8dbdf13aad54f1c80c061e4fef5f5eebcb    APPLIED     lxd/storage/drivers/dir: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+9705e5c0dc0614d27b019836df6b44d3ecd82a73    APPLIED     lxd/storage/drivers/lvm: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+2a068295c0ecd42a60ea601a920eec81339bfbda    IRRELEVANT  lxd/storage/drivers/powerflex: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+084e441e63c6adba204d61c0fbc1c4335fed2eb0    APPLIED     lxd/storage/drivers/zfs: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+d604eee9f700b71c54a4f616600d289021d89513    IRRELEVANT  lxd/storage/backend_lxd.go: remove unused parameters
+cd9851605c804938626ecb5d56a4bd84484d6264    DIFFERS     lxd/api_internal.go: remove impossible conditions
+256d6da3e006d3f39fbfc85a0ea18cfc90927200    DIFFERS     lxd: Update instance types URL
+61d708ffa525a66922532ac2080b66c2b13cec7c    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.5.0 to 1.5.1
+c52248cd65fd19a6dc391750732069c04229d775    APPLIED     lxd/shared/util: create function for applying device overrides
+b863bc5a69cf509a11f3f7847e8e9485306ea476    APPLIED     lxc/utils: create function for getting profile devices
+f7b4713a4e19ce8d2bd98c4be1f6f0c75a5fa137    FEATURE     lxd/api_internal: eliminate duplicated code
+5f7c9ebb23d34cff9cd46be43a46f937083c8b56    APPLIED     lxc/init: eliminate duplicated code
+94f37ea1a655ffad0322f1e9b8c74b07106befdf    APPLIED     lxc/copy: apply profile expansion on device override
+5ef71defba81a2e0dd93bb89a32637b1b17282de    DIFFERS     test: add test for device overriding on copy
+28163ad9cddabf533d95da62fdbaa443b5f81b65    IRRELEVANT  i18n: update translations
+03152696e0477889f57ae2788a472d8e2e5d21cb    IRRELEVANT  grafana: connect nulls and use instant type where appropriate
+4c2b19ae56a44fe97d3a7b97df2266c9748fbe0f    IRRELEVANT  grafana: add legend to stats
+83b21c0a9c42bc86bc9ffcd5cc406846369ed0c8    APPLIED     shared: Move `ParseIPRange` to `shared/`
+847a61126252ffb75bd8933614aca2f7da5782a8    APPLIED     lxd/network: Use `shared.ParseIPRanges`
+0bad8dfc7ee9b0f7599cff20a8c7b8724c3db7ee    IRRELEVANT  actions: add notification for doc PRs
+7c8e640572eaad03b546ce7e7ec67877161a15f7    IRRELEVANT  doc: remove nesting for the tutorial
+a0c57524a745c7175d81008b8af884d9d92e3a0c    IRRELEVANT  actions: fix notification for doc PRs
