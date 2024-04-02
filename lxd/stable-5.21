@@ -136,3 +136,36 @@ d15af327989ccd6478c164b35d51bf62fa89cebe    APPLIED     gitignore: Ignore all __
 92296b8db0f79ac684aa4f98a382235d6c316b02    APPLIED     shared/ioprogress: Support simple readers
 55413981a0ee70c05a1d9aaa7cc1f775e3edfefa    APPLIED     lxd/storage/drivers/btrfs: Report migration progress from receiver
 3524e5f2946a62207c0bd9842207fc2c07fec344    APPLIED     lxd/storage/drivers/btrfs: Use daemons shutdown context
+2fa50c09f22d553b0a2b14994a3776de0ab55fbd    APPLIED     test/lint/client-imports: rename godeps.list file
+a0168f96221c81a5f8298c5fa7f2f1be4482a434    APPLIED     test/lint/client-imports: export LC_ALL for predictable sorting
+733890cb1f9e917105e55d5b997c3845b3b2f4af    APPLIED     test/lint: add lxd-agent-imports
+87bc3d4ef3701915e695f5c779b4d235c38b8df4    APPLIED     shared/api: Fix typo
+9f3bb63782186dad1193ed20e156b364eb4e1a02    APPLIED     lxd/api_metrics: Check individual project permissions if set
+0a2d0b9e5356d5272c470c7d757e23668896a1a1    APPLIED     gitignore: Ignore all `.bak`
+d3b5ab7b66a7313da508e9876c0ec9d65e7770f9    APPLIED     lxd/metrics: Use label aware permission check when filtering samples
+d94e0ec7daf01aa5bd12b5901b0f6566c326b193    APPLIED     lxd/api_metrics: Filter metrics by looping only once
+dc1de11d73c796854ac27677f9e439163fc94605    APPLIED     lxd/auth/driver_tls: Allow viewing metrics for unrestricted metrics certs
+1f2c8d2c057a98c3eda4e6fe4a03431488444d0e    APPLIED     lxd/db/cluster: Add identityTypeCertificateMetricsRestricted and identityTypeCertificateMetricsUnrestricted
+60e497187abdebcf482d081d3362418aac9cda33    APPLIED     lxd/db/cluster/identities: Handle unrestricted metrics certificates
+72661bb09f735904787d5f9959a227a6327a26f0    APPLIED     shared/api/auth: Replace IdentityTypeCertificateMetrics with a restricted and unrestricted type
+35f9a3aca340f253e4ddd18ce4aae776a4375cb9    APPLIED     lxd/daemon: Use IdentityTypeCertificateMetricsRestricted and IdentityTypeCertificateMetricsUnrestricted
+b7054548cbe9c454e89fade09bb4440955059dc1    APPLIED     lxd/db/cluster/certificates: Use IdentityTypeCertificateMetricsRestricted and IdentityTypeCertificateMetricsUnrestricted
+525ea8fc92463dedd835d8af018d05bd65e8bc2b    APPLIED     lxd/identity: Use IdentityTypeCertificateMetricsRestricted and IdentityTypeCertificateMetricsUnrestricted
+ad57cca7062a26d17485efd3b6fc17015c0a40c8    APPLIED     lxd/auth/openfga: Extend can_view_metrics entitlement to projects
+22a307623c7fe00d0539900079f9719559fae894    APPLIED     lxd/db/cluster/update: Fix updateFromV69
+d1ba04ae12b4b88ffcbcec3fec1c7943268c1033    APPLIED     test/suites/auth: Update test to account for can_view_metrics
+65035608013849ae7c5d1727397b5d833fe6d167    APPLIED     test/suites/metrics: Add restricted and unrestricted certificate tests
+a304ac03c913705aad3ccb8e370380ffa562cc0e    APPLIED     shared: Return new structure from `ParseLXDFileHeaders`
+caa0ae1ce28577c9e189daf73bef9d309cfc7362    APPLIED     lxd: Refactor calls to `shared.ParseLXDFileHeaders`
+e84424705fab56f37c6230323c0d084c1104854b    APPLIED     client: Refactor calls to `shared.ParseLXDFileHeaders`
+0497bba9609170e1b961076e3207f13dd3464b19    IRRELEVANT  build(deps): bump actions/checkout from 3 to 4
+d0f5b7c2de8b5c4b5b1dc7ff6eae3bf68dec815d    APPLIED     api: Add `instances_files_modify_permissions` extension
+bfac0d656c5fc4b85acb9ceaaa0d7154b8c3a336    APPLIED     shared: Parse `X-LXD-modify-perm` header
+966be1f3ae2a69c62cc87ede41086cc8c7633805    APPLIED     lxd: Allow setting permissions for existing files via API
+73aa1e485779ddb7b076dbb54fa3f99bd2f797be    APPLIED     client: Send `X-LXD-modify-perm` on file POST
+0ea509bced846b4f9e01f64cfa33d9d914322897    APPLIED     lxc/file: Set ModifyExisting when --mode, --uid, or --gid are passed
+338254240e3b868121c4332603ffa701b466c016    APPLIED     doc: Run `make update-api`
+acd3e8d62a20a671f3194eea06a535bafa7e4819    APPLIED     incusd/instance/qemu: Set auto-converge on all migrations
+511e013c0372a6a6b0ef2b4ee5769fc68c990749    APPLIED     incusd/device/disk: Remove bad comment
+daa7270ea546cfbcefef8e6ef4543ca8ce75928e    IRRELEVANT  gomod: Update dependencies
+ed8073c3eeafb2056e30843751d0edc78dec938a    APPLIED     lxc/config/default: Add images remote for images.lxd.canonical.com
