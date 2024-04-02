@@ -81,3 +81,58 @@ edcc1f3b3af7ff5eeeaf8ecccda00646ba3ab76e    APPLIED     lxd/patches: Supersede p
 41937c15b6bff328c21b5a45865ec0ac180fe3c7    APPLIED     incusd/instance/qemu: Fix handling of > 64 limits.cpu
 79bb4ea07c4bd2f9dbe88f1750bf45e1bbfd3335    APPLIED     doc: workaround for undefined references
 5c8c90ff5cea9799d83854fff7bf3cd6c1a7f597    APPLIED     lxd/api: Revert gzip compression on API
+5acf1fa0fefd576bc486bedc32dbae183b9efb15    APPLIED     lxd/storage/drivers/generic: Return cleanup hooks from genericVFSCopyVolume
+89d949885a4cc78ac0de6af5f92d6c1a922c3dd4    APPLIED     lxd/storage/drivers/ceph: Use the revert pattern for local refreshes
+d4985c8fc2859bd9dd895e68e8afa1127b70bf5a    APPLIED     lxd/storage/drivers/dir: Use cleanup hooks from genericVFSCopyVolume
+07558b99865f961852c12546cf174c92d9c1edd2    APPLIED     lxd/storage/drivers/lvm: Use cleanup hooks from genericVFSCopyVolume
+30eeb22f824117b837d09eb6e458dda1324e2a2d    APPLIED     lxd/storage/drivers/powerflex: Use cleanup hooks from genericVFSCopyVolume
+34946fb79de4e35faea810b746c71698f5443bf7    APPLIED     lxd/storage/drivers/zfs: Use cleanup hooks from genericVFSCopyVolume
+de9714c95202f000cf1714c6d2cd472167a185c3    APPLIED     lxd/storage/drivers/generic: Return cleanup hooks from genericVFSCreateVolumeFromMigration
+ee8db4339516e6ca4525449091d3f9a51276307a    APPLIED     lxd/storage/drivers/ceph: Use the revert pattern for migrations
+c12ea4780d43a51febc28064140ece1f2d7d157d    APPLIED     lxd/storage/drivers/btrfs: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+3dbc0f8dbdf13aad54f1c80c061e4fef5f5eebcb    APPLIED     lxd/storage/drivers/dir: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+9705e5c0dc0614d27b019836df6b44d3ecd82a73    APPLIED     lxd/storage/drivers/lvm: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+2a068295c0ecd42a60ea601a920eec81339bfbda    APPLIED     lxd/storage/drivers/powerflex: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+084e441e63c6adba204d61c0fbc1c4335fed2eb0    APPLIED     lxd/storage/drivers/zfs: Use cleanup hooks from genericVFSCreateVolumeFromMigration
+d604eee9f700b71c54a4f616600d289021d89513    APPLIED     lxd/storage/backend_lxd.go: remove unused parameters
+cd9851605c804938626ecb5d56a4bd84484d6264    APPLIED     lxd/api_internal.go: remove impossible conditions
+256d6da3e006d3f39fbfc85a0ea18cfc90927200    APPLIED     lxd: Update instance types URL
+c52248cd65fd19a6dc391750732069c04229d775    APPLIED     lxd/shared/util: create function for applying device overrides
+b863bc5a69cf509a11f3f7847e8e9485306ea476    APPLIED     lxc/utils: create function for getting profile devices
+f7b4713a4e19ce8d2bd98c4be1f6f0c75a5fa137    APPLIED     lxd/api_internal: eliminate duplicated code
+5f7c9ebb23d34cff9cd46be43a46f937083c8b56    APPLIED     lxc/init: eliminate duplicated code
+94f37ea1a655ffad0322f1e9b8c74b07106befdf    APPLIED     lxc/copy: apply profile expansion on device override
+5ef71defba81a2e0dd93bb89a32637b1b17282de    APPLIED     test: add test for device overriding on copy
+28163ad9cddabf533d95da62fdbaa443b5f81b65    APPLIED     i18n: update translations
+03152696e0477889f57ae2788a472d8e2e5d21cb    APPLIED     grafana: connect nulls and use instant type where appropriate
+4c2b19ae56a44fe97d3a7b97df2266c9748fbe0f    APPLIED     grafana: add legend to stats
+83b21c0a9c42bc86bc9ffcd5cc406846369ed0c8    APPLIED     shared: Move `ParseIPRange` to `shared/`
+847a61126252ffb75bd8933614aca2f7da5782a8    APPLIED     lxd/network: Use `shared.ParseIPRanges`
+0bad8dfc7ee9b0f7599cff20a8c7b8724c3db7ee    IRRELEVANT  actions: add notification for doc PRs
+7c8e640572eaad03b546ce7e7ec67877161a15f7    APPLIED     doc: remove nesting for the tutorial
+a0c57524a745c7175d81008b8af884d9d92e3a0c    IRRELEVANT  actions: fix notification for doc PRs
+f5ac6be05e8edfc2232f4796c2630011a18cd1af    APPLIED     doc/server settings: change display of /etc/sysctl.conf settings
+b6eae3f2b4447e168e932d5cade496de9db9af59    APPLIED     api: Add storage_volumes_all extension
+b1995d158aed666b94c8c81a586f72544ca0d264    APPLIED     shared/api: Add Pool field to api.StorageVolume
+9d16af41808f6e14796aa710471b11d03f986b8d    APPLIED     lxd: Remove uncecessary parameter from URL function
+5ccc0e41360e01686c176fcbebb0bd2f1799b656    APPLIED     shared/api: Update call to URL function
+a9c7f9e4b5636248d595c0ec726621e646ee100a    APPLIED     lxd: Remove uncecessary parameter from storagePoolVolumeUsedByGet
+835c42b725f6aa839f0becb3fa6f74b44c527777    APPLIED     lxd: Update storagePoolVolumeUsedByGet usage
+ebd86ea3f9d1babaacfdbf5d71bf517cc890608a    APPLIED     lxd/db: Update get volume query
+8fef330190cfeba533c9bf2546d08e73c7fb2304    APPLIED     lxd: Add endpoints to list all volumes
+eede575bce3849c7755ab2df6126616d785f3c34    APPLIED     client: Add functions to get all volumes
+1067424490b54b12874ddb2436bd9ee6610e261f    APPLIED     lxc/storage_volume.go: Update lxc storage volume list
+d75b1ab51db0ef67e31ade824923bd22d12d6179    APPLIED     test: Add tests for listing volumes from all pools
+0a5d8b88a86d39d9255f0983e0d42b32cda9ec80    APPLIED     i18n: Update translations
+ae3176de50eb3ea9a9f0640105540eaefb1af503    APPLIED     doc: Run make update-api
+dd6e3934ee6add84de8038834cf109d54fa78e78    APPLIED     doc/config options: update the config option index
+3ab13a6becacc2e13aa9416a6699c36fcb3fa50e    APPLIED     doc/config options: link to config options where possible
+c3fecee4b784358f98b9090b7fa2a8f276399950    APPLIED     instances: fix typo in config option
+f25a2c3390bcf0751c104baa143caaa9de117ec9    APPLIED     doc/api extensions: link to config options
+c9a72e11c3169ab278aba3472fe19b5a02cd989b    APPLIED     shared: Ignore invalid uid/gid values and truncate mode to perm bits
+df98b561f0b4b4ed845397b3973e1de92c03fa31    APPLIED     lxd: Update uid/gid/mode API docs
+67f785b72696c4b02443983633295548633951f0    APPLIED     doc: Run `make update-api`
+d15af327989ccd6478c164b35d51bf62fa89cebe    APPLIED     gitignore: Ignore all __pycache__ under doc/
+92296b8db0f79ac684aa4f98a382235d6c316b02    APPLIED     shared/ioprogress: Support simple readers
+55413981a0ee70c05a1d9aaa7cc1f775e3edfefa    APPLIED     lxd/storage/drivers/btrfs: Report migration progress from receiver
+3524e5f2946a62207c0bd9842207fc2c07fec344    APPLIED     lxd/storage/drivers/btrfs: Use daemons shutdown context
