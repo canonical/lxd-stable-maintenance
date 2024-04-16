@@ -169,3 +169,8 @@ acd3e8d62a20a671f3194eea06a535bafa7e4819    APPLIED     incusd/instance/qemu: Se
 511e013c0372a6a6b0ef2b4ee5769fc68c990749    APPLIED     incusd/device/disk: Remove bad comment
 daa7270ea546cfbcefef8e6ef4543ca8ce75928e    IRRELEVANT  gomod: Update dependencies
 ed8073c3eeafb2056e30843751d0edc78dec938a    APPLIED     lxc/config/default: Add images remote for images.lxd.canonical.com
+41be5b421f53b915d66958ceb335ff3be95ebda5    APPLIED     Revert "driver_lxc: Include running state in metrics"
+5c0bcc658dbcf534157bef68fcdeb72980423d18    APPLIED     lxd/instance/drivers/lxc: default some metrics to `0` instead of `-1`
+e3c46dfbe5905b3a5c7f0b62e81118080c1faddf    APPLIED     lxd/metrics: Replace `lxd_containers` and `lxd_vms` metrics by `lxd_instances`
+07813c4d59058e3ba11b8119e9b4ad67857eb35a    APPLIED     lxd/api_metrics: Make `lxd_instances` and internal metrics visible
+6e6573a289b76536d4b9dae0ecc65707907aef67    APPLIED     tests: Fix metrics tests
