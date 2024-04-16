@@ -174,3 +174,97 @@ ed8073c3eeafb2056e30843751d0edc78dec938a    APPLIED     lxc/config/default: Add 
 e3c46dfbe5905b3a5c7f0b62e81118080c1faddf    APPLIED     lxd/metrics: Replace `lxd_containers` and `lxd_vms` metrics by `lxd_instances`
 07813c4d59058e3ba11b8119e9b4ad67857eb35a    APPLIED     lxd/api_metrics: Make `lxd_instances` and internal metrics visible
 6e6573a289b76536d4b9dae0ecc65707907aef67    APPLIED     tests: Fix metrics tests
+e0b9f4f6a5c0adbaf0dd6a3eb11c458b2a1d9e72    APPLIED     Suggested changes to the tutorial
+5a3e20125f76f3324d93e319763384cae03f2a18    APPLIED     api: add image_restriction_nesting
+e3d834e98c3aeb9c196ffc66e8db0e39d692d689    APPLIED     doc/images: introduce requirements.nesting
+bbc9e2cc9d4a6a74904cea5e427aa1adb7b97c32    APPLIED     internal/server/instance/lxd: add support for image.requirments.nesting
+9251efdff6c9d3e3d11af52c34b6ac8be906f43b    APPLIED     Formatting changes as per review
+6a2d4c6a63b9524b5c35d4127f0a11a78e4c2b6f    APPLIED     lxc: Make `lxc init` and `lxd launch` manpages more consistent
+3a4cb4d1e1eae62e1d7bbb2de476bef6a73c5a6e    APPLIED     i18n: Update translations
+df957c15843ec6954fb311d02af9940410607d7d    APPLIED     Correct disk free to GiB
+2c4c135bcc366b9f3157d9268cc69e59e941e77a    APPLIED     lxd/db: Remove `ErrAlreadyDefined` sentinel error.
+11be4eac1653bf8884d60543f4ed360fae9fe599    APPLIED     lxd/db: Replace `ErrAlreadyDefined` with an `api.StatusError`.
+e337cfd8f08bc5bcbca1b25acfa9916fdc559b42    APPLIED     lxd: Replace `db.ErrAlreadyDefined` with an `api.StatusError`.
+4dcc17202abf2ee10cdcaff52698083096cdc5f4    APPLIED     lxd: Check for database conflicts using `api.StatusErrorCheck`.
+0196303d53c79047893fb328c0b8e5180bbaf196    APPLIED     lxd/instance: Check for database conflicts using `api.StatusErrorCheck`.
+df393a88b5d58109490d21b597e36c7c246a5b1c    APPLIED     lxd/response: Remove dependency on `lxd/db` from `lxd/response`.
+02b950f70d679a3fbe2d20e8abbe60303e3d5cea    APPLIED     lxd/db: Update unit tests to check for 409 Conflict.
+a6bc3b00741a27d8bbb1410a7fbe95f54882e661    APPLIED     tests: Update test_remote_usage to check for existing image on images.lxd.canonical.com
+24f26d28a152ed37522f4d6df2754ebe53e766bb    APPLIED     test: Don't use default 10GiB block volume in test_storage_volume_snapshots
+bfff083fe4996f4e46ba16796bd01d6db2bd3608    APPLIED     lxd/auth: Add comments to the OpenFGA model describing entitlements.
+87bb69eda41432fb947d65dd008f1389d09748eb    APPLIED     lxd/auth/generate: Add logic for generating entitlement definitions.
+49ea081a7fe5e00dc20f0ce26528c4b8c1345d16    APPLIED     lxd/auth: Adds entitlements file with go:generate directive.
+9cab182f99785b4a009c1013b4ba2391d80f3bfa    APPLIED     Makefile: Adds update-auth make target.
+1944cc2f629b619008f874a3e863b4db45e8e027    APPLIED     lxd/auth: Runs make update-auth.
+105fc242b7d470d63b02dc857ce5c689ce0de1ed    APPLIED     test/lint: Add linter to ensure generated file is up to date.
+10728073a2e289fc1992aa91ffdd09f6fc640a14    APPLIED     lxd/auth: Remove duplicated type and function definitions.
+c70f0c6b9831f4eea3a6fd8fb89456aa0b4773e6    APPLIED     lxd/auth: Replace `EntitlementProjectOperator` with `EntitlementOperator`.
+5ab85a0205c23ff839085c079c4f8d08b8a6978e    APPLIED     lxd: Update entitlement validation calls.
+38e125a73a01531b5a4cc838aaa29575e892167f    APPLIED     lxd/auth: Add a `can_delete` entitlement to identity.
+a7441208c0638d71c10a35f2793aa4dfc6b9154e    APPLIED     lxd/auth: Add directly related user types to group entitlements.
+64584f84418d4e0e04705f73d5f1598bdba44310    APPLIED     lxd/auth: Run make update-auth.
+931536cad09bdb76f240a69150d94b168ff4ab45    APPLIED     test/suites: It should be possible to grant permissions against a certificate.
+ad09afa7974c6c10d7607d4d2a440631d798e8e2    APPLIED     test/suites: Update list of server entitlements.
+2c20bc27937ecd4a8f55968410def1c6ac523c19    APPLIED     scripts/bash/lxd-client: add security.sev* instance keys
+333f09dde5bdb0e379bf2a25b4a59942affce206    APPLIED     scripts/bash/lxd-client: sort and add missing global keys
+8aec5ac69ffb0936ebcc4f48469538c28bc57c70    APPLIED     scripts/bash/lxd-client: sort and add missing instance keys
+f356bd6222f7ee79b3cd3a9d8b914bdaddc8a139    APPLIED     lxd/instance/instance/utils: Align validation terminology with that used for volume name validation
+143c98963de8d7f6f7b0e1ae745cb0f1104ca8da    APPLIED     lxd/instance/instance/utils: Indicate instance name is invalid
+5c406a8c737346c2afe527ca79003e08289fead0    APPLIED     lxd/instance/instance/utils: Include instance name in ValidName
+e01968f2b43eec9d3c79e708744b454454589831    APPLIED     lxd/storage/utils: Adds ValidVolumeName function
+6c529a56c91d39f6cf9bd009abbf6d64bb510670    APPLIED     lxd/storage/volumes: storagePools.ValidVolumeName usage
+a4cb6d3a3aeb28017d16b9e3bca5ef4372a78007    APPLIED     lxd/storage/backend/lxd: Adds validation of instance and volume names to CreateInstanceFromBackup
+f4bd5b658f7f8d87c4b16ea66e3f8cf11a0aa05a    APPLIED     api: add container_syscall_intercept_finit_module api extension
+2ce0ab797db6dff50733044d7279728832e92a1c    APPLIED     lxd: add forksyscallgo helper
+71fade5835b8230ca11fad2479a39452e942dfbd    APPLIED     lxd/seccomp: add libcap dependency and helper
+d814ee4771353f85adc33b620bd1b6db6aa309d9    APPLIED     lxd/seccomp/seccomp: add finit_module interception code
+f88a2bcdb2180cd79fca5d64885deeea365bb6a1    APPLIED     lxd/instance/drivers/driver_lxc: add support for linux.kernel_modules.load
+9fbd0b815494dc99739472b28a9c50ea6864ab3a    APPLIED     scripts/bash/lxd-client: add "linux.kernel_modules.load" config option
+e42b79addb153a0acce3a0076bc2ca22feae3a3f    APPLIED     run make update-metadata
+01a97bd8b3e9a71a85a214cc5b76ca728075dc5f    APPLIED     instance/driver_lxc: get rid of redunant calls to cgroup.TaskSchedulerTrigger
+b0ad804ca48dbfbc087777c12d624818a512f5e4    APPLIED     lxd/storage/backend/lxd: Improve volume name validation in CreateCustomVolumeFromBackup
+ccee6606ae3fb0ba9e215ea0ae515fb1436aa7e7    APPLIED     test/lint/godeps: rework dependency checking
+60354eb3113fbf2450cd0a844f019148f28bfa3a    APPLIED     Enable renovate bot
+4d49017f8bf9baad203454ab32046b7a6a154a29    APPLIED     test/suites/container_devices_nic_bridged_filtering: silence SC2001
+6fb05532d65e77a0b2ba2a4089ed9991545c5edd    APPLIED     Makefile: use bash with shellcheck
+7a133b4b57eb323bdeef932dec6524c3e81c2511    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.21.0 to 0.22.0
+03bed483e86c061b8d09b720c38465d5fd8858bb    IRRELEVANT  build(deps): bump golang.org/x/oauth2 from 0.18.0 to 0.19.0
+50478bad76014b252413b21dad9f086c9a6f12b4    APPLIED     shared/simplestreams: Fix delta always using container rootfs as source
+ea46337b6d38f7cd3e3a38ca19a03ff0d053fb2e    APPLIED     lxd/instances: Don't start instances when evacuated
+ddfdeb3bfcd38e39121487180903a4316d1ba66b    APPLIED     UI: Add canonical.com domain to content security policy, so the ui can load data from images.lxd.canonical.com
+a2ea3891d6f731e2377601c0dbc12ac9874fbd10    APPLIED     lxd/auth/openfga: If the `entityType` is `TypeServer`, no need to list the server objects
+d3dded2de0a7a3c65ea9bbe19bc77cb919d97c37    APPLIED     doc/instances: change link to instance types files
+2b425030c5e41a1011fc5b3e91a0a7c6ed771d1d    APPLIED     doc: add back information about `images:` remote
+d005963dff8ee4a69a43be3323cf0fcbd320f187    APPLIED     doc/storage: document how to list all storage volumes
+d04136eb26aa3edc875abc5fcc99b8f21a63127c    APPLIED     lxd: `GET /1.0/warnings` should use the `can_view_warnings` entitlement.
+002a01165744b487e777f2ce5975ebe51562594e    APPLIED     lxd: Update internal warning create handler.
+bdcc12d71bc016bcffc1c3f793a2e04c5e9307f3    APPLIED     test/suites: Adds authorization test for viewing warnings.
+4fc5bed20b2614a52ec3ca79cfe3b6a148e8e033    APPLIED     doc/api extensions: add links to config options
+c45f0078471138b0103c77bbf08f007d31b23590    APPLIED     client: Fix permissions extension typo
+6af4ee82b27622772aa63c81cd697c7f3a9fe076    APPLIED     test: Push permissions for existing files
+a8d3bbd7a973174e0255c88f0ef166409f2a7de9    APPLIED     scripts/bash/lxd-client: add completion to lxc pause
+7115cfa9f4d5a3ac674cd25f5ff22c5b03467696    APPLIED     scripts/bash/lxd-client: lxc manpage is hidden, don't autocomplete it
+6ca6d7dc32092ce0d3fce8699fb1be15a0e69ac9    APPLIED     scripts/bash/lxd-client: add lxc rebuild and warning top commands
+0bc238d8704e8c1610d744a96429631513fd75d5    APPLIED     scripts/bash/lxd-client: complete lxc rebuild
+71146e0e484e2f141b7db77b267acd1147b39414    APPLIED     scripts/bash/lxd-client: complete lxc warning
+776ab85b97a8c799a419998c0672e45e84e56c96    APPLIED     scripts/bash/lxd-client: sort some commands
+72d376fa7e71796e9a06ccbda0ae9871d2ac9125    APPLIED     scripts/bash/lxd-client: add lxc remote switch
+7524f04f8315b265a7d3e29f1072a02076da8ffa    APPLIED     lxd/storage/drivers/zfs: Fix refresh of VM volumes
+6b72615d407f0e822b996a305b582d465116d428    APPLIED     lxd/db/images: Add `UnsetImageCached` to disable the `cached` field
+99c8974438f32ca040b9fc617ccb0724379122ac    APPLIED     lxd: `ImageDownload` now checks for an explicit copy operation and eventually uncache the image
+1fc380f1cc961795f6d2a839b1ee676573bf71f6    APPLIED     lxd: Signal to `ImageDownload` when an explicit image copy is happening
+35f93bb9dac4f986db639902bded6c54b33573c3    APPLIED     tests/remote_usage: Add integration tests
+c1fc9a834e4b4ef6fcbaffc9de89a52ae9775b64    APPLIED     renovate: disable Dependency Dashboard
+9ff1df581748d3d5e3f3e07d65b44e3a966bfdf2    APPLIED     renovate switch to recommended config preset
+0554ce4739b1722aeac021adaf63e598ce18cc98    APPLIED     github: move renovate.json out of the root dir
+2d0c6a1c76b0b5576246c664d7076d394fcd5905    APPLIED     github: check for lxd-agent binary size changes
+ff372c98664e52b01f1aa4eead2c28b73a89c574    APPLIED     lxd/api/metrics: Don't repeatedly call instance.Project() in metricsGet
+d60491891ecb2f0d25967b620586f1e4fc143366    APPLIED     lxd/api/metrics: Fix crash due to absent locking in metricsGet
+77a4aa71c5414a4740d19f2d3721577b2935bfcd    APPLIED     lxd/api/metrics: Avoid repeated calls to wg.Add in metricsGet
+9eabc9c221ba90b416488790c8e1c825d79d182d    APPLIED     lxd/config/default: Add images to DefaultRemotes
+888c68280cca81ace31fdf533c34734f0c56b6de    APPLIED     lxd-benchmark: Improve error reporting in LaunchContainers
+90348fc90f5dcaa37c333b86a8ea11370f94f284    APPLIED     test: Add additional checks for stopped instances in metrics tests
+1615da274b425bd7b0a1793364e992b6304f5780    APPLIED     lxd/api/metrics: Use api.ProjectDefaultName constant in metricsGet
+5e7ca922d215f31acfdb419c8d39d1b6bc69ed61    APPLIED     github: check both lxc and lxd-agent binary sizes
+d86156926862a853665dd9e082eac90d41807e00    IRRELEVANT  build(deps): bump golang.org/x/sync from 0.6.0 to 0.7.0
+88f7093511bb3657419f3c2c48998613d8d5bbf4    APPLIED     lxd/device/device_utils_disk: fix diskAddRootUserNSEntry to add root mapping only if it's required
