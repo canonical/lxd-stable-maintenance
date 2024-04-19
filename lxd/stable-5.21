@@ -268,3 +268,20 @@ d60491891ecb2f0d25967b620586f1e4fc143366    APPLIED     lxd/api/metrics: Fix cra
 5e7ca922d215f31acfdb419c8d39d1b6bc69ed61    APPLIED     github: check both lxc and lxd-agent binary sizes
 d86156926862a853665dd9e082eac90d41807e00    IRRELEVANT  build(deps): bump golang.org/x/sync from 0.6.0 to 0.7.0
 88f7093511bb3657419f3c2c48998613d8d5bbf4    APPLIED     lxd/device/device_utils_disk: fix diskAddRootUserNSEntry to add root mapping only if it's required
+d111cab5f6a5eca7dc960a6f6392d7f1ab53c917    APPLIED     doc/file push: include information about permission flags
+acede39f91acda199f01ff50006edfdc2d56c9c8    APPLIED     doc: clarify relation between proxy devices and network forwards
+37c3ec895e0e16724e4a545791526fe822e96679    APPLIED     scripts/bash/lxd-client: add "lxc operation" command
+8b283cc5d0a28f179c046e1211a78b4e776de864    APPLIED     scripts/bash/lxd-client: fix "lxc restore" completion
+117cef182de245608d3bf3cbcefc67edcf0fbf42    APPLIED     scripts/bash/lxd-client: add missing quotes and --
+b6d579c29859da53daf71a969d470adebeca5eb3    APPLIED     scripts/bash/lxd-client: add "lxc warning" command
+33c7cc2442ca70b2b304781b8ee46bbd1fe6f16b    APPLIED     scripts/bash/lxd-client: complete "lxc image" subcommands
+26e11d46f3693b9ab54fc9185449592502ce4a16    APPLIED     scripts/bash/lxd-client: add "lxc alias" command
+4a5780273950c256e3a8904e2b3ed01598c00fff    APPLIED     README: add MicroCloud to the list of tools for managing LXD
+1052e694f50f9da56c7cd31442b64b1c3b05fa61    APPLIED     README: add Bolt and Packer to the list of tools for managing LXD
+c8696b8a0e240f49ee674ca8f36cf71ca77739b7    APPLIED     fix(deps): update module github.com/openfga/openfga to v1.5.3 [security]
+9a45b25e1004678de083a508fc0b9f0b4a0f187e    IRRELEVANT  doc/faq: add an entry about ZFS 2.1 being required
+e08f7d2b99b37f4428bc31eb5bb7eec9563db434    APPLIED     Makefile: fail if any test/lint files are not executable
+b8c5f1b6f25542d7e223a4c9440aa95ee50edd6e    APPLIED     Makefile: fail if any test/lint files are missing the .sh extension
+cb0fa5e2220d51669b52a451783c1f3897a159d7    APPLIED     test/lint: make godeps.sh executable
+7394132d80bb27a1178a4ea14d9485d34da684de    APPLIED     test/lint/godeps: display diff on failure
+8de038c352c308045820efb75d6d40e89b5c1e45    APPLIED     test/godeps/lxd-agent: remove github.com/golang/protobuf/proto
