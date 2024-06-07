@@ -285,3 +285,365 @@ b8c5f1b6f25542d7e223a4c9440aa95ee50edd6e    APPLIED     Makefile: fail if any te
 cb0fa5e2220d51669b52a451783c1f3897a159d7    APPLIED     test/lint: make godeps.sh executable
 7394132d80bb27a1178a4ea14d9485d34da684de    APPLIED     test/lint/godeps: display diff on failure
 8de038c352c308045820efb75d6d40e89b5c1e45    APPLIED     test/godeps/lxd-agent: remove github.com/golang/protobuf/proto
+858858d7b18c9461ffd588ecdbf1c2eed465a781    APPLIED     lxd/devices: prepare for VMs dynamic core pinning support
+9dedf544e0dc3b0dabd3b4de06a10ad94ec19d0d    APPLIED     instance/driver_qemu: implement SetAffinity()
+801e0310d5f17dc00784e7c3d06d9bc89e131f02    APPLIED     instance/driver_qemu: call TaskSchedulerTrigger hook onstart/stop/update
+23bcf47c620375dd3af9b39e22be436d30fa2475    APPLIED     instance/drivers/driver_qemu: wait until hotplugged vCPUs are visible
+c33593f35068d3c8de610e7444c477696ba2a11d    APPLIED     instance/drivers/driver_qemu: move setCoreSched() into setCPUs()
+a7b41a7fe8b165c3b93cf1cc9d72cfd540657a58    APPLIED     start the DNS listener after the networks are started
+15742207c247579031e09e1776494caed4809358    APPLIED     updated the network_zone test to include a restarting the server case
+8281d3a4be3c10e86acd6761048e958e932af6e2    APPLIED     lxd: added an error message with link of the LXD documentation when lxd-ui is disabled
+dd306c58a19cca21e33e33ed5f36045de613772c    APPLIED     doc/ovn: include networking architecture figures
+9f858920d54c40d09e59acf46dfc0cadfae9eef2    APPLIED     doc/ui: add instructions for enabling or disabling the UI
+fa2e361bf81f96c5902e7f1c5595153083347ac9    APPLIED     github: use non-shallow clones for differential shellcheck
+111624e46b8388ebb32018c64ad25453fbd9e9c4    APPLIED     github: be stricter with shellcheck
+20681d7d099355a787c9b07e580f8133bae26f65    APPLIED     fix(deps): update github.com/openfga/language/pkg/go digest to dc43b60
+0984d3f8f3da337d62fd76c319c2c75dd1afec4e    IRRELEVANT  fix(deps): update go.starlark.net digest to 9b43f0a
+303f4b236ecc9090ae687efe72dfc76bba7b7f05    APPLIED     lxd: Use pool name from DB entry in permission check.
+8801605e2d5d11d43c9580eb2580656591051f0d    APPLIED     test/suites: Check that authorization is working for /1.0/storage-volumes.
+b10249a1bffc5725addaa7f3ff72cab17ea88eca    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.58 to 1.1.59
+be55423ec9a4fb137fdcb4aa2722bab10f6378cd    APPLIED     doc/storage: fix import command
+f88083441f284c1dd90af841f9e5dbf8e2a849ed    APPLIED     scripts/bash/lxd-client: add "lxc config device override"
+fa07ec5b1ebbf58528bdbba28dc58d2f3d834b5d    APPLIED     lxd/storage/drivers/lvm: Fix `source.wipe`
+bf5bb9b14627b44910a6e807dbf663eb54b8223a    APPLIED     lxd/db: Update `GetStoragePoolVolumes` to use `StorageVolumeFilter.PoolID`
+6508f6dc3dfa2aebb1b6323988a4c456f4bb5100    APPLIED     lxd/storage_volumes: Optimize database calls on `storagePoolVolumesGet`
+d7421a2d6ff5690916d8eb85709c264149adec0e    APPLIED     lxd/storage: Update `GetStoragePoolVolumes` usage
+95350276be31e0021774f325d24d7205147676cf    APPLIED     lxd: Rename `GetStoragePoolVolumes` to `GetStorageVolumes`
+c123459745949ba49ee71526653da82e2d001cf7    APPLIED     lxc: Fix cluster enable check
+466f9cd2e011bada904687b73ee88877ddb0b80e    FEATURE     shared/api: Switch server config to map[string]string
+43d1eb13ccad8e8567be838b231828c5c936e49f    FEATURE     lxc: Update for server config type
+d5c0ce6416717a5045f56c47eaf960c915094b14    FEATURE     lxd/config: Update for server config type
+517dc0f1d6dd9321e74dd360a3b0f9ab79432212    FEATURE     lxd/node: Update for server config type
+c746027253a9391574894b58630171b258b37bc8    FEATURE     lxd/cluster: Update for server config type
+2346992295a2fc801c2496436e8ac4e4ac9b727f    FEATURE     lxd/instance: Update for server config type
+9e9c36298a83bcddaf58ec6c521ea2bdb38d2a85    FEATURE     lxd/network: Update for server config type
+f46b54b1ff7949d7d4f59b704d19e05e7b90af18    FEATURE     lxd/project: Update for server config type
+041057271fbcc79a82e8e84b466d01e40f3135b7    FEATURE     lxd/db/cluster: Update for server config type
+c9b39ed403ad78a6bf21d70950146923a7394bf5    FEATURE     lxd: Update for server config type
+e54c153821d49feb5386019fd25f196ed13c1a96    FEATURE     lxd/cluster/config: Don't hide LOKI password
+2634802975a72c517bc0858931ab50a7336f74fa    FEATURE     lxd/cluster/config: Don't hide trust password
+da5283bc37bc4c4f2ae4ffd7abc41da64010216f    FEATURE     lxd/config: Remove concept of Hidden config
+1742dac57b26da20cba0a2d618c7a977ad80cffe    APPLIED     test: Fix setting `block.*` tests
+1f506b007cd62e1395fed98623c6f3d91a31cdd5    APPLIED     lxd/storage/drivers/zfs: filter redundant options on `ensureInitialDatasets`
+1cfd8da7cd5067b55db7ff04f2b8610b00964ae2    FEATURE     lxd/config: Fully remove Hidden configs
+37d2c1f1ca92ead7d7c0b9e918f117da095e88d5    FEATURE     rest-api: Update ServerPut definition
+7e754b35c1b8383cb3c65d6011e403a360381ec4    APPLIED     lxc/init: add a device override example
+5a28c76e9b2508e39f9171e2e7101e3e0d4b67ad    APPLIED     lxc/launch: add a device override example
+a059936fb5f889210d9374e27bdaf2eafe1ce8a0    IRRELEVANT  i18n: Update translations
+8e11a3fd53bd8904b98c4a949e369ae92b4f1a25    APPLIED     Makefile: have dqlite build raft
+7ff77c0f24151c0380303bf53652bb36b655ed31    APPLIED     github: update env vars now that dqlite builds raft
+1faf5c71b720be8644d992b433d8267a2d5c3d8b    APPLIED     doc/installing: update env vars now that dqlite builds raft
+9e48bb39181a03bff1291daaa388a9400638011f    APPLIED     doc/installing: remove traces of raft being a separated lib
+3ccba0b7253f90eadad589295fcca107650290ae    APPLIED     Makefile: remove vendored raft lib from dist target
+9b572cb8841be8440ca231ba6c407092a50add83    APPLIED     Makefile: remove outdated comment
+383ee26eeace6bf87f63f5a585d43925a74662d5    IRRELEVANT  fix(deps): update github.com/dustinkirkland/golang-petname digest to eebcea0
+7f56bb0eff79f495f07bdee13e8f589c8c460075    IRRELEVANT  fix(deps): update github.com/openfga/api/proto digest to 619029c
+e89699321d63b5d91c08faa6c9c77154ea23f699    APPLIED     doc: unpin version of myst-parser
+85e7304c877cb1321d22262dca856724f4fd7372    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.69 to 7.0.70
+46f6af68b8ec4c75a58ece4149aadd5f4ce28814    APPLIED     doc: add `lxd` group creation to installation process
+c8f23eb4b1f6e456f0e540cbd4129c3f4620e686    APPLIED     doc: add user addition to `lxd` group to intallation process
+dd5bcb59c890cbe8d89ad82084e113b65dbe6c34    APPLIED     doc/ovn: update OVN networking diagrams to work on dark background
+1a4f47dcfd54cf5314c2cf8f2e5672542586afc5    APPLIED     doc/howto/benchmark_performance: s/22.04/24.04/g
+261458fd33927d7036f63283e9add293fc2baa66    APPLIED     doc/howto/cluster_groups: s/22.04/24.04/g
+2f39feac4ba6f168d4e35c593e24248453ccdb08    APPLIED     doc/howto/cluster_manage_instance: s/22.04/24.04/g
+07b384883200100860d78f52d37dc5a0793b8763    APPLIED     doc/howto/images_manage: s/22.04/24.04/g
+0d64e10e0184e65bb8e1206d4649391c08615af0    APPLIED     doc/howto/images_remote: s/22.04/24.04/g
+0b9b82c881f87867c59d97799ff79fb8abf342b3    APPLIED     doc/howto/instances_create: s/22.04/24.04/g
+710962613ad72176e66142c930964b8384d57096    APPLIED     doc/howto/instances_routed_nic_vm: s/22.04/24.04/g
+c4695021dbc2ca11ed4370c7503b201f32c9ff6b    APPLIED     doc/howto/network_ovn_setup: s/22.04/24.04/g
+b5aa5ba455bb26131af4bf5cb44f243e0a96af73    APPLIED     doc/howto/projects_work: s/22.04/24.04/g
+d35513b36ca31944b5f62d6f00705a1974394508    APPLIED     doc/tutorial/first_steps: s/22.04/24.04/g
+2b987e588312aa286cc6b1d54c16b95736253e91    APPLIED     lxc/init: s/22.04/24.04/g
+ab4bca23c65a5e2702eeab0651f7baa3996a26fc    APPLIED     lxc/launch: s/22.04/24.04/g
+469b23d2d63ce7367843078ed5ed69242f801ee8    APPLIED     lxc/main: s/22.04/24.04/g
+7bceb0fd2c2fe5d639f03365f38691fa52217aa7    APPLIED     lxd-benchmark/main: s/22.04/24.04/g
+f7c82e6f5dad80d2c6bbc75a6b51f0135a6d30e9    IRRELEVANT  i18n: Update translations
+ffcae98127890d2c56ec8d46cfb64f4cfff04288    APPLIED     shared/api/image: s/22.04/24.04/g
+084aa1261b26e3671837e81f14ccc56cf3e8746f    APPLIED     shared/api/instance: s/22.04/24.04/g
+cb8ebd06f157191723ff1387afc6a26066c19aa4    APPLIED     shared/api/server: s/22.04/24.04/g
+d0ace2969e1ad5cfb10a0d6a1f71d2dcd51a3589    APPLIED     doc/reference/image_format: s/22.04/24.04/g and s/jammy/noble/g
+69dce1ad3dc53e76866c23bba4714aefc10141de    APPLIED     doc/rest-api: run `make update-api`
+9b371ee6f956ec66376317572b2849dba86e61c0    APPLIED     Add page describing lxc show and info
+ab2a476550ff1a211538880def997e2f62d494eb    APPLIED     lxc: If the volume ContentType is 'filesystem', `args[1]` is the device name and `args[3]` its path
+64e7f64888856acc6d20d04a6dc0d8821cc61d3a    APPLIED     lxc: if the volume ContentType is 'filesystem', ensure the argument used for the device path is an absolute path
+0a0355cbdc7054e48519d43e8ba0052acd9d75bd    IRRELEVANT  i18n: Update translation files
+4c9fb1eeb56bb29ebec8c8cf31ef94de6add6678    APPLIED     doc: fix topical build
+b45f1aca995f15b58f78ea9745050e19b72e4199    APPLIED     test/README: Document LXD_VERBOSE
+d1ef3c3f79b3f641047162246e14a2f067628a80    DIFFERS     doc/requirements: mention that HW support is required for running VMs
+ec88d3e6f507adbbbe58384d63492dcc0121a191    APPLIED     Add device override to howto instance conf
+9358fffbfc26598d80c30d6c9a491c904604487e    APPLIED     api: device_usb_serial
+4fafd3663f0a94861d892c65c8b6b1dc82b0c190    APPLIED     shared/api: Add Serial to ResourcesUSBDevice
+552aa6cc6fcf5825163138cf852afb33b8725c73    APPLIED     lxd/resources: Add USB Serial
+8fcba7ad22e1056d32cfcdca0968640415f92633    APPLIED     lxd/device/usb: Add serial, busnum and devnum options
+f313cfb37d41fd83d56279f40e9cd2e84ba4001e    APPLIED     lxdmetadata: update metadata
+2bda09e9ee4e4f1bc157175d1787c11bac3ed0c2    APPLIED     github: Ensure lxd metadata can update the needed files during static analysis check
+542066550c4eb03a01866c1a51e22fcf1a3e4da4    APPLIED     doc/rest-api: Refresh swagger YAML
+431ec3af853ff13c9791254a66311c5db9a6254e    APPLIED     added reference page for complete preseed yaml fields; how to form a cluster and how to initialize lxd linked to complete preseed yaml fields
+a3b57616447f51ec1ad8800a25c9892a0d2f3bdf    APPLIED     remove trailing space; add blank line at EOF
+1230884f83cfcb1a057a0445fbaf9a65e9a5862f    APPLIED     add 'storage_volumes' to the YAML
+f195552f655cb5232609f63899bef7f3d0788624    APPLIED     api: Add `network_allocate_external_ips` extension.
+8de00381817b015463920bf82e51d485b1d662c1    APPLIED     lxd/network: Return listen address when creating load-balancer or forward.
+3c24b05cf967cca50520ed2c6953b2beb5bc7f8a    APPLIED     lxd/network: Add a util for getting a random IP address within a subnet.
+78d2a7c87de26004783c17bcd28397a475c7fc57    APPLIED     lxd/network: Add unit test for random address util.
+47f806dc090478597ecd9d20ce7880af678f0d93    APPLIED     lxd/network: Add a util to the OVN driver to get an available external address.
+4c48c0d97d67d998ae0b5776f387ffdfe56a383b    APPLIED     lxd/network: Add auto-allocation logic to OVN network forwards.
+48f89e8f91de5bdcd8b1e84a7a71d6e1bbb5eaa4    APPLIED     lxd/network: Add auto-allocation logic to OVN network load-balancers.
+dada9fdf2f0c109a3a1b6a31ada2c2387bef4121    APPLIED     lxd/network: Return an unimplemented error for auto-allocation in bridge driver.
+7d916ec7a04aaed745815895657c90e2940ed44e    APPLIED     client: Check for API extension if listen address is unspecified.
+7763d4eb34e3dfc82bd7d4a24d1abe6656ec286c    APPLIED     lxc/config: Adds a GetInstanceServerWithTransportWrapper method.
+fc88e7695f202e410409ccbf6c9b6491c73c608a    APPLIED     client: Allow setting the transport wrapper on a unix client.
+2fa975d6eb15052fc6ffb4dbcbf10b2fd6f96a35    APPLIED     client: Update calls to unixHTTPClient.
+39edb8cbf3244a47adc65b1d4519c9fcf1094b50    APPLIED     lxc: Add a transport wrapper for inspecting Location headers.
+965fcdedce7366d8049bd7d9b19558639ff68de8    APPLIED     lxc: Add `--allocate` flag and make listen address optional.
+e42701ab3686e4b2e61d5109ef5a747f5a28ac1f    IRRELEVANT  i18n: Update translations.
+3701462d8dbe0f705fa954c276f93a966e231263    APPLIED     doc/howto: Update how-tos for network forwards and load-balancers.
+72617ba63e29148549ae0e7e24b4c5489146144f    APPLIED     doc: Update mdl exceptions list.
+08f18805124e95a699337d97805150c48e63b3f6    APPLIED     doc/instances: add UI instructions for creating instances
+2a9e2e171257c8f01ff52bf5eb0f5073903a8219    APPLIED     doc/instances: update UI instructions for configuring instances
+0b5279412bf27ab4ec1f5e223ebf5aca58097efb    APPLIED     doc/profiles: add UI instructions for using profiles
+b4041fe696b34cf978ff20a0ed5722c7f3edc1d9    APPLIED     doc/instances: add UI instructions for troubleshooting instances
+78026b4ac688ef058f23daa47ce8136ef96590d9    APPLIED     doc/ui: update console screenshot for Noble
+0bdb0917718b47929d489e9ac1bd7178d5ec286a    APPLIED     doc/instances: update instructions for accessing files for UI
+01429b588575a5f4f03f5342cea31634bcdbcbee    APPLIED     doc/instances: add UI instructions for running commands
+73e6301b02094836e579b2d08ef434b76a607468    APPLIED     doc/instances: add UI instructions for accessing the console
+50db9582aa01c5b331e2bb4d7726b11c59a6d0ac    APPLIED     doc/instances: add UI instructions for adding a routed NIC
+df5156eb4bf71a47354cb97df55be4132d5e638e    APPLIED     doc/instances: add UI instructions for backing up instances
+46704d8bab9b6642f2c3fc6af92fcad1c2cfccf8    APPLIED     doc/instances: clarify moving instances only works in CLI
+f42ce51f7aa02fd97bc66a5ab8aada5fb9979663    APPLIED     doc: tinify images
+dd505077024648345529ff27ea82ff240661600d    APPLIED     doc/api-extensions: link config options
+dea2fc1e420c4af3ed59ffe6285ebf33499c3842    APPLIED     grafana: Refresh dashboard
+afa4f7691a26d7d85e9dbb1184a7e03a79ab60f7    APPLIED     test/suites/auth: Add checks for can_edit on server and storage_pool config
+db1778df9ec9747a2eb6da39aa49d6cfcd0e72b4    APPLIED     lxd/device/usb: Don't require USB devices to have a serial file
+575c82665839c9912948f4063b2c528fb53cdbcc    APPLIED     lxd/fsmonitor/drviers/driver/fanotify: Don't log error during shutdown
+d579a7542839a85245c23135b4e5d9b49e35f86d    APPLIED     doc/howto/grafana: Minor tweaks
+715a39ecefebe6a2da2e8f19e629f2e644259d8a    APPLIED     doc/metrics: provide non-snap instruction on how to restart prometheus
+aaf7af7b663af6b5d862b0ed54c8ffc9cc86605b    APPLIED     doc/images: remove outdated grafana dashboard ID capture
+0e34636418f2806a5f4f0d1d766d676c5629dd57    APPLIED     grafana: Better filter Loki events by project
+85254972f84a03b6e4804791f2f0c33f1d097b18    APPLIED     lxd/daemon: Use hostname as default instance property on standalone systems
+1c33e112bcce83e0169b1e1a16fa9bf6771a7798    APPLIED     lxd/loki: Re-order config fields
+4d0c4e832c6b9aebd6dd0c28c6245a6b8b43b502    APPLIED     lxd/loki: Allow overriding the location field
+b1fd32cb0b5f923c1c6a26f9779e320f90b7db70    APPLIED     lxd/daemon: Set location field to local hostname on standalone systems
+3724f7deb4c1fd7dd64b435b5167615ed74b1313    APPLIED     lxd_metadata: Annotate network zone properties
+457cf8b53923ea0e5f86f975ff328d90bdf03528    APPLIED     lxd_metadata: Annotate network ACL properties
+dfdcf402d6e3deac8059e0397e7fdeca0444be80    APPLIED     lxd_metadata: Annotate network forward properties
+92b56fa340b9a1fd44dd78fc479ed1bd9c4bf1ea    APPLIED     lxd_metadadta: Annotate network load balancer properties
+ca4b82a673adf18ee4c35c1b729ff46c1ee0b9e4    APPLIED     lxd_metadata: Annotate network peering properties
+5b2f5bb630235876c07304a8a345d394f40ab70a    APPLIED     doc: Update doc to insert generate property tables
+3c049bd0284fe1d3e178456dbd5356bf1e1fcedb    APPLIED     doc/network_forwards: update line numbers for linter exceptions
+84cc9d83f4e23ee1b2bd186d22158f1fc5ad2147    APPLIED     lxd_metadata: update metadata
+3acdab689ca1d0e5566d8fecd8aa31fe1b3cdaeb    APPLIED     doc/networking: add back table that went missing
+6e6669a9454e7ae85cefa1f74ebd7615de7715c7    APPLIED     lxd/storage/drivers/btrfs: Correctly detect raw disks
+704a38c497b43efe4972d216f81f4d1a172e4d3c    APPLIED     test/suites/storage: source.wipe for lvm, btrfs, zfs
+46419565fadca2c7389c451d2cfc89d618dcf0a4    APPLIED     lxd/storage/drivers/utils: fsUUID returns err for missing UUID
+d6f6e49572bb132cf91296fd60d4172be14cecdf    IRRELEVANT  fix(deps): update module github.com/openfga/language/pkg/go to v0.0.0-20240429103126-f3e71ca3287d
+3c317216a5cd8a2ef558f79b5fee34537f132513    IRRELEVANT  fix(deps): update module k8s.io/utils to v0.0.0-20240502163921-fe8a2dddb1d0
+f32ef32a22d815f4d8a8f91516bfc7be7797146f    IRRELEVANT  fix(deps): update module github.com/osrg/gobgp/v3 to v3.26.0
+332bc5f45f984b0913894c49807cf513cdce3c16    IRRELEVANT  fix(deps): update module github.com/openfga/api/proto to v0.0.0-20240501220219-2b164f5813a7
+e9f0f9d9276452b853765251a61c503195727982    IRRELEVANT  build(deps): bump golang.org/x/oauth2 from 0.19.0 to 0.20.0
+4e04448c6982593e1cb204e2964af40c29d5fbdd    IRRELEVANT  build(deps): bump google.golang.org/protobuf from 1.33.0 to 1.34.0
+e71858c62c03107046dba116269b40d7837c6979    IRRELEVANT  build(deps): bump golang.org/x/text from 0.14.0 to 0.15.0
+7b68ba4cb8050c70c65f1572fc0687df76882b5e    IRRELEVANT  build(deps): bump golang.org/x/sys from 0.19.0 to 0.20.0
+f7d0330bed4aaba646f97c236fa3b5d6ec3ee96c    APPLIED     doc: configure cloud-init from a file
+03972a27b046cbd0b8d021534d6541dffb1279cc    APPLIED     Apply suggestions from code review
+5952d6ae57f4d8df95d9b490817e0bd7b59bc6dd    APPLIED     Update network_increase_bandwidth.md document with details for u18.04+
+ab47f89f344ebbf6e5fff4f8548d46892c640bf1    IRRELEVANT  build(deps): bump golang.org/x/term from 0.19.0 to 0.20.0
+034c6eb63b4be123b58188c276465c14b31b6494    APPLIED     doc/images: add UI instructions for dealing with images
+8e0dabaf1cec234ef7333c4772e493a4155083cf    APPLIED     Makefile: stop building lxd-migrate and lxd-agent in build target
+1c80b38867c990e1a975e70e3322b41aba4e08c7    APPLIED     Makefile: add lxd-metadata target
+dcc86b20dad88bd6d277d07b7f29b548184bd88a    APPLIED     Makefile: stop building lxd-metadata in build target
+af009d7824a4b9f93e2ca85e8f8f4796067cf892    APPLIED     Makefile: add lxd-metadata as a dependency for build target
+e256812fed865194aa1454a5d8d8a17106190e00    APPLIED     Makefile: rename build target to lxd and add build as alias
+6b23b91925face88ccf6f1a905241e5ba3505a37    APPLIED     Makefile: add all target to build the client, lxd, lxd-agent and lxd-migrate
+4ead2287908a8b872037487d069ceda81e4422db    APPLIED     github: drop invalid ref to `matrix.go` in snap edge build step
+408202d76ea82eea4ff874507bae9e00c94404bc    APPLIED     github: specify which make target to use when building LXD
+3beca30cac7674a17953f786a29eceef456fd564    APPLIED     Makefile: add lxd-benchmark target
+d8cb6e714be925f370f4c7efba37ca723b905d7c    APPLIED     Makefile: add lxd-benchmark to all target
+fbbb26e630578a1918d836acc317c192beafdb12    APPLIED     Makefile: default to building all binaries: lxc, lxd, lxd-agent, lxd-benchmark and lxd-migrate
+78626bf886804a8113b18eb8b870599e863c92a7    APPLIED     doc/howto/instances_troubleshoot: rename container to avoid confusion
+24d5425f92d0b3261be29601af12c36faea1ea22    APPLIED     doc/howto/instances_troubleshoot: add instructions for debugging systemd
+abbfc7b9edcc087dc5372c4b2cd6446eaa0362bd    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.22.0 to 0.23.0
+2aa839d03d214055ac44be8353edb3f99bfe1cbe    IRRELEVANT  build(deps): bump google.golang.org/protobuf from 1.34.0 to 1.34.1
+f2e07cc38f0daa37d7a18af1d6b4da51491dcbec    APPLIED     lxd/storage/drivers: Add volume param to roundVolumeBlockSizeBytes
+bbf4fb3fd0ba0d7fdc454dc06da4682bbcdd156c    IRRELEVANT  Update module github.com/openfga/language/pkg/go to v0.0.0-20240513164614-7d0da9bc9c63
+75c2e8780d9660ba40b41fb7f065632c3ed8b981    APPLIED     lxd: Only allow force stop for frozen instances
+bf1437cb6f66cc6aaea531ae53f512f11cce2a60    APPLIED     lxd: instance start also unfreezes
+e78a0763bc2c66e4fecb96fea145764edd9b6708    APPLIED     lxd: instances_put start unfreezes instances
+1915d99b4a2911fd7503368eda51875d13c848a1    APPLIED     test/basic: Add freeze tests
+009d534cb5cef3cb51f3657dc58b2338733185bd    APPLIED     Update doc/howto/network_increase_bandwidth.md
+e81d0ee019d6b4528cbd2ba25687c045933f7584    APPLIED     Update doc/howto/network_increase_bandwidth.md
+d8bc77d388d31d01eae7457e56fede018d23e936    APPLIED     Update doc/howto/network_increase_bandwidth.md
+f1bf94128f4a9f59227f01b51255aa67c868e2db    APPLIED     Update doc/howto/network_increase_bandwidth.md
+9fdf795a28318df04d71f49e90e6fbecfebe8372    APPLIED     Update network_increase_bandwidth.md
+5915b3e17863abb872e77f1f0ad4a419c62c9119    APPLIED     Update network_increase_bandwidth.md
+4a58955b1b82b16f0ec0a891ad07aecdd9ad7c97    APPLIED     Update doc/howto/network_increase_bandwidth.md
+6f7defde475fb527cf5fa30e47140f1db62eceb9    APPLIED     lxd: Add int upper bound check
+29a2e87d0475eb814813bb8877ccba1e1cf40898    APPLIED     doc/contributing: remove note about configuration options
+77c5df699c9f67926892ccd29a3bd4eefd2bfea5    APPLIED     lxd/cluster: Add int upper bound check
+a3ff486f9a82cdfcdd17d6bfeee0c9fc8db1fcbf    APPLIED     doc: Add network list-leases to IPAM How-to
+6da10c00eada497c9856f4a444929ad2246d2f06    APPLIED     Update doc/howto/network_increase_bandwidth.md
+a95d32b3f2bdb7bf1fa4b94496c58b9ecabbdd8c    APPLIED     Update doc/howto/network_increase_bandwidth.md
+f9e20c0dcae8fc787aeaea5bff38918b3d5ccb6b    APPLIED     Update doc/howto/network_increase_bandwidth.md
+200ab9ee9a99cfb160a16977859142fd438c5c34    APPLIED     github: run the doc link checker on PRs only
+90a39a0a3cf2bff9d8a964f6b85057b495f048e8    APPLIED     doc: fail doc-lint if unneeded exceptions are present
+82137081074d7cb0aa244b584e719f3cc7774754    APPLIED     doc: remove now unneeded exception
+20f675de2578d747540217973768cbe464af1ba5    APPLIED     Makefile: bind http server to 127.0.0.1 instead of 0.0.0.0
+d7de39e9a5d3439e78eec031ae42850664318fe0    APPLIED     lxd: Fix double unlock of the task group's mutex
+0505e430aa43fbcc820134555b074aba22cbe216    APPLIED     lxd/task: Group usage comment
+c39d77e590179675489722685c05abb657ef76f1    IRRELEVANT  fix(deps): update module github.com/checkpoint-restore/go-criu/v6 to v7
+d25f62c1c7c35ea77ff0a85b36c12a9a3f3849de    IRRELEVANT  fix(deps): update module github.com/juju/gomaasapi to v2
+87419fa1af9295b2093e1616c062d73a547d0996    APPLIED     doc: Add a page about dqlite troubleshooting
+18e19e752a7128f556476e10cfb72d66e539f1ca    APPLIED     lxd/network/openvswitch/ovn: Workaround OVN load_balancer table index issue by deleting records by UUID
+39e5776712f706d522e2999ef183d63134fcb33a    APPLIED     lxd/storage/drivers/zfs: Round to zfs.blocksize or 16KiB
+7144430adc25ffd21189f5e25f598245077efd8c    APPLIED     lxd/storage/drivers: Refactor volume size rounding logic
+034f8ecf5551f76a49556f14c235283f06a0ba4b    APPLIED     test/storage: Add non-power-of-two sized storage check
+9833d4691cb1519ffd8e956b5149a3a8589eb4cb    APPLIED     lxd/storage/drivers: Fix linter errors
+0cd623b3e09a56ff59c7b481a8f1a8d67e30d453    APPLIED     lxd/network/openvswitch/ovn: Removes unused switches argument from LoadBalancerApply
+d33d3899489b651e7498125849dcaf32adedfa30    APPLIED     lxd/network/driver/ovn: Removes unused switches argument to client.LoadBalancerApply calls
+d52a6c1bbe43184cf8501e56aede93ea1918a35f    APPLIED     lxd/network/openvswitch/ovn: Fix linter suggestion in LogicalSwitchDHCPv4RevervationsGet
+d185f1814d8431cd87dba5aa7d1c48cb120848ff    APPLIED     lxd/network/openvswitch/ovn: Only add -- if needed in LoadBalancerApply
+08b0bd96ceb6b970ce8c5847d9a53b90b5c266ea    APPLIED     lxd/instance/drivers: Remove unreachable condition
+b099ff6aef3f259487b0a2732385b998eb2ed22d    APPLIED     lxd: remove unused parameters from `instance.go`
+0e8a2502df73cf0747f3eb12dc4a74be92359b24    APPLIED     lxd: Remove unused parameter from `ensureDownloadedImageFitWithinBudget`
+8afc037a9163f8a61100acc25a17831c40e385d0    FEATURE     Revert "lxd: Update for server config type"
+dc66576a39ecc0102d394adb233e0d1277f5b64d    FEATURE     Revert "lxd/db/cluster: Update for server config type"
+637223d40147866f5fa63a438e5d9692967ac957    FEATURE     Revert "lxd/project: Update for server config type"
+3e24ebf236bcd253d763e024f431981ee9fa2e4f    FEATURE     Revert "lxd/network: Update for server config type"
+4c6101c2774798cac04ce74e93871373d1cd5a93    FEATURE     Revert "lxd/instance: Update for server config type"
+8e0d4e7e4b03ca7e0b1208f8fefc4317a76d8e71    FEATURE     Revert "lxd/cluster: Update for server config type"
+2d85253aa14b80cad421056a90e064f2f2375aaa    FEATURE     Revert "lxd/node: Update for server config type"
+b27d179dd4348ea96ee0d114fd471ca9d1b201a1    FEATURE     Revert "lxd/config: Update for server config type"
+1c9df12ce4398aea4618ecf3f9bd1f7c472fee18    FEATURE     Revert "lxc: Update for server config type"
+a3fab42eeb86a3976a5389c20babd0c83a526f59    APPLIED     doc/howto/logs_loki: `loki.instance` needs to match the Prometheus job name
+9d8180d63b386e8d348a332c92161858aea537c5    FEATURE     Revert "shared/api: Switch server config to map[string]string"
+92dbe40e5a6d91c1feee3c29dae114795f54d2ab    FEATURE     rest-api: Update server config properties to be of type any
+59dc0b3ee56219e8776906208fd34761d91295dc    APPLIED     lxd/config: Record error if type assertion fails
+e9cf28e3ccb0088b675b24390c79ccd0c0796371    APPLIED     lxc: Fix indent-error-flow by removing the else block
+a0bb18d6ca12cededcca63ea9444603b190f62a3    IRRELEVANT  i18n: Update translations
+95c43d7197aa44bc9110cfb498a67cf8fc34b71f    APPLIED     lxc: Allow comparison of interface with bool
+6b52b23be5c12ff5220b9e0dd36cfc8fd03740c4    APPLIED     lxd/cluster: Prefer not to defer chains of function calls
+70654f3f445312ccb9029115de274258d71b13b5    APPLIED     lxd/main: Add missing comments for exported functions
+fa2338788939d76dd28ff38380c95ca7e8adbab7    APPLIED     lxd/cluster: Remove redundant import alias
+288f85fa0638224d59c72a97db418f14f4608904    APPLIED     lxd/config: Update error messages
+f0316ad7663603c1cc39c3b26cd59e3a46324898    APPLIED     lxd/config: Update tests with latest error messages
+b0a7ad56dbcd2ca9b78086786c82d8578bdb0446    APPLIED     lxd/cluster/config: Update error messages
+9afcb9080a1db9c1020869d1a1b9154f422f261b    APPLIED     lxd/cluster/config: Update tests with latest error messages
+1b345e1db5884cfc98cd4d1c257b49d6c94450e4    APPLIED     doc/howto/instances_create: add CLI instructions to enable the LXD agent in manually installed VMs
+a50a952ad0559c581e44d32f0edd9a3be139e801    APPLIED     doc/howto/instances_create: 1 CPU/1GiB/8GiB is too tight for desktop VMs
+a214566248282c5ee39e4ca15f594a76bc95f41c    IRRELEVANT  fix(deps): update github.com/openfga/language/pkg/go digest to 9e3bd7a
+e0b50c330872f1db7a4dee7f19abc63ff07804fe    APPLIED     doc/dqlite: small doc cleanup
+d717b97cdca4a73778a61cd6f7e3823e5f9b79b5    APPLIED     doc/instances: make instructions for ISO VM consistent for API & CLI
+574734bd9ea589e12d0001510cfe118714aae803    APPLIED     lxd/storage/btrfs: Fix btrfs argument order
+78c52339ec16f5868ffac5f986ecbff589c189ef    APPLIED     lxd/storage/btrfs: add space after comment marker
+4893ef5fd8abae349c165b796b5da4e5e36bef1a    APPLIED     doc/cloud-init: use tabs for API/CLI instructions
+e94d76f6f803c1a07fbf4165ab20b774b8d2a715    APPLIED     doc/cloud-init: add instructions for the UI
+57ca093785a07ae1ae6b01400b8a7cf519085f4f    APPLIED     doc/cloud-init: move instructions for enabling the LXD agent
+92124bad2554dbbfa061ee4640b93b435535a3f1    APPLIED     test/storage: Remove zfs rounding test
+6f7ce90a0890ef5a2086c5d7746136b9d8c45cc1    APPLIED     po: remove outdated "Manipulate container images.\n" section
+4a4636bcda7356f3e80a5e39f812bfdf547c62ab    APPLIED     po: remove outdated "If this is your first run, ..." section
+ecc020159adb880112826d0c54fefd45a72dad59    APPLIED     lxd/instance/drivers/driver_qemu: properly calculate VHOST_VSOCK_SET_GUEST_CID
+9ce614898fb862981894f76f552fc899292d33d6    APPLIED     Update metrics.md to add symbolic link from current/tls to common/tls as the work around so that Prometheus can find the .crt & .key files in the tls folder.
+8e4d7cb1baf39ee5ad7dc0e40967d5959ef1b13a    APPLIED     storage/drivers/driver_btrfs_utils: properly calculate BTRFS_IOC_SET_RECEIVED_SUBVOL
+faff6bca1322bb689d9c7cfaecb41b58e0dd56a3    APPLIED     lxd/devices: properly handle cpu.limit for VM-type instances in deviceTaskBalance()
+f6118e64c0909240b38a01d08c0f3a91e3784820    APPLIED     shared/idmap: Make get_userns_fd configure the userns
+86f8210df5eccd0c86d19554be7499d453306d5e    APPLIED     idmap/shift_linux: fix a bunch of go linter warnings
+58c459121716598df55d927e61c78672fb44ad72    APPLIED     lxd/devices: fix a bunch of linter errors
+89c106364abc1eaab05a53b939d82804c3d2d65e    APPLIED     doc/substitutions: simplify yaml formatting and alpha-sort
+2cdac644d505bce0f38c99bcbac1f2ff8736e3aa    APPLIED     doc: effectively joining the lxd group requires to log out/in
+00879a39e3643d4c194b183583adc05ed4ed470e    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.16.1 to 4.17.3
+1c026db90c3edd0be0bec4bc6847fce8c8c0eab2    IRRELEVANT  build(deps): bump github.com/jaypipes/pcidb from 1.0.0 to 1.0.1
+179b588e1fae9dc18fbef8ec02ea1d7ee64304d8    APPLIED     doc: update to the current version of the starter pack
+ae330b4ae5b3acdd1b42bcce15c71da0c0035169    APPLIED     doc: change Makefile structure
+62b4b63a0c7bb94fcb848dc086db127eb12851d6    APPLIED     doc: fix woke failure
+67b16ca026de080835b956e2913a0487fcf9b447    APPLIED     lxd/seccomp/seccomp: tighten capability checks a bit
+b7dc46bf068636e84158edabb267f301aadf72ea    APPLIED     lxd/seccomp: fix a bunch of linter errors
+5e3628f5000c3ea753936bc5e0cf2e8496c5f7bd    APPLIED     lxd/network/driver_bridge: check the right error code when killing dnsmask
+af6df8549a3663220696bacbf7d573da63aa46c3    APPLIED     lxd/network/driver_bridge: check the right error code when killing forkdns
+a1e6934c8a83d343b4d7f97728cbe9d654dc9e32    APPLIED     lxd/network/driver_bridge: remove redundant error checking
+35614530c98445434185f3011f67868a304cda68    APPLIED     lxd/network/common: remove unused clientType param for delete()
+7504573567b36ac992148e60d02df11d330316eb    APPLIED     lxd/network/utils: remove unused s param for usedByProfileDevices()
+1b7a43e4a2e9f25fd57a85e09b3b520319a98c4c    APPLIED     lxc/info: remove unused remotes param for instanceInfo()
+51779472f5d2d438f0c2ad71dd844779d67af639    APPLIED     lxd/cluster: remove unused cert param for loadInfo()
+126dece69d1a69390922c92958afc3a4175074ff    APPLIED     lxd/storage/filesystem/fs: check for error when detecting btrfs
+904ebb649eddbfbc697585a9af9bbbc2ecefa815    APPLIED     lxc/list: remove unused conf param to listInstances()
+7703bec1cdb4b1f1f7d2679b4ae97f4805d3dd3b    APPLIED     lxc/file: remove redundant error checking
+b89aa6200ee0094ddab777c94034c89801a79eaa    APPLIED     lxc/list: remove unused cInfo param to matchByNet()
+e3dee81a96628b1658f40f870aad4fd7312b4f8c    APPLIED     lxc-to-lxd: remove unused op param to transferRootfs()
+5f0cb0ca263d2a76d074cecea8692bbb13c39c7d    APPLIED     lxd-agent: remove unused debug param
+50aa8240079b0f84d007b7f46856032b68da5708    APPLIED     lxd-agent: remove unused daemon param to get*Metrics()
+00eca4d0959166a3278ee6bc1b60c36c023fddbe    APPLIED     lxd/apparmor: remove unused sysOS param to *Profile()
+9170486791e3b3682066e0e4f021d76b720eb837    APPLIED     lxd/apparmor/qemuimg: fix error check when creating subprocess
+0c1d20ec1431cac393ba94a32d752f9b258fe0ac    APPLIED     lxd/auth/openfga: check error only once
+fa0f09c14826965cce5a14f4830d592c523e5961    APPLIED     lxd/db/cluster/update: remove redundant error check
+16c49acb6b20f1013c389ec7f04a7d84d3fe1276    APPLIED     lxd/db/generate/file/write: remove unused imports param to resetInterface()
+ccba49c4004ebab9a3592d736d467c60010ac30d    APPLIED     lxd/db/generate/db/stmt: remove unused filters param to register()
+7df7ccbf05dcc54681d6ceead267cd557fbbfcae    APPLIED     lxd/db/generate/README: fix some markdownlint warnings
+11f58a3dae8fd5028eb46ebc34070b99492bb2e5    APPLIED     lxd/db/query/slices: remove unused typeName param to scanSingleColumn()
+67c5cd38b8eaef3e0a3d5ef90e248df59544fc75    APPLIED     lxd/db/networks: remove unused tx param to getNetworkConfig()
+3bfaf4fc401cac3502c8a8af8f048ae4c7c6f6fc    APPLIED     lxd/db/storage_pools: remove unused tx param to getStoragePoolConfig()
+b663158efa3eac83f4681c8e31dc18f658629ede    APPLIED     lxd/db/storage_pools: remove duplicated error checking in getStoragePool()
+476c58d02aa22fb15e89f9343c43d86f6d1c77eb    APPLIED     lxd/device/device_utils_network: remove tautological nil check
+ad3d40e6b24bc551b7a8c46885339e9b7871ae34    APPLIED     lxd/device/nic_ovn: remove unused uplink param to setupHostNIC()
+b25900b3928c3dbaa05da4951756f2efde387120    APPLIED     lxd/device/proxy: check the right error code when killing forkproxy
+ec46258ac8ef4f3e6fb2b4096cc7c4a1c66ef14d    APPLIED     lxd/dns/debug: remove unused zone param to debug()
+a88f54624ca99ad4a89b2af013ad472d08d97491    APPLIED     lxd/firewall/firewall_load: remove tautological check and remove dead code
+60df958148022e884039a038d68b0ba8d6cccd74    APPLIED     lxd/instance/drivers/qemu: avoid dereferencing nil
+9d893f85985ccad16c348b3b3763100ea0796b4f    APPLIED     lxd: remove unused forcecheck param to storageStartup()
+ff87f2d6b22a5e1f74b87577dafe733737e27685    APPLIED     lxd/instance/drivers/qemu_metrics: remove unused monitor param to getQemuMemoryMetrics()
+9cf116a9143b94d7c3c508ba734c9337f53355c7    APPLIED     lxd/daemon_storage: remove unused storageType param to mount()/umount()
+e2273458596706557f884c78bb517c14ac3e39a0    APPLIED     lxd/instance/drivers/common: remove unused stateful param to validateStartup()
+22a882455cf8a9bbc4efed0799b127c94886d22e    APPLIED     lxd/instance/drivers/qemu: remove unused configCopy param to deviceAttachNIC()
+4680c7a293f71225384b80f013504f233ef54f58    APPLIED     lxd/instance/drivers/qemu: remove unused configCopy and mount params to deviceAttachPath()
+9935d754fda0eff2c4f9909ce64e45087cf3a672    APPLIED     lxd/instance/drivers/qemu: remove unused deviceName and configCopy params to deviceAttachBlockDevice()
+a2889e1df68f57911bc48bc90dc239027b9a4dab    APPLIED     lxd/instance/drivers/qemu: remove unused rawConfig param to deviceDetachPath()
+5d3464a7611aa817f54215fb116c440e8e7cb072    APPLIED     lxd/instance/drivers/qemu: remove unused rawConfig param to deviceDetachBlockDevice()
+7230c67d8ec0c8a966b0c6d9b73d6afa0b56526b    APPLIED     lxd/instance_file: remove unused s and r params to instanceFileHead()
+34e8dbdb0a956de4b3bbe0960d268676e984b771    APPLIED     lxd/instance_file: remove unused r param to instanceFileDelete()
+863dce969cdc03c5003447b9cea4ba9403798bfb    APPLIED     lxd/main_forkproxy: remove unused timeout param to genericRelay()
+4f80aed43f48297a11e4d401110bd583d900eea4    APPLIED     lxd/storage/drivers/cephobject: remove unused bucket param to radosgwadminBucketSetQuota()
+70f248b07984c027e66605f92211f31945461a6e    IRRELEVANT  gomod: drop unused mods: checkpoint-restore/go-criu/v7 and juju/gomaasapi/v2
+08ef8bf515773289fd6b5d7757cb4a19583e9c66    APPLIED     lxd/instance/drivers/driver_qemu: Fix indentation.
+b4ed88b837c7199b5e6c14c962c8209acae26ef9    APPLIED     lxc/file: simplify loop by continuing early
+44eaa075414dec2e75b9ce1fd957bccc97471778    APPLIED     lxc/list: remove duplicated comment marker
+ca4d4e2c6437b9bd72f47705b16e101fed1f076e    APPLIED     lxc/list: return early in loop
+cf3fd803e46c5b5812e7c188dbe01f4ccc206e9a    APPLIED     lxd/apparmor/dnsmasq: omit unneeded type declaration
+567e83f0d4d5eb6c04315f2728d7d183b18de437    APPLIED     lxd/apparmor/forkdns: omit unneeded type declaration
+a1fdd014a1bff42773a397a810a5f11c059f4153    APPLIED     lxd/apparmor/forkproxy: omit unneeded type declaration
+e9a3343dbcadee8c7cc727e8b8363de73b9d8f8b    APPLIED     lxd/apparmor/qemuimg: omit unneeded type declaration
+a0bd8939e138370f9569064f085e08770438ddf8    APPLIED     lxd/apparmor/qemuimg: add space after comment marker
+b4c1bb35ccb157e2a22562b6a591fd1b1691859c    APPLIED     lxc-to-lxd/main_migrate: return early in loop
+e7085bbcf8ddce2303eddefb36cc3f4cfb07f311    APPLIED     lxd/main_forkproxy: UDP should be capitalized
+0598fb5cc59f25f37548e0112a7f181dab0eddf9    APPLIED     lxd/storage/drivers/cephobject_buckets: fix comment for CreateBucketKey()
+af3c0095f8d3a3f736664f039af436f56f7bc57b    APPLIED     lxd/instance_file: remove uneeded else clauses
+00f86209c47cfb5de3b85d43447bcba7b6b705ce    APPLIED     lxc/list: unexport architectureColumnData()
+ac68355ba9ee64a558b02a346629a42664a0872d    APPLIED     lxc/list: unexport storagePoolColumnData()
+ee3dd78d9f5b2abc416b9a689f8235b28cc38a3d    APPLIED     lxc/list: unexport createdColumnData()
+5017daa6b8dab33a0f28abe9bfa671b703928530    APPLIED     lxc/list: unexport numberOfProcessesColumnData()
+cf461a18ad81c8c05ec4b455941d67c58fc586ff    APPLIED     lxc/list: unexport profilesColumnData()
+f133ec3165766f6d30c285b97e7f91241bba1e7f    IRRELEVANT  fix(deps): update github.com/openfga/language/pkg/go digest to f5fc1d6
+db25e751f8ccfea0b0abe5f296b25811873cc198    APPLIED     lxc/list: unexport lastUsedColumnData()
+aedfab09e1f9a576aa0e67bbc23115317434c513    APPLIED     lxc/list: add comments to exported functions
+1e2a4cf870cb42973508d721793d9fd0d58dc4af    APPLIED     lxc/file: add comments to exported functions
+a689b215281437194a549adab637b30f446abd9d    APPLIED     lxc/info: add comments to exported functions
+87287eff8e6a2364fbe9fb2ee9dcf4456cfc8e1d    APPLIED     lxd/main_forkproxy: add comments to exported functions
+333ef641583ea9fee9445b4fd400531c05d062e9    APPLIED     lxc-to-lxd/main_migrate: add comments to exported functions
+08de213f4c043f1766ebecc4b851a4913c2f7cdc    APPLIED     lxd-agent: add comments to exported functions
+2dea0ef2916914d0e122214bfc2fd8585d98d299    APPLIED     lxd/apparmor/qemuimg: add comment to exported function
+507313d2f254119a081b362e526e15517ba22cd5    APPLIED     lxd/device/device_utils_network: add space after comment marker
+d3f108e05181a0c33d4486af97a301341850e5bd    APPLIED     Update grafana.md
+d9b52196f891922c17ec5584c2502348e47fd1ea    APPLIED     doc: replace the doc cheat sheet
+d907bc8b321b27b073e3fa32607bf7d53c220b18    APPLIED     doc: move handling of additional prereqs to Makefile.sp
+84ed1fe8cfe6dd22f39774764b98994e632d7f10    APPLIED     doc: update documentation checks
+5505b96087f1308b35d9c5df4b5a693b9c9ab179    APPLIED     lxc: Unexport all `Run` and `Command` methods (exported).
+d5ee2bef33b3c9589bf65969a4682d4e0c5d7878    APPLIED     lxc: Unexport remaining methods from lxc command structs (exported).
+eb577d77c79e1b6138b3af94d6b0ee6e2d452376    APPLIED     lxc: Remove deferred statements from loops (defer).
+b66f61c5cfc113ab4a5cf840a7c7e2ae4f0aad5e    APPLIED     lxc: Fix datarace in lxc file get (datarace).
+ff36f247c808b08f0a287a1ff2543a6c054676e0    APPLIED     lxc: Use named returns where appropriate (confusing-results).
+2b908740d2d03ad6cb98a63e57a91274ca74aae8    APPLIED     lxc: Check all type assertions (unchecked-type-assertion).
+2690eb128a49962df8ab8a356fa308f9131ae5be    APPLIED     lxc: Replace `interface{}` with `any` (use-any).
+a34f22c9b440d7f695b4c17906d98d6f2f458409    APPLIED     lxc: Return early where possible (early-return).
+d516dca95ba298355e18bde0aa79d8d043467e61    APPLIED     lxc: Fix comments (comment-spacings).
+e896a211daed7279bcbe7e0e5c26d52a2791f559    APPLIED     lxd/apparmor/lxc: Fix rule syntax
+10f009bced722d9035c2b673c004de7f4dc16cec    APPLIED     doc: update the documentation for the doc framework
+d0906d078445310ae82bec68f882faf698ce588f    APPLIED     Update doc/howto/grafana.md
+c58f7d6c4e2cb3090144864f0036456e416bb299    APPLIED     Update doc/howto/grafana.md
+4a5175dcb5cea653042632647285ae703674e247    APPLIED     Update doc/howto/grafana.md
