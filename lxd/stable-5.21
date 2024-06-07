@@ -647,3 +647,52 @@ e896a211daed7279bcbe7e0e5c26d52a2791f559    APPLIED     lxd/apparmor/lxc: Fix ru
 d0906d078445310ae82bec68f882faf698ce588f    APPLIED     Update doc/howto/grafana.md
 c58f7d6c4e2cb3090144864f0036456e416bb299    APPLIED     Update doc/howto/grafana.md
 4a5175dcb5cea653042632647285ae703674e247    APPLIED     Update doc/howto/grafana.md
+47e2ffe90a173b0ab6d113190ec26c8ae5676109    APPLIED     lxd/firewall: Fix linter errors
+494ebf8f1e4e2682e64a3b685256f7f8bbce688c    APPLIED     doc: clean up the wordlist
+2c7e562b8130a54865fa734e1af6aca2317cffea    APPLIED     doc: update links to the MicroCloud website
+711c2df2a499c242656ac20e754b66177f54658b    APPLIED     doc: turn on colours for the link checker and doc build on GitHub
+6f7849ff7493f179839d3a0069fb32ab300ae6b3    APPLIED     doc: output the broken links if the linkcheck fails
+78d02d2516c3be1e7e3ea95f6aa0c7dd384f5808    APPLIED     doc/Makefile.sp: replace subshell by command group
+dec11a307cf81affd0fd7b648806e50f7f766308    APPLIED     lxd/apparmor/lxc: Tweak rule syntax
+0197264bd8dd110e193bd34634d522cd929e89dc    APPLIED     lxd/network: Include error type in function comment.
+d5ef71756635a43b2242e939e6a8b0599143561d    APPLIED     lxd/network: Return boolean from address validator.
+ba5bfd894c2813a48432c459b309fcd5e858a90c    APPLIED     lxd/network: Use switch statement instead of multiple stanzas.
+f7ca5333fc529ffa563e57f55e729f84345dc6e4    APPLIED     lxd/network: Refactor bridge network forward creation to use pattern from ovn.
+52b0f4c6795d3def1f3cac05c38c158c57b44201    APPLIED     lxc/config: Fix method name in doc block.
+62ef109e289aebc869b1353648c2d80439240da0    APPLIED     lxc: Validate location header and listen address.
+e3087addb177a557acfa3826140b5b8412b9e012    APPLIED     lxd/network: Use net.IP argument to `checkAddressNotInUse`.
+fed641646733fb0904c723b452e8b2797e8169a0    APPLIED     doc/images: replace distrobuilder with LXD image builder
+55f76f67559d127edf3300d552c32e04a953a524    APPLIED     doc/server: add UI instructions for configuring server settings
+e4e25c7af09354e921891217d84db14639b95342    APPLIED     lxd/auth: Remove project from request details.
+ae45039ec3dcbd70e0c684ba05255ef165870b54    APPLIED     lxd/auth: Remove project access check in TLS GetPermissionChecker.
+f6c45a988e363761bbe89f29ff67579f140e21e8    APPLIED     lxd/project: Raise error level of `GetPermissionChecker` err.
+0d2b6d621b2b2bf228a2dff22ad0c89d10171fca    APPLIED     lxd/project: Continue loop if `GetPermissionChecker` fails.
+114fbb5e164f9a3dac5e301f9034507f306e741c    APPLIED     test/suites: Test for project used-by filtering for restricted TLS clients.
+356a6ddf98f654940aa4965f23ed9bd5aae7a8bf    APPLIED     lxd/auth/entity: Moved generated entitlements and some helper types/functions into own package
+8d59b534b59fcd363a2fbb64c548db02fc1905dc    APPLIED     lxd/dev/openfga: Move openfga datastore to own package to avoid unnecessary dependencies elsewhere
+00cd18ffcd43d6eddbc3170c60654e6bf4ea5b76    APPLIED     lxd/daemon: Use github.com/canonical/lxd/lxd/db/openfga
+31cd1bad436e1c3728bfa61d8e058c8a0624af7b    APPLIED     lxd-agent/devlxd: Removes unused reference to daemon.Debug
+f1e39d2f2bede163e0880b4ba65adafdb7a5993e    APPLIED     lxd: Use github.com/canonical/lxd/lxd/auth/entity
+17f57dcc0ff251ac6ca87266e112271a00ea040f    APPLIED     go: Update minimum version to 1.22.3
+1b655d14462c65154ddee2dd034032eaa938c1a3    APPLIED     gomod: Update dependencies and switch to go 1.22.3
+b7d3d2451664ad3abed365af2ddf692d2f1607ab    APPLIED     test/mini-oidc: Merges into main Go module
+c9909386de0b2f3b73cb1c7a4dc249c938fe912f    APPLIED     test/mini-oidc: Standardise on github.com/go-jose/go-jose/v4
+281c4a465b8e5c3732aed8bb3aa30aae59bbb274    APPLIED     lxd/auth/generate: Update entity generator to use new location and name changes
+0f91e166d24f26c2834d0c42c31d6f46d8cbf9c8    APPLIED     test/godeps: Removes openfga from expected deps for lxd-agent
+af3ca063aae9bb3cec58c693a4501d9990d625cc    APPLIED     github: Updated expected size of lxd-agent
+280db06d7838a5fb84ce290cfb7f9f3894a9b87d    APPLIED     github: Fix permissions for static analysis check
+533df9db8e6db1daabc2fc9d6a636082f4464fe7    APPLIED     test/mini-oidc: Comment should end in a period (godot)
+da155c42512984443e2f70cf404e208aa480b796    APPLIED     test/mini-oidc/storage/storage: renewRefreshToken confusing-results: unnamed results of the same type may be confusing, consider using named results (revive)
+51a7dee20d7ebfd270371df2aff4cb9a89ebcff7    APPLIED     lxd/storage/volumes/snapshot: Fix duplicate import
+09187e9cf7b1175570c967f78fd7f43d7370118f    APPLIED     lxd/events: Fix go linter error
+a29a27f5ccc91270b0849b02f5c5c0da95a7bf52    APPLIED     test/mini-oidc/storage: Ignore exported func NewMultiStorage returns unexported type *storage.multiStorage, which can be annoying to use linter warning
+7732924ac4d9dc25845b634a66e942eefa89a4c8    APPLIED     test/mini-oidc/storage: Return standard error rather than pointer to oidc.Error
+9cbd77ed1f4781100a6e7935ef2f53c6ea1e1a4c    APPLIED     lxd/api/internal/recover: Ignore defer: prefer not to defer inside loops (revive) as this is intended
+c7e6d04bebd03c353efb2fdad7e1f5829c29d3cf    APPLIED     lxd/api/internal/recover: Fix early return from linter suggestion
+b0cd7fd9a87a9140139c6b08bd081dbed16929bc    APPLIED     lxd/storage/volumes: Remove empty new line
+79adaf5f251766610a56c194eb189ca3f9b9ad0e    APPLIED     doc: add notes to files from the starter pack that should not be edited
+cf34f1328053a1f1ca02436f1256934144a56cf2    APPLIED     test/mini-oidc/storage/storage: linter fixes
+a24233b94f2279e74ba0bc0dc377834d652ed90a    APPLIED     lxd/api/internal/recover: Fix early-return from linter
+d581e43f1f0647cec6847fe942243c02cc4ef351    APPLIED     test/mini-oidc/storage: Fix import spacing
+2e55b23f9f24537ce4469f6e5f0fd70f55ef615d    APPLIED     lxd/apparmor/lxc: remove dup mount options rules
+3057ad1219a74994a1930914c18260441f56ff52    APPLIED     gomod: Update depedencies after test/mini-oidic is merged into main module
