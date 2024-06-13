@@ -696,3 +696,58 @@ a24233b94f2279e74ba0bc0dc377834d652ed90a    APPLIED     lxd/api/internal/recover
 d581e43f1f0647cec6847fe942243c02cc4ef351    APPLIED     test/mini-oidc/storage: Fix import spacing
 2e55b23f9f24537ce4469f6e5f0fd70f55ef615d    APPLIED     lxd/apparmor/lxc: remove dup mount options rules
 3057ad1219a74994a1930914c18260441f56ff52    APPLIED     gomod: Update depedencies after test/mini-oidic is merged into main module
+7f636cfc45d5c5833542a225f6dd8c9d024cbc6d    APPLIED     lxd/instance/drivers: Rename `blockNodeName` to `generateQemuDeviceName`
+6dee8fddc1f1d81922ca2b2cd4674428489313a2    APPLIED     lxd/isntance/drivers: Use `qemuDeviceNamePrefix` for blockdevs and netdevs
+6eb67f2b0e455dfab92d0c27202f48872d51290d    APPLIED     lxd/instance/drivers: Use `generateQemuDeviceName` for device tags
+342bef92816b18d6c000774e5934c53458522165    APPLIED     lxd/instance/drivers: Indicate device name max length with variable
+21f93eed80812ee1357062f0cdb8680fff87f04f    APPLIED     lxd/apparmor/lxc: reorganize mount options rules for priv containers
+2862d25da0defe2e44ec6a3eba2d2808c89c167a    APPLIED     gomod: temporarily replace gopkg.in/square/go-jose.v2 by gopkg.in/go-jose/go-jose.v2
+c6caf13e5ee56ce3f060a4a107ba22974633a37a    APPLIED     test/godeps: Update go-jose.v2 dependency for client
+2e266f48ed8a808bb1bec8edf7ee06e11dab889d    APPLIED     test/godeps: Update go-jose.v2 dependency for lxc-config
+db4b8fcdcbc6a51086e3b0e3f6525e84c3dc29b6    APPLIED     test/godeps: Update go-jose.v2 dependency for lxd-agent
+d9b979362f6f4ccfdb7ab496cabe3da950305199    APPLIED     gomod: update
+1ff48421a5594dbc7df315eb16f16f18cc80fea4    APPLIED     doc/howto/instances_create: give manual instructions to install the lxd-agent
+550ac435ba1319c235942d3a969c574b4cd6f2d2    APPLIED     doc/cloud-init: remove section on how to enable the lxd-agent
+0c8017c9944a151f830a9e9e6ccfe15451730487    APPLIED     Revert "github: run code-tests with 1.21 to avoid swagger crash"
+b70ac323d03d85682e63ac5081b1a1eb3b028415    APPLIED     test/suite/database: use a space between parenthesys and opening braket
+37c26bca99f4969f3db146cfece017d6ae27fd79    APPLIED     test/main: export LXD_SKIP_TESTS
+d01ed85e0a3b9581797181559acea3157cdff745    APPLIED     test/main: export LXD_REQUIRED_TESTS
+c0b70e97e8fc99a7a023239f0c8c9c2f3ac434b5    APPLIED     github: use global vars to avoid dup'ing them between jobs
+abf65a1186bd4135971a03f7c0323f425e4015b9    APPLIED     test/lint: add test to ensure all test cases are used
+ea92f1c1c815380fe93c57edf33df07d1dcbe4ab    APPLIED     test: enable test_clustering_upgrade
+de6fe4f650fcb978cc98806d474350696e3ca0f2    APPLIED     test: enable test_clustering_upgrade_large
+b9794432a3100214386a4f148788b499ad946f41    APPLIED     test/suites/backup: rename internal sub-functions
+1520436700e0c6bba86807ebf6dcffb037ba9c2f    APPLIED     test/suites/fuidshift: rename internal sub-functions
+d009b472a68f327b998d903378b63064e4534d5f    APPLIED     test/suites/container_devices_disk: rename internal sub-functions
+1b076071376e9add326124befb75134027926247    APPLIED     test/suites/container_devices_unix: rename internal sub-function
+595890fcd409fe89d83025a3ec3325afa2638e09    APPLIED     test/suites/image_profiles: rename internal sub-function
+56a29c31932e48c6ff671b40fa4aa66f2250c8f2    APPLIED     test/suites/config: rename internal sub-functions
+7350932f2aca0281ec0ccd0950d887c98ccaebd0    APPLIED     test: enable test_image_import_existing_alias
+760740737f5e1768148c572eb8e5294a00a61574    APPLIED     test: enable test_init_dump
+5a3d90a51ceade9451e7534cf026de31603e2eaf    APPLIED     test: enable test_projects_copy
+6900d9d407062d083882801d35ce26c50fdd70ae    APPLIED     test: enable test_remote_url_with_token
+20dd2fa43c0b55c632e43d42765be06b1c0e85c4    APPLIED     test/suites/image: fix export/import from alias to cope with .tar.xz extension
+6a10160e3406a31dd49275e6c703df18d425d823    APPLIED     test/suites/serverconfig: rename internal sub-function
+a996d582dc3190eec9bce42c64a6204d951e2ec8    APPLIED     test/suites/remote: delete project at the end of test_remote_url_with_token()
+d578d1af7b7be00fa46b2ffd35791b1f005d4fa2    APPLIED     test/suites/init_dump: remove network "managed: true" from expected config dump
+3ae13411eab605d56974ae14f8ac3eae6d9a0a08    APPLIED     test/suites/init_dump: add network "project: default" to expected config dump
+7ab7243577f529f75e54c1aa7ea4fb388cebbdb8    APPLIED     test/suites/init_dump: add storage_volumes list to expected config dump
+89d462aaee2262e8bff3af965a8142fdcb9bdb60    APPLIED     test/suites/init_dump: add projects section to expected config dump
+6c0265d0607a24a39c84828751d61285d60916c1    APPLIED     test/suites/init_dump: mangled the dumped trust_password value
+6d8e56880fedb44805d26e262933da1fffc552a2    APPLIED     test/suites/remote: update expected behavior when accessing restricted projects
+d7b8ad4d6eef5465e279f20439fc4ed4be311d51    APPLIED     github: skip clustering upgrade tests (broken)
+e462744b43f513db28bc6d4ab672994b6c03aa90    APPLIED     fix(deps): update module github.com/gorilla/websocket to v1.5.2
+874a0fe5b3faa26beace4d60afecc1d718977a35    APPLIED     fix(deps): update module github.com/minio/minio-go/v7 to v7.0.71
+5297b3fe842d49df799a7e9a1b8bb3a528bed78e    APPLIED     fix(deps): update module github.com/checkpoint-restore/go-criu/v6 to v7
+1892472d8152ea861aad2a85674e29cb90ef0c05    APPLIED     fix(deps): update module github.com/juju/gomaasapi to v2
+7b0c5629078b05b7be0e04c0051c1c4ea0b61aec    APPLIED     lxc: Parse location header into URL.
+c066744de879ee4c7ff6709e0b877038a537491a    APPLIED     lxd/device: Minor comment correction
+b1de97075490d13494617a89f784adfdded650ee    APPLIED     lxd/device: Name parameters of the same type in `DiskParseRBDFormat`
+cbd9e9a74c78805aee8e28a1c4b923c47c06e091    APPLIED     test: Minor fix in tpm tests
+57dca1db5b5494cf81de4c9cef50faf37f6d237d    APPLIED     lxd: Move `addFileDescriptor` to `lxd/util`
+92e9a20f3ea74d4b730b1b2755178bb3f246d166    APPLIED     lxd/instance/drivers: Create `ShortenedFilePath` to handle long socket paths
+376988c54de5558aeca945cfdfa34f956d3265b3    APPLIED     lxd/device: Use shorter socket path when calling `swtpm socket`
+1f5efc2b33d604dea1457c891c184507c9ecb50a    APPLIED     lxd/instance: Pass shorter virtiofsd socket paths to qemu
+3353ddb970b8222df399a71bd1290c7582e66fcf    APPLIED     lxd/instance/drivers: Pass shorter swtpm socket path to qemu
+0dd71dd7c7ecce1dd64214266093a313e20e1c85    APPLIED     lxd/instance/drivers: Use shorter socket path in `deviceAttachPath`
+efdb243f2e76b8b136b595900d176a5ff2e44f68    APPLIED     doc/howto/images_remote: add token to the list of accepted params for "remote add"
