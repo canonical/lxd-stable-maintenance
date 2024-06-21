@@ -776,3 +776,108 @@ fe3c091bfb38d24059cc4527bfa87af1a30cb2ba    APPLIED     doc/authentication: avoi
 c1fc1d237491302c178c49b87a65e3a793cf6db2    APPLIED     doc/reference/storage_powerflex: avoid HTTP redirections with direct links
 eac6404082f3d63e14fe140298619432887a7714    DIFFERS     github: Fix permissions for static analysis check
 a41f08188dbcc38f0c6484464ba70c398a12ceab    DIFFERS     github: Remove permission change.
+3b8451cc7dd83258b1a94dc4c8171e74f8783d2d    APPLIED     api: Add explicit_trust_token extension
+fc9641b5b13162b3f543936a9ef6301df091dc8c    APPLIED     shared/api: Add TrustToken support in CertificatesPost and ClusterPut
+5ac9736df7ff15b7c033b540903d9965aac02f63    APPLIED     lxc: Add support for setting trust token explicitly
+9e7656c8c3e26eb0ba7e4b46b601f6d44a09de12    APPLIED     client: Allow joining a cluster with token
+b33f974474b4cf6c29ec8b78f52b089a3420db89    APPLIED     lxd: Add support for setting trust token explicitly
+9cf60f0dbb0b8297819d3ceee2436f41a2fe49b4    APPLIED     doc/rest-api: Refresh swagger YAML
+44235e6becb9bea35366ca36149f0d0caee320be    IRRELEVANT  i18n: Update translation templates
+0dbcd25fe09a69d726cfd3ad5e839c602ee71cb9    APPLIED     tests: Add spawn_lxd_and_join_cluster_with_token func
+e4fd1d125a00540ec29e4508db386bf3d1ae05cf    APPLIED     tests: Explicitly join a node by token during clustering
+eb9739a4f316706b887c66894f20a2dc52ba6704    APPLIED     tests: Add trust by explicitly using a token
+e56591de82b114175b20a605613644534930a04d    FEATURE     client: Fix bad comment
+e8feb66d99c61d5b00ea89149f0df772538fef8f    DIFFERS     shared/api: Remove core.trust_password from examples
+2278e0ed9261327fdce70f48ee4a55f5d8c05314    APPLIED     shared/api: Mark ClusterPassword and Password as deprecated
+684f5561e5a03f300ee2e0ebfc50efb7ba875689    FEATURE     scripts/bash: Remove core.trust_password
+b253332ffa26ff050b3b6395dc169bed7a8fdef8    FEATURE     lxd-migrate: Enforce explicit trust token usage
+d8134c81416c7df55eaf6be9300c61d0d6a8e543    FEATURE     lxc: Enforce explicit trust token usage when adding remotes
+e2890134b3baaf29ff44a75f7700e79022f2e05d    FEATURE     client: Remove support for ClusterPassword when joining a cluster
+e9908c8077f56ce084d906edce388b226e91c8e6    FEATURE     lxd: Remove password support
+f08d9476a868238a6defb99df12de3fa918ce241    FEATURE     lxd/cluster/config: Remove core.trust_password
+c4ebfa6576c766db3d0d6d15aefe9a343d3814c6    FEATURE     lxd/cluster: Remove ClusterPassword from SetupTrust
+5c4455b6bd44e88669b7ea84ca0fc55a9ccb111a    FEATURE     lxd/main_init: Remove trust password support
+8f2b07de9bd9e23f7734b9b96893ebb334b9aa02    FEATURE     lxd/util: Remove PasswordCheck
+beb89b0b8ae1f39e32a01da5f11fda97cb6e6cc3    FEATURE     lxd/cluster/config: Remove passwordSetter
+400679abe87e81717209cda91f1df1895ce91656    FEATURE     metadata: Remove core.trust_password
+8cac4cf9898dff7f4773984063a3659253cb9cbb    APPLIED     test/lint: Reintroduce --whole-files linter flag.
+e44f629c48844816be8c222b188f3104b20d9f95    APPLIED     test/suites/auth: Use server config keys that contain actual passwords
+f73b45e81ee6744c0af35f8ce42fa8fc6cfb1ca8    DIFFERS     doc/rest-api: Refresh swagger YAML
+2b052f98635653a7ddb342019830ac249c306ab1    DIFFERS     i18n: Update translation templates
+35db929d9e988c478efdd9420a224e20ac9459d0    FEATURE     doc: Remove trust password
+6d11e321053f3984634260dd5ea24d402109e1b1    FEATURE     lxd/db: Remove core.trust_password
+7bb14df4cae7e39ecd42be2ca74c188a4ffe14b2    APPLIED     lxd/patches: Add patchPreLoadClusterConfig patch stage
+457367838f902d1333ed42d9d1e7f48b813bcc44    APPLIED     lxd: Run the patchPreLoadClusterConfig patch stage on init
+d6010c80fb54b16c8addacc123fa43a3212922ae    FEATURE     lxd: Add patchRemoveCoreTrustPassword
+62974e736cf9fd8c2b34b27dec5e54bc68867aae    IRRELEVANT  test/godeps/lxd-agent: Update list
+767d0d13a113b2ae33fd73577a8894a97d26c8e4    FEATURE     tests: Remove trust password
+771bc32277a17d4dc62ec2e5243a136d3aeb582f    APPLIED     shared/util: Add basic PathIsWritable
+f2472117838bdf6a36dd8af9436aa18494e473ba    APPLIED     shared/util: Add comments to exported functions
+4658f613e0597125e145b3656f539d2f13013762    APPLIED     lxc/config: Bump zitadel/oidc to v3
+2b99530d4da3d78ddbbbc12f5a3d7cbb3ca7e012    APPLIED     client: Bump zitadel/oidc to v3
+10e8e23920ef9db5063d754c3854e586c0ae88dc    APPLIED     client: Add default 10s timeout to IdP requests.
+011edefbaae5f60cf57ffe3dd8c530996defbd50    APPLIED     lxd/auth/oidc: Bump zitadel/oidc to v3
+a49b366c7df4270d60ed05f84d222792fdc9fc57    DIFFERS     gomod: Runs make update-gomod
+c043f92aa391bf83ba792c054dacb627383f0c2f    APPLIED     test/godeps: Update dependency lists for linter.
+8469efc11f17252453adc38dc2b588303ee31d2a    APPLIED     client/connection: Check for presence of snapped LXD unix socket
+44627110f299230a076a4ca08e31548f554fd590    APPLIED     lxd-migrate: Rename user agent to LXD-MIGRATE
+50c5df289326ba3dd18be1e59610b1971334b744    APPLIED     lxd-migrate: Support using the local server
+c8322345f12856fe6f56e408c568fda11aa108de    APPLIED     github: Bump max binary size for lxc.
+e1004961f29e7ab29011ac55be337bdb3a1c25fb    APPLIED     gomod: Remove now unneeded replace directive
+39a9ee6b741e5451560dad4c48459d0bd0443aa4    APPLIED     github: Update bin size checks to derive min from the max provided
+4127cc5ab0b3b5f183c91df465abbde434190380    APPLIED     lxd/instance/instancetype: Fix limits.memery unit
+eab40f17d5c0a3a468605ceee7d22a6f0161756a    APPLIED     docs: Update metadata
+1ee7f3cd2f86a624acb579233d122a2c6d1167d7    APPLIED     shared/cert: Set Not Before in self-signed cert to now-1minute
+6716602bc5bebcd3c48b798a97d236b1d8bde716    APPLIED     shared/cert: Add comments to exported functions
+d9b3c7c21bc2db516d06c509f850861de777e3f9    APPLIED     lxd/instance/drivers/driver/common: Update devicesUpdate to return slice of devlxd events
+772bfe55d45d52b6cd87baee8dbdc8448c3e8852    APPLIED     lxd/instance/drivers/driver/lxc: Use devlxd events returned from d.devicesUpdate in Update
+2a04bb54dd689080b0534953b7355320bdb0d401    APPLIED     lxd/instance/drivers/driver/qemu: Use devlxd events returned from d.devicesUpdate in Update
+0fb4c8a0bf73b7ea403dd8887ed3916f84c71e0f    APPLIED     lxd/instance/drivers/driver/qemu: Update deviceAttachPath to return mount tag for mounting inside guest
+2059bfcce3c129b0e2e696f58310cbede2adce93    APPLIED     lxd/instance/drivers/driver/common: Capture mount tag returned from deviceStart in devicesUpdate and pass to devlxd event
+b356e62c2692f4ce88a37150368e4a44c78718ac    APPLIED     lxd-agent/events: Detect mount tag in source field of options for disk devices
+0555dbf4fceb13965fd05d1113285eac46e4475d    APPLIED     lxd-agent/events: Linter fix
+37b935909e320ac664b0d83dc0cb637f80824605    APPLIED     lxd/instance/drivers: Extract hashing from `generateQemuDeviceName` to `hashIfLonger`
+e2a4fcf821fa457f31a6b20d74758366c9fa351c    APPLIED     lxd/instance/drivers: Indicate max device ID length with `qemuDeviceIDMaxLength`
+c724db84f6ef2c337a067fa763a9651ab6e803b8    APPLIED     fix(deps): update golang.org/x/exp digest to 7f521ea
+364400fb41511056f3926d627cb0406e6f7632bf    DIFFERS     fix(deps): update module github.com/miekg/dns to v1.1.61
+1977924f73ea9cb80dfd074302827379c0f3aad4    APPLIED     lxd/storage/drivers/ceph: Call genericVFSCreateVolumeFromMigration only once
+bd51fd50f05533661bf3dc1a21f158a4a433f2a2    APPLIED     lxd/storage/backend/lxd: Use validated image fingerprint from DB record in EnsureImage
+80408a8a1386be45db86fc81a4f31f7cf97f31b7    APPLIED     build(deps): bump github.com/spf13/cobra from 1.8.0 to 1.8.1
+c3c1c76d1fe6934ba61336458229d077161c4361    DIFFERS     build(deps): bump github.com/zitadel/oidc/v3 from 3.25.0 to 3.25.1
+41650d2df5d2a11845305bb8db5c6a8017955ac3    APPLIED     lxd/instance/drivers/load: Remove unnecessary check for device name length
+570a7894425642caa91ada917e02c71c6f16b4f2    APPLIED     client/lxd_images: Remove check of an impossible error
+90e77d44ab53e6511a29b3b0b5eaa8b25560b40f    APPLIED     lxd/db/images: Populate source image type when fetching an image
+00afb89437bd8aa714e1f229fc10e135d3abf1fc    APPLIED     client/lxd_images: Handle potential panic when extracting values from operation metadata
+3566ab417d51b7efc5e07c7e154e14f36cf6dddd    DIFFERS     fix(deps): update module github.com/gorilla/websocket to v1.5.3
+b263f8c6d0d2c8bcf133cd44c61091e1ac396e69    DIFFERS     test/godeps: Remove 2 golang.org/x/net deps from the client
+186ee6312b573b077a49d85ada97ce8910fe1c39    DIFFERS     test/godeps: Remove 2 golang.org/x/net deps from lxc-config
+4641b8cdf6d900f031f6734a388142c731dd5e4b    DIFFERS     test/godeps: Remove 2 golang.org/x/net deps from lxd-agent
+f6b776a04903989560496f9b3e8a0ef6585febfd    APPLIED     lxd/storage/drivers/ceph: Allow receiver to read VM filesystem vol via rsync
+686fad7bc30009460880a0ce8862753aed4f797f    APPLIED     lxd/storage/drivers/ceph: Clarify migration comments
+7dd542aa617dff63e9d88ee4dda94f746adf9c41    APPLIED     lxd/storage/drivers/dir: Quote paths in errors
+a0723a7e6046a6b93d714e310f9182495aef9f1d    APPLIED     lxd/storage/drivers/dir: Allow lost+found subdir if source is root of the filesystem
+9d7210adbff2cf2a2c62c1bb3c851f439b296b74    APPLIED     lxd/storage: Set correct volume's volatile.uuid on refresh
+89e0219344c33b1c8e3e6cbe304afa55873d6bcf    APPLIED     lxd/storage/drivers/powerflex: Revert unmap before resize
+31f8327596f5e0f0695c081d1609f99c9b8248f3    APPLIED     lxd/storage/drivers: Use context for tryExists
+867699868565b6666375aebbb85b8eedd4409ce9    APPLIED     lxd/storage/drivers/btrfs: Use 10s timeout context for tryExists
+07c6a9a9f47c8f0bb2b447594ae040578405bedd    APPLIED     lxd/stroage/drivers/btrfs: Fix typo in comment
+eb8d6537dc66c348630d99d392b1485794678f06    APPLIED     lxd/storage/drivers: Add waitGone utility func
+97b18f5e10a465064c05eec70aba9f874d3e9984    APPLIED     lxd/storage/drivers/powerflex: Wait for volume to disappear after unmount
+b63dc590765c6f5d801699a398647adfd37a12f3    APPLIED     lxd/storage/drivers/powerflex: Remove unnecessary NVMe/TCP disconnect
+d232b4770d2e852bc78b1ec7061b4cb3223d45fb    APPLIED     lxd/storage/drivers/powerflex: Lock the entire volume map process
+74f312ef51f2f1da1771515d61c1922914a2ff03    APPLIED     test: Add dir storage pool test for empty mounted filesystem
+070340f2334d7bf9c1b361d21f120b7edcbbe87b    APPLIED     doc: readthedocs now supports Go 1.22
+2dac5353ef4f0770fb2b99aeb792dc425562361d    APPLIED     doc: use Python 3.12 on readthedocs
+75d8f817c4bc00d99a07caecf1bd19a368dd1265    APPLIED     Makefile: bump Go min to 1.22.4 (needed by OpenFGA)
+70885b45003fab75cacc83ef8a2ae819d9dae219    APPLIED     github: bump Go min version to 1.22.4
+e0b49f54c2b25efb1dfbdc5fe7155d10ee4b1eef    DIFFERS     gomod: Runs make update-gomod
+53629484c83bbb519055c76f88b3585d8e4832ba    APPLIED     lxd/apparmor/network_forkdns: forkdns binds port 1053 (no need for CAP_NET_BIND_SERVICE)
+9ff349057bc73a6181f0690d75f0ed42b3394ce6    APPLIED     lxd/apparmor/network_forkdns: forkdns talks to dnsmasq which also listens on TCP/53
+a7833ad45a1e92afe6709961b6d2b870ca2da2bd    APPLIED     test/suites/clustering: improve grep patterns to be safer
+85f2f69d8f1b8147a6c09aaec4fcbc32ede4dfc5    APPLIED     test/suites/clustering: make better use of alternations in grep pattern
+ae726e714166c43e6a135e78a762f4578327e625    APPLIED     Revert "test/lint: Disable licence check."
+ff36842cd0acc3d4fe57230f3cae4bda837485cf    APPLIED     github: pull GOMIN from Makefile
+f2f4b94383b66f4a046b38c38b06fb7d75ac7bb6    APPLIED     github: always check compat with GOMIN
+f32aa1db39c7d5134d5e4240534de80dbc47b239    APPLIED     github: make sure doc requirement for Go version stays in sync
+dc9bcc938baf989c1b0940112ce560bde655942b    APPLIED     doc/requirements: bump min Go version to 1.22.4
+e9d559f0f576e567e547091294b17d5bf6e19429    DIFFERS     doc/projects: Add API instructions
