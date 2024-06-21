@@ -751,3 +751,28 @@ cbd9e9a74c78805aee8e28a1c4b923c47c06e091    APPLIED     test: Minor fix in tpm t
 3353ddb970b8222df399a71bd1290c7582e66fcf    APPLIED     lxd/instance/drivers: Pass shorter swtpm socket path to qemu
 0dd71dd7c7ecce1dd64214266093a313e20e1c85    APPLIED     lxd/instance/drivers: Use shorter socket path in `deviceAttachPath`
 efdb243f2e76b8b136b595900d176a5ff2e44f68    APPLIED     doc/howto/images_remote: add token to the list of accepted params for "remote add"
+e90994e989e4e28a93e0d09ff40d62329d16dd03    APPLIED     lxd/archive: Properly anchor exclude rules
+1e82f7eec517e04e47119ac708c814148ae8378d    APPLIED     lxd/archive: add comment to exported function
+22acea3798f57d24aa7f4a7c70bc116f594151ea    APPLIED     client: Remove clear-text logging of sensitive information
+ebc36e28433c3fc8f8d5cbb2fcef20e04d682d60    APPLIED     lxd/device/tpm: Fix regression in start VMs with TPM devices
+777d80bace98595572d60c73fa952427e992b726    APPLIED     lxd/device/device/utils/disk: Close derived unix listener socket when reverting in DiskVMVirtiofsdStart
+46a9fbe87d0244ec7358d38d461d2a5d4ebebb62    APPLIED     lxd/device/disk: Fix socket leak from DiskVMVirtiofsdStart when VM fails to start in startVM
+970e95a9c5cecb21848f82a243ae9f2be7135ca3    APPLIED     lxd/device/disk: Fix socket leak from DiskVMVirtfsProxyStart when VM fails to start in startVM
+0503021caf519891027e47df4c5c7dd44fb76b27    APPLIED     lxd: Move util.ShortenedFilePath and util.AddFileDescriptor back to qemu driver
+3160035ccd0ea95e73f4658fdaf29006f013733c    APPLIED     lxd/auth: Move `Authorizer` implementations into `drivers` package.
+3c859d3782958854d4196e59c94bde1e503ceabe    APPLIED     lxd/auth/generate: Update entitlement definition generator for new package structure.
+6efbc70b9205b9c55fdd878ac7ade541691db754    APPLIED     lxd: Update auth package imports.
+a7348898126a5bbb302c63af50381fec142cc112    APPLIED     test/godeps: Update auth package import in lxd-agent.
+9cda6ba8f9abfa6439e674211d5dd53fbcd9e312    APPLIED     lxd/auth: Remove 'driver_' prefix from driver file names.
+499912adcce3c4be65ab7cd7946d4414070e1497    APPLIED     github: temporarily ignore microceph enable rgw failing
+faf06c5f3481ac3e29ce740196cdf3de89c10d0d    APPLIED     README: avoid permanent HTTP redirections with direct links
+c2568b9e42fc7e3a7d799202f59468a1a2973a24    APPLIED     doc/debugging: avoid permanent HTTP redirection with direct link
+db24cf1680b27787522c990e3c9185948ac7f431    APPLIED     doc/howto/instances_troubleshoot: avoid permanent HTTP redirection with direct link
+bec764cdf48155ba8a402eea7025b2cb8b62b2ef    APPLIED     doc/index: avoid permanent HTTP redirections with direct links
+dfd319afe2ad373b1c1b2d0aed2bdac7915eb46b    APPLIED     doc/howto/move_instances: avoid permanent HTTP redirection with direct link
+bc0e355bc8f3a9408df051291f734f1f5412505e    APPLIED     doc/howto/network_bridge_firewalld: avoid permanent HTTP redirection with direct link
+fe3c091bfb38d24059cc4527bfa87af1a30cb2ba    APPLIED     doc/authentication: avoid permanent HTTP redirection with direct link
+3cc096d693e9529cc219c3d513cdd39b483f5c83    APPLIED     doc/tutorial/first_steps: avoid HTTP redirection with direct link
+c1fc1d237491302c178c49b87a65e3a793cf6db2    APPLIED     doc/reference/storage_powerflex: avoid HTTP redirections with direct links
+eac6404082f3d63e14fe140298619432887a7714    DIFFERS     github: Fix permissions for static analysis check
+a41f08188dbcc38f0c6484464ba70c398a12ceab    DIFFERS     github: Remove permission change.
