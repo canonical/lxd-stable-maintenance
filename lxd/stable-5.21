@@ -881,3 +881,4 @@ f2f4b94383b66f4a046b38c38b06fb7d75ac7bb6    APPLIED     github: always check com
 f32aa1db39c7d5134d5e4240534de80dbc47b239    APPLIED     github: make sure doc requirement for Go version stays in sync
 dc9bcc938baf989c1b0940112ce560bde655942b    APPLIED     doc/requirements: bump min Go version to 1.22.4
 e9d559f0f576e567e547091294b17d5bf6e19429    DIFFERS     doc/projects: Add API instructions
+e6c71a112a99fbd4581578852dc455700f634ebf    FEATURE     lxc: Always allow specifying a password when adding remotes
