@@ -286,9 +286,7 @@ cb0fa5e2220d51669b52a451783c1f3897a159d7    APPLIED     test/lint: make godeps.s
 7394132d80bb27a1178a4ea14d9485d34da684de    APPLIED     test/lint/godeps: display diff on failure
 8de038c352c308045820efb75d6d40e89b5c1e45    APPLIED     test/godeps/lxd-agent: remove github.com/golang/protobuf/proto
 858858d7b18c9461ffd588ecdbf1c2eed465a781    APPLIED     lxd/devices: prepare for VMs dynamic core pinning support
-9dedf544e0dc3b0dabd3b4de06a10ad94ec19d0d    APPLIED     instance/driver_qemu: implement SetAffinity()
 801e0310d5f17dc00784e7c3d06d9bc89e131f02    APPLIED     instance/driver_qemu: call TaskSchedulerTrigger hook onstart/stop/update
-23bcf47c620375dd3af9b39e22be436d30fa2475    APPLIED     instance/drivers/driver_qemu: wait until hotplugged vCPUs are visible
 c33593f35068d3c8de610e7444c477696ba2a11d    APPLIED     instance/drivers/driver_qemu: move setCoreSched() into setCPUs()
 a7b41a7fe8b165c3b93cf1cc9d72cfd540657a58    APPLIED     start the DNS listener after the networks are started
 15742207c247579031e09e1776494caed4809358    APPLIED     updated the network_zone test to include a restarting the server case
@@ -882,3 +880,9 @@ f32aa1db39c7d5134d5e4240534de80dbc47b239    APPLIED     github: make sure doc re
 dc9bcc938baf989c1b0940112ce560bde655942b    APPLIED     doc/requirements: bump min Go version to 1.22.4
 e9d559f0f576e567e547091294b17d5bf6e19429    DIFFERS     doc/projects: Add API instructions
 e6c71a112a99fbd4581578852dc455700f634ebf    FEATURE     lxc: Always allow specifying a password when adding remotes
+65125ad93c8ab0038964b8348f89029215b79934    APPLIED     lxd/storage/drivers/powerflex: Don't use nvme CLI to retrieve subsystems
+744976d88f94604f3b372d5f84b5ad3f3acb706f    IRRELEVANT  fix(deps): update module github.com/go-chi/chi/v5 to v5.0.14
+706c1630c6c1ffad7b1a8920a5357b32e500bc03    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.71 to 7.0.72
+f6e5592879a7c5580a7d91e489a890b6370d4808    APPLIED     lxd/storage/drivers/zfs: Wait for device to appear when activating a volume
+861923942f162b8ab7e92125a97455ea1d4d2468    APPLIED     lxd/apparmor/instance_lxc: allow devpts for unprivileged containers
+a61016b95807c10fa699ac66b9bf4682e183a436    APPLIED     lxd/storage/drivers/zfs: Check for non /dev/zvol/* paths
