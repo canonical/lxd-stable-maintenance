@@ -886,3 +886,17 @@ e6c71a112a99fbd4581578852dc455700f634ebf    FEATURE     lxc: Always allow specif
 f6e5592879a7c5580a7d91e489a890b6370d4808    APPLIED     lxd/storage/drivers/zfs: Wait for device to appear when activating a volume
 861923942f162b8ab7e92125a97455ea1d4d2468    APPLIED     lxd/apparmor/instance_lxc: allow devpts for unprivileged containers
 a61016b95807c10fa699ac66b9bf4682e183a436    APPLIED     lxd/storage/drivers/zfs: Check for non /dev/zvol/* paths
+440791430487a9b4501c003b6f9af9cefe83915b    DIFFERS     doc: add LTS to Ubuntu versions
+101ec620a7b1d442f39f5171d395f26a514e951b    APPLIED     doc/installing: remove related link to snap package guide
+554c37d0b9f846aa36c5a6e1326c734adf879a8b    APPLIED     doc: move doc-incremental target
+80ec9e419a55b19c696fea7929f43afcac700372    APPLIED     doc/linkchecker: remove exceptions for MAAS documentation
+d911ab0c473f7fba18c4739673522270bbe8d1e3    APPLIED     lxd/apparmor/instance_qemu: relax proc rules a bit to workaround bug in AppArmor
+16c490f956413b9a372bc94ea116005056d126dd    APPLIED     lxd/auth: Standardise error field to err
+ea6108e3f8407c19c04832ac10bc1824e8bab597    APPLIED     lxd/identities: Standardise error field to err
+48ef3ad627d4b98ce58ec248ac7372a220bba81e    APPLIED     lxd: Standardise error field to err
+474609ce70d3aa3dc8d285352be1f9392e9c1763    APPLIED     lxd-agent/events: Retry virtiofs hotplug mount
+79a7adcd49805b37d1a8eac7c5793e7e610dde31    APPLIED     lxd-agent: Enable syslog logging
+31336545baf683077824ff8e10af419ca6844b20    APPLIED     lxd-agent: Match the use of contextual logging for start up mounts
+d34bfbeb05ff4bdd1d441b3c1b1e308699382d3e    APPLIED     lxd-agent: Standardise error field to err
+70c0d45d942dc03abfea710e50646dd39aa4719c    APPLIED     lxd-agent: Ignore linter complaints about deep exit
+28bd6a9a6d9a9552dc9802f21139987de070ae37    APPLIED     lxd-agent: Log start time mount args on error
