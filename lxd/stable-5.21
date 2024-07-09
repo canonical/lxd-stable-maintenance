@@ -900,3 +900,72 @@ ea6108e3f8407c19c04832ac10bc1824e8bab597    APPLIED     lxd/identities: Standard
 d34bfbeb05ff4bdd1d441b3c1b1e308699382d3e    APPLIED     lxd-agent: Standardise error field to err
 70c0d45d942dc03abfea710e50646dd39aa4719c    APPLIED     lxd-agent: Ignore linter complaints about deep exit
 28bd6a9a6d9a9552dc9802f21139987de070ae37    APPLIED     lxd-agent: Log start time mount args on error
+7153bf0f17e8e833ff571327e7578c80a9f03a20    APPLIED     Makefile: the toolchain directive should be better supported now
+c8cd454707ebc8bf8b38f00be6a2991901a9348c    APPLIED     lxd/auth: Add constants for internal authentication methods.
+659340daec96e6798a6bdb114145131405b034da    APPLIED     lxd/auth/drivers: Use authentication method constants.
+d5716aaed55cc8e302003e0910000c3937726de5    APPLIED     lxd: Use authentication method constants.
+d8729636ec6e972448d2dbb0c28ab055108661d3    APPLIED     lxd/util: Split `CheckTrustState` into two functions.
+edeb9d40ff2a5121b1944ff51a9f357965c3bbde    APPLIED     lxd/cluster: Update calls to `CheckTrustState`.
+f3b3d4528116c2850ce61c7005a2da1ed957bdd9    APPLIED     lxd: Update calls to `CheckTrustState`.
+7e49fd4ece7a9f78213cbe7f55efd181f56af735    APPLIED     lxd-agent: Update calls to `CheckTrustState`.
+8e91ee77ade09bfed6e0fa2631563d24be21c658    APPLIED     lxd: Refactor `(*Daemon).Authenticate` method.
+ab2b50ec8298dd48984a44e7ca0a9ca203b2c302    APPLIED     lxd: Update comment on server certificate mTLS checks.
+63bb4b8a3c8058c3e511aa6382db6a8dc5b44684    APPLIED     lxd/util: Update info log to indicate CA restriction applies to clients.
+4bba2cf38635c17cf862f9c0158981965a451d3f    APPLIED     lxd/util: Add comment to exported method (revive: exported).
+a56f34f4b9b1f1c0ff86b7571e1a6fe04ba88bfa    APPLIED     lxd: Disallow certificate creation in CA mode if cert is not signed by CA.
+2f178747b44b834cbbbc7fe6ec942fa698e1872c    APPLIED     lxd/auth/drivers: Delegate to the TLS authorizer when protocol is PKI.
+334ceae375ce3e05fb4f29d729178a8584eb8538    APPLIED     lxd/auth/drivers: Set logger in TLS driver.
+e30b551e71daec600a100902f6a943a0d5f41535    APPLIED     shared: Set `GetClientCertificate` in TLS config.
+37201b20d35f05971ef3d0032a95a883558c6894    APPLIED     shared: Add comments to exported functions (revive: exported).
+2bfca5475bc0022513be1d5435c912a7c53b0052    APPLIED     doc: Update PKI documentation.
+101827d7fec63f9fedacbe623a252d4cd3a79b1f    DIFFERS     fix(deps): update module github.com/go-chi/chi/v5 to v5.1.0
+78e437125a02aff9b070363034b45063fe80cea7    APPLIED     fix(deps): update module github.com/juju/gomaasapi to v2
+f4b29aa8fce9a1b63b7408e380ec7e81faae76aa    APPLIED     lxd/storage/drivers/powerflex: Make getMappedDevPath mode independent
+46491d137f94e1824efb06b734ff0c5efcf12d62    APPLIED     lxd/storage/drivers/powerflex: Let createNVMeHost return a reverter
+5a71581d94c44cf96c91e4216411afb87cd0cbfe    APPLIED     lxd/storage/drivers/powerflex: Let connectNVMeSubsys return a reverter
+0b3731a2c976d751ca3d8c5d306130e41b710562    APPLIED     lxd/storage/drivers/powerflex: Make mapNVMeVolume mode independent
+171195b3dd7a17094af4d1288a757e8dfeb55d93    APPLIED     lxd/storage/drivers/powerflex: Make unmapNVMeVolume mode independent
+149a66ae4e70ea57cb9ca626068f8c0d3552b052    APPLIED     lxd/storage/drivers/powerflex: Add operation mode constants
+90c4b7047344fe048086866b4eb0cdc364b6dec5    DIFFERS     gomod: Add Dell goscaleio library
+54d34d44ad43e0788406340c640f685345845135    APPLIED     lxd/storage/drivers/powerflex: Add SDC mode
+0eec9b27b063caa1faf5788f07fd83477369fb77    APPLIED     lxd/storage/drivers/powerflex: Remove powerflex.host lock
+f05ee3e6ac620e814e663b4cd317aeed173b8c71    APPLIED     lxd/storage/drivers/powerflex: Fix subsystem discovery
+5af963bac24ba3f564d9d2a585bc61f629a30093    APPLIED     metadata: Add PowerFlex SDC mode
+044e88b88c9905ee0cdbca46ce026c0d9e2bb8ee    APPLIED     doc: Add PowerFlex SDC mode
+f8869a4641e86d596a75e92dce5ede2531c6e41b    APPLIED     doc/projects: add UI instructions for projects
+0245196848951cf6b21081923346d3995c715ce0    APPLIED     lxd/instance/drivers/driver/lxc: Re-generate lxc.conf during Exec
+47ac5ec3a487460a9e700881169c98a41f20ffd1    APPLIED     lxd/instance/drivers/driver/lxc: Improve error message for loading go-lxc
+9b5f8e91f15ccbe847a901899a57e5e031e6405f    APPLIED     server/seccomp: Add loongarch64
+7930be147e6206ea50b8ebcacea35efc4dffe781    APPLIED     shared/cgo: Add loongarch64
+912eb1d3f8359b11fc0d1ed8de26b0b07b5bcee2    APPLIED     Add loongarch64 support
+c3d3d8c14272776c8bccb61ce7b489f5e3240df1    APPLIED     doc: Add LoongArch to word list
+33db468385aac727e885d0b52e4f53630f00c8dd    APPLIED     lxc: Add validation for non-empty remote address
+6a57144ec31ea4109f19ba2b489ba28c9d845c68    DIFFERS     i18n: Update translation templates
+1e8fc4e4299ef1a193f7c4d4b39886b123279d15    APPLIED     lxd/device: Allow zfs storage pools in degraded state
+ae2c1f131613def084b0e068c6aa2af8d824fcfe    APPLIED     doc/bgp: Clarify how to configure BGP for OVN (uplink) networks
+58daa3800199a53ee9a58cd165cd73ca5ff0d5ce    APPLIED     lxd/instance/drivers/driver/lxc: Fix containers not always starting up after host reboot
+926fefc19e42b86b6beff08704cb6f195ccc1977    APPLIED     lxd/instance/instance/utils: Fix LoadFromBackup to work without DB
+a6b097ec173191ab6ff34d1c86dbe74089679808    APPLIED     lxd: instance.LoadFromBackup usage
+5d06808685d5619a6eb5bc3b4cf55a361aa6c3df    APPLIED     lxd/auth: Add utils for inspecting the request context.
+c4d84f2d39bbb41db131a7eed69e08538e2adc7a    APPLIED     lxd/auth/drivers: Refactor drivers to use auth utils.
+9992331759dd3152ac508e9514e48ab23ee0bfa8    APPLIED     lxd: Add access handler for project resource listing.
+21e03c0ca7965d4f6bcd6ddf18c90a895758f3bf    APPLIED     lxd: Use allowProjectResourceList access handler.
+425071f4cb5c5ca10e58563d6cb8af2b88e25602    APPLIED     lxd/auth: Remove http.Request parameter from authorizer interface.
+28c88c4c757e47c131a6d42372877bc0ca737da8    APPLIED     lxd/auth/drivers: Update auth drivers to remove request parameter.
+50b7be770db502474552cb82dfabb924d9b5797d    APPLIED     lxd/project: Update authorizer calls.
+c0fd0949e3dab858620d7f5563fec480151d83b7    APPLIED     lxd: Update calls to authorizer.
+32acadaef8e2248a1a76aef6771d80c08db44d7d    APPLIED     test/suites: Validate listing resources in disallowed project returns an error.
+4ea1f60d33f19579ea70f11a758f9d7c377e0cb6    APPLIED     Revert "test/suites/remote: update expected behavior when accessing restricted projects"
+b37458b0457da54223490edadd35d661585f065e    APPLIED     lxd/auth: Add `GetIdentityFromCtx` util.
+7c180754df3472b4cdd67128216bf1adea95c7de    APPLIED     lxd/auth: Handle unrestricted clients when checking caller privilege.
+a2da5a8ecd87f2484542b03c7002b018d5fdc5ff    APPLIED     lxd/auth/drivers: Update TLS driver to use new utils.
+63459655add26e45c8b6f337fc4d37a27afee317    APPLIED     lxd/auth/drivers: Update OpenFGA driver to use new utils.
+cba65fb6bb93be7bdfc4beba33589247185c347d    APPLIED     lxd/auth/drivers: Ignore the identities' project list in OpenFGA driver.
+92468bb60f4f1edf38ff0434414bea4f28afa711    APPLIED     lxd: Update `allowProjectResourceList` to use new auth utils.
+500b905f9c68a69a144bd1f26533363fc8b189d0    APPLIED     lxd/identity: Move `ValidateAuthenticationMethod` to identity package.
+365078f3189881339dce7e6d29f142546a07c0d4    APPLIED     lxd/identity: Validate authentication method when getting cache entries.
+de930a4f9ec505857969424fe7cf8bb0d2b0ec4f    APPLIED     fix(deps): update golang.org/x/exp digest to 46b0784
+95e0c8efc0e624629a210bd315fd338559ac5f42    APPLIED     fix(deps): update module github.com/minio/minio-go/v7 to v7.0.73
+5a492a3f0036c44d22c344505952e06ce517993a    IRRELEVANT  Release LXD 6.1
+f810381348aca37273bc440b0bf89fd98ca72659    DIFFERS     test/suites: Improve test coverage for PKI mode.
+f1e1398d342a771a1599f115789df8805de2fb94    DIFFERS     test/suites: Improve PKI test coverage.
