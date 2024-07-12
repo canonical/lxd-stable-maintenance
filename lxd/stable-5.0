@@ -4678,3 +4678,101 @@ dec11a307cf81affd0fd7b648806e50f7f766308    IRRELEVANT  lxd/apparmor/lxc: Tweak 
 f6e5592879a7c5580a7d91e489a890b6370d4808    APPLIED     lxd/storage/drivers/zfs: Wait for device to appear when activating a volume
 861923942f162b8ab7e92125a97455ea1d4d2468    DIFFERS     lxd/apparmor/instance_lxc: allow devpts for unprivileged containers
 a61016b95807c10fa699ac66b9bf4682e183a436    APPLIED     lxd/storage/drivers/zfs: Check for non /dev/zvol/* paths
+7153bf0f17e8e833ff571327e7578c80a9f03a20    IRRELEVANT  Makefile: the toolchain directive should be better supported now
+440791430487a9b4501c003b6f9af9cefe83915b    IRRELEVANT  doc: add LTS to Ubuntu versions
+101ec620a7b1d442f39f5171d395f26a514e951b    IRRELEVANT  doc/installing: remove related link to snap package guide
+554c37d0b9f846aa36c5a6e1326c734adf879a8b    IRRELEVANT  doc: move doc-incremental target
+80ec9e419a55b19c696fea7929f43afcac700372    IRRELEVANT  doc/linkchecker: remove exceptions for MAAS documentation
+86cad43c2b32fe51fe4d6487b0ceadc0d226e9eb    IRRELEVANT  lxd/instance/device: Correct `qemuDeviceIDMaxLength`
+d911ab0c473f7fba18c4739673522270bbe8d1e3    IRRELEVANT  lxd/apparmor/instance_qemu: relax proc rules a bit to workaround bug in AppArmor
+16c490f956413b9a372bc94ea116005056d126dd    IRRELEVANT  lxd/auth: Standardise error field to err
+ea6108e3f8407c19c04832ac10bc1824e8bab597    IRRELEVANT  lxd/identities: Standardise error field to err
+48ef3ad627d4b98ce58ec248ac7372a220bba81e    IRRELEVANT  lxd: Standardise error field to err
+474609ce70d3aa3dc8d285352be1f9392e9c1763    IRRELEVANT  lxd-agent/events: Retry virtiofs hotplug mount
+79a7adcd49805b37d1a8eac7c5793e7e610dde31    IRRELEVANT  lxd-agent: Enable syslog logging
+31336545baf683077824ff8e10af419ca6844b20    IRRELEVANT  lxd-agent: Match the use of contextual logging for start up mounts
+d34bfbeb05ff4bdd1d441b3c1b1e308699382d3e    IRRELEVANT  lxd-agent: Standardise error field to err
+70c0d45d942dc03abfea710e50646dd39aa4719c    IRRELEVANT  lxd-agent: Ignore linter complaints about deep exit
+041db3fd853fba17a52b9e3cd372062e1e2101cf    IRRELEVANT  lxd/instance/drivers: Switch `qemuHostDriveDeviceID` for `qemuDeviceNameOrID`
+42075e4b3dcd7645ff84e45318f71176d1052bad    IRRELEVANT  lxd/instance/drivers: Use `qemuDeviceNameOrID` for node names and mount tags
+d97f133db8f1433fcc3e4ed12730518e0203e87c    IRRELEVANT  lxd/instance/drivers: Use `qemuDeviceNameOrID` for TPM config section IDs
+b768b90bf1fb069ffec65997cb308b07f795b1d1    IRRELEVANT  lxd/device: Allow `/` in VM TPM device name
+002debe41014035433092ec101e1f3f61c89677b    IRRELEVANT  lxd/device: Allow `/` in container TPM device name
+28bd6a9a6d9a9552dc9802f21139987de070ae37    IRRELEVANT  lxd-agent: Log start time mount args on error
+c8cd454707ebc8bf8b38f00be6a2991901a9348c    IRRELEVANT  lxd/auth: Add constants for internal authentication methods.
+659340daec96e6798a6bdb114145131405b034da    IRRELEVANT  lxd/auth/drivers: Use authentication method constants.
+d5716aaed55cc8e302003e0910000c3937726de5    IRRELEVANT  lxd: Use authentication method constants.
+d8729636ec6e972448d2dbb0c28ab055108661d3    IRRELEVANT  lxd/util: Split `CheckTrustState` into two functions.
+edeb9d40ff2a5121b1944ff51a9f357965c3bbde    IRRELEVANT  lxd/cluster: Update calls to `CheckTrustState`.
+f3b3d4528116c2850ce61c7005a2da1ed957bdd9    IRRELEVANT  lxd: Update calls to `CheckTrustState`.
+8e91ee77ade09bfed6e0fa2631563d24be21c658    IRRELEVANT  lxd: Refactor `(*Daemon).Authenticate` method.
+ab2b50ec8298dd48984a44e7ca0a9ca203b2c302    IRRELEVANT  lxd: Update comment on server certificate mTLS checks.
+4bba2cf38635c17cf862f9c0158981965a451d3f    IRRELEVANT  lxd/util: Add comment to exported method (revive: exported).
+2f178747b44b834cbbbc7fe6ec942fa698e1872c    IRRELEVANT  lxd/auth/drivers: Delegate to the TLS authorizer when protocol is PKI.
+334ceae375ce3e05fb4f29d729178a8584eb8538    IRRELEVANT  lxd/auth/drivers: Set logger in TLS driver.
+f810381348aca37273bc440b0bf89fd98ca72659    IRRELEVANT  test/suites: Improve test coverage for PKI mode.
+2bfca5475bc0022513be1d5435c912a7c53b0052    IRRELEVANT  doc: Update PKI documentation.
+101827d7fec63f9fedacbe623a252d4cd3a79b1f    IRRELEVANT  fix(deps): update module github.com/go-chi/chi/v5 to v5.1.0
+c875490e8fb079034044ed2ae07ca621d632c56d    IRRELEVANT  fix(deps): update module github.com/checkpoint-restore/go-criu/v6 to v7
+78e437125a02aff9b070363034b45063fe80cea7    IRRELEVANT  fix(deps): update module github.com/juju/gomaasapi to v2
+f4b29aa8fce9a1b63b7408e380ec7e81faae76aa    IRRELEVANT  lxd/storage/drivers/powerflex: Make getMappedDevPath mode independent
+46491d137f94e1824efb06b734ff0c5efcf12d62    IRRELEVANT  lxd/storage/drivers/powerflex: Let createNVMeHost return a reverter
+5a71581d94c44cf96c91e4216411afb87cd0cbfe    IRRELEVANT  lxd/storage/drivers/powerflex: Let connectNVMeSubsys return a reverter
+0b3731a2c976d751ca3d8c5d306130e41b710562    IRRELEVANT  lxd/storage/drivers/powerflex: Make mapNVMeVolume mode independent
+171195b3dd7a17094af4d1288a757e8dfeb55d93    IRRELEVANT  lxd/storage/drivers/powerflex: Make unmapNVMeVolume mode independent
+149a66ae4e70ea57cb9ca626068f8c0d3552b052    IRRELEVANT  lxd/storage/drivers/powerflex: Add operation mode constants
+90c4b7047344fe048086866b4eb0cdc364b6dec5    IRRELEVANT  gomod: Add Dell goscaleio library
+54d34d44ad43e0788406340c640f685345845135    IRRELEVANT  lxd/storage/drivers/powerflex: Add SDC mode
+0eec9b27b063caa1faf5788f07fd83477369fb77    IRRELEVANT  lxd/storage/drivers/powerflex: Remove powerflex.host lock
+f05ee3e6ac620e814e663b4cd317aeed173b8c71    IRRELEVANT  lxd/storage/drivers/powerflex: Fix subsystem discovery
+5af963bac24ba3f564d9d2a585bc61f629a30093    IRRELEVANT  metadata: Add PowerFlex SDC mode
+044e88b88c9905ee0cdbca46ce026c0d9e2bb8ee    IRRELEVANT  doc: Add PowerFlex SDC mode
+f8869a4641e86d596a75e92dce5ede2531c6e41b    IRRELEVANT  doc/projects: add UI instructions for projects
+0245196848951cf6b21081923346d3995c715ce0    APPLIED     lxd/instance/drivers/driver/lxc: Re-generate lxc.conf during Exec
+47ac5ec3a487460a9e700881169c98a41f20ffd1    APPLIED     lxd/instance/drivers/driver/lxc: Improve error message for loading go-lxc
+9b5f8e91f15ccbe847a901899a57e5e031e6405f    IRRELEVANT  server/seccomp: Add loongarch64
+7930be147e6206ea50b8ebcacea35efc4dffe781    IRRELEVANT  shared/cgo: Add loongarch64
+912eb1d3f8359b11fc0d1ed8de26b0b07b5bcee2    IRRELEVANT  Add loongarch64 support
+c3d3d8c14272776c8bccb61ce7b489f5e3240df1    IRRELEVANT  doc: Add LoongArch to word list
+33db468385aac727e885d0b52e4f53630f00c8dd    APPLIED     lxc: Add validation for non-empty remote address
+6a57144ec31ea4109f19ba2b489ba28c9d845c68    IRRELEVANT  i18n: Update translation templates
+1e8fc4e4299ef1a193f7c4d4b39886b123279d15    APPLIED     lxd/device: Allow zfs storage pools in degraded state
+ae2c1f131613def084b0e068c6aa2af8d824fcfe    IRRELEVANT  doc/bgp: Clarify how to configure BGP for OVN (uplink) networks
+58daa3800199a53ee9a58cd165cd73ca5ff0d5ce    IRRELEVANT  lxd/instance/drivers/driver/lxc: Fix containers not always starting up after host reboot
+926fefc19e42b86b6beff08704cb6f195ccc1977    IRRELEVANT  lxd/instance/instance/utils: Fix LoadFromBackup to work without DB
+a6b097ec173191ab6ff34d1c86dbe74089679808    IRRELEVANT  lxd: instance.LoadFromBackup usage
+5d06808685d5619a6eb5bc3b4cf55a361aa6c3df    IRRELEVANT  lxd/auth: Add utils for inspecting the request context.
+c4d84f2d39bbb41db131a7eed69e08538e2adc7a    IRRELEVANT  lxd/auth/drivers: Refactor drivers to use auth utils.
+9992331759dd3152ac508e9514e48ab23ee0bfa8    IRRELEVANT  lxd: Add access handler for project resource listing.
+21e03c0ca7965d4f6bcd6ddf18c90a895758f3bf    IRRELEVANT  lxd: Use allowProjectResourceList access handler.
+425071f4cb5c5ca10e58563d6cb8af2b88e25602    IRRELEVANT  lxd/auth: Remove http.Request parameter from authorizer interface.
+28c88c4c757e47c131a6d42372877bc0ca737da8    IRRELEVANT  lxd/auth/drivers: Update auth drivers to remove request parameter.
+50b7be770db502474552cb82dfabb924d9b5797d    IRRELEVANT  lxd/project: Update authorizer calls.
+c0fd0949e3dab858620d7f5563fec480151d83b7    IRRELEVANT  lxd: Update calls to authorizer.
+32acadaef8e2248a1a76aef6771d80c08db44d7d    IRRELEVANT  test/suites: Validate listing resources in disallowed project returns an error.
+f1e1398d342a771a1599f115789df8805de2fb94    IRRELEVANT  test/suites: Improve PKI test coverage.
+4ea1f60d33f19579ea70f11a758f9d7c377e0cb6    IRRELEVANT  Revert "test/suites/remote: update expected behavior when accessing restricted projects"
+b37458b0457da54223490edadd35d661585f065e    IRRELEVANT  lxd/auth: Add `GetIdentityFromCtx` util.
+7c180754df3472b4cdd67128216bf1adea95c7de    IRRELEVANT  lxd/auth: Handle unrestricted clients when checking caller privilege.
+a2da5a8ecd87f2484542b03c7002b018d5fdc5ff    IRRELEVANT  lxd/auth/drivers: Update TLS driver to use new utils.
+63459655add26e45c8b6f337fc4d37a27afee317    IRRELEVANT  lxd/auth/drivers: Update OpenFGA driver to use new utils.
+cba65fb6bb93be7bdfc4beba33589247185c347d    IRRELEVANT  lxd/auth/drivers: Ignore the identities' project list in OpenFGA driver.
+92468bb60f4f1edf38ff0434414bea4f28afa711    IRRELEVANT  lxd: Update `allowProjectResourceList` to use new auth utils.
+500b905f9c68a69a144bd1f26533363fc8b189d0    IRRELEVANT  lxd/identity: Move `ValidateAuthenticationMethod` to identity package.
+365078f3189881339dce7e6d29f142546a07c0d4    IRRELEVANT  lxd/identity: Validate authentication method when getting cache entries.
+de930a4f9ec505857969424fe7cf8bb0d2b0ec4f    IRRELEVANT  fix(deps): update golang.org/x/exp digest to 46b0784
+95e0c8efc0e624629a210bd315fd338559ac5f42    IRRELEVANT  fix(deps): update module github.com/minio/minio-go/v7 to v7.0.73
+5a492a3f0036c44d22c344505952e06ce517993a    IRRELEVANT  Release LXD 6.1
+db9d3e9f98577494034adcf46610ca761aba0820    IRRELEVANT  build(deps): bump github.com/dell/goscaleio from 1.14.1 to 1.15.0
+574881975a8bcd7d13a0a55694e918d6db9da40c    IRRELEVANT  build(deps): bump github.com/osrg/gobgp/v3 from 3.27.0 to 3.28.0
+1fbf062408dffca3b7284e717c82b8eab66050af    IRRELEVANT  Update first_steps.md
+341edbce8b76b8f93ddfa13c1b2aaa224a47bd96    IRRELEVANT  test/main: don't check for xgettext command
+e5821e9ebdf8ee5806954b2b6712862f434055c2    IRRELEVANT  lxd/cluster/config: Update group claim short description.
+a19cf1bd6727f564d7735a7fcd45a25b48affc50    IRRELEVANT  doc,lxd/metadata: Run `make update-metadata`.
+5b44f9a5d9218e60f75ce5abdc6705b11121d1b7    DIFFERS     gomod: Revert github.com/gorilla/websocket to v1.5.1
+a3fb853a3b5cad636a22c02794a14bfb49d3e7c0    IRRELEVANT  test/godeps: Updates client list
+534be161acf5c33e6132a2b3a604dacd95515015    IRRELEVANT  test/godeps: Updates lxc-config list
+d3ca978cac886526dbf077dbe75c01548e3a139e    IRRELEVANT  test/godeps: Updates lxd-agent list
+7e468c7cb5b59e67189d0b7141007303b5f74140    IRRELEVANT  lxd: Extract certificate add token metadata from remote member.
+af70982132866ffb9feb0f543b625abb238eb17a    IRRELEVANT  lxd: Return an error if the client uses a trust password.
+d143bc351230c6dc226251d875f138c9e59a8898    IRRELEVANT  build(deps): bump google.golang.org/grpc from 1.64.0 to 1.64.1
