@@ -969,3 +969,48 @@ de930a4f9ec505857969424fe7cf8bb0d2b0ec4f    APPLIED     fix(deps): update golang
 5a492a3f0036c44d22c344505952e06ce517993a    IRRELEVANT  Release LXD 6.1
 f810381348aca37273bc440b0bf89fd98ca72659    DIFFERS     test/suites: Improve test coverage for PKI mode.
 f1e1398d342a771a1599f115789df8805de2fb94    DIFFERS     test/suites: Improve PKI test coverage.
+db9d3e9f98577494034adcf46610ca761aba0820    DIFFERS     build(deps): bump github.com/dell/goscaleio from 1.14.1 to 1.15.0
+574881975a8bcd7d13a0a55694e918d6db9da40c    DIFFERS     build(deps): bump github.com/osrg/gobgp/v3 from 3.27.0 to 3.28.0
+1fbf062408dffca3b7284e717c82b8eab66050af    APPLIED     Update first_steps.md
+341edbce8b76b8f93ddfa13c1b2aaa224a47bd96    APPLIED     test/main: don't check for xgettext command
+e5821e9ebdf8ee5806954b2b6712862f434055c2    APPLIED     lxd/cluster/config: Update group claim short description.
+a19cf1bd6727f564d7735a7fcd45a25b48affc50    APPLIED     doc,lxd/metadata: Run `make update-metadata`.
+2f7c7cd501d9b1b84daeb4deb95b67ebe3de1193    APPLIED     lxd/instance/exec: Only use keepalives on TCP sockets
+5b44f9a5d9218e60f75ce5abdc6705b11121d1b7    APPLIED     gomod: Revert github.com/gorilla/websocket to v1.5.1
+a3fb853a3b5cad636a22c02794a14bfb49d3e7c0    APPLIED     test/godeps: Updates client list
+534be161acf5c33e6132a2b3a604dacd95515015    APPLIED     test/godeps: Updates lxc-config list
+d3ca978cac886526dbf077dbe75c01548e3a139e    APPLIED     test/godeps: Updates lxd-agent list
+af70982132866ffb9feb0f543b625abb238eb17a    IRRELEVANT  lxd: Return an error if the client uses a trust password.
+d143bc351230c6dc226251d875f138c9e59a8898    APPLIED     build(deps): bump google.golang.org/grpc from 1.64.0 to 1.64.1
+c48ce5aad0752e5cc06f738805fc8aef808dea61    APPLIED     lxd/device/config: Fix return values of Update function
+a295e4fb805ed1aa50a1cc811338f6937834458e    APPLIED     lxd: Rename `ErrInstanceListStop` to `ErrListStop`
+1465885ff736fd5b6f6807390f677ce5154e0a4d    APPLIED     lxd/device: Update confusing error message
+7e468c7cb5b59e67189d0b7141007303b5f74140    DIFFERS     lxd: Extract certificate add token metadata from remote member.
+ca24ceb0121c9a6b6b5afc8fb1a8012239b8db25    APPLIED     test/suites/backup: replace some grep with shell comparisons
+475130c40ce5029b103a8a41fb40366890752a97    APPLIED     test/suites/basic: replace some grep with shell comparisons
+26fc285f17ed84ebf37d1a716b9124b777a705ec    APPLIED     test/suites/config: replace some grep with shell comparisons
+f0b10c1f1eebed8a5b043f2535b0a55e5ca3b868    APPLIED     test/suites/clustering: replace some grep with shell comparisons
+5e2ef1c497c365ef88fe60a1898e971a75c85a9b    APPLIED     test/suites/clustering: remove bogus `|| false` comparisons supposed to succeed
+dd62568bb183aa497aa989f52599109ed7db5b16    APPLIED     test/suites/container_devices_nic_bridged: replace some grep with shell comparisons
+b414fbdb2f94c4706736269269619272eac0ab08    APPLIED     test/suites/devlxd: replace some grep with shell comparisons
+d908ed0770ee372b7db28def74e00922a0d593a4    APPLIED     test/suites/devlxd: improve not authorized check for config key
+de3542a9e96baf48072966ace1ce59d6fdcf3cc8    APPLIED     test/suites/incremental_copy: replace some grep with shell comparisons
+7d4ae578a223dc514641612624ef48d6abe6030d    APPLIED     test/suites/migration: replace some grep with shell comparisons
+a2a74909cf2ff7918fe6543dbdce060a9398f7c4    APPLIED     test/suites/network_zone: replace some grep with shell comparisons
+b11091bab9f0a947a764b48438c007293f64e328    APPLIED     test/suites/snapshots: replace some grep with shell comparisons
+cf8975fc64e5e3a50b730ebdd70b4669499f0e38    APPLIED     test/suites/storage_buckets: replace some grep with shell comparisons
+ab7fbb94c98afcb3bbbda3e13f6898ffbf7df35e    APPLIED     test/suites/storage_local_volume_handling: replace some grep with shell comparisons
+020e131e16c0284d76e629713e041ed669be17e3    APPLIED     test/includes/net: allow using a different CERTNAME with my_curl()
+aebbe2b6e11ad398e3061fc656b4dce7fbc31c57    APPLIED     test/suites/basic: use my_curl helper where applicable
+3d0ae50dd35539acdd1248f4ef50e746e7ff977e    APPLIED     test/suites/basic: explicitly check for 403 HTTP code
+4ece504203db6c755588748a33d0d426fe74d9ab    APPLIED     test/suites/metrics: use my_curl helper where applicable
+5ed52464762c3a3b7f4cd885aa8ba59151e62863    APPLIED     test/suites/tls_restrictions: use my_curl helper where applicable
+a10d861ec0adad977479c2a7ab1c61334748e3a1    APPLIED     test/includes/certificates: rework gen_cert_and_key() helper to accept a single arg
+9315da5dcc2a1e8787177b6ce04f281ca34818f9    APPLIED     test/suites/metrics: use updated gen_cert_and_key() helper
+cbc7e30179914468694ea6079c66bbc1dbe8f198    APPLIED     test/suites/tls_restrictions: use updated gen_cert_and_key() helper
+b551f47dfdd8699772c7b8fd2cfb72fe439ad0c7    APPLIED     lxd/certificates: Improve expiry validation checks in clusterMemberJoinTokenValid
+39f97587a2c30eb59ac78979d7b60e11dfd6132e    APPLIED     lxd/certificates: Improve validation in certificateTokenValid
+629c7e42a75f462fb1ffbff14e4fca2e3d3a3440    APPLIED     test: Check certificate add token expiry support for non-local operation in test_clustering_trust_add
+10c863914e4dc4c8611fd8679579bf46a2ade349    APPLIED     test: Reduce unnecessarily long sleep in test_remote_url_with_token
+25ed0c4c253938784fc4a7e23bd0d7167e1362cf    DIFFERS     test/suites/remote: use my_curl helper where applicable
+cca3d5242cc757937db1a42fc05a7c1cb56b97e9    APPLIED     test/suites/remote: use updated gen_cert_and_key() helper
