@@ -1014,3 +1014,104 @@ b551f47dfdd8699772c7b8fd2cfb72fe439ad0c7    APPLIED     lxd/certificates: Improv
 10c863914e4dc4c8611fd8679579bf46a2ade349    APPLIED     test: Reduce unnecessarily long sleep in test_remote_url_with_token
 25ed0c4c253938784fc4a7e23bd0d7167e1362cf    DIFFERS     test/suites/remote: use my_curl helper where applicable
 cca3d5242cc757937db1a42fc05a7c1cb56b97e9    APPLIED     test/suites/remote: use updated gen_cert_and_key() helper
+cd43ad507584dc4971c9ce3c8b12167a93fb75b7    APPLIED     lxd/instance/drivers/driver/common: Fix crash when device doesn't return run config when being live updated
+bc5cf06a090e1e532de40dbe5307469b7249260c    APPLIED     lxd/network: Pass bridge ips to `Firewall.NetworkSetup`
+a40624d76ea771610f8113271e63aa6591292c4e    APPLIED     lxd/firewall: Drop DNS traffic to dnsmasq originating outside the bridge
+d063c6a45ac6997ba2d415926a1799f4cefda844    APPLIED     test: Ensure dns traffic from external source is dropped
+ff07ea134c5a1c395dfb73e7d6eaf81cfb5c070d    APPLIED     lxd/instance/drivers/driver/qemu: Use consistent host drive share device name when booting and hotplugging
+b331f384e80f71f7b9b9c1ee953a7610b33adce9    APPLIED     lxd/instance/drivers/driver/qemu/templates: Fix qemuHostDriveDeviceID to support long device names
+ad7a94af051f043beb3470e264452160180ac1b1    APPLIED     lxd/instance/drivers/driver/qemu: Align fsdev and chardev names for host drive to that used when hotplugging
+72f9a67983eb9214bb9dae354af3a029f7cd4e58    APPLIED     lxd/device/disk: Escape device name when using it as part of a path for drive share daemons
+d9e8f3d36f8f5295f84c7eadb0f220767dcfe08a    APPLIED     lxd/instance/drivers/driver/qemu: Update path of virtiofsd in deviceAttachPath
+bb2bde77df394c18dce127683083e1de2b1650c2    APPLIED     lxd/instance/drivers/driver/qemu: Updates generateQemuDeviceName to also do escaping
+289d0d703a1c1e977f96366dade3447d4b08a2e4    APPLIED     lxd/instance/drivers/driver/qemu: Update usage of d.generateQemuDeviceName
+1b914b42e00f2dbcb47757009ff137d3977198ca    APPLIED     lxd/instance/drivers/driver/qemu/config/test: Update host drive tests to reflect new consistent fsdev and chardev naming
+86cad43c2b32fe51fe4d6487b0ceadc0d226e9eb    APPLIED     lxd/instance/device: Correct `qemuDeviceIDMaxLength`
+041db3fd853fba17a52b9e3cd372062e1e2101cf    APPLIED     lxd/instance/drivers: Switch `qemuHostDriveDeviceID` for `qemuDeviceNameOrID`
+42075e4b3dcd7645ff84e45318f71176d1052bad    APPLIED     lxd/instance/drivers: Use `qemuDeviceNameOrID` for node names and mount tags
+d97f133db8f1433fcc3e4ed12730518e0203e87c    APPLIED     lxd/instance/drivers: Use `qemuDeviceNameOrID` for TPM config section IDs
+b768b90bf1fb069ffec65997cb308b07f795b1d1    APPLIED     lxd/device: Allow `/` in VM TPM device name
+002debe41014035433092ec101e1f3f61c89677b    APPLIED     lxd/device: Allow `/` in container TPM device name
+47180a352654bee9a994db714801813a59cfbb18    APPLIED     lxd/apparmor/feature_check: add infastructure to check AppArmor features
+b5a4a6540e793120b85a3b280003fce236e6a56f    APPLIED     lxd/apparmor/instance_lxc: allow nosymfollow mount flag
+0a7e02c70c163f5b48e85f35f003f0901f42b5f9    APPLIED     test/includes/lxd: optimize spawn_lxd()
+bf8502555a03540c3b188132194a9d62cdd9087a    APPLIED     test/includes/lxd: simplify kill_lxd()
+ce8f1c552ee3725736e4f97eaa6472d521113bd6    APPLIED     test/includes/storage: optimize storage_backend()
+dca19480f6762fbb16418fe20bb41e05e58c677b    APPLIED     test/includes/storage: add storage_backend_optimized_backup() helper
+b599c1e601806248837d9f7a9d7e6f30d798bd00    APPLIED     test/suites/backup: use storage_backend_optimized_backup() helper
+d4770ff6a2e183d56475a5293b62c44eb97fb22a    APPLIED     test/suites/backup: cleanup exported tarballs
+62022bfb400bf891f1178acd60f84ecfa1b07c9a    APPLIED     test/suites/backup: replace `lxc rm` by `lxc delete`
+aa9f1120fa42215cf30b0bd778a3d6a17b6640f0    APPLIED     test/suites/backup: list content of untar'ed directory
+7e1aee77f1be282bcb1e60651c4d0c6d0a05706c    APPLIED     doc/reference/storage_drivers: use emojies to ease reading
+2a3e593c63267bfcc3c99cbcd97b77c3e020a4f0    APPLIED     doc/reference/storage_drivers: add column for optimized backup support (Btrfs/ZFS only)
+c8e4ee0842218a0db9bfc16068256590e2b00a22    APPLIED     fix(deps): update k8s.io/utils digest to 18e509b
+2a9b5ee8800e847fafc78768c31da79e4e73cb02    DIFFERS     fix(deps): update module github.com/zitadel/oidc/v3 to v3.26.0
+12986ad37924241764da11dcb538901fbbcab980    DIFFERS     build(deps): bump github.com/go-jose/go-jose/v4 from 4.0.2 to 4.0.3
+4b26fc21f402b20286a31c89e145092d59f8de01    APPLIED     shared/simplestreams/products: Try to extract version creation time beside the date
+ef230a4523ddbd9f179bd5cd8e6fe09168bdfb55    APPLIED     lxd: Use constant for devlxd remote address.
+4564d6e76ebaec3d700e047f4678bd8c792dff7b    APPLIED     lxd: Clarify authentication/authorization for viewing/exporting images.
+55b3b157a3f92932334bdd8e613837271f1fa0cc    APPLIED     test/suites: Test public image behaviour for trusted, restricted clients.
+24111f6af1946a8e8936d33b3e8df3d0f5c865cd    APPLIED     lxd: Send image-retrieved lifecycle event when rootfs file is present.
+a8c3de5f5b1a26741c1909a0577f76d0eca36336    APPLIED     lxd/apparmor: fix linter errors
+c823290d5762fce71c60a61dc4c38b09ad096a09    APPLIED     Removes CODEOWNERS file
+7e023445bacb13bb1b53775dc8eac0abec19fb69    APPLIED     lxd: Define devlxd handler functions.
+76632d14be40e623177b6dda916d19ccd37041a0    APPLIED     lxd: Define a type for a devlxd handler function.
+1b454b49e13d14f99a284e7d95885ed2f8262e9b    APPLIED     lxd: Rename the `f` field of the devlxdHandler type.
+80f3210c96e5a96fa809801a7b644fc03efdf591    APPLIED     lxd: Specify field names in devlxd handler definitions.
+44a7e7e67929fa166baef5be47b6b867c36ade1b    APPLIED     lxd: Fix lint errors (revive: unchecked-type-assertion).
+7d7beb8b131a31720cb2b383d8a85f4bf810f5ea    APPLIED     lxd: Remove log formatting and use log context instead.
+11fae9d2efb761a5ec8ddd220d4410e5a90911fc    APPLIED     lxd: Rename pidNotInContainerErr (revive: error-naming).
+f58a9cd1d206f7b730f267f1b10c6bbf71935428    APPLIED     lxd: Add comments to exported types/methods (revive: exported).
+7886356542d5985a5f1b98ebc68aa165c8e3eba5    APPLIED     test: Adds a test for the none device
+dba3303b48b8af6e5f053ae0c2a1f4d0c79b56ba    APPLIED     lxd/api_1.0: Sort drivers in response
+64132cb1b78d08a809e127b902c4026375035b67    APPLIED     test: use bash and separately set options
+76aaf1c51adcac657941db342f0eb7b0f7881765    APPLIED     Add a shellcheck RC to default to bash flavor
+a9761479c413d6a700d24fa0fe791c6904b4c0f8    APPLIED     test: stop silencing `local` is not supported by `sh`
+0f5878ab3f0ebe85285e6472aadf4aec2d7b17e0    APPLIED     test/suites/security: avoid reusing standard UID shell variable
+18fb38a37588af33ddcb444852b04e16bbafbc46    APPLIED     test/suites/clustering: fix variable shadowing/reuse/uninit
+241070cb934b680b5e738158b8d94a2b41fbae56    APPLIED     doc/authentication: clean up PKI instructions
+5faef684582846b14d8b642a2e30a8827af2d3aa    APPLIED     lxd: Standardise on "err" field in contextual logging for error
+b370924ef5b33c84d2d1cd15b77f7a4b6cdc1ce4    APPLIED     lxd/migrate_storage_volume: Add comments to public functions
+89a843ec240629e47baa076fff7e3336b54260b6    APPLIED     internal/linux: Define some IOCTLs
+9eee03eb4f5fe71fdfa8e2b6c944b606c65d4415    APPLIED     Revert "lxd/instance/drivers/driver_qemu: properly calculate VHOST_VSOCK_SET_GUEST_CID"
+7b657c3103c6db0d2c0f7013971984976d7fdad5    APPLIED     incusd/instance/qemu: Don't use hardcoded ioctl
+a78713d481cc90eeb3932e0dbb0726315a9e48f1    APPLIED     Revert "storage/drivers/driver_btrfs_utils: properly calculate BTRFS_IOC_SET_RECEIVED_SUBVOL"
+c98b3a72772df6647ab6e5e2a41dd4e10cd9b258    APPLIED     incusd/storage/btrfs: Don't use hardcoded ioctl
+ac25a35f2703ab2fd7aaa1392bf8a0ed4c8cdd9f    APPLIED     incusd/devices: Simplify ioctl logic
+5f52d17f193c3e7ba157efd273f3cf226e8bce9c    APPLIED     fix typo in index.md
+dd7abeffe5ba32a963585f8deccdd67f20193717    APPLIED     doc/contributing: add section on how-tos
+fa5eb8a11992bf0f11642c748ba43c1bd6c8249c    APPLIED     lxd: Update logic for project config patch
+b44b461d0be0c6c53b1beecad728fad9c233d729    APPLIED     test/suites: Add testing for project PATCH
+f5f863968d786437379dfe3cd44df378623cbb52    APPLIED     Makefile: bump Go min to 1.22.5 (needed by OpenFGA)
+135c48834e824352f16ae8b82cd8db1c0534d07b    APPLIED     doc/requirements: bump min Go version to 1.22.5
+20b397eff53248bdd5e85bf176f35d0a0faef282    APPLIED     lxd/apparmor: allow userns for security.nesting=true case
+07045362cf587d60827b07e2819a8176c0eb20f8    APPLIED     shared/api/instance: Name return arguments
+4f6f362134da7a558f5f136344a253e30d812381    APPLIED     shared/util_linux: Fix linting issues
+30962776662b16f7944837f921d16a72a2ddd9f7    APPLIED     lxd/storage: Move BlockDiskSizeBytes function into separate package
+ef021829ffb16cd0c61f9319962da68996933c55    APPLIED     lxd/storage/backend_mock: Satisfy linter by adding empty comments to all functions
+344b2ec9869ef63b05316d889aa5c8dbdc83e743    APPLIED     lxd/storage/backend_lxd: Use contexctual logger in CreateInstanceFromMigration
+010b8f86588461ddc141b5477224d0b59ea27e50    APPLIED     lxd/migrate*: Add missing comments to exported functions
+37f7c86208607da69a13a3887427ecf18de6e53b    APPLIED     lxd-migrate/main_migrate: Fix typo in volume size question
+5ef170be2e48e868c68f935afcec518580ee912f    APPLIED     lxd-migrate: Remove unused input argument
+00e9b2654974ba3d5e93c6db86e50e3223436f7b    APPLIED     lxd-migrate: Rename util function to transferRootDiskForMigration
+e28665ee8024bc2fae049c7ab96ccdaa6f32969b    APPLIED     lxd-migrate: Extract helper function for sending block volume
+a410a0dc514a09e6212a24d0b75f6ae47df1b198    APPLIED     lxd-migrate/utils: Add helper function to determine whether the image is in raw format
+82d5486161675261a87b150b1bdbf4fae9818527    APPLIED     lxd-migrate/main_migrate: Allow only raw VM image in migration mode
+7e5c303fdc249b3ba6394684f1772e48be7c84a2    APPLIED     doc: Remove misleading tip in instance import doc
+9150fb5502da090cb8e6108b533efc304c64cab7    APPLIED     doc: Fix typo in questions within instance import doc
+b147049a7eab165ddb1ca5070ef72d80ae5bf0f3    APPLIED     lxd/migrate: Fix migrationSinkArgs comment
+50d306d67980a496eefb1052d882bf65abdf1871    APPLIED     lxd/migrate: Remove unused migrations sink args
+0291b46576178cba339716836341102ab73c2795    APPLIED     lxd/*: Make fields of migrationSinkArgs structure private
+48d1ee3ad846822e82f074dc9064a215f880acc2    DIFFERS     gomod: Run update-gomod
+381923cd519a2670efc4431b9cebe5c81088987a    APPLIED     lxd/db/openfga: Add an exception for type-bound public access in `ReadStartingWithUser`
+2ab2664cdd5409a709477a26516c0e196392d857    APPLIED     lxd/db/openfga: Switch raw string for `auth.EntitlementCanView`
+2b2e18226bb4f053248b554bed706bd3e7c08efc    APPLIED     lxd/db/openfga: Lint fix
+e7c8e66828729bb3df9c4c6fa2820bf19a9e6d39    APPLIED     test/godeps: Update lxd-agent dependency list
+c23de8253ff2a1b42e5581ee217bb7bec02de25a    APPLIED     fix(deps): update golang.org/x/exp digest to 8a7402a
+801bbf21c4fdd4b2b0fe2d0a7a6e2891fe228c5b    APPLIED     fix(deps): update module github.com/minio/minio-go/v7 to v7.0.74
+883bf5b557e9662959eda1d812310961d15b915a    APPLIED     Update metrics.md to remove symlink trailing slash
+b5a82ca012d8e206c5711dc2475bfb195facadb1    APPLIED     fix(deps): update module github.com/pkg/xattr to v0.4.10
+a0218c624691b9c7ee0201f9152860169e3c43ff    APPLIED     lxd/device/device/utils/disk: Update DiskVMVirtiofsdStart to use chroot sandbox mode on pre pidfd_open kernels
+e19368e0d852e468e487d9767267ba0fb0e343a7    APPLIED     lxd: DiskVMVirtiofsdStart usage
+b2f8d557d561d418b81fc76dd8766e868f4d01c3    APPLIED     lxd/device/device/utils/disk: Removes unused execPath arg from DiskVMVirtiofsdStart
+b358527f3e5b40558d59a49b6b2d9a8e6d403f0b    APPLIED     lxd: DiskVMVirtiofsdStart usage
