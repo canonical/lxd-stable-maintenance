@@ -1115,3 +1115,6 @@ a0218c624691b9c7ee0201f9152860169e3c43ff    APPLIED     lxd/device/device/utils/
 e19368e0d852e468e487d9767267ba0fb0e343a7    APPLIED     lxd: DiskVMVirtiofsdStart usage
 b2f8d557d561d418b81fc76dd8766e868f4d01c3    APPLIED     lxd/device/device/utils/disk: Removes unused execPath arg from DiskVMVirtiofsdStart
 b358527f3e5b40558d59a49b6b2d9a8e6d403f0b    APPLIED     lxd: DiskVMVirtiofsdStart usage
+56ecce4126d34b037030d8d74df910fb14e99fca    APPLIED     lxd-metadata: Fix lint errors (revive: unchecked-type-assertion, var-naming).
+f588e2262e4d6d26bab72c79efecbd0570a042ba    APPLIED     doc: Fix exception rules for import_machines_to_instances.md
+44ccfe00d92391002ace80f5277927624eceeb16    APPLIED     doc/projects: fix documentation for PATCH request
