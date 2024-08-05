@@ -1118,3 +1118,111 @@ b358527f3e5b40558d59a49b6b2d9a8e6d403f0b    APPLIED     lxd: DiskVMVirtiofsdStar
 56ecce4126d34b037030d8d74df910fb14e99fca    APPLIED     lxd-metadata: Fix lint errors (revive: unchecked-type-assertion, var-naming).
 f588e2262e4d6d26bab72c79efecbd0570a042ba    APPLIED     doc: Fix exception rules for import_machines_to_instances.md
 44ccfe00d92391002ace80f5277927624eceeb16    APPLIED     doc/projects: fix documentation for PATCH request
+7a6bcb9677366145ea0d46a1a1aa4f992b054530    APPLIED     lxd/auth/generate: Add dry run functionality.
+8a57da44c7961612ca890233669d1ad41b779f5b    APPLIED     lxd-metadata: Add entitlements to output json.
+b692666e02847b0a45070b9432fd77de434cd959    APPLIED     lxd/apparmor/instance_qemu: support external qemu snap
+cfa649a3ee2e250eb7558e1a477770cc758e5ab4    APPLIED     lxd/instance/drivers/driver_qemu: support external qemu snap
+2b4c062a04dbd1174fa0e95199331031d130c5a6    APPLIED     lxd-metadata: Add entities/entitlements to generated doc file.
+f5eaa6e9dcdd29c409aa0d746229ea39ee3bdb10    APPLIED     doc: Rename config_options.txt -> metadata.txt.
+8671a68deac80d3c36a96e9f3a00806af92433c1    APPLIED     workflows: Rename config_options.txt -> metadata.txt.
+223fadc94afa0775bb7d5b82b7ff64bf300d1a83    APPLIED     Makefile: Rename config_options.txt -> metadata.txt.
+89f2b2eff1dcf9a777ae277e467875bf6b1f0698    APPLIED     test/lint: Rename config_options.txt -> metadata.txt.
+55c0fae9e6bc89b80329dbecfa845d897343c799    APPLIED     {doc,lxd/metadata}: Run make update-metadata.
+265d8269a8d3e0f7f6b6cb5612384200844ccab4    DIFFERS     api: Add api extension instance_import_conversion
+7a197b5e08673790961833d6d358fef4671a5cb9    APPLIED     shared/api/instance: Add ConversionOptions and SourceDiskSize fields to the InstanceSource struct
+e9f42d3ecacdecb595a6670d62a2419f97f566e8    APPLIED     lxd/migration: Add field conversion options to volume target arguments
+8fa44664982a6f527f78285fc9e7c6f1ad1a31e8    APPLIED     lxd/storage: Create instance from conversion
+2dc8471d629b8aadf43c4d3ef82a1e1cbd76c565    APPLIED     lxd/instance/drivers: Helper function to retrieve instance storage pool from devices
+cf426ab403dc07a3225797f69c61625176fc61b5    APPLIED     lxd/instance/drivers: Add ConversionReceive function
+40a37027e386d366257022b1b3ad8fb33ea6bc75    APPLIED     lxd/convert_instance: Add conversion sink for receiving root disk over conversion API
+d90a1188d97da97d234ac1f2d5d702e388779e38    APPLIED     lxd/instances_post: Extract instance arguments setup from migration
+8b7e6e328f539034556ca3e1003163ec30475eba    APPLIED     lxd/instances_post: Convert image if migration source type is conversion
+ee7139e4808438524c8dc0d45b1d4b9b700ce189    APPLIED     lxd-migrate: Add support for image conversion
+8a33b95fd2fd783e3cd719c6b2e8cebaf298c3a2    APPLIED     doc: Add image formats to the wordlist
+20e82fda3d3331635a66185f3c8c6bbe9f1572ca    APPLIED     doc: Update api definition
+eaf95562f5dbde752b3d0fc36ea619ab5540563d    APPLIED     doc: Add new supported image formats to the docs
+8355390f2e7402e1448153496c43202027c1b2af    APPLIED     lxd/storage/backend_lxd: Lower qemu-img convert priority instead of limiting CPU time
+3a2845063f4ecd4d2c8de8494fde2ca9e023f8ab    APPLIED     doc: Add PowerFlex storage pool creation how-to
+a181e89b5d57b7a2c12027a0325cb457bcfdd86b    APPLIED     doc: Add missing PowerFlex details to explanation
+39cd0562ee0c62ed15723d718978a7aa087cec35    APPLIED     doc: Add permissions reference page.
+ba665d42be64aedaaaeceb4f542955c3f58aa33d    APPLIED     doc/explanation: Link to full permission list in fine-grained auth section.
+2cb69ef1e9cce8ee41a1fa3b8f634b936c4a5ae5    APPLIED     doc/reference: Add permissions page to index.
+5faa192b135e326d5c8f1413c1dbf5d2d0ef467b    APPLIED     doc/storage: change examples to sections instead of tabs
+15861df4d0f7e880c8957ab826c70cf02cb3a7d2    APPLIED     lxd/storage/drivers/driver/dir/utils: Improve errors in setQuota
+d0b0d62959e4c7a75d4a27679167d09b94b692db    APPLIED     lxd/storage/quota/projectquota: Don't fail on missing file in SetProject
+e5d8050a108fc14ab08a28364be1779766b26d7a    APPLIED     lxd-migrate: Fix path provided to the raw disk check
+090e6b79482001d09f273225467fdcebc97b0518    APPLIED     api: instance_create_start
+22b2b5890be8520f73c1a24565f00ced65e3b977    APPLIED     shared/api: Add Start to InstancesPost
+7d42e413a6e4b8ae53b8ff6b41c9ac502a72a477    APPLIED     doc/rest-api: Refresh swagger YAML
+81f758b88a31fafc6de2071df43ae3dcb08a5e2d    APPLIED     lxd/instance: Add support for Start property
+48dc9c4dcfbb953df19dbc4715990e15752dc91a    APPLIED     lxc/launch: Use the Start property
+1428e4a511a9ce190255d6a7fe1ced1102b6eba1    APPLIED     doc/howto: Update documentation on start field
+846fe00456f95307b467b1006bca32f8f9214f2e    DIFFERS     i18n: Update translation templates
+ae60464ae1e7e80927ef58be79931427bb144632    APPLIED     doc: Add remote storage driver cluster pool examples
+86c3d515662068d825d23387623932bca96bc6aa    APPLIED     lxd/apparmor/instance_lxc: allow nosymfollow mount flag in more cases
+9844fbc52d59a47333886ddc64a7b90f9c71cf7b    APPLIED     shared/entity: Return the project name when parsing the project URL.
+a6fe34c6120769ed10a9645809e6a4e04c3202de    APPLIED     shared/entity: Skip project query parameter on project entities.
+99aafa77af557990d7e48ad858a3d5942a6758fa    APPLIED     shared/entity: Update unit tests for URL and Parse URL functions.
+ac623bb4e927166e471c071cbfb817e55474db51    APPLIED     lxd/db/openfga: Remove logic for getting project name from path arguments.
+cf2b828277549d1be418896d0ff8343c84d3d897    APPLIED     lxd/auth/drivers: Remove logic for getting project name from path arguments.
+9782449f97580f2dd161c28882159725c5d9cd59    APPLIED     lxd/auth/drivers: Standardise URLs before performing OpenFGA requests.
+679ab94776fb86c1ec8dc281c9e4383dd3d46d37    APPLIED     lxd: Fix `projectUsedBy` function.
+ccd4a2d8a7c836375b842f42ba5cd2781c6c7520    APPLIED     lxd/project: Simplify `FilterUsedBy` function.
+2443da2465422249cd61e6ad3ada8371a1955d8d    APPLIED     lxd/db/cluster: Add project name to project entity queries.
+c8048c47ac54729db9fd088be54fac2ca2fb959e    APPLIED     shared/entity: Ignore "none" locations when constructing URLs.
+9e6144ef65f917d4c0e09b41075ed908eeebe518    APPLIED     shared: Pass CertOptions to KeyPairandCA
+1217e5c7e7f661d599e4a12bfb4da004a4b8508c    APPLIED     shared: Pass SubjectName to CertOptions
+f7a02330c9d0f0eed8e3540d0f2dffc984f4e529    APPLIED     shared: Update usages
+3d87b361c97151bbe80346d632b2d1573f87d316    APPLIED     lxd: Add method to determine location of storage volume.
+8501db97947478fc3429695a650dddac0c535eff    APPLIED     lxd-migrate: Add conversion option 'virtio'
+566d9a88f38b7306bfb365eccd4897bc7d71cfd2    APPLIED     lxd/instances_post: Allow conversion option virtio
+94779cd9ca7760c30f7ddead9cb31f110afca084    DIFFERS     lxd/storage/util: Add qemu-img info helper function
+047d3f5a789bfe4ca3f123163ffb8a13a5e059f1    APPLIED     lxd/apparmor/instance_lxc: fix all ro+remount rules
+355f38c7046a6bd47349d9fed190bbfc03ef138d    APPLIED     lxd/storage: Use writeback mode for qemu-img convert
+568c8d5cc18c663100a792ec22ed1573945f0c99    APPLIED     lxd/storage/backend_lxd: Improve image unpacking message
+4b614f59d2c5313b9130cb32276e59827110fe89    APPLIED     lxd/storage/backend_lxd: Reuse qemu-img info helper to inspect image
+7464ca8592206102af928630a75a28d66e4ff550    APPLIED     lxd/storage/backend_lxd: Remove image after format conversion
+09fcbf83d90f033f36337b79cee418a3c56c4de7    APPLIED     lxd/storage/backend_lxd: Indicate conversion format in log
+4f710f9bdfd632b8f4e3daf22f33a5ebf6a27db2    APPLIED     lxd/storage/backend_lxd: Inject virtio drivers into imported image
+59e5c9d8b0fcfce45e90c36a9ea3fe73e9f221d8    APPLIED     doc: Document usage of conversion option
+6a1bfed33f19782e3c5d7ed7607a471731757628    APPLIED     doc: Fix exception rules for base URL
+29be374bbec79131c774745e33cf93c89471825e    APPLIED     doc: Add virtio to the wordlist
+de027edf55f57ba3646619adf51812e5de94f411    APPLIED     lxd: Add method to add storage volume details to request context.
+851aa743e5457c9b2fd40753349e485c00f83e9f    APPLIED     lxd: Add an access handler specific to storage volumes.
+cf023801979d1e13846f17163157725e045016ff    APPLIED     lxd: Use the storage volume access handler for calls to specific volume.
+aa795a8fcf10db8111670198447ffc5f6acf4cc9    APPLIED     lxd: Refactor forwardedResponseIfVolumeIsRemote.
+abbf0c9202bc2004de5615fb5d6a0f40ac8e2046    APPLIED     lxd: Refactor storage volume handlers to use values from context.
+bd83b21834271bd9ceb99cd5b71fe196b39368b9    APPLIED     lxd: Use storage volume location in access check when listing.
+b313960ced68919905a99716b60b751057fd0366    APPLIED     lxd: Refactor volume backup handlers to use volume access handler.
+f4c560a91803deb3750387dc31ae568ddf207f82    APPLIED     lxd: Refactor volume snapshot handlers to use volume access handler.
+86ccfef85c2b0d5f7d938d113a56613a244c5b66    APPLIED     lxd: Add function to add storage volume details to context.
+e30f584c3cae8a6d8b255641cc6d62bdf270eb1e    APPLIED     lxd: Add storage bucket specific access handler.
+2759ae82bbcaeaba62d5ef5afdaa2651a386ac2c    APPLIED     lxd: Update storage bucket endpoint actions to use the bucket access handler.
+b5892901cfd2cf92c88036c9117cb63f673314a5    APPLIED     lxd: Refactor storage bucket handlers to use values from context.
+f0ac51f842fc45c84ca76363ce898b0e46fee3f9    APPLIED     lxd/cluster: Remove `ConnectIfVolumeIsRemote`.
+1a6f5c7bb27e9c08d4e940f37d6cf221d2463991    APPLIED     doc: Use consistent naming for remote pool creation examples
+9b3296e5159dc6b77534631bc1cd3c8504e94a93    DIFFERS     fix(deps): update github.com/openfga/api/proto digest to 7e5be7b
+3a80fbfba5239e45f415dd5efec13b81bf830add    DIFFERS     fix(deps): update module github.com/go-jose/go-jose/v4 to v4.0.4
+0148d13ad1e501be9c31daf54b715691a67f02d1    APPLIED     doc: Update rhsrvany link and fix code blocks
+feb4d4d9741c3551bfef2b8981f18da025131e50    APPLIED     lxd/device: added support for extended attributes
+c113e444000ae1ee644acce3866424cf1080ba87    APPLIED     lxd/seccomp: fix bpf syscall number for arm64
+767ece9f5f03f82198ac8a56c04400f7f9ae99cc    APPLIED     lxd/include: update bpf header files
+d54427d8f881d4d3b6651cc41f8eb1f04e4cdb26    APPLIED     lxd/device/disk: Allow hotplug of disks on live-migratable VMs
+01c5f166556d91b748668433140afc12b2463382    APPLIED     lxd/device/disk: Check for VM live-migration
+7d256d3d8932f4430b402a2437274b33709fb37c    APPLIED     lxd/instance: Add ID to ConfigReader
+50ee73b2e6a306acb62672843e4dcb538db6bb54    APPLIED     lxd/device/disk: Allow external disk live-migration
+4972e802249b5e5cd5ae1b65e099a56bcbe79912    APPLIED     lxd/instance/qemu: Support live-migration of instances with extra disks
+7e8d784d60152a743d0bd586f06da430f57cd245    APPLIED     lxd: Remove restriction on live-migration with attached volumes.
+86c91b4ae0e2b47d51602d028da4d7b03a50ee72    APPLIED     lxd/device/device/utils/disk: Use -o flag for xattr mode of virtiofsd
+ac27f9c69c3209bef6eb7d42610b522412b931dc    APPLIED     lxd/instance/drivers: Fix deadlock during failed snapshot creation
+50a74fdf381c97bd56d09151e05d726093145a68    APPLIED     lxd/storage/backend_lxd: Create missing file when receiving raw image
+a249d0cf23d4749093ed7ee30ec1413073786bb9    APPLIED     lxd/storage/backend_lxd: Set volume size directly on volume config
+d268b7ef2f0a7589ba7121d1e85480109f3ea64c    APPLIED     lxd/storage/backend_lxd: Remove unnecessary usage of volume copy
+32c580928ad23c0f00f318585c281d1240f1a9d5    APPLIED     test: Snapshot creation failure
+8fbb18ea17f2bc7dfd53b16ce83f0e1cf7a3a0cd    APPLIED     lxd/instance/drivers: Allow zfs containers with full...
+07b6454dea8f4b97508ed5fced354fea21660a76    APPLIED     lxd/instances/qemu: Don't fail event sending on missing agent
+955c4b2c095851c33314e0eed257bb5bfa964c26    APPLIED     Makefile: Pin go mod deps for websocket and openfga
+d54de94f8183e52ff0c6b44757b27a36ab2406ad    APPLIED     gomod: Update dependencies
+56b8be837067dd9dd75ebbccc3454de0bca0e0c9    APPLIED     lxd/storage/drivers/zfs: Always call tryGetVolumeDiskPathFromDataset
+207b2407ee3049c6762ab8fa4f5103f84a71de9d    APPLIED     lxd/storage/drivers/zfs: Call GetVolumeDiskPath instead of creating new contexts
+f2a1b14404e7b89457a2ba3f53e99df60d3abbdb    APPLIED     test/godeps/lxd-agent: Update depedencies
