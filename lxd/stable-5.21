@@ -1226,3 +1226,78 @@ d54de94f8183e52ff0c6b44757b27a36ab2406ad    APPLIED     gomod: Update dependenci
 56b8be837067dd9dd75ebbccc3454de0bca0e0c9    APPLIED     lxd/storage/drivers/zfs: Always call tryGetVolumeDiskPathFromDataset
 207b2407ee3049c6762ab8fa4f5103f84a71de9d    APPLIED     lxd/storage/drivers/zfs: Call GetVolumeDiskPath instead of creating new contexts
 f2a1b14404e7b89457a2ba3f53e99df60d3abbdb    APPLIED     test/godeps/lxd-agent: Update depedencies
+1def3a0dae23a12a53a5787d4f77e2d434990a96    APPLIED     shared/util: Handle percentage only updates
+1a79e036296f949d487e4fbbe55dd0f2c7838597    APPLIED     lxd/storage: Pass tracker through to qemu-img
+92d0f114be2fc1a718e20faf39135cca60d0908b    APPLIED     lxd/apparmor: Use qemu-img convert output to update progress
+4fc482be5b0ffa686f7bb2ac0fdd2b1b8ea725dc    APPLIED     lxd/storage/util: Show qemu-img convert progress
+6461ca9aecbe9f84db45f13659d6e918616d108a    APPLIED     lxd/storage/backend_lxd: Show image conversion progress
+095baf003353fb90a86c76e0909955fb7ce944c6    APPLIED     lxd/storage/backend_lxd: Improve progress message when receiving volume
+b00cc52412c9704f21ba2148d395231c94b35c16    APPLIED     lxd-migrate: Let server set progress prefix in conversion mode
+0bf75c720d7d2bd75aa9867c82826046715dd42f    APPLIED     doc: Add missing entries
+85505ff2d4b62921228bd0efbeac5fa00d78336f    APPLIED     doc: Re-phrase headers
+7475f26af7ff0e7e5bb4fabdd0182ff9bd27f817    APPLIED     doc: Fix typo
+cf2e9227f027fe21a27cddd172a998c6f832ee60    APPLIED     doc: Add note about VM architectures
+e01622110e4713d78e3de41d91d1d8a90b6ce644    APPLIED     shared/util: Fix linter issues
+3a1b509b106caccca42492c439a79ecacede680c    APPLIED     lxc/profile: Add support for creating from YAML
+915315f677a576402feb7713200ce80ff9350281    DIFFERS     i18n: update translation templates
+fa09b2e08dea70627cba9f82240af39038df25b0    APPLIED     lxd: Wrap error on failure to get used-by URLs.
+9b0770b99f617860aa774f55ff8765bcd2f747fe    APPLIED     doc: Updated VM architecture note to not include "Incus"
+50b3f342ed3e056d04ef0351a3a4646d42972cb6    APPLIED     doc: VM architecture note grammar fix
+a25fe1fdec615e21506291f751fd0d56ec1cf415    APPLIED     lxd/firewall/drivers: Fix netprio error message
+adaacda7d8be3d99e9880a83abf3a25521c575a0    DIFFERS     fix(deps): update module golang.org/x/sync to v0.8.0
+efb06a0901d5c679f69db4b664f8f6381dd304cc    DIFFERS     fix(deps): update module golang.org/x/oauth2 to v0.22.0
+dfd1773340badfd2b9f0a1994d93356a267ef802    APPLIED     test: Add profile creation test with YAML
+b60b2ab3ab45ef9fe56b78a36e8cde5d8818856c    DIFFERS     build(deps): bump golang.org/x/sys from 0.22.0 to 0.23.0
+7ed80c1697120bc1ab7a63c0c3b4a217ede4d01b    APPLIED     lxd/storage/backend_lxd: Prevent import of OVA format for conversion
+403e6c73c2e42f67b9f76500071109d811854f5e    APPLIED     lxd-agent: Add type for devlxd handler func and rename field.
+5befe3dbaf7089568187369287baafa78c702e8b    APPLIED     lxd-migrate: Prevent tarball as instance source
+fd9b8be87d4738420f729b22694237e659fc018c    APPLIED     lxd-agent: Define devlxd handlers by name.
+687125d69dbf4914b58c8504e6ec6e7b7df095b2    APPLIED     lxd-agent: Add an image export handler to lxd-agent.
+ed41bb1f88b95dcc99b1b1362db97dbcc5e36593    APPLIED     lxd/instance/instancetype: Allow `security.devlxd.images` config key for VMs.
+6e8512f8f53a81f7617c394fa5846e39e678c521    APPLIED     {doc,lxd/metadata}: Runs make update-metadata.
+de86a7c61ca3d8f04a2a3a50faf80b32a8fa5c9d    APPLIED     lxd-migrate: Properly handle projects
+605c36f661dddf9162f842a9da6e224351169fa5    APPLIED     doc/tutorial: add a UI tutorial
+72e11979844e2d8662cb35107334ee5b84c3fcae    DIFFERS     {doc,shared/version}: Adds `devlxd_images_vm` API extension.
+d038b6cc593d59793443d9b40370caf32f10a607    IRRELEVANT  github: Replacing @ru-fu for doc triage
+0f62c9833ddbfcb107b8eb98524e41636c6605dc    APPLIED     doc: Corrected capitalization of "LoongArch"
+9481e1752b8551d884c6d9c378702df485aa59b0    APPLIED     lxd/instance/qemu: Fix typo
+01c81feed7da2e0a48a7baf2830c3edf371b46f4    APPLIED     github: Disable renovate
+49ddc504f43175021ebe0776c9b110fa90451445    APPLIED     doc: unpin Swagger version
+ba113f8d56adf48e222e21d5ab903f3c31bc9216    APPLIED     lxd/firewall: Fix iptablesClear on nft shim
+822ea777ce17073c3bf300777015b084ea8b99e6    APPLIED     lxd/migration: Show source errors first
+e53ede41c465261f2723e614c567153b68e6bced    IRRELEVANT  .github: Add Jira integration yaml
+69bd88119f5dc990452c79699915b3dd86dad242    APPLIED     lxd/storage/backend/lxd: Pass full snapshot name when validating import in CreateInstanceFromBackup
+a35079f481c50adf7dfd571d2c815668f5f747a1    APPLIED     lxd/instance/instance/utils: Don't allow snapshots named ".." in ValidName
+8c7d87015ab7fd796e752d325928417af1dea81e    APPLIED     test: Update instance backup tests to check for invalid and valid snapshot names
+f5e6b6e01a3bbf0dbe9ad18c72ddf9c35b3e8d62    APPLIED     doc: add information about creating a Windows VM
+fcec577631004dc9f8cabf4d5db9d1e7733c653e    APPLIED     doc/tutorial: improve the UI tutorial
+a56285d675d735030a6108e6a286ff8858a16aa7    APPLIED     lxd/instance/file: Add type and size to HEAD
+1eb95e1ccf51af41f5646ffa9d1b75a6b23e4f82    APPLIED     lxd/instance/file: Add pattern matching for stat.Sys().(*sftp.FileStat) type assertion
+2c18dcd3879c2d17ac02c805e056cda4b255200e    APPLIED     lxd/cluster: Don't fail when notifying a server...
+0d9643268f05545d23a839e82c94fae6c56930cb    APPLIED     lxd/cluster: Test Notify with shutdown response
+b6b796200b1bd42085451dfcf1fdc1fe4f850872    APPLIED     lxd: Refresh the state on cluster put/join
+b5ccfa36cb67111dc47fa7342bbe202ef037af9b    APPLIED     doc: change title to "LXD" instead of "Canonical LXD"
+6a670422cf7946658f0079ad8f7c06062aeb8e6d    APPLIED     doc/Makefile: add target for building on readthedocs
+a081dbe0d67ea6df881ade13f534be609e0aa620    APPLIED     doc: remove objects.inv.txt generation from RTD build
+e7021d0d88eccaad7eb496df453ff42243579a62    APPLIED     doc: update to the latest version of the starter pack
+0b0815b34c069bd4c95f4fc9ae84e1be5400e8f0    APPLIED     doc/pdf: add files and updates needed for PDF generation
+10309cbe46155e1cae1260489bc23e72f61c2fbb    DIFFERS     build(deps): bump golang.org/x/text from 0.16.0 to 0.17.0
+8be9c51eaa22464f1e458517231f109f1f4ee39c    APPLIED     doc: ignore anchor for link checking
+5788f4eda9f67e6ff3dfe3209ccd727719409c04    DIFFERS     build(deps): bump golang.org/x/crypto from 0.25.0 to 0.26.0
+892afafd06583b4c4fa5433bad7187b350632715    DIFFERS     build(deps): bump golang.org/x/term from 0.22.0 to 0.23.0
+1b3357ceb80bc7c3be859b41c13f0bc8cec58e82    DIFFERS     build(deps): bump golang.org/x/sys from 0.23.0 to 0.24.0
+524000087acee9a9f508ad70f2ff85b13af3b717    APPLIED     doc/pdf: make PDF build work on RTD
+8d74356060745346b09e279deddea5000892dd78    DIFFERS     gomod: Update OpenFGA dependency.
+379e2dc719b75eb0a81d84550fcbe8d2d1b7ee43    APPLIED     lxd/db/openfga: Update OpenFGADatastore implementation to match interface.
+9df3543faa0248fddf15df6f5e909c6e254fd4e3    APPLIED     lxd/networks: Don't fill network configs when joining
+57e9f76d56e185930d00a5c852a09fb80924e24a    APPLIED     lxd/networks: Update comment
+9e3e36e6464e1f4b1fbc6e762c85ded603e79bc3    APPLIED     shared: Fix comment typo
+b3101285c8b4876e94f0f0fdce79e52bdfd8ca97    APPLIED     doc/images: specify the order of split images
+69060c506622efe78e721734fc16943f39a7e3f7    APPLIED     lxd/firewall/drivers: Make sure to always use locking
+726f91053f0ed62223153354651e71ae092d9224    APPLIED     lxd/firewall/drivers: Fix `generateFilterIptablesRules` empty return
+41a24997e49e2b551088cb73d072f29384ac1e6e    APPLIED     github: Run `go test` verbosely
+b2a6a528167d923185a9cd15afa2f1ff5ee67a26    APPLIED     lxd/cluster: Ensure the cluster member config is always sorted
+fcdc78dda31b210f246e075aaf4bf507b07b68f5    APPLIED     lxd/instance: if storage location is remote, make cluster self healing available, and vm can migrate when src member is offline also
+2a5663c36da76224501cd5ce2b43fcc3d01894ad    DIFFERS     build(deps): bump github.com/zitadel/oidc/v3 from 3.26.0 to 3.27.0
+32a10fb09f951e4c86d19dd04ef5d7f963831862    APPLIED     shared/entity: Refactor entity types to use an interface.
+e148f89cc0cd160b99e90aabfeb8db2afe7d4fbe    APPLIED     lxd/db/cluster: Refactor database entity types to use an interface.
