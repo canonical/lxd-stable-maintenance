@@ -1301,3 +1301,17 @@ fcdc78dda31b210f246e075aaf4bf507b07b68f5    APPLIED     lxd/instance: if storage
 2a5663c36da76224501cd5ce2b43fcc3d01894ad    DIFFERS     build(deps): bump github.com/zitadel/oidc/v3 from 3.26.0 to 3.27.0
 32a10fb09f951e4c86d19dd04ef5d7f963831862    APPLIED     shared/entity: Refactor entity types to use an interface.
 e148f89cc0cd160b99e90aabfeb8db2afe7d4fbe    APPLIED     lxd/db/cluster: Refactor database entity types to use an interface.
+98b26ebca3b42f4c4dc116d140e70ea1eca5431c    APPLIED     lxd/instance: Support `security.protection.start` config option
+4f1499db5f80fee08c4e0fe39141bb3b1ad7dce3    APPLIED     scripts/bash/lxd-client: Add `security.protection.start` config option
+539bda4669773a76ec922351eb75578d7bf2a0b8    DIFFERS     api: Add `instance_protection_start` extension
+40940a10dcb73760747f115d62c186c56e7bab61    APPLIED     test: Add test for `security.protection.start`
+f7558411d553cda1c0d6cce637174cc47748d99f    APPLIED     metadata: Add `security.protection.start`
+4a0e3ceaf3b769cc5834215f57cc62c241b3de64    APPLIED     doc/howto: Add instructions on preventing accidental start of instances
+7be9f29783a511050917a29e2be04a9af5257a59    APPLIED     lxd/instance:: Update the error messages for `security.protection.delete`
+a99a5b5e896c0ec64c81a216ac0009613a6d7786    APPLIED     lxd/instance:: Update the comments for `security.protection.delete`
+9424e8b9d16a5f4f0e68dfbf3ed1cc6b6112a09e    DIFFERS     api: disk_io_bus_virtio_blk
+8897eeb1d5b5486cd8840879f04a2c716260c4f8    APPLIED     lxd/device/disk: Add virtio-blk
+e790a3501fc4a8cedf8a50cb8b8e31b887fd1c8d    APPLIED     lxd/device/disk: Add virtio-blk as possible value
+ed6d5a020e862b233e72610e087cc878c123c88b    APPLIED     lxd/instance/qemu: Add virtio-blk support
+0300811e5d2dddb1d7f25c765913b2868e67e76a    APPLIED     lxd/instance/qemu: Replece util.ValueInSlice() with shared.ValueInSlice()
+faf7de2d656b5cf766a6f0a24b177000aac04da0    APPLIED     doc/metadata: Add virtio-blk to metadata
