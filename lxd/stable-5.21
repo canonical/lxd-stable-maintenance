@@ -1315,3 +1315,123 @@ e790a3501fc4a8cedf8a50cb8b8e31b887fd1c8d    APPLIED     lxd/device/disk: Add vir
 ed6d5a020e862b233e72610e087cc878c123c88b    APPLIED     lxd/instance/qemu: Add virtio-blk support
 0300811e5d2dddb1d7f25c765913b2868e67e76a    APPLIED     lxd/instance/qemu: Replece util.ValueInSlice() with shared.ValueInSlice()
 faf7de2d656b5cf766a6f0a24b177000aac04da0    APPLIED     doc/metadata: Add virtio-blk to metadata
+95efea8c5686f25e302102d64be8a57afde1a8de    APPLIED     lxd/device/pci: Detect USB bus
+3c590b626e8919e6a1bda7bbe6333b89d1478ba1    APPLIED     lxd/device/nic: Support USB parents for physical NICs in VMs
+710a06cb7a489d5e4b7d230089f5df165c611ed8    APPLIED     lxd/instance: Add new volatile keys
+f76edd66501af29fbf9c9687687e73149c7a5b64    APPLIED     lxd/instance/qemu: Handle USB NIC hotremove
+3dd1227ac1b815a7be376b33292f798c2c3d74d5    APPLIED     lxd/instance: lxdmeta for volatile usb NIC keys
+fff8051697e4ff3eb6ed43b4a2d1bc489511aa9f    APPLIED     lxd/instance/drivers: Improve device ID generation
+6e9b7d957d25615255f0e4e76954ca9c64a308e2    APPLIED     lxd/instance/drivers: Update unit tests to fit character escaping
+8aa8361746da8912260d962f277bf8d4cefcf39a    DIFFERS     lxd/certificates: Disallow forward slashes and hyphen prefixes
+9bcc53b79ead9a07ac5fecf8354fe636b188aa8d    APPLIED     lxc/storage_bucket: Avoid govet error `printf: non-constant format string in call to fmt.Errorf (govet)`
+6fe73003b0c457192b53d82cd3ec7056539f5b46    IRRELEVANT  i18n: update translation templates
+feedc99818022c61eb0807e71d51b7b77d95011f    APPLIED     doc/tutorial: integrate feedback for UI tutorial
+758d0d9179399a740d4503d0e5ea4abff41cc176    APPLIED     doc/instances: add anchor to allow linking to section
+2198478f871de64fb5c228f2e172cba2a2a77656    APPLIED     lxd/patches: Log the stage of patches being applied
+ee44cf2f1912f645c6774b3906a2f90f1254522a    APPLIED     lxd/patches: Fix patchesApply so that the specified stage takes effect
+b4c0c60317c8942a4b931cb98ee59856c28694f9    APPLIED     lxd/patches: Fix patchVMRenameUUIDKey so that it uses the correct function to update snapshot config
+2266478e602ddcd02ce1adc5f27af0f08ebc1e8a    APPLIED     shared: Allow adding multiple names to certificate SAN
+4d193e71300ef4cc4374cbb787322dafaefb4324    APPLIED     lxd/patches: Updates selectedPatchClusterMember to use state.State
+6e8867d8e1e403ef7023c4391c2f817142dcf387    APPLIED     lxd/patches: No-op patchStorageZfsUnsetInvalidBlockSettings
+97dda02a491f54570446d89e04dd98f865af9e94    APPLIED     lxd/patches: Updates ZFS patches to use s.ServerClustered correctly
+fd69d7772f1750f9b72581432973e65576afe907    APPLIED     lxd/patches: Fix patchStorageRenameCustomISOBlockVolumesV2 to apply to remote pools
+d5134189d110146d45b83a613ada5893ee975ec3    APPLIED     lxd: Fix network forward deletion entitlement.
+58b49c86f86608480f7b46b13db6c5d9ad1a569e    APPLIED     lxd/cluster: Enforce cluster join token name cannot be 'none'
+c0a03da3ab886156ff86abae602ebfca89bb86b3    APPLIED     lxd/cluster: Enforce cluster member name cannot be 'none'
+876e6819a96c99d60d9056ce30c436964d3b6c05    IRRELEVANT  gomod: Update dependencies
+542946010b625d28bdd51bb32b5629d9f91afcf8    APPLIED     lxd/device/nic/ovn: Remove legacy port name cleanup logic in Stop
+2a85cbb2e7921b18f2b4fb64b9a27a05ad33854a    APPLIED     lxd/device/nic/ovn: Don't call InstanceDevicePortStop anymore in Stop
+ba1ba1cb7b84e3c28af95c5b3f91a8a110fe3835    APPLIED     lxd/network/driver/ovn: Move logic from InstanceDevicePortStop to InstanceDevicePortRemove
+bc193180ce009aa15f65446d61d921d4424e45a7    APPLIED     lxd/device/nic/ovn: Remove InstanceDevicePortStop
+10f6a08b3222008143324cf96d1f374998df2153    APPLIED     lxd/network/driver/ovn: Remove InstanceDevicePortStop
+0242777e0d99dd2dcf6c5fe75687b7b77ad60cb1    APPLIED     lxd/device/nic/ovn: Removes last_state.ip_addresses logic
+3b0b37678ac3bf4fc83f2463cc315ba87901023e    APPLIED     lxd/instance/instancetype: Removes last_state.ip_addresses definition
+f04e204e90c4c97056a76bde753b5c0a3f593985    APPLIED     lxd/network/driver/ovn: Removes last_state.ip_addresses logic
+6cb35bbc2823fed16d36ec16e5a816e3acd298e9    APPLIED     doc: Update metadata
+65e7c20e7abc81c581d3df6055aaaffdc16b37a2    APPLIED     lxd/network/driver/ovn: Don't return unused port IPs from InstanceDevicePortStart
+9525b9bbfc78fd55b7e9d6edb3a945784a446be5    APPLIED     lxd/device/nic/ovn: Update InstanceDevicePortStart signature
+3150da86e0f1674a37c07e16c21644ad38689735    APPLIED     lxd/device/nic/ovn: Call InstanceDevicePortStart when adding port
+3076c369bff2d54b349c4b07bd8c01141350bc39    DIFFERS     lxd/patches: Adds instance_remove_volatile_last_state_ip_addresses
+c1604998d5769fd9eb870f318e68ec6737f6a19a    APPLIED     lxd/network/driver/ovn: Update comment
+5c1fcefc6baf3ea5067a4480f82b43dc73716b82    APPLIED     shared/cmd: Allow a cmd asker to be created with a logger
+da0d858d1749339f1eddc4e6348a368aac3e228c    APPLIED     lxc/project: Fix govet error (`non-constant format string in call to fmt.Errorf`)
+13a5bea29686c26f55f44683c5bc68e094371a80    IRRELEVANT  i18n: update translation templates
+128f9de96d5db0fd19a7078ef9e7c3421d706e17    APPLIED     lxc: fix `printf: non-constant format string in call to fmt.Fprintf (govet)` lint error
+fd011a2d1acc0d3ce41e46a3c8e21331678419d1    APPLIED     lxd: Handle effective projects for profiles.
+a6b53d16765aa171f6cc1961a5e32e8f227f597f    APPLIED     lxd: Handle effective projects for networks.
+b621203ea2afd15f2f10900449db8f84e1ded28c    APPLIED     lxd: Handle effective projects for network zones.
+6a099ca5b9cf47b7669ee81948c1ffc6cffd5db8    APPLIED     lxd/project: Add project helper for getting image effective project.
+ed4e3ad1a8a050cc3168ea85b42245f86ce298ec    APPLIED     lxd: Handle effective projects for images.
+bcb7d4950e4e21a08a1bbe38245992967a1991cb    APPLIED     lxd/project: Fix lint errors (revive: confusing-results).
+ebaf86ab39c8827e54f888aca08dfce149f00e3a    APPLIED     lxd/auth: Add comments to Authorizer interface.
+27c71718a9b237c80d2b8bb9b7e088c088a4e7fd    APPLIED     lxd: Always use request project name in authorizer checks.
+30ee62afd3c312da3f0e0bc1ed9bb7f4c7e6c781    APPLIED     lxd/auth/drivers: Remove effective project check from TLS authorizer.
+3ce92c0c6f8051c9d6bccf9f9b4c8965f800f59d    APPLIED     lxd/auth/drivers: Handle effective projects in the OpenFGA driver.
+0850ee901439604ce068aaaede98c13ca0b7da17    APPLIED     lxd/auth/drivers: Update comments on Authorizer method implementations.
+a181704cd4a32272d3955a247fd0fd39b2f393e2    APPLIED     test/includes: Add helper for setting up object storage pools.
+3eecce38f3959b8bf8e54374397bbdbf40cd3a1f    APPLIED     test/suites: Use storage pool helper in bucket tests.
+2f9af9f28e45809d4dd59c969668e3f731150b32    APPLIED     test/suites: Improve coverage of TLS restrictions tests.
+6ebeaa08b23213c7e9b8d9a78ea2140856a485b6    APPLIED     test/suites: Test project feature interaction with fine-grained auth.
+651e0e60d7c6b7d42548716f69d9865fa3ee2787    APPLIED     doc/explanation: Add note about authorization and project isolation.
+4d439051a44e2c192934d41870a33a4d04dff886    APPLIED     lxd/auth/drivers: Fix linter errors (govet: printf).
+ecde8f1e7e3f7f8744528653bc06ca5105c25e83    APPLIED     lxd: Fix linter errors (govet: printf).
+081bcbc6b88074326c5e70ca6b1cc9595c7535ed    APPLIED     lxd: Fix linter error (staticcheck: SA1032).
+86746662082ddcbae689ac8ab22c3066455551f6    APPLIED     lxd: Add comment explaining behaviour of events websocket with effective projects.
+6e8609bb373aa6dfd64588b9edd4ca3ba630bc27    APPLIED     lxd: Fix invalid FileResponse on empty console log
+528be48946667c923dab2998aa66f3f3b73fe98a    APPLIED     lxc/console: Update docstring and output for `--show-log`
+ef1e06b321f2d3d3ccf552b322747dee62c50950    APPLIED     lxc/console: Fix linter errors
+4a2790998df9af3a2a13a50e911e3fa84de2190a    IRRELEVANT  po: make i18n
+fc5ef4fae6c141971b78a6f2852a3176ecce0318    APPLIED     lxd/network: Implement State function for physical network driver
+a581ba6e64000da2ca38949eaa504109817d971f    APPLIED     test/suites: Add testing for physical network state get
+c96d1bc32f7f9e068696c06a91161424e391c492    APPLIED     tests: Add invalid certificate name tests
+5c916ae2df42fdd04a81c3e9617ffbfb924eeff7    APPLIED     lxd/recover: Add snapshot expiry when recovering instance snapshots
+c99bcecc1b27c7d5baa89207d2a8c3b5d6ea05a0    APPLIED     build(deps): bump github.com/minio/minio-go/v7 from 7.0.75 to 7.0.76
+30ae6d81eda00aed09b52de0a55ba3250b87511b    APPLIED     build(deps): bump github.com/zitadel/oidc/v3 from 3.27.0 to 3.28.2
+8c669437c9fa297bdeb5cef4954db8ba2c8ad7a5    APPLIED     lxd: Disable networks during evacuation
+cb7a1147b25b2da8b4c4128ee80d83bfe0374279    APPLIED     lxd/storage/lvm: Properly handle activation during resize
+bd22bc0f510653a86bd694738569d27c6a407ae3    APPLIED     lxd/storage/lvm: Fix resize logic to conserve LV state
+b9b21d20c71060f21c6ed31337781bd8e5f83a63    APPLIED     build(deps): bump github.com/vishvananda/netlink
+7735522ce21d81bd81022b1c61e0e89ce3396f14    APPLIED     shared/api: Handle invalid HTTP status codes.
+ffc61e93b56ce73e6e41ab230d3fc3f13978eecd    APPLIED     shared/api: Add new functions for instantiating a StatusError.
+b98eea9d4864502ea4b0f00cd212e3740c3a246f    APPLIED     lxd/auth/drivers: Use `api.NewGenericStatusError`.
+e9047d12489e7b47848bfbe3a058068d4c39d670    APPLIED     lxd: Wrap status errors in devlxd.
+7c0633792ac7413e1096d5b8b67fd62bb68d3eea    APPLIED     lxd: Wrap SFTP upgrade error.
+e59dc3723d75283a87967be4e9c5abeb1ff6ab01    APPLIED     lxd: Wrap project permission errors.
+44e233560e93a774303a225db7094cdd3929d216    APPLIED     lxd/instance/drivers/qmp: Wrap block device removal error.
+614b310d7a698b2b246ccbd46ea4cb57e64f73ba    APPLIED     lxc: Move translations out of format string.
+4e92ded1e92dbad4d433282c68aef58d6c16d990    APPLIED     lxc: Fix linter errors (govet: printf).
+ba484a86056b3be6fb58b4653f993b8783a8d158    IRRELEVANT  i18n: Update translations.
+da01d419a516c3725fe8035ec9674e9712311d7d    APPLIED     lxd: Remove unused state argument from instancesShutdown
+edd30fbd0990f610436f2b45fc6bd00fd48fe1a7    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Don't use d.state.ShutdownCtx in GetVolumeDiskPath
+4226d0af54e4dad0d081bc47df5cc49064d8bbda    APPLIED     doc/reference: Add warning about volatile keys.
+77444fc7a0cc5c70d6ade34578890b277050877c    APPLIED     doc/guest-os-compatibility: add compatibility matrix with LXD 5.21
+5f2f0ab29a25dbdd6c967505456e149aa6c2b6c6    APPLIED     doc/reference: link to guest OS compatibility
+618572b71d07e291957025e660682e63f35d723e    APPLIED     doc: sort custom word list
+f6337c08b36bcf3183a520074e2b35d9ce79221c    APPLIED     doc: add BLK, CSM, EOL, RDP and SELinux to custom word list
+ca5ce683eb4cf1deedeb1ee14586cd9f0f3780bd    APPLIED     lxd/device/device_utils_disk: remove unused IsBlockdev()
+9d49b927b54bf220817934f20dadb2a14ca4b3a5    APPLIED     tests: Add snapshot expiry date test to test_container_recover() in backup.sh
+00506bb329a676b9bf319f48b022ac4b4df82447    APPLIED     lxc/network_load_balancer: add Example to create
+e52f3cba94bbb662c4a15a9c2167ed8412f90a55    APPLIED     lxc/network_load_balancer: fix go-vet linter
+b120ef6bb771259e3ff88842f11eca3f34a821af    IRRELEVANT  i18n: Update translation templates
+582127ecfeb23ea9c611790a69786f8c1df2c1fd    APPLIED     lxd/device/gpu_physical: more explicit output values for `deviceNumStringToUint32`
+37b4cd360cefe49644afde039356468eba8e8a28    APPLIED     lxd/instance/drivers: Make `removeUnixDevices` a driver_common function
+5099236f0248b15af557a937b887c0a8b84fe0c4    APPLIED     api/shared/instance: Fix json and yaml key name for source disk size
+a2ebf5b5cb2714295e626bc77d53bfa13191f51d    APPLIED     doc: Update api definition
+7ab0a26428590a4d4689b90e8ab95b1523bcc8c5    APPLIED     lxd/apparmor/instance_lxc: allow procfs for unprivileged containers
+af91f3fc3eb3c63aaee64364084bd0d19e9a43ae    APPLIED     lxd/apparmor: allow signals receiving
+4f928a7187526cd3412efef47ef589254d831c81    APPLIED     lxc/storage_bucket: Add example for storage bucket create
+de9adff882b823810b4d775340f6288309d378a0    IRRELEVANT  i18n: Update translation templates
+433a23164c25cef60a4350e336d0e01a0d9b562b    APPLIED     client: Report source errors too on copy
+ea8f9d35639909b6bb66276f7d7d95729d5ef929    APPLIED     doc/guest-os-compatibility: add SUSE 12 and 15
+398d6aeb5eabd03b6dc238ca21da77774e8e1270    APPLIED     client: Fix potential panic-causing type assertions
+4018acd77a5429cc81be2012460fae26d1a94bac    APPLIED     lxd/storage_volumes_state: Handle unsupported response from drivers
+0f8a34491b7f5f23cbb6bbfd102e01dde589ed41    APPLIED     lxc/network_zone: Add example for create command
+e17f26dfa24d9bce050962c0100597a46f09b60c    APPLIED     lxc/network_zone: fix go-vet linter errors
+dc3a29a7011fd0fab29a48345c0a6eea5b3b4efc    IRRELEVANT  i18n: Update translation templates
+aebc412682916842c6be51ecff33c40d2d1fbb79    APPLIED     lxd/apparmor/instance_lxc: allow sysfs for unprivileged containers
+f6ea5dbc6ec9c412dc839925e177a03e599afa02    APPLIED     doc: add SLES to custom word list
+8543c8e7d4c993e21a34da0b13752c438be778ec    APPLIED     doc/guest-os-compatibility: mention manual install from ISO
+e3089518a2e5d77d5c1cd5ce6bf611fc6a340718    APPLIED     doc/guest-os-compatibility: Add Ubuntu 16.04 and 18.04
+3f8789b599a94477480620215098090bdd2894a2    APPLIED     doc/guest-os-compatibility: Add Ubuntu 18.04, 20.04 and 22.04
+506223b6afb788fa616f705d8dd888506245de4e    APPLIED     doc: add ESM to custom word list
+6d7dd5498eeda75542cbfbd432fde42021eef709    APPLIED     Makefile: Pin github.com/dell/goscaleio@v1.15.0
