@@ -86,7 +86,7 @@ for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
             read -r input
             case "${input}" in
                 A|a)
-                    if ! git cherry-pick "${1}"; then
+                    if ! git cherry-pick -x "${1}"; then
                         echo ""
                         printf "Skip this commit for now [Y/n]? "
                         run_conditional abort || exit 1
