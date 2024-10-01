@@ -4923,3 +4923,608 @@ a9761479c413d6a700d24fa0fe791c6904b4c0f8    IRRELEVANT  test: stop silencing `lo
 
 18fb38a37588af33ddcb444852b04e16bbafbc46    DIFFERS     test/suites/clustering: fix variable shadowing/reuse/uninit
 44ccfe00d92391002ace80f5277927624eceeb16    IRRELEVANT  doc/projects: fix documentation for PATCH request
+7a6bcb9677366145ea0d46a1a1aa4f992b054530    IRRELEVANT  lxd/auth/generate: Add dry run functionality.
+8a57da44c7961612ca890233669d1ad41b779f5b    IRRELEVANT  lxd-metadata: Add entitlements to output json.
+2b4c062a04dbd1174fa0e95199331031d130c5a6    IRRELEVANT  lxd-metadata: Add entities/entitlements to generated doc file.
+56ecce4126d34b037030d8d74df910fb14e99fca    IRRELEVANT  lxd-metadata: Fix lint errors (revive: unchecked-type-assertion, var-naming).
+f5eaa6e9dcdd29c409aa0d746229ea39ee3bdb10    IRRELEVANT  doc: Rename config_options.txt -> metadata.txt.
+8671a68deac80d3c36a96e9f3a00806af92433c1    IRRELEVANT  workflows: Rename config_options.txt -> metadata.txt.
+223fadc94afa0775bb7d5b82b7ff64bf300d1a83    IRRELEVANT  Makefile: Rename config_options.txt -> metadata.txt.
+89f2b2eff1dcf9a777ae277e467875bf6b1f0698    IRRELEVANT  test/lint: Rename config_options.txt -> metadata.txt.
+55c0fae9e6bc89b80329dbecfa845d897343c799    IRRELEVANT  {doc,lxd/metadata}: Run make update-metadata.
+3a2845063f4ecd4d2c8de8494fde2ca9e023f8ab    IRRELEVANT  doc: Add PowerFlex storage pool creation how-to
+a181e89b5d57b7a2c12027a0325cb457bcfdd86b    IRRELEVANT  doc: Add missing PowerFlex details to explanation
+39cd0562ee0c62ed15723d718978a7aa087cec35    IRRELEVANT  doc: Add permissions reference page.
+ba665d42be64aedaaaeceb4f542955c3f58aa33d    IRRELEVANT  doc/explanation: Link to full permission list in fine-grained auth section.
+2cb69ef1e9cce8ee41a1fa3b8f634b936c4a5ae5    IRRELEVANT  doc/reference: Add permissions page to index.
+5faa192b135e326d5c8f1413c1dbf5d2d0ef467b    IRRELEVANT  doc/storage: change examples to sections instead of tabs
+15861df4d0f7e880c8957ab826c70cf02cb3a7d2    APPLIED     lxd/storage/drivers/driver/dir/utils: Improve errors in setQuota
+d0b0d62959e4c7a75d4a27679167d09b94b692db    APPLIED     lxd/storage/quota/projectquota: Don't fail on missing file in SetProject
+e5d8050a108fc14ab08a28364be1779766b26d7a    IRRELEVANT  lxd-migrate: Fix path provided to the raw disk check
+090e6b79482001d09f273225467fdcebc97b0518    FEATURE     api: instance_create_start
+22b2b5890be8520f73c1a24565f00ced65e3b977    FEATURE     shared/api: Add Start to InstancesPost
+7d42e413a6e4b8ae53b8ff6b41c9ac502a72a477    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+81f758b88a31fafc6de2071df43ae3dcb08a5e2d    FEATURE     lxd/instance: Add support for Start property
+48dc9c4dcfbb953df19dbc4715990e15752dc91a    FEATURE     lxc/launch: Use the Start property
+1428e4a511a9ce190255d6a7fe1ced1102b6eba1    FEATURE     doc/howto: Update documentation on start field
+846fe00456f95307b467b1006bca32f8f9214f2e    IRRELEVANT  i18n: Update translation templates
+ae60464ae1e7e80927ef58be79931427bb144632    IRRELEVANT  doc: Add remote storage driver cluster pool examples
+86c3d515662068d825d23387623932bca96bc6aa    APPLIED     lxd/apparmor/instance_lxc: allow nosymfollow mount flag in more cases
+9844fbc52d59a47333886ddc64a7b90f9c71cf7b    IRRELEVANT  shared/entity: Return the project name when parsing the project URL.
+a6fe34c6120769ed10a9645809e6a4e04c3202de    IRRELEVANT  shared/entity: Skip project query parameter on project entities.
+99aafa77af557990d7e48ad858a3d5942a6758fa    IRRELEVANT  shared/entity: Update unit tests for URL and Parse URL functions.
+ac623bb4e927166e471c071cbfb817e55474db51    IRRELEVANT  lxd/db/openfga: Remove logic for getting project name from path arguments.
+cf2b828277549d1be418896d0ff8343c84d3d897    IRRELEVANT  lxd/auth/drivers: Remove logic for getting project name from path arguments.
+9782449f97580f2dd161c28882159725c5d9cd59    IRRELEVANT  lxd/auth/drivers: Standardise URLs before performing OpenFGA requests.
+679ab94776fb86c1ec8dc281c9e4383dd3d46d37    IRRELEVANT  lxd: Fix `projectUsedBy` function.
+ccd4a2d8a7c836375b842f42ba5cd2781c6c7520    IRRELEVANT  lxd/project: Simplify `FilterUsedBy` function.
+2443da2465422249cd61e6ad3ada8371a1955d8d    IRRELEVANT  lxd/db/cluster: Add project name to project entity queries.
+c8048c47ac54729db9fd088be54fac2ca2fb959e    IRRELEVANT  shared/entity: Ignore "none" locations when constructing URLs.
+9e6144ef65f917d4c0e09b41075ed908eeebe518    IRRELEVANT  shared: Pass CertOptions to KeyPairandCA
+1217e5c7e7f661d599e4a12bfb4da004a4b8508c    IRRELEVANT  shared: Pass SubjectName to CertOptions
+f7a02330c9d0f0eed8e3540d0f2dffc984f4e529    IRRELEVANT  shared: Update usages
+3d87b361c97151bbe80346d632b2d1573f87d316    IRRELEVANT  lxd: Add method to determine location of storage volume.
+8501db97947478fc3429695a650dddac0c535eff    FEATURE     lxd-migrate: Add conversion option 'virtio'
+566d9a88f38b7306bfb365eccd4897bc7d71cfd2    FEATURE     lxd/instances_post: Allow conversion option virtio
+f8dc71539048c4e25d2a209c35818876f9211f19    IRRELEVANT  lxd/storage/util: Remove unused arguments and tautological conditions
+94779cd9ca7760c30f7ddead9cb31f110afca084    IRRELEVANT  lxd/storage/util: Add qemu-img info helper function
+047d3f5a789bfe4ca3f123163ffb8a13a5e059f1    DIFFERS     lxd/apparmor/instance_lxc: fix all ro+remount rules
+355f38c7046a6bd47349d9fed190bbfc03ef138d    IRRELEVANT  lxd/storage: Use writeback mode for qemu-img convert
+568c8d5cc18c663100a792ec22ed1573945f0c99    IRRELEVANT  lxd/storage/backend_lxd: Improve image unpacking message
+4b614f59d2c5313b9130cb32276e59827110fe89    IRRELEVANT  lxd/storage/backend_lxd: Reuse qemu-img info helper to inspect image
+7464ca8592206102af928630a75a28d66e4ff550    IRRELEVANT  lxd/storage/backend_lxd: Remove image after format conversion
+09fcbf83d90f033f36337b79cee418a3c56c4de7    IRRELEVANT  lxd/storage/backend_lxd: Indicate conversion format in log
+4f710f9bdfd632b8f4e3daf22f33a5ebf6a27db2    IRRELEVANT  lxd/storage/backend_lxd: Inject virtio drivers into imported image
+59e5c9d8b0fcfce45e90c36a9ea3fe73e9f221d8    IRRELEVANT  doc: Document usage of conversion option
+6a1bfed33f19782e3c5d7ed7607a471731757628    IRRELEVANT  doc: Fix exception rules for base URL
+29be374bbec79131c774745e33cf93c89471825e    IRRELEVANT  doc: Add virtio to the wordlist
+de027edf55f57ba3646619adf51812e5de94f411    IRRELEVANT  lxd: Add method to add storage volume details to request context.
+851aa743e5457c9b2fd40753349e485c00f83e9f    IRRELEVANT  lxd: Add an access handler specific to storage volumes.
+cf023801979d1e13846f17163157725e045016ff    IRRELEVANT  lxd: Use the storage volume access handler for calls to specific volume.
+aa795a8fcf10db8111670198447ffc5f6acf4cc9    IRRELEVANT  lxd: Refactor forwardedResponseIfVolumeIsRemote.
+abbf0c9202bc2004de5615fb5d6a0f40ac8e2046    IRRELEVANT  lxd: Refactor storage volume handlers to use values from context.
+bd83b21834271bd9ceb99cd5b71fe196b39368b9    IRRELEVANT  lxd: Use storage volume location in access check when listing.
+b313960ced68919905a99716b60b751057fd0366    IRRELEVANT  lxd: Refactor volume backup handlers to use volume access handler.
+f4c560a91803deb3750387dc31ae568ddf207f82    IRRELEVANT  lxd: Refactor volume snapshot handlers to use volume access handler.
+86ccfef85c2b0d5f7d938d113a56613a244c5b66    IRRELEVANT  lxd: Add function to add storage volume details to context.
+e30f584c3cae8a6d8b255641cc6d62bdf270eb1e    IRRELEVANT  lxd: Add storage bucket specific access handler.
+2759ae82bbcaeaba62d5ef5afdaa2651a386ac2c    IRRELEVANT  lxd: Update storage bucket endpoint actions to use the bucket access handler.
+b5892901cfd2cf92c88036c9117cb63f673314a5    IRRELEVANT  lxd: Refactor storage bucket handlers to use values from context.
+f0ac51f842fc45c84ca76363ce898b0e46fee3f9    IRRELEVANT  lxd/cluster: Remove `ConnectIfVolumeIsRemote`.
+1a6f5c7bb27e9c08d4e940f37d6cf221d2463991    IRRELEVANT  doc: Use consistent naming for remote pool creation examples
+9b3296e5159dc6b77534631bc1cd3c8504e94a93    IRRELEVANT  fix(deps): update github.com/openfga/api/proto digest to 7e5be7b
+3a80fbfba5239e45f415dd5efec13b81bf830add    IRRELEVANT  fix(deps): update module github.com/go-jose/go-jose/v4 to v4.0.4
+0148d13ad1e501be9c31daf54b715691a67f02d1    IRRELEVANT  doc: Update rhsrvany link and fix code blocks
+feb4d4d9741c3551bfef2b8981f18da025131e50    IRRELEVANT  lxd/device: added support for extended attributes
+c113e444000ae1ee644acce3866424cf1080ba87    IRRELEVANT  lxd/seccomp: fix bpf syscall number for arm64
+767ece9f5f03f82198ac8a56c04400f7f9ae99cc    IRRELEVANT  lxd/include: update bpf header files
+98b26ebca3b42f4c4dc116d140e70ea1eca5431c    FEATURE     lxd/instance: Support `security.protection.start` config option
+4f1499db5f80fee08c4e0fe39141bb3b1ad7dce3    FEATURE     scripts/bash/lxd-client: Add `security.protection.start` config option
+539bda4669773a76ec922351eb75578d7bf2a0b8    FEATURE     api: Add `instance_protection_start` extension
+40940a10dcb73760747f115d62c186c56e7bab61    FEATURE     test: Add test for `security.protection.start`
+d54427d8f881d4d3b6651cc41f8eb1f04e4cdb26    FEATURE     lxd/device/disk: Allow hotplug of disks on live-migratable VMs
+01c5f166556d91b748668433140afc12b2463382    FEATURE     lxd/device/disk: Check for VM live-migration
+7d256d3d8932f4430b402a2437274b33709fb37c    IRRELEVANT  lxd/instance: Add ID to ConfigReader
+50ee73b2e6a306acb62672843e4dcb538db6bb54    FEATURE     lxd/device/disk: Allow external disk live-migration
+4972e802249b5e5cd5ae1b65e099a56bcbe79912    FEATURE     lxd/instance/qemu: Support live-migration of instances with extra disks
+7e8d784d60152a743d0bd586f06da430f57cd245    FEATURE     lxd: Remove restriction on live-migration with attached volumes.
+f7558411d553cda1c0d6cce637174cc47748d99f    FEATURE     metadata: Add `security.protection.start`
+4a0e3ceaf3b769cc5834215f57cc62c241b3de64    FEATURE     doc/howto: Add instructions on preventing accidental start of instances
+7be9f29783a511050917a29e2be04a9af5257a59    FEATURE     lxd/instance:: Update the error messages for `security.protection.delete`
+a99a5b5e896c0ec64c81a216ac0009613a6d7786    FEATURE     lxd/instance:: Update the comments for `security.protection.delete`
+86c91b4ae0e2b47d51602d028da4d7b03a50ee72    IRRELEVANT  lxd/device/device/utils/disk: Use -o flag for xattr mode of virtiofsd
+ac27f9c69c3209bef6eb7d42610b522412b931dc    APPLIED     lxd/instance/drivers: Fix deadlock during failed snapshot creation
+50a74fdf381c97bd56d09151e05d726093145a68    IRRELEVANT  lxd/storage/backend_lxd: Create missing file when receiving raw image
+a249d0cf23d4749093ed7ee30ec1413073786bb9    IRRELEVANT  lxd/storage/backend_lxd: Set volume size directly on volume config
+d268b7ef2f0a7589ba7121d1e85480109f3ea64c    IRRELEVANT  lxd/storage/backend_lxd: Remove unnecessary usage of volume copy
+1def3a0dae23a12a53a5787d4f77e2d434990a96    APPLIED     shared/util: Handle percentage only updates
+1a79e036296f949d487e4fbbe55dd0f2c7838597    IRRELEVANT  lxd/storage: Pass tracker through to qemu-img
+92d0f114be2fc1a718e20faf39135cca60d0908b    IRRELEVANT  lxd/apparmor: Use qemu-img convert output to update progress
+4fc482be5b0ffa686f7bb2ac0fdd2b1b8ea725dc    IRRELEVANT  lxd/storage/util: Show qemu-img convert progress
+6461ca9aecbe9f84db45f13659d6e918616d108a    IRRELEVANT  lxd/storage/backend_lxd: Show image conversion progress
+095baf003353fb90a86c76e0909955fb7ce944c6    IRRELEVANT  lxd/storage/backend_lxd: Improve progress message when receiving volume
+b00cc52412c9704f21ba2148d395231c94b35c16    IRRELEVANT  lxd-migrate: Let server set progress prefix in conversion mode
+0bf75c720d7d2bd75aa9867c82826046715dd42f    IRRELEVANT  doc: Add missing entries
+85505ff2d4b62921228bd0efbeac5fa00d78336f    IRRELEVANT  doc: Re-phrase headers
+7475f26af7ff0e7e5bb4fabdd0182ff9bd27f817    IRRELEVANT  doc: Fix typo
+cf2e9227f027fe21a27cddd172a998c6f832ee60    IRRELEVANT  doc: Add note about VM architectures
+32c580928ad23c0f00f318585c281d1240f1a9d5    IRRELEVANT  test: Snapshot creation failure
+8fbb18ea17f2bc7dfd53b16ce83f0e1cf7a3a0cd    APPLIED     lxd/instance/drivers: Allow zfs containers with full...
+07b6454dea8f4b97508ed5fced354fea21660a76    APPLIED     lxd/instances/qemu: Don't fail event sending on missing agent
+e01622110e4713d78e3de41d91d1d8a90b6ce644    IRRELEVANT  shared/util: Fix linter issues
+955c4b2c095851c33314e0eed257bb5bfa964c26    IRRELEVANT  Makefile: Pin go mod deps for websocket and openfga
+d54de94f8183e52ff0c6b44757b27a36ab2406ad    IRRELEVANT  gomod: Update dependencies
+56b8be837067dd9dd75ebbccc3454de0bca0e0c9    APPLIED     lxd/storage/drivers/zfs: Always call tryGetVolumeDiskPathFromDataset
+207b2407ee3049c6762ab8fa4f5103f84a71de9d    APPLIED     lxd/storage/drivers/zfs: Call GetVolumeDiskPath instead of creating new contexts
+f2a1b14404e7b89457a2ba3f53e99df60d3abbdb    IRRELEVANT  test/godeps/lxd-agent: Update depedencies
+32a10fb09f951e4c86d19dd04ef5d7f963831862    IRRELEVANT  shared/entity: Refactor entity types to use an interface.
+3a1b509b106caccca42492c439a79ecacede680c    IRRELEVANT  lxc/profile: Add support for creating from YAML
+915315f677a576402feb7713200ce80ff9350281    IRRELEVANT  i18n: update translation templates
+e148f89cc0cd160b99e90aabfeb8db2afe7d4fbe    IRRELEVANT  lxd/db/cluster: Refactor database entity types to use an interface.
+fa09b2e08dea70627cba9f82240af39038df25b0    IRRELEVANT  lxd: Wrap error on failure to get used-by URLs.
+9b0770b99f617860aa774f55ff8765bcd2f747fe    IRRELEVANT  doc: Updated VM architecture note to not include "Incus"
+50b3f342ed3e056d04ef0351a3a4646d42972cb6    IRRELEVANT  doc: VM architecture note grammar fix
+a25fe1fdec615e21506291f751fd0d56ec1cf415    APPLIED     lxd/firewall/drivers: Fix netprio error message
+adaacda7d8be3d99e9880a83abf3a25521c575a0    IRRELEVANT  fix(deps): update module golang.org/x/sync to v0.8.0
+efb06a0901d5c679f69db4b664f8f6381dd304cc    IRRELEVANT  fix(deps): update module golang.org/x/oauth2 to v0.22.0
+dfd1773340badfd2b9f0a1994d93356a267ef802    IRRELEVANT  test: Add profile creation test with YAML
+b60b2ab3ab45ef9fe56b78a36e8cde5d8818856c    IRRELEVANT  build(deps): bump golang.org/x/sys from 0.22.0 to 0.23.0
+7ed80c1697120bc1ab7a63c0c3b4a217ede4d01b    IRRELEVANT  lxd/storage/backend_lxd: Prevent import of OVA format for conversion
+403e6c73c2e42f67b9f76500071109d811854f5e    IRRELEVANT  lxd-agent: Add type for devlxd handler func and rename field.
+5befe3dbaf7089568187369287baafa78c702e8b    IRRELEVANT  lxd-migrate: Prevent tarball as instance source
+fd9b8be87d4738420f729b22694237e659fc018c    IRRELEVANT  lxd-agent: Define devlxd handlers by name.
+687125d69dbf4914b58c8504e6ec6e7b7df095b2    IRRELEVANT  lxd-agent: Add an image export handler to lxd-agent.
+ed41bb1f88b95dcc99b1b1362db97dbcc5e36593    IRRELEVANT  lxd/instance/instancetype: Allow `security.devlxd.images` config key for VMs.
+6e8512f8f53a81f7617c394fa5846e39e678c521    IRRELEVANT  {doc,lxd/metadata}: Runs make update-metadata.
+de86a7c61ca3d8f04a2a3a50faf80b32a8fa5c9d    IRRELEVANT  lxd-migrate: Properly handle projects
+605c36f661dddf9162f842a9da6e224351169fa5    IRRELEVANT  doc/tutorial: add a UI tutorial
+72e11979844e2d8662cb35107334ee5b84c3fcae    IRRELEVANT  {doc,shared/version}: Adds `devlxd_images_vm` API extension.
+d038b6cc593d59793443d9b40370caf32f10a607    IRRELEVANT  github: Replacing @ru-fu for doc triage
+0f62c9833ddbfcb107b8eb98524e41636c6605dc    IRRELEVANT  doc: Corrected capitalization of "LoongArch"
+95efea8c5686f25e302102d64be8a57afde1a8de    IRRELEVANT  lxd/device/pci: Detect USB bus
+3c590b626e8919e6a1bda7bbe6333b89d1478ba1    IRRELEVANT  lxd/device/nic: Support USB parents for physical NICs in VMs
+710a06cb7a489d5e4b7d230089f5df165c611ed8    IRRELEVANT  lxd/instance: Add new volatile keys
+9481e1752b8551d884c6d9c378702df485aa59b0    IRRELEVANT  lxd/instance/qemu: Fix typo
+f76edd66501af29fbf9c9687687e73149c7a5b64    IRRELEVANT  lxd/instance/qemu: Handle USB NIC hotremove
+01c81feed7da2e0a48a7baf2830c3edf371b46f4    APPLIED     github: Disable renovate
+49ddc504f43175021ebe0776c9b110fa90451445    IRRELEVANT  doc: unpin Swagger version
+ba113f8d56adf48e222e21d5ab903f3c31bc9216    APPLIED     lxd/firewall: Fix iptablesClear on nft shim
+822ea777ce17073c3bf300777015b084ea8b99e6    IRRELEVANT  lxd/migration: Show source errors first
+e53ede41c465261f2723e614c567153b68e6bced    IRRELEVANT  .github: Add Jira integration yaml
+69bd88119f5dc990452c79699915b3dd86dad242    APPLIED     lxd/storage/backend/lxd: Pass full snapshot name when validating import in CreateInstanceFromBackup
+a35079f481c50adf7dfd571d2c815668f5f747a1    APPLIED     lxd/instance/instance/utils: Don't allow snapshots named ".." in ValidName
+8c7d87015ab7fd796e752d325928417af1dea81e    IRRELEVANT  test: Update instance backup tests to check for invalid and valid snapshot names
+f5e6b6e01a3bbf0dbe9ad18c72ddf9c35b3e8d62    IRRELEVANT  doc: add information about creating a Windows VM
+fcec577631004dc9f8cabf4d5db9d1e7733c653e    IRRELEVANT  doc/tutorial: improve the UI tutorial
+a56285d675d735030a6108e6a286ff8858a16aa7    IRRELEVANT  lxd/instance/file: Add type and size to HEAD
+1eb95e1ccf51af41f5646ffa9d1b75a6b23e4f82    APPLIED     lxd/instance/file: Add pattern matching for stat.Sys().(*sftp.FileStat) type assertion
+9424e8b9d16a5f4f0e68dfbf3ed1cc6b6112a09e    FEATURE     api: disk_io_bus_virtio_blk
+8897eeb1d5b5486cd8840879f04a2c716260c4f8    FEATURE     lxd/device/disk: Add virtio-blk
+e790a3501fc4a8cedf8a50cb8b8e31b887fd1c8d    FEATURE     lxd/device/disk: Add virtio-blk as possible value
+ed6d5a020e862b233e72610e087cc878c123c88b    FEATURE     lxd/instance/qemu: Add virtio-blk support
+3dd1227ac1b815a7be376b33292f798c2c3d74d5    FEATURE     lxd/instance: lxdmeta for volatile usb NIC keys
+0300811e5d2dddb1d7f25c765913b2868e67e76a    IRRELEVANT  lxd/instance/qemu: Replece util.ValueInSlice() with shared.ValueInSlice()
+faf7de2d656b5cf766a6f0a24b177000aac04da0    IRRELEVANT  doc/metadata: Add virtio-blk to metadata
+2c18dcd3879c2d17ac02c805e056cda4b255200e    APPLIED     lxd/cluster: Don't fail when notifying a server...
+0d9643268f05545d23a839e82c94fae6c56930cb    APPLIED     lxd/cluster: Test Notify with shutdown response
+b6b796200b1bd42085451dfcf1fdc1fe4f850872    APPLIED     lxd: Refresh the state on cluster put/join
+b5ccfa36cb67111dc47fa7342bbe202ef037af9b    IRRELEVANT  doc: change title to "LXD" instead of "Canonical LXD"
+6a670422cf7946658f0079ad8f7c06062aeb8e6d    IRRELEVANT  doc/Makefile: add target for building on readthedocs
+a081dbe0d67ea6df881ade13f534be609e0aa620    IRRELEVANT  doc: remove objects.inv.txt generation from RTD build
+e7021d0d88eccaad7eb496df453ff42243579a62    IRRELEVANT  doc: update to the latest version of the starter pack
+0b0815b34c069bd4c95f4fc9ae84e1be5400e8f0    IRRELEVANT  doc/pdf: add files and updates needed for PDF generation
+10309cbe46155e1cae1260489bc23e72f61c2fbb    IRRELEVANT  build(deps): bump golang.org/x/text from 0.16.0 to 0.17.0
+8be9c51eaa22464f1e458517231f109f1f4ee39c    IRRELEVANT  doc: ignore anchor for link checking
+5788f4eda9f67e6ff3dfe3209ccd727719409c04    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.25.0 to 0.26.0
+892afafd06583b4c4fa5433bad7187b350632715    IRRELEVANT  build(deps): bump golang.org/x/term from 0.22.0 to 0.23.0
+1b3357ceb80bc7c3be859b41c13f0bc8cec58e82    IRRELEVANT  build(deps): bump golang.org/x/sys from 0.23.0 to 0.24.0
+524000087acee9a9f508ad70f2ff85b13af3b717    IRRELEVANT  doc/pdf: make PDF build work on RTD
+fff8051697e4ff3eb6ed43b4a2d1bc489511aa9f    IRRELEVANT  lxd/instance/drivers: Improve device ID generation
+6e9b7d957d25615255f0e4e76954ca9c64a308e2    IRRELEVANT  lxd/instance/drivers: Update unit tests to fit character escaping
+8d74356060745346b09e279deddea5000892dd78    IRRELEVANT  gomod: Update OpenFGA dependency.
+379e2dc719b75eb0a81d84550fcbe8d2d1b7ee43    IRRELEVANT  lxd/db/openfga: Update OpenFGADatastore implementation to match interface.
+8aa8361746da8912260d962f277bf8d4cefcf39a    IRRELEVANT  lxd/certificates: Disallow forward slashes and hyphen prefixes
+9df3543faa0248fddf15df6f5e909c6e254fd4e3    APPLIED     lxd/networks: Don't fill network configs when joining
+57e9f76d56e185930d00a5c852a09fb80924e24a    APPLIED     lxd/networks: Update comment
+9e3e36e6464e1f4b1fbc6e762c85ded603e79bc3    APPLIED     shared: Fix comment typo
+b3101285c8b4876e94f0f0fdce79e52bdfd8ca97    IRRELEVANT  doc/images: specify the order of split images
+69060c506622efe78e721734fc16943f39a7e3f7    APPLIED     lxd/firewall/drivers: Make sure to always use locking
+726f91053f0ed62223153354651e71ae092d9224    IRRELEVANT  lxd/firewall/drivers: Fix `generateFilterIptablesRules` empty return
+41a24997e49e2b551088cb73d072f29384ac1e6e    APPLIED     github: Run `go test` verbosely
+b2a6a528167d923185a9cd15afa2f1ff5ee67a26    APPLIED     lxd/cluster: Ensure the cluster member config is always sorted
+fcdc78dda31b210f246e075aaf4bf507b07b68f5    IRRELEVANT  lxd/instance: if storage location is remote, make cluster self healing available, and vm can migrate when src member is offline also
+0ab6d76dc45bb37480da4349636a8f3e7c5b72d1    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.74 to 7.0.75
+2a5663c36da76224501cd5ce2b43fcc3d01894ad    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.26.0 to 3.27.0
+8cd0e132c8c6d014c8f35769517fe44caf0e95ca    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.61 to 1.1.62
+a885db1f367db8a21c7bdaa7b8823b9749dc4b8f    IRRELEVANT  lxc/storage_bucket: Add yaml support for key create
+9bcc53b79ead9a07ac5fecf8354fe636b188aa8d    IRRELEVANT  lxc/storage_bucket: Avoid govet error `printf: non-constant format string in call to fmt.Errorf (govet)`
+6fe73003b0c457192b53d82cd3ec7056539f5b46    IRRELEVANT  i18n: update translation templates
+bf0fbaca2a2d829799faff622299199788ae2de0    IRRELEVANT  test: Create a bucket key using YAML bucket key config
+876e6819a96c99d60d9056ce30c436964d3b6c05    IRRELEVANT  gomod: Update dependencies
+feedc99818022c61eb0807e71d51b7b77d95011f    IRRELEVANT  doc/tutorial: integrate feedback for UI tutorial
+758d0d9179399a740d4503d0e5ea4abff41cc176    IRRELEVANT  doc/instances: add anchor to allow linking to section
+2198478f871de64fb5c228f2e172cba2a2a77656    APPLIED     lxd/patches: Log the stage of patches being applied
+ee44cf2f1912f645c6774b3906a2f90f1254522a    DIFFERS     lxd/patches: Fix patchesApply so that the specified stage takes effect
+b4c0c60317c8942a4b931cb98ee59856c28694f9    APPLIED     lxd/patches: Fix patchVMRenameUUIDKey so that it uses the correct function to update snapshot config
+2266478e602ddcd02ce1adc5f27af0f08ebc1e8a    IRRELEVANT  shared: Allow adding multiple names to certificate SAN
+4d193e71300ef4cc4374cbb787322dafaefb4324    IRRELEVANT  lxd/patches: Updates selectedPatchClusterMember to use state.State
+6e8867d8e1e403ef7023c4391c2f817142dcf387    IRRELEVANT  lxd/patches: No-op patchStorageZfsUnsetInvalidBlockSettings
+97dda02a491f54570446d89e04dd98f865af9e94    IRRELEVANT  lxd/patches: Updates ZFS patches to use s.ServerClustered correctly
+fd69d7772f1750f9b72581432973e65576afe907    IRRELEVANT  lxd/patches: Fix patchStorageRenameCustomISOBlockVolumesV2 to apply to remote pools
+d5134189d110146d45b83a613ada5893ee975ec3    IRRELEVANT  lxd: Fix network forward deletion entitlement.
+58b49c86f86608480f7b46b13db6c5d9ad1a569e    APPLIED     lxd/cluster: Enforce cluster join token name cannot be 'none'
+c0a03da3ab886156ff86abae602ebfca89bb86b3    APPLIED     lxd/cluster: Enforce cluster member name cannot be 'none'
+c49ef5f1c599c9c6883b20527387a7e8057b8155    IRRELEVANT  tests: Extend cluster member join tests if 'none'
+542946010b625d28bdd51bb32b5629d9f91afcf8    IRRELEVANT  lxd/device/nic/ovn: Remove legacy port name cleanup logic in Stop
+2a85cbb2e7921b18f2b4fb64b9a27a05ad33854a    IRRELEVANT  lxd/device/nic/ovn: Don't call InstanceDevicePortStop anymore in Stop
+ba1ba1cb7b84e3c28af95c5b3f91a8a110fe3835    IRRELEVANT  lxd/network/driver/ovn: Move logic from InstanceDevicePortStop to InstanceDevicePortRemove
+bc193180ce009aa15f65446d61d921d4424e45a7    IRRELEVANT  lxd/device/nic/ovn: Remove InstanceDevicePortStop
+10f6a08b3222008143324cf96d1f374998df2153    IRRELEVANT  lxd/network/driver/ovn: Remove InstanceDevicePortStop
+0242777e0d99dd2dcf6c5fe75687b7b77ad60cb1    IRRELEVANT  lxd/device/nic/ovn: Removes last_state.ip_addresses logic
+3b0b37678ac3bf4fc83f2463cc315ba87901023e    IRRELEVANT  lxd/instance/instancetype: Removes last_state.ip_addresses definition
+f04e204e90c4c97056a76bde753b5c0a3f593985    IRRELEVANT  lxd/network/driver/ovn: Removes last_state.ip_addresses logic
+6cb35bbc2823fed16d36ec16e5a816e3acd298e9    IRRELEVANT  doc: Update metadata
+65e7c20e7abc81c581d3df6055aaaffdc16b37a2    IRRELEVANT  lxd/network/driver/ovn: Don't return unused port IPs from InstanceDevicePortStart
+9525b9bbfc78fd55b7e9d6edb3a945784a446be5    IRRELEVANT  lxd/device/nic/ovn: Update InstanceDevicePortStart signature
+3150da86e0f1674a37c07e16c21644ad38689735    IRRELEVANT  lxd/device/nic/ovn: Call InstanceDevicePortStart when adding port
+3076c369bff2d54b349c4b07bd8c01141350bc39    IRRELEVANT  lxd/patches: Adds instance_remove_volatile_last_state_ip_addresses
+c1604998d5769fd9eb870f318e68ec6737f6a19a    IRRELEVANT  lxd/network/driver/ovn: Update comment
+5c1fcefc6baf3ea5067a4480f82b43dc73716b82    IRRELEVANT  shared/cmd: Allow a cmd asker to be created with a logger
+a9a90b486a39bc9a43c1270db62c9ff95643997a    IRRELEVANT  lxc/project: Add support for creating project from yaml
+da0d858d1749339f1eddc4e6348a368aac3e228c    IRRELEVANT  lxc/project: Fix govet error (`non-constant format string in call to fmt.Errorf`)
+2a36e162152bc5beaabdfe8279fbbadf884df9c4    IRRELEVANT  test: Add project creation test with YAML
+13a5bea29686c26f55f44683c5bc68e094371a80    IRRELEVANT  i18n: update translation templates
+128f9de96d5db0fd19a7078ef9e7c3421d706e17    IRRELEVANT  lxc: fix `printf: non-constant format string in call to fmt.Fprintf (govet)` lint error
+fd011a2d1acc0d3ce41e46a3c8e21331678419d1    IRRELEVANT  lxd: Handle effective projects for profiles.
+a6b53d16765aa171f6cc1961a5e32e8f227f597f    IRRELEVANT  lxd: Handle effective projects for networks.
+b621203ea2afd15f2f10900449db8f84e1ded28c    IRRELEVANT  lxd: Handle effective projects for network zones.
+6a099ca5b9cf47b7669ee81948c1ffc6cffd5db8    IRRELEVANT  lxd/project: Add project helper for getting image effective project.
+ed4e3ad1a8a050cc3168ea85b42245f86ce298ec    IRRELEVANT  lxd: Handle effective projects for images.
+bcb7d4950e4e21a08a1bbe38245992967a1991cb    IRRELEVANT  lxd/project: Fix lint errors (revive: confusing-results).
+ebaf86ab39c8827e54f888aca08dfce149f00e3a    IRRELEVANT  lxd/auth: Add comments to Authorizer interface.
+27c71718a9b237c80d2b8bb9b7e088c088a4e7fd    IRRELEVANT  lxd: Always use request project name in authorizer checks.
+30ee62afd3c312da3f0e0bc1ed9bb7f4c7e6c781    IRRELEVANT  lxd/auth/drivers: Remove effective project check from TLS authorizer.
+3ce92c0c6f8051c9d6bccf9f9b4c8965f800f59d    IRRELEVANT  lxd/auth/drivers: Handle effective projects in the OpenFGA driver.
+0850ee901439604ce068aaaede98c13ca0b7da17    IRRELEVANT  lxd/auth/drivers: Update comments on Authorizer method implementations.
+a181704cd4a32272d3955a247fd0fd39b2f393e2    IRRELEVANT  test/includes: Add helper for setting up object storage pools.
+3eecce38f3959b8bf8e54374397bbdbf40cd3a1f    IRRELEVANT  test/suites: Use storage pool helper in bucket tests.
+2f9af9f28e45809d4dd59c969668e3f731150b32    IRRELEVANT  test/suites: Improve coverage of TLS restrictions tests.
+6ebeaa08b23213c7e9b8d9a78ea2140856a485b6    IRRELEVANT  test/suites: Test project feature interaction with fine-grained auth.
+651e0e60d7c6b7d42548716f69d9865fa3ee2787    IRRELEVANT  doc/explanation: Add note about authorization and project isolation.
+4d439051a44e2c192934d41870a33a4d04dff886    IRRELEVANT  lxd/auth/drivers: Fix linter errors (govet: printf).
+ecde8f1e7e3f7f8744528653bc06ca5105c25e83    IRRELEVANT  lxd: Fix linter errors (govet: printf).
+081bcbc6b88074326c5e70ca6b1cc9595c7535ed    IRRELEVANT  lxd: Fix linter error (staticcheck: SA1032).
+86746662082ddcbae689ac8ab22c3066455551f6    IRRELEVANT  lxd: Add comment explaining behaviour of events websocket with effective projects.
+6e8609bb373aa6dfd64588b9edd4ca3ba630bc27    APPLIED     lxd: Fix invalid FileResponse on empty console log
+528be48946667c923dab2998aa66f3f3b73fe98a    IRRELEVANT  lxc/console: Update docstring and output for `--show-log`
+ef1e06b321f2d3d3ccf552b322747dee62c50950    IRRELEVANT  lxc/console: Fix linter errors
+4a2790998df9af3a2a13a50e911e3fa84de2190a    IRRELEVANT  po: make i18n
+fc5ef4fae6c141971b78a6f2852a3176ecce0318    IRRELEVANT  lxd/network: Implement State function for physical network driver
+a581ba6e64000da2ca38949eaa504109817d971f    IRRELEVANT  test/suites: Add testing for physical network state get
+c96d1bc32f7f9e068696c06a91161424e391c492    IRRELEVANT  tests: Add invalid certificate name tests
+5c916ae2df42fdd04a81c3e9617ffbfb924eeff7    APPLIED     lxd/recover: Add snapshot expiry when recovering instance snapshots
+c99bcecc1b27c7d5baa89207d2a8c3b5d6ea05a0    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.75 to 7.0.76
+30ae6d81eda00aed09b52de0a55ba3250b87511b    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.27.0 to 3.28.2
+8c669437c9fa297bdeb5cef4954db8ba2c8ad7a5    IRRELEVANT  lxd: Disable networks during evacuation
+cb7a1147b25b2da8b4c4128ee80d83bfe0374279    IRRELEVANT  lxd/storage/lvm: Properly handle activation during resize
+bd22bc0f510653a86bd694738569d27c6a407ae3    IRRELEVANT  lxd/storage/lvm: Fix resize logic to conserve LV state
+b9b21d20c71060f21c6ed31337781bd8e5f83a63    IRRELEVANT  build(deps): bump github.com/vishvananda/netlink
+7735522ce21d81bd81022b1c61e0e89ce3396f14    IRRELEVANT  shared/api: Handle invalid HTTP status codes.
+ffc61e93b56ce73e6e41ab230d3fc3f13978eecd    IRRELEVANT  shared/api: Add new functions for instantiating a StatusError.
+b98eea9d4864502ea4b0f00cd212e3740c3a246f    IRRELEVANT  lxd/auth/drivers: Use `api.NewGenericStatusError`.
+e9047d12489e7b47848bfbe3a058068d4c39d670    IRRELEVANT  lxd: Wrap status errors in devlxd.
+7c0633792ac7413e1096d5b8b67fd62bb68d3eea    IRRELEVANT  lxd: Wrap SFTP upgrade error.
+e59dc3723d75283a87967be4e9c5abeb1ff6ab01    IRRELEVANT  lxd: Wrap project permission errors.
+44e233560e93a774303a225db7094cdd3929d216    IRRELEVANT  lxd/instance/drivers/qmp: Wrap block device removal error.
+614b310d7a698b2b246ccbd46ea4cb57e64f73ba    IRRELEVANT  lxc: Move translations out of format string.
+4e92ded1e92dbad4d433282c68aef58d6c16d990    IRRELEVANT  lxc: Fix linter errors (govet: printf).
+ba484a86056b3be6fb58b4653f993b8783a8d158    IRRELEVANT  i18n: Update translations.
+da01d419a516c3725fe8035ec9674e9712311d7d    APPLIED     lxd: Remove unused state argument from instancesShutdown
+edd30fbd0990f610436f2b45fc6bd00fd48fe1a7    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Don't use d.state.ShutdownCtx in GetVolumeDiskPath
+4226d0af54e4dad0d081bc47df5cc49064d8bbda    IRRELEVANT  doc/reference: Add warning about volatile keys.
+77444fc7a0cc5c70d6ade34578890b277050877c    IRRELEVANT  doc/guest-os-compatibility: add compatibility matrix with LXD 5.21
+5f2f0ab29a25dbdd6c967505456e149aa6c2b6c6    IRRELEVANT  doc/reference: link to guest OS compatibility
+618572b71d07e291957025e660682e63f35d723e    IRRELEVANT  doc: sort custom word list
+f6337c08b36bcf3183a520074e2b35d9ce79221c    IRRELEVANT  doc: add BLK, CSM, EOL, RDP and SELinux to custom word list
+ca5ce683eb4cf1deedeb1ee14586cd9f0f3780bd    APPLIED     lxd/device/device_utils_disk: remove unused IsBlockdev()
+9d49b927b54bf220817934f20dadb2a14ca4b3a5    APPLIED     tests: Add snapshot expiry date test to test_container_recover() in backup.sh
+00506bb329a676b9bf319f48b022ac4b4df82447    IRRELEVANT  lxc/network_load_balancer: add Example to create
+e52f3cba94bbb662c4a15a9c2167ed8412f90a55    IRRELEVANT  lxc/network_load_balancer: fix go-vet linter
+b120ef6bb771259e3ff88842f11eca3f34a821af    IRRELEVANT  i18n: Update translation templates
+061d5a8f5cbd479023e9834408dcd7f38c3e8831    IRRELEVANT  add a new dependency for github.com/NVIDIA/nvidia-container-toolkit
+1b1c20d60efad7aee47b6ffa844f1c7f7aab4869    IRRELEVANT  lxd/device/cdi: Introduce base CDI types and `ToCDI`
+8548e7cfb6d92cce1864f87273c1a2a68dd6abd7    IRRELEVANT  lxd/device/cdi: Add unit tests for the CDI identifier parser
+59fdc8fec8422a3c9c007886000ede2d351c1028    IRRELEVANT  lxd/device/cdi: Introduce a `CDILogger` type
+ba948c579d2a0ef7f98620852805c8191602cb61    IRRELEVANT  lxd/device/cdi: Add the NVIDIA CDI spec generator
+58c7a88fc807d759f3686fe94c1644914a4f0bee    IRRELEVANT  lxd/device/cdi: Add base CDI Hook types
+da314e64d5df91c64806cd4a496d76a8fda2ed09    IRRELEVANT  lxd/device/gpu: Augment the capabilities of the `id` GPU option to support CDI naming for `phyical` gputype
+41b88404d3e51719d4ebb98778ab2746739dc354    IRRELEVANT  lxd/device/cdi: Add CDI translation logic (OCI spec -> unix device + mounts) logic
+582127ecfeb23ea9c611790a69786f8c1df2c1fd    IRRELEVANT  lxd/device/gpu_physical: more explicit output values for `deviceNumStringToUint32`
+e6944c44bacd9080a3fe7c2ddb45788a95a1570c    IRRELEVANT  lxd/device/gpu_physical: Configure a GPU (physical) if CDI detected
+37b4cd360cefe49644afde039356468eba8e8a28    IRRELEVANT  lxd/instance/drivers: Make `removeUnixDevices` a driver_common function
+650879b1ba98e7ba6c6e2d44c0d52dba717c95d2    IRRELEVANT  lxd/instance/drivers/driver_lxc: Configure LXC to use LXD's `startmountns` callhook if CDI devices have been configured
+1ce19732220e4a1a1d8f3b01f510041a8677c734    IRRELEVANT  lxd: Setup the `startmountns` callhook command to react to `lxc.hook.mount` for executing the CDI hooks
+db5ee3e3c82f48d9ca3202ad5975c283379b461d    IRRELEVANT  lxd: Remove useless `break` statement in main_callhook command
+37302501f315e5488f2dbb3c82ec73006be5b7d6    IRRELEVANT  lxd-metadata: update metadata
+2421c341e07f5219c45c130de3959f814fbcf733    IRRELEVANT  doc: Add documentation on how to add a GPU with CDI mode
+5099236f0248b15af557a937b887c0a8b84fe0c4    IRRELEVANT  api/shared/instance: Fix json and yaml key name for source disk size
+a2ebf5b5cb2714295e626bc77d53bfa13191f51d    IRRELEVANT  doc: Update api definition
+7ab0a26428590a4d4689b90e8ab95b1523bcc8c5    DIFFERS     lxd/apparmor/instance_lxc: allow procfs for unprivileged containers
+af91f3fc3eb3c63aaee64364084bd0d19e9a43ae    DIFFERS     lxd/apparmor: allow signals receiving
+569ddc6db876b4fb7c23b717adfeee4475619a45    IRRELEVANT  shared/cert: Add ParseCertificate func
+8740fa542e52fb289b1c658082ef9b169a70162e    IRRELEVANT  lxd/device/cdi: no NVIDIA with CDI for `armhf`
+4770d012c03529a20145bf5affe1525361c88605    IRRELEVANT  doc: update doc to include no CDI for `armhf`
+4f928a7187526cd3412efef47ef589254d831c81    IRRELEVANT  lxc/storage_bucket: Add example for storage bucket create
+de9adff882b823810b4d775340f6288309d378a0    IRRELEVANT  i18n: Update translation templates
+433a23164c25cef60a4350e336d0e01a0d9b562b    IRRELEVANT  client: Report source errors too on copy
+ba28f05a3afc8436e7de0ebbe33904153eba44f5    IRRELEVANT  lxd/device/cdi: add no-op `defaultNvidiaTegraCSVFiles` for armhf
+ea8f9d35639909b6bb66276f7d7d95729d5ef929    IRRELEVANT  doc/guest-os-compatibility: add SUSE 12 and 15
+398d6aeb5eabd03b6dc238ca21da77774e8e1270    APPLIED     client: Fix potential panic-causing type assertions
+4018acd77a5429cc81be2012460fae26d1a94bac    IRRELEVANT  lxd/storage_volumes_state: Handle unsupported response from drivers
+0f8a34491b7f5f23cbb6bbfd102e01dde589ed41    IRRELEVANT  lxc/network_zone: Add example for create command
+e17f26dfa24d9bce050962c0100597a46f09b60c    IRRELEVANT  lxc/network_zone: fix go-vet linter errors
+dc3a29a7011fd0fab29a48345c0a6eea5b3b4efc    IRRELEVANT  i18n: Update translation templates
+aebc412682916842c6be51ecff33c40d2d1fbb79    APPLIED     lxd/apparmor/instance_lxc: allow sysfs for unprivileged containers
+f6ea5dbc6ec9c412dc839925e177a03e599afa02    IRRELEVANT  doc: add SLES to custom word list
+8543c8e7d4c993e21a34da0b13752c438be778ec    IRRELEVANT  doc/guest-os-compatibility: mention manual install from ISO
+e3089518a2e5d77d5c1cd5ce6bf611fc6a340718    IRRELEVANT  doc/guest-os-compatibility: Add Ubuntu 16.04 and 18.04
+3f8789b599a94477480620215098090bdd2894a2    IRRELEVANT  doc/guest-os-compatibility: Add Ubuntu 18.04, 20.04 and 22.04
+506223b6afb788fa616f705d8dd888506245de4e    IRRELEVANT  doc: add ESM to custom word list
+1f2ce779a9d7b5e243cec782964729e65a47f6f2    IRRELEVANT  shared/api: Add Description field in `StorageVolumeSnapshotsPost`
+d54b7cff1c59873a6f9d467169b1e73729277ac3    IRRELEVANT  lxd/storage: Add a desc in vol snap DB entry
+628fad312c197002a495f05763054aa1c424e388    IRRELEVANT  lxc/storage_volume: fix go-vet linting errors
+3b1a46a0e62346beee860a220c15c8499be0d016    IRRELEVANT  lxc/storage_volume: add a desc field to vol snap
+2dfa132697e1cd6a712118fb88274789f6e50638    IRRELEVANT  test: Test description is set for vol snap
+172695520ed009c26ca0445926374d84eb936608    IRRELEVANT  i18n: update translation templates
+1d6b2d4f0be350b8b30d052b35570a5b4dc20bbb    IRRELEVANT  doc: update REST API
+6d7dd5498eeda75542cbfbd432fde42021eef709    IRRELEVANT  Makefile: Pin github.com/dell/goscaleio@v1.15.0
+476112614356dedd1b163faaba8d850a0b82b1d6    IRRELEVANT  lxc/network_forward: Add yaml example for create
+a48a9c809522f7c99cbfdfade7b3d5dd6cf87b9a    IRRELEVANT  lxc/network_acl: Add cmd.Example for network acl create
+03962be50e53f6332e9c0e501a97574c6369dc99    IRRELEVANT  lxc/network_acl: fix go-vet linter errors
+fdb598eaabc45307fe432413b29aabbc58bf775a    IRRELEVANT  lxc/network_forward: fix go-vet linter errors
+1a90984df814faed47b715f475a5126466127907    IRRELEVANT  lxc/cluster_group: Add yaml support for cluster group create
+3e500ff02ed5a7e52d6f2c7c77303a2c32443122    IRRELEVANT  lxc/cluster_group: fix go-vet linter error
+de1e294a7493bbf9681d7c84ec1400719d80fa62    APPLIED     lxd/storage/drivers: Don't needlessly re-apply project id on quota changes
+afa3cadc95b6ed1460ae843f50623409ee89b0f0    APPLIED     lxd/storage/drivers: Remove unnecessary `DeleteProject`
+8adc53997df286b03626ebf7b594177b7473f0b5    APPLIED     lxd/storage/drivers: Use `projectID` variable
+282f82a0d11dbdcbec9d1f1f3b0bf66f2ea861fc    IRRELEVANT  test/lint/godeps: don't abort on first error
+5ebca77438e87dd267fe2fe6fffed3c8c040f5ee    IRRELEVANT  lxd/project: Allow managed volumes under "allow"
+19ac4f65e64849a6de0db0099e9c8e44e65f177d    IRRELEVANT  doc/howto/instances_create: improve LXD agent setup snippet
+36c6a8bfcfbae3215a2ee8ba0b5b8f3f36c7cc8f    IRRELEVANT  doc/howto/instances_create: add note about SELinux and LXD agent
+805859ad46a97aa52fb9ba463ef717c7cd144762    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.17.4 to 4.18.0
+5432e5a3ba02c5c0f495a9d51677b0d40ffafeb1    IRRELEVANT  lxd/device/gpu_physical: forbid CDI GPU hotplugging
+a361cb66db1ecaa8599b938bcb65a966232786a4    IRRELEVANT  test: Create a cluster group using YAML
+8f0a4b25644263b8e6497ce23f24d841dddabb81    IRRELEVANT  lxc/storage: Support creating storage pool from yaml
+251a48841a8d80cd91d69526dfa84fc9ac3ffb2b    IRRELEVANT  lxc/storage: fix go-vet linter errors
+19b98b9effa044c301d56f557bae97e2a3745b56    IRRELEVANT  test: Test creating a storage pool with a YAML config
+6775979349c9cfc924a055e029670ee419bc5021    IRRELEVANT  lxc/network_zone: Add example for network zone record create
+f18ffd1df58637ba7818a28821eecb686555f7ae    IRRELEVANT  lxc/snapshot: Add support for creating a snapshot with YAML config
+faff0027b6898f3b9c3d62628a2e56842548aced    IRRELEVANT  test: Add test for creating a snapshot using a YAML configuration
+19cd2423d53a1ee4d12b4fdff6b1bcf861c2db2e    IRRELEVANT  lxc/storage_volume: Add yaml support for create
+6c4953c085eaa895fdbfaede04d6c18899783e9d    IRRELEVANT  test: Add test for creating a volume using YAAML config
+cb010e87882c7a576dfc67ce752b18e6238410d6    IRRELEVANT  test: Add missing description to bucket key
+4edd778c598663505e0a461c4350f787d6c4f6b0    IRRELEVANT  i18n: update translation templates
+a063b1ae9bb57ae2fe23ff748248f590ccc523ec    IRRELEVANT  lxd/instance/drivers/qemu: update how systemd is detected
+9a2f6e6939e624d8bfdf0fcfa517df18d48211c5    IRRELEVANT  lxd/instance/drivers/qemu: compat with SUSE paths
+96b0f698cd1df69dd8eb134dd03db287a501345c    IRRELEVANT  doc/guest-os-compatibility: improve legend readability
+6d412932f442a70859805d9c7c56e1d4f2439376    IRRELEVANT  doc/guest-os-compatibility: link to how to install lxd-agent manually
+31e51dd7479a590919d778d350db63a134693e23    IRRELEVANT  test/main: don't use any HTTP(S) proxy with localhost
+e82c5b6e80e1407b8ed480b6779be42e6fd2eed6    IRRELEVANT  test: fix ceph storage tests
+9443d2593e2c06260146d4cbde25f942a8ff6fc8    IRRELEVANT  test/suites/storage: use storage get and storage volume get
+0828eba103eb4d9df3f1900d51fc0e600b9b0ea4    IRRELEVANT  test/suites/storage: test storage set and storage volume set on properties
+eac9280cf9cb783ba8ad48285d95ff47d74e26a4    IRRELEVANT  test/suites/storage_volume_attach: use storage volume get
+769cd89ade2c065fdbb86bb263b2f7ec99c07286    IRRELEVANT  test/suites/exec: use shell comparison
+e36b9122e635db22c186f2a92f8829a766f6498a    IRRELEVANT  lxd/cluster: Replace deprecated Node.Recover
+d29d18298af5269dcb8b786a2408cf0d33c8203e    IRRELEVANT  lxd/db: Add yaml tag to RaftNode
+34b45e3529201dfea0adc829284e1f1cda2fb8d9    IRRELEVANT  lxd/cluster/recover: Refactor DetermineRaftNode transaction
+d52a788d33c5b425a03ed8ffa1c784a760fe137b    IRRELEVANT  lxd/cluster: Refactor recovery patch.global.sql
+2525886620a8d4bb6c3409ea85b98631a5480050    IRRELEVANT  lxd/cluster: Write recovery tarball after cluster edit
+ee6ce68196756b02bb3d32fb9b20650e330a413d    IRRELEVANT  lxd/cluster: Prevent custom patches during cluster recovery
+539626842343ba0bf889747e13f164f494a77275    IRRELEVANT  lxd/cluster: Implement cluster recovery tarball unpack
+f1b8073c4cd4be983e21ba51e38d54f3635539ef    IRRELEVANT  lxd/daemon: Load recovery tarball on daemon start
+62444e20a395ae7cb6be3a94fd526153caf3cb85    IRRELEVANT  lxd/main_cluster: refactor promptConfirmation
+605ec41bd61410c0a16790a046a0807dce7f3cc0    IRRELEVANT  lxd/main_cluster: Use "member" instead of "node"
+9bb6d220a09d37137e1c6e2e13f4ba77358a99c3    IRRELEVANT  lxd/main_cluster: Prompt before cluster edit
+f44ed5dd764f04b33db135d6edd01563f0e970d7    IRRELEVANT  lxd/main_cluster: Add yaml comment with role explanation
+f18c023673601750b8ce711f520a260f44311831    IRRELEVANT  lxd/main_cluster: Print instructions after cluster edit
+408d7321c6bef9a835aef1790e7215f504d18b5f    IRRELEVANT  test: Copy tarball from `cluster edit`
+29dd916d1325d2f2224e70e00e054c41578bb068    IRRELEVANT  test: restricted.devices.disk project restrictions
+b919409d7a08f5b6a2c2ca1c93d6e41c971980a9    IRRELEVANT  doc: cluster edit updates & copy tarball
+085afb90f286f1bde5babda1271cecc8a4e30f89    IRRELEVANT  lxd/main_cluster: Fix linter errors
+05c5aff2ea9ca78dd7800733bd6a07844e70a5b6    IRRELEVANT  lxd/instances: Don't bypass instance limit check
+79ca22d74005501f4308bcf54a3afa5dda4cae69    IRRELEVANT  test/suites/image: use tar to check for metadata.yaml presence
+78c1504f7f284d5d6fa6eb8084b07a99feffcf6e    IRRELEVANT  lxd/instance/drivers/edk2: Add new package to track EDK2 firmwares
+63e6d372ff92aea5a4b2f98a8392237bf73f891c    IRRELEVANT  lxd/instance/drivers/edk2: Support OVMF filenames on arm64
+6168f3559c0e34e43b0409dc76a45926196e8a98    IRRELEVANT  lxd/instance/drivers/edk2: Move seabios to /usr/share/qemu
+b0499ef8db1fd4468aa5421c2924d4cb83b66b2f    IRRELEVANT  lxd/instance/drivers/edk2: Add ArchLinux x86_64 paths
+d9afb307c9cdc451eabbf9093bb89678bb77e904    IRRELEVANT  lxd/instance/drivers/edk2: Fix CSM handling
+fa5ce8053d37553537388ce4aa5c5006319e5d39    IRRELEVANT  lxd/instance/drivers/edk2: Add Void Linux x86_64 paths
+4341a6cd230c5abff5ecbb344601daeb5cd6de95    IRRELEVANT  lxd/instance/drivers/edk2: Rework to support both LXD_QEMU_FW_PATH and LXD_OVMF_PATH
+f58e2dfa95cf61481441ffb96a8beafab85d0a71    IRRELEVANT  lxd/instance/drivers/edk2: Add support for seabios in Ubuntu
+61c78dd850de7965dabaaa70f6935bf9940f7bc9    IRRELEVANT  lxd/instance/drivers/qemu: Update to use the new edk2 package
+abce75d6bf5024f2a5f46a9d4c05922e33507fbc    IRRELEVANT  lxd/instance/drivers/driver/qemu: Log the VM UEFI firmware found in checkFeatures
+0dafab0559243736893ec4da9cefcb2fc37ed666    IRRELEVANT  lxd/instance/drivers/driver/qemu: Improve error in checkFeatures
+a4e131ee722d9aa4ffd7b26d822ccfc7cc15e43f    IRRELEVANT  lxd/util/sys: Removes unused GetQemuFwPaths function
+3a86dda731c4a5186aba8daaaf04e7319726886a    IRRELEVANT  lxd/instance/instance/interface: Add FirmwarePath to VM interface
+797ea0665b21b695405591bd090b4b6b788e9a30    IRRELEVANT  lxd/instance/drivers/driver/qemu: Add firmware path concept and set it during generateQemuConfigFile
+9a404886414c1f02e86b6ff68ecf9fd4a1fca576    IRRELEVANT  lxd/apparmor/instance: Update instanceProfile to use start time firmware path
+7bdeb9b315e7955eabd208b28e1ca62390f2591b    IRRELEVANT  lxd/instance/drivers/edk2: Removes unused GetArchitectureInstallations function
+dca2bebe03b605c5bee70ad958cfe4fcea2a426d    IRRELEVANT  shared/entity: Update `TypeNode` to `TypeClusterMember`
+5eb1451278d998a016704c53680f9426cdffe1b5    IRRELEVANT  shared: Update `TypeNode` usage
+8ffc7deda66bd81c6a38edf568a23ea4ffafb02f    IRRELEVANT  lxd: Update `TypeNode` usage
+044bb4ac946c15b387db5fa18fe89d4f0559b258    IRRELEVANT  lxd/cluster: Use `NewStatusError`
+144a6494e572d53e84fb82d5da7d8026f72ca0fb    IRRELEVANT  lxc/console: use errors.New() where appropriate
+820a3abab652a5dc5718b8632459aa83c4551d85    IRRELEVANT  lxc/project: use errors.New() where appropriate
+b3916dea82c13e15fb163c767d84ec7cab0809d8    IRRELEVANT  lxc/storage_bucket: use errors.New() where appropriate
+cda4473b291e04b7dee601eecacce2e39b34f467    IRRELEVANT  lxd/device/proxy: use errors.New() where appropriate
+5459b2e91585fcad55c67f337085c4eb49b5222c    IRRELEVANT  lxd/instances_put: use errors.New() where appropriate
+f3fe0325bc0784a63a77b4f8acdca2682267fe77    IRRELEVANT  lxd/profiles_utils: use errors.New() where appropriate
+34f14b865e6f762f568c46e20b7d281978d7a5d3    IRRELEVANT  lxc/config_device: use errors.New() where appropriate
+b9e08717793264908974f6dd3f0d8235b957884f    IRRELEVANT  lxc/network: use errors.New() where appropriate
+6b7443a858feccb0e176317b109ecc69ddca4bf9    IRRELEVANT  lxc/network_peer: use errors.New() where appropriate
+01abfec5ad58bef3fc0df92d3b851398ae0a9a5b    IRRELEVANT  lxc/cluster: use errors.New() where appropriate
+bc273f008edada386967b892fb00980afd1c02b1    IRRELEVANT  lxc/profile: use errors.New() where appropriate
+b83b57eda8c9b4cab54e5874424dcb0927e47bc3    APPLIED     lxc/network: remove unneeded nil check
+228a5f43cbda83313f07294cb01f0d8d16bf9991    IRRELEVANT  lxd/main_forknet: add comment for exported function
+e1d86573570810d47f63c5504b734db89e80895c    IRRELEVANT  lxd/main_init_dump: add comment for exported function
+0d843fccb89ba9f8191cc03f6cbffd3bf56b60a0    IRRELEVANT  lxd/project/limits: Move content from lxd/project
+bd6e3294935d72b64d41c5cc425cfc883e7d8f3a    IRRELEVANT  lxd/storage: lxd/project -> lxd/project/limits
+460ee11f92725476332f4a0ebbbf43dc0594cff5    IRRELEVANT  lxd: lxd/project -> lxd/project/limits
+cd2f3bc856b7a6184729cda90a1ba7ab43f955c7    IRRELEVANT  lxd/project/limits: Fix test imports
+6e6da90afab89936bb722f07f6d6160bbcdcdbb2    IRRELEVANT  lxd/storage/drivers: Use private constants for DefaultVMBlockFilesystemSize
+d3d971ed362e6b4c537648624fc0b5bfb7fe9f7a    IRRELEVANT  lxd/storage/drivers: Expose function for default VM block filesystem size
+73ab9e73468486ac4c808ca9810d54583f3cb6ea    IRRELEVANT  lxd/device/config: Remove DefaultVMBlockFilesystemSize consts
+47a7152d27150322d6c493febfd0e1c5b25e2648    IRRELEVANT  lxd/db: Rename GetStoragePoolDrivers -> GetStorageDrivers
+bfebfafe9341d550d2c43d6d46d80b1946cf2290    IRRELEVANT  lxd/db: Implement GetStoragePoolDrivers
+2742def7ee183f7f09a620e4dad364b8410ed706    IRRELEVANT  lxd/project/limits: Use driver name to determine default state size
+8b3473f8acb163884169e63c63badbc1cbfd6a9a    IRRELEVANT  lxd/storage: Fix linter errors
+0a066f283133163ddde5f4c95a69a6fe15b6d9b5    IRRELEVANT  lxd/storage/drivers: Fix linter errors
+969efa31bafdd5c95021257bd5e6a982752ccbfb    IRRELEVANT  lxd/storage/drivers: Test DefaultVMBlockFilesystemSize
+8dc8462e1f5aff1812008b082493a0126bc4ac81    IRRELEVANT  lxd/db/cluster: Fix instance_snapshot entity type typo
+6ba0844713e3d00a2cf6d09a102e93c617f70860    IRRELEVANT  test/includes/net: use long options with curl
+bcf4b8b896f7ceadbf1d435e51e68cc84ae8b5e1    IRRELEVANT  shared/trust: Add HMAC utilities
+8ad951c914f10a4cedaf5a1dec854e6e5d5a892f    IRRELEVANT  shared/trust: Add testing coverage for HMAC utilities
+64cdeb33ba3c677e92af294c5c4928bbca890d8d    IRRELEVANT  lxd: Enable cobra's completion support
+3c0f4633b64eccca6c49f5303c9dad3b0b38feef    IRRELEVANT  lxc/network: add dynamic completions
+bb6c35e723bb06915bd2c687da26973e51285b50    IRRELEVANT  completion: support returning non-lxd remotes
+545c3fab2d94d4842231bdd5d960121447e01a2c    IRRELEVANT  lxc/image: add dynamic command line completions
+c43249aff8556541edeeb5b52546780025f5fa15    IRRELEVANT  lxc/config: add completions
+069be5371278e7cc478127491b29d85bec5ed27f    IRRELEVANT  lxc: add completions for instance actions and snapshots
+ff6cae43f7c6c774b775c155b73a90c57eb13316    IRRELEVANT  lxc: add completions for profiles
+99caae6195ce7321d8dda4ddcaaf04c85f6098ad    IRRELEVANT  lxc: add completions for remotes
+5115c5a65cd604f561e3d2952d1d7f6606e8b957    IRRELEVANT  lxc: add completions for projects
+101ca37f8cf117ceb68e7cca19b0782159f76bc9    IRRELEVANT  lxc/completion: Remove space after remote names completion
+a575d35bca6fc1a74684c07a291313ace7f17a8c    IRRELEVANT  lxc: expose parseVolume to entire package
+351598c0b032b7dbb04a148a45609c1c7a8f42a7    IRRELEVANT  lxc: add completions for storage pools and volumes
+7481f2dd7b7f055efdeb52c54a020ada2b3de120    IRRELEVANT  lxc/completion: fix image names completion
+94a9a687e6072a281fc334b862a094a48e4e1b42    IRRELEVANT  lxc: add completions for clusters
+6c3a291ff08144174804f2b93a6b5318e44ca2db    IRRELEVANT  lxc: add completions for cluster groups
+20f028a1d1b3f34408799e9b913eeac360240df8    IRRELEVANT  lxc: add completions for cluster roles
+7904166dc63365ae88a3ab38cfec950230490983    IRRELEVANT  lxc: add completions for config templates
+c33a9472328ec67ac085571dfd4762dbccdd3d2d    IRRELEVANT  lxc: add completions for network acls
+af2ef614d5a4dd6be6dfaa94e1531a73fa5cd3d5    IRRELEVANT  lxc: add completions for network forwards
+0e0c58a22cbb82d2ac596689a693a8c4f4613234    IRRELEVANT  lxc: add completions for network load balancers
+49f1aa77fa6c7a06f40322645ab943ce33e317e1    IRRELEVANT  lxc: add completions for network peers
+f171b15f4fe9569ab2306ed332bd58b6788e94e0    IRRELEVANT  lxc: add completions for network zones
+732bd1eb5ea415f058944c66f1e4e72fc182ff20    IRRELEVANT  scripts/bash: delete in favor of cobra completions
+8c6dfed7a8c44875f7b842e8eafe9fb6f57894e4    IRRELEVANT  lxc/aliases: fix completion regression
+e7c8b54de4913cb47aac2476d7c0cb71f8bef3a0    IRRELEVANT  lxc/publish: Complete snapshot names
+40bae5c315cd638e64060749d03d6daf59a805bd    IRRELEVANT  lxc: fix go-vet linter
+d9765e763b52e7c6a1a6217f1c0d228b0a7fc967    IRRELEVANT  lxc/project: Get current project from connection info
+9bce14a040c2738996ea224b7811458f79addbd9    IRRELEVANT  i18n: Update translations
+29f8e9641041bfeaf720636770655be52e2e294e    IRRELEVANT  test/suites/tls_restrictions: add tls version check
+2771fa82266fe78ba21e02121b3177ca54d3be0e    IRRELEVANT  test/main: add tls version check test
+7fe4f50387308fe5dec5d4b71cc9d0673ef481b8    IRRELEVANT  lxc/auth: use `errors.New()` where appropriate
+776c2d4e5c02a49818281592f5b4ec3d265e1620    IRRELEVANT  lxc/config_trust: use `errors.New()` where appropriate
+f11add099c9427b71c1f865fbe5dbc5b22bd99f7    IRRELEVANT  lxc/file: use `errors.New()` where appropriate
+32422f47a39c2dae791c261df4f7d3b738a6ac36    IRRELEVANT  lxc/image_alias: use `errors.New()` where appropriate
+eb088bd2c4a70e72442576d8932546f6d584231c    IRRELEVANT  lxc/monitor: use `errors.New()` where appropriate
+1f0ba9d56f6563fd05adf2047a01c71c00d26401    IRRELEVANT  lxc/operation: use `errors.New()` where appropriate
+8a5be095b7d05edd041435ab59097b75a15a8205    IRRELEVANT  lxc/query: use `errors.New()` where appropriate
+3452dfae4f6e2b9811be32f5bcb2b61d7b2bc603    IRRELEVANT  lxc/rebuild: use `errors.New()` where appropriate
+d33fdc4d808df0309be04c6bd64b4991f08b25d1    IRRELEVANT  lxc/warning: use `errors.New()` where appropriate
+0c4cc3c766bae6b5b9afe5edab142e75863f1e2b    IRRELEVANT  shared/cmd/cancel: use `errors.New()` where appropriate
+7ee469fb6fed442f3104431b9ca43b04076545e6    IRRELEVANT  i18n: Update translations.
+3ae5120415db13a540746f0c9c302e55b74e0f2e    IRRELEVANT  lxc/publish: clarify that public means accessible to unauth'ed clients
+90e365d9b05e8117ff158ebfb43bf997cbc8d2d8    IRRELEVANT  i18n: Update translations.
+e15351966a71967221e4c1c390af8f0590b96afd    IRRELEVANT  lxd/instance/lxd-agent: fix selinux fcontext path to lxd-agent /run dir
+a10aab92647e081e50adcd5b8d5769d96ae960d6    IRRELEVANT  doc/guest-os-compatibility: fix lxd-agent compat with SELinux
+7c010289a2ab55e8cf0b454cb4b00518337f7e00    IRRELEVANT  doc: Add shell completions instructions to LXD installation docs
+582b2ccddeebbfa17df7becfd3979d4f5438a0a1    IRRELEVANT  api: Add metrics_api_requests extension
+dac2f5927488b78e580d03abe503610750901025    IRRELEVANT  shared/entity: Add `apiMetricsURLPrefixes` to `typeInfo`
+7c616169efc1fa8192a63e85f36f6cf956afd856    IRRELEVANT  shared/entity: Use `apiMetricsURLPrefixes` to classify endpoints
+4388a189841f41d22eba31182f13b16e84fe287b    IRRELEVANT  shared/entity: Unit tests for endpoint entity types
+a1999f2c8c271c78a55d401adcee24dabe4e48e6    IRRELEVANT  lxd/metrics: Define core logic for API request metrics
+bb959039a1b10c8ab72788b117249b51fcf6a604    IRRELEVANT  lxd/api: Initialize API metrics
+14459aa1d58fea370b2a65255e8d4804230a2bbe    IRRELEVANT  lxd/request: Create `MetricsCallbackFunc`
+e4d3b840db7415f62a5b2a528569bb57cddaf1a0    IRRELEVANT  lxd: Create `CountStartedRequest`
+af29d20ffd134a4133f7986165ea908b83fbea9f    IRRELEVANT  lxd/daemon: Track request on `createCmd`
+55b3425ed4d7d4ada9e32fb3be5f60a6491eb3d3    IRRELEVANT  lxd/api: Include handlers outside `createCmd`
+815cdb2a8c9b72ca19d63bb61b7f64cb64fce459    IRRELEVANT  lxd: Delete duplicate `operationWebSocket`
+ba31a90cfdb86ecabacc5f23e1c34e5bedbbf297    IRRELEVANT  lxd: Add request argument on `Render`
+9df582232b0e0f965f398d8b766a4a554231d4cd    IRRELEVANT  lxd: Remove request field on response types
+a094cbe10e3db5a3df2c0827fd0bb10089b0386f    IRRELEVANT  lxd/request: Create `MetricsCallback`
+2fe07bec65c8cd8d1930daeecb4acbbc81ab5e63    IRRELEVANT  lxd: Track completed requests on `Render`
+bf45467506c111719dea2d0d90e546f222a0cf32    IRRELEVANT  lxd/operations: Add onDone to operation
+65a47e45f7ee0aaf265946749a198678d00b7f71    IRRELEVANT  lxd/operations: Inject callback function on operation
+9143502719344473f7b912060f04f4b51c79d123    IRRELEVANT  lxd-agent: Add request argument to `Render`
+98d70604dbdcfce1d69bd75624a2c72d16cc84ae    IRRELEVANT  lxd-agent: Remove request fields from response types
+b5e92328bcc51339c740a81a91850e1695c16b35    IRRELEVANT  lxd/metrics: Sort metrics tuple alphabetically
+84202b33593791960547f09773f794dece74fd13    IRRELEVANT  lxd/metrics: Add constants for API requests metrics
+abc502dc6fb67ebdb9175a5c7ac185f2f8f8dd0b    IRRELEVANT  lxd/api_metrics: Adds samples for API request metrics
+6232690ecc2209af198109dc5744eb6586fc23c5    IRRELEVANT  lxd/api_metrics: Ensure internal metrics are included
+f6e4f994fc36c1a8880cb613fcf18cc2dc16666e    IRRELEVANT  lxd: Add comments to exported functions
+5b84209670f35b5ba187aa42437e1d2da39e4b0c    IRRELEVANT  lxd: Fix comments for linter
+d4213467284237c7feb893f13e9a649ef11ee6eb    IRRELEVANT  lxd/api: Log error on `Fprint`
+df521dd3a22d6a13d51d590df423dbb054f7079d    IRRELEVANT  lxd/daemon: Change log error to warning
+7798c53f6d825c020cd11152e442e80dc0199803    IRRELEVANT  lxd/api: Remove uncecessary `else` block
+b3230b46cdce822ae008ac0cb1aa4ee266063e4b    IRRELEVANT  lxd-agent: Add comment to exported function
+25f8f90791d8e8158ccd804b6d731812d5152bf9    IRRELEVANT  test: Add tests for API requests metrics
+525ca4b0d755c8f2146fb830afa6483238113f6a    IRRELEVANT  doc/reference: Update internal metrics docs
+7cb5d1dcd128563cb8febf32a741e243447d9469    IRRELEVANT  doc: Update example metrics raw output
+0b3a0941185bad6b52808c30c313aff08d41742d    IRRELEVANT  golangci: Disable `defer` rule
+026aae5b5fe418331eb785b2c5f227280b2dc556    IRRELEVANT  lxd/instance/drivers/edk2: Actually check that the files exist
+aed1505db4691613698d64794aad6bbe0df49eea    IRRELEVANT  lxd/instance/drivers/driver/qemu: Always re-generate the nvram symlink
+f7e3a26f7584f57ff562558a6ed7d7489b00c726    IRRELEVANT  api: Add `metrics_api_requests` extension.
+63eb92263fb0c99b0005cecb8b7ea3e3d2e4b71f    IRRELEVANT  lxd/instance/drivers/edk2: Rework GetAchitectureFirmwarePairs into GetAchitectureFirmwareVarsCandidates
+25a46a33fffe5d083e9693396bf800d0bd287b13    IRRELEVANT  lxd/instance/drivers/driver/qemu: GetAchitectureFirmwareVarsCandidates usage
+f92bde33c69c8468ba92c85fb98213014cad70f8    IRRELEVANT  lxd/instance/drivers/edk: Comment improvement on GetArchitectureFirmwarePairsForUsage
+b7d961fc15cc8f74ab7724c80cf4c7a6c43a323c    IRRELEVANT  doc/howto/instances_create: remove outdated note about SELinux
+044cd648a6a175f63ed6d9502cb5d1ce8bd62c0e    IRRELEVANT  doc/instances: Cover LXD agent installation
+7991cd91674395b5ee178c9403113d112a3a0c86    IRRELEVANT  doc/howto/instances_create: improve lxd-agent install steps
+b03a68a09f2dfd27354d5fef82b1aa14a8c85dc9    IRRELEVANT  doc/howto/instances_create: add note for lxd-agent install in ISO install
+948457c681eb49144c2e5535d48cbed57f2598cd    IRRELEVANT  doc/guest-os-compatibility: update link to LXD agent manual install
+487d88a13194c4dae46f8801fb5f4d609df2b472    IRRELEVANT  lxc/completion: Fix completions for config keys
+2df815fc00ba52752381ae870ebeb1a293949eb1    IRRELEVANT  github: Align codesql workflow "on" and concurrency rules with other tests
+6749a86b24dfa439da70eb1c17f450b5045d9bf6    IRRELEVANT  github: Align commits workflow "on" and concurrency rules with other tests
+4b8b1657224923736a96a0043fa2d735ab7f8d6d    IRRELEVANT  lxd/instance/drivers: Move removeDiskDevices to common
+8c48af1961e61373a9c1fd40520de8dc9786e70a    IRRELEVANT  lxd/instance/drivers: Add ErrExecDisconnected
+8665ae0afbd85bde0991fb1507326a183199075b    IRRELEVANT  lxd: Make VM shutdown/reboot exit cleanly
+0f5be4baa56283baa3e71ea7074e7ad2b817d6d1    IRRELEVANT  lxd/instance/drivers: Handle websocket closing
+1656132a1128e4267e37be1ed159cb84febbaa36    IRRELEVANT  lxd/project/limits: Rework low-level permission checks
+5889a55601ec25676a78cb9d04b75c38e8362759    IRRELEVANT  lxd/project/limits: Test project lowlevel refactor
+49482ecfd0166410a865ecee397b12524b090230    IRRELEVANT  github: Don't run commits workflow on push
+d977e3ba239f7a9a868678a4f139b54324238dfe    IRRELEVANT  github: Move go version compatibility check into code test phase
+52b7bb298ef1ec178289c4e5283bc3a81ec23cd2    IRRELEVANT  Makefile: Avoid unnecessary repeat builds during build
+e414a269fd82a38d79215302ea66f5bd65cae0db    IRRELEVANT  github: Cache binaries built in code tests and use in system tests
+5a6998446bebdf52cf391dc8de8a8061372cd81d    IRRELEVANT  github: Clearly indicate the LXD client binaries in test artifact naming
+e81585c37228368b8faac9c6fef8ab99788cd0ca    IRRELEVANT  github: Remove unused dqlite ppa usage in system tests
+90cf7a692def2f9867481b2bf4e1f020e53f53e3    IRRELEVANT  github: Strip binaries during test
+93c0c4d4336a17ee40016639f7982c8088562df0    IRRELEVANT  Makefile: lxc doesn't need sqlite3 tag
+fb64bec9e997835754456cc67e54a606a7a9bcb1    IRRELEVANT  Makefile: Remove unused dependencies from check stage
+f853a6d023cc2d3be8674d1d3ce7dc1022e08021    IRRELEVANT  Makefile: Add -failfast to unit test run
+0f51ee0c0de99a30d4495e9108a891f87111a03f    IRRELEVANT  Makefile: Use -trimpath
+421d7073d060fe73a2129a4521d2a0cf6c605d3f    IRRELEVANT  Makefile: Add separate check-unit for unit tests
+a85814138a158385c3f287cb5dfb0ce70a9805b0    IRRELEVANT  github: Use make check-unit for unit tests
+f51392d534340fea4e65d014e8510b60af339eef    IRRELEVANT  build(deps): bump golang.org/x/term from 0.23.0 to 0.24.0
+937ce679b789ce564709475d3689cfe3274650d6    IRRELEVANT  Makefile: Add GOCOVERDIR support
+908e82578a32c19fc7cab84d32a85b8ba6dff25e    IRRELEVANT  doc/authentication: clarify what {client|server}.ca are
+4bf8b17f49d58234dedce7c013957301f242e347    IRRELEVANT  client: Fix error handling in push mode copy
+fce81c5bdb1b27e880fe4af56218d7cbc1be9c43    IRRELEVANT  github: Add coverage support to lxd tests
+af8e15acad9e1c61f54217a2faa4e4897f973e17    IRRELEVANT  lxd/patches: Add patch for entity type instance snapshot typo
+07360a700952e512ea82b125e281b345ef624f3b    IRRELEVANT  api: projects_limits_disk_pool
+156d196b54d81473dc06501d99f0a15cc46d5029    IRRELEVANT  lxd/projects: Add new limits.disk.pool config key
+baff31b3d9be41f12b6d4d5c683e32fce37e46b3    IRRELEVANT  doc: Update configs
+f34e53d115501f66feb4058d7b8d92c230123b6c    IRRELEVANT  lxc/project: Handle pool disk limits
+8b3f2f32075d29fe3c50019a4eccac614de382bb    IRRELEVANT  lxd/project: Add per-pool disk limits
+68290d9517a95fbeb3c4be6b8db61b47e4f53f4b    IRRELEVANT  lxd/project/limits: Add HiddenStoragePools
+b4b7b83dbed23d9beb53ed3288eb0f6e09a1db7d    IRRELEVANT  lxd/storage: Hide pools with a zero limit
+1118bf900be7819c068419ed54575c908b814696    IRRELEVANT  tests: Add test for per pool limits
+302e7785ba5eb0ea9b0c26a2cb809248fd181577    IRRELEVANT  doc/howto/network_bridge_firewalld: add IPv6 rules to Docker example
+973c2ef8ccb0fc9946d3c99d746581dba867958f    IRRELEVANT  lxd/instance: Add support for armhf vm's on arm64 hosts
+4ca8ec69e3b42c297daf9377b24ad742daa672c1    IRRELEVANT  Updated storage volume doc to remove any suspicion of action not working
+3fab11cf694b462007e353129382e51e92349d4d    IRRELEVANT  github: Only build coverage data on workflow_dispatch
+fbffaea3e98e0ebe74d64417d066e0466c7d199a    IRRELEVANT  github: Alow go mod to modify go.mod and go.sum
+6765182cca26cb5d1fe854d0ac3d7d576c12be08    IRRELEVANT  shared/trust: Reimplement HMAC ParseHTTPHeader
+587f41dfb540868de72c0284b7c26bd6fd861ba5    IRRELEVANT  shared/trust: Cache the password for argon2
+900ab5746725c2fdaa7922999a6f66392cf0668b    IRRELEVANT  shared/trust: Remove Equal from HMACFromatter interface
+20b8d31205d015691f0e6581b7480863db79df33    IRRELEVANT  shared/trust: Update HMACEqual
+38c70a199cc4afc4f0d41c6d2dcf492e693b0b68    IRRELEVANT  shared/trust: Rearrange the some funcs
+4129451de483a45bd05437abe71e44381c588d17    IRRELEVANT  shared/trust: Update error messages
+67a2411e82abc89b52af854bfc6452c9bb075066    IRRELEVANT  shared/trust: Update HMAC tests
+fe8970e60dc1f2d97f6ff56152df0d9ee4612d07    IRRELEVANT  doc: Update `project_limits_disk_pool` description
+51a5460ecf4b35a38b65b27d4f47f080d8740d16    IRRELEVANT  lxd: Update limits.disk.pool doc
+614ba7a8dde5fc895597ccfa64692a016a131cc6    IRRELEVANT  doc: `make update-metadata`
+848dc0c22fdfd980de1887c13d4f3d36aaf782a3    IRRELEVANT  github: Add performance tuning to code tests
+876707e71bfa5c3c79b1929cb7b1032435538594    IRRELEVANT  github: Mask unwanted lxc services in code tests
+84842e383ca063b91aa0f13d280081a4b87e4db0    IRRELEVANT  github: Use set -eux on all test commands
+7807a1c6d64f87ecc14475ab3c5c23f55f880d83    IRRELEVANT  github: Reclaim some space
+4d81f6e30a6e0d515a1f17636b6fb8c9f156a459    IRRELEVANT  github: Add initial TICS step
+0015223d34e30337376561ab0933889ed18a55db    IRRELEVANT  Go: Bump minimum version to 1.22.6
+2e4d46c07de288afc1b759fb19c9fd8b7d680b12    IRRELEVANT  Makefile: Remove deprecated -d flag from go get
+d4ce7a4b3b1ccff5617d14decabb0601dc16a312    IRRELEVANT  Makefile: Improve comments
+fcc760d2362912936c1ca5c715bfd491322864fa    IRRELEVANT  Makefile: Pin openga again
+252e14e1603db356f023d841dc52cb8379b2e942    IRRELEVANT  Makefile: Remove go toolchain and use bundled toolchain of minimum version
+04120c2648332e4236c5f87b80d7bd2196c4018c    IRRELEVANT  gomod: Update dependencies
+8e245af32aa5d1e4915f473464986ae97c0af763    IRRELEVANT  test/godeps: Update lxd-agent expected deps
+20149790a5df81fcf3540d3873dcabd2c870ba0d    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.5.9 to 1.6.0
+d1c88a4ef249ea7edf02bbb51817f0b5a3ec61ec    IRRELEVANT  lxd/auth/drivers: Update `Internal` to `Unwrap`
+dff557f845b2ff0e0bdc784b72ecb8529a4ac6c6    IRRELEVANT  github: Don't interrupt ongoing tests for different actions on same github.ref
+fa5dcc299e185c4c1a3b20fec6ce6a73ddeee479    IRRELEVANT  github: Adds reclaim-disk-space action
+a890305542f9cac8640a771ec90eaaf4d8fa609b    IRRELEVANT  github: Use reclaim-disk-space action
+1060aadf0a46f46cf997101a39da8dd5eddece43    IRRELEVANT  github: Adds tune-disk-performance action
+f77d2bc71c04eb5d91a3850fef1afed64d58446c    IRRELEVANT  github: Use tune-disk-performance action
+5927535ae3d35f75c88247c6be1ecb62349c9b2f    IRRELEVANT  lxc/config: create `oidctokens` dir with 0750
+33af1fbe9f2a0cffd5fe20f628841e8cd02bca2e    IRRELEVANT  github: Adds remove-docker action
+9f2a601a297095d841a3541f9a664801f22701c0    IRRELEVANT  github: Use remove-docker action
+f1eb5b2c29464c1a69a9d2e8a9fd34e5adecd648    IRRELEVANT  lxd: Deduplicate logging for instance types update failure
