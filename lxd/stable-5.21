@@ -1778,3 +1778,43 @@ f345b363d64c30daf3ceea0a1cf42ffdec59c7fd    APPLIED     test: Add test for binfm
 143717cc331dc9bbdef6b177fccbbef91da7ea6e    APPLIED     lxd/db/cluster: Use given auth group ID when setting permissions.
 aef96d09a93432fe84c795474970714fda2fbcda    APPLIED     lxd: Update permission handling on upsert.
 9b75840668fc8b51e4fe1ca11b426e339e64d35c    APPLIED     lxd: Test patching certificate/identity permissions.
+81b993b16e58e265e5ecacdd220fd1de47199717    DIFFERS     lxd-migrate: Add cert-path/key-path flags
+a6b80c95bd7b2fa366a08313c2ebeba8cf9c142d    DIFFERS     test/godeps: Update lxd-agent dependency list.
+6c6861a72af96579d3affe3d153f55f7f6bf00d7    APPLIED     lxd/instance/drivers/driver/lxc: Use correct container name in Update call to liblxc
+8128320c310cf61670ef94c2f76c9527749d47b3    APPLIED     lxd/patches: Use lower case "project" in logging for consistency
+45e3fb5a7370fe2b8c0166dbc03a8e19dd2b18f4    DIFFERS     gomod: Update depdendencies
+4c0b4bde129c7d09cf06ba3abb05611bb2cfda14    APPLIED     doc: silence warning caused by sphinx-tabs
+85883265eaef66a3da45a88bbd44c79eeef8abfa    APPLIED     lxd/devices: use builtin min() (Go 1.21+)
+1a294e65431f9e754bc12461fcff507d25f3eedb    APPLIED     doc/installing: update link to how to manage the LXD snap
+f8d58cc4670784dbc903299b20558676f8b431b2    APPLIED     github: Update step names
+5c02bbf10263cb42ccbdd53145e0d37da4b40b30    APPLIED     github: Fix Trivy vulnerability database caching
+c824e2c3c8c9a51b9c7a0ea24d050798064dcea9    APPLIED     lxd/db/cluster: Add statement for getting certificates.
+51edfd73c31d53afb50c98c6723fa4c9a379a95c    APPLIED     lxd/db/cluster: Use certificate statements for querying certificate identities.
+828d552ab5f8c855c202e96c6686a91bfa569ca7    APPLIED     lxd/db/cluster: Update certificate database function comments.
+68f964ab1299498b0d897958bafd3ef6775ca948    APPLIED     lxd/db/cluster: Remove unnecessary cast.
+13a288ed0b94df0a2188880637bde9428ea24ae0    APPLIED     lxd/db/cluster: Remove unused CertificateFilter.
+2d913f283601dc57c84d5be2e3d4ce4333028224    APPLIED     lxd/db/cluster: Remove unused `CertificateExists` function.
+f9fd9be270c799e4230b8bbb948b92f97732724f    APPLIED     lxd/db/cluster: Remove unused `certificates_projects` functions.
+7c8e9b2b155b6259577af87ae09756c3417160ef    APPLIED     lxd/db/cluster: Remove DeleteCertificates function.
+3aaec0fddbae06864a165aba6167566fe5415bb3    APPLIED     lxd/cluster: Update call to delete certificates.
+95beaeeb5c212ed79f4effc1ad2045b7a641e152    APPLIED     lxd/db: Remove `(*DB).UpdateCertificate`.
+fd74a3c7930cd38554c28ffccd6e2a152873fccf    APPLIED     lxd: Pass a context into `doCertificateUpdate`.
+396f31600f77cc23c466134b98c2a55e6382340b    APPLIED     lxd: Update `doCertificateUpdate` for removed `(*DB).UpdateCertificate`.
+e81185a5812aa7c9c250c76e3874985539ece99a    APPLIED     lxd/cluster: Fix lint error (govet: printf).
+d3cd178bd69c192b9d8883c317a62f4c0742ceb6    APPLIED     test/suites/backup: ignore time discrepancies when untar'ing
+1103985f845b1ff74a78e965579aaf5b854051bf    APPLIED     Makefile: Build lxd-user as static binary
+d38f5158c87ff3dac7de5c4178e094a807df15bb    APPLIED     Makefile: Remove unused nocache and race targets
+75c8af8c1f2abe2074def6068abecd410a03c880    APPLIED     Makefile: Removes unused staticcheck target
+e25bc219414e04603aee07b33aba89adc830fef6    APPLIED     Makefile: Move lxd-benchmark to be built statically
+07ebf37995321ba958551ceb53d558b651ef909a    APPLIED     doc: silence all warnings related to Sphinx 9.0 deprecations
+1693bc134a4c0a868cf04b5f5afd96e5d843933b    APPLIED     test/pki: Export `LXD_DIR` in subshell.
+24a7d65c7bb1a5acd3a3eef4fddbde4e72afb1a7    APPLIED     lxd/storage/drivers/powerflex: Use the Net* response variables for pool stats
+4798ddb609539f7c64f1009c71250ddd7d239b92    APPLIED     build(deps): bump github.com/dell/goscaleio from 1.15.0 to 1.16.0
+1d6c8f95d6b70065c063b02e983b3f28c07b9e9d    APPLIED     lxc: Add `lxc file create` subcommand
+ae28236a3ee67dccea7839acb284ef7d0dbc5ec7    APPLIED     test: Add tests for `lxc file create`
+679ca885f3363a5bb8e9eea0052947c1614e7925    DIFFERS     i18n: Update translation templates.
+d0c695dc8ce1dec382677cf322e610eabad7e990    DIFFERS     i18n: Update translations.
+9b0fb79074b5f4b4bf762ea93a16089c1ed53a88    APPLIED     lxc: Use `ParseUint` with base and upper bound instead of `ParseInt` in cmdFilePush run function
+2a2a121e810164f89e4d3c4021578dc46298df53    DIFFERS     gomod: Update dependencies
+0402f2dc110fc3df064e32407e95cff43742d2dd    APPLIED     github: Use microceph from latest/edge
+2acc480e4926697a61931ae57a8b14a173290fce    APPLIED     github: Workaround GHA download artifact bug
