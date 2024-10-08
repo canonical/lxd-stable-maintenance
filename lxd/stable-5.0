@@ -5458,9 +5458,6 @@ b03a68a09f2dfd27354d5fef82b1aa14a8c85dc9    IRRELEVANT  doc/howto/instances_crea
 2df815fc00ba52752381ae870ebeb1a293949eb1    IRRELEVANT  github: Align codesql workflow "on" and concurrency rules with other tests
 6749a86b24dfa439da70eb1c17f450b5045d9bf6    IRRELEVANT  github: Align commits workflow "on" and concurrency rules with other tests
 4b8b1657224923736a96a0043fa2d735ab7f8d6d    IRRELEVANT  lxd/instance/drivers: Move removeDiskDevices to common
-8c48af1961e61373a9c1fd40520de8dc9786e70a    IRRELEVANT  lxd/instance/drivers: Add ErrExecDisconnected
-8665ae0afbd85bde0991fb1507326a183199075b    IRRELEVANT  lxd: Make VM shutdown/reboot exit cleanly
-0f5be4baa56283baa3e71ea7074e7ad2b817d6d1    IRRELEVANT  lxd/instance/drivers: Handle websocket closing
 1656132a1128e4267e37be1ed159cb84febbaa36    IRRELEVANT  lxd/project/limits: Rework low-level permission checks
 5889a55601ec25676a78cb9d04b75c38e8362759    IRRELEVANT  lxd/project/limits: Test project lowlevel refactor
 49482ecfd0166410a865ecee397b12524b090230    IRRELEVANT  github: Don't run commits workflow on push
@@ -5528,3 +5525,197 @@ f77d2bc71c04eb5d91a3850fef1afed64d58446c    IRRELEVANT  github: Use tune-disk-pe
 33af1fbe9f2a0cffd5fe20f628841e8cd02bca2e    IRRELEVANT  github: Adds remove-docker action
 9f2a601a297095d841a3541f9a664801f22701c0    IRRELEVANT  github: Use remove-docker action
 f1eb5b2c29464c1a69a9d2e8a9fd34e5adecd648    IRRELEVANT  lxd: Deduplicate logging for instance types update failure
+3fa5fb10ffb5e6848f7dc7a73058d99f0396242e    APPLIED     test: Test exit codes upon container disconnect
+d7c2dfd7b98ea059905c4e87c5605a16cb9cef34    IRRELEVANT  github: Run TICS workflow daily
+e01a74fa2895c7481b7e0865f2071a719eb5d284    IRRELEVANT  doc/howto: Update windows conversion tip to mention new lxd-migrate functionality
+58d9d58e750670b2c1230be6189981f69627fbab    IRRELEVANT  github: Adds action to install LXD build dependencies
+15b1c0eca3fa70aa0d597a2b607eb5e99dc2231b    IRRELEVANT  github: Switch to use install-lxd-builddeps
+088960bcfb153c795392d4fe382ca77178bca68c    IRRELEVANT  github: Make clear we build LXD from dist tarball
+ab28f1bd382becba5d24a84b997a7b21ffd50a11    IRRELEVANT  lxd/project: Don't fail project creation on missing pools
+39ea5dd61a0fcb59e557ce91ba3b4c4be2f5aa95    IRRELEVANT  test/suites/project: Check project operations before init
+e5cd683843195178a46c3504a91fd9797adaeee1    IRRELEVANT  github: Switch to tiobe/tics-github-action@v3
+25151b8e1a269f8b12ed13481b9c612ee72f691e    IRRELEVANT  doc/custom_conf: Disable Dell link check due to possible rate limiting
+9e36c17770cc294b5879dc7932c6cc69ced36a6f    APPLIED     lxd/instance/drivers/qemu: Fix RecordOutput
+211a4ee8d22a30c22a73c98fec353ec9397d8d3b    IRRELEVANT  lxd-migrate: Fix linter issue with constant error
+43102f13883e2517427511f4fe1fa35d5bf40662    IRRELEVANT  lxd-migrate: Accept path when connecting over unix socket
+18e21b7a80df045bafcc23265389481c5639c89e    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.6.0 to 1.6.1
+d49d1db7c6856239138ad497e6f324a07584b17e    IRRELEVANT  lxd-migrate: Add profiles and no-profiles flags
+cf85533ba48b5c7f7fefacf4f47504b67ea24a54    IRRELEVANT  lxd-migrate: Add network flag and use network config property instead of parent
+97604075cb64f68b26f1570cd80b29808b3f70b1    IRRELEVANT  lxd-migrate: Add storage and storage-size flags
+88cfc80041c2e9d6b4f9586f854bb3d4fac89ae0    IRRELEVANT  lxd-migrate: Add flag for instance configuration
+e5f881dc8a11de818519081f570fc592f9db9322    IRRELEVANT  lxd-migrate: Add project flag
+5c7b536bd85ccb45997281a9f6fabd82225dcbf8    IRRELEVANT  lxd-migrate: Add flags for target server url and token
+8dcf9a539c95005528292404a0020ad752102912    IRRELEVANT  lxd-migrate: Add flag for instance source
+1682fcd2ac477201ffe2aa8a1129f8e88a8a4ea3    IRRELEVANT  lxd-migrate: Add flag for setting instance name and selecting its type
+2cae1382819d02568815e75c21cd71d13224d04a    IRRELEVANT  lxd-migrate: Add flag for configuring additional container FS mounts
+972c2b0ea204feaf5ef0da72eb151f312ed0349a    IRRELEVANT  lxd-migrate: Prevent interaction in non-interactive mode
+6e6bced4af0b238e82c60c76f03347025e42b19b    IRRELEVANT  lxd-migrate: Remove invalid comment in lxd-migrate help message
+da2c3382e94046e7e97e10685abe8a46ebb09a1d    IRRELEVANT  lxd-migrate: Ask about secureboot only in interactive mode
+81b993b16e58e265e5ecacdd220fd1de47199717    IRRELEVANT  lxd-migrate: Add cert-path/key-path flags
+fd6965eb22de2693974139e0fa86983a2c2f76f2    IRRELEVANT  lxd-migrate: Add precheck before connecting to the server
+2e927fd187235a1ba72863543d4953340eb5cd81    IRRELEVANT  lxd-migrate: Replace shared.ValueInSlice with slices.Contains
+cd760425033ae54968754b06e73179e2d1b089f9    IRRELEVANT  docs: Document non-interactive lxd-migrate mode
+27c4820c9815ca8b38622cea34bccbef5209c4cc    IRRELEVANT  lxd/fsmonitor: Move events out of drivers package.
+fa7f236791f855fbfaf6a475e948d993155f61c3    IRRELEVANT  lxd/fsmonitor: Prefix Event constants with Event.
+3f25a6a68c6efff4840b9fba4afa4bbd484b5303    IRRELEVANT  lxd/fsmonitor: Add EventWrite and EventRename.
+ba3ac9c6c95d47e1b8c3c0a4be757389b2baf92f    IRRELEVANT  lxd/fsmonitor: Add comment for exported function.
+fa1d0072488f7337d24ccd9d71b927a520a06a01    IRRELEVANT  lxd/fsmonitor: Remove wrapper monitor.
+b0fade2bf6e97b1ec4afb30c3fa13c0db9fab257    IRRELEVANT  lxd/fsmonitor/drivers: Add logging to the common fsmonitor.
+9642cf048751ef8f80aa652fd87ac5e92d3cf7b2    IRRELEVANT  lxd/fsmonitor/drivers: Remove New function and use drivers.Load.
+e4d09a8034bb7b4cfec1450f3a7148215bcec1ee    IRRELEVANT  lxd/fsmonitor/drivers: Move mountpoint restriction into fanotify load method.
+e988dd7f96eda6ec623a04035c8c366a00fd77c3    IRRELEVANT  lxd/fsmonitor: Add driver name to interface.
+91e85de522a9f8621de222f7f2eeff05bdd0f95e    IRRELEVANT  lxd/fsmonitor/drivers: Remove Driver interface and implement FSMonitor interface.
+9d7764e7019cf9ad84b16c1e752066dc01a6ae9f    IRRELEVANT  lxd/fsmonitor/drivers: Add methods to convert driver specific events into fsmonitor events.
+a7015270f8c709665401fdf109ceb14264732439    IRRELEVANT  lxd/fsmonitor: Update interface to use fsmonitor.Event rather than string.
+174a1b4f8173a41c39778ad89d9da6f68821961b    IRRELEVANT  lxd/fsmonitor/drivers: Allow passing a slice of event types to be monitored.
+848f6c88dd6175d6af0bcd0d4ae149f16d468196    IRRELEVANT  lxd/fsmonitor/drivers: Create an event mask from the given list.
+8845248ffd28d4fe34336adc882af6d664eedf24    IRRELEVANT  lxd/fsmonitor/drivers: Allow more than one inotify/fanotify watcher to be instantiated.
+d2c903a5959ae092b199162a6a5caa6426d741d1    IRRELEVANT  lxd: Update fsmonitor instantiation.
+f52d80a0a26294837b9f2f2a47428225df89a65a    IRRELEVANT  lxd/device: Update unix events to use an fsmonitor.Event.
+3d3b08b84457de655ee997a3b6848b51792e3cfd    IRRELEVANT  lxd/fsmonitor/drivers: Fix lint error (unchecked-type-assertion).
+b16cc6ba791d77fabb889dfaf00c16c6e02cae7e    IRRELEVANT  test/godeps: Update lxd-agent dependencies.
+539a9ccfdd8d10a429d3cb1519edb9ae22fa0713    IRRELEVANT  lxd: Do not set remote address for devlxd
+9cd2b5be53a8aececd0395900d9ea6229c9ddea1    IRRELEVANT  lxd: Remove `devlxdRemoteAddress`
+36bcbbfe08cd2731617a43cee52c255f1281026d    IRRELEVANT  shared/api: Introduce `AuthenticationMethodDevLXD`
+2ec426c48a735dccdd9dca53d0d98e6a037a38bd    IRRELEVANT  lxd: Set context auth method for devlxd requests
+84a16ffa1130517b70b7fd8249d6df6662ce2ba0    IRRELEVANT  lxd: Remove check for devlxd request
+a7770009f7de5508e528b00a33d784293f2b4aff    IRRELEVANT  lxd: Use auth method instead of `devlxdRemoteAddress`
+24df38cffa55c3854d4ffb9bf6d38f8fd6d259bc    IRRELEVANT  lxd: Remove metrics functions from `request` package
+31036b0106a244bec4a4ee03c3389e26eec7dffb    IRRELEVANT  lxd/metrics: Rename `MetricsCallback` for linter
+c9439956fe9eb7f77989d810f1381f80b30a519e    IRRELEVANT  lxd/metrics: Refactor function names
+a65021ef048e87b5af51cd3aad5213b7b5388a47    IRRELEVANT  lxd: Update `CountStartedRequest` usage
+5c9fbf2f7e9c381b4d31bd1f70893eac078a863f    IRRELEVANT  lxd: Update `MetricsCallback` usage
+325c2b1a00d1b245f3c1348f6cac3a322917ca5d    IRRELEVANT  lxd/request: Fix request not counted warning
+dee61bbdd35d8c4b35c0e2d81b51b24e42ca1b36    IRRELEVANT  devlxd-client: Add support for image export
+7cc6378921646fd5cf063378aa541d4687e01ca1    IRRELEVANT  test/suites: Test image export from devlxd
+76beb4e25772677ca47359105c2c3254c10a96f7    IRRELEVANT  lxd/fsmonitor/drivers: Allow setting fsmonitor driver via environment.
+9f6a328ee5009f28ff2e2e45a9013606e29c4ed5    IRRELEVANT  doc: Add environment variable to documentation.
+bdf32996b67ed3e5eb753a2b6c3b0bed167edbe9    IRRELEVANT  test/suites: Test unix devices with both fsmonitor drivers.
+bf567a51d2f4f9684ecba9121ab9717d783e3df0    IRRELEVANT  lxd/fsmonitor/drivers: Ignore some inotify events to prevent warnings.
+76ae5eb31b0e995f00589e25005f0dcc907a49b4    IRRELEVANT  test/suites/container_devices_unix: test unix-{block,char} together
+2f91387ed8ca865f734d59dc90020c41dc479a4e    IRRELEVANT  test/main: test unix-{block,char} together
+536bba696eae49b4793222445db3d66a41705f05    IRRELEVANT  test/suites/container_devices_unix: better check unset var
+517eb3cabe6a0773f5f06b030380f4b939992350    IRRELEVANT  test/suites/container_devices_unix: use more precise shell comparisons
+cefca178b219749af956449754e7d2b3f6a5891f    IRRELEVANT  doc/howto/container_gpu_passthrough_with_docker: use single line cmds
+11ba7657e1b971f169b7d8e57fb680cce6b3119d    IRRELEVANT  lxd/cluster: Implement createTarball
+b77da39dc29d035c5ee2d9b47659ce85ef434a85    IRRELEVANT  lxd/cluster: Use createTarball for recovery tarball
+3eaf3875c5af6e10dd5c32fc1b43da7f66112861    IRRELEVANT  lxd/cluster: Implement createDatabaseBackup
+d8a4aed4e3a9504dbfdebc86d9c75277f53de5b8    IRRELEVANT  lxd/cluster: Create database backups before recovery
+270f40e43bbd03bdd3d1a4aa616765063aa6c23d    IRRELEVANT  lxd: Improve error handling during cluster edit
+9e40120cdcd44c48f9d65ac2ded08f5f59e06456    IRRELEVANT  test/clustering: Sanity check for automated DB backups
+7f496d3000532c278843916881455fb711f48140    IRRELEVANT  doc: Document cluster recovery automated DB backups
+71f68dea855e2210ccc7e3edef3e1fe3541c9f8e    IRRELEVANT  lxd: Update metadata usage
+46aeda235a3d0f79a97ba39882d334358738d91b    IRRELEVANT  doc: `make update-metadata`
+bb5c917e7484f71135b25f168c4844d38a795898    IRRELEVANT  lxd/auth/drivers/openfga: Implement `With` to satisfy `Logger` interface
+2f34d18e7fc99e50563ad2b2955b59f9808532cc    IRRELEVANT  lxd/auth/drivers/openfga: Add comment to blank import
+d06290d0cb50d875daa0e9f53a103cf294fb3ee6    IRRELEVANT  lxd: Refactor image post
+8a59f7fd1a21f078d6f47cb7b7bfbfd35bd5bb2a    IRRELEVANT  lxd/image: Acquire image lock for uploaded images
+91e2cb2ab88ecada64fd9a9868f7b2af6aa1b19f    IRRELEVANT  doc: Update command description for lxc import image
+5effbfea4734bdec9568164486899afa26d22b49    IRRELEVANT  i18n: Update translations
+61a1d653f393383bb6b9c17ee0f15b5990928cac    APPLIED     lxd/init: Differentiate managed and unmanaged network
+396c072684c73d80917d5d511e9fc90ea62589fc    IRRELEVANT  lxd/storage_buckets: Check etag when updating storage bucket
+901dc9738a331322ba54a84b99539184f6aa2a9a    IRRELEVANT  test/suites/storage_buckets: check file integrity is preserved
+551c0579ace90e6904a91ca9acfc8b923e7b8b8e    IRRELEVANT  lxd-migrate: Prevent invalid instance names
+fbde33c2ac1a60c4386d2e806359c3a9eb19e775    IRRELEVANT  lxd/api/project: Clarify meaning of restricted.networks.subnets
+303031d56c1da3e494de285ddb3b5262ea738fbd    IRRELEVANT  lxd/network/driver/physical: Clarifies the use of ipvX.routes
+cb930df987d65e3187dd965fd740391b1268bb3d    IRRELEVANT  doc: Update metadata
+6d46756242dd5022ccd5425a3576f86ecd582e1b    IRRELEVANT  test/suites/tls_restrictions: don't check for broken pipe error
+2704b3e319d19aa818370c3c834bbd1ab299a640    APPLIED     lxc: Fix exporting vm backups to stdout
+9f10cdb5de8fdc2cf42f85b42176d8402d2517ca    IRRELEVANT  github: Enable tmpdir for TICS
+6eddaceb36a0a9ac2bbbbd382c7e526d27053992    APPLIED     test/lint: Use agent tags when listing dependencies.
+a6b80c95bd7b2fa366a08313c2ebeba8cf9c142d    IRRELEVANT  test/godeps: Update lxd-agent dependency list.
+3d3cfa1c4cb8429201138806853fecf0599bf690    IRRELEVANT  lxd/auth/drivers: Refactor TLS driver for common handling of server level resources.
+bbefb199e7ee44b3c16548e1d504201c3d05cabf    IRRELEVANT  lxd/auth/drivers: Add tests for the TLS driver.
+ad5ed1cd52d3416316b0bc1ea569b8c17cb11e4d    IRRELEVANT  workflows: Change permissions on generated files.
+192dc4d1b3eae2261aee76e56bd65368cd6fa738    IRRELEVANT  lxd/auth/drivers: Remove type-bound public access entitlements from model.
+4202f39da4d9d3a684f66273f782514c477cbe78    IRRELEVANT  lxd/db/openfga: Remove type-bound public access exceptions.
+93c7a3f4d1f8f73ca98ab863c9467cce17080419    IRRELEVANT  lxd: Replace `can_view` on storage pools and server with authentication check.
+373a486dd55a6b5b98bf64e73d423548b5492a84    IRRELEVANT  lxd/auth/drivers: Remove handling of `can_view` on `server` and `storage_pool`.
+36a10dd305eabe4a6dda14e42147eaeeea7292ae    IRRELEVANT  lxd/auth/drivers: Validate entitlements on authorizer calls.
+822aae9e1aed889b9dce3f0e5c95d3a69afe9263    IRRELEVANT  lxd/auth/drivers: Check if `can_view` is valid before determining status code.
+bed72f0441b46f6fc9852463bebda4eac9332ec6    APPLIED     lxd/storage/drivers: Return growFileSystem errors
+9e4bb7f067ae5c733f6a6bed5050a3501beefba7    IRRELEVANT  lxd: Fix bulk unfreezing
+5ecafb1b81602cfecf09cef0fe4c860a759f2ee8    IRRELEVANT  api: Add `ubuntu_pro_guest_attach` API extension.
+25f370c03966d97bec038a32b109d027fe5b7389    IRRELEVANT  lxd: Move instance name validator to instancetype package
+05b71522472b1c9a02a36813f11d9e4408d6f558    IRRELEVANT  {doc,lxd/metadata}: Run `make update-metadata`.
+b2229300099284cd6f48c7019006db305133960d    IRRELEVANT  lxc/init: Add error handling for launching container when image is of type VM
+cddeb0a691791592af35486174e54d6341d6a9b7    IRRELEVANT  i18n: Update translations
+b781061f4bc4bfa3b271a8ffe1bcf5927343276f    IRRELEVANT  test: Add test to ensure aliased container won't launch with vm flag set
+baa4e785b67f0685d4261adcef57832833713a29    IRRELEVANT  lxd: Update copy op response when source is snapshot
+0601ae13dfd4efa700e2629cc005018d312cd41c    IRRELEVANT  workflows: Bump lxd-agent size.
+b1850057cae3c4602e02d1656b88439669885bbe    IRRELEVANT  lxd-agent: Handle built-in vsock module
+6c0b34ba2f3322f4351fe87d01f6a596ef41971c    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.29.1 to 3.30.0
+bb44d255fe666968dc61e4b647e718fc4b240051    APPLIED     lxd/daemon: Fix log format
+4a7208ac87ba74d7f04c55548f3c1cea3e54c435    APPLIED     lxd/sys: Sort kernel features
+e8542c63be101266150dee47ba1542e40bd2861b    APPLIED     test: Don't collapse dmesg in CI when there's a kernel call trace
+849b1dea006029ed2feff5f63ca9914c5fcbf838    APPLIED     tests: Don't over-provision test volume
+b66eea62a3f5f5e3b1ebe320ba060f32c37c7b66    IRRELEVANT  workflows: Revert "Skip system tests for ceph and lvm on push and schedule."
+cdbd3288133d456fed7d636330bbfaa9fac75f0c    IRRELEVANT  lxd/sys: Add doc strings
+8f517f92cf4f901a2968ce0e751c47bbab39e02c    IRRELEVANT  lxd/checkfeature: Add unprivileged binfmt detection
+41125b36da68e1e104fbd2604bab29eaee76edea    IRRELEVANT  lxd/sys: Add UnprivBinfmt
+c0935bd0e513bee31f4580ec0f73d1d12b4fe247    IRRELEVANT  lxd/daemon: Detect unprivileged binfmt_misc
+959a182bc178ea65bd2d3dbec2c4464c17b5915d    IRRELEVANT  lxd/api_1.0: Add unpriv_binfmt kernel feature
+fb39051eb2f0769e6f727ef32b1255efbb2ade46    IRRELEVANT  lxd/instance/lxc: Support unpriv binfmt_misc
+83dac0d63fa9d94266cd1a0a3b3244bb82dbfc68    IRRELEVANT  workflows: Skip system tests for ceph and lvm on push and schedule.
+682793e0274e5029c17c36de70c8965efc7c5ba2    IRRELEVANT  lxd/storage: Check for direct I/O when converting image format
+3efef59e87de61c101993c6580865105bcef7015    IRRELEVANT  api: Add `metadata_configuration_entity_types` API extension.
+86b70dec115fe298df2ebffac56d3c1ae2eaca60    IRRELEVANT  lxd-metadata: All configuration keys are strings.
+cfbf1aacb6c1c90648bccbe87b0a10f291955671    IRRELEVANT  metadata: Runs `make update-metadata`.
+01942179bd4773778b160dd0bd43d32af63dc4b5    IRRELEVANT  shared/api: Add MetadataConfiguration API struct definitions.
+8dac37f9c39f588ee316fa6affa278d7cd66a9c3    IRRELEVANT  lxd/auth/generate: Generate entity type JSON conforming to API type.
+312ab0cccef2610204a6001f36abbfd20f69e3f2    IRRELEVANT  lxd-metadata: Update lxd-metadata to use new entity metadata format.
+9c0c1da05ab22b3b34db369fd959dbecc55c961f    IRRELEVANT  lxd-metadata: Validate that the generated JSON conforms to the API definition.
+284da9ad9c3775789e1b47c0f2445883268b2b71    IRRELEVANT  lxd/metadata: Run `make update-metadata`.
+b5ea2158832944b0bb742c6e9cf3ec723be8e6f5    IRRELEVANT  lxd: Render api.MetadataConfiguration on /1.0/metadata/configuration.
+24200339420c846145e226df270138ff46286a21    IRRELEVANT  lxd: Add MetadataConfiguration to swagger doc string.
+d594de42ca1ab3ace7cf98d21b514dbfe10962d3    IRRELEVANT  doc: Runs `make update-api`.
+1dd8d4927194417f6ad94e4470a6426e78169570    IRRELEVANT  lxd/storage: Fix check for direct I/O write support
+8b682968d55582c647a20012273f59d007d7ff30    IRRELEVANT  lxd/fsmonitor: Add constants for driver names.
+247f73b6f14520fd422a0e344779542d87e78d49    IRRELEVANT  lxd/fsmonitor/drivers: Use driver names where applicable.
+6b9b18bf592730b66a8dfdf1349df95693bc74ff    IRRELEVANT  lxd/fsmonitor/drivers: Only log fanotify load errors if filesystem is mount point.
+14b8d711f517eb02c9ec8aaf146416b47a0f40be    IRRELEVANT  lxd/forknet: Handle wifi detach
+bed2c40fecbfcbf5ab4ae7697c9043de5f86f4f8    IRRELEVANT  lxd/storage: Fix direct I/O write check for ImageUnpack
+f2c1a20e8c0d8d64f2a5e9bda1253f1ef8fe3948    IRRELEVANT  lxd/storage/drivers: Fix direct I/O write check
+401339a4e9236d145bc7870ea274e62aca0e734c    IRRELEVANT  lxc/client: Add GetMetadataConfiguration method
+3e820355eafdf33c4b283b2363070a94be7909fe    IRRELEVANT  Revert "lxc/init: Add error handling for launching container when image is of type VM"
+3f815a570687b98ad372b1357aa10e120bc4d42d    IRRELEVANT  i18n: Update translations
+d31759073dd0645f69658239c9f91df6b602d141    IRRELEVANT  lxc: Add completions for server keys
+2b395784ec31d73a470135d84eea4a6302fc1c59    IRRELEVANT  lxc/console: Add completion
+ffc86a8c7428cd5786c94f19595f689000bcfa4f    IRRELEVANT  github: Add Trivy repo scan
+5f9f0cf88ac7e96ffe02ff08a291e0d707fbdbb0    IRRELEVANT  github: Add Trivy snap scanning
+1f94646c336758a15ea7a1779babe7e57066457b    IRRELEVANT  client/doc: add trailing slash to `ubuntu:` URL
+37f68e0d4b2eed5c6476b135f9400ed551553439    IRRELEVANT  doc/howto/instances_create: add trailing slash to `ubuntu:` URL
+d99e1202dda664f501e95592766593b969df2a4f    IRRELEVANT  doc/howto/instances_routed_nic_vm: add trailing slash to `ubuntu:` URL
+2e8716d6e3b7c56ba1cc9bf6e8dc4d16979edded    IRRELEVANT  doc/rest-api: add trailing slash to `ubuntu:` URL
+8461945d1bf0be2f7ba6a9bb6ae5d4c5b937c8bf    APPLIED     lxc/config/default: add trailing slash to `ubuntu:` URL
+1820e9f1e32c4d95d92c64d3c2d8ac99f3c69080    APPLIED     shared/api/image: add trailing slash to `ubuntu:` URL
+4dfdce201540b110dbd7bf8daf1d5ff163127525    APPLIED     shared/api/instance: add trailing slash to `ubuntu:` URL
+fd59bda4e0d4c6c1c35475cca1668eb2c452ab67    APPLIED     test/suites/remote: add tailing slash to `ubuntu:` URL
+5baa18673eea484ba1b01f65b1f4cd0d325a5edb    APPLIED     lxc/config/default: add trailing slash to `ubuntu-daily:` URL
+3f36556563afb131a1066787cc0cf1e903410815    IRRELEVANT  lxc/config: use strings.Cut() instead of SplitN() in ParseRemote()
+490f4442fc739c6d0447a34f9a1c46bac298375b    IRRELEVANT  lxc/exec: use strings.Cut() instead of SplitN()
+5a3899f9adf359538d655c6d12321393745188a8    IRRELEVANT  lxc/completion: use strings.Cut() instead of SplitN()
+8825e31c3088c8fb64b685ac8ea06f862326c68d    IRRELEVANT  lxc/project: use strings.Cut() instead of SplitN()
+3cb49b909eb23f793d167f7744a63f56c2eb2248    IRRELEVANT  lxd/db/cluster: Split identity and certificate entity type definitions by identity type.
+d0f5c7b6c23380ea87574e71111d4a08089d09e4    IRRELEVANT  Fix cloud-init instance key typos
+ead9b8314b0c8d64b34d9872428fd980f1cdda8a    IRRELEVANT  lxd/apparmor: Support unpriv binfmt_misc
+689d418fa761bf57d7bef1c2c074715b49f4750b    IRRELEVANT  doc: Update container environment docs
+f345b363d64c30daf3ceea0a1cf42ffdec59c7fd    IRRELEVANT  test: Add test for binfmt_misc support on unpriveleged container
+9af20bbcd768a10ce852a19118b8db4d6abc6cb6    IRRELEVANT  build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+85f4715fc1f26b22a314736a277779c53c6aaadd    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.76 to 7.0.77
+8f4ba066c633e7b7bfc22934c7092e38e300a71e    IRRELEVANT  lxd: Add patch to fix errant identity permissions.
+4e1d543e62a8f9ed4484c3d227f79022f5103686    IRRELEVANT  lxd/identity: Add util for checking if identity type is fine-grained.
+95fa04ac7cb7c3a6790140d3d5b8ec4950fd1c68    IRRELEVANT  lxd: Update identity handlers to check certificate permissions.
+855dbe3a795a34ec4b81ce0cc1f8026664328c5c    IRRELEVANT  test/suites: Test permission management for certificates vs. identities.
+8cfe18123130155c29ade2661833206c4b4136ff    IRRELEVANT  test/suites: Commands that are expected to fail shoud end with `|| false`.
+143717cc331dc9bbdef6b177fccbbef91da7ea6e    IRRELEVANT  lxd/db/cluster: Use given auth group ID when setting permissions.
+aef96d09a93432fe84c795474970714fda2fbcda    IRRELEVANT  lxd: Update permission handling on upsert.
+9b75840668fc8b51e4fe1ca11b426e339e64d35c    IRRELEVANT  lxd: Test patching certificate/identity permissions.
+fb59aa5241247c12e2af2da9e736c5873925960e    APPLIED     Makefile: suggest committing translation template updates if any
+18552eb304cb26ac1fb06af9e3e556c74ab820c5    APPLIED     Makefile: make update-pot reproducible by ignore creation-date changes
+3abc4e05cd410c5cafcba0fdce66ed54659aa31f    APPLIED     Makefile: suggest committing translation updates if any
+80b63f73f9845bccc8242b8d56cb98530b862149    IRRELEVANT  i18n: Update translation templates.
+eeed6e4bd818df3c38083437213eb09be39a39ec    IRRELEVANT  i18n: Update translations.
+8c48af1961e61373a9c1fd40520de8dc9786e70a    APPLIED     lxd/instance/drivers: Add ErrExecDisconnected
+8665ae0afbd85bde0991fb1507326a183199075b    APPLIED     lxd: Make VM shutdown/reboot exit cleanly
+0f5be4baa56283baa3e71ea7074e7ad2b817d6d1    APPLIED     lxd/instance/drivers: Handle websocket closing
