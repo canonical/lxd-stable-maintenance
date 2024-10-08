@@ -1435,3 +1435,346 @@ e3089518a2e5d77d5c1cd5ce6bf611fc6a340718    APPLIED     doc/guest-os-compatibili
 3f8789b599a94477480620215098090bdd2894a2    APPLIED     doc/guest-os-compatibility: Add Ubuntu 18.04, 20.04 and 22.04
 506223b6afb788fa616f705d8dd888506245de4e    APPLIED     doc: add ESM to custom word list
 6d7dd5498eeda75542cbfbd432fde42021eef709    APPLIED     Makefile: Pin github.com/dell/goscaleio@v1.15.0
+a885db1f367db8a21c7bdaa7b8823b9749dc4b8f    APPLIED     lxc/storage_bucket: Add yaml support for key create
+bf0fbaca2a2d829799faff622299199788ae2de0    APPLIED     test: Create a bucket key using YAML bucket key config
+c49ef5f1c599c9c6883b20527387a7e8057b8155    DIFFERS     tests: Extend cluster member join tests if 'none'
+a9a90b486a39bc9a43c1270db62c9ff95643997a    APPLIED     lxc/project: Add support for creating project from yaml
+2a36e162152bc5beaabdfe8279fbbadf884df9c4    APPLIED     test: Add project creation test with YAML
+569ddc6db876b4fb7c23b717adfeee4475619a45    APPLIED     shared/cert: Add ParseCertificate func
+1f2ce779a9d7b5e243cec782964729e65a47f6f2    APPLIED     shared/api: Add Description field in `StorageVolumeSnapshotsPost`
+d54b7cff1c59873a6f9d467169b1e73729277ac3    APPLIED     lxd/storage: Add a desc in vol snap DB entry
+628fad312c197002a495f05763054aa1c424e388    APPLIED     lxc/storage_volume: fix go-vet linting errors
+3b1a46a0e62346beee860a220c15c8499be0d016    APPLIED     lxc/storage_volume: add a desc field to vol snap
+2dfa132697e1cd6a712118fb88274789f6e50638    APPLIED     test: Test description is set for vol snap
+1d6b2d4f0be350b8b30d052b35570a5b4dc20bbb    APPLIED     doc: update REST API
+476112614356dedd1b163faaba8d850a0b82b1d6    APPLIED     lxc/network_forward: Add yaml example for create
+a48a9c809522f7c99cbfdfade7b3d5dd6cf87b9a    APPLIED     lxc/network_acl: Add cmd.Example for network acl create
+03962be50e53f6332e9c0e501a97574c6369dc99    APPLIED     lxc/network_acl: fix go-vet linter errors
+fdb598eaabc45307fe432413b29aabbc58bf775a    APPLIED     lxc/network_forward: fix go-vet linter errors
+1a90984df814faed47b715f475a5126466127907    APPLIED     lxc/cluster_group: Add yaml support for cluster group create
+3e500ff02ed5a7e52d6f2c7c77303a2c32443122    APPLIED     lxc/cluster_group: fix go-vet linter error
+de1e294a7493bbf9681d7c84ec1400719d80fa62    APPLIED     lxd/storage/drivers: Don't needlessly re-apply project id on quota changes
+afa3cadc95b6ed1460ae843f50623409ee89b0f0    APPLIED     lxd/storage/drivers: Remove unnecessary `DeleteProject`
+8adc53997df286b03626ebf7b594177b7473f0b5    APPLIED     lxd/storage/drivers: Use `projectID` variable
+282f82a0d11dbdcbec9d1f1f3b0bf66f2ea861fc    APPLIED     test/lint/godeps: don't abort on first error
+5ebca77438e87dd267fe2fe6fffed3c8c040f5ee    APPLIED     lxd/project: Allow managed volumes under "allow"
+19ac4f65e64849a6de0db0099e9c8e44e65f177d    APPLIED     doc/howto/instances_create: improve LXD agent setup snippet
+36c6a8bfcfbae3215a2ee8ba0b5b8f3f36c7cc8f    APPLIED     doc/howto/instances_create: add note about SELinux and LXD agent
+a361cb66db1ecaa8599b938bcb65a966232786a4    APPLIED     test: Create a cluster group using YAML
+8f0a4b25644263b8e6497ce23f24d841dddabb81    APPLIED     lxc/storage: Support creating storage pool from yaml
+251a48841a8d80cd91d69526dfa84fc9ac3ffb2b    APPLIED     lxc/storage: fix go-vet linter errors
+19b98b9effa044c301d56f557bae97e2a3745b56    APPLIED     test: Test creating a storage pool with a YAML config
+6775979349c9cfc924a055e029670ee419bc5021    APPLIED     lxc/network_zone: Add example for network zone record create
+f18ffd1df58637ba7818a28821eecb686555f7ae    APPLIED     lxc/snapshot: Add support for creating a snapshot with YAML config
+faff0027b6898f3b9c3d62628a2e56842548aced    APPLIED     test: Add test for creating a snapshot using a YAML configuration
+19cd2423d53a1ee4d12b4fdff6b1bcf861c2db2e    APPLIED     lxc/storage_volume: Add yaml support for create
+6c4953c085eaa895fdbfaede04d6c18899783e9d    APPLIED     test: Add test for creating a volume using YAAML config
+cb010e87882c7a576dfc67ce752b18e6238410d6    APPLIED     test: Add missing description to bucket key
+a063b1ae9bb57ae2fe23ff748248f590ccc523ec    APPLIED     lxd/instance/drivers/qemu: update how systemd is detected
+9a2f6e6939e624d8bfdf0fcfa517df18d48211c5    APPLIED     lxd/instance/drivers/qemu: compat with SUSE paths
+96b0f698cd1df69dd8eb134dd03db287a501345c    APPLIED     doc/guest-os-compatibility: improve legend readability
+6d412932f442a70859805d9c7c56e1d4f2439376    APPLIED     doc/guest-os-compatibility: link to how to install lxd-agent manually
+31e51dd7479a590919d778d350db63a134693e23    APPLIED     test/main: don't use any HTTP(S) proxy with localhost
+e82c5b6e80e1407b8ed480b6779be42e6fd2eed6    APPLIED     test: fix ceph storage tests
+9443d2593e2c06260146d4cbde25f942a8ff6fc8    APPLIED     test/suites/storage: use storage get and storage volume get
+0828eba103eb4d9df3f1900d51fc0e600b9b0ea4    APPLIED     test/suites/storage: test storage set and storage volume set on properties
+eac9280cf9cb783ba8ad48285d95ff47d74e26a4    APPLIED     test/suites/storage_volume_attach: use storage volume get
+769cd89ade2c065fdbb86bb263b2f7ec99c07286    APPLIED     test/suites/exec: use shell comparison
+d29d18298af5269dcb8b786a2408cf0d33c8203e    APPLIED     lxd/db: Add yaml tag to RaftNode
+29dd916d1325d2f2224e70e00e054c41578bb068    APPLIED     test: restricted.devices.disk project restrictions
+05c5aff2ea9ca78dd7800733bd6a07844e70a5b6    APPLIED     lxd/instances: Don't bypass instance limit check
+79ca22d74005501f4308bcf54a3afa5dda4cae69    APPLIED     test/suites/image: use tar to check for metadata.yaml presence
+dca2bebe03b605c5bee70ad958cfe4fcea2a426d    APPLIED     shared/entity: Update `TypeNode` to `TypeClusterMember`
+5eb1451278d998a016704c53680f9426cdffe1b5    APPLIED     shared: Update `TypeNode` usage
+8ffc7deda66bd81c6a38edf568a23ea4ffafb02f    APPLIED     lxd: Update `TypeNode` usage
+044bb4ac946c15b387db5fa18fe89d4f0559b258    APPLIED     lxd/cluster: Use `NewStatusError`
+144a6494e572d53e84fb82d5da7d8026f72ca0fb    APPLIED     lxc/console: use errors.New() where appropriate
+820a3abab652a5dc5718b8632459aa83c4551d85    APPLIED     lxc/project: use errors.New() where appropriate
+b3916dea82c13e15fb163c767d84ec7cab0809d8    APPLIED     lxc/storage_bucket: use errors.New() where appropriate
+cda4473b291e04b7dee601eecacce2e39b34f467    APPLIED     lxd/device/proxy: use errors.New() where appropriate
+5459b2e91585fcad55c67f337085c4eb49b5222c    APPLIED     lxd/instances_put: use errors.New() where appropriate
+f3fe0325bc0784a63a77b4f8acdca2682267fe77    APPLIED     lxd/profiles_utils: use errors.New() where appropriate
+34f14b865e6f762f568c46e20b7d281978d7a5d3    APPLIED     lxc/config_device: use errors.New() where appropriate
+b9e08717793264908974f6dd3f0d8235b957884f    APPLIED     lxc/network: use errors.New() where appropriate
+6b7443a858feccb0e176317b109ecc69ddca4bf9    APPLIED     lxc/network_peer: use errors.New() where appropriate
+01abfec5ad58bef3fc0df92d3b851398ae0a9a5b    APPLIED     lxc/cluster: use errors.New() where appropriate
+bc273f008edada386967b892fb00980afd1c02b1    APPLIED     lxc/profile: use errors.New() where appropriate
+b83b57eda8c9b4cab54e5874424dcb0927e47bc3    APPLIED     lxc/network: remove unneeded nil check
+228a5f43cbda83313f07294cb01f0d8d16bf9991    APPLIED     lxd/main_forknet: add comment for exported function
+e1d86573570810d47f63c5504b734db89e80895c    APPLIED     lxd/main_init_dump: add comment for exported function
+0d843fccb89ba9f8191cc03f6cbffd3bf56b60a0    APPLIED     lxd/project/limits: Move content from lxd/project
+bd6e3294935d72b64d41c5cc425cfc883e7d8f3a    APPLIED     lxd/storage: lxd/project -> lxd/project/limits
+460ee11f92725476332f4a0ebbbf43dc0594cff5    APPLIED     lxd: lxd/project -> lxd/project/limits
+cd2f3bc856b7a6184729cda90a1ba7ab43f955c7    APPLIED     lxd/project/limits: Fix test imports
+6e6da90afab89936bb722f07f6d6160bbcdcdbb2    APPLIED     lxd/storage/drivers: Use private constants for DefaultVMBlockFilesystemSize
+d3d971ed362e6b4c537648624fc0b5bfb7fe9f7a    APPLIED     lxd/storage/drivers: Expose function for default VM block filesystem size
+73ab9e73468486ac4c808ca9810d54583f3cb6ea    APPLIED     lxd/device/config: Remove DefaultVMBlockFilesystemSize consts
+47a7152d27150322d6c493febfd0e1c5b25e2648    APPLIED     lxd/db: Rename GetStoragePoolDrivers -> GetStorageDrivers
+bfebfafe9341d550d2c43d6d46d80b1946cf2290    APPLIED     lxd/db: Implement GetStoragePoolDrivers
+2742def7ee183f7f09a620e4dad364b8410ed706    APPLIED     lxd/project/limits: Use driver name to determine default state size
+8b3473f8acb163884169e63c63badbc1cbfd6a9a    APPLIED     lxd/storage: Fix linter errors
+0a066f283133163ddde5f4c95a69a6fe15b6d9b5    APPLIED     lxd/storage/drivers: Fix linter errors
+969efa31bafdd5c95021257bd5e6a982752ccbfb    APPLIED     lxd/storage/drivers: Test DefaultVMBlockFilesystemSize
+8dc8462e1f5aff1812008b082493a0126bc4ac81    APPLIED     lxd/db/cluster: Fix instance_snapshot entity type typo
+6ba0844713e3d00a2cf6d09a102e93c617f70860    APPLIED     test/includes/net: use long options with curl
+bcf4b8b896f7ceadbf1d435e51e68cc84ae8b5e1    APPLIED     shared/trust: Add HMAC utilities
+8ad951c914f10a4cedaf5a1dec854e6e5d5a892f    APPLIED     shared/trust: Add testing coverage for HMAC utilities
+40bae5c315cd638e64060749d03d6daf59a805bd    APPLIED     lxc: fix go-vet linter
+29f8e9641041bfeaf720636770655be52e2e294e    APPLIED     test/suites/tls_restrictions: add tls version check
+2771fa82266fe78ba21e02121b3177ca54d3be0e    APPLIED     test/main: add tls version check test
+7fe4f50387308fe5dec5d4b71cc9d0673ef481b8    APPLIED     lxc/auth: use `errors.New()` where appropriate
+776c2d4e5c02a49818281592f5b4ec3d265e1620    APPLIED     lxc/config_trust: use `errors.New()` where appropriate
+f11add099c9427b71c1f865fbe5dbc5b22bd99f7    APPLIED     lxc/file: use `errors.New()` where appropriate
+32422f47a39c2dae791c261df4f7d3b738a6ac36    APPLIED     lxc/image_alias: use `errors.New()` where appropriate
+eb088bd2c4a70e72442576d8932546f6d584231c    APPLIED     lxc/monitor: use `errors.New()` where appropriate
+1f0ba9d56f6563fd05adf2047a01c71c00d26401    APPLIED     lxc/operation: use `errors.New()` where appropriate
+8a5be095b7d05edd041435ab59097b75a15a8205    APPLIED     lxc/query: use `errors.New()` where appropriate
+3452dfae4f6e2b9811be32f5bcb2b61d7b2bc603    APPLIED     lxc/rebuild: use `errors.New()` where appropriate
+d33fdc4d808df0309be04c6bd64b4991f08b25d1    APPLIED     lxc/warning: use `errors.New()` where appropriate
+0c4cc3c766bae6b5b9afe5edab142e75863f1e2b    APPLIED     shared/cmd/cancel: use `errors.New()` where appropriate
+3ae5120415db13a540746f0c9c302e55b74e0f2e    APPLIED     lxc/publish: clarify that public means accessible to unauth'ed clients
+e15351966a71967221e4c1c390af8f0590b96afd    APPLIED     lxd/instance/lxd-agent: fix selinux fcontext path to lxd-agent /run dir
+a10aab92647e081e50adcd5b8d5769d96ae960d6    APPLIED     doc/guest-os-compatibility: fix lxd-agent compat with SELinux
+7c010289a2ab55e8cf0b454cb4b00518337f7e00    APPLIED     doc: Add shell completions instructions to LXD installation docs
+df521dd3a22d6a13d51d590df423dbb054f7079d    APPLIED     lxd/daemon: Change log error to warning
+172695520ed009c26ca0445926374d84eb936608    IRRELEVANT  i18n: update translation templates
+7ee469fb6fed442f3104431b9ca43b04076545e6    IRRELEVANT  i18n: Update translations.
+90e365d9b05e8117ff158ebfb43bf997cbc8d2d8    IRRELEVANT  i18n: Update translations.
+0b3a0941185bad6b52808c30c313aff08d41742d    APPLIED     golangci: Disable `defer` rule
+b7d961fc15cc8f74ab7724c80cf4c7a6c43a323c    APPLIED     doc/howto/instances_create: remove outdated note about SELinux
+044cd648a6a175f63ed6d9502cb5d1ce8bd62c0e    APPLIED     doc/instances: Cover LXD agent installation
+7991cd91674395b5ee178c9403113d112a3a0c86    APPLIED     doc/howto/instances_create: improve lxd-agent install steps
+b03a68a09f2dfd27354d5fef82b1aa14a8c85dc9    APPLIED     doc/howto/instances_create: add note for lxd-agent install in ISO install
+948457c681eb49144c2e5535d48cbed57f2598cd    APPLIED     doc/guest-os-compatibility: update link to LXD agent manual install
+2df815fc00ba52752381ae870ebeb1a293949eb1    APPLIED     github: Align codesql workflow "on" and concurrency rules with other tests
+6749a86b24dfa439da70eb1c17f450b5045d9bf6    APPLIED     github: Align commits workflow "on" and concurrency rules with other tests
+4b8b1657224923736a96a0043fa2d735ab7f8d6d    APPLIED     lxd/instance/drivers: Move removeDiskDevices to common
+8c48af1961e61373a9c1fd40520de8dc9786e70a    APPLIED     lxd/instance/drivers: Add ErrExecDisconnected
+8665ae0afbd85bde0991fb1507326a183199075b    APPLIED     lxd: Make VM shutdown/reboot exit cleanly
+0f5be4baa56283baa3e71ea7074e7ad2b817d6d1    APPLIED     lxd/instance/drivers: Handle websocket closing
+1656132a1128e4267e37be1ed159cb84febbaa36    APPLIED     lxd/project/limits: Rework low-level permission checks
+5889a55601ec25676a78cb9d04b75c38e8362759    APPLIED     lxd/project/limits: Test project lowlevel refactor
+49482ecfd0166410a865ecee397b12524b090230    APPLIED     github: Don't run commits workflow on push
+d977e3ba239f7a9a868678a4f139b54324238dfe    APPLIED     github: Move go version compatibility check into code test phase
+52b7bb298ef1ec178289c4e5283bc3a81ec23cd2    APPLIED     Makefile: Avoid unnecessary repeat builds during build
+e414a269fd82a38d79215302ea66f5bd65cae0db    APPLIED     github: Cache binaries built in code tests and use in system tests
+5a6998446bebdf52cf391dc8de8a8061372cd81d    APPLIED     github: Clearly indicate the LXD client binaries in test artifact naming
+e81585c37228368b8faac9c6fef8ab99788cd0ca    APPLIED     github: Remove unused dqlite ppa usage in system tests
+90cf7a692def2f9867481b2bf4e1f020e53f53e3    APPLIED     github: Strip binaries during test
+93c0c4d4336a17ee40016639f7982c8088562df0    APPLIED     Makefile: lxc doesn't need sqlite3 tag
+fb64bec9e997835754456cc67e54a606a7a9bcb1    APPLIED     Makefile: Remove unused dependencies from check stage
+f853a6d023cc2d3be8674d1d3ce7dc1022e08021    APPLIED     Makefile: Add -failfast to unit test run
+0f51ee0c0de99a30d4495e9108a891f87111a03f    APPLIED     Makefile: Use -trimpath
+421d7073d060fe73a2129a4521d2a0cf6c605d3f    APPLIED     Makefile: Add separate check-unit for unit tests
+a85814138a158385c3f287cb5dfb0ce70a9805b0    APPLIED     github: Use make check-unit for unit tests
+937ce679b789ce564709475d3689cfe3274650d6    APPLIED     Makefile: Add GOCOVERDIR support
+908e82578a32c19fc7cab84d32a85b8ba6dff25e    APPLIED     doc/authentication: clarify what {client|server}.ca are
+4bf8b17f49d58234dedce7c013957301f242e347    APPLIED     client: Fix error handling in push mode copy
+fce81c5bdb1b27e880fe4af56218d7cbc1be9c43    APPLIED     github: Add coverage support to lxd tests
+f51392d534340fea4e65d014e8510b60af339eef    DIFFERS     build(deps): bump golang.org/x/term from 0.23.0 to 0.24.0
+af8e15acad9e1c61f54217a2faa4e4897f973e17    DIFFERS     lxd/patches: Add patch for entity type instance snapshot typo
+302e7785ba5eb0ea9b0c26a2cb809248fd181577    APPLIED     doc/howto/network_bridge_firewalld: add IPv6 rules to Docker example
+973c2ef8ccb0fc9946d3c99d746581dba867958f    APPLIED     lxd/instance: Add support for armhf vm's on arm64 hosts
+4ca8ec69e3b42c297daf9377b24ad742daa672c1    APPLIED     Updated storage volume doc to remove any suspicion of action not working
+3fab11cf694b462007e353129382e51e92349d4d    APPLIED     github: Only build coverage data on workflow_dispatch
+fbffaea3e98e0ebe74d64417d066e0466c7d199a    APPLIED     github: Alow go mod to modify go.mod and go.sum
+6765182cca26cb5d1fe854d0ac3d7d576c12be08    APPLIED     shared/trust: Reimplement HMAC ParseHTTPHeader
+587f41dfb540868de72c0284b7c26bd6fd861ba5    APPLIED     shared/trust: Cache the password for argon2
+900ab5746725c2fdaa7922999a6f66392cf0668b    APPLIED     shared/trust: Remove Equal from HMACFromatter interface
+20b8d31205d015691f0e6581b7480863db79df33    APPLIED     shared/trust: Update HMACEqual
+38c70a199cc4afc4f0d41c6d2dcf492e693b0b68    APPLIED     shared/trust: Rearrange the some funcs
+4129451de483a45bd05437abe71e44381c588d17    APPLIED     shared/trust: Update error messages
+67a2411e82abc89b52af854bfc6452c9bb075066    APPLIED     shared/trust: Update HMAC tests
+848dc0c22fdfd980de1887c13d4f3d36aaf782a3    APPLIED     github: Add performance tuning to code tests
+876707e71bfa5c3c79b1929cb7b1032435538594    APPLIED     github: Mask unwanted lxc services in code tests
+84842e383ca063b91aa0f13d280081a4b87e4db0    APPLIED     github: Use set -eux on all test commands
+7807a1c6d64f87ecc14475ab3c5c23f55f880d83    APPLIED     github: Reclaim some space
+4d81f6e30a6e0d515a1f17636b6fb8c9f156a459    APPLIED     github: Add initial TICS step
+0015223d34e30337376561ab0933889ed18a55db    APPLIED     Go: Bump minimum version to 1.22.6
+2e4d46c07de288afc1b759fb19c9fd8b7d680b12    APPLIED     Makefile: Remove deprecated -d flag from go get
+d4ce7a4b3b1ccff5617d14decabb0601dc16a312    APPLIED     Makefile: Improve comments
+fcc760d2362912936c1ca5c715bfd491322864fa    APPLIED     Makefile: Pin openga again
+252e14e1603db356f023d841dc52cb8379b2e942    APPLIED     Makefile: Remove go toolchain and use bundled toolchain of minimum version
+04120c2648332e4236c5f87b80d7bd2196c4018c    DIFFERS     gomod: Update dependencies
+20149790a5df81fcf3540d3873dcabd2c870ba0d    DIFFERS     build(deps): bump github.com/openfga/openfga from 1.5.9 to 1.6.0
+d1c88a4ef249ea7edf02bbb51817f0b5a3ec61ec    APPLIED     lxd/auth/drivers: Update `Internal` to `Unwrap`
+dff557f845b2ff0e0bdc784b72ecb8529a4ac6c6    APPLIED     github: Don't interrupt ongoing tests for different actions on same github.ref
+fa5dcc299e185c4c1a3b20fec6ce6a73ddeee479    APPLIED     github: Adds reclaim-disk-space action
+a890305542f9cac8640a771ec90eaaf4d8fa609b    APPLIED     github: Use reclaim-disk-space action
+1060aadf0a46f46cf997101a39da8dd5eddece43    APPLIED     github: Adds tune-disk-performance action
+f77d2bc71c04eb5d91a3850fef1afed64d58446c    APPLIED     github: Use tune-disk-performance action
+5927535ae3d35f75c88247c6be1ecb62349c9b2f    APPLIED     lxc/config: create `oidctokens` dir with 0750
+33af1fbe9f2a0cffd5fe20f628841e8cd02bca2e    APPLIED     github: Adds remove-docker action
+9f2a601a297095d841a3541f9a664801f22701c0    APPLIED     github: Use remove-docker action
+f1eb5b2c29464c1a69a9d2e8a9fd34e5adecd648    APPLIED     lxd: Deduplicate logging for instance types update failure
+3fa5fb10ffb5e6848f7dc7a73058d99f0396242e    APPLIED     test: Test exit codes upon container disconnect
+d7c2dfd7b98ea059905c4e87c5605a16cb9cef34    APPLIED     github: Run TICS workflow daily
+e01a74fa2895c7481b7e0865f2071a719eb5d284    APPLIED     doc/howto: Update windows conversion tip to mention new lxd-migrate functionality
+58d9d58e750670b2c1230be6189981f69627fbab    APPLIED     github: Adds action to install LXD build dependencies
+15b1c0eca3fa70aa0d597a2b607eb5e99dc2231b    APPLIED     github: Switch to use install-lxd-builddeps
+088960bcfb153c795392d4fe382ca77178bca68c    APPLIED     github: Make clear we build LXD from dist tarball
+e5cd683843195178a46c3504a91fd9797adaeee1    APPLIED     github: Switch to tiobe/tics-github-action@v3
+25151b8e1a269f8b12ed13481b9c612ee72f691e    APPLIED     doc/custom_conf: Disable Dell link check due to possible rate limiting
+9e36c17770cc294b5879dc7932c6cc69ced36a6f    APPLIED     lxd/instance/drivers/qemu: Fix RecordOutput
+211a4ee8d22a30c22a73c98fec353ec9397d8d3b    APPLIED     lxd-migrate: Fix linter issue with constant error
+43102f13883e2517427511f4fe1fa35d5bf40662    APPLIED     lxd-migrate: Accept path when connecting over unix socket
+18e21b7a80df045bafcc23265389481c5639c89e    DIFFERS     build(deps): bump github.com/openfga/openfga from 1.6.0 to 1.6.1
+d49d1db7c6856239138ad497e6f324a07584b17e    APPLIED     lxd-migrate: Add profiles and no-profiles flags
+cf85533ba48b5c7f7fefacf4f47504b67ea24a54    APPLIED     lxd-migrate: Add network flag and use network config property instead of parent
+97604075cb64f68b26f1570cd80b29808b3f70b1    APPLIED     lxd-migrate: Add storage and storage-size flags
+88cfc80041c2e9d6b4f9586f854bb3d4fac89ae0    APPLIED     lxd-migrate: Add flag for instance configuration
+e5f881dc8a11de818519081f570fc592f9db9322    APPLIED     lxd-migrate: Add project flag
+5c7b536bd85ccb45997281a9f6fabd82225dcbf8    APPLIED     lxd-migrate: Add flags for target server url and token
+8dcf9a539c95005528292404a0020ad752102912    APPLIED     lxd-migrate: Add flag for instance source
+1682fcd2ac477201ffe2aa8a1129f8e88a8a4ea3    APPLIED     lxd-migrate: Add flag for setting instance name and selecting its type
+2cae1382819d02568815e75c21cd71d13224d04a    APPLIED     lxd-migrate: Add flag for configuring additional container FS mounts
+972c2b0ea204feaf5ef0da72eb151f312ed0349a    APPLIED     lxd-migrate: Prevent interaction in non-interactive mode
+6e6bced4af0b238e82c60c76f03347025e42b19b    APPLIED     lxd-migrate: Remove invalid comment in lxd-migrate help message
+da2c3382e94046e7e97e10685abe8a46ebb09a1d    APPLIED     lxd-migrate: Ask about secureboot only in interactive mode
+cd760425033ae54968754b06e73179e2d1b089f9    APPLIED     docs: Document non-interactive lxd-migrate mode
+27c4820c9815ca8b38622cea34bccbef5209c4cc    APPLIED     lxd/fsmonitor: Move events out of drivers package.
+fa7f236791f855fbfaf6a475e948d993155f61c3    APPLIED     lxd/fsmonitor: Prefix Event constants with Event.
+3f25a6a68c6efff4840b9fba4afa4bbd484b5303    APPLIED     lxd/fsmonitor: Add EventWrite and EventRename.
+ba3ac9c6c95d47e1b8c3c0a4be757389b2baf92f    APPLIED     lxd/fsmonitor: Add comment for exported function.
+fa1d0072488f7337d24ccd9d71b927a520a06a01    APPLIED     lxd/fsmonitor: Remove wrapper monitor.
+b0fade2bf6e97b1ec4afb30c3fa13c0db9fab257    APPLIED     lxd/fsmonitor/drivers: Add logging to the common fsmonitor.
+9642cf048751ef8f80aa652fd87ac5e92d3cf7b2    APPLIED     lxd/fsmonitor/drivers: Remove New function and use drivers.Load.
+e4d09a8034bb7b4cfec1450f3a7148215bcec1ee    APPLIED     lxd/fsmonitor/drivers: Move mountpoint restriction into fanotify load method.
+e988dd7f96eda6ec623a04035c8c366a00fd77c3    APPLIED     lxd/fsmonitor: Add driver name to interface.
+91e85de522a9f8621de222f7f2eeff05bdd0f95e    APPLIED     lxd/fsmonitor/drivers: Remove Driver interface and implement FSMonitor interface.
+9d7764e7019cf9ad84b16c1e752066dc01a6ae9f    APPLIED     lxd/fsmonitor/drivers: Add methods to convert driver specific events into fsmonitor events.
+a7015270f8c709665401fdf109ceb14264732439    APPLIED     lxd/fsmonitor: Update interface to use fsmonitor.Event rather than string.
+174a1b4f8173a41c39778ad89d9da6f68821961b    APPLIED     lxd/fsmonitor/drivers: Allow passing a slice of event types to be monitored.
+848f6c88dd6175d6af0bcd0d4ae149f16d468196    APPLIED     lxd/fsmonitor/drivers: Create an event mask from the given list.
+8845248ffd28d4fe34336adc882af6d664eedf24    APPLIED     lxd/fsmonitor/drivers: Allow more than one inotify/fanotify watcher to be instantiated.
+d2c903a5959ae092b199162a6a5caa6426d741d1    APPLIED     lxd: Update fsmonitor instantiation.
+f52d80a0a26294837b9f2f2a47428225df89a65a    APPLIED     lxd/device: Update unix events to use an fsmonitor.Event.
+3d3b08b84457de655ee997a3b6848b51792e3cfd    APPLIED     lxd/fsmonitor/drivers: Fix lint error (unchecked-type-assertion).
+b16cc6ba791d77fabb889dfaf00c16c6e02cae7e    DIFFERS     test/godeps: Update lxd-agent dependencies.
+539a9ccfdd8d10a429d3cb1519edb9ae22fa0713    APPLIED     lxd: Do not set remote address for devlxd
+9cd2b5be53a8aececd0395900d9ea6229c9ddea1    APPLIED     lxd: Remove `devlxdRemoteAddress`
+36bcbbfe08cd2731617a43cee52c255f1281026d    APPLIED     shared/api: Introduce `AuthenticationMethodDevLXD`
+2ec426c48a735dccdd9dca53d0d98e6a037a38bd    APPLIED     lxd: Set context auth method for devlxd requests
+84a16ffa1130517b70b7fd8249d6df6662ce2ba0    APPLIED     lxd: Remove check for devlxd request
+a7770009f7de5508e528b00a33d784293f2b4aff    APPLIED     lxd: Use auth method instead of `devlxdRemoteAddress`
+dee61bbdd35d8c4b35c0e2d81b51b24e42ca1b36    APPLIED     devlxd-client: Add support for image export
+7cc6378921646fd5cf063378aa541d4687e01ca1    APPLIED     test/suites: Test image export from devlxd
+76beb4e25772677ca47359105c2c3254c10a96f7    APPLIED     lxd/fsmonitor/drivers: Allow setting fsmonitor driver via environment.
+9f6a328ee5009f28ff2e2e45a9013606e29c4ed5    APPLIED     doc: Add environment variable to documentation.
+bdf32996b67ed3e5eb753a2b6c3b0bed167edbe9    APPLIED     test/suites: Test unix devices with both fsmonitor drivers.
+bf567a51d2f4f9684ecba9121ab9717d783e3df0    APPLIED     lxd/fsmonitor/drivers: Ignore some inotify events to prevent warnings.
+76ae5eb31b0e995f00589e25005f0dcc907a49b4    APPLIED     test/suites/container_devices_unix: test unix-{block,char} together
+2f91387ed8ca865f734d59dc90020c41dc479a4e    APPLIED     test/main: test unix-{block,char} together
+536bba696eae49b4793222445db3d66a41705f05    APPLIED     test/suites/container_devices_unix: better check unset var
+517eb3cabe6a0773f5f06b030380f4b939992350    APPLIED     test/suites/container_devices_unix: use more precise shell comparisons
+fd6965eb22de2693974139e0fa86983a2c2f76f2    APPLIED     lxd-migrate: Add precheck before connecting to the server
+2e927fd187235a1ba72863543d4953340eb5cd81    APPLIED     lxd-migrate: Replace shared.ValueInSlice with slices.Contains
+bb5c917e7484f71135b25f168c4844d38a795898    APPLIED     lxd/auth/drivers/openfga: Implement `With` to satisfy `Logger` interface
+2f34d18e7fc99e50563ad2b2955b59f9808532cc    APPLIED     lxd/auth/drivers/openfga: Add comment to blank import
+d06290d0cb50d875daa0e9f53a103cf294fb3ee6    APPLIED     lxd: Refactor image post
+8a59f7fd1a21f078d6f47cb7b7bfbfd35bd5bb2a    APPLIED     lxd/image: Acquire image lock for uploaded images
+91e2cb2ab88ecada64fd9a9868f7b2af6aa1b19f    APPLIED     doc: Update command description for lxc import image
+5effbfea4734bdec9568164486899afa26d22b49    DIFFERS     i18n: Update translations
+61a1d653f393383bb6b9c17ee0f15b5990928cac    APPLIED     lxd/init: Differentiate managed and unmanaged network
+396c072684c73d80917d5d511e9fc90ea62589fc    APPLIED     lxd/storage_buckets: Check etag when updating storage bucket
+901dc9738a331322ba54a84b99539184f6aa2a9a    APPLIED     test/suites/storage_buckets: check file integrity is preserved
+25f370c03966d97bec038a32b109d027fe5b7389    APPLIED     lxd: Move instance name validator to instancetype package
+551c0579ace90e6904a91ca9acfc8b923e7b8b8e    APPLIED     lxd-migrate: Prevent invalid instance names
+fbde33c2ac1a60c4386d2e806359c3a9eb19e775    APPLIED     lxd/api/project: Clarify meaning of restricted.networks.subnets
+303031d56c1da3e494de285ddb3b5262ea738fbd    APPLIED     lxd/network/driver/physical: Clarifies the use of ipvX.routes
+cb930df987d65e3187dd965fd740391b1268bb3d    APPLIED     doc: Update metadata
+6d46756242dd5022ccd5425a3576f86ecd582e1b    APPLIED     test/suites/tls_restrictions: don't check for broken pipe error
+2704b3e319d19aa818370c3c834bbd1ab299a640    APPLIED     lxc: Fix exporting vm backups to stdout
+9f10cdb5de8fdc2cf42f85b42176d8402d2517ca    APPLIED     github: Enable tmpdir for TICS
+6eddaceb36a0a9ac2bbbbd382c7e526d27053992    APPLIED     test/lint: Use agent tags when listing dependencies.
+3d3cfa1c4cb8429201138806853fecf0599bf690    APPLIED     lxd/auth/drivers: Refactor TLS driver for common handling of server level resources.
+bbefb199e7ee44b3c16548e1d504201c3d05cabf    APPLIED     lxd/auth/drivers: Add tests for the TLS driver.
+ad5ed1cd52d3416316b0bc1ea569b8c17cb11e4d    APPLIED     workflows: Change permissions on generated files.
+192dc4d1b3eae2261aee76e56bd65368cd6fa738    APPLIED     lxd/auth/drivers: Remove type-bound public access entitlements from model.
+4202f39da4d9d3a684f66273f782514c477cbe78    APPLIED     lxd/db/openfga: Remove type-bound public access exceptions.
+93c7a3f4d1f8f73ca98ab863c9467cce17080419    APPLIED     lxd: Replace `can_view` on storage pools and server with authentication check.
+373a486dd55a6b5b98bf64e73d423548b5492a84    APPLIED     lxd/auth/drivers: Remove handling of `can_view` on `server` and `storage_pool`.
+36a10dd305eabe4a6dda14e42147eaeeea7292ae    APPLIED     lxd/auth/drivers: Validate entitlements on authorizer calls.
+822aae9e1aed889b9dce3f0e5c95d3a69afe9263    APPLIED     lxd/auth/drivers: Check if `can_view` is valid before determining status code.
+bed72f0441b46f6fc9852463bebda4eac9332ec6    APPLIED     lxd/storage/drivers: Return growFileSystem errors
+9e4bb7f067ae5c733f6a6bed5050a3501beefba7    APPLIED     lxd: Fix bulk unfreezing
+5ecafb1b81602cfecf09cef0fe4c860a759f2ee8    DIFFERS     api: Add `ubuntu_pro_guest_attach` API extension.
+014571941fd9d8d7fe042469195fa575f8542416    APPLIED     shared/api: Add guest attachment API responses.
+a776a06141501eedd9b6324e784396233701081f    APPLIED     lxd/ubuntupro: Add ubuntupro package.
+8e6ce559db46f3d5955525a6eeb10fb287b04c0b    APPLIED     lxd/state: Add `ubuntupro.Client` to `state.State`.
+42e3526cfe7edcebe7bb1f2f9f8415010e7ef901    APPLIED     lxd/state: Add `ubuntupro.Client` to `Daemon`.
+7c830613d71eb83eec6dede63707faaf9c9389c7    APPLIED     lxd/instance/instancetype: Add `ubuntu_pro.guest_attach` to instance configuration.
+05b71522472b1c9a02a36813f11d9e4408d6f558    APPLIED     {doc,lxd/metadata}: Run `make update-metadata`.
+d62691f74612ebd727f6bd4005c82060b3ca675b    APPLIED     lxd: Add Ubuntu Pro handlers to devlxd.
+f98c7ad6b95c40bc080882ab844dc5ee99776113    APPLIED     lxd-agent: Add Ubuntu Pro handlers to devlxd.
+b2229300099284cd6f48c7019006db305133960d    APPLIED     lxc/init: Add error handling for launching container when image is of type VM
+cddeb0a691791592af35486174e54d6341d6a9b7    IRRELEVANT  i18n: Update translations
+b781061f4bc4bfa3b271a8ffe1bcf5927343276f    APPLIED     test: Add test to ensure aliased container won't launch with vm flag set
+baa4e785b67f0685d4261adcef57832833713a29    APPLIED     lxd: Update copy op response when source is snapshot
+0601ae13dfd4efa700e2629cc005018d312cd41c    APPLIED     workflows: Bump lxd-agent size.
+b1850057cae3c4602e02d1656b88439669885bbe    APPLIED     lxd-agent: Handle built-in vsock module
+6c0b34ba2f3322f4351fe87d01f6a596ef41971c    DIFFERS     build(deps): bump github.com/zitadel/oidc/v3 from 3.29.1 to 3.30.0
+bb44d255fe666968dc61e4b647e718fc4b240051    APPLIED     lxd/daemon: Fix log format
+4a7208ac87ba74d7f04c55548f3c1cea3e54c435    APPLIED     lxd/sys: Sort kernel features
+cdbd3288133d456fed7d636330bbfaa9fac75f0c    APPLIED     lxd/sys: Add doc strings
+8f517f92cf4f901a2968ce0e751c47bbab39e02c    APPLIED     lxd/checkfeature: Add unprivileged binfmt detection
+41125b36da68e1e104fbd2604bab29eaee76edea    APPLIED     lxd/sys: Add UnprivBinfmt
+c0935bd0e513bee31f4580ec0f73d1d12b4fe247    APPLIED     lxd/daemon: Detect unprivileged binfmt_misc
+959a182bc178ea65bd2d3dbec2c4464c17b5915d    APPLIED     lxd/api_1.0: Add unpriv_binfmt kernel feature
+fb39051eb2f0769e6f727ef32b1255efbb2ade46    APPLIED     lxd/instance/lxc: Support unpriv binfmt_misc
+83dac0d63fa9d94266cd1a0a3b3244bb82dbfc68    APPLIED     workflows: Skip system tests for ceph and lvm on push and schedule.
+682793e0274e5029c17c36de70c8965efc7c5ba2    APPLIED     lxd/storage: Check for direct I/O when converting image format
+e8542c63be101266150dee47ba1542e40bd2861b    APPLIED     test: Don't collapse dmesg in CI when there's a kernel call trace
+849b1dea006029ed2feff5f63ca9914c5fcbf838    APPLIED     tests: Don't over-provision test volume
+b66eea62a3f5f5e3b1ebe320ba060f32c37c7b66    APPLIED     workflows: Revert "Skip system tests for ceph and lvm on push and schedule."
+941140486432d4d25894ac0b8c65ae50ed53e8f4    APPLIED     tests: Don't overprovision test volume
+3efef59e87de61c101993c6580865105bcef7015    APPLIED     api: Add `metadata_configuration_entity_types` API extension.
+86b70dec115fe298df2ebffac56d3c1ae2eaca60    APPLIED     lxd-metadata: All configuration keys are strings.
+cfbf1aacb6c1c90648bccbe87b0a10f291955671    APPLIED     metadata: Runs `make update-metadata`.
+01942179bd4773778b160dd0bd43d32af63dc4b5    APPLIED     shared/api: Add MetadataConfiguration API struct definitions.
+8dac37f9c39f588ee316fa6affa278d7cd66a9c3    APPLIED     lxd/auth/generate: Generate entity type JSON conforming to API type.
+312ab0cccef2610204a6001f36abbfd20f69e3f2    APPLIED     lxd-metadata: Update lxd-metadata to use new entity metadata format.
+9c0c1da05ab22b3b34db369fd959dbecc55c961f    APPLIED     lxd-metadata: Validate that the generated JSON conforms to the API definition.
+284da9ad9c3775789e1b47c0f2445883268b2b71    APPLIED     lxd/metadata: Run `make update-metadata`.
+b5ea2158832944b0bb742c6e9cf3ec723be8e6f5    APPLIED     lxd: Render api.MetadataConfiguration on /1.0/metadata/configuration.
+24200339420c846145e226df270138ff46286a21    APPLIED     lxd: Add MetadataConfiguration to swagger doc string.
+d594de42ca1ab3ace7cf98d21b514dbfe10962d3    APPLIED     doc: Runs `make update-api`.
+1dd8d4927194417f6ad94e4470a6426e78169570    APPLIED     lxd/storage: Fix check for direct I/O write support
+8b682968d55582c647a20012273f59d007d7ff30    APPLIED     lxd/fsmonitor: Add constants for driver names.
+247f73b6f14520fd422a0e344779542d87e78d49    APPLIED     lxd/fsmonitor/drivers: Use driver names where applicable.
+6b9b18bf592730b66a8dfdf1349df95693bc74ff    APPLIED     lxd/fsmonitor/drivers: Only log fanotify load errors if filesystem is mount point.
+14b8d711f517eb02c9ec8aaf146416b47a0f40be    APPLIED     lxd/forknet: Handle wifi detach
+bed2c40fecbfcbf5ab4ae7697c9043de5f86f4f8    APPLIED     lxd/storage: Fix direct I/O write check for ImageUnpack
+f2c1a20e8c0d8d64f2a5e9bda1253f1ef8fe3948    APPLIED     lxd/storage/drivers: Fix direct I/O write check
+401339a4e9236d145bc7870ea274e62aca0e734c    APPLIED     lxc/client: Add GetMetadataConfiguration method
+3e820355eafdf33c4b283b2363070a94be7909fe    APPLIED     Revert "lxc/init: Add error handling for launching container when image is of type VM"
+3f815a570687b98ad372b1357aa10e120bc4d42d    IRRELEVANT  i18n: Update translations
+ffc86a8c7428cd5786c94f19595f689000bcfa4f    APPLIED     github: Add Trivy repo scan
+5f9f0cf88ac7e96ffe02ff08a291e0d707fbdbb0    APPLIED     github: Add Trivy snap scanning
+1f94646c336758a15ea7a1779babe7e57066457b    APPLIED     client/doc: add trailing slash to `ubuntu:` URL
+37f68e0d4b2eed5c6476b135f9400ed551553439    APPLIED     doc/howto/instances_create: add trailing slash to `ubuntu:` URL
+d99e1202dda664f501e95592766593b969df2a4f    APPLIED     doc/howto/instances_routed_nic_vm: add trailing slash to `ubuntu:` URL
+2e8716d6e3b7c56ba1cc9bf6e8dc4d16979edded    APPLIED     doc/rest-api: add trailing slash to `ubuntu:` URL
+8461945d1bf0be2f7ba6a9bb6ae5d4c5b937c8bf    APPLIED     lxc/config/default: add trailing slash to `ubuntu:` URL
+1820e9f1e32c4d95d92c64d3c2d8ac99f3c69080    APPLIED     shared/api/image: add trailing slash to `ubuntu:` URL
+4dfdce201540b110dbd7bf8daf1d5ff163127525    APPLIED     shared/api/instance: add trailing slash to `ubuntu:` URL
+fd59bda4e0d4c6c1c35475cca1668eb2c452ab67    APPLIED     test/suites/remote: add tailing slash to `ubuntu:` URL
+5baa18673eea484ba1b01f65b1f4cd0d325a5edb    APPLIED     lxc/config/default: add trailing slash to `ubuntu-daily:` URL
+3f36556563afb131a1066787cc0cf1e903410815    APPLIED     lxc/config: use strings.Cut() instead of SplitN() in ParseRemote()
+490f4442fc739c6d0447a34f9a1c46bac298375b    APPLIED     lxc/exec: use strings.Cut() instead of SplitN()
+c7f398d93ae1655ade42148421b3e5b3260dff9d    APPLIED     lxd/ubuntupro: Return host guest attachment setting if instance setting is unset.
+3cb49b909eb23f793d167f7744a63f56c2eb2248    APPLIED     lxd/db/cluster: Split identity and certificate entity type definitions by identity type.
+d0f5c7b6c23380ea87574e71111d4a08089d09e4    APPLIED     Fix cloud-init instance key typos
+ead9b8314b0c8d64b34d9872428fd980f1cdda8a    APPLIED     lxd/apparmor: Support unpriv binfmt_misc
+689d418fa761bf57d7bef1c2c074715b49f4750b    APPLIED     doc: Update container environment docs
+f345b363d64c30daf3ceea0a1cf42ffdec59c7fd    APPLIED     test: Add test for binfmt_misc support on unpriveleged container
+9af20bbcd768a10ce852a19118b8db4d6abc6cb6    IRRELEVANT  build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+85f4715fc1f26b22a314736a277779c53c6aaadd    DIFFERS     build(deps): bump github.com/minio/minio-go/v7 from 7.0.76 to 7.0.77
+8f4ba066c633e7b7bfc22934c7092e38e300a71e    APPLIED     lxd: Add patch to fix errant identity permissions.
+4e1d543e62a8f9ed4484c3d227f79022f5103686    APPLIED     lxd/identity: Add util for checking if identity type is fine-grained.
+95fa04ac7cb7c3a6790140d3d5b8ec4950fd1c68    APPLIED     lxd: Update identity handlers to check certificate permissions.
+855dbe3a795a34ec4b81ce0cc1f8026664328c5c    APPLIED     test/suites: Test permission management for certificates vs. identities.
+8cfe18123130155c29ade2661833206c4b4136ff    APPLIED     test/suites: Commands that are expected to fail shoud end with `|| false`.
+143717cc331dc9bbdef6b177fccbbef91da7ea6e    APPLIED     lxd/db/cluster: Use given auth group ID when setting permissions.
+aef96d09a93432fe84c795474970714fda2fbcda    APPLIED     lxd: Update permission handling on upsert.
+9b75840668fc8b51e4fe1ca11b426e339e64d35c    APPLIED     lxd: Test patching certificate/identity permissions.
