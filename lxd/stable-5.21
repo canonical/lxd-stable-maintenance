@@ -1818,3 +1818,54 @@ d0c695dc8ce1dec382677cf322e610eabad7e990    DIFFERS     i18n: Update translation
 2a2a121e810164f89e4d3c4021578dc46298df53    DIFFERS     gomod: Update dependencies
 0402f2dc110fc3df064e32407e95cff43742d2dd    APPLIED     github: Use microceph from latest/edge
 2acc480e4926697a61931ae57a8b14a173290fce    APPLIED     github: Workaround GHA download artifact bug
+4edd778c598663505e0a461c4350f787d6c4f6b0    IRRELEVANT  i18n: update translation templates
+9bce14a040c2738996ea224b7811458f79addbd9    IRRELEVANT  i18n: Update translations
+fb59aa5241247c12e2af2da9e736c5873925960e    APPLIED     Makefile: suggest committing translation template updates if any
+18552eb304cb26ac1fb06af9e3e556c74ab820c5    APPLIED     Makefile: make update-pot reproducible by ignore creation-date changes
+3abc4e05cd410c5cafcba0fdce66ed54659aa31f    APPLIED     Makefile: suggest committing translation updates if any
+80b63f73f9845bccc8242b8d56cb98530b862149    IRRELEVANT  i18n: Update translation templates.
+eeed6e4bd818df3c38083437213eb09be39a39ec    IRRELEVANT  i18n: Update translations.
+383771b501c7580080fb21b8a02565e7942ce113    APPLIED     test: Add check for unpriv_binfmt support before testing feature
+561df29f5c1ba649c10f864eaf0e41b58f969eaa    IRRELEVANT  i18n: Update translations.
+b9f337d95292955af66b19efbce111e7334571c4    APPLIED     github: add setup-microceph action
+8b5781b675e6c82b6f62c1e3b7707cd7636ee506    APPLIED     github: use setup-microceph action in tests job
+8fc38a160663af9cdf549a3a462955c218d3d4d5    APPLIED     Revert "doc: silence all warnings related to Sphinx 9.0 deprecations"
+34d112fb324f2800312ec9ae6899000611b1f15d    APPLIED     Revert "doc: silence warning caused by sphinx-tabs"
+74c4ba48a25d9913ca7e4f20c39902ad6daa81f9    APPLIED     github: stop scanning Python through CodeQL
+38a2cac22f7b5bcc3e689d3738ee96c7c86160e3    APPLIED     lxd/apparmor: Include CAP_SYS_ADMIN in rsync AppArmor profile
+ed071c088707ebfc3ad9979f0ea8bf0de0b4033a    APPLIED     Revert "github: Workaround GHA download artifact bug"
+15ad72f05365b15846a65809433bf2d246830641    APPLIED     github: move `make doc-linkcheck` to Tiobe TICS job
+9ab852f8803c252949543b12d3c9bc7db8606fea    APPLIED     github: only run CodeQL (go) on PRs and on weekly schedule
+f507fad672c5f45dc313c4fd7b851a79ca8d22ab    APPLIED     github: ignore some paths for CodeQL (go)
+7feddf234945006774721c010e1986093308c3ea    APPLIED     lxd/db/generate/db: Update ast.Package references to packages.Package
+a3cfbe67bdc5bf8899a7272ed87e4947f0155d75    APPLIED     lxd/db/generate/lex: Parse package paths with packages.Load
+7e2313fe1d087798c313bf7f131bb850b8b1c7fa    APPLIED     lxd/db/generate/db: Update variable/type declaration parsing
+8d48a792768bdf2ecc9994414d2934524f147b5e    APPLIED     lxd/db/generate/lex: Update parser tests
+693a0b5802289e09f9991c657f9ff111da99082a    APPLIED     lxd/db/generate/db: Fix lint errors
+63b017e84dab2082af8a84b81238b50a82e4e0a3    APPLIED     lxd/db/schema: Fix schema generation
+216482e3c49631e6a519d91cf7731abf857e29ff    APPLIED     github: pin actions/upload-artifact@v to known working SHA
+8a2c4350551293becc492f5dc6c39a0ba4423df1    APPLIED     github: pin actions/download-artifact@v4
+550f90a72e26551000ec55e7580c64959649bd18    IRRELEVANT  i18n: Update translation templates.
+f2be72231e3b94da9c428318ecac37077848e4cf    IRRELEVANT  github: pin actions/checkout@v4
+a6d1b2f702d7137bf5c3bc13a8bee45b83089b07    APPLIED     github: pin actions/cache/{save,restore}@v4
+3e281bb0adfc5f41d65145e966e6fe4fd2f47261    APPLIED     github: pin actions/labeler@v5
+cd0ac3e2f1450953d2efd9283e1bb464ee694fd3    APPLIED     github: pin actions/dependency-review-action@v4
+2f2a300ab28589393258c81616508c43d1171409    APPLIED     github: pin actions/setup-go@v5
+a7b7c50bc5b21b6743450bdb6c9d993d2ab904d0    APPLIED     lxd-user: Add container stop callhook support
+b0fa8984f7391e5d70529651b15ce0dd763de5c2    DIFFERS     lxd/main/callhook: Use callhook package from lxd-user
+9e8aabb0494ad9b8797eb0a3e1e0c6f14c9a0370    APPLIED     lxd: Change token pruning task to hourly.
+6ce2e3fbd7e865fa193e764e853a5cb897c1549f    APPLIED     github: github action for installing Trivy
+e91ad6db626fb6d7ac65b141b7c67c62c50d1965    IRRELEVANT  github: Install Trivy using GitHub action
+cb9439557d9c83e95ead0d64537346f9719737e7    APPLIED     github: pin redhat-plumbers-in-action/differential-shellcheck@v5
+882d57d2b413ee55986da493827c87ef512134d8    APPLIED     github: pin github/codeql-action@v3
+638a9f9b7ee964ae5ec7f678893869aeebe6dbae    APPLIED     github: pin canonical/has-signed-canonical-cla@main
+ba46b9f23846cc78806c097ce0d9f86e387af3ed    APPLIED     github: run commits job with ubuntu-latest
+a95a51e805de521e5baed57c576c6768f31e9f2d    APPLIED     github: pin get-woke/woke-action@v0
+1b458aa95010ef00f212e13cea5ede0055603901    IRRELEVANT  github: pin iamfj/action-label-notification@v1.0.0
+f2a6aeeffa9d11b6f7239814449d8853e8c9ca61    APPLIED     Revert "github: temporarily ignore microceph enable rgw failing"
+cdb07c97b34d2b1f143516ceb922680f2d0f5b5a    APPLIED     Revert "github: Connect mount-observe to microceph"
+66cae0fe72ec1e43763a1b2fac58a4986fd53939    APPLIED     github/actions/setup-microceph: only set noscrub once
+f9d5fbd561f417584e6457f9f5b0835b70b9e85f    APPLIED     shared: Use correct `WaitStatus` type
+721d35862af9baf5c31f7fb1a5c263007d9748c9    APPLIED     test/suites/exec: Add test for signaled processes' exit codes
+0a5b448e940c8c540dc6e80fc66301fa758ce9cb    APPLIED     test/suites/exec: More time for guest exec sleep
+1f7d95d4bec027799ecc4aff47dbd7d2a636dd23    APPLIED     test/suites/container_devices_nic_bridged_filtering: unload br_netfilter once done
