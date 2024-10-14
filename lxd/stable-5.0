@@ -5719,3 +5719,114 @@ eeed6e4bd818df3c38083437213eb09be39a39ec    IRRELEVANT  i18n: Update translation
 8c48af1961e61373a9c1fd40520de8dc9786e70a    APPLIED     lxd/instance/drivers: Add ErrExecDisconnected
 8665ae0afbd85bde0991fb1507326a183199075b    APPLIED     lxd: Make VM shutdown/reboot exit cleanly
 0f5be4baa56283baa3e71ea7074e7ad2b817d6d1    APPLIED     lxd/instance/drivers: Handle websocket closing
+6c6861a72af96579d3affe3d153f55f7f6bf00d7    APPLIED     lxd/instance/drivers/driver/lxc: Use correct container name in Update call to liblxc
+8128320c310cf61670ef94c2f76c9527749d47b3    DIFFERS     lxd/patches: Use lower case "project" in logging for consistency
+2270fdb86775fc074c15d6d3aba5325657a66ab5    IRRELEVANT  go: Bump to 1.22.7
+09507ca024f4d646d41d4e1e1e9ff280deab78a6    IRRELEVANT  Makefile: Drop openfga pin
+45e3fb5a7370fe2b8c0166dbc03a8e19dd2b18f4    IRRELEVANT  gomod: Update depdendencies
+e64073ae13bd5c9689481e4414a030dcb704653b    IRRELEVANT  github: Avoid running Trivy accidentally on non-main branches and other repos
+942f306ae5c0eefd8b28e116a4e87e7baf1eb341    IRRELEVANT  github: Avoid running TICS accidentally on non-main branches and other repos
+4c0b4bde129c7d09cf06ba3abb05611bb2cfda14    IRRELEVANT  doc: silence warning caused by sphinx-tabs
+0c3e893c2e8a981070902067602ccbbd50622041    IRRELEVANT  lxc/completion: Update instance completions to not show server configs
+06e5c82a8016368f677c637edd827a9e3e8fc0ec    IRRELEVANT  lxc/completion: Add instance device completions to `lxc config device add`
+375ff616d863497f2e15a19894f833bef2e013a4    IRRELEVANT  lxc/completion: Add instance device option completions to `lxc config device add`
+85883265eaef66a3da45a88bbd44c79eeef8abfa    APPLIED     lxd/devices: use builtin min() (Go 1.21+)
+1a294e65431f9e754bc12461fcff507d25f3eedb    IRRELEVANT  doc/installing: update link to how to manage the LXD snap
+6f05db882f8855672df48a30f4c84e1ce4d83cba    IRRELEVANT  lxc/completion: Autocomplete instances for lxc pause/start/exec/stop/delete based on status
+f8d58cc4670784dbc903299b20558676f8b431b2    IRRELEVANT  github: Update step names
+5c02bbf10263cb42ccbdd53145e0d37da4b40b30    IRRELEVANT  github: Fix Trivy vulnerability database caching
+c824e2c3c8c9a51b9c7a0ea24d050798064dcea9    IRRELEVANT  lxd/db/cluster: Add statement for getting certificates.
+51edfd73c31d53afb50c98c6723fa4c9a379a95c    IRRELEVANT  lxd/db/cluster: Use certificate statements for querying certificate identities.
+828d552ab5f8c855c202e96c6686a91bfa569ca7    IRRELEVANT  lxd/db/cluster: Update certificate database function comments.
+68f964ab1299498b0d897958bafd3ef6775ca948    IRRELEVANT  lxd/db/cluster: Remove unnecessary cast.
+13a288ed0b94df0a2188880637bde9428ea24ae0    IRRELEVANT  lxd/db/cluster: Remove unused CertificateFilter.
+2d913f283601dc57c84d5be2e3d4ce4333028224    IRRELEVANT  lxd/db/cluster: Remove unused `CertificateExists` function.
+f9fd9be270c799e4230b8bbb948b92f97732724f    IRRELEVANT  lxd/db/cluster: Remove unused `certificates_projects` functions.
+7c8e9b2b155b6259577af87ae09756c3417160ef    IRRELEVANT  lxd/db/cluster: Remove DeleteCertificates function.
+3aaec0fddbae06864a165aba6167566fe5415bb3    IRRELEVANT  lxd/cluster: Update call to delete certificates.
+95beaeeb5c212ed79f4effc1ad2045b7a641e152    IRRELEVANT  lxd/db: Remove `(*DB).UpdateCertificate`.
+fd74a3c7930cd38554c28ffccd6e2a152873fccf    IRRELEVANT  lxd: Pass a context into `doCertificateUpdate`.
+396f31600f77cc23c466134b98c2a55e6382340b    IRRELEVANT  lxd: Update `doCertificateUpdate` for removed `(*DB).UpdateCertificate`.
+e81185a5812aa7c9c250c76e3874985539ece99a    IRRELEVANT  lxd/cluster: Fix lint error (govet: printf).
+d3cd178bd69c192b9d8883c317a62f4c0742ceb6    APPLIED     test/suites/backup: ignore time discrepancies when untar'ing
+07ebf37995321ba958551ceb53d558b651ef909a    IRRELEVANT  doc: silence all warnings related to Sphinx 9.0 deprecations
+1693bc134a4c0a868cf04b5f5afd96e5d843933b    IRRELEVANT  test/pki: Export `LXD_DIR` in subshell.
+e44fc8681bf35227cf40dcd1737a894e9ec05938    IRRELEVANT  test/suites: Improve grep usage in PKI tests.
+24a7d65c7bb1a5acd3a3eef4fddbde4e72afb1a7    IRRELEVANT  lxd/storage/drivers/powerflex: Use the Net* response variables for pool stats
+4798ddb609539f7c64f1009c71250ddd7d239b92    IRRELEVANT  build(deps): bump github.com/dell/goscaleio from 1.15.0 to 1.16.0
+1d6c8f95d6b70065c063b02e983b3f28c07b9e9d    IRRELEVANT  lxc: Add `lxc file create` subcommand
+ae28236a3ee67dccea7839acb284ef7d0dbc5ec7    IRRELEVANT  test: Add tests for `lxc file create`
+679ca885f3363a5bb8e9eea0052947c1614e7925    IRRELEVANT  i18n: Update translation templates.
+d0c695dc8ce1dec382677cf322e610eabad7e990    IRRELEVANT  i18n: Update translations.
+0ac92657e58388c45aa7db14454780ccf995178a    IRRELEVANT  lxc: Add instance completions to `lxc file` subcommands
+9b0fb79074b5f4b4bf762ea93a16089c1ed53a88    IRRELEVANT  lxc: Use `ParseUint` with base and upper bound instead of `ParseInt` in cmdFilePush run function
+2a2a121e810164f89e4d3c4021578dc46298df53    IRRELEVANT  gomod: Update dependencies
+0402f2dc110fc3df064e32407e95cff43742d2dd    IRRELEVANT  github: Use microceph from latest/edge
+2acc480e4926697a61931ae57a8b14a173290fce    IRRELEVANT  github: Workaround GHA download artifact bug
+2def3c313441419d43c21a72bf9305d7d4b5c43f    IRRELEVANT  api: Add `access_management_tls` API extension.
+6bc7a50045ec1927d684adc083af9bb2030015d1    IRRELEVANT  lxd: Separate identity handlers by authentication method.
+48d8a6a32c8405be628b888ba7bc90258847a456    IRRELEVANT  lxd: Clarify optimisations when listing identities with recursion.
+88738afa3ea68ab029fa388afb5e09427b0fa56b    IRRELEVANT  lxd/response: Add a NotImplemented swagger definition.
+a222e0c907c26ad3c49c21d8d6f9840a2f7d340c    IRRELEVANT  lxd: Add all API responses to swagger doc on identity update.
+8f31086c69b24eaf9532cbffc2f355ded281072b    IRRELEVANT  shared/api: Add lifecycle event for identity deletion.
+99f0019eea541ef7b32f5b86410d1a14db4bdb08    IRRELEVANT  lxd/lifecycle: Add lifecycle event for identity deletion.
+4e6224db9d8527a250425f66b08e9f237807f326    IRRELEVANT  lxd/lifecycle: Fix comment on identity actions.
+daed7d470dca378b7021823889005b555bc15a96    IRRELEVANT  lxd: Add DELETE handler for identities.
+b8b13a4b440ed0eaa62727f39ce43ac1f4daaa84    IRRELEVANT  lxd/auth/drivers: Allow identities to delete themselves.
+97b94d0b9f2a84cb0cedf75aaa8991c66db80a32    IRRELEVANT  doc: Run `make update-api`.
+81837b73e84f17de26fd114805ca3c06daff8529    IRRELEVANT  client: Add client methods to delete an identity.
+9ffbc81587d534265c00afedcea87b32ac78d203    IRRELEVANT  lxc/auth: Add subcommand for identity deletion.
+550f90a72e26551000ec55e7580c64959649bd18    IRRELEVANT  i18n: Update translation templates.
+561df29f5c1ba649c10f864eaf0e41b58f969eaa    IRRELEVANT  i18n: Update translations.
+228f2ecdc25305d25b0750a65b4a446b76734d2d    IRRELEVANT  test/suites: Test identity deletion.
+b9f337d95292955af66b19efbce111e7334571c4    IRRELEVANT  github: add setup-microceph action
+8b5781b675e6c82b6f62c1e3b7707cd7636ee506    IRRELEVANT  github: use setup-microceph action in tests job
+383771b501c7580080fb21b8a02565e7942ce113    IRRELEVANT  test: Add check for unpriv_binfmt support before testing feature
+8fc38a160663af9cdf549a3a462955c218d3d4d5    IRRELEVANT  Revert "doc: silence all warnings related to Sphinx 9.0 deprecations"
+34d112fb324f2800312ec9ae6899000611b1f15d    IRRELEVANT  Revert "doc: silence warning caused by sphinx-tabs"
+74c4ba48a25d9913ca7e4f20c39902ad6daa81f9    IRRELEVANT  github: stop scanning Python through CodeQL
+38a2cac22f7b5bcc3e689d3738ee96c7c86160e3    APPLIED     lxd/apparmor: Include CAP_SYS_ADMIN in rsync AppArmor profile
+1bf2447c5f82e0f38bbe7d13ad2834e919310a0e    IRRELEVANT  lxc/completion: Add `images` and `ubuntu` remote completions
+ed071c088707ebfc3ad9979f0ea8bf0de0b4033a    IRRELEVANT  Revert "github: Workaround GHA download artifact bug"
+15ad72f05365b15846a65809433bf2d246830641    IRRELEVANT  github: move `make doc-linkcheck` to Tiobe TICS job
+9ab852f8803c252949543b12d3c9bc7db8606fea    IRRELEVANT  github: only run CodeQL (go) on PRs and on weekly schedule
+f507fad672c5f45dc313c4fd7b851a79ca8d22ab    IRRELEVANT  github: ignore some paths for CodeQL (go)
+7feddf234945006774721c010e1986093308c3ea    IRRELEVANT  lxd/db/generate/db: Update ast.Package references to packages.Package
+a3cfbe67bdc5bf8899a7272ed87e4947f0155d75    IRRELEVANT  lxd/db/generate/lex: Parse package paths with packages.Load
+7e2313fe1d087798c313bf7f131bb850b8b1c7fa    IRRELEVANT  lxd/db/generate/db: Update variable/type declaration parsing
+8d48a792768bdf2ecc9994414d2934524f147b5e    IRRELEVANT  lxd/db/generate/lex: Update parser tests
+693a0b5802289e09f9991c657f9ff111da99082a    IRRELEVANT  lxd/db/generate/db: Fix lint errors
+63b017e84dab2082af8a84b81238b50a82e4e0a3    IRRELEVANT  lxd/db/schema: Fix schema generation
+216482e3c49631e6a519d91cf7731abf857e29ff    IRRELEVANT  github: pin actions/upload-artifact@v to known working SHA
+8a2c4350551293becc492f5dc6c39a0ba4423df1    IRRELEVANT  github: pin actions/download-artifact@v4
+f2be72231e3b94da9c428318ecac37077848e4cf    IRRELEVANT  github: pin actions/checkout@v4
+a6d1b2f702d7137bf5c3bc13a8bee45b83089b07    IRRELEVANT  github: pin actions/cache/{save,restore}@v4
+3e281bb0adfc5f41d65145e966e6fe4fd2f47261    IRRELEVANT  github: pin actions/labeler@v5
+cd0ac3e2f1450953d2efd9283e1bb464ee694fd3    IRRELEVANT  github: pin actions/dependency-review-action@v4
+2f2a300ab28589393258c81616508c43d1171409    IRRELEVANT  github: pin actions/setup-go@v5
+1103985f845b1ff74a78e965579aaf5b854051bf    DIFFERS     Makefile: Build lxd-user as static binary
+d38f5158c87ff3dac7de5c4178e094a807df15bb    DIFFERS     Makefile: Remove unused nocache and race targets
+75c8af8c1f2abe2074def6068abecd410a03c880    DIFFERS     Makefile: Removes unused staticcheck target
+e25bc219414e04603aee07b33aba89adc830fef6    DIFFERS     Makefile: Move lxd-benchmark to be built statically
+a7b7c50bc5b21b6743450bdb6c9d993d2ab904d0    APPLIED     lxd-user: Add container stop callhook support
+b0fa8984f7391e5d70529651b15ce0dd763de5c2    DIFFERS     lxd/main/callhook: Use callhook package from lxd-user
+9e8aabb0494ad9b8797eb0a3e1e0c6f14c9a0370    APPLIED     lxd: Change token pruning task to hourly.
+6ce2e3fbd7e865fa193e764e853a5cb897c1549f    IRRELEVANT  github: github action for installing Trivy
+e91ad6db626fb6d7ac65b141b7c67c62c50d1965    IRRELEVANT  github: Install Trivy using GitHub action
+cb9439557d9c83e95ead0d64537346f9719737e7    IRRELEVANT  github: pin redhat-plumbers-in-action/differential-shellcheck@v5
+882d57d2b413ee55986da493827c87ef512134d8    IRRELEVANT  github: pin github/codeql-action@v3
+638a9f9b7ee964ae5ec7f678893869aeebe6dbae    IRRELEVANT  github: pin canonical/has-signed-canonical-cla@main
+ba46b9f23846cc78806c097ce0d9f86e387af3ed    IRRELEVANT  github: run commits job with ubuntu-latest
+a592ca4a55b3e3e6b90b3bdd775028209525bd25    IRRELEVANT  github: pin tiobe/tics-github-action@v3
+a95a51e805de521e5baed57c576c6768f31e9f2d    IRRELEVANT  github: pin get-woke/woke-action@v0
+1b458aa95010ef00f212e13cea5ede0055603901    IRRELEVANT  github: pin iamfj/action-label-notification@v1.0.0
+f2a6aeeffa9d11b6f7239814449d8853e8c9ca61    IRRELEVANT  Revert "github: temporarily ignore microceph enable rgw failing"
+cdb07c97b34d2b1f143516ceb922680f2d0f5b5a    IRRELEVANT  Revert "github: Connect mount-observe to microceph"
+66cae0fe72ec1e43763a1b2fac58a4986fd53939    IRRELEVANT  github/actions/setup-microceph: only set noscrub once
+f9d5fbd561f417584e6457f9f5b0835b70b9e85f    APPLIED     shared: Use correct `WaitStatus` type
+721d35862af9baf5c31f7fb1a5c263007d9748c9    APPLIED     test/suites/exec: Add test for signaled processes' exit codes
+0a5b448e940c8c540dc6e80fc66301fa758ce9cb    APPLIED     test/suites/exec: More time for guest exec sleep
+1f7d95d4bec027799ecc4aff47dbd7d2a636dd23    APPLIED     test/suites/container_devices_nic_bridged_filtering: unload br_netfilter once done
+8c3d9bbe4b8c96ecdd59dbdb71a5b3bc82ebe3fb    IRRELEVANT  lxc/completion: Storage volume copy completion fixes
+5782bdfdcaeefaa4dd572df6c2f4c2a2e8e421cb    IRRELEVANT  lxc/completion: Use string concatenation instead of `Sprintf()` where possible
+d81ea7dea944e376d0e699b2cbf74fcb138e4a5e    IRRELEVANT  lxc/completion: Add go doc comments to completion functions
