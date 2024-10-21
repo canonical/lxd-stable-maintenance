@@ -5830,3 +5830,111 @@ f9d5fbd561f417584e6457f9f5b0835b70b9e85f    APPLIED     shared: Use correct `Wai
 8c3d9bbe4b8c96ecdd59dbdb71a5b3bc82ebe3fb    IRRELEVANT  lxc/completion: Storage volume copy completion fixes
 5782bdfdcaeefaa4dd572df6c2f4c2a2e8e421cb    IRRELEVANT  lxc/completion: Use string concatenation instead of `Sprintf()` where possible
 d81ea7dea944e376d0e699b2cbf74fcb138e4a5e    IRRELEVANT  lxc/completion: Add go doc comments to completion functions
+c73f63c393f8faaf4919be59db64e40ed8e207ff    IRRELEVANT  Revert "shared/entity: Add `apiMetricsURLPrefixes` to `typeInfo`"
+a4ad368edc39045d3e5af115c2b4a508b1670e06    IRRELEVANT  Revert "shared/entity: Use `apiMetricsURLPrefixes` to classify endpoints"
+b15cf2ad9cbe337ad78c6251e6ea851ba8452bee    IRRELEVANT  Revert "shared/entity: Unit tests for endpoint entity types"
+49024c856a4b382008867fb83ead3d2121a70a37    IRRELEVANT  lxd: Add `MetricsType` field to `APIEndpoint`
+9c115551f590a6a1e3f1e4e20a7dd9f8da764d7e    IRRELEVANT  lxd/metrics: Take endpoint type instead of deriving from prefix
+f461943f43c49c1021990563eca48bd1ab16b368    IRRELEVANT  lxd: Update metrics functions usage
+36d9b9eb08a5ccd74398cabb520d36b72ee770e3    IRRELEVANT  shared/entity: Create list of types for the metrics
+71950529108de12f9fb7ad216e7e5c9c9c9e690a    IRRELEVANT  lxd: Categorize existing endpoints
+07751bcf6041c5daa6630ee419df93e73ddb2895    IRRELEVANT  lxd: Check if every 1.0 endpoint is typed
+db5fdde99071971110690987429d6e052c03b46b    IRRELEVANT  lxd: Update `MetricsCallback` variable name
+30e8bc4909dbf3575243f0e4c4d1f53d4d58292a    IRRELEVANT  build(deps): bump actions/upload-artifact from 4.4.2 to 4.4.3
+4c85e356a88bb25e2b84d145ebfc83c23a9a8d3e    IRRELEVANT  lxc/remote: Fix interactive question about remote fingerprint
+30c9f504849bdc23ee9c97e34e958b0ee919648c    IRRELEVANT  lxc/remote: Add validation for mutually exclusive flags
+d83ac8f54cd47151c6c7ff02ef46e409d75e89cf    IRRELEVANT  lxc/remote: Prevent accept-certificate flag when using trust token
+693409b1f42c1f7194ba5d871dea747ba98d5b75    IRRELEVANT  lxd/certificates: Invalidate trust token when adding client certificate
+99b40da42a6c1fee90b4d271d9857dc0f18d5f63    IRRELEVANT  lxc/remote: Always send token to remote to invalidate it
+55773796b4f12a96e1435dbb57bdf0d6f97f0b2f    IRRELEVANT  test: Remove accept-certificate flag where token is used
+82d06833f0a58a087f06bae901a164525bf2fa32    IRRELEVANT  test/pki: Do not use invalid token as it will always fail
+1521aa272fe21af1eff82957c818edd322c88427    IRRELEVANT  test/clustering: Remove unused token
+db59e89056b7206715396b7bb3559820eda65800    IRRELEVANT  test/clustering: Do not use token when adding public remote
+0098b7f19137ca0dbf8a7576c5d7467ef5b20de3    IRRELEVANT  test: Ensure token cannot be used with --accept-certificate flag
+b77e4a3290a17e0c0cd170f4ba094055b949243f    IRRELEVANT  i18n: Update translation templates.
+88f5b759cf41f817c622e1ee66fb7deea328be55    IRRELEVANT  i18n: Update translations.
+b8870dc7717fb9a846ec093c034cbf474d05f951    IRRELEVANT  gomod: Update deps
+cf0882f33529c3f8f90146705b0d77e95c15d919    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.6.1 to 1.6.2
+920700be6403f89a1fcd793b9f355d4845c77fc3    FEATURE     lxd/network: Support VLAN tagging for OVN uplinks with native bridge parents
+2bf31d4531f2c32c64b10f30f6440ae0877ecfb9    APPLIED     lxd/network/driver_ovn: Fix CIDR size check
+f56f357f347afe2c48673c5291f35089aa5d5b84    APPLIED     lxd/network/driver_bridge: fix IPv6 CIDR size check
+d4eebe06341bdfd0c7ba34ac46ee4bf6abc5e45f    APPLIED     lxd/network/driver_ovn: fix IPv6 CIDR size check
+c819c621f62c017e1f97f5c7f98959c6b2b3c1e4    FEATURE     shared/api: Add pending and fine-grained TLS certificate identity types.
+20a01e12355a0a6f2447f46e1baaa6aeb2d09d26    FEATURE     lxd/identity: Make new client certificates a fine-grained identity type.
+5af95c59c26f9d50f796629640b4b90b68d79383    FEATURE     lxd/identity: New client certificate identity type authenticates via TLS.
+cfc98d29358e6188ea1112f71ebe466389d437f7    FEATURE     lxd/db/cluster: Add pending and fine-grained TLS certificate identity types.
+3012b75a4f21c84c6716a2f1eea5c7a382678006    FEATURE     lxd/db/cluster: Include new identity types in identity entity type db definition.
+f9fe65add9152de024ba0f00a76a0152072a7c55    IRRELEVANT  lxd/operations: Don't consider writing errors
+e5a8fb69957f2790051db361434d3b97aefe2b28    IRRELEVANT  lxd/response: Don't consider writing errors
+4ddd5cd86f499b62d4d3c09629278244c94ce084    IRRELEVANT  lxd/metrics: Remove logging from `UseMetricsCallback`
+58106ba708d54a2a478318ca6fce5889ccd241b7    IRRELEVANT  shared/api: Add API structs for identity creation.
+4a9d79967817aaab774aecf6e01fdfee5f7413f7    IRRELEVANT  shared/api: Add field to CertificateAddToken.
+b1108094f0391fe1dcd55d547ebc9eef30236fd6    IRRELEVANT  lxd: Move CA check into `certificateValidate` method.
+c19cf4b82d5495a535a8f4171583fc9fca0d3c5a    IRRELEVANT  lxd/db/cluster: Add pending TLS identity metadata type and method.
+dc78faaf0ffb3ccbeb27b223a3bbb2ef2f442ff9    IRRELEVANT  lxd/db/cluster: Add method to activate a pending TLS identity.
+a020acc19ed42019a906f3cc836b629318b0f339    IRRELEVANT  lxd/db/cluster: Add method to find a pending identity by secret.
+04d6a5237d06d0a22269ba58bda63a708035dfb5    IRRELEVANT  lxd: Add factor out common logic for identity notifications.
+bf4e757581e186502f884853c4fd7f35b0b3be8e    FEATURE     lxd: Add TLS identity creation endpoint.
+fc982abdcd801f3bdd5e5f456d8e71679f7fd9b2    IRRELEVANT  doc: Runs `make update-api`.
+7bf1fabe9f84722d3a4655cf429134ceb5c9bef5    FEATURE     lxd: Allow fine-grained TLS identities to authenticate.
+4d7c92db9e88969ae33e5cba046610265c796abb    FEATURE     lxd: Allow fine-grained TLS identities list resources in any project.
+a4688776a774ac8a4754366a217804c9274bf298    FEATURE     lxd/auth/drivers: Delegate to TLS driver only when identity is not fine-grained.
+bdd7aec767c52df6cbb98a190d1d1f62b29c1029    FEATURE     lxd: Omit pending TLS identities when updating the identity cache.
+3e4a7ce66d95ce6e4d49ddef89ca259e20d69ec2    FEATURE     lxd: Return a useful error if an identity token is sent to the certificate API.
+7ce52311c37e42a5d12bade5562f0332b5ebb1fd    FEATURE     client: Add methods for creating TLS identities.
+7ea5c34dcc1068ca725b576abcad1ed30b351c48    FEATURE     lxc/remote: Update `remote add` to handle tokens issued by identities API.
+f4821669c42174235b4365a1936bdfad0f19bdc5    FEATURE     lxc/auth: Add identity creation command.
+b2b9e327efd3a278f0c806b4c638e66068a06451    IRRELEVANT  i18n: Update translation templates.
+e022905c6e77072604431e5d456d428da3982df7    IRRELEVANT  i18n: Update translations.
+4ae3123bda9182478d33d494c6926bb05f74f477    FEATURE     test/suites: Parameterise authorization tests by remote name.
+ae83b3466c058cd056404685058251acb315b3d6    FEATURE     test/suites: Test fine-grained TLS identity creation.
+707d78e5419fd01d445b097e3056d9d3772a148b    FEATURE     test/suites: Test identity info for TLS identities.
+aa40dbf68821ac80e963ff3ee6a0fb8873e26071    FEATURE     test/suites: Run fine-grained authorization tests for TLS identities.
+fc3d684be526a833b99e0b99f5628989d39d7877    FEATURE     test/suites: Improve coverage on identity deletion.
+d16636b641d0d506d0d03016c42a83fa71ce3f1c    FEATURE     test/suites: Test fine-grained TLS identities with PKI mode.
+96087a3494e5c6100a7f06d69d8393a07ce5d69e    IRRELEVANT  doc/howto: Don't link client tokens to clustering tutorial.
+1df7b41b059a49754fc1d09be22e8cb56ad82dd2    IRRELEVANT  doc/howto: Switch projects<->users in confinement docs.
+bc588bc3be095ee572f36330817dfa2a8e7c9161    IRRELEVANT  doc: Switch projects<->users in confinement docs.
+e8ec61eee553e286f726fc762c9bd29391378660    IRRELEVANT  doc: Authentication section under explanation should not contain how-tos.
+1e584bbb16c1d4d5627a38bca7fd2be7d4742ec0    IRRELEVANT  doc/explanation: Remove authentication methods section in project docs.
+3938a077a39eeb6c341bf8a0a472b0f5eb6c20ba    IRRELEVANT  doc/explanation: Add fine-grained TLS identities to authorization page.
+55a3ea5bed37f48684370be0acdaef15b102b047    IRRELEVANT  doc/howto: Include fine-grained TLS identities in authentication tutorial.
+48a58c237a4790a128c4448b4877e2a8bb5a030e    IRRELEVANT  doc/howto: Include fine-grained TLS identities in project confinement tutorial.
+5a2cc4e9100de0061015a8fdd00c198822f2cb75    IRRELEVANT  Revert "github: move `make doc-linkcheck` to Tiobe TICS job"
+d372fb087a09bb4dea9f6b181f2b1398993cb6a3    IRRELEVANT  github: move `make doc-linkcheck` back to doc
+298aaadd29b9122f1d6913a62b073c4d1cfa42c3    IRRELEVANT  shared: Change error message on ParseCert.
+f6a4cb7639b9184a24460aeea37df50ce3efd6cc    IRRELEVANT  test/includes/lxc: silently set +x
+3c0512ed1af0be5042c18a3fa9326c0f8b7a7955    IRRELEVANT  test/includes/lxd: silently set +x
+75311959873eec15fa7bf48b7834aec33881ae96    APPLIED     Makefile: stop testing with flake8 during static-analysis
+429ac8a75c1173a4cb29462f6d16fec1eff8aec1    IRRELEVANT  github: don't install flake8
+85faaac1c0d3b0d59a668dd7234c7faae00a06b2    APPLIED     test/deps/import-busybox: format with `ruff format`
+f7ec7c1dba5a649ce6eb1e31c7f8a2e6008f3afa    APPLIED     test/deps/import-busybox: upgrade to python 3.8+
+891810bb0a3152c6feff64af150bb35ccdb86e45    IRRELEVANT  test/suites/remote: rework invalid protocol test
+fd8a334d87975201faf5237876a26fc2e5442caa    IRRELEVANT  test/suites/remote: rework badtoken test
+2e764a0758928ce86a8d7dae3b591a8661bce2b3    IRRELEVANT  test/suites/clustering: add clustering_update_cert_token test
+ec0b2211cd22b1466d1b14a40d857fac4bb02d12    IRRELEVANT  test/main: enable clustering_update_cert_token test
+46730550ad8948433d10454383197f4988090712    IRRELEVANT  lxd/db/openfga: Update `ReadChanges`
+48451e838c026f6e32eeedd97277f0d12fac10f9    DIFFERS     lxd/network/driver_ovn: allow subnets smaller than /64
+f3d83ff46d443f86c87c067aab54c2820995b84c    IRRELEVANT  github: remove extraneous space after GHA SHA1 pinning
+b571e6e857a605ae83d90e54fa2ee273e69cb3f2    IRRELEVANT  github: fix indent of commits job
+770e628f3aa87e204d354be56f1ca0f63638de21    IRRELEVANT  github: fix indent of codeql job
+07f8dd3eb40dbf4b54a497e170b352c7538e566b    IRRELEVANT  github: fix indent of triage job
+cabae362adf473cc9fa6158037aef24e8fbf7422    IRRELEVANT  Makefile: opportunistically run yamllint against GH workflows
+d0779108b2d87db93df0483acfe85a7f293382ac    IRRELEVANT  lxc/completion: Only complete custom storage volumes for `lxc storage volume copy`
+f86417bc6bc327f4dfa81d38f7c48c3e3c101da2    IRRELEVANT  lxc/completion: Fix completions for `lxc storage volume move`
+16d32675a8498188b21a30716221e798d78a565d    FEATURE     api: `network_allocations_ovn_uplink` API extension
+f4ced890a3db8ddbbbbfd4f0c64448b656563935    IRRELEVANT  shared/api: Add `Project` field to leases
+54a0a965f5b074343efe2ffb25389ff51018aaec    IRRELEVANT  lxc/network/driver_ovn: Adapt `Leases` for ovn network
+5d298021bcf61db43beaaaef9e88371bb50c1252    IRRELEVANT  lxc/network/driver_bridge: Adapt `Leases` for bridge network
+29990ceabf5f6192d225acf35e5c03a15234f6f4    IRRELEVANT  lxd/network_allocations: Get leases from all projects
+3fcdc762e8b78ca3ef7b1f89a9084be453f73d4b    IRRELEVANT  lxd/network_allocations: Include OVN uplink allocations
+c2080bd5b38a2933d844571c21bb70da76106b82    IRRELEVANT  shared/api: Add `Network` to `NetworkAllocations`
+cb2b230faa2016629fc129d19393a1fd6b3cbc9f    IRRELEVANT  lxd/network_allocations: Populate `Network` field
+18a8a330c92e77c1605c631643094008a293e731    IRRELEVANT  lxc: Show allocation network
+650098a2d9c74c7862922c126ad5e61de3008c76    IRRELEVANT  doc: Run `make update-api`
+4e99424144ad2f3af0b49839b5eb4446210a025b    IRRELEVANT  i18n: Update translation templates.
+5d5a88454de9407648b350bee24b2f2c064d3bc8    IRRELEVANT  i18n: Update translations.
+7dd9908ebe15022ab1c8d825ef9808283e00a0b9    IRRELEVANT  test: Test showing instances from different projects
+0f31b06933d4c8942732c086d5e64ee4dd060739    IRRELEVANT  github: use shorter job names for Trivy scanning
+f83ba1c98436738fba5326bf408d75eff1ad736e    IRRELEVANT  doc: fix minor typos
+8eaca0de336b8bf0f408914c5371fda543ee302c    IRRELEVANT  api: Add network_ovn_uplink_vlan API extension
