@@ -1869,3 +1869,39 @@ f9d5fbd561f417584e6457f9f5b0835b70b9e85f    APPLIED     shared: Use correct `Wai
 721d35862af9baf5c31f7fb1a5c263007d9748c9    APPLIED     test/suites/exec: Add test for signaled processes' exit codes
 0a5b448e940c8c540dc6e80fc66301fa758ce9cb    APPLIED     test/suites/exec: More time for guest exec sleep
 1f7d95d4bec027799ecc4aff47dbd7d2a636dd23    APPLIED     test/suites/container_devices_nic_bridged_filtering: unload br_netfilter once done
+b77e4a3290a17e0c0cd170f4ba094055b949243f    IRRELEVANT  i18n: Update translation templates.
+88f5b759cf41f817c622e1ee66fb7deea328be55    IRRELEVANT  i18n: Update translations.
+b8870dc7717fb9a846ec093c034cbf474d05f951    IRRELEVANT  gomod: Update deps
+4c9e8e72d32dea98f858a266fa251121ebd1c792    APPLIED     lxd/firewall/drivers: Don't masquerade multicast traffic
+920700be6403f89a1fcd793b9f355d4845c77fc3    APPLIED     lxd/network: Support VLAN tagging for OVN uplinks with native bridge parents
+2bf31d4531f2c32c64b10f30f6440ae0877ecfb9    APPLIED     lxd/network/driver_ovn: Fix CIDR size check
+f56f357f347afe2c48673c5291f35089aa5d5b84    APPLIED     lxd/network/driver_bridge: fix IPv6 CIDR size check
+d4eebe06341bdfd0c7ba34ac46ee4bf6abc5e45f    APPLIED     lxd/network/driver_ovn: fix IPv6 CIDR size check
+298aaadd29b9122f1d6913a62b073c4d1cfa42c3    APPLIED     shared: Change error message on ParseCert.
+b2b9e327efd3a278f0c806b4c638e66068a06451    IRRELEVANT  i18n: Update translation templates.
+e022905c6e77072604431e5d456d428da3982df7    IRRELEVANT  i18n: Update translations.
+5a2cc4e9100de0061015a8fdd00c198822f2cb75    APPLIED     Revert "github: move `make doc-linkcheck` to Tiobe TICS job"
+d372fb087a09bb4dea9f6b181f2b1398993cb6a3    APPLIED     github: move `make doc-linkcheck` back to doc
+f6a4cb7639b9184a24460aeea37df50ce3efd6cc    APPLIED     test/includes/lxc: silently set +x
+3c0512ed1af0be5042c18a3fa9326c0f8b7a7955    APPLIED     test/includes/lxd: silently set +x
+75311959873eec15fa7bf48b7834aec33881ae96    APPLIED     Makefile: stop testing with flake8 during static-analysis
+429ac8a75c1173a4cb29462f6d16fec1eff8aec1    APPLIED     github: don't install flake8
+85faaac1c0d3b0d59a668dd7234c7faae00a06b2    APPLIED     test/deps/import-busybox: format with `ruff format`
+f7ec7c1dba5a649ce6eb1e31c7f8a2e6008f3afa    APPLIED     test/deps/import-busybox: upgrade to python 3.8+
+48451e838c026f6e32eeedd97277f0d12fac10f9    APPLIED     lxd/network/driver_ovn: allow subnets smaller than /64
+16d32675a8498188b21a30716221e798d78a565d    DIFFERS     api: `network_allocations_ovn_uplink` API extension
+4e99424144ad2f3af0b49839b5eb4446210a025b    IRRELEVANT  i18n: Update translation templates.
+5d5a88454de9407648b350bee24b2f2c064d3bc8    IRRELEVANT  i18n: Update translations.
+0f31b06933d4c8942732c086d5e64ee4dd060739    APPLIED     github: use shorter job names for Trivy scanning
+f83ba1c98436738fba5326bf408d75eff1ad736e    APPLIED     doc: fix minor typos
+8eaca0de336b8bf0f408914c5371fda543ee302c    APPLIED     api: Add network_ovn_uplink_vlan API extension
+f4ced890a3db8ddbbbbfd4f0c64448b656563935    APPLIED     shared/api: Add `Project` field to leases
+54a0a965f5b074343efe2ffb25389ff51018aaec    APPLIED     lxc/network/driver_ovn: Adapt `Leases` for ovn network
+5d298021bcf61db43beaaaef9e88371bb50c1252    APPLIED     lxc/network/driver_bridge: Adapt `Leases` for bridge network
+29990ceabf5f6192d225acf35e5c03a15234f6f4    APPLIED     lxd/network_allocations: Get leases from all projects
+3fcdc762e8b78ca3ef7b1f89a9084be453f73d4b    APPLIED     lxd/network_allocations: Include OVN uplink allocations
+c2080bd5b38a2933d844571c21bb70da76106b82    APPLIED     shared/api: Add `Network` to `NetworkAllocations`
+cb2b230faa2016629fc129d19393a1fd6b3cbc9f    APPLIED     lxd/network_allocations: Populate `Network` field
+18a8a330c92e77c1605c631643094008a293e731    APPLIED     lxc: Show allocation network
+650098a2d9c74c7862922c126ad5e61de3008c76    APPLIED     doc: Run `make update-api`
+7dd9908ebe15022ab1c8d825ef9808283e00a0b9    APPLIED     test: Test showing instances from different projects
