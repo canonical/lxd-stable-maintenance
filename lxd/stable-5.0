@@ -5938,3 +5938,40 @@ cb2b230faa2016629fc129d19393a1fd6b3cbc9f    IRRELEVANT  lxd/network_allocations:
 0f31b06933d4c8942732c086d5e64ee4dd060739    IRRELEVANT  github: use shorter job names for Trivy scanning
 f83ba1c98436738fba5326bf408d75eff1ad736e    IRRELEVANT  doc: fix minor typos
 8eaca0de336b8bf0f408914c5371fda543ee302c    IRRELEVANT  api: Add network_ovn_uplink_vlan API extension
+254a477b737c5499639e20a0afdae8e1ef92aeed    IRRELEVANT  lxd/network/network/utils: Fix incorrect handling of instances in UsedByInstanceDevices
+685a4a6c7caccbee847150c4994bbce74487594c    DIFFERS     lxd/network/driver/bridge: Handle concurrent collection of member leases correctly
+9d09e4e92a1642b16b74e9e020a6ab4ec908efd5    IRRELEVANT  doc/explanation/authorization: embed discourse post title as link text
+02298ac6502d535bf60f4d08c244c5af7aabe54e    IRRELEVANT  doc/howto/snap: embed discourse post title as link text
+91aa9fa9fe74473aeb60345366f7849ba44cae54    IRRELEVANT  doc/installing: embed discourse post title as link text
+67762a3bab447f46f53dcc9200ed064b32a0eb4f    IRRELEVANT  doc/reference/remote_image_servers: embed discourse post title as link text
+3fa532488c8565872dfe3977d41b6a75e550de44    IRRELEVANT  doc/reference/uefi_variables: embed discourse post title as link text
+802ec9a94cf64b2d90d51aa977e8b85926b93810    APPLIED     lxc/profile: Fix typo in profile set usage
+924da93955b680a04065078119365dc402eb12ad    IRRELEVANT  doc: `make i18n`
+3982c0d202c1477a7f52ecf78186ef250002183f    IRRELEVANT  lxd/cluster/notify: Use in-memory config for cluster offline threshold
+18737808da144bd5ce2a70a93925a09c633eb3ab    IRRELEVANT  lxd/cluster/notify: Use state.ServerClustered
+b71357b3856cf87eb85d2bc2d3eab82ffb8b6518    IRRELEVANT  lxd/cluster/notify: Take optional members to notify
+691b0478cb8835d2c4a663d56f4601bb5941a51c    IRRELEVANT  lxd/cluster/notify: Add NodeInfo to Notifier hook
+b6b6283df8802b7d3d17e274750e646686329ec0    IRRELEVANT  lxd/cluster/notify: Update notifier tests
+a621d660a849f7cab14914fbc13971e25fcf3735    IRRELEVANT  lxd/state/test: Load global config from DB
+af850cc50f651ea0ec6a73bfc6dd7e5a665a3be5    IRRELEVANT  lxd/cluster: Update notifier usage
+03f890a5c8c0aca1365573e34883e80e7561c6e9    IRRELEVANT  lxd/network/acl: Update notifier usage
+6e1bcb74c3ca76f7b56afbea3b009a08d9c5b03e    IRRELEVANT  lxd/network/zone: Update notifier usage
+6a1165a840f26a32f38cd4513b0652bd4446e4f6    IRRELEVANT  lxd/network: Update Notifier usage
+1b5982335f10510725ffce96af74064f455fe6bb    IRRELEVANT  lxd: Update notifier usage
+71edd8ca18827c07b9c1f28d68792f907e32066c    IRRELEVANT  lxd: Update notifier usage
+2555beeef8161c5f44293b32503e9d56ff8e546e    IRRELEVANT  lxd: Update notifier usage
+71e344c11decac358eebb17a334a9f704ce900d1    IRRELEVANT  lxd/cluster: Split LocalSysInfo from MemberState
+6e1a4f479dd86d240c02aeb01d59747e57e1fcd8    IRRELEVANT  lxd/cluster: Remove unused memberName parameter
+4860bed00373cfee48579a300d2d35bbf9ccd2a1    IRRELEVANT  lxd: Update MemberState usage
+8c749a2c17ebd57d8524cb4d81d74c3b74ce50b1    IRRELEVANT  shared/api: Add LogicalCPUs to ClusterMemberSysInfo
+d62e3b5dd919198a432bb3e223642464a165ea53    IRRELEVANT  lxd/cluster: Populate LogicalCPUs
+4040dd8f5e1a7f277b82930da378e3e45f341942    IRRELEVANT  doc: Run `make update-api`
+4b1042f75f0cfafb9aab1b66125207109ed2df71    IRRELEVANT  lxd/cluster: Implement ClusterState
+458a73007198f938e7c1942dda0c9b2e262e29bd    IRRELEVANT  lxd/cluster/notify: Mock member state endpoint
+f13e37739c87418582d5e10f78b91750cb11be5d    IRRELEVANT  lxd/cluster: Test ClusterState
+b3ce3ed2625fdb5ac52a425b6fa3e1cacf200831    IRRELEVANT  lxd/cluster: Perform cluster member update on updated cluster member
+23bd4f344a6ceeb4a58462e54b41c55b181f887d    IRRELEVANT  lxd: Remove uneeded iteration
+a608e3bea2b232726b36b11e7602bed734b17256    IRRELEVANT  lxd/db/node: Fix linter errors
+b48e63940c6a2f985f75722524e479dcde438f4c    IRRELEVANT  doc/howto: Fix argument order when adding permissions to a group.
+0fd05291388401978af7a7ff46cb791cdbd5d663    IRRELEVANT  build(deps): bump tiobe/tics-github-action from 3.2.0 to 3.2.1
+8544567224014a9a037d43059f7acf0ace879baf    IRRELEVANT  build(deps): bump github/codeql-action from 3.26.12 to 3.26.13
