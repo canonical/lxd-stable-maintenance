@@ -1905,3 +1905,22 @@ cb2b230faa2016629fc129d19393a1fd6b3cbc9f    APPLIED     lxd/network_allocations:
 18a8a330c92e77c1605c631643094008a293e731    APPLIED     lxc: Show allocation network
 650098a2d9c74c7862922c126ad5e61de3008c76    APPLIED     doc: Run `make update-api`
 7dd9908ebe15022ab1c8d825ef9808283e00a0b9    APPLIED     test: Test showing instances from different projects
+a592ca4a55b3e3e6b90b3bdd775028209525bd25    DIFFERS     github: pin tiobe/tics-github-action@v3
+30e8bc4909dbf3575243f0e4c4d1f53d4d58292a    APPLIED     build(deps): bump actions/upload-artifact from 4.4.2 to 4.4.3
+d83ac8f54cd47151c6c7ff02ef46e409d75e89cf    DIFFERS     lxc/remote: Prevent accept-certificate flag when using trust token
+99b40da42a6c1fee90b4d271d9857dc0f18d5f63    DIFFERS     lxc/remote: Always send token to remote to invalidate it
+55773796b4f12a96e1435dbb57bdf0d6f97f0b2f    DIFFERS     test: Remove accept-certificate flag where token is used
+82d06833f0a58a087f06bae901a164525bf2fa32    DIFFERS     test/pki: Do not use invalid token as it will always fail
+1521aa272fe21af1eff82957c818edd322c88427    IRRELEVANT  test/clustering: Remove unused token
+db59e89056b7206715396b7bb3559820eda65800    DIFFERS     test/clustering: Do not use token when adding public remote
+0098b7f19137ca0dbf8a7576c5d7467ef5b20de3    IRRELEVANT  test: Ensure token cannot be used with --accept-certificate flag
+cf0882f33529c3f8f90146705b0d77e95c15d919    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.6.1 to 1.6.2
+254a477b737c5499639e20a0afdae8e1ef92aeed    APPLIED     lxd/network/network/utils: Fix incorrect handling of instances in UsedByInstanceDevices
+685a4a6c7caccbee847150c4994bbce74487594c    APPLIED     lxd/network/driver/bridge: Handle concurrent collection of member leases correctly
+9d09e4e92a1642b16b74e9e020a6ab4ec908efd5    APPLIED     doc/explanation/authorization: embed discourse post title as link text
+02298ac6502d535bf60f4d08c244c5af7aabe54e    APPLIED     doc/howto/snap: embed discourse post title as link text
+91aa9fa9fe74473aeb60345366f7849ba44cae54    APPLIED     doc/installing: embed discourse post title as link text
+67762a3bab447f46f53dcc9200ed064b32a0eb4f    APPLIED     doc/reference/remote_image_servers: embed discourse post title as link text
+3fa532488c8565872dfe3977d41b6a75e550de44    APPLIED     doc/reference/uefi_variables: embed discourse post title as link text
+802ec9a94cf64b2d90d51aa977e8b85926b93810    APPLIED     lxc/profile: Fix typo in profile set usage
+924da93955b680a04065078119365dc402eb12ad    IRRELEVANT  doc: `make i18n`
