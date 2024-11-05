@@ -1924,15 +1924,4 @@ cf0882f33529c3f8f90146705b0d77e95c15d919    IRRELEVANT  build(deps): bump github
 3fa532488c8565872dfe3977d41b6a75e550de44    APPLIED     doc/reference/uefi_variables: embed discourse post title as link text
 802ec9a94cf64b2d90d51aa977e8b85926b93810    APPLIED     lxc/profile: Fix typo in profile set usage
 924da93955b680a04065078119365dc402eb12ad    IRRELEVANT  doc: `make i18n`
-3982c0d202c1477a7f52ecf78186ef250002183f    APPLIED     lxd/cluster/notify: Use in-memory config for cluster offline threshold
-18737808da144bd5ce2a70a93925a09c633eb3ab    APPLIED     lxd/cluster/notify: Use state.ServerClustered
-b71357b3856cf87eb85d2bc2d3eab82ffb8b6518    APPLIED     lxd/cluster/notify: Take optional members to notify
-691b0478cb8835d2c4a663d56f4601bb5941a51c    APPLIED     lxd/cluster/notify: Add NodeInfo to Notifier hook
-b6b6283df8802b7d3d17e274750e646686329ec0    APPLIED     lxd/cluster/notify: Update notifier tests
-a621d660a849f7cab14914fbc13971e25fcf3735    APPLIED     lxd/state/test: Load global config from DB
-af850cc50f651ea0ec6a73bfc6dd7e5a665a3be5    APPLIED     lxd/cluster: Update notifier usage
-03f890a5c8c0aca1365573e34883e80e7561c6e9    APPLIED     lxd/network/acl: Update notifier usage
-6e1bcb74c3ca76f7b56afbea3b009a08d9c5b03e    APPLIED     lxd/network/zone: Update notifier usage
-6a1165a840f26a32f38cd4513b0652bd4446e4f6    APPLIED     lxd/network: Update Notifier usage
-1b5982335f10510725ffce96af74064f455fe6bb    APPLIED     lxd: Update notifier usage
-71edd8ca18827c07b9c1f28d68792f907e32066c    APPLIED     lxd: Update notifier usage
+2a3a7052ebfb716bc420c865e3a96355eb12d88b    APPLIED     lxd: Use explicit cluster addr when core addr is wildcard
