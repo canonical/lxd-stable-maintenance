@@ -5975,3 +5975,103 @@ a608e3bea2b232726b36b11e7602bed734b17256    IRRELEVANT  lxd/db/node: Fix linter 
 b48e63940c6a2f985f75722524e479dcde438f4c    IRRELEVANT  doc/howto: Fix argument order when adding permissions to a group.
 0fd05291388401978af7a7ff46cb791cdbd5d663    IRRELEVANT  build(deps): bump tiobe/tics-github-action from 3.2.0 to 3.2.1
 8544567224014a9a037d43059f7acf0ace879baf    IRRELEVANT  build(deps): bump github/codeql-action from 3.26.12 to 3.26.13
+2a3a7052ebfb716bc420c865e3a96355eb12d88b    APPLIED     lxd: Use explicit cluster addr when core addr is wildcard
+666b9478f20c8e1b51044f50b941e9ed9dcf5d9e    IRRELEVANT  github: Use go mod version of go for build test
+0e6797efd0e29b9407a42cbc48dc1d1c394ee9c6    IRRELEVANT  github: Remove ineffective matrix of go versions during system tests
+8b71449fec5b6da2854dbcd3eb8f04cf79a95a37    IRRELEVANT  github: Use go mod version of go for TICS test
+e937a1694d8e5fca857d7c06a6534fea3fe4c5a2    IRRELEVANT  github: Use go mod version of go for client tests
+9eaae138b75d1a6b75b57ebeb705a71c429707c6    IRRELEVANT  github: Use go mod version of go for doc builds
+4075c440f9fec6268b6901f5e6d5b0b394a08fb0    IRRELEVANT  github: Use go mod version of go for LP trigger
+080df7c6c93b3f690e773916ace6e7232ad9538a    IRRELEVANT  lxd/instance/drivers/qemu: Properly plumb I/O limits
+7eee0040dfb5abb5f0bc469449d0eae528203324    FEATURE     lxd/cgroup: Add named results to `ParseCPU` and remove unnecesary type casting to `int64`
+6027e2a122bd409d7759ee2559baa6860f8220af    IRRELEVANT  lxd/cgroup: Refactor `srcType` parameter in `TaskSchedulerTrigger` to use `instancetype.Type` instead of `string`
+62cfe929e17d4bf74f16b3026a87edc656e991c4    IRRELEVANT  lxd/shared/validate: Add named results to `ParseNetworkVLANRange` and `ParseUint32Range`
+f6dc8903ea36c0348eb7d4e1aed5be110d5331a6    IRRELEVANT  tests: Add tests for `limits.cpu.pin_strategy` and `limits.cpu` config and profile settings
+0f397ed520e1413fed6a61a083ae4907e2f02bf3    IRRELEVANT  github: update apt definition in setup-microceph
+6d46fd650d628a79072abb7a3aa5691aa49a7d93    IRRELEVANT  lxd/project/limits: Use InstanceList for queries
+41ffd778b989174c45006cfd36299eb957a3f13d    APPLIED     lxd/cluster: Replace deprecated Recover with ReconfigureMembership
+be1ec613d88ef89b5dd0517e6bb6fcc588796e47    IRRELEVANT  lxd/state: Add LeaderInfo type and function to state.
+2220cde2c22fc4f9a571a6d3ebf9ad691780ebe6    IRRELEVANT  lxd: Set LeaderInfo function in `(*Daemon).State`.
+7fe7737d8c85a26bb69ec15d7c86049ce37a9131    IRRELEVANT  lxd: Update ACME handlers to use `(*State).LeaderInfo`.
+afbd1155e91f198329aa3663242d91f1d1da3987    IRRELEVANT  lxd: Update cluster handlers to use `(*State).LeaderInfo`.
+15591e9d420ddd0221870f3ba3ead16eaf2758a9    IRRELEVANT  lxd: Update image sync task to use `(*State).LeaderInfo`.
+458e458d3f86b33d31b0baf2f4fc96da2000c935    IRRELEVANT  lxd: Update instance handlers to use `(*State).LeaderInfo`.
+5093829cc7e4dde8abaa13e5df6a1d34f54101b9    IRRELEVANT  lxd: Update operation prune task to use `(*State).LeaderInfo`.
+07a7c8f7a52f659158421f668521943171e3171c    IRRELEVANT  lxd: Update database patch to use `(*State).LeaderInfo`.
+656bb304962601796d67bfd21328e96e53c6368f    IRRELEVANT  lxd/apparmor: Update with new lxd binary location in sbin
+18f4c4292debd946f35900c77769fea05dabb051    IRRELEVANT  lxc/launch: Start console if instance start was performed on server
+d379795c81a6f4a9cf79cddde0ad98a75beed910    IRRELEVANT  Makefile: Use dqlite master when building deps and making dist tarball
+dd30aac6626237c5cc69876adfaab1a6a27073a0    IRRELEVANT  gomod: Switch to v3 of go-dqlite
+e85099dfed8cd8509d60472b7b97597cc3864784    IRRELEVANT  lxd: Switch to v3 of go-dqlite
+c48c20a88db9b79e09a9ada92f90a481dc6f1458    APPLIED     lxd/db: Linter fixes
+b2dd68e06369db1b7af043e3e15e9de79ac722c5    IRRELEVANT  lxd/db/cluster: Differentiate errors returned by PendingTLSMetadata.
+de48dc31c910f6bf914fe009aab1c6562dcc4fab    IRRELEVANT  lxd: Remove expired pending TLS identities in token prune task.
+941140486432d4d25894ac0b8c65ae50ed53e8f4    IRRELEVANT  tests: Don't overprovision test volume
+fead980c9807d8b20132170566089a1637553207    FEATURE     api: Add `state_logical_cpus` extension
+ea10a89da8bc5b76fba5e5ae8996e0b7eeced6c5    FEATURE     lxd/db/cluster/profiles: Support device cache in ToAPI
+16a0ca940a393a0d91d076dbc00d3bf527468aed    FEATURE     lxd: Pass profile device cache to ToAPI calls when possible
+5a2c9c73826815bc12bb965474bb88273349d7a5    FEATURE     lxd/db/cluster/instances: Support device cache to ToAPI
+bb2fe4bf32666ef2ceda0ed2e5d2f365245badd2    FEATURE     lxd/project/limits: Pass instance device cache to ToAPI
+9bffd16c3e6ca0e036fd98ce2a3bc56751ecc7aa    FEATURE     lxd/db/cluster/instances: Allow passing profile devices to instance ToAPI
+65a40676894630974814350228957e2f174c7d9e    FEATURE     lxd/project/limits: Pass profile device cache to instance ToAPI
+3bbf11cad89af5aded0713d72fe184e91e3bf397    FEATURE     lxd/db/cluster/profiles: Support config caching
+2be1d523e95aa6fd08d0864804a4b83b3ce1cee8    FEATURE     lxd: Update calls to profile ToAPI
+740a7f9e6a02c419a31822dde02c948b98b5495e    FEATURE     lxd/db/cluster/profiles: Fix import shadowing
+518148ca3761a24f7ca56d4fb7e59752bf5f235e    FEATURE     api: Add `vm_limits_cpu_pin_strategy` API extension.
+80da1ef4d7b533385bd53303dedfb6edad5f236a    FEATURE     lxd/instance: Add `limits.cpu.pin_strategy` config key for virtual machines
+487d16a9454e25c78e6802225b09d3e6a6fa27f8    FEATURE     metadata: Run make update-metadata
+846cec4ec879f96aacace14fb354e7fec25d5d13    FEATURE     lxd/instance: Add input validation for `limits.cpu.pin_strategy`
+411f0c397852e1e484b58c85ff1118d088a2e036    FEATURE     lxd/devices: Disable VM CPU auto pinning by default
+963006dfdd0d5b6258cfc047d9b680f984cf7395    FEATURE     doc: Update CPU pinning documentation for VMs
+838ee1464e4336b141236ee0ce6460bf71c6eb63    IRRELEVANT  lxd: Consider project's restricted cluster groups during instance evacuation
+b7d1b5d5a39e42c33b8e72d2236a6fe4c2a0f2bc    IRRELEVANT  lxd/db: Implement ToAPI for InstanceArgs
+4139adee1b9522ee8f8ed55f6553c9401fa70ae2    IRRELEVANT  lxd/instances: Remove old retry logic
+4cc768e15b8cf3622631973483fedd4eb616e888    IRRELEVANT  github: tune docker firewall disablement to work on 20.04
+79d0ba5728dc5221d4ef2958dd553ff023ff3b9d    IRRELEVANT  github: drop extraneous space between commit hash and version comment in commit job
+5832938f5e4cd8901ae5e4605a8ddc1f06d9341d    IRRELEVANT  github: drop extraneous space between commit hash and version comment in tests job
+2b7f7acaff3b037ca02101a1cf7ad3cb75985b2f    IRRELEVANT  github: cope with no installed snaps in reclaim-disk-space action
+cf05f4c79c5accb33664dd69d45377af73467193    IRRELEVANT  github: free up more space in reclaim-disk-space action
+43653a291e76074633060c768fbb84bc63ff351c    IRRELEVANT  lxd: Use tx.AddNodeToClusterGroup consistently
+2fd10fcfd89f868d697e993285264d2d9ea55989    IRRELEVANT  lxd/db/cluster: Remove unneeded generated DB code
+51d51a1ebe14969ebc3cf376c878f0399c1fd6c4    IRRELEVANT  test/suites: Add testing for cluster group init with multiple nodes
+11bc5a308687ae85a8224b4d14b9638cf13ae332    IRRELEVANT  lxd: Change log level to 'warn' for the token prune task.
+effd497925aa9f4b3c302d2de4d7ab2ff238c4b5    IRRELEVANT  lxd: Opportunistically remove invalid/expired pending TLS identities.
+d9be05031b2a12bff13f441058b629572ac97ace    IRRELEVANT  lxd/sys/os: add InUbuntuCore() helper
+d14fd33becf1530ada0eb54354f6d31c18771a7d    IRRELEVANT  lxd/device/cdi: make it work in Ubuntu Core environment
+e322dff80bc38eccd083f4bf07d3371c7f0ab10f    IRRELEVANT  lxd/instance/instance_utils: forbid nvidia.runtime with Ubuntu Core
+a267ed1574cd3b0fb3a6e2f3cab3b9858d849217    IRRELEVANT  lxd/device/gpu_physical: forbid CDI to be used with nvidia.runtime=true
+19f1c10245bbc192c934b102e70261daa956ccde    IRRELEVANT  lxd/device/cdi/spec: check that pc-kernel snap is connected properly
+333d0772b9de3071f37c933b16b4ecf8dbedbff6    IRRELEVANT  build(deps): bump actions/dependency-review-action from 4.3.4 to 4.3.5
+5aa821fb1593baa344e295f27a9efd20c9569a10    IRRELEVANT  build(deps): bump actions/cache from 4.1.1 to 4.1.2
+b981ef7c80f1052568fda95f32d9d023be965d52    IRRELEVANT  build(deps): bump actions/setup-go from 5.0.2 to 5.1.0
+d0d8f42ce4c83644b239a016b275f35376ed37a5    IRRELEVANT  build(deps): bump github/codeql-action from 3.26.13 to 3.27.0
+3960f8e3419e4bef6cf867b97a85a933a5fdcfc2    IRRELEVANT  build(deps): bump github.com/pkg/sftp from 1.13.6 to 1.13.7
+0f122361832176aff60c5e709b2757859aa0812d    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.30.1 to 3.31.0
+391b97ab91b572df50d31f309d53a13454b20db8    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.78 to 7.0.79
+eeb43ca4d6bc6ad5e7f1bb76b22c26bd24065919    IRRELEVANT  build(deps): bump actions/checkout from 4.2.1 to 4.2.2
+3c8ae63a9973669a880ad4271ed254c645003a6b    IRRELEVANT  lxd/device/cdi: Fix the case of adding a CDI device with the 'all' identifier
+e36d363346a94b5082822683fabdcb3a34453006    IRRELEVANT  lxc/completion: Rework instance config key completion functions
+a2324dc1a2d4e5f636077ee026003ec7fd37a70e    APPLIED     lxc: Handle interupts properly to clean spice socket and avoid accumulation
+669fc6ff58d71e3fba19cc2fdb851034f3bc3b6d    IRRELEVANT  lxd: Deduplicate image file deletion
+a8f95c5b50772b78158c9325d52d2a4a110173f7    IRRELEVANT  lxd: Add internal testing handler to trigger token prune task.
+efb70284637d9686f5d0c88aac7083becd4ce6ad    IRRELEVANT  test/suites: Test that expired pending identities are removed when token is used.
+f20f62d4a41f975509bee904f6ee74d30e91b9ec    IRRELEVANT  test/suites: Test the token pruning task removes expired pending TLS identities.
+86b65fe313e4b833008de303dda7edf8a9d39f06    IRRELEVANT  test/suites: Test token prune task for certificate add token operations.
+2878c2a7fffb12ccb5a71ba80ffbf42d079e93b1    IRRELEVANT  lxd/db: Implement DqliteDir
+a586c1f22cf2d2da154e0aa5765eaee60c1e6d73    IRRELEVANT  lxd/cluster: Use DqliteDir
+3f49b3a793f1902ce035dfa868d6049ddd9fa555    IRRELEVANT  lxd/cluster: Use DqliteDir
+a4b9cfe69b76b843fed8713c83a1cd2cd797f7fa    IRRELEVANT  lxd/cluster/gateway_test: Use DqliteDir
+4b47681716f5950e4042680f32398772a33022b6    IRRELEVANT  lxd/cluster/recover: Use DqliteDir
+76c9c9be7badd2ed5bc4fc47a6b034847dff09e8    IRRELEVANT  lxd/cluster: Print last dqlite entry on gateway shutdown
+5e6e65146b9ad956a58cc1075c0d230a16ac5c78    IRRELEVANT  doc: Determine which LXD member is most up to date
+93795327791fe2846ca9f9f1cef318448fb8b11f    APPLIED     doc: Update MicroCloud reference
+ad7cb820ca5547e8b1687d8f057e4f6332903e26    IRRELEVANT  lxd/device/cdi: update generateSpec signature
+4cfee298749976c6e5d147b12ec10b82db597f7f    IRRELEVANT  doc/tutorial: specify LXD snap
+015046eb1397cc69e78426641206386e892c107d    IRRELEVANT  build(deps): bump actions/dependency-review-action from 4.3.5 to 4.4.0
+8b2206f76dcbd3e127c5927391910eb614b283c4    IRRELEVANT  build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+27b888b153fe8b77c8dd88c0e35aa9171fc3d65a    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.79 to 7.0.80
+630e462ff85bce3b2fde9be3d6b28be4d1583f54    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.6.2 to 1.7.0
+4ab6e6da9c69308c60a33356080162d8358b8afd    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.31.0 to 3.32.1
+827aab1c96af23893a0e4a4a40f30ed556610184    IRRELEVANT  lxd/instance/drivers/lxc: downgrade "Failed to statfs" error to warning
+a28082deb5bea4115c50c71bacbecc177bc838b8    IRRELEVANT  lxd/instance/drivers/lxc: downgrade "SFTP server stopped with error" error to warning
+fa50b67c21d5eb6b34a75df830629a466b30e293    IRRELEVANT  lxd/device/cdi: use NVIDIA_DRIVER_ROOT env variable
