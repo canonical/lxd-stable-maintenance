@@ -1925,3 +1925,552 @@ cf0882f33529c3f8f90146705b0d77e95c15d919    IRRELEVANT  build(deps): bump github
 802ec9a94cf64b2d90d51aa977e8b85926b93810    APPLIED     lxc/profile: Fix typo in profile set usage
 924da93955b680a04065078119365dc402eb12ad    IRRELEVANT  doc: `make i18n`
 2a3a7052ebfb716bc420c865e3a96355eb12d88b    APPLIED     lxd: Use explicit cluster addr when core addr is wildcard
+70d8d2ed2094dde81a988f3553e81ccf4fe88945    DIFFERS     api: Add shared_custom_block_volumes API extension
+43a1a55fdbac29aa7baba7f4a5eb3d7661c11154    APPLIED     lxd/device: Validate shared block devices
+cceef37b1bd8ba6762f0354622ef717c7ea245da    APPLIED     lxd/storage: Handle `security.shared` update
+40a1293f401686c330352fa3100bd1432a1ab096    APPLIED     lxd/storage: Allow `security.shared` key for custom block volumes
+07d06aa599205daa43d1d552970be5a10d994f57    APPLIED     lxd/storage/drivers: Handle `security.shared` in fillVolumeConfig
+fb1cbbdb453bde1e259301eee2d8d90764d1a6cd    APPLIED     lxd/device/disk: Fix incorrect block volume usage
+362734e5ae886b43310b9a42fa01cec4345cbe73    APPLIED     lxd/storage: Add comments for metadata generation
+3fd9768612cf8e34fee0edf54cc99e22c55e6339    APPLIED     metadata: Add references to `security.shared`
+090c35afc2fd432a4da9a433f967fb073465a561    APPLIED     test: Add test for adding block volumes to profile
+911b153b64bcb9d3384ec001a592474e2a2c161a    APPLIED     doc: Update block volume usage
+f8dc71539048c4e25d2a209c35818876f9211f19    DIFFERS     lxd/storage/util: Remove unused arguments and tautological conditions
+061d5a8f5cbd479023e9834408dcd7f38c3e8831    DIFFERS     add a new dependency for github.com/NVIDIA/nvidia-container-toolkit
+1b1c20d60efad7aee47b6ffa844f1c7f7aab4869    APPLIED     lxd/device/cdi: Introduce base CDI types and `ToCDI`
+8548e7cfb6d92cce1864f87273c1a2a68dd6abd7    APPLIED     lxd/device/cdi: Add unit tests for the CDI identifier parser
+59fdc8fec8422a3c9c007886000ede2d351c1028    APPLIED     lxd/device/cdi: Introduce a `CDILogger` type
+ba948c579d2a0ef7f98620852805c8191602cb61    APPLIED     lxd/device/cdi: Add the NVIDIA CDI spec generator
+58c7a88fc807d759f3686fe94c1644914a4f0bee    APPLIED     lxd/device/cdi: Add base CDI Hook types
+da314e64d5df91c64806cd4a496d76a8fda2ed09    APPLIED     lxd/device/gpu: Augment the capabilities of the `id` GPU option to support CDI naming for `phyical` gputype
+41b88404d3e51719d4ebb98778ab2746739dc354    APPLIED     lxd/device/cdi: Add CDI translation logic (OCI spec -> unix device + mounts) logic
+e6944c44bacd9080a3fe7c2ddb45788a95a1570c    APPLIED     lxd/device/gpu_physical: Configure a GPU (physical) if CDI detected
+650879b1ba98e7ba6c6e2d44c0d52dba717c95d2    APPLIED     lxd/instance/drivers/driver_lxc: Configure LXC to use LXD's `startmountns` callhook if CDI devices have been configured
+1ce19732220e4a1a1d8f3b01f510041a8677c734    DIFFERS     lxd: Setup the `startmountns` callhook command to react to `lxc.hook.mount` for executing the CDI hooks
+db5ee3e3c82f48d9ca3202ad5975c283379b461d    DIFFERS     lxd: Remove useless `break` statement in main_callhook command
+37302501f315e5488f2dbb3c82ec73006be5b7d6    APPLIED     lxd-metadata: update metadata
+2421c341e07f5219c45c130de3959f814fbcf733    APPLIED     doc: Add documentation on how to add a GPU with CDI mode
+8740fa542e52fb289b1c658082ef9b169a70162e    APPLIED     lxd/device/cdi: no NVIDIA with CDI for `armhf`
+4770d012c03529a20145bf5affe1525361c88605    APPLIED     doc: update doc to include no CDI for `armhf`
+ba28f05a3afc8436e7de0ebbe33904153eba44f5    APPLIED     lxd/device/cdi: add no-op `defaultNvidiaTegraCSVFiles` for armhf
+5432e5a3ba02c5c0f495a9d51677b0d40ffafeb1    APPLIED     lxd/device/gpu_physical: forbid CDI GPU hotplugging
+e36b9122e635db22c186f2a92f8829a766f6498a    APPLIED     lxd/cluster: Replace deprecated Node.Recover
+34b45e3529201dfea0adc829284e1f1cda2fb8d9    APPLIED     lxd/cluster/recover: Refactor DetermineRaftNode transaction
+d52a788d33c5b425a03ed8ffa1c784a760fe137b    APPLIED     lxd/cluster: Refactor recovery patch.global.sql
+2525886620a8d4bb6c3409ea85b98631a5480050    DIFFERS     lxd/cluster: Write recovery tarball after cluster edit
+ee6ce68196756b02bb3d32fb9b20650e330a413d    APPLIED     lxd/cluster: Prevent custom patches during cluster recovery
+539626842343ba0bf889747e13f164f494a77275    APPLIED     lxd/cluster: Implement cluster recovery tarball unpack
+f1b8073c4cd4be983e21ba51e38d54f3635539ef    APPLIED     lxd/daemon: Load recovery tarball on daemon start
+62444e20a395ae7cb6be3a94fd526153caf3cb85    APPLIED     lxd/main_cluster: refactor promptConfirmation
+605ec41bd61410c0a16790a046a0807dce7f3cc0    APPLIED     lxd/main_cluster: Use "member" instead of "node"
+9bb6d220a09d37137e1c6e2e13f4ba77358a99c3    APPLIED     lxd/main_cluster: Prompt before cluster edit
+f44ed5dd764f04b33db135d6edd01563f0e970d7    APPLIED     lxd/main_cluster: Add yaml comment with role explanation
+f18c023673601750b8ce711f520a260f44311831    APPLIED     lxd/main_cluster: Print instructions after cluster edit
+408d7321c6bef9a835aef1790e7215f504d18b5f    APPLIED     test: Copy tarball from `cluster edit`
+b919409d7a08f5b6a2c2ca1c93d6e41c971980a9    APPLIED     doc: cluster edit updates & copy tarball
+085afb90f286f1bde5babda1271cecc8a4e30f89    APPLIED     lxd/main_cluster: Fix linter errors
+78c1504f7f284d5d6fa6eb8084b07a99feffcf6e    APPLIED     lxd/instance/drivers/edk2: Add new package to track EDK2 firmwares
+63e6d372ff92aea5a4b2f98a8392237bf73f891c    APPLIED     lxd/instance/drivers/edk2: Support OVMF filenames on arm64
+6168f3559c0e34e43b0409dc76a45926196e8a98    APPLIED     lxd/instance/drivers/edk2: Move seabios to /usr/share/qemu
+b0499ef8db1fd4468aa5421c2924d4cb83b66b2f    APPLIED     lxd/instance/drivers/edk2: Add ArchLinux x86_64 paths
+d9afb307c9cdc451eabbf9093bb89678bb77e904    APPLIED     lxd/instance/drivers/edk2: Fix CSM handling
+fa5ce8053d37553537388ce4aa5c5006319e5d39    APPLIED     lxd/instance/drivers/edk2: Add Void Linux x86_64 paths
+4341a6cd230c5abff5ecbb344601daeb5cd6de95    APPLIED     lxd/instance/drivers/edk2: Rework to support both LXD_QEMU_FW_PATH and LXD_OVMF_PATH
+f58e2dfa95cf61481441ffb96a8beafab85d0a71    APPLIED     lxd/instance/drivers/edk2: Add support for seabios in Ubuntu
+61c78dd850de7965dabaaa70f6935bf9940f7bc9    APPLIED     lxd/instance/drivers/qemu: Update to use the new edk2 package
+abce75d6bf5024f2a5f46a9d4c05922e33507fbc    APPLIED     lxd/instance/drivers/driver/qemu: Log the VM UEFI firmware found in checkFeatures
+0dafab0559243736893ec4da9cefcb2fc37ed666    APPLIED     lxd/instance/drivers/driver/qemu: Improve error in checkFeatures
+a4e131ee722d9aa4ffd7b26d822ccfc7cc15e43f    APPLIED     lxd/util/sys: Removes unused GetQemuFwPaths function
+3a86dda731c4a5186aba8daaaf04e7319726886a    APPLIED     lxd/instance/instance/interface: Add FirmwarePath to VM interface
+797ea0665b21b695405591bd090b4b6b788e9a30    APPLIED     lxd/instance/drivers/driver/qemu: Add firmware path concept and set it during generateQemuConfigFile
+9a404886414c1f02e86b6ff68ecf9fd4a1fca576    APPLIED     lxd/apparmor/instance: Update instanceProfile to use start time firmware path
+7bdeb9b315e7955eabd208b28e1ca62390f2591b    APPLIED     lxd/instance/drivers/edk2: Removes unused GetArchitectureInstallations function
+64cdeb33ba3c677e92af294c5c4928bbca890d8d    APPLIED     lxd: Enable cobra's completion support
+3c0f4633b64eccca6c49f5303c9dad3b0b38feef    APPLIED     lxc/network: add dynamic completions
+bb6c35e723bb06915bd2c687da26973e51285b50    APPLIED     completion: support returning non-lxd remotes
+545c3fab2d94d4842231bdd5d960121447e01a2c    APPLIED     lxc/image: add dynamic command line completions
+c43249aff8556541edeeb5b52546780025f5fa15    APPLIED     lxc/config: add completions
+069be5371278e7cc478127491b29d85bec5ed27f    APPLIED     lxc: add completions for instance actions and snapshots
+ff6cae43f7c6c774b775c155b73a90c57eb13316    APPLIED     lxc: add completions for profiles
+99caae6195ce7321d8dda4ddcaaf04c85f6098ad    APPLIED     lxc: add completions for remotes
+5115c5a65cd604f561e3d2952d1d7f6606e8b957    APPLIED     lxc: add completions for projects
+101ca37f8cf117ceb68e7cca19b0782159f76bc9    APPLIED     lxc/completion: Remove space after remote names completion
+a575d35bca6fc1a74684c07a291313ace7f17a8c    APPLIED     lxc: expose parseVolume to entire package
+351598c0b032b7dbb04a148a45609c1c7a8f42a7    APPLIED     lxc: add completions for storage pools and volumes
+7481f2dd7b7f055efdeb52c54a020ada2b3de120    APPLIED     lxc/completion: fix image names completion
+94a9a687e6072a281fc334b862a094a48e4e1b42    APPLIED     lxc: add completions for clusters
+6c3a291ff08144174804f2b93a6b5318e44ca2db    APPLIED     lxc: add completions for cluster groups
+20f028a1d1b3f34408799e9b913eeac360240df8    APPLIED     lxc: add completions for cluster roles
+7904166dc63365ae88a3ab38cfec950230490983    APPLIED     lxc: add completions for config templates
+c33a9472328ec67ac085571dfd4762dbccdd3d2d    APPLIED     lxc: add completions for network acls
+af2ef614d5a4dd6be6dfaa94e1531a73fa5cd3d5    APPLIED     lxc: add completions for network forwards
+0e0c58a22cbb82d2ac596689a693a8c4f4613234    APPLIED     lxc: add completions for network load balancers
+49f1aa77fa6c7a06f40322645ab943ce33e317e1    APPLIED     lxc: add completions for network peers
+f171b15f4fe9569ab2306ed332bd58b6788e94e0    APPLIED     lxc: add completions for network zones
+732bd1eb5ea415f058944c66f1e4e72fc182ff20    DIFFERS     scripts/bash: delete in favor of cobra completions
+8c6dfed7a8c44875f7b842e8eafe9fb6f57894e4    APPLIED     lxc/aliases: fix completion regression
+e7c8b54de4913cb47aac2476d7c0cb71f8bef3a0    APPLIED     lxc/publish: Complete snapshot names
+d9765e763b52e7c6a1a6217f1c0d228b0a7fc967    APPLIED     lxc/project: Get current project from connection info
+582b2ccddeebbfa17df7becfd3979d4f5438a0a1    DIFFERS     api: Add metrics_api_requests extension
+dac2f5927488b78e580d03abe503610750901025    APPLIED     shared/entity: Add `apiMetricsURLPrefixes` to `typeInfo`
+7c616169efc1fa8192a63e85f36f6cf956afd856    APPLIED     shared/entity: Use `apiMetricsURLPrefixes` to classify endpoints
+4388a189841f41d22eba31182f13b16e84fe287b    APPLIED     shared/entity: Unit tests for endpoint entity types
+a1999f2c8c271c78a55d401adcee24dabe4e48e6    APPLIED     lxd/metrics: Define core logic for API request metrics
+bb959039a1b10c8ab72788b117249b51fcf6a604    APPLIED     lxd/api: Initialize API metrics
+14459aa1d58fea370b2a65255e8d4804230a2bbe    APPLIED     lxd/request: Create `MetricsCallbackFunc`
+e4d3b840db7415f62a5b2a528569bb57cddaf1a0    APPLIED     lxd: Create `CountStartedRequest`
+af29d20ffd134a4133f7986165ea908b83fbea9f    APPLIED     lxd/daemon: Track request on `createCmd`
+55b3425ed4d7d4ada9e32fb3be5f60a6491eb3d3    APPLIED     lxd/api: Include handlers outside `createCmd`
+ba31a90cfdb86ecabacc5f23e1c34e5bedbbf297    DIFFERS     lxd: Add request argument on `Render`
+9df582232b0e0f965f398d8b766a4a554231d4cd    APPLIED     lxd: Remove request field on response types
+a094cbe10e3db5a3df2c0827fd0bb10089b0386f    APPLIED     lxd/request: Create `MetricsCallback`
+2fe07bec65c8cd8d1930daeecb4acbbc81ab5e63    DIFFERS     lxd: Track completed requests on `Render`
+bf45467506c111719dea2d0d90e546f222a0cf32    APPLIED     lxd/operations: Add onDone to operation
+65a47e45f7ee0aaf265946749a198678d00b7f71    APPLIED     lxd/operations: Inject callback function on operation
+98d70604dbdcfce1d69bd75624a2c72d16cc84ae    APPLIED     lxd-agent: Remove request fields from response types
+b5e92328bcc51339c740a81a91850e1695c16b35    APPLIED     lxd/metrics: Sort metrics tuple alphabetically
+84202b33593791960547f09773f794dece74fd13    APPLIED     lxd/metrics: Add constants for API requests metrics
+abc502dc6fb67ebdb9175a5c7ac185f2f8f8dd0b    APPLIED     lxd/api_metrics: Adds samples for API request metrics
+6232690ecc2209af198109dc5744eb6586fc23c5    APPLIED     lxd/api_metrics: Ensure internal metrics are included
+f6e4f994fc36c1a8880cb613fcf18cc2dc16666e    APPLIED     lxd: Add comments to exported functions
+5b84209670f35b5ba187aa42437e1d2da39e4b0c    APPLIED     lxd: Fix comments for linter
+d4213467284237c7feb893f13e9a649ef11ee6eb    DIFFERS     lxd/api: Log error on `Fprint`
+7798c53f6d825c020cd11152e442e80dc0199803    DIFFERS     lxd/api: Remove uncecessary `else` block
+25f8f90791d8e8158ccd804b6d731812d5152bf9    APPLIED     test: Add tests for API requests metrics
+525ca4b0d755c8f2146fb830afa6483238113f6a    APPLIED     doc/reference: Update internal metrics docs
+7cb5d1dcd128563cb8febf32a741e243447d9469    APPLIED     doc: Update example metrics raw output
+026aae5b5fe418331eb785b2c5f227280b2dc556    APPLIED     lxd/instance/drivers/edk2: Actually check that the files exist
+aed1505db4691613698d64794aad6bbe0df49eea    APPLIED     lxd/instance/drivers/driver/qemu: Always re-generate the nvram symlink
+f7e3a26f7584f57ff562558a6ed7d7489b00c726    DIFFERS     api: Add `metrics_api_requests` extension.
+63eb92263fb0c99b0005cecb8b7ea3e3d2e4b71f    APPLIED     lxd/instance/drivers/edk2: Rework GetAchitectureFirmwarePairs into GetAchitectureFirmwareVarsCandidates
+25a46a33fffe5d083e9693396bf800d0bd287b13    APPLIED     lxd/instance/drivers/driver/qemu: GetAchitectureFirmwareVarsCandidates usage
+f92bde33c69c8468ba92c85fb98213014cad70f8    APPLIED     lxd/instance/drivers/edk: Comment improvement on GetArchitectureFirmwarePairsForUsage
+487d88a13194c4dae46f8801fb5f4d609df2b472    APPLIED     lxc/completion: Fix completions for config keys
+07360a700952e512ea82b125e281b345ef624f3b    APPLIED     api: projects_limits_disk_pool
+156d196b54d81473dc06501d99f0a15cc46d5029    APPLIED     lxd/projects: Add new limits.disk.pool config key
+baff31b3d9be41f12b6d4d5c683e32fce37e46b3    APPLIED     doc: Update configs
+f34e53d115501f66feb4058d7b8d92c230123b6c    APPLIED     lxc/project: Handle pool disk limits
+8b3f2f32075d29fe3c50019a4eccac614de382bb    APPLIED     lxd/project: Add per-pool disk limits
+68290d9517a95fbeb3c4be6b8db61b47e4f53f4b    APPLIED     lxd/project/limits: Add HiddenStoragePools
+b4b7b83dbed23d9beb53ed3288eb0f6e09a1db7d    APPLIED     lxd/storage: Hide pools with a zero limit
+1118bf900be7819c068419ed54575c908b814696    APPLIED     tests: Add test for per pool limits
+fe8970e60dc1f2d97f6ff56152df0d9ee4612d07    APPLIED     doc: Update `project_limits_disk_pool` description
+51a5460ecf4b35a38b65b27d4f47f080d8740d16    APPLIED     lxd: Update limits.disk.pool doc
+614ba7a8dde5fc895597ccfa64692a016a131cc6    APPLIED     doc: `make update-metadata`
+ab28f1bd382becba5d24a84b997a7b21ffd50a11    APPLIED     lxd/project: Don't fail project creation on missing pools
+39ea5dd61a0fcb59e557ce91ba3b4c4be2f5aa95    APPLIED     test/suites/project: Check project operations before init
+24df38cffa55c3854d4ffb9bf6d38f8fd6d259bc    APPLIED     lxd: Remove metrics functions from `request` package
+31036b0106a244bec4a4ee03c3389e26eec7dffb    APPLIED     lxd/metrics: Rename `MetricsCallback` for linter
+c9439956fe9eb7f77989d810f1381f80b30a519e    APPLIED     lxd/metrics: Refactor function names
+a65021ef048e87b5af51cd3aad5213b7b5388a47    APPLIED     lxd: Update `CountStartedRequest` usage
+5c9fbf2f7e9c381b4d31bd1f70893eac078a863f    APPLIED     lxd: Update `MetricsCallback` usage
+325c2b1a00d1b245f3c1348f6cac3a322917ca5d    APPLIED     lxd/request: Fix request not counted warning
+cefca178b219749af956449754e7d2b3f6a5891f    APPLIED     doc/howto/container_gpu_passthrough_with_docker: use single line cmds
+11ba7657e1b971f169b7d8e57fb680cce6b3119d    APPLIED     lxd/cluster: Implement createTarball
+b77da39dc29d035c5ee2d9b47659ce85ef434a85    APPLIED     lxd/cluster: Use createTarball for recovery tarball
+3eaf3875c5af6e10dd5c32fc1b43da7f66112861    APPLIED     lxd/cluster: Implement createDatabaseBackup
+d8a4aed4e3a9504dbfdebc86d9c75277f53de5b8    APPLIED     lxd/cluster: Create database backups before recovery
+270f40e43bbd03bdd3d1a4aa616765063aa6c23d    APPLIED     lxd: Improve error handling during cluster edit
+9e40120cdcd44c48f9d65ac2ded08f5f59e06456    APPLIED     test/clustering: Sanity check for automated DB backups
+7f496d3000532c278843916881455fb711f48140    APPLIED     doc: Document cluster recovery automated DB backups
+71f68dea855e2210ccc7e3edef3e1fe3541c9f8e    APPLIED     lxd: Update metadata usage
+46aeda235a3d0f79a97ba39882d334358738d91b    APPLIED     doc: `make update-metadata`
+d31759073dd0645f69658239c9f91df6b602d141    APPLIED     lxc: Add completions for server keys
+2b395784ec31d73a470135d84eea4a6302fc1c59    APPLIED     lxc/console: Add completion
+5a3899f9adf359538d655c6d12321393745188a8    APPLIED     lxc/completion: use strings.Cut() instead of SplitN()
+8825e31c3088c8fb64b685ac8ea06f862326c68d    APPLIED     lxc/project: use strings.Cut() instead of SplitN()
+0c3e893c2e8a981070902067602ccbbd50622041    APPLIED     lxc/completion: Update instance completions to not show server configs
+06e5c82a8016368f677c637edd827a9e3e8fc0ec    APPLIED     lxc/completion: Add instance device completions to `lxc config device add`
+375ff616d863497f2e15a19894f833bef2e013a4    APPLIED     lxc/completion: Add instance device option completions to `lxc config device add`
+6f05db882f8855672df48a30f4c84e1ce4d83cba    APPLIED     lxc/completion: Autocomplete instances for lxc pause/start/exec/stop/delete based on status
+0ac92657e58388c45aa7db14454780ccf995178a    APPLIED     lxc: Add instance completions to `lxc file` subcommands
+2def3c313441419d43c21a72bf9305d7d4b5c43f    DIFFERS     api: Add `access_management_tls` API extension.
+6bc7a50045ec1927d684adc083af9bb2030015d1    APPLIED     lxd: Separate identity handlers by authentication method.
+48d8a6a32c8405be628b888ba7bc90258847a456    APPLIED     lxd: Clarify optimisations when listing identities with recursion.
+88738afa3ea68ab029fa388afb5e09427b0fa56b    APPLIED     lxd/response: Add a NotImplemented swagger definition.
+a222e0c907c26ad3c49c21d8d6f9840a2f7d340c    APPLIED     lxd: Add all API responses to swagger doc on identity update.
+8f31086c69b24eaf9532cbffc2f355ded281072b    APPLIED     shared/api: Add lifecycle event for identity deletion.
+99f0019eea541ef7b32f5b86410d1a14db4bdb08    APPLIED     lxd/lifecycle: Add lifecycle event for identity deletion.
+4e6224db9d8527a250425f66b08e9f237807f326    APPLIED     lxd/lifecycle: Fix comment on identity actions.
+daed7d470dca378b7021823889005b555bc15a96    APPLIED     lxd: Add DELETE handler for identities.
+b8b13a4b440ed0eaa62727f39ce43ac1f4daaa84    APPLIED     lxd/auth/drivers: Allow identities to delete themselves.
+97b94d0b9f2a84cb0cedf75aaa8991c66db80a32    APPLIED     doc: Run `make update-api`.
+81837b73e84f17de26fd114805ca3c06daff8529    APPLIED     client: Add client methods to delete an identity.
+9ffbc81587d534265c00afedcea87b32ac78d203    APPLIED     lxc/auth: Add subcommand for identity deletion.
+228f2ecdc25305d25b0750a65b4a446b76734d2d    APPLIED     test/suites: Test identity deletion.
+1bf2447c5f82e0f38bbe7d13ad2834e919310a0e    APPLIED     lxc/completion: Add `images` and `ubuntu` remote completions
+c73f63c393f8faaf4919be59db64e40ed8e207ff    APPLIED     Revert "shared/entity: Add `apiMetricsURLPrefixes` to `typeInfo`"
+a4ad368edc39045d3e5af115c2b4a508b1670e06    APPLIED     Revert "shared/entity: Use `apiMetricsURLPrefixes` to classify endpoints"
+b15cf2ad9cbe337ad78c6251e6ea851ba8452bee    APPLIED     Revert "shared/entity: Unit tests for endpoint entity types"
+49024c856a4b382008867fb83ead3d2121a70a37    APPLIED     lxd: Add `MetricsType` field to `APIEndpoint`
+9c115551f590a6a1e3f1e4e20a7dd9f8da764d7e    APPLIED     lxd/metrics: Take endpoint type instead of deriving from prefix
+f461943f43c49c1021990563eca48bd1ab16b368    APPLIED     lxd: Update metrics functions usage
+36d9b9eb08a5ccd74398cabb520d36b72ee770e3    APPLIED     shared/entity: Create list of types for the metrics
+71950529108de12f9fb7ad216e7e5c9c9c9e690a    APPLIED     lxd: Categorize existing endpoints
+07751bcf6041c5daa6630ee419df93e73ddb2895    APPLIED     lxd: Check if every 1.0 endpoint is typed
+db5fdde99071971110690987429d6e052c03b46b    APPLIED     lxd: Update `MetricsCallback` variable name
+8c3d9bbe4b8c96ecdd59dbdb71a5b3bc82ebe3fb    APPLIED     lxc/completion: Storage volume copy completion fixes
+5782bdfdcaeefaa4dd572df6c2f4c2a2e8e421cb    APPLIED     lxc/completion: Use string concatenation instead of `Sprintf()` where possible
+d81ea7dea944e376d0e699b2cbf74fcb138e4a5e    APPLIED     lxc/completion: Add go doc comments to completion functions
+c819c621f62c017e1f97f5c7f98959c6b2b3c1e4    APPLIED     shared/api: Add pending and fine-grained TLS certificate identity types.
+20a01e12355a0a6f2447f46e1baaa6aeb2d09d26    APPLIED     lxd/identity: Make new client certificates a fine-grained identity type.
+5af95c59c26f9d50f796629640b4b90b68d79383    APPLIED     lxd/identity: New client certificate identity type authenticates via TLS.
+cfc98d29358e6188ea1112f71ebe466389d437f7    APPLIED     lxd/db/cluster: Add pending and fine-grained TLS certificate identity types.
+3012b75a4f21c84c6716a2f1eea5c7a382678006    APPLIED     lxd/db/cluster: Include new identity types in identity entity type db definition.
+f9fe65add9152de024ba0f00a76a0152072a7c55    APPLIED     lxd/operations: Don't consider writing errors
+e5a8fb69957f2790051db361434d3b97aefe2b28    APPLIED     lxd/response: Don't consider writing errors
+4ddd5cd86f499b62d4d3c09629278244c94ce084    APPLIED     lxd/metrics: Remove logging from `UseMetricsCallback`
+58106ba708d54a2a478318ca6fce5889ccd241b7    APPLIED     shared/api: Add API structs for identity creation.
+4a9d79967817aaab774aecf6e01fdfee5f7413f7    APPLIED     shared/api: Add field to CertificateAddToken.
+b1108094f0391fe1dcd55d547ebc9eef30236fd6    APPLIED     lxd: Move CA check into `certificateValidate` method.
+c19cf4b82d5495a535a8f4171583fc9fca0d3c5a    APPLIED     lxd/db/cluster: Add pending TLS identity metadata type and method.
+dc78faaf0ffb3ccbeb27b223a3bbb2ef2f442ff9    APPLIED     lxd/db/cluster: Add method to activate a pending TLS identity.
+a020acc19ed42019a906f3cc836b629318b0f339    APPLIED     lxd/db/cluster: Add method to find a pending identity by secret.
+04d6a5237d06d0a22269ba58bda63a708035dfb5    APPLIED     lxd: Add factor out common logic for identity notifications.
+bf4e757581e186502f884853c4fd7f35b0b3be8e    APPLIED     lxd: Add TLS identity creation endpoint.
+fc982abdcd801f3bdd5e5f456d8e71679f7fd9b2    APPLIED     doc: Runs `make update-api`.
+7bf1fabe9f84722d3a4655cf429134ceb5c9bef5    APPLIED     lxd: Allow fine-grained TLS identities to authenticate.
+4d7c92db9e88969ae33e5cba046610265c796abb    APPLIED     lxd: Allow fine-grained TLS identities list resources in any project.
+a4688776a774ac8a4754366a217804c9274bf298    APPLIED     lxd/auth/drivers: Delegate to TLS driver only when identity is not fine-grained.
+bdd7aec767c52df6cbb98a190d1d1f62b29c1029    APPLIED     lxd: Omit pending TLS identities when updating the identity cache.
+7ce52311c37e42a5d12bade5562f0332b5ebb1fd    APPLIED     client: Add methods for creating TLS identities.
+f4821669c42174235b4365a1936bdfad0f19bdc5    APPLIED     lxc/auth: Add identity creation command.
+ae83b3466c058cd056404685058251acb315b3d6    APPLIED     test/suites: Test fine-grained TLS identity creation.
+707d78e5419fd01d445b097e3056d9d3772a148b    APPLIED     test/suites: Test identity info for TLS identities.
+fc3d684be526a833b99e0b99f5628989d39d7877    APPLIED     test/suites: Improve coverage on identity deletion.
+1df7b41b059a49754fc1d09be22e8cb56ad82dd2    APPLIED     doc/howto: Switch projects<->users in confinement docs.
+bc588bc3be095ee572f36330817dfa2a8e7c9161    APPLIED     doc: Switch projects<->users in confinement docs.
+1e584bbb16c1d4d5627a38bca7fd2be7d4742ec0    APPLIED     doc/explanation: Remove authentication methods section in project docs.
+3938a077a39eeb6c341bf8a0a472b0f5eb6c20ba    APPLIED     doc/explanation: Add fine-grained TLS identities to authorization page.
+55a3ea5bed37f48684370be0acdaef15b102b047    APPLIED     doc/howto: Include fine-grained TLS identities in authentication tutorial.
+2e764a0758928ce86a8d7dae3b591a8661bce2b3    APPLIED     test/suites/clustering: add clustering_update_cert_token test
+ec0b2211cd22b1466d1b14a40d857fac4bb02d12    APPLIED     test/main: enable clustering_update_cert_token test
+f3d83ff46d443f86c87c067aab54c2820995b84c    DIFFERS     github: remove extraneous space after GHA SHA1 pinning
+b571e6e857a605ae83d90e54fa2ee273e69cb3f2    APPLIED     github: fix indent of commits job
+770e628f3aa87e204d354be56f1ca0f63638de21    DIFFERS     github: fix indent of codeql job
+07f8dd3eb40dbf4b54a497e170b352c7538e566b    DIFFERS     github: fix indent of triage job
+cabae362adf473cc9fa6158037aef24e8fbf7422    APPLIED     Makefile: opportunistically run yamllint against GH workflows
+d0779108b2d87db93df0483acfe85a7f293382ac    APPLIED     lxc/completion: Only complete custom storage volumes for `lxc storage volume copy`
+f86417bc6bc327f4dfa81d38f7c48c3e3c101da2    APPLIED     lxc/completion: Fix completions for `lxc storage volume move`
+3982c0d202c1477a7f52ecf78186ef250002183f    APPLIED     lxd/cluster/notify: Use in-memory config for cluster offline threshold
+18737808da144bd5ce2a70a93925a09c633eb3ab    APPLIED     lxd/cluster/notify: Use state.ServerClustered
+b71357b3856cf87eb85d2bc2d3eab82ffb8b6518    APPLIED     lxd/cluster/notify: Take optional members to notify
+691b0478cb8835d2c4a663d56f4601bb5941a51c    APPLIED     lxd/cluster/notify: Add NodeInfo to Notifier hook
+b6b6283df8802b7d3d17e274750e646686329ec0    APPLIED     lxd/cluster/notify: Update notifier tests
+a621d660a849f7cab14914fbc13971e25fcf3735    APPLIED     lxd/state/test: Load global config from DB
+af850cc50f651ea0ec6a73bfc6dd7e5a665a3be5    APPLIED     lxd/cluster: Update notifier usage
+03f890a5c8c0aca1365573e34883e80e7561c6e9    APPLIED     lxd/network/acl: Update notifier usage
+6e1bcb74c3ca76f7b56afbea3b009a08d9c5b03e    APPLIED     lxd/network/zone: Update notifier usage
+6a1165a840f26a32f38cd4513b0652bd4446e4f6    APPLIED     lxd/network: Update Notifier usage
+1b5982335f10510725ffce96af74064f455fe6bb    APPLIED     lxd: Update notifier usage
+71edd8ca18827c07b9c1f28d68792f907e32066c    APPLIED     lxd: Update notifier usage
+2555beeef8161c5f44293b32503e9d56ff8e546e    APPLIED     lxd: Update notifier usage
+71e344c11decac358eebb17a334a9f704ce900d1    APPLIED     lxd/cluster: Split LocalSysInfo from MemberState
+6e1a4f479dd86d240c02aeb01d59747e57e1fcd8    APPLIED     lxd/cluster: Remove unused memberName parameter
+4860bed00373cfee48579a300d2d35bbf9ccd2a1    APPLIED     lxd: Update MemberState usage
+8c749a2c17ebd57d8524cb4d81d74c3b74ce50b1    APPLIED     shared/api: Add LogicalCPUs to ClusterMemberSysInfo
+d62e3b5dd919198a432bb3e223642464a165ea53    APPLIED     lxd/cluster: Populate LogicalCPUs
+4040dd8f5e1a7f277b82930da378e3e45f341942    APPLIED     doc: Run `make update-api`
+4b1042f75f0cfafb9aab1b66125207109ed2df71    APPLIED     lxd/cluster: Implement ClusterState
+458a73007198f938e7c1942dda0c9b2e262e29bd    APPLIED     lxd/cluster/notify: Mock member state endpoint
+f13e37739c87418582d5e10f78b91750cb11be5d    APPLIED     lxd/cluster: Test ClusterState
+b3ce3ed2625fdb5ac52a425b6fa3e1cacf200831    APPLIED     lxd/cluster: Perform cluster member update on updated cluster member
+23bd4f344a6ceeb4a58462e54b41c55b181f887d    APPLIED     lxd: Remove uneeded iteration
+a608e3bea2b232726b36b11e7602bed734b17256    APPLIED     lxd/db/node: Fix linter errors
+fead980c9807d8b20132170566089a1637553207    DIFFERS     api: Add `state_logical_cpus` extension
+ea10a89da8bc5b76fba5e5ae8996e0b7eeced6c5    APPLIED     lxd/db/cluster/profiles: Support device cache in ToAPI
+16a0ca940a393a0d91d076dbc00d3bf527468aed    APPLIED     lxd: Pass profile device cache to ToAPI calls when possible
+5a2c9c73826815bc12bb965474bb88273349d7a5    APPLIED     lxd/db/cluster/instances: Support device cache to ToAPI
+bb2fe4bf32666ef2ceda0ed2e5d2f365245badd2    APPLIED     lxd/project/limits: Pass instance device cache to ToAPI
+9bffd16c3e6ca0e036fd98ce2a3bc56751ecc7aa    APPLIED     lxd/db/cluster/instances: Allow passing profile devices to instance ToAPI
+65a40676894630974814350228957e2f174c7d9e    APPLIED     lxd/project/limits: Pass profile device cache to instance ToAPI
+3bbf11cad89af5aded0713d72fe184e91e3bf397    APPLIED     lxd/db/cluster/profiles: Support config caching
+2be1d523e95aa6fd08d0864804a4b83b3ce1cee8    APPLIED     lxd: Update calls to profile ToAPI
+740a7f9e6a02c419a31822dde02c948b98b5495e    APPLIED     lxd/db/cluster/profiles: Fix import shadowing
+518148ca3761a24f7ca56d4fb7e59752bf5f235e    APPLIED     api: Add `vm_limits_cpu_pin_strategy` API extension.
+80da1ef4d7b533385bd53303dedfb6edad5f236a    APPLIED     lxd/instance: Add `limits.cpu.pin_strategy` config key for virtual machines
+487d16a9454e25c78e6802225b09d3e6a6fa27f8    APPLIED     metadata: Run make update-metadata
+846cec4ec879f96aacace14fb354e7fec25d5d13    APPLIED     lxd/instance: Add input validation for `limits.cpu.pin_strategy`
+411f0c397852e1e484b58c85ff1118d088a2e036    APPLIED     lxd/devices: Disable VM CPU auto pinning by default
+963006dfdd0d5b6258cfc047d9b680f984cf7395    APPLIED     doc: Update CPU pinning documentation for VMs
+838ee1464e4336b141236ee0ce6460bf71c6eb63    APPLIED     lxd: Consider project's restricted cluster groups during instance evacuation
+b7d1b5d5a39e42c33b8e72d2236a6fe4c2a0f2bc    APPLIED     lxd/db: Implement ToAPI for InstanceArgs
+4139adee1b9522ee8f8ed55f6553c9401fa70ae2    APPLIED     lxd/instances: Remove old retry logic
+080df7c6c93b3f690e773916ace6e7232ad9538a    APPLIED     lxd/instance/drivers/qemu: Properly plumb I/O limits
+7eee0040dfb5abb5f0bc469449d0eae528203324    APPLIED     lxd/cgroup: Add named results to `ParseCPU` and remove unnecesary type casting to `int64`
+6027e2a122bd409d7759ee2559baa6860f8220af    APPLIED     lxd/cgroup: Refactor `srcType` parameter in `TaskSchedulerTrigger` to use `instancetype.Type` instead of `string`
+62cfe929e17d4bf74f16b3026a87edc656e991c4    APPLIED     lxd/shared/validate: Add named results to `ParseNetworkVLANRange` and `ParseUint32Range`
+f6dc8903ea36c0348eb7d4e1aed5be110d5331a6    APPLIED     tests: Add tests for `limits.cpu.pin_strategy` and `limits.cpu` config and profile settings
+0f397ed520e1413fed6a61a083ae4907e2f02bf3    APPLIED     github: update apt definition in setup-microceph
+4cc768e15b8cf3622631973483fedd4eb616e888    APPLIED     github: tune docker firewall disablement to work on 20.04
+79d0ba5728dc5221d4ef2958dd553ff023ff3b9d    APPLIED     github: drop extraneous space between commit hash and version comment in commit job
+5832938f5e4cd8901ae5e4605a8ddc1f06d9341d    DIFFERS     github: drop extraneous space between commit hash and version comment in tests job
+2b7f7acaff3b037ca02101a1cf7ad3cb75985b2f    APPLIED     github: cope with no installed snaps in reclaim-disk-space action
+cf05f4c79c5accb33664dd69d45377af73467193    APPLIED     github: free up more space in reclaim-disk-space action
+43653a291e76074633060c768fbb84bc63ff351c    APPLIED     lxd: Use tx.AddNodeToClusterGroup consistently
+2fd10fcfd89f868d697e993285264d2d9ea55989    APPLIED     lxd/db/cluster: Remove unneeded generated DB code
+51d51a1ebe14969ebc3cf376c878f0399c1fd6c4    APPLIED     test/suites: Add testing for cluster group init with multiple nodes
+6d46fd650d628a79072abb7a3aa5691aa49a7d93    APPLIED     lxd/project/limits: Use InstanceList for queries
+41ffd778b989174c45006cfd36299eb957a3f13d    APPLIED     lxd/cluster: Replace deprecated Recover with ReconfigureMembership
+be1ec613d88ef89b5dd0517e6bb6fcc588796e47    APPLIED     lxd/state: Add LeaderInfo type and function to state.
+2220cde2c22fc4f9a571a6d3ebf9ad691780ebe6    APPLIED     lxd: Set LeaderInfo function in `(*Daemon).State`.
+7fe7737d8c85a26bb69ec15d7c86049ce37a9131    APPLIED     lxd: Update ACME handlers to use `(*State).LeaderInfo`.
+afbd1155e91f198329aa3663242d91f1d1da3987    APPLIED     lxd: Update cluster handlers to use `(*State).LeaderInfo`.
+15591e9d420ddd0221870f3ba3ead16eaf2758a9    APPLIED     lxd: Update image sync task to use `(*State).LeaderInfo`.
+458e458d3f86b33d31b0baf2f4fc96da2000c935    APPLIED     lxd: Update instance handlers to use `(*State).LeaderInfo`.
+5093829cc7e4dde8abaa13e5df6a1d34f54101b9    APPLIED     lxd: Update operation prune task to use `(*State).LeaderInfo`.
+07a7c8f7a52f659158421f668521943171e3171c    APPLIED     lxd: Update database patch to use `(*State).LeaderInfo`.
+656bb304962601796d67bfd21328e96e53c6368f    APPLIED     lxd/apparmor: Update with new lxd binary location in sbin
+18f4c4292debd946f35900c77769fea05dabb051    APPLIED     lxc/launch: Start console if instance start was performed on server
+d379795c81a6f4a9cf79cddde0ad98a75beed910    IRRELEVANT  Makefile: Use dqlite master when building deps and making dist tarball
+dd30aac6626237c5cc69876adfaab1a6a27073a0    IRRELEVANT  gomod: Switch to v3 of go-dqlite
+e85099dfed8cd8509d60472b7b97597cc3864784    IRRELEVANT  lxd: Switch to v3 of go-dqlite
+c48c20a88db9b79e09a9ada92f90a481dc6f1458    APPLIED     lxd/db: Linter fixes
+b2dd68e06369db1b7af043e3e15e9de79ac722c5    APPLIED     lxd/db/cluster: Differentiate errors returned by PendingTLSMetadata.
+de48dc31c910f6bf914fe009aab1c6562dcc4fab    APPLIED     lxd: Remove expired pending TLS identities in token prune task.
+11bc5a308687ae85a8224b4d14b9638cf13ae332    APPLIED     lxd: Change log level to 'warn' for the token prune task.
+effd497925aa9f4b3c302d2de4d7ab2ff238c4b5    APPLIED     lxd: Opportunistically remove invalid/expired pending TLS identities.
+d9be05031b2a12bff13f441058b629572ac97ace    APPLIED     lxd/sys/os: add InUbuntuCore() helper
+d14fd33becf1530ada0eb54354f6d31c18771a7d    APPLIED     lxd/device/cdi: make it work in Ubuntu Core environment
+e322dff80bc38eccd083f4bf07d3371c7f0ab10f    APPLIED     lxd/instance/instance_utils: forbid nvidia.runtime with Ubuntu Core
+a267ed1574cd3b0fb3a6e2f3cab3b9858d849217    APPLIED     lxd/device/gpu_physical: forbid CDI to be used with nvidia.runtime=true
+19f1c10245bbc192c934b102e70261daa956ccde    APPLIED     lxd/device/cdi/spec: check that pc-kernel snap is connected properly
+eeb43ca4d6bc6ad5e7f1bb76b22c26bd24065919    IRRELEVANT  build(deps): bump actions/checkout from 4.2.1 to 4.2.2
+4d2e505d1d7fb5105fd23db7012b339af833a014    APPLIED     lxd/network: Consider volatile IP in ovnNetworkExternalSubnets
+3c8ae63a9973669a880ad4271ed254c645003a6b    APPLIED     lxd/device/cdi: Fix the case of adding a CDI device with the 'all' identifier
+e36d363346a94b5082822683fabdcb3a34453006    APPLIED     lxc/completion: Rework instance config key completion functions
+a2324dc1a2d4e5f636077ee026003ec7fd37a70e    APPLIED     lxc: Handle interupts properly to clean spice socket and avoid accumulation
+669fc6ff58d71e3fba19cc2fdb851034f3bc3b6d    APPLIED     lxd: Deduplicate image file deletion
+a8f95c5b50772b78158c9325d52d2a4a110173f7    APPLIED     lxd: Add internal testing handler to trigger token prune task.
+efb70284637d9686f5d0c88aac7083becd4ce6ad    APPLIED     test/suites: Test that expired pending identities are removed when token is used.
+f20f62d4a41f975509bee904f6ee74d30e91b9ec    APPLIED     test/suites: Test the token pruning task removes expired pending TLS identities.
+86b65fe313e4b833008de303dda7edf8a9d39f06    APPLIED     test/suites: Test token prune task for certificate add token operations.
+2878c2a7fffb12ccb5a71ba80ffbf42d079e93b1    APPLIED     lxd/db: Implement DqliteDir
+a586c1f22cf2d2da154e0aa5765eaee60c1e6d73    APPLIED     lxd/cluster: Use DqliteDir
+3f49b3a793f1902ce035dfa868d6049ddd9fa555    APPLIED     lxd/cluster: Use DqliteDir
+a4b9cfe69b76b843fed8713c83a1cd2cd797f7fa    APPLIED     lxd/cluster/gateway_test: Use DqliteDir
+4b47681716f5950e4042680f32398772a33022b6    APPLIED     lxd/cluster/recover: Use DqliteDir
+76c9c9be7badd2ed5bc4fc47a6b034847dff09e8    APPLIED     lxd/cluster: Print last dqlite entry on gateway shutdown
+5e6e65146b9ad956a58cc1075c0d230a16ac5c78    APPLIED     doc: Determine which LXD member is most up to date
+93795327791fe2846ca9f9f1cef318448fb8b11f    APPLIED     doc: Update MicroCloud reference
+4fec1347e49aa40ad94a4896118221b0ae3e7011    APPLIED     api: sort GET /auth/permissions response
+ad7cb820ca5547e8b1687d8f057e4f6332903e26    APPLIED     lxd/device/cdi: update generateSpec signature
+4cfee298749976c6e5d147b12ec10b82db597f7f    APPLIED     doc/tutorial: specify LXD snap
+8b2206f76dcbd3e127c5927391910eb614b283c4    DIFFERS     build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+630e462ff85bce3b2fde9be3d6b28be4d1583f54    DIFFERS     build(deps): bump github.com/openfga/openfga from 1.6.2 to 1.7.0
+827aab1c96af23893a0e4a4a40f30ed556610184    APPLIED     lxd/instance/drivers/lxc: downgrade "Failed to statfs" error to warning
+a28082deb5bea4115c50c71bacbecc177bc838b8    APPLIED     lxd/instance/drivers/lxc: downgrade "SFTP server stopped with error" error to warning
+fa50b67c21d5eb6b34a75df830629a466b30e293    APPLIED     lxd/device/cdi: use NVIDIA_DRIVER_ROOT env variable
+fbf993c871a819b970c8b206fe231aadee4bf817    APPLIED     docs: Improve Windows image conversion examples
+3e35eb1853c6d3eb45d57aeb4362eb9ab1b2ddd5    APPLIED     docs: Fix bare URL line numbers in exception list
+309f9824e80a13f8fe283cce8e4ee83809354223    APPLIED     github: Remove unused matrix.go references
+cc3802084e9925925e0df6324f5f4aaaed97d3bb    APPLIED     shared/simplestreams: Fix creation date parsing format
+3045dddfc3c1de05fb599da11b85a2467e8316f0    APPLIED     shared/simplestreams: Replace shared.ValueInSlice with slices.Contains
+d5dd293b1a3964e0b39c1c3d1d250043e198b50b    DIFFERS     lxd/db: Define database specific smart errors.
+c20cf0fd676f18ab8c2490959fc5be8690570f55    DIFFERS     lxd/response: Delete database errors from response package.
+03b80787d2c60c92c4f1c327ea0bd6f19071acf7    APPLIED     lxd/device/gpu_physical: Forbid any `nvidia.*` instance config option if the GPU device has been added through the CDI mode
+6b94626865dbdaa42e9ed97c29cddec1a5181e20    APPLIED     docs: fix ovn ipv4/6 address description
+a26caf6a0dd296d1c9a753c7a268020d0822e540    APPLIED     github: Use cache in case Trivy DB download fails
+5c8f4156927e43168e4e5b746794362ae3b511b5    APPLIED     lxd/networks: Emit lifecycle event for OVN networks
+05f6d564a2fcc24f61b4da35160cc18c97a95529    APPLIED     lxd/init: Set Target after network/storage lookup
+0111b7952e551a0760fea4be0f4c3d2624ca7b9f    APPLIED     test/suites: Test storage/network can be specified when targetting cluster group.
+33dc30a72e4e4fb3c12e7fb52bac1a39f770ba96    APPLIED     lxd/network/ovn: Properly handle uplink with disabled DHCP/DHCPv6
+dd62771a43446e65e01db519d3684a6e2c3086e0    APPLIED     shared/api: Add TLSCertificate field to identity and identity PUT.
+261083ee2041c172a938214198988f02bdfd2a2b    APPLIED     doc: Runs `make update-api`.
+683876de5c4904d9d22ccd2608f100d51959c832    APPLIED     lxd/db/cluster: Add function to get certificate metadata from DB Identity.
+f70b3e490c1ac670e8674ded669b06410db1c6a9    APPLIED     lxd/db/cluster: Add TLSCertificate on Identity.ToAPI.
+d94fe9f7b8598b286afd3ba45c4749f07d5a4aa9    APPLIED     lxd: Return TLSCertificate when listing identities.
+e64dc822899a36866293dfed57cb50402e7170c8    IRRELEVANT  build(deps): bump actions/cache from 4.1.1 to 4.1.2
+2611e3da6f3025b75e99ae596260082ee9afd9a8    IRRELEVANT  build(deps): bump github/codeql-action from 3.27.0 to 3.27.1
+2b8f1efb2c02031ed129b8c83104a1352838fd97    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.26.0 to 0.27.0
+28da5de6daff71c940eb7fc0108615cc173d54aa    APPLIED     lxd: Factor out logic to add identity to request context from access handler.
+305851b32f0cbd5a1372f54e1e6f62d25b45ba63    APPLIED     lxd: Use `allowAuthenticated` for identity update handlers.
+90d3bdbe19f6f91933457f89a79d425fbfd3a2ca    APPLIED     lxd: Return a 400 for invalid certificates.
+afbfb15030c3f7516f7f1c0c1a74a81968420f62    APPLIED     lxd: Add method to validate an identities' certificate and return their fingerprint and metadata.
+a58dccc3da223c28949e7b53ca15f371f4b39956    APPLIED     lxd: Add certificate update functionality.
+6c8da65ab909f5243716d46643e927ba6912aab6    APPLIED     test/suites: Add tests for TLS identity certificate update.
+f3306f1bbe2f4b26ab37f93084d2ff438218ca8d    FEATURE     doc: Document devlxd Ubuntu Pro API endpoints.
+0229bbecb893e462b2d6e039ea05edf5a1107140    APPLIED     lxd/instance/drivers: Make `security.devlxd.images` live-updatable.
+0aa02a9dc801642d7094815602679a906abdc52d    APPLIED     lxd/instance/instancetype: Update doc `security.devlxd.images` config key.
+560ddbcb2fd11016def8cbff5e9775e0c328d8a7    APPLIED     {doc,lxd/metadata}: Runs `make update-metadata`.
+54b59a99a35e0d17cf9bb2d97a5250387fc97257    APPLIED     lxd/auth/drivers: Mask errors returned by OpenFGADatastore.
+f8d97c5d8bd92bcf378ccdc6c4a488778821b1b0    APPLIED     test/suites: Use `gen_cert_and_key` in basic usage tests.
+764f2535046234317c75c2f6248fb40b316b783f    APPLIED     test/suites: Use `gen_cert_and_key` in remote admin tests.
+84896c25669edcc8ce3083635474efe5bc55548c    APPLIED     test/includes: Remove `gen_cert` util.
+077bb5f4aa3fce5e59bf9ee21f0365f0ca127036    APPLIED     lxd/auth/drivers: Add entitlement for viewing unmanaged networks.
+85536922331d555a89c413565af77fdc11ea554d    APPLIED     lxd/auth: Runs `make update-auth`.
+3bfe23704ca26ad092f83ec70b3ffb0e2d1f6012    APPLIED     {doc,lxd/metadata}: Runs `make update-metadata`.
+03dc344eaba224d10fbc96a97692dfbcf8c3efa0    APPLIED     lxd/auth: Allow restricted TLS clients to view unmanaged networks.
+3fc7a9521fbce2cbfac9a08304f011719af85a2a    APPLIED     lxd: Handle authorization for unmanaged networks.
+b66435f4bf34c131613869bbeb90dbfeebf917e7    APPLIED     test/suites: Include new server entitlement in tests.
+74a4990e2e11cd943282782827f77952273dd8d6    APPLIED     doc/howto/initialize: fix broken link to maas docs
+64377dc83618696e67f1379f1ce030518e450f0c    APPLIED     shared/usbid/parse: Match id's type to Protocol and ClassCode
+6f1714712a0c33c0b9865e0bbcabe704eadfae3d    APPLIED     shared/usbid/parse: Use return expressions (revive)
+a262fd032db8939671d9ac4b8942e6eb278451bb    APPLIED     shared/usbid/parse: Comment spacing (revive)
+bbc85e5925b85644c47a7cdccbcbe5dc175a60f3    APPLIED     github: Fix snap scanning
+c1b2f882a747012bca082e196fe588c0a86750f1    IRRELEVANT  github: Use a different key for saving
+ac93fb9b4bc8145e214e6ef96f62a9c7184a461f    IRRELEVANT  github: stop adding notification comments to issues/PRs
+668d666c5777aae921912dd5dc88bee6895f30e9    APPLIED     lxd/instance/drivers/qemu: Add missing node name overflow handling
+5b1e2e0b83bb12b47401c8469f1514868e205e98    APPLIED     lxd/instance/drivers: Deduplicate operationStatusCode logic
+a7e88b02af1a3794bdd9fafb7280401979bf0742    APPLIED     lxd/instance/drivers: Reduce chance of races during `statusCode`
+a80b942d4c9e1579bd26efacef98283148105df8    APPLIED     test/main: print apport crashes info
+757e46b303c58906d73e0122a1a37dd8df1f4b53    APPLIED     github: add download-minio action
+cbaf1c39ecaa279047b6e05ebfcdb1464ea12a61    APPLIED     github: download minio/mc using action and as late as possible
+e93570a369f9e66b48c140d632b934e38d94bb45    APPLIED     lxd/device: Update device option descriptions for `usb` to accurately convey compatibility with containers and vms
+79948f6112fb7c6cedaa3767d161059abe47b85b    APPLIED     lxd/device: Update container only device options to use word `container`
+405fc81d14b45b8ed5aaeb73e3174d88dcd35f08    APPLIED     lxd/device: Split `required` device option metadata for `usb` and `unix-hotplug`
+32de1aa737f49601ba58efb4582f17b3c9786674    APPLIED     doc: Update `devices_unix_char` docs to accurately convey device compatibility
+bc85891359fd0bf99991b132ddaaba2d35b1049b    APPLIED     doc: Update `devices_unix_block` docs to accurately convey device compatibility
+c9b5a112c2b308b6477c6768a8f92ea2b34ac923    APPLIED     doc: Update `devices_unix_hotplug` docs to accurately convey device compatibility
+b7d82479af1ec846ac114477ae5f214b8b4a3562    APPLIED     metadata: Run `make update-metadata`
+0462930ecedd38002c70e8dccb351d7ee68b60c4    APPLIED     lxc/completion: Don't hide default completion command
+c311976d5ee6ed8eb24575a5f29daea62f070e4e    APPLIED     Consume websocket pings for stderr
+5e1548c12d506559a5ce2059ba0760b92ab33086    APPLIED     shared/entity: Add functions to create snapshot and backup URLs.
+fd533410f2a0b304d729e1d793cfe3007a5b9db5    APPLIED     lxd/auth/drivers: Add snapshots and backups to authorization model.
+506584df3fe8576c9749810bff101fb055c297b1    APPLIED     lxd/auth/drivers: Clarify that "can_view" allows viewing snapshots and backups.
+1c84225f22417d1c22995edec7eba655cbbb0fbc    APPLIED     lxd/auth: Run `make update-auth`.
+e9fd6006171587c59dc5e7df23a715acdf70a335    APPLIED     metadata: Run `make update-metadata`.
+4f5ad89f585a9f829f40f58406545e03153239a7    APPLIED     lxd/auth/drivers: Remove entitlement validation check.
+aaef11aca38b0f15b71d5249716e2a78588a26e0    APPLIED     lxd/db/openfga: Use entity types for parent-child relations.
+aef54380dcf6cbd5dd760a1f3f0907a994b83672    APPLIED     lxd/db/openfga: Handle instance and storage_volume relations on Read.
+74b1e108f5adb6ee32b478ebd6f39501c837b8a8    APPLIED     lxd/db/openfga: Handle instance and storage_volume relations on ReadStartingWithUser.
+3744b5f3520cb9cb67d05018128020567b64266f    APPLIED     lxd: Update instance backup and snapshot authorization checks.
+ded532a1b29ca5131d42e2b310a945ade7e5c88b    APPLIED     lxd: Add location to storage volume details.
+02bfea0f041eb211051ba5b45d31b283c063b928    APPLIED     lxd: Parameterise the storagePoolVolumeTypeAccessHandler by entity type.
+90bdff3f04a76777ab6f3545c9ab8fcb7c233936    APPLIED     lxd: Update calls to the storage volume access handler.
+e5542625aaad14392f6105865857bde7fdddb2cb    APPLIED     lxd: Update storage volume snapshot and backup access checks.
+44e4a30b670f42cc0b33314d4294ef1355671785    APPLIED     test/suites: Add tests for storage pool used-by filtering.
+0d3d40e1ac01948a586c843c35f19e91b72a0ecf    APPLIED     Fix linter errors (revive: redefines-builtin-id).
+46dd5608557272a94818c62d61c484292ef14246    IRRELEVANT  build(deps): bump github/codeql-action from 3.27.1 to 3.27.4
+f094bca53d8dd947a820d98c049acca7bdbb3e00    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.32.1 to 3.33.1
+f4e250d477b78f0697472f91faea417b1240ab78    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.19.2 to 4.20.2
+7e64afdd05e9619958499e29056eacd2ac513bc8    APPLIED     test/deps: Add python script to search for panics in LXD logs.
+d1e60042366b1fcd25240b1f26769375b64a8ce5    APPLIED     github: unconditionally strip binaries and libs as late as possible
+7bbf30a77de50b5e1cb8ee3cc12375a6f0e0b619    APPLIED     github: Move chmod of go.mod, go.sum before go mod download
+f9d97d4d18e7be4131be90bd7295bebdb37d5d9c    IRRELEVANT  github: Use `restore-keys` to get the lastest cache
+a2645d1413e4b9627bc529e982f20e46dad0280d    IRRELEVANT  github: Correct step name
+b8fa5e4d3897236887646947a01d3e7adb6de15f    APPLIED     Makefile: Bump min Go version to 1.23
+0da14e7c9b03f5496809c669b9e6f51a67ec666a    APPLIED     doc: Update min go version to 1.23
+72d76935c89a2743e9e05a42fbd0a47c6bf33580    IRRELEVANT  gomod: Update depedencies
+e63cf2289d2a7ebb150cebef9967347cd02db15b    APPLIED     test/includes: Add panic checker helper function.
+1e72b0e2618aa8330e638d630eb5afc525f3932d    APPLIED     test: All tests should be executed from TEST_DIR.
+484e2ae9e03c162381627041cce73df1f2bfe3bf    APPLIED     test/includes: Run the panic checker killing any LXD daemon.
+94652527c95236f5b0335b7f8a296004b18f7fb9    APPLIED     test: Run the panic checker on cleanup before setting `+e`.
+1492337495e75b61cb21fa2042eba1fd2303259b    APPLIED     test/godeps: Update lists
+85712d6258f4ba511a5e823317c4275c4554ae1f    DIFFERS     Revert "api: Add `ubuntu_pro_guest_attach` API extension."
+dd6a47e2e8f0c2d5a73605b04dd967332be86cbb    APPLIED     Revert "shared/api: Add guest attachment API responses."
+505db29526c4a46b4af5950f1870ca38ab793283    DIFFERS     Revert "doc: Document devlxd Ubuntu Pro API endpoints."
+7121a314136d033c6de0b7e8f7a6b46396ffb8a1    APPLIED     Revert "lxd/ubuntupro: Return host guest attachment setting if instance setting is unset."
+ca995e015f19d2aeebbec763bb71616fbd78e933    APPLIED     Revert "lxd/ubuntupro: Add ubuntupro package."
+345e9b4c82a5453fec471d8948273e6e224b5255    APPLIED     Revert "lxd/state: Add `ubuntupro.Client` to `state.State`."
+f69629a630bdca81bc52d590487ba4a7e516a070    APPLIED     Revert "lxd/state: Add `ubuntupro.Client` to `Daemon`."
+8125bc7c89ca0fedac2d4ff36447f524406b4c2a    APPLIED     Revert "lxd/instance/instancetype: Add `ubuntu_pro.guest_attach` to instance configuration."
+13808418dee2281d03983b88dfd7dc100dfa4bc0    APPLIED     Revert "{doc,lxd/metadata}: Run `make update-metadata`."
+6d8c8fa73e352281331422b9aaec9c75b2aa8c0d    APPLIED     Revert "lxd: Add Ubuntu Pro handlers to devlxd."
+6671ca9577c09bd57aacceaa94217e094acdb4c6    APPLIED     Revert "lxd-agent: Add Ubuntu Pro handlers to devlxd."
+1d03270b957daf52f0a5946abe71b3cc59889d01    APPLIED     lxc/warning: Take `--all` into account when parsing args
+e906c70b5ec6b96a1a7e1f874275aba3d5963160    APPLIED     lxc/warning: Update `lxc warning delete` usage
+4090008b32566b07febf7cb5b408a81bb4207d5a    APPLIED     lxc/warning: Delete all warnings
+d92790d2bf81f5b1e52340098c70c37357cc0589    APPLIED     test/warnings: Test deleting all warnings
+dd41751272995709ea5407b148479d8b2cfecb80    IRRELEVANT  i18n: Update translation templates.
+0f50237f8ab7f5e55cef8963adf576a5361f16ce    IRRELEVANT  i18n: Update translations.
+27d9504bc37a7adf393cf7c28488a149465afadf    APPLIED     github: add install-lxd-runtimedeps action
+5bf214fc21d1275f8d16943733cf65dcc46ed9f6    APPLIED     lxd/device: Add support for discovering multiple unix hotplug devices
+bae1f69539c12f194e0b18f884b3dcbcf164a259    APPLIED     lxd/device: Clean up comments
+c2413f23d7937df170d25ca7d56a188b4faff3f2    APPLIED     lxd/device: Consolidate device matching logic to resolve inconsistent matching
+4706f9ed54a5dc0a919fdfbbd66715cef7665532    APPLIED     github: replace lxc-templates by lxc-utils
+3c258b6e5fd7e286c8dccc1e0fc5a93c2fcf1add    IRRELEVANT  github: TICS doesn't need full git history as it doesn't do shellcheck
+be9483e403f8b5ec554c12e0d5f334efdd6bfffa    APPLIED     github: explain why lxc.service and lxc-net.service (from lxc-utils) are masked before install
+5186b49db2ae46928d06cf85768bc3fcab062e16    APPLIED     github: reduce runtime deps to a minimum
+a5de6206351e8bf3e8fb4020acdf6e33198a974c    APPLIED     test/includes: Set ulimit before spawning LXD.
+908c9335d4eab8b35ff525af13f1ea2a7751896b    APPLIED     lxd/db/openfga: Update datastore comments to reflect change in model.
+f48cdf96e7bd94a74eb86f7ae71ae21d8741c641    APPLIED     github: stop stripping libs and binaries
+bd6476535fc999a4aef2d445d00a7461a3da651f    APPLIED     lxd: Don't call `pool.Driver()` more than once.
+7856bf816c18b468da9f6884642bcfa512f87e55    APPLIED     test/suites: Test permission handling for instance and storage volume snapshots.
+44006fb8f010befb148392fc8f9926d48164b586    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.7.0 to 1.8.0
+12ef385ac915fbd716d7889528b3a8f1a4735e93    APPLIED     doc: fix defaultdesc format for instance configuration related to boot
+b0f80eec238822223387ec1364732ac4ff2b14c7    APPLIED     lxd/api_metrics: Filter Operation query by node
+077c887e69e1b6680f91bf54ee7568642fa70bc3    APPLIED     lxd/db/cluster/warnings: Allow filtering by Node and Status
+ff136e7e82ac665f450b4ac8540e53f61744f350    APPLIED     lxd/db/cluster: Run `make update-schema`
+a22d214a00a891643cc2baf1730d4347f6d032e5    APPLIED     lxd/api_metrics: Use `*state.State` instead of `time.Time` on `internalMetrics`
+8e07bd0dd8b86dd73ff35812091ac85b2827337e    APPLIED     lxd/api_metrics: Filter query for Warnings appropriately
+2d4dcd0364b9bf2d6b78d806e202e9642571f70e    APPLIED     test: Test for querying metrics on a cluster
+c5677203b810702c68aed94112542e4c6cc9029d    APPLIED     test: Run `test_clustering_metrics` with cluster tests
+722dc6de9c7bb96b83d8f3ccb3c00cfa44173cbf    APPLIED     github: Set core_pattern before running system tests.
+ce6749f37421f1183ea72fecefd921fe74258251    APPLIED     github: Upload crash dumps if present.
+3a99bb9f8d3bb14e0da468804bd0e77bb764d086    APPLIED     Revert "test/main: print apport crashes info"
+457064748de41ce0af3ed7d8e603b22b645479f5    APPLIED     github: Set `GOTRACEBACK=crash` on system test runs.
+50fe938187c5bb075504121846e43338a0faa974    APPLIED     github: Don't purge aproxy snap when reclaiming disk space
+0f6aff58386a6163f1337ae163b9bfdd27cfc354    APPLIED     api: Add `gpu_cdi` extension
+c3feeef516c72ef07d38f18ac93e44225a5637fb    APPLIED     doc: Add 'passthrough' to custom_wordlist.txt
+c79184bf7aded58b6b9b503a4e3cf550bddf9c05    APPLIED     doc: Add section on coredump inspection.
+9856e7735dd1a75c0a4d9a400af85351a2598dc5    APPLIED     doc: Add new acronyms to wordlist.
+cbffaf10d16687f19efe69f472db285163b701c5    APPLIED     lxd/instance/drivers/qmp: Return an error if no fd is found
+60f0c5c8231716fe84d2356f7bc39e2ae4b9f3c9    APPLIED     api: Add `images_all_projects` extension
+4f51b9434a8bd1d2975ee600c558bb7022578d26    APPLIED     shared/api: Add project property to Image
+99e45ee6fb8f39c36cc4cc9539c84f73ae8562c9    APPLIED     lxd/images: Add support for all_projects
+d7e95fb041fef0c1382579043c5bb0c257d4d64a    APPLIED     api: Run `make update-api`
+7dc7739aedfa06364ce3dae4d82b3683610495dc    APPLIED     lxc/client: Add `GetImagesAllProjects` function
+35a5ab5c07c523823f239d43365216677dfa39b8    APPLIED     lxc/client: Add `GetImagesAllProjectsWithFilter` function
+1fae6e6d99d68538ae29f01937d4dfc8338bf923    APPLIED     lxc/image: Add --all-projects flag to list
+5e67eaad03c2ee53a9c9b00fa4693e40a8edc494    IRRELEVANT  i18n: Update translation templates.
+0a73c3ee0a20f52ef4cdefb9f646182ad684ddaf    IRRELEVANT  i18n: Update translations.
+aac2d2e9226b32b728e4b9d4dc84d07a3dcf344e    APPLIED     Revert "lxd/instance/drivers/qmp: Return an error if no fd is found"
+b9346ad1a69eec27060fd6c156d6312837a05a39    DIFFERS     gomod: Change minimum version to satisfy version requirements
+602501970861903018d19dc608ee3d72d05ae255    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.20.2 to 4.20.4
+cce09143af93fd6bab85d07b70642f0e82806930    APPLIED     lxd/instance/drivers/driver/lxc: Instruct liblxc to use the lxd-stophook wrapper in the bin directory of the snap instead of sbin
+cced3b14256598dc271bd545284cb51599ca6bbd    APPLIED     lxd: Simplify `allowAuthenticated`
+09f5a59ecf9d24959434f7566b3732e8a44a6119    APPLIED     lxd/device/cdi: Rework ID parsing
+570948277527f190609a3ef7592c1c6acfa492f6    APPLIED     lxd/device/gpu/physical: Update ToCDI usage
+b58121d3c6de2c403e1c5164c5213eca1f39310f    APPLIED     lxd/device/gpu/physical: Validate id during validation stage
+0482c0cecb18070d2681d51d5aa58806837cc02f    APPLIED     test: Adds validation test for GPU CDI mode
+99336c2e1827262b65844f10512df701216b95ca    APPLIED     lxd/storage: Remove `security.shared` from cephfs keys
+09d2265f81a018fab958b0fd8480382ecd46872d    APPLIED     lxd/metadata: make update-metadata
+a084f0fd2aa76d782aca02992ea1a8f79410f900    APPLIED     doc: make update-metadata
+f3c037e4c833f440a897dc0ee935fbdbbdfcfe7b    APPLIED     lxd/networks: Reworks networkStartup to accept a stateFunc
+22d227f992eeef0c8464b99a9cf73623896b0ad1    APPLIED     lxd: networkStartup usage
+afe440744810d8231985febcd8836a73ac46cfa9    APPLIED     lxd/db/storage_pools: Use 'cluster members' instead of 'nodes'
+cff0be3ae699cc30efdb3dcf4151cd88a23bbf9a    APPLIED     lxd: Log error on `resultErrListAppend`
+f18a4b8d743da5e2323ad02272163ecf65eac624    APPLIED     lxc/completion: Update `cmpInstanceKeys` function to use metadata API
+4ae5a7b2ded2680337d3a94b5276f088bf0e044c    APPLIED     lxc/completion: Update `cmpInstanceAllKeys` to use metadata API
+739490f5493d5a29c0049cf645641aa47040c795    APPLIED     lxc/completion: Remove extraneous nospace completion directive from `cmpInstances` function
+e9d18f28d74d68bfc9a570bb290fa60ee874619e    APPLIED     lxc/completion: Add `cmpInstanceSetKeys` function
+a63ad635928f090582c1570e1439d26e4fb7b9c8    APPLIED     lxd/device/device/interface: Fix typo
+196388d937673d32bcbabafb6d8d3d4caa91750a    APPLIED     lxd/network/driver/bridge: Fix typo
+fe65e8255686de6d5ae5f660d4f05f7ef7bea16f    APPLIED     lxd/network/driver/ovn: Fix typo
+ad6f13a99181648dd81e29566cb04d4f64bb89a6    APPLIED     lxd/networks: Fix typo
+e05839aaf9783884c30b42df66426d4a6c71ed4d    APPLIED     lxd/instance: Lock image access
+01c912bff20bc04208ddfcfca558ec76a7dac0b8    IRRELEVANT  Release LXD 6.2
+a014ad5514ee753d602b55ebce6f743a2efdbe5a    APPLIED     lxd/instance/drivers/driver/qemu: Fix nvram file update from 2MB OVMF and CSM mode
+e44fc8681bf35227cf40dcd1737a894e9ec05938    DIFFERS     test/suites: Improve grep usage in PKI tests.
+3e4a7ce66d95ce6e4d49ddef89ca259e20d69ec2    DIFFERS     lxd: Return a useful error if an identity token is sent to the certificate API.
+7ea5c34dcc1068ca725b576abcad1ed30b351c48    DIFFERS     lxc/remote: Update `remote add` to handle tokens issued by identities API.
+4ae3123bda9182478d33d494c6926bb05f74f477    DIFFERS     test/suites: Parameterise authorization tests by remote name.
+aa40dbf68821ac80e963ff3ee6a0fb8873e26071    DIFFERS     test/suites: Run fine-grained authorization tests for TLS identities.
+d16636b641d0d506d0d03016c42a83fa71ce3f1c    DIFFERS     test/suites: Test fine-grained TLS identities with PKI mode.
+96087a3494e5c6100a7f06d69d8393a07ce5d69e    DIFFERS     doc/howto: Don't link client tokens to clustering tutorial.
+e8ec61eee553e286f726fc762c9bd29391378660    DIFFERS     doc: Authentication section under explanation should not contain how-tos.
+48a58c237a4790a128c4448b4877e2a8bb5a030e    DIFFERS     doc/howto: Include fine-grained TLS identities in project confinement tutorial.
+891810bb0a3152c6feff64af150bb35ccdb86e45    DIFFERS     test/suites/remote: rework invalid protocol test
+fd8a334d87975201faf5237876a26fc2e5442caa    DIFFERS     test/suites/remote: rework badtoken test
+b48e63940c6a2f985f75722524e479dcde438f4c    DIFFERS     doc/howto: Fix argument order when adding permissions to a group.
+091ca31b900fc75e6623cab3539a61d383328e2e    DIFFERS     test/suites: Simplify `user_is_server_admin`.
+152584e0ab207c0c0df8bb5ed355750e9b6fd7ac    DIFFERS     test/suites: Test that a server administrator can view unmanaged networks.
+404d80cb9cf3b2da3f33da41368479eeeb9655b5    DIFFERS     test: Add tests to `test/suites/auth.sh` for `lxc image list --all-projects`
+88e11672fdbfbbf6318c424cb4a552ac5b34ef50    APPLIED     Bump minimum version to 1.23.3 in docs and Makefile
+5607ebcb6f9a767311927eecdb5ec2bc25cc8e06    IRRELEVANT  gomod: Update dependencies
+729382d0e57a776a42bb6f0e8ec39cf9753b289c    DIFFERS     github: only upload client binaries when merging PRs
+9cf82cc7513f3026501fa8b57f98a37c12d3617f    IRRELEVANT  build(deps): bump github.com/dell/goscaleio from 1.17.0 to 1.17.1
+0100b26ce1af47fb7dd36e08f985508f9df28e2c    APPLIED     shared/api/instance: Introduce constants for source type
+632b358294750bbeaa3602ac37f5cc99475e700b    APPLIED     client/*: Replace hardcoded source types with constants
+310d18e42c4d44931892f418ed1760d919f20702    APPLIED     lxd/*: Replace hardcoded source types with constants
+5e6654bb4837ff786c2e4dac0d5331da9810d4c2    APPLIED     lxc/*: Replace hardcoded source types with constants
+d4617a5acfb5aaeafe78d704ff8eb7c1007f2381    APPLIED     lxd-benchmark/benchmark/operation: Replace hardcoded source type with constant
+fcd8f904dfbd1e4c1434782cabe01de85a0a698f    APPLIED     lxd-to-lxd/main_migrate: Replace hardcoded source type with constant
+ae6039feeb939eece2a139622cb8efbcfa61c825    APPLIED     lxd-migrate/main_migrate: Replace hardcoded source types with constants
+b85f1f097948e4f0a222f07dc777b8d8144f2104    APPLIED     lxc-to-lxd: Remove use of os.Exit in non-main function
+600662d43b8d12f4a211bbc4475ca44913b26228    APPLIED     lxd/project/limits/premissions: Do not overwrite builtin function with a variable
+3d9f894419c53a7e736f3f0ca5bbf2a7652e7d99    APPLIED     client: Fix unchecked assertions
+ec7a109073af149583bdd5cc3c81d2e58e7f6653    APPLIED     client/lxd: Fix non-constant format string
+3a3dd1d6e37f636ee403e89c85e9638c621fe38c    IRRELEVANT  i18n: Update translation templates.
+f33ea82b0b7951123fa5d9a631a846c4d65ad0b1    IRRELEVANT  i18n: Update translations.
