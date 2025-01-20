@@ -2474,3 +2474,299 @@ b85f1f097948e4f0a222f07dc777b8d8144f2104    APPLIED     lxc-to-lxd: Remove use o
 ec7a109073af149583bdd5cc3c81d2e58e7f6653    APPLIED     client/lxd: Fix non-constant format string
 3a3dd1d6e37f636ee403e89c85e9638c621fe38c    IRRELEVANT  i18n: Update translation templates.
 f33ea82b0b7951123fa5d9a631a846c4d65ad0b1    IRRELEVANT  i18n: Update translations.
+a210cd63877f7e56a257e83954d8ad47c02903e5    APPLIED     lxd/patches: Strip white space in patchSplitIdentityCertificateEntityTypes
+8a40cd43747687494ea7cd7487b04a090cfd63f1    APPLIED     lxd/patches: Remove volatile.%.last_state.ip_addresses keys more efficiently
+213255dbcb285b4e2cfb9363cefb7a6e965bc960    APPLIED     chore(ci) add workflow to run e2e tests from lxd-ui
+87ef4c8368e32e4ce25856d6c0851ecc154e7020    APPLIED     chore(ci) fix references to secrets
+46b38dc161932b4dd8d0f537444ae47aa5b2a17e    APPLIED     chore(ci) dynamic ui testsuite selection based on current branch
+c6403a76866457e9181abb70765ab7e5b0297eca    APPLIED     chore(ci) add ui tests as dependency for snap build
+aa05fcf380f5e73b886ab8c05480db12027eca8c    APPLIED     doc/guest-os-compatibility: 16.04 and 18.04 missing `lxd-agent`
+9f9c2787464d908fc7c1e2b0c6a6873d8a3dc368    APPLIED     lxd/device/tpm: simplify path/pathrm validation for VMs
+ae011e572c179fafb0bab0852106d22ef950eb1d    APPLIED     lxd/device/tpm: remove condition on containers, VMs support them
+a04c329cdbe2d0585e8dabed030b7b3b5c5b8a36    APPLIED     lxd/device/usb: simplify serial validation
+cc26923e8e4585ab76b32a29a4259fcab6ae3873    APPLIED     lxd/instance/instancetype/instance: simplify `security.sev.session.{dh,data}` validation
+fe5abfbbb94213c9ec9a6ebcaa7cbbf47e23f45d    APPLIED     lxd/network/driver_common: simplify bgp password validation
+120b74f142a61c79e3bab234b8b0c93ca1c6aa4a    APPLIED     lxd/storage/drivers/cephobject: simplify `cephobject.bucker.name_prefix` validation
+b95eecdd3c3069475042cf0ab9bb25028a363af3    APPLIED     lxd/storage/drivers/powerflex: simplify `powerflex.domain` validation
+a16e7007298bf197b09b503ef76575dec72886e7    APPLIED     metadata: Run `make update-metadata`.
+f0b6460c268ac5eee1ccee6419c97009c5376284    APPLIED     doc/howto/migrate_from_lxc: suggest switching to 5.21/stable after the migration
+54731422bb2251a24bb03730250cc0feec022e0a    APPLIED     doc/howto/snap: don't mention feature releases tracks
+ef5f5e584e1b6ef426e1238d4fd48491e3ac7daa    APPLIED     doc/howto/snap: replace `latest/stable` by `5.21/stable` in example
+3f8c0ff2182cfa73275d76909d947909074c0c72    APPLIED     doc/installing: suggest switching to `5.21/stable` after using `lxd.migrate` from `5.0`
+eca2ceb9bcb511bdf77ac7a837947b96f056a319    APPLIED     doc/installing: promote the default channel as the recommended one
+60b1b03fa20ec2a90003ac8a6850dd53badeaaa0    APPLIED     test/suites/image: `grep -v` should not be used for testing
+5e84c12eb8b37dc77f13f10e8c0f54411d4b15d0    APPLIED     test/suites/image: use more precise `grep`
+34628746ac7b012c37b3e588c78b95bef9996e6c    APPLIED     lxd/device: Use device `Clone()` function rather than duplicate config copy logic
+cd6a0ea96fa876897ff6d94173ccf791d29412c0    APPLIED     lxd/device: Fix comment typos
+e1f37754ff37a075a27d082d677e9555a51674fb    APPLIED     Revert "github: only run CodeQL (go) on PRs and on weekly schedule"
+610dbd11101fc023af268dade7e3ecf4505c1100    APPLIED     doc: Add noble package to Windows image conversion
+f6ae2118142389dcb2ae8afe4623248c0a03711a    APPLIED     doc: Update doclint exceptions
+a175679b4b0d42f99a49cea215a8bba9fbc5c3b1    APPLIED     test/suites: Check that a restricted client certificate cannot view server configuration.
+337bed45a3d8aecc1ce3401c4917851a458c4f1e    APPLIED     doc/support: detail the 3 levels of LTS support
+3df55ab8e6c49c6427e825e2bc0f1e4d24352927    APPLIED     doc/support: don't mention `latest/*` or the now defunct `6.1/stable` channels
+d0ef03c8547f0260d54bdfa7976ab62c4a52a665    APPLIED     doc/howto/snap: allow linking to cohort note
+b39f6cbde8674f5b5717feb844aef9d6b9321cfe    APPLIED     doc/installing: add note about cohort and installing specific rev
+9d9ff9c318348026209e339c02545712362b4617    APPLIED     github: switch to 24.04 runners for documentation step
+563d5df065df8330a4317dc84100aa88aad0841a    APPLIED     github: switch to 24.04 runners for snap step
+93dd2e2fd46dece921eeaf3381dc6d7ced195cdf    APPLIED     lxd/storage: Add storage driver cache update to `storagePoolCreateLocal` function
+14ff64886b8679c79acd6d8dacbeac790c2b583f    APPLIED     github: add lp-snap-build action
+9430b6783ebe8667cf0678ee83c1ea6943c03684    APPLIED     client/lxd: Fix unnecessary error formatting
+5ae1acdf3c33951443d2b7ac2637a06577c56e22    DIFFERS     github: use actions/lp-snap-build
+04a74f6da44e329f08aa3611a9feca6bc04c389a    DIFFERS     github: add missing git branch mapping from lxd to lxd-pkg-snap for 5.21
+093a423da9c3002aaf9d1dec778ef7c42faaed97    APPLIED     doc/cloud-init: clarify that size means quota
+386291674c9596516051573de178cef67c96ae5b    APPLIED     doc/explanation/clustering: clarify that size means quota
+2dbaf37c4596a08ec11b28ce3fc8fd139ee1eec5    APPLIED     doc/explanation/storage: clarify that size means quota
+efbbe291dc62c4a7231310dbd740335abfc61ed6    APPLIED     doc/howto/initialize: clarify that size means quota
+281f2d6246cb67f866a5e4587030d9b69ef5b707    APPLIED     doc/howto/instances_backup: clarify that size means quota
+2d74911b4201cfb1434e3ac8fa831420e5ca3cb9    APPLIED     doc/howto/storage_backup_volume: clarify that size means quota
+db7acb2cbab142e140db23eeacfe3281546de957    APPLIED     doc/howto/storage_buckets: clarify that size means quota
+9a1e256fa3786cf320d43c648bf2e3650f603a9e    APPLIED     doc/howto/storage_pools: clarify that size means quota
+fb7fdcaed8f6d37d5bd9bb933c52f730f9bd38be    APPLIED     doc/reference/devices_disk: clarify that size means quota
+c0653007aca8d5220b707ba0dd404dbdcb38a330    APPLIED     doc/reference/storage_lvm: clarify that size means quota
+a00218bcdd59e145a682036d7889e98c5bb999d1    APPLIED     doc/reference/storage_powerflex: clarify that size means quota
+11563993bf525c8b88673cfc6aa5a51e11983918    APPLIED     doc/reference/storage_zfs: clarify that size means quota
+2a8f5360239c0302f06e9acaaa0d67f2a3a64bf6    APPLIED     doc/tutorial/first_steps: clarify that size means quota
+8e0ce3468c8c187987228587ff754764cbc4d49e    APPLIED     doc/tutorial/ui: clarify that size means quota
+8dd8431f5399cd463042918270fa7f44b32d7ba4    APPLIED     lxd/storage: Fix comment typo
+a30c76165332f9d4fbaad399f86e5059c06274b8    APPLIED     Revert "github: add lp-snap-build action"
+e48e135786053a8eb36370f05b8a865cc40c5133    IRRELEVANT  Revert "github: use actions/lp-snap-build"
+4ba928c00d51aaba75e8d6c9276fa8119ff02b4e    APPLIED     test: add markdown table with the duration of each test
+ce6571962ee7f8487484f6c75365c51375770b82    APPLIED     github: pass GITHUB_STEP_SUMMARY variable to system tests
+5e6ead568656abcdfeb88d313e3bba012d1f3c8f    APPLIED     doc/images: Add OVN internal networking diagrams.
+0080b32fdf0d3059fb6261afcc4e428aa1cd29af    APPLIED     doc/reference: Add OVN internals documentation.
+817e150afda5a238abef87575c970abe25ff2dc2    APPLIED     doc: Add OVN internals doc to internal section.
+8bc5515ecf01dff6c3d1dc914c9f1a406dda3b42    APPLIED     doc: Add spellcheck exceptions.
+fa4db7adb10178cc828cdfa54174ff3000e1b514    APPLIED     lxd/storage/drivers: Remove unnecessary fmt.Sprintfs
+9bfda222be7e1558a13d0eadfa35c61a1a8798d5    APPLIED     lxd/storage/drivers: Fix linter errors
+3d3b0514dc8bce164cc0aedc27c637514dba59ef    APPLIED     doc: Change order of discourse links
+2d50396c80892eb76e6f872c0ddaff9f62062f1a    APPLIED     github: Use cohort="+" for trivy snap scan
+988ffb58ee9cd3ea38c75a5f964cc1f1ed1f661a    APPLIED     github: (re)add lp-snap-build action
+ce24b8db49fc552882f695dc8ecf920e4398e624    DIFFERS     github: make use of actions/lp-snap-build in tests job
+b15618883058d334807ab0c35502928cd03d8947    APPLIED     doc: Prefix discourse links with `lxc:`
+596552c9ebc7e3844f10ac5bd50a87c708cd96b9    APPLIED     Makefile: use `git commit -S` for siging the commit
+ec45fbe323253333a635a09cd9a0d44751776087    APPLIED     Makefile: propose commit'ing generated files after `make update-metadata`
+03e8dc626b15dadaf664bbc8147ee2748938a7fc    APPLIED     Makefile: propose commit'ing generated files after `make update-gomod`
+f48d1e7cec14be49b6e215048f0d2b45d29243d9    APPLIED     Makefile: propose commit'ing generated files after `make update-api`
+6fadaecad05885e2aedb0c30cb85371a45fde9b3    APPLIED     doc: Add VM live migration developer documentation
+7afa8fa917e9be45a8e914a3959acafadb163a1d    APPLIED     doc: Add VM live migration developer documentation to internals section
+2b77167b48f4933f3d686a2f66fd65f4ce73024b    APPLIED     doc: Add spellcheck exceptions
+9a3ff88b2cae1a57a4225114dc0598448a3608c3    APPLIED     lxc/storage_volume: Add comment on path argument
+eed783ea268019275f49b8932b42a5eb755c8191    APPLIED     lxd/storage/drivers/zfs: zfs.delegate requires security.nesting=true to be useful
+bc325ae5a0dc3eff3245f9243bc7a2c46d35a6e4    APPLIED     README: Remove monthly from feature release
+5031c8ca9a3c76bc886686f3b9b5255a33ffb0ea    APPLIED     SECURITY: Remove monthly from feature release
+bac73602da1aa62541c29394cc5f62a9d084adb6    APPLIED     doc/installing: Clarified new features in LTS
+3caf44656cd3f35512dae10863516c3b8f198dc4    APPLIED     doc/support: Removed monthly from feature release
+ecc001bb5d84aa0a6d74be996dfb94df3f3a2ce4    APPLIED     doc/support: Clarified 6/stable series
+d61414d27e595a886df65da517996f2f381f6419    APPLIED     doc/installing: Fix command tabbing
+0abe50e8ad7f21e0a251c90075404beb37e27363    APPLIED     github: add ~/go/bin to system PATH in actions/lp-snap-build
+8173c2c28d7527c76ad5fa391cd0ab65ec0a0811    IRRELEVANT  github: show PATH when building snap
+3873d25b52b4c26f4960b8d62c06a0e7f750edc0    APPLIED     github: another attempt at adding ~/go/bin to system path
+bf56b737514d63d28a68afac0a532dfa24bef7e3    APPLIED     doc/howto/network_load_balancers: fix lxc network load-balancer backend add command syntax
+a7836470392866d360ad404031a60c4a4b0c5567    APPLIED     lxd: Deny creating an empty ISO volume
+ed5a0f6e356e797c51b588ec7e80b67d40a27dff    APPLIED     test: Can't create empty iso volume
+78e7b23fcfcf8defb285bda2659c017305292efa    APPLIED     doc: ISO volumes can be created from copies
+c94a0e13d4a9db2be08913ae4a9e324f067ba128    APPLIED     lxd: Remove lint exception for defer rule.
+e56c343354d47681d902aaa43b9c62256c8ea792    APPLIED     lxd/instance/operationlock/operationlock: fix typo Reusuable->Reusable
+d476bfde5467140a70b56cead34cd4d59e2c7f8c    APPLIED     lxd/instance/drivers/driver_lxc: fix typo Reusuable->Reusable
+b75ae22278db721984beaa59746617faf425279a    APPLIED     lxd/instance/drivers/driver_qemu: fix typo Reusuable->Reusable
+304cb92bc03417c159fabca7cd79c79cc1b4e4c8    APPLIED     Makefile: fix syntax to allow `make static-<tab>` completion to work
+799daa43e00370adb73e7ced4db8c809b2914fea    APPLIED     Makefile: consistently use tabs
+0fd84572dfce677977c277134a9b49739317f6b8    APPLIED     test/lint/licenses: always restore COPYING content even on check failure
+e9a429897ec442f00e90d6e79a67aea4a5c5c2d9    APPLIED     test/lint/i18n-up-to-date: close stdin when calling `make i18n`
+deabd765b1b95bd804533d9796988cb4adebba70    APPLIED     test/lint/metadata-up-to-date: silence noise
+4ec941d6aed51525398edbecafea648677cb38b7    APPLIED     test/lint/metadata-up-to-date: simplify restoring file to their original content
+3947957525d0195976c3fb85a3955a0bdb511915    APPLIED     Makefile: tell msgmerge to not use a progress reporter
+7578d077e9553631b9ef4f73d004650c38c6f328    APPLIED     doc/images: Update VM live migration implementation diagrams
+3e590c9635222d091ba8e05245f96e0e3b7aa4c0    APPLIED     doc/reference: Update VM live migration implementation image reference
+df7aca02914df94cc630b096d4830df3e1f23c0b    APPLIED     lxc/config: Fix godoc typos
+0c2aa2f49849f4724988086e800305b7d8bc04d4    IRRELEVANT  build(deps): bump actions/setup-go from 5.1.0 to 5.2.0
+e45ec14ef500b92d5c6c539c18fd682040df6360    APPLIED     lxd: Fix linter errors (revive: exported).
+d7bcd37cb4fc8e56ae0ebe70c68ecbadb1ad7d8a    APPLIED     shared/cmd: Fix linter error (revive: use-any).
+adc98a0fab7dd0e6d6acc6c0bed619098222a749    APPLIED     github: add setup-microovn action
+c28a3d3f07acd763d69edf22938148a980c61ee5    APPLIED     github: Add OVN environment variables when running test suite.
+9bffd4c860c9da1b5a30ac31bf4b3401d95727ae    APPLIED     github: use actions/setup-microovn in system-tests
+a9ad4578ec0e4ed518630d94dc7a0f2ae473e038    APPLIED     doc/howto/network_load_balancers: improve instructions and add examples
+f7f684333612d22a4d73c946c122203a5cabf48d    APPLIED     test/suites: Add initial OVN tests.
+80da580c5289687efa063daa2b0f07fbcd1635bb    APPLIED     test: Run OVN test in standalone suite.
+3321d39cc95441e17ba871d0e5b5a4ef87f6d8eb    APPLIED     github: Add `network_ovn` to `LXD_REQUIRED_TESTS`.
+4df816acaff4a2e351bf180ce11cd407b5c0eb0c    APPLIED     github: Add OVN commands to PATH.
+45a26be29e03cbdd5cf6099c2678535541a8e559    APPLIED     test/suites: Prefer `jq` on json to `sed` on yaml.
+5cee35fbc0d3a3031f2106e29f5427861fece376    APPLIED     test/suites: Clean up OIDC user in oidc test.
+50ab4a426bbfb57bbbcbbcdf672a819ef89e1773    APPLIED     doc: Update link prefix for `doc/reference/storage_cephfs`
+346c4e7286f4a8fab9c035a7c7092856b4ce8339    APPLIED     lxd-agent: Remove defunct lint exceptions.
+b5a2e88c9ac8703253a640431ceb328a26678437    APPLIED     lxd/db/cluster: Remove defunct lint exceptions.
+3815b27e9662fde6dc23d68387d07b7030383614    APPLIED     lxd: Remove defunct lint exceptions.
+6fb2c786f39bc540512b3e9f1dbaef0bb8d754c9    APPLIED     test/mini-oidc/storage: Remove defunct lint exceptions.
+d3bab08d424812e830f6cc0dd86954539cc28679    APPLIED     golangci: Add `prealloc` linter
+ce0756b4e6be431bf0b556953b9b968ba341eb8f    APPLIED     github: Disable TICS temporarily
+23b63c361cf7d2ab076e6a0f85846e2de7976f73    IRRELEVANT  github: modified .jira_sync_config.yaml for the synchronization with Jira
+b87520de42ece5ad7813f2cc7a6a70c7299b5f54    APPLIED     lxc/cluster-enable: improve man page instructions
+40c10255ed26b18b1dabce66c9a90c3f442e569e    APPLIED     lxc/info: fix typo in man page
+bb41f32777bdc28d7cae881eecab9b8c20a7ceb5    APPLIED     lxc/list: fix possible types in man page
+8e0e0215980a6c9e3194dd3b564723846002c480    APPLIED     lxc/list: fix typo in man page
+b4c06b8c171c2bccebc45696a499ec6fd3486421    APPLIED     lxc/move: fix missing word in man page
+7b09c245ecb18469ddad2ddc6295bc6216972b4d    APPLIED     lxc/query: fix redundancy in man page
+0bfec8bd6329dd5708faf678792976ab1221546a    APPLIED     lxc/storage-volume-unset: fix typo in man page
+d0d1320f37c34c4f00316de324da44694a77b4ff    IRRELEVANT  i18n: Update translations.
+5cedf663548acf296ec7a0f3fc0999a271d743a3    APPLIED     doc/database: revise title to mention dqlite
+74fafc60d7c8af768d35be53accaa4cec2782b1a    APPLIED     doc/explanation/security: remove 'about' from title
+6052009419be203ba96f062154deafe8a4590887    APPLIED     doc/explanation/projects: revise title
+a4f0bdfb92a1bbd09dbbf7da7d493acfd103da6c    APPLIED     doc/image-handling: revise title
+b61783213556f19a2fcc707d1aac61fab781d469    APPLIED     doc/explanation/lxc_show_info: remove 'about' from title
+ca40a9fe872182c632affe43a83c5d5ab3842ea5    APPLIED     doc/explanation/lxd_lxc: remove 'about' from title
+dff732ac6c07da5a0aabeaf875b0ceeee68ca7c1    APPLIED     doc/explanation/networks: revise title
+766396a49ae41cc4df1b73f6398df793f001ca78    APPLIED     doc/explanation/instances: remove 'about' from title
+218f8ea949243adace8afaabc4e051b7a6c60a7d    APPLIED     doc/explanation/performance_tuning: remove 'about' from title
+a06dd03dfa91e71a1fb92b6f8e41f309ff9c40da    APPLIED     doc/authentication: use page title as navlink text
+6048fafdf255870803acd2ab4b0b00982c63d4af    APPLIED     doc/explanation/authorization: use page title as navlink text
+b3a293d67303329817b9afeb777c7665115ac675    APPLIED     doc/explanation/storage: remove 'about' from title & use as navlink text
+32483de32b33e93dd291b333cbc561ffd7b91fa1    APPLIED     doc/explanation/clusters: rename from clustering.md, update links/redirect
+5adf05c6b10efa41b0d87b6d29d78373e756ca16    APPLIED     doc/cloud-init: add a note that recent `cloud-init` on older Ubuntu still doesn't support modern keys
+c1bd0e3d5c35c91a85bc89df061c2ddb97d82169    APPLIED     lxd/networks: Removes unused argument in doNetworkUpdate
+5bdebbd8b094e446629c66368832ebc86b48f220    APPLIED     lxd/project/project: Fix type in comment in NetworkAllowed
+82ebf0c57b25656754d1b8499c05eafbeca51c27    APPLIED     lxd/resources/cpu: Fix revive linter errors
+ff6e18d03b04806662228a6ed2b0c768c1e638e7    APPLIED     github: Dont require UI tests to pass to build edge snap
+890f965ca59c03d703cffd864dc3e0f51af0313f    APPLIED     Makefile: install goimports if missing during `make update-schema`
+f277f8058d76266107541c475dd45a6c24a7c910    APPLIED     test/suites/sql: don't count lines on expected empty output
+8f9bea4fb986d0e27553b9ab59a4cdf65b966511    APPLIED     test/suites/backup: remove `|| false` on test that should succeed
+d12a1371c85d002d7ac032107001d01e8818037c    APPLIED     test/suites/basic: remove `|| false` on tests that should succeed
+f0c467e489039426744b27e509d81fc6b3c58b81    APPLIED     test/suites/projects: remove `|| false` on test that should succeed
+e466e7455a03b1e26681717e2500ca80e9e78874    APPLIED     test/suites/container_devices_disk_restricted: remove `|| false` on tests that should succeed
+1fc5066bad133b86aadb4a381d345a839cccd0b8    APPLIED     test/suites/clustering: remove `|| false` on tests that should succeed
+c39625d1c410503012ed0f1d651807ad07cf3bcb    APPLIED     test/suites/filtering: remove `|| false` on tests that should succeed
+bba7dbb00fba557a84e9061980032118d241085d    APPLIED     test/suites/container_devices_disk: remove `|| false` on tests that should succeed
+0b41838067bf42e91727662299d16579675139fe    APPLIED     test/suites/devlxd: remove `|| false` on test that should succeed
+087ff0eaa503dcea2bddc13955d91f29e82e1e4c    APPLIED     test/suites/snapshots: remove `|| false` on test that should succeed
+fe23a35d265a6083012cd1f4a4a4925f609d180b    APPLIED     test/suites/snapshots: test `lxc config get --property` as well
+0401390a0ee30c6d0368052ef75d5869eb1698bb    APPLIED     test/suites/container_devices_nic_routed: rework command to fit on one line
+0dd4f00cb4373fa103535ffafb7f6a5a8be33870    APPLIED     test/suites/image_profiles: remove `|| false` on tests that should succeed
+972e6b9a1a485d901a2cbb44737b9b43b5f60ba6    APPLIED     test/suites/storage_snapshots: remove `|| false` on test that should succeed
+7f07f28a294eeb83e70a44895637e83171b1e712    APPLIED     test/suites/storage_snapshots: test property get/set
+6f4aa4b604a55f34cb041992b293b8a5d68bf6fd    APPLIED     test/suites/warnings: remove `|| false` on tests that should succeed
+c55098b6324d319528f153aa0ae8d5aba98541cb    APPLIED     test/suites/container_devices_nic_routed: use one liners to avoid confusing shellcheck
+2947dc0550321aec9ee17a0bcccda5bb5d5b22be    APPLIED     test/suites/container_devices_nic_routed: use more precise grep and shell comparison
+522d7c60197c83c5b45aa04eaee1028a2c5cc045    APPLIED     Revert "github: stop scanning Python through CodeQL"
+f12e6eb001af65c3da6c54a94eb19802c3d82353    APPLIED     github: remove extra spaces to please yamllint
+6e5137b522bd8b02708d083d20dfe2c777688392    APPLIED     Makefile: goimports already does gofmt's job
+218bcd9b722aa5f86e0ea853d013f30e79a09f01    IRRELEVANT  gomod: Update dependencies
+27fb41bec3ff3c548fb2914820a4a9b8cd15f362    APPLIED     lxd/db/schema/update: Fix to support lxd in non-GOPATH locations
+6ed2698f766dfbe3d9af7428f5d957d6f1397ba2    APPLIED     lxd/db/schema: Expect filename and package as arguments.
+e55e06beca407ee54a7f6f64df4f687b1ea3e811    APPLIED     lxd/db/generate/db: Expect database kind as argument.
+7d52588a8a0ea6d63f667345a910d6ed4fc89bcf    APPLIED     lxd/db/generate: Expect schema kind as argument.
+17238f69b4119d16ba175c98619dafc8293be846    APPLIED     lxd/db/cluster: Pass package and filename into `schema.DotGo`.
+008f5e8733f4df35aa41d6cf988b01279489c00e    APPLIED     lxd/db/node: Pass package and filename into `schema.DotGo`.
+29249024a9a86afd574d74a2cd24db47a6609bb2    APPLIED     lxd/db: Remove schema generation directive from db package.
+6f44258ec0263f6b69688af94c05959a70c80f26    APPLIED     lxd/db/cluster: Add schema generation directive to cluster package.
+d2b2878feca2c9ac7a2d75a42430caccf82cb2d4    APPLIED     lxd/db/node: Add schema generation directive to node package.
+cebd8fa19be316a9e3300341b319a7f55918d934    APPLIED     lxd/db/schema: Update DotGo test.
+8b52bd1c6f6d504cd5cefee631f0bcd63b514054    APPLIED     lxd/db: Add freshschema package.
+db7a0733c5b5cfaaddace36ffc715f1d8f66a9fc    APPLIED     lxd-generate: Remove schema subcommand.
+0042f9711aa4ecea1ea8b43c02dfbdd3d2e72eab    APPLIED     lxd/db/cluster: Immediately run goimports after generating file.
+fabd0b3b273b25ae14315894343c7fba02c0cc86    APPLIED     lxd/db/cluster: Update schema generation to use `freshschema` package.
+09790e4b15ec7624e383773db0be20d743c57ac0    APPLIED     lxd/db/node: Update schema generation to use `freshschema` package.
+68be07b57ef0546cbe746ca3e9016bf5289cf82e    APPLIED     Makefile: Remove goimports from `update-schema` target.
+65893b9a6c01b1119abb5058f8d7545c82874426    APPLIED     lxd/db/cluster: Fix linter error (prealloc).
+68e10595aa4028a567ffeae7d3344498eae84b94    IRRELEVANT  i18n: Update translation templates.
+dbc4c864bbedfb820a3ecdf7247e7f7e48d577d9    IRRELEVANT  i18n: Update translations.
+a9346c0299e58a37b3c3c4b007d36167dc40a7d6    IRRELEVANT  build(deps): bump actions/upload-artifact from 4.4.3 to 4.5.0
+146fdb9dd971d82e8302ab25b67006f9ded7821d    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.20.4 to 4.21.0
+4db3b79580938d4519bb56ee1dae0546bb7ffac9    IRRELEVANT  build(deps): bump google.golang.org/protobuf from 1.36.0 to 1.36.1
+58fae7e0ee67de1ee90a4021dba5d673e1ef7b69    IRRELEVANT  build(deps): bump golang.org/x/term from 0.27.0 to 0.28.0
+4a19cffb8d25adce8cd3a4c94df643776b586fa3    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.8.2 to 1.8.3
+ff29b7a079116306f67152617ec8077b4cd5d0cb    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.33.1 to 3.34.0
+6d1fc1ce46e13f04dcf53d04ef0123805de894fc    IRRELEVANT  build(deps): bump golang.org/x/oauth2 from 0.24.0 to 0.25.0
+c7e26d8b0af7dff760a0c5440e84a6af7214a6d4    APPLIED     shared: Add `IsMicroOVNUsed` utility function
+b49bf808d15f2190f850b95ca55397b1c49cfed7    APPLIED     lxd/network/acl: Allow 'ovnParseLogEntry' to read a log input using an external timestamp
+d7b7c7c8e97d151fe5256997ef5e58c23663fcdc    APPLIED     lxd/network/acl: Read OVN logs from systemd journal
+647f11e2f0e421fc9982898eaf2c05fabf321f6e    APPLIED     acl: Pass request ctx to acl.GetLog function
+026d323386b9c8a65f52351616c4c162c1c07204    APPLIED     doc: Describe how to manually connect the MicroOVN northbound connection to LXD
+30901e8304099bab52688bdb606e5cc0498e2532    APPLIED     lxc: Fix format of identities in group edit help text.
+dab11cb6475f4caf13532b2a628fcfe384154093    APPLIED     lxc: Move note on editable fields to make it more prominent.
+78d3dd4fb2e2954ed12878c7401e2399e5244f08    IRRELEVANT  i18n: Update translation templates.
+12e8752a7b8952d10f33bd7ac675608d7c13ab93    IRRELEVANT  i18n: Update translations.
+a0d555ea1366bef23784a94cc9a2f419d460d141    APPLIED     lxc: Fix lint error (prealloc).
+e3d32aac05dd944680452034f66e62a21d3a70f4    APPLIED     shared/util: fix copy-n-pasto
+a73ee0ba8c008230dfb517bb6758f4ba526dadb0    APPLIED     doc/instance-exec: fix typo
+8f567172d8228aaf6ee9a0b6d56a800842d292dd    APPLIED     lxd/instance_logs: fix typo in swagger comment
+4b9409cd7ff23dee84430db590a9fd8af23df893    APPLIED     lxd/project/project: simplify string concatenation operations
+5ea6c151011d3dcbff2949854b27b6f1891c9caf    APPLIED     shared/util: simplify string concatenation operations
+4d84a2a1f2933e364ebb87648d69206379081a15    APPLIED     lxd/instance_logs: simplify string concatenation operations
+cdba0f5a7d0dd21f9d84031f4f91183e017be735    APPLIED     lxd/storage/drivers/lvm: avoid format specifiers in errors
+3e81bb10ca21eee0741856e55b093b965f0dbc99    APPLIED     shared/util_test: simplify if/else (revive)
+509dcc019b6b6d14f479cf251c14bfc830bfb37e    APPLIED     lxd/db/instances: simplify GetNextInstanceSnapshotIndex()
+f0478c07f6351ecbda2a4a9d84eaea1dae7f6964    APPLIED     lxd/db/instances: replace strings.Contains+strings.SplitN by strings.Cut
+3d7744a7f14995244c77e45071f0f02487b6ae02    IRRELEVANT  i18n: Update translation templates.
+e5ce5c395a3767e15f069f3cda02b4515cebe928    APPLIED     lxd/db/storage_volumes: use strings.Cut() in RenameStoragePoolVolume()
+08ed3e1f0a54af7cad08662e3846452dd2d5f6a0    APPLIED     lxd/db/storage_volumes: simplify GetNextStorageVolumeSnapshotIndex()
+188c8969a9589a152ea4091c322b717b2aa461ba    APPLIED     lxd/instance/instancetype/instance: simplify ValidName()
+f7a6295772a39636e9f95768276be1ae5c9f258a    APPLIED     lxd/db/instances: use strconv.Itoa() where appropriate
+c1554ee06a68f5ac2dcbc7444dfd6a972a1d544a    APPLIED     lxd/db/instances: use simpler string concatenation
+7334a58bb915d33613537514d1effc5435d0bec5    APPLIED     lxc/cluster: remove unused argument from command
+09780db1d10da49cb0805c378075965c11f8e1ef    APPLIED     lxc/storage_volume: Fix `lxc storage volume snapshot` command description
+12bcb1d4b419f1a78547211c0053594cff7d215c    APPLIED     lxd/db/storage_volume_snapshots: use strings.Cut to avoid out of bound access
+98955c1d197a1cfe13a2d87f245804726fc4fdfb    APPLIED     shared/util: os.CreateTemp() already returns a file with 0600 mode
+79357837d89dadaf7ebe45a14f0944b244eed94c    APPLIED     lxc/file: pre-allocate files
+aac1ffb69b29b9e4bc685e9a72d62562f56c7dc6    APPLIED     test/mini-oidc: remove redundant return
+6b56e852e882a35e0479f832a01209d108e4a1c1    APPLIED     test/mini-oidc: add missing trailing dots
+c40ec6ede75301041fd9632fa12951b4df067216    APPLIED     test/mini-oidc: sort imports
+9796ed775f7f83239b383ace1fb086c9909da7a1    APPLIED     lxd/cluster/notify: pre-allocate peers
+0166651fc19e9c2e30356bb8b919c36f6ef4d569    DIFFERS     lxd/storage/drivers/lvm_utils: use named return values
+4c52761365d7849608ffa25e38ae4bd5909de559    DIFFERS     lxd/storage/drivers/lvm_utils: simplify if/else with early return
+3f504c5a537ccbb48f54adcb9da463027e5c5c3e    APPLIED     test/mini-oidc/storage/oidc: use proper casing
+848b729f81782202c493445f6730639043e25913    APPLIED     test/mini-oidc/storage/oidc: define prompts with 0 length
+ae9f2974f7f5389cb18878ba8322a8ecc9d4cd0f    APPLIED     test/mini-oidc: add comments to exported functions
+f1cc859b917986058a7a1055b848c7ef08d4069c    APPLIED     test/mini-oidc: silence some lint problems
+12efa426e992e81291a740b79b3642fa5e7805bd    APPLIED     test/mini-oidc: drop unused param
+181bc194b0a652bfdbb738193d36ff799bdb2593    APPLIED     lxd/init: omit unneeded nil checks
+f408dfbab97783f5279ddda1250c495e4dbcd06c    APPLIED     lxd/resources/network: simplify if/else with early return
+b24a12f0bd2ab28edea94718b0b9b3deefbb4a89    APPLIED     lxd/resources/utils: simplify if/else with early return
+f018deaea198404aa04814f0b89e532a2f046208    APPLIED     shared/api/status_code: pre-allocate statusStrings
+d1c90129741cc098ef545b179ea024d108e545b4    APPLIED     shared/api/resource: fix typo in comment
+046e10036e4e41eacdc1f8574a69f4caeb224b7c    APPLIED     doc/rest-api: Refresh swagger YAML
+cdaf9e3cfa29561cd2ad8250e44d9d74c2196d97    APPLIED     lxd: `lxd cluster show` print bytes
+f57b28298ebfbdfca06b5d920ea89f7da5b304b9    APPLIED     lxd/storage: Remove redundant error check
+6a9ce9415805681cb5c81de4f1e43b6177dafe96    APPLIED     lxd/linux/discard: Add ClearBlock
+b0fa0aef7fe8053d3d2f63aad69e95ac23967011    APPLIED     lxd/linux/discard: Remove leftover debugging
+b3e4a1d4a21e9f5b5908bd17c247eaeacae6ebac    APPLIED     lxd/linux/discard: Use marker length for buffer
+24c28bda8cae89aeae5af69be41f5bebea3fe031    APPLIED     lxd/linux/discard: Add support for offset
+a753783ab1f8c54a6973b579ccf48dda4d030172    APPLIED     lxd/linux/discard: Change marker to LXD in ClearBlock
+542c466da298f1d1195684a985ffffe366ecc3ab    APPLIED     lxd/linux/discard: Move ClearBlock to lxd/storage/block package
+8be2337b5e082aba8cf400c124856c762d6828ce    IRRELEVANT  i18n: Update translation templates.
+85b129b9c37c84b340ef7efaff0cb942c08f40b2    IRRELEVANT  i18n: Update translations.
+d235c1c6bfb2712cef916ad9076c0f90cdac2ea1    APPLIED     lxd/storage/block/discard: Check if size and offset are equal in ClearBlock
+25f05e1782f731400e6563940478bc2331e31ed5    APPLIED     lxd/storage/drivers/driver/lvm/volumes: Run ClearBlock on all new thick block volumes
+ff7299a3a3929b52201de48b7c41d3fff8248a99    APPLIED     lxd/storage/drivers/driver/lvm/volumes: Clear new blocks on thick volume grow
+ab910ac2cfbe2c91d6b5bcfe303dfe350b79ebe9    FEATURE     lxd/storage/drivers/generic/vfs: Truncate/Discard ahead of sparse write
+0e6af0a9c51076fca5f7f97e1057ff0b65a402cf    APPLIED     lxd/storage/block/utils: Adds DiskBlockSize function
+b1f1331bcf1c71a31191dff6105440ec4a8658d7    APPLIED     lxd/storage/drivers/driver/lvm/utils: Go linter fixes for thinPoolVolumeUsage
+ead337c17b43141a9475dae059c0c5f62118a88a    APPLIED     lxd/storage/drivers/driver/lvm/utils: Avoid use of inefficient fmt.Sprintf
+36ccf8c5c2c0bada901f0a29121741c3ba402075    APPLIED     lxd/storage/backend/lxd: Use the validated volume name from the DB record in RefreshCustomVolume
+6b918d040709e9944cc893e769dc02bd5ba9f694    APPLIED     lxd/storage/backend/lxd: Pre-allocate slice in recoverMinIOKeys
+8449409e9bc2f0e34f85645b22f7635ef3053b7c    APPLIED     github: add actions/reclaim-memory
+7557bba7d592457672c565725da4809e8ff554df    APPLIED     github: use actions/reclaim-memory in tests job
+5c47980beec796b2ca301ac3ef54ff397f1fbdaa    FEATURE     shared/network: drop support for LXD_INSECURE_TLS
+16433b68b66b7b03c8cbbc70a92721aea6c40f34    FEATURE     doc/authentication: don't mention LXD_INSECURE_TLS (no longer supported)
+b9bda03317233348def9710fdd90fd78b26f75e1    FEATURE     doc/environment: don't mention LXD_INSECURE_TLS (no longer supported)
+f0bd95089f17f894959788ec51754726af850cf6    FEATURE     test/suites/tls_restrictions: stop testing LXD_INSECURE_TLS (no longer supported)
+e39c08e0efab59507414281f2f1d4c5eea204a4f    APPLIED     lxd/devlxd: Adds concurrent safe GetConnUcred function
+7323980138fb0f6ed4eb0dd325c329ce25329b99    APPLIED     lxd/devlxd: Use concurrent safe pidMapper.GetConnUcred in hoistReq
+14ae61c58c6d2c387c17941fcead307a3cd9558d    IRRELEVANT  build(deps): bump github.com/dell/goscaleio from 1.17.1 to 1.18.0
+9152a7d2efcf24515698e0e80248b961ddc57db8    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.31.0 to 0.32.0
+7c9cf501bd4bc565aeb854a57c8268b0ea1f2d11    IRRELEVANT  build(deps): bump actions/upload-artifact from 4.5.0 to 4.6.0
+a263d0e31994ad71e9ee929941edb5b8e8762c1e    APPLIED     lxd-agent: If the target path of a mount is relative, make it absolute.
+3a5074f22051c0e33422a09018bd8dd8be5db147    IRRELEVANT  Revert "lxd/storage/drivers/generic/vfs: Truncate/Discard ahead of sparse write"
+4f17d266cbb0ffb92d1faffa3f0db64a8c801605    IRRELEVANT  i18n: Update translations.
+51eca719fbc93ddaaeb081f23ef793c8e33cf8b3    APPLIED     shared/cmd: Add 'sql' table format.
+7857bf1c56f5eef6f1325a62a46812f5383f9acb    DIFFERS     shared/cmd: Update RenderSlice for SQL format.
+69bf16b94a7ec6f72876572487ebf398987f21ca    DIFFERS     lxd: Add format flag to lxd sql command.
+5d8b6bfb87ffe29b3f7ebd04e70cb0de6a02578b    APPLIED     lxd: Use `fmt.Sprint` instead of `fmt.Sprintf`.
+a35e880ad16a7d21a5fded5d6ece88c3b6d87058    DIFFERS     lxd: Fix linter errors (revive: var-naming).
+8a7085d070e9839e0913a5a2fb3ca98ea728f64d    APPLIED     test/suites: Update `lxd sql` usage in authorization test.
+50b623f0be1c482fdf9c60c7b1d6242108f82758    APPLIED     test/suites: Update `lxd sql` usage in backup test.
+bf78d6e9bfe0d4b06c2fa9d70e94844388821454    APPLIED     test/suites: Update `lxd sql` usage in clustering membership test.
+f6f18e753b7540ab9a9ad404f1d2279c6c02986d    APPLIED     test/suites: Update `lxd sql` usage in clustering storage test.
+a9e457671d42b99b307b7c84f8351f22984770e5    APPLIED     test/suites: Update `lxd sql` usage in clustering network test.
+4b33c64a7ad264144043aa01bac83d0f991d4a97    APPLIED     test/suites: Update `lxd sql` usage in clustering remove raft node test.
+7754a05beee0bd2eafec3327a19efab3d450b66f    APPLIED     test/suites: Update `lxd sql` usage in clustering image refresh test.
+900c87e19eb5c2644d60f3227c396d565252c70e    APPLIED     test/suites: Update `lxd sql` usage in oidc test.
+363e84b7d496835a44d1165dcf87c74481e59e92    DIFFERS     test/suites: Add format tests and use csv for direct match in lxd sql test.
