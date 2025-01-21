@@ -2770,3 +2770,11 @@ a9e457671d42b99b307b7c84f8351f22984770e5    APPLIED     test/suites: Update `lxd
 7754a05beee0bd2eafec3327a19efab3d450b66f    APPLIED     test/suites: Update `lxd sql` usage in clustering image refresh test.
 900c87e19eb5c2644d60f3227c396d565252c70e    APPLIED     test/suites: Update `lxd sql` usage in oidc test.
 363e84b7d496835a44d1165dcf87c74481e59e92    DIFFERS     test/suites: Add format tests and use csv for direct match in lxd sql test.
+bb584dfabb42b3dc406300a6bcca2a1bcab7c6d5    IRRELEVANT  i18n: Update translation templates.
+dd73a2f0625451a2b2f12d4d47faa031a44fccc8    IRRELEVANT  i18n: Update translations.
+f2a4278263bf1f50812fc87ecbb20cc653514b63    APPLIED     lxd/network/driver/ovn: Comment typo fix
+8b4b0ead17f6e4492f76ad15ca93c0e36c549e0b    APPLIED     lxd/network/driver/ovn: Prevent removal of uplink volatile IP settings when associated network IP address is populated
+0722aaf896f7de90a980521b899af4363b43829a    APPLIED     lxd/network/driver/ovn: Linter prealloc fix
+e87412d6501c6d9ed80d93d229e6df9f7310e806    APPLIED     test/suites/network/ovn: Check that volatile uplink IPs cannot be removed when associated network address is populated
+0217e14ec27eff6432723a1dd40cc2416255add6    APPLIED     lxd/network/acl: Use the `journalctl` wrapper script introduced in the LXD snap
+f7af0d0cf418c2a16c11097388e571a77f0fb206    DIFFERS     lxd/storage_volumes: Fix copying storage volumes between cluster nodes when target and project parameters are set
