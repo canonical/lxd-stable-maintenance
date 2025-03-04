@@ -2406,13 +2406,6 @@ c3feeef516c72ef07d38f18ac93e44225a5637fb    APPLIED     doc: Add 'passthrough' t
 c79184bf7aded58b6b9b503a4e3cf550bddf9c05    APPLIED     doc: Add section on coredump inspection.
 9856e7735dd1a75c0a4d9a400af85351a2598dc5    APPLIED     doc: Add new acronyms to wordlist.
 cbffaf10d16687f19efe69f472db285163b701c5    APPLIED     lxd/instance/drivers/qmp: Return an error if no fd is found
-60f0c5c8231716fe84d2356f7bc39e2ae4b9f3c9    APPLIED     api: Add `images_all_projects` extension
-4f51b9434a8bd1d2975ee600c558bb7022578d26    APPLIED     shared/api: Add project property to Image
-99e45ee6fb8f39c36cc4cc9539c84f73ae8562c9    APPLIED     lxd/images: Add support for all_projects
-d7e95fb041fef0c1382579043c5bb0c257d4d64a    APPLIED     api: Run `make update-api`
-7dc7739aedfa06364ce3dae4d82b3683610495dc    APPLIED     lxc/client: Add `GetImagesAllProjects` function
-35a5ab5c07c523823f239d43365216677dfa39b8    APPLIED     lxc/client: Add `GetImagesAllProjectsWithFilter` function
-1fae6e6d99d68538ae29f01937d4dfc8338bf923    APPLIED     lxc/image: Add --all-projects flag to list
 5e67eaad03c2ee53a9c9b00fa4693e40a8edc494    IRRELEVANT  i18n: Update translation templates.
 0a73c3ee0a20f52ef4cdefb9f646182ad684ddaf    IRRELEVANT  i18n: Update translations.
 aac2d2e9226b32b728e4b9d4dc84d07a3dcf344e    APPLIED     Revert "lxd/instance/drivers/qmp: Return an error if no fd is found"
@@ -2456,7 +2449,6 @@ fd8a334d87975201faf5237876a26fc2e5442caa    DIFFERS     test/suites/remote: rewo
 b48e63940c6a2f985f75722524e479dcde438f4c    DIFFERS     doc/howto: Fix argument order when adding permissions to a group.
 091ca31b900fc75e6623cab3539a61d383328e2e    DIFFERS     test/suites: Simplify `user_is_server_admin`.
 152584e0ab207c0c0df8bb5ed355750e9b6fd7ac    DIFFERS     test/suites: Test that a server administrator can view unmanaged networks.
-404d80cb9cf3b2da3f33da41368479eeeb9655b5    DIFFERS     test: Add tests to `test/suites/auth.sh` for `lxc image list --all-projects`
 88e11672fdbfbbf6318c424cb4a552ac5b34ef50    APPLIED     Bump minimum version to 1.23.3 in docs and Makefile
 5607ebcb6f9a767311927eecdb5ec2bc25cc8e06    IRRELEVANT  gomod: Update dependencies
 729382d0e57a776a42bb6f0e8ec39cf9753b289c    DIFFERS     github: only upload client binaries when merging PRs
@@ -2778,3 +2770,5 @@ f2a4278263bf1f50812fc87ecbb20cc653514b63    APPLIED     lxd/network/driver/ovn: 
 e87412d6501c6d9ed80d93d229e6df9f7310e806    APPLIED     test/suites/network/ovn: Check that volatile uplink IPs cannot be removed when associated network address is populated
 0217e14ec27eff6432723a1dd40cc2416255add6    APPLIED     lxd/network/acl: Use the `journalctl` wrapper script introduced in the LXD snap
 f7af0d0cf418c2a16c11097388e571a77f0fb206    DIFFERS     lxd/storage_volumes: Fix copying storage volumes between cluster nodes when target and project parameters are set
+df46aea9ff21593c3ac524806973bacc443e08fb    APPLIED     test/suites/image: add test_image_list_remotes()
+76d308832260d894c32949a6cb6117415cdc4b06    APPLIED     test/main: add test_image_list_remotes test to the standalone list
