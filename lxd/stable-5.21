@@ -4037,3 +4037,10 @@ ef02c4f424cc29de91dd5e5084d87aee0ff94359    APPLIED     lxd/devlxd: Rework `devl
 aeb9a675e4bf667fc86f86cc311306f635b117f8    APPLIED     lxd/device/proxy: Improve error message formatting in `killProxyProc` function
 5893f55aa7fdb344a2832cc28902101ca9f55323    APPLIED     test/suites/container_devices_proxy: Add check for host socket removal upon unix proxy device removal
 ec29d4a1fe7bd4604b03cc754aaab4aebcb09080    APPLIED     lxd/device/proxy: Modify the `checkProcStarted` function to prioritize the 'Failed to listen on...' error message
+8e38ea5e101b8bbbecacea94f838f46240f18820    IRRELEVANT  gomod: Update dependencies
+5843542e719214004c35085097e165b41d246eca    IRRELEVANT  lxd-migrate/utils: Ignore deprecated linter warning for Password field
+35cf6caf5c50fdc51c34dfa402ecbb5702a2b218    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.87 to 7.0.88
+8ab662ca017681b253677b0d6ac4681a144942aa    DIFFERS     api: add client_cert_presence extension
+d5ea81c66f41cdd8a1302d223a3bd169a9a4e21f    DIFFERS     shared/api: update GET /1.0 to indicate if the current request has a client certificate in it
+a6c830204c54c92407d11126ea97e81b5539ecf8    APPLIED     lxd/resources/network: Fix regression in GetNetworkState
+c5ced29d8846b83798da7ed8a98137c4e8cb6f18    APPLIED     lxd/instance_instance_types: Convert logging to contextual logging in `instanceRefreshTypes` function
