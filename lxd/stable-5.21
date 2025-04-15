@@ -4044,3 +4044,292 @@ ec29d4a1fe7bd4604b03cc754aaab4aebcb09080    APPLIED     lxd/device/proxy: Modify
 d5ea81c66f41cdd8a1302d223a3bd169a9a4e21f    DIFFERS     shared/api: update GET /1.0 to indicate if the current request has a client certificate in it
 a6c830204c54c92407d11126ea97e81b5539ecf8    APPLIED     lxd/resources/network: Fix regression in GetNetworkState
 c5ced29d8846b83798da7ed8a98137c4e8cb6f18    APPLIED     lxd/instance_instance_types: Convert logging to contextual logging in `instanceRefreshTypes` function
+bbdc307da8b632b5eb2fae943f8dc224e8c741b4    APPLIED     lxd/instance/drivers/qemu: Fix QMP arguments typing
+1f00f279192e3c4738a6982a13adb38c0a9839ce    APPLIED     lxd/instance/drivers/qemu: QEMU device naming consistency
+e0f99467da0ae6431c716d1ce6a66d41d34d104b    APPLIED     lxd/instance/drivers/qemu: Fix device_id warning on 9.2.x
+3768cfd7f652ec880599dc8a7fe6c47ade8bda62    APPLIED     test: Add wait_for_add call during test_container_devices_nic_bridged_filtering
+d5ec27b2292e57fe0b0c9956212cc9f17d0af1c5    APPLIED     lxd/instance/drivers/qemu: Set O_DIRECT when passing in FDs
+219e12864542ee2fe7367a34d22c70322bbcca97    APPLIED     lxc/file: Use the file extension of the edited file for the temp file, to help with syntax highlighting
+bd8dfd5486310b22b5f7f90e605177d7f338e48b    APPLIED     lxd/instance/drivers/qemu: Replace unnecessary fmt.Sprintf with concatenation
+eae806c19819e684033b193eb02c41e1ad5779e6    APPLIED     lxd/instance/drivers/qemu: Check type assertions
+46d6ec83e6c979eaab32e1f995ee90cf10141ae7    APPLIED     lxd/instance/drivers/lxc: Decorate errors
+4c83a564d5140e5c6d28dca1cc6fbbd3585f682c    APPLIED     lxd/storage/drivers/lvm: Remove nesting & improve clarity
+9ff322c248f21b77a33f1866f1bcf0efd367a124    APPLIED     lxd/storage/drivers/lvm: Count LV activation separate from mounts
+c533f68bc16684352182ae27f4d44bb88fcc84f1    APPLIED     github: Use `microovn waitready`
+be782ba2370947e49ab2aa97853db7a83bda1d96    APPLIED     lxd/db/cluster: Add StoragePoolVolumeType newtype
+22c0eab998beea01e368274cb1d036a7382298fe    APPLIED     lxd/db/cluster: Add StoragePoolVolumeContentType newtype
+94bb7f1e500593e40fa38bbe924ceff9234b594f    APPLIED     lxd/db: Validate newtypes from DB
+d4f98dc810adb32a527b43823fe3fa318965034d    APPLIED     lxd/storage: Use StoragePoolVolumeType
+949271804cbcd05becc27ac173d89f1957585ae2    APPLIED     lxd/db: Use StoragePoolVolumeType for query params
+4a4bf6bd4737f8b9069ec940b402d9d67cd32cb9    APPLIED     lxd/project: Use StoragePoolVolumeType
+9c841b53d4a32f3fd3ac381d2fcd63660eafef4a    APPLIED     lxd/device: Use StoragePoolVolumeType
+5dc533c2e809962ea4154868dab52ae95812d528    APPLIED     lxd/instance/drivers: Use StoragePoolVolumeType.Name
+7debd729af2c22bd7993abffbf4a952555d356cf    APPLIED     lxd: Use StoragePoolVolumeType
+16b517d5b6163375ba6165bde58c49a672275099    APPLIED     lxd/db: Use StoragePoolVolumeContentType
+380652b6f81776fd6b293a655f880b3a8b03dc7a    APPLIED     lxd/storage: Use StoragePoolVolumeContentType
+2a7bd564abfe8decd20323d60d8f8a31d0013310    APPLIED     lxd/storage: Replace VolumeTypeNameToDBType with StoragePoolVolumeTypeFromName
+57b1f3571d9539294769b07a8dcc6761e7afa122    APPLIED     lxd: Replace VolumeTypeNameToDBType with StoragePoolVolumeTypeFromName
+e36cb631087f64cf2d9ca6a58545c9edc87f9e6f    APPLIED     lxd/storage: Replace VolumeContentTypeNameToContentType
+e13de6a6b9364c98e68c69d23730f8d9ef78ea2f    APPLIED     lxd/device/disk: Replace VolumeContentTypeNameToContentType
+db670a1b57fa6d45f7ca95762204054c21cb00f4    APPLIED     lxd: Replace VolumeContentTypeNameToContentType
+35ac550f815c41b921336a388f195e7f9ecc143b    APPLIED     lxd/db/test: Use StoragePoolVolumeType
+078b4786333acd48d4d7503901dbf3ddd16429e7    APPLIED     lxd/test: Fix misused ContentType constant
+34914d90539d155c3a7fe60a0375bb5b758eece0    APPLIED     lxd/storage: Take advantage of type safety guarantee
+b0c576114a8640b6f853c5433503f6fa37765191    APPLIED     lxd/storage: Remove unneeded error checks
+e89ef2712a2dd6c9e81b32f500658797a056560e    APPLIED     lxd/device: Remove unneeded error checks
+61c410dbb61b6bc150a5d6e09b4c958df0bea61b    APPLIED     lxd: Remove uneeded error checks
+061a3bba86bfb1e7cfe69b98f21342989b249123    APPLIED     lxd: Fix linter errors
+ad9d6c20dffd314eb5f11e5d67ee9097f0bc8a4f    APPLIED     doc/cloud-init: Fix command example
+b11db8442a9a097aef9b191e0482c3db1e2271e4    IRRELEVANT  Release LXD 6.3
+38c51a31980228d96a112b9c567a8f9c9436344f    APPLIED     tests/suites/network.sh: Add test for fetching bridge info
+4efe4961e03b6b4344da52a2e389329f931398e2    APPLIED     lxd: start BGP listener after networks are set up
+a4807ae4744eb34e0ad738cdcd61dfbd867a9c21    APPLIED     github: Wait for microovn to be ready before bootstrapping the cluster
+8ca0c87b5eaace2fdad3ec1b4190e2b101e64133    APPLIED     lxd/storage/drivers/lvm: Decrement activation refcount when not deactivating
+339f9a0a86a97c7cf790daebd5d8660da143fb1b    APPLIED     lxd/db/cluster: Rename StorageVolumeType Name -> String
+126b9628ab69837b5cab837e89de727177d506b7    APPLIED     lxd/db: Use StoragePoolVolume{Content}Type.String
+4da26fbf25ca161e0484e7f5e293b7b2015154d6    APPLIED     lxd/instance/drivers/qemu: Implicitly convert VolumeType
+f0441aedd3018d6ed742588c5717c5389352f6c0    APPLIED     lxd/storage: Use StoragePoolVolume{Content}Type.String
+034c766395a8b0f388d114927975971f9bb3bd21    APPLIED     lxd/device: Use VolumeType String() method
+f8463fcd6b549a47c0eae1269f35b46e93c62b78    APPLIED     doc: add oidc configuration for ory hydra howto
+f44d87fe06be790ad04845c154949fde6ae784c4    APPLIED     lxd/bgp: Rework start/stop logic
+49ee6dabf6706a30f94257039683e77f7cdaf956    APPLIED     tests: Check starting BGP listener in network forward tests
+9b1d7703bd2f5e819a5b4485545fdb3870967baa    APPLIED     tests: Simplify getting bgpIP in network forward test
+4c6235a7674158a8d54a6d215c38686ea61fd8fc    DIFFERS     doc: Adds `clustering_groups_used_by` API extension.
+e807fd1a2a216cf7ec9de51f9d4c4fca123076df    APPLIED     shared/api: Add used-by field to cluster group.
+13ca0cc409874bfa5571ae30a137a9170381d2a0    APPLIED     doc/rest-api: Refresh swagger YAML
+07991910585e1bb8b818a9170cec5c0b254cf2c1    APPLIED     lxd/db: Remove ClusterGroupToAPI function.
+53286fbd696428abbf76b112134cdfb2e6f48a92    APPLIED     lxd/db/cluster: Add `GetClusterGroupUsedBy` function.
+9330d71f7f24aabaef2d6964c81755cbf629f012    APPLIED     lxd/db/cluster: Update `(*ClusterGroup).ToAPI` to return used by.
+29941e4c6db3bd201b38c92c67edb19c5ad2f35a    APPLIED     lxd: Fix `make` usage in cluster APIs.
+f2322a2450c24fde117e269bca43fa6365b43a2c    APPLIED     lxd: Return cluster group used-by on GET requests.
+1854842d239d65f14a33bda8d20201f074f09d8c    APPLIED     lxd: Prevent cluster group deletion when referenced by a project.
+9c38fc54be62df85ca65071042b0e649443f7046    APPLIED     test/suites: Test that a cluster group cannot be deleted when referenced by a project.
+1f4af84a7ba2b2e8d1f93b66124a15de1bdf5396    APPLIED     deps: switch to github.com/moby/sys/capability
+265d13139166754eb8d8ed506a00e1d44329f10f    APPLIED     github: add actions/require-gha-pinning
+12b5bd5a0b44a96510cbf9be6b9b4c03cdc014d4    APPLIED     github: require all GHA to be pinned
+e968ebdade197e3c7c73f83deeb6fecc38ad3a47    APPLIED     github: pin actions/setup-node@v4 to v4.3.0's SHA
+c6bc0a628ffbe18f65cb2a26b3d8d03d2911adb1    APPLIED     lxd/api_project: Fix condition checking associated profiles in projectIsEmpty
+95fa8a8690350e2725755811cd08fc98f319d541    APPLIED     lxd: Fix untrusted TLS identity POST endpoint description.
+8c67ffda0288a002d5354d5037efb774a5924556    APPLIED     doc/rest-api: Refresh swagger YAML
+d28bb1cc7342141f23ba9e633d2420682231a725    IRRELEVANT  gomod: Update dependencies
+0dc9043ac300efd43445fbe9bfb4131bd2c7cec7    APPLIED     docs: add oidc configuration with keycloak
+300516d6533597a4dfd0cfeeedd0702765fed359    APPLIED     test: check deleting non-empty project fails in test_clustering_storage
+27886e8948d04d14aa32a5baef6b569ea7b75b23    APPLIED     github: fix regex allow list for local actions
+b78ceae44d1d572f0bf57d1e76b334c807298133    APPLIED     lxd/bgp: Fix comment
+b97b084e9d43404d4f17f6c8b6037d6ad61f3f89    APPLIED     lxd/network/driver/ovn: Don't run bgpSetup twice
+752dd33d34bed8afaab99ff86ae19fe1a2e542b9    APPLIED     lxd/network/driver/physical: Do full start following change of parent
+aee19f2eb49a16835e36415b35829853434e39db    APPLIED     lxd/cloudinit: Update comment to reflect support for `none` value
+0d3f8d25a9dbbdf22a8b05631d6f494c9971a5d7    APPLIED     shared/validate: Support `none` for `cloud-init.ssh-keys.*`
+731bd0b5b38829a89c071b0477f773ca2601b559    APPLIED     lxd/storage/drivers/pure: Unmap volume when connection is freshly created
+6b7eab8cef8556a471d1feb2fa682d148212b746    APPLIED     doc/cloud-init: Document `none` SSH key
+197a0238f7f7d80c123f6e0c1716f4efc0e8de2f    APPLIED     lxd/network/driver_bridge: add "/" back into `fanAddress()` output
+c87f2f664545901d44ffcffff95d404cf2218d95    APPLIED     lxd/storage/drivers/ceph: Apply OSD pool settings in its own func
+f35a89a90dd8fb82db01165d150a424cda047bed    APPLIED     lxd/storage/drivers/ceph: Persist ceph.osd.pg_num changes
+63cbe0f53df0ccfdc239d9425c0df38427dcde05    APPLIED     lxd/storage/drivers/ceph: Reject update of immutable options
+8aff0a9893911d1cde501b66a8f5057dff76d1ce    DIFFERS     Makefile: ignore Go toolchain when building
+3e70184bd261f0aef88f3e34d5736bbd559721be    APPLIED     github: check that binaries are compiled with Go minimum version
+b24ee025b7d584af81e9168e7e128894bbe7b7ea    APPLIED     doc/howto/oidc_keycloak: minor revisions
+923ead2a29cae0a970d38a7e9e474b04779f9240    APPLIED     lxd/network/driver/common: Handle missing BGP peer
+bfb2bfac15e3f9c1751bddfd5459ce124ed52729    APPLIED     lxd/main_checkfeature: add bpf_token kernel feature detection logic
+d0169983f4ca045bcbd171262e32bce2928bd761    APPLIED     lxd/main_forkmount: bpffs mount with delegation support
+04045ebbf4f0e4524aec8e2870fb658b619a6fbc    APPLIED     lxd/api_internal: add start-host instance hook
+197db76b67533f6a490cdae78486be2ed941cc94    APPLIED     lxd/instance/lxc: add security.delegate_bpf support
+84db46d865ac46f036a8e3ae092df329e815bc5b    APPLIED     lxd/instance/instancetype/instance: add security.delegate_bpf* config options
+d2025f3e8c400bc63ef92af3a1632deb1b33c9e9    APPLIED     doc: add explanation page about security.delegate_bpf and friends
+20afdf0a472f94288bbe802f52e3912c4b94979a    APPLIED     api: add bpf_delegation API extension
+987cd08f75a6f0f658bd784d51431f7deebf5d0f    APPLIED     doc: Update metadata
+58535f042cb6fea84af45e334ee2770a7a63b7a7    APPLIED     lxd/main_forkmount: Fix linter error
+2a34b7ff5432d4cb702ba20822d0f7fece0ea43c    APPLIED     doc: hard-code additional link titles
+378e583e64f493ef76e8e2b8e31883922e070a9c    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.63 to 1.1.64
+1ecd5570bb738389f76f7ab3fc8ee5643eb5af9c    APPLIED     client/util: add legacyCurvesOnly param to `tlsHTTPClient()`
+9d1af842a765bee0e2e6f6678f19e86f8e11b62a    APPLIED     client/connection: use legacyCurvesOnly for simplestreams connections
+c9a0d761e2d73b641d47e700cf182410b95d13ba    APPLIED     github: add bug report issue form
+ee89fd636a9f366e8865a69970542af691b6a22f    APPLIED     github: add config file for issue templates
+77fa926d19ba16f57337f13e9d8a5aa434f302ae    APPLIED     lxd/firewall/drivers/driver/nftables: Fix regression in nftables port range rules
+5d5776e6c1046a629ce7219148e057fb656462ba    APPLIED     lxc: Fix QF1004 staticcheck and use ReplaceAll instead
+914224d40cd9e329f87ea0e6f9d4fc8ce81d7139    APPLIED     lxd: Fix QF1007 staticcheck and check condition in assignment
+27e1131daf2e92e3ec6929a278178ec4a8129eda    APPLIED     lxd/instance/drivers: Fix QF1007 staticcheck and check condition in assignment
+2a40f40cae60756a705387e1b4008ce77f1ae3b4    APPLIED     lxd/instances/drivers: Fix QF1003 staticcheck and use switch statement
+5c9f03b8aad2497d6085cad123a6d2be27251fd2    APPLIED     lxd/instances/drivers: Fix QF1008 staticcheck and remove embedded field
+1945af8d97da9cab216c89b823dbea9f176388d1    APPLIED     lxd/instances/drivers: Fix QF1009 staticcheck and use time.Equal
+fe488f53d71e0bd2915978a52665b947d3c5748f    APPLIED     lxd/instance: Fix QF1001 staticcheck by applying De Morgan's law
+5c8411b952dd615502043fd87976cacbf66a7761    APPLIED     lxd/storage: Fix QF1003 staticcheck and use switch statement
+6f3d65d58b53be0bf7dbf716998fc1b2b2a54314    APPLIED     doc: add google analytics consent banner
+1cbd550a4cc927aa755a6c82ce146845c6d2e297    APPLIED     github: add feature request issue form
+5ff0265e0be94aafaaf11f1a9cd29311448686c4    APPLIED     doc: add localhost:8080 to linkcheck_ignore
+a550d438a91533f832f307a3ab9041f13936be5f    APPLIED     doc/api-extensions: add doc reference link to container_bpf_delegation
+190513055641ede732c21c70aebdcacaab5468d5    APPLIED     lxd/api_internal: use logger with context in internalContainerOn* hooks
+5067c15451bdb84722b282a21aa4bfbfbf63a4d7    IRRELEVANT  lxd/instance/drivers: Use full device name in `device_id`
+5451354ce180875fd3cb5ce75e21581dc7782f1b    APPLIED     meta/instance-types: drop now unused instance types
+2e18e59747246b7e6a0207afc0a0e7990053cdac    APPLIED     lxd/db/cluster: create admin group with server admin permission on install WD-20464
+dfa0c5b010cefd868a362a28fc2e42fff0e7d7aa    APPLIED     doc: annotations when integrated in microcloud docs only
+89a89e0785d80b5f7cf0c86e9597d8814cd36dd4    APPLIED     api: Add override_snapshot_profiles_on_copy extension
+83af5610d727169f9c0e2f5252dacd2c817d4fd5    APPLIED     shared/api: Add OverrideSnapshotProfiles to InstanceSource
+38db75edbe05b4e6a4d28f83efda3a00403886de    APPLIED     doc/rest-api: Refresh swagger YAML
+bb3a3191fc431e1ba948a3d013560e793a52e488    APPLIED     client: Add OverrideSnapshotProfiles to InstanceCopyArgs
+2e0e23ad7e3e97694cd77854480dd2bd4de7226b    APPLIED     lxc/copy: Set snapshots to receive target profiles with --no-profiles
+8ce0b5005fbe964bb2d4d095f845cf1152c49daf    APPLIED     lxd: Fix profile on instance snapshot copy
+d736f570a7b14fe643adca94ee283aa4f636b50d    APPLIED     shared/api: Add OverrideSnapshotProfiles to InstancePost
+c2d3a1726f4e808d2d12a475f3ea4bf216a98e80    APPLIED     doc/rest-api: Refresh swagger YAML
+7554619b4dd5fa40b0ae69f7b72be223e8ed4175    APPLIED     lxc/move: Set snapshots to receive target profiles with --no-profiles
+0430ca3233df0e88a170258c22103b1159c3c116    APPLIED     lxd: Fix profile of instance snapshots on server-side instance move
+d0ef43d9f8f3afcef767ddad8633020c45432662    APPLIED     test/suites/container_move: Improve test for server-side instance move with snapshot and profile assigned
+9bfa1b6ac3019c6f17f3e8aefc90d01c489ca9c0    APPLIED     test/suites/snapshots: Add test for copy of instance with snapshots and profile assigned into new project
+27e869d3565f5f1f06e60311abb1a857dbe4a586    APPLIED     add steps to verify lxd host support for vms
+00d96f405bb4dce58d87bf5e24f82bc134893707    APPLIED     github: run LXD UI tests on ubuntu-24.04 runners
+9e6454783658ed67ed7cbb9de10fc487598c4ec8    APPLIED     Makefile: drop version check on shellcheck (0.8.0 is old anyway)
+b42d01737df4cadce610e45c032cff937f0dea47    APPLIED     test/suites/storage_volume_initial_config: quote variables
+c073d7a91134a752384ab995556b25e1d7493754    APPLIED     Makefile: be less verbose when checking lint scripts
+866bd2b8853ed85ce9f7f48fd31ebc12b575ca20    APPLIED     test/suites/container_devices_proxy: use IPv4 variant of socat listener
+a0fd480e5160118b5d23bee7df71620a7be96b92    APPLIED     test/suites/pki: drop support for pkitool
+e96b7865e13fcbfdce81e03cd729806ec2176519    APPLIED     test/suites/pki: create vars file to silence warning
+d4c65b4492f2d8d1d1d84a346816769c703dc829    APPLIED     test/suites/pki: use ECDSA instead of RSA
+3cf6b1fdb0bc79ef7dc3fc6d6962799442fad755    APPLIED     test: Fix deprecated chown syntax
+28940efc352f48bbba5572b9ce7744e6ac47afc2    APPLIED     test/suites/storage: modern xfs can only handle 300MiB or more disks
+c6a9602ff9e7c77d91445b9e4fd6d5570e5706cf    APPLIED     test/suites/storage_driver_ceph: modern xfs can only handle 300MiB or more disks
+188405b645f06e69083385b9a4b41722ff04d7c4    APPLIED     test/suites/storage_driver_pure: align xfs min size comment with other tests
+b2842c1c30c2ae4abbd1c2ea9a081ae834cb8462    APPLIED     test/main: report `ceph status` on failure
+81d5af178f859733ec5a3b42e4e8eb7c3bd9fa9d    APPLIED     lxd/instance/drivers/lxc: reduce log level when unable to get disk usage
+0ec71de8fa03f625c2fcced9e319eaa8dd278f0b    APPLIED     lxd/instance/drivers/lxc: reduce log level when unable to get volume disk usage
+70d661e9e4e2d249549aa5664af800be916b442c    APPLIED     lxd/instance/drivers/qemu: reduce log level when unable to get disk usage
+053254ccdf1000c7352f564a70b3f5888efc92af    DIFFERS     lxd/instance/drivers: Device `serial` with a max lenght of 36
+e1bda76a93b6d756da52905580d3f7b437f6f079    APPLIED     update: how-to-manage-storage-pools-update
+48e529f17fa62b5ad0bd93f29840d859f8087932    APPLIED     lxd: Fix request body struct in swagger doc.
+f808c6a560b390e7c5beff5fdcb21223be4928ac    APPLIED     doc/rest-api: Refresh swagger YAML
+f4a70dbd408e470afe4469aa3d36d9b872f41033    APPLIED     lxd/storage/drivers/ceph: Fix import of iso images smaller than 512B
+dcb0cc4c3c9fbc24f73cdcaaa1d779862bd42eff    APPLIED     test/storage_volume_import: Test with unaligned image sizes
+be4ad99992757cf078c7426c35cc4ecd45f2f4e7    APPLIED     lxd/instance/drivers/qemu: Fix NUMA node binding with simple CPU count
+9aff2b3e29a0b28a53fde3b82af2dc192dd03364    DIFFERS     Makefile: Bump go min to 1.23.7
+34b92553f70117bd76068ae1a57dbc0635773d63    IRRELEVANT  gomod: Update dependencies
+987aa37f386821c594115d05e7151d5524ef8072    APPLIED     lxd/operations: Replace waitForOperations by `pendingInstanceOperations`
+afef2f3f9dd926903eb01803032b9172a4b10161    APPLIED     lxd/daemon: fix linter warning (`QF1001: could apply De Morgan's law (staticcheck)`)
+d3a6fcad813e8e4c3daf5876c9ac119750f78d87    APPLIED     lxd/daemon_storage: refactor `daemonStorageVolumesUnmount`
+8583d5609e5e3201d4288a8b1b35931148edeb0d    APPLIED     lxd/instances: utility functions used for by the refactored `instancesShutdown` function
+fe8ecb7f3e99607b6605a33b140b46256a0f33fb    APPLIED     lxd/instances: Refactor `instancesShutdown`
+0fb7a3c35333c6b73d6277d412098c582e07b54e    APPLIED     daemon: Refactor daemon.Stop method with new instances shutdown logic
+a643baea62eae4448ebf18ffb5e6e38170120d6e    APPLIED     lxd/operations: Add internal operationWaitHandler API handler logic.
+c790666d012bba6a9c2428c9223bff0d5bcbbe66    APPLIED     test/includes: various helper functions for the LXD shutdown sequence tests
+e08ef31e3531d71330c2d00e5230858c9ad5fe14    APPLIED     test: Add lxd shutdown sequence tests
+b565ed103e2212333261b25aba4e8d2981483eca    APPLIED     lxd/storage/drivers/lvm: Correct comment
+3182b512d955a525f435b27c9ded69fcff2bb53c    APPLIED     lxd/storage/drivers/lvm: Move log message to after unmount
+c43c9eb60ceb171b5d52910472c570b0d3b39739    APPLIED     lxd/storage/drivers/lvm: Use `UnmountVolumeSnapshot` for snapshot volume
+42baf784396275c607c88fe2889dc6a6ae22444e    APPLIED     lxd/storage/drivers/lvm: Factor out volume mount logic
+9af7af9178cce887a99126e0be48763b5a82a2fd    APPLIED     lxd/storage/drivers/lvm: Factor out volume unmount logic
+a0e4511d318414031d801757f116f6fe192a8bcf    APPLIED     lxd/storage/drivers/lvm: Only unmount on deletion when mounted
+604f533509f3649e8f053065332a8634b8b6ab7f    APPLIED     lxd/storage/drivers/lvm: Use `ReplaceAll` (staticcheck)
+64813a42cb88ce5c0661c4d91cdaa24df66281e2    APPLIED     lxd/storage/drivers/lvm: Use `Split` (staticcheck)
+ae155ccdf5851d96c1fa5156bcc38f11f0477b81    APPLIED     lxd/storage/drivers/lvm: Use tagged switch (staticcheck)
+142d096f35452bd349e1397b03b9628b7a12de2c    APPLIED     test/suites: Test container volume activation
+51f12f2bd157a4bc66e30ea059c64cd2c0f7313a    APPLIED     lxd/db/cluster: Delete unused instance `ToAPI` method.
+eb44095b919a50e3a12b32e1f82d2ca5162d1062    APPLIED     lxd/db/cluster: Remove `cluster_test` package.
+91f54857d11ff09ba5a1793fc9e8f33d7b750239    APPLIED     client: Fix lint error (revive: unused-parameter).
+0e730f6f3a667fafc200ba8cefe1736aa7e43ee5    APPLIED     lxc: Fix lint error (revive: unused-parameter).
+5f7ad3cf55bdafef6adcaccc95346e14bcba03f7    APPLIED     lxd/db/cluster: Fix lint error (revive: unused-parameter).
+a6e8de771ec3ec50f240ba38ea18997af15973b6    APPLIED     lxd/instance/drivers: Fix lint error (revive: unused-parameter).
+c26e5a42ff9f46a24daef2ce364eab34717cd59a    APPLIED     lxd/storage: Fix lint error (revive: unused-parameter).
+9b71bd6f341eafe4840663eb37d16f2b9bbc9722    APPLIED     lxd: Fix lint error (revive: unused-parameter).
+fe86c9d0fb8c1b055adf609d8590450384536de4    APPLIED     lxd: Fix lint error (revive: early-return).
+db7505bfc76853762a205a9a17ad69f5dc4802f0    APPLIED     lxd/db/cluster: Fix unique constraint test.
+c201c7b2fd1f446b03c19bff978b21c0b24e4ae7    APPLIED     lxc: Fix linter error (staticcheck).
+28db5792ccd2d867e461642e698ce99a7ae89b0f    APPLIED     github: add 'Feature' type to feature request template/form
+bf5398f7952dbb467c40324d9f86879c8213dfce    APPLIED     github: add 'Bug' type to bug report template/form
+f7e6fd342ac66ca57db208ce479b6660b2e5adbf    APPLIED     github: replace 'container' with 'instance' in bug report template/form
+77503afa30d9a03fe07d617e69ff71448f751250    APPLIED     docs: add scripted grafana setup WD-20339 for recent LXD-UI 0.16 onwards
+b53f5c00c958dca66d733cd9c5f6d6c970b58ba1    APPLIED     lxd/instance: Don't enforce device/config validation on snapshots
+be0b8142e7319b5e326e87c6055f939ea790dfcf    APPLIED     lxd/device/cdi: ubuntu core: add mesa-2404 contents to config search paths
+9a99f93ad797526169d8767778023267ba57a70b    APPLIED     lxd/instances: Adds missing project context to logging in instancesShutdown
+35dadb1a633c1ed04627c0cc0825a731f9e8ae6b    APPLIED     lxd/instances: Uses instance level contextual logger in instancesShutdown
+bce62a515493d1e66f69c83920f802311b34e3b1    APPLIED     lxd/instances: Logs failure to update instance volatile.last_state.power during shutdown
+4a8914db7ebccb2fa781cc6029345872c796c5fd    APPLIED     lxd/daemon: Reduce scope of shutdown context and dont use for storage unmount context
+c78e84ea8000bce73ae2139fcf0d924cf60e648a    APPLIED     lxd/instances: Add repeat log message every 10s when waiting for instance operations to finish in instancesShutdown
+2a5a98982077208da41623ff4de14840273a514c    APPLIED     test/suites/migration: Add test for config override for migration of instance with snapshot
+2db31b822d6b2a59c73c5995f83b9c999ea66775    APPLIED     lxc/move: Set snapshots to receive target profiles with --profile
+ae720dde969ffcaadbccf4aa418d2c67d8552e31    APPLIED     lxc/copy: Set snapshots to receive target profiles with --profile
+465b688a107adc2afa1503a3b0a51695521bbeb8    APPLIED     test/suites/snapshots: Add test for move of instance with snapshots into new project with new profile
+a0522eb4880eaad69fcd1dd7bf8e295d8ae60779    APPLIED     lxd/main_forkproxy: Improve variable naming consistency in `genericRelay` function
+26b9264e72f7377fa4a10af8fefd5068825088bf    APPLIED     lxd/main_forkproxy: Rework `genericRelay` function to support half-closed TCP connections
+7d74a1b3f0d1b6d5410771526a46da0802ef98bc    APPLIED     tests: Add container proxy device test for half-closed TCP connections
+8eb24925b1f0fe3aea8aafb8add7f3b9bc6d6ea7    APPLIED     lxd/device/tpm: use `%q` format specifier in `fmt.Errorf`
+816d8c1077933956ab98465ea4d322866ff7cf42    APPLIED     lxd/storage/drivers/ceph: use `%q` format specifier in `fmt.Errorf`
+6a18ac498cae9669b43bd92e8b864cac49d71804    APPLIED     lxd/storage/drivers/cephfs: use `%q` format specifier in `fmt.Errorf`
+d841a0c56d27d22f28c8d7f62fa4fafd4cc77df8    APPLIED     lxd/storage/drivers/zfs: use `%q` format specifier in `fmt.Errorf`
+0a904212025a404f30fcf5665bc1935ddc26ad1c    APPLIED     lxd/storage/drivers/zfs: check ZFS kmod version earlier
+9952ef8af16f4350fdccd3699c80325931bb484f    APPLIED     lxd/storage/drivers/zfs: suggest `zfs.external` if in snap and ZFS tools are missing
+8856c14bdba31411364d689f61b38ae26034269f    APPLIED     test/lint/godeps: allow updating lists
+cfef99c162a02fba51e9204d723aefabba2016dd    APPLIED     test/lint/godeps: improve messages
+3a1290397bf5bdfbcce99a6e6f96a47343bc80ba    APPLIED     Makefile: add update-godeps target
+79efa016216f33693cb3cb94d41039ed92bbf836    APPLIED     lxd/network: Improve network priority in networkStartup
+40f7e1b8f7870a909d931479edcfd6ad259ec4b0    APPLIED     lxd/network: Fix linter errors
+e8b91505c54341a0e29c0f406ae7d406eade566e    APPLIED     test/suites/backup: On cephfs add sync calls after `file push`
+ab7de8bdd4731d0c732fff419df60cd8eb277a88    APPLIED     github: enable code coverage for client tests
+97b2800e1ba53ad284e77fc9b4e88163211b6c6c    APPLIED     github: merge multi-arch lxc client build
+ff7c0b903638de54cd99c359133baad2271b55a7    APPLIED     lxd/db/cluster/open: Return api.StatusError from checkClusterIsUpgradable
+6327861522b3b1ed212163a96a2031a1ac3fb405    APPLIED     lxd/db/cluster/open: Improve error messages in checkClusterIsUpgradable
+5007940dc1f2ce3ec1a7c30abf748497659a663d    APPLIED     lxd/db/cluster/open/test: Update tests
+1470442601bc18e1dadbcc37ccd02a8961a7d677    APPLIED     lxd/db/schema/errors: Removes unneeded ErrGracefulAbort error
+bebfe391ec59223392ffc70f884b67096a22abe4    APPLIED     lxd/db/schema/schema: Plumbs api.StatusError returned from s.check in Ensure
+66a55de9964a9c837fedac685f3f9e0489c9334a    APPLIED     lxd/db/db: Handle api.StatusErrors returned from EnsureSchema in OpenCluster
+b710e8a920e4548618f5b8204708c018ad14f31d    APPLIED     lxd/daemon: Handle api.StatusError returned from db.OpenCluster
+3b6ed6c2b4bec216d8b58fd752303eec9ad8f0c5    APPLIED     lxd/cluster/membership: Updates cluster.EnsureSchema usage in Join
+c43505fa3b0572ee8eae86e62d41a7cb7c1bc73e    APPLIED     lxd/db/schema/schema/test: Update tests
+16cf596cbaa78579bb4612b04d5c8bc9ee16e53d    APPLIED     lxd/db/db: Linter fix
+ab093b4a94ca84fe36e37495c509c72dd66790c2    APPLIED     lxd/db/schema/schema: Linter fix
+b567f6f86b5d4c9cc4ec529171bcbd811ad5b518    APPLIED     lxd/db/node: Align error messages in NodeIsOutdated
+6f2fd5a6fc704d45fd19cf5da4bac19c3858d7d2    APPLIED     lxd/db/node: Use passed context in nodes function
+2d8ebd1956a34f704e496b22fdf76a0c476ce17c    APPLIED     lxd/api/cluster: Only get failure domains during recursive mode for clusterNodesGet
+1ef38254238ddcbe29fbc45a46dbb261740e6ccc    APPLIED     lxd/cluster/upgrade: Replace node with member in MaybeUpdate
+0051572418710857cd7e7404eb083a7be7745fe2    APPLIED     test: Fix typo in clustering tests
+3ce38b8ac7fba8802caf8088ce623c780c89d01d    APPLIED     lxd/db/node: Updates ToAPI to correctly account for status in comparison to other member version
+cc14d2b45785a58b74315ef581ccd6753d5ed563    APPLIED     lxd/api/cluster: Update clusterNodeGet to use updated ToAPI function
+5e5925fd079bb9b8274833c9f05c45fcc34734ce    APPLIED     lxd/api/cluster: Updates updateClusterNode to use updated ToAPI function
+faa036602605bb7e8a6ced95c243a0e92232bcde    APPLIED     lxd/scriptlet/instance/placement: Updates InstancePlacementRun to use updated ToAPI function
+7b2252c0e47834f28ca2a298069f15d2e6890785    APPLIED     lxd/db/node: Removes unnecessary function GetNodeMaxVersion
+f33546d25914b97bcc02cfb3966d485fcf6bebc5    APPLIED     test/suites/clustering: Fix clustering_upgrade test
+4f4feed2c0bb04959fe289e4d86fb5de750ae784    APPLIED     test/suites/clustering: Adds clustering_downgrade test
+2c923557bb6056a1ca727bd11406e30f7518395c    APPLIED     github: Enable clustering_upgrade tests
+da5a138927364718964d0990f5e0dd647734f972    APPLIED     doc: Force white background for swagger API
+65c7e31ba80ddc6f671a4eb7a430e98c4c7615ac    APPLIED     lxd/db/cluster/open: Update comments in checkClusterIsUpgradable
+98d3471566d2d2f25bd707a826595be73178f0ca    APPLIED     lxd/instance/drivers/driver/qemu: Fix regression when hotplugging virtio-blk drives in addDriveConfig
+0f51d428f845c6c7b456e2fdfc711b99bb90d82d    APPLIED     api: Add resources_device_fs_uuid extension
+12b28d1576ab509cd10ffd0f88e9beafb2cbb491    IRRELEVANT  build(deps): bump golang.org/x/sys from 0.31.0 to 0.32.0
+d21e920dc745a1aafa9755bb506d75508de1f43e    IRRELEVANT  build(deps): bump golang.org/x/text from 0.23.0 to 0.24.0
+a67ad1bf6cdd99165cf3d689f5069f904778cc0c    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.36.0 to 0.37.0
+444af0cfc79daf11f3bcba639d760735917c8c6b    APPLIED     github: fix macos client build due to `mkdir -p`
+0348c3c701e8ea759a719c877fe2c8b15424ba93    APPLIED     github: Go coverage options need to be last for `go test`
+bd58da70b6324014a4896883eb0ab030fe944c4b    APPLIED     lxd/device/disk: Fix attachment of ceph instance volumes in default project
+2955c4fb83a34fbf5846cd8059c3d0d9fad279d3    APPLIED     lxd/device/config/device/runconfig: Moves DevSource types
+ebca54c97e24871382881ccbb0d6ec587a6a438d    APPLIED     lxd/device/device/utils/unix: deviceConfig.DevSourcePath usage
+c4bd5d53b1e45af0409e3fce360fd026aafb62d2    APPLIED     lxd/device/disk: deviceConfig.DevSourcePath usage
+afc04ddc00732bec6dccfea43a6a1a59a9e9e0fa    APPLIED     lxd/device/gpu/physical: deviceConfig.DevSourcePath usage
+f6c6cc93b03498fddc407062e5bd6a6e74e2b15a    APPLIED     lxd/instance/drivers/driver: deviceConfig.DevSourcePath usage
+b88c9e3f0a8277cb16fe2352e37681082bc7c969    APPLIED     lxd/storage/pool/interface: Change MountInfo to return a deviceConfig.DevSource rather than string DiskPath
+e9af37989eab8fd2fa7dfbfc8c9dc677f6a10a00    APPLIED     lxd/instance/drivers/driver/qemu: mountInfo.DevSource usage
+86d3678ffcc104c61a4d01c8a25e2adecb4bed44    APPLIED     lxd/storage/backend/lxd: Update MountInstance* to return mountInfo.DevSource
+70a9419beac7da6784f4ad21788f9d6136fef7d6    APPLIED     lxd/storage/utils: Updates InstanceDiskBlockSize to use mountInfo.DevSource
+5898fae92821b97817f6d385a836a59ade367b11    APPLIED     lxd/device/device/utils/unix: Linter fix in unixDeviceAttributes
+2375e8376cbfee63bfd5f02d30e8b62c8bbb4574    APPLIED     lxd/device/disk: Linter fix in validateConfig
+164be25f6262bb51f72e3879f973225873072ccc    APPLIED     lxd/device/disk: Linter fix in storagePoolVolumeAttachShift
+5957a3ac665dee25117bc02a7da2b3aa5c07dc7f    APPLIED     lxd/device/disk: Linter fix in generateVMConfigDrive
+02cdc5804957b935d57c239dcc251f0901872641    APPLIED     Revert "github: fix macos client build due to `mkdir -p`"
+0ec661fe1e0ec295aaba5251dab0c57d0029b95e    APPLIED     github: don't hardcode the runner home in GOCOVERDIR
+e1f4c62a4ef4a70e49d89316b9ab602dfe6db732    APPLIED     Makefile: bump golangci-lint version to 2.0.2
+ce62b5311b20555bc7de9a0331d3fa5ae82c6bd6    APPLIED     lxd: Log warning if Loki server is unreachable during init process
+cb9e1f5ef001178ed73c0f37f06ffc50fe9a126f    APPLIED     github: only keep shellcheck report artifacts for 1 day
+2fd67cab5a03a00de99768388827febde8dd84b4    APPLIED     github: only keep coverage report artifacts for 1 day
+e4d1551b7bae12b965beebfd8b28fbccffc9a440    APPLIED     github: only keep documentation artifacts for 5 days
+efbf416099f1f6a56934d8a26d6e8e003ab4f2d6    APPLIED     Revert "lxd/ubuntu-pro: Change Ubuntu Pro directory."
+91a88e4ccfe6152a25b65967d39a10b5512f63ca    APPLIED     Makefile: Add auto-commit for `make update-auth`
+13711d8697e77f657bb26163e65bf46f89b1cfd0    APPLIED     lxd/storage: Move `volumeDetermineNextSnapshotName` to `storage`
+26b62d71a3dbaeee270a5a05fe1194acc2622690    APPLIED     lxd/storage: Lock operation before creating DB record
+692b19132752812c17cd1b1104bc20f5d11a042b    APPLIED     lxd/storage/utils: Update `volumeIsUsedByDevice`'s arguments
+b676ab6b9fc98cd9e125a4e5fea39d1ad1d40652    APPLIED     lxd/device/disk: Minor simplification
+86c508a594ea07f8e4af460f0d4fd43bdc3b17dc    APPLIED     lxd/storage: Use `IsSnapshot` instead of `GetParentAndSnapshotName`
+a445f13881be9d5853ae50e1e70f4feb61767c0d    APPLIED     lxd/storage/utils: Fix import format (gci)
+a39eb5f790c19ab180fdc5c1da137aa5a14cc826    APPLIED     client: Update client functions in `lxd_cluster.go` to construct URLs using `api.NewURL()` and replace HTTP method literals with constants from `http` package
+b7bd565df3354b013d4526c03e952adc6b927338    APPLIED     doc/reference/instance-options: clarify wording about volatile key manipulation
+07f6e09b0e89dfaee19b63f058bfcfbe4466a93c    APPLIED     lxd/device/disk: Avoid duplicate iso9660 logic by not creating a new mount var in startVM
+3c10524822edb94f9295aa13bdac72d8668aee4c    APPLIED     lxd/device/disk: Ensure mountPoolVolume() is called even when using Qemu's librbd ceph client in startVM
+781b295370990c65ed3cb09d8cda71535c46f430    APPLIED     test/includes/storage: unset `core.storage_buckets_address` in `delete_object_storage_pool()`
+64c62dafc60e5536a3f231c2b4b0ea5506ffe87b    APPLIED     build(deps): bump actions/setup-node from 4.3.0 to 4.4.0
+67acb754091db074a09e3fb32b2820f2b24d3f29    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.31.0 to 0.32.0
+4515088d9a60a571cf8e2da18e08ad0381028068    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.64 to 1.1.65
