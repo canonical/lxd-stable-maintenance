@@ -4333,3 +4333,12 @@ b7bd565df3354b013d4526c03e952adc6b927338    APPLIED     doc/reference/instance-o
 64c62dafc60e5536a3f231c2b4b0ea5506ffe87b    APPLIED     build(deps): bump actions/setup-node from 4.3.0 to 4.4.0
 67acb754091db074a09e3fb32b2820f2b24d3f29    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.31.0 to 0.32.0
 4515088d9a60a571cf8e2da18e08ad0381028068    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.64 to 1.1.65
+52b7ae2ac55370f43fd065a4a55bfe903325ac66    IRRELEVANT  gomod: Update dependencies
+7af1803489db40c4fc8b2f83b7cd7d7d8e254b61    APPLIED     lxd: Check groups in `restricted.cluster.target`.
+eafee580018f8bfe1de468b1b10f7f6c052dca95    APPLIED     lxd: Filter cluster group used by URLs.
+d7d451a701c26457e4900eb56132194059dc41d7    APPLIED     test/suites: Test restricted/fine-grained clients can't view projects via used-by URLs.
+5124901ff1ebe0ceb8af0acebfa14613be8cef8d    APPLIED     Amended documentation with a better way to setup DNS-resolving LXD containers from the host machine.
+adb10944bbba5d3daf7e04d70391ec745e09f5bf    APPLIED     doc: Update manage storage volumes
+ad0a666506175f6434dcbe47bf5b4fd3a99dab1a    APPLIED     doc: use redirects_map.py to store redirects
+17b6ae5dae1c19200223880c94dcb04313a6c21f    APPLIED     lxd: Fix regression that prevents listing members in non-recursive mode
+e47c1c4b1cb5a896cef03e2504f411228ef70127    APPLIED     test/suites/clustering: Check recursive and non-recursive mode when listing cluster members
