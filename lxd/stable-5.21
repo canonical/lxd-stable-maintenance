@@ -4342,3 +4342,270 @@ adb10944bbba5d3daf7e04d70391ec745e09f5bf    APPLIED     doc: Update manage stora
 ad0a666506175f6434dcbe47bf5b4fd3a99dab1a    APPLIED     doc: use redirects_map.py to store redirects
 17b6ae5dae1c19200223880c94dcb04313a6c21f    APPLIED     lxd: Fix regression that prevents listing members in non-recursive mode
 e47c1c4b1cb5a896cef03e2504f411228ef70127    APPLIED     test/suites/clustering: Check recursive and non-recursive mode when listing cluster members
+63208ba2ec4c9c3ad093a943c8de94f9098c138c    APPLIED     lxd/storage: Log a warning if syncing a container volume fails
+a061ce13fc1feb9b4a74ccf9f8431ebef40da2fd    APPLIED     lxd/storage: Flush writes before custom volume snapshot
+b2d28b776a3774497185dff9b83ae9e34baa6b4f    APPLIED     doc: update spellcheck custom wordlist
+07600bff88e3ab9233b26055d185b852fae0113c    APPLIED     doc/rest-api: update put vs patch
+dac1e78f3f532a1486da41f4909cbb1c602875fc    APPLIED     lxd/storage: Fix instance path on `SyncFS`
+e0d319879be7a89ee63426489b008dac2af2b0d1    APPLIED     lxd/instance/drivers/driver/lxc: Trigger schedule rebalance after DB changes made
+b97c4aaf94eb051545393f8a56e1ecce212394ff    APPLIED     lxd/instance/drivers/driver/qemu: Update comments
+c9c9554c170c29d43401b73e932989e5576fb25c    APPLIED     doc/custom/conf: Ignore link checking of https://www.schlachter.tech/solutions/pongo2-template-engine/
+01dccd9428cbd1678b9924577f9551926f613bd0    APPLIED     test/suites/clustering: fix typo (`s/firth/fifth/`)
+ff90692bddb77e9311f790e34fd7bab356cf5d1e    APPLIED     github: rework how GOCOVERDIR is handled
+af639d7b02f4e78b43d6c453929390d7b88f68ac    DIFFERS     api: Add backup_metadata_version extension
+1c57dc4c977ce3cb1b8e84fef06b2518187d7708    APPLIED     shared/api: Add BackupMetadataVersion type
+16b24ed11ff5058d055c37596cf4b0ed59914cf7    APPLIED     lxd/backup/config: Add DefaultMetadataVersion const
+e320966c14faf74306cf8ec2c61878652797735d    APPLIED     lxd/backup/config: Add MaxMetadataVersion const
+72e35c5040bdc1062ad4dfb0761700227097b3b8    APPLIED     lxd/backup/config: Add new keys and mark outdated ones as deprecated
+2cf945692bcf67e8d0a8c3b7cdf20d3cc51f56bf    APPLIED     lxd/backup/config: Add new utility functions to retrieve pools and vols
+c321a2cd20637d63f5fe2bf9c68c659979100f74    APPLIED     lxd/backup: Add new helper to upgrade and downgrade the backup config schema
+5469ccda2fc57790354e1b7d6ce6b85e2962aee6    APPLIED     lxd: Use the new config format keys
+d4b1f76a9f5f6455a847c11fb82b2fd2a2f1952a    APPLIED     lxd/backup: Use the new config format keys
+b1f759c0ae85bd035d5cf7c394985d85dc5f9fbc    APPLIED     lxd/instance/drivers: Use the new config format keys
+58c94eed51a33e3711f4968465d397ff03d9b610    APPLIED     lxd/instance: Use the new config format keys
+c1e2f9497b4fd5f32d213cde09bca8a282ba3590    APPLIED     lxd/storage: Use the new config format keys
+18331ec4f84b8d48399cae88e7441cecbd894421    APPLIED     lxd/migration: Add new index header version 2
+a19e2a15f8b6c949d496a22d5e9dc70bbf317ccd    APPLIED     lxd/storage: Upgrade or downgrade the migration config metadata
+fae7821d67331bbccd4746d477541c777e682ee4    APPLIED     shared/api: Add BackupVersion to InstanceBackupsPost
+873358350a5e446770208229e725c27b58dd854e    APPLIED     lxc: Allow setting the backup version when exporting instances
+bab57a63c8361a98554484e626660b31b64bdefa    APPLIED     lxd/storage/interface: Allow passing backup file version
+86c666f283174adf2cd80c45be2ad1fd56dbe803    APPLIED     lxd/storage/backend: Modify function signatures to allow passing backup format version
+413e7772b3cdb1312e30942b84d37437a6762abc    APPLIED     lxd: Pass the backup format version when creating instance backups
+e9385bc9ca343722b44ba8ab761891fd362db903    APPLIED     lxd: Fall back to the original (old) backup format when exporting instances
+4976f1a1831061b1f7086f94c5c53a983f551c20    APPLIED     lxd/instance/drivers: Update invocations of UpdateInstanceBackupFile
+d5996fec53d23ceaa4c09703e14dc3daaaee502a    APPLIED     lxd/storage: Update invocations of UpdateInstanceBackupFile
+0d8b1863ba16daf76e110732d80279abde9c9049    APPLIED     lxd/storage: Downgrade instance backup file only in the last step
+0c88071eec9168fefe124012c10a2bc68dcf3e5b    APPLIED     shared/api: Add BackupVersion to StoragePoolVolumeBackupsPost
+9cfc02fd72ee0a99a32a40badd7638747136d734    APPLIED     lxc: Allow setting the backup version when exporting custom storage volumes
+16e374d54d23a1400c7a051efb48f77af8e68641    APPLIED     lxd: Fall back to the original (old) backup format when exporting custom storage volumes
+46e4fc1404a194f90d7afcef289b403fdc7de6ae    APPLIED     lxd: Pass the backup format version when creating custom storage volume backups
+f045e958ca017e96a34be838372963fd75b249f7    APPLIED     lxd/migration: Linter fixes
+5a10d5f14c318622915217cd24d7817a4ac13049    APPLIED     lxd: Fix error messages
+45272742448de72c415cc676545c599ee57fd201    APPLIED     doc: Document new --export-version flag for backup creation
+f25d2f48546681b8379b9a642b6dbd3b7e8cb957    APPLIED     shared/api: Add new BackupMetadataVersionRange field to server environment
+b30ed54205346d652488ed0336a10e34daccf065    APPLIED     lxd: Add BackupMetadataVersionRange to server environment
+d839a00b687a123aaebcd8d94e98bc69e9a387ee    APPLIED     doc/rest-api: Refresh swagger YAML
+e2dc6af773717ffee20d3c0ae818dcc342a04251    IRRELEVANT  i18n: Update translation templates.
+25281f920a17d89bb9d4091619e622486861957e    IRRELEVANT  i18n: Update translations.
+89d741c74fc8f740b5d3dcb5d66eefe1b73655b6    APPLIED     test: Add yq as dependency
+b55427d93966c197cb8534d9eb6052eb00501fa9    APPLIED     test/suites: Add test_backup_metadata
+902dbaf2d9b4819d0d8bb9d5f786652b3e6916a8    FEATURE     lxd/backup/config: Set DefaultMetadataVersion to 2 for LXD 6.x onwards
+bf78af79f2c5e0b645a4bbd1873a4924ee9f3300    FEATURE     lxc: Add note about export version for LXD 6.x onwards
+3d44faebd1aff8994050b9cc06267d8173a7eebb    IRRELEVANT  i18n: Update translation templates (LXD 6.x only)
+5f4893a6185171e61a6fe7d4006a2757a46b9eda    IRRELEVANT  i18n: Update translations (LXD 6.x only)
+38a71d11b5e5a9db6fcf731f34a3e4e2a2d61684    APPLIED     lxd/network/driver/bridge: Validate forwards for collisions with OVN ranges
+33c1886d3a0c09392b4bf3ca97fcad726a81ed77    APPLIED     lxd/network/driver/ovn: Validate forwards & load balancers for collisions with OVN
+67d961f7b2eba03beecea31e23c5a3b755ef9fc6    APPLIED     shared/network: Add ParseNetworks function
+d9a9ae8519332a31e7655ef7151b6b16f453cb0c    APPLIED     lxd/network/driver/common: Add validateRoutes function
+88c156dcb8b1a19652ed5850e67bfe384a6b5ad2    APPLIED     lxd/network/driver/physical: Validate ip routes for existing forwards
+e90c70af88f8479b40dba837f0056c0a0349c8ab    APPLIED     lxd/network/driver/bridge: Validate ip routes for existing forwards
+dd2547c1be49b3dc5ca3b70945c005df593f27bb    APPLIED     lxd/device/nic/ovn: Add validateExternalRoutes function
+b162a55e2f0c968977bc01d8f7ce8b78204b64a1    APPLIED     lxd/device/nic/ovn: Fix linter errors
+8bea40ae4269e85d74d5da348d102d53ba888985    APPLIED     test: Expand OVN tests
+448dfa15c31bbe68fdd495d1effec9d906855dd0    APPLIED     lxd/devlxd: Rename devlxd to devLXD
+2509700b08ca672cfb8c03db6c9412c39c3c773a    APPLIED     lxd/dameon: Rename devlxd to devLXD
+17b9b2580941595327a65232df8a629d5475ee78    APPLIED     lxd/response: Rename devlxd response to devLXD
+f2da25ed124e9522f3eb328ca22c6a48b7f4504e    APPLIED     lxd/devlxd: Regroup vSock and devLXD functions
+259e67df033238e2424d6ff02a6dd1afb58106eb    APPLIED     lxd/devlxd: Add devLXD security config key constants
+d0fdb7a71ce9949375c649808bbef70635a9ea07    APPLIED     lxd/devlxd: Introduce devLXD API endpoints
+95ed6446e547d1d8329f5ecdef81c13d7987eb40    APPLIED     lxd/devlxd: Remove http.Writer from handler func
+25a3465cc0bb4287cd189f76292ec053942d0ebe    APPLIED     lxd/request: Add devLXD instance context key
+d27aa00822cf005514c0a14de26ae7bc87c30db7    APPLIED     lxd/devlxd: Rename instance variable
+279d21f99a0454a16497129843859cb043994074    APPLIED     lxd/devlxd: Pass request instance using request context
+1d745d1fa604ebcd8ad3690ea5f0ee2712b75343    APPLIED     lxd/devlxd: Set devLXD authentication method in handleFunc
+16153d335d6412f09e7d16fa1212f31c39a02fe1    APPLIED     lxd/devlxd: Handle panic recovery
+be9ab11926dca7725e957d67ad99da62e41941d7    APPLIED     lxd/devlxd: Handle security flags
+60e6be05c39cb22a4436f81e6befd98eb4798d18    APPLIED     lxd/devlxd: Remove no longer needed method checks
+9eeb2d310e943a8753f00642822ab89936a8d524    APPLIED     lxd/devlxd: Apply de morgan's law in check (linter)
+b507c775366cc9076bd6885c4ef19c3e45b05f72    APPLIED     lxd/api_devlxd: Fix func name (linter)
+75aa8e4f193272ec03b9ab7660fc1051de2109f8    APPLIED     lxd/api_{devlxd,vsock}: Add comments to hoist funcs
+50f517486e8f17680a2ae1169845b57d9dedbdc2    APPLIED     lxd/devlxd_test: Improve error message and test url
+29d9e22ec592f80d0f6f65af28a96bff8e9da53b    APPLIED     lxd-agent: Rename devlxd to devLXD
+62d86b867777a9bb5733941f8957eade6ab7f505    APPLIED     lxd-agent/response: Rename devlxd to devLXD response
+860936bea1cf67f12a150527aea34a4cd1142f7a    APPLIED     lxd-agent: Modernize for loop
+46f2de27ed1ea1ee8247ce277cb3b9eb4f466eac    APPLIED     lxd-agent: Add render function to devLXD response
+c0e10d49bfd2dedbeb497fa23fd3a34c05144750    APPLIED     lxd-agent: Refactor devLXD API handling
+0f6d4fcd0799d323bdffe042ad347a3ffdd9959e    APPLIED     lxd-agent: Remove http writer from handler function
+147a96d623a157cf014fa24612d2959cdc8b19b5    APPLIED     lxd-agent: Remove unnecessary method checks
+14205a298ba9c4fbef5da3783c7a89f7666c315e    APPLIED     lxd-agent: Remove unnecessary config filter
+142664591c06b744b85e443cd079a8e4ffaf8eb3    APPLIED     lxd-agent: Handle nil response
+8a7e82c6af6bdedbe8ad872834af2d59e020e8fa    APPLIED     client/interfaces: Add DevLXDServer interface
+746d1a28e47189d8f9bc90b88cbfc02dc7c942dd    APPLIED     shared/api: Add public DevLXD response
+43591305a02f03136627375dcdc9a2cd6f63e056    APPLIED     shared/api/response: Improve response helper function comments
+3e45a6255cc74694fcdb59a4899bbb54cd1d4bc1    APPLIED     client/devlxd: Scaffolding for devLXD client
+8a1b96361e40e9751418e970f62cbe76993888e0    APPLIED     client/connection: Add functions for connecting to devLXD
+7e694831ef9f3a209ed2edec55f09042ca952f7e    APPLIED     client/devlxd: Add internal RawQuery function
+93cb8c281566ee2023c5414d47b7d0bfbcc50228    APPLIED     client/devlxd: Add state endpoints
+305d593fed375fca573585391b6d51bf14ebda83    APPLIED     client/devlxd: Add devices endpoint
+1baa1ccbe25f945abce5eeaa50d056070a7bfcfc    APPLIED     client/devlxd: Add metadata endpoint
+ec9cb2cfa0c3bcc7461ca65a38a8f69a0d12f10b    APPLIED     client/devlxd: Add Ubuntu Pro endpoint
+0fda20f4761e342a9ed995dd96151c998a799a4a    APPLIED     client/devlxd: Handle websockets
+1694216bf44666bc5d1ebb49a03db78ce5975b59    APPLIED     client/events: Introduce EventListenerManager
+875508c7a0d5e0bd0a609b0bcaf929d54a5f6188    APPLIED     client/devlxd: Add events endpoint
+4b87eab134778b31d561d5b38793f642529a0470    APPLIED     client/devlxd: Add image export
+0a8523bde08e0bc7a9f354953e0cc0cb7fb0b688    APPLIED     client/devlxd: Add config endpoint
+105c270f4863b8064f4f70d5a9c5c41e5580ba64    APPLIED     lxd/ucred: Prevent potential panic by using empty type assertion
+b807478d228b8819260caf35b4e06de6f2c0b959    APPLIED     lxd/api_devlxd: Prevent potential panic by safely asserting connection type
+9aee0d4fe317c71f8b7ae2ce90f8f8b8e9e0946e    APPLIED     test/godeps: Add new client deps
+cb22116c8e4dd5cfeba42b00a5e51850b055bb70    APPLIED     test/godeps: Add new lxc config deps
+66e64fcf0ce2ca57c7a06e1a2d80d0bc52feef88    APPLIED     test/devlxd-client: Use devlxd client instead of raw http
+9ab612a3630e52bdb4e1c2243b5f6fd82d271ebb    APPLIED     lxd/cluster/events: Omit type from variable declaration (linter)
+ec44aafd545fc5c6b48c2ce13a02ee3af347ddd4    APPLIED     lxd/instances_put: Preallocate arrays (linter)
+b352ba3fc9b33cd8186f1acdd2d67564b4c45330    APPLIED     lxd/instance_state: Drop else when previous block returns (linter)
+886c049c0c655c63ccd413691ef75d392b9a410e    APPLIED     lxd/images: Apply De Morgan's law (linter)
+e182febe45cc4a290ae83a2033944bdf74c3e9c8    APPLIED     lxd/images: Use tagged switch (linter)
+091df731778a35faae5575f932d3ae68d0e85098    APPLIED     lxd/daemon_images: Use tagged switch (linter)
+704fe7e28f358e3fe9ec89f6d336a121c3e7fbc9    APPLIED     lxd/instance_instance_types: Use tagged switch (linter)
+fb610d5a5544cf7309d4eff59bfdd32bc73ed05e    APPLIED     lxd/instances_get: Use tagged switch (linter)
+b2bbd5fdfddbd919e81d03bf1ebe3bbe0c1baaa1    APPLIED     lxd/project/permissions: Use split instead of splitN (linter)
+5275a9610c7519ae90feb8e31185d6f672a3d58c    APPLIED     lxd/storage_pools: Merge conditional assignment (linter)
+2e173efa749fffbad852f42bb95700dc4e3d19a8    APPLIED     github: fix GOCOVERAGE boolean values
+803e929d36d8479c8e8056ef71beb509efae67e4    APPLIED     github: switch to `ubuntu-24.04` runners for security workflow
+dcd3c7f336b67b1c3914f650d077a641ea2e8455    APPLIED     github: switch to `ubuntu-24.04` runners for triage workflow
+33c86d13f34bff73ee22d0ec22f9a8ddb9fe9114    APPLIED     test/suites/basic: init a small empty container to test CPU/mem limits
+839291a98afaa350d30c438aed5f8cfd508edd3e    APPLIED     test/suites/basic: use shell comparison for last_used_at tests
+ab359f723e7fdccc5f0fd633e73db9e1d12444ae    APPLIED     test/suites/basic: test using alias with slashes
+b689ec01bd8768c265108679e9bafd18cac12eb2    APPLIED     doc: Update create a network
+1cba97e4fd9e8bc4a2580eb413da064cdb9c4194    APPLIED     test/includes/lxd: chmod the lxddir in spawn_lxd()
+f3f11bf919df201ac2d8c5f2d5c494ddeb4f6e6c    APPLIED     test/suites: stop chmod'ing the lxddir as spawn_lxd() does it
+65878def8dc1b0d536cba379dbc7494b8938f2e2    APPLIED     doc/howto/instances_configure: add more device config info
+12a181d338a8c0b3043270cad34d947635edecf0    APPLIED     doc/howto/network_acls: copyedit updates to intro
+c70fad3029da94ef0e302ae379b24a86b140f3c0    APPLIED     doc/howto/network_acls: add list ACLs section
+51677e008075b5a93ec73a6bf88ff53b8eaebdfb    APPLIED     doc/howto/network_acls: add show ACL section
+ef47ca8088664306bb09abf5630f895149a82e2a    APPLIED     doc/howto/network_acls: move ACL name requirements to own section
+30c5653743fccb39448ac085dda443a5e89206c7    APPLIED     doc/howto/network_acls: update create via CLI section and add ref target
+bac2529e00b485f8d696c3ad92a5af1ef24d6183    APPLIED     doc/howto/network_acls: add API tab to create section
+3d600c6218f06b78889092288bfb696b492d2855    APPLIED     doc/howto/network_acls: add reference target for ACL properties
+1c834aaf47d2637f4f5676a487aa9f8110bc53c2    APPLIED     doc/howto/network_acls: update intro to ACL rules section
+62a8ec9e5728ee18876b3e437d71ccada07115e5    APPLIED     doc/howto/network_acls: update how to add rules
+c73b627490893519cb06aa588e1896dd73bca15e    APPLIED     doc/howto/network_acls: update how to remove rules
+fc57a18d7022d0aec2b302531c5b2d6f812cbbb5    APPLIED     doc/howto/network_acls: add section on how to edit rules
+96a7852b40a63f0f02b3826e0f028f86dbd4ef30    APPLIED     doc/howto/network_acls: update section on rule ordering
+ac38b854cde4a90b78326d599cb4ed66cad6e843    APPLIED     doc/howto/network_acls: add reference target for rule properties
+147633729ae6930ab6ea75941898e63a7263ffd6    APPLIED     doc/howto/network_acls: update intro for using rule selectors
+b1a8b14457eb5624c10a42314ec670c11566835a    APPLIED     doc/howto/network_acls: update subject name selectors section
+9609bcbdcea5d31e7c10daca4e0b5b8afa28dbe1    APPLIED     doc/howto/network_acls: update network subject selectors section
+837a661c52e1553a33e002a32b28da09abb5cdcb    APPLIED     doc/howto/network_acls: update log traffic section
+f086aaf82dce22ad2dc1a90ff22cb8dc33632e5c    APPLIED     doc/howto/network_acls: bridge limitations section copyedits
+c0c335e7ca67e15047439d8942dca8ba99c04775    APPLIED     doc/howto/network_acls: default actions section intro copyedits
+b50b7df8774a0e4170dd2ecbe0fa72c08f1b3385    APPLIED     doc/howto/network_acls: add CLI/API steps for network default actions
+77b6012d077b8c832e6f8a2d866adc56bf637cc3    APPLIED     doc/howto/network_acls: add CLI/API steps for NIC default actions
+e6e0c509191e5b8d16e3d0678d86be998077dcd3    APPLIED     doc/howto/network_acls: add delete an ACL section
+b48817d167691f5c6314a070b1f17be8b56de293    APPLIED     doc/howto/network_acls: add additional properties section
+89d195368be47f0b2e4588434ae142213fc11745    APPLIED     doc/howto/network_acls: update assign section and add ref target
+ed0116f069a4d1754307c61136d0ce83b1282511    APPLIED     doc/howto/network_acls: update assign to network section
+3767791f8c5d2ac03766f095a368ad1facf3b37d    APPLIED     doc/howto/network_acls: update assign to NIC section
+6ffba76c780d51e705ee4f63d3abfc8836d265c7    APPLIED     doc/howto/network_acls: update rename ACL section
+0c5182f008346671de3be365065e888c574f1dff    APPLIED     doc/howto/network_acls: add edit other properties section and CLI tab
+0cfb75fda6d9694797d73f3d857848b218a0448e    APPLIED     doc/howto/network_acls: add edit other properties section's API tab
+4e9a5341f953ee96db307ae2bc4d434d98b141b0    APPLIED     doc/howto/network_acls: add example to edit other properties section's API tab
+82d123d05da405445b2a815699f4801977d16bf0    APPLIED     doc/howto/network_acls: add edit custom keys section
+620069ed5288b0e0413cadeaecdbe4a2051ef4c2    APPLIED     doc/howto/network_acls: add example to edit custom keys section
+f3b97385871df00d793852e2fcf5db7be1301043    APPLIED     Change Cloud Init "user" to "users"
+f2db15624ddc2cefeb9b6a4a21cb5cb72ad59869    APPLIED     doc/cloud-init: Update network example to v2
+cc887103de7ee9727280728370da05083be6a24e    APPLIED     doc/idmap: Clarify subuid/subgid configuration
+95cf1117886cde55a315f87222891bb3c2f459cb    APPLIED     lxd/backup/config: Add dedicated struct for Buckets
+cdff793353f4cf2c42b1068b84f63f07ec1a3c18    APPLIED     lxd/storage: Use new format when defining backup struct
+324a02980f4a6bc23dae723226457fba22e6b907    APPLIED     lxc: Add getExportVersion func
+21d9114eecb050168f52630cbaea3897c8e599fa    APPLIED     lxc: Use getExportVersion for instances and custom storage volumes
+1d739c3eb2854225f5b37901757e289dfeb839ea    APPLIED     lxd/storage: Try downgrading the config before vol mount
+9c256416bf23b0d36151db289fdda599c14dbb77    APPLIED     Makefile: update golangci-lint to 2.1.2
+d6e893a89960b5701cf65a5295e8595b15b05400    APPLIED     lxd/lxd-metadata: reorder Go imports
+501e91af48ac73e006e5d9970e53a9bee55263cd    APPLIED     lxd/device/cdi/spec_unsupported: reorder Go imports
+325c7c7cd3947445a87c50a6de902de4c70103a9    APPLIED     lxd/lxd-metadata: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+69966b14bb22bc873b0b1ed29a5bebc7801267a5    APPLIED     shared/simplestreams/products: use tagged switch instead of if/else
+e5b91ff77061952cf939a5d2ebacbf4cb22db864    APPLIED     lxc/action: use tagged switch instead of if/else
+0ec599d507411b3aabc73a861db4b58c2caaff9c    APPLIED     lxc/config_trust: use tagged switch instead of if/else
+b17b5ef20cbff6fe776ef363f0193ebb22ee3cd2    APPLIED     lxc/auth: use tagged switch instead of if/else
+4f7ee8bf85bdfbc98d9e387c51d9dcfafa752c10    APPLIED     lxc/info: use tagged switch instead of if/else
+27cb51b61ce543a92917695a29a8d64bdf67f488    APPLIED     lxc/monitor: use tagged switch instead of if/else
+3f230d6a811a5bdcaa5be9296309cd2c85250ab7    APPLIED     lxc/network_acl: use tagged switch instead of if/else
+a8f99165e1dc0c055d23224bf844ed2a2efce7a4    APPLIED     lxc/network_peer: use tagged switch instead of if/else
+9d1d35d938645c577209443f77773d612f7cff82    APPLIED     lxd-migrate: use tagged switch instead of if/else
+f4760a5536231dc4186ec135bf8a31822719a5c8    APPLIED     lxd/cgroup/abstraction: use tagged switch instead of if/else
+d4b3cb6fba4f9b2750ccaca0d489147980c43e86    APPLIED     lxd/db/generate/db/method: use tagged switch instead of if/else
+bec15d720f0cb4c1b1b8d1338e5ec10808937110    APPLIED     lxd/device/nic_bridged: use tagged switch instead of if/else
+7a5b07fdf185cd10a51e71089097e86191d32209    APPLIED     lxd/device/unix_common: use tagged switch instead of if/else
+b5f5acc3f5d1d0f1cd47f7ecf2a4847e9903a6cc    APPLIED     lxd/device/unix_hotplug: use tagged switch instead of if/else
+293149f3ba9beba19b12c553e291b111d363fdad    APPLIED     lxd/device/usb: use tagged switch instead of if/else
+473fcab2f4ef9e6339e66bba986ff1a9f385bdd3    APPLIED     lxd/firewall/drivers/xtables: use tagged switch instead of if/else
+707d2c04ffd669bb49a672058c2efa3cd0a865f8    APPLIED     lxd/instance/drivers/driver_qemu_bus: use tagged switch instead of if/else
+e5dfb376313b86a770cd90c5c87c31439e9432e3    APPLIED     lxd/instance/drivers/driver_qemu_templates: use tagged switch instead of if/else
+e5e1fd27e5d4511f895bc6f5bba8ad9444eb0cdb    APPLIED     lxd/instance/drivers/load: use tagged switch instead of if/else
+9fe42cd017dab01a427a1c11359559f6f16046a6    APPLIED     lxd/instance/drivers/qmp/monitor: use tagged switch instead of if/else
+e1421bf2bb6bdd5086ced973e281bf608770d67d    APPLIED     lxd/loki: use tagged switch instead of if/else
+e4d3f5b32525ac465193e863f25465609bf0e48e    APPLIED     lxd/main_init_interactive: use tagged switch instead of if/else
+e1841a2105f90572db312e3d5b0e981871a9d54e    APPLIED     lxd/migration/migration_volumes: use tagged switch instead of if/else
+5bb41f4e005b7d4a11f33f4b7db0b4f7f8145700    APPLIED     lxd/network/acl/firewall: use tagged switch instead of if/else
+e2f8f95f75e422a1ccbba03440eb7073787d196f    APPLIED     lxd/network/acl/driver_common: use tagged switch instead of if/else
+b95910e04aa98554a8bac382b669a7de94fa8671    APPLIED     lxd/resources/network_ethtool: use tagged switch instead of if/else
+870dfda000f45204810d9a6546089c6e16a1fb3f    APPLIED     lxd/storage/drivers/btrfs_volumes: use tagged switch instead of if/else
+afaaed287f1f5df054cc214b5936099f149381f7    APPLIED     lxd/storage/drivers/ceph_volumes: use tagged switch instead of if/else
+8ea8869a6e1aff76ef8c1a7801e9e54612642516    APPLIED     lxd/storage/drivers/poweflex_utils: use tagged switch instead of if/else
+792d3d46439e26febd1b9fe8925bdcd5bf436694    APPLIED     lxd/storage/drivers/poweflex_volumes: use tagged switch instead of if/else
+307654d2764848168b78aa7871a26d6666323eec    APPLIED     lxd/storage/drivers/pure_volumes: use tagged switch instead of if/else
+70d804a9ed482a4962dd89f87a9ef5760480ecc4    APPLIED     lxd/storage/drivers/zfs_volumes: use tagged switch instead of if/else
+4931a853a8185c450572d695924a6e6a7b6aed65    APPLIED     lxd/storage/drivers/utils_ceph: use tagged switch instead of if/else
+d2871d5a2f942e162511c13558b2e3cc17cb567d    APPLIED     lxd/storage/pool_load: use tagged switch instead of if/else
+24ee1e06ca9c528efb34fdb0808f7686d289b430    APPLIED     lxd/storage: use tagged switch instead of if/else
+3808c10cd091bc75e84e523d6001567be785718d    APPLIED     lxd/subprocess/proc: use tagged switch instead of if/else
+470419c90e4dbe35821a6dcf99fee28cabe231c7    APPLIED     lxd/subprocess/proc: use tagged switch instead of if/else
+4730f32b0c557f115bb524af3da79c257e82da1c    APPLIED     lxc/image: Apply De Morgan's law (staticcheck)
+278c0b5ea0a24bb0a76589807c7269ee6613c44f    APPLIED     lxc/list: Apply De Morgan's law (staticcheck)
+68d35e3d0f5daee4c4133683e674b3a12294bfa5    APPLIED     lxd/db/network_forwards: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+e46d99a26995b9acdfc656281423fe2c407dc77a    APPLIED     lxd/db/network_load_balancers: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+bd465485f73c8b353dbef745c04ee0b90c870943    APPLIED     lxd/db/schema/update: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+a814d655f8b619653344b2d717e31f07b4a7c34a    APPLIED     lxd/db/storage_buckets: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+1a219e60a1aadb20beb9e8d55b89e885f949862c    APPLIED     lxd/db/storage_pools: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+768d5cff7ad7b06468ce59593fd589ce12c1c5aa    APPLIED     lxd/main_netcat: use fmt.Fprintf() instead of WriteString(fmt.Sprintf())
+063ceb849c099ef78a28391c38f7b15606becb34    APPLIED     shared/filter/match: Apply De Morgan's law (staticcheck)
+94121999c15588594eb58de579d7c63a12f1fbe2    APPLIED     lxd/instance_get: Apply De Morgan's law (staticcheck)
+5b10e2954531fb80829fba6684906834ef6112b6    APPLIED     lxc/list: Use strings.ReplaceAll instead (staticcheck)
+e7a1c4ae235ae3477b1d00a0752fa31a586d90c3    APPLIED     lxc/main_aliases: Use strings.ReplaceAll instead (staticcheck)
+661895171509e6adcfb72593fb4732d84b156b5b    APPLIED     lxc/warning: Use strings.ReplaceAll instead (staticcheck)
+a9c4e9fcca2379636e7c53287a09940763282621    APPLIED     lxd/apparmor/apparmor: Use strings.ReplaceAll instead (staticcheck)
+b2017de9d350b0ed5175d6667e45d62c5e68439a    APPLIED     lxd/apparmor/archive: Use strings.ReplaceAll instead (staticcheck)
+cef53fa2c7df0a555700d0c17ff932ed05135b80    APPLIED     lxd/apparmor/instance: Use strings.ReplaceAll instead (staticcheck)
+9521fec5453b03940031d29507b27d58c87e0b0a    APPLIED     lxd/auth/generate/main: Use strings.ReplaceAll instead (staticcheck)
+cad6d6ca6c4ce8ff99e290f683b504e7cc6a0649    APPLIED     lxd/db/generate/db/mapping: Use strings.ReplaceAll instead (staticcheck)
+e0bac79803ce13c9dc24bb1594427da04cd2c48b    APPLIED     lxd/db/generate/db/method: Use strings.ReplaceAll instead (staticcheck)
+f1b57f49d9c36db98962e9ef0a40019c15ceef5f    APPLIED     lxd/db/generate/db/parse: Use strings.ReplaceAll instead (staticcheck)
+a8432ee5494f2194b4b2ba678a887548621fff72    APPLIED     lxd/db/generate/db/stmt: Use strings.ReplaceAll instead (staticcheck)
+00fc702952766a733baca7af6cdc52d14ac9be96    APPLIED     lxd/device/nic_bridged: Use strings.ReplaceAll instead (staticcheck)
+c9b292d885bc8a3393dd9b9afd9a04889c4a09e1    APPLIED     lxd/device/nic_ipvlan: Use strings.ReplaceAll instead (staticcheck)
+fc5270caf8cc8d280b2dad66593463044c377e4f    APPLIED     lxd/device/nic_routed: Use strings.ReplaceAll instead (staticcheck)
+e1f004673d902e2fcc3106928fb65dc275db5a0e    APPLIED     lxd/instance/drivers/qemu_metrics: Use strings.ReplaceAll instead (staticcheck)
+c726a1e9700ccdb9df27035d8b8fdc264055d7d3    APPLIED     lxd/ip/route: Use strings.ReplaceAll instead (staticcheck)
+cfb011e28896aa019656d441d8ec52188f936986    APPLIED     lxd/storage/drivers/ceph_volumes: Use strings.ReplaceAll instead (staticcheck)
+9178445e6cc98ae8aa55ed9d6d830c8ef664f5d3    APPLIED     lxd/storage/filesystem/fs: Use strings.ReplaceAll instead (staticcheck)
+5bc5cc3efc7f1b7d7d49e3b6d930bc0bcc6018f1    APPLIED     lxd/main_netcat: unexport command and run funcs
+755e84af84ad67dc6fc23fc07af165cd14be2f2a    APPLIED     lxd/main: netcatCmd.command func was unexported
+85916c2e183e8d446128a26062a5ac1c8dcf90b5    APPLIED     lxc/action: merge conditional assignment into var declaration (staticcheck)
+630cbe0bff4969ef702929465cb515ba4f1433e5    APPLIED     lxc/config_trust: merge conditional assignment into var declaration (staticcheck)
+2645818d4bbe0c352a45ec363ccb4376edbef151    APPLIED     lxd/network/acl/driver_common: merge conditional assignment into var declaration (staticcheck)
+3b266acb1a5938d5d68e95b8db09663332b1750e    APPLIED     lxd/storage/drivers/btrfs_volumes: remove embedded field Volume from selector (staticcheck)
+ef2a59ab907b893cc5ea71c19ec563d252dbeef5    APPLIED     lxd/storage/drivers/ceph_volumes: remove embedded field Volume from selector (staticcheck)
+d5d13abce2b7a53e8c3a4c4e34389c7bae095870    APPLIED     lxd/storage/drivers/pure_volumes: remove embedded field Volume from selector (staticcheck)
+843dc556c2acbcb023251a33bbd08dc7da491a67    APPLIED     lxc/main_aliases: ignore prealloc suggestion
+ff74ff517e9be6fb8c08b3d598541f2788ca9763    APPLIED     lxd/auth/generate/main: preallocate entityType slice
+2c3a3b5b56a7cfd22e8ebf705fc79ab2362213e7    APPLIED     shared/filter/match: early return from if (revive)
+aaba1a1eeb99cd0508c31588a75dc2fc17be102a    APPLIED     lxc/main_aliases: use named results (revive)
+0ddee1e44cde9487aa9acee9eeac257d7925de1e    APPLIED     lxd/instance/drivers/qemu_bus: use named results (revive)
+8a0c6811292a4ed1033a54090f22ba669fd5dcc8    APPLIED     lxd/ip/route: avoid deprecated shared.Runcommand
+cc000b76592ef406fdddbe0da9932c4a201405cf    APPLIED     shared/filter/match: verify type cast results (revive)
+57170793d1b1b00f4f309fe23036154c2052fe34    APPLIED     lxd/subprocess/proc: drop struct tag of unexported fields of Process struct
+a16bfe5360b455f38f22a105c8654e6ba0fb9f2a    APPLIED     lxd/subprocess: unexport some fields of Process struct
+052d4434dd240e4331b686daa6deba4a948d480f    APPLIED     lxd/firewall/drivers/nftables: unexport some fields of nftGenericItem struct
+7cc7d5408b81f51e55bb3de3a4f343943d10fc99    APPLIED     lxd/storage/drivers/pure_util: unexport statusCode field of pureError struct
+2594298b2a7b8693264950102806e549d211e41d    APPLIED     api: Add `storage_buckets_all_projects` extension
+758b15428fb0641680899d5ad7fe63e24e528af8    APPLIED     shared/api: Add `Project` field to `StorageBucket` struct
+f9a547e11ac8e8db1feb1e9c91ee5a73f2a13787    APPLIED     client: Add `GetStoragePoolBucketsAllProjects` function
+361065ed43ea92892b0111d8cc2c4b728504227d    APPLIED     lxc/storage_bucket: Add `all-projects` flag to `list` command
+c28bc76985508dcd544cf794aa6c2bd9ef18690b    APPLIED     lxd/db: Fill `StorageBucket` struct `Project` field
+b914d5bfa6b00836bd5097814cbd9cdd4f52b978    APPLIED     lxd/storage_buckets: Add support for `all-projects` flag
+c10ea8cb1beb1a18745427d25e2e97969b461bd7    APPLIED     doc/rest-api: Refresh swagger YAML
+98774a4a449f70dcafd051251d4e0543db2ecb3d    APPLIED     tests: Add `storage list --all-projects` authorization tests
+8d6f7096d462156ec707ce5b9d9b06d6283513fa    DIFFERS     lxd/db: Fix lint error (staticcheck - QF1012)
+e3caf16f367b9eac04330574052ad9d90a09f624    IRRELEVANT  i18n: Update translation templates.
+268f02ce9d1307c83790cebd4f2a64312a3c86dd    IRRELEVANT  i18n: Update translations.
+9b9409e389497f4058f7f4020a06090452a6b270    APPLIED     doc/initialize: update maas anchor link
