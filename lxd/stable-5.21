@@ -4609,3 +4609,995 @@ c10ea8cb1beb1a18745427d25e2e97969b461bd7    APPLIED     doc/rest-api: Refresh sw
 e3caf16f367b9eac04330574052ad9d90a09f624    IRRELEVANT  i18n: Update translation templates.
 268f02ce9d1307c83790cebd4f2a64312a3c86dd    IRRELEVANT  i18n: Update translations.
 9b9409e389497f4058f7f4020a06090452a6b270    APPLIED     doc/initialize: update maas anchor link
+a2a4844bec26160ee0b31581376203c36310e56f    APPLIED     client: Use `http` package HTTP method constants
+838b30887c0569c1ae5d571feba72a36e2d14f45    APPLIED     client: Fix lint error (staticcheck - QF1008)
+178e0f5f297e5b291e4ae09f07dfad9006132e19    APPLIED     lxc/query: Use `http` package HTTP method constants
+91f92ac7241ca405e7a8c2a9bc8693e0b51594af    APPLIED     lxd/cluster: Use `http` package HTTP method constants
+e5a3893c0f9f9eb2f4d5251ea96ab961e367f046    APPLIED     lxd/instance/drivers: Use `http` package HTTP method constants
+87e6a1eb683b715b496200acf0c179819bf6f40e    APPLIED     lxd/loki: Use `http` package HTTP method constants
+77cb47497f6a43832fa5e04e349a00a684e98dae    APPLIED     lxd: Use `http` package HTTP method constants
+d398d6def0d93314b325bd2e45eb04c1b8bf6d79    APPLIED     lxd: Fix lint error (revive - unchecked-type-assertion)
+9a9330aa0009c29fb25704637663f6bf86c14049    APPLIED     lxd: Fix lint error (revive - exported)
+3fe6544639f7171c91eed5edd3a742952a13a0ee    APPLIED     lxd: Fix lint error (revive - useless-break)
+c33c4fa9a9f427b75a0a7ac59597ac4c9a13dea4    APPLIED     lxd-user/callhook: Use `http` package HTTP method constants
+15c0d50ab75b0ff0fe13864bcf724ba1141a5225    APPLIED     shared: Use `http` package HTTP method constants
+b968cd99aea49bfe12ad6e439ec46f62a2bfc00c    APPLIED     shared/simplestreams: Use `http` package HTTP method constants
+2ee3b66356e475cdacbcb84e73572975564121dc    APPLIED     lxd-agent: Use `http` package HTTP method constants
+98b2e4cec896dcf90d54f864dd8cd59750512dae    APPLIED     lxd/devlxd: Enable access to GET devlxd/1.0 endpoint without security.devlxd flag
+fb39f8cbfc612629d4d1cfec1b2384952e5e83df    APPLIED     lxd/response: Fix devLXD in comments
+039ce361c948e58cf3622b0e9ce912e1406f95d4    APPLIED     api: Add `network_acls_all_projects` extension
+15a0c8b3cc2306d2e25d901a256cfe713ea1a475    APPLIED     shared/api: Add `Project` field to `NetworkACL` struct
+92899a995515cf2c0cebe6a4855f7b004b777d20    APPLIED     client: Add `GetNetworkACLsAllProjects` function
+57887c48ab43c78bdcaf8519e760c9b76a0ff138    APPLIED     lxc/network_acl: Add `all-projects` flag to `list` command
+e7dc2d597e396dd9197473f613d43c206d09c682    APPLIED     lxd/db: Add `GetNetworkACLsAllProjects`
+83f98c09907db22486c305ad102951a85c6c786d    APPLIED     lxd/network/acl: Set `Project` field
+d85c065813495f064b14e49eb3c37808b3d6f8b6    APPLIED     lxd/network_acls: Add support for `all-projects` flag
+45a6e6a2290da8996a39dfafb21e12caba869973    APPLIED     doc/rest-api: Refresh swagger YAML
+1499c81f31da523fd6db3fdf1d76238b98d7b073    APPLIED     tests: Add tests for listing network ACLs across all projects
+5b4a66f385130ca01153a3f75917bec716738d42    APPLIED     tests: Update network acl tests
+d77e92722acc0581407bb0e855da2630760a708a    APPLIED     tests: Replace use of `wc -l = 0` in favor of equating empty string to `network acl list` test
+918d2706142518c866c59d81e904249c8bbb7a48    APPLIED     tests: Add `network acl list --all-projects` tests to authorization tests
+cd23b91c881af7405e7abbd5a0d22a8ba2024f77    APPLIED     tests: Add additional `network zone list --all-projects` test to authorization tests
+0e4490b0caf867219ff5844e6ad3cca37814378f    APPLIED     tests: Add TLS restrictions tests for network ACLs
+113d6172633d8a18d6c0d98e01850a35e661038f    IRRELEVANT  i18n: Update translation templates.
+18a62c6cc11ebb45cb531fa7818f4bfbd86a14f4    IRRELEVANT  i18n: Update translations.
+ae0a05d0be7d9abb97defaaa6f2fa696cd0c9f66    APPLIED     lxd/db/generate/db/lex: replace more `fmt.Sprintf()` (perfsprint)
+ed9dd6de88d347d3ef177bfbb9f73a2c3b76d1a0    APPLIED     lxd/db/generate/db/method: use `strings.ReplaceAll()`
+e856d729d1114e2409ef3f55e81e41572224cb5b    APPLIED     lxd/db/generate/db/method: replace more `fmt.Sprintf()` (perfsprint)
+02a827c3358229ee6846dd10070f53630ffcb3a7    APPLIED     lxd/db/generate/db/method: replace more `fmt.Sprintf()` (perfsprint)
+7a001d953dd3a70da77c786ca98a83da272ce82d    APPLIED     lxd/storage/drivers/powerflex_utils: replace more `fmt.Sprintf()` (perfsprint)
+e3f09b1621189cbfb4fcda29ab76c4176920c2b2    APPLIED     lxd/util/net: replace more `fmt.Sprint()` (perfsprint)
+3a5912fb32ff4dfb08724710d8721b335e168c25    APPLIED     lxd/network/openvswitch/ovn: replace more `fmt.Sprint()` (perfsprint)
+56be4f840d43fd6ee26fa69ee395cfd1dc9898a0    APPLIED     lxd/network/openvswitch/ovs: replace more `fmt.Sprint()` (perfsprint)
+ec1273f2f28ad3956202bd84de4f4fbb3915fc32    APPLIED     lxd/network/openvswitch/ovs: use `strings.Split()` instead (staticcheck)
+7ffe4077147f0f6e5741a469716e28ea4ec515fd    APPLIED     lxd/network/physical: replace more `fmt.Sprint()` (perfsprint)
+ca06140347478e337ba63bfe9973f9919fbb8774    APPLIED     lxd/network/driver_ovn: replace more `fmt.Sprint()` (perfsprint)
+e637083630cdd7b57abf0399fae32cf845f3da85    APPLIED     lxd/cluster/membership: Improve error in Handover
+c7b5f3eb8ac7f272912ab21671a04a94ca353cc9    APPLIED     lxd/db/cluster/open: Improve error in EnsureSchema
+418303f5941a70282a0524452d556803695c8425    APPLIED     lxd/api/cluster: Improve errors, logging and comments
+1bfc7079aaf75a8e8ad98823ef5c94e7499e3db6    APPLIED     lxd/cluster/gateway: Simplify Shutdown() indenting
+33a60010947d80683ee7f0cb8c9842c783b6638e    APPLIED     lxd/networks: Adds check for DB cluster in networkShutdown
+49c719e3bf34b47ee600da87e9b3041ee75b94ed    APPLIED     lxd/cluster/gateway: Fix ineffectual assignment of err
+558502681d2984eee9b83ea01c6e79b2449b97db    APPLIED     lxd-user: Linter fixes
+33f25bd5a4329275b5cd89095189217d1148aaab    APPLIED     lxd: Linter fixes
+2eb261cb2bff61b570ac10a685f26e92ea0cfc4b    APPLIED     lxd/main/forkfile: Linter fixes
+ed2e755368830ae831927d47f219ca2ce2f93e6f    APPLIED     lxd/daemon: Get state first in Stop before triggering shutdown
+ef8ab70cae9a1b4127fab3668ca5cca9c5d4bf0f    APPLIED     lxd/daemon: Handle missing DB connection when shutting down instances in Stop
+4320b284910721a9f5a52c87ae003448f79943e0    APPLIED     lxd/daemon: Load local config before setting up dqlite gateway
+14095874263196447580491106ec17aa4ae86311    APPLIED     lxd/daemon: Add clustering config sense check during init
+f418840234d5a01a0f5fbfe3c35df4bd902044ab    APPLIED     github: workaround LP 504 error with PPAs
+70b721322f116d2e31cc13a886040cb8aa7e1d09    APPLIED     lxd: Use `api.NewURL()` to construct `network-acl` result urls
+9cfc926d2440b6065ea237cb8f3a496b3ad7fa25    APPLIED     lxd/device/disk: simplify `vmVirtiofsdPaths()`
+3a56623f76321e16711eff5dd93dc28004828d7d    APPLIED     api: Add `networks_all_projects` extension
+d357a281047192c6d149a1fa34a1d25344209cbc    APPLIED     shared/api: Add `Project` field to `Network` struct
+269662e48faf77fadca73412ab2ebde5d9015b02    APPLIED     client: Add `GetNetworksAllProjects` function
+198524ac441975d5f13e428ac0cefb013d76fad9    APPLIED     lxc/network: Add `all-projects` flag to `list` command
+39ae8c6772817f853eb1d36682e25aea4df2145d    APPLIED     lxd/db: Add `GetNetworksAllProjects` function
+37b70706365b60a325ae2c2db489adbfeeb9c182    APPLIED     lxd/networks: Add support for `all-projects` flag
+2b6aeb3f8f01b49721d579e9f97b56c2f6c8b3f2    APPLIED     tests: Add `network list --all-projects` authorization tests
+905e8c4547f60eb12b1a3e70416ae1a8bf8c8d1a    APPLIED     doc/rest-api: Refresh swagger YAML
+b22d3362228923165509af87736355599b0adc59    APPLIED     tests: Add TLS restrictions test for listing networks
+a5358f27ecc46c7aba9ba931d6470ab75e3c9cf0    IRRELEVANT  i18n: Update translation templates.
+bce0751ab5e7f70f65313bbc8505477263a2ef08    IRRELEVANT  i18n: Update translations.
+af4ecb7d5c27353ec1c93b8134f80fcb98979d3d    APPLIED     lxd: Pass `*Daemon` to `expireLogsTask` rather than long lived state
+820f389402e5fb4447ee306184d476c95b110474    APPLIED     lxd: Retrieve fresh state for `expireLogs` task
+33502c0fc76fad7d86f5857e52bf654210f353c6    APPLIED     lxd/storage/drivers/zfs_volumes: use `shared.VarPath()` to join path components
+c7d7bd91cde08093bd03b45d7dfc9bfe99879c92    APPLIED     lxd/storage/drivers/btrfs_volumes: stop looking for subvol ID once found
+30c1a0575d3e486a59f3bc3d2a5efdbc2fbf13b9    APPLIED     lxd-agent/state: replace `strings.SplitN()` by `strings.Cut()`
+bf2e797fdfabe74ffb5fc9be4fd1801d4d851edb    APPLIED     lxd-agent/state: do not report IPv6 address starting with `127` as being local
+fc7aa2cfc148e965d46d066a0d348794ca789278    APPLIED     lxd-agent/state: micro-optimise scope evaluation
+0d0f32688b491124d54f6850514da5a2244a0452    APPLIED     lxd-agent/state: micro-optimise family evaluation
+7ee0b2c89c86dbdb802617fb4c43c766212b5e44    APPLIED     lxd/network/openvswitch/ovn: simplify turning IP into CIDR notation (avoid `fmt.Sprint()`)
+28771d837963c533dc904f7b775a3b39f552099e    APPLIED     shared/api/instance: simplify `GetParentAndSnapshotName()` that is essentially a wrapper for `strings.Cut()`
+c98e133e6ca2baf6e72ce76d56e6c1f41075c470    APPLIED     lxd/network/openvswitch/ovs: use `--columns` with `ovs-vsctl`
+cbd8f115ec04e6bed87607130023b61e361ba587    APPLIED     lxd/network/openvswitch/ovn: use `--columns` with `ovn-nbctl`
+f1b53135010995f25ab092e12d99038614f0184a    APPLIED     lxd/db: Replace use of `queryScan` function with `query.Scan` function
+2ced059ba452fdd1bf1cef9d423a8d4696490496    APPLIED     lxd/db: Remove unused `queryScan` function
+4d962ac9c0085ae4db677b5d0af3fe024ac4d756    APPLIED     api: On file push to containers, only change uid/gid if it fits within uidmap range
+0fd8ab72ae91c47510067038dea466bdb887075e    APPLIED     lxd/instance_file: static analysis fixes
+dfa732c85759b7001eaac36db2bfbdd9434908ee    APPLIED     test: Add test for `file push` of a file owned by uid outside of container range
+77b04d8727a8236a46e1b29138e06760f65dca97    APPLIED     lxd: Pass `d.State` func to task functions launched by daemon
+52474b377302945da101dd9c811c40308310cf84    APPLIED     lxd/api/internal: Always exit with non-error status if shutdown has been triggered manually in internalShutdown
+1af6585f2a6dc92fc22533acc83dbc8751995d8b    APPLIED     lxd/main/daemon: Always exit with non-error status code when stop signal is received
+735965eb14fe6fceddb8f8548f66ff42a64db886    APPLIED     lxd/networks: Rename networkShutdown to networkingStop
+9f0170954fa5f1917b965ad6230dd043c5f03374    APPLIED     lxd/daemon: Call networkingStop()
+868a192c691d03ed9ad533612be6698eadc5dbd9    APPLIED     lxd/api/cluster: Call networkingStop()
+f9ff0235ccb4911d21d2140a7a58d514e2986b42    APPLIED     lxd/device: Only remove GPU CDI device files for device being started
+173f585c63e072f00fb3c309eaae5bab1249ac67    APPLIED     github: actions/install-lxd-runtimedeps only install `yq` if not there already
+96d804dcf77c959d27d323e4cc21952a16b6e32f    APPLIED     github: use libselinux-dev is a virtual package on Jammy+
+7438e8937f590d7621eeccc4422d31c7078f0628    APPLIED     test/main: check for `setfattr`
+c008fb2f47f5fe6e724b7d4c633e0fa92e7e9045    APPLIED     api: Improve logging on file push
+8d26529547e0bc8cef07b0f0616a75c1afc1f999    APPLIED     lxd/resources/usb: the vendor ID is 16-bit by definition
+65762465fbe2910c2445cfe6790d90eaa49083ca    APPLIED     lxd/resources/usb: the product ID is 16-bit by definition
+9952180f8d77098e1f9fd4b015e1ad44cffdada8    APPLIED     lxd/resources/usb: the class ID is 8-bit by definition
+b45ea912a22fd5543504aa32c918b4a98edbc50c    APPLIED     lxd/resources/usb: the subclass ID is 8-bit by definition
+5f6c43c34b30c05565960984cbf5c6bef204cda6    APPLIED     lxd/storage: Add storageStop
+f5e8760d477a83a4e0095e3604b7990068a3d64e    APPLIED     lxd/daemon: Call storageStop()
+1d6929ec8d288a7d53ffacf5b76b8784fbcbef2f    APPLIED     lxd/db/db: Improve handling of closingCtx in OpenCluster
+9aa1e1bdddb50468c1da377618f3be6b86c2d2c7    APPLIED     lxd/daemon: Pass shutdownCtx to db.OpenCluster
+aee7f1e9f4ca004e80e4e7bf13d43c7b374ff545    APPLIED     lxd/daemon: Add startStop lock for init() and Stop()
+20343d87c745524aa1ca533b2e60080db5f1e582    APPLIED     lxd/daemon: Don't populate d.db.Cluster until global database is fully initialised
+c74462466244cb3e526965adb8bef13143b42aae    APPLIED     lxd/daemon: Improve logging
+83680e7e0febdcc11e5281071b1a3dc6e5d6e6b5    APPLIED     lxc/config: Add method to override default connection arguments.
+d555201e530b1a72421e35bcd853ea00dc914784    APPLIED     lxc: Update calls to GetInstanceServerWithTransportWrapper.
+bfa60985cc377bf42b87386382031bd962d1d47e    APPLIED     lxd/main/daemon: Rework cmdDaemon.run() to allow shutdown during start up
+e7f7044086b9ead27c48b40bb4ea66b299aaf606    APPLIED     lxd/daemon: Remove stop handling on error
+fdb8532351a630dcef703b4d0af4150927a2c552    APPLIED     lxd/cluster: Adds context support to WaitUpgradeNotification
+62a773f1fd4c9f3024e0face9311790ca77ef69b    APPLIED     lxd/cluster/heartbeat/test: Fix State for Bootstrap to indicate server is clustered
+c22ffd2490843ea136327314a69b6428790afbaa    APPLIED     lxd/daemon: Update d.gateway.WaitUpgradeNotification usage with context
+692a3b61342925ea3dc26611fc7c185129b09400    APPLIED     lxc/config: Make the images remote static.
+7fec571dc3768c1e262d69792bab6e2ebf54b788    IRRELEVANT  build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+f38a3c58710943b228997b67fdc06ec453407569    IRRELEVANT  build(deps): bump actions/download-artifact from 4.2.1 to 4.3.0
+6dcb14ca2c62fd792c65fceb1650dd6a0ed79324    APPLIED     doc: Move contributing out of "Getting Started"
+cc1751b2afbff7094b2954449208e119cebd5d4d    APPLIED     lxc: Add generalised functions for comparing top-level resources.
+2f0e5582c5318d7b72c7a66871a0bea1970c4886    APPLIED     lxc: Refactor cluster group completion.
+6f2a1fd51f45659cad3836bbde1bf6e6813bc2e6    APPLIED     lxc: Refactor cluster member completion.
+e0611983e74648d81e53106919e01313d8af32ab    APPLIED     lxc: Refactor instance completion.
+d38c2fec6c7f48c1eb9580f542c3721e99144cb2    APPLIED     lxc: Refactor network ACL completion.
+9e290f3ce2fc5ca7fda586857d2ad462dc41b10d    APPLIED     lxc: Refactor network completion.
+c96f7d0d54c4f2438acf945866a7b51ba2074882    APPLIED     lxc: Refactor network zone completion.
+7a6f7a1cbe577c4d980f2d7e91a2cced9816cd44    APPLIED     lxc: Refactor profile completion.
+4161c50cc26872a4044c2731f77b467fc60b06e8    APPLIED     lxc: Update project flag completion to attempt to use the correct remote.
+8d2ee83e6a2aba95e5ba20ccb9a510d31b21a566    APPLIED     lxc: Refactor project completions.
+9884f48b873bb54144110a1784fdf8b90af7737b    APPLIED     lxc: Refactor storage pool completions.
+8c5abc6be3e684f2d00c90d51c2c20e965b2f1ce    APPLIED     lxd/main/waitready: No need to call /1.0 repeatedly in waitready
+9c08880ebfe694007a9f0ec6f82130927e4ca972    APPLIED     lxc: Update `cmpRemotes` to use filters.
+211cbebfab6cc8bee9250ad38adee37afd45664f    APPLIED     lxc: Update calls to cmpRemotes.
+9e6bb31959b7895047524e6ef5e0a8a3011ad853    APPLIED     lxd/db/query/retry: Improve readability with early return
+c7f6f265c0d74f44e340d6d03968895cda3b8ed5    DIFFERS     Remove Rican7/retry dependency
+12104bcf547aa38fbdb29f0d71ccebfa56ac4fbb    APPLIED     gomod: Removes Rican7/retry dependency
+d1a2fd4a63da8e77311a2fd72b75ad09a1003ef6    APPLIED     lxc: Refactor cmpInstancesAndSnapshots.
+6be23fa795c5369bb113ac9f86d684e9841d9488    APPLIED     lxc: Add completion for `lxc snapshot`.
+c4ada59abff5d5b72f9696e2865cb3908960d914    APPLIED     lxc: Add completion for `lxc restore`.
+bd3d00ade2752c94a8e2550f6a61d5fc501001b7    APPLIED     lxc: Fix completion for `lxc rename`.
+f67ec248739c144d15228f88618ce5ddd1307d16    APPLIED     lxc: Remove `cmpImageFingerprintsFromRemote`.
+39439ea80becf899eff375203f7111e60d98fb9f    APPLIED     lxc: Allow suggesting only instance remotes when comparing images.
+6703aa0bce18e105714fcefff71698175f92207e    APPLIED     lxc: Update calls to `cmpImages`.
+6739ddcaac4603cd06922e649fe12a69b61a194e    APPLIED     lxc: Refactor file completion.
+6b6d131dee190ea9b1562c0a6e27d015c30b2749    APPLIED     lxc: Add completion for `lxc import`.
+02fb5582c08916db0fbf0ec53c251634a61a3d77    APPLIED     lxc: Add completion for `lxc export`.
+eb3c521af22394f7fb14fe20c0b16b0e7817959b    APPLIED     lxc: Remove unused completion func in `lxc file delete`.
+4678df7fe61658056a841ec7787626898d4a88d3    APPLIED     lxc: Prevent file completion for all commands that haven't explicitly set it.
+04b941dff09556de7ffb89a8f98a48133900bb52    IRRELEVANT  gomod: Update dependencies
+7899cafbc8f16dbf9d034cf66df3a0bd51f578a7    APPLIED     Makefile: fix typo in .PHONY target name
+90c7af8216c2d36d05df2d963f6bbfaa49744dbe    APPLIED     Makefile: bump golangci-lint to v2.1.5
+4a156680726a6d46b34e818052991957171d2679    APPLIED     lxc: Add configOptionAppender function.
+48fa0aaabe56f3ead21780763f7a69270ddee1fb    APPLIED     lxc: Refactor `cmpServerSetKeys`.
+fde467a89f790b7faaa8bf82bc91479614ced742    APPLIED     lxc: Refactor `cmpServerAllKeys`.
+a6ba8db7f7baacfc24da7a35bbc5adc794cd7302    APPLIED     lxc: Don't complete server configuration when comparing instance configuration.
+60968cc2a48e1e1c3a026e80cfc824d60456b184    APPLIED     lxc: Refactor instance configuration completion.
+efad850dd3d754215ad5d876b8afe8506f99e08c    APPLIED     lxc: Refactor `cmpInstanceAllDevices`.
+e3f2e5dfacc9d242ee146e00ac4f173de8b413d2    APPLIED     lxc: Add completions for device subtypes.
+d447bad2fd474498dcd3a9ad2333fd93b0c45b8a    APPLIED     lxc: Refactor cmpInstanceAllDeviceOptions.
+cfc629ccadeec78f88604e8d7493a1ea05ce185d    APPLIED     lxc: Update `lxc config` command with refactored completions.
+f7eff096c700625afe96dab61c9554ff49f56fe6    APPLIED     lxc: Update `lxc config device` command with refactored completions.
+24f548984189d279f0eafcab7066168c796221c7    APPLIED     lxc: Update `lxc profile set` command with refactored completions.
+23810a3c34b60fa2e0f3dc33fc29ee92695f64d1    APPLIED     lxc/completion: Use `strings.HasPrefix` over `strings.Contains`.
+f2e9dc014091fada86b66174b6110fd251e9e6d1    APPLIED     lxc/completion: use `strings.HasPrefix()` to check for default remote name
+9260fb568fa654a56e95016efc28540125ce752d    APPLIED     lxd: Use UTC as reference for snapshot expiry
+8e080566a755d221fa76210b5e16932134683207    APPLIED     api: Add `clustering_restore_skip_mode` API extension
+180d07eb09d46e96fc40daf17dbeff9a56b6fe49    APPLIED     shared/api: Fix extension typo (`clustering_evacuate_mode`->`clustering_evacuation_mode`)
+21bd1a1edabdca59e280651a2406a92514f8aa20    APPLIED     lxd: Update `restoreClusterMember` to migrate back remote instances only when not in `skip` mode
+47c43a88ce3b7b65a94ad9529b7de5f3b9b05f16    APPLIED     lxc/cluster: Add `--action` flag and `skip` mode to `lxc cluster restore` command
+816ba181c6d8f4bfbf946de432569037ade0a3ea    APPLIED     lxc/cluster: Update `lxc cluster evacuate` description
+16a6e835d3c81cee27213bfd73f01fbe7229f1ac    APPLIED     client: Add extension check for `clustering_restore_skip_mode`
+b4a4d57671dc037d231906fbb07b29d79175b68f    APPLIED     test/suites: cluster restore test with `--skip` flag
+d6eb15bddd9817a3822a07b8f9030b92bfd9421e    IRRELEVANT  i18n: Update translation templates.
+9683273fe0f2f3baad6ff2c51b74cd98a353eb66    IRRELEVANT  i18n: Update translations.
+b0a92c0928277bb5dec46723e583bd2f8cc45d99    APPLIED     lxd/daemon: Make d.gateway.Cluster available even if OpenCluster returns with PreconditionFailed
+726a2d5e38e1c08167d6513418b988f2e337c0ed    APPLIED     lxd/main/waitready: Increase waitready poll time
+0020695f678f031a32427b5073445fef7efc5bc4    APPLIED     test/suites/snapshots: Make expiry test more concrete
+ccbf404e408bcbdeddfa094d78d914168be4c2eb    APPLIED     test/suites/storage_snapshots: Make expiry test more concrete
+f0fc646052d8fe68253ac19cc165709feb7f6f88    APPLIED     lxd/network/driver/bridge: Kill DNS services before removing interfaces in Stop()
+5d841843fe8736c8455bfb2c6a81c64c3ca3b87a    APPLIED     lxd: Always set the expiry date for snapshots
+4c9e16a266915fd966e9b2c35cfd9d8b8226ea63    APPLIED     lxd/query: Allow running manual queries against LXD without hitting /1.0
+39deb047346a0188b425c82b2520903b0df48dfe    APPLIED     test/suites: Check snapshot expiry zero value in recursive list mode if unset
+6a9008ac46c05be2c41e5b0a9233955f0d56a7a4    APPLIED     lxd: Add wait parameter to /internal/ready endpoint and use it in lxd waitready command
+29af0946ed009f1024c87a4368e02ed3947efbbd    APPLIED     lxd/daemon: Sync DB dir on shutdown
+cc76c3d50bdfbee0caa458fe1610da1f5d06431f    APPLIED     lxd/api/internal: Don't leave request go routine running if client disconnects in internalShutdown
+98316d0107409b65696ef40b3caaddef3468a6c0    APPLIED     lxd/storage/drivers: Skip GPT alt‐header move on non-GPT disks (handle `sgdisk` exits 2 & 3)
+1017f375850e1945ed605798086e3f1bf37e3e29    APPLIED     shared/ws/upgrader: Adds StartKeepAlive function
+367f1e67b8def176167940d52390c4358e4f0a1e    APPLIED     lxd/instance/exec: Switch to ws.StartKeepAlive in Connect
+16b1dd4d2e00c17c9c54220d081c7cef2d6730f7    APPLIED     lxd/instance/exec: Improve comments
+6279a96ba1233ece46e32626b3edb535c676091d    APPLIED     client/lxd/instances: Lose unnecessary var definition in ConsoleInstance
+4c529bf05e5d28766175116512da5c608bb1854d    APPLIED     client/lxd/instances: Consume server generated websocket pings on Console* control connections
+c2d17f50ac4e285a4b53b9c1746de338b626f0c0    APPLIED     lxd/instance/console: Send server-side initiated websocket keepalives
+4101609dd957b507521f6a4e3746215b481fe25b    APPLIED     lxd/storage: Improve error message wording in `CreateInstanceFromConversion`
+f8735d0cff8e9de0f77d21bdfa4fbe9bcf2f8880    APPLIED     lxd/node: Add link to debug_address config doc
+55afcae1dafa977ac297f020a399d85fdfbb19d1    APPLIED     doc: Update metadata
+9036faa6d39774bf220b821d6468c10f90530958    APPLIED     lxd/api/internal: Switch to configurable timeout parameter in internalWaitReady
+6ec6adbe13cf16dbf73e683339c55b51dfc9dc51    APPLIED     lxd/main/waitready: Rework cmdWaitready to use contexts and server-side timeout support
+55eb9f7593cbe1e7cf27c58b057068c1aeec46c3    APPLIED     lxd/events/connections: use nil payload on websocket.PingMessage
+8d0ad3117d5eba1bd68c3a6f5d697fd14a10b873    APPLIED     shared/ws/upgrader: use nil payload on websocket.PingMessage
+a7e6a45843fcf48312105bf349cb6c89d436cf7c    APPLIED     lxd/events/connections: remove embedded field `Conn` from selector (staticcheck)
+c5cd05c3613f1542dfba19a97836b306a481a3cc    APPLIED     doc: Document core.debug_address debugging
+ee209a62de3963b2c9862b143cec82598fcee2c9    APPLIED     lxd/events/connections: avoid shadowing builtin function close (revive)
+50f98343541d4b42fa6a7ca8f17d1cf02bca3991    APPLIED     lxd/events/connections: add comments to exported funcs
+185f4b97c5eca5912f2fb93bf3ae679a5e7b1049    APPLIED     doc: update admonitions for microcloud integrated docs
+57b2d8e547ebad8990b196a999fc4292d9098d61    APPLIED     lxd/instance_put: Use proper status for error
+72055e1664aea6beb8d16760f61bf83f0fb66576    APPLIED     lxd/main/waitready: Use uint64 for flag timeout for consistency with server side
+8556c2fcd5bccb92b999f28ee224c1a16e1441a0    APPLIED     Makefile: bump GOMIN to 1.24.2 for OpenFGA update
+307b2bd2585bdcceefbad65236191deb469bb3f7    APPLIED     doc/requirements: Go min is now 1.24.2
+f2e7ceb4f26a1e2b4502055b681043f14ec2b5c2    APPLIED     Revert "Makefile: Pin github.com/go-jose/go-jose/v4@v4.0.5"
+ed829c2e06de60274761f24a71c0ae72270dc722    IRRELEVANT  gomod: Update dependencies
+1f4425046cfbcb828a92eee3a9aa9ea2f328a851    APPLIED     github: bump allowed size for lxd-agent
+c14f645dbb4a2601aab8462eddf5c88fb114eb5b    APPLIED     test/godeps: Update client deps
+81bebde54a0fde5401bd6b5c7aef2d25379591e9    APPLIED     test/godeps: Update lxc-config deps
+01b2a674b07b3ba7e436a4ea7ba5c3bbadb74545    DIFFERS     test/godeps: Update lxd-agent deps
+84227da06c108e24ce3a5d4bba2bd2faf7f5d4d4    APPLIED     test/godeps: Update shared-api deps
+22b54d763e7e12534b9e7797783760448d8079e6    APPLIED     lxd/db/query/marshal: unused, drop
+08be48ead7ab84f276d9a531f1980c76d5d840c2    APPLIED     client/simplestreams_images: avoid deprecated `shared.RunCommand()`
+78f0a5cb701d640cea5d2cc1f4cfa2a5004f57d1    APPLIED     lxd/rsync/rsync: avoid deprecated `shared.RunCommand()`
+8185d0a04334efa001c39a9836bc751442dd522c    APPLIED     lxd/storage/block/discard: avoid deprecated `shared.RunCommand()`
+43f62a8a5bbcd32b4106fc94b588a140f62fde6e    APPLIED     lxd/rsync/rsync: avoid shadowing builtin `min`
+e2e2627262193cc98a86da2d8bd0f764e3309633    APPLIED     lxd/db/schema/query: avoid shadowing builtin `new`
+13b41cd4cca3b61d0c01da5b986aca4907da0a5d    APPLIED     fuidshift: unexport some funcs
+de155949ec4af1cc3959cd7c8c378605d12b934f    APPLIED     lxc-to-lxd: unexport some funcs
+fe4d9770f0eab407739f2565269b31f4c313c692    APPLIED     client/lxd_oidc: remove embedded field `Token` from selector (staticcheck)
+93536bbfa117320232a45b77e496aada35e7d13b    APPLIED     lxd/dnsmasq/dhcpalloc/dhcpalloc: move condition evaluation (staticcheck)
+2a3d4c6f38dc04d82ab45697b271055d0c9aad59    APPLIED     lxd/dnsmasq/dnsmasq: use `strings.Split()` (staticcheck)
+3e189d817551b3fe50cdf251d77f0f0d34cafeaf    APPLIED     lxd/ip/link: remove embedded field `Link` from selector (staticcheck)
+6a332a8ac479d4b7abeb47e430244f2724269957    APPLIED     lxd/network/network_utils: use `strings.Split()` (staticcheck)
+94b9dca71cdbcc4c0c8143932d2717e0f5e30afd    APPLIED     shared/api/url: remove embedded field `URL` from selector (staticcheck)
+8350f06fb9673c3fd0a55e6a174414b77c14184a    APPLIED     lxd/refcount/refcount_test: remove unneeded type specifier (staticcheck)
+f9575c0509f67de8c64e1b7bcacc9013fed9694f    APPLIED     lxd/migration/migration_volumes: use `api.NewStatusError()`
+934c0e8086eeaaa44e1fb4394e36d8fe378f58ea    APPLIED     shared/cmd/ask: avoid shadowing builtin `min` and `max`
+debccb8fb03f5ca7bac86386298300c7bab01ca0    APPLIED     lxd/ip/addr: avoid deprecated `shared.RunCommand()`
+c562d555ae6e3814ccba057710595eb429ce3080    APPLIED     lxd/ip/class: avoid deprecated `shared.RunCommand()`
+e8d3a48a2a080d108eb853184f7e91b1d9fc3402    APPLIED     lxd/storage/s3/miniod/admin: avoid deprecated `shared.RunCommand()`
+0516da3804c19b7c3518a9c1bfd4e903f8dca4bc    APPLIED     shared/logger/types: use any instead of `interface{}` (revive)
+d34264b913afe65a7735fca406fd78dde35a8fe9    APPLIED     lxd/device/gpu_sriov: preallocate parentPCIAddresses
+556db9e9b8430b0893219eaa9af7a520761e127e    APPLIED     lxd-migrate: unexport some funcs
+8e890bec40cc5110e5c97fed3a0e4b32f70af221    APPLIED     lxd/main: unexport some funcs
+ee7fa404c0582e583b6d3c7db47197a1569f67a4    APPLIED     lxd/main_forklimits: early return on error
+42147f2bd9bd0c97c5c4cf7999101f21c2ca5861    APPLIED     shared/cmd/ask: ignore suggestion to apply De Morgan's law
+a24a2708fb2d5f8c4d9c295624d96eb76090ce90    APPLIED     lxd/scriptlet/load: ignore starlark.SourceProgram deprecation
+835c8414f345daa235334ee8ce57db31281982eb    APPLIED     lxd/db/migration: check type cast results
+53bb053d2240bdd5aac4bc7119d159b028397548    APPLIED     lxd/idmap/idmapset_linux: avoid unnessary string formatting when logging
+8002fc0ca0d86dcb5b06f0e7a18b46101a7ba106    APPLIED     golangci-lint: exclude `lxd/idmap/idmapset_linux.go` for now
+4434479a46d0f34ba158758a026ecd1e4b0a112f    APPLIED     shared/json: drop unused `GetInt()`
+b9f7fc97b1b65d11c0412609ba097e89ea0ba42c    APPLIED     lxd/warnings: remove tautological check
+2242fe8c9c7e74e084d310a7f89e635a9c289075    APPLIED     shared/json: use `%q` for quoted strings
+503a13b8fa372bbcccfc9868ce8926045335046c    APPLIED     shared/json: add comment for exported type and funcs
+b9ef8d7995e28c8afcfbc6edca50fde4384ecd63    APPLIED     shared/json: rework `GetString()` for early return (revive)
+bd1ecb7c20c53e382aad214edd00b479bd1a08e5    APPLIED     shared/json: rework `GetMap()` for early return (revive)
+bddb10649f9e972deb536f0e3374a5e3b7bb2aa0    APPLIED     shared/json: rework `GetBool()` for early return (revive)
+18b5992ed908ade9e3e9bf3652e2219ed0603ce2    APPLIED     lxc-to-lxd/utils: use `errors.New()` (perfsprint)
+3997b95462ad2584c292013ee25727ae6d4a60a4    APPLIED     lxd/main_migratedumpsuccess: use `errors.New()` (perfsprint)
+a903dc226ea59b4f8be1785d230a1e97b1a83a94    APPLIED     lxd/db/migration: use `%q` specifier to quote `entity`
+f0db10a0fbd1760ef3480c4ae67cbde2ea86c9d5    APPLIED     golangci-lint: enable testifylint
+fa74cce370252de36838140a0a2709f5ef84aec2    APPLIED     golangci-lint: disable testifylint float-compare and require-error
+90735a3667a15273c812827c134e694f166646f2    APPLIED     shared/util_test: compare the expected and actual dates
+a2846404951123ba49a06deb2f068b21e10acbcb    APPLIED     shared/util_test: remove useless re-assignment
+fd5f6722b5bf6eeee4490e9e3144dc2e74202b94    APPLIED     *_test: reverse actual and expected values (testify)
+13fbea0f3640886b9587f9d48ada9bf906e475c4    APPLIED     *_test: use `assert.Empty()` (testifylint)
+15698316a74a974ea1536241cb209895db181dc3    APPLIED     *_test: use proper functions for bool comparisons (testifylint)
+fbfeb846061d497b080794538e69387133dfe3c5    APPLIED     *_test: use `NoError` for error nil checks (testifylint)
+38aeff89196fc28337951bd567d229957a24db01    APPLIED     *_test: simplify len checks (testifylint)
+c38d888f7f4bab27e43c37a56a71c227b0ac50f6    APPLIED     lxc/cluster: Improve error when evacuating offline member
+7178fbf97961243c1d49f335da4c9a44943416f3    APPLIED     lxd/db/cluster/update_test: use `require.ErrorAs()` (testifylint)
+c13f5b5e7b5fb2075dfbf5f35bdf98eb8933fd8e    APPLIED     lxd/instance_test: don't use `fmt.Errorf()` to report about test failures
+ba1ff470b2330df903fd1877e492b5f0b0eb893a    APPLIED     lxd/db/cluster/update_test: drop now unused `errors` import
+0d1aed0691ff29f3bbddf605e874a36c820338d5    APPLIED     *_test: use `assert.Positive()` where applicable (testifylint)
+983c8c4b3e02f1004a098e967c020893b1879e61    APPLIED     lxd/db/cluster/update_test: use `assert.Nil()` (testifylint)
+4b7a014120cb09edbd83024edcc39e877d7b30bc    APPLIED     lxd/auth/drivers/tls_test: simplify assertion checks (testifylint)
+1fb4687982449bbb076612923cb63a19403400a3    APPLIED     lxd/util/net_test: use `assert.NoError()` in goroutine
+a23855b641c1678921cdeaf5ce291aa8632c36ae    APPLIED     lxc/utils_properties_test: replace `interface{}` by `any` (revive)
+8465704a52e02d9901e31fd02fbf4a5784185bf8    APPLIED     lxc/utils_properties_test: ignore type cast checks in tests
+e0d31072af3998c5576aaf65168f1fabe13800fd    APPLIED     github: Add KEV matching to security alerts
+f838d48bc789d7fe85d99c9b2570a4763a1266f3    APPLIED     lxc: Add completions for `lxc monitor`.
+d14d6e68f993ced5ce620f5b48a380fbcc25aac6    APPLIED     lxc: Add completions for `lxc rebuild`.
+947c037dbbe4118403fc86acacb8fd4b4e44569f    APPLIED     lxc: Completions for init and launch second arguments (instance remotes).
+c28d14890094d1abcc25d0061d3c524a801b744a    APPLIED     test/suites: Add tests for CLI completions.
+4f1ae70e301e07de02321d409a2e8a82e910d9f3    APPLIED     lxd/db/generate: Add errors package import.
+044f3c2529c616ef744148ce0c5055ea780ea8de    APPLIED     lxd-generate: Remove fmt.Errorf occurrences without formatting.
+1eb161669dcde4ed197f2c7e6ed50c279f73b8ea    APPLIED     lxd/db/cluster: Run make update-schema.
+efc7baea09ff035984e19eefa1b8c9c470296d30    APPLIED     client/devlxd: use `errors.New()` (perfsprint)
+889674eb162392925f950330bb02f5ac9e3396d7    APPLIED     client/devlxd_images: use `errors.New()` (perfsprint)
+00abdde5dc556bcd16a71085838ffa2de3bae17c    APPLIED     client/events: use `errors.New()` (perfsprint)
+fb8e34487cfda4927442817769c007eef11f2f0a    APPLIED     client/lxd: use `errors.New()` (perfsprint)
+abc955f0eb8dd21b1b3463b8be8cc50265a79478    APPLIED     client/lxd_auth: use `errors.New()` (perfsprint)
+b78519b22fcc6b3a55d2eadd02759383188daa37    APPLIED     client/lxd_certificates: use `errors.New()` (perfsprint)
+f4ec1fa00b810357d4d1ef8cfc4f79bd3811c9dd    APPLIED     client/lxd_containers: use `errors.New()` (perfsprint)
+4733a9215538f1d48228d1139ea108be48bb3668    APPLIED     client/lxd_events: use `errors.New()` (perfsprint)
+2a5655dc722f74135f44ed292f7655b4115100fc    APPLIED     client/lxd_images: use `errors.New()` (perfsprint)
+4216969a4373adfd5ac46b9adf0ba52ed81385b8    APPLIED     client/lxd_instances: use `errors.New()` (perfsprint)
+db8ef06cf8eff6756241a87933c513505562c499    APPLIED     client/lxd_oidc: use `errors.New()` (perfsprint)
+1cec72e1a4febdd4e4e7b25660b389379f1b5fa8    APPLIED     client/lxd_storage_volumes: use `errors.New()` (perfsprint)
+ebbf2b8ee3d1dd246e9edfc1b005832a9f3c95a4    APPLIED     client/operations: use `errors.New()` (perfsprint)
+cc065a6a9bbf2e9387ab36027ccea55e9ae8dcce    APPLIED     client/simplestreams: use `errors.New()` (perfsprint)
+1bad1ac5221e553f6202f368f9d89270ffb543d2    APPLIED     client/simplestreams_images: use `errors.New()` (perfsprint)
+198a1b8388de088f7d26823048e6b1bd9e0ae326    APPLIED     client/util: use `errors.New()` (perfsprint)
+0695ad913a167638c7c97c4ae70a796fd60b72f0    APPLIED     fuidshift/main_shift: use `errors.New()` (perfsprint)
+a4f04b2f7427bb261d411bf47a76eaed9910cbe3    APPLIED     lxc-to-lxd/main_migrate: use `errors.New()` (perfsprint)
+78c1793d30585ff4943668a2a6cd39158c077cc3    APPLIED     lxc-to-lxd/main_netcat: use `errors.New()` (perfsprint)
+1e103aeef45376a248dea01222b82d0bbcee11db    APPLIED     lxc/auth: use `errors.New()` (perfsprint)
+c5cb9500e46956e279897044e23089593fb9768c    APPLIED     lxc/config/errors: use `errors.New()` (perfsprint)
+86d64238d35da580c4aeeec9579fd4536b432356    APPLIED     lxc/config/remote: use `errors.New()` (perfsprint)
+bb221db66783c90f114a4ebf289c29fbef3a6915    APPLIED     lxc/file: use `errors.New()` (perfsprint)
+c759c200f3fcc49776ad1b3bd087b05e7d5483b2    APPLIED     lxc/image: use `errors.New()` (perfsprint)
+dfb9185719033d2521481251c4c4b58ea5b4af33    APPLIED     lxc/move: use `errors.New()` (perfsprint)
+ef99a754f10c4f03c2c88243829e858f1a873e47    APPLIED     lxc/network_forward: use `errors.New()` (perfsprint)
+7eb63b58d7d8c6699041e801c97e14fb2e0b3422    APPLIED     lxc/network_load_balancer: use `errors.New()` (perfsprint)
+9af3b5f7128f9e85e8d8ad9ce79ce9a0c92b64c7    APPLIED     lxc/storage_volume: use `errors.New()` (perfsprint)
+6c196045b4d20a059df51db677bf16e9ef7cd5c0    APPLIED     lxd-agent/events: use `errors.New()` (perfsprint)
+95011ceb5d1db66e1839fe2776abc2ab06de281f    APPLIED     lxd-agent/exec: use `errors.New()` (perfsprint)
+1dd86db9f14b8ebfc91f07e8a941dca10b98e8e9    APPLIED     lxd-agent/server: use `errors.New()` (perfsprint)
+92c05ff4c4686984725397be75bc353bd7b215ff    APPLIED     lxd-migrate/main_migrate: use `errors.New()` (perfsprint)
+61728c17e660b946e26731a85c1cad5fadd5de88    APPLIED     lxd-migrate/main_netcat: use `errors.New()` (perfsprint)
+b01190fa4c11051d1d9a72b39adcd381c98fec92    APPLIED     lxd-migrate/utils: use `errors.New()` (perfsprint)
+5ac33eb8f72fef38e165dabf73d5fc7d38a31eba    APPLIED     lxd-user/lxd: use `errors.New()` (perfsprint)
+ffc979f18571f4e4430e8cbdde886b1a48af004b    APPLIED     lxd-user/main_callhook: use `errors.New()` (perfsprint)
+f0df4019a468e7ed2e562be5ebe799863c814eab    APPLIED     lxd-user/main_daemon: use `errors.New()` (perfsprint)
+6124f6547550027ac5dff60fb6267f22a35e352f    APPLIED     lxd/api_1.0: use `errors.New()` (perfsprint)
+3529b4e3f92c8bca3a2acb4d6c3bdb86d55d180c    APPLIED     lxd/api_cluster: use `errors.New()` (perfsprint)
+28001036acfa56639a022f61a4e2b6a9096084de    APPLIED     lxd/api_devlxd: use `errors.New()` (perfsprint)
+cfe83e671b7bc453f0302583e85f6ce5d780d56f    APPLIED     lxd/api_internal: use `errors.New()` (perfsprint)
+073e2902f55ee74fcd2f3f7969107ce1633c8a1a    APPLIED     lxd/api_internal_recover: use `errors.New()` (perfsprint)
+4230ba448525d646fc5a9b803df2b322a8052880    APPLIED     lxd/api_project: use `errors.New()` (perfsprint)
+ad6666f84b4831bcd55413aa2fdb49409ddd1c88    APPLIED     lxd/apparmor/instance: use `errors.New()` (perfsprint)
+469a4308a91f3ba73dbc291033471d29f8e4faad    APPLIED     lxd/archive/archive: use `errors.New()` (perfsprint)
+51f90c43fd1ba09953160bb288cefae2df5cbf37    APPLIED     lxd/auth/drivers/authorization: use `errors.New()` (perfsprint)
+b45f625895496318ad58375d7e1d5b7b68123852    APPLIED     lxd/auth/drivers/common: use `errors.New()` (perfsprint)
+68b1c7a3c427c40c759dc1be373f2f7ce4e0d39d    APPLIED     lxd/auth/drivers/openfga: use `errors.New()` (perfsprint)
+d4f57afc5863f590f72d3f2c3f9597532643d0be    APPLIED     lxd/auth/oidc/oidc: use `errors.New()` (perfsprint)
+e6c61933c974287845d93c600f2af1fcd0420dfe    APPLIED     lxd/backup: use `errors.New()` (perfsprint)
+f9198ffad610bcfe931a6c99040f0f26e4f699e2    APPLIED     lxd/backup/backup_config_utils: use `errors.New()` (perfsprint)
+13f29ab9d5f3fc43824ed8e8fd34e3fa5d5218b2    APPLIED     lxd/backup/backup_utils: use `errors.New()` (perfsprint)
+6985bec2d86e12ea7add22c4e0dc0c1f5ed02ab9    APPLIED     lxd/backup/config/backup_config: use `errors.New()` (perfsprint)
+1917945bc90f0bc8499180585de544c9831b0d4d    APPLIED     lxd/bgp/errors: use `errors.New()` (perfsprint)
+1ca2febad050e5640a481879361455e67e41b8fa    APPLIED     lxd/bgp/server: use `errors.New()` (perfsprint)
+44e86be1d4e41266fb67bc7eb4b888ecc804a2c0    APPLIED     lxd/certificate/type: use `errors.New()` (perfsprint)
+33419f325d5219669026200fb9407311670a90b0    IRRELEVANT  lxd/certificates: use `errors.New()` (perfsprint)
+caf806721a9c998211d8d2d1518a87e63779b32a    APPLIED     lxd/cgroup/abstraction: use `errors.New()` (perfsprint)
+b5fd3631d7b1fd148f7fb5e2494155ac7e19b19d    APPLIED     lxd/cgroup/errors: use `errors.New()` (perfsprint)
+1d4415ee77691cc40544b075eaf2fedf7b1186f6    APPLIED     lxd/cgroup/load: use `errors.New()` (perfsprint)
+b93b31bca7dffdf8ca006e5ecc62a19a08092504    DIFFERS     lxd/cluster/config/config: use `errors.New()` (perfsprint)
+62eae55511c88ccf22aaf55b4fde3a59f3d1b4f5    APPLIED     lxd/cluster/gateway: use `errors.New()` (perfsprint)
+90053bbeda24e4153bbbaee683e94201c0c23de3    APPLIED     lxd/cluster/heartbeat: use `errors.New()` (perfsprint)
+40710a7046d2c83ba3b455ea81ef715762c9101c    APPLIED     lxd/cluster/membership: use `errors.New()` (perfsprint)
+45cd21d0a476ab062b30f7116a858c661b2b8354    APPLIED     lxd/cluster/notify_test: use `errors.New()` (perfsprint)
+596c72aedae0f4063e5a6c1fb026055cacf5fd93    APPLIED     lxd/cluster/recover: use `errors.New()` (perfsprint)
+50a943f0d2340d324b952f0647400f0824c7b1aa    APPLIED     lxd/cluster/tls: use `errors.New()` (perfsprint)
+a3c97590e5516429836f3acb539aa441bc0c2a0b    APPLIED     lxd/cluster/upgrade: use `errors.New()` (perfsprint)
+55a115b2a2d428c6cd6e025eaf2633e2aae19afb    APPLIED     lxd/config/map: use `errors.New()` (perfsprint)
+98e46898cc6f982dc24f9c22ddb70f68c8746549    APPLIED     lxd/config/map_test: use `errors.New()` (perfsprint)
+f9dd82369a840f57bd5a71213d6b9dc6f354cca5    APPLIED     lxd/config/schema: use `errors.New()` (perfsprint)
+2a0bf90b92f55f10489e020b05c830b8ea72a1ef    APPLIED     lxd/config/schema_internal_test: use `errors.New()` (perfsprint)
+52f04b1583d2b9f51e8ab547f451c9b7d36615f0    APPLIED     lxd/convert_instance: use `errors.New()` (perfsprint)
+e962949ce87ea92512681b649dca4139cb2f5f00    APPLIED     lxd/daemon: use `errors.New()` (perfsprint)
+68b4268ec281991053f46798c218b131ead88055    APPLIED     lxd/daemon_images: use `errors.New()` (perfsprint)
+b034b13bfd738a5cbc5a2e24edaa2907af242d16    APPLIED     lxd/daemon_storage: use `errors.New()` (perfsprint)
+27f0d1931dffc2c1c682cb62f10402b824e844aa    APPLIED     lxd/db/cluster: use `errors.New()` (perfsprint)
+5782401f7f7cc75bedec959e5c03aaa75677d87d    APPLIED     lxd/db/cluster/certificates: use `errors.New()` (perfsprint)
+a99a702a99792ca875bb185432478a29bd1a0362    APPLIED     lxd/db/cluster/entities: use `errors.New()` (perfsprint)
+15fc024d855364ee0968ab728e874cf9f565c46e    APPLIED     lxd/db/cluster/identities: use `errors.New()` (perfsprint)
+a16afd2aa97af41413f53a8a27a889e3a7f0b854    APPLIED     lxd/db/cluster/open: use `errors.New()` (perfsprint)
+d49ebbacebabc645e7f9b92b356515db1a709979    APPLIED     lxd/db/db: use `errors.New()` (perfsprint)
+d984e2aca5e1fb93c507545765663928c42ae3b5    APPLIED     lxd/db/errors: use `errors.New()` (perfsprint)
+0d32c0e9e71e0f3da34ab9a820f6c01f771b2bd0    APPLIED     lxd/db/freshschema/main: use `errors.New()` (perfsprint)
+ad3da06772cd239669155760c10c9f6d7ca14461    APPLIED     lxd/db/generate/db: use `errors.New()` (perfsprint)
+31e0062b92793127386d012d201d2c7e6171fc5f    APPLIED     lxd/db/generate/lex/parse: use `errors.New()` (perfsprint)
+6341dc6461bd89db5fcbf5599d91c4de4b7ab8f7    APPLIED     lxd/db/generate/root: use `errors.New()` (perfsprint)
+c5a96d3a73cd760dcc5cf42a74327b491acec229    APPLIED     lxd/db/images: use `errors.New()` (perfsprint)
+1ce80b4ce41312de920d54e95a1d98fb6795fbb6    APPLIED     lxd/db/instances: use `errors.New()` (perfsprint)
+610f55a7bff5167e2252e68b73646bd78b20430d    APPLIED     lxd/db/migration: use `errors.New()` (perfsprint)
+3d143d46185e7d7edf8c1c535b168676136d0a79    APPLIED     lxd/db/network_forwards: use `errors.New()` (perfsprint)
+883bc91855360cd5d1d6cca1c94a4e784d9c8b32    APPLIED     lxd/db/network_load_balancers: use `errors.New()` (perfsprint)
+50851cff1ea61383b38624e080ef614dfbf45b43    APPLIED     lxd/db/networks: use `errors.New()` (perfsprint)
+1d2b3e35ef083ef5deccf73dde07524380b0d9b7    APPLIED     lxd/db/node: use `errors.New()` (perfsprint)
+f12591e81a04d40e9476036ebb7f2e97eb220f6c    APPLIED     lxd/db/openfga/openfga: use `errors.New()` (perfsprint)
+40b6b309abe98be896e267ae611a16b8ad3b0212    APPLIED     lxd/db/query/count: use `errors.New()` (perfsprint)
+05e401668ef0a3c6bd5426830f839ab54a136e00    APPLIED     lxd/db/query/objects: use `errors.New()` (perfsprint)
+c1e7ff794e764f6b897c295051b61a1d952238a4    APPLIED     lxd/db/query/transaction_test: use `errors.New()` (perfsprint)
+873ff44e8109994c5b0fabb10d3df2fce03e1a9d    APPLIED     lxd/db/raft: use `errors.New()` (perfsprint)
+e011a54a54bf42636193315717994d308770263c    APPLIED     lxd/db/schema/query: use `errors.New()` (perfsprint)
+d1bba99ae206dbd3e3cf29a826bf65fb06117107    APPLIED     lxd/db/schema/schema: use `errors.New()` (perfsprint)
+023780f1e313b066d8b60fe2a1fb1a90f6990f88    APPLIED     lxd/db/schema/schema_test: use `errors.New()` (perfsprint)
+df8378bfae4efd8a45b710449f9b6f29726b7766    APPLIED     lxd/db/storage_buckets: use `errors.New()` (perfsprint)
+8cca2dacc5f953836eb3b81b516f91cd808ff225    APPLIED     lxd/db/storage_pools: use `errors.New()` (perfsprint)
+aa560fbba2de52169a4b96e5a9bf7ddde952e56d    APPLIED     lxd/db/storage_volume_snapshots: use `errors.New()` (perfsprint)
+37569150388569a10cff2dac78675003e12e4e8e    APPLIED     lxd/db/storage_volumes: use `errors.New()` (perfsprint)
+554a252230ee6113dd1b6924a822bca5f995bc31    APPLIED     lxd/db/warnings: use `errors.New()` (perfsprint)
+7638d1dcf73f6784adad6e96359207485d2279d0    APPLIED     lxd/device/cdi/configure: use `errors.New()` (perfsprint)
+2d02c516003a8f0c3083c10d87d97e5ce8e350a8    APPLIED     lxd/device/cdi/spec: use `errors.New()` (perfsprint)
+d2a60306a5483e17129e0f8083cbeff8319e0f25    APPLIED     lxd/device/device_load: use `errors.New()` (perfsprint)
+b85f302a3a4244c1c59139f9f14466d8dbfd3f9a    APPLIED     lxd/device/device_utils_disk: use `errors.New()` (perfsprint)
+314f584190eacbf21ff92c47fcb639d379fbca66    APPLIED     lxd/device/device_utils_infiniband: use `errors.New()` (perfsprint)
+8c96c0e9a81db2897fde9b5b3034b4842fe4e458    APPLIED     lxd/device/device_utils_network: use `errors.New()` (perfsprint)
+839df9049b3c824c824ef9cfaadaee611ecbf57d    APPLIED     lxd/device/device_utils_unix: use `errors.New()` (perfsprint)
+26ec552203a196eae5c6a80254327e54ec474763    APPLIED     lxd/device/device_utils_unix_events: use `errors.New()` (perfsprint)
+aebfde8e7b9a6f7487aca0fb6a0a3d8741830f76    APPLIED     lxd/device/disk: use `errors.New()` (perfsprint)
+875d4bae1048c2058fd4ed8e0c735bcfb6edf583    APPLIED     lxd/device/errors: use `errors.New()` (perfsprint)
+f157712b71b24ea0b783c1575584f70067cf823c    APPLIED     lxd/device/gpu_mdev: use `errors.New()` (perfsprint)
+3826c65f24cc3e74a284c5daa6c0b449a1370339    APPLIED     lxd/device/gpu_mig: use `errors.New()` (perfsprint)
+3e4fca2ea0112e623a7ca4418199d4bc53b5d9e8    APPLIED     lxd/device/gpu_physical: use `errors.New()` (perfsprint)
+f8ea9fc4cc19d3adff141eb57842503e2337cd4d    APPLIED     lxd/device/gpu_sriov: use `errors.New()` (perfsprint)
+80b93cc9b3f8eff1cbe3e35e47fd3855dea86c00    APPLIED     lxd/device/infiniband_physical: use `errors.New()` (perfsprint)
+c2daa0366df37ff9a59099bf1289229024295809    APPLIED     lxd/device/infiniband_sriov: use `errors.New()` (perfsprint)
+37da901534208aa9598b3d29d63c30df335dfb98    APPLIED     lxd/device/nic_bridged: use `errors.New()` (perfsprint)
+744d33819ef95c3c72aa552097ecdfe581748dcc    APPLIED     lxd/device/nic_ipvlan: use `errors.New()` (perfsprint)
+10a2b76c24c1391d1be1bcabe730715b0fa38f63    APPLIED     lxd/device/nic_macvlan: use `errors.New()` (perfsprint)
+3af02afa3711f2d0ef83b2000c9f27a99f02f452    APPLIED     lxd/device/nic_ovn: use `errors.New()` (perfsprint)
+157983383cde6098f3a60ab49258b28a798c4e6e    APPLIED     lxd/device/nic_p2p: use `errors.New()` (perfsprint)
+58ec3aee3987429349b4469320ac3231cd3a7c3d    APPLIED     lxd/device/nic_physical: use `errors.New()` (perfsprint)
+b7e50a9da36a7f1cd9ae012deaa361d0444bb3c9    APPLIED     lxd/device/nic_routed: use `errors.New()` (perfsprint)
+13765ac8098a10a8798cb1591a3cf17f4c90eba7    APPLIED     lxd/device/nic_sriov: use `errors.New()` (perfsprint)
+bc97b87d975fa8e2a2eabaf47832f17e817075e4    APPLIED     lxd/device/pci: use `errors.New()` (perfsprint)
+1b54ac0a170ca2c6e3b1dfbfbb396e3123523a2e    APPLIED     lxd/device/pci/pci: use `errors.New()` (perfsprint)
+b476699f83a2cb36d806fa8badd7e0deffc21769    APPLIED     lxd/device/proxy: use `errors.New()` (perfsprint)
+95c263ca1d4e7e8e083e9d815e734eb3f0007af4    APPLIED     lxd/device/tpm: use `errors.New()` (perfsprint)
+b15297bd89d04156398f0107a91f6eb49055d581    APPLIED     lxd/device/unix_common: use `errors.New()` (perfsprint)
+a1230a3c389cb6bb4b42804e8669c6308008c5e9    APPLIED     lxd/device/unix_hotplug: use `errors.New()` (perfsprint)
+e701fab8e5d40c9130a45aed79c7e7283799cbb3    APPLIED     lxd/device/usb: use `errors.New()` (perfsprint)
+de2d0ceca919b20a6ea8b28d1eeec81bf20de08f    APPLIED     lxd/dnsmasq/dhcpalloc/dhcpalloc: use `errors.New()` (perfsprint)
+b819cf5880ae5f47d6be6c696d6f1a259ab34587    APPLIED     lxd/endpoints/endpoints: use `errors.New()` (perfsprint)
+b763b95f82513c60c4599db4ca40ab4d9c210fa8    APPLIED     lxd/endpoints/listeners/starttls: use `errors.New()` (perfsprint)
+b601333252ac64c5a45b302c5c2de4876b185620    APPLIED     lxd/endpoints/socket: use `errors.New()` (perfsprint)
+38445b5a864d507e3b0a47fb0ac0256b56f25f64    APPLIED     lxd/endpoints/vsock: use `errors.New()` (perfsprint)
+05aa0486835372c8ddd846b8b6bcce2f288f3b05    APPLIED     lxd/events/events: use `errors.New()` (perfsprint)
+640d573d046c4be4f9017fbf11da69ebd8058315    APPLIED     lxd/firewall/drivers/drivers_nftables: use `errors.New()` (perfsprint)
+0fd8ec04aa59e9c469cf81c401df3cd9a8e21387    APPLIED     lxd/firewall/drivers/drivers_util: use `errors.New()` (perfsprint)
+cf9e669778f20405fd9e6c5332012394e9b2f41c    APPLIED     lxd/firewall/drivers/drivers_xtables: use `errors.New()` (perfsprint)
+aa7ef09b49e61947c1f9f0c7d97b83098a884e47    APPLIED     lxd/fsmonitor/drivers/errors: use `errors.New()` (perfsprint)
+976b11bd321450a8826f7ace7134311924a938d5    APPLIED     lxd/identities: use `errors.New()` (perfsprint)
+415467e9bcc5195af24f724f3d386865eabdac2f    APPLIED     lxd/idmap/idmapset_linux: use `errors.New()` (perfsprint)
+d9c18bab7a8d9735729709366ddf7316ed4a7ece    APPLIED     lxd/images: use `errors.New()` (perfsprint)
+62922b0c18c588a648d12c60cc2b66a89ae00187    APPLIED     lxd/instance/drivers/driver_common: use `errors.New()` (perfsprint)
+71be8e5c12e56c34f6742d8be9f13d0c7edca8ce    APPLIED     lxd/instance/drivers/driver_lxc: use `errors.New()` (perfsprint)
+43d71bca195a1cf8f5843d06e4fc4712d4f92e31    APPLIED     lxd/instance/drivers/driver_qemu: use `errors.New()` (perfsprint)
+6b6167976a50b1a4a4ec8b87361f4c7a025f4b1c    APPLIED     lxd/instance/drivers/driver_qemu_cmd: use `errors.New()` (perfsprint)
+fb423544651d12b8f39c4324e7c33bff3f6c8651    APPLIED     lxd/instance/drivers/driver_qemu_metrics: use `errors.New()` (perfsprint)
+a8256f4773c8d2aff5756ca42824ab4c85238c8c    APPLIED     lxd/instance/drivers/load: use `errors.New()` (perfsprint)
+0939b73dd55a5aa5fed66aa80276c623d4c5ca33    APPLIED     lxd/instance/drivers/qmp/commands: use `errors.New()` (perfsprint)
+c2214a26ed6ab488e6ac27d39aa1fd6f697752bc    APPLIED     lxd/instance/drivers/qmp/errors: use `errors.New()` (perfsprint)
+4f625d0a03bee33f7aef09953d0908ce1745f9fc    APPLIED     lxd/instance/drivers/qmp/monitor: use `errors.New()` (perfsprint)
+4f4544294e347aef97ea1f9fa895e4d33cb1380a    APPLIED     lxd/instance/drivers/uefi/uefi: use `errors.New()` (perfsprint)
+b8117d8fd63291f6707c339a28a369677d1466e5    APPLIED     lxd/instance/instance_errors: use `errors.New()` (perfsprint)
+e70e70499816e611344ae4d6b42b2543070dd31f    APPLIED     lxd/instance/instance_utils: use `errors.New()` (perfsprint)
+2ae0af2f7edc50ccaa5ced4e3f240712e299e17a    APPLIED     lxd/instance/instancetype/instance: use `errors.New()` (perfsprint)
+d80ede65233937e91e07979a9932d3fbc50a0ada    APPLIED     lxd/instance/instancetype/instance_type: use `errors.New()` (perfsprint)
+3774b9dd41c1775f5e08c28ef655f03de520d53e    APPLIED     lxd/instance/operationlock/operationlock: use `errors.New()` (perfsprint)
+764de20c11d99d4c33a24c45ecf6e479dc3bf63c    APPLIED     lxd/instance_backup: use `errors.New()` (perfsprint)
+bbc084e0857dbf8984ef6df62a3ba2b0b1d14f14    APPLIED     lxd/instance_console: use `errors.New()` (perfsprint)
+f06548f9f058db9168f28a30c4be703a2b5909e0    APPLIED     lxd/instance_delete: use `errors.New()` (perfsprint)
+2ce1dc0c4089f7e44e21f8f67db860c42798e583    APPLIED     lxd/instance_exec: use `errors.New()` (perfsprint)
+50ca1145fd083f84f824d16c95fb5ef06d741fdd    APPLIED     lxd/instance_file: use `errors.New()` (perfsprint)
+2f4102d4f0daf6edc36e4991b7342834228e91ee    APPLIED     lxd/instance_get: use `errors.New()` (perfsprint)
+948e9f20eeb1ada07384dd5da0ce56a82356258e    APPLIED     lxd/instance_logs: use `errors.New()` (perfsprint)
+98b7b21389483ac9982be6aa6e647630094d5a44    APPLIED     lxd/instance_metadata: use `errors.New()` (perfsprint)
+4566aeaced19234608f686571e001361e66a88a4    APPLIED     lxd/instance_patch: use `errors.New()` (perfsprint)
+3646035c0ee178de7b425b776f9c60e2b20e080a    APPLIED     lxd/instance_post: use `errors.New()` (perfsprint)
+a11abf0eb7667bfb266850695f33ad260edecc43    APPLIED     lxd/instance_put: use `errors.New()` (perfsprint)
+c55fa9af46b5a5f764d691f35daa675e055f65b5    APPLIED     lxd/instance_rebuild: use `errors.New()` (perfsprint)
+e050038a53ba18e19c9d8a832714d7b942f3df6f    APPLIED     lxd/instance_sftp: use `errors.New()` (perfsprint)
+1ad0402a63a54617df24edd00796f9af510124ff    APPLIED     lxd/instance_snapshot: use `errors.New()` (perfsprint)
+58d682c72db1d7283724e75d4d6e1f632a7b8166    APPLIED     lxd/instance_state: use `errors.New()` (perfsprint)
+b99e4805275091e124309219a6706701f2619b3d    APPLIED     lxd/instance_uefi_vars: use `errors.New()` (perfsprint)
+c0fcb11af2cd3c815e0ec5d5c00c0a33e84bdfc1    APPLIED     lxd/instances_get: use `errors.New()` (perfsprint)
+2a1e66c9bef393fb023bd9d8ebd8db7028cb4e04    APPLIED     lxd/instances_post: use `errors.New()` (perfsprint)
+859b264d252009fbbe6cc139dbd46014f38d8941    APPLIED     lxd/ip/link: use `errors.New()` (perfsprint)
+661e2893ac00791a3ea5704923322e29033204d5    APPLIED     lxd/loki/loki: use `errors.New()` (perfsprint)
+a0b6865cc71fd964f959dc32cd1e440be8612ef5    APPLIED     lxd/maas/controller: use `errors.New()` (perfsprint)
+1b8ad593107088ebdfe2a8ced9c16057610f1106    APPLIED     lxd/main_activateifneeded: use `errors.New()` (perfsprint)
+f8f7a811089ce06d0dd11e19e4f4f65bc80bee20    APPLIED     lxd/main_callhook: use `errors.New()` (perfsprint)
+3770bc5697c074154484165e6c7eeb3d101f36c6    APPLIED     lxd/main_cluster: use `errors.New()` (perfsprint)
+cbac2d297a813c30dfa1fdf49e1319d7c6924e72    APPLIED     lxd/main_daemon: use `errors.New()` (perfsprint)
+b0e1f92c949f2d839a7b82446dc15ec1157bb5dd    APPLIED     lxd/main_forkconsole: use `errors.New()` (perfsprint)
+b40b565d45a23c5d5911ed14f0b71fbadd18e680    APPLIED     lxd/main_forkdns: use `errors.New()` (perfsprint)
+a637912ceb221748ec80db245d8ec01dcce04e46    APPLIED     lxd/main_forklimits: use `errors.New()` (perfsprint)
+d0817aeb68aa6c333733e992dad719989be3e8ba    APPLIED     lxd/main_forkmigrate: use `errors.New()` (perfsprint)
+28760d4797ebcbba4eabebfee85517563b1c7906    APPLIED     lxd/main_forkstart: use `errors.New()` (perfsprint)
+e1228a95599d8e0e7e0e936d5f9a91d850dad0d1    APPLIED     lxd/main_forksyscallgo: use `errors.New()` (perfsprint)
+a2ee331b28e4d79c1ff86954ea36679aa257b467    APPLIED     lxd/main_forkzfs: use `errors.New()` (perfsprint)
+4e73c008169b6198b7b585cbd332ba2f0eccc6db    APPLIED     lxd/main_import: use `errors.New()` (perfsprint)
+b04e7935fc3eaf4122be3dfa26bc1035573e7488    IRRELEVANT  lxd/main_init: use `errors.New()` (perfsprint)
+5810e3c2536215f81105d7fd4b59288dd2d12695    APPLIED     lxd/main_init_auto: use `errors.New()` (perfsprint)
+be797418870fa16146b9bac86759aa246ba304b7    IRRELEVANT  lxd/main_init_interactive: use `errors.New()` (perfsprint)
+d030f7c0e84a696be2eab0f30726254f5c820691    APPLIED     lxd/main_manpage: use `errors.New()` (perfsprint)
+158497a18468122ee417929d92b32588e7c8e72d    APPLIED     lxd/main_netcat: use `errors.New()` (perfsprint)
+7f8f9c58678202595471b3c7eb192bdc7da8d0b5    APPLIED     lxd/main_recover: use `errors.New()` (perfsprint)
+6efffff44fde75804e284b3c9cd49dbaa34738be    APPLIED     lxd/main_shutdown: use `errors.New()` (perfsprint)
+cd745ee8dfb36e9625a2261d3509a949c10725c1    APPLIED     lxd/main_sql: use `errors.New()` (perfsprint)
+6be7393990221ce78adc1c1e8224d678822a4844    APPLIED     lxd/migrate_instance: use `errors.New()` (perfsprint)
+12b4b8c5f3cb8d314b73409d5800427efda8d64f    APPLIED     lxd/migrate_storage_volumes: use `errors.New()` (perfsprint)
+3b0d6a492d87c44a92846bde1c3fb883a54e2c0b    APPLIED     lxd/migration/wsproto: use `errors.New()` (perfsprint)
+07a4506e1210348f2b95e6db41c23ce9936affa1    APPLIED     lxd/migration_connection: use `errors.New()` (perfsprint)
+c2a63a03d662517d9ee0f0f8a50bdc2be019e4af    APPLIED     lxd/network/acl/acl_ovn: use `errors.New()` (perfsprint)
+7e457d282523a3d8ae08e7588ae86a5e4641ba88    APPLIED     lxd/network/acl/acl_validation: use `errors.New()` (perfsprint)
+a8d4b4a0058ef154051f93a8f29c438a63e37fcc    APPLIED     lxd/network/acl/driver_common: use `errors.New()` (perfsprint)
+76d2c56e06674079cf3b182f349a878412060454    APPLIED     lxd/network/driver_bridge: use `errors.New()` (perfsprint)
+4ae964ec379e105933030438a8d8be5718019b16    APPLIED     lxd/network/driver_common: use `errors.New()` (perfsprint)
+2af5ef6adb097c2f1af0f7c0dce54313d3746188    APPLIED     lxd/network/driver_ovn: use `errors.New()` (perfsprint)
+1322863c6c51ba1166522edcbebe495ebf92861f    APPLIED     lxd/network/driver_physical: use `errors.New()` (perfsprint)
+0175850f9616a5e03b3a906db70ef01c9ae6dbcb    APPLIED     lxd/network/errors: use `errors.New()` (perfsprint)
+bf6e942eec37f6193cca2b1b0c43e6bbe3491ef3    APPLIED     lxd/network/network_utils: use `errors.New()` (perfsprint)
+df27392275e56531498273ab685c1e639e6c6f14    APPLIED     lxd/network/network_utils_sriov: use `errors.New()` (perfsprint)
+8bafa4fb34438d06b3c37385a2723dfc087a8cf4    APPLIED     lxd/network/openvswitch/ovn: use `errors.New()` (perfsprint)
+a9ae18b008f4c329a889843106c1d57de9e64d46    APPLIED     lxd/network/openvswitch/ovs: use `errors.New()` (perfsprint)
+8927830955eac66c8f12ec73425fc59c5aed553a    APPLIED     lxd/network/zone/zone: use `errors.New()` (perfsprint)
+cec5053fff3278c8e665c9c57d8a0197917e4890    APPLIED     lxd/network_acls: use `errors.New()` (perfsprint)
+ede7a2fc04676252cd1a3040fc5463ece2eac190    APPLIED     lxd/network_zones: use `errors.New()` (perfsprint)
+cf327d4a4d5f8f3c5dee87df7a0eb9b0af799065    APPLIED     lxd/networks: use `errors.New()` (perfsprint)
+9fbd4d26ed0070a76e8d6a7215149f87a76f9be7    APPLIED     lxd/operations: use `errors.New()` (perfsprint)
+2bf32c434e7a4d0f35157caece0c2c46c2346969    APPLIED     lxd/operations/operations: use `errors.New()` (perfsprint)
+af95ffc3f534c915d4dd01ac64b70df211897f89    APPLIED     lxd/patches: use `errors.New()` (perfsprint)
+672db41bc49004e5cf4d14368d7df625c0170837    APPLIED     lxd/profiles: use `errors.New()` (perfsprint)
+5c3fad819110f16cd34b98dbb17b0ee1ea487331    APPLIED     lxd/profiles_utils: use `errors.New()` (perfsprint)
+62d3a71da9590fad79894dccf39a1787da2187b4    APPLIED     lxd/project/limits/permissions: use `errors.New()` (perfsprint)
+a3a710e688ebf5e48a1f0a661d04747f7b6f5b48    APPLIED     lxd/project/project: use `errors.New()` (perfsprint)
+1112806daf0f1fcb08092e1bb31eb41e36d7f34e    APPLIED     lxd/resources/cpu: use `errors.New()` (perfsprint)
+f566e959aa779592d3597f6cd13a5c6c7f16b814    APPLIED     lxd/resources/gpu: use `errors.New()` (perfsprint)
+19c24252f08d97f2faa6b3896ea25d5396f92b7f    APPLIED     lxd/response/upgrade: use `errors.New()` (perfsprint)
+3386362176d673a7c084bad5c833b788f0f1a0b3    APPLIED     lxd/rsync/rsync: use `errors.New()` (perfsprint)
+81c807be9cdb88a793302804abe2e911dde3989b    APPLIED     lxd/scriptlet/instance_placement: use `errors.New()` (perfsprint)
+287034f5d49d4ba59622ad92d29465b4478763e8    APPLIED     lxd/scriptlet/load/load: use `errors.New()` (perfsprint)
+25f8887c1ac7c3d2f92532f070e05643c79b0f59    APPLIED     lxd/storage/backend_lxd: use `errors.New()` (perfsprint)
+e4971f21a5d42b721da68d4ca49711f5868297d1    APPLIED     lxd/storage/block/discard: use `errors.New()` (perfsprint)
+8d225383a15c19110cae151c3488dbddcc07279f    APPLIED     lxd/storage/block/utils: use `errors.New()` (perfsprint)
+cdf2900ee80f76359d679994a99b82e0f336bb2a    APPLIED     lxd/storage/connectors/connector_sdc: use `errors.New()` (perfsprint)
+4e0ee9eeaedc96db874626e818bc47bfc4682aa4    APPLIED     lxd/storage/connectors/utils: use `errors.New()` (perfsprint)
+285f3f56ddc18aa74227d590897a45324d06a0b9    APPLIED     lxd/storage/drivers/driver_btrfs: use `errors.New()` (perfsprint)
+418d9c1177070b4ebe6d34999756d94e663062b4    APPLIED     lxd/storage/drivers/driver_btrfs_utils: use `errors.New()` (perfsprint)
+4bf133f0baff1de831488fa724ad53a9d05d813b    APPLIED     lxd/storage/drivers/driver_btrfs_volumes: use `errors.New()` (perfsprint)
+a631532918a59356b0b689652004fc200f6da24a    APPLIED     lxd/storage/drivers/driver_ceph: use `errors.New()` (perfsprint)
+a9549966eeee8c5537a0977d954378784c629f3b    APPLIED     lxd/storage/drivers/driver_ceph_utils: use `errors.New()` (perfsprint)
+29f09f5c405239796c80eecdbe6550137856a40c    APPLIED     lxd/storage/drivers/driver_ceph_volumes: use `errors.New()` (perfsprint)
+31ea2021c1dc1f40f07f4bdc09ae97d68d519a45    APPLIED     lxd/storage/drivers/driver_cephfs: use `errors.New()` (perfsprint)
+0e747287748c2c1c68022a043168c818eb41ac1e    APPLIED     lxd/storage/drivers/driver_cephfs_volumes: use `errors.New()` (perfsprint)
+85f19dc070c47cefddf174a48e686ff1ddaa27f3    APPLIED     lxd/storage/drivers/driver_cephobject: use `errors.New()` (perfsprint)
+4c6103d53300cfd167c7c8d402376e4408138134    APPLIED     lxd/storage/drivers/driver_cephobject_buckets: use `errors.New()` (perfsprint)
+86b4b82dc33638744c67023998af28632adaaf92    APPLIED     lxd/storage/drivers/driver_common: use `errors.New()` (perfsprint)
+3307e95ab251491d61f3ec4f9b3255d8d7298b3a    APPLIED     lxd/storage/drivers/driver_dir_utils: use `errors.New()` (perfsprint)
+f56fbe35137058394b0f29e61803e7a99cdddf4c    APPLIED     lxd/storage/drivers/driver_dir_volumes: use `errors.New()` (perfsprint)
+462d094b0bc03333896231c1f497811ac19e53a6    APPLIED     lxd/storage/drivers/driver_lvm: use `errors.New()` (perfsprint)
+e30c282c3a56345c16b36b547b6dcc83c60f0917    APPLIED     lxd/storage/drivers/driver_lvm_utils: use `errors.New()` (perfsprint)
+669b048c5a09d1cb679309f0fb7fe85b4f9a65a4    APPLIED     lxd/storage/drivers/driver_lvm_volumes: use `errors.New()` (perfsprint)
+5bd624f1e1b5b33d97cb26d50bc3d9f1b751433c    APPLIED     lxd/storage/drivers/driver_powerflex_utils: use `errors.New()` (perfsprint)
+e1c2df52012fcf1ae59da233de7eceb3802e1037    APPLIED     lxd/storage/drivers/driver_pure: use `errors.New()` (perfsprint)
+385b2cc037e37c5a188bdae68b0e29ea3b9dd924    APPLIED     lxd/storage/drivers/driver_pure_util: use `errors.New()` (perfsprint)
+94f3838714b4f4af93dd5abaaafbaa3cfcd95b97    APPLIED     lxd/storage/drivers/driver_zfs: use `errors.New()` (perfsprint)
+c24fb0ae1f88121cc2922d317aa2276dc27f44b3    APPLIED     lxd/storage/drivers/driver_zfs_utils: use `errors.New()` (perfsprint)
+143c780ef4a7594124d0d6e881b578ef82b571b1    APPLIED     lxd/storage/drivers/driver_zfs_volumes: use `errors.New()` (perfsprint)
+e481e55926b24c8c512c81055598616b0841647e    APPLIED     lxd/storage/drivers/errors: use `errors.New()` (perfsprint)
+75e848778eef1067757444878b6ca24120a03d71    APPLIED     lxd/storage/drivers/generic_vfs: use `errors.New()` (perfsprint)
+c6dc7fa1196daff4e8b0dbf248fce55a115bb675    APPLIED     lxd/storage/drivers/utils: use `errors.New()` (perfsprint)
+4a66f5b50a387392a9444ef734354f465400247b    APPLIED     lxd/storage/drivers/utils_ceph: use `errors.New()` (perfsprint)
+fb975e945a4d91fa1e5f01df3140f4692abe2459    APPLIED     lxd/storage/drivers/volume: use `errors.New()` (perfsprint)
+7c14794c509b9d9e53b42dc9f3e583191a587d99    APPLIED     lxd/storage/drivers/volume_test: use `errors.New()` (perfsprint)
+1d678a3af5ba176d7e88fb8426cbc4539106251d    APPLIED     lxd/storage/errors: use `errors.New()` (perfsprint)
+a0cdac43200852b73055a0b27cf4945e4bdadd1e    APPLIED     lxd/storage/filesystem/fs: use `errors.New()` (perfsprint)
+a571852957a6833a15229904a8f54ce0cd24d8de    APPLIED     lxd/storage/s3/policy: use `errors.New()` (perfsprint)
+ef9d20ca11294f0808230c68283350631bdd7191    APPLIED     lxd/storage/utils: use `errors.New()` (perfsprint)
+7309b9d96eb52f17837d91c29613a453c69e1531    APPLIED     lxd/storage_buckets: use `errors.New()` (perfsprint)
+147dbd0e55c4507ce38bb844a2c292512abbfe5d    APPLIED     lxd/storage_pools: use `errors.New()` (perfsprint)
+c330b406da73e7aaad704b08ceaf8ad137d5eec6    APPLIED     lxd/storage_volumes: use `errors.New()` (perfsprint)
+817ac1e6dfe9ef2e66b88e6589a1f37b19b0ae8a    APPLIED     lxd/storage_volumes_backup: use `errors.New()` (perfsprint)
+029b010fecd67d4003a49440d997d59aa88adb73    APPLIED     lxd/storage_volumes_snapshot: use `errors.New()` (perfsprint)
+4f4d89c8e3885bef78df59e665d6c4c6d26bca47    APPLIED     lxd/subprocess/errors: use `errors.New()` (perfsprint)
+09056e640a7aadbb56913505318431498fe18947    APPLIED     lxd/subprocess/proc: use `errors.New()` (perfsprint)
+e53f80156f00c0f13809def42b9a692f439edf06    APPLIED     lxd/task/schedule: use `errors.New()` (perfsprint)
+cec117f5e4753aa98812d6105155d8e46a9106ee    APPLIED     lxd/task/task_test: use `errors.New()` (perfsprint)
+5fc08cc321d05677195a9ae85eb02d38b3c19e03    APPLIED     lxd/template/chroot: use `errors.New()` (perfsprint)
+dc6ae513211751c23e26985a5bb144cadfb00de7    APPLIED     lxd/ucred/ucred: use `errors.New()` (perfsprint)
+11cac822aa29d151ab038c3e558302ae99dc15ab    APPLIED     lxd/util/http: use `errors.New()` (perfsprint)
+88593ab98a9c0128c4ccf4eac6f0e432155c38ee    APPLIED     lxd/util/kernel: use `errors.New()` (perfsprint)
+9760776b11c53275b7724ba6efaa9ba5a5033b5b    APPLIED     lxd/util/net: use `errors.New()` (perfsprint)
+36d7a7c13d2668172c2280de5eff878d232e5efd    APPLIED     lxd/util/random: use `errors.New()` (perfsprint)
+d524e6d6f29101da1f499cee66aa078cadb9f823    APPLIED     lxd/util/version: use `errors.New()` (perfsprint)
+c97823af22c0f36dfd5011323bb21b61186b9ba5    APPLIED     lxd/warnings: use `errors.New()` (perfsprint)
+c1da8e88d32a3783c299bac8213374c23e3fb42f    APPLIED     lxd/warnings/warnings: use `errors.New()` (perfsprint)
+702b8d49b23e30f9c1ceb239cfdda778ac13db6e    APPLIED     shared/api/operation: use `errors.New()` (perfsprint)
+4f4fa697cb1a0127f935a9e46a02bb27031e6fb2    APPLIED     shared/archive: use `errors.New()` (perfsprint)
+7a2b77aec0689bd6a9289b23ea4de1fcbf07f887    APPLIED     shared/cancel/http: use `errors.New()` (perfsprint)
+2115c2e6dc7cd184d9bb6ceaff2a523834ba669d    APPLIED     shared/cert: use `errors.New()` (perfsprint)
+1849701712a444d22e3ff8b561646a640b24c64b    APPLIED     shared/cmd/cancel: use `errors.New()` (perfsprint)
+184162c04a7297b4ae134d62967208fe95523625    APPLIED     shared/cmd/sort_test: use `errors.New()` (perfsprint)
+89484ff191d58f3e4876ad7a5bce2968fca4cb6d    APPLIED     shared/cmd/table: use `errors.New()` (perfsprint)
+fd3d20bae0924dbc0512d59f19a5f4ec433bcdbc    APPLIED     shared/cmd/table_test: use `errors.New()` (perfsprint)
+b7cf459c5ea4dcdbed54ec2c86cd0dc3f96957e2    APPLIED     shared/filter/clause: use `errors.New()` (perfsprint)
+e44d673ed07f3332bc84585d8d41a4d6159a205e    APPLIED     shared/filter/match: use `errors.New()` (perfsprint)
+bebd3ade09619ee9d213cf1253fa80045e89e36e    APPLIED     shared/ioprogress/reader: use `errors.New()` (perfsprint)
+8b28a3ae3cb9bcb73ae87dc696f55aa14d6bb5d2    APPLIED     shared/network: use `errors.New()` (perfsprint)
+d337b6b90e356992e6ddd149656157f0502fd84d    APPLIED     shared/network_ip: use `errors.New()` (perfsprint)
+9b75aa5b50311d1293ae33b172ad16814ffcb10e    APPLIED     shared/simplestreams/products: use `errors.New()` (perfsprint)
+23ebbdbe408d8fa30b52da6db7e683186e9c5ed5    APPLIED     shared/tcp/tcp_timeouts: use `errors.New()` (perfsprint)
+03f22d24b9f57a2741dbd5fb483f60e36ac6ab6e    APPLIED     shared/trust/hmac_argon2: use `errors.New()` (perfsprint)
+b6e133d463aafa260ed43539810091872d894059    APPLIED     shared/usbid/parse: use `errors.New()` (perfsprint)
+1775db1338d9e957a92bacd776ca512d7e02587c    APPLIED     shared/util: use `errors.New()` (perfsprint)
+815823a381e7324ee1ce8bdc8119789c19c03f64    APPLIED     shared/util_linux: use `errors.New()` (perfsprint)
+bb8355c4573aad2e52f0685eaeb8ae08ab1dad78    APPLIED     shared/validate/validate: use `errors.New()` (perfsprint)
+683502020688566ee4e7a247025a17debc4a260d    APPLIED     test/mini-oidc/storage/storage: use `errors.New()` (perfsprint)
+2fbfb11871963f6effdd42822f4401846b36bd0a    APPLIED     lxd/response/swagger: annotate individual strucs for nolint:unused
+8c940dccfec088c3b123c63331e61342a6cb119e    APPLIED     lxd/auth/oidc: Use hkdf from stdlib.
+a80873e1268ecd0a3e6341a6a375b2e3cd3719a0    APPLIED     lxd/network/driver_bridge: use `strings.Cut()` instead of `strings.Split()`
+ce5b2dc02dcfea5943f2c66cacdda8cfa1defd02    APPLIED     lxd/network/driver_bridge: replace `fmt.Sprintf()` by string concatenations (perfsprint)
+fac2880f0f9d3de96914c074824c92c16735776e    APPLIED     lxd/network/driver_bridge: replace `fmt.Sprintf()` with `strconv.FormatUint()`
+57af63cd1ec1f78d1ae0404ac3e460b8a2890d6d    APPLIED     lxd/network/driver_bridge: replace `fmt.Sprint()` with `strconv.Itoa()`
+fbd5131405ba2b27ce55ecb198efe13e518a4494    APPLIED     test/main: add iptables to required commands
+088a00bf71c9d9c78e58b0b5062a1d9de47f070a    APPLIED     test/main: add /bin/busybox to required commands
+7ed2e0b4e4329c35165f5b755169247abaff4f64    APPLIED     test/main: only umount dev if needed
+2c09faa9667ad1be4bea093b8c1bba26f4e41087    APPLIED     test/main: remove TEST_DIR
+d6a513680cd1beddade3162a0ea417b20716baf0    APPLIED     test/includes/lxd: ignore empty/missing daemons file
+1989b66b9ccf9629452f3618d116d31946579830    APPLIED     test/suites/clustering: use smaller containers in `clustering_metrics()`
+0573c7440041e491bf1f3d80b9dd28a5494832d3    APPLIED     test/suites/clustering: add `clustering_fan()`
+ae2397b3351e7bd97682936cbd127f67bb6a549b    APPLIED     test/main: run `clustering_fan` test
+c5f1b547f08f3d8f7f57ed3a0e823aab51adbc21    APPLIED     Revert "lxd/response/swagger: annotate individual strucs for nolint:unused"
+216f20542999453df56215214d453d8104cb31ff    APPLIED     lxd/response/swagger: silence noise from `unused` linter
+743ca3e0ab44e85d4f671624bf9e6e9b998e34d7    DIFFERS     build(deps): bump github/codeql-action from 3.28.16 to 3.28.17
+d8007b5390970737748b2456430d77f623b1364e    APPLIED     lxc/network_allocations: use `strconv.FormatBool()` (perfsprint)
+42b448fafc8db7323e24488c0146a1dc29f2eaed    APPLIED     lxd/api_1.0: use `strconv.FormatBool()` (perfsprint)
+e548a88d5d41176c7139d1b46f68e889ca79fca1    APPLIED     lxd/device/device_utils_network: use `strconv.FormatBool()` (perfsprint)
+9d34988f6c0c53d260554da3f6b5b5c31cc6057c    APPLIED     lxd/device/nic_ipvlan: use `strconv.FormatBool()` (perfsprint)
+9e3302d5110fd1eddcef549fff8ef9fc1a3d693e    APPLIED     lxd/device/nic_macvlan: use `strconv.FormatBool()` (perfsprint)
+84b009e3ba31f92ee00e16f9dabcf7224ec41a02    APPLIED     lxd/device/nic_physical: use `strconv.FormatBool()` (perfsprint)
+900d73849badf5b0a27c78d2dffaece3c4bba8d3    APPLIED     lxd/device/nic_routed: use `strconv.FormatBool()` (perfsprint)
+bbb208d4323f1ef3036c975309add358d8f991b1    APPLIED     lxd/instance/drivers/driver_lxc: use `strconv.FormatBool()` (perfsprint)
+5a914d6251d0249fbe35c0d63ca09b334dab4a50    APPLIED     lxd/main_init_interactive: use `strconv.FormatBool()` (perfsprint)
+e3eb60cf80be5cc12d162ab21cc9c687295f9844    APPLIED     lxd/storage/drivers/driver_btrfs_utils: use `strconv.FormatBool()` (perfsprint)
+1ee21807af36613c5c3502b1aad586fea341d921    APPLIED     lxd/storage/drivers/driver_pure_util: use `strconv.FormatBool()` (perfsprint)
+4450286367f4085e582864976213b7fb3ccf2ddf    APPLIED     client/lxd_images: use `hex.EncodeToString()` (perfsprint)
+52f5abc3382c3a8294cad3d13c21065e090f8d7e    APPLIED     lxd/apparmor/apparmor: use `hex.EncodeToString()` (perfsprint)
+c32fdca7cdd2d546ef237bf401ddbe70d1843227    APPLIED     lxd/daemon_images: use `hex.EncodeToString()` (perfsprint)
+8746b78b8590cc68a2cfd06775cbc63de33feb74    APPLIED     lxd/images: use `hex.EncodeToString()` (perfsprint)
+09b15426ea7593429897214d4e723eeb4c1c589e    APPLIED     lxd/util/http: use `hex.EncodeToString()` (perfsprint)
+ff5baba7eda875d8a0e866fd88fba59217b229c5    APPLIED     shared/util: use `hex.EncodeToString()` (perfsprint)
+494e6057ce437df49489c379d9af81e652bbd770    APPLIED     lxc/cluster_group: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+962f1a96ea9f9aac1e951cb41578e9fea0b180b4    APPLIED     lxc/console: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+d334c7c4e21699a29cb2bc5135d11f106abf6c9b    APPLIED     lxc/list: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+358825e4bdb3543979d88f73a55b4f896f4c0faf    APPLIED     lxc/network: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+ec28eb50582e0aec10186b40c78559cf9e037814    APPLIED     lxc/network_acl: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+0db62f1d7da670ad0ba4536f23807d66b91715d6    APPLIED     lxc/network_forward: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+4f0b5fc532de2d74603567cc4c1a619f37297d09    APPLIED     lxc/network_load_balancer: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+28cf8450fcd7723542a9fc627f7d6bc07bf82a3a    APPLIED     lxc/network_zone: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+86aa6b08c749ac134a3d8cea9437ea89708821aa    APPLIED     lxc/profile: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+1d8257aba3345909c42257976208474f65626c23    APPLIED     lxc/project: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+f43cba34d48b6128afad4e306c1d0238f3ea9a51    APPLIED     lxc/remote: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+cbcabab9b634e3f12e52e59595d43ae866a4f4a4    APPLIED     lxc/warning: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+e7b841dd0b0aeea78b1edfd9edc68d508045fb31    APPLIED     lxd-benchmark/benchmark/report: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+08cf30c852b5ae397fb769a2a70476e8b7595cdb    APPLIED     lxd-benchmark/benchmark/util: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+7aedc1ee5a233705f8aa48dc28bc7cd65c8ce721    APPLIED     lxd-user/lxd: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+815d1e9bc72431b52bb0a23e6163478cdca3ee65    APPLIED     lxd-user/proxy: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+6298c6472885eb1dab921f0badf778b6233bea03    APPLIED     lxd/api_devlxd: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+ac05bf0cf4fc6501c626c016a466177cb2beb7ce    APPLIED     lxd/archive/archive: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+ab4950caedfa587c524ce7631ee3dd3250da732f    APPLIED     lxd/daemon: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+4d6c051fa6ba9a2ce9c3d3998d2a0e422b90618c    APPLIED     lxd/db/cluster/open_test: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+8de154fa0227a0b02e700b316746f9f4f6c2df9a    APPLIED     lxd/device/cdi/configure: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+f9dae4699d3780b1bc0e93a940daba574cf29f9b    APPLIED     lxd/device/device_utils_network: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+2d8851ef6247a63e9e2676a6b58ad6a576e02a7f    APPLIED     lxd/device/device_utils_unix: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+b117b40d2a1afbcdf94b8780cf261f6790b36e99    APPLIED     lxd/device/gpu: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+9748a6674e2a9249d2d8cd295a9ea6f1efe0a028    APPLIED     lxd/device/gpu_sriov: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+f8d981214f34c329cd0c1216748eb6287378ecf7    APPLIED     lxd/device/infiniband_physical: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+fbba305ceec927012cbb26700c7fb1453dd8402f    APPLIED     lxd/device/infiniband_sriov: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+4ac8ec0b440f44f2b90d7c023502e61c81ee9512    APPLIED     lxd/device/nic_bridged: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+f20f15e3bb2f0bd8660c0807f67dc9a779427340    APPLIED     lxd/device/nic_ovn: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+6d2f1400364e12cbeaffd8db31ecbba51f15db27    APPLIED     lxd/device/nic_p2p: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+fc216351db3a0d766cfec91b66782fdbca50bfe4    APPLIED     lxd/device/nic_physical: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+d588c03162e1bd34193bcf0e4aeff2f16eda215d    APPLIED     lxd/device/nic_routed: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+97338e7010e8e0a103cbb4770703efdfac7fc0b2    APPLIED     lxd/device/nic_sriov: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+18b410701c79414eccf77febec4e607affae17ce    APPLIED     lxd/device/proxy: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+bdec5137b41daf23cb2527bfb1f052ae95213147    APPLIED     lxd/device/usb: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+7e343f55c2cdb14ad4997657219ec9aab6839dec    APPLIED     lxd/devices: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+70eaa316fa7c83c9ff41057ff20717d2b8e7eccb    APPLIED     lxd/firewall/drivers/drivers_util: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+35d76710414e8316e0c865352212340e19243959    APPLIED     lxd/firewall/drivers/drivers_xtables: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+f04d4b073103f39fe1ba1ebdc96817b5236c7e7a    APPLIED     lxd/instance/drivers/driver_lxc: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+07d3aeca001d3a4ebbe9b3650d7e0f7ee3db52e5    APPLIED     lxd/instance/drivers/driver_qemu_templates: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+c3292f894582af45a96d9e7c9d330674ee9a7db1    APPLIED     lxd/instance_file: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+d5905e510502e2525cb7a343b79e36470526323d    APPLIED     lxd/instance_instance_types: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+309652abdd7da3dced05735a4519c66fa8efef24    APPLIED     lxd/ip/link: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+a86ba45802bf9ad658447632e89865d61e177555    APPLIED     lxd/main_init_interactive: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+44b5c8050a28bb5f0c448ca52479440ea4ca1cba    APPLIED     lxd/network/driver_ovn: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+16c8279aace1b5317c59d6f24374e52ca89c4615    APPLIED     lxd/network/network_utils: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+a1f59f0413729165265b127236c7e4602dc9937d    APPLIED     lxd/network/network_utils_sriov: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+0cafc39cec7c4409121e6fc9328c9de4147b157b    APPLIED     lxd/network/openvswitch/ovn: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+db469289acbd668f824237fb2c3af7467dfcead1    APPLIED     lxd/network/zone/zone: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+6b2595682b33f5df045b684419db3ab748855303    APPLIED     lxd/project/limits/permissions: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+e8f5fc3ed1b6a65977574324177c9c945f530c5a    APPLIED     lxd/scriptlet/starlark_test: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+19185a4ddba4084daccf0ced1e41d733034f2eae    APPLIED     lxd/storage/drivers/driver_btrfs_volumes: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+ac63944839404d9c8b20efb2514b1fed9b7f17cf    APPLIED     lxd/storage/drivers/driver_cephfs_volumes: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+efcc656dd3ef5978dfbc688002f4aa23a6ff5696    APPLIED     lxd/storage/drivers/driver_lvm: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+527b4c0cfbbcdd53e21bbecd2b0b433a15bebc3b    APPLIED     lxd/storage/drivers/driver_powerflex_volumes: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+4d14b0b63fd0e92954eeef6c9059c7206c4bcb43    APPLIED     lxd/storage/drivers/driver_pure_volumes: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+b3b2bfdb442ec505f11053653d8126dcf3cc10d7    APPLIED     lxd/storage/drivers/driver_zfs: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+62c2aca1e941aeac7f5f6617eb005df02865d321    APPLIED     lxd/storage/drivers/driver_zfs_utils: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+05ab6eefa743a5416e152d1365309c5fb03eb3f2    APPLIED     lxd/storage/drivers/driver_zfs_volumes: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+55bad7250d7f0d38f20808aafbe91bebdd910d57    APPLIED     lxd/storage/drivers/generic_vfs: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+7f077d9f0a139be7f91d14431b2b6b62079ad818    APPLIED     lxd/storage/filesystem/fs: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+3a1fc30471fefa6d4b8595040324f339d85c25d6    APPLIED     lxd/storage/utils: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+fcb2cc341c07d0b9fd74bb08d12598b3ed39b7ff    APPLIED     lxd/util/net: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+0aafb27b013a70690ea6043b35b2ad496a148e64    APPLIED     lxd/util/random: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+b9659cf17e15ce754344d1ded76dd25f7b859f0c    APPLIED     shared/simplestreams/products: use `strconv` funcs to replace `fmt.Sprint{,f}()` (perfsprint)
+550c0cbcaccccf225fb4d4dc2d70911ff6d4b536    APPLIED     lxd/init: do not use `fmt.Sprint()` on strings (perfsprint)
+cbf4296591fa6545d32b4391906fe97cee1db4f0    APPLIED     lxd/lxd-metadata/lxd_metadata: do not use `fmt.Sprint()` on strings (perfsprint)
+8e7ad6d65bc78eb66e8dcc783fcdd497f9fe23a9    APPLIED     client/lxd_network_zones: use string concatenation where possible (perfsprint)
+e2faee1b1dc2d90781f91e445abe49bff0236be7    APPLIED     client/lxd_networks: use string concatenation where possible (perfsprint)
+e378bb9457a0d1bd5b41729f4b7ce39410a4ee9d    APPLIED     client/lxd_storage_pools: use string concatenation where possible (perfsprint)
+7d012d746eb533deec942d3a98c04656d9c3a060    APPLIED     client/lxd_warnings: use string concatenation where possible (perfsprint)
+20145aaa624c4a7d4b07f24a1bb0af8fa47d3829    APPLIED     client/simplestreams_images: use string concatenation where possible (perfsprint)
+1c273be8aadb59cc7d5c51b6828e3bc3dcec51b7    APPLIED     lxc-to-lxd/main_migrate: use string concatenation where possible (perfsprint)
+7ae044aa6c9d74dac04ad38a9e1f5f0bac4d411f    APPLIED     lxc-to-lxd/transfer: use string concatenation where possible (perfsprint)
+5c288fe69bbddad46f9a98c67c0abc31ed8c52aa    APPLIED     lxd-migrate/main_migrate: use string concatenation where possible (perfsprint)
+2dc87704da404b57c53df4653b5a4f5e3c4b7351    APPLIED     lxd-migrate/transfer: use string concatenation where possible (perfsprint)
+a1b75acc362c79c523654546a643042af75392dd    APPLIED     lxd-migrate/utils: use string concatenation where possible (perfsprint)
+eda1e68a42f36013093cf71ff03f606ab21c5b82    APPLIED     lxd/auth/generate/main: use string concatenation where possible (perfsprint)
+14c3fcaec029cfe862b8f18d1571b2e2a4bbbe64    APPLIED     lxd/config/errors: use string concatenation where possible (perfsprint)
+e8956a63448dcf53200d86c57b59992833e1191e    APPLIED     lxd/daemon_images: use string concatenation where possible (perfsprint)
+f8d56263ea15a219b7aa12982fd3fad2ad1c874a    APPLIED     lxd/db/cluster/entity_type_certificate: use string concatenation where possible (perfsprint)
+2217952306e14ca78842dcb6e0ada41f0f6a4da9    APPLIED     lxd/db/cluster/entity_type_cluster_group: use string concatenation where possible (perfsprint)
+5c1ebcb4bdbf3a0fcfe4569d4b97512d4d08be22    APPLIED     lxd/db/cluster/entity_type_cluster_member: use string concatenation where possible (perfsprint)
+39715bbec5d2ef24b05cf6291140069766605330    APPLIED     lxd/db/cluster/entity_type_container: use string concatenation where possible (perfsprint)
+934344d40ea01060933e7431b0c0d8aca2ec6ec6    APPLIED     lxd/db/cluster/entity_type_identity: use string concatenation where possible (perfsprint)
+8e5db76a2408e0fe70930335e7e08255326c2ad9    APPLIED     lxd/db/cluster/entity_type_identity_provider_group: use string concatenation where possible (perfsprint)
+54fe4b821fad937674a164c7c32ea2c08e86cb58    APPLIED     lxd/db/cluster/entity_type_image: use string concatenation where possible (perfsprint)
+4305efcefb535c12e6a3c7854f3e5e213c1e0f93    APPLIED     lxd/db/cluster/entity_type_image_alias: use string concatenation where possible (perfsprint)
+b93afa3838580c567be4f41b674e8cc3434cdf26    APPLIED     lxd/db/cluster/entity_type_instance: use string concatenation where possible (perfsprint)
+658d456f06dfd1c15a3c47ae0e22abf1915ad85b    APPLIED     lxd/db/cluster/entity_type_instance_backup: use string concatenation where possible (perfsprint)
+afca830011341e4bce260708eecd4bec104b5f79    APPLIED     lxd/db/cluster/entity_type_instance_snapshot: use string concatenation where possible (perfsprint)
+e2d02ebd42e45921119302afa788d9cad3632f80    APPLIED     lxd/db/cluster/entity_type_network: use string concatenation where possible (perfsprint)
+8cb31707386bc576237b47a92c36aca763b8fb7a    APPLIED     lxd/db/cluster/entity_type_network_acl: use string concatenation where possible (perfsprint)
+e7dde3aa67f9bff07a1af2332745fdbfbedc64d5    APPLIED     lxd/db/cluster/entity_type_network_zone: use string concatenation where possible (perfsprint)
+a380bb2f9582d27303dae0cd9c92bdea7cdcf009    APPLIED     lxd/db/cluster/entity_type_operation: use string concatenation where possible (perfsprint)
+0106abd0c86fe0b107fccce0d018a84bca62fcaf    APPLIED     lxd/db/cluster/entity_type_profile: use string concatenation where possible (perfsprint)
+e38e564eb7fb885072e91b5b2529c1a6296a0d7a    APPLIED     lxd/db/cluster/entity_type_project: use string concatenation where possible (perfsprint)
+c2299302024cad42a876eb203ea2f57f2a25c391    APPLIED     lxd/db/cluster/entity_type_storage_bucket: use string concatenation where possible (perfsprint)
+cf22802e5c9a887263d72d48611fe4fa7ae9ec41    APPLIED     lxd/db/cluster/entity_type_storage_pool: use string concatenation where possible (perfsprint)
+ffd1f6ddf4892a265e3de4f924f3b1d277347d8a    APPLIED     lxd/db/cluster/entity_type_storage_volume: use string concatenation where possible (perfsprint)
+0962e2a92ce122e6b4069c23a88e30e0db7e572b    APPLIED     lxd/db/cluster/entity_type_storage_volume_backup: use string concatenation where possible (perfsprint)
+9b8e1f3b3ddcc6cf457ddf5dbabaa34584ae3fa5    APPLIED     lxd/db/cluster/entity_type_storage_volume_snapshot: use string concatenation where possible (perfsprint)
+f51925675a186f24a0ff985eac1f3eaa779a0cd5    APPLIED     lxd/db/cluster/identity_provider_groups: use string concatenation where possible (perfsprint)
+2c9bb3f6452b3a40916a721ae21ad26d687ef300    APPLIED     lxd/db/cluster/update_test: use string concatenation where possible (perfsprint)
+823e7f0af4cd8b4389a5002f2bb8eb690722f243    APPLIED     lxd/db/generate/db/method: use string concatenation where possible (perfsprint)
+7d28c0fd91cd95599014f5cfbfdaff68287ecf29    APPLIED     lxd/db/generate/db/stmt: use string concatenation where possible (perfsprint)
+df5d7f6db2ce417bb6f765a73416657b4a2de59b    APPLIED     lxd/db/generate/file/write: use string concatenation where possible (perfsprint)
+1d424ce0f3e83e922f639f0290dcf6cce269b75e    APPLIED     lxd/db/generate/lex/lang: use string concatenation where possible (perfsprint)
+a8e7fa51a408091bde921c0ba81fc4fec976903e    APPLIED     lxd/db/migration: use string concatenation where possible (perfsprint)
+98ca95d241ed3bac9b4d6595d1a84aef1d2202c4    APPLIED     lxd/db/storage_pools: use string concatenation where possible (perfsprint)
+151c2e1c526b5245294f3d776f8a5052d6deac19    APPLIED     lxd/device/device_utils_usb_events: use string concatenation where possible (perfsprint)
+227b76c0171a4b0f320d1ef70c3f9c5ccee39ce4    APPLIED     lxd/device/gpu_mdev: use string concatenation where possible (perfsprint)
+306d4614044118f2d6994d6ab03f660648b51846    APPLIED     lxd/device/gpu_mig: use string concatenation where possible (perfsprint)
+8e41436a2b590049a44807a2c8d32eb3e667838d    APPLIED     lxd/device/infiniband_physical: use string concatenation where possible (perfsprint)
+b0523d6cfb4badb7049220977deb1bbd4e249f4b    APPLIED     lxd/device/infiniband_sriov: use string concatenation where possible (perfsprint)
+8bdb4d7972ab21120a74f30a42c32a023087bcaf    APPLIED     lxd/device/nic_bridged: use string concatenation where possible (perfsprint)
+8443dcbea1e12dfc41ad00c12f68a9308d618d48    APPLIED     lxd/device/nic_ipvlan: use string concatenation where possible (perfsprint)
+4938facf1581bb5e81f72945f408b8594ece45cd    APPLIED     lxd/device/nic_macvlan: use string concatenation where possible (perfsprint)
+bdecfea899aed174d02e36144f081ee8d4b2243b    APPLIED     lxd/device/nic_ovn: use string concatenation where possible (perfsprint)
+224949ed3d98eada712cf49f4bb1d0b762b850d3    APPLIED     lxd/device/nic_physical: use string concatenation where possible (perfsprint)
+22b78c2fef6dfc320ea2035bf2597acf4526f369    APPLIED     lxd/device/nic_routed: use string concatenation where possible (perfsprint)
+714f29d9e8ac5ff0342b63ac663064c34037895e    APPLIED     lxd/device/pci/pci: use string concatenation where possible (perfsprint)
+4d4441ade260fb49f252951bbe577661b0441db0    APPLIED     lxd/device/proxy: use string concatenation where possible (perfsprint)
+743e19e46f5650ed9b6d8f4ad72989d8b45cffbb    APPLIED     lxd/device/tpm: use string concatenation where possible (perfsprint)
+d0ca8b1e88a18006ad24dde2e5229665cd689954    APPLIED     lxd/devlxd_test: use string concatenation where possible (perfsprint)
+ed59a32c36f065dfc781e0ffb89dfb89dd847fb9    APPLIED     lxd/endpoints/network_test: use string concatenation where possible (perfsprint)
+048d18c226838e19fd303b1745c7208ba150bd7b    APPLIED     lxd/instance: use string concatenation where possible (perfsprint)
+53e3d4db7d7602bd39c57c58c77318d27dcc6295    APPLIED     lxd/instance/drivers/driver_common: use string concatenation where possible (perfsprint)
+4ec36575fa7ca321e6f29d14efc90ed59bf79ed2    APPLIED     lxd/instance/drivers/driver_qemu_bus: use string concatenation where possible (perfsprint)
+1bc93c36eaec61d152acc1dd8d4869c30a59b901    APPLIED     lxd/instance/instance_utils: use string concatenation where possible (perfsprint)
+ca936dfa7b7002cf6062b0f2c2d6556e4ce614b7    APPLIED     lxd/instance_instance_types: use string concatenation where possible (perfsprint)
+969bfb51989b7ad8584a23534f5a354fec8fa86d    APPLIED     lxd/maas/controller: use string concatenation where possible (perfsprint)
+3be95e01a2cc0ec63df6761f67eff1a7d0131e19    APPLIED     lxd/main_forkdns: use string concatenation where possible (perfsprint)
+fd2b15ed7ad22dbd872251a2e12fbe66c3ddb10b    APPLIED     lxd/main_migratedumpsuccess: use string concatenation where possible (perfsprint)
+6ea636fe62f55741f93afab8d9785fd243c55af8    APPLIED     lxd/main_shutdown: use string concatenation where possible (perfsprint)
+f846a0682a34c4756202804ce18cff9c193ebeed    APPLIED     lxd/main_test: use string concatenation where possible (perfsprint)
+b570bc3ae160a303d6de8818d36970ffe29fc729    APPLIED     lxd/network/acl/acl_firewall: use string concatenation where possible (perfsprint)
+7c5c86c6957c38c15e5bb640ca0c6658feecd7a7    APPLIED     lxd/network/acl/acl_ovn: use string concatenation where possible (perfsprint)
+85b0e319e69dbd49105497566b34080c324b7171    APPLIED     lxd/network/acl/driver_common: use string concatenation where possible (perfsprint)
+bfa5a7f7b11239fcc5b6048b197a32751e04817b    APPLIED     lxd/network/driver_ovn: use string concatenation where possible (perfsprint)
+aebd3964634804c1596a6034392cddaddaa10c81    APPLIED     lxd/network/network_utils: use string concatenation where possible (perfsprint)
+9231c17311c110b0317024cb635a23d611eab9c3    APPLIED     lxd/network/network_utils_sriov: use string concatenation where possible (perfsprint)
+3666e36800a77e246f14baa8b027b22c5926244d    APPLIED     lxd/network/openvswitch/ovn: use string concatenation where possible (perfsprint)
+bcc2fc81442ec16e6dbbe1861a686d42ac08c5d8    APPLIED     lxd/network_allocations: use string concatenation where possible (perfsprint)
+093262bf0ae450a49abbf1d00e18329b17fee463    APPLIED     lxd/operations: use string concatenation where possible (perfsprint)
+f1daf35417adb1c745f4b1790593b9382d507a59    APPLIED     lxd/patches: use string concatenation where possible (perfsprint)
+bf5c8527ede662b645939e12886e06cf7444c9d9    APPLIED     lxd/resources/gpu: use string concatenation where possible (perfsprint)
+12b177198261057f84f7c468e099aa0c9fdd1801    APPLIED     lxd/resources/storage: use string concatenation where possible (perfsprint)
+92607925d8d874335a6750f900fc0a0e9f303859    APPLIED     lxd/rsync/rsync: use string concatenation where possible (perfsprint)
+8824f9092209b02091ce6a434b4b92e3ff3e3d5e    APPLIED     lxd/scriptlet/instance_placement: use string concatenation where possible (perfsprint)
+63a5f64f206e316375dba623a94837cfe37d5816    APPLIED     lxd/storage/connectors/connector_nvme: use string concatenation where possible (perfsprint)
+595c8acd8e2a8e8141380c957555659328281fab    APPLIED     lxd/storage/drivers/driver_ceph_utils: use string concatenation where possible (perfsprint)
+e994451de1adbe4ecd56044b5c69e5b90103d71f    APPLIED     lxd/storage/drivers/driver_ceph_volumes: use string concatenation where possible (perfsprint)
+295c39b728ff3d098a0962d95f523d7c55aa5098    APPLIED     lxd/storage/drivers/driver_cephfs: use string concatenation where possible (perfsprint)
+b4d1c36fe56f755ff906129486943cffce58669e    APPLIED     lxd/storage/drivers/driver_common: use string concatenation where possible (perfsprint)
+4297a263a2a9e29d6ae23bff149c8a0bf2d8b7d9    APPLIED     lxd/storage/s3/miniod/admin: use string concatenation where possible (perfsprint)
+96cdd1d8d7c9873ff2df7c93eba90898bcde1c01    APPLIED     shared/osarch/release_test: use string concatenation where possible (perfsprint)
+7649d6d4abd5f525469a4070bfa3db06891a4a01    APPLIED     lxc/cluster: use `errors.New()` (perfsprint)
+e14a351827bcedc11b4e697cc5ed6ef58a1987ba    APPLIED     lxd/instance/drivers/load: use `error.Error()` (perfsprint)
+c614c550842724de212fd81af4f7e965c637b4e4    APPLIED     lxd/instances: use `error.Error()` (perfsprint)
+2c2d84f29e0bb5b6bced569044cf2ac420412f81    APPLIED     lxd/main_forkcoresched: use `errors.New()`
+8dc65a2647488570f1edae09f0ef5066a88f4744    APPLIED     lxd/main_forkexec: use `errors.New()`
+cf085447d5fee6ebe6858ef14d37a7b0d11528d0    APPLIED     lxd/storage/quota/projectquota: use `errors.New()`
+83948459d5fffffadb062ccfdfb865ab7d50527d    APPLIED     lxd/main_forkmount: use `errors.New()`
+283772b9d60480af710f422aaab3fa172fed12a0    APPLIED     lxd/main_forknet: use `errors.New()`
+f76002a56a31fb82f9428171fabfc219ce28d16b    APPLIED     lxd/linux/socket_linux_cgo: use `strconv.FormatInt()`
+43bbc74d5051721c1dd70ce4e03bc1d4f6a3ad0d    APPLIED     lxd/idmap/shift_linux: use `errors.New()`
+ff9546d4ada19882513a94cdf330e8ffd0595d11    APPLIED     lxd/main_forksyscall: use `errors.New()`
+c476f7045806ab795d0378489d75248935c5b7eb    APPLIED     lxd/main_forkuevent: use `errors.New()`
+c8e85cc9244a0486cb8a1e8a1fd96fbdd6c6bee4    APPLIED     lxd/main_forkproxy: use `errors.New()`
+83d9cb0199374c479d9760246772a2bc1eba625d    APPLIED     lxd/main_forkproxy: use `strconv.FormatUint()`
+91c6e275cf934037ca3eeac661853915718ff064    APPLIED     shared/netutils/network_linux_cgo: use `strconv.FormatUint()`
+1723335e625457afe7eca91366063f89e4f9673e    APPLIED     shared/netutils/network_linux_cgo: use `errors.New()`
+380b37dedc177b4fac2f8f4c5e052f58f0dcc8fa    APPLIED     lxd/seccomp/seccomp: use `errors.New()`
+5973d92a48284249a1697ca0a7078e7d925bcc59    APPLIED     lxd/seccomp/seccomp: use string concatenation
+99e037a8090f17588d19499d1985e27785c7a5a5    APPLIED     lxd/seccomp/seccomp: avoid unneeded `fmt.Sprintf()`
+ebace19c4a6564903af02a3742ddb0ae9ef2fe39    APPLIED     lxd/seccomp/seccomp: use `strconvFormatUint()` to convert from _Ctype___u32 to string
+9e7840d3e557abbb84e2345243c26cfaab434400    APPLIED     lxd/seccomp/seccomp: fix format
+572ec3a0b593395339e1d991a8b63ee33e52b4dc    APPLIED     lxd/seccomp/seccomp: use `strconv.Itoa()` for int->string
+29d553b043f7c4af81c5b3d4540df43141e1d927    APPLIED     lxd/seccomp/seccomp: use `strconv.FormatInt()` for int64->string
+c19f3320c4b82563088839b5f2d1cdf3e9609ea6    APPLIED     golangci-lint: enable perfsprint linter
+5afc9562d37a72b891f879b4812cfd23049f5892    APPLIED     lxd/devlxd_test: gci
+35bff8035d378d0e5ed9f6672ee8e3f23f7cfdb7    APPLIED     lxd/util/net: gci
+85ceeaae71c33264587afc113ef7c785a4cf87bc    APPLIED     shared/simplestreams/products: gci
+d8332d58bc960cdf70a8eeaf8b8175fa29e5deb2    APPLIED     lxd/db/cluster/open_test: gci
+649df6e84c1ec13e2f594b98681b6a6946f31b56    APPLIED     lxd/instances: gci
+7d9eba62db2a03223a3ef9976ec95585ca504daf    APPLIED     lxd/main_test: gci
+0cc3b08125f8ef1806aa97b65df19fa8df5318d5    APPLIED     lxd/linux/socket_linux_cgo: drop = nil from declaration of var
+b55be5e0917fdc8e1886523c317f74abe6174f25    APPLIED     lxd: unexport command and run funcs
+9f74f43cf6382b411a1362c15b04beb732455d79    APPLIED     lxd/main_fork*: add trailing dot to comment
+6337f8780e5035a94300599316d22533a25ccaf8    APPLIED     lxd/idmap/shift_linux: add trailing dot to comments
+9684dbb97749a8baedba477df9c1a524ca09a652    APPLIED     lxd/device/gpu: ignore suggestion to apply De Morgan's law
+d90f0bbdd36101e5412a964ea631edb1db5b7a5e    APPLIED     lxd/linux/socket_linux_cgo: don't comment constants from C
+fbf733cf1452f8d8b907440784f023ff79a01892    APPLIED     lxd/linux/socket_linux_cgo: add comments to exported funcs
+eb640f6f41df6c64465faeb6ed8360bbb00c32f8    APPLIED     lxd/idmap/shift_linux: stop godot from wanting a trailing dot
+983142b532af30fb66b6c50ec0316ad9b943bfc7    APPLIED     lxd: Don't persist vol users inside DB transaction in storagePoolVolumeUpdateUsers
+5e1b67d986aab87b94f1b9d5f16039ba8ae64217    APPLIED     lxd/storage: Add PoolUsedByInstanceDevices
+7cdcef53293f8e69961673a8295758851072b0a8    APPLIED     lxd/storage: Update instance config file when pool gets updated
+dd9579f0bc75da6045df3c63eefb96d1f9b343a2    APPLIED     test/suites/backup: Test the on disk backup file in backup_metadata
+aa1a3dd3dda04cae364e003ee9e9faf66e7e6ec0    APPLIED     lxd/instance: Pass pointer time snapshot expiry
+8e1a6720be3412cd3b3df8a0a02bbde89beccf8e    APPLIED     lxd/instance/drivers: Pass pointer time to internal snapshot funcs
+f92048d82b589e142bf1cbb1bc7c53f2ed682fa9    APPLIED     lxd/instance: Retrieve default expiry closer to snapshot creation
+06381ab3dc20a932ab3da395c21a3afa6bb0f97e    APPLIED     lxd: Pass nil time in autoCreateInstanceSnapshots
+abae1cd22ffe1226ca078b515e721d236a95d1cc    APPLIED     lxd/storage: Pass pointer time snapshot expiry
+97607325a07681109ebb1bd22b278fd3725f0534    APPLIED     lxd/storage: Retrieve default expiry closer to snapshot creation
+0493569b4162c23bf4fdc42c8fb05a69464c54e1    APPLIED     lxd: Pass nil time in autoCreateCustomVolumeSnapshots
+e08f8164d9c25def3e4c01c7b38e0b754d28c06b    APPLIED     test/suites: Revert comparing creation/expiry dates without microseconds
+3fa4333fa4a63c69486706547439e7e2ce45e988    APPLIED     lxd/device: Skip address conflict validation for instance NIC rename
+9e5d996d314819c26fb617821f80036b656d12a6    APPLIED     tests: Add tests for bridged NIC device renaming
+22656603661d14606f623d68334081fb442681a9    APPLIED     tests: Initialize instances with `SMALL_ROOT_DISK` in bridged NIC container device tests
+33b34f6158be29abe289a4c590645b17502109e9    APPLIED     tests: Launch instance with `SMALL_ROOT_DISK` in bridged NIC container device tests
+de5f9a32f57226c4878fdceda61f645c8c7fc610    APPLIED     shared/entity: Add a `requiresLocation` method to `typeInfo`.
+0605c1e78a97b506337e3c489e6726ce41d208af    APPLIED     shared/entity: Only set the `target` parameter if location is required.
+6efd48b91c6684ef1f18cbd29147eabf82ed2a7c    APPLIED     shared/entity: Test target parameter is removed from normalised instance URLs.
+20ba54a01aa54331a6b04a6e19e8bf69057926cb    APPLIED     doc: Update storage volumes > Create an instance [WD-21423]
+b66904e04ec494dcc9a103e888a5d0021b18a78f    APPLIED     lxd: Add response forwarding for remote targets to `storagePoolVolumeSnapshotsTypeGet`
+7b9f53e351fe9cc34b321ab4be70e085ce893cdf    APPLIED     tests: Add test to `clustering_storage` for creating and viewing storage volume snapshots
+aa8f3dfe0786f00e369658fe199927e236fdc1b7    APPLIED     lxd/storage: Check instance size during migration
+5bdcb1afc478d37014aeaddb2239631f71456a02    APPLIED     lxd/storage: Fix migration error due to rounding
+a24a27d7878f4e35febafa4898af2ab9d984f524    APPLIED     lxd/storage: Reword error message in `CreateInstanceFromMigration` for consistency with conversion API
+f45af52975a2118e281e6543708da6be60935761    APPLIED     doc: update absolute URL link to MicroCloud docs
+7b555354bfb492dacb5b4cb0bae06d90bb674525    DIFFERS     update absolute URL links to LXD docs
+04ab1ce602e06d802c0480f40fcb0cd8b75d7a3a    APPLIED     doc: use double instead of single quotes around relatedlinks
+1a69234a19de86547e6505f59311fe4a19ad1d4f    APPLIED     doc/howto/snap: update snap store proxy to enterprise store
+9c5299f74c2c86620078c5815700201626bd4ea4    APPLIED     shared/cancel: Reworks Canceller to be an interface and avoid using internal context.WithCancel
+e8c68360fcdd036d4091a62ef95e59ecb81daa7f    APPLIED     lxd/daemon: Update cancel.Canceller usage
+25569da66e41ef7970df51a50e160f8c81211b70    APPLIED     lxd/daemon: Change shutdownCtx to a cancel.Canceller
+cec9acfd15fc27207aec47d3ba72f5bea0e9668b    APPLIED     lxd/events: Update cancel.Canceller usage
+b846dba2392fc9e2164f39f4419358cfdd48aaee    APPLIED     lxd/instance/exec: Update cancel.Canceller usage
+7c242fb2769f8526980251c9412e442f9d46859c    APPLIED     lxd/instance/exec: Use sync.OnceFunc for conciseness
+6664c9e87568fcd269fb310b82eab802eb71789f    APPLIED     lxd/operations: Update cancel.Canceller usage
+98af7596f794c3e11efc510d0856627daf539fe8    APPLIED     lxd/storage/s3/miniod: Update cancel.Canceller usage
+429442da40eb7ae2dca30fbb54e15ccd2484298d    APPLIED     lxd/loki: Switch to cancel.Canceller
+e517ee96f5358a07a0a84be61781d7f1e7c6e3fd    APPLIED     lxd/patches/test: Update cancel.Canceller usage
+77842e6fc828cba6e083c7d6462c4409f5575c79    APPLIED     lxd/auth/drivers: Log access denials where OpenFGA couldn't find the requested tuple.
+683f8fc460cb8e8ce512107e40479a8169795cc6    APPLIED     lxd: Update instance permissions on move.
+f31af2ba509efe9a1bb8c4a55d76d06f845c4bea    APPLIED     test/suites: Update clustering move tests to use fine-grained auth.
+9105f4ff01f7fde52f01e6d64c45263c97b8d243    APPLIED     github: replace `lxc-utils` by `liblxc-common` in actions/install-lxd-runtimedeps
+776b33b3b65451fbe2406d1e90af7eb13a5232e4    APPLIED     lxc/storage_volume: Improve error messages for `lxc storage volume export`
+09db29d829851b46d429d32bf70c092ba3792ea8    APPLIED     lxc/config_device: Improve error message when attempting to set instance device from profile
+7876afad94a7396bbc6626110d85505890e47638    IRRELEVANT  i18n: Update translation templates.
+b07c2f530beea3bec11ae3dae0023e4e032e28f7    IRRELEVANT  i18n: Update translations.
+34cb914646224495cf8cddd2cceabee0b3304223    APPLIED     doc/ref/userns-idmap: add info about lxd snap
+358fc1f8932b67c561577dd401f936c849459363    APPLIED     lxd/db: Move GetImageSource and ImageSourceProtocol to db/cluster
+a90eff42d00fe1396bac3db678b6ebbe4593b176    APPLIED     lxd/db/cluster/images: Adds ToAPI()
+c04f18aa6396ff5f3d07de6d2bfd0f08f0e09db1    APPLIED     lxd/db/images: Updates GetImageByFingerprintPrefix to use ToAPI
+7d71817e53ef754bf380cba8c68213b89e2afb55    APPLIED     lxd/db/images: Updates GetImageFromAnyProject to use ToAPI
+3a24090982a8bbae4cd6771d99c217e7b0b3d8f6    APPLIED     lxd/db/images: Removes unused imageFillProfiles and imageFill functions
+fad72c8f6969efeb63bf2d267beba2e9da089a7e    APPLIED     doc/migration: remove reference to `howto/migrate_from_lxc`
+6d608812c63b79f276624684b744a14a22e619ea    APPLIED     doc/instances: remove reference to `howto/migrate_from_lxc`
+87ef0fde0a17b75b248a10269e43a57066cc030d    APPLIED     doc/howto/migrate_from_lxc: delete doc about `lxc-to-lxd` tool
+1bf7ca6f8ad7a28dc2e0aaeea57171b8b0f171e5    APPLIED     test/main: stop calling lxc_to_lxd test
+5a27f709622d6ee537bf00a5c2034c3968eee8e7    APPLIED     test/suites/lxc-to-lxd: stop testing `lxc-to-lxd`
+5e883f2a20d20a6601841b8ad90d6b351b1bc788    APPLIED     Makefile: stop building `lxc-to-lxd`
+09dc9168898397d34f338a776ba8986d1ae344bf    APPLIED     gitignore: remove `lxc-to-lxd`
+0e3276171847a5f5dd3197114ae75710c97f7c5b    APPLIED     github: stop pulling `lxc-utils` in actions/install-lxd-builddeps
+d19b61003c57d9df68381fc2930d99200617d90a    APPLIED     lxc-to-lxd: remove code
+017daca2ea0750566962917cb7aa4fd39a49cd3e    APPLIED     doc: remove unused topical migration landing page
+c41ff97a16b77ce315582952dfe52c706904e6bf    APPLIED     doc: rename move_instances to instances_migrate, update links/redirect
+000ddc4ed8cb4fc256791e106ca9a41d5cdc117c    APPLIED     doc: use migrate wording to describe moving instances between servers
+524f756d9a130bfaf4975f153cd3c039703d32af    APPLIED     lxd/device/nic/bridged: Handle invalid configuration
+1431ae2e0d7117516a6480f774877847c4b56fa2    APPLIED     lxd/db/cluster/images: Only populate UpdateImageSource if source is found in ToAPI()
+8d82c931d706efe511cba2f2f98eb42ad62ce821    APPLIED     lxd/db/cluster/images: Update GetImageSource to return pointer to image
+1934d31b64615ac7433d24b38dbb2baec084105d    APPLIED     lxd/images: Updated GetImageSource usage
+cdf976e9926f3b30b0a15147d650e69a5155956b    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.32.0 to 0.33.0
+3d36fe138bc5200418c5c1b179ffb414ffc91620    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.65 to 1.1.66
+318f5e03703970b8e1beb68223c66c26bb931691    IRRELEVANT  build(deps): bump github.com/vishvananda/netlink from 1.3.0 to 1.3.1
+0e5f7530b3f7b5e11cee3adf3a03bc4583fc1006    IRRELEVANT  build(deps): bump github.com/osrg/gobgp/v3 from 3.36.0 to 3.37.0
+147c6d376fa91f8f11eb9062ebe6b4a0ad382de2    APPLIED     doc/howto/instances_migrate: add related topics list
+2336e75b84a8d55011685559bd5d54a1ff18dcca    APPLIED     github: improve efficiency of lxc/lxd-agent bin size checks
+36d70d0a41098f0ce83c54ea2de38676eac04991    APPLIED     test/main: rsync is a required dependency
+27054020ac6420d8985625f6d834ac676bc72c18    APPLIED     test/main: try to set GOPATH if not done already
+05d418a891301da55556bba3f2dd6d93e6a3ed43    APPLIED     test/main: verify that other users can access all parent dirs of the test dir
+b87b5a9ddba1c5b623b08d3ab8d9f1e2a90b9c0a    APPLIED     test/includes/lxd: bail early in panic_checker if no daemons file exist
+ff455d430f1fa061d8c97bf5478c53f050cf505c    APPLIED     test/suites/exec: use smaller sleep when checking back on ops
+e098f3ed8a3aa604ddf1582a2903c22fdf64ef08    APPLIED     lxd: Add target request forwarding to `storagePoolVolumeTypeCustomBackupsGet`
+f32f053c69234b9c583e1732d408fe7848eff0d2    APPLIED     lxd: Consolidate function calls into one database transaction in `storagePoolVolumeTypeCustomBackupsPost`
+78bb81453f420e37be1da6f9cdfca3e1fbf678cb    APPLIED     github: only check lxc/lxd-agent bin sizes of not built for coverage
+dfb0ff331c170078c8c2d82e9a973aba87f01aca    APPLIED     staticcheck.conf: add dedicated config to ignore ST1005
+f8ac7d7a5a6865a66f35aad13d9a6252448c422e    APPLIED     lxd/seccomp: avoid int overflow in process count
+3f8b4d571ede174cdc96fe0dfcb99a8fffc8fc03    APPLIED     shared/util_linux: avoid int overflow in terminal `SetSize()`
+7c83e1183c9452abaa5cf711fae389918950ca1f    APPLIED     lxd: Disallow deletion of server certificates.
+ddbb146805fdd7bdf96ba327411592de33b3bf48    APPLIED     test/suites: Test that server certificates can't be deleted.
+d41fe9a3bc4a419069eceeed2b0b6dab9c37aeca    DIFFERS     tests: Switch clustering test subnet
+b472f5304c2890ee7ff68c6cd5e4d5f452a40e55    APPLIED     Makefile: add dqlite target (deps calls it)
+ba08a7456a7d2aabc6f040537fa808025e4091dc    APPLIED     Makefile: prepare for more deps
+b37efd60491e16820574508e7b6fac04a2ee5f1f    APPLIED     Makefile: simplify how dqlite is updated
+8e327e03544080250083348d198d027f126de07c    DIFFERS     Makefile: add `liblxc` target
+83558e809b1f7c9d2b25617f3db49ca57d2ceaa3    APPLIED     Makefile: check that liblxc.so is linked against some critically important libs
+abd710f29364b6f4cc27b987b6dfaf8b18a1dd54    DIFFERS     Makefile: call liblxc target as part of `make deps`
+9d142f60fc657e790357d64eac3a3799dd0c0f13    APPLIED     doc/installing: replace `liblxc1` & `liblxc-dev` packages by tools to build their equivalent
+817d96c1080cd50f24a9713efe4880b2eca17de0    APPLIED     github: update actions/install-lxd-builddeps to not use lxc daily PPA
+e5be4be79b694065f0d80d89fa9b3e0f7cad2ef1    APPLIED     github: update actions/install-lxd-builddeps to explicitly depend on python3-venv
+a848a533d28f352d1983987cb33751e7b2049e57    APPLIED     doc/installing: python3-venv is a build requirement (for the docs)
+6d6914ef1fc2a81afc3721375f85e525ccabdb06    APPLIED     github: add libapparmor-dev to actions/install-lxd-builddeps
+11ec83a7eb95b99433e086316d320f8265fdecb4    APPLIED     doc/installing: libapparmor-dev is needed to build liblxc
+b6d634a3f7a4d6ffa00ba7ee2fc0dd1ea49453df    APPLIED     github: update actions/install-lxd-runtimedeps to not use lxc daily PPA
+c71f227d74fba3c4f3274996d04a8074c6a2a52f    APPLIED     github: include liblxc dependencies for system tests
+4aff49be952c9ce3d5a3b44c28d087953d65bbfd    APPLIED     github: add PKG_CONFIG_PATH to list of env vars preserved for unit tests
+3f0754e67fa90eecece712a282002adb6b5635be    APPLIED     github: make runner's home executable and set sub{uid,gid}
+ee5cd0e9ad75b4a78f624d61d10243b74c5df7c3    APPLIED     github: remove unneeded liblxc build deps from actions/install-lxd-builddeps
+f371c9893226f8267333f25c9fca10b8eff07667    APPLIED     tests: Fix `command not found` error
+9ec1515f5bd044f4bc95372c9f96335a5bd4efc4    APPLIED     Makefile: Pin github.com/olekukonko/tablewriter@v0.0.5 due to breaking API in later versions
+bafdc4c506f0c9a3fac6ee41705b9d883fa53b5f    IRRELEVANT  gomod: Update dependencies
+78b481a7a9082701c4346f452a64b73b7328d8d6    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.91 to 7.0.92
+9796ac94d93b0334ed8b90550441cd576450730a    APPLIED     build(deps): bump github/codeql-action from 3.28.17 to 3.28.18
+423ad39064ccf1faa349d4aa6bacd09363a752f0    APPLIED     build(deps): bump actions/dependency-review-action from 4.7.0 to 4.7.1
+15a4d53c7fa344f6e23d30816f3fd293b8acc14e    APPLIED     doc: add info about Ubuntu Pro for instances
+0f6143e505ba9f44b3eb58ff57a238816391c6fa    APPLIED     lxd/storage/drivers/driver_cephobject: Fix typo in error
+a8c73b28bf60fdb51017eafc1ba0261318d8c46a    APPLIED     util/http: Improve etag error message to guide towards a solution
+c1c2900536d545ea41c749f2fc4733e40eb003fb    APPLIED     github: ask codeql to check actions themselves
+4b0f99688ade3f2e513fe1f338b6edcda62f02c4    APPLIED     github: stop ignoring `.github/` dir for CodeQL scans
+19daa25c8d8e413fbc7cd2f1f93784e37e4df73c    APPLIED     Revert "lxd/storage: Add PoolUsedByInstanceDevices"
+fbc59adfcc8cd3c5db764ae585bd577819988ba5    APPLIED     Revert "lxd/storage: Update instance config file when pool gets updated"
+cfd0a7888529252be7d2b1b7b8ea70ca55f1d9ec    DIFFERS     Revert "test/suites/backup: Test the on disk backup file in backup_metadata"
+eefc2f3509a6ec9db02d04f7ecfd01c84f3686d3    APPLIED     test/includes/lxd: remove dead code to kill lxc-monitord
+611b16b8f0eec35448b9a20dd0a313fa92632d95    APPLIED     test/suites/backup: ignore failures when inspecting expected error messages
+2f53b596511739ee79910296c6823deb7aac0263    APPLIED     test/suites/basic: avoid antipattern `grep -v`
+cb8d348a3720610cc3c809fa6ac7352b76b58444    APPLIED     test/suites/basic: fix activateifneeded test after unsetting `boot.autostart`
+bd1088df065f7ca004e67c8661c7fd6f60454b9e    APPLIED     test/suites/basic: avoid `lxd activateifneeded` failures due to LXD being shutdown
+edfab3bfc48a3f2de4214c127b95f4e2b5014ec7    APPLIED     test/suites/clustering: simplify config check
+618cab36341243ba5e24663205f1f23f19b85c6b    APPLIED     test/suites/clustering: use shell comparison for member listing
+b381223af21ebb946a29e1e16aff9fb883af0c77    APPLIED     test/suites/init_interactive: avoid `printf`
+1dca114d5ff7fdf6c8c8e310d22fb367b379b185    APPLIED     test/suites/init_preseed: avoid `printf`
+b3166bbcb8ec7fb950ae28c397c09eba402d5d79    APPLIED     test/suites/network: use safer `grep` patterns
+fff4b37ae4a9805ddcbac9234851921ef952b9a1    APPLIED     test/suites/network: simplify busybox's udhcpc6 test
+fdbc16059621855c0e3fc7317542563ced28d364    APPLIED     test/suites/network: avoid antipattern `grep -v`
+2a6aefc5426eb89538d8e057edaebf0eeaef089e    APPLIED     test/suites/remote: improve `awk` patterns
+274d8bd078257de45177e0871714a29d82d68fa3    APPLIED     test/suites/remote: avoid `grep -v` antipattern
+37ad48ca54bd943312138416310ddea698ec1369    APPLIED     test/suites/metrics: remove unneeded `sudo` call
+ea4da6d4e969f72a0e39fbc653fb8dbf47a35252    APPLIED     test/suites/network: remove unneeded `sudo` call
+0684ed087283963cd6145ba417a0b73d90a48bd5    APPLIED     test/suites/storage_driver_dir: remove unneeded `sudo` calls
+b5480e0011ec14f6614b490fde27e9e36255c57c    APPLIED     test/suites/storage_buckets: roAccessKey cannot get the `info`
+98dcf9c0c017d6165ca806e118fab93153de9a9a    APPLIED     lxd/storage/s3/miniod: use `net.JoinHostPort()`
+73b5b0bd2a9d3ebe4cbe0fae3358cff34fc7fe87    APPLIED     lxd-migrate/utils: use `net.JoinHostPort()`
+30b06e24a93fb41fa381449103e4522f2c9c8a77    APPLIED     test/main: improve `LXD_INSPECT=1` by spawning an interactive shell
+f17eda99e66ef74b9d7d3e4d523b87cb5b3f1d72    APPLIED     test/main: highlight the failed test function
+e856dba7b17b64bed408b68595ece34fc963bf64    APPLIED     test/main: drop `test_` from from fallback description
+0e870474fc4d571e9a38e3683de54a4f40275054    APPLIED     test/includes/lxd: if DEBUG is not set, return 0 in `panic_checker()`
+3b03e71e03edb29ac7e56519454bb94ee42b2904    DIFFERS     doc/faq: add troubleshooting tips for GPU pass-through
+bad4ff4df1dfae91b29c953a7ca9afd6c40948cc    APPLIED     doc: add related topics for gpu devices
+ae0e05b38d3cfb487f02695f86c79b7db654bfbc    APPLIED     github: update TICS' CGO_CFLAGS for `liblxc` dep
+6dc8228b8a6b1779afa68435dfc3d880a50989b1    APPLIED     github: add LD_RUN_PATH env var to TICS
+fd5a0d6cf72dbe4448244d7afa97a732305fba59    APPLIED     github: update TICS env to run LXD daemon
+330ea119319b9fe33555160ed98f708f7e6a99f8    APPLIED     github: update LXD UI e2e env to run LXD daemon
+b4788fa6dee01f37a664902d127616724bb7ba57    APPLIED     github: make runner home listable by others in LXD UI e2d
+1c0ceb1663f95294b01fed228b2a2c15e020828b    APPLIED     github: remove unneeded vars setting in LXD UI e2e tests
+627412ff35c5e48204e9f4163c466f0629241293    APPLIED     github: simplify env var settup and invocation of npx
+8c40e19007f56dff4a8e6a1bbbcc3bed17786e7b    APPLIED     Makefile: add `env` target to export useful vars
+9432c8ecf38a6e1b2c93c55ae219319de0930839    APPLIED     Makefile: remove broken lookup for system PKG_CONFIG_PATH
+bc4d99c3dcf953a4039dbceffeae6d78f5ad4947    APPLIED     github: limit PKG_CONFIG_PATH to just what's needed
+9866e8a44d514f96b6ef37fb3f81770107a2a81f    APPLIED     lxd/daemon: Add network and storage pool cancellers
+d29e09b3c29d6348058105ec663006a2d242b07a    APPLIED     lxd/state: Add Update(Network|Storage)Ready funcs
+5797e2f157b101a9d26733f9d7fd6cfd2aeb7893    APPLIED     lxd: Notify the daemon if all networks and storage pools are ready
+e771545007f162a121fe2f4fc37e5f56230c6a0a    APPLIED     lxd/api_internal: Extend the ready endpoint to allow waiting for networks and storage pool
+93a0117971d30ae6ab0d59b5a24775363190d1fa    APPLIED     lxd/main_waitready: Allow waiting for networks and storage pools to be ready
+25fff4cda92104f4ea945a070f95acaeeada3fc7    APPLIED     test/suites: Add waitready
+c491285e051a74794dda154d3b04031faec69add    APPLIED     test/suites/concurrent: use safer `grep` patterns
+15ed1e718bccb97023dda3e493167951e38c7e92    APPLIED     test/suites/config: avoid antipattern `grep -v`
