@@ -5601,3 +5601,585 @@ e771545007f162a121fe2f4fc37e5f56230c6a0a    APPLIED     lxd/api_internal: Extend
 25fff4cda92104f4ea945a070f95acaeeada3fc7    APPLIED     test/suites: Add waitready
 c491285e051a74794dda154d3b04031faec69add    APPLIED     test/suites/concurrent: use safer `grep` patterns
 15ed1e718bccb97023dda3e493167951e38c7e92    APPLIED     test/suites/config: avoid antipattern `grep -v`
+74bbb368705504bef681b3df0f9e0e6b6e6cf61d    APPLIED     doc: Update Storage docs - Move or Copy a Volume
+023a1f9228a3fd473ef7a515131aa8629ba7f649    APPLIED     doc: Updates outdated UI image screenshots + optimises [WD-21424]
+f3822f18a6e7f91a089432fe41dfc88e0b581d00    DIFFERS     lxd: Replace use of `shared.ValueInSlice` with `slices.Contains`
+f6f8b7358befbac89299f834db129772e0a80742    APPLIED     shared: Replace use of `ValueInSlice` with `slices.Contains`
+28d4bba9581ffa0a0383f664036ce610242024a0    APPLIED     shared: Delete `ValueInSlice` (unused)
+04176417583dcefec7845112a91a3b86099697bb    DIFFERS     test/includes/setup: don't abort pipelines early with `grep -q`
+c54e502becdd563a2d5b2716b8f77f13e60d8ce7    APPLIED     test/suites/backup: don't abort pipelines early with `grep -q`
+8a64b8a592ec80d47b219342bd2dd4626d6dfb24    APPLIED     test/suites/basic: don't abort pipelines early with `grep -q`
+c24a9f9632d627f883dd54c503701269121cd8f6    DIFFERS     test/suites/clustering: don't abort pipelines early with `grep -q`
+120c3c2e7505abca97bbc7773b57ca297121b2e8    APPLIED     test/suites/clustering_instance_placement_scriptlet: don't abort pipelines early with `grep -q`
+e55bbf41aadc9868979c9901e4f2e2b55703ee42    APPLIED     test/suites/clustering_move: don't abort pipelines early with `grep -q`
+ac69f6704e4873e81ae0ff986b4d505abd77988e    APPLIED     test/suites/concurrent: don't abort pipelines early with `grep -q`
+8f4e6bc3bf26866053eaaa119450eb42bd4a847b    APPLIED     test/suites/config: don't abort pipelines early with `grep -q`
+8b89c12e27f599e9b6798c1c1367087230d78d08    APPLIED     test/suites/container_devices_nic_bridged_filtering: don't abort pipelines early with `grep -q`
+4c5d507283bda1ef9abad82ebc76346a69841742    APPLIED     test/suites/database: don't abort pipeline early with `grep -q`
+a45fcacb74171160dbd5828057470f0d4be33f9d    APPLIED     test/suites/deps: don't abort pipeline early with `grep -q`
+0ca76a9967300936b19335398b0447d11f4dea53    APPLIED     test/suites/devlxd: don't abort pipelines early with `grep -q`
+dcf51c3aa8c55a8b8c5014f1837cd56bc9807a92    APPLIED     test/suites/filemanip: don't abort pipeline early with `grep -q`
+4175add01e2f84bb9b89a84e274c58eb5880b4b6    APPLIED     test/suites/image: don't abort pipelines early with `grep -q`
+2881525a347afeed27efaf33cec07478a67ca458    APPLIED     test/suites/image_acl: don't abort pipelines early with `grep -q`
+847d61e0a9772f93257ad0f6968a7cde78278f78    APPLIED     test/suites/image_auto_update: don't abort pipelines early with `grep -q`
+5934f9fd6eddd99eabbf485ac8885164c7ac302c    APPLIED     test/suites/image_prefer_cached: don't abort pipelines early with `grep -q`
+79e214a9b4aaab625bc984dca03c4796967b29fc    APPLIED     test/suites/image_profiles: don't abort pipelines early with `grep -q`
+e329966a447cc56bc1eb08a1d368164384e8db68    APPLIED     test/suites/init_auto: don't abort pipelines early with `grep -q`
+27e8914fe2301dfe4d98ad4a4441694577461111    APPLIED     test/suites/init_interactive: don't abort pipelines early with `grep -q`
+7dc1c34e5e39e1030f7ebd35844f89deb3205101    APPLIED     test/suites/init_preseed: don't abort pipelines early with `grep -q`
+856f005d38af56349fb1cdf91bcf24962969314e    APPLIED     test/suites/migration: don't abort pipelines early with `grep -q`
+11877db1076fc81912c5fef048d9274154647466    APPLIED     test/suites/network: don't abort pipelines early with `grep -q`
+30d1af3856d1de45c2c57e3025778c8c9032641d    DIFFERS     test/suites/projects: don't abort pipelines early with `grep -q`
+5cddbcd1251f4d836904d2cd3c5303f0e650efbb    APPLIED     test/suites/remote: don't abort pipelines early with `grep -q`
+599af94f1801c162308274a954b88d2310f6b7ad    APPLIED     test/suites/serverconfig: don't abort pipelines early with `grep -q`
+b45472864a041b2e4fbe3ad83009dccc14521f4f    APPLIED     test/suites/snapshots: don't abort pipelines early with `grep -q`
+ff9271976aef334942bf9b2d5810ce4b48b20ed2    APPLIED     test/suites/sql: don't abort pipeline early with `grep -q`
+843d5c6e9ab3f32ecff0bbeb93ccf66a9e088e48    APPLIED     test/suites/storage_driver_ceph: don't abort pipelines early with `grep -q`
+c439f81384590ea5f1e9368603528fd39374b870    APPLIED     test/suites/storage_driver_zfs: don't abort pipelines early with `grep -q`
+57f1ae8078ee635d033c979d6493511b278071fe    APPLIED     test/suites/storage_local_volume_handling: don't abort pipelines early with `grep -q`
+b47298642fa1261f0612210e80d83fa696c381d6    DIFFERS     test/suites/storage_snapshots: don't abort pipelines early with `grep -q`
+b4a13ac012bdf7c534459b169456252e4018e619    APPLIED     test/suites/storage_volume_import: don't abort pipelines early with `grep -q`
+06718bda2291b76f68e1467ec4b7d2139145cd67    APPLIED     test/suites/tls_restrictions: don't abort pipelines early with `grep -q`
+5c94a2055e761946d3a89b6f0e84d31b34b76069    APPLIED     test/suites/warnings: don't abort pipelines early with `grep -q`
+c7bbb839dae51c7ddd98be1228897f67b1f75d19    DIFFERS     test/suites/remote: use safer `grep` patterns
+e85565437fa82279c8826c1f07a299bc6b8ebed1    DIFFERS     test/suites/remote: ignore failure due to bad token when inspecting expected error message
+a2648c749a41576aa64d1b566e06effd45e95830    DIFFERS     test/suites/remote: `echo` what's going on in remote_admin
+cdb2bc8f67cbcdb31643a4359520d01102b5663b    IRRELEVANT  test/suites/tls_restrictions: don't abort on expected failure from `curl`
+591d68160e4f82c94d5b72c5e88d97de6581ee0c    APPLIED     test/main: catch errors in pipelines
+1bf1b00642d7372f25d5990360634b788bcb55d7    APPLIED     lxd/seccomp: allow unprivileged whiteout creation
+2b9a2b5a955c1332a56bed89df80b4ebc75fb792    APPLIED     lxd/storage/backend: Ensure storage bucket config is applied during bucket activation
+a44fb78f8a1f0037a42b26be015ed17c601412d2    APPLIED     lxd/db/networks: Add GetNetworksNodeParent function
+438223f2611378f79ad6eab052065a31bbf10df9    APPLIED     lxd/network/driver/physical: Improve checkParentUse function for clustered mode
+9a912d9638f954bcce7797fd644165feee13b9e0    APPLIED     Apply suggestions from code review
+b7193fa6e86f62d0afe16a7fe7d6b7138e583cad    APPLIED     test/main: avoid accidental re-execution from inside LXD_INSPECT session
+9381bb65a90c3cc875481cda13f5564e1a337712    APPLIED     test/main: tweak `LXD_INSPECT=1` welcome text and prompt
+e43e92ed7735eb7e4b6ad325487ff27419931f31    APPLIED     test/suites/network_forward: improve `grep` patterns
+5f77de3e4cfddb831864d71b28c62b88e9f4ef96    APPLIED     test/suites/network_acl: fix indentation
+fac523770f524bb872b6d64c337e6505771e7479    APPLIED     test/suites/network_acl: improve `grep` patterns
+9f6f1ac6ab030b96bba77da907bda87c649b576a    APPLIED     test/suites/network_acl: use variable destination address
+7f7065bbcc5e646fe1ecb3b077ad359db5176200    APPLIED     test/suites/network_acl: verify firewall rules
+47325ad58801097cd19c2ccb46680bed2e6d533a    APPLIED     lxd/network/driver/physical: Change signature of checkParentUse function
+f1092f809f4d90c45ec36c18a27dd3231ba9c63e    APPLIED     test: Expand clustering network test
+b66bc0c084a8fad3cba34ef2dbd47515efe16167    APPLIED     lxd/db/cluster: Switch order of entity type check in `GetEntityURLs`
+1a6cd6da0da77f5dc3f94dc29e5215b4f8e76cec    APPLIED     lxd/device: Switch order of nesting check in `UnixDeviceCreate`
+df4b9ef6d04838b08cf6a378dab3ade05706f6b5    APPLIED     lxd/device: Move slice creation out of loop in `UnixDeviceCreate`
+7154f118b26c319775d7bb2107cc73a750d915f9    APPLIED     lxd: Simplify check in `promptConfirmation`
+c2253972d24e0314765afd717f636876f284ea38    APPLIED     lxd/migration: Move slice creation out of loop in `TypesToHeader`
+94410ecaa3f70c0b21b758bb8e8e3a2c941d5fef    APPLIED     lxd/network: Move slice creation out of loop in NIC bridge `Validate`
+766f0581b0fd1ccbef2b023edaeaf691f01e4eb8    APPLIED     lxd: Move slice creation out of loop in `networkAllocationsGet`
+404cf95c3940b100bf3350a78fd6fdb821aeceeb    APPLIED     lxd/project: Switch order of checks in `NetworkAllowed`
+7493d95f98b086077bb21a618ef2d10ea30ccc75    APPLIED     shared: Move slice creation out of loop in `ParseLXDFileHeaders`
+94e46db46a642a109f891b089a63e8635d10c473    APPLIED     lxd/storage/drivers/zfs: Fix block-backed storage bucket validation
+5d26ca50ad28adfd222df47b65162e03d73e2721    APPLIED     test: Add storage bucket tests
+81fb92392f2bb908f8cb5056f5801c2bd32381b6    APPLIED     test/suites/clustering: check network statuses with full line patterns
+6785bfe7a18b2788846c2ea37853f2d7f10128b8    APPLIED     Makefile: use consistent syntax to reference variables
+ac3e65974baa11fec2a9546f730a4adc1cf93025    APPLIED     Makefile: don't use recursion when deleting old archive file in `make dist`
+113279fb493cc638e37906c5b1afc81e0c8e888a    APPLIED     Makefile: simplify how HEAD hash is extracted
+cc975e41352830e2887cd3a7a18d9ff915814a6a    APPLIED     Makefile: include liblxc in tarball produced by `make dist`
+3feb5404b2f6e2ffa737629e4b7e61ca677fd1a7    APPLIED     Makefile: have `make dist` produce reproducible archives
+32c34cac6991f4087daa1e8145fdf6bb0af81aee    APPLIED     test/deps/import-busybox: try to use LXD snap unix socket if available
+10dff855965df1c745c160d57e3f62dec2ebe5df    APPLIED     github: remove unused tests-snap workflow
+ce1f5038fd95ce28bb8ae69de896c89f910297a5    APPLIED     github: create test instance before LXD UI e2e tests
+825fcbb4c094edfa479ae9b64b7811a71d03e5e4    APPLIED     github: tune disk perf early on in LXD UI e2e tests
+8d4a4d6a2de4326c01d66805ab6d57c3807d1611    APPLIED     github: provide a default TARGET profile for playwright
+b4ed34c7c3300e9e086e039ac553aef53f382b13    APPLIED     github: allow skipping static-analysis and unit-tests on manually triggered test runs
+974382dd5ca3bdd660893d6cb464e3ccd4b9f284    APPLIED     test/main: Add timeout to ceph status command
+4bb075562ec7fbcde0d99b94ea01d083024357a9    APPLIED     lxd: Update the users in storagePoolVolumeTypePostRename after the actual volume rename
+fc69191b141618b128d1cdaa6dd54241cb8c973c    APPLIED     test/suites/clustering: Remove testing for false positives due to bug in LXD
+363ee238729611d3a68f0b5d0a71e5db24125101    APPLIED     shared/api: Add missing 'version' struct tag
+17a9693350493641b1a0c8cf60097e822263b065    APPLIED     doc/rest-api: Refresh swagger YAML
+d31351bb4ff83becd625a23adaabf1eacc76e3fc    APPLIED     Makefile: bump golangci-lint to v2.1.6
+8fedb894c5c1c815a211fb4e65e729279e5eb230    APPLIED     golangci: enable musttag linter from now on
+bd22fee1f13b82945f3381dc617b3f7e5f522241    APPLIED     Makefile: use `git rev-parse HEAD` to get current commit hash
+3174f3d5d69063af578fe1c4e90c49ea0a4077ea    APPLIED     Makefile: use `git rev-parse HEAD` for `dqlite` and `liblxc`
+0118368e1bfcfa171f660bd39af215f24166450b    IRRELEVANT  gomod: Update dependencies
+7278d9c1bf6e3f8a76bb5270ae8daf4e69b1a3ce    APPLIED     test/godeps: Update client deps
+855bb171009faa3aef61384deba51f15bef905b0    APPLIED     test/godeps: Update lxc-config deps
+7e6a1d37fda635da9e3f4d0add0ae33e6672258f    APPLIED     test/godeps: Update lxd-agent deps
+9ab5fc87f19a0ccd62b75b8c51b4ec6fa8d33bab    APPLIED     github: do not reclaim disk space during cluster tests
+5850df8dbad0103a00b8bd04fed383a8167522d0    APPLIED     github: make sure the LXD snap is purged before installing microceph
+75032db715015366c712ec14198aca04818ca215    APPLIED     github: use caching in actions/download-minio
+3b962075c6c915e7300e3f2f863766a131c16af5    APPLIED     github: split env vars update from building LXD deps
+6eeb1cbab1a8eb7f44d4bb9a1a3a5bcc12d58ec4    APPLIED     github: cache dqlite/liblxc deps
+2edb57f74a790f6804c65e97df0090698e49e478    APPLIED     lxd/backup/config: Add missing struct tags (musttag)
+cad594ea698b7de3a159a508801aea2fb5eee9f1    APPLIED     lxd/migration: Add missing struct tags (musttag)
+f92eb2fc2a6a52c737391fa6e2378d55ed139ea4    APPLIED     shared/api: Add missing struct tags (musttag)
+e934eadd45a0a75fefd564432bd3e2729fc1a0f2    APPLIED     test/backends: cosmetic changes
+cdafad7cc5898c4b8b0f44bd79569f3f6e45f4b6    APPLIED     test/backends: use a variable for the pool name
+1bd4560340121fac1426e65a190424721fedc7ca    APPLIED     test/includes/check: test explicitly for non-emptiness
+52072ca471c4e5e7da3bf3e8b397c1a6eaead862    APPLIED     test/includes/lxd: remove unneeded shellcheck ignores
+99ea0ec0e3507d65bbec6efb1d0827d83de96441    APPLIED     test/includes/storage: test explicitly for non-emptiness
+df1fa0f7a4eec9457a29937802c9b48f49ce31fa    APPLIED     test/lint/godeps: double quote variable
+801eed82865bc25cd457e8e7e85627f552712c15    APPLIED     test/lint/newline-after-block: double quote variable
+afd9393579e742a4ea45533293dae3e7effc76a0    APPLIED     test/suites/backup: add default case
+ef5bc30fe9b00065416416a8ea02830b523d872e    APPLIED     test/suites/exec: replace inconsistent variable use by `x1`
+56681916c235d6905a01aa6841fbebe44b2f8530    APPLIED     test/suites/clustering: double quote variables
+69eb89c79c659c7369d5149a0734cf99e8443c94    APPLIED     test/suites/clustering_move: double quote variable
+bf453949cf717da54fc132f43c5169242554f655    APPLIED     test/suites/container_devices_nic_bridged_filtering: double quote variable
+fd2ffd3c7619c98606fe207fc753a9920dff6857    APPLIED     test/suites/container_devices_nic_bridged: improve `grep` patterns
+64dd9837091992cc1aac7e2be964838ee9642efc    APPLIED     test/suites/container_devices_nic_bridged: double quote variables
+f0c005f5c579995530af8a66f7571681691275e0    APPLIED     test/suites/container_devices_nic_ipvlan: avoid `grep -v` verdict when checking for volatile NIC cleanup
+81b3eb8fd8fadea2b4822fefd1ae32ecd145962c    APPLIED     test/suites/container_devices_nic_ipvlan: improve `grep` patterns
+ab4eadd446bec2cbeb0136703a8bfdfb57f535c5    APPLIED     test/suites/container_devices_nic_ipvlan: double quote variables
+a84312b6a4d63d2d25749a7102376e91ed4f74a8    APPLIED     test/suites/container_devices_nic_p2p: double quote variables
+665aabe345859bd75e723b8a1c0b6e8ee48a3ec7    APPLIED     test/suites/container_devices_nic_p2p: avoid `grep -v` verdict when checking for volatile NIC cleanup
+55a03293137dd406fa7340ace2e64bfcea452f70    APPLIED     test/suites/container_devices_nic_p2p: improve `grep` patterns
+22ba776996dd6ad919e9e4db8e5954602c9963a9    APPLIED     test/suites/container_devices_proxy: double quote variables
+e2396cb48b656fcc54d99e9787e4362c10b5bd49    APPLIED     test/suites/container_devices_proxy: improve `grep` patterns
+07087066fb29304c9fa7630e7a74f749d49f4b2f    APPLIED     test/suites/container_local_cross_pool_handling: use shell comparisons
+32e197549f5ed02027a75e85ecbb0819709488ab    APPLIED     test/suites/container_local_cross_pool_handling: silence shellcheck SC2248
+7609f08bb773e24471e78febd0eef14158cd0314    APPLIED     test/suites/container_move: double quote variables
+5a42ee05bd01dd196ff6cd65700332a06e6acd5f    APPLIED     test/suites/devlxd: double quote variables
+d338fc8d02af26cb87939ca26865eb4061c8c890    APPLIED     test/suites/fdleak: double quote variable
+aaafe2ee19aab486a93470a90b082b469b365e7a    APPLIED     test/suites/filemanip: double quote variable
+735c64a0f133b2067bd0a429dcc5c989e5848603    APPLIED     test/suites/syslog: double quote variable
+8a0fd44455fce23cdf9eb714acd8cbb654fbfb41    APPLIED     test/suites/tls_restrictions: double quote variables
+0cc3122f17346c1d6669c569dd2a2c72df3dd040    APPLIED     test/suites/storage_local_volume_handling: silence shellcheck SC2248
+a565fc2f33b32de9df223f1d486834706031f097    APPLIED     shellcheck: enable some optional checks
+b19a3fca3cbcd65d9050a548eb3320a9545dc077    APPLIED     doc/installing: split long `apt install` lines
+fd9ef12b812bf8a4385324ceef8f20c56ca62f4a    APPLIED     doc/installing: split build, run and test deps properly
+33aceeaf6bd7d25c4787221a83a87668b6ab0d56    APPLIED     doc/installing: mention that `make deps` pulls `dqlite` and `liblxc`
+06e83072e664b0a7c46ec16149c9eeecb391dc52    APPLIED     test/main: msgmerge and msgfmt (gettext) are build-deps, not used in tests
+428e79e09ae90bddd716c570e4f45b13c31110e8    APPLIED     test/main: `xz` is required by test/deps/import-busybox
+39d2ddd3d71e884568332f3b1cb723ebc28d661c    APPLIED     github: `gettext` is not needed for running LXD
+f7c53b2bbd8f43099504f63a59697bee6219559c    APPLIED     github: `curl` is not needed for building LXD
+7b971ced7a7a9cfca2dfdaa7588201989de4a505    APPLIED     github: add libs needed to build `dqlite`
+bd4d977085fac59330a174413442e66f1eafd85f    APPLIED     github: sort build-deps
+b37c029a7870c28c12db1c3ffe499cedd8e3141e    APPLIED     github: sort runtime-deps
+ceb5897070d723d5c8a5147a290675779fb6e1af    APPLIED     lxd/idmap: Add missing struct tags (musttag)
+a3ae26105d3cfe24605c4ce36c6062e19c283117    APPLIED     lxd/backup/config: Revert linter fixes and use legacy tags instead
+f1eb492308417daa23ccad5c8c6c445f50c19a1a    APPLIED     doc: Update Network docs - Configure networks [WD-22189]
+daef88de28520cbc9200f7e13240839cb597c13c    APPLIED     Makefile: reuse GOPATH variable
+0ebe32c3ccfecc043574e16ba0a72e207c96580a    APPLIED     Makefile: export default values for `make env`
+6aa83241fed2fc2aebcff2d7201ffec1b851ecd5    APPLIED     Makefile: add `make tics`
+24eb1c0bc0220c712a5f8caf7ccd58a72acb4aa7    IRRELEVANT  Release LXD 6.4
+7712a4758928187acd1d9ca0d75576eb0227fb00    APPLIED     shared/api: Add missing struct tags (musttag)
+5ae410c9bbe0a061f829d4dd04e70de4b9a75124    APPLIED     lxd/storage/s3: Add missting struct tags (musttag)
+7deb98912429fb106b2d5b45ce58adcb0e2d166f    APPLIED     lxd/network: Add missing struct tags (musttag)
+6cd70c8f30dbf0dae5304d264d6a7fa8ecf4714b    APPLIED     lxd/cluster: Add missing struct tags (musttag)
+5e4525b660d527830114172cdc94adb50f47a5cc    APPLIED     lxd: Add missing struct tags (musttag)
+715caa2e1a03a2ff695338f3b1c9b25aa046ea1a    APPLIED     doc/support: LXD 4.0 is out of standard support
+8a1e48693d3934c427649eb42f2158c53f8b2018    APPLIED     doc/support: LXD 5.0 now entered the extended support phase
+a0897d61bb1b348db74d93d65bc7547c51063752    APPLIED     github: provide pkg-config path to `lxc.pc` for TiCS run
+4bcbc915ec9d86ca9cd1033ccf0b9ef241bebfdb    APPLIED     test/suites/backup: tell tar to stop scanning archive after finding the file we wanted
+056fc56272e8a421b834f1217d7069c967ea932e    APPLIED     test/suites/image: tell tar to stop scanning archive after finding the file we wanted
+6d74a7afe1e3df56374b442897a590fcd7546e3e    APPLIED     doc: update howto/instances_routed_nic_vm.md
+97cdae9f6659f1714720d458e9bb2ee0bd537795    APPLIED     test/deps/import-busybox: stop adding `inittab`
+599849e643baa05d5c4072086505951e07f37cb8    APPLIED     test/suites/clustering: improve `grep` patterns for checking dqlite segments
+48a21c647eaf12f043cbe7eee3b4cb3b484f0e42    APPLIED     lxd/cluster/gateway: stop checking for remnants of LXD pre 4.0
+da1f02aaa1201d58ac96b0a0781d692b30362c8e    APPLIED     dependabot: only track security updates for 5.0 `gomod`
+1a15739170718f0c74b50b41c6eebcd23aa64a57    APPLIED     lxc/network_zone: Fix typo in help description
+10a71b7166f301cb3441f6147ec47c7e1f2d7abb    IRRELEVANT  i18n: Update translation templates.
+d3adc6eb05cb989fb2aa3414062e541f3d32ecfe    APPLIED     lxd/network/driver/macvlan: Add State() function
+d57eed8fdde0fae5ed5bf99629cf922192eaa9e8    APPLIED     test: Output test stages in test_container_devices_nic_macvlan
+4663df5b273ede7961aa24789b12ef65c1bbfb5c    APPLIED     test: Check that lxc network info succeeds for macvlan network
+a565753ed9716ace4799095c6564e89d29467769    APPLIED     doc/howto/instances_create: provide direct link to all instance-types to not rely on `autoindex`
+b90a0db266c2399092390cc2f4ec6bde27c8696d    APPLIED     lxd/instance_instance_types: simplify `downloadParse` now that only the all-in-one optimised YAML is fetched
+01c82d2abfbdccf981365dcc5d2170705a55e6a1    APPLIED     github: allow manually triggering documentation-linkcheck
+0a8f83a62d882cd4a32c11759fea231e46e910bc    APPLIED     lxd: Add target request forwarding to storagePoolVolumeTypeStateGet
+9bfab8b0e2dd3a435cf042410df5e143a7c15329    APPLIED     github: Update TICS viewerURL
+3b826a5933a86b041d9a138a9f0e5bd402dac65f    APPLIED     lxc/action: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+99f206ba38aefc5aa563d6f4d0c3400981c47252    APPLIED     lxc/info: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ebe8d3bcfb966e6cdc61401214bde371f69ba33d    APPLIED     lxc/list: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+84da91e203a3dc803678ceaa1f178d74d5a3e41a    APPLIED     lxd-migrate/main_migrate: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f865ca038f557165b9eba494844ea5fa01fe27ed    APPLIED     lxd/api_devlxd: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+0f7ab596e0528e63e3d5b76bab436d0825337974    APPLIED     lxd/api_internal: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+4e62af8d15011ba41eda094ba1bfbd6f481590cb    APPLIED     lxd/apparmor/instance: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+4bd72378f337242302e40c7aa989e30a1b12fa65    APPLIED     lxd/archive/archive: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f662f6429f63f42ed5b9a06d42a12948e1c99695    APPLIED     lxd/cgroup/abstraction: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+8e0957290187f351d92485585f150749fa86d6b3    APPLIED     lxd/cgroup/file: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f201f6ea33b685b2f1f56a4be8f59030d4476d68    APPLIED     lxd/cgroup/init: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+6364094b4fcb7051c1e2c5b8522940e6394313e7    APPLIED     lxd/db/generate/db/method: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+3080c9029cecee86bfb159a46582cc71995b36a6    APPLIED     lxd/db/networks: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+6435ccb80f5c6c4f95047e17edabc74d79aebca6    APPLIED     lxd/device/disk: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+6648e867deddc822fbb4b872426a89d4ac251b06    APPLIED     lxd/device/nic_ipvlan: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+025f40e9ec9bb613752fac75b25a5a44c979555a    APPLIED     lxd/device/nic_routed: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+58a0a415c547dacf0ae245b1f58ade8b1e6d13ad    APPLIED     lxd/dnsmasq/dnsmasq: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+d9ff82b952c2c0f277268049a37066656ac40daf    APPLIED     lxd/firewall/drivers/drivers_xtables: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+5ca09f014616c43059fce9751aba46f6455abef8    APPLIED     lxd/idmap/parse_linux: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+662fafed6a0b1ba6306ae01d3382a607860ca523    APPLIED     lxd/instance/drivers/driver_lxc: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+16de73ead1e07d6717136d283a4fa6a6b7a571ea    APPLIED     lxd/instance/instance_utils: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+bd551de4a82a5d6ef319097590ea16b5293b842f    APPLIED     lxd/instance_instance_types: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+38f0de379176e1a450380271e00bc1b97aa840fd    APPLIED     lxd/ip/route: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+2b45426a1dd25ca0c13265c94f89eed4679b5ba8    APPLIED     lxd/network/driver_bridge: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f7a82f335a008f3ae96f4727f2b4d9805c868568    APPLIED     lxd/network/driver_common: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+8ebbfa59f46f308201a04bfbb5c53dc4f084b56f    APPLIED     lxd/network/network_utils: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f75e5cbe07cac2fcf00fcc85f80c21aa2f609c5b    APPLIED     lxd/network/openvswitch/ovn: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+221b4fd66c2e4cb9dc080008210d8c50ba2c3c64    APPLIED     lxd/network/openvswitch/ovs: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+d3fb855d440d04dd82220f4047ef946b1ff64f53    APPLIED     lxd/network/zone/load: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+68fa30cb9cf65bee21f846cc665ae0b92c69c654    APPLIED     lxd/network/zone/zone: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+c67a47f3a93ed0ed65fe2f6a4dd44ff27dbffd1a    APPLIED     lxd/project/permissions: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ae06193d6975a01de50fd5af23096f824a198e0b    APPLIED     lxd/resources/cpu: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+4d151724a2e942e569caa62891f3104b01651262    APPLIED     lxd/resources/network: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+e44d009dffaf58a0410d520b96371c018c3e36e6    APPLIED     lxd/storage/connectors/connector_iscsi: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+080cd9d4bb621c4b196566c81cf8446e3d96836d    APPLIED     lxd/storage/connectors/connector_nvme: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ae4fdf0f5d62381282ae2e3a4b89fa08b268f341    APPLIED     lxd/storage/drivers/driver_btrfs_utils: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+f8b738f2d15c49f751478bbf22e6f60a154e7f8b    APPLIED     lxd/storage/drivers/driver_btrfs_volumes: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+28ebf57515b066cf3e45230fd871f930526f8643    APPLIED     lxd/storage/drivers/driver_lvm_patches: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+14cd26f63bd8c33f212d3ff8ce88eed5b556bd1e    APPLIED     lxd/storage/drivers/driver_zfs: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+581e21fec7aaed7f8369d9d9c7476366a61573e9    APPLIED     lxd/storage/drivers/driver_zfs_utils: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ea505eebe07d5fdbb8620a200ffa2e4fb8ec33c2    APPLIED     lxd/storage/drivers/utils_ceph: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+cc371494963ed05d856bfbf141b26dc7432902db    APPLIED     lxd/sys/os: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ab96a62cbf040ca3a296c2658bf258f39b10c222    APPLIED     shared/cmd/format: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+6841fcb5b5110b264ecc055c8512fac3c3ba2fcd    APPLIED     shared/proxy: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+d54524594413688750daf912ad8a89bfa3ec074a    APPLIED     shared/simplestreams/products: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+ff4648386fc6ce0671b4a2d2f53237bad7e488d3    APPLIED     shared/util: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+7b1d42b22fd2bd83ab3d5d92024ef9465e388a93    APPLIED     shared/validate/validate: use `strings.SplitSeq()` instead of `strings.Split()` (modernize)
+32c89a75bd9648083779929cfb96c416b108dab7    APPLIED     lxc/cluster: use `maps` operations where applicable (modernize)
+e81e2ee3f04697529a7389c33cbb2e6525dac305    APPLIED     lxc/config/default: use `maps` operations where applicable (modernize)
+02ed51a8c2945595273243df9ebc6ad46f163126    APPLIED     lxc/config_device: use `maps` operations where applicable (modernize)
+3e8b5bd39e35f4ce9952c611e0ba2431fbf5d06d    APPLIED     lxc/copy: use `maps` operations where applicable (modernize)
+1337c105769db36a2a2b3627e33359fc08018ffe    APPLIED     lxc/move: use `maps` operations where applicable (modernize)
+8588098ed05e49ee98486d5198a38b9f8bf4f508    APPLIED     lxc/network: use `maps` operations where applicable (modernize)
+a75a14eb3e272602e2fbc4175ae565e3abb14cf4    APPLIED     lxc/network_acl: use `maps` operations where applicable (modernize)
+2e3f7ecec0b357d24e70dffb725522e64239a5d5    APPLIED     lxc/network_forward: use `maps` operations where applicable (modernize)
+ee2717eaf39b798f3f8b4ecbc0ce3658c69775b3    APPLIED     lxc/network_load_balancer: use `maps` operations where applicable (modernize)
+35676c2f5e491a9b44a96aedba1e8aa70e4ecf14    APPLIED     lxc/network_peer: use `maps` operations where applicable (modernize)
+86ce3a3c04500493d57da5e4b1436220294842ae    APPLIED     lxc/network_zone: use `maps` operations where applicable (modernize)
+2c483c9708568d89ab60f0c69d249feb50fea7ed    APPLIED     lxc/profile: use `maps` operations where applicable (modernize)
+3a02d7b2de6338c91304ce648d4fc49eb1815d8f    APPLIED     lxc/project: use `maps` operations where applicable (modernize)
+5141f9be58bb4caaccd1b330fd7edc15ad4baf40    APPLIED     lxc/storage: use `maps` operations where applicable (modernize)
+33d14578bda54285d0dd05839a1dc555c96559b2    APPLIED     lxc/storage_bucket: use `maps` operations where applicable (modernize)
+09e49af1e6b6327b8f7c9f682874b3c0ee899435    APPLIED     lxc/storage_volume: use `maps` operations where applicable (modernize)
+11fcc69910cad0c0657a80b77800183ea10982f1    APPLIED     lxc/utils: use `maps` operations where applicable (modernize)
+cfa29176a2168ff1ffc71a35372095279706cd39    APPLIED     lxd-agent/exec: use `maps` operations where applicable (modernize)
+bd4d849a33e091461119aa9fd5528b0c90716b30    APPLIED     lxd/api_1.0: use `maps` operations where applicable (modernize)
+8545710c9d7bc7dbb44ea5d298022ed1c16bb823    APPLIED     lxd/bgp/server: use `maps` operations where applicable (modernize)
+67efce124425fdb3379d01806338845d3998acf0    APPLIED     lxd/cgroup/init: use `maps` operations where applicable (modernize)
+c22e178845a9e9d695aaf34b7ace560d578dd4f0    APPLIED     lxd/daemon_config: use `maps` operations where applicable (modernize)
+a93a0a1e6d51a0e9b41a19382efb6f7398453e43    APPLIED     lxd/db/cluster/permissions: use `maps` operations where applicable (modernize)
+9716b820b04a54718b88a1ca4a23e5bbf7dcee51    APPLIED     lxd/device/config/devices: use `maps` operations where applicable (modernize)
+086d82d294414e5a56e4203b40891c1d9f8407f7    APPLIED     lxd/images: use `maps` operations where applicable (modernize)
+85cd0df32dc51252d8668ed8f88362474779e0a1    APPLIED     lxd/init: use `maps` operations where applicable (modernize)
+0d4b0fcc4f60e18581f0c5f2ebb6927667da0633    APPLIED     lxd/instance/instancetype/instance_utils: use `maps` operations where applicable (modernize)
+7a6842486cdde8ffa6dfe693b09e034c44b59cd7    APPLIED     lxd/instance_post: use `maps` operations where applicable (modernize)
+12bd8c8bfba74e430e123e981572588d61c73b41    APPLIED     lxd/loki/loki: use `maps` operations where applicable (modernize)
+2c6bed42bcaacbb79391a4156e7a347133d7905b    APPLIED     lxd/network/driver_bridge: use `maps` operations where applicable (modernize)
+50f1b3af5b6060577b98b9b37659f5e6ca245f66    APPLIED     lxd/network/driver_common: use `maps` operations where applicable (modernize)
+557359514dbf4fcf9980ea4c4290804d1aa7d09a    APPLIED     lxd/network/driver_ovn: use `maps` operations where applicable (modernize)
+9c700b485618e78c700397423f143dccb337ba91    APPLIED     lxd/network/driver_physical: use `maps` operations where applicable (modernize)
+94f9d618f94348412ce6db57988848b50a94982f    APPLIED     lxd/networks: use `maps` operations where applicable (modernize)
+4ccc92bfd2265da9dbadb12cdf17718296f867da    APPLIED     lxd/node/config: use `maps` operations where applicable (modernize)
+23759d40be428f1092871f75be30ba467286f81b    APPLIED     lxd/operations/operations: use `maps` operations where applicable (modernize)
+9bd68a99a2030c92be21d8e7d2e9109b5abae081    APPLIED     lxd/resources/pci_vpd: use `maps` operations where applicable (modernize)
+aa4150b6c085fd2400740c54c6b6b2a7437be901    APPLIED     lxd/storage/backend_lxd: use `maps` operations where applicable (modernize)
+e4cae126aebe33ab7368ecd240bf0b3f30750c0a    APPLIED     lxd/storage/drivers/driver_common: use `maps` operations where applicable (modernize)
+c2f4217d5fc7583f64475760a26b97a2b6dec97a    APPLIED     lxd/storage/drivers/driver_zfs_volumes: use `maps` operations where applicable (modernize)
+802dc4b0f4bb90f62f7d985b97672b94fafee071    APPLIED     lxd/storage/drivers/volume: use `maps` operations where applicable (modernize)
+5d681c2a68a23edcafc67ea6d36f8119d3040800    APPLIED     lxd/storage_pools: use `maps` operations where applicable (modernize)
+c15e6f678801f76159f63fdcba5a0090b6106ed5    APPLIED     lxd/util/config: use `maps` operations where applicable (modernize)
+3fef5a177e6c0c68215e96b3d8a2c37025b0ba06    APPLIED     shared/util: use `maps` operations where applicable (modernize)
+b2533f417cb7798a15ceae79393def4f0d1e5fea    APPLIED     lxc/file: use `min()` or `max()` where applicable (modernize)
+70c42667990170a515a398634d3b3abb76aebe3e    APPLIED     lxc/list: use `min()` or `max()` where applicable (modernize)
+cae7f9d86b123a0ee962d64e7999a3fa8ecb1c25    APPLIED     lxd/instance/drivers/driver_lxc: use `min()` or `max()` where applicable (modernize)
+1de46c1068267ac9e88a0879758d55dcbbcceaf6    APPLIED     lxd/instance/drivers/driver_qemu: use `min()` or `max()` where applicable (modernize)
+46ba6a1e409a91c11cac650407c6eccd68564ff4    APPLIED     lxd/instances_get: use `min()` or `max()` where applicable (modernize)
+e36d65ad501f2f03af8e3f3bf7b70164f18d5e3f    APPLIED     lxd/loki/loki: use `min()` or `max()` where applicable (modernize)
+becaba60dfb794d3e35b79d051695946b8b30200    APPLIED     lxd/main_init_interactive: use `min()` or `max()` where applicable (modernize)
+25e22b227609906ab99f8ef7bbef83bb7dcf14b4    APPLIED     lxd/migrate_storage_volumes: use `min()` or `max()` where applicable (modernize)
+9847d3cb5eca79e10884f30b2ac16c56bf6f3f3d    APPLIED     shared/ioprogress/tracker: use `min()` or `max()` where applicable (modernize)
+f6cc8bed8c26e62d0c4aee8321fe36d0d2d34b8c    APPLIED     lxc/list: use simpler `for ... range` loops where applicable (modernize)
+84bf36788f141668675477050f8ac8b0087c7f56    APPLIED     lxc/list_test: use simpler `for ... range` loops where applicable (modernize)
+b8241cc8b5fb14c603ebe21e4ef00d9b7d35ff10    APPLIED     lxc/network_acl: use simpler `for ... range` loops where applicable (modernize)
+c7de92f5013f3e35027d4e87c3895e97435085a2    APPLIED     lxc/utils: use simpler `for ... range` loops where applicable (modernize)
+827b97764ae2ce23830e11877bad1b1e1380c317    APPLIED     lxc/utils_properties: use simpler `for ... range` loops where applicable (modernize)
+c64a29a66f639b807fd8630dc2ab70721787481e    APPLIED     lxd-agent/events: use simpler `for ... range` loops where applicable (modernize)
+6aace2536bba5d1ba2d3299e1042307e1d3a4a34    APPLIED     lxd-agent/exec: use simpler `for ... range` loops where applicable (modernize)
+1c8a85bad5f199791a42d0be26093fd874d36cb3    APPLIED     lxd-agent/main_agent: use simpler `for ... range` loops where applicable (modernize)
+7973903b699f4dc8bb0a100ed3407166913247ef    APPLIED     lxd-agent/state: use simpler `for ... range` loops where applicable (modernize)
+fd235d896c57d45f0879a6ea895a6776f60e8ae5    APPLIED     lxd-benchmark/benchmark/batch: use simpler `for ... range` loops where applicable (modernize)
+77dce597f88b3accdde27a61052f4faff5ec5ce6    APPLIED     lxd-migrate/main_migrate: use simpler `for ... range` loops where applicable (modernize)
+403ed6f664288e51be5094927dbe114fc9ce4896    APPLIED     lxd/acme/acme: use simpler `for ... range` loops where applicable (modernize)
+ffa48aef113b99687c9b346ec5a2e16aae555a29    APPLIED     lxd/api_internal: use simpler `for ... range` loops where applicable (modernize)
+88568438e954141463cec88b351cad6dfbf1e1cc    APPLIED     lxd/api_metrics: use simpler `for ... range` loops where applicable (modernize)
+bda030b6314540988799783fd41cfffc9fc2707d    APPLIED     lxd/apparmor/qemuimg_test: use simpler `for ... range` loops where applicable (modernize)
+a5cafa36c2ba98a54628baf83f9de777a054c334    APPLIED     lxd/certificates: use simpler `for ... range` loops where applicable (modernize)
+70cb6560ade5f9cb435ee8435ef620880e2d6de6    APPLIED     lxd/cgroup/init: use simpler `for ... range` loops where applicable (modernize)
+0ae2ed300628cd8de7cf6d515ad6f42d5de35a63    APPLIED     lxd/cluster/gateway: use simpler `for ... range` loops where applicable (modernize)
+d457da6693ec02c3ab14f9090200f3b9d97b2762    APPLIED     lxd/cluster/membership: use simpler `for ... range` loops where applicable (modernize)
+b24398f3288c06f2b94bf53f76ec8526642e0e95    APPLIED     lxd/cluster/notify_test: use simpler `for ... range` loops where applicable (modernize)
+31c4f776099f58749b9699adc8540781d6f136cc    APPLIED     lxd/db/cluster/update: use simpler `for ... range` loops where applicable (modernize)
+28cb73992d3fa8dfa3f54b91a589dbfa9916b958    APPLIED     lxd/db/db: use simpler `for ... range` loops where applicable (modernize)
+969cae68c7b7c998f473344860b773e4de5142f5    APPLIED     lxd/db/generate/db/method: use simpler `for ... range` loops where applicable (modernize)
+47440051922fa739cac2b32639c1857c45874971    APPLIED     lxd/db/query/expr: use simpler `for ... range` loops where applicable (modernize)
+90b6eb924e31cbe5200be38b604cad4c18c3a37c    APPLIED     lxd/db/query/retry: use simpler `for ... range` loops where applicable (modernize)
+309ed99beda8dd5be0f6b7b2b1026ec146304820    APPLIED     lxd/device/gpu_sriov: use simpler `for ... range` loops where applicable (modernize)
+f250080eab5595440211d7b1b5409ec3d3bf5440    APPLIED     lxd/device/infiniband_sriov: use simpler `for ... range` loops where applicable (modernize)
+7b2037412467fc49fe11418355a24f2c11f2a0ba    APPLIED     lxd/device/pci/pci: use simpler `for ... range` loops where applicable (modernize)
+d8a056e4967f387a7f04546ad1862a7d203375e2    APPLIED     lxd/device/proxy: use simpler `for ... range` loops where applicable (modernize)
+73971a5768cce6127ad7466100bde0b71aa3faf8    APPLIED     lxd/device/tpm: use simpler `for ... range` loops where applicable (modernize)
+bd775da2f80eb1350f5a7fcbb8b39ae696cda5a2    APPLIED     lxd/dnsmasq/dnsmasq: use simpler `for ... range` loops where applicable (modernize)
+9f2b44d0214eaff78fb01a81f37032c1fd9a7d48    APPLIED     lxd/endpoints/cluster: use simpler `for ... range` loops where applicable (modernize)
+1515b16bc34f160ab45cc7fcd6c0192fbfd48a27    APPLIED     lxd/endpoints/metrics: use simpler `for ... range` loops where applicable (modernize)
+a2e5f86c19c8973cebeaf68561a499214db8c9ae    APPLIED     lxd/endpoints/network: use simpler `for ... range` loops where applicable (modernize)
+eb9198c0d69cea6fcb58eb6fb61abd2ace837745    APPLIED     lxd/endpoints/object: use simpler `for ... range` loops where applicable (modernize)
+998f143299ec0c5ef62fdd76ba559f7b3f18ac08    APPLIED     lxd/endpoints/pprof: use simpler `for ... range` loops where applicable (modernize)
+84acfe62fa8ccde601dd4936be506ae6164bc46b    APPLIED     lxd/endpoints/vsock: use simpler `for ... range` loops where applicable (modernize)
+cf506ef80aec9bdfabc87da1f4641d5f3813660d    APPLIED     lxd/images: use simpler `for ... range` loops where applicable (modernize)
+43c53302512593c72fab56305828c0c350500919    APPLIED     lxd/instance/drivers/driver_lxc: use simpler `for ... range` loops where applicable (modernize)
+6b4c0e83018dbae86eeb30d49edad26281bc1858    APPLIED     lxd/instance/drivers/driver_qemu: use simpler `for ... range` loops where applicable (modernize)
+419fce653b7b49f272c82dcc7d2850dc960e3031    APPLIED     lxd/instance_exec: use simpler `for ... range` loops where applicable (modernize)
+ed514a64572202a66d5338b02f3572d4755977de    APPLIED     lxd/instance_instance_types: use simpler `for ... range` loops where applicable (modernize)
+95a69dab560c7437402befb780b8491f441bc007    APPLIED     lxd/instance_test: use simpler `for ... range` loops where applicable (modernize)
+77a3090642e8dc60efebbcbb2b90833d7300f7ea    APPLIED     lxd/instances: use simpler `for ... range` loops where applicable (modernize)
+42a23ccf1d8db128d6c0273f1734ca90eda92a21    APPLIED     lxd/instances_get: use simpler `for ... range` loops where applicable (modernize)
+c405d60b8a09da485bb662a8bd71b71f668c4f3c    APPLIED     lxd/instances_post: use simpler `for ... range` loops where applicable (modernize)
+0d9bec0fe5e61d11431bf4c34ad7042055fb4e05    APPLIED     lxd/loki/loki: use simpler `for ... range` loops where applicable (modernize)
+5f71d7d19e2325fdad3c21d39af91afef46b7c97    APPLIED     lxd/lxd-metadata/lxd_metadata: use simpler `for ... range` loops where applicable (modernize)
+96b2bf14ece5163109f24fb95ca78e6c420500f2    APPLIED     lxd/metrics/metrics: use simpler `for ... range` loops where applicable (modernize)
+878d1cc06ba6d3fd4d47a8b97020a87c37bc82b2    APPLIED     lxd/network/driver_ovn: use simpler `for ... range` loops where applicable (modernize)
+15177c3d1d6ba2ba651bd84c52110cedbaeb4f29    APPLIED     lxd/network/network_utils: use simpler `for ... range` loops where applicable (modernize)
+1382e0689475015f2376347a78d2b580fe69b788    APPLIED     lxd/network/openvswitch/ovs: use simpler `for ... range` loops where applicable (modernize)
+27928a7f750a13e4ee6afe02827a30803b892d4e    APPLIED     lxd/resources/cpu: use simpler `for ... range` loops where applicable (modernize)
+39084af9fcc7cd6a46d24a8ce6de6a6d74680e3e    APPLIED     lxd/scriptlet/starlark: use simpler `for ... range` loops where applicable (modernize)
+2fc00380e0c40cb35225abddfc98c1c28e27ae41    APPLIED     lxd/storage/connectors/connector_iscsi: use simpler `for ... range` loops where applicable (modernize)
+9584c78f56a317524df8362feaff82d911e0746d    APPLIED     lxd/storage/connectors/connector_nvme: use simpler `for ... range` loops where applicable (modernize)
+596b61465f7cc42ba95901793cc210aba4c525e1    APPLIED     lxd/storage/drivers/driver_lvm_utils: use simpler `for ... range` loops where applicable (modernize)
+fa722846c779941ea6666dfb6741dcff4f7760f9    APPLIED     lxd/storage/drivers/utils: use simpler `for ... range` loops where applicable (modernize)
+107a24a47c7474e229514061c1f2fab59768cc84    APPLIED     lxd/vsock/vsock: use simpler `for ... range` loops where applicable (modernize)
+48c15ad4f2111d7a8c5bbf8de3d03f133636ad0b    APPLIED     shared/cmd/table: use simpler `for ... range` loops where applicable (modernize)
+a7c7843668c245d4f9f6b395ddaf836382b36307    APPLIED     shared/dnsutil/dnsutil: use simpler `for ... range` loops where applicable (modernize)
+21093105fdb6113a70c848ad9c6bd223112112cd    APPLIED     shared/filter/value: use simpler `for ... range` loops where applicable (modernize)
+8c84a78332c43aa9f78143b71e8ad06e0d7911ff    APPLIED     shared/util: use simpler `for ... range` loops where applicable (modernize)
+e386ed04a44197dd2f0ce6e82ca9e5b7f6a998b2    APPLIED     shared/util_linux: use simpler `for ... range` loops where applicable (modernize)
+5827c760511fbef015e813179cddabb58046fcb5    APPLIED     shared/util_test: use simpler `for ... range` loops where applicable (modernize)
+44619f4c1e9eff35d102a6e18c024cb5fca7f08c    APPLIED     shared/validate/validate: use simpler `for ... range` loops where applicable (modernize)
+977aa03c473ec0ec04c22041956661698cad81f8    APPLIED     lxc/list: use `slices` operations where applicable (modernize)
+e48a9ba8224f8cf92183b876825edc21445c0fe0    APPLIED     lxc/main_aliases: use `slices` operations where applicable (modernize)
+add74ece6460208e06aa11a7c22007b241ba27eb    APPLIED     lxc/network_zone: use `slices` operations where applicable (modernize)
+1bddeab8fc9e1ec509f6cf7fb1fae591e22738ae    APPLIED     lxd/cluster/events: use `slices` operations where applicable (modernize)
+73dc1233753870f5ca948579ff9847287c6dbbac    APPLIED     lxd/db/images: use `slices` operations where applicable (modernize)
+ba9f54fd03f56916d19cbd75f591d89a7b97420e    APPLIED     lxd/device/device_utils_instance: use `slices` operations where applicable (modernize)
+9145d1209fd3ef8f835b2d72e4bfbc567d856a18    APPLIED     lxd/device/device_utils_unix: use `slices` operations where applicable (modernize)
+bdee135e23000d36bebefcc3f9862834624ba34b    APPLIED     lxd/device/nic_bridged: use `slices` operations where applicable (modernize)
+98e65532faa7b7bcf74c4a67d9d895b69c3b4a20    APPLIED     lxd/devices: use `slices` operations where applicable (modernize)
+420490dc58af913765c15a404f497acc86228716    APPLIED     lxd/endpoints/listeners/fancytls: use `slices` operations where applicable (modernize)
+ae2a822b218bad2ec4e73f7efee25ca9d7584971    APPLIED     lxd/events/events: use `slices` operations where applicable (modernize)
+4968659ca0aa550982882d46dbf01a850e94ee04    APPLIED     lxd/firewall/drivers/drivers_xtables: use `slices` operations where applicable (modernize)
+c9f104f598566e6194f384ee3f84a21eb4ba7d22    APPLIED     lxd/idmap/idmapset_linux: use `slices` operations where applicable (modernize)
+c880a4815b763fa3d73e0f06dcdcfc5b177c6f85    APPLIED     lxd/images: use `slices` operations where applicable (modernize)
+6ca140271832dc6eb0298df890879a80bbb61686    APPLIED     lxd/instance/drivers/driver_lxc: use `slices` operations where applicable (modernize)
+d30a2da535777fc2095d0d41ca0a2f426a015e25    APPLIED     lxd/instance/drivers/driver_qemu: use `slices` operations where applicable (modernize)
+e02aac522ba48ebf96853227d0a1f0ac72174124    APPLIED     lxd/instance/operationlock/operationlock: use `slices` operations where applicable (modernize)
+91029a026bc891c3cae530360121ff520a60eaea    APPLIED     lxd/lxd-metadata/lxd_metadata: use `slices` operations where applicable (modernize)
+d5f8f79b40ac584af8297b2866c1c88c08fc0a47    APPLIED     lxd/network/driver_bridge: use `slices` operations where applicable (modernize)
+ff22129ca14aafeb3d8fdba54717322fb89042f1    APPLIED     lxd/network/driver_ovn: use `slices` operations where applicable (modernize)
+f5ac498f22cc4639e8230e42e3a8a708314ed0bd    APPLIED     lxd/network/openvswitch/ovs: use `slices` operations where applicable (modernize)
+df26e3c6e34d33bafdbdbdf78a8e9db16474717f    APPLIED     lxd/networks_utils: use `slices` operations where applicable (modernize)
+16293666c9ad8a8cd545685a9dadbb1274704af7    APPLIED     lxd/storage/backend_lxd: use `slices` operations where applicable (modernize)
+4b1be708d94ba41957ae63e6d8429b0c089f28b9    APPLIED     lxd/storage/drivers/driver_common: use `slices` operations where applicable (modernize)
+2181160d8487c2690fe472e55a0ae7aa6a5d9631    APPLIED     lxd/storage/drivers/driver_zfs_volumes: use `slices` operations where applicable (modernize)
+520c7cd820ae7f73c8ba6f1d4a6a08b9ecc1f7a7    APPLIED     lxd/storage/drivers/utils: use `slices` operations where applicable (modernize)
+026d9314703c86da7acb0ab660dce4184435c59b    APPLIED     lxd/storage/pool_load: use `slices` operations where applicable (modernize)
+09f2725d699a4e4574379a3fb9680a5cab333154    APPLIED     lxd/util/config: use `slices` operations where applicable (modernize)
+a095acc7e57eeaac5ee30c9817eca3282f409312    APPLIED     lxd/util/net: use `slices` operations where applicable (modernize)
+a010b6b2bd08f26b263eda972e4f8f13dcdf778b    APPLIED     shared/api/error: use `slices` operations where applicable (modernize)
+d1e1f76c1967f5750a143f4065fef86f1fde9236    APPLIED     shared/osarch/architectures: use `slices` operations where applicable (modernize)
+3cd241ad9cb2d63ad7ca2e36ae12bbcda8388302    APPLIED     shared/util: use `slices` operations where applicable (modernize)
+06bb0d2970023d27e2d2269ea393d1c9245ee307    APPLIED     shared/validate/validate: use `slices` operations where applicable (modernize)
+9eb8c2e0b36d8728e67b61e841f22784d8e5d6e7    APPLIED     lxc/utils_properties: replace `interface{}` by `any` type (modernize)
+8c51e80fe14a2a8be13ad1535078138c08273b32    APPLIED     lxd/ip/vdpa: replace `interface{}` by `any` type (modernize)
+ec860d3b505ef074ed225e64e0a0306b2c529b84    APPLIED     lxd/instance/drivers/driver_lxc: replace `[]byte(fmt.Sprintf...)` by `fmt.Appendf(nil, ...)` (modernize)
+f003314e0fb6610e1b8f715e70e8a5feb8b61939    APPLIED     lxd/cluster/upgrade_test: replace `[]byte(fmt.Sprintf...)` by `fmt.Appendf(nil, ...)` (modernize)
+34a31e63d6c92ba74391ce6435bd4006674b8aeb    APPLIED     lxd/storage/s3/policy: replace `[]byte(fmt.Sprintf...)` by `fmt.Appendf(nil, ...)` (modernize)
+2635709831f3688eca88e21bfd6bf032639f350f    APPLIED     lxd/storage/memorypipe/memory_pipe_test: replace `context.WithCancel` with `t.Context` (modernize)
+e2c3f5bc36f4084e5eb9a43dc058c206086b1f0b    APPLIED     lxc/cluster: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+bb3c9ed26132c4196f6d8d919a1691e60452efb0    APPLIED     lxc/config: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+bd56097ad58a78ce1cc3f88cfa1d1446dd1565f6    APPLIED     lxc/network: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+e2673080b601a4320835bb1ada85ac06f402c219    APPLIED     lxc/network_acl: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+8fb41980c198695bd3936e8d1418c9a1285484ff    APPLIED     lxc/network_forward: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+3fa713be2461d36b6fe846d743b50f5994fdbcd5    APPLIED     lxc/network_load_balancer: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+4b5481ffa69fe84847a1add97346aa528f50ef26    APPLIED     lxc/network_peer: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+aa8f1335f4d98850fec1b14c6ce65ef71f6b2b01    APPLIED     lxc/network_zone: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+578c0e4b35c62e45f6dae1a936fab203bed818cf    APPLIED     lxc/profile: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+de74ef78e1c83a8ce1ab0a6d6068d5480a07d627    APPLIED     lxc/project: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+6564927ca01016d8342d909ae6a61b3c6eccb427    APPLIED     lxc/storage: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+034c406ffbb4ea8e5e8ef8acd42e26264c615ffb    APPLIED     lxc/storage_bucket: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+4615c8e508dac08b48626f6c4940b57ae15bdf12    APPLIED     lxc/storage_volume: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+14550b061081098d9b5e92be603cb72fab8354bc    APPLIED     lxc/utils_properties: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+70291044edaefbf917488c8e18344061da93d881    APPLIED     lxc/utils_properties_test: `s/FieldByJsonTag/FieldByJSONTag/g` (revive)
+85638411e1b4ece430a2df06c85930d430aa288b    APPLIED     lxc/utils_properties: verify type casting operation for error
+78ca6223c1730669d36d1820d83efafcc928f38f    APPLIED     shared/filter/value: verify type casting operation for error
+dadf29ae8ad9f1bd4a753aacc3ae17745996a84c    APPLIED     lxd/endpoints/network: ignore prealloc hint
+9642b619068c92a172f7b825d3fda180704de6ba    APPLIED     lxd/cgroup/file: add comments to exported functions (revive)
+382b22f1ac5903eab863efbb984be8b4c40f44ac    APPLIED     lxd/scriptlet/starlark: add comments to exported functions (revive)
+135eeff7555e3cf30105527efbca3a5ce44c7ad7    APPLIED     shared/proxy: add comments to exported functions (revive)
+b6776962eba1b72002419cdfb96ed2a2ca4f2479    APPLIED     shared/osarch/architectures: add comments to exported functions (revive)
+2fbf571cb38ee0b988b4502318d36c4a0f14fb24    APPLIED     lxd/ip/vdpa: fix comment for exported struct (revive)
+ee9ee501a8a6798ea7408957904602699e99978a    APPLIED     shared/osarch/architectures: avoid `_` in variable names (revive)
+ba8af5d12d03eb23d33a4b72d6de2dcb2d083c3e    APPLIED     shared/osarch/architectures: silence `revive` for arch constants being all in caps
+ab055e4e17c5771183c03888839fa8608e14a4e7    APPLIED     shared/osarch/architectures: silence `revive` about `ID` in `ArchitectureId` not being capitalized properly
+d710c243f091338be2e22c465ea12878f587c334    DIFFERS     test/mini-oidc/storage: use stdlib `log/slog`
+d5fa552a273c21bec4612188d188dfe2ba042c4d    APPLIED     lxd/cloudinit: Fix other formats of cloud-init user configuration options
+554502c5486ca479cbb69a038426bc172cdea39a    DIFFERS     build(deps): bump github.com/NVIDIA/nvidia-container-toolkit
+2f22c11975cb185db96353a3a79d18a90bd423e3    APPLIED     github: fix copy-n-paste error in step name in tests workflow
+4f649a60ec6cd782a7d98e8a4c8c094c2afda384    APPLIED     lxc: Prevent panic when overwriting the progress renderer
+3142c2e88442a2a8d65d5366550f5fc48bf4e625    APPLIED     lxd/cloudinit: Fix parsing of invalid cloud-init yaml
+9c3e84b0d3d0052c093ca122336377bcecc29cdd    APPLIED     lxd/cloudinit: Fix behavior when vendor-data parsing fails and when user-data are not provided.
+a65ffee86dbc67f588abcd846a12d43b1000be2e    APPLIED     github: fix conditional around optionally skipping unit tests
+31e1821ec21b4883878a4448939030215dd215a2    APPLIED     github: Don't modify go modules during go test
+559df2d711102b7dcd3515f4ef0bafbad7c65816    APPLIED     Makefile: Don't modify go modules during go test
+7e700ef26313778f960b0bcd60a8ab46e133d0a6    APPLIED     test/lint/shellcheck.sh: new wrapper around shellcheck
+8196e55ad7ee9899d20670db98938450d66b1e35    APPLIED     Makefile: shellcheck is now run through a lint script
+2fdbe92ebe48bd7ce3d2d96b5c0e41aa2daef52d    APPLIED     dependabot: disable schedule to only deal with security updates for 5.0 `gomod`
+7aa4fe8d577614f43696928a94772eae0f18459d    APPLIED     lxd/storage: Silent the static analysis tool on unsatized user input on backup rename
+f0fa20b7ca2956bd60f735369f4aeb5f72c60aff    IRRELEVANT  Makefile: Pin dqlite to last known good version
+9e15088bcfb6727496371b25dd5a2cb1a8f68cc0    APPLIED     lxd/db/query/retry: Detect extended busy codes from sqlite3 in IsRetriableError
+9035741c67e84228cb252fe64b607535a4135329    APPLIED     test: Fan network name can be too long when prefix + "fan" is used
+152a701945c6478f3d2cd415a77b50fa880fe5d2    APPLIED     doc/howto: Add how-to for Ubuntu Pro guest attachment.
+f92bc70c3769b522f6a7f27b415fdb632e6ab54d    APPLIED     doc: Add ubuntu pro how-to to instance toc tree.
+5935e70525f6e5aeb9ae254e512d850574ec7cfd    APPLIED     lxd/instance/instancetype: Update ubuntu pro config description.
+8294e47bed6d6eb3fa9e6892785b2f97e6933db6    APPLIED     doc: Update metadata
+512f893faff6296de57f8dc1c90048f03d192503    APPLIED     test/suites/auth: use `gen_cert_and_key` helper to generate ecdsa certs instead of (slow) rsa4096
+1090fb0fa5186a1969f6f87b9a3eb7019c90c024    APPLIED     test/suites/auth: use `cert_fingerprint` helper to get cert fingerprints
+74589f76bc1a032515dab96129a282e4dca92339    APPLIED     lxd/db/node: node ID is a int64
+1ede6ddb5c97b5d302f3ff098b8b09db7cc6ad4a    APPLIED     lxd/db/node: rename GetNodeWithID to getNodeByID for consistency
+934138577d3e4c6f450b47dc5d729227c895a88d    APPLIED     lxd/db/node: update comment to match func name
+811255ddc9bca7ee737d5f403ba4927a027332c2    APPLIED     lxd/instance_console: avoid unused operation param in connect funcs
+6d46f1395649a16f98d13ee7fe892510cd69a4bf    APPLIED     lxd/instance_file: avoid unused request param in `instanceFileGet()`
+21b8664a46d601d667368798a27e39f7abdcf4b5    APPLIED     lxd/backup: avoid unused state param in `volumeBackupWriteIndex()`
+0d1291749d0a4acef0846ac73c49c200ff536cf9    APPLIED     lxd/instance_post: avoid unused request and stateful params in `instancePostClusteringMigrateWithRemoteStorage`
+82a519df48ee254795487fc483cbd4495d41ce14    APPLIED     lxd/main_init_interactive: drop unused instance server param in `askClustering()`
+29043222ce1e3743802f38d04f01d39910616b1a    APPLIED     lxd/main_init_interactive: drop unused instance server param in `askMAAS()`
+75ecaa290eb9c32e6c670f6053f18928c80e7ee1    APPLIED     lxd/main_init_interactive: drop unused instance server param in `askDaemon()`
+8c9881217a38151e3edadb7ae03fce789e836a2d    APPLIED     lxd/storage/drivers/cephfs: Add getMountOptions func
+769de6ead119aec21415cdf9999fc2c2d88a0b01    APPLIED     lxd/storage/drivers/cephfs: Use getMountOptions func for common options
+fd36fc9b5037e1e058b1162cb2c9e6e2d3589631    APPLIED     doc: Update storage docs - Backup Volumes [WD-22293]
+078c648f83fe289c8ac75c23f1ff2bde07972064    APPLIED     github: add golangci/golangci-lint-action v8
+2c247b82cbaafc59888f026f0a6cbc644931d34f    APPLIED     github: add a note that golangci-lint also requires non-shallow clone
+1d95417d3afa0f587f491e84fc2a9b58b00d5436    APPLIED     lxd/storage/drivers: Add optimistic context to TryMount
+3276f584b9fc99f1c48e3697f8ce01938124faf1    APPLIED     lxd/storage/drivers: Pass context to TryMount
+57b9bb5a418199a6a741bb7b8186d05b171c92db    APPLIED     github: stop exporting `github.event.before` var
+2941242ff01cad715c3760f87dd81be730f5287f    APPLIED     Makefile: use `latest` golangci-lint when installing locally
+ee1b9ec38876beeb70ce8972badd37e7bc994057    APPLIED     test/lint/golangci: skip if golangci/golangci-lint-action already ran
+746554b52cf952c312f868035572940eccc52602    APPLIED     test/lint/shellcheck: only skip when doing PR tests
+9c053f4dd3dad74a65a2d2df75998e866d62dc26    APPLIED     lxd/daemon: Fix typo in comment
+1ca177aaf2d8284328b40960bf9a8f98ca7a6d11    APPLIED     lxd/daemon_images: Remove unnecessary Sprintf() call
+ded37f9266b0368e6f1932f74d92b610e7ec5fb8    APPLIED     test: Check network info shows correct MTU for macvlan net
+9a1401c6f56f89a13cd499478f6c6bf5d0695dfc    APPLIED     devlxd-client: Adds cloud-init support
+f6cb5b3f78af978a2db522f5492e4bda5bf25aaa    APPLIED     test/suites/cloud-init: Add tests for cloud-config
+1e5a40952d489608b402b8729b36ddf189111931    APPLIED     test/suites/exec: factor out `exec_container_{,non}interactive()` funcs
+eb427d0d5a6a5ee97e5b0519a7880af5c6f42994    APPLIED     test/suites/concurrent: simplify and speed up test
+88e25e10893663755ea0f6e35d7cd60857f61821    APPLIED     test/suites/concurrent: simplify how CPUs are counted
+a359076edb2af20a2121845a2acd91022de079a8    APPLIED     test/suites/concurrent: drop `LXD_CONCURRENT` variable
+1ad5d52eb8575b0a444065327ff547ec0f21f7e8    APPLIED     test/suites/exec: drop `LXD_CONCURRENT` variable
+63d688774f166d0ddb847c54f43fea81c21e727f    APPLIED     test/README: drop `LXD_CONCURRENT` variable
+3108e8a2364326989861ebefef3f21cc811e6298    APPLIED     github: remove now defunct `LXD_CONCURRENT` variable
+7052c18e66ca941a11b00c989d08740ff263a548    APPLIED     test/main: do not create TEST_DIR in `pwd`
+ba8340dfb95bec175a08a20a005a00f4023a75dd    APPLIED     test/main: allow TEST_DIR to be have the other's sticky bit on
+640912c6634b7b44ff2b5f2be606895dc785724b    APPLIED     test/main: add special `test-shell` fake test
+1329be4e4b4f5ed19126fd8d548661935bc56ebe    APPLIED     test/main: deactivate all traps when entering `cleanup()`
+752f010c105b10b9f60d61ad4a2628baa4d57246    APPLIED     Makefile: rework `make deps` and `make env` targets
+b5a9c5c96d173b1ef2446fce8f99fc39a28214d1    APPLIED     Makefile: add `make test-shell` target
+cb7bbde1bbf432347bb957ee51612087ee8ed589    APPLIED     doc/lxd-test.yaml: profile to use for building and testing LXD
+12c766e27b24a1f06f709fed9a44dfc2c2559c97    APPLIED     CONTRIBUTING: add section on dev environment setup
+4510d37295833fc84004a67b956b71e23e28e332    APPLIED     doc/contributing: fix typo
+17d33a2605cdc80e8b17b760603fc474e26388ac    APPLIED     client/devlxd_config: Add function to retrieve config key URL paths
+27a3d8119ae0d94205b17fbdec71adf08792a5a8    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.38.0 to 0.39.0
+ce2fcb24225ff135292a23796059a4130e376dfe    IRRELEVANT  build(deps): bump github.com/canonical/go-dqlite/v3 from 3.0.0 to 3.0.1
+7601fea262f6a0da9003cdf5af0979824bc0af7a    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.33.0 to 0.34.0
+ff761370a9b5592d12c5df6fb59a88ee6a95a015    APPLIED     github: switch to 24.04 runners for code tests job
+bb266f0f0c1a245ce0c81af66a753fcc8401d929    APPLIED     github: switch to 24.04 runners for system tests job
+167ba0313cb34282920173000ec93bcdea456630    APPLIED     github: switch to 24.04 runners for TiCS job
+a0c3d8e0e6c6ea64498062132d2287c3e5f8f226    APPLIED     github: stop purging LXD snap in system tests
+e0fa8c53999274f528db5bdd2c71a43ffbbb45a2    APPLIED     test/suites/clustering: update string searched in `udhcpc` output
+5634289063cf379ef6f2e0675cbfeba47089bebe    APPLIED     lxd/api_cluster: Reject invalid `ClusterMemberStatePost.Mode` in `evacuateInstances`
+35e2dc13d869b89fcb3ebda9c7b733daa57e8238    APPLIED     shared/api: Include valid modes in `ClusterMemberStatePost.Mode` comment
+3ad8845c60927ee14af24918648a45e27922deb3    APPLIED     doc/rest-api: Refresh swagger YAML
+e8935dfb7631d1fabdffb6d4e73ba9b915b20c8f    DIFFERS     CONTRIBUTING: add an examples to the `make test-shell` session
+ddb05dae57b7ccc62da874f9bae436d0ee77d0c6    APPLIED     test/main: only report disk usage on failure
+ce4a83c4a194c696b1f228bb916e76f142c841e4    APPLIED     test/main: reduce verbosity of `test-shell` closure
+8ac4c942a015153c580c705e7ded0ada92c1c601    APPLIED     doc: add bash-completion to `lxd-test` profile
+faac7dbf3dea4d011a82a48f4c1aedf82e6836a4    APPLIED     test/main: use custom bashrc for `test-shell`
+1e8478b4e39b3633018e101e77480ab2741498f9    APPLIED     test/test-shell.bashrc: add custom bashrc for lxc completion
+3991f5cafd3718593c9c618020b4f851caa61bff    APPLIED     test/main: switch to the `test` dir if needed
+606d52446f7f4e9e4466b01260b4c772b8f70fbe    APPLIED     test/main: consistently use `/home/sdeziel/git/lxd`
+f878368acc99e095a982d23b56bdffc4d8465813    APPLIED     lxc/remote/add: Fixed runtime error (index out of range [0] with length 0)
+680b83254a189cf5406504d182710900badfa645    APPLIED     test/suites/lxd-benchmark: new test script for `lxd-benchmark`
+8857139268854397af4f4a1a7bf442089d85b526    APPLIED     test/main: run `lxd-benchmark` basic tests in `standalone` group
+257c0fa978a3ca220bb99d06325d7dd8889794bf    APPLIED     Revert "github: stop purging LXD snap in system tests"
+71de588d8cdcf54cfdc40f423161b58bbf5c4be9    APPLIED     Revert "github: switch to 24.04 runners for system tests job"
+68df37750462b2b27de59f4e868be19679be956b    APPLIED     Revert "github: switch to 24.04 runners for code tests job"
+916c39ea11428802361b6d106bc3c381f7633863    APPLIED     lxd/storage: Fix comment
+037d494b57273fa6c468f183719d147f017c1cd2    APPLIED     lxd/backup/config: Fix error messages
+f9ff6c588593f11175638f084fbf73de901d38da    APPLIED     github: use actions/setup-python to cache pip dependencies
+5c294d2a4c129d050c754ee0f6c727450f3fb27d    APPLIED     github: do not wrap `bash` in `script` for colored output (enabled by default)
+608d1228157442c4d17489cef590ceda359d1970    APPLIED     Makefile: Add `make update-fmt`
+afb253e1cfd943eda6e85711407459a34d5227a8    APPLIED     doc: Update `CONTRIBUTING.md` with formatting instructions
+4cdbb0908c14c00bf7d65e7fce4f0f8408b97754    APPLIED     doc/installing: add `btrfs-progs` to packages needed for tests (for `mkfs.btrfs`)
+225ad9683d6a841df9837c3a5f2d64e1ea5dc9ec    APPLIED     doc/installing: add `dosfstools` to packages needed for tests (for `mkfs.fat`)
+0f5fa491b00fab55242785f208d282051f1b6b00    APPLIED     doc/installing: add `e2fsprogs` to packages needed for tests (for `mkfs.ext4`)
+770c4e5b7cc919f95579101aa7506d7b30d850d5    APPLIED     doc/installing: add `xfsprogs` to packages needed for tests (for `mkfs.xfs`)
+a3041966b2aa9c80f5741600d869b0187976ea2b    APPLIED     doc/lxd-test: add missing tools for `mkfs.${FS}`
+568e558648d57fb8becf56718345e36429c7c029    APPLIED     doc/lxd-test: do not install recommended packages
+8afa2492f5e99e14151456937d91106818eca9a0    APPLIED     doc/lxd-test: disable unwanted services
+b9254c05c1e2954ac7471d16aade2982eaa7394e    APPLIED     test/main: explaining why errors from `test-shell` are ignored
+388deecd1af8d451c22e43ecb4ff2e9043533f8d    APPLIED     test/main: set default backend after sourcing `includes` snippets
+3d98b169e6667ac9069aaa2badacc86c0daa701d    APPLIED     test/main: install tooling for storage driver (`LXD_BACKEND`) on-demand
+49b4bd367619c87c7023c09687ae96229ee0c68a    APPLIED     github: stop unconditionally installing storage driver tooling in actions/install-lxd-runtimedeps
+0e79bc5ed601d9e75731e712085c173e7ea0413c    APPLIED     github: add `e2fsprogs` to actions/install-lxd-runtimedeps
+521711201ddaa84ff1c74b28e1515f9390234b0b    APPLIED     github: add `dosfstools` to actions/install-lxd-runtimedeps
+019171b6e1d4fe2bb7547e65cf2fe4acfe1947f1    APPLIED     test/suites/migration: hard fail if a `mkfs` binary is missing
+9f4752b6687cdb953ebcbb7bdbd72808591e1fb9    APPLIED     test/suites/storage_driver_zfs: hard fail if a `mkfs` binary is missing
+1b0727f783204c0ac9df8324cb6c6341e4a0ff8f    APPLIED     lxd/device: Remove unix socket file from host filesystem
+2e4509a6d755c23797e4bf7c99659643869af280    APPLIED     lxd/device: Only remove unix socket file when `bind=host`
+22a32dcf740642652739df9ab361d0bf2397e838    APPLIED     test/suites/auth: test for emptiness using shell comparison
+cdae1915b095e45956479d37384ebe100da830f9    APPLIED     test/lint/bad-grep: check test scripts for \`grep\` misuse
+dc791c133dfe652897e3cc8885dda00c38956f98    APPLIED     test/suites/auth: avoid `grep -q` and use more precise patterns where possible
+3499dcaf38375c89ca6003293d036df225ff27ab    APPLIED     test/suites/basic: avoid `grep -v` verdict when checking for instances
+5c0811ac13a36c1a58b14f0cb5e9f127d7a4e17b    APPLIED     test/suites/migration: replace `grep -Fv` by shell comparison
+a8dd9727fa80678157061997862439c5017f6e32    APPLIED     test/suites/container_devices_nic_bridged_filtering: avoid `grep -v` verdict when checking for volatile NIC cleanup
+a55bf7371e308afd57300fcf102f4c57c0ebf3f2    APPLIED     test/suites/container_devices_nic_macvlan: avoid `grep -v` verdict when checking for volatile NIC cleanup
+a61b53ae75ce1dfb8fd68f06abda0f0f6f642914    APPLIED     test/suites/container_devices_nic_sriov: avoid `grep -v` verdict when checking for volatile NIC cleanup
+4bb53c97033fc76c9c6e9ef3764e1f1c15f3b2b2    APPLIED     test/suites/container_devices_infiniband_physical: avoid `grep -v` verdict when checking for volatile NIC cleanup
+e6e4058c85bcc1ac8f5b8f409244695f4cd66015    APPLIED     test/suites/container_devices_infiniband_sriov: avoid `grep -v` verdict when checking for volatile NIC cleanup
+43a8101636d1929703dd2189b0e6108039145fea    APPLIED     test/suites/serverconfig: simplify check for only TLS auth by default
+01f82f323dfd8f439a5d0a0ae80616a539310740    APPLIED     test/suites/serverconfig: avoid `grep -v` verdict when checking untrusted server access
+effddf88d065a637145bcdbac0172502f98b7848    APPLIED     test/suites/waitready: replace `grep -q` by full line checks
+6726fb65d89dd28d99413a5dc4d065d364393654    APPLIED     tests: Add `is_backend_available` helper function
+597633769533f04259f03563fb5e98183dde9c66    APPLIED     github: add option to install optional dependencies in actions/install-lxd-runtimedeps
+3e2023c4f664ae0e08602bc2f02ab61d44c5a57e    APPLIED     github: the LXD-UI tests also need the optional runtime deps
+77d3db1ec8b75acf03f1bbe452441086554e94c9    APPLIED     test/suites/concurrent: ignore PIDs that vanished
+90ce91d868ff5b8ef03a61d36dcea8d827418a91    APPLIED     test/suites/basic: use empty instances where possible
+0f8a51818e1da78e8d7ffea91b61c14e5e9a5ec9    APPLIED     test/suites/basic: avoid `lxc rm`
+598310b31c7430c4491b05a0d81524e66ab78278    APPLIED     test/suites/basic: use shell comparisons
+9d12e7d79332b2e68a31c4575e0e022d2c7a55bc    APPLIED     test/suites/basic: use shell comparisons
+5a0cc41fc00f3090d2900522f04b84184e9aba58    APPLIED     test/suites/basic: use cheaper `lxc list`
+2fb5f56491e3d006e068f7a91732ed00abd68a23    APPLIED     test/suites/clustering: use empty instances and cheaper `lxc list`
+362867c866d7ce70bd3d81583a1e4f0d302c029f    APPLIED     test/suites/concurrent: use cheaper `lxc list`
+392b123550fead3a9eec11a0f9adc96e120bd852    APPLIED     test/suites/container_move: use cheaper `lxc list` and shell comparisons
+2c0baa292e5048f1e44875a969b276449d8ddd60    APPLIED     test/suites/exec: use cheaper `lxc list` and shell comparisons
+8f1b8134d8d56c815077621a913bbbc3379cb1c6    APPLIED     test/suites/metrics: use cheaper `lxc list`
+46705db9b13eb152d2b1b67ebfd8233332a73205    APPLIED     test/suites/projects: use cheaper `lxc list` and shell comparisons
+4a5ed5251d0ca13c1f11f1403586dc168b4a7f36    APPLIED     test/suites/snapshots: rework `test_snap_fail`
+7d6fb7ba31357d597842a8659447e44c62b4386d    APPLIED     test/suites/snapshots: use cheaper `lxc list`
+a5e4f8d3c40342ae18ded7a1ec68698a8775066e    APPLIED     test/suites/migration: use small volumes
+750ef3a64fcc84bf796831a37b6a7fac5e1247b9    APPLIED     doc/lxd-test: add `nftables` to runtime deps
+2b85e393e89f0b14c069af2e577d2026be3fbe47    APPLIED     doc/lxd-test: add `iputils-ping` to test deps
+37e5d9806b1b9d6a7a3e56ccbf3c77fedb2bb448    APPLIED     doc/lxd-test: add `netcat-openbsd` to test deps
+57257d8da3141d97c56a472d17f2b120adc17b92    APPLIED     doc/installing: add `nftables` to runtime deps with a note that `iptables` also works
+0ccfb7f02345c5b465c13ec958915034b824df64    APPLIED     doc/installing: `iptables` or `nftables` is required at runtime as well
+a87fe3b43c37f01ee00ba55d182f81d5d274010f    APPLIED     doc/installing: add `iputils-ping` to test deps
+1c6c623c6963d5fef99b74e661fb891ae216dd69    APPLIED     doc/installing: add `netcat-openbsd` to test deps
+b85db7bc6c16472d51cfd898a0bbcb47f758d1b8    APPLIED     test/main: check for `ping` and `nc` commands
+d807e1bcbbbc8521934eeb8f01429eef940f642b    APPLIED     test/deps/import-busybox: don't hardcode path to `busybox` binary
+af183bfe82d460781f34ca41ae4c4a459f3d174d    APPLIED     test/includes/setup: don't hardcode path to `busybox` binary
+8a938982102736380f6008e32d49ec7659305eb3    APPLIED     test/main: don't hardcode path to `busybox` binary
+e5c4f1d3e17c678ccfe8c5ea1be31137f2b57fc2    APPLIED     test/deps/import-busybox: replace `find_on_path` by `shutil.which()`
+56dc36152a1707958043d5e63585ca54581a4aa9    APPLIED     test/deps/import-busybox: early exit in `setup_alias()`
+78fca943c97afb2c7cc36660576e268eb4acf99a    APPLIED     test/deps/import-busybox: add `--save-image` that skips loading into LXD
+eeac1e5fa619759010b6a87b4f901afc69913f5d    APPLIED     test/includes/setup: log when importing LXD_TEST_IMAGE from disk
+5ef701a75d1dfb83a450914efb0a86cd037fba8a    APPLIED     test/main: cache `busybox` testimage for reuse if multuple tests are to be run
+54fd59a69ac1c9d325d1bab7bd559bd6c6c86889    APPLIED     test/main: make it possible to disable LXD_TMPFS
+37316257adcd55d549313e2f69f82a39a1b46b20    APPLIED     test/perf: make it possible to disable LXD_TMPFS
+a259719eb73e36b93772bb4b0f743b7b939de7f2    APPLIED     test/main: stop tracing earlier in `cleanup()`
+79303239e65f23eadb8585757fbc96212ceaf38a    APPLIED     test/suites/auth: use `--empty` image where applicable
+d8ca4db9ef5ce5ea2c5f7413ea6059c1daa78ec1    APPLIED     test/suites/auth: use smaller `images:busybox/1.36.1` instead of `images:alpine/3.21`
+9fe71b514060b69f737bf89541a0cae1a969007d    APPLIED     test/suites/container_devices_nic_bridged_filtering: replace `grep -e` by `grep -F`
+e8dd9c345b34f07d2f95eb4eca3d3fe179db544c    APPLIED     test/suites/database: use cheaper `mv` operations
+0861e5386af857898e1ab798ba09ab3fe6445caa    APPLIED     test/suites/database: use smaller `tmpfs` and replace `dd` by faster `fallocate`
+a54cca68b1364308df9b050df3f761341e69764c    APPLIED     test/suites/database: use `--empty` instance in out of disk DB test
+6ff56e85d306b1e50148cde160d61291ad10dfae    APPLIED     test/suites/remote: remove dependency on `colrm` command
+b451081a4373fb0a91eb83848d10d4dde92b2e76    APPLIED     test/suites/tls_restrictions: test for emptiness using shell comparison
+82e1bacdaaa4e8c12c00f212523356ab3fb186ef    APPLIED     doc: add vGPU acronym for virtual GPU
+4132b1f6be35924cb0917804632b27029e4fc3ae    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.8.13 to 1.8.15
