@@ -6183,3 +6183,57 @@ a54cca68b1364308df9b050df3f761341e69764c    APPLIED     test/suites/database: us
 b451081a4373fb0a91eb83848d10d4dde92b2e76    APPLIED     test/suites/tls_restrictions: test for emptiness using shell comparison
 82e1bacdaaa4e8c12c00f212523356ab3fb186ef    APPLIED     doc: add vGPU acronym for virtual GPU
 4132b1f6be35924cb0917804632b27029e4fc3ae    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.8.13 to 1.8.15
+d7763b52a43e7910fb55d2a965c42c9b93f86f38    APPLIED     test: Use full image fingerprint in test_clustering_image_refresh
+eae8683825b6e7eec1725fab842da676858f4867    APPLIED     test: Update test_clustering_image_refresh with checks for correct image file distribution
+62a78d93b1592691457dd29f8b8213f518fc2664    APPLIED     lxd/db/db: Replaces EnterExclusive and ExitExclusive with RunExclusive
+f836869d0a51fbb068cdca9b49c85bd1e9266d5b    APPLIED     lxd/cluster/membership: Switch Bootstrap over to RunExclusive
+190c6ab22faeed227426b1e3629f748232893cce    APPLIED     lxd/cluster/membership: Switch Join over to RunExclusive
+4d45e96f3fbd236c580548f88e7fc3daa75f6578    APPLIED     lxd/cluster/membership: Switch Assign over to RunExclusive
+584eb502a132ad36fa0c3e9a46c3f8417dced278    DIFFERS     lxd/cluster/config/config: use `maps` operations where applicable (modernize)
+ed580380b92961d33f7ab6fa96b09b8b09f04375    APPLIED     lxd/images: Improve logging in autoUpdateImage
+20e6b3d1f692492b1f15ec28f488b920962e2794    APPLIED     lxd/images: Improve logging and remove unnecessary tmp vars in autoUpdateImages
+5c9d0904e74862e9a2077fdac42122c306ee6d29    APPLIED     lxd/images: Support retrying image record deletion in autoUpdateImages
+d65a1d12b4a58fcffc1d4575b17fba94cfbb53f4    APPLIED     lxd/db/db: Rework RunExclusive to use context with timeout internally
+512ab4e8d2e1acc76da2034e94414fb27520c2ba    DIFFERS     lxd/device/device/utils/disk: Support specifying --thread-pool-size virtiofsd flag in DiskVMVirtiofsdStart
+bc4a2150bf9e55d7fc3acf582d808baa14c26464    IRRELEVANT  Revert "Makefile: Pin dqlite to last known good version"
+7329bd6ae8a7eb52903afae2c0a8df76eaf882c3    APPLIED     github: stop reclaiming disk space for system-tests
+a0e42166d55be273560d55dddef8e56ef2130a74    APPLIED     github: stop reclaiming disk space for TiCS run
+c8676e2cb98e3a45cfb4a8abba71d217aa1c9164    APPLIED     github: purge LXD snap before running system-tests
+883c160faf0eb70da6e490bf2d682d81ab74faad    APPLIED     github: purge LXD snap before TiCS run
+3b7041a4f7555e6fb747e79b125ea5e7b73a4974    APPLIED     doc/howto/storage/volumes: Disks have options not properties
+b896354c9cf4d63d49e4edfbb88ca34ee472fe93    APPLIED     doc/howto/storage/volumes: Cover VM io.* options in the storage-configure-IO section
+051c1650d5aded55ca63acdf89daa73270edc519    APPLIED     lxd/device/disk: Clarify io.threads description
+1395c52003c0aced1acb2231aa4d06b612eb2361    APPLIED     doc: Update metadata
+65764f8af550831132db851ce742a5435cd1d042    IRRELEVANT  Revert "dependabot: disable schedule to only deal with security updates for 5.0 `gomod`"
+552c8f9a6fa052c25bf1da5d58e66957df2c2905    DIFFERS     Makefile: bump Go min to 1.24.4
+23c2c8415fab424881388556a7e4a1f656fb1125    DIFFERS     doc/requirements: bump Go min to 1.24.4
+70f7d567dd5110450ce916423b977a2865caba57    IRRELEVANT  gomod: Update dependencies
+40a5517e6b93f84ddb8e37549a0284a6cd72f2c1    APPLIED     lxd: Metadata endpoint returns JSON, not YAML.
+4b1ed364ee0148675a613515b21a42277b1ca7e6    APPLIED     doc/rest-api: Refresh swagger YAML
+eb25d3f892ca2e3284ae0d2004784149a2189dd8    APPLIED     test/suites/snapshots: improve `snapshots.pattern` tests
+a31f4534876e4f898db76a9938cc37f76b24ecd2    APPLIED     shared/util: block some pongo2 functions in templates
+f6df70723d04d3abb1489fd2b55ec19c817408e9    APPLIED     shared/util: don't leak output from failed pongo2 template execution
+bcc750af5835003c16c651219c3af26429c2af4d    APPLIED     test/suites/migration: use shell comparison to count snapshots
+c79ff10b4874609dfb630bdf255e97f4709325a2    APPLIED     test/suites/snapshots: use shell comparison to count snapshots
+3249b5aedab483cd5c2f1926e5ed2bd62c06a488    FEATURE     lxd/daemon: Add support for validating Content-Type if supplied, or if non-zero Content-Length supplied
+8ddaa370218bef016a28a92df56e0d7d268de7e9    FEATURE     lxd/images: Allow binary image upload content types for imagesPost
+897b5043a82e7490ba3e687f2776bf4c264a20e6    FEATURE     lxd/instances: Allow binary instance upload content types for instancesPost
+2fbd7f68ebf6bd130e79b87484a6eb7c43dea123    FEATURE     lxd/storage/volumes: Allow binary image upload content types for storageVolumesPost
+f113506745470b653576058064ad25ebac0e68ed    FEATURE     lxd/instances: Allow binary template upload content type for instanceMetadataTemplatesPost
+9ecbb949390c83b41ae8f30c338cfb18c5d54179    APPLIED     test/deps/import-busybox: Use content type application/json when creating image alias
+3419e8e3a46970d0b054dc1a19e0f11f706e1342    APPLIED     test/extra/stresstest: Send curl content type as application/json when sending data
+6a545a7463bfb4b2a11f1f2403ebfa0a7230a67c    DIFFERS     lxd/api: White space in restServer
+1f8cb948c853308177f2bf5f7bfd44a651099e39    APPLIED     doc/howto/images/copy: Updates image import examples to send Content-Type
+7b3448abacb3b0cbfbf47d4d0b6f8eff579c1bbd    APPLIED     doc/howto/images/manpage: Don't specify Content-Type on GET
+472c5be004a86fb0e531911a2f51edd9e89ec394    APPLIED     doc/howto/instances/access/files: Use --data-binary for curl example
+28e3f9eec1a5fac488a2912701185066df016e91    APPLIED     doc/howto/instances/backup: Use --data-binary flag in curl example
+1437074a6e3fe2caaf584e023a6d492cd8261da5    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+bf012dbd42364290c584a62af008a648ba101273    APPLIED     lxd/operations: Add CheckRequestor method.
+9984c535960749202b911a83defa59f01269e321    APPLIED     lxd: Check requestor for exec and console websockets.
+d0f81bc4bbe9c8e2a3f9b4c246005f19df78fff4    APPLIED     lxd/instance/drivers/driver/qemu: Check if disk is remote when migrating with an extra disk
+37aba128793a02925b14ac16aef7c97f4ab6a23f    APPLIED     lxd/instance/drivers/driver/qemu: Fix shared storage volume setup on cluster members
+196816d2a8f13af884d5b9928b1d0babed4a5a90    DIFFERS     lxd/operations: Remove references to removed waitForOperations function
+35ac3922d60763c24b1474459c4401f7c8ed619b    DIFFERS     lxd/daemon: Validate browser fetch metadata if supplied to reject non-same-origin requests
+ab548b1cadd14c0699721fa8c0ef3f66916915e8    APPLIED     test/suites/serverconfig: Check fetch metadata header is validated
+08f236dfaebb958cd80fde997123d0c799276a13    FEATURE     test/suites/serverconfig: Add content type tests
+1aaa438e882afca288eaaea5c23bb1eb68fc2d13    APPLIED     lxd/auth/drivers: Add comment to explain metrics entitlement.
