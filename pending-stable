@@ -69,21 +69,21 @@ fi
 OLD_IFS=${IFS}
 IFS='
 '
-for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
+for line in $(git log --oneline --cherry-pick --right-only --no-merges --topo-order --no-abbrev-commit --reverse "upstream/${BRANCH}"...upstream/main); do
     IFS=${OLD_IFS}
     # shellcheck disable=SC2086
     set -- ${line}
 
-    [ "$1" = "+" ] || continue
+    # Check if the commit is already processed.
+    grep -q "^${1}" "${SOURCE}/${PROJECT}/${BRANCH}" && continue
 
-    grep -q "^$2" "${SOURCE}/${PROJECT}/${BRANCH}" && continue
-
-    shift
     if [ "$INTERACTIVE" = "true" ]; then
+        echo "${1}"
         while :; do
             echo "$*"
             printf "(A)pply / (S)kip / (F)eature / (I)rrelevant / (D)iffers / (V)iew) / (Q)uit: "
             read -r input
+
             case "${input}" in
                 A|a)
                     if ! git cherry-pick -x "${1}"; then
@@ -91,7 +91,7 @@ for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
                         printf "Skip this commit for now [Y/n]? "
                         run_conditional abort || exit 1
 		            else
-                        LINE="$1"
+                        LINE="${1}"
                         shift
                         LINE="${LINE}    APPLIED     $*"
                         echo "${LINE}" >> "${SOURCE}/${PROJECT}/${BRANCH}"
@@ -101,7 +101,7 @@ for line in $(git cherry "upstream/${BRANCH}" "upstream/main" -v); do
                     break
                 ;;
                 F|f|I|i|D|d)
-                    LINE="$1"
+                    LINE="${1}"
                     shift
                     if [ "${input}" = "F" ] || [ "${input}" = "f" ]; then
                         LINE="${LINE}    FEATURE     $*"
