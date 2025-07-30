@@ -6237,3 +6237,474 @@ d0f81bc4bbe9c8e2a3f9b4c246005f19df78fff4    APPLIED     lxd/instance/drivers/dri
 ab548b1cadd14c0699721fa8c0ef3f66916915e8    APPLIED     test/suites/serverconfig: Check fetch metadata header is validated
 08f236dfaebb958cd80fde997123d0c799276a13    FEATURE     test/suites/serverconfig: Add content type tests
 1aaa438e882afca288eaaea5c23bb1eb68fc2d13    APPLIED     lxd/auth/drivers: Add comment to explain metrics entitlement.
+6f6e5d414198d9c320bd405d087c025f7fdbe6a8    APPLIED     feat(csp) harden content security policy for the ui serving to include only an allowed list of domains
+6bc83301c68873e516934fc547ddfcc6671fadc5    APPLIED     lxd/images: Simplify client struct setup and reduce var scope in distributeImage
+fab8c524ec850643f6691f74af2add1956b834b9    APPLIED     lxd/images: Move per-member image distribute code into local function in distributeImage
+0ee174ccb22ae2ed6c931811f5edc48ada3a7f6b    APPLIED     lxd/images: Simplify skipping image distribution
+4e7683cf6c2fadafc6ed847b297847d727ea498b    APPLIED     lxd/images: Simplify detecting early cancellation in distributeImage
+7d4a2e4814f0521c100c556b66ca7c5ed6c1aea1    APPLIED     lxd/daemon/images: Improve logging in ImageDownload
+d45fec8c689ebef1af9e694eb21e00f52551136a    APPLIED     lxd/images: Improve logging in distributeImage
+ad7fdbbb3e417e3a12bd0690c503bc4eb339dd56    APPLIED     lxd/images: Reduce unnecessary transactions by doing more in earlier transaction in autoUpdateImages
+b9e65e212e016955813fcc339ab09a850f879760    APPLIED     lxd/images: Reduce repeat queries by accepting slice of db.NodeInfo in distributeImage
+8b073503eec95988dd2b2eb86a6799f4c65c3bb5    APPLIED     lxd/images: Update imageRefresh to pass db.NodeInfo slice to distributeImage
+58b84f0b6610d05d3acf64db9483a066deb2d8ec    APPLIED     lxd/images: Use passed context in autoUpdateImagesTask before any mutation has been made
+c83b9c182e836b8662a6583ed56df1d60b532697    APPLIED     lxd/images: Removes unnecessary err var in autoUpdateImages
+24d862275ca051ee1bd40dbed572673711a93b39    APPLIED     lxd/images: accumulate node IDs while building the node list
+bd382977fd26e9704f0e8ff44ffe804cc3942bdf    APPLIED     lxd/request: Add request source address context key
+d953bfa9c36b6414963be20d70c30a9f17d4e666    APPLIED     lxd/daemon: Always set request source address to context
+4121af6a8397653d382f88c0dd157ccc8a096bd1    APPLIED     lxd/request: Helper func to check request context
+f40c807ad78ef7ded8ea2e457fabd74819b93fe5    APPLIED     lxd/cluster/connect: Make Connect accept request context instead of the request
+60fd92821485fef37795b367b50b8bc993d15588    APPLIED     lxd: Update usage of cluster.Connect
+ac586c79b6158c9eb55d22f5f55ebfd4714e445e    APPLIED     lxd: Make operationsGetByType accept request context instead of the request
+9f8cb2a0f0af5086b9aa91bd97bc57e42e8c15b1    APPLIED     lxd: Update usage of operationsGetByType
+61522ca2bef7d63214fb36bc30854d2b4c975802    APPLIED     lxd/request: Make CreateRequestor accept context instead of the request
+d9e9d4d86534ccb8aa323b3d0d508aaa42f40c88    APPLIED     lxd: Update usage of request.CreateRequestor
+27c7593e4ce6a869bada70897346f4edf5c4080d    APPLIED     lxd/operations: Make SetRequestor accept context instead of a request
+26141ccdb1a058cf9143d91cd660e2831bcd935c    APPLIED     lxd: Update usage of operation.SetRequestor
+0b61d5d9f4ae4e3aaa14eed687e0f30d2914b690    APPLIED     lxd/response: Remove unused request input param from ForwardResponse
+25efc4199af049b1a686a0d3ebaa12c510400ea2    APPLIED     lxd: Remove unused request input response.ForwardResponse
+fab6c9967ed9b4b13688153264781944f7b57456    APPLIED     lxd: Make operationCancel accept context instead of the request
+7d2f8ba369a03508158d22330c967be5fea0dcf6    APPLIED     lxd: Update usage of operationCancel
+4171e1fd838b7c546f89b599e937481cb8b6ea9a    APPLIED     lxd/operations: Make OperationCreate accept context instead of a request
+44be11768e583fc6558d14223b4874c95fb60fef    APPLIED     lxd: Update usage of operation.OperationCreate
+a2fb89e3f99e1ba0da676b4adfbf84b0641a3df8    APPLIED     lxd/project/limits/permission: Make CheckTarget accept context instead of a request
+cf9d1908ede058f1d1de5d16d85dde3332f2ea7c    APPLIED     lxd: Update usage of limits.CheckTarget
+15e146a96ad5eb722eb3a637f9c20ae8b75f8f28    APPLIED     lxd/cluster/connect: Make ConnectIfInstanceIsRemote accept context instead of a request
+f47bd2fecdb8d96a609ce02cd70820edc6a15528    APPLIED     lxd: Update usage of cluster.ConnectIfInstanceIsRemote
+644b7b29693088870501d9652c7621eb1469bfa8    APPLIED     lxd: Make request forwarders accept context instead of a request
+29cc0970e268d0e60dde88f1c6042dd1998ec340    APPLIED     lxd: Update usage of request forwarders
+a2164ccfe399e4b2b9501ecc5a20f40dd1ae3318    APPLIED     lxd/project: Make FilterUsedBy accept context instead of a request
+8678e00fd6134c44fe751bc27041149129a596ac    APPLIED     lxd: Update usage of project.FilterUsedBy
+35be4276c0a8c96f13836267307514516c4b9e38    APPLIED     lxd/api_cluster: Make changeMemberRole accept context instead of a request
+a8a3a080f0c0052e66b8455e2e757fead3d46d41    APPLIED     lxd: Update usage of changeMemberRole
+647372bde77276d84366797b59fb98c7f32b0f1e    APPLIED     lxd/api_cluster: Make rebalanceMemberRoles accept context instead of a request
+8797c79e086f8b5c5167709582adb3e0bdda59cb    APPLIED     lxd: Update usage of rebalanceMemberRoles
+979e67544999735392fb5797f250f396653c5154    APPLIED     lxd: Make instanceImageTransfer accept context instead of a request
+7c6355c9f9435f42d209e94a70b74ec3c16147fc    APPLIED     lxd: Update usage of instanceImageTransfer
+91e8a2a016ed49923e524a929731950073a431ec    APPLIED     lxd: Make ensureImageIsLocallyAvailable accept context instead of a request
+272a6d8605657e4064b2c51231b00b903cd0c654    DIFFERS     lxd: Make instanceRebuildFromImage accept context instead of a request
+e8909130e5f57956ce3d6b45979daf5457eaa902    APPLIED     lxd/daemon_images: Make ImageDownload accept context instead of a request
+b4518833dbb035baa663de21ed3874e2029232c0    APPLIED     lxd: Update usage of ImageDownload
+1ebc02206b24318fa05f1b39c0af36a8f56184a8    APPLIED     lxd: Make ensureDownloadedImageFitWithinBudget accept context instead of a request
+f8edfcc00c545afc12f53e1719ca1a126a6dc1ed    APPLIED     lxd: Make imgPostInstanceInfo accept projectName instead of a request
+2a14dd6f348ce3da6dc642287933c1adfcdfa25a    APPLIED     lxd: Make imgPostURLInfo accept context instead of a request
+d00c3276893269232b9d400c648f6ae5ca9a3a63    APPLIED     lxd: Make imgPostRemoteInfo accept context instead of a request
+6aa6849a4d2e1f178e2f1e6f99d50a4d1968495a    APPLIED     lxd/instances_post: Make createFromImage accept context instead of a request
+40482f587893d279031703c113c72d2018c7e117    APPLIED     lxd/instances_post: Make createFromNone accept context instead of a request
+a2f6db506478ba09f1f198a1516e6a57af322c7a    APPLIED     lxd/instances_post: Make createFromMigration accept context instead of a request
+9e9456f7dddc4058e12e82f7be9852d7e2f2fcca    APPLIED     lxd/instances_post: Make createFromConversion accept context instead of a request
+34e597e5651760fad0ecdfc6edd450029a113804    APPLIED     lxd/instances_post: Make clusterCopyContainerInternal accept context instead of a request
+169ad7b09d04a808cd9793f2f48c95d2f2ec19a3    APPLIED     lxd/instances_post: Make createFromCopy accept context instead of a request
+af72e5372ef1c277adcc430f2cfdb87f3c56dd62    APPLIED     lxd/instance_post: Make instancePostClusteringMigrate accept context instead of a request
+00f73410833148a321b77918e49daaebd2e2b134    APPLIED     lxd: Make migrateInstance accept context instead of a request
+24403717c4c8947e70c57c31fc23fc6f37d750e3    APPLIED     lxd/images: Ensure context is never parsed from nil request
+1c6abb57eaa09292b90663375de5857771b3719c    APPLIED     lxd/request: Add context key that indicates devLXD over vsock
+232624e76b0d48c3ee66b8e668356f3fa0524be6    APPLIED     lxd/api_vsock: Rename variable indicating vsock usage
+f521c5747ad5ca861b74c7123c75d996c72c6a1a    APPLIED     lxd/api_devlxd: Rename variable indicating vsock usage
+3385caa948f40d79a8f45d76182ecd7c59a59692    APPLIED     lxd/devlxd: Indicate vsock usage in request context
+059f55086e5ff5ce2af5159a3a632192771548f2    APPLIED     lxd/response: Determine DevLXD response format based on vsock usage
+064134b9973c12427e6d3dad684cca08ea422208    APPLIED     lxd/response: Remove rawResponse param from devLXD response funcs
+90acc55137b6583b44146c89596c80477243bfcf    APPLIED     lxd/devlxd: Adjust devLXD responses
+f51b08727c99c0f2d252a1d0ab7e430e3ec10182    APPLIED     client/connection: DevLXD connect over vsock (for VMs)
+cd8ddc935e16afeee8b66e5273c2b16e3a257721    APPLIED     client/devlxd: Handle responses from devLXD over vsock
+63cb56d9ccf57a61bcfad080701b62ae19956fd1    APPLIED     lxd-agent/devlxd: Helper function to init devLXD client
+01d167c9ffefb99ab54543d5a0ea1928dd750603    APPLIED     lxd-agent/devlxd: Use devLXD client in APIGet handler
+273633659a12008a41b4c15583b942d062ad5ea2    APPLIED     lxd-agent/devlxd: Use devLXD client in APIPatch handler
+196c67dba5c41912da9d2e14dd62900436a190b6    APPLIED     lxd-agent/devlxd: Use devLXD client in ConfigGet handler
+2ff7dd1d3fe2f76b7dcbee60f2d90c7104e442fd    APPLIED     lxd-agent/devlxd: Use devLXD client in ConfigKeyGet handler
+e31a8473d38612aeabe7b146a0103ae6fe15d7af    APPLIED     lxd-agent/devlxd: Use devLXD client in MetadataGet handler
+76ca7a065855adf50f427342ad0c1909a92f55d6    APPLIED     lxd-agent/devlxd: Use devLXD client in DevicesGet handler
+70dd31828c7c3d836d99b6dfbfc368dc0f3928f8    APPLIED     lxd-agent/devlxd: Remove old helper func to get vsock client
+e7c8405490b89ded8e60625772a3b0b35661cfb8    APPLIED     lxd-agent/devlxd: Use devLXD client in UbuntuPro handlers
+699020b2544aa4b9b5a8641417e7ecf330aee3bc    APPLIED     lxd/api_1.0: Update context
+d692b454126ff2d3b31d8f900b81c14714d84f35    APPLIED     lxd/api_cluster: Update context
+0c83467b02a1d30c4f2aab40fee35a1b3b2716dc    APPLIED     lxd/api_internal: Update context
+d1c72e948f07af3f1b77e5c22d4681f46f1b5d8c    APPLIED     lxd/daemon: Update context
+b9be1cdfe1d2f12248f2a715428561760e1bd63f    APPLIED     lxd/api_project: Update context
+f521fcd2a9e71d30a38a8595ca5248b7842c8ddb    APPLIED     lxd/certificates: Update context
+796d63ab8acefced2976ec619644134285f05c11    APPLIED     lxd/network: Update context
+c39d6dc6ff36d8e679a5a6cce3de325500506ec5    APPLIED     lxd/profiles: Update context
+178fc1c57337a369fdf7715d74bad929857b21ca    APPLIED     lxd/storage: Update context
+089200418bf2f65306fd01d463170acd12e23742    APPLIED     lxd/warnings: Update context
+2940e214abdf7670870420c6cafac09bfd0005b0    APPLIED     lxd/instance: Update context
+38fcb559ab98d2d85ff1f41687e7b28e0e88342b    APPLIED     lxd/api_cluster: Remove unused `*http.Request` parameter from `evacuateMigrateFunc` function type
+4b8b73bb8ef96d6d8f576165d72c44fbfe98f379    APPLIED     lxd/backup: Move type constants into config package
+fc16633a27a71ec6ee36ef5501655838fd9fa5ee    APPLIED     lxd/backup: Update package location for types
+9a97f9f17d01c557371009f6c3aa3ab9d69ce628    APPLIED     lxd/backup/config: Narrow down root volume lookup
+bc3054176b107bf5e75ab399295eed8991d8bf4b    APPLIED     client/devlxd: Add protocol field indicating vsock connection
+56af1524a2fbdd8947c8e905c32d6030de453b92    APPLIED     client/connection: Determine vsock usage when connecting to devLXD
+20bb5bdd5f26a6961b8a86b176b17743302b218a    APPLIED     client/devlxd: Simplify vsock check
+7dfc6684fbbd6fce7ee01e387d66b27915b4991c    APPLIED     client/devlxd_config: Ensure retrieved config value is unescaped
+22f6bb1719aadec8a77f4d05d3123fd0dbb95a7e    APPLIED     client/devlxd_metadata: Ensure retrieved metadata is unescaped
+04908341f2bb6b3d6137285c306327f93af64558    APPLIED     lxd/request: Remove unused context key Access
+ded0edcda2c57645f5e5dafdff72682c260d4df7    APPLIED     lxd/request: Introduce request context info
+8a635753a21c60e593de63e1c3241eb5f1999426    APPLIED     lxd: Set request info
+6e94ceeacf5927fc78630b1aaa98406166ce1804    APPLIED     lxd/request: Add SourceAddress to request info
+59b35f5af3e236f0dcd0929cae50497b3676a142    APPLIED     lxd: Use SourceAddress from context info
+99fd5063fda2be0eb732a625c8587076e7a71664    APPLIED     lxd/request: Remove unused CtxRequestSourceAddress context key
+fdab476411327d0a123e83d4ca07fcc313350dd5    APPLIED     lxd/request: Add auth information to request info
+5afaaf89f1bebbdc10de659525f74e1c38643ec5    APPLIED     lxd: Use auth info from request info
+11680dad3130307904da795f7bd4fa5eb9a2600d    APPLIED     lxd/request: Remove unused auth context key constants
+e6148ce08b238ed597ae5c2be4eba6e1f9aae107    APPLIED     lxd/request: Add connection to request info
+3160d2ec526e7fc9ad70540c5416633285876900    APPLIED     lxd: Use connection from request info
+5d5449e4d6f320418e557e0b7ca885f8d14d28be    APPLIED     lxd/request: Remove unused connection context key constant
+54a6340f535360f49055d6dfe04921288db64bfc    APPLIED     lxd/request: Add effective project name to request info
+5d191156ee51764ee56ec9d3e38967a08715ac67    APPLIED     lxd: Use effective project name from request info
+2fe01b5d7fd220d86561e8f7998cf7d94fe6463c    APPLIED     lxd/request: Remove unused effective project name context key constant
+c590e6a316676c41f2e016e5ef1da1b6a9d66ee9    APPLIED     lxd/request: Rename GetCtxValue to GetContextValue
+a9bdbc2cefa2c916e2daf24be6321adc30793279    APPLIED     lxd: Rename occurances of GetCtxValue
+7d655d8851f52ffcb0ec6d199ebaa9adbb6cc6b5    APPLIED     lxd/request: Rename SetCtxValue to SetContextValue
+8b71fdc20d9e109628594404e27f336cfbcb4f2d    APPLIED     lxd: Rename occurances of SetCtxValue
+c957d2897e5c786494f4ddb4a0a3b962f6594bd5    APPLIED     lxd/storage: Add reverter pattern inside UpdateCustomVolume
+6f0b4e82bf8ff49f86415481d34974b99ad81218    APPLIED     lxd/storage: Add missing revert statement to CreateCustomVolumeSnapshot
+c48dad4c09017ed8c2e294966b49a61f017d03e0    APPLIED     lxd/storage: Add reverter pattern inside RenameCustomVolumeSnapshot
+850c828469a0271951588f99417a96deca017ea8    APPLIED     lxd/storage: Add reverter pattern inside UpdateCustomVolumeSnapshot
+7edd04dcc86a4f3201139210d50a0c6cabe05083    APPLIED     lxd/cluster/connect: Add headers only if value is not empty
+d3088ca59184b4a6d770b9c5681c05156978438c    DIFFERS     doc/howto/support: update support section of README.md and support howto
+e3bf94789a0a0da912b2476923e6f01f03ae1be1    APPLIED     test/suites/basic: check `--version` and `--help` for all binaries
+8f58761f116158e65c3c8b5fac652f793957e264    APPLIED     test/suites/basic: use cheaper `lxc list`
+b0e04724af38d933d2c6268c17b54660b27db808    APPLIED     test/suites/basic: use long flag for `--ephemeral` instance
+68064851a3794805ccf49b957bc1c5dfe93f5999    DIFFERS     test/suites/basic: test bulk deletion of ephemeral instances
+96bc2e97899629b69abe04af5a586642de2339e1    DIFFERS     test/suites/basic: use cheaper `lxc list`
+75bb88170e129081c21ab4cf17d9d882b1b079ca    DIFFERS     test/suites/basic: move trust cleanup at the end
+4e2b6b7b0ee53606713acb54042ad21d8b9cf86e    APPLIED     test/main: call new `test_basic_version`
+7e9e29ec9aab3456857419c9dd24d2b317232626    APPLIED     github: preserve `LXD_TMPFS` var for system-tests
+3f7afd4606674014182b19df99a7d110a5d69e0f    APPLIED     test/main: bump `LXD_TMPFS` size for `standalone` on `lvm`
+073fd4038a2a8acf6a3efb43df3786496fbac5fa    APPLIED     lxd-agent: Add RSS metrics calculation
+c084b40eaaa55b332e6d5e2c6da55822c67d4bcf    APPLIED     doc: css to hide rtd versions flyout when printing
+92b9a4da4e0c70cd49cefa75dac70b398240d8e7    APPLIED     shared/api: Prefix UbuntuPro[Setting,GuestTokenResponse] structs with DevLXD
+f0b436c33c0e8f63e73ef3b0e35426fbeb5e10eb    APPLIED     lxd/ubuntupro: Use new DevLXD structs
+d0c92c061ba9faf68d13873804544ccbe928480c    APPLIED     client/devlxd: Use new DevLXD structs
+7422a918ee1d0b422a9e9d7419c50972abb0a54f    APPLIED     test/suites/lxd-benchmark: test report generation
+709811501aa38df0f8f3eaa2cb6a8e8c2a6c5b16    APPLIED     test/suites/lxd-benchmark: test `launch` command
+27d14e427517c41d1d5bd909fa16642bb784428d    APPLIED     test/suites/migration: add the FS used on ZFS in block-mode to the pool names
+d19efaf6bf2bf74f972ad25d74b20dc385510bd2    APPLIED     test/suites/migration: only umount `/sys/kernel/debug` if `criu` is detected
+3b2e8c8974c136e5c29e5816dfb83c746df764c8    APPLIED     test/suites/migration: compare creation dates by looking the properties
+ada3cbef123fca229cdfea1ac2c98f94618893cc    APPLIED     test/suites/backup: use `--empty` instance to check snap with hyphens
+0e1388dd8d5fa15c0a2648e7b2d39bcd81212f68    APPLIED     test/suites/backup: use `--empty` instance in UUID test
+dc045e8b05a5960d513c1a664153ed0269f08992    APPLIED     test/suites/clustering: use cheaper `lxc list`
+434682cc4f6a98511b76b59940395fcfb17cccff    APPLIED     test/suites/clustering: use `--empty` instances where possible
+1875503bc79a75bfa9a010f03dd0da7dda18f242    APPLIED     test/suites/clustering: replace `import-busybox` by `ensure_import_testimage`
+6d6365a607242eae753aff6c9f232f47ba466ff8    APPLIED     test/suites/clustering: simplify instance state checking
+8a9d6ec099b13a91d7b038c93842b942119f1e15    APPLIED     test/suites/concurrent: use cheaper `lxc list` to replace `lxc info`
+0e2300d9226211ce321b932789b6dbf53fab6a66    APPLIED     test/suites/config: use `--empty` instance in `test_property()`
+34f15c77e54eab7558ceb145b91b2cd8528019ec    APPLIED     test/suites/config: use `--empty` instance in `test_property()`
+9376fe9d87836af99b0d763eb0baecb5dc3c4347    APPLIED     test/suites/config: simplify `_ensure_removed()`
+d791558f5e1e8a1960e991621a87a03207fb9781    APPLIED     test/suites/config: simplify `_ensure_fs_umounted()`
+7dc93ced5d2385c638cbdb34bd4055bd7701353c    APPLIED     test/suites/config: simplify `test_config_profiles()`
+0a47d57210dbaac59c868286153a00c328ee1333    APPLIED     test/suites/config: use `--empty` instance in `test_config_edit()`
+ee8685fe38833ffb2b87cd6fe0033fe6eeaf2aa8    APPLIED     test/suites/config: in `test_property()` use expiry dates far in the future
+854a076b517ca205d9abe6df2b1d9322c3e1510f    APPLIED     test/suites/config: use a small volume in `test_property()`
+a33eae11852d8d0e667e4b8eb3dfa9f2143fae3f    APPLIED     test/suites/config: use cheaper `lxc config get --property`
+c009bb41d01a78c1f0b51bd32c5fca3a85a410ed    APPLIED     test/suites/config: in `test_property()`, [Ccheck if toggling the `ephemeral` cleans the instance on stop
+461863d59088dee5934da71b29df28be5d5f54a6    APPLIED     test/suites/exec: sleep less in `test_exec_exit_code()`
+b9f5810fdfac8922a67230a6b9766a445a648d1a    APPLIED     test/suites/network_ovn: avoid using `images:alpine/edge` for tests
+7fb8f331a62a39a104b5811e0ad240519e3bef30    APPLIED     test/suites/storage_snapshots: use smaller volumes
+270954742ab31c6b3ea087b84f42f2fa5a7e9a31    APPLIED     test/suites/storage: use smaller volumes
+194d24ef56c2979cef6ca4a96144c2798fb4536a    APPLIED     test/suites/storage: use cheaper `lxc list` and shell comparisons
+91ae9d95889bfe206eb83896c8555a7c53de659c    APPLIED     test/suites/storage: re-import `testimage` only if it was deleted
+5e6b5ef468273d20889fd4821923caad95ac5b3a    APPLIED     test/suites/storage: use smaller storage pools
+69a26bbbf0579d476c2946356656086a1ca6bacf    APPLIED     test/suites/storage: use `--empty` instances where possible
+5b75fe7fa9e18a1d8006c10125ed562ad6018e2d    APPLIED     test/suites/storage: replace `lxc rm` by `lxc delete`
+c75206b957754602a3cb0761be4529a3eec89b73    APPLIED     test/suites/storage: use smaller root disk where possible
+c34725338115718e8c4bfb4e5ec000fd80d8de81    APPLIED     test/suites/storage: use smaller volumes
+b8535a5faad0f29a6ae0f5fc93e3c58b3bbc5997    APPLIED     test/suites/shutdown: don't needlessly import testimage
+5ed21adf9c3d717cd9f7d607b63b08c8073b8c59    APPLIED     test/main: use noatime on `tmpfs`
+f59518b95e0fa1767db4aafee27f2a773c5c9eb8    APPLIED     test/main: replace `cat` to read small files by `bash` inline reading
+4caf8c5503bdeba76c4c78327a22abb0ac7602ea    APPLIED     test/includes/clustering: replace `cat` to read small files by `bash` inline reading
+22883331061a86d6e25ea9a1be98fdc39dd967d9    APPLIED     test/includes/lxd: replace `cat` to read small files by `bash` inline reading
+1683cd7d9227995f97259c0ebaa6f80bac65ee46    APPLIED     test/includes/oidc: replace `cat` to read small files by `bash` inline reading
+26c8273b21dda6c0ba370a884f4c14eca8d94b2e    APPLIED     test/includes/storage: replace `cat` to read small files by `bash` inline reading
+4e029cd6b4981535dec960504d1330874d4ad386    APPLIED     test/suites/auth: replace `cat` to read small files by `bash` inline reading
+45408fef1c0e4e9e509dfe261a32404eb602d1c5    APPLIED     test/suites/backup: replace `cat` to read small files by `bash` inline reading
+0443f56c31f4a994190b9cafa53cd6fe73be64b2    APPLIED     test/suites/basic: replace `cat` to read small files by `bash` inline reading
+a7ebce5fbbf0b105e927471288f52aef9800986e    APPLIED     test/suites/clustering: replace `cat` to read small files by `bash` inline reading
+9d98de7e0d42f9fb8cdcbf8175e0296388fcf135    APPLIED     lxd/device: Add `PostMigrateSend`
+d7fecd59c445209ed976f601113a82269f065406    APPLIED     lxd/instance: Add `PostMigrateSend`
+f5a97eed0122337236a5c77e5d9186733e30fcc9    APPLIED     lxd/migrate_instance: Add call to `PostMigrateSend`
+29bc1433c6a187c3587499f4f0b46ca23be2e466    APPLIED     lxd/instance_post: Update `instancePostClusteringMigrate` comment
+519f20a10ac894ef1a6d9559d72dca7a3b2f887f    APPLIED     tests/clustering: Add check for post-migration dnsmasq cleanup on source instance
+5185cbb87594efadb6897447b65210a02ab105c5    APPLIED     Revert "test/main: use noatime on `tmpfs`"
+03a46c6fbac4ac4511245676249e6d3dbbe7ea88    APPLIED     test: move `is_backend_available()` to test/includes/storage
+22fd6e7c9d46122b2f8d08cbc03c9b587996fc37    APPLIED     test: move storage driver tools installation to test/includes/setup
+bd22cfc6807ae9480f35ac969824df7a1c9881b0    APPLIED     scripts/empty-lxd: `s/container/instance/`
+d36cf574fca33cab1db72d8f87a7b8bb2a451a43    APPLIED     test/includes/lxd: `s/container/instance/`
+15d3e9f66515537bcea6e1ea9b7d246b35df084b    APPLIED     test/includes/lxd: alpha-sort `check_empty_table` calls
+9865031423bff2c3b0b576280a3ef7795074e411    APPLIED     test/includes/check: add `runsMinimumKernel()` helper
+c2901f8e32a5f6889159d8eeaf53912a713c2d96    APPLIED     test/includes/check: make `check_dependencies()` usable in shell comparisons
+c0fad97d7495171a94a92058d0b441984e6f4aa1    APPLIED     test/includes/setup: add `install_instance_drivers()` helper
+715688c92f7ede90112a90d64ef6ffef355d4ba6    APPLIED     test/suites/basic: ascertain that VMs are supported if they are to be tested
+d41f07b07ec430987ae73668b9356fd87ea4099e    APPLIED     test/suites/container_devices_disk: skip idmapped mount tests if on `tmpfs` with an old kernel
+9f340176a742dd1f187931e9ee7503cf368bdc73    APPLIED     test/suites/vm: new test script for VM tests
+376e2b7e5f7b01fcd3c19e561cfb34bc2c0d5b84    APPLIED     test/suites/vm: avoid using old/incompatible `virtiofsd`
+843b4542871d2f349fc23514e708cf0a2b210a12    APPLIED     test/suites/vm: skip tests when on `tmpfs` with an old kernel
+7dc6be1cb252ebc76949a96d22adee7c7a5718e1    APPLIED     test/main: install VM tooling on demand (`LXD_VM_TESTS=1`)
+d40c9c358f21b50b5162e2d13513a9174825e856    APPLIED     test/main: run `test_vm_empty` in `standalone` group
+d336466ebcf7a2f42d26800ddcfd23629149487d    APPLIED     test/README: document `LXD_VM_TESTS`
+332220c5b1ec604cd9ed6cc96ebd01414fd95f61    APPLIED     doc/lxd-test: enable `LXD_VM_TESTS`
+ceab1c1658716ee9cd1b30fc60a591e249390782    APPLIED     github: optionally install QEMU packages in actions/install-lxd-runtimedeps
+310a7a1abbf0eb78437196187ac7101a6651b6b7    APPLIED     github: preserve `LXD_VM_TESTS` var for system-tests
+9a4c4109d2ce463603494ce0349fc8eecb1ec730    APPLIED     github: give more time to the kernel to pick up new partitions created in actions/setup-microceph
+5e122383f0158e9cc295303d7bb50c69d9b5efcf    APPLIED     test/includes/storage: mark `lvm` as unavailable on `-kvm` kernels
+849599cdfa8e3aec2bf538f863ff6e24111136a6    APPLIED     test/suites/container_devices_disk: don't use force to delete foo
+265f3768bfa00fd5803ec64c6969559008a689ea    APPLIED     test/suites/container_devices_disk: combine stop/start into restart
+27beb623918b2f85ad8b915450414116b5b32fee    APPLIED     test/suites/container_devices_disk_restricted: avoid using subshells
+8b9f02372147bd7cc39b6dbeac0b75e3ce38065a    APPLIED     test/suites/container_devices_nic_bridged_acl: simplify profile creation
+2ff2b6752911326ee2d185da14c2a4a755b3f73c    APPLIED     test/suites/container_devices_nic_bridged_acl: combine init+start into launch
+859f6a1c8c164010535acb7a11aafdd7523bc24c    APPLIED     test/suites/container_devices_nic_bridged_acl: use shell comparisons
+0181e1aa2ac4181687bdea78aadef084cd4fb369    APPLIED     test/suites/container_devices_nic_bridged_acl: simplify detection of DHCPv6 support
+cf808c1854aad4693bac065aa2d353ba187221fd    APPLIED     test/suites/container_devices_nic_bridged_filtering: simplify detection of DHCPv6 support
+e28bb908fdf02dff4dcb999c6c96c0a485decf9e    APPLIED     test/suites/container_devices_nic_bridged: simplify detection of DHCPv6 support
+fb6e662757ba4c66d40e81f1ccabd6332775c846    APPLIED     test/suites/container_devices_nic_bridged_filtering: don't stop before forced deletion
+d438df82a493173149002ae44a98af4b41b4e87e    APPLIED     test/suites/container_devices_nic_bridged_filtering: simplify profile creation
+003810b2ed247223bd8ceb690e8ae024056595b4    APPLIED     test/suites/container_devices_nic_macvlan: simplify profile creation
+7386ce001aa431ee76f3ae69364df1c11bb58313    APPLIED     test/suites/container_devices_nic_bridged: simplify profile creation
+ae5ad9dd29a8908db848fd4d22f54b688206dc18    APPLIED     test/suites/container_devices_nic_bridged_vlan: simplify profile creation
+e321638fdf44b8e7277fa34028a2cae65f51be3c    APPLIED     test/suites/container_devices_nic_p2p: skip on `-kvm` kernels
+d24ad7f5795a6932142d9039097d2c6c59b56a8b    APPLIED     test/suites/container_devices_nic_bridged: skip on `-kvm` kernels
+2df794372ea9708644be67529398d47b65bbfeb8    APPLIED     test/suites/migration: skip on `-kvm` kernels with `dir`
+6358fe619cd466d3f3171e248b877597956f0afd    APPLIED     test/suites/template: skip on `-kvm` kernels with `dir`
+8c13dbe080b2402ca32ca6faa14677b0ff397689    APPLIED     test/suites/template: turn some comments into `echo`
+cbca7eda22f3fb888b3fefa8898eaef3c7b26fc5    APPLIED     test/suites/template: use simpler `grep`
+3b42d6c9f9abeea9f7541f2250dc5e8bb4f80c71    APPLIED     doc/installing: add `s3cmd` to test deps
+3466d26e52cc2dfc79efbd616d97b1c461f9a3fd    APPLIED     doc/installing: add `openvswitch-switch` to test deps
+3ac718cf5254d56b8b50648924d1dcf0d629fa1a    APPLIED     test/main: `s3cmd` is required by some tests
+9990f928bedac378cc15ddd103baae5b9321143d    APPLIED     doc/lxd-test: add `s3cmd` package
+5ceb4e719b14d5fd10c77259c59b748d489bd68e    APPLIED     doc/lxd-test: disable networkd-dispatcher.service
+e2e1c4f5d706e4c6c7ddf6dff199081ce222d2ed    APPLIED     doc/lxd-test: disable `needrestart`
+0c93f9a46e1d75aef6faa20146c32c3fe055f6a8    APPLIED     doc/lxd-test: add `openvswitch-switch` to test deps
+dc0a6fa3b781a8b85564b346d1e498cfef73c86e    APPLIED     doc/lxd-test: the VMs are not ephemeral
+a5380f85a6cd4eb92538353066c725325f8f4d42    APPLIED     CONTRIBUTING: workaround problems with deleting an old `lxd-test` profile if in use
+3531e197a0d3e4f806d63b64f35f1a346f0fbaba    APPLIED     test/suites/idmap: don't skip the test if there are not enough UIDs/GIDs
+9ada7d7cf949fdd42c6c6017721cac53f7a1fc8a    APPLIED     doc/lxd-test: allocate enough UIDs/GIDs for `idmap` test
+059f1c79da500787f7896e0a56727de13d860503    APPLIED     test/main: output test duration in blue text
+8913e99069a1f7e5a9ad1c5f56a68bb921037ed2    APPLIED     gitignore: add busybox image cache
+1819ba2d45f60a1edf61b946e8c0d8a65410c6ec    APPLIED     test/suites/idmap: skip when run from `virtiofs` dir
+ccf16bcbc0544db8dd81c3e5bf4c3bc968fc88fe    APPLIED     Makefile: don't hard-code `make` invocations
+a7828ec63c0dddf207c11bc029508d8bc3a09be1    APPLIED     Makefile: do not build doc on `make dist` on GH PRs
+ce8bb6a935a546e19061bdc1cc2e66a40fa83a5b    APPLIED     lxd/daemon: Rename `UnixSocket` to `GetUnixSocket`
+bfaea8b713f845f7204c623baf558f936bde2734    APPLIED     lxd/sys: Move GetUnixSocket
+bcefad94c14fbe09a562f7c7dbd094191cb86d35    APPLIED     doc/howto/snap: use lxd instead of lxd.daemon for services mgmt
+e51e48f9cea34afc95c7897869ea683ec2427741    APPLIED     lxd/instances_post: Use correct project on cross-project copy
+e2e1ff49eed8c7112e0740c901bf3e6ab1b72c5f    APPLIED     shared: Add context parameter to `GetRemoteCertificate`
+2dca7c506fa7332ae42327981e8ced75714a7590    APPLIED     lxd-migrate: Pass context to `GetRemoteCertificate`
+8620491aa5d91880c68fc959af495f9bbde6ac4f    DIFFERS     lxd: Pass context to `GetRemoteCertificate`
+eae033cf235837abe8edd3b978900c852fe68bcc    APPLIED     lxc/remote: Pass context to `GetRemoteCertificate`
+b3ba7b4f621114c2d09b1c0dd5bd59b54aa2b3b3    APPLIED     api: Adds oidc_client_secret extension
+5cd28a0ea79364b6c45860bde1160942c2a10875    APPLIED     lxd/cluster/config: Add oidc.client.secret
+7a8750c201a3182d88bec7ce499c54b49b3b2630    APPLIED     lxd/auth/oidc: Add client secret for the authorization code flow
+096fc55ffa4e4e3a0299aee8d1e4e9e874bc5887    APPLIED     lxd/daemon: Use oidc.client.secret for oidc verifier
+68a366eafa29d7940b8acd0a69e9bb0aa2391b6b    DIFFERS     lxd/api_1.0: Use oidc.client.secret for oidc verifier
+cbeab04a019a6ff3d5aebacd0f4828bdd083bddc    APPLIED     lxd/patches: Update expected return values in OIDCServer() call
+5dc1363be7872e8c35808bd574186c929e43f564    APPLIED     doc: Update metadata
+7c43c9a295ba0adc235ae72502f43030661c7587    APPLIED     doc: Add warnings regarding the use of OIDC client secret
+405cf2a008026ed79e10681f344232348a7b6d0d    APPLIED     test/suites/basic: avoid ` && false` pattern when expecting failures
+55eef49e732d301a305c3999abd5536f7e73eb23    APPLIED     test/extras/stresstest: avoid ` && false` pattern when expecting failures
+d694600d65eaac6d7c2afbba3e70a5b921329036    APPLIED     test/suites/backup: use tmp dir created under ``
+133c1ccb62d9cb94eb8951c4d70ab774be0480eb    APPLIED     test/suites/projects: use tmp dir created under ``
+63790786cff438c3d5ea3417041ebb66c374e7d6    APPLIED     test/suites/storage: use tmp dir created under ``
+55a260d8cdaf7f67dcbd859060055e015dd93cdb    APPLIED     test/suites/storage: cleanup temporary dir
+edf01b47de871ac5652cedb06c06c2850ea752d3    APPLIED     test/suites/storage: do not fail due to existing pool
+c16dae4f5ba49fbf4ad029dfa5e97ea31ae829c6    APPLIED     test/suites/storage: use tmp file created under ``
+fc0257ac0154830a5a8c3f67066bb7ba282c239a    APPLIED     test/suites/storage: cleanup temporary file
+ce2377f2cfa3c3ef7d55975c5ee9f5ab91d0e0b9    DIFFERS     test/suites/storage_driver_dir: consistently use `` for temp file and dir
+92686c93f1b689ea69198e942daf4df7e86a47ca    APPLIED     test/suites/storage_driver_dir: replace `dd` by `fallocate` and fix comment
+095944f10dcb6e5fc4117ce6b82f88c23ffe8f61    APPLIED     test/suites/basic: don't use same image alias prefix
+40f49a1e275d6bec6dd2fc227fcf869416ad605b    APPLIED     doc/lxd-test: disable services individually
+f16bcced1463794ec6d34009a4802837c04dcce3    APPLIED     github: simplify and improve actions/reclaim-memory
+0d7fbcad5dbe6d5be9dd239833e25e9d16c2edad    APPLIED     github: speed up actions/disable-docker
+d18fe3dbb008e40cafd72539c0465acc8736d95f    APPLIED     github: be more verbose when `pkill`'ing something in actions/reclaim-memory
+76806440a022ab2ed59f5de01d0263681b45a498    APPLIED     github: tweak conditions for uploading shellcheck's SARIF
+31656720c6391eedd57107d8758e788c3bdf934e    APPLIED     test/suites/completions: avoid disabling shellcheck SC2164
+bbf59358fe7e834ed2926211d7d0c5aa5b77732d    APPLIED     lxd: Only run `PostMigrateSend` when migrating instances
+e64bd4bfe7b12081ebfdb138b932cf60f51ed2e2    APPLIED     github: Add LXD_OIDC_CLIENT_SECRET env var to ui-e2e-tests
+8d9a3ddf424d6267b98c56e1d14e1dce24af0b51    APPLIED     test: Add test for container migration with attached local volume
+e0b34eb45137302b11771b4df50db8cf31c99013    APPLIED     test/includes/setup: fix how virtiofsd is detected
+d4286f151277d06ed8507eb76ff1d97915bb6049    APPLIED     tests: Snapshot can be copied to `localhost` remote with bridged NIC device
+66011470e00098c9b7c89bf827b6ba83ba74abb0    APPLIED     lxd/device/filters: Add new filter type and utils
+0b2874b97ae9aad253e91a6be7b9085746f6dd21    APPLIED     lxd/device/filters: Add common disk device filters
+d40b9226dc8d2ac50abb2e3718a9af7f360dbf2a    APPLIED     lxd/device/filters: Add common NIC device filters
+a8f414813aee2d7abfeaaf8f9811bec785a45517    APPLIED     lxd/device/filters: Add test coverage
+1798d7550b040c596a55cba941b5768764bbb2bb    APPLIED     lxd/device/config: Add Filters function on Devices list
+21bd68e84462ca1d8027f6d0ed907d356bea998e    APPLIED     lxd/device/config: Add test coverage for device filtering
+410aeae16243159d62847b814e55cc7f574a437c    APPLIED     lxd/device: Use filters when iterating over disks
+de5a1d012250ed65570ebb4a8a10449292f56dc0    APPLIED     lxd/instance/drivers/lxc: Use filters when iterating over disks
+ea192d47d7d2366e585a82f4022d0935427947a3    APPLIED     lxd/instance/drivers/qemu: Use filters when iterating over disks
+85a7dce96216863f0a31097c37c6d7f097d12a83    APPLIED     lxd/device/config: Use filters when iterating over disks
+82bf03551b9fa06ef750e8f0207aaad45b02fe9c    APPLIED     lxd-agent/events: Use filters when iterating over disks
+b9528b354c8db71e12d80d0e5da90538a48fb8fc    APPLIED     test/godeps/lxd-agent: Add filters
+f7776b663dc027545f194b4e8d32b116c34e78b5    APPLIED     lxd/instance/instancetype: Remove device specific IsRootDiskDevice filter
+9ffe7d96fde1d20fc967d7c002a14a1036a2d0cb    APPLIED     lxd/device: Update usage of IsRootDisk filter
+6cddd67e8bebe519df7213bc09162cde2154ec11    APPLIED     lxd/instance/instancetype: Update usage of IsRootDisk filter
+0dcc68b0d660f12f956d3136b1fadf48a8560c00    APPLIED     lxd/storage: Update usage of IsRootDisk filter
+5f6cffc69e7250d9ef34ca01295ddb3c0301526a    APPLIED     lxd/db/cluster: Add `(IdentityType).ActiveType` method
+f441e48834e59fdcb7fdf303b218ae29fd7b7b16    APPLIED     lxd/db/cluster: Extend `ActivateTLSIdentity` to support multiple identity types
+83d6437cb9dbce9aafa7ffb15839ebea6d61d1f8    APPLIED     lxd/db/cluster: Include identity type in `ActivateTLSIdentity` error messages
+b25e6dc0d1d08b5ddf5e3b9b8fc2c9f0e7dc0f2f    APPLIED     lxd: Extract `createCertificateAddToken` function from `createIdentityTLSPending`
+b9253e1403220c2128fa1d12e06c04c3a99d46f3    APPLIED     lxd/db/cluster: Include identity type in `PendingTLSMetadata` error message
+b2824fb245098b46a2c3d42a01881ef5b44a2694    APPLIED     lxd: Use `createCertificateAddToken` in `certificatesPost`
+8575695780a4898ad751db65a9b1313dbb7eb0ab    APPLIED     test: Add test for VM migration with attached local volume
+2827bed600e782e356bfd4eb52d69bbec2dddb48    APPLIED     test/suites/vm: turn some comments into echos
+8a0ee7efce2c77bb639f62fb90506a5de3c19172    APPLIED     test/suites/vm: test `limits.memory` more thoroughly
+fb79eff8d18dad8e4626ea36afac0e367fdb8663    APPLIED     test/suites/vm: test snapshots
+4c94267ebfa7718d22e3a677d777b74307705933    APPLIED     test/suites/vm: test invalid snap and instance names
+8300527f752b73f903deee435fae906e7d0e7133    APPLIED     test/main: find the path to lxc binary once
+eb0e3c6e11178c1ec82ee0649a8e0eb278ccf97b    APPLIED     test/includes/lxc: use `${_LXC}` as provided by `test/main`
+b8289517c20cc8e7784107bbe48badcf133804fe    APPLIED     Revert "lxd: Only run `PostMigrateSend` when migrating instances"
+feefb4169d176c1ee91b7abac7ec12ec84c45ccf    APPLIED     Revert "lxd/instance: Add `PostMigrateSend`"
+d8cddbab25a7efe5361fe312a1ed60d64cb9be0c    APPLIED     Revert "lxd/migrate_instance: Add call to `PostMigrateSend`"
+33cdef86b22c51342cc4d078e4614606c27a052f    APPLIED     lxd/device: Add `clusterMoveSourceName` parameter to `PostMigrateSend`
+a80a8facedc37425f723f3d11881a86cf7824cf4    APPLIED     lxd/device: Add `clusterMoveSourceName` parameter to `PostMigrateSend` for bridged NIC devices
+2de0197ce34dec4b906d152ab737c2eb47f0bbbd    APPLIED     lxd/instance: Add `postMigrateSendCommon`
+eb9051b746c30414632094008d61323f92ffe421    APPLIED     lxd/instance/drivers: Add call to `postMigrateSendCommon` in `(lxc/qemu).MigrateSend`
+83d34976c0c53f88e5e4d68b5b5c6fdbe38a076f    APPLIED     lxd/instance/drivers: Don't return post-migration errors
+1648abe112843388e212aed7e1d60908a19bffd0    APPLIED     lxd/network/driver_bridge: Tell dnsmasq to use MAC instead of client-id for IP assignements.
+017c9a6bbbd6bb1e5f1eaf9c85f08fcd808c3d5d    APPLIED     lxd/network/network_bridge: Refactor dnsmasq handling out of setup()
+cb6a50c83886c75861bde7e87cfc5e562ebee740    APPLIED     lxd/instance: Allow VM `limits.memory` config key to be set to a percentage value
+4405b6a670551211413ecdd69403c7beb472635d    APPLIED     lxd/instance: Fix live update of VM `limits.memory` config key
+cea72d0b5f119914cfeccda7d6627ba40baad2d0    APPLIED     tests/vm: Launch VM with `limits.memory` set to % of host memory
+da4dfaf9549fa0f22559194bc10488499ff8aa06    APPLIED     test/suites/basic: test too small containers
+1bb1ffe0e44ddc6b631b90fec664f080bff876c0    APPLIED     test/suites/basic: test invalid container and snapshot names
+4c20655a099e42180b1f2c482397b2f6b693fca1    APPLIED     test/suites/vm: apply instance filter when listing snapshots
+61be633e2122c6bf6804c008e3a5c22f3914faa1    DIFFERS     test/suites/clustering: Send curl content type as application/json when sending data
+ac77f67e73c7dcc9fc5207280810414a14cb9330    APPLIED     test/suites/auth: Send curl content type as application/json when sending data
+19ecb964c696dd596d136f697a86f4b9ba9dd2d4    APPLIED     test/suites/basic: Send curl content type as application/json when sending data
+354ba69cc74fba5e58e8afdbaafa5e38f8e61260    DIFFERS     test/suites/remote: Send curl content type as application/json when sending data
+4c40e80bf690b6e004dc35405a305eaa2d6496c2    APPLIED     test/suites/tls/restrictions: Send curl content type as application/json when sending data
+67e9a7523e48d5ed635101ba57b4b388eb98d3dc    APPLIED     test/suites/snapshots: Send curl content type as application/json when sending data
+9e0181b671f7dfcd1caf361aadd21081e804c470    APPLIED     lxc/query: Don't send empty request if --data flag not specified
+9dac2acaa4639fb4bb2a50f98f457864108dd12e    APPLIED     lxd/instance/drivers: drop unneeded test code
+7d6c19905fafc8dc5e284954133b39e340c31cce    APPLIED     test/suites/completions: use `--empty` instance where possible
+531ca6ed9ff79a49acb94ae323872b110de23285    APPLIED     test/README: remove whitespace inside backticks
+956843b829cbbf60c4dc639f8da9291e6c990d54    APPLIED     test/README: add recommendations
+bedd8da97ecb67050d9471549a328ca573a64502    APPLIED     test/lint/no-oneline-assign-and-test: add ` || false` fallback
+1939c625bd3f2fb2a592bd27fe2dfbec504808b1    APPLIED     test/suites/container_devices_tpm: add ` || false` fallback
+bfc9db5e37d7720590fb719c74f098571213f286    APPLIED     test/suites/container_devices_proxy: add ` || false` fallback
+71e2701a18c20788e6153c4681f98de55526c42a    APPLIED     test/suites/metrics: add ` || false` fallback
+ba24fc60cf881aacc30c4951b19872e1480b6269    APPLIED     test/suites/remote: properly test for absence of alias
+a729c3dc7e2faee9f71e9588646811998f9488f1    APPLIED     test/suites/storage_driver_zfs: add ` || false` fallback
+bfc040fc9474ee9cf7eb97874a65058e56da9a9d    APPLIED     test/suites/container_move: add ` || false` fallback
+13ec79fd8c76df0da7f6b02bc04f96448ee06075    APPLIED     test/suites/container_devices_nic_bridged: add ` || false` fallback
+3b4f2cf71e8e40b627836ddfd84058b68839e05a    APPLIED     test/suites/projects: add ` || false` fallback
+c44ace3c38a55c4f9554134182c3a17fce496d34    APPLIED     test/suites/container_devices_gpu: add ` || false` fallback
+3fe068ff2c8f78f4c17983be0c09878e3b309909    APPLIED     test/suites/container_devices_nic_bridged_vlan: add ` || false` fallback
+59f983910f49717d42b2d9c726718dc0659ede69    APPLIED     test/suites/image: rework how images are checked during expiry
+beb469ccf4889dde6537c36da7a962209dd04f06    APPLIED     test/suites/migration: drop uneeded space
+9bcd1025cd58a3c957854ab5e6e318082ca65592    APPLIED     test/suites/container_devices_unix: add ` || false` fallback
+287bb744525ed1f14b2e8e0042c6415df8531f86    APPLIED     test/suites/container_devices_nic_ipvlan: add ` || false` fallback
+0e28d9cdb0aa98b18bc267bfe56ca556e78f32a3    APPLIED     test/suites/serverconfig: add ` || false` fallback
+9265b9c5dcfe706d3c4632ba141eacd9f7e488f7    APPLIED     test/lint/test-tests: add check for missing ` || false` fallbacks
+fe998ec8e168bd387e34c3d53b6dcb5d0666f96d    APPLIED     test/suites/container_devices_unix: skip broken fanotify tests
+f38ebbaf353e47d534983fa3bb5f598ff53f42d3    APPLIED     test/suites/metrics: turn comments into `echo`
+a4c23c6b3e188098e297173e0bfdf04255c54e2e    APPLIED     test/suites/metrics: fix test for restricted cert fetching all accessible metrics by default
+aef49ded99f39e6899e9127c02dcded8fe1cc5aa    APPLIED     test/suites/metrics: fix test for restricted cert inability to access other projects
+587efe19848393dffe1881c4771a1a92ddac6201    APPLIED     test/suites/vm: use `==>` in `echo`'s
+79cb43eee23a4b1d5377584e3dc04a24c7b6b3c8    APPLIED     test/suites/metrics: sleep less
+286773f8de68ccccdda79558890686d27609105e    APPLIED     test/suites/metrics: use `--empty` containers where possible
+bf306feff22ee448ab42e3b1252eb65b30d34e2a    APPLIED     test/suites/clustering: use `-n -i0.1 -W1` for `ping` checks
+fa873fd82c14fe7f1c7df50c01d3c027d201d9d5    APPLIED     test/suites/container_devices_nic_bridged: use `-n -i0.1 -W1` for `ping` checks
+9ec7d85d476ff38f8d5e8593693af6ed9b3160eb    APPLIED     test/suites/container_devices_nic_bridged_acl: use `-n -i0.1 -W1` for `ping` checks
+4338708407905ad7d9abafc0d29726f0b766b4bd    APPLIED     test/suites/container_devices_nic_bridged_filtering: use `-n -i0.1 -W1` for `ping` checks
+3e0d383ef771adad39b0dd8aa872209fe80f224f    APPLIED     test/suites/container_devices_nic_bridged_vlan: use `-n -i0.1 -W1` for `ping` checks
+99fc5dbdc5e73f7845445000641dbf9abf64566f    APPLIED     test/suites/container_devices_nic_ipvlan: use `-n -i0.1 -W1` for `ping` checks
+5556ba37446cbcfe9283ac8f685a6b99353c9da9    APPLIED     test/suites/container_devices_nic_macvlan: use `-n -i0.1 -W1` for `ping` checks
+9792a1cfb7ab2ca8832d44c052e25f80f6fb0548    APPLIED     test/suites/container_devices_nic_p2p: use `-n -i0.1 -W1` for `ping` checks
+bf183e735a8ab89611b480645c5599b5ea06897f    APPLIED     test/suites/container_devices_nic_routed: use `-n -i0.1 -W1` for `ping` checks
+3a3d9a39bb7441d5aa979b63d5199b8fb2292980    APPLIED     test/suites/container_devices_nic_macvlan: use `wait_for_dad()`
+6332adfac5a00e49583619865a6ac45c163a0e07    APPLIED     test/includes/net: speedup DAD
+6f3b3d97741050afe5422ff2bd50bff4cc481b2b    APPLIED     test/suites/container_devices_nic_ipvlan: use `wait_for_dad()`
+cb29785a22aea3db92dd2d735cb2435800804628    APPLIED     doc/metrics: metrics for all accessible projects are returned by default
+7ca1b6552bea11d045a365c17f139c2411f14da9    APPLIED     test/suites: Use testimage for auth checks.
+c2fbd070235e8c8557b1a423c7b1acc72c9c0630    APPLIED     doc/metrics: improve wording for `project` parameter
+4f352b61adfc057aa3d4a23a85d79ea5c3093360    APPLIED     doc/howto/storage_volumes: add migration.stateful restriction for local volumes
+b49038f9739b58d269d2c02158de8eae202c93ee    APPLIED     test/suites/container_devices_nic_bridged: use shell comparisons where possible
+bb31e5b0e557a3d10dba5b86ad3d4df582778576    APPLIED     test/suites/container_devices_nic_bridged: disable DAD
+9f0be63c63b78261476d0114676f8c9d77d49a14    APPLIED     test/suites/container_devices_nic_routed: use shell comparisons where possible
+b5bc92c84104231ea4613778c774e0909e46b22f    APPLIED     test/suites/container_devices_nic_sriov: skip early if not supported
+cbc8656700ba3bf22f489e6a65094bdebdc13e97    APPLIED     test/suites/container_devices_infiniband_physical: skip early if not supported
+40776b9d5dbbab0680d2ec37b94b9a891fb7364e    APPLIED     test/suites/container_devices_infiniband_sriov: skip early if not supported
+bb57dc1082840ff95cd41ce6d4375a2831c51d15    APPLIED     test/suites/container_devices_nic_ipvlan: take LXC `network_ipvlan` feature for granted
+8fd77362fbaf3221f91d50bb2c4c7f0830a3a564    APPLIED     test/suites/container_devices_nic_routed: take LXC `network_veth_router` feature for granted
+e6a8098e8503a24b6a7a9011a1cf30a18a36b0a1    APPLIED     test/suites/container_devices_tpm: `swtpm` is a hard requirement
+4d8fcee72216747a1137b01b3f82e0086a7f52c6    APPLIED     test/suites/container_syscall_interception: simplify container setup
+bfe6caedda01724f748c86253ab1e45732de36b9    APPLIED     test/suites/container_syscall_interception: use `lxc file push --quiet`
+463e025f020bb66120a404195958d72fa89478b7    APPLIED     Revert "tests: syscall_interception: disable if seccomp filtering is active"
+2eda9a78fd0d4e6574ee32fd2fb538f3bde77272    APPLIED     test/suites/storage_volume_attach: don't skip test if not enough UIDs/GIDs, fail instead
+5752ebffce0e6a8c712525ceacc78e8f378118d8    APPLIED     test/suites/storage_volume_attach: use shell comparisons where possible
+b8fd66d489345d2703830fd13ea7483f33b56acf    APPLIED     test/suites/container_devices_nic_bridged_filtering: skip early if not supported
+a1361817dc4d122fd9768ea96e4d39feb16b4650    APPLIED     test/suites/container_devices_nic_bridged_filtering: use safer `grep` patterns
+7bb935d891716f41344d525f3e3ea5a8b717b7c6    APPLIED     test/suites/container_devices_nic_bridged_vlan: use shell comparisons where possible
+7314d80ba6bf73205966f80f6481ed57008925ea    APPLIED     test/suites/container_devices_nic_ipvlan: use shell comparisons where possible
+b0c8fbaa74fa6ce88ea4709c22356520ff73be98    APPLIED     test/suites/container_devices_nic_macvlan: use shell comparisons where possible
+ae8556293f8fd1f4764faae0031969fe6bcf0b83    APPLIED     test/suites/container_devices_nic_p2p: use shell comparisons where possible
+bf37f995d56930d05e18639824089115245bb7fa    APPLIED     test/suites/container_devices_nic_physical: use shell comparisons where possible
+c43b8f50c5a430340c250496fdb8fa2f6d192975    APPLIED     test/suites/container_devices_nic_routed: use safer `grep` patterns
+218fc0e2bf2149361dd23d2ef17e4c89849ba984    APPLIED     test/suites/container_devices_nic_sriov: use safer `grep` patterns
+b2a62dc7a8b345b4e9205b3b2405bc359e58b9d5    APPLIED     test/suites/container_devices_proxy: use shorter `sleep`
+176d055c73189aab896c760691f4357b446b2aa3    APPLIED     test/suites/clustering: use `--quiet` when adding cluster join tokens
+b1c2cbbfcd2366491f6172034518950303966926    APPLIED     test/suites/clustering: drop unneeded `tail -n 1`
+15f50d8c1277cfa55b7cdb19828b283946e6db42    APPLIED     test/suites/clustering: use shorter `sleep` around join token expiry
+17fc24cb75f3700cae074cd64cfeec0527df8e55    APPLIED     test/suites/container_devices_nic_ipvlan: wait for DAD of the 2 containers
+6794cc3d5aaeafaa1564813cf54794a716d76e79    APPLIED     test/suites/container_devices_nic_macvlan: wait for DAD of the 2 containers
+6ade7353108cca78f36fcbdd9fc3f9fc8083b18d    APPLIED     test/suites/container_devices_nic_bridged: give more time for DAD to complete
+fffc06942d609bffa1223484008f21d30c1f0e4e    APPLIED     test/suites/container_devices_nic_p2p: remove unneeded waiting for DAD
+d07a232048563a31b218ea5195cc2e7eb556baef    APPLIED     test/suites/container_devices_nic_routed: give more time for DAD to complete
+2c26535b597ab0a9a9e1b763535d047d2a7dfe6c    APPLIED     test/suites/container_devices_nic_macvlan: take LXC `network_phys_macvlan_mtu` feature for granted
+77ac77ad53c647146b4cf298d552d799fad6cfc2    APPLIED     test/suites/container_devices_nic_physical: take LXC `network_phys_macvlan_mtu` feature for granted
+b4cece98efef79d9b9edf747ba043d48f51a00ef    APPLIED     test/suites/storage_driver_zfs: simplify instance's PID extraction
+f0934c2e656d524098c51228b86e37359becb0d4    APPLIED     test/suites/clustering: simplify instance's PID extraction
+e85b8e9113fa84c8a26851f133ca810ec86650eb    APPLIED     test/suites/basic: simplify instance's PID extraction
+dc1f28d1e7e5546e68293b4fd31beacbec393ef3    APPLIED     test/suites/storage_driver_btrfs: skip early if not supported
+34c6d81fab73f68da2546ce6664bb5538d63cef4    APPLIED     test/suites/storage_driver_dir: skip early if not supported
+1b67a1502d00ccbce833b68feaf6718b85333915    APPLIED     test/suites/storage_driver_ceph: skip early if not supported
+c78b77b11c2c049fc02c3e4e17a508d60fa3fa6c    APPLIED     test/suites/storage_driver_cephfs: skip early if not supported
+45783955c56782d720e70c34385e9dd69b7e34fc    APPLIED     test/suites/storage_driver_pure: skip early if not supported
+bcf53d448cbe984967b340f6acd99cf934568a1c    APPLIED     test/suites/storage_driver_zfs: skip early if not supported
+016a6236d06d2983f6149c63ffb0ae647280d9dc    APPLIED     lxd/network/ovn: Only fetch active chassis if present
+5e071a2dfe05e86df920248ffaec9ee94148f7c4    APPLIED     lxd/network/openvswitch: Add check for empty logical router port binding
+63d41e26399e75911c631a6625790975a337f4e6    APPLIED     lxd/auth/drivers: Add methods to perform auth checks ignoring effective project.
+c31a1c71865a3c265054f93de2a3eaaf51772933    APPLIED     lxd/auth: Add methods on interface to perform auth checks ignoring effective project.
+f39e761af5cbe2bed79b01feb034910c61dc26a8    APPLIED     lxd/auth: Update comments replacing old context key with request.Info.
+f914d188e1c0081f7dcfafb75606a0d82e7b5277    APPLIED     lxd: Update comments replacing old context key with request.Info.
+524052351d85953cd25455c27f12162503b8593d    APPLIED     lxd: Check network allocation used-by URLs.
+8ff8a74b3620f57dd9ecbe4a97df0ec7e9a322cf    APPLIED     test/suites: Add auth tests for network allocations.
+86a3abea6e4d970a14185b13dfdd4f156d272faf    APPLIED     lxd: Consistently use state in network allocations handler.
+5825c9aac632deb247600ca7c4e798952362b1e9    APPLIED     driver_qemu: informative error message for QEMU version
+0b102b77acc0d8dfd0208c6c375b450686e84e9d    APPLIED     lxd/main/activateifneeded: Don't query /1.0 when requesting LXD start
+2b3b4655af744515308703749dea26edd30b9f14    APPLIED     lxd/main/activateifneeded: Store local DB inside daemon struct
+04736b6a07358d2a491bf80128ddda98c54d7ce5    APPLIED     lxd/main/activateifneeded: Don't call d.State() causing unnecessary instance driver status checks
+e98b03e4416a5df77f83b7a7cf8bf6be3eb4b1e1    APPLIED     lxd/main/activateifneeded: Infer instance running status from DB
+bfb94f3bdde3e8e11c58397c16cde668e6691d52    DIFFERS     test/main: export `MAIN_DIR` var
+c73f1f5295e25ea01b549a7ba2770a7d1ea9ea50    APPLIED     client/lxd: avoid unneeded format variant of logger
+341dbc8dfbe16ae4ee5a7625fea8dc7cbc437295    APPLIED     lxd-agent/devlxd: avoid unneeded format variant of logger
+20edd563f4ac336c2c25af16242910e128f13c41    APPLIED     lxd/api_internal: avoid unneeded format variant of logger
+057d1f545cee19f58d4d33ecfc25eec2b8332c32    APPLIED     lxd/cgroup/init: avoid unneeded format variant of logger
+ad9af2ea2570db9cc5f7d222e4e02530ecee7efc    APPLIED     lxd/cluster/gateway: avoid unneeded format variant of logger
+f49251d45aa032aec9658cab2f90a09c725e7903    APPLIED     lxd/cluster/upgrade: avoid unneeded format variant of logger
+a2dc09aef72e2ca7faf49db33ce7fad770bdaf50    APPLIED     lxd/db/cluster/open: avoid unneeded format variant of logger
+40d5ff97585f0409541732a7756bbac26f31b0e4    APPLIED     lxd/db/db: avoid unneeded format variant of logger
+84782cf7c4b5abb1166597929afb38705c915efd    APPLIED     lxd/db/node/open: avoid unneeded format variant of logger
+7b23afcfa4425ad80c35fd79f953d844cd99d36c    APPLIED     lxd/device/device_utils_network: avoid unneeded format variant of logger
+971673927974da300def6a3025666a35a30efacd    APPLIED     lxd/endpoints/cluster: avoid unneeded format variant of logger
+27a8ba8d0ef28cc97adabc56eb0023e3e535ad6f    APPLIED     lxd/endpoints/endpoints: avoid unneeded format variant of logger
+121607f138d237acb97e8c4d4666ce2692a57ff5    APPLIED     lxd/endpoints/metrics: avoid unneeded format variant of logger
+099c18b1f055eb19314ee28253af2c66291b98d4    APPLIED     lxd/endpoints/network: avoid unneeded format variant of logger
+6393ca6709b3b47b6a8752db016686bff40207c6    APPLIED     lxd/endpoints/object: avoid unneeded format variant of logger
+b3c9e46b1cddebd29ed6fd7b81f57c2a134ccb74    APPLIED     lxd/endpoints/pprof: avoid unneeded format variant of logger
+002c5643740638b91259286c6666bfb9a04dd22a    APPLIED     lxd/endpoints/socket: avoid unneeded format variant of logger
+96b6c10dc31f8de18db03a5d5f072b0a68383b44    APPLIED     lxd/idmap/shift_linux: avoid unneeded format variant of logger
+f713a8d211ecdb70caf20fbcee97855a71f33df4    APPLIED     lxd/images: avoid unneeded format variant of logger
+1e0342ea9ebf6761484a8470a0e5210e4e40d638    APPLIED     lxd/instance/drivers/qmp/monitor: avoid unneeded format variant of logger
+a1b563710cf93ea8c55b2f0c4607788b44ef879f    APPLIED     lxd/instance_console: avoid unneeded format variant of logger
+97c6a621ad3c062aa90aedc10d3330d6ce351895    APPLIED     lxd/main_activateifneeded: avoid unneeded format variant of logger
+e0032e03049d533097b6d26a5023e784fb2dc456    APPLIED     lxd/migrate_storage_volumes: avoid unneeded format variant of logger
+75e900a01451a8cdbebdd8760c1fad53290196aa    APPLIED     lxd/networks: avoid unneeded format variant of logger
+f7b4bd82074a9003aa54e7b6aafbb99ac9cd72df    APPLIED     lxd/patches: avoid unneeded format variant of logger
+41151863b9fa3457f8cbc94e40fbbec65e47cb90    APPLIED     lxd/seccomp/seccomp: avoid unneeded format variant of logger
+9f76af16ae577b70f028d894925d446e86dfdfec    APPLIED     lxd/sys/apparmor: avoid unneeded format variant of logger
+a1fed32ae4eb817a65ac1cc7400d539db9f4b82d    APPLIED     lxd/util/net: avoid unneeded format variant of logger
+13b90285af5e015b8ffdfbbece4565b05694f825    APPLIED     test/lint/unneeded-format-variant: new check
+d579ae65837db1331ab1e295992877f95fcbe41c    APPLIED     lxd/storage/backend: Skip UpateCustomVolume early in case there aren't any changes
+78f7618ebfb71bb672334161eb1e8de6d0d70a52    APPLIED     lxd/storage/backend: Skip UpdateCustomVolumeSnapshot early in case there aren't any changes
+45b620001f00d2852dd82456634a1b5532ee859a    DIFFERS     test/suites/serverconfig: Update Sec-Fetch-Site tests
+0cb6852f0137c4201bb0e985bf91ee787beff5f4    APPLIED     test/suites/container_devices_unix: do not completely skip tests with `fanotify`
