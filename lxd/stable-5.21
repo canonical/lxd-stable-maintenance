@@ -6708,3 +6708,18 @@ d579ae65837db1331ab1e295992877f95fcbe41c    APPLIED     lxd/storage/backend: Ski
 78f7618ebfb71bb672334161eb1e8de6d0d70a52    APPLIED     lxd/storage/backend: Skip UpdateCustomVolumeSnapshot early in case there aren't any changes
 45b620001f00d2852dd82456634a1b5532ee859a    DIFFERS     test/suites/serverconfig: Update Sec-Fetch-Site tests
 0cb6852f0137c4201bb0e985bf91ee787beff5f4    APPLIED     test/suites/container_devices_unix: do not completely skip tests with `fanotify`
+e5077af9b9e3688ff914a5d48e45e823092d6309    APPLIED     lxd/state: Add functions for images and backups storage
+4cdab4c6894a3863bc04d4fdbc57559303376760    DIFFERS     lxd/daemon: Use dedicated functions for images and backups storage rather than generic shared.VarPath()
+49aa2667e825f3b18251a16ed33f7f06cce88bde    DIFFERS     lxd/api/1.0: Rename arguments of func doAPI10UpdateTriggers()
+35c4b702660cfbe428bfa9d040818b6405ee6ae0    FEATURE     lxd/daemon: Don't create symlinks for backups and images storage
+655d6ba78818d178844b32e113449f4dc507f34d    FEATURE     lxd/daemon: Do not create {images,backups} directories if storage.{images,backups} config is set
+8d892fa62579f9499d470439b5b3e2529ba720b8    FEATURE     lxd/patches: Remove backups and images symlinks
+bec67763a1ba0683cf4c19923ae11ccbdd21dc49    FEATURE     test/suites/serverconfig: Fix test after removal of symlinks for images and backups storage
+b72d4068ee9e112a3ce9108217381c975e18647b    APPLIED     test/suites/serverconfig: Add tests for unsetting of storage.{backups,images}_volume
+54ae5d956f01247c5111b8618ad31126f1cd9361    APPLIED     test/suites/clustering: Add tests for image replication with dedicated image storage
+425c8c6f78c5cee6753271e9110ac19ddf320e95    FEATURE     lxd/patches: Move {backups,images} into {backups,images} sub-directory if storage.{backups,images}_volume is set
+a2698733cbd1a4912b336dfe7f434736c237f20d    FEATURE     lxd/daemon: Store {backups,images} in designated sub-directory if storage.{images,backups}_volume is set
+4e7ccad5e836df750b4494f55d6ab5457ddc6f65    FEATURE     lxd/daemon: Allow using the same volume as storage for backups and images at the same time
+4ca859dbef7175dc475c9e1977e4e792047cb5c2    FEATURE     test/suites/serverconfig: Fix test after move of images and backup on external configured volume
+4f61c0dfd54f346f104801802e418957233f989c    FEATURE     test/suites/serverconfig: Add test for shared volume for storage.backups_volume and storage.images.volume
+68b51a2ee414132b5e58769eff2e08d265027050    FEATURE     test/suites/clustering: Fix test after move of images and backup on external configured volume.
