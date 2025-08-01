@@ -6723,3 +6723,137 @@ a2698733cbd1a4912b336dfe7f434736c237f20d    FEATURE     lxd/daemon: Store {backu
 4ca859dbef7175dc475c9e1977e4e792047cb5c2    FEATURE     test/suites/serverconfig: Fix test after move of images and backup on external configured volume
 4f61c0dfd54f346f104801802e418957233f989c    FEATURE     test/suites/serverconfig: Add test for shared volume for storage.backups_volume and storage.images.volume
 68b51a2ee414132b5e58769eff2e08d265027050    FEATURE     test/suites/clustering: Fix test after move of images and backup on external configured volume.
+7ddd5581a3e45876e01a908e4d29086dd21a74f4    FEATURE     lxd/storage: Allow appending custom vols to backup config file
+9b1e5eef01a6e63d1083600fa298d981b1a5f4fc    FEATURE     lxd/storage: Include the pool for custom volumes in the backup file
+dc0c9f2c89b0fc191fff352356de3554faf8fc50    FEATURE     lxd/storage: Allow setting custom volumes when generating instance backup config
+47e2c949ccd9ac5bebf483f56afe2ee1037c1b74    FEATURE     lxd/storage: Add custom volumes parameter when generating instance backup config
+a8ce286287f2df0acefae069fe7dd80a76e79cf0    FEATURE     lxd/storage: Add backupConfigCache struct with getters
+43d022648553c72193f316d60cd5eea0d126d8d2    FEATURE     lxd/storage: Add and implement GenerateInstanceCustomVolumeBackupConfig
+7224eeff707159b3a166f264dca6f153cae186dc    FEATURE     lxd/instance/drivers: Update invocations of UpdateInstanceBackupFile and GenerateInstanceBackupConfig
+91331d55eccaa328e8ddb19c5712f8c6edcf6260    FEATURE     lxd: Update invocations of GenerateInstanceBackupConfig
+5d740ae838313a78a6327c5dc8c74879ee5e7210    FEATURE     lxd/storage: Update invocations of UpdateInstanceBackupFile and GenerateInstanceBackupConfig
+56e336e88052f84d70d80a0abe66d986adaa8feb    FEATURE     lxd/instance: Load all custom storage volumes for UpdateInstanceBackupFile
+f71e464c2da72ae466e89ca18c976be7e8380285    FEATURE     lxd/storage: Implement UpdateCustomVolumeBackupFiles
+f8f46193f71f01f9e4f800f84b4d510062025b97    FEATURE     lxd/storage: Update instances backup file if one of their custom storage volumes get updated
+6bcc521997242f17ec97516bd532d3be68758391    FEATURE     lxd/storage: Update instance backup file if custom volume got snapshotted
+2ba5c043926d084d5eadafea1076c7cb810e69fa    FEATURE     lxd/storage: Update instance backup file if custom volume snapshot got renamed
+a17160fe1fcc38bb2ba805878cffbac698ff0ad1    FEATURE     lxd/storage: Update instance backup file if custom volume snapshot got updated
+ad09aa123058c742ca4086bc3003183860cd5f62    FEATURE     lxd/storage: Update instance backup file if custom volume snapshot got deleted
+bfe6bcc8a3ae6125e3a2f4469c912990f77b3c2f    FEATURE     test/suites/backup: Test pool count in backup_metadata for instances and custom vols
+f7bb9a18936d585139458cd82405ade9ed057fab    FEATURE     test/suites/backup: Test the on disk backup file in backup_metadata
+9c4e736a96c4ff4ed7d72ed070cdc24ce8e99639    FEATURE     test/suites/backup: Check a custom volume only ever appears once in the backup config
+53c8550710dfa3cdcd51639a415d28bf0f80d598    APPLIED     test/suites/snapshots: Check the restore ins't blocked by not anymore existing custom vols
+5981ebf6288ef04b839ac57fd952b5cf4ff53b21    DIFFERS     test: split `DEBUG` into client, server and shell variables
+d1d730294e5fb62a325569cb306e74fc6b03a1d6    DIFFERS     test/main: streamline variable exports
+cdbc0d77680214376c5c5a4740313d5aceb7e360    APPLIED     test: Omit escape sequences from prompt length in inspect subshell.
+bcc29cc35b8f9e112fa1689fe20da8dca596dd18    DIFFERS     lxd/storage: Add more context to errors returning from GenerateCustomVolumeBackupConfig
+676d979e0d392d438f1cc38de7ccfe351ab2079c    APPLIED     lxd: Add more context to errors returning from GenerateCustomVolumeBackupConfig
+2d58dc531c2996ac1eb7fc15a482a06a7c2bb3e7    APPLIED     golangci: Disable `var-naming` linter on `lxd/util`
+1075ccfcd61a4712264ec481ceb963fe7921f7a8    APPLIED     lxd/storage/drivers/driver/zfs: Remove loop file on pool setup failure
+1d4f329ebb2c2e29d4e435b4faa50f56a2492fb9    APPLIED     lxd/storage/drivers/utils: Adds ValidVolumeName and ValidPoolName functions
+8233e900356d505ab65fd2674edd7b745b94e08b    APPLIED     lxd/storage/utils: Removes ValidVolumeName function
+8d39db7233ead857da3d90a1b87d2fa3aadbfb21    APPLIED     lxd/storage/backend/lxd: Switch ValidateName to use drivers.ValidPoolName
+909e98be46b6a70dec20c422fc3f783cd8b394a7    APPLIED     lxd/storage/backend/lxd: Switch to drivers.ValidVolumeName with better error context
+cba52e3cd927040e6c838dd3ce621720958f93c7    APPLIED     lxd/storage/volumes: Switch to storageDrivers.ValidVolumeName
+63359499a8ff7f7bab255f2309a9c5ee9bd0151a    APPLIED     lxd/storage/volumes/snapshot: Switch to storageDrivers.ValidVolumeName with better error context
+dda845193d46425f9a6de1f57ccb17a0c329b827    APPLIED     lxd/storage/drivers/driver/lvm: Validate lvm.vg_name with ValidPoolName
+21f30af65095a813c1116df17cd03efc1e4bc6ed    APPLIED     lxd/storage/drivers/driver/lvm: Validate lvm.thinpool_name with ValidVolumeName
+c3ebab39903a0f96cb8ed621a3e78a008f61f754    APPLIED     lxd/daemon/storage: Switch daemonStorageSplitVolume to use storageDrivers.{ValidPoolName,ValidVolumeName}
+1da385e1b7d1479d064fd467f6d9383b922bf345    APPLIED     lxd/storage/drivers/utils: Update ValidPoolName to reject names start with a hyphen
+6377abea4263f3f9d29db002a4bd7e63fa2e3ef3    APPLIED     lxd/storage/drivers/utils: Reject pools and volumes called ".."
+65903eb9880e82211515b2f59331739539cfad73    APPLIED     test/suites/storage: Add storage pool name validation checks
+6dbb46c22c8885bcfd9ebdd320d3ba34f3a09c88    APPLIED     test/suites/remote: don't report progress on init/image copy/publish
+564b08941ad0d1e27c24bd1a87e03d1e3bcc6e4a    APPLIED     lxd/request: Add function to get both project parameters.
+69010b2721c1f890c32c942592b1f993c19283a5    APPLIED     lxd: Centralize handling of project query parameters.
+b5a4d704a17f94ca27711c530c4467a2696b6017    APPLIED     lxd/db/cluster: Add function to get all project configs.
+9801f87f64663d2ed4ee64d8536efebcdc9bfd50    APPLIED     lxd: Use correct project config when getting networks from all projects.
+416f0d1a23e1b514dc8fb82c46d94ce2d12b6976    APPLIED     lxd: Only use the effective project if set.
+9bd5ebbf4c000f3c40fd0ebfdcda9e0efd77e665    APPLIED     lxd: Explicitly get unmanaged networks for all projects requests.
+12bcff70528780e2dd31eb7cd02d3cd025c4df93    APPLIED     test/suites: Test project restrictions with multiple identity types.
+dc1637e905971fc8ae4a7fdcdb2636e32ffbabfe    APPLIED     test/suites: Lint fixes (shellcheck: SC2248)
+9be353309f733afd29324fb173e28ab5c9bd2ec0    APPLIED     test/includes: Add OVN utils.
+8c5804784b168152c34675a49bcfb0ff44ea45c0    APPLIED     test/suites: Update OVN tests to use utils.
+742ff72c4bc6b81ac4f29db08481fd172d440ae2    APPLIED     test: Clean up northbound database after tests.
+a4b749483ffd9dec45534b68b51d51e2fe3d5d1e    APPLIED     test/suites: Add comment for storage pool used-by URL tests.
+6d645a7738f09060eb4e71aa8df2cbd6a9e9d811    APPLIED     test/suites: Move entitlement enrichment tests down.
+bb8bbfb13f189f7cd0070d2f435375318cabdd11    APPLIED     test/suites: Add tests for project specific networks.
+e69907cab2c5b814f5d542df3b75507c29b893b8    IRRELEVANT  lxd/api_cluster: use `maps.Copy()` (modernize)
+e096e212a3f8122e850714d02e17bdd7b7d7db9e    IRRELEVANT  lxd/api_1.0: use `maps.Copy()` (modernize)
+b298529d9e2927180cfa8164769f2e8d8b817fe2    APPLIED     lxd/network/driver_common: use modern loop (modernize)
+5b3ccc015be89af745ea64622e0843fcb705f391    APPLIED     lxd/network/utils: use modern loop (modernize)
+3f9037dd42b11271407c9509d8179ebb50d62756    APPLIED     lxd/network/openvswitch/ovn: use `strings.FieldsSeq()` (modernize)
+ee2ec0263e7c2b659d0c57569788b6a5a73473d3    APPLIED     lxc/config/remote: use `strings.CutPrefix()` (modernize)
+46138e1ee41ac5e7532e742789e5be4a8936344f    APPLIED     lxd/instance/drivers/common: use `strings.CutPrefix()` (modernize)
+243473c64948f58b5ced452e7be8c48c5fd0c28e    APPLIED     lxd/network/openvswitch/ovn: use `strings.CutPrefix()` (modernize)
+625a025a184bdeb678aa8d488cf80db421d4e063    APPLIED     lxd/resources/gpu: use `strings.CutPrefix()` (modernize)
+e2bc6b8f9c21bb8bfef195dae9b18b83d75ec6ba    APPLIED     lxd/storage/drivers/zfs_volumes: use `strings.CutPrefix()` (modernize)
+b9deb12e3729d256bb16a71dd3a25b5c76dbc518    APPLIED     lxd/instance/drivers/common: use `strings.CutPrefix()` (modernize)
+aaf5efe1105862a070c55f19bca3c44fd777b777    APPLIED     lxd/network/openvswitch/ovn: use `strings.CutPrefix()` (modernize)
+f8172df4c77cb2d7f0ac6131453af139f6665112    APPLIED     test/mini-oidc/storage: use `strings.CutPrefix()` (modernize)
+d8251f224b382e620634b6aac3e1c6ec4bfad68c    APPLIED     shared/util: use `strings.CutPrefix()` (modernize)
+b3f6cbab07305109dce63e93e9021dd8cad0e0b9    APPLIED     lxd/storage/s3/headers: add unit test for `AuthorizationHeaderAccessKey()`
+6e15ec409d57a89e4d2bb0602f057a20892c609c    APPLIED     lxd/storage/s3/headers: use `strings.CutPrefix()` (modernize)
+4f60e08de0164d811031d8e848bfb8676c406020    APPLIED     lxd/instance/drivers/lxc: remove local var copy (modernize)
+9a2f79d1e490cf734415824f95f7a2e2cc3a5c6f    APPLIED     lxd/instance/drivers/qemu: remove local var copy (modernize)
+b3ccd74423997d46e78a6fc2c02360b92c1f5f56    APPLIED     lxd/instances_get: remove local var copy (modernize)
+b8dc4897d5439c3cb2b880bd5c8edcfb8bdde2a6    APPLIED     lxd/instances_post: remove local var copy (modernize)
+0ba4b1df46bf7172a10c117456d52d46baa1f6fa    APPLIED     lxd/storage/drivers/utils: add `addNoRecoveryMountOption()` helper
+b5b1442296cc1ad32673ff19986682a4fa52a157    APPLIED     lxd/storage/drivers/utils_test: add test for `addNoRecoveryMountOption()`
+72d7fa27b064801c07d114b63505cf4b91203d0f    APPLIED     lxd/storage/drivers/zfs_volumes: mount ro snapshots with `norecovery` for all FSes
+787e60b6a5214a11ac990dc85b565d48a8528ad5    APPLIED     lxd/storage/drivers/lvm_volumes: mount ro snapshots with `norecovery` for all FSes
+31f32a054ef22284c50f6a49fed914925ac9cea7    APPLIED     lxd/storage/drivers/ceph_volumes: add comment for XFS being mounted with `nouui`
+cf33d5d4a965dfaff1f09d9313cc7acb3d8cc8ba    APPLIED     lxd/storage/drivers/ceph_volumes: mount ro snapshots with `norecovery` for all FSes
+89e6a8a5a8d85a477ed0a16983342da2c60a8918    APPLIED     lxd/storage/filesystem/fs: convert `stat.Mnt_id` outside of the loop
+580f6ae7e2a75d9ebbf1eabb86bf57be1686d3f4    APPLIED     Revert "golangci: Disable `var-naming` linter on `lxd/util`"
+c2d12910c7604932cb242b4a7215f7751480616d    APPLIED     golangci: Ignore package name errors by text.
+d63b10e7878345402e1ae8ec655ae36eb91e6d0c    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.39.0 to 3.39.1
+56bc539abb70524e7ec12b94978c284e1f4d2e91    APPLIED     lxd/cluster/heartbeat: Take lock heartbeat before checking g.Cluster status
+1a77f14b4cfe7364a14310cd26e2932c48a6e0af    APPLIED     lxd/daemon: Take g.HeartbeatLock before setting g.Cluster to nil
+9d25081ccec156d7ad1a622ea612514ccb904d56    APPLIED     client: Set content-type header to octet-stream in CreateInstanceFile
+9f68b72e1ef94c6125cd487e271acb9c21de3a8e    APPLIED     lxd/storage/drivers/utils: replace slow `fmt.Sprintf()`
+9dd7c1a8682088047756cfe49ae07edab76ad466    APPLIED     lxd/storage/drivers/utils_test: add tests for `ValidPoolName()` and `ValidVolumeName()`
+f880ef06a6ca98875a3eef3af2c2fd6f97b990f1    APPLIED     lxd/api: Adds isBrowserClient function that detects Mozilla prefixed user-agent header
+da530395381abb6c825e0dc1f017f3f697438f08    APPLIED     lxd/instances: Allow content-type octet-stream for POST /instances/{name}/files
+49b20823e6b5c546975176483c5fb2cb16e444dc    DIFFERS     lxd/daemon: Only enforce content-type headers for browser clients
+e3de4452e7f9ac898480a0331351bc2a885c034c    DIFFERS     test/suites/serverconfig: Update content-type checks with Mozilla and non-Mozilla user agent
+64d6e92e8c11b95bbdce98acd2efd534396c92d0    DIFFERS     test/suites/serverconfig: Adds ui redirection test
+bc64252edd10ee52f7b94e8e063f1b1555b9406b    DIFFERS     lxd/api: Add missing error condition check
+36b44fe76ef76a72e6f7b498a3cd27cfe239bba3    APPLIED     lxd/storage/drivers/zfs_volumes: only assemble the `udev` link to the `zvol` once
+64657dc35f12615a43fefd2a56a821402ed02d35    APPLIED     lxd/storage/drivers/zfs_volumes: Make sure the zvol is a block device
+f69269e80db6c929272cd71d40513967f6e397a7    APPLIED     lxd/storage/drivers/zfs_volumes: optimize check for symlink+blockdev in `getVolumeDiskPathFromDataset()`
+b1c1621cd787fad524ce7e1a53fae47edd56e77a    APPLIED     fix: fix slice init length
+a3da97d04a88c8864e1d740fcd357d53f8d69257    APPLIED     lxd/storage/drivers/utils: use `btrfstune -m` instead of the much slower `-u` variant
+40faad1438d0b95863dd16d3d76ab678a7080e7c    APPLIED     lxd/storage/drivers/zfs_utils: only use dpkg-query as a last resort to get ZFS version
+856a2b0f6adef8a5b889f0396e86d39b70eed9ab    APPLIED     lxd/storage/drivers/zfs: datasets are not strictly like Unix paths
+74b0f43607972f18f209a9e74f4017e166383d53    APPLIED     lxd/storage/drivers/zfs_utils: `append()` more at the time
+9e62234e262faa244d27eaa8a45ece48b79bdc66    APPLIED     lxd/storage/drivers/zfs_utils: use safer `strings.Cut()`
+f72f3dfa46bd2e7cc20d89062e810c32497a02da    APPLIED     lxd/storage/drivers/zfs_volumes: use safer `strings.Cut()`
+2f29cae2d4861378823498c89bf4271eb64448c2    APPLIED     lxd/storage/drivers/zfs_volumes: streamline snapshot name handling for cleanup
+1e6be9ab9f91259cadb46d31f21b7659be582145    APPLIED     lxd/storage/drivers/zfs_volumes: set the `volmode=dev` during `zfs clone`
+3be9622f2bc314ee719bbab94504a22a7abcd5e3    APPLIED     lxd/storage/drivers/zfs_volumes: clear all quotas in one go in `SetVolumeQuota()`
+c4c79c33f72ea7e96e30b1e3727c8ac8c9915fe2    APPLIED     lxd/storage/drivers/zfs_volumes: log a warning if setting `volmode=none` fails
+8ac9c872e9e96b5eee1fcfc7cb50ee710a6d60e3    APPLIED     lxd/storage/drivers/zfs_volumes: don't check if FS can be shrunk in the caller
+97c7b15b9e5bbddbb1d9555b5dbbeb6b3da8d23e    APPLIED     lxd/storage/drivers/zfs_volumes: early return in `deactivateVolume()`
+968de3165dc638282152cdb14960ed578db3342e    APPLIED     lxd/storage/drivers/zfs_volumes: return volumeDiskPath if any in `activateVolume()`
+20b251414bf6fcd58e77e8cc25156217f30eb863    APPLIED     lxd/storage/drivers/zfs_volumes: consistently deactivate volume if it was activated
+6f71a41f3d8d03af4662fae64e6d2406f6c3f3c3    APPLIED     lxd/storage/drivers/zfs_volumes: activate volume, mkfs then deactivate in `CreateVolume()`
+6e0b193844478f850eb52bf009b6e0cb026bbe6c    APPLIED     doc: Adding network ipam UI information
+bf63d4a1ace5b4d518ff40928bdf0384f1854b2b    APPLIED     lxd/storage/drivers/utils: Reject pool names starting with a dot
+34cca57b63373fd047793dc68ee82a955a299732    APPLIED     test/suites/storage: Test for rejected pool names starting with a dot
+04ef11034644c8599f38ac434ef898f5570cfbaa    APPLIED     tests/clustering: Use correct target project argument
+a0cbd538a7b69a97aa448feb89b2920ca139b7f1    APPLIED     tests/clustering: Fix typo
+6d8c4698aa8e34978597379252f29afccfdfc260    APPLIED     lxd/response: Use generic status text when nil error is used.
+4b8c2114e87696f88750788cf837cfa3ff5fa93e    APPLIED     lxd/response: Update smart response to use err field.
+2fd5eb65c20c3b09c64fb4d9b2cd8dc1b9d749e5    APPLIED     lxd/db/openfga: Use generic status error for consistency.
+627eb1f92f9b50011edb2bf7a338e0519e53da38    APPLIED     lxd: Use generic status error for consistency.
+445cf3aca9e35a45a1c88cd676c83dcd8637df14    APPLIED     test/suites: Update suites to expect generic error messages.
+e3aae8fa646a97aa1a5942b0a214c4aa7bbaf26b    APPLIED     lxd/seccomp/seccomp: Remove debug leftover
+53885ec85c3c38a89b94524c383eba87950c4f36    APPLIED     lxd/instance/drivers/load: Simplify error message
+8e911c3f44d5ff6b200d490e434af45daf02b8c7    APPLIED     lxd/instance/instance/utils: Simplify and make error message more consistent
+d6b564e83d3df56bbe8c407298c14d9a127f88ad    APPLIED     lxd/api/devlxd: Adds loadContainerFromLXCMonitorPID and reworks devlxdFindContainerForPID
+a99db18d3ca10e92ca8021100f4b76d2546ee054    APPLIED     lxd/daemon: Switch to more precise loadContainerFromLXCMonitorPID for seccomp handler
+19514fde75973caeab11fc3dcdd445772a8cc5b3    APPLIED     lxd/db/cluster/projects: Optimize GetProjectConfig()
+01cde62ba8e969369a1249b977a9eb7d0c51d55a    APPLIED     lxd/auth/drivers: Update project_manager entitlement description.
+3ccac80494b8808fe86d1e21d693911426ee681e    APPLIED     lxd/auth: Update auth
+7f2f40ddce730b3335db8feccd925c986d4eecd6    APPLIED     doc: Update metadata
+d1016acbec84acd6febb527ca3618b35206e61be    APPLIED     doc: Adding Network ACL UI Information
