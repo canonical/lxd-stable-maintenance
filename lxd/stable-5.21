@@ -6857,3 +6857,196 @@ a99db18d3ca10e92ca8021100f4b76d2546ee054    APPLIED     lxd/daemon: Switch to mo
 3ccac80494b8808fe86d1e21d693911426ee681e    APPLIED     lxd/auth: Update auth
 7f2f40ddce730b3335db8feccd925c986d4eecd6    APPLIED     doc: Update metadata
 d1016acbec84acd6febb527ca3618b35206e61be    APPLIED     doc: Adding Network ACL UI Information
+9e62e2d493a2e3d089b82463bec2c34659808d5a    DIFFERS     doc/api-extensions: link to how-to for attaching instances to ubuntu pro
+366d8e2debb3709906bd64c6bcb215a694e5d451    APPLIED     lxd/storage/drivers/dir: Remove quotas after removing volume from storage
+1b135aed22b8343071779a02a6f726ef0d8b757e    APPLIED     test: Add test for XFS project quotas with dir storage driver
+7c78d97fee6002d50825a849f71f39afa27eb616    APPLIED     Revert "shared/util: don't leak output from failed pongo2 template execution"
+88955af7d309258dfb5003905c7677402c6c30bb    APPLIED     shared/util: don't leak output from failed pongo2 template execution
+445607d30737666eb7e3751264e6f04fab05e880    APPLIED     shared/util: explicitly return `nil` error on success
+41aabbad20a716e14ed652566c9641d25e76b882    APPLIED     shared/util: introduce recursion limit to `RenderTemplate()`
+326e140cbfe2371248824efa0fcf92294c98bbbb    APPLIED     shared/util_test: add tests for `RenderTemplate()`
+85b75df3563b2f8d976e003492c0afc6c5957681    APPLIED     shared/util_test: extend coverage for `GetExpiry()`
+7c66a59df51ffadea9dd9ac1fffcef500dbfcfca    DIFFERS     README: Fix broken link
+8a74c9e6aaa2bf32d585796e03dffa4f47af9bbb    APPLIED     lxd/instances/qemu: Handle deprecation of runas
+199b5708d4569731aac2d1c920b385d102396300    APPLIED     lxd: Reorganise checks in images GET handler.
+9e63ef91378da176e28d03df05b9b2f443e31167    APPLIED     lxd: Add function to validate fingerprint prefixes.
+eeeba0f832e75bf3989961fbc10c9806c8e10db4    APPLIED     lxd: Validate image fingerprint prefix on trusted API calls.
+9caa925f5708c4b18731c4916cdd17c949af740d    APPLIED     lxd: Validate image fingerprint prefix on untrusted API calls.
+2b8aa253f8f26800fbc35a8554ff0ce60fe35712    APPLIED     test/suites: Update test to use 12 characters of fingerprint.
+11b82c82bf02f46000825b055e4de12751058a54    APPLIED     shared/util: export a suggested recursion limit for rendering templates
+fc6a467566b34fef3c1b4848d20fedeb7d6303fb    APPLIED     lxd/instance/instance_utils: use suggested recursion limit for rendering templates
+c54da2b5e9bb080a8bdd1d51cdbbe98fae41771a    APPLIED     lxd/storage/utils: use suggested recursion limit for rendering templates
+158a65a07738fd761fc1488af445966805aeef71    DIFFERS     build(deps): bump golang.org/x/sync from 0.15.0 to 0.16.0
+4c12b2775d595bc1ff39139ddb3bd24304aa73e7    DIFFERS     build(deps): bump golang.org/x/tools from 0.34.0 to 0.35.0
+e3879460c0572a713f4a21b7c4142655f5f2ef0f    APPLIED     tests/clustering_move: Add test for moving instance to a new project
+8f2e2eea899efd510b7dbcf6d578bfda26693c39    APPLIED     lxd: Change all calls to `SetupContextInfo` to `GetContextInfo`.
+eb1610b8e00800043d422704955b7461315aabd2    APPLIED     lxd/request: Never get existing `Info` when setting up request context.
+f7827d30da2a2ce882833370a6117c1d25354f26    APPLIED     lxd/project/limits: Update calls to `SetupRequestInfo`.
+cbe24bd953ab7168bd6da25935c498b5f7eab05c    APPLIED     lxd: Update calls to `SetupRequestInfo`.
+77de3dd07dcbde342deaf707ba6bee4dd9c23ea7    APPLIED     Revert "lxd: Use connection from request info"
+abee48ed6cc38fc76853addb6337a8c8f68eee18    APPLIED     Revert "lxd/request: Add connection to request info"
+c1f51928d12d522c4e61078f8819232523ae862e    APPLIED     Revert "lxd/request: Remove unused connection context key constant"
+b5665ee5dbebc2317cfe300b9674f01f0183016f    APPLIED     test/lxd-client: Add test LXD client
+b71f3bd5a9c0ac7e2770c9dd7d90df66bbe1bc3c    APPLIED     test: Test container file creation using strings.Reader
+f26184eab938e48b0c8dcb8c5dcf70f8fb0ef8d4    APPLIED     gitignore: Add test lxd-client to gitignore
+fc93e3ff8f47abb6d57c7556bea05120b7b2bfc1    APPLIED     lxc/network: Allow listing allocations in non-default projects via project switch.
+24bdfe1793ba4bb53d3091f9a0fd07da9b5bc8d8    DIFFERS     i18n: Update translation templates.
+6f67a8ae9bd399ad78fb1e3dc37cd3bd6d8479a5    DIFFERS     i18n: Update translations.
+8d3e404ff08730a6adf249e973626a5d7008bcda    APPLIED     test/suites: Test current project works for network allocation list.
+58a1ab4117e1578ea1b9b21af84e676c693497f8    APPLIED     api: Adds `pci_hotplug` extension
+ab34e466b853cf411f1b45cde60640144d05d361    APPLIED     lxd/device/pci: Allow hotplug
+f9b3b87741e19f6b47736a148bd65d7e1851acde    APPLIED     lxd/instance/qmp: Add CheckPCIDevice
+6f8157d3ac2f11564688c70e445921c9e9dee0ee    APPLIED     lxd/instance/drivers/driver/qemu: Use monitor.CheckPCIDevice
+671063a12706e88df1437176a24e4fecee19850d    APPLIED     lxd/instance/drivers/driver/qemu: Tweak comments on deviceStart
+f71de7093c2643b8e301ecc379cf401460fbf83c    APPLIED     lxd/instance/drivers/driver/qemu: Add hotplug support for generic PCI
+5d2c2965c055bde0b37f495b48931b2ae8799b43    FEATURE     lxd/instance/drivers/driver/qemu: Double number of hotplug slots
+f4fef49af43676a1e98051fd07ee336ef03ef521    APPLIED     lxd/instance/drivers/driver/qemu: Rework PCI hotplug
+099a077f4ee027d0b8458035f062e42167e38fc9    APPLIED     lxd/instance/drivers/driver/qemu: Remove unused qemuPCIDeviceIDStart constant
+ab3595c8095c8f80a2755e98b7402868a9ebe4d3    APPLIED     lxd/instance/drivers/driver/qemu: Wait for PCIe devices added at start to be ready
+ec95632e69f4793300c2e790f8d56162eec8c8dd    APPLIED     test/suites: Add tests for public image handling.
+cec4754f7a46f84d86e4c6c438e86f1eeec1f8fe    APPLIED     test/suites: Ignore lint error (shellcheck: 2153).
+917329bdcc472348c23bc471efab5b2d183b494d    APPLIED     lxd/db/cluster: Add directive to get image by project and fingerprint.
+965ae2e8e55aefa2676247b2ccd6b6f4fba89fa1    APPLIED     lxd/db/cluster: Run `make update-schema`.
+a564097abcb81e428a81c32ec72837fa273de138    APPLIED     lxd: Handle DevLXD image export directly in DevLXD handler.
+c3d0fec2055c1e1454f096b25df6a85f8cc459df    APPLIED     lxd/instance_logs: Perform stricter path validation
+575b3fcd9c536558c9c4723e353894392458209e    DIFFERS     gomod: Update dependencies
+14c18d91c1c7c648764a0f8ebbffa8068d6a08f5    APPLIED     lxd/auth/oidc: Allow different cluster members to begin and end UI auth flow.
+4a1b21a6bb1cfd8bdcd0446a9c9a1827b4076bde    APPLIED     lxd/auth/oidc: Remove config expiry logic.
+437d3b21c5f80990e1ce763e71ce647295ba0a6f    APPLIED     test/godeps: Runs `make update-godeps`.
+fcf0510c813c1b3ca9fdf849f5faa084006fd17f    APPLIED     lxd/api/dev/lxd: Add getLXCMonitorContainer function and switch to it in devlxdFindContainerForPID
+c395166f8c037c65433c0a4a03c724354a5b3372    APPLIED     lxd/daemon: Switch to getLXCMonitorContainer in seccomp listener
+39d94701ef66f691d57645075b496b42807e285e    APPLIED     lxd/api/devlxd: Remove unused loadContainerFromLXCMonitorPID function
+90f92f4b994adf1aaac4ec9e0bcb698093da728b    APPLIED     api: Add API extension for device removal via patch
+8c24b4d6c90078fca1b716846b3ce5816e2e248b    APPLIED     lxd/instance: Allow device removal through PATCH
+21f7038f7fcb244b5a73b67e0b221b8bf8afdddf    APPLIED     test: Test device removal through instance patch
+3d201fce54ac03caa9f4e6626b88ac596a77c8d7    IRRELEVANT  workflows/test: Run tiobe on self-hosted runners
+be64998de94f4352e2135cd34bb3060b223570dd    APPLIED     lxd/auth/oidc: The `login_id` cookie must have `SameSite=Lax`.
+463a2355f99524a107bc9518499a9641be84a90f    APPLIED     shared/util: rework pongo2 template recursion for efficiency
+d5a60c268e2a83d70bee60276ba00ec5c659465d    APPLIED     lxd/instance/instance_utils: `shared.RenderTemplate()` no longer needs a recursion limit param
+8cbc4ac78c48a5ba5e17277eb0a184073463bf34    APPLIED     lxd/storage/utils: `shared.RenderTemplate()` no longer needs a recursion limit param
+79947a7f1cc56af455594febd0db04097974f7ec    APPLIED     shared/util_test: update test cases
+f70b5601b30ebcdfc43c64846b7994c68c4bc7e2    APPLIED     lxd/storage/drivers/lvm_utils: use `strings.SplitN()` in `lvmVersionIsAtLeast()`
+53e501720640477343a60bc0be2729dab9d392cf    APPLIED     lxd-migrate/transfer: minimize calls to `rsync.AtLeast()`
+4d1ad3e7747cf8a5a6db3222d14dde6067c05a48    APPLIED     lxd/rsync: use `strings.SplitN()`
+abea010b23e78dddc2cc6e44c10ad57ce2d8d4cf    APPLIED     lxd/rsync: `append()` more at the time
+02bb26e358c57cbf01f87f768268e76339f68509    APPLIED     lxc/storage_volume: `append()` more at once
+300474a06c3e7c04bf38f2084ff6840def03141b    APPLIED     lxd/devlxd: `append()` more at once
+9da882e24a3c42f87d4e8acf012b0c2737b4bf81    APPLIED     shared/version/platform_linux: `append()` more at once
+20222f6dd0e51bb762fcd8ada645ebc52461c856    APPLIED     lxd/firewall/drivers/xtables: simplify version detection
+a9c771c3e150e2e63a4bdd0eb25d3028284574c2    APPLIED     lxd/firewall/drivers/nftables: avoid off-by-one when parsing `nft --version`
+142b1dd3c45797781915e8c1cf9575cf5c14bd3b    APPLIED     lxd/dnsmasq: avoid off-by-one when parsing `dnsmasq --version`
+846aaed9c36df198aaf9a80efb11945386fc338f    APPLIED     lxd/network/driver_bridge: cache path to `dnsmasq.hosts`
+998951d480013cd334e95e00232512a57ee84aee    APPLIED     lxd/network/driver_bridge: cache path to network directory
+745a4d49462c35a7d95334f2db2afd3e5d4b6b7d    APPLIED     lxd/network/driver_bridge: cache path to forkdns dir
+e42551cb9292fef389e38d27e3c643ce97205562    APPLIED     lxd/network/driver_bridge: do not build slices only to expand them
+809efd2007a7bbdac3de38c4ed82f52a72f63343    APPLIED     lxd/apparmor: cache joined FS paths
+fc9d9c26529db098bfe352c7350421e848abc6ca    APPLIED     lxd/apparmor: avoid deprecated `os.{IsExist,IsNotExist}()`
+09216f10834569644418568c2d6226eb95784caf    APPLIED     lxd/apparmor: simplify `hasProfile()` with early exit
+9d02cd770c9a21421cb25f6cc4caf63ea2eb49c6    APPLIED     lxd/sys/apparmor: `strings.Split()` cannot return a 0 len slice
+e7b592d7f51c69d7af8138eb1d6499e5ff6e8108    APPLIED     lxd/sys/apparmor: detect and save version at `init()` time
+a6320fb16bf0b19d51147fffc3805677c2df351b    APPLIED     lxd/apparmor: use Apparmor version from system info
+af921b61d087f13a10e00452969771043c9dac40    APPLIED     lxd/sys/os: add `AppArmorCacheLoc` and `AppArmorCacheDir` strings
+f4be44fa9214ac9d88a9ba256077a64580f070ca    APPLIED     lxd/sys/apparmor: save cache loc and cache dir to system info
+79485a4941a5710392997d1fd2da352b57ff8baa    APPLIED     lxd/apparmor: use `AppArmorCacheLoc` in `runApparmor()`
+0387fb199beaf3fb40406ff72ac5e69500343f9c    APPLIED     lxd/apparmor: use `AppArmorCacheDir` from system info
+7ca7caff9d2dc3bcdd3c7e03921a62e6cb53ed8f    APPLIED     lxd/apparmor: no need to check if Apparmor is available in `parseProfile()` as `runApparmor()` does it
+0a1d058e69b9fab693569df366d6a1f491f2dc51    APPLIED     test/includes/lxd: use long arg for Apparmor cache location
+85084e5f830ac557aebc586cffba363c2b7657f6    APPLIED     lxd/apparmor: Defend against path traversal attacks
+4bd8c3e1c8d2e7bc4c8eaaf2fc7a3354aec33a3f    APPLIED     lxd/apparmor/archive: cache `ArchiveProfileFilename()` result
+acf60e9a7a9fe7fe6e06a46ef66e5045762dd407    APPLIED     lxd/apparmor/archive: Defend against path traversal attacks
+ec9b0b600f747c8f631f4cee0e0308a5ac837de4    IRRELEVANT  Revert "tests: Run Tiobe TICS on self-hosted runners"
+6ecab7ce05694426bb912ee63466d777ad07397e    APPLIED     lxd/instance/drivers/driver/qemu: Move drive qemu device setup in addDriveConfig
+c7bd6dca3b9338aac89f7104d608891922892909    APPLIED     Revert "lxd/instance/drivers/driver/qemu: Wait for PCIe devices added at start to be ready"
+895b4954637216ec76865c2ec6045ad19bdb3cdb    APPLIED     lxd/instance/drivers/driver/qemu/bus: Adds busAllocator function signature
+d2e057dd6b2b28c2524945323bd8afc293f4098a    APPLIED     lxd/instance/drivers/driver/qemu: Reworks getPCIHotplug to implement busAllocator
+c055b18c102f820a343cd814f73c7cd0e69c580b    APPLIED     lxd/instance/drivers/driver/qemu: Update uses of getPCIHotplug()
+681dcdd5df8721b45a049d549f00513ec581b453    APPLIED     lxd/instance/drivers/driver/qemu: Simplify busName detection and remove duplication in addDriveConfig
+5b964ef4b45c7789128e8580bddbdb2b462b50f6    APPLIED     lxd/instance/drivers/driver/qemu: Update addDriveConfig to accept a busAllocator argument
+f2d5a156689a15d40fefbaa4fbf2259200899050    APPLIED     lxd/instance/drivers/driver/qemu: Update addDriveConfig usage
+26926c3aca6042d7c2c8a315a3e23c9a1f866bec    APPLIED     lxd/instance/drivers/driver/qemu: Update addDriveDirConfig to use a busAllocater that uses per-LXD device multi-function groups
+0e62f46391e11002e9964d2ee78cea03b645d513    APPLIED     test/suites: Use jq directly for entitlement assertions.
+03e1bfb97480cbcfbeea19ed3e514f14793ff06d    APPLIED     test/suites: Standardise jq usage for access entitlements in arrays.
+b1f8985ab7c2a952b723df3d24538c2bb3622ed9    APPLIED     test/suites: Test entitlement reporting for multiple storage pools.
+880bd0e02bcda8f241ee41ce98c02e7e52c4d462    APPLIED     test/suites: Test entitlement reporting for multiple projects.
+24c771c64e54ad4bcac679d7b136d9cd16466713    APPLIED     test/suites: Test entitlement reporting for multiple instances.
+176cfc8d6c42e88956a9b2fa00d65703eb9ff9b0    APPLIED     test/suites: Test entitlement reporting for multiple volumes.
+fa5f0eb635ebe8b611904e5e7a461d3e2ff8e7cf    APPLIED     test/suites: Entitlements should be reported when not explicitly set.
+e74a7a70a4a61050443ceedbefc7187dd83e126d    APPLIED     test/suites: Generate test certificates in test directory.
+b73193a3d223c44301c3e9c2374929e3a143569b    APPLIED     lxd: Fix entity type in access entitlement enrichment call.
+5559513cdc492ed3c6bd56310b96acb1f38887c1    IRRELEVANT  build(deps): bump github.com/minio/minio-go/v7 from 7.0.94 to 7.0.95
+70daf61dc9794d0b404d05056d657d5c3fa65119    APPLIED     shared/util: Handle panics in the pongo2 package
+a9d110d840bf6fde20488666008c5914949c6bad    APPLIED     doc/howto/storage_buckets: move youtube link to relatedlinks side panel
+27c9403a726ebd5a976a70cac488780ced705567    APPLIED     doc/howto/storage_buckets: restructure document and add reference targets
+ba2aa0198c0bc932b9f2fe7eca36236653c635e9    APPLIED     doc/howto/storage_buckets: update intro and view sections
+cbf58ef6b517984f27588ae6bbe051b936f282b1    APPLIED     doc/howto/storage_buckets: add general and distributed storage requirements
+3a5ea376cc9181813678b7893a632c9766916a51    APPLIED     doc/howto/storage_buckets: consistently use hyphens in variable names
+3c1ac2b7ef0c6ffb96b4d66d2091567ad987058a    APPLIED     doc/howto/storage_buckets: update sections on creating storage buckets
+04aed1b835160ac358e03122a6566c8ac5306a37    APPLIED     doc/howto/storage_buckets: use backtick code fences consistently
+e8e6f556bff23f15466fcf27f785ae497a910734    APPLIED     doc/howto/storage_pools: add info about ceph-based pool requirements
+e7ffe698dfe1efac22f68e244b2b7824c7fd8f6a    APPLIED     doc/howto/storage_pools: use more specific variable names for remote/distributed storage pool creation examples
+b1d0d1f25da415911742e789f167b743b7d25736    APPLIED     doc/howto/storage_pools: add syntax example for creating a cephobject pool in cluster
+13cdfd60a42382885fe0dfda6f3b9b0067b806ef    APPLIED     doc/explanation/storage: improve storage bucket section
+bf5b5d652a3fd332b841ec73504021027ae5861b    APPLIED     doc: update custom wordlist spelling exceptions
+69328fe33d9d797feac183b43b37f5888d86036f    APPLIED     lxd/instance/instancetype: Update the boot.autostart description
+261ffdb59ef444ac6bc230bd3d1fa21034fcad3b    APPLIED     doc: Update metadata
+0f26b63af4a994cb27382c30f05c617c8f9420c9    APPLIED     lxd/instance/drivers/driver/qemu: Adds generateAgentMountsFile function
+2e11f26343f1f20fe23d1a0e10108cbb55e0bda2    APPLIED     lxd/instance/drivers/driver/qemu: Stop generating the agent-mounts.json file in addDriveDirConfig and generateQemuConfigFile
+370047a154754c1a4c6c491e28dafc6c117ee2b6    APPLIED     lxd/instance/drivers/driver/qemu: Re-generate agent mount config after devices update
+475d57e4b05614580641c3c7b41d7f1e3e89d87d    APPLIED     lxd/instance/drivers/driver/qemu: Lower sleep time for iteration in getPCIHotplug
+822a4a33c63a1595bae111b9276b06e98dea0121    APPLIED     lxd/instance/drivers/driver/qemu: Improve comment in getPCIHotplug
+e938a39f33b2b732c96250c29f86025ad203a037    APPLIED     lxd/instance/drivers/driver/qemu: Improve cache mode option extraction in addDriveConfig
+367a37d85cf58a8b26d9fd925170e19bfae4d37f    APPLIED     lxd/instance/drivers/driver/qemu: Simplify multifunction mode selection in addDriveConfig
+fca10b06ee9932315ff0135ae03366178c004e48    APPLIED     test/suites/deps: run `ldd` on the actual `lxc` binary
+6a9d6b31f90578903463ceb4be06fb8148d20560    APPLIED     lxd/auth/oidc: Remove `context.Context` from `Auth` signature.
+141f73a2e2afee62b5e431850d776f0869bf40d7    APPLIED     lxd/auth/oidc: Simplify Auth logic.
+a825aec58a19afca578954272ae6d8ad84b74cb7    APPLIED     lxd/auth/oidc: Factor common session logic.
+31ff1349303027c9e3e6700fa8dfc9d1704b8af7    APPLIED     lxd/auth/oidc: Always delete the login_id cookie on callback.
+7233136fb6c334e16987fe2ff822bbd8160eca1e    APPLIED     doc: update grafana base url to encounter ui prefix, that we expect in the future
+561dbcc12be11fa8fd8ed9349a91ebcd298587bd    APPLIED     lxd/instance/drivers/driver/common: Avoid fmt.Sprintf in deviceVolatileGetFunc
+479dfff03bfc88e29e0be8a8791034a70f8772d0    APPLIED     lxd/instance/drivers/driver/qemu: Move SEV configuration after internal device setup in generateQemuConfigFile
+0bea50339f37d59ea0b25bbf243d3cb529094783    APPLIED     lxd/instance/drivers/driver/qemu: Rename busFunctionGroup9p to busFunctionGroupConfig
+da7acfb94ea76de236d7d23346d913e6a2807789    APPLIED     lxd/instance/drivers/driver/qemu: Move PCI logic into addNetDevConfig and accept busAllocator
+198bc462f43695a3e2020c6be497ce83e76ecdfa    APPLIED     lxd/instance/drivers/driver/qemu: Simplify security.csm device allocation logic in generateQemuConfigFile
+dd7a6b80c4e2659a84a4afe780a64fb7766f3413    APPLIED     lxd-agent: Add device event action constants to API
+039404c19fa10884ab7e87984d171f0d072b207f    APPLIED     lxd/instance/drivers/common: Use lxd-agent constants in devicesUpdate() func
+af5e54fb37849af4fa4bc1176bf06a3ce7416c72    APPLIED     lxd-agent: Refactor eventsProcess function
+6994468f1b07a5cd296c4c1a02c7189e3251b4f8    APPLIED     lxd-agent: Unmount target path after disk device is removed
+aa08a72f2b2e85e03c3b663197620a5899f41183    APPLIED     doc: linkcheck ignore ceph.io
+68de775d51deaadad85901a4ecd912105fbf26b8    APPLIED     doc/reference/storage_powerflex: Add limitation note about SDC and Ubuntu Noble Numbat images
+327d2f467c35aa69e9befd0ea0298a253e903374    APPLIED     lxd/sys/os: mention that `AppArmorVersion` is nil if `AppArmorAvailable` is false
+d484b90dfa6a30d20f2e31f79e0c55a4f288d6d1    APPLIED     lxd/sys/apparmor: do not try to get the cache dir if Apparmor is not available
+7e354cd26623122d197c4993d3960294ae5e99c0    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.41.0 to 3.42.0
+935dbc8daa9d21b5f4ad05c31567bfca3f00fe41    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.24.0 to 4.25.1
+5aee1791cca223b2ddcdcaf382b95fa3640f16de    APPLIED     Revert "lxd/instance/drivers/driver/qemu: Remove unused qemuPCIDeviceIDStart constant"
+de3ee69f5dc0a0441365f675a8019ff2c346fbff    APPLIED     lxd/instance/drivers/driver/qemu: Add debug logging and fix infinite wait when device is busy in deviceDetachBlockDevice
+9108d3dd48566af9c3a24c6c3965584120902fbd    APPLIED     lxd/instance/drivers/driver/qemu/bus: Updates busAllocator to accept deviceName and multifunction arguments
+29895fd8185d7fff2579587737fc479adb38e59e    APPLIED     lxd/instance/drivers/driver/qemu: Adds busAllocatePCIeHotplug function
+45237b853b27c7566fd9695f57da302511e234c0    APPLIED     lxd/instance/drivers/driver/qemu: Switch to d.busAllocatePCIeHotplug
+c900345a599d17fb10b2ff43420855b401929f1d    APPLIED     lxd/instance/drivers/driver/qemu: Removes unused getPCIHotplug function
+d01e42019dbc2d5d99038fc7fb6e33438c145577    APPLIED     lxd/instance/drivers/driver/qemu: Standardise bus allocation during qemu config generation
+fdb655372d45a29c275e003aa2c7cc3c7473dbd2    APPLIED     github: ask dependabot to stop updating `github.com/olekukonko/tablewriter`
+092b5c3b0b1e62d4f5adedb67632c1fc897f516c    FEATURE     lxd/daemon: Simplify daemonStorageMove()
+3a38dec21e3fda0dbc785b29bfe61d6355d113a9    FEATURE     lxd/daemon_storage: Simplify daemonStorage(VolumesUn)mount
+987a43ffb335f595eeba2990442acfabe0d7904d    APPLIED     test: run `concurrent` tests after `incremental_copy`
+eb12039b12693fb48535d9d0e0834cf687677133    APPLIED     test/suites/{remote,projects}: Clean up leftover images
+1f40de5122b707f74081305e83b2c048ff11830d    APPLIED     lxd/rsync: Introduce CopyFile() to rsync single file
+ea88a3f00b972017edba0d26009a0f807dddfd0b    APPLIED     lxd/api_project: Rename import
+45038d4547365f8655b812f53e63735295ce7f31    APPLIED     github: only run tests workflow on a schedule for the main repo
+4ca2f5a68be0738bf0f9e3cf2ac7f8db4c68331c    APPLIED     github: only run codeql workflow on the main repo
+afcd4f1b66739090278bd9923a5639d0db1842e1    APPLIED     doc: Adding Storage Buckets UI documentation
+914801b9301a43f6b684602af556836a61f1b6be    APPLIED     lxd/db/query: Add ScanValue method and interfaces.
+a46ebe1bf106dbd3084a5d66d978b733a5dd6689    APPLIED     lxd/db/cluster: Use ScanValue method for AuthMethod.
+e52082132b5799f81dc9b018218bc6bd73683dbe    APPLIED     lxd/db/cluster: Use ScanValue method for IdentityType.
+3af3a828756f65ac3479c3bdca5d4e0fc4898ec1    APPLIED     lxd/db/cluster: Use ScanValue method for EntityType.
+e7be73f8283a596989c755bd458b50cf38beea23    APPLIED     lxd/daemon: Rename local variables
+081dcb97725bf4bfa95ccf728ba733be924ba345    FEATURE     lxd/daemon: Introduce functions for custom volume mount and unmount
+81eaa1f1b129bfcd036c0c753aa92ca30298e51a    IRRELEVANT  gomod: Update google.golang.org/grpc
+b3e1f6175734faa4e728f0bb4fa5f9f4edbff46d    APPLIED     lxd/sys/apparmor: don't return any cache dir on error in `appArmorGetCacheDir()`
+16d2192a3e804e36011202b56dd9468ec5df6dce    APPLIED     lxd/apparmor: don't return error if the profiles path does not exist
+a433cde10648f58370b99ed36e720e50b9e3eb8f    APPLIED     lxd/apparmor: avoid shadowing `supported` variable in `parserSupports()`
+964a53c8fe249a7b01ad9e67cea43faf004c743b    APPLIED     lxd/network/openvswitch/ovn: Allow associating load balancers with switches in LoadBalancerApply()
+9d8a96952eb3aecf6ab8a2e64c0aeb2861f09ef1    APPLIED     lxd/network/driver/ovn: Associate load balancers and forwards with internal switch
+cce2637bdf26d5a2ddb4f0d66c6cf984141ab352    APPLIED     test: Extend ovn network tests
+dc8272432ca8dd6b9b8e144647dde71f862afca2    APPLIED     lxd/cluster/config: Remove ClusterTx from Config.
+39bc641c2d0203cbef43dc62c9e62d93557be360    APPLIED     lxd: Update calls to `Config.{Patch/Replace}` to pass a transaction.
+fec3cc832ca782d398c82d38f8532ef9d5be2e00    IRRELEVANT  Release LXD 6.5
