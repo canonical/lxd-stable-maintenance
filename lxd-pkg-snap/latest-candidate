@@ -1,0 +1,415 @@
+a2c212846fadf036e7ff45b5467cf052d792513b    IRRELEVANT  Current snappy-16 packaging
+855ed117f8e4e0b605cf26d67f959e6e29d3b402    IRRELEVANT  Fix building snap on yakkety
+048643068f69250f924c40abafa2fd1de0696d77    IRRELEVANT  Various fixes and early confinement
+9b65d3908752f5238b8c05d42c67b78fd6377b33    IRRELEVANT  Tweak interfaces
+511ebec88faab1ae64a3c2b151ed5841426e9525    IRRELEVANT  The "copy" plugin has been replaced by "dump"
+99517fcbef57bcc2885b285d196b9a0ec1235d83    IRRELEVANT  Update source versions for a stable build
+2689b9aae98b892ed2691fd9e9cf1812f091e818    IRRELEVANT  Set grade
+5d22e0220ed5aa12e77df70eebd149f9f83ed7b9    IRRELEVANT  Make files visible
+81f0b8de190bfb70042a275025160979f2fc44bf    IRRELEVANT  Update for LXD 2.3
+a154ccc9a13882c86a3522e010f5b7f0bdda4f48    IRRELEVANT  Fix use of aa-exec
+a03ae977239c2935842854d0a5805f469b1ca796    IRRELEVANT  Include vim in the lxd snap
+1fa6ac7733e4c848b54cb92f9f422b1b1b4b907f    IRRELEVANT  Make lxd-benchmark use the lxd-support interface
+f4e91b7167667b4733fe9cdb13dcf3e9b4c29f45    IRRELEVANT  Put LXD DB in versioned path
+ae024ab20b9c7e51b34057a38ef818ed526b4e67    IRRELEVANT  Add home plug
+00f78e747ebc4df3ee0ea0f824aa320ad6949b1c    IRRELEVANT  Update for 2.4
+d7d2f81899942805fbb04d19ea83a51fefa55cde    IRRELEVANT  Bump to 2.4.1
+2ebf8c8d35e30ec7d1091bc49400ead524ec0c07    IRRELEVANT  Use https instead of git protocol
+f207c6df620833466bc6d2f4be005d0d826ec4a1    IRRELEVANT  Build with libsqlite3
+88c98d261ed640c8f6d67db179bbdcd22ac2742a    IRRELEVANT  Fix syntax
+9a224220f49c7526b8499dabaedaa4730fc877c8    IRRELEVANT  Flatten snap structure a bit
+5c43811993842968c92df507a8efc9077f9050c4    IRRELEVANT  Drop bits that are in ubuntu-core already
+dc7a9140aa847584c80ad2819debcf86dd15e1a5    IRRELEVANT  Don't use arch-specific paths
+d3afadcf3a901d85f16179747220fa0fe1da620d    IRRELEVANT  Fix typo in the summary: lighervisor
+6601bfcc24dde87b9b1dfde5bdbfd57ec09382da    IRRELEVANT  Bump for LXD 2.5
+4c37ae90ebe9ceb1e01e2995569d6b63b32ad427    IRRELEVANT  Add btrfs-tools
+db6e01cb5f2f6456b7cfaa9a660c2d8f2c04ace8    IRRELEVANT  Update for LXD 2.7
+b98fe8b4811fcc3642ca352f3193456404f6cd29    IRRELEVANT  Make sure we use vim.tiny as editor
+919798110c472bec300b7e255b9a04fd4ee5ffa1    IRRELEVANT  Only call aa-exec on systems using apparmor
+b3b891529e01741387e6d2150cb397b6b0503424    IRRELEVANT  Wrap another aa-exec call
+b43a0ce0d56f986b4fe7b1302fbacc5771d2bee0    IRRELEVANT  Support running without the lxd group
+d2eab0c4951f2128f9e0f58e3edf0e1490e17c01    IRRELEVANT  Update for new LXC and LXCFS
+61a858c481609f26fb2f03ca20fdd3bc1890a548    IRRELEVANT  Update for LXD 2.8
+3bb67bea509fcf3960d4853c254db168e0cdf124    IRRELEVANT  Update snap description
+1fb1834c5387af6a588fffe20627cfb5c760bca2    IRRELEVANT  Update for newer snapcraft
+2cf59f37afe317473464020a979aa2556e5f8b0a    IRRELEVANT  Update for LXD 2.10
+b3e6b3b818fb0cf73e7393f6f5daa571730d2e33    IRRELEVANT  Add criu to the snap when available
+87c043cada69319fa9ac9e0ba0b27b5a34a98dd0    IRRELEVANT  Fix lxc-monitord in the LXD snap
+27a925f2ef621418e6fe5a1cfe0ce8a569ea1cd7    IRRELEVANT  Update for LXD 2.11
+5af7b46fd491d895d5e69460d48e84554552d0a9    IRRELEVANT  Qute $@ in the lxc wrapper.
+acddfc86ec2bb1a320c72a105382ec61dc616be0    IRRELEVANT  Fix the remaining $@ uses
+bebd24640d9ff5f7dc48689e820fb0b0609b3111    IRRELEVANT  Add lxd.check-kernel command
+8d6b20d8139748e90edfe6cf6f2445dd27d86fe7    IRRELEVANT  Add initial migration script
+814a08095717db4a9d7a06a60541f9b55b8b6ece    IRRELEVANT  Make shellcheck clean
+8fb4f5ed4bd61539835b575bdac68a54af3d812d    IRRELEVANT  Rename "migrate" to "migrate-from-deb"
+e0141ae00ed01addd1612bd25a13e9c2e79724b4    IRRELEVANT  Rename to lxd-migrate-to-deb
+8e3ad48a25cdae93e505e4da6fe4102c2d8411e0    IRRELEVANT  Fix LXD snap on OpenSUSE
+15fdc268275ddc855356d1fe0cb880d53868b6c2    IRRELEVANT  Fix bug when we're at the root of the pids cgroup
+13d0a26b0b2d8e99e01f457b2032592a65488c23    IRRELEVANT  Rename pidns to pidcg in daemon.start
+c543c12e4c6627f23158bc9a1a73444bbbce77d3    IRRELEVANT  Add mkfs.btrfs to the snap
+abe0d0ce0a7afb8dfbc0c59e8088e833d2a7310a    IRRELEVANT  Cherry-pick 0007-lxd-images-Initialize-image-info-in-direct-case.patch from upstream
+1cb8127b3796090e43056ed6e9a068a1ed640e68    IRRELEVANT  Bump inotify max_user_instances to 1024 by default
+3c71a1a66fb0002acc30033302d2f4c24ab738bc    IRRELEVANT  Workaround bad interaction with lxc.pc
+d8df684866a5174b74f54d921fc9ae1de66d961c    IRRELEVANT  Allow unpriv container nesting on Debian systems
+45721155b22a7e7db7326f16d77d5910cb10ebb1    IRRELEVANT  Update for LXD 2.15
+624e7e34e27c498792a6f0cc727fde071f8e1211    IRRELEVANT  Cherry-pick upstream fixes
+af3c03ad2f4ad595877cbc6c78c96e59984e9775    IRRELEVANT  Improve systemd unit logging
+f9b247c57a819ee235a56ee97f512c0dcbadba9c    IRRELEVANT  Better handle snap refreshes
+ae08f43458b88469f5db224a6a71faf7d1c99cc0    IRRELEVANT  Cherry-pick fix for canceler crash
+ff95d6ea5d74730c31ecdc75175605af4aa79d8c    IRRELEVANT  Update daemon.stop
+df0a9b7a1fa455ff62f166859ecae45e286bc14c    IRRELEVANT  Fix syntax check
+088617fe0235a08b961957f5f8f76c7411e9780d    IRRELEVANT  Update edge packaging to match edge
+a0c34f69528088f78e932a9f911352e7ce6d6c47    IRRELEVANT  Fix bad name of migrate-from-deb
+3567f76c4d44dfa20dfd2dd8e45c5ba79c56e649    IRRELEVANT  Fix migrate-from-deb to work with LXD 2.15
+da9337a1da23ac2fe32f5f1a9548fdeac5070628    IRRELEVANT  Bump Go to 1.8.3
+39dbf2f0e89e09b1c45725fab201e226786138a0    IRRELEVANT  Setup some configuration options (snap set)
+c34230a0436c4acd3a2a647fe7a0c208f155e4f0    IRRELEVANT  Update all wrappers to behave the same
+3733047b7bdc9cc6e71619ff709776ab087f05c2    IRRELEVANT  Remove current approach to migrate-from-deb
+37f179d54d71abb39ce35ff0adbb4a76cfb04628    IRRELEVANT  Enable lxd-migrate
+c77676d7f33229db3ce390c6500a453826e0f936    IRRELEVANT  Improve build time error handling
+22ac4c8abb9285a9f50bacde573554fb68517402    IRRELEVANT  lxd-benchmark has moved
+d49b5b5c60401b116e35351723cc8acca670e061    IRRELEVANT  Make snapcraft's parser happy
+2448a6fdfbf6a34c17ed3d4643cf664c3c107a56    IRRELEVANT  Use the clustering enabled sqlite3
+d5420205198573c87723b553de776509c70d425e    IRRELEVANT  Always run with -ex in prepare/install
+dd0ed9dc4d1cb3b321c59e038ecf71da15dbf19f    IRRELEVANT  Add prepare stubs
+c9e029fd08eadcce412ab1733f35a28837de9458    IRRELEVANT  Update for new snapcraft
+0769a4eeb047d6abf8b2ccd239552e35ef1491b1    IRRELEVANT  sqlite: Pin to old API
+c29c7ad09b23113950317ae69f0edc2092f1b8e8    IRRELEVANT  Revert "sqlite: Pin to old API"
+6c8696f52bb473e6d75c2464df27d48d6a6e15a3    IRRELEVANT  Implement socket activation
+82950207244f445ad9c59ab22967ab20c002bd25    IRRELEVANT  Replace snap state query logic with API call
+88ada2e0d1e153a8c3a7ff885a22a85395e75201    IRRELEVANT  Allow disabling shiftfs
+42359fa3c58f2b77c7a7b8ae119598ff733643c2    IRRELEVANT  Move to snap bases
+cddfdfc76f4d46a03b3044c0bb48485674c800de    IRRELEVANT  Build libseccomp as part of snap
+8f45c26c3b6654e6932f52302c57bb0d5f08da3b    IRRELEVANT  Revert "Cherry-pick upstream fixes"
+e379a2f14c6e7fd618f84c5b24907cb1a28ce19b    IRRELEVANT  Update for dqlite 1.0
+054734d9d08575c546be4e4c2b4088fd770f0ddb    IRRELEVANT  Update for libco so name
+ad80ee4cf398dcdcf2546d4218f06358add4c14f    IRRELEVANT  More libco tweaks
+f43369aa068afa3a668e571e292373be614aa3dd    IRRELEVANT  More libco fixes
+233377e6f14f0e7a3cf0f2e6d6df29d770bfcac3    IRRELEVANT  Update nvidia-container to 1.0.4
+c36429720d71a7c88d88b54244702f0cb860b57b    IRRELEVANT  Bump nvidia-container to 1.0.6
+dcd53562c08a98e08f0377f7efaef055899748fa    IRRELEVANT  Workaround for broken libseccomp
+bffd8e73d0c72e704106c576084f6179fa3f40d1    IRRELEVANT  Revert "Workaround for broken libseccomp"
+a57f7bb7b7eddedc3c34f0fa863f843a348f1c0e    IRRELEVANT  Move from LXD_SHIFTFS to LXD_SHIFTFS_DISABLE
+4d8b288b69b20ccf746f18b5adb97feabfec3d1b    IRRELEVANT  Switch over to core18
+bbdd26fa53f88e40e57cd42fa88a4526fa98c1f5    IRRELEVANT  Include libxtables.so
+067ec8e8c81a60398e872a69f4b847aac1d53ba2    IRRELEVANT  Include more xtables plugins
+209706e63edb265b6909ecce7a6eeb34d7e7420d    IRRELEVANT  Revert xtable changes
+3d94c7930e48d758cd46a9c127d93a68b7990322    IRRELEVANT  Fix symlinks to core18
+599e4efe5141fe9af2eb8816b91d1b37d27a3883    IRRELEVANT  Switch to current master qemu for edge builds
+298e0ec8908a9d8cf43e9c8a9c22b2695874f21f    IRRELEVANT  Try using qemu 4.1.1
+a29282723525d90d9d04fa299e5d7d10ed6353a1    IRRELEVANT  Switch back to qemu master
+7cf953c4647212a8a247b30f384601093a8411df    IRRELEVANT  vim: Ignore distribution configuration
+ca1d03a70b6644e6ea58d2457f8b4e4e5e1cdd4c    IRRELEVANT  Fix typo in recent change
+2c1469823ab06199626bbae530018a1f255fa3f9    IRRELEVANT  criu: Pin to v3.13
+05accaaa617dadafb67b12e27cf2414c3fb356c6    IRRELEVANT  nvidia: Attempt to re-enable arm & ppc64
+4870a2ae181d9f45a77420cde6104ba5a2eeb59a    IRRELEVANT  nvidia: Build from master
+b432113417892187bef3cd125a83486449fa8803    IRRELEVANT  nvidia: ppc64le still doesn't work
+185794ab772b4720841d7e17c12bd67585c2d81b    IRRELEVANT  Require snapd 2.39 or higher
+f88a7e30893b3cb93492ef2fc7b1d020f57d9831    IRRELEVANT  Workaround limitation of go plugin
+74199a37555e3b2f05c7fbdedab24abc6b9f14ec    IRRELEVANT  Revert "Workaround limitation of go plugin"
+802d305d1c65138491b4ce1f5c6eff166a44d3ed    IRRELEVANT  criu: Use current upstream
+85147d1080aa722c3996cafd2ffefc786f5c795d    IRRELEVANT  configure: Enable shiftfs on new installs
+4759817b7c3eea07c071c905dc83a38b5deb643b    IRRELEVANT  configure: Tweak shiftfs handling
+fd5e08716fcb2c096bf4671052d462640acd32c4    IRRELEVANT  nvidia: Set to v1.2.0
+7f98ff7cbb49f960bb6be2635c2ab77f2aedd004    IRRELEVANT  criu: Set to v3.14
+d69a7c955c83e049bc38b6fbeeb441fa8883e9a1    IRRELEVANT  libusb: Add new part
+43fd80480b67cd045c6b0e209ca1a1856bef7fd3    IRRELEVANT  qemu: build from master
+2bdb303800e37ae34fb38631d660ecfd26cd231a    IRRELEVANT  qemu: Tweak prefix
+53291dcee5e2193160247c7dc3396afa86712189    IRRELEVANT  qemu: Revert back to 5.1.0
+2270f476d72e35d0228daed36abc965926481496    IRRELEVANT  qemu: Cherry-pick usb fixes
+c1ea49500a86bb69098be9e723f77e152d5a22fe    IRRELEVANT  qemu: Clone from github
+2a67c509de3dda96d2788c5fa4fca5c6704d96e6    IRRELEVANT  sqlite: Attempt to fix go-sqlite3 breakage
+02e3ceb802757afeefca61a818e9e13ab92abd66    IRRELEVANT  Revert "sqlite: Attempt to fix go-sqlite3 breakage"
+badc76e579511a6dc854b2afc5923dcdbd3794e1    IRRELEVANT  go: Disable go mod for now
+3f9ded840edc1a743dec7e6386efdccf4da3f648    IRRELEVANT  snapcraft: Use nil plugin for Go builds
+fc945b9be5ba4ae56b92e1c57d142b6ddbd19761    IRRELEVANT  snapcraft: Always set prefix to empty
+e9d158f24edf7bab6e1b01a3b3173d3900ac9702    IRRELEVANT  core20: Switch base
+cdf43c440b20553e51c4a13fb5d8b6967685cdd0    IRRELEVANT  core20: Update autotools
+4f7ae0a232e2c83950ac4b6fa0bdf4aaf1e82b7a    IRRELEVANT  sqlite: Bump to 3.35.5
+72debf3049c092ce37bf04d8db0e0ba0793f9dbf    IRRELEVANT  ovn: Bump to 21.03.0
+bc8698be8bcb1e172e4d01b6657b1e6a8e27589b    IRRELEVANT  squashfs-tools-ng: Bump to 1.1.0
+fa1b6aaf3c841ca30e8c0a2ff5ff05a375f606d7    IRRELEVANT  zfs: Bump to 2.0.4
+a32c595a38f2265d5434837a7958ec6ae91c388c    IRRELEVANT  edk2: Align build flags with Ubuntu package
+63d0cb9f96762984449bf8c2245290af93aa204f    IRRELEVANT  edk2: Don't disable smm
+9fa56a81a31c6578fedf8cea25030ebdb89a21e5    IRRELEVANT  edk2: Revert changes
+109edfb58d765a16086606904c284fe49701444f    IRRELEVANT  squashfs-tools: Bump to 1.1.1
+ad59150b7de877e0ff25066ef4f5e4edb62f20f8    IRRELEVANT  libnftnl: Bump to 1.2.0
+68f44dea223562c7193fd27fc9bac759091f82bd    IRRELEVANT  nftables: Bump to 0.9.9
+e51d53216114f8251792b34c01d6e4e9e8814f1d    IRRELEVANT  libtpms: Bump to 0.8.3
+530156aa77695c328de5854273edde5b89927cd2    IRRELEVANT  nftables: Revert to 0.9.8, json is broken in 0.9.9
+eeac0d5be38b12a0a25755525feafb5cc4915639    IRRELEVANT  snapcraft: Update description
+c1434add37e05ebfee526968ec4201eb49d65ae6    IRRELEVANT  nft: Don't redirect xtables to nft
+6a4dc904c700e8abcfbe1b3b4e2a3e3fbf89cce5    IRRELEVANT  nft: Create missing directory
+e53008ffc5431c64addd04ce73a80a68af7d9de6    IRRELEVANT  nft: Fix symlink target
+6fd4f3a19219c7be720fa711804b2317fa19923b    IRRELEVANT  nft: Remove current workaround
+6309a278744c202acdefb1781097d85755b2c655    IRRELEVANT  qemu: Switch to 6.1.0-rc1
+48ab92aed19b552817dffa8f93b64e27d21e4562    IRRELEVANT  Revert "qemu: Switch to 6.1.0-rc1"
+e8e4b28593084cf9b30c0030decec77df0b605ac    IRRELEVANT  qemu: Switch to 6.1.0-rc2
+04004df0c53c1f14d5ea2332e4af803f6f00e48a    IRRELEVANT  qemu: Bump to rc3
+0912d9e5e9af28da14c1534a14ac250b6b5ef4ff    IRRELEVANT  qemu: Bump to 6.1.0-rc4
+9ffa19b67f1a8d551b66ff6fb0fb5a555ad1b792    IRRELEVANT  qemu: Bump to 6.1.0
+80ab43e6783eee0765658b91f7d4c490932e86f6    IRRELEVANT  lxcfs: Use stable-4.0 for now
+0370026e9f7b24679507d82ed939bad78a8f4e3f    IRRELEVANT  lxcfs: Switch to meson
+aedb693af412058a83d4fc88c1ffd93a1cc4ee18    IRRELEVANT  qemu: Bump to 6.2.0-rc4
+fbff6b11e23672be554d56dcf2b15afec5478785    IRRELEVANT  qemu: Bump to 6.2.0
+3ff87873f2a09745c0b3dfa60848e2ee5320ad76    IRRELEVANT  lxcfs: Fix build
+90609418d07942ae2de8cb6079d8e94e220a5dc9    IRRELEVANT  lxcfs: Fix nesting setup
+2178e725466d1f5e33745fc9910af1b5cec3fc28    IRRELEVANT  lxcfs: Fix build
+22361f52ad20775ca86cad5c38d00e2f2e2f4b91    IRRELEVANT  snapcraft.yaml: use core22-step-dependencies
+866edb745aada3df3a00fef0db68cd47b46f69c2    IRRELEVANT  snapcraft: Switch to Go 1.18
+8a67cb19995d9228001e022998142740e8c88be5    IRRELEVANT  Revert "snapcraft: Switch to Go 1.18"
+91bc89a701d0d39cc38149622efcc648742dbc49    IRRELEVANT  lxc: Switch to meson
+d71cef50476ea1403ca514736d97bf1304947484    IRRELEVANT  snapcraft: Formatting
+5a3cefcab4c4b5f67414b4ceee12e87762212e2d    IRRELEVANT  Align with latest-candidate
+12898debf14b6dc6c8defcf239b744bd0aa190c0    IRRELEVANT  nvidia: Bump to v1.11.0
+11fa866195fa9a3b067fa080433bdf5a5a9ca958    IRRELEVANT  nvidia: Bump to v1.11.0
+31a69a86c13b50b0526d4d63ced8261a25f687d1    IRRELEVANT  ovs: Bump to v3.0.0
+afda809d4cd088a67d3da5543248a8c95d0a486b    IRRELEVANT  ovs: Bump to v3.0.0
+7d6f7407e7fdc464c38dca192f99bb0d865225c4    IRRELEVANT  snapcraft: Move to FUSE3
+ea0f4bbec0e220d52633dfb6c72eda44745bbaf9    IRRELEVANT  ceph: Move to 17.2
+89c9f22e7f6552bae3f8bcb2d588a32e79525ac5    IRRELEVANT  Revert "ceph: Move to 17.2"
+59c1f063a8b40bc42084f7f2e147be3d8afe69c3    IRRELEVANT  lxd-ui: Introduce new part
+eaba1e616e8c3a910c2bb910f7e6156d75b687df    IRRELEVANT  daemon.start: Set LXD_UI path
+6f0a12dbcae340c4b128fb8931ef93dc66d9f734    IRRELEVANT  lxd-ui: Try to fix riscv64
+8d6a02fce289cb0986af6fcebea3e2b1b293d532    IRRELEVANT  snapcraft: Remove old build attribute
+9814516bdb170c7249c1f8f8e234da593baba34e    IRRELEVANT  snapcraft: Move to craftctl
+e85fe8bdf1d3dcefb90d3bfe3642ee49c2430fee    IRRELEVANT  snapcraft: Move to core22
+1e263d480758c41f6904c6f516549ad07052578b    IRRELEVANT  lxd-ui: Fix bad syntax
+3897ced191245c309f723cea95c6e7a59bab6e72    IRRELEVANT  ui: Add ui.enable config option
+58ccd8183c178c63176490035d07321b5039f29a    IRRELEVANT  snapcraft.yaml: Update lxd locations
+1aca144f9e82715972c960545333c725f3050df9    IRRELEVANT  github: Testing launchpad access
+8a19094c5aed4e0071358f706ae5c6a21eee6774    IRRELEVANT  github: Use launchpad secret key in env
+55ab9757a8edc7e8f71b1e3a8bc94603132d256b    IRRELEVANT  github: Make ~/.ssh dir
+582d19c4f8ba45af1c644a81a3587a9ae3c306c0    IRRELEVANT  github: Change workflow name
+f7e8f93b0fdddd1ef959c24c856e5e49120a07f9    IRRELEVANT  github: Log branch being run on
+fd55595d9c874e9a792a8f624aba963f7b23ba05    IRRELEVANT  github: Log branch name
+077fa473e912c8229e7f26396fdd98025a12d6ce    IRRELEVANT  github: Rsync gh repo over lp repo and check differences
+983147f72d7ccf0de5b9a4bb1ea71bb172aba936    IRRELEVANT  github: fix typo
+851c462234cdc741625b6fcd1187c6e336a68656    IRRELEVANT  lxd-snapcraft: Adds tool for accessing and modifying snapcraft.yaml file
+5e978707b39bdfd0e6b969ed219d7d88d2c982b1    IRRELEVANT  github: Use lxd-snapcraft tool for launchpad snap build trigger
+1319d66263aed4561956d18707bf01033f45452b    IRRELEVANT  github: Install lxd-snapcraft
+346d9f11e2d52cf66a740b2ed84a816492c5f805    IRRELEVANT  github: Setup Go
+fed6dbfb1d9047e5de92f2f2df87bcb14fb6caa4    IRRELEVANT  github: Use lxd-snapcraft correctly
+5010b2226a920840e07ecad521e4f9a434cfba67    IRRELEVANT  github: Commit snapcraft.yaml changes
+8da1cdd82af05c2662ae47810587d0065881a385    IRRELEVANT  github: Set git user name globally
+4a0ff76b3cee002fda3cf664c8ea0cba6a456178    IRRELEVANT  github: Push changes to launchpad
+40ac5b5579f1588904eb57523c7e07464e24c07d    IRRELEVANT  github: Use Canonical LXD Bot as LP push name
+cc20544943eab70016622efa21c4af9c50227fb8    IRRELEVANT  lxd-snapcraft: Moved to canonical/lxd-ci
+4d6d36d88caf801f520bf365381750c15f12c703    IRRELEVANT  github: Only run on latest-edge
+95040ea2a5b11de49d146a81ff0dc0fb31022b9e    IRRELEVANT  github: Fix syntax error
+5df919d6c4dd83289ea2e8b3356a7cf78eca2354    IRRELEVANT  github: Syntax error fix
+396ecf206d720a3b57580752081fc49f5f4753d1    IRRELEVANT  github: Use go install
+e126402b1496525c680395afd20dd49708879ec0    IRRELEVANT  github: Appease go install
+474a69437de60cd12dc064991fbcf423998327ac    IRRELEVANT  snapcraft: update git config user.email
+02ec0ff7a500f8c6d3090b9707b5e0ddcef014f2    IRRELEVANT  lxc: Pin to c1d73028e873f88153d023c5ef55dfc6272cf74d until next release
+0ee65696ac53295cd73474a0dd6b7acbad515bd9    IRRELEVANT  lxcfs: Pin to 587c661b7ad3e2f7bca7a5a396ae135fd0e7c18f until next release
+3355e6e144142cbe85b3ab8a22f849cadafb1b80    IRRELEVANT  Revert "dqlite: Pin to 641fdfdbb9ee7f1e3f369da45dc839cd7f749785 until next release"
+31c3c989616db3d6380db89bf1db76af42ab6720    IRRELEVANT  Revert "lxcfs: Pin to 587c661b7ad3e2f7bca7a5a396ae135fd0e7c18f until next release"
+fedfbd71cfb92dfe0194bf299216e2a0fe20b667    IRRELEVANT  Revert "lxc: Pin to c1d73028e873f88153d023c5ef55dfc6272cf74d until next release"
+2c294aa31f4ebf9862e232c1bf65de2e61492e81    IRRELEVANT  Revert "raft: Pin to 1e5465d102f8b9151e3f7fb36c13b220bbd9b4a6 until next release"
+9bab2d53c60a9dfaa6ff6af4d9058f4dc8ece620    IRRELEVANT  snapcraft: Add content interface plug for MicroCeph
+17486ace5066937e6a2d9ba6c5135049fbbb5061    IRRELEVANT  snapcraft/hooks: Add content interface hooks
+04a0e661e0642a0e3538df28cc3141af01515e5e    IRRELEVANT  snapcraft/hooks: Share common functions among hooks
+0ee285cca1b3ab3932fdb1fc6a9842b420b851c5    IRRELEVANT  hooks: fix export of SNAP_CURRENT var
+9c6536728330e67c89e1b821b3431d204376104f    IRRELEVANT  snapcraft/hooks: Add back common file
+ac5728d34a9c2b1a23a217af033d7c913b14a603    IRRELEVANT  snapcraft/hooks: Remove shebang and executable bit on common file
+e95d4ac3e36d3087edb704a0d1f88d011dc29baa    IRRELEVANT  snapcraft/hooks: Revert split into common file
+8bf6e04a6f9146c80be0515f470a35b6e76255c9    IRRELEVANT  snapcraft/hooks: Exec interface hooks outside of apparmor confinement
+e86f1f01e1ba1715d8f1f99f6b04bd7b1bcf3606    IRRELEVANT  snapcraft/hooks: Revert content interface
+f0b5f3aa0627f365f6d0dce6ae60911b483a0208    IRRELEVANT  snapcraft: Add ceph-conf content interface plug
+0cc6a04c84cd3f61249bf25ae694dc616caa4dcc    IRRELEVANT  snapcraft/hooks: Add interface hooks for ceph-conf
+ec0f001f246efbefa52a20bec4e6e66cbc155b51    IRRELEVANT  snapcraft/commands: Remove microceph setup from daemon.start
+5c78a1af2752eec9da1e5a725dc6ed6a6302de89    IRRELEVANT  snapcraft: stop installing upgrade-bridge script
+60a3444f5e51f0f60a61d5fd98866ded5df4e4ed    IRRELEVANT  snapcraft/hooks: Only create /etc symlinks if in tmpfs
+7b14aa0d47fc57c75976151b44eb7858f7edff4d    IRRELEVANT  github: remove an unneeded subshell and add more quotes
+b2ee51025e9dda760434b2c1d15c8a0b6999d4d3    IRRELEVANT  github: run fsck on git objects (safety feature)
+4bcb2edf594b6b5c2a992fa9525b878efb0cf49b    IRRELEVANT  github: sign commits (with SSH key) to repo on git.launchpad.net
+d4d21b794d1b001a0b915eb53142797f9342e9d6    IRRELEVANT  github: bump actions/checkout version
+ca6be67e9497eb094d65a7209d476eaded70d548    IRRELEVANT  github: add dependabot config
+54219b813dbf6d3f07a7e1cd2a30f759bd996672    IRRELEVANT  github: ver contains an array
+358a59a892a7022eba82b4c268ebaee9379caac9    IRRELEVANT  github: set -eux on shell snippets
+2ab781fa3f45564be202c08dd7445e02db0c55f1    IRRELEVANT  qemu: Bump to v8.0.5
+63aae973414b56c1eb9d4daa633d8a3a11b4bff0    IRRELEVANT  github: look for branch target name in PR title
+6eeb297584aafbabf430b65c89c63be9db9a7315    IRRELEVANT  snapcraft: use craftctl to clone QEMU's git
+bb00f29fa1cb700ac6e3f1c4efe37ea73010f10e    IRRELEVANT  snapcraft: add quoting in override blocks
+76c9e3f2dda14e234d6c58964ae4f3453b3f60df    IRRELEVANT  wrappers/editor: workaround Apparmor unpriv userns mediation
+9f72ab2126d30a4bf02b622f1553a09342508d27    IRRELEVANT  wrappers/remote-viewer: workaround Apparmor unpriv userns mediation
+d9c98d62d75368d97e44fc71b4cbba7cb76c6e9d    IRRELEVANT  snapcraft: quote more vars
+dace25d140d5ff8ef860bc4ea0f59c5d7aab0d81    IRRELEVANT  snapcraft: go build -trimpath
+339a0deec84e15265f90439048549e11e0b1e91a    IRRELEVANT  github: simplify target branch extraction from PR title
+a03b90c62a9f148699253a0f6f8808153e982f95    IRRELEVANT  daemon.start: re-order sysctl tuning
+21ca1598f84e9456de8f8ccf0149415146169c90    IRRELEVANT  wrappers/editor: workaround Apparmor unpriv unconfined mediation
+f7cccb4cd9245240d8b98331396a1392235a78d4    IRRELEVANT  wrappers/remote-viewer: workaround Apparmor unpriv unconfined mediation
+b02d7990eab0230e27902a2ce3d3084895405d89    IRRELEVANT  github: Skip snap build for pushes on branches from dependabot
+8f6c61380acf3a8b6c2a420769e811a26bcb199c    IRRELEVANT  build(deps): bump golang.org/x/net from 0.7.0 to 0.17.0 in /lxd-migrate
+48ad98fecf9600627aa2357adbf2f4d261089cc2    IRRELEVANT  github: test build lxd-migrate prior to pushing to LP
+43e25a0db0cef682f236628972903fd338c2d410    IRRELEVANT  github: instruct dependabot to also look after the 5.0/4.0-edge branches
+3cdbc868a8bf92eae9cd4e2f27fedee3319ee07c    IRRELEVANT  github: dependabot knows which branch to target
+32f96e9c484ba479466d13fd95ed84bfb3d1d525    IRRELEVANT  Revert "snapcraft: 20 is the new LTS stream for node"
+2e45c1e15b471db4ec430f7de067ccfa7a1d506c    IRRELEVANT  snapcraft: Add ovn-conf content interface
+9f467990ba8e5af214f21ce651d86e0c6c41a700    IRRELEVANT  snapcraft/hooks: Add ovn-conf interface hooks
+93cad5a6c339430bd47e08331885b284fc56a30a    IRRELEVANT  Add renovate.json
+529dafe5c80ce9a04d8399b1275b7cb000f2fa2c    IRRELEVANT  lxd-migrate: run "go get -t -v -d -u ./..."
+f1bc566df80c912229f430b9d8be3f4d78167bc6    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 6306811
+fcbc692392f77e2d29dc4e607fba8a1f2a359245    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 8308c80
+06efb2538334b5f2a33dc91b4a40cb38ad3c47a4    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 2baa380
+dc16cfd67efa785225ddb59096ae588352a94f2a    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to e90ae16
+e5935593b08c00189677bc12d8be62bf018aaa5c    IRRELEVANT  lxd-migrate: use Go 1.20
+5cbea99d61ec13d9acf6c3e25b79ffa5986fe697    IRRELEVANT  Change license to AGPLv3
+c158769289607a26d3e9aa9b11f056cdf4342b46    IRRELEVANT  fix(deps): update module github.com/mattn/go-sqlite3 to v1.14.19
+90ee17ae9d6172553a9c9df338cd8600f3561d9f    IRRELEVANT  chore(deps): update module google.golang.org/grpc to v1.60.1
+66a54d036b00e5b7a7a7e5543b9c355e5ec7e437    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to e676fc6
+1680fb59d75d41d4c52a4ecfab78ede4c2b0bca8    IRRELEVANT  snapcraft: Switch to core24 devel
+875acff39dea3b22f0f6786d9e633a77e99ad69b    IRRELEVANT  build(deps): bump golang.org/x/crypto in /lxd-migrate
+b84b6f7eb0ca2ffb6c85b861eddbdfea210ef111    IRRELEVANT  Revert "snapcraft: Switch to core24 devel"
+3887d4a8d53e18655095150e70162b1712a009f4    IRRELEVANT  snapcraft: Add dpkg-dev as dependency of lxc
+14889dd078b7400b2e379d7259d9b93c01f617f8    IRRELEVANT  snapcraft: Update libs used by ceph tooling for core24
+e98630f5c67f228a4dadfc94e0f41044d6164312    IRRELEVANT  snapcraft: Switch to core24 devel
+46a7509979c50ec007a3c19334a4bcd4c1ef47bf    IRRELEVANT  Revert "snapcraft: Switch to core24 devel"
+7c28fa864a7bf2db4c0699d0e5c4fbd39d7fce96    IRRELEVANT  Revert "snapcraft: Update libs used by ceph tooling for core24"
+f6eb43cc64091202db6b7038b3b7cdf05ddf002f    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 97792f7
+27ac1172afb73b80bae09748c5c0053276ad2930    IRRELEVANT  renovate: run weekly
+b7c7abde9c569f5dd1992e1ae8c0ea77f4ab80f8    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 38ae187
+8ac28b06441ce0ae91e6b7e1aee4118818d41460    IRRELEVANT  fix(deps): update github.com/canonical/lxd digest to 91efd07
+c41c3579100d0fe2fbb003f1776c13d4ae7a74d8    IRRELEVANT  snapcraft: alphasort the source-* directives
+051f19453fc62231ffded7ef326207385828ddce    IRRELEVANT  snapcraft: use shallow clones on all parts using git
+1a5556a6f54af18b8da2524e7d2e6657f539ea8e    IRRELEVANT  fix(deps): update module github.com/mattn/go-sqlite3 to v1.14.20
+d9047096b95b3c65f69d097a1a0f20ca6971c3a7    IRRELEVANT  lxd-migrate: stop shipping LXD migrate
+15b6c75944c575f831c049456b758b08416e9b90    IRRELEVANT  snapcraft: drop lxd-migrate part
+7d9672670e58cddc207a8f5ccac6a04de6d16351    IRRELEVANT  snapcraft: use libseccomp from the base snap
+0505453955a5368e9ef3de259dbab4822b6ff713    IRRELEVANT  snapcraft: add override-prime for every override-pull
+d29f4418e07602052f051f0c1a09b044bc35ac79    IRRELEVANT  github: drop DCO check now that we have the DCO app enabled
+ac8115cf2c7308f3492b99abdc1e4bef1cbac5d5    IRRELEVANT  snapcraft: Add microovn content interfaces
+20ead939604b41e3ffad3290c1fd53f35f7542e6    IRRELEVANT  snapcraft/hooks: Add content interface hooks for microovn
+fceed41c7ab197b36e1a5ff1e7be81b14e693d6c    IRRELEVANT  snapcraft: don't mask snap install error when installing node
+5d0a04f94951e24f33120f25aa569453878c46b4    IRRELEVANT  snapcraft: Remove minio from the snap
+c9fac777f5a7a9a3ca2f8d336311bb0e2a9601fe    IRRELEVANT  snapcraft: remove snap-query part
+529449b4ab03f19a24fe1479f135f862b1058814    IRRELEVANT  snapcraft: add python-uefivars
+3816410d75b6d4ab161d5fcf0123c9dfa5d35915    IRRELEVANT  snapcraft: have dqlite build raft
+0a34f3c0af7f1aa311bf492400c05f1522dc7f36    IRRELEVANT  Revert "snapcraft: have dqlite build raft"
+72dab8c3e1471d360c9cace0d35f309c30eaa9c5    IRRELEVANT  Revert "Revert "snapcraft: have dqlite build raft""
+5ce92c9155570dfceaca3f039408e01f058b6fec    IRRELEVANT  snapcraft: stop building/shipping lxd-benchmark bin
+d55c0f00c57a4b0767c8961a5840b351e8a00c54    IRRELEVANT  github: fix branch target name/version extraction logic
+ccfe72ae9bde33be57c40483031954c9c4c15bcb    IRRELEVANT  snapcraft: add python3-pip to build lxd docs
+362d17780a8d7b31d4996be318f03160c77179af    IRRELEVANT  github: Update dependabot to check 5.21-edge
+6404a657b647a79f30333101626f636e03983430    IRRELEVANT  github: add package arg to lxd-snapcraft
+19aaee82775587d62d9d4b0d1d1d730c5c97b13a    IRRELEVANT  github: add package arg to lxd-snapcraft
+0e3a2ba8bea827d92bbfb05fe397f19ee3b0294c    IRRELEVANT  snapcraft: switch to core24
+ebd1413f654fa13ba5f09ee1de5d53b3b666337b    IRRELEVANT  snapcraft: fix uefivars part on core24
+2f0fcab2cb520c8f9ef8af1f6150f7651348d558    IRRELEVANT  snapcraft.yaml: enable unconfined mode in lxd-support interface
+8d0c9a44e08afcefb33e970640e2661b9df764bb    IRRELEVANT  Revert "snapcraft.yaml: enable unconfined mode in lxd-support interface"
+4d61d1ced30114305bec8e9c087d51f12cb14cfa    IRRELEVANT  snapcraft: sort primed libs for ceph part
+2cfe7da7dfb8ed32ff47558646b774beb002a19c    IRRELEVANT  snapcraft: add gpu-2404 plug
+8de0a12161c2cfd8bbe004ef207bd943de06898a    IRRELEVANT  snapcraft: add qemu-external plug
+4fea39bbf04c40bc051abce57d4ed8e44b25a3fb    IRRELEVANT  snapcraft: drop nasm part and use the package from core24
+d246e53968836f756d89803ad4f870c07db428a0    IRRELEVANT  qemu: Bump to import/1%8.2.2+ds-0ubuntu1
+e2d89724afde8e33f4ec114f0e6810e5aa957371    IRRELEVANT  nftables: Use nftables 1.0.9 from core24
+7ff32eca9767999e8b23ccbe528b8b87c15c0176    IRRELEVANT  snapcraft: add apparmor part
+941456dd08b3bce84c44510fa5a9507a8a3342d8    IRRELEVANT  snapcraft/commands: Link the pro command to the run-host wrapper.
+d6137e4d9cafc19392dbabec8dadd370654f6116    IRRELEVANT  snapcraft: update QEMU to 1:8.2.2+ds-0ubuntu1.2
+30a24f364f836b1639b7e08b0bb892d1c855992c    IRRELEVANT  github: Align concurrency rules with lxd repo
+4918987419eca7e25d7531a86396c50c1d578826    IRRELEVANT  snapcraft: use source-commit pinning for git parts
+b3727a104e4d1c4857b44ded6434f1337905448a    IRRELEVANT  snapcraft: spice-server submodules do not work with source-depth: 1
+48e319ea9fd5858be339ef46d407d37bdc26d2a9    IRRELEVANT  snapcraft: bump nvidia-container to v1.16.1
+4e3a911560beae60acbdc8c444eaf39cd3729721    IRRELEVANT  snapcraft: bump sqlite version to version-3.46.1
+18c6669a923f205188cb2fe3864dae39aedda086    IRRELEVANT  snapcraft: bump zfs-2-2 to zfs-2.2.6
+625817b9a41bb147ecd103f8c08b83ee008e3774    IRRELEVANT  snapcraft: bump uefivars to v1.2
+dc3ca40ac339f69dfe4040edd112b58c4a0d5603    IRRELEVANT  snapcraft: uefivars lost its `.py` extension
+d37a0e57883a35cc32a325a3a084658ee613c2b2    IRRELEVANT  Revert "snapcraft: uefivars lost its `.py` extension"
+3780d4b155d1481c2545f890c42e82b54d074beb    IRRELEVANT  snapcraft: use non-shallow clone for nvidia-container
+839b24072684df7d2054f16e6ee63a530833e21d    IRRELEVANT  snapcraft: remove sqlite part, use pkg instead
+5797dd31d25dc1fa83883422d8194aac850ba15c    IRRELEVANT  chore(deps): update dependency ubuntu to v24
+ff8df89229a6ded76151dbe5045e7263e97a4116    IRRELEVANT  snapcraft: bump snapd version requirement to 2.65
+005d24917d421fa3f96e58f1382f27cac73b080e    IRRELEVANT  Revert "snapcraft: apply temporary workaround for core24 to fix snap reload"
+25ca3a1831bf30339210bc4afe83d88afe55a506    IRRELEVANT  snapcraft.yaml: enable unconfined mode in lxd-support interface
+df71027c2ae18380e8f7a0db76da26aaf4dda09a    IRRELEVANT  Revert "snapcraft: bump snapd version requirement to 2.65"
+4d10cbd366cd4e9d0bc05c7f12073f620e20941d    IRRELEVANT  lxd-stophook: Adds stop hook wrapper for the lxd command
+75de117a9ca456a082c6a141ee32178197e9974f    IRRELEVANT  lxd: Build lxd server binary into /sbin
+6a1f4c2e3f03ab474dae6fe357b1de3305cfd497    IRRELEVANT  snapcraft: Use --strip-all for clarity
+d95e345c5c4811c0e8a71d709cb54de46fea6b23    IRRELEVANT  Revert "lxd: Build lxd server binary into /sbin"
+530d3c69d52e702531b8c2b60dc4efa0afe1d51c    IRRELEVANT  Revert "lxd-stophook: Adds stop hook wrapper for the lxd command"
+dec20d96e7d09e7b635eb1b917255b546517fe2b    IRRELEVANT  github: pin actions/checkout@v4
+c737d4005f09f338ae13c23992c09acf3558a61b    IRRELEVANT  Revert "snapcraft.yaml: enable unconfined mode in lxd-support interface"
+35ef0ce079037e45fb9278bb168e31a6d4478b49    IRRELEVANT  build(deps): bump actions/checkout from 4.2.1 to 4.2.2
+eeb0880057dcdff6bb1938af70bc26c121ea5881    IRRELEVANT  snapcraft: edk2: Use more of snapcraft's default pull mechanisms
+3687c159c54abb89ff04da41bcfe69dc7b63190a    IRRELEVANT  snapcraft: bump QEMu to 1:8.2.2+ds-0ubuntu1.4 (security fix)
+1e3a83d585597d8894e794068fe3f498358223ec    IRRELEVANT  github: simplify building only on push events
+5c9aee86cb162393daa8a382d8f3ec2826c38425    IRRELEVANT  snapcraft: nvidia-container: Enable shallow clone
+89550582c9bfeb5d460585dbabea7afd515e4064    IRRELEVANT  snapcraft: remove lvm.conf patching for 22.04/core22
+25ba8934aa628d38b3caffc4a21f3bfdc6b5cf51    IRRELEVANT  snapcraft: explain what/why the `sed` patching of `lvm.conf` does
+d037e01e7c02dc43738681510e3e5f6362bf8e53    IRRELEVANT  lxd-stophook: Adds stop hook wrapper for the lxd command
+c0b8a0dfac8117cba66ef609dae368291cb0f202    IRRELEVANT  snapcraft: Adds title field
+92d6c965b47f04eafa18a388bd63c3cda302c345    IRRELEVANT  commands/daemon: Redirect iscsiadm to the host
+5f05e3def980ff496975141d81630e9e5453dc60    IRRELEVANT  chore(deps): update actions/setup-go action to v5.2.0
+25ee57af8b10081d7eafb97b599c048f4f3b2a0f    IRRELEVANT  github: make use of LXD's actions/lp-snap-build in build job
+e346ea607ffca77381fa721528dc6bc924315b75    IRRELEVANT  github: fix build workflow syntax
+20cd7dbe60be6749eaceacfd6e970073ccad017d    IRRELEVANT  github: fix reference to LXD's actions/lp-snap-build
+27255b0b0f5734cedde43d6f81b0fc67bef6be50    IRRELEVANT  github: `s/lxd/${PACKAGE}/` in snap build step
+2b9effa09bc8724099af23bf330963aef2c1aa5b    IRRELEVANT  build(deps): bump actions/upload-artifact from 4.4.3 to 4.5.0
+53c3b9119a0f31e92a58c5a2f874e38000b9b8fa    IRRELEVANT  build(deps): bump actions/upload-artifact from 4.5.0 to 4.6.0
+27b06d214bc2c1b788eca18ae4191853c6723460    IRRELEVANT  chore(deps): update actions/upload-artifact action to v4.6.0
+c142d9844fe5c9d7a5b09e1cbaffb2a76ba3ac6c    IRRELEVANT  lxc: Switch edge to lxc 6.0.2
+cb3200d684fa6c87e41c921371c0fe9ee1e3acf0    IRRELEVANT  Revert "lxc: Bump to lxc 6.0.3"
+0f0ee72bcd03a30833cdbba126e2693327d2e44c    IRRELEVANT  Revert "lxc: Switch edge to lxc 6.0.2"
+2128c749ded013e2641ea80b07bca984b457bfbd    IRRELEVANT  snapcraft/commands/daemon: Redirect journalctl to the host
+e3bf8efe8e7ab8f2cf049a69bf8d9013c0e14185    IRRELEVANT  qemu: Bump to import/1%8.2.2+ds-0ubuntu1.5
+08342aea324e722d5f2dbae707d629bc21fc1372    IRRELEVANT  Revert "snapcraft: apply temporary workaround for core24 to fix snap reload"
+9c6bb07545f597a3e38a990eb578ec0ea20b5e89    IRRELEVANT  snapcraft: Depend on snapd 2.64
+329edc4ac13b4f4d4c4b60ab9bda9a2e1093e020    IRRELEVANT  Revert "snapcraft: Depend on snapd 2.64"
+928a0909cc80df8bb9995304fcd7b10f4d1d13b6    IRRELEVANT  Revert "lxd-ui: build with node snap from 22/stable channel (latest LTS)"
+04bacb90848246baf567ce5f3fea59e15f1948d2    IRRELEVANT  configure: no need to escape Apparmor for that hook
+f57e344d843c5d427623dfc6bb23eb1e224936a6    IRRELEVANT  nvidia-container-toolkit: skip pkg staging on unsupported arches
+2d2c3ddcd26888f3f9060fffc32b21f5e8276abf    IRRELEVANT  Revert "configure: no need to escape Apparmor for that hook"
+49fc52d45c418c971c049ba47cabcb197cd57045    IRRELEVANT  nvidia-container-toolkit: Bump to v1.17.4
+f9a1a0fb169343c032b43283a33c1c54165efda8    IRRELEVANT  nvidia-container: only install build pkgs on supported arches
+7e37a6d643bee794dda6fe607610c187d7950f65    IRRELEVANT  nvidia-container-toolkit: pin Go snap to 1.23/stable channel
+97adc5b3d2bd9e3896108e6f7e186971bb61267d    IRRELEVANT  lxd: pin Go snap to 1.23/stable channel
+afbcc74a65a670f7e4764a18a30e159aaa597d84    IRRELEVANT  github: ask dependabot to update GHA on `*-candidate` branches
+98ab6204f970dba9aa7cd55384bba2c44adf0ff2    IRRELEVANT  snapcraft: bump snapd requirement to 2.67
+fe9b8a0b0c516cd2ae0e8055079d0e6f2d9c8fb9    IRRELEVANT  Revert "snapcraft: bump snapd requirement to 2.67"
+8ef3e3b1b5de1f00445966e6d59a6a16626536df    IRRELEVANT  lxd: don't use Go toolchain
+914647a31f48a563df61f113bc109c421c6cb21b    IRRELEVANT  daemon.start: drop broken code around /dev/pts handling
+647183560c11894459aed97ff32c247ffb28a749    IRRELEVANT  github: move renovate config and disable this bot
+f0b47397a67c4ebe25c17c03fb8ee12e6392e53d    IRRELEVANT  dqlite: Pin to last known good version
+ed30cb7937004ed957964bf616f7fba6bcbcdecb    IRRELEVANT  criu: provide empty `build-packages` list for `armhf`
+76b4ff1dc19d3cbb7c58a5afc36fb6d8f07d4625    IRRELEVANT  enable non-shallow clone for lxd
+5c97ead4ab479ef4c07949f68e11098edab05b1b    IRRELEVANT  criu: provide empty `stage-packages` list for `armhf`
+a88da5dcd500e77bedc83194c7f466ab83e21043    IRRELEVANT  snapcraft: Replace deprecated AGPL-3.0 identifier
+397f1fcde97852c5db10c23b0535a8f4473e2db6    IRRELEVANT  criu: remove part
+8db30993be04b0f9e19ff3b6384cecfb4b105d07    IRRELEVANT  dqlite: Revert to using main directly for edge builds
+bd0f95a6f4195ef7b4b2d4b05fbba9dda6c32e97    APPLIED     snapcraft: bump QEMU to 8.2.2+ds-0ubuntu1.9
+910ff7b6d925fb11a2c3eb74045c0a52cda84ec0    APPLIED     snapcraft: bump QEMU to 8.2.2+ds-0ubuntu1.10
+abf78f2374c21ab1c057a7785f77722a6f3d2480    APPLIED     liblxc: hardcode `libdir`
+357965858819f91466adae168382be9bd415f258    APPLIED     liblxc: fix the path in libdir
+12e039138b8876cb6da03ed398ea3dd837bcbf26    APPLIED     hooks/disconnect-plug-ovn-chassis: force link creation
+d5ae55a6c384bf5ce44b3c0787597b43feec0c93    APPLIED     hooks/disconnect-plug-ovn-certificates: force link creations
+79b82e48eebf80b6ee0aa6d68d19b2cc25a68b5f    APPLIED     daemon.start: improve Apparmor unprivileged userns/unconfined mediations handling
+33b4781e847c583ec9e14b7a7f439c2757c7d2ba    APPLIED     remove: remove sysctl snippet and reload system rules
+cb9947afdcae016362ff7bc18e4c8941e15b143e    APPLIED     remove: fix path to systemd snippet
+44d22e04926b04a080e0f5696599ac1ce17bc6aa    APPLIED     daemon.start: fix path to systemd snippet
+d24036e33edc6c9d0e07f335667722a506888261    APPLIED     daemon.start: always save `/run/sysctl.d` override snippet
+1392aaa80b55d0df3702c8b3b1a90ee09980cc2c    APPLIED     daemon.start: make `/run/sysctl.d/zz-lxd.conf` world readable
+fe453f6e2d7b3a6fa5556f56655adf01345d24ae    APPLIED     lxd-user: allow sideloading a `.debug` binary
+08cfd3032200da1d00a2bd242fed27e217cfdd81    APPLIED     snapcraft: switch to Go 1.25/stable
+035c0eed09932cd9f02b46f67535bf9260ebcf5a    APPLIED     dqlite: add `xfslibs-dev` to build-packages to enable async-IO on XFS
+193634dcf60c3ff2278ac8ae0937134077b9b0df    IRRELEVANT  nvidia: update nvidia-container and toolkit to 1.17.9
+2ec611a1ce782cc23fe9cf56508909c8dda0e993    APPLIED     buginfo: simplify Apparmor escape
+4245c01c48599294277ade40df492158d96c30ca    APPLIED     daemon.activate: simplify Apparmor escape
+4dcceb0514fcf95ff60699af1a1fb830cba8c9b4    APPLIED     daemon.reload: simplify Apparmor escape
+fc99fa4c6ec0489c94bc95197a05aa68cb077838    APPLIED     daemon.start: simplify Apparmor escape
+c1de6d9dfa80a181f2cb06638650eeaef93e34ea    APPLIED     daemon.stop: simplify Apparmor escape
+ed2df71312616b673250fba48b753639cf7e9267    APPLIED     lxd: simplify Apparmor escape
+827ff2f706e13ecea099402bc6e35c66b42cdece    APPLIED     lxd-check-kernel: simplify Apparmor escape
+121ac503cee2f6498c57286eb42e3b268b826bfc    APPLIED     lxd-user: simplify Apparmor escape
+fab3863dc63b553e641d8015bcaacc2e1b1682f8    APPLIED     configure: simplify Apparmor escape
+a9567de267d3153e33ab7eb69983fae527fb1d9b    APPLIED     connect-plug-ceph-conf: simplify Apparmor escape
+60f23122e6f4c4375c3f49131c0654fe15fe11d6    APPLIED     connect-plug-ovn-certificates: simplify Apparmor escape
+13dc471f90a6a730bf880cfe748a67fe9da17831    APPLIED     connect-plug-ovn-chassis: simplify Apparmor escape
+4035a301a14375279229795565911724a791d4d2    APPLIED     connect-plug-qemu-external: simplify Apparmor escape
+c095f493b4fd07225ea10630b5a702537b88c43b    APPLIED     disconnect-plug-ceph-conf: simplify Apparmor escape
+e15e7e4fede89d4add232cecc850243e779c09fe    APPLIED     disconnect-plug-ovn-certificates: simplify Apparmor escape
+19aa85e2c788e09ff9f1dd268f34f7b5f37f7b27    APPLIED     disconnect-plug-ovn-chassis: simplify Apparmor escape
+4513afc0e0caeba6c1c0fbbfa5f864f48560acf4    APPLIED     disconnect-plug-qemu-external: simplify Apparmor escape
+40d70f18926d942be490706e4f7adaffadc9ca1c    APPLIED     remove: simplify Apparmor escape
+dabadd2e1d92e0eb4b1e7e3865eb93fe8905ec4a    APPLIED     lxc: escape Apparmor confinement early on
+87d3e88e7c8eb0b0b43bd61f098b35ab19ef08e6    DIFFERS     nvidia: update nvidia-container and toolkit to 1.18.0
