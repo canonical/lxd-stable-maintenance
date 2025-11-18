@@ -413,3 +413,4 @@ e15e7e4fede89d4add232cecc850243e779c09fe    APPLIED     disconnect-plug-ovn-cert
 40d70f18926d942be490706e4f7adaffadc9ca1c    APPLIED     remove: simplify Apparmor escape
 dabadd2e1d92e0eb4b1e7e3865eb93fe8905ec4a    APPLIED     lxc: escape Apparmor confinement early on
 87d3e88e7c8eb0b0b43bd61f098b35ab19ef08e6    DIFFERS     nvidia: update nvidia-container and toolkit to 1.18.0
+ba1d9a77b8e5ecb5e10e9e7ee52c42f44738b1c0    APPLIED     virtiofsd: only build and prime on `amd64`
