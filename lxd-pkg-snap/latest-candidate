@@ -414,3 +414,22 @@ e15e7e4fede89d4add232cecc850243e779c09fe    APPLIED     disconnect-plug-ovn-cert
 dabadd2e1d92e0eb4b1e7e3865eb93fe8905ec4a    APPLIED     lxc: escape Apparmor confinement early on
 87d3e88e7c8eb0b0b43bd61f098b35ab19ef08e6    DIFFERS     nvidia: update nvidia-container and toolkit to 1.18.0
 ba1d9a77b8e5ecb5e10e9e7ee52c42f44738b1c0    APPLIED     virtiofsd: only build and prime on `amd64`
+6ba88d7f91d173d10f9380f6fefd81a128ecbef3    APPLIED     Revert "buginfo: simplify Apparmor escape"
+e660a7a2ecab648ab501b2cb4c38487ca80f0028    APPLIED     Revert "daemon.activate: simplify Apparmor escape"
+0c78aa409da41bb9f46e1a0b16b3c8ab2e0d013e    APPLIED     Revert "daemon.reload: simplify Apparmor escape"
+90dd85b88b96476ee639296bc858de1554223528    APPLIED     Revert "daemon.start: simplify Apparmor escape"
+1f485c03472d30bafc8e2f44b86bdf3dbc52772e    APPLIED     Revert "daemon.stop: simplify Apparmor escape"
+7f76c073a32d9ce41c0d715a73ac3e876bc3b614    APPLIED     Revert "lxd: simplify Apparmor escape"
+09d5c49eb73d7ac7a0cb7541c15cb75c99e8d8c7    APPLIED     Revert "lxd-check-kernel: simplify Apparmor escape"
+ae38b1e0bc861cc0c079672396dc5b68daeadc85    APPLIED     Revert "lxd-user: simplify Apparmor escape"
+82eb609b16ee1c1ce8aff9142e0ed22dd40e12b8    APPLIED     Revert "configure: simplify Apparmor escape"
+aa10eb846b47cc61770a165f69e85221619a6fc6    APPLIED     Revert "connect-plug-ceph-conf: simplify Apparmor escape"
+2872e89e560a0069ca37707c76fd5f3992f831d0    APPLIED     Revert "connect-plug-ovn-certificates: simplify Apparmor escape"
+5b1147d0d67cd7b40f45929b1bed80dd4a15f2a6    APPLIED     Revert "connect-plug-ovn-chassis: simplify Apparmor escape"
+3f5f33882fedee345a2b9d471d2d477768588ed7    APPLIED     Revert "connect-plug-qemu-external: simplify Apparmor escape"
+c122581ffa625d754ca7b116a9f6952e0cfc037d    APPLIED     Revert "disconnect-plug-ceph-conf: simplify Apparmor escape"
+d5c23c81ac7b6b359e3f1f24aa57b967d013aea3    APPLIED     Revert "disconnect-plug-ovn-certificates: simplify Apparmor escape"
+82f4f654806116e343f87b1b97e85b8fa081fd7a    APPLIED     Revert "disconnect-plug-ovn-chassis: simplify Apparmor escape"
+a314b131f1ebd156540cb589c9e5eb438264ac4f    APPLIED     Revert "disconnect-plug-qemu-external: simplify Apparmor escape"
+02c8a71f81367699332bee6e16933e1fbeca43de    APPLIED     Revert "remove: simplify Apparmor escape"
+927dd04de1be451515dd059cda7c7c2a1cabef62    APPLIED     Revert "lxc: escape Apparmor confinement early on"
