@@ -433,3 +433,4 @@ d5c23c81ac7b6b359e3f1f24aa57b967d013aea3    APPLIED     Revert "disconnect-plug-
 a314b131f1ebd156540cb589c9e5eb438264ac4f    APPLIED     Revert "disconnect-plug-qemu-external: simplify Apparmor escape"
 02c8a71f81367699332bee6e16933e1fbeca43de    APPLIED     Revert "remove: simplify Apparmor escape"
 927dd04de1be451515dd059cda7c7c2a1cabef62    APPLIED     Revert "lxc: escape Apparmor confinement early on"
+a0e1150a86d8a772c0fd7567a225d53e3e354787    APPLIED     daemon.start: don't manage Apparmor related sysctl if not active
