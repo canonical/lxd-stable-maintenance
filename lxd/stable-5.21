@@ -7050,3 +7050,576 @@ cce2637bdf26d5a2ddb4f0d66c6cf984141ab352    APPLIED     test: Extend ovn network
 dc8272432ca8dd6b9b8e144647dde71f862afca2    APPLIED     lxd/cluster/config: Remove ClusterTx from Config.
 39bc641c2d0203cbef43dc62c9e62d93557be360    APPLIED     lxd: Update calls to `Config.{Patch/Replace}` to pass a transaction.
 fec3cc832ca782d398c82d38f8532ef9d5be2e00    IRRELEVANT  Release LXD 6.5
+1c9db8d5923a30ec7c54c5debc81f091f965baaf    APPLIED     lxd/apparmor: Update for current QEMU
+6db037b45c50a670851aae72bac588a348cb903c    APPLIED     lxd/apparmor/qemu: Allow reading gid_map/uid_map
+7be3f7d98873f5ded535f3de050e4025e387957d    APPLIED     lxd/apparmor/qemuimg: Fix typo in rules
+a77f18837c5a555fe1be8202f5a697bc4655443b    APPLIED     lxd/apparmor/instance_qemu: restrict QEMU to rename its own process and threads only
+03865ca13b515317ba069a4fbe8721cc3efdf84f    FEATURE     lxd: Convert internal config representation from map[string]any to map[string]string
+e60c0d6123945dbdaa98bafa50ee976f5f83b30f    APPLIED     tests: Fix mountpoint detection logic
+7a1a17618cac4b95eea865fa8e7b981a83905fbc    APPLIED     lxd/instance/drivers: Only remove container mountpoints in /dev
+3754a4c683c7c9000793af02f0fa48064a242818    APPLIED     tests: Remove check for directory removal
+7cd642b3956e363b19440d80b4699408b5c5df16    APPLIED     lxd/device: Prevent file mounts on VMs
+9cc6758cb35117b21b9b359e2d9782186458f7ea    APPLIED     lxd/device: Improve documentation for `path` key
+54a09ae38a2ca9e061c39437272bcddc3188312a    APPLIED     doc: Update metadata
+fe86ceb2c3fa7b868b117d31cce1758c1d225d0c    APPLIED     lxd/network/driver_common: Defend against path traversal attacks.
+81810d7c27650a09a126d0e5931c3219d41812b1    APPLIED     lxd/network/driver_common: cache old and new paths in `rename()`
+cb92c5749447058a778757f6c16826f47a291c25    APPLIED     lxd/network/driver_bridge: reuse code to validate network name
+ef6ce13224cc84abaec73d144a14f89eec341781    APPLIED     lxd/network/driver_bridge: use fully qualified path to old name when rename forkdns log file
+0349fb907006a04c35da945d9c21bef2f47821ab    APPLIED     Revert "lxd/apparmor/instance_qemu: restrict QEMU to rename its own process and threads only"
+7510f4c03a00b3f029d09be907fde518f9d55dfd    APPLIED     lxd/apparmor/qemu: remove duplicated rules
+4a06d7c18ad8bad070ef448546565c0a11d3b21e    IRRELEVANT  build(deps): bump github.com/mattn/go-sqlite3 from 1.14.29 to 1.14.30
+e61dc3b5d623c27e2e322db518aff5300d46f278    IRRELEVANT  build(deps): bump github.com/go-jose/go-jose/v4 from 4.1.1 to 4.1.2
+6b4c07a4af84d32c4b228de5e5fb69364cbe5a69    IRRELEVANT  build(deps): bump github.com/zitadel/oidc/v3 from 3.42.0 to 3.43.0
+7c0ce2a6ecb42795d7c1f5b6beeebb0bb24d5ee4    IRRELEVANT  build(deps): bump github.com/miekg/dns from 1.1.67 to 1.1.68
+6d0be3fa1b03c25fb08abc59efaf73b7a7d1d592    FEATURE     api: Add `auth_secrets` API extension.
+ad84174883a580cf0e7201fccd10cbd0d356f534    FEATURE     lxd/cluster/config: Add `core.auth_secret_expiry` config key.
+e35bba219c11c61aadff856d9ec6b63670ec6248    FEATURE     doc: Update metadata
+cd01312bca14cbefa37031009f113bd351fb9e55    FEATURE     lxd/db/cluster: Add secrets table.
+220296f7a0a98aceb10e36eea597c9826323a006    FEATURE     lxd/db/cluster: Runs `make update-schema`.
+3754593cc3c1b27e5534274f8ae7c1e8cf515757    FEATURE     lxd/db/cluster: Add DB types and functions representing secrets.
+b6427b7a264ba1c4f4cb270027357a1ff2392ae8    FEATURE     lxd: Add function to daemon to get current core auth secrets.
+9a7d286831577fb29b24e4378edbe272a37cd8fa    FEATURE     lxd/state: Add Secrets to state.State.
+173cfde6bb4a6ae4d7ac2512f120f93623cf794a    FEATURE     lxd/auth/oidc: Use v7 UUIDs for session and login IDs.
+7295339c23739ec024b815409db9909566694dfa    FEATURE     lxd/auth/oidc: Update verifier to use the cluster secret.
+cc76d219553226d0e86a3a92efffc5df20dcf080    FEATURE     lxd/auth/oidc: Use HMAC to derive keys.
+ead356424b8cbf1ab7881c389546abe86a256ef7    FEATURE     lxd/auth/oidc: Renew cookies if encrypted with old secret.
+b610d8564f66570d2d6662268eedfbaca2bb7dbf    FEATURE     lxd: Update calls to NewVerifier.
+287522d6eb56c0083dd03628750917cf5fadf152    APPLIED     doc: Add 'cryptographic' to wordlist.
+936b0b1338a8e869700ad5ad2106ac324a9e5fcc    FEATURE     test/suites: Assert auth secret expiry cannot be set to less than one day.
+904e237fb2864ee131519e0c76a74a86003f4f1e    FEATURE     api: Add projects_images_backups_storage extension
+be8481072a198171e0f5847519129fd130d99b7b    FEATURE     lxd/node/config: Add `storage.project_*.{backups_images}_volume` options
+b2eabc1fd9bd50594f1b4beb2e58987c7e56c02d    FEATURE     doc: Update metadata
+bd63134fcbca3a8623f9eadafdaa47650ebcbb09    APPLIED     lxd/api_project: Move isProjectInUse into separate function
+c7f0ccaab348357cc18b5c181d35582c11df5750    APPLIED     lxd/config: Move `IsUserConfig()` from shared to config package
+7875f230dd9c44320913167720552fffb5457c71    FEATURE     lxd/config: Add `ParseDaemonStorageConfigKey()` function
+b7fb79ab5a487a4f15b9813e3fca5dce2156583c    FEATURE     lxd/daemon: Add daemon settings for project-specific storage
+bc0ad2acaef8a845abc03a907546e5bbb620614b    FEATURE     lxd/api_1.0_test: Add unit tests for `getProjectNameFromStorageConfig()`
+01dafef478323072c2569fa3d9cbd12c28647c82    FEATURE     lxd/api_project: Don't allow disabling features.images if storage.project.foo.images_volume is set
+3bd1f87251ffcdb63d247c4ef2a6d075bcb9bec2    FEATURE     lxd/storage: Declare volumes used for per-project storage in use
+64dd02299adb03b85a9373abb65a14e7b95d265d    FEATURE     lxd/api_project: Update node config schema on all cluster members on project create/delete
+accbda8887fe3b8e9b852e06187d8b2d4247f482    FEATURE     lxd/api_project: Update node config schema on all cluster members on project rename
+bffbf3b4e1736c0a03667020c351787319a41d10    FEATURE     lxd/daemon: Add project argument to daemon storage path functions
+b8a5a1880ab1f46d99481a02233bb8b7d163fdc2    FEATURE     lxd/daemon/storage: Add project argument to daemon storage volume functions
+e476610f20fd82872cbf47590312df7ee76b7239    FEATURE     lxd/daemon/storage: Utilize project argument in daemon storage functions
+c30c0b7abd74bdc8dafeac13adea9544bf25a934    FEATURE     lxd/daemon: Mount/unmount project storages as needed
+2173648d28301e760772b31ea98e5e531cbcc8f6    FEATURE     lxd/apparmor/archive: Extend the apparmor archive to allow access to project storages
+f1cf39ee19b490e15896265667934b88f8b609d1    FEATURE     lxd/api_internal: Extend image-optimize with Project parameter
+e7d97fbcf2b06c75611e84f01456b318708a47aa    FEATURE     lxd/daemon: Implement per-project images storage in ImageDownload()
+382eaf7dd462400b1f6851c5d9b7a83fb2ebeb57    FEATURE     lxd/images: Update the detection if other projects are using this image file
+234aa5a5bb952cef11d21158d76989e1df3175f6    FEATURE     lxd/images: Make imagesPost() and distributeImage() per-project storage aware
+beeab13522b70a9afb5c4464cedb41f30ee39e9c    FEATURE     lxd/images: Make pruneLeftoverImages() per-project storage aware
+bf3b39ce495e446a89595538802ddd104892b805    FEATURE     lxd/images: Make pruneExpiredImages() and imageDelete() per-project storage aware
+152fdff85b1989aa45d6327b803544b7b1b3f3e6    FEATURE     lxd/image: Make imageExport() and imageExportPost() per-project storage aware
+bda0172b8209ca73154e1be084d2e64530e72653    FEATURE     lxd/storage: Put temporary image files on project specific images storage
+4b608087ecf1d3613e565525f372231031a2a026    FEATURE     lxd/daemon: Implement per-project backups storage
+c00a7349690632bbdc08b11e562a3b31f813a4d6    FEATURE     lxd/daemon: Store temporary files on per-project storage in BackupVolume()
+5dae3647acbd33868b462d1292411adcd50aba5f    FEATURE     tests: Add tests for per-project images and backups storage
+0f34f2eb577e61227709b713177c0c51234458da    FEATURE     test/suites/clustering: Add tests for per-project daemon storage
+d0232018fbb1bdfc52b826dd55c9b399a296fdf1    APPLIED     lxd: validate a cluster group edit does not ignore a member removal. fixes #16074
+19d34b7ad20fe2b4fef4d6b336a4c2a233e413f1    FEATURE     lxd: Rename (Daemon).getSecrets.
+d466ec111416948b54243d4b1f2b04cfde313c4f    FEATURE     lxd/state: Rename s/Secrets/CoreAuthSecrets/g.
+3d1a9faf1dcb084cfd2062fd5f58f8c61a235a82    FEATURE     lxd: Rename s/Secrets/CoreAuthSecrets/g.
+372e678700a8ff92f063af738c14f6f8b7f8bc4c    APPLIED     tests: Check directory still exists in container post disk device removal
+82da7c1af24ffb4616223a978b4943010a3fc29e    APPLIED     tests: Check removal of mount point devices created in `/dev`
+990feb3e6ec144f1fbca88b6172c7f2f51f70ca5    APPLIED     lxd/instance/drivers: Only warn when mount point removal fails
+40e236ced3b8d0d21a85b6448442b931361032e8    APPLIED     lxd/network/acl/driver_common: Rename argument
+600333ff4fc150409a7e1fc22209965477984002    FEATURE     lxd/config/map: Use `strings.Cut()` rather than `strings.Split()` in `ParseDaemonStorageConfigKey()`
+beef7cd15d284995033f9c24fd69e223f1e4deb0    FEATURE     lxd: Replace strings with DaemonStorageType const
+0929465e624c66a9410a278bbd739a5cd18d998a    FEATURE     lxd/config/map_test: Replace strings with DaemonStorageType const
+fdfd3d23d31bba99df032aeb6ec94dbc8c4836be    FEATURE     lxd/storage: Replace `strings.HasPrefix()` with `ParseDaemonStorageConfigKey()` for string parsing
+0a67cba76da5a3c947fa1fa60348670e67aa3aa4    FEATURE     lxd/node/config: Use `DaemonStorageType` instead of string in `daemonStorageVolume()`
+db80c2db12e3f2477d8b6c4e412b1b323facb34e    FEATURE     lxd/api_1.0: Use `ParseDaemonStorageConfigKey()` instead of `strings.HasPrefix()`
+eb40dab1cdf26de8bb148ad4f72f2fe4879bc0e3    FEATURE     lxd/apparmor/archive: Replace `map[string]bool` with `map[string]struct{}`
+40ad6e9f7a93d7fe979c054162f9aae0dce7f3a3    FEATURE     lxd: Change storageType type from `string` to `DaemonStorageType`
+2f96812bbc5109464b276056d4564f3182dbeb7f    FEATURE     lxd/api_1.0: Simplify `projectStorageVolumeChange()` calls
+dd94258c1183e9749ea5abeaf5928a00890b15be    FEATURE     lxd/daemon: Replace string with DaemonStorageType
+17f0ec2a54576151b6bab4ba578153d88d3b6e06    FEATURE     lxd/cluster/config: Add `volatile.uuid` config key.
+a6536efd439e14616af4a4bc6e8ca1f2ba598b7b    FEATURE     doc: Update metadata
+70088682650d09787e50c435c9642034f50d9cf4    FEATURE     lxd/cluster/config: Update tests to expect the volatile key.
+175eef5307b6467b5cb63085b041eb035da657b5    FEATURE     lxd/db/cluster: Add serverUUID argument to EnsureSchema.
+34d1be51aaedc2deae42ddb644922700b7fe8da7    FEATURE     lxd/db/cluster: Update tests will serverUUID argument.
+46ac630fbf89ee070f9f17260c24b5e7fc5faf78    FEATURE     lxd/db/cluster: Pass serverUUID to EnsureSchema.
+15b9710f3c581f6870879c2321678b9dc8036dec    FEATURE     lxd/cluster: Pass serverUUID to EnsureSchema.
+13ac562123488ce8264201713fffbd0426b14d9e    FEATURE     lxd/cluster: Add serverUUID argument to OpenCluster.
+80c14fad55f51dba3c327b038bb9c1bd7c60d98a    FEATURE     lxd/db: Pass serverUUID argument to OpenCluster.
+2ae1064690d1c71fcef3981276db42d18dda8c52    FEATURE     lxd/cluster: Pass serverUUID argument to OpenCluster.
+cf49ab0735677ebc5f1c3af746809238ceae6ef0    FEATURE     lxd: Pass serverUUID argument to OpenCluster.
+b349d6b6ef460e964600a29363c5607728fd581c    FEATURE     lxd: Factor server UUID initialisation into separate function.
+d537a38930fba7daea8381140ed7f3e7eb024786    FEATURE     lxd: Move server UUID initialisation to the beginning of Daemon.init.
+86138ea1ca95d641ddb400409e31c27da00963a1    FEATURE     lxd: Update server UUID generation to use v7 UUIDs.
+c014323d232ec6eb3ad7adfcce52a41da0299438    FEATURE     lxd: Validate that the cluster UUID is never changed.
+ed8beeec6e53ac0f8f54c11eb1edb70c367a2bb7    FEATURE     lxd: Add a patch to add the volatile.uuid if not present.
+b12ac3abcc7d83900e6f7dd4155ce7a69af9a519    APPLIED     lxc/completion: Ignore volatile keys when completing server config.
+e8fb27cdb6bbdd9dbce0514186bccf9841c282d9    FEATURE     test/suites: Update init_dump test to include cluster UUID.
+86ed2f8b58426064212152aa85cca4d2a3dd469c    FEATURE     test/suites: Verify that the cluster UUID cannot be changed.
+a6b9c03eacb23a3cf7bbbf52253d7062f4d5b292    FEATURE     lxd/db/cluster: Add missing id column to GetCoreAuthSecrets.
+75926bedb2112d84b1bb5cabd2aca0740c8c6b05    FEATURE     lxd/db/cluster: Set the ID of the newly created auth secret when rotating.
+060ed859496edcf35b5d348c32f5063e7e37c2fe    FEATURE     lxd/db/cluster: Add unit tests for secret rotation.
+35b5292a88b7863f4140ec70227fc624ffe1faa0    APPLIED     lxd/identity: Introduce type-safe interface for identity types
+95bb13b779da2614b943de1776bdbdbb2f22c816    APPLIED     lxd/identity: Add oidc client identity type and its implementations
+ea70b4765c8bc4c3f541ecaf390490e7c32cc666    APPLIED     lxd/identity: Add certificate client identity types and their implementations
+2374b2fdcee21a78af319ca82e4ded1001abc617    APPLIED     lxd/identity: Add certificate metrics identity types and their implementations
+be7bee8bea3665e05afb45c02fc2306e70e39f04    APPLIED     lxd/identity: Add certificate server identity type and its implementations
+0e15c1efd610fb09d29bad359063a5205a014706    APPLIED     lxd: Replace use of `IsFineGrainedIdentity()` with `(Type).IsFineGrained()`
+a8f422f718fad968824e9e25734cb771c8b32b04    APPLIED     lxd/identity: Update `GetByType()` to use `(Type).AuthenticationMethod()`
+35deb56d842ef76e8eaf18df745d887929db150d    APPLIED     lxd/db/cluster: Replace use of `IsRestrictedIdentityType()` with `(Type).IsAdmin()`
+2ce6ced0c127dd2083d3c21ec6e852827731e3e0    APPLIED     lxd/auth/drivers: Replace use of `IsFineGrainedIdentityType()` with `(Type).IsFineGrained()`
+1311c889785a17c5141b28727ee54dadbfd4b1cf    APPLIED     lxd/auth: Replace use of `IsRestrictedIdentityType()` with `(Type).IsAdmin()`
+662edf201c9402445649f890a1ba1f886e024f00    APPLIED     lxd/identity: Remove unused util functions
+9202421486536387e41ec130b9b6b9ae3f015a69    APPLIED     lxd: Check cacheable identities using `(Type).IsCacheable()`
+06f49752f7eb6279564638f10c872a606a4b2c9b    FEATURE     shared/api: Add `IdentityTypeClusterLink` and `IdentityTypeClusterLinkPending` API types
+39637f1bedf79f8eb7c24730d4888c3dcbe6689f    FEATURE     lxd/db/cluster: Add pending and fine-grained TLS cluster link identity types
+e5228ebc9f8d042fb4e2c1a2f9a81fc72385786c    FEATURE     lxd/identity: Add cluster link identity types and their implementations
+b255459dee8101cebba2180fbb2d105d157f1082    FEATURE     lxd/db/cluster: Add cluster link pending identity type to activatable identities
+8b5c7c4d711d650397e151402c1b9c3092434a3b    FEATURE     lxd: Auto-remove expired pending cluster link identities
+ecbc15dddf882123ede5c9e60af1ebe15213acd1    FEATURE     lxd/db/cluster: Include cluster link identity types in identity entity type database definition
+d051bf5491b84afbd9bd5a7bd4b21b8e5afb3727    FEATURE     lxd: Add cluster link identity type to list of request candidate identity types
+3699f338fb52f743e2387c9a587369bb78f93a6a    FEATURE     lxd/db/cluster: Add check to ensure pending cluster link identities cannot be used to retrieve certificate metadata
+d64a8f710d2d6f675086e58a669bf9fc2fa0103e    FEATURE     lxd: Add check to ensure pending cluster link identities cannot be used to retrieve certificate metadata
+376a438717782534e8d9da7b4ad61fa07cba0dd7    FEATURE     lxd/db/cluster: Include cluster link pending identities in query for pending TLS identities
+7827dabd1baea3eb9508da733c4963c15ed3cdb7    FEATURE     lxd: Allow updating cluster link identity certificates
+187c68bbe5dda496087bc97b89947548db77c4a6    FEATURE     lxd/db/cluster: Add cluster link identity type as supported identity type to `PendingTLSMetadata` function
+ed74fad95cf6755e9e79c151c56b495e8d249cfd    APPLIED     lxd/instance/utils_test: new unit tests
+59077f72d684dd78610bd60a71e90775d6543047    APPLIED     lxd/instance/utils: use `strings.Cut()` in `lxcParseRawLXC()`
+65a278c84003ad1d9690c6eb0dfb473278da8937    APPLIED     lxd/instance: Allow setting lxc.net config keys through raw.lxc
+8c5ab1d49134678bac59e7f4ae328abbd78769ca    APPLIED     lxd/instance/utils: update unit tests
+81c1ddb7c4f1f4bb05e86fe6d22847ba75a5508a    APPLIED     lxd/instance/utils_test: add tests for `DeviceNextInterfaceHWAddr()`
+0ae39b7c40c792b755374a07271658302a3cf69f    APPLIED     lxd/instance/utils: micro-optimize `DeviceNextInterfaceHWAddr()`
+de9b51b811b1022322db5993793840b07e4e7564    APPLIED     lxd/instance/utils_test: test with `LXD_UNPRIVILEGED_ONLY=1`
+f2e75f19b16aeccb2f75c72ae869225d37b2c3a7    APPLIED     github: deactivate `lxd-installer` in `actions/install-lxd-runtimedeps`
+b22b4f9ebe7f5e3bd0f38fb6439f8b50a611fe75    FEATURE     lxd/sys: Add ServerUUID to sys.OS.
+6f561fd91bc3a4773d1eb08d9d3e5fbb31d9cd26    FEATURE     lxd/state: Remove ServerUUID from State.
+36658ff58eec43faa7a724166172b8ad452538c6    FEATURE     lxd/state: Remove ServerUUID from Daemon.
+72673f56b2d6da6b735395df62100c2810daf58b    FEATURE     lxd/storage/drivers: Update state.ServerUUID to state.OS.ServerUUID.
+a65e6e94d15ed48694e95f2d39fccf381eb14dd2    FEATURE     lxd/cluster: Update state.ServerUUID to state.OS.ServerUUID.
+d60d56d62749479d836311d24872c6d8b59c5900    APPLIED     github: Remove lxd-installer package.
+cfc2c6c977ed9b053f20fe33df2f5328519d6460    APPLIED     github/workflows: Set GOTOOLCHAIN=local for TICS deps
+545d18c6477543863e7e55c9803c878f8fc8d4ff    IRRELEVANT  gomod: Update dependencies
+d44ea9ccbaefe25287bfa0de4bcf3455dd307656    APPLIED     lxd/db/network_load_balancers: Skip internal OVN IPs when reporting listen addresses by uplink
+52cc5412dd58c518d2bd0b56891eb719f4fcc739    APPLIED     lxd/db/network_forwards: Skip internal OVN IPs when reporting listen addresses by uplink
+92d7e9dc7b7d7e074c3d618c6eb4ee6f1e443bc3    APPLIED     lxd/network/driver/ovn: Allow internal OVN IPs for forwards and load balancers
+2d3e2241bee23af9332af85b2cee6adc1e224f67    APPLIED     test: Validate internal OVN load balancers and forwards
+8e42088feea35bbb761c7a327997914d27edc493    APPLIED     github: Fix lxd-ui workflow to use lxc binary from build
+ccb58021468ced0eb5e830103beec1d8aef291dc    APPLIED     Revert "github: Remove lxd-installer package."
+9ccb477bb9659c6d449235c563fb0d008bbffa48    APPLIED     github: stop purging LXD snap for TiCS runs
+00811fe8a22aecc2e747af30e002f48cf5e9d286    APPLIED     tests: Add basic disk mount VM checks
+ff3555258f6700ca77a43b4d2de89962d75b0932    APPLIED     shared/validate: add a few unit tests
+45593be3fd64f94c06b3a18e1d61d15ca25b2328    IRRELEVANT  build(deps): bump golang.org/x/term from 0.33.0 to 0.34.0
+cfe0a61abe2759d5bdd46962a6c0d07cb2d80caf    IRRELEVANT  build(deps): bump golang.org/x/crypto from 0.40.0 to 0.41.0
+b05bb9a884f3d55d2dcb2257a55d27f54d6caa46    IRRELEVANT  build(deps): bump golang.org/x/text from 0.27.0 to 0.28.0
+66f295451effbbae0e8cf2694c71e447fd517600    APPLIED     lxd/storage: Improve error messages in `storage volume import`
+3ea8b25e36b0b49e4dd1cf99f228f2a6c3227fbd    APPLIED     lxd/storage: Validate volume name in `CreateCustomVolumeFromISO()`
+e74a99ec83f42f0da9cf797c8616fe9ac880f213    APPLIED     client/util_test: add few quick tests
+bc9b2f408f5dda9a7b15dd95ee19ac44baadb53f    FEATURE     lxd/storage/drivers/powerflex: Replace powerflex.clone_copy with powerflex.snapshot_copy
+422d11bf2c07759ef210e364aef9f59f996a75ae    FEATURE     lxd/storage/drivers/powerflex: Make use of the new 'snapshot_copy' config key
+2f4f1ed397b6add49d814925c98fe5396cc81c0a    FEATURE     lxd/storage/drivers/powerflex: Remove obsolete comment
+7711674ae23cc27d5b24b54e84b12736b56d17b3    FEATURE     lxd/patches: Add new patchUpdatePowerFlexCloneCopySetting
+f467fc9a4ba72f77bee8041f5f91586691f94435    FEATURE     doc: Update metadata
+e5d9da2b1fc94318f96f5efe6f1ebef381f05957    FEATURE     doc: Replace powerflex.clone_copy with powerflex.snapshot_copy
+c8e29e21088b48c088008b969afc90045def0f24    IRRELEVANT  build(deps): bump golang.org/x/tools from 0.35.0 to 0.36.0
+6e14d4301534527b7875f610b43b1a91f58e5320    APPLIED     lxd/idmap/idmapset_linux: better align func names to Go style
+a01387c05a78112c5996ca8bb3bc0b6430e6ae94    APPLIED     lxd/idmap/idmapset_linux: add func comments
+6415b5bc33e32aaa78aef4244e97b0edbee00166    APPLIED     lxd/idmap/idmapset_linux: add comments to global consts and vars
+852bb021dcc4e82434eded9b15cd7760fc530716    APPLIED     lxd/idmap/idmapset_linux: ignore some `revive` suggestions
+5d53c2a394cbb5501c7fc936c254a5f7d9617d73    APPLIED     lxd/idmap/idmapset_linux: avoid C-style comments
+d99347ebed5e39e2e118fd8c7084c39e304376c6    APPLIED     lxd/idmap/idmapset_linux: name return vars
+3bd0907167fa5cf31f84ddb6a1190cd9b71f642b    APPLIED     lxd/idmap/idmapset_linux_test: test `ToLxcString()`
+bf3d6150ac004eea0d31f4ad02b47a0fa5d1a636    APPLIED     lxd/idmap/idmapset_linux_test: test `isBetween()`
+1c4ba74ff02196a33c8f8a9461e17712a6073a41    APPLIED     Revert "golangci-lint: exclude `lxd/idmap/idmapset_linux.go` for now"
+8f57b1d4922dea7faef79706e14666c4fdbdb19e    APPLIED     lxd/idmap/idmapset_linux: micro-optimize `ToLxcString()`
+328f6e2c18d34d5fcf514474fd07f597fa3f3447    APPLIED     lxd/idmap/idmapset_linux: `append()` more at once
+8ab623a11dd2cf76113484b0ac1cd19fc2dca67a    APPLIED     lxd/idmap/idmapset_linux: fix comment in `kernelDefaultMap()`
+ca5900084cc32608bac20a77f4cf6b105f916b79    APPLIED     lxd/idmap/idmapset_linux: `/proc/self/{g,u}id_map` don't have comments
+9374c3a980c2b0ea7392bc26a92df0fbd0d2c5b3    APPLIED     lxd/idmap/idmapset_linux_test: add test for `getFromProc()`
+26e5c929b7c7791f674f781cb9ac516f2a764113    APPLIED     lxd/idmap/idmapset_linux_test: add test for `getFromShadow()`
+9f7e850a0b8f5333a02c480ce9a8b8b41e215b13    APPLIED     lxd/idmap/idmapset_linux: don't cast to `int()` before checking for minimal size
+594415254ddb2f8f1f2defffacc68fc043dacb7b    APPLIED     lxd/idmap/parse_linux_test: add tests for `ParseRawIdmap()`
+c1ceeeee6fd418486183561b0fee91720839df0e    APPLIED     lxd/idmap/parse_linux: fix error message
+8315b8deb8d95f0db935cd13333eeab2871abeb8    APPLIED     lxd/idmap/idmapset_linux: extract logic shared by `To{U,G}idMappings()`
+367955e5fe026c8aaf5dd8a97df84dccfd11c52d    APPLIED     lxd/idmap/idmapset_linux: do bound checking in `toMappings()`
+611e1467ef41c702d907407319e0e6134984ce16    APPLIED     lxd/idmap/idmapset_linux_test: extend tests for `getFromProc()`
+2f2172b0137b49736a9b8eb4dbc28e588122e155    APPLIED     doc: Align image file names with content
+8790d7bf667262dc22f93d7dfd1bd9f2a68b9147    APPLIED     shared/units/units_test: add unit tests
+092c8d99e949cbf35f92094aed4355c1f9e3b96e    APPLIED     shared/dnsutil/dnsutil_test: add unit tests
+b46b3fb8fc0703617b6464a12dbaef1fddc18f95    APPLIED     shared/dnsutil/reverse_test: add unit tests
+79ae79626b121ac3cb6f8c4b59dd62680820e60f    APPLIED     shared/osarch/architectures_test: add unit tests
+55c7f8c14cc155e78f194bbe8b2c41e046a282ce    APPLIED     lxd/cluster/gateway: Only call CloseRead when remote connection is TCP type
+b48a09b7aecdc5014babb9830d579bb0e485931f    APPLIED     tests: Don't skip `fanotify` test
+3553c2a2893e76939aececdd63879b8df85a9a58    APPLIED     lxd/fsmonitor/drivers: Handle events when `OpenByHandleAt()` fails
+8a2bebb757bd2b159753dd837a0d5c72771ea52f    APPLIED     lxd/identity: Add `IsPending()` to `Type` interface and its common implementation
+05ccaf188e744d504e90ed591ca02a0f568c7a09    FEATURE     lxd/identity: Implement `IsPending()` for pending identity types
+3afbd1df2ed42caa8d27a7bc33aef70256fe1c35    DIFFERS     lxd/db/cluster: Use `(Type).IsPending()`
+744f34c2acb0775af880af8ab9730ad30b6ab4a8    DIFFERS     lxd: Use `(Type).IsPending()`
+c4b0c0812b955bf2d6fe495af478f74f2cb54073    DIFFERS     lxd/db/cluster: Use `(Type).IsPending()`
+4005535e0049831c6547c474afe622f5361d977d    APPLIED     lxd/identity: Add `types` slice and `Types()`
+1d3b9c89c0e4fc325f5b49bcdcf73303ef10c16f    APPLIED     lxd/identity: Add identity type code consts to `Type` interface
+cc479d8ecf0cfdba592cbbba7071e69fd12dfb87    APPLIED     lxd/identity: Add `Code()` to `Type` interface
+132b21fffea678998808b8fbef537b9ffd18870c    DIFFERS     lxd/identity: Implement `Code()` for identity types
+b1becbe23792391da02d6c40f59201976dcc62dc    APPLIED     lxd/identity: Add `Name()` to `Type` interface
+43c2af797e54f5ca3b386f73d122a465c68020e1    DIFFERS     lxd/identity: Implement `Name()` for identity types
+6719e3fc59624be7b853df2403a5f77a2b5d4999    APPLIED     lxd/identity: Add maps for quick lookups of identity types by name or code
+1106aedf60ffa785ef71692be486e936d037e5d5    APPLIED     lxd/identity: Add `NewFromCode()` function
+6c3a078365c129b39cc8286f12d850c6500b95f6    DIFFERS     lxd/identity: Refactor `New()` to use quick lookup map
+d0165eefc6531e721bf329404226043dce13a9e5    APPLIED     lxd/db/cluster: Include links in godoc comments
+1df0dcceeab2d9dca135ab3447f96a5bf0c2e11c    DIFFERS     lxd/db/cluster: Use identity `Type` interface
+4f226e9fea59aeff9ea6819ab7905e4af8ae9d59    APPLIED     lxd/db/query: Add `IntParams()` util function
+0b8eaa44f0e341c37734ccf2b50be18a14ba14c4    APPLIED     tests: Unit test `IntParams()`
+9538c83c5de9eadccaa3f141c0f40d59c43830e5    APPLIED     tests: Unit test `Params()`
+bed5015163034d9120a062673a946be0fd220235    DIFFERS     lxd/db/cluster: Use `(Type).IsFineGrained()` for query construction
+5bad58dcec3f4ee352b9e78740a512c3dbe0e669    DIFFERS     lxd/db/cluster: Use `(Type).IsPending()` for query construction
+d9f8f741e3f99d3885b97e90c0214e49f24f8e09    APPLIED     lxd/identity: Add `LegacyCertificateType()` to `Type` interface and its common implementation
+75085867e9b31c310f363fa3524c6d7011e61286    APPLIED     lxd/identity: Implement `LegacyCertificateType()` for legacy identity types
+030eae097a84a03be7bc4ec61645fdcb0b470dc4    APPLIED     lxd/db/cluster: Use `(Type).LegacyCertificateType()` for query construction
+6c4ae7129c3d8f23b964d0c56bd882140257a4dc    APPLIED     lxd/db/cluster: Refactor `toCertificateType()` to use identity `Type` interface
+2280c65549871d16416d8ed64ce907ba0523d101    DIFFERS     lxd: Use `Type` interface for checks
+a558b0cb4c7faf10a101d2b0e78bf79fa0e456fe    APPLIED     lxd/identity: Update identity creation steps
+9739400a0027ba57d19bc67304b7e8dda9f45ab6    APPLIED     lxd/db/cluster: Simplify query construction
+60c9b3d29d490d59bae95477f7b5bdcee7b9d53e    APPLIED     tests: Update godeps lxd-agent list
+7ed430913d1694556cc5a05fcc634afe45b8fba2    APPLIED     tests: Pending TLS identity can be added to groups
+bc43382fd7699920084c18db4ca0724fa96b61da    APPLIED     doc: remove UI tutorial and redirect to main tutorial
+7b6dc24129efc2f1d1ae9fdf655fae3e46598b80    APPLIED     doc: update main tutorial for both CLI and UI
+709330c5da6c80f5089a6d65a5fc0b8be1d87657    APPLIED     doc: Add DevLXD API specification.
+8b5ad650722bff0dc92109cd2658dd7680a3905b    APPLIED     doc: Update DevLXD documentation.
+310a7f8ed6900cd63a08f063d0411213c6972bba    APPLIED     shared/api: State should be inlined if rendering as YAML.
+d67e0bfa8449634f423e36a3a10e2c67c6db2841    APPLIED     shared/api: Use `json.RawMessage` for response content.
+544f40ea7c5f6d1d1f1f695bac20b885455db758    APPLIED     doc: Add "Vsock", "DevLXD", and "VM's" to wordlist.
+14828171a8613c4b98d4fd035c5e4385b0c21c1f    IRRELEVANT  github: add Copilot instructions
+c60499f5d56a5283b989adfa6a82ecd2f3e92fd5    IRRELEVANT  github: Tweak Copilot instructions
+146242cb84ccb347630a40d2eb51df8e487335f7    DIFFERS     api: Add ovn_internal_load_balancer extension
+0c911f55d8e3882def3e773808c8a49521e57d9f    APPLIED     doc/howto/network_load_balancers: Describe the ability to use internal IPs as listen address
+47106415dd0873c65d2ddc2f9b698e7f1fe0b6f1    APPLIED     doc/howto/network_forwards: Describe the ability to use internal IPs as listen address for OVN networks
+3bfebef88316760f0d9415088b4add8e7f3828dc    APPLIED     lxd/network/driver/ovn: Refactor in checkInternalAddressNotInUse function
+2cdef82c061f9c897b1b851ce2da3ab26372aea7    APPLIED     lxd/db/network_load_balancers: Update func comment for GetProjectNetworkLoadBalancerListenAddressesByUplink
+20ba0ce1c98cf1b118f6eed771e50d9e16dc6529    APPLIED     lxd/db/network_forwards: Update func comment for GetProjectNetworkForwardListenAddressesByUplink
+a7ec697b523e2ca8873e5b59262a70623654344a    APPLIED     lxd/storage/drivers: don't hardcode driver name
+f11e2baefbfd8f9d8a7ce6f26372e7237b545f57    APPLIED     lxd/storage/drivers/powerflex: use (v *Volume) GetParent() helper
+107a539f234f75b56719e0b9d882103bdfba4b53    APPLIED     github: remove the CLA check now there is a Org level one
+8f79b0c8ac963f9115f9f5378a18e935f1fcd67e    APPLIED     doc: Fix broken symlink.
+cba2e1fbdef6e57fca4b903ea4ad15ea16372659    IRRELEVANT  github: bump github/codeql-action from 3.29.8 to 3.29.10
+0d0ad1d72e7977e204c50a22e4b58e61f6b81ee3    APPLIED     doc: Remove trailing spaces from devlxd API spec.
+1b152bdaf825be406b1f1037733201d90afbc5cb    IRRELEVANT  build(deps): bump github.com/mattn/go-sqlite3 from 1.14.30 to 1.14.32
+a5828e408d23307b2f9e52ee4d55cafaeeafc733    IRRELEVANT  build(deps): bump github.com/openfga/openfga from 1.9.2 to 1.9.5
+8ac666ba57d4378d625e4180216778309bae0d60    APPLIED     doc/.readthedocs.yaml: use Go 1.24
+d739d02944fc85072d8f16aeaa0908362b7d48db    APPLIED     doc/.readthedocs.yaml: do not unshallow the git repo
+d0d1ee061022cb854e446f29e00148ba57ae9be3    IRRELEVANT  build(deps): bump actions/checkout from 4.2.2 to 5.0.0
+02fc54f225b8e8b9eb9196f2ce53a1f58e7be373    APPLIED     test/includes/setup: add `install_tools()` helper
+dea851ba4861d848f34d51ccc27013551ce1a7c7    APPLIED     lxd/cluster/config: clarify that `core.https_trusted_proxy` is for the PROXY protocol
+78d58834ed88a3918984ae7cc6aed2c58d1d7618    APPLIED     doc: Update metadata
+2a799691f96d83620fae2e847400cbe07e8d9d62    APPLIED     doc/authentication: use HTTPS to link to HAProxy's site
+d7ce67894e0782faf58064f92ee790c7b3c5eb63    APPLIED     doc/authentication: clarify why ACME issued certs with LXD requires an external component
+b5ce77e14ab8627b8aa6f1f46c6ae82593899aa3    APPLIED     doc/authentication: replace the old inline HAProxy config
+2416231bb2d7d3ac2ebd1562096790d6d603390f    APPLIED     test/includes/haproxy: few HAProxy helpers
+678d1de13769804b02f35a5dba218f37e6251b5d    APPLIED     test/suites/clustering: add clustering_ha test
+6e89e67a78b44f0ef62102ce47d7567b5f2d2f27    APPLIED     test/suites/clustering: workaround microceph's rados GW binding port 80
+c3c4cfcc3827244bf328b2ca13b17ce9893c6099    APPLIED     test/suites/clustering: fix copied-n-pasted typos
+e9f22337bd027212b15c38ca6636a0e9c26e4971    APPLIED     test/suites/clustering_move: fix copied-n-pasted typos
+8b78e75edb0d0a1077a68c7122f88946672de1e9    APPLIED     test/main: call clustering_ha test in cluster group
+d60987a2fad12fc1b2f176caa5eb5ebcb3e14257    APPLIED     github: allow debugging failed system tests via `mxschmitt/action-tmate`
+74b3427531ec032b0595ca271a1608aa31315168    DIFFERS     lxd/storage: make (d *powerflex) discover() method to be a generic helper
+d6523a08e96b13b73c9f7686f8ba0192fef9dd45    APPLIED     lxd/db/query: Add function to determine conflict errors.
+3bc1e2817d8b44d0f421eb866da210db9ad32714    DIFFERS     lxd/db: Remove sqlite3.ErrConstraintUnique from SmartErrors.
+c52ef4b44782177f79d001b2abbe65e23cbf52a5    APPLIED     lxd-generate: Always use ExecContext
+95b8b79adfbec7f3d38777ac3fd0d3a5436c46ea    APPLIED     lxd-generate: Don't check existence of entity before creation.
+b46c4418c89d100876891ede45d8166d54e62017    APPLIED     lxd-generate: Check for conflicts in generated code.
+0b08628430869d6b8d1738b876f603c569a4e7c1    APPLIED     lxd/db/cluster: Remove generation of unused methods.
+aa526b6a9cdfba18773e79fbeb1cd8d2b8b2e219    APPLIED     lxd/db/cluster: Runs `make update-schema`.
+37b1fa9aeee571197a3b05902afc761971546c3f    APPLIED     lxd/instance: Return 409 if instance or snapshot already exists.
+7c32216006b57aa1c8d84078a1f13d0deabcd874    DIFFERS     lxd/storage: Check snapshot does not already exist before rename.
+29e1ff7b7495aa361737caef50b7f5317d07a011    APPLIED     lxd: Check for conflicts when creating cluster groups.
+0ad56d583eab6f16d3f9bdc8dcfdd1b05cf82211    APPLIED     lxd: Check for conflicts when creating projects.
+e79fcc57afbc6f1d1466ff719a6d056267bc150e    APPLIED     lxd: Check for conflicts when creating authorization groups.
+3173b17e1e28736e0bae65db5dc4fa802220291a    APPLIED     lxd: Check for conflicts when creating identity provider groups.
+027b593337de87e080c2403ac67819bfee4130ba    APPLIED     lxd: Fix format string of instance snapshot error.
+044f471e4aaf4c236ecc0090b2e322313f0138d5    APPLIED     test/suites: Test error messages for duplicated resources.
+fc50c22a6a92e8efce314478c1804c6aa61ca08d    APPLIED     test: Run duplicate detection tests.
+3d91ef75f1fcc9acd55c67071fc28951c68ecf96    APPLIED     lxd/storage/backend: Parse instance backup config early during discovery
+ef347b1940feed6de6b885b21c33cf52479dfdec    APPLIED     lxd/storage/backend: Move instance validation right after parsing the backup config
+e3d90be6199471340641d54358840dce0f93bf4d    APPLIED     lxd/storage/backend: Remove obsolete check for instance name
+36ddd33354112279fd73a5eee18b380dfb0022ad    APPLIED     lxd/storage/backend: Move vol type lookup down
+7d9819aba3b45e628e1402c551a30dba2ff1037e    APPLIED     lxd/storage/backend: Append instance vol only after validation
+b1cd4116ee9577f2718161ef5852e29e77e9612e    APPLIED     lxd/storage/backend: Clarify mount approach in detectUnknownInstanceVolume
+90742ee268474f6d913240a84dd42e45fa645e93    APPLIED     lxd/project: Fix effective project handling. In used by lists instances and other entities always come with their own project and never relies on the effective project. fixes #16216
+288aef0b0b9bf81c1ff4b25d25b0a3394c831b41    APPLIED     test/suites: Validate network used-by lists
+91bf1ebe0c2b030f1cb09fef7fad1625d4e940f0    APPLIED     lxd: Remove check for nil response writer.
+3315aed10008c51492e44cdb63f037e162a917a9    APPLIED     lxd: Further restrict PKI protocol.
+78316001e2441c5cb2b4c936dd25a763a13ecc8e    APPLIED     lxd: Reorder checks when excluding event locations.
+c09b189b90642c25eaf0415726b28379f9b19efa    APPLIED     Revert "lxd/request: Add effective project name to request info"
+82ecfa9fa421607c71d56dfdd690fb48f477500e    APPLIED     Revert "lxd/request: Remove unused effective project name context key constant"
+f5984d4265ce399730d3fb94fedf9b489a3bc461    APPLIED     Revert "lxd: Use effective project name from request info"
+4d0c0f88236e82993f88e4ac672a9e90ca19bea2    APPLIED     lxd/request: Add constants for request protocol
+21d171cdf4a615880f47aa182aa21725c4a9847c    APPLIED     lxd/auth: Remove authentication method constants.
+1f0ca2e447cec7fbb662b934dab2a7272062eec1    APPLIED     lxd/auth: Update references to authentication method constants.
+c256b472c22e620b5c8554618fc88924d45f071a    APPLIED     lxd: Update authentication method constants.
+b9c7469a4d71010a0dfc7525f3eb4a6369ab4405    APPLIED     lxd-benchmark: remove unused function
+ce52050e0149f3db189020e4832b636b404ab0fa    APPLIED     test/suites/lxd-benchmark: test if the provided image exist
+75edf39306e7b77d54a9cdf700506f7359c65f1a    APPLIED     test/suites/lxd-benchmark: test frozen and privileged containers
+127d46e2c800c89c2e003072aee9b04f63b97cdb    FEATURE     Revert "lxd: Add cluster link identity type to list of request candidate identity types"
+cd11dea1ee694c7d4cf9cf4374bf35a000a6cc04    FEATURE     Revert "lxd: Auto-remove expired pending cluster link identities"
+41c7eaa86581353771f66d6c8dfdee4d56730f05    FEATURE     Revert "lxd/db/cluster: Add cluster link pending identity type to activatable identities"
+17213f764824c3b7fe9ebd9a62e7f15ad9060a1d    FEATURE     Revert "lxd/identity: Add cluster link identity types and their implementations"
+82cced193fb0b757b828169d640d956ad0292a79    APPLIED     lxd/db/cluster: Update godoc comment
+1bdea8e38312593264709e34ffdeb79aa9bf9af5    FEATURE     Revert "shared/api: Add `IdentityTypeClusterLink` and `IdentityTypeClusterLinkPending` API types"
+fe7b5e25b317b0ff1eec8cd33d942c9540d0f301    APPLIED     lxd/request: Add requestor file and move Info to it.
+6583fc4f280c9bbed8fe61893dadeaaa27a5f178    APPLIED     lxd: Remove forwarding details from Info, rename to RequestorArgs.
+442cfc86f4e2edd646eb276f1f667a7d252a0e41    APPLIED     lxd/request: Add Requestor struct.
+ff5e44141e52194ae7336dae3bf21bc9f2269655    APPLIED     lxd/request: Add errors file with two sentinel errors.
+440bb28db74071acb2ede7074e26bc7b6ddc17e5    APPLIED     lxd/request: Add methods to the requestor.
+9e3d3f31b9afa5e545ce78a646414d8c687fb532    APPLIED     lxd/request: Add function to validate and set forwarding information.
+9b0ea4a4eda3c4e88440a9cdb571392ffc0b7bae    APPLIED     lxd/request: Rename CtxRequestInfo to ctxRequestor
+d55f43cc3eb8e616a3b881b2d4a6c4d68cab94e6    APPLIED     lxd/request: Add SetRequestor function.
+d2f37915836816dc75977bc3a7a5043ce181971b    APPLIED     lxd/request: Add GetRequestor function.
+1c67483d3b09366fe5927c3bffd4fecce31efb5d    APPLIED     lxd/request: Remove IsRequestContext.
+725ec8d939d263503c6e94438f2d6a5960bddaf6    APPLIED     lxd/request: Update CreateRequestor to use the internal Requestor.
+f27abf0eb8ffb77f86f1e747258293d35e9e66ff    APPLIED     lxd: Update Daemon.Authenticate to return request.RequestorArgs.
+98466ce6336f818d80c16dda79613fc3fb8086c2    APPLIED     lxd: Update createCmd for updated Authenticate method.
+2967f57baee22048d42d7857644c8e2dbed630ad    APPLIED     lxd/auth: Remove auth utils.
+b7378accfe7fb75dec0a0495fb81e6b871e39302    APPLIED     lxd/auth/drivers: Update drivers to use request.Requestor.
+b867f2008f12cd39f13c725f1f34225fa5f930b8    APPLIED     lxd/cluster: Update cluster.Connect to use Requestor.ForwardProxy.
+508b767d4f54a89d84e0758c8f45b888eac7210f    APPLIED     lxd/operations: Update operations to use request.Requestor.
+39f6f8b46cadc424db5db0cc4430a72a2cbc848f    APPLIED     lxd: Update API handlers to use request.Requestor.
+4e22f7bf9ab4c0804c991c2b74c434fe8fb5b79c    APPLIED     lxd: Update devlxd handler to call request.SetRequestor.
+c0ca2092d5ecbb29e505e48aaca162be7e6b2a8b    APPLIED     lxd/auth/drivers: Update unit tests.
+9a100c134a655b3e8fb5a0a4c738db21f57ad424    APPLIED     lxd/project/limits: Update unit tests.
+1d92106e1968b12fe8d29ebbb8e2c4e142c026d0    APPLIED     lxd/request: Unexport header constants.
+4800ad4a944599af7caa2bd6b837c94bf4561747    APPLIED     doc/reference/storage_pure: Add more snapshot volume name examples
+c8ce1ee3cdb2d658d847d927db1cabbd0cf09203    APPLIED     doc/reference/storage_pure: Add custom volume of type block name example
+34c58445d7c03fad0027a24d9c610bba27b52869    APPLIED     doc/reference/storage_powerflex: Add VM and custom volume name examples
+8ebe5b4960814ddff30b45d99bae864c2e750052    APPLIED     lxd/daemon: fix typo when checking identity type
+2b9aa689d407dd0889087f595f3bec270b306e68    DIFFERS     *.go: replace unmaintained `gopkg.in/yaml.v2` by `go.yaml.in/yaml/v2`
+a58531740acae4381e88d8092905018e7711b1c4    IRRELEVANT  gomod: Update dependencies
+90a0530536ac471225b3de063e8cde78650e4f1f    APPLIED     lxd/main_init_preseed: unexport `runPreseed()`
+232fe87e5aef87260ea0be61dc6a96186cb1f6e6    APPLIED     test/godeps: update lists
+028f5a6906c1cee36c85407f42a539ddd0746e89    APPLIED     lxc/auth: Add a method to resolve shortform identity type names.
+27028956e3a6ffade564dc4a3184e001affccb29    APPLIED     lxc/auth: Add cmdIdentity to its subcommands.
+dd0566bad49ecf94420af3e195d10c90440ad5fc    APPLIED     lxc/auth: Refactor identity create to separate creation by type.
+8140c332a2b01d3f0bdba4c5ab55d64d31d648ef    APPLIED     lxc/auth: Refactor identity subcommands to use `resolveIdentityArg` method.
+0aff7b5b70f5650f9a79f17fa8c70a3d4d44e365    APPLIED     lxc/auth: Change usage to "type" instead of "authentication_method".
+951b6a48b72eab41c2d13ef59bd50561d0808437    APPLIED     lxc/auth: Fix description of IDP group mapping removal.
+203f4776ddd275ff979bbe7c8115b4200520e81c    IRRELEVANT  i18n: Update translation templates.
+bd05129763638918cf0b0a8cc056cca516321e1c    IRRELEVANT  i18n: Update translations.
+14e162a6447b4203f8600872a4e2beb6df8dc676    APPLIED     lxd/storage/drivers/powerflex: Add snapshot volume prefix
+e6df44e3c96b93cb388eb060157a0d187132fe91    APPLIED     lxd/storage/drivers/powerflex: Add snapshot prefix to volume name
+6c3dcf0086e60e87d061638b2c658c85eff0d8d9    APPLIED     lxd/storage/drivers/powerflex: Exclude non related volume snapshots
+15af61ae931d6f19674211e80dcd5f451e738444    APPLIED     lxd/storage/drivers/powerflex: Add new client function for volume rename
+52716c9e2679c299d1c29bacabc2913cb7f62251    APPLIED     lxd/storage/drivers: Add driver level patches
+fa2856f8e301c53b680281912f034ba23ab009ca    DIFFERS     lxd/patches: Add patchUpdatePowerFlexSnapshotPrefix
+9d41176d8de5eb879c7dcdae5f8b1b789400c604    APPLIED     doc/reference/storage_powerflex: Add new row for snapshot prefix examples
+5b1e8f51dce72932208fb28c44bc6fd50ce4b43f    APPLIED     lxd: Improve error handling when reporting entitlements.
+cc381af1213dcd7d9d313d1833475e9b4cd8d27d    APPLIED     lxd: Remove unused identity.Cache argument from reportEntitlements.
+8250123afab6a9ff1251fe8c20e4c306df72e7bd    APPLIED     lxd/request: Rename CallerAddress to OriginAddress.
+32795e65ec0c54414064c39b746587715eed6390    APPLIED     lxd/request: Rename ForwardingMemberFingerprint.
+5a520fdbf21a38d71187fca4d33497d84d794ff9    APPLIED     lxd: Update call to ForwardingMemberFingerprint.
+4edb32df9989b8c963974550c61841bdfffcc001    APPLIED     lxd/request: Add comment explaining when protocol can be empty.
+fae2f269ea72f0257988a4136285cc0829685d0c    APPLIED     lxd/request: Update trusted DevLXD error to say it's unexpected.
+13e39441c5b84b2d923f23dec6c429793bb6f7a9    APPLIED     lxd/auth/drivers: Wrap requestor not found errors.
+180fee811f96068bfd484175ce5c8d4b4af786e7    APPLIED     test/suites: Test that only tls identities can be created.
+23f451540cb3c64db831f5e4df646302ac59bd24    APPLIED     lxd/db/cluster: Add common entityTypeDBInfo.
+8f40fbbe82508899a635ac3202b0ccc502887036    APPLIED     lxd/db/cluster: Embed common entity type in all existing types.
+ad17b75b17f0ee99b4c409af33c48be0be29afd2    APPLIED     lxd/db/cluster: Add insert and update triggers.
+3b0e8645555530ebc47c56277e7727d058489141    APPLIED     lxd/db/cluster: Apply update and insert triggers.
+7be7bb610942889dd508242749190b70c4bd573b    APPLIED     lxd/db/cluster: Enforce uniqueness on identity names within auth methods using triggers.
+1cf3275f7c3aafbba8b1585d3da63eafbda1a464    APPLIED     lxd: Gracefully handle conflicts on identity creation.
+14278127fe99d3b36c6e8ee7e789fd5d2b163332    FEATURE     lxd/db/cluster: Add index on identity auth method and name.
+75857fe06b99fd00450f6d3a807a63f2bfa7b4c7    FEATURE     lxd/db/cluster: Runs `make update-schema`.
+654f8e74ab86bca4ffed6e0d1a5f6e2ecac6a57f    APPLIED     test/suites: Update PKI tests to not use the same name for each client.
+9346d7fac00c4cff9c4370e60c332b88f5bc232e    APPLIED     test/suites: Test duplication detection for identities.
+e707e7454a325e54e42e5770d633c60ce6ecb135    APPLIED     doc/authentication: use a more generous rate limit
+017501654289df8f055aa4fa59c513beb83eabcf    APPLIED     test/includes/haproxy: allow tweaking the conn rate
+540378d205bf977077f96236b4197bd4886b2d70    APPLIED     test: make the conn rate of clustering_ha configurable
+a8b2547b9eebc2ad8fd50359ccf3008e3d4fe79a    APPLIED     test: in clustering_ha, stop HAProxy earlier to avoid log noise
+4905c746d32ab64f584af4b13e4e4a32f6370a77    APPLIED     test: speedup clustering_ha test by using a 2-member wide cluster
+4267826204e392736c7e105b4b3b84d154210798    APPLIED     lxd/db/query/retry: Fix errortype linter detected driver.Error errors.As incorrect comparison type
+91e50cf8956344612d44bf9cc61916f83fc84e3f    DIFFERS     lxd/db/storage/buckets: Switch to query.IsConflictErr helper function
+e943a4c11fb0cd74d2f81e8ac880dada631f7ec8    FEATURE     lxd/auth/encryption: Add encryption package.
+853d4461b2970126c7c5a9e19adc4d1b08158ab1    FEATURE     lxd/auth/oidc: Use encryption package to get encryption keys.
+50808a09c7bc370f1cbbc352e7999c0de6d567e5    FEATURE     api: Adds `auth_bearer_devlxd` API extension.
+01125cc2678f4ce2fe91ffda1c4d62a9d4dc7e59    APPLIED     shared/api: Update comment for the OIDC authentication method.
+7c1675994d7499c35b0581513dda3957e4c028ee    FEATURE     shared/api: Add a bearer authentication method constant.
+784bb318f98d00e6ca97064962c9de611dac8474    FEATURE     shared/api: Add a DevLXD token bearer identity type constant.
+725578f6582a85776430230eac8110c3532121ac    FEATURE     shared/api: Add API types for managing bearer identities.
+02b47273eb0501a0fe41b0bfab25a6a501f7f958    FEATURE     lxd/identity: Add the DevLXD token bearer identity type.
+5843c4214bf072fc3e7b8c6787f032e6761de85b    FEATURE     lxd/identity: Add the bearer authentication method to ValidateAuthenticationMethod..
+be43694f16f47dba2e2014a2614934f2f02de6b3    FEATURE     lxd/identity: Allow bearer identities to be added to the cache and save the secret.
+fc993c4bd2c4c2e3bf9c7b2ecee417d3e551b0ad    FEATURE     lxd/auth/encryption: Add function to get a token signing key.
+3de934db8c5528c520a4f3e81df3b6424bc7b421    FEATURE     lxd/db/cluster: Add bearer authentication method type code.
+e400ca8b1e2c5a074ed9331b58a33ca0fe7e3a33    FEATURE     lxd/db/cluster: Update identity deletion trigger to delete secrets associated with identity.
+6f133a7f6bc7084b94546da4359ddd401c2adf52    FEATURE     lxd/db/cluster: Add bearer signing key secret type.
+d4a46cac84755d98047f68b96d55db341051fcc3    FEATURE     lxd/db/cluster: Add database methods for managing bearer identity signing keys.
+e810515c78ffb284f442da0cf36d85b5135d48c3    FEATURE     gomod: Add JWT dependency.
+f20fd3d57af14764764b83ffe4fe496a588900b0    FEATURE     lxd/auth/encryption: Add function to sign a JWT.
+b3a74e21b2faf5b97f008cda1fb56013ed9768c8    FEATURE     lxd: Add bearer identity management APIs.
+c5c26dc5bc675ce565b7f94b386e83f7fb222552    FEATURE     lxd: Add bearer identities to the identity cache.
+82a9488f02d064776a20167faccda5ab062840ed    FEATURE     lxd/auth/bearer: Add bearer package for authenticating bearer tokens.
+0c1022d99a3d3fb97f3adbf5a180d0d994f8909e    FEATURE     lxd: Authenticate bearer tokens from DevLXD.
+eeab722b0af90e2111ce6a00a4826af6f3bca60d    FEATURE     client: Add methods for managing bearer identities.
+4d82b6f9c4d13c568d40979345bc18bb3dd8bc1e    FEATURE     lxc/auth: Add commands for managing bearer identities.
+d33a889cb4671837fe881f7ffa9e3725c2ccc80f    FEATURE     client: Add bearer token to connection args.
+8182664c1da8c82a529bf99244427b13d8be69c4    FEATURE     client: Set bearer token for DevLXD requests.
+5c2c2551636785abc63a33d5d8c0b218070b092d    FEATURE     lxd-agent: Set bearer token in DevLXD Vsock client if present in request.
+0a4d2cfc3b0575874d8eaef3b3ec2225a35a22c1    FEATURE     shared/api: Add Auth field to DevLXD GET /1.0 response.
+07928afb2a4924307c88d82b71dbd022c47fcf30    FEATURE     lxd: Set Auth field in DevLXD GET /1.0 response.
+6689e990dd9d30ec16e917246bc7752020b36e24    FEATURE     test/devlxd-client: Add "get-state" command to devlxd test client.
+2984ca5ba9f92374a8a4f1edf472dc6fd18aa178    FEATURE     test/suites: Test DevLXD authentication.
+91fff0de6ea4187a5076609e3815e7e97f78e946    FEATURE     doc: Update docs with DevLXD authentication reference and how-to.
+d3af30b3f03c1ba79cb9e44be669b63cdfb4069e    FEATURE     doc: Add auth field to devlxd API spec.
+92a0c48ebb5e5b89758338d5939b0c07b214cdf7    FEATURE     doc/rest-api: Refresh swagger YAML
+a3fa7b2490dfe3a8ec4673eab9ff00f5d9706385    IRRELEVANT  i18n: Update translation templates.
+bbd916747fed6c905c7ae48df77c9da39a3db26a    IRRELEVANT  i18n: Update translations.
+146e61b54025e08581279ef759d7184f008fad67    FEATURE     lxd/request: Add comment about DevLXD vs. bearer protocol.
+7e249adcbe917243c87d371402817b944bef26b4    FEATURE     test: Give more leeway for the devlxd bearer tokens to be checked before they expire
+dc0fe8b9e1f973c280a31033152df4e02b1be4d1    APPLIED     Makefile: install errortype and zerolint linters
+fb9615b403cc16016c33ba5614aa2961aeb1c67d    APPLIED     test/lint: add errortype linter
+05083761f0ecb0d79e5f854329357f6427e9f176    APPLIED     test/lint: add zerolint linter
+6fe5a97052227baf55cdc13581f39fc11fb45533    FEATURE     test/suites/devlxd: avoid wrapper shell and use ` || false` idiom on expected failures
+dea4a8b2d2bc994aff907b8a1e2a10d3dc0e5800    APPLIED     test/suites/devlxd: compute `md5sum` once, outside the loop
+bc24239c3a260a526d6b1ebc6706d7d1d0e8e297    APPLIED     test/suites/devlxd: replace `lxc info` by cheaper `lxc list` for state checking
+3616d8cb0c53d24f63ce16b9d50704543eff7320    APPLIED     Makefile: add devlxd-client target
+5ec3315e0a46ba38dd6170c8839bbbbcd5c1d3cf    APPLIED     Makefile: add sysinfo target
+4bcfa24fca507972e9b56f5b75aa5d47c5c5ee05    APPLIED     Makefile: add mini-oidc target
+07a6a6fe128db378a4a9b0d2abf4693ccd9bb91c    APPLIED     Makefile: add fuidshift target
+419905382d96c0bb72c59012c56b7b09b29195a5    APPLIED     Makefile: add test-binaries target
+477cdb0ce12fc737a1bc31342439b6bbc24e0ea3    APPLIED     Makefile: build `test-binaries` before running `check` target
+c238280c6f8e2a626f0919174551214ac636fc4d    APPLIED     test/includes/oidc: use already built `mini-oidc` binary
+ec08f839b4013caaa897284ef36cf1b3f272144a    APPLIED     test/suites/cloud-init: use already built `devlxd-client` binary
+3f9213071533b9b3a7ccb5ddce353e75038f3ef5    APPLIED     test/suites/container_syscall_interception: use already built `sysinfo` binary
+b338f9ac9eddf054f89782280bd734c7cce680e2    APPLIED     test/suites/devlxd: use already built `devlxd-client` binary
+d086fc2ae9f178d1e1ae7819a748ae6d92e06482    APPLIED     test/suites/container_syscall_interception: remove unneeded remote
+9cd75fc59d32be1d1437e40918ed707497a10b73    APPLIED     github: include test-binaries in system-test-deps archive
+288f1f6c112f44822f1d2dffd0ac2c2500411f75    APPLIED     test/suites/basic: call `fuidshift`'s `--version` and `--help`
+1d5cea39a776db209a9826bae01bde26fffe1b08    APPLIED     test/suites/fuidshift: do not skip fuidshift test
+cc51205c17801b819e40dd31054d083c334cccec    APPLIED     test/suites/fuidshift: use common idiom for expected failures
+352cea929e1d17f391af0017b020cd7588347707    APPLIED     test/suites/auth: use all caps for `COUNT` SQL function
+8f0227f6350bc178ee75d3d3e66c4b4a50bff0ec    APPLIED     test/suites/clustering: use all caps for `COUNT` SQL function
+12b408a01c6a1f1a740d5c0fb9d22d7b1b440184    APPLIED     test/suites/oidc: use all caps for `COUNT` SQL function
+066606e84a304429b2e72b3e6f10ebf954eb0eee    APPLIED     test/suites/sql: use all caps for `COUNT` SQL function
+d8e1c0a217a29b28cb190307b95bd80d3a00063b    APPLIED     lxd/db/db_internal_test: use all caps for `COUNT` SQL function
+1178bf6922ac6c0b9deaf1e4f7eb1a176218bb0d    APPLIED     Makefile: `-cover` must not be the last argument
+dc2ea80e20d46410bd6442cfe1c380d67775ab81    APPLIED     test/main: run concurrent tests earlier
+a139248cc99f1e1fa77c7652e1d36068b95edd5f    APPLIED     lxd/acme: add doc to exported functions
+444716857ea73830f566c4c93034b690a733058a    APPLIED     lxd/firewall/firewall_interface: don't shadow builtin `delete`
+1cd9cf8508f5bf54423fff664962c6fbb73b44b5    APPLIED     lxd/main_nsexec: fix comment
+b5f85fc7df698609a1a6abbc8be2520e46bcc8e6    APPLIED     lxd/db/generate/README: improve markdown compliance
+7e43d26068f24bdaea11a74404d5c735e1909573    APPLIED     lxd/db/generate/lex/config: name return values
+20aeca4afb84fe5682a0d49c427bbd7ee798496d    APPLIED     lxd/ip: avoid deprecated `shared.RunCommand()`
+4aa3a29c3e2845c6d2cb2823d4b73482afe9bd9e    APPLIED     lxd/lxd-metadata: silence `revive` about `log.Fatal()` in non-init/main
+3e8f8908d2e8ae58c3e284762d3737aaf3d5ed12    APPLIED     lxd/snapshot_common: do not shadow builtin `min` and name return values
+16bc7186add9f0817882590591743ff681eb71d0    APPLIED     lxd/snapshot_common: avoid `else` branch with early return
+62c69c4d3ef298e76a4638ab5646d706e8f803de    APPLIED     lxd/storage/memorypipe/memory_pipe: name return values
+b4d5bb4f9076bd7e944b0949d8c35aae09431369    APPLIED     shared/version: do not shadow builtin `min`
+64cae8a6e60306142975fbfb6c2df7eca8f979f3    APPLIED     shared/ws/mirror: name return values
+5babf1a5f9d9f6a6172ac6d08f5ed778b728897d    APPLIED     shared/termios/termios_linux: name return values
+b8b604ecde3411dd57cec167f1f03816c1fa4c8d    APPLIED     shared/util_unix: name return values
+daea64f93b47eee961bb7e41121b1a72d299c0e2    APPLIED     shared/logger: add doc to exported functions
+32f9d69fa98182013da24e7d70e9d0fdad5e2070    APPLIED     test/mini-oidc: unexport refreshToken and token
+955ba895852a29685f26a6c03ad5e4969fb0d5f4    DIFFERS     test/lint/golangci: check everything, not just new code
+19f68ab0a0c8cd3e0b46793822d2e7919fcaf4f1    DIFFERS     github: do full golangci-lint check instead of checking new delta
+44cdc785ed7248aa380ffe4048a7d096b9af30e1    APPLIED     lxd/network/network_utils_test: add tests and benchmark for `randomHwaddr()`
+7d8d9e30ec8dd28d9edaaa95002a3c397b1268ca    APPLIED     lxd/network/network_utils: micro-optimize `randomHwaddr()`
+d58ccf20e6005ce3f242bb1199f6d5696cf2fed8    APPLIED     lxd/instance/instance_utils_test: add benchmark for `DeviceNextInterfaceHWAddr()`
+be1567832c9bfef98799744dea6504a02d92d38b    IRRELEVANT  build(deps): bump github.com/canonical/go-dqlite/v3 from 3.0.1 to 3.0.2
+bf11f9143f8006eec319acbbfcab569634a4a276    IRRELEVANT  build(deps): bump github/codeql-action from 3.29.10 to 3.29.11
+325644575a3233b1895926a959b6b9005c42c927    APPLIED     client/lxd_events: don't ignore error from `r.GetConnectionInfo()`
+d14605c2e8699b2a92eb570e09693bb70a1665bc    APPLIED     lxd-benchmark: log failure to close CSV
+2bf1f7a303980bca6b674ed898ba4003b10ba9d3    APPLIED     client/lxd: log failure to close request body
+7bd5297035b0bb082fb6610c29278cb3d59a8cb1    APPLIED     client/lxd: log failure to get events
+e70568eb175d9141f6965d6ed615c9945acf93e3    APPLIED     client/lxd: check error from `tcp.ExtractConn()`
+ccb0ef68aa10b8ba79fd2f80cd7196ca7e9b8bee    APPLIED     client/devlxd: check error from `tcp.ExtractConn()`
+2140e79a59ac3c17aff12364af1c0e5e1ba9cb28    APPLIED     lxd/instance_sftp: check error from `tcp.ExtractConn()`
+28c5132b07a89e0cc6c40aded7b54f9b2c125e7c    APPLIED     lxd/response: check error from `tcp.ExtractConn()`
+efc197823bfa15a626e54a5e2e5bc76b6daea815    APPLIED     shared/ws: check error from `tcp.ExtractConn()`
+8fb658b621a37400290c162787df651fc048db2c    APPLIED     lxd/metrics: replace `fmt.Sscanf()` by `strings.CutPrefix()`
+a69077d6cdfda8ad09229a8aca52022f0db0d354    APPLIED     lxd/instance/drivers/lxc: check array length before access
+2cec5ba6d1ac20b54d21c0ddbebf74c8524ff7d6    APPLIED     lxd/api_internal: check error returned by `instancetype.GetRootDiskDevice()`
+256557fef9998fe3dc932b7f5976d44499bfa18b    APPLIED     shared/network_ip: add `GetIPScope()` helper
+54871b8220cefa5d04f8bcb068a0edb7ceb75a61    APPLIED     shared/network_ip_test: add tests for `GetIPScope()`
+0bdcdb9a31e6b62c663ac3979c9b472148de7e78    APPLIED     lxd/resources/network: use `shared.GetIPScope()` helper
+a7f748ba46e0557112945db20a8c2e0f702e7853    APPLIED     shared/netutils/network_linux_cgo: use `shared.GetIPScope()` helper
+4868a06dfacdfe24391b6d0261a75210e4880095    APPLIED     lxd-agent/state: use `shared.GetIPScope()` helper
+6c4a140ef372c7cf127893b7b1e581e09a38450c    APPLIED     lxd/main_forkfile: check for root privs after showing help/version
+b3fe666647ed9017389df3b55f25271a6f2ca8c3    APPLIED     test/suites/basic: call `lxd <subcommand> --help`
+b67eefb01a11833751bd28e43b3f88b6d0972cad    APPLIED     client/devlxd: avoid deprecated `conn.UnderlyingConn()`
+72906bbd3deabe018a34f52b80fe930728a633de    APPLIED     client/lxd: avoid deprecated `conn.UnderlyingConn()`
+a48a7c96b632b1e76eb000980f2ed9bab42f7c75    APPLIED     lxd/migration_connection: avoid deprecated `conn.UnderlyingConn()`
+3a7bdc6ad0cecfc046aef2ef610905d9af553ff5    APPLIED     shared/ws/upgrader: avoid deprecated `conn.UnderlyingConn()`
+e582e2b874230872bd5cd4768e5ee13376e86464    APPLIED     lxd/api_project: stop passing unused ctx to `projectChange()`
+6b688a3a61f763b027e3424ba57472f1ea7959ce    APPLIED     lxd/operations: stop passing unused ctx to `autoRemoveOrphanedOperations()`
+85bd4f20b1e0de7e3ede6c2a59e2649be1b55cbb    APPLIED     lxd/profiles: stop passing unused project ID to `doProfileUpdate()`
+43c668c32496e04af72e436d1406d7b086bfb872    APPLIED     lxd/main_init: stop passing unused params to `runPreseed()`
+ebdf0dd6b5e7a6a8b1f16f40ccd4c4dac503633d    APPLIED     Makefile: bump Go min to 1.24.6
+ac149f58f79e25464469530b80ac9850b023be38    APPLIED     doc/requirements: bump Go min to 1.24.6
+032c3f5c7265e2ef7e0003ebb22d4ce283c65def    IRRELEVANT  gomod: Update dependencies
+c1642d5b9970d72f080710ddd0a987580c0a0a2d    FEATURE     lxd/instance/drivers: remove criu migration support
+958860b56511b2ccf521ac35f0693f2770eef1e6    APPLIED     lxd/instance/drivers: return error when Unfreeze() fails
+ada5032655a1e91a5e9af993dcb8b32a755e46b4    FEATURE     lxd: add error messages indicating live migration is not supported for containers
+601db39e36a33b3964e52178ec85c144cdb6c037    APPLIED     shared/api: update SecretNameState comment
+49e4864da64f28269a3e85c0a9cfd124c2cc1e98    FEATURE     shared/api: remove criu from Websockets doc comment
+b32259d59827d38a30925dad83ed9af6d8e4a72f    FEATURE     doc: remove criu references
+a67d2732bb42c502109d660f505c478c4c187e82    FEATURE     tests: check live clustering move is not supported for containers
+12e3438e7b8a8082b1a28a12017b8a57ff3211b3    FEATURE     tests: remove criu snapshot checks
+ab28fa368fa0cfba47fdfe90c583eba57adb0f0e    FEATURE     tests: check live migration is not supported for containers
+fef49cbbe96955a89f839d3de60e90c02555f553    FEATURE     doc/rest-api: Refresh swagger YAML
+6f2cf7184022d3f8895ba8ca154b26f080dbb58c    IRRELEVANT  gomod: Update dependencies
+abecd0c2f9342fa04c0ef7d95f82a40f84373b88    IRRELEVANT  lxd/api_cluster: use `maps.Copy()` (modernize)
+d5552f4e72821b08f79644ec01acbfaf18892f0c    IRRELEVANT  lxd/config/map: use `maps.Copy()` (modernize)
+e96c4aaad93a5e01ec97991ddc56dcb9d0be9044    IRRELEVANT  lxd/auth/oidc: use modern `for range` loop (modernize)
+541bc61977751b427c46dfc4f6f41cedf1451148    APPLIED     lxd/network/acl/acl_ovn_test: add test and benchmark for `ovnRulePortToOVNACLMatch()`
+3dab7092a5f8425f9d693a18ff29e6a5a120ad36    APPLIED     lxd/network/acl/acl_ovn: use `strings.Cut()` in `ovnRulePortToOVNACLMatch()`
+d556bd92e698fc76a253d9a2e84650453133b342    APPLIED     test/lint/shellcheck: skip entirely if invoked by GitHub actions
+2a6fbf6689f4e4dffd6900011aeeeb4650e51a75    APPLIED     test/lint/shellcheck: make sure to error out if invoked directly
+50e013b41efb9ad846b9b67761b94bb982e986d4    APPLIED     golangci-lint: warn about unused exclusions rules
+7a0c815be019e6dc9a84a628438a7e3193615f09    APPLIED     golangci-lint: remove unused exclusions rules
+21b4c88033ae358512052b8120964f9a4355b12d    APPLIED     Revert "lxd/api_project: stop passing unused ctx to `projectChange()`"
+84ff2d5e343452837a244e7be7da4fecf8ce44af    APPLIED     lxd/api_project: handover projectChange's ctx to DB transaction
+d92331a2178a70aadd62dad5e1b67df5f69da4f6    APPLIED     Revert "lxd/operations: stop passing unused ctx to `autoRemoveOrphanedOperations()`"
+47e913dfc2a543101e310af5de293211f09efb6c    APPLIED     lxd/operations: handover autoRemoveOrphanedOperations' ctx to DB transaction
+f2f701f897fb6117e5bca3825a447954154acc66    APPLIED     lxc/auth: Remove trailing whitespaces
+22d1ecc581d67319bd1278444a9f3cb30f73c1be    IRRELEVANT  i18n: Update translation templates.
+1649db7cc5487cbccf00ce626e354f4edf848369    IRRELEVANT  i18n: Update translations.
+7c6bcad3038bb47ee673cb87a913de4320fc7dc7    APPLIED     shared/validate: with `strings.SplitN(..., 2)` the len is always 1 or 2
+2290807a24803da066392b4cffbb5e0a16edbeeb    APPLIED     shared/validate/validate_test: add benchmark for `ParseUint32Range()`
+41394fd71f0ac6611ed22938219efc6ad5dba0a7    APPLIED     shared/validate/validate: micro-optimize `ParseUint32Range()`
+1530bb50e2779ba54dd74e1e3da22da2fd071def    APPLIED     shared/validate/validate_test: add benchmark for `IsPriority()`
+8bfd712663a2fb07f1b74eb7b76ebe79e32a2426    APPLIED     shared/validate/validate: micro-optimize `IsPriority()`
+bfdc37ab1352b7a5856701da24dd875f193ec52b    APPLIED     shared/validate/validate_test: add tests for `IsNetworkRange()`
+288fadc36f88ab0eee03c7af9823dfdd0fe7d7d1    APPLIED     shared/validate/validate_test: add tests for `IsNetworkPort()` and `IsNetworkPortRange()`
+b1465ead01fd5b61179bad5c00e48d651b4d77b7    APPLIED     shared/validate/validate: fix `IsNetworkPortRange()` to respect ports being 16 bits
+af90e38b04a7106a79ea9eb98adf1957fa7c499d    APPLIED     shared/validate/validate: simplify `IsNetworkPort()` by using 16 bits
+078304faca530572d6f9e403a123fdf6a4582844    APPLIED     lxd-agent/response: Avoid printing nil content
+8d50c1350b6b90a7ae0a92a2206f72c374d6b4b3    APPLIED     lxd/response: Avoid printing nil in devlxd response
+76150bad810466d2d901c9c5bb070bb2329c0e13    APPLIED     lxd/storage/drivers/powerflex: Ensure the same volume size is picked cross-driver
+987dea56abeb862cc50ebfa7eb557f0b6c7f51b0    APPLIED     lxd/instance_file: Refactor effectiveFileOwnership()
+35c05e9c4c5687887cf6f6b7074505a45cd7e387    APPLIED     lxd/instance_file: On directory push to containers, only change uid/gid if it fits within uidmap range
+4fac9d3c73c1f9362d1fe5750da7d037c72fb1ca    APPLIED     test: Add test for `file push` of a directory owned by uid outside of container range
+5d79de3cdb3916ffe5286b60117a813a7bf5e9ff    APPLIED     lxd/device/disk: reject `io.threads` setting on containers
+e5d888251f0dea5ade3761e09f23534b6b020048    APPLIED     shared/validate: reject iface name with `..` in `IsInterfaceName()`
+ae9663484bc627cf67d3512681b57557dfd3ba50    APPLIED     shared/validate/validate_test: update tests for `IsInterfaceName()`
+9afe3826be71636a768a2e46bedd9d75547978c0    APPLIED     lxd/resources/network: check ifname with `validate.IsInterfaceName()` in `GetNetworkState()`
+2b01fadca6fba8381519af38954cdd315f124d91    APPLIED     lxd/resources/network: use `strings.Cut()` in `GetNetworkState()`
+2aee4792ba357a0d97409bf7e9760f7164005af4    APPLIED     lxd/resources/network: simplify ifname line selection in `GetNetworkCounters()`
+7fe0b3bb31f745fab5641ca0512ab2b13738d7f8    APPLIED     test/suites/storage_profiles: remove unused storage pool
+15e86b4011accbccad36b140444de5d24605b1ba    APPLIED     test/suites/storage_profiles: always test with 2 different drivers
+350cc4acfcda64e506ba65c740db91839e5be95d    APPLIED     test/suites/storage: remove misplaced shellcheck ignore comment
+3581ba0b2638fe8145ec23c672bf1db9367b1626    APPLIED     test/suites/init_auto: use `deconfigure_loop_device()` helper function
+5a852b29827013fc22d488be0404c1bee9f119eb    IRRELEVANT  github: migrate to AGENTS.md
+c3b12cf45778160d4173b091315444e9c8b07ad0    APPLIED     lxd/storage/drivers/generic_vfs: don't ask to map volume if mounted
+fb9817fc5bab38edc38032e0fceca2dae267a58b    APPLIED     lxc/exec: document `lxc shell` alias and its caviat with env scrubbing
+37b674c4447d4473cef451a61543b2fe54be5c6c    IRRELEVANT  i18n: Update translation templates.
+8d0d7959a52c89bebcaa6a380db4a5b7431822af    IRRELEVANT  gomod: Update dependencies
+c50e63d2aa1e28ca5f7ef59c2e1c05683452a7a5    APPLIED     lxd/storage/utils: add pure to the list of drivers for common options
+b932e18e567527e861bdd324efffcf5eaeffff33    APPLIED     doc: Update metadata
+c13b8c2b671bbdcfcb49af9b57852f412147c07a    APPLIED     lxd/storage/drivers/powerflex: Add byte based min volume size const
+a3826b0f79f8d271007d5f1438f1669dc2314b95    APPLIED     lxd/storage/drivers/powerflex: Override roundVolumeBlockSizeBytes for PowerFlex
+66122803304ddd466dd73b92d456ac286f16d3d3    APPLIED     lxd/storage/drivers/powerflex: Reduce the rounding complexity
+835e5e9dbb76e8a427b30cfff3935fbdc2b6a460    APPLIED     lxd/dnsmasq/dhcpalloc: Fix linter error (revive: var-declaration).
+e5264bac304cff6117721cace268ffe202f789a9    DIFFERS     lxd/identity: Remove IsCacheable from identity.Type interface.
+0866fa0d3426cf10f9825b6fbd50aa8a93c22a2b    APPLIED     lxd/identity: Update comment for pending client certificate.
+f48c3d9c2c36b18330fd364d52f181721904f31b    APPLIED     lxd: Skip pending identities when updating the cache.
+daf078f782fdb577ebe8dc13feff7b59e449a6b0    DIFFERS     lxd/db/cluster: Add a mapping of authentication method code to text.
+23127d13d1cfe525ee250850238e3c9d8dbccd35    APPLIED     lxd/db/cluster: Use auth method map to generate case statement.
+83e2a572e4d4810a3865238293464eb7e3f809f5    DIFFERS     lxc/auth: Split identity <type>/<name> parsing into two functions.
+02c31ea55f37525dde7bd7d8040c47f71db31019    APPLIED     lxc/auth: Resolve the identity type shorthand when managing permissions.
+07eea7fd76f9257516af8f3a2a718020a2b708f3    APPLIED     lxc/auth: Fix error messages when parsing permissions.
+314e78c7ff6e54e82b3156e8e2d5ae42869a8530    FEATURE     test/suites: Test permission management for devlxd identities.
+4e10604c715d69714842730d78f64c083044b19a    APPLIED     lxd/instance/drivers/qemu: drop unused param for `deviceAttachNIC()`
+8cbe6063c4cc5e86f84675f92b667eb643253abe    APPLIED     lxd/instance/drivers/common: avoid explicit type declaration for global var
+b38d7f31ce137d8b7f3e874ae0641905f3718e19    APPLIED     lxd/instance/drivers/lxc: avoid explicit type declaration for global vars
