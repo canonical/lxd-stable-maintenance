@@ -7187,11 +7187,6 @@ ed74fad95cf6755e9e79c151c56b495e8d249cfd    APPLIED     lxd/instance/utils_test:
 0ae39b7c40c792b755374a07271658302a3cf69f    APPLIED     lxd/instance/utils: micro-optimize `DeviceNextInterfaceHWAddr()`
 de9b51b811b1022322db5993793840b07e4e7564    APPLIED     lxd/instance/utils_test: test with `LXD_UNPRIVILEGED_ONLY=1`
 f2e75f19b16aeccb2f75c72ae869225d37b2c3a7    APPLIED     github: deactivate `lxd-installer` in `actions/install-lxd-runtimedeps`
-b22b4f9ebe7f5e3bd0f38fb6439f8b50a611fe75    FEATURE     lxd/sys: Add ServerUUID to sys.OS.
-6f561fd91bc3a4773d1eb08d9d3e5fbb31d9cd26    FEATURE     lxd/state: Remove ServerUUID from State.
-36658ff58eec43faa7a724166172b8ad452538c6    FEATURE     lxd/state: Remove ServerUUID from Daemon.
-72673f56b2d6da6b735395df62100c2810daf58b    FEATURE     lxd/storage/drivers: Update state.ServerUUID to state.OS.ServerUUID.
-a65e6e94d15ed48694e95f2d39fccf381eb14dd2    FEATURE     lxd/cluster: Update state.ServerUUID to state.OS.ServerUUID.
 d60d56d62749479d836311d24872c6d8b59c5900    APPLIED     github: Remove lxd-installer package.
 cfc2c6c977ed9b053f20fe33df2f5328519d6460    APPLIED     github/workflows: Set GOTOOLCHAIN=local for TICS deps
 545d18c6477543863e7e55c9803c878f8fc8d4ff    IRRELEVANT  gomod: Update dependencies
@@ -7736,3 +7731,284 @@ c60b51fc5e0b624a45d2972494c86257e95700c7    APPLIED     lxc/file: replace `math/
 7f6ce8b7e29a4fabad726d8d1b971722e8397bd5    APPLIED     test/main: only enter the inspection shell on failure
 c29d93fe692b73e596f4782b5b3b4b68573ecd3b    APPLIED     test/README: update description of `LXD_INSPECT`
 a286ddea6a8d8fd3cc50dc44f8c2ce8b34acf6ec    APPLIED     fuidshift: simplify arg checking to display help
+5fa969344a7a8c64e818c13e16f5d8dd14fc576f    FEATURE     lxd/db/cluster/update: removing trailing whitespace
+c4c6daa9795cb5d63e421980e7411f62422cfdce    FEATURE     lxd/db/cluster/schema: run `make update-schema`
+3a40fdf3e581b6aafd2437c12ef01e76ef683b36    APPLIED     lxd/db/snapshots: make `GetInstanceSnapshotID()` just a wrapper for `cluster.GetInstanceSnapshotID()`
+9d15f57f97967a06e9c0daf1a4f10e8beb7b8eb9    APPLIED     lxd/db/generate/db/method: don't call `errors.Is()` on the happy path
+6d18733a43fd9c5ae4e2b695f7fd4926fbc8c1ff    APPLIED     lxd/db/cluster: run `make update-schema`
+c352cc03f05fe202a7f5f39b28319b205d0c6373    APPLIED     lxd/device/disk: reorder error checking in `Update()`
+51b6408edd75ae2702c5486e6ef77f3f27b5f801    APPLIED     lxd/db: check for nil error before calling `errors.Is()` in `transaction()`
+6748726e1062bd6ff8bb1c03169d2ad6f471c230    APPLIED     lxd/instance/drivers/common: check for nil error before calling `errors.Is()` in `deviceLoad()`
+406afab441523b3b5a9e404098e92616aa039cde    APPLIED     lxd/instance/drivers/qemu: check for `fs.ErrNotExist` error only once in `start()`
+38da1302c94bbb962a28c20666dae1c561ffcbd4    APPLIED     lxd/storage/backend_lxd: check for nil error before calling `errors.Is()` in `CreateInstanceFromBackup()`
+ee6de6490060d1a6a2e1695e7c709e60f8b4200f    APPLIED     lxd/storage/backend_lxd: check for nil error before calling `errors.Is()` in `CreateInstanceFromImage()`
+f3212c88a0402fc7ab189cee19ca26ce3d2e6e74    APPLIED     lxd/storage/backend_lxd: check for nil error before calling `errors.Is()` in `EnsureImage()`
+4fba2a01cca0af6ae8ab92e2821dc48de2f921df    APPLIED     lxd-agent: check for nil error before calling `errors.Is()` in `startHTTPServer()`
+8e3d4ddd83c3f32f4898dd4ded1462d2ec19538f    APPLIED     lxd/network/driver_bridge: cancel context once done waiting
+b2ab92db133478f2be1941ed9918ccad816ca291    APPLIED     lxd/network/driver_bridge: check error before calling `errors.Is()`
+a22132f869339c9bc4e5d08971463a7162358ef0    APPLIED     lxd/daemon: log a warning if unable to stop cluster tasks
+6223b258de016eb5b843e7ec9faf383b7da0c535    APPLIED     github: don't run documentation checks on forks
+3bddc6e6c7e1f572d0263fe00df76e4c6280cbd9    APPLIED     github: only enable Go coverage on official repo
+d42ceec37455eb9614149f9f9346d7a2fe5d42e1    APPLIED     github: use a shorter name for unit tests step
+f6763dab06299bb552d28717903ec248e04c2a7f    APPLIED     github: tweak `actions/download-minio` to allow using older (7d) files on misses
+2f061f32153c80b1e9f21aa8e7e0951a058f457a    APPLIED     github: bump `actions/cache` version used in `actions/download-minio`
+95a6a1575484666dbca73d355625bdeffe3f9312    APPLIED     test/includes/snap: add some snap helpers
+359e95ce15a3e9f564f97aacb5d24169b024a22d    APPLIED     github: add `actions/download-snaps` leveraging the snap download helper
+b95dbc61f5b8ccd098822a31e9a6a58690e633e6    APPLIED     github: use `actions/download-snaps` in tests
+bab68d702de9ae7105c6a4a8d179a18ae0abed31    APPLIED     github: restore `minio` from cache
+0a0481ccbfcccfae8c513bd95878562c33e42402    APPLIED     github: use `actions/download-snaps` with microceph
+d607cb30967e06e9b4f00e7e0365ea39c107ab38    APPLIED     github: use `actions/download-snaps` with microovn
+1551e346dbac86d3088835207000afa5364bc57f    APPLIED     github: use snap cache if available in `actions/setup-microceph`
+7de48803cd69cc0c52ea9e1da5f2467555848d07    APPLIED     github: use snap cache if available in `actions/setup-microovn`
+9780afc3d0612e1c14bd4c7d87d3733a04c42ce1    APPLIED     github: add `actions/cache-dqlite-liblxc` to restore build or restore from cache
+12515fcbe896e97309ac1a1a86e5f68d8743d3da    DIFFERS     github: save/restore `dqlite`/`liblxc` from the cache
+e8280fc06c07961b515a487a25ac6b35bb19287b    APPLIED     test/main: simplify check for executable/sticky dirs
+78212418a30800e28a7dd57a556a89fddaf3f054    APPLIED     shared/validate/validate: replace `stringInSlice()` by `slices.Contains()`
+29524da4705f0c868f8bf67f3a41d12b03808b7d    APPLIED     shared/validate/validate: drop now unused `stringInSlice()`
+0768866bb2898f3e6b85118f325d1353e1cdf9a5    APPLIED     shared/validate/validate_test: augment `IsInterfaceName()` tests
+5883fbd4d0271bd3bb5e981ac1dbd6a268aeddaf    APPLIED     shared/validate/validate_test: augment `IsNetworkRange()` tests
+232931d6561030eab304fc5a2652767a129b6b9f    APPLIED     shared/validate/validate_test: add tests for `IsNetworkV4()`
+b469ca995c06c03ad757293f763520fbdb04c8f2    APPLIED     shared/validate/validate_test: add tests for `IsNetworkV6()`
+41f392531adbf9cc9f88c383793f5c33d0cc2da9    APPLIED     shared/validate/validate_test: add tests for `IsNetworkAddressCIDR()`
+a91efd82689b2fe8ff1c4153f78b669056cc35d0    APPLIED     doc: add and improve update/upgrade/downgrade docs
+8ce0cedb6830f78a42fc7966c06e9bbb852bc3e7    APPLIED     doc: improve cluster update/upgrade info
+e80532809b91f043393e6b4138606abe73a0f804    APPLIED     lxd: extract doNetworkACLDelete()
+8d307954b797a16786810fe3e08e3b0e715f1ac4    APPLIED     lxd: rename variable for clarity
+7c00f9d9e09cee32a175d69faad8ea14989c6be7    APPLIED     lxd: improve network acl delete endpoint error message
+c581c3ad231993dd117eee4ab55f1ab76508ef84    APPLIED     lxd: extract doNetworkZoneDelete()
+283fb8b96107031e0756bd6a65a382678e65cb9d    APPLIED     lxd: improve network zone delete endpoint error message
+36bdcc04a59734684a1fc6ad0918b09bc7db16f8    IRRELEVANT  build(deps): bump golang.org/x/oauth2 from 0.30.0 to 0.31.0
+dd71657326673b4c8ec67b673319a6740f6be055    IRRELEVANT  build(deps): bump github/codeql-action from 3.29.11 to 3.30.1
+798ecf029fe0082ad6e00044bae972d5fa455607    APPLIED     lxd/instance/drivers/driver_qemu: open file with O_DIRECT only when expected
+adbb42b509598445238987410792ef41187e5a8d    APPLIED     lxd/instance/drivers/driver_qemu: add all qemu block cache= modes
+29ad7636628f0793271759740d350a839b315a93    IRRELEVANT  build(deps): bump golang.org/x/term from 0.34.0 to 0.35.0
+464469af69adc19262da92eb64db528f64c90e00    IRRELEVANT  build(deps): bump golang.org/x/text from 0.28.0 to 0.29.0
+bfc542970b4a14f3e2dfb09bd75f76a9b61e06a7    IRRELEVANT  build(deps): bump golang.org/x/sync from 0.16.0 to 0.17.0
+6ba96d3c648b4a6539abd975b25084674e37e015    APPLIED     test/includes/snap: drop wrong/misleading comment
+58551123de858f7e1b47578438df2560b3eda1ea    APPLIED     github: update LXD UI e2e test for caching strategy changes
+6293709c0777ed22153c7d807bff43a84defba7c    APPLIED     github: run LXD UI e2e on 22.04 as `dqlite`/`liblxc` are cached for this version
+95fb09f5a7c82812e46dd9f127662f1a020069f3    IRRELEVANT  github: reintroduce CLA check in commits job
+8f00de528e5fa7c502b94fdf6d55d5987718c7cf    APPLIED     lxd/storage/drivers/zfs_volumes: error out earlier if dealing with an image volume in `SetVolumeQuota()`
+afa030047110d3c4200f16f75260e76ae37747f8    APPLIED     lxd/storage/drivers/ceph_volumes: error out earlier if dealing with an image volume in `SetVolumeQuota()`
+d0ad49b98d7c00a012536157188fe31dfeb06ae1    APPLIED     lxd/storage/drivers/powerflex_volumes: error out earlier if dealing with an image volume in `SetVolumeQuota()`
+336b8bdc1019c70fe82f0287542457c3406fddad    APPLIED     lxd/storage/drivers/zfs_volumes: cache result of `d.dataset()` in `CreateVolume()`
+15921e725f155cfb459d064aa5cde6e98201899e    APPLIED     lxd/storage/drivers/zfs_volumes: cache result of `d.dataset()` in `deleteVolume()`
+870d212a62b455a0dbddba41e69725c53af70caa    APPLIED     lxd/storage/drivers/zfs_volumes: cache result of `d.dataset()` in `SetVolumeQuota()`
+1eae48404c5a3920254d5ececfed17b7472eb555    APPLIED     lxd/storage/drivers/zfs_volumes: cache result of `d.dataset()` in `CreateVolumeSnapshot()`
+fc281f6f3b0343734aaf3562e937735f33daad4d    APPLIED     lxd/storage/drivers/zfs_volumes: append to existing variable instead of crafting new one
+0386bf675b3daefb473911d19970cfba167c3b61    IRRELEVANT  Revert "github: migrate to AGENTS.md"
+5e812663b471e67d21c8638a8f42ef51f340748a    IRRELEVANT  github: trim copilot instructions
+178b5f7fdab111207629c462d89dd468a18c9eff    APPLIED     contributing: add instructions for updating copilot instructions file
+23054e705f0649dafe74978b5ee09630d6d9edb9    APPLIED     lxd/storage/drivers: add HPE Alletra main structures
+36364a2cf8c8258261027afe8bfeba5473cd5574    APPLIED     lxd/storage/drivers/clients/alletra: add API basic client code
+09777bc71bab229452ca6dc5a7b85a347f4923df    APPLIED     lxd/storage/drivers/clients/alletra: add volume set manipulation API helpers
+15a3f7b4ef9362abd70a68951a2c77b7aa99c74c    APPLIED     lxd/storage/drivers: implement storage pool Create/Delete operations
+595c577f270de1012dcfa796a91af8d520218b0a    APPLIED     lxd/storage/drivers/clients/alletra: add hosts manipulation API helpers
+6a23504b8790269e74158b36cbe40bd764a44dff    APPLIED     lxd/storage/drivers/clients/alletra: add volumes manipulation API helpers
+f55a3cffaf0c3e1da8d46acaa7697383c1a2f092    APPLIED     lxd/storage/drivers/clients/alletra: add VLUN manipulation API helpers
+13613f527ee3cb1e8fe855c0887ee271410fe1ca    APPLIED     lxd/storage/drivers/alletra: add NVMe target discovery logic
+2cc3f1f568b6ab559f77a8321c163549b6644eaa    APPLIED     lxd/storage/drivers/alletra: add volume map/unmap utils
+faa32ced0b62ed8a209b2075db3fb110a49107ee    APPLIED     lxd/storage/drivers/alletra: implement GetVolumeDiskPath
+773c8541dbe8ad392c1b0093a6900b1e51f7489d    APPLIED     lxd/storage/drivers/alletra: add create/delete volume logic
+566cec569e961558b6b34f51fecbe6cc807beed1    APPLIED     lxd/storage/drivers/alletra: add mount/unmount volume logic
+8c13f9017c4a710db066d287c5d34d27a5b5a7e8    APPLIED     doc: Update metadata
+85a94f593a1674719c396551a27fa1afcb0ca098    APPLIED     lxd/storage/drivers/alletra: implement storage pool Update method
+6d0ebd0f8f1bdbd2154ce4eb92bca377011306c2    APPLIED     lxd/storage/drivers/alletra: use logger Warn() instead of Error() in reverter callbacks
+30cc9958d343af5042512ca7fa304aa67a00c391    APPLIED     lxd/storage/drivers/clients/alletra: remove unused fields from hpeVolume structure
+5452a24ffecb14e60fe5ba6e4a4cf6a6d49511c1    APPLIED     lxd/storage/drivers/clients/alletra: make DeleteHost() to be more strict
+21d7c3b5af299860d1317fa8fdca6900da79b9ab    APPLIED     lxd/storage/drivers/alletra: implement GetVolumeUsage
+e37d3778b9c6ccb09c078d56a021491b079868ac    APPLIED     lxd/storage/drivers/clients/alletra: add growVolume API helper
+aefcaf9ec457e2909fd5650c799a636ad097f144    APPLIED     lxd/storage/drivers/alletra: implement SetVolumeQuota
+914773cef68b20010701c2c372a81a352b402198    APPLIED     lxd/storage/drivers/alletra: support volume export
+9d7a88b52fd45ac5551285f9c81627e2cf140f4c    APPLIED     lxd/storage/drivers/clients/alletra: add create/get/delete snapshot API utils
+e78be804f137eea06b4aad7ebfb01b98deeacfb1    APPLIED     lxd/storage/drivers/alletra: add snapshot create/delete support
+b1ad9864b659c74e84e6e81353c96b2a1f8fc1fb    APPLIED     lxd/storage/drivers/alletra: add mount/unmount snapshot logic
+b83b5bcf33fc5dc3840695e448324f75e5b2a6be    APPLIED     lxd/storage/drivers/alletra: support exporting a volume with snapshots
+8df74b72690740e69c4ea828775dec69972d6eff    APPLIED     lxd/storage/drivers/clients/alletra: add helpers to get task state
+77f8fd6d6d60da435131f0cbeb0fdb7251615271    APPLIED     lxd/storage/drivers/clients/alletra: add restore snapshot API helper
+91483bcd550f8c37b2eb12cc7679d1bb16ff7360    APPLIED     lxd/storage/drivers/alletra: add snapshot restore logic
+5ca39ebf2af0a3e7164a55566558ca3a5f96974a    APPLIED     lxd/storage/drivers/alletra: implement CreateVolumeFromMigration
+21ac5a1ae0cb48e47b4902ebe30be9947ae8d8a8    APPLIED     lxd/storage/drivers/alletra: implement MigrateVolume
+883202177efe0d52d03bc84b6c56d545eaab8f47    APPLIED     lxd/storage/drivers/clients/alletra: add createVolumePhysicalCopy API helper
+aebd2ef6759019140a5c652202902b6f3b454c43    APPLIED     lxd/storage/drivers/alletra: implement CreateVolumeFromCopy
+af45a27e68462fc5fa1858dfdac09b2eee36f34a    APPLIED     lxd/storage/drivers/alletra: enable optimized images
+99d92af8413011d11512fe132fac5a54af024184    APPLIED     lxd/storage/drivers/alletra: implement RefreshVolume
+9bee1c34d76ac8f6043b813733f3efd390ee8dea    APPLIED     lxd/storage/drivers/clients/alletra: add "hpe" prefix to constants
+873126a1178caf813fafc7d4eb2b8747e8085a56    APPLIED     lxd/storage/drivers/clients/alletra: add GetCPGSpaceReport API helper
+6b580c36de64018abd52d4fe860b39d8bccc7b63    APPLIED     lxd/storage/drivers/alletra: implement GetResources
+c35edba1322cd02b3316f22d384fa020f5a05894    DIFFERS     api: add HPE Alletra Storage driver API extension
+7201e7fd81c5496e17b0c1b45c142caa8a6e3561    APPLIED     doc: add HPE Alletra storage to the table of supported drivers
+0b117ef1636db5c9d7334099c8cc95238c787b8b    APPLIED     doc: add explanation of HPE Alletra remote storage
+91e0241c2466998447779c16a73674ab84fba5b0    APPLIED     doc: add example on how to create a HPE Alletra storage pool
+07f60c13867dc8bab66b59b2f43e94daa3470e63    APPLIED     doc: add HPE Alletra driver reference
+478f46b5c280141c3c2322fc5acd9313cb018084    APPLIED     lxd/storage/drivers/alletra: add explanatory comment to ListVolumes method
+b22b4f9ebe7f5e3bd0f38fb6439f8b50a611fe75    APPLIED     lxd/sys: Add ServerUUID to sys.OS.
+6f561fd91bc3a4773d1eb08d9d3e5fbb31d9cd26    APPLIED     lxd/state: Remove ServerUUID from State.
+36658ff58eec43faa7a724166172b8ad452538c6    DIFFERS     lxd/state: Remove ServerUUID from Daemon.
+72673f56b2d6da6b735395df62100c2810daf58b    DIFFERS     lxd/storage/drivers: Update state.ServerUUID to state.OS.ServerUUID.
+a65e6e94d15ed48694e95f2d39fccf381eb14dd2    FEATURE     lxd/cluster: Update state.ServerUUID to state.OS.ServerUUID.
+1ce660bbef4c46d7bd7539c046e0ac278bb998d9    APPLIED     lxd/backup/config: Add configMetadata and lastModified fields
+23754a733a1f2e5fe22b40a48de347f3f2fd1a89    APPLIED     lxd/backup/config: Add NewConfig func
+559aeeb8ccfa18504a4132b2fc83322c806df651    APPLIED     lxd/backup: Export the backup config's modification time in ParseConfigYamlFile
+8f8b6ddb0a13db973f534f65a2b75c28c8b2d474    APPLIED     lxd/backup: Don't always populate volumes in the new format
+014f65bf2008287be4d34fc609d4bf632941b9e2    APPLIED     lxd/backup/config: Add LastModified getter
+b81e5aeefc97b9a898550098c63af0a4599fede5    APPLIED     lxd/backup: Ensure the config metadata is copied
+07c58faf2d42f9c8d614182f3b9574a6939ca8d2    APPLIED     lxd/backup: Add test for ConvertFormat
+1f75af8b188366d3e0c72d3e1e0ad58cfb0588dd    APPLIED     lxd/request: Add CallerIsEqual method to Requestor.
+8932e94be9a04ae47c7f6c68b7ae0cd54d83ad37    APPLIED     lxd/operations: Use internal requestor representation for operations.
+058b82539722d81750bdd9e70817d56a92a0ef50    APPLIED     lxd/operations: Add an EventLifecycleRequestor method to Operation.
+83a8f20a27dc2da6e0e92f85feb698671bab60f0    APPLIED     lxd/lifecycle: Update calls to (Operation).Requestor.
+888f3c55f360272004d3d40a65a16bb476a04110    APPLIED     lxd: Update calls to (Operation).Requestor.
+2d5347f560db5b789775fe20ba81f36947017e68    APPLIED     shared/logger: Separate initialization of global logger from logger creation.
+233d5d463fb8ea636db8c9dd0163f6c4f69a9e91    APPLIED     lxd/events: Instantiate a new logger for the event server.
+cceebf049bdf2520d8213510f01d81c3ccbdf27d    APPLIED     lxd: Move event server set up to (Daemon).init.
+d6fe81ed5bc861c3fb84f573bd0a9bf60d879a62    APPLIED     lxd-agent: Add an `init` function and move initialisation logic to it.
+e5d53a78ee9691629c05ecdef17f7fedf3e1a9c3    APPLIED     lxd/response: Handle ETag in devLXD responses
+5bf2882831c6e6f539208748cf69a3146397bba2    APPLIED     lxd/request: Helper function to extract caller identity from request context
+9bf2002f2d96c964addbddafa0f7bc5e40e800ef    APPLIED     client: Helper func to setup http request
+c67e39b8b86eac81fb6911fe1841a5c3d354cf87    APPLIED     client/lxd: Use NewRequest in raw query
+8cbee9cf2b92a7353c325c60697c12631a9aa2d4    APPLIED     client/devlxd: Use NewRequest in raw query
+ffdf0dbb8d91991ec9302cac864cc72e3238b215    APPLIED     lxd/response: Add responseCapture that captures the rendered response
+f8d29f51cf99053fb43334b0484e6a4ffd400e8e    APPLIED     lxd/response: Helper response capture function to render response
+9b54a0e568c92649d02ca302fc0daf3ff1ca610e    APPLIED     lxd/response: Helper response capture function to render response to struct
+716bc63cb72a76cac2c4d0c4c7fad183c7f094c1    APPLIED     github: restore `dqlite`/`liblxc` cache for TiCS job
+59f1418c50d7bbc974ee6670e57d5f2b577ab9da    FEATURE     api: Add devlxd_volume_management extension
+87e7d978231a058388cbc31babc489989b1e4a2e    FEATURE     lxd/devlxd: Introduce new security key security.devlxd.management.volumes
+9cbd1dd4c175c9e9cc9ec29fe38f8eb3ba3b2801    FEATURE     lxd/instance/instancetype: Add new instance configuration options security.devlxd.volume_management
+aaf5aacb909cca8fcfbd6e7b4456a84c4a06ec7a    FEATURE     shared/api: Add supported storage drivers in devLXD state
+c5ceacea34a02cc25f8f99076c032e340d75375d    FEATURE     lxd/devlxd: Include supported storage drivers in devLXD state if vol mgmt is enabled
+f5eebe97e62a5af0c26cd502f3fe3fdda4051774    FEATURE     test/devlxd: Test supported storage drivers in /1.0
+87b0bb46d84d1ea7c6376f036bb9f3097a5c26f4    FEATURE     doc: Update metadata
+06e569342f62d3b09937fddcb5b4dcc5c9ffe394    DIFFERS     lxd-agent/devlxd: simplify socket handling
+c4ff822a2abdc99d3e13b995f3f6ae167096f83a    APPLIED     lxd-agent/daemon: exit early if unable to open `agent.conf`
+22060ffe3c245a157b85da6b777ca9e603301efc    APPLIED     lxd-agent/daemon: replace old `os.IsNotExist()`
+22f2831a504b51b00a19fde493870dea132877ea    FEATURE     doc/api-extensions: Fix list in docs
+f3ed11d2f9011a40d28352cd76d5db6d4fc8aeb8    APPLIED     shared/api: allow config to be in the untrusted server response
+68dd041f400143b55bf620855e5b83a9846eef43    APPLIED     lxd/api_1.0: include user.microcloud server key in untrusted response
+4519132b60305185a48f7a1e7bb5dd69d83fabc2    APPLIED     doc/rest-api: Refresh swagger YAML
+674bf6d657b2f4d261fb9b7593b958bacdbcb2db    APPLIED     github: run TiCS on 22.04 to allow restoring binaries built in Code
+245e513a7c97b5db4c96075eff43b1d775ea4e5b    APPLIED     Revert "lxd-benchmark: log failure to close CSV"
+e304a8c7e5882f5e04b06fdc61d6379df7f037a8    APPLIED     lxd-benchmark/benchmark/report: use named return values for deferred error reporting
+1d5cd8f9368c9174f0c42dcc0c53b24534e1c857    APPLIED     lxd/network/ovn: iterate over strings to avoid `Itoa()` conversions
+7594c792b5cdc3414285f3f3b5211c9ac3629a89    APPLIED     lxd: Remove default project from server level lifecycle events.
+bce4be68dfb6136efdfb1cf24d1b70a3fc9c5587    APPLIED     lxd: Fix project for warning lifecycle events.
+9ad1d39b9edc4bf23ea7dc4b98b8e840ceda3d6c    APPLIED     lxd/*request: move clienttype.go
+e151057f0188b6eefc21fab4d0011b99e4ffd6dc    APPLIED     lxd/request: rename clienttype.go to client_type.go
+4a3bb39bbfda425ce5e17801d55f69cfac698c68    APPLIED     lxd/request: add client type to Requestor
+afbb96e3e4009212cfb2455879992c9cdc4801ba    APPLIED     lxd: remove cluster notification with wrong cert error
+99ab11c99b8b7f788e281f2c7bcadf519f7c223d    APPLIED     lxd: replace use of lxd/cluster/request package with lxd/request package
+2f1689ea5a1fbc336ae244e62672d56c841ce4fd    APPLIED     lxd: replace named import with unnamed for consistency
+659fe962c8a42f86ee8d1f0bb556536b8f094134    APPLIED     lxd/request: unexport userAgentClientType()
+677d363bf8c111513f97ceaf24f6fe3aabdbfff6    APPLIED     lxd: remove isClusterNotification()
+5e2ea2aaebdd20f89abe699763dc717cc8be79f6    APPLIED     lxd/request: add (*Requestor).IsClusterNotification() method
+7b5c6e585107f78f6ab297aa50f44bdc7576bd28    DIFFERS     lxd: use (*Requestor).EventLifecycleRequestor()
+62789fc2e510ca0ee39b118048235a08b48acfc4    DIFFERS     lxd: use (*Requestor).IsClusterNotification()
+066086beae007f7803e4abbb2a5eb3f71a25ea80    APPLIED     lxd: use (*Requestor).ClientType()
+bfce5768cf6a9620f67b817c2c428ce108badabb    APPLIED     lxd/acme: early redirect to the leader in `acmeProvideChallenge()`
+2d06be800fee0ba386b92d8b3fd2510098017624    APPLIED     lxd/api_cluster: only extract name if clustered in `clusterNodeGet()`
+3a173fb2a91290b50d76f6c1fc7d3305f6399844    APPLIED     lxd/api_cluster: only extract name and force param if clustered in `clusterNodeDelete()`
+fec26a5c758d1975cb55168e988346c0c67de1de    APPLIED     lxd/api_cluster: lookup local cluster address closer to where it's needed in `clusterNodeDelete()`
+667527d91794637f3289f3e825a5273cdc465ae0    APPLIED     lxd/api_cluster: early redirect to the leader in `internalClusterPostAccept()`
+6eb2ceec2414e7977edbfc46e9b4ec77d8af6ef5    APPLIED     lxd/api_cluster: early redirect to the leader in `internalClusterPostHandover()`
+55303c49b27b4d33a3d3815a02f1b0add56cf68a    APPLIED     doc: extend custom wordlist to include some HPE Alletra specific words
+df72f5864b8349993f6a3e8750778cf7872c122d    APPLIED     lxd/storage/drivers/zfs_utils: simplify return of `needsRecursion()`
+77e0a99bd2a05dbc4a57801328788308e006257e    APPLIED     lxd/storage/drivers/zfs_utils: use `strings.Cut()` in `getDatasetProperties()`
+de81c19d65c00c90bf1f56dc769e3ed55d6f0c11    APPLIED     lxd/storage/drivers/zfs_utils: cache return of `d.dataset()` in `receiveDataset()`
+63865012eec105f379e345b91bca4cae89c88482    APPLIED     lxd/storage/drivers/zfs_utils: simplify command building in `sendDataset()`
+5f3d2d75b5d250703e5355e1e9e37c0f98254638    APPLIED     lxd/storage/drivers/zfs_utils: simplify reading from `/sys/module/zfs/version` in `version()`
+984f249d7dce35b5bc8688a9f1663ff16d6d4f88    APPLIED     lxd/storage/drivers/zfs_volumes: simpler error handling
+109061e6de8f681b02f6c4102139257a58563929    APPLIED     lxd/storage/drivers/zfs_volumes: improve fast path of `getVolumeDiskPathFromDataset()`
+83a9ed04ef789eb9c4ff5e4cca61c73be1beb55a    APPLIED     lxd: extract doProfileDelete()
+4e545854ec156eaf7afead763dd712d06dfa844b    APPLIED     doc: Add resources_disk_used_by API extension
+379375a3908aa113220c67ac92208f79f5fb1279    APPLIED     shared/api/resource: Add UsedBy field to ResourcesStorageDisk
+822c8bdc2047e38e299bf7fe1717c5ca746d374a    APPLIED     doc/rest-api: Refresh swagger YAML
+10511e4a34ac4f25357473700f8670cca0affe8d    APPLIED     lxd/resources: Add bcache devices to list of storage disks
+066b4a7b110092ad8ace3367306d20181847957f    APPLIED     lxd/resources: Identify bcache caching and backing devices in list of storage disks
+a05372708c26f4afe812bb214d91cb1a9c11feb4    APPLIED     lxd/resources/utils: Add sysfsIsDir
+3601beaea65ff902b6355f15f6f3444c35360e6a    APPLIED     test/includes/setup: Install bcache-tools for tests
+7a9d82834d6b5480350fd212f16c7cd51e8cb274    APPLIED     test/suites/resources: Add test_resources_bcache
+985d7c43df4e0f3a1b3bf13c48f6d57e5ee5f4e0    APPLIED     test/main: Add test_resources_bcache
+22604ff2c6b5505640f25cb5de43b491d9267408    APPLIED     github: allow restoring yesterday's build in
+66a34e48ee1f8595369e8d9df189d7f869e58a75    APPLIED     github: allow restoring yesterday's snaps in
+ed638db10bf554ec6acf74a87c835e1880899c35    APPLIED     lxd/instance_console explicitly close both ends of mirrored websockets, to avoid hanging websockets where one end disconnected. fixes #16073
+46ebd86469faa28810395919bc93ee950bc21b70    APPLIED     lxd/resources: Rename sysfsExists function to pathExists
+022690735089445d56ab0f992ad757cd826eab46    APPLIED     lxd/resources: Rename sysfsIsDir to pathIsDir
+0561aeeb80225ce8af40a5dd77dc3748a0b3504f    APPLIED     lxd/storage/connectors: implement Discover() for ISCSI
+8d34573d086dd49471f505c4770980c798f996d4    APPLIED     lxd/storage/drivers/clients/alletra: properly handle ISCSI ports in GetTargetAddrs
+3d0a8f7d40d3b226a19e48b47f95faeee5111d27    APPLIED     lxd/storage/drivers/alletra: properly handle ISCSI mode in getMappedDevPath
+c1a25ca3a8ae1b498eaf7181825999ad18326bc0    APPLIED     lxd/storage/drivers/clients/alletra: properly handle ISCSI mode in CreateHost
+974a2cbf1d03ac6675a9805ab2556087a1be0ee2    APPLIED     lxd/storage/drivers/alletra: support ISCSI discovery
+f4d1931d8ea4070d5d0ba7c671d4bec5fda7dea4    APPLIED     lxd/storage/drivers/clients/alletra: fix ConnectHostToVolume() to check vLUN existence
+6b6c11280e953911cdd9a16b2a818db23fae0331    APPLIED     lxd/storage/drivers/alletra: fix block device unmap logic for iSCSI
+2ea3ff22e6afde260ec19c7e70ce9d943dd32a85    APPLIED     lxd/storage/drivers/alletra: allow ISCSI mode in HPE Alletra driver
+b595dfb2f368afe75691bf6f44546dbd0543c9bf    DIFFERS     lxd: extract doImageDelete()
+12271a533f50beb636d497b2351cd03dcf9bcf85    APPLIED     lxd: extract doNetworkDelete()
+06ce3f456b25944ee01c1a681923389e34aaa797    APPLIED     lxd/api_cluster: remove obsolete/obvious comments
+f82c3b3f46cb38c7d21079c779f8cb2e12e454fc    APPLIED     lxd/api_cluster: use context logging for leader redirections
+98896c5299dbf11ceeb9e69a2cd9d99773d5eda0    APPLIED     lxd/api_cluster: use context logging for leader redirections
+8749957eee19ea9a7160b69468f4395a0d02d6ae    APPLIED     lxd/api_cluster: error out if not clustered in `internalClusterPostHandover()` handler
+0db9cfca0635da12690ec60b5d5060f97d1c04fc    APPLIED     lxd/request: move check for cluster notification with wrong certificate up
+e0b31553498fa5f1a02d1fa9fc2410ca05b3d5f9    APPLIED     github: fix condition to trigger documentation checks
+737b6908ffad88f7351f69c60560273c542f326b    APPLIED     doc/api-extensions: `bcache` is a not a word
+b301c05e2ba8316d228902683aea9c19d265d1d6    APPLIED     lxd/instance/drivers/lxc: ignore clean stop of SFTP server
+7323631ec5ba65d866d8c28274b1ff5fc86fc6a2    APPLIED     api: Add ovn_dhcp_ranges extension
+62a222a159c6e9d2a0a83790597c67dbe574dc59    APPLIED     lxd/network/driver/ovn: Add support for ipv4.dhcp.ranges
+46627e0384a313a0de28a54dea3e3cb1577ed950    APPLIED     doc: Update metadata
+1e8b738cd5591fa192fbaf134e52d2df473a104c    APPLIED     test: Check setting ipv4.dhcp.ranges for OVN network
+7737bce15ea1297689384e550c67e5032be0ff0e    APPLIED     doc: Ignore HPE alletra doc link as unreliable
+004cfd4d03e1bc9f1f4db388e1ec745035d82dfa    APPLIED     lxd/storage/block: add RefreshDiskDeviceSize helper
+acd7600947c684ab50699a36b7b6775538f8331a    APPLIED     lxd/storage/drivers/pure: fix volume resize in ISCSI/multipath mode
+b71086fb5a78df1a51f897849289bf413d626c10    APPLIED     lxd/storage/drivers/alletra: fix volume resize in ISCSI/multipath mode
+4f87aaf766326845deaa02f3b990a850bffb9746    IRRELEVANT  build(deps): bump google.golang.org/protobuf from 1.36.8 to 1.36.9
+c7f785f3f1ff2a0b5fa9852c799700b448f1a5b3    IRRELEVANT  build(deps): bump go.yaml.in/yaml/v2 from 2.4.2 to 2.4.3
+5732dead90610ad80cbdad5a8212ba138af6532c    APPLIED     Makefile: enable parallel build for `dqlite`
+620087126afa250bab4fca616aa0472b780799aa    IRRELEVANT  build(deps): bump actions/setup-node from 4.4.0 to 5.0.0
+cc96c0987d513f0d631a7d472289bab30313886e    IRRELEVANT  build(deps): bump github/codeql-action from 3.30.1 to 3.30.3
+30c4ff60f9453a9622b97f4c5d215827c1c9b9cb    IRRELEVANT  gomod: Update dependencies
+e9e7530a4e97b8f70deaff0b1bd9cb733c492372    DIFFERS     test/godeps: Update expected deps
+51796f04eb5e6476fe3411fe3307f1fceb8cb3d4    FEATURE     lxd/images: Fix crash on image import to non-existing project
+bedc49ea1c875dfc7a0bc3479b7061548111216a    DIFFERS     lxd: Unify error message on loading single project
+7072cc357379c0db8f2de6088cf67fb52c9b7b37    APPLIED     lxd: Unify error message on loading multiple projects
+d6bae3c150bfdd897b1d20a7fd819a844f2f2d97    APPLIED     test/suites/image.sh: Test image import to non-existing project
+a2680e313bfbc2c461d850a13c42721cef3cad59    APPLIED     test/main: check if the available `busybox` is OK for `deps/import-busybox`
+c67ff21f08fd68ce670fca8ef4560ddd15680440    APPLIED     test/includes/setup: do not repeatedly check if `busybox` meets the requirements
+5d6f337b1d3a5957296df298e0372350f5bbd4f1    DIFFERS     test/includes/setup: use lighter CSV formating
+d0c7bda68007fec191f1e5c4f30337a128ee399e    DIFFERS     test/includes/setup: use local variables
+ad0f6b2efc68f62bdf6c67f27384066bbf6fb0f4    APPLIED     test/suites/backup: `c3` is never started so use an empty container
+e417f005fc86a3e019b88a08a52369b851615e41    APPLIED     test/suites/backup: only import testimage if needed
+32b1e12a240f27f00483d26565e2ec9f5762a872    APPLIED     test/suites/backup: use empty containers in `backup_export_import_recover`
+96ba868d8d138e3fe2fcb82931c952f3d01153f1    APPLIED     test/suites/backup: avoid using force to delete stopped containers
+0d614f63a606fd6818f029077d27909f3ee44c0d    APPLIED     test/suites/backup: no need for localhost remote
+d35ce27b9dc4fb1b5314da6c563cf1f402cf6e9f    APPLIED     test/suites/backup: no need for localhost remote
+bc7cd46801b6d10b084ee14556594a191a57243d    APPLIED     test/suites/backup: avoid importing testimage for no reason
+7d700bbaf6f94dd7ececa5a5835816d7d2309bd5    APPLIED     test/suites/container_devices_unix: no need for localhost remote
+b27336acb97fffbf7b2dadd89e092dc58bdb7088    APPLIED     test/suites/container_devices_tpm: no need for localhost remote
+b7cd56b60012e6937040a3dcd7e101ceb99b23f4    APPLIED     test/suites/incremental_copy: no need for localhost remote
+87f5f760305246830cbe3216853b6856a35d03bd    APPLIED     test/suites/incremental_copy: don't paper over botched cleanup
+15e044f45dd79d6e63d3e4c06bd8d59a691002d5    APPLIED     test/suites/migration: use empty container to test network changes
+7ad7e29eaa029704cf28534b6e2218ef30215c2c    APPLIED     test/suites/migration: test file pull via `stdout` comparison
+ac8fe9a419055e211b347a10d8cf644ec3c88dda    APPLIED     test/suites/network: cleanup any leftover NIC from previous run
+fba5f29b76455f030576b19ef7568c68a328a60b    APPLIED     test/suites/network: use smaller containers
+2b02542fcdebd2493afff97621071f7fb1bd2164    APPLIED     test/suites/network: delete 2 containers at once
+f8f6254f95c059d136e512b90fb1049666719837    APPLIED     test/suites/network: use CSV format to list leases
+de763c0432542eb6217268f3d1c62d13b69f1b8c    DIFFERS     test/suites/network: avoid repeated calls to `lxc network list-allocations`
+9ff55e89426a5f9186b9583b456a85dbdbe142a8    APPLIED     test/suites/network: avoid repeated calls to `lxc network list-leases`
+043a7e96f95a03d39ba3297c531d2b0203dfdfae    APPLIED     test/suites/network: create container close to where it is used
+be0718e51b51fc7d1ddf01de5587ded763551c7a    APPLIED     test/suites/network: set IPv4 and IPv6 at once
+efe538d3a0ae847c79770d99355462489a6145a2    APPLIED     test/suites/network_zone: no need for localhost remote
+ea46208cb0b26cf75cf4d5434328b99fdc4b014a    DIFFERS     test/suites/projects: use smaller and/or empty containers
+21765ff3d862df282afaab1b32cfc5b21c92be63    APPLIED     test/suites/security: no need to ensure localhost remote
+877640b65a263c8e2228124f35365d72e7405fc4    APPLIED     test/suites/security: use small container in `security`
+b6b3caa5046ab545ca158421172d4457520936d0    APPLIED     test/suites/security: use small and empty containers in `security_protection`
+2f11d8d30f529a432049608d4445fb02861ce9e9    APPLIED     test/suites/security: use small containers in `security_protection`
+fa1c52dc7cd4e7e30391aa2630f6abc13d31f7e2    APPLIED     test/suites/security: combine stop and delete in `security_protection`
+869ab426dbfdec508d5c8e98840f274d767e093f    APPLIED     test/suites/snapshots: import testimage once
+062ea72d7566b81f693f905aa74a5a842382a5f0    APPLIED     test/suites/snapshots: use small and empty containers where possible
+050fdbec8f0d80617904c31df08294bdca6c2b8f    APPLIED     test/suites/snapshots: no need to force delete stopped containers
+d97dbf84143903cc1c6cbbbc8c43c2ffc104f622    APPLIED     test/suites/snapshots: delete containers in parallel where possible
+298a3d7c1682d4636b0314fd6c7aecb1ceda3415    APPLIED     test/suites/snapshots: no need to ensure localhost remote
+fc7cfb12b8e8342aaeaa3dc1eda84bab89609d11    APPLIED     test/suites/snapshots: replace `lxc info` with faster `lxc list`
+0a79761399cef0c535db5283f304a522d899b43e    APPLIED     test/suites/snapshots: use small and empty instance in `snap_expiry`
+4fd5795a04ff55dad708f439657cb4581aba6881    APPLIED     test/suites/snapshots: combine stop and delete in `snap_restore`
+9d6433b3a80a277934bdf9885004ccae9354dcba    APPLIED     test/suites/storage_local_volume_handling: stop importing testimage (twice)
+ccbb0d0d324f97fcd34c948eb8dbde61edc2b65a    APPLIED     test/suites/storage_local_volume_handling: use more precise `grep` patterns
