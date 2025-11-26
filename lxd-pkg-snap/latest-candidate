@@ -434,3 +434,7 @@ a314b131f1ebd156540cb589c9e5eb438264ac4f    APPLIED     Revert "disconnect-plug-
 02c8a71f81367699332bee6e16933e1fbeca43de    APPLIED     Revert "remove: simplify Apparmor escape"
 927dd04de1be451515dd059cda7c7c2a1cabef62    APPLIED     Revert "lxc: escape Apparmor confinement early on"
 a0e1150a86d8a772c0fd7567a225d53e3e354787    APPLIED     daemon.start: don't manage Apparmor related sysctl if not active
+3ca80ec955e0d311bc5537daf744538d49825991    APPLIED     daemon.start: avoid using `cut` to extract ZFS MAJOR.MINOR version
+460076a8a14e297a52f29d0d5e63f6eb700b9414    APPLIED     Revert "daemon.start: avoid using `cut` to extract ZFS MAJOR.MINOR version"
+e940f257bf8d6768dc4361253ec000020e21f5e0    APPLIED     daemon.start: `cut` using `.` separator to get the `MAJOR.MINOR`
+14bd3a7de1bf50c52c3fafe70204bc1d450a9dad    APPLIED     snapcraft/commands/daemon.start: fix startup on non AppArmor systems
