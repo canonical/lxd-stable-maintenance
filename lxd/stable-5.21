@@ -7623,3 +7623,116 @@ daf078f782fdb577ebe8dc13feff7b59e449a6b0    DIFFERS     lxd/db/cluster: Add a ma
 4e10604c715d69714842730d78f64c083044b19a    APPLIED     lxd/instance/drivers/qemu: drop unused param for `deviceAttachNIC()`
 8cbe6063c4cc5e86f84675f92b667eb643253abe    APPLIED     lxd/instance/drivers/common: avoid explicit type declaration for global var
 b38d7f31ce137d8b7f3e874ae0641905f3718e19    APPLIED     lxd/instance/drivers/lxc: avoid explicit type declaration for global vars
+257952b9bf07cbc04f09bc96159d364e7d68bdfb    APPLIED     lxd/instance/drivers: extract (*common.).restoreCommon() from (*lxc/*qemu).Restore()
+5923e41d946c8b1427274961f872247298322478    APPLIED     lxd/instance/drivers: log error when restoring ephemeral flag fails
+4d36c3a26a0dbcb718414b48c806cc4896b4c9b4    IRRELEVANT  lxd/instance/drivers: use (*common).restoreCommon() in (*lxc).Restore()
+c3e61394e02162a3ff40af2f1c7c0f1fe75f16e5    APPLIED     lxd/instance/drivers: use (*common).restoreCommon() in (*qemu).Restore()
+1ab6944d93880d257d055e2f3112efd9e8867166    APPLIED     lxd/instance/drivers: expand (*common).snapshotCommon() godoc comment
+e93578d951608f77e4edf6a3372491d1a3213824    IRRELEVANT  gomod: Update dependencies
+6e86a799da9ab2775ee9cfc7bfafba8c9ab3b7ce    IRRELEVANT  gomod: Bump go-dqlite to pre-release
+2ab8840717c167ff618e60bcaf7729555d573807    IRRELEVANT  test/godeps: Updates expected deps
+4911896610a8d94247c5a696710916df1515a041    APPLIED     test/suites/container_devices_infiniband_physical: don't fork for simple `cat`
+91749cfbc2685f7ce599b7f51a91937d87a7f8e2    APPLIED     test/suites/container_devices_nic_bridged: don't fork for simple `cat`
+ddd21ddb898b0b080504a446afe69d1afa1e74e3    APPLIED     test/suites/container_devices_nic_bridged_filtering: don't fork for simple `cat`
+7746b4b4896e39608da1e22fecaa2ba2aaea1fc2    APPLIED     test/suites/container_devices_nic_bridged_vlan: don't fork for simple `cat`
+636f843b1377de090f9742152466ba4942d40825    APPLIED     test/suites/container_devices_nic_ipvlan: don't fork for simple `cat`
+374cd5d61c3af041d4a8d75c0ce6be4f44b9eb4d    APPLIED     test/suites/container_devices_nic_macvlan: don't fork for simple `cat`
+9f0d5c5ca4155efbea5c2523044f9eb734517438    APPLIED     test/suites/container_devices_nic_p2p: don't fork for simple `cat`
+03fe62eeaa9814c35fd062b7ab262e2f786c686f    APPLIED     test/suites/container_devices_nic_physical: don't fork for simple `cat`
+d982ebbd10946bec2e1b78fb7808f7888371de92    APPLIED     test/suites/container_devices_nic_routed: don't fork for simple `cat`
+f138b49e0c977d0f4366e4f52337c0d4ead964fc    APPLIED     test/suites/fdleak: don't fork for simple `cat`
+0d9a919d77404c05c01e38bbedc4417a0515b18a    APPLIED     test/suites/filemanip: don't fork for simple `cat`
+c13f0ca29c28acb6c91dde4ddfad1c6cc6d057d0    APPLIED     test/suites/image: don't fork for simple `cat`
+435047108a8d2a0df14e8206c7700ad84118f1c3    APPLIED     test/suites/image_auto_update: don't fork for simple `cat`
+32013868b3c717f2f40fe8ad68e3bf0f6dfbfa16    APPLIED     test/suites/image_prefer_cached: don't fork for simple `cat`
+a0c699a0d2c3f70b253e4ec89c683afba98548bf    APPLIED     test/suites/migration: don't fork for simple `cat`
+09017a53d00e808aac544a220cefa71265da9a51    APPLIED     test/suites/network_ovn: don't fork for simple `cat`
+5040e3db117efcac4c6c82d08c27aa8b0f7902ff    APPLIED     test/suites/network: don't fork for simple `cat`
+ea159320761e3aa76f5f3fe9e482a8ee960a2b38    APPLIED     test/suites/oidc: don't fork for simple `cat`
+6ba35e1e03145e30d8bd8d081990419a9aff3b26    APPLIED     test/suites/pki: don't fork for simple `cat`
+1b9eee9295c3e88b7bd40a2ca7d1ec69e9cf1b3f    APPLIED     test/suites/projects: don't fork for simple `cat`
+5c340150890b65f33c2865ba2b8520d03d77ecf1    APPLIED     test/suites/remote: don't fork for simple `cat`
+f70b6240b061f4f818dac2f8e619ecf91e58c1fc    FEATURE     test/suites/serverconfig: don't fork for simple `cat`
+492cde3633c5669c59ecdc11f8589447a2948fb3    APPLIED     test/suites/image_profiles: don't start containers
+ca8dbbab0ca0ef850ad12011b719792c73d27101    APPLIED     test/suites/image_acl: avoid variable reuse and simplify PID extraction
+d1957d5e893d2c30929b69395ea2e844823f741f    APPLIED     test/suites/migration: simplify PID extractions
+9f4aed6a3bfc9b3987fea13babd7cbe4b2002aee    APPLIED     test/suites/image_prefer_cached: delete 2 containers in one go
+fd0f3d03cbebdbe8773a105e90092f86f5853527    APPLIED     test/suites/image_profiles: simplify storage pool name extraction
+a472a9a3e118011c190b6bc2c932013e0eff866c    APPLIED     test/suites/image_auto_update: loop more quickly
+68955ddbb5d4eb38b4315edf716e1d598e7831e2    APPLIED     test/includes/oidc: write `oidc.user` file in one go
+ab81ff69bc1dfe8de58e3fb2fd55051ebbd53e55    APPLIED     lxd/network/driver/common: Add subnetUsageGateway constant
+38c37c62e8bb6b38f527beb01f4eb033735cdfa2    APPLIED     lxd/network/driver/ovn: Add getUplinkGatewayUsage function
+3a9ac4f45e3e82cfaeef0b35cce5ca54914eb5d3    APPLIED     lxd/network/driver/ovn: Refactor allocate uplink address functionality to check for uplink gateways in use
+90799d49b58e1aaa75155646fa7aecab1e3c8db2    APPLIED     lxd/network/network_utils: Fix randomAddressInSubnet() function
+3c656010ef10f92760ec3a1dfdf4d10b937734a0    APPLIED     test: Test auto IP allocation for external OVN forwards and load balancers
+385d4896861dcceee2f75c97d45bab692b98ef98    FEATURE     doc: remove instance placement scriptlet references
+208e148c5e753caab5fc395275e91954e061fa21    FEATURE     tests: remove test_clustering_instance_placement_scriptlet
+7bf00af0c9308b840a0e172cb0df3869b33bb60d    FEATURE     tests: remove instances.placement.scriptlet clustering move tests
+3df8b2632ea755489c0d9f015346aae5109e51b6    FEATURE     lxd/cluster/config: remove instances.placement.scriptlet config option
+21c2718f285cf9df0e085181b43dcda72b60c7dc    FEATURE     lxd/cluster/config: add user.instances.placement.scriptlet legacy config option
+1a5f89a4d9469afae6c09b9b530ad722c460390d    FEATURE     lxd/cluster/config: remove InstancesPlacementScriptlet()
+30d90e0c72e86007b1f8ecfb2b9f4c5896c6c441    FEATURE     lxd: add instance placement cluster config patch
+a6b580f2df58119ecef6167fcb520d27a3b14a5c    FEATURE     lxd: disallow updating instances.placement.scriptlet
+7f4503d0a98e21f4be3a185caaae42921199f393    FEATURE     api: remove instances_placement_scriptlet extension
+31370ae1d6bb23a6918f01a24b65a5327e091043    FEATURE     lxd: remove instance placement scriptlet support
+9ccccfbeac67ba3918ef2aa4912cce5c71682b27    FEATURE     lxd/scriptlet: remove package
+be25c2bce4be8d1ad3822e9027baa1f633bf2f4b    FEATURE     shared/api/scriptlet: remove package
+0445423cac57af0b7b6631a89d660716407db019    FEATURE     doc: Update metadata
+ff433fc03f6f435d11bf76af033cef57e91e192b    APPLIED     github/tests: adjust to new ui test project and setup. UI test projects have been split into unclustered and clustered backend tests. Relying on the big unclustered suite for now. Leaving addition of setup and run of the clustered suites for a later iteration.
+7d6600ac1d9b64f10980215b436b0eda2263f5eb    FEATURE     lxd/patches: Fix DEBUG message
+0d91a33238fe0a5ed0a8785f1b2e5b7599a47708    APPLIED     lxd/cluster/gateway: Use outer context for TLS dial
+ff4ba170575ebda4919fe2a0a2890a1587e8f6e4    DIFFERS     github: also run `golangci/golangci-lint-action` on schedule
+1eeaf84692008bce74f11af2416b41043b4dd23a    DIFFERS     lxd/auth/drivers: Enrich logging for OpenFGA errors.
+b8dcc157791be6772b6692a40cd5152927d078af    DIFFERS     lxc/auth: Add doc blocks for tls and bearer identity creation methods.
+d5c69ba4822df3b185bdf5d5fdb07d971ee8efcf    FEATURE     lxd-agent: Add comment explaining Authorization header usage of vsock client.
+aa6c1b566304f339e67aa4c20acc6d2e1db419a4    APPLIED     shared/api: Add constants for 'trusted' and 'untrusted'.
+3cce7df8a92d1c2726e1fc7c676e2bb5cd8e528f    APPLIED     lxc/remote: Replace trusted/untrusted string literals with constants.
+8a8d241bee5b8e44c20f66a4657c0d9705d8edb8    DIFFERS     lxd: Replace trusted/untrusted string literals with constants.
+dd27a1b1933b1d0841259ed2d2b6abadae1e8b3d    FEATURE     lxd-agent: Replace trusted/untrusted string literals with constants.
+89b1b210ba088593be78ff2ca5cc1e2437039824    APPLIED     lxd-migrate: Replace trusted/untrusted string literals with constants.
+6bdce2740a626c06e0cfb58bb376ce873055f2ff    DIFFERS     lxd: Align identity handler names with LXD convention (<entity><verb>).
+f800f5d14a972d6c1c7ad70b7a08d9668534e57c    FEATURE     lxd: Always set devlxd protocol, regardless of authentication status.
+5f78ce8a8719a72a936c09d82623100d46b2c335    FEATURE     lxd/request: Allow trusted DevLXD requests.
+da7c6b3d0456f1150858e5bd7177827bba4b147a    FEATURE     lxd/request: Handle devlxd protocol in setIdentity.
+1d469c11bb94facc9fc8de24552660c204650edb    IRRELEVANT  lxd/db/cluster: Fix typo in secret type code.
+656f467cc14c34450ad32e8fcfc73caa749e7267    FEATURE     lxd/db/cluster: Add conditional unique index preventing multiple signing keys.
+9ed002639e2dfdd3beb51467bcd10bef8bcd1ade    FEATURE     lxd/db/cluster: Remove handling of duplicate signing keys.
+11c0d8cd84acb08eef941791cdac0c9ab67971d0    FEATURE     lxd: Remove handling of duplicate signing keys.
+efb86383aaa6c630bebcff59c1efadad9f362a43    IRRELEVANT  go: Update go-dqlite to v3.0.3
+9d6b0802d9fc251234033db3121ba81cd60888c1    FEATURE     lxd/api_project: Fix daemon storage unmount on project deletion
+064fb6dde7819b4a9bb824e09d07c574c069637c    FEATURE     test/suites/serverconfig: Add regression test for project deletion with storage.images_volume set
+3b3b6e7eea0f465facfcc28b913b3b11fe1df63c    APPLIED     github: switch to nodejs version 22 like in LXD UI CI repo
+57798d39b59a4d261a409057c45f9361c5691a09    DIFFERS     lxd/auth/drivers: Remove 5s timeout on fine-grained auth checks.
+a5f5280a1a167a9d0903497c900d1cbfb5b11056    APPLIED     lxd/instance/drivers: remove superfluous log fields
+6cda8ee2c60e3649f7a14c572897df00a53988ac    FEATURE     go: Drop starlark module
+1e6f0a5c3f1236bbaa1501e85bcf73e6099e7464    APPLIED     lxd/devlxd: Replace devLXD specific API endpoint and endpoint action
+847090416adcffbaa410fdc21bced0bee037aaa9    APPLIED     lxd/devlxd: Enable AllowUntrusted for existing devLXD endpoints
+9c9e19893776fd6a7cb81b39ffc6c1d3395e64cd    DIFFERS     lxd/devlxd: Replace hoist funcs with authenticator
+685438d646cb1175a363c75ce482fd1c5ed6f1e6    APPLIED     test/suites/image: consistent quoting and reordering
+5b6979f158c280b8bd24f79a21723c1b6fdf82b2    APPLIED     test/suites/image: check if too long fingerprints are rejected
+384a59481dffebcd33542e58fea4ec529ba4bc42    APPLIED     test/suites/image: don't check file presence, `rm` will fail if absent
+f626f550779c4f594763501a6647f97048672df0    APPLIED     test/suites/backup: don't check file presence, `tar` will fail if absent
+83288ae0d542a154928599349e16aa891d1a57fa    APPLIED     test/suites/backup: generalize comments
+5a14687872d1e3ed4f4642da5d16e0746248633b    APPLIED     test/suites/backup: test `none` and `squashfs` compression
+e7fda235c794e9284e1cd264f4d7ac1b6de9e57c    APPLIED     test/main: check for `unsquashfs` and `tar2sqfs` presence
+568735693f0c54b251c5307f6df773d9837ce918    APPLIED     doc/installing: `squashfs-tools-ng` is needed to export `squashfs` volumes
+bd72a0fbcd2d07f6ba9fa28abbf9913254b67d4e    APPLIED     doc/lxd-test: `squashfs-tools-ng` is needed to export `squashfs` volumes
+3786f61f2e38d975e63f32ad2ec0d2acb1409c8b    APPLIED     github: `squashfs-tools-ng` is needed to export `squashfs` volumes
+60408f920701e44679703d4a7c93ba5c0d8efc03    IRRELEVANT  lxd/api_cluster: drop now unused params for `evacuateClusterSelectTarget()`
+a9660d31740454614017c87d995c992eec0dda9e    IRRELEVANT  tests: update config completions checks
+5b14dd43d1ffc1d164fa9bd0654e95ce40753e77    IRRELEVANT  AI: `squashfs-tools-ng` is needed to export `squashfs` volumes
+94818b2a02b93a87c68f16ce4bc26ff892591cea    APPLIED     lxd/images: replace `container` by `instance`
+65630f5b43dc7b67b41f0d9b57869d25598f32ba    APPLIED     test/main: don't needlessly spawn a LXD when entering the `test-shell`
+ce53dc35fa86c2a504f1e7c567179723c50f5ab6    APPLIED     lxd: simplify projectIsEmpty()
+12dbcb2aeba0620c4bfbeaf97751a0b4952a480a    APPLIED     lxc/file: add `generateRandomString()` helper
+c60b51fc5e0b624a45d2972494c86257e95700c7    APPLIED     lxc/file: replace `math/rand` by safer `crypto/rand`
+662227f84689c3899c7c5dc2978b44ee751d6867    APPLIED     lxc/file_test: add test for `generateRandomString()`
+3f50c45b58d4e0d1a2a86b0e2e17fc31428d380b    APPLIED     lxd/project/limits/permissions: Consider restricted status when checking restricted.* during update
+39f974b508e8f1e801f5e073f5c73e610bddd97f    APPLIED     test: Extend test_projects_restrictions
+43e9843034c030e0872c37ae90963651d4f71803    APPLIED     test: move preflight check to `main.sh`
+7d3a5e556c4dadfaeb677b1eb75cfc622c9a931e    APPLIED     test/main: fold the 2 sections for `standalone` tests
+9cbdb3942ea65dca7c5ebe6170230e80859542ed    APPLIED     test/main: run `clustering_edit_configuration` earlier
+39ae68eb8caf2848bc56840fe33e768ad8c7e785    DIFFERS     lxd: use imageDeleteFromDisk()
+7f6ce8b7e29a4fabad726d8d1b971722e8397bd5    APPLIED     test/main: only enter the inspection shell on failure
+c29d93fe692b73e596f4782b5b3b4b68573ecd3b    APPLIED     test/README: update description of `LXD_INSPECT`
+a286ddea6a8d8fd3cc50dc44f8c2ce8b34acf6ec    APPLIED     fuidshift: simplify arg checking to display help
