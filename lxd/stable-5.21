@@ -8012,3 +8012,406 @@ fc7cfb12b8e8342aaeaa3dc1eda84bab89609d11    APPLIED     test/suites/snapshots: r
 4fd5795a04ff55dad708f439657cb4581aba6881    APPLIED     test/suites/snapshots: combine stop and delete in `snap_restore`
 9d6433b3a80a277934bdf9885004ccae9354dcba    APPLIED     test/suites/storage_local_volume_handling: stop importing testimage (twice)
 ccbb0d0d324f97fcd34c948eb8dbde61edc2b65a    APPLIED     test/suites/storage_local_volume_handling: use more precise `grep` patterns
+ad497dadd76b5907577542f25a125aa3e4e39d8c    APPLIED     lxd/storage/backend: Don't exit early in detectUnknownInstanceVolume
+c255191d2791bd056c018d4e0d1898b6fc811687    APPLIED     lxd/storage/backend: Run instance recovery snapshot consistency checks if necessary
+a21a1219603ce461b074d2086a6328217e042e82    APPLIED     lxd/storage/backend: Wrap error message with more context about snapshot volume
+5c5ca1dda575ff037ae2defcf0c8c2de34c5ec63    APPLIED     lxd/storage/backend: Add custom volume discovery when checking instance volumes
+7e4649bb0b8abf017a95b3cd1e9239e12c894f58    APPLIED     lxd/storage/backend: Rename to detectUnknownInstanceAndCustomVolumes
+96c73763aee136756e6329a3b5d013ae28e6e5f0    APPLIED     lxd/storage/backend: Populate a volume's pool and project in detectUnknownCustomVolume
+2c7aadfa164e8bcc6d96781a8a3722ce485843ae    APPLIED     lxd/api_internal_recover: Add volumeConfigIsLatest func
+22b009d82771c0496700bd26fd241886f5588afe    APPLIED     lxd/api_internal_recover: Add appendUnknownVolumeConfig func
+b35a7a8075d431a7132654e190fec5b6b4e1578f    APPLIED     lxd/api_internal_recover: Unpack the unknown volumes returned from ListUnkownVolumes
+b6e217501ab574ab321385bf9706f279426907cb    APPLIED     lxd/api_internal_recover: Ensure the right pool is displayed in validation mode
+3127e9c76e51094675c9aeca2abd02ee9e3f5427    APPLIED     lxd/api_internal_recover: Handle instances last
+065035fe6c17945e6ac8b3f9235e88a36455c6e5    APPLIED     lxd/storage/backend: Ensure we don't discard a volume's volatile.uuid during recovery
+9940ae4b705466b16fcffbba0bf37cff5908467b    FEATURE     test/suites/backup: Add new test_storage_volume_recover_by_container
+b9631baa0ae8e1fcd195a17f09e545c821e6845e    DIFFERS     test/suites/storage_snapshots: use more precise `grep` patterns
+68a848ac41afceb7a76cf33a7c52380f015956c2    APPLIED     test/suites/clustering: use empty containers in `clustering_storage()`
+4a491a2ad71024ca2a394a741bd6084389f204e7    APPLIED     test/suites/clustering: combine stop and delete in `clustering_storage()`
+a3a6080009f4f61b3511e0df8d64f2a42ea555c8    APPLIED     test/suites/clustering: delete multiple containers at once in `clustering_storage()`
+5ffe68dcdd1b5f2cf8b557316315c2e552e9e89e    APPLIED     test/suites/clustering: delete multiple containers at once in `clustering_containers()`
+22bf1fa8c7213ed863c9f4435d2e1010b6903b8b    APPLIED     test/suites/clustering: use empty containers in `clustering_network()`
+afa155300a5227007b53bbb88a943a4090744f54    APPLIED     test/suites/clustering: use empty containers in `clustering_address()`
+037d20ddb875871bb3f517ec5c478ecb9bfdc46f    APPLIED     test/suites/clustering: capitalize SQL commands in `clustering_handover()`
+869bb1dc2565c0802bda2b3eea8121984ed27092    APPLIED     test/suites/clustering: use faster `lxc list` in `clustering_evacuation()`
+dc087c28c2a7febc2a2067e9e112d60c4539f4ea    APPLIED     test/suites/clustering: use empty container in `clustering_evacuation()`
+7fe8dd6b2ced72c48ebbe9fc885491b8c1ef3d8e    APPLIED     test/suites/clustering: delete multiple containers at once in `clustering_evacuation()`
+40b440512da841ce5e56974b19b5d597ee86cd31    DIFFERS     test/suites/clustering: don't show `curl` transfer speed
+a4b8bdd7cddf35da372d658ebac4ea0ca77bd443    APPLIED     test/suites/clustering: use faster `lxc list` in `clustering_storage()`
+0a1f78545585a41d11c6777d94cb27bbce0cf140    APPLIED     test/suites/clustering: use shell comparison in `clustering_storage()`
+2169a98ebaa024d1791b3b98882707031e2c0088    APPLIED     test/suites/clustering: remove redundant check in `clustering_containers()`
+4b1bac6339d5dcc208f1e32e05f11119913941e1    APPLIED     test/suites/clustering: use faster `lxc list` in `clustering_containers()`
+f2817d5a560db46ed6df59dcdad57201aa28f751    APPLIED     test/suites/clustering: `lxc file pull` to `stdout` `clustering_containers()`
+8fb1f00b7702a922b5f86a751f411a78d71f9b1a    APPLIED     test/suites/clustering: reorder operations in `clustering_profiles()`
+9498d8913945f37b6db5feacb5ae4b4ccb72c2c7    APPLIED     test/suites/clustering: note that bulk deletion breaks `clustering_events()`
+fa3c66290030f6de7be2c549187e9d3588829018    APPLIED     test/suites/clustering: sleep less in `clustering_events()`
+df2285decae2ff4b70a50c8309d41d321b3bf2bb    APPLIED     test/suites/clustering: use empty container in `clustering_uuid()`
+2a24dfdf919d2df7ff6f7122039fc74ebe19eb8c    APPLIED     test/suites/clustering_move: use empty containers
+c99a7d6e5fdf60304bce554d3f25bcdf6e090ebe    APPLIED     test/suites/clustering_move: use faster `lxc list`
+bc1afdf450698119ced3a40d57d017c805fbc7d6    APPLIED     test/suites/storage_driver_dir: cope with `xfs_quota` output from 24.04
+681f023050f19dc5e384246a7022005a44725b5e    APPLIED     test/suites/storage_driver_dir: 22.04 `-kvm` kernel does not support XFS quotas
+2780ed982e24d322210feaad37b8a4874c3a0a51    APPLIED     doc/lxd-test: add `bcache-tools` to test deps
+249156c99ba34ce7e4ec095854b4b4d4debfd30b    APPLIED     test/suites/container_devices_tpm: skip known broken on `lvm`
+d193bec8d8e0828e1c45d3e762991572160a0388    APPLIED     test/includes/lxd: wait after monitor PID instead of sleeping
+a2d556605c7f4cf17399c9631162c78a0a1436af    APPLIED     test/includes/lxd: poll faster when waiting for LXD to shutdown
+db9a83bdd689b2edf027b731964866493b84709e    APPLIED     Revert "test/suites/shutdown: don't needlessly import testimage"
+e2508b53d61a14d80c9283ebc10b52447f0c29bf    APPLIED     test/suites/shutdown: don't sleep after calling `lxd_shutdown_restart`
+25b720f0ef90c69346d86db6ad04eef6fd8a19ee    APPLIED     test/suites/shutdown: spawn less containers for scenario2
+7c7a5036a15deefb689fcd8339986dcfa40fee5c    APPLIED     test/suites/shutdown: sleep less after spawning operations
+b9779a21b8ecd8362e6ba3d874a43888cf9ae728    APPLIED     test/suites/shutdown: kill any leftover operations
+3edbef8d7fd4f7ad7a0be9840dae5f2d65efdd37    APPLIED     test/suites/shutdown: reuse the same extra pool for scenario 6 to 9
+cb092f963299e14442ed1a95380afab421af7151    APPLIED     test/suites/shutdown: delete all instances at once
+1564dd227f0d0146aa621e48dab92a9bf13909ea    APPLIED     test/includes/lxd: remove unused `delete_instances()`
+1d8eca99ee3940e9f3a02d6c6d996b4a6017f76c    APPLIED     test/suites/clustering: simplify daemon PID extraction in `clustering_shutdown_nodes()`
+108392afd346d00b500d38942ab0538155b136e6    APPLIED     test/suites/clustering: simplify daemon PID extraction in `clustering_network()`
+b6062676a17d289e1aaad44268a37376236d32fc    APPLIED     test/suites/auth: don't use addresses on networks
+a00c2840c1c95592f2860dd28e680834bb10c6aa    APPLIED     test/suites/basic: don't assign addresses to some networks
+50aab4a7b43c4d0c00b9b12a72a74d7d16d9890a    APPLIED     test/suites/basic: check IPv6 forward detection works in `duplicate_detection()`
+4b419a22ffaff3dca88f602f2e56d712a8b02206    APPLIED     test/suites/clustering: don't assign addresses to some networks
+977ab5e21c40d70224bb8f961c82a009ff67daef    APPLIED     test/suites/clustering_waitready: don't assign addresses to network
+61303c198dadfa7b271332d4fb90e25b5f62c715    APPLIED     test/suites/network: don't assign addresses to some networks
+a70687f059bc49c6bf1efb70a3937848cc9fe546    APPLIED     test/suites/network: more precise `grep` pattern
+6184b87253dec527d97bd4ced2ad3de781babcd8    APPLIED     test/suites/network: remove redundant test
+236929a823ad7417e472a4b390c425e27c429ba6    APPLIED     test/suites/projects: don't assign addresses to some networks
+eb0cd32f0fac5de8f79a8d38315e3531121e1f70    APPLIED     test/suites/tls_restrictions: don't assign addresses to some networks
+bf46ea892cec5e0ce4cabaf8d5be7691fc499fa6    APPLIED     test/suites/waitready: don't assign addresses to network
+5a917c570c5698a38b079d4694117ec38f3a632d    APPLIED     test/suites/container_devices_nic_*: do not add localhost remote
+ca8c661de26969a57d840c10619e42ffbc772c25    APPLIED     test/suites/container_devices_nic_bridged_filtering: simplify checks for missing chains
+82c7854ad0aa67719c61f93b6a9ad07e8dc76847    APPLIED     test/includes/net: only use `python3` in `local_tcp_port()`
+95ec0eb3540cee52cc9f8f9c2b3938e37e817c1f    APPLIED     test/main: check that `python3` is available
+f9661f770f99b38c99b39202c6ff8033f7de1ca9    APPLIED     test/suites/container_devices_disk: check for device name presence in `container_devices_disk_patch()`
+00bdeb62266f32a14c5041f81ccc8b604985e6e0    APPLIED     test/suites/container_devices_disk: use the existing `foo` container in `container_devices_disk_patch()`
+423fff07c890242db03563f8255e4845aff60910    APPLIED     test/suites/container_devices_disk: no need for localhost remote
+621d0075886d1a6bb266d5daec2798f272b625e2    APPLIED     test/suites/network: use shell comparison for net description
+b26806b79d0915274204fc0e2043d037cd891565    APPLIED     test/suites/network: improve `ipv[46].address=auto` checks
+229234fd26198af494e3ddee13970f07f5ccbdce    DIFFERS     test/suites/network: use shell comparison for net addresses
+a0419acae597d52faaa2d70a858ed3f5ff2774f1    APPLIED     lxd/storage/drivers/pure: fix block device unmap logic for iSCSI
+2d178ef4cbede80610f98de1901a207843bf02ea    FEATURE     doc: Expand devlxd_volume_management extension description
+ba8b8e7f8b230121fb7e7745350995adca53ee47    FEATURE     lxd/devlxd: Helper function to enforce DevLXD instance project
+d7071e04d8d0779701adcce945cc2d42b8b1fe41    FEATURE     lxd/devlxd: Add allowDevLXDPermission access handler
+c55cbbf7f11ba1daaaa91220bce2f84384413c83    FEATURE     lxd/devlxd: Add allowDevLXDAuthenticated access handler
+a210c73ae877946a91289fc2a31ffcdf9cb83908    FEATURE     shared/api: Add devLXD storage pool representation
+6db7d9267d0d027e8c75c2292473b42de3d81c7e    FEATURE     shared/api: Add devLXD storage volume representation
+08fde78eb98c46780200ad8dfd9f337be3a86ad9    FEATURE     lxd/storage/utils: Add volatile.devlxd.owner as allowed volume key
+b7dcf59b211f667800ceb2aac4ec4a3bd73c39be    FEATURE     lxd/devlxd: Get storage pool endpoint
+afe606ce460b0087731208e56195c910309f598f    FEATURE     lxd/devlxd: Helper func to check if volume is owned
+f35ef6220e571ad764a783f57c73b5363c8802c9    APPLIED     lxd/storage_volumes: Extract storage volume type access handler logic
+e9aa7782ad33779cd3249f264b3b2ca105bff75e    FEATURE     lxd/devlxd: Add storage volume access handler
+4fd4eb2a35df62d916365b2739821aa9b2f1b373    FEATURE     lxd/devlxd: Get storage pool volumes endpoint
+916758af7c65c560c327db8c4fd39be15bef73dc    FEATURE     lxd/devlxd: Create storage pool volume endpoint
+65184af957ec59a6cb44a9c0204df40dc644659d    FEATURE     lxd/devlxd: Get storage pool volume endpoint
+4bf348b4321f936d0a0743a8f13330aa330d5cad    FEATURE     lxd/devlxd: Delete storage pool volume endpoint
+1c2d32a8a901522e42e854160be68e5386a274a8    FEATURE     lxd/devlxd: Update storage pool volume endpoint
+4f529fc6df491734bdccd31bbc87185e65bd4e41    FEATURE     lxd/devlxd: Patch storage pool volume endpoint
+c3ca0c581f9235fcf66a3899737f1812f882625d    FEATURE     shared/api: Add devLXD instance representation
+d11ac560e74921917ee9f16f3690273a368261c6    FEATURE     lxd/instance/instancetype: Add security.<device>.devlxd.owner as allowed key
+2ceb82c10b7c903a2ba7770bbb16a8676bc386e0    DIFFERS     lxd/devlxd: Helper function to check instance security flags
+63c957f18b0f1ae6381af772c2d2c12dc91f3d3f    FEATURE     lxd/devlxd: Helper function to create new devLXD device access validator
+4be2f62359d73c3206f0e842a3ec84a9d4472bfc    FEATURE     lxd/devlxd: Helper function to extract devLXD owned devices
+b3e7d07e8e5afd92fed640cc48422b9453b5aad7    FEATURE     lxd/devlxd: Helper function that updates instance devices
+bb8f379bfbb1195f1aa978c98cb19d7858eaaf23    FEATURE     lxd/devlxd: Add tests for instance device update
+4d2c6915a60e61aef731656b75be16b597968181    FEATURE     lxd/devlxd: Get instance endpoint
+7284d624c9b3e101816f8e81d60c4b8559765bfc    FEATURE     lxd/devlxd: Update instance endpoint
+049f827faee1f54690faa09c421f053ec2ce3470    FEATURE     client/devlxd: Add support for setting target
+7c02bb2c3591b3c06a1303bd87085f543734c894    FEATURE     client/devlxd: Get storage pool
+52552d314054942391d10f748ef738cc3cc69989    FEATURE     client/devlxd: Get storage pool volumes
+a4040521140368f62820d2c2efa3b2a4910c1f2e    FEATURE     client/devlxd: Get storage pool volume
+419210c37c55568af0e92c41f7786ef017e986db    FEATURE     client/devlxd: Create storage volume
+ef874116e4fe6b6ad3459e90ee39bb41de4be4b3    FEATURE     client/devlxd: Update storage volume
+8eb7ec19dc86c72181f3528f9726d92711934553    FEATURE     client/devlxd: Delete storage volume
+772495dce388183ad5ad5b255c2a8aa0ce28351b    FEATURE     client/devlxd: Get instance
+b7e2c8d22a79907a496ff25d55cc3e5978db6e22    FEATURE     client/devlxd: Update instance
+c73cb74e9cfd69cc698bce4ff5edcb564b6e7804    FEATURE     test/devlxd-client: Get storage pool
+60194398510f851ec346254e51081a8a3e2d89f6    FEATURE     test/devlxd-client: Get storage pool volumes
+d8890439a8df81fab8ae03094d1df9311184ef46    FEATURE     test/devlxd-client: Get storage pool volume
+71bfbb552a254180e64737a501a58d1100886115    FEATURE     test/devlxd-client: Create storage pool volume
+bfa84726fbd3f1d459a799c84c34cd12c058fdbf    FEATURE     test/devlxd-client: Update storage pool volume
+81a9daa8625b3463171e506a2ee7e2df6c549181    FEATURE     test/devlxd-client: Delete storage pool volume
+ebb53ac07a9accac3fb6847bb86cb8d2f9cf3270    FEATURE     test/devlxd-client: Get instance
+067f5b10295fd2b153a7fa4841b8f89a5506d3b3    FEATURE     test/devlxd-client: Update instance
+34537f65ef7030584e9832537abcc2f21b3ced78    FEATURE     test/devlxd: Test devLXD volume management
+cef56149a60e159fb8f0f7930b2d6f4526443910    FEATURE     doc: Update metadata
+03cac07cee2de753a297621f554e89c8ca88ed81    FEATURE     doc: Add CSI to wordlist
+61335d116539bc3dca6c9e0b06b8962ac47b06b3    APPLIED     api: Add `operation_requestor` API extension.
+6b408e777246aeabdd53be28bd4725d4b9d29c44    APPLIED     shared/api: Add requestor field to operations.
+bdf9c8ed7cdbacbdcdc5dcd096989057310e5993    APPLIED     doc/rest-api: Refresh swagger YAML
+ef5afc1ecfc9e2b8331c79d9906b179c4b10f441    APPLIED     lxd/request: Add an OperationRequestor method to the internal requestor.
+fc6ce835240ce81e08980693efc57e1770d2163b    APPLIED     lxd/operations: Include requestor when rendering an operation.
+b2ab7b41bd5c0a431ab3923d33ab3a7c68049d9b    APPLIED     lxd/events: Swap the permission checker for a more general filter function.
+8a72ca1d225bfb6dcb1ceae69acb34f43586045d    APPLIED     lxd/auth/drivers: Remove unnecessary whitespace.
+8c0e37aecffd6ad84dfe1df3c75145329c84d892    APPLIED     lxd/auth/drivers: Rename can_view_privileged events and update comment.
+61114f6f24fd2d78a6ad4af8b9b6f0afebfa5b68    APPLIED     lxd/auth/drivers: Add can_view_operations at server level.
+4cf43fbb30572ae2b99d0a67db66aa6d3a651ec3    APPLIED     lxd/auth/drivers: Update description of `can_view_events` on `project`.
+2f242fdb196dbdabf214df6a283442b159d3f951    APPLIED     lxd/auth: Update auth
+78a5098fc00c7cd742ecdc20b12adbfe777eb4d4    APPLIED     lxd/auth: Update TLS authorizer to use new entitlement name.
+4e3d0a7c55271afa4d5ff03a1c9fe7241862abc7    APPLIED     lxd: Update entitlement references.
+a6ff36e467226a7aa8eef3587f6f01f4909721a0    APPLIED     doc: Update metadata
+adb6a1372c81eff6c27c2eb1032833a4deb1a0a9    DIFFERS     lxd: Add patch to rename `can_view_privileged_events`.
+6af3946638e7fc339d2f9ea277990122e780fa7b    APPLIED     lxd: OVN events should be considered privileged.
+c0d8b02a89e80e60bf478c73ba6dbfb73beba53f    APPLIED     lxd: Simplify cluster notification logic.
+4b9ec391979f24d7deec7c7490262aed9d6fa44a    APPLIED     lxd: Simplify validation of user requested types.
+8d12766d90e77e7e871b8f795158a6e36ef0bb67    APPLIED     lxd: Improve event filtering.
+f743ce62f4ef97473c66c4aae2a1aaf0b7cda523    APPLIED     lxd: Use allowAuthenticated access handler for events websocket.
+57c5b29bddc304d6e1fe8de01dd14b4cb334eee6    APPLIED     test/suites: `can_view_events` is no longer required for instance exec.
+e99530b9adb11f01a8b68607908df0dc28957a29    APPLIED     test/suites: `can_view_events` is no longer required for instance move.
+27f247327a6d6ac4bb767921f1266f0be9090e62    APPLIED     test/suites: Test that requestor can view events they initiate.
+dbbeab4c367d5fcc55c5eef724338816a461010d    APPLIED     test/suites: Update permission list with renamed entitlements.
+5eeca0d4dc04b7421d0e13d064f1c9c6428473b8    DIFFERS     doc: Remove unused myconf.py
+8e7cd8a45d53b4a83a340afe0da7c50998315abd    APPLIED     doc: Ignore Canonical websites from link checker as they are blocked on GH runners
+40bc33588126183f8c33aa29fa824d20c12c00a8    APPLIED     doc/explanation/authorization: update link to follow permanent redirection
+92d7c5bfb333b0a203f9b2f169e57fb92bf80d59    APPLIED     github: use more direct link to LXD forum
+c802acfee9467816b13d949c2b98947ed5532bca    APPLIED     doc/contributing: update link to follow permanent redirection
+88fd542189e5aeef147026b7bcd613a6e76adfc5    APPLIED     doc/howto/network_bridge_firewalld: update link to follow permanent redirection
+be43040a111f9655f0c677b3032dfd3d1fc56409    APPLIED     doc/database: update links to follow redirection
+a95e3db037fe16af01b4b986ee50c8cc91868c6b    APPLIED     CONTRIBUTING: update link to follow permanent redirection
+18bca08be336405d12c56ad4b037ebce00b876f3    APPLIED     doc/howto/initialize: update links to follow redirections
+402a57ece6a25b5fbe06b75ce756c05857b8cccf    APPLIED     doc/howto/storage_pools: update link to follow permanent redirection
+734c6798cc7b4db01fd2f4dedb794645410c163d    APPLIED     doc/howto/storage_buckets: update link to follow permanent redirection
+1d7eb971461db7e5d8183432d231c9a55e7ba105    APPLIED     doc/howto/oidc_entra_id: update link to follow permanent redirection
+dc6f28cd392bb0dd042d295ccdcd58b2d4b7cb39    APPLIED     CONTRIBUTING: update link to follow redirection
+fa44714cc9f372393a7f7e565a4c13a9b8129768    APPLIED     doc: More Canonical link check exclusions
+73b281ef6349c19275361298e53782b9b02be8ee    DIFFERS     test/suites/serverconfig.sh Special key user.microcloud is exposed to untrusted clients. Other server configuration is private. #16442 WD-26747
+596d58d2afe7ed26f093c4c1ed933b4979efa686    APPLIED     lxd/storage/backend: Clarify the custom volume processing in detectUnknownInstanceAndCustomVolumes
+f96c191ad618c89f3220a964d7d7345f38a6c124    APPLIED     doc: More Canonical link checker exclusions
+0e893920de89157f324fe379d583ae59da7a1965    APPLIED     lxd: Make event auth filter easier to read.
+11bcf201d937a172e1a8f67b3519aad2fd775758    FEATURE     lxd/instance/drivers/qemu: Allow live update of security.devlxd.volume_management
+e7c37a450f22a5bd170706d839e3aff33f96b569    FEATURE     lxd-agent/response: Add ok response with ETag
+3c9f1f219c4168220ce6210474b569b89ab3a656    FEATURE     lxd-agent/devlxd: Get storage pool endpoint
+0406c295326f09b80f8cc036f09c8eb080b2704d    FEATURE     lxd-agent/devlxd: Get storage pool volumes endpoint
+b3af8ea9d0ce5fcecf4d88688c1382720596014c    FEATURE     lxd-agent/devlxd: Create storage pool volume endpoint
+69301c78eba6e83441d715ddc9ddc1079eb30545    FEATURE     lxd-agent/devlxd: Get storage pool volume endpoint
+3fd16c7bc426e1c3d460f6952eb741d238adae10    FEATURE     lxd-agent/devlxd: Delete storage pool volume endpoint
+9d9dde055639409bb7084d1fd1232a25eb59e097    FEATURE     lxd-agent/devlxd: Update storage pool volume endpoint
+012540f01151a2ca0de6b5795846a156c690686c    FEATURE     lxd-agent/devlxd: Get instance endpoint
+a79479e76d98a994e75b221f4b46fff45a483aad    FEATURE     lxd-agent/devlxd: Update instance endpoint
+38ecc2f921847457acaacbdc501151f36ed4a0ce    APPLIED     lxd/network/network_utils: Refactor complementRangesIP4 function
+ac5e00ad1af9b356d4ce3a02328c9bd4c1b502af    APPLIED     lxd/network/driver/ovn: Fix getDHCPv4Reservations function
+6c2107712edd7aedc931291c2e069a1a13fe027c    APPLIED     doc/custom_conf: add missing `,`
+af937f0ea209591995b8ec3db61d5bf8cc2b16a2    APPLIED     doc/howto/storage_buckets: follow link redirection
+fed606b989b2147005312fca98f552aa6f500fde    APPLIED     doc/explanation/clusters: follow link redirection
+7353de1e7d56a48ca7719d4e5c137ff8973d197d    APPLIED     lxd: extract doStorageBucketDelete()
+901c60632d107366ed58c7ce0c943fdc089faad6    APPLIED     lxd: extract doInstanceDelete()
+0510b3ff131c5b7e22772c5d5683da8470118841    FEATURE     lxd-agent/devlxd_storage: Remove unnecessary recursion check
+a48c36441977c704fb52a8bb3c4c755b5862c466    FEATURE     lxd/devlxd_storage: Add helper func that extracts volume identifiers from request
+4ff271a4253ab26d5551f27485c9c6c8ead5de48    FEATURE     lxd/devlxd_storage: Extract volume identifiers from request using helper func
+f33a3c22cc93ed4f9641057662166edd7a7502d2    FEATURE     lxd/devlxd_instances_test: Fix test name
+2ccb40ba2d4ccc1b96855a26fb473624eb0a6ed1    FEATURE     test/devlxd: Test volume access more granulaly
+d0c8cfc2bd6688bf409d03039a0d9cde4c06222a    APPLIED     lxd: extract doStoragePoolVolumeDelete()
+c9617927c39c06d12e3739658a2113f31df6f07f    APPLIED     lxd: reword error message
+25a109393d64f45d11fdc6538a4ff486c5af2397    APPLIED     lxd: remove redundant error message
+e4d7c72f2d2b0d7712c882efb0d433338f18ea4a    APPLIED     shared/filter: dereference pointer and handle nil pointer in ValueOf()
+91d02f380299d68c4695151feba5a900b0082de0    APPLIED     lxc/auth: Fix regression where groups were not removed from identities.
+a21434254a3b336257d9f4471fc4417d5d748d9d    APPLIED     test/suites: Assert group is correctly removed.
+304449603adc17a000b41b675afcf998b93dc03b    FEATURE     test/devlxd: Fix token check order
+c9910d7eafddb571ed14a0399a35591f9a9a28f2    APPLIED     shared/filter: add more tests for `ValueOf()`
+edafcdb4541c4c19250ae05bca03f92e8f1126ac    APPLIED     shared/filter: move variables closer to where they are used in `ValueOf()`
+2abc67ca0eb8d249a42b55020633ec3e52490c95    APPLIED     shared/filter: add benchmark for `ValueOf()`
+5840e76bd708ee80dae98af817c5142103a7556a    APPLIED     shared/filter: use `strings.Cut()` in `ValueOf()`
+563b04461de0e34901de5ad195464d4dfc139269    APPLIED     shared/filter: cache `value.Kind()` result
+847ff40be2f2224e4291f8fcc4b9549cd56de810    APPLIED     shared/filter: exit early if the value it not a Struct
+a10f77e0862a228afe37514fb84bba7ec6ce7a94    APPLIED     test/main: build test binaries if they are missing
+3d68d81b06c76aae1bb2179a4947c6ee65f3af3d    APPLIED     Makefile: have the default/all target also build the test binaries
+c46ae357d73c387cfc8d0aafe68e60726e0a0982    APPLIED     github: stop explicitly building test-binaries (built by default now)
+631eddeddbeffd9972a9242bd76fa12ae63cbd92    APPLIED     lxd: add force param to doInstanceDelete()
+ddfdfcb8a20c11cdd59d10e7f779c03a7cbd5d4b    APPLIED     lxd/api_project: improve descriptions for project restrictions to be more clear
+9b4a4ff8d28ed228e2b9b00ba366bc6b170e898a    APPLIED     doc: Update metadata
+ecdc472fd928c0ec9794c6af47f03aeb91b60df5    APPLIED     github: delay running the `documentation` job after the `code` job
+a2fdf85cbd2523e391ee17cf85fd60aac63929b3    APPLIED     client/lxd_server: Copy all fields in UseProject and UseTarget
+c0f5be5fc19e21a4643c62716e58ddb50f28c229    APPLIED     lxd/project/limits/permissions: Change projectLimitDiskPool from global var to const string
+907fb89119b90a8788da67a5f5aa9d42294e4122    APPLIED     lxd/project/limits/permissions: Add projectLimitNetworkUplinkIP4 and projectLimitNetworkUplinkIP6
+c58d9e496537974eabf3be299ec1d669ab2041e7    APPLIED     lxd/project/limits/permissions: Rename checkRestrictionsAndAggregateLimits
+7a62aefd641fad78f7d3e431962ecea3e636e123    APPLIED     lxd/project/limits/permissions: Skip limits with empty values
+d9f964101f185caee41603a45ff19bad9f66fa26    APPLIED     lxd/project/limits/permissions: Fetch project networks in fetchProject function
+9307517d34c3fc259744001e5d90189026f8b592    DIFFERS     lxd/project/limits/permissions: Refactor AllowProjectUpdate func to reduce duplication
+df3549101c4a3cef7d991923b4ed7a3c6c6e64d8    APPLIED     lxd/project/limits/permissions: Check limits.networks during project update
+18f302f07de3d9fde5f5d404e72c5293c17cc4b5    APPLIED     test: Add project limits test for limits.networks
+cfb008646b038152f6c77b4959e9a0b6c8cb7265    APPLIED     test/suites/storage_volume_import: Fix ISO volume attach test
+9fa1c8f7a0f0714289c2f5954ae8dba8d7aaa992    APPLIED     api: Add import_custom_volume_tar API extension
+58007278a43144ee6f3f58ef8ef523edbb065610    APPLIED     client: Refactor `CreateStoragePoolVolumeFromISO()` and `CreateStoragePoolVolumeFromBackup()`
+64272886715a9e08bae3dffb12b80df3e662cdc9    APPLIED     client: Add `CreateStoragePoolVolumeFromTar()`
+f610719321d9cf999d76768c9511a70d7a9396ed    APPLIED     lxc: Support importing tar archives as custom storage volumes
+6ee746a0b9387fc276a2072a3673f5b0154fd7f2    APPLIED     lxd/archive: Rename and refactor archive.Unpack() to archive.UnpackImage()
+b43c10e3fc144c83846437fb81085d8d2006b3b2    APPLIED     lxd/archive: Introduce archive.UnpackRaw() function
+4eecf609126cea25e39b9b170af3aa3b83a13a56    APPLIED     lxd/storage: Introduce `CreateCustomVolumeFromTarball()`
+3c120d18c8c1771f7ecb5aa685155b13f35cfaf3    APPLIED     lxd: Handle creating custom volumes from tar archive
+5a3b720d457f3d9dd1312098f869409f7a6ca6dd    APPLIED     test/suites/storage_volume_import: Add tests for tarball volume import
+b9cdfc7ff321118808509660d287b641b17e5cf0    IRRELEVANT  i18n: Update translation templates.
+e12c7e73a22cea51d2ca82e3d54bdda6c469d36c    IRRELEVANT  i18n: Update translations.
+2cf79bcca2806baa4228be8b54b39078db147c9d    APPLIED     lxd/storage/drivers/types: Restructure fields to allow multi-line comments
+be1b4237cd03b7da895752072d38fe1d27081621    APPLIED     lxd/storage/drivers: Add UUIDVolumeNames field
+5da952adc1fe888b9d4aa1455456c20c3b9776e0    APPLIED     lxd/db/storage_volumes: Add GetStoragePoolVolumeWithUUID
+43482ab20cc272e16ec6add9c4635a3ee77b4c0d    APPLIED     lxd/db/storage_volumes: Standardize volume not found error message
+b7aa25927b4c7de79d2cf979a807929242044da7    APPLIED     lxd/storage/drivers/volume: Add SetMountCustomPath
+dd46af1ddfe431fba9b235a0cf409c22781b0788    APPLIED     lxd/storage/backend: Resolve instance volume name during discovery
+027223978d6ebc7a17ac64ebf042172b7220cb80    APPLIED     lxd/storage/drivers/powerflex: Set UUIDVolumeNames
+542e72d1629bd9ffe0fd373cb9ea58246a3a871c    APPLIED     lxd/storage/drivers/powerflex: Add getStoragePoolVolumes client func
+623c2bd89b962d90c523a8ad63a41df3b0d5dc39    APPLIED     lxd/storage/drivers/powerflex: Add getUUIDFromVolumeName func
+fd4af36da74de935973d8226a3487584f66e6701    APPLIED     lxd/storage/drivers/powerflex: Implement the drivers ListVolumes
+9596a5ce35fea84e3987bb81646899c1b79890d5    APPLIED     lxd/storage/backend: Improve unknown volume discovery error messages
+713bf155542a4c4e737d0e15ffd324c9fcaa80aa    APPLIED     lxd/storage/backend: Don't generate a new volume UUID when importing an instance
+929015ca10f3594b5074df4e24df135223419307    APPLIED     lxd/storage/backend: Don't generate a new volume UUID when importing custom vol snapshots
+b1aba0c85568b32babe8535279476153a248526d    APPLIED     lxd/storage/backend: Cleanup unknown volume's mount path
+7ba35971ac7a00fd37f992b6a8759628f0a303b2    APPLIED     lxd/storage/backend: Handle errors for UUID based vol names differently
+c13b882a6b3a4498a6deacde23960c6f90396966    FEATURE     test/suites/backup: Add UUID checks for instance recovery
+819a01d6acd1cd2d1f47876e90a2d8ce34b76e89    IRRELEVANT  test/suites/devlxd: Use updated error message
+7315087c31af8da9f93431e2e4b8208b8ac3cec8    APPLIED     lxd/cluster/config: add default description for oidc.scopes
+ed92a481cd68e70a204912ddb007219252a87f4c    APPLIED     lxd/cluster/config: add default description for core.bgp_asn
+a018d6c3ee5e6f3e6a37b1bb64d180bc829afb75    APPLIED     lxd/cluster/config: add default description for instances.migration.stateful
+8f2c9215dd6e70db1d0a2d9ea08eaeea21ddd3fe    APPLIED     doc: Update metadata
+1aa6483916a5f6ce0125ce1dc5fb8ab493e0e8cb    APPLIED     doc/explanation: Update Auth0 link (actions are now deprecated).
+8e7eb928f1e75572bb39f22e2777d919edeb6814    APPLIED     test/list: Lint for empty assertions.
+cf9b0f2ca149aedb099bf1207e7d2de1bc3b9cdd    DIFFERS     test/suites: Ensure empty string tests fail if command fails.
+145b68e72b0879873e74f5924fcf0eb121233f14    APPLIED     test/suites: Use direct equality for checking instance name.
+494aba577c3fcb81a68f05207976afb6f12a45a1    APPLIED     test: Update readme examples.
+0a6f4236438c17c3d0e7b83dddc949cb56febc92    APPLIED     lxd/storage/drivers/pure: Set the drivers UUIDVolumeNames
+8595edcf71190f43266b0f61a29c2dc7a437f00a    APPLIED     lxd/storage/drivers/pure: Add getVolumes client func
+827453fd7c7e19fe2b75e31a965a5fb2c46bde19    APPLIED     lxd/storage/drivers/pure: Add getUUIDFromVolumeName func
+40d7c4c305d5be76b8ee180ddc5123ded896dc3c    APPLIED     lxd/storage/drivers/pure: Implement ListVolumes
+a205849b4fa294b9867c24e87803112d08a18b31    APPLIED     lxd/storage/drivers/pure: Fix typo
+c3999cc2f064c39e9f3845b0ea77b85e0f90b29e    APPLIED     lxd/certificates: Reject certificate add token with an empty client name
+c55d4cbd9f19cc5f5db8112318134ed0b67a3e74    APPLIED     lxd/certificates: Simplify request validation in certificatesPost function
+7bd35738f430d65760278dd700da406f97c28937    APPLIED     test: Check that certificate add token rejects empty client name
+20275482fa6c317accf71f5a343a61213f8577e8    APPLIED     lxd/project/limits/permissions: Wrap error from checkUplinkUse func in AllowProjectUpdate
+04151376313956cfa962ea091f0feec160b0bccd    APPLIED     test/lint/empty-test-fail: support more variations of test for emptiness
+885eab80422b35500fa8e2d13c3e64aecdf6178f    APPLIED     test/suites/config: improve check for emptiness
+216df6c86e0fe863182a4960dd1a4fa36bca97fe    APPLIED     test/suites/devlxd: improve checks for emptiness
+9d9ea45492c1585cc536262d38d8fad93ebf6dfd    APPLIED     test/suites/filemanip: improve checks for emptiness
+9d77c73c2a2a66813557f09869fc93ce034031af    APPLIED     test/suites/projects: improve checks for emptiness
+3e4f12741303da1918023bed0636046ad8448f02    APPLIED     test/suites/warnings: improve checks for emptiness
+5fc9da32f3725d07142e7285fba64ffa9016268f    IRRELEVANT  Makefile: pin `github.com/dell/goscaleio@v1.20.0` (newer require Go 1.25+)
+d14c4c782382e30bf71d8add1f6ab51d43059c6e    IRRELEVANT  go.mod: forcefully pin github.com/dell/goscaleio@v1.20.0 (newer require GO 1.25+)
+de45f055d00703776ae6d519c04fd479c642f3b5    APPLIED     Makefile: add `check-gomin` target
+ce168b3d060a33fcc3ad35657d66c5b7539fbde9    IRRELEVANT  gomod: Update dependencies
+259a3d3bbcda54a32e45e773b4177707b02c2997    APPLIED     github: replace adhoc check for Go min compat by `make check-gomin`
+b2d7a9ae3808bebd6e1e10c1e941f9991f206708    APPLIED     Makefile: silence some commands and improve long line wrapping
+cfd4c485a6eac4bdd7aae09efb960461d0e733d6    APPLIED     Makefile: refresh `golang.org/x/tools/cmd/goimports@latest` in `update-schema`
+0eb06af4186b72906814618ea404ce1c31e54fd8    APPLIED     Makefile: remove old workaround for `go install` in `update-api`
+e8dc4aed371a4f7bed5e2457137d17ea6f025963    APPLIED     Makefile: update `xgettext-go` version
+face8a3f4213b47518fc5db5c0d956df4507cb6d    APPLIED     Makefile: refresh go tools in `static-analysis` target if online
+fac3e90cdab01c1a8451be4c10bf4ef4eb8430ba    APPLIED     test/suites/basic: make sure volatile.apply_template is cleared on start
+c523328c9465f441cffb930349960826c75645a5    APPLIED     test/suites/basic: remove useless cat
+38d0d3203294bcf66613eefd08682f93185ef331    APPLIED     test/suites/basic: check that `volatile.apply_template` survives renames
+d3c3f6fdc1b94b782e5b4765b923bbb37584f81c    APPLIED     test/suites/basic: use shell comparison for image properties
+7d0a088cb9de0fa9aa0d09a238202ee48cc5a431    APPLIED     test/suites/basic: fix typo in comment
+2188c8c6bdd4c7dc5cccdb7bb84b95ae3895bafa    APPLIED     test/suites/basic: use empty container to test random name
+ec6140db2bac222523d40b0777e8221192c0b418    APPLIED     test/suites/basic: use shell comparison for basic launch test
+dd7161a50fe185fe158ec8f81af7b98ac0e05294    APPLIED     test/suites/basic: replace stop+start by restart
+60e14f024e6c11684cb2522cbb1ef514e61d19aa    APPLIED     test/suites/basic: improve file transfer checks
+65057a30f11739900fd3578683aab2823c5c8ec0    APPLIED     test/suites/basic: simplify `md5sum` comparisons
+2a02fee739f32e80ce07cce6aff935891d043f87    APPLIED     test/suites/basic: delete `foo` instance earlier
+cfd2eedbc05715fcb66d007331d9a45abad08430    APPLIED     test/suites/container_devices_tpm: install `linux-modules-extra` to get the needed TPM module
+c54e3da7f09c5017e6f82d8c438cdc399fc2ca60    APPLIED     test/suites/container_devices_tpm: check for leaked `swtpm` processes
+3428365cc262d1924f55e2c3b4bd4d0f1d147feb    APPLIED     test/suites/container_devices_tpm: workaround #16569 but still run the test if possible
+5b72135608277929e0b86fa79f0e1cc1240cf3a6    APPLIED     lxd/storage/backend: Perform recovery type check only if vol is known
+d8d01f64821f8f93ca5b9947694b42375fb2b813    APPLIED     lxd/storage/backend: Remove obsolete variable
+5d3ca6d4463a4942c4c98fded1646530248364b4    APPLIED     lxd/storage/drivers: Include UUID vol name translation error in warning log
+765dec4bb93dbbb67442d567961331a7b03f7c06    APPLIED     lxd/storage/drivers/pure: Ensure to trim off the suffix delimiter too
+5bbb4237d8815545b36eda7ff4f5a69068cf2e51    APPLIED     lxd/storage/drivers/volume: Propagate mount custom path for VM filesystem vols
+87e2e0e3f2b8003ae917db6c931933e5d3d5a36f    APPLIED     lxd/storage/drivers: Fix type in comment
+3ab54d89bf5aa54724e53c8f93943e3e406b44ca    APPLIED     lxc/auth: Add GetViewableProjects method to Authorizer interface.
+158cac488c3bf29623c262c89387574f6bed23c4    APPLIED     lxc/auth/drivers: Add unimplemented GetViewableProjects method TLS authorization driver.
+d2d6c9a7aea6505ddcf170ec14a2aa560922256e    APPLIED     lxc/auth/drivers: Implement GetViewableProjects for OpenFGA driver.
+a5a055eb671ac9decc760a55367de4bdfc994eb9    APPLIED     lxd: Remove unnecessary timeouts in auth group handlers.
+579a73231beec684f8db8346adffb0d1b4aace38    APPLIED     lxd: Refactor upsertPermissions.
+e82b8819c71700ded501ebc301a8ded13a2fd3ce    APPLIED     lxd: Refactor auth group handlers to use new validation function.
+11beb328e33b6368f355fe7418494b6b6b658cd6    APPLIED     test/suites: Update authorization suite for improved permission validation.
+1bc6d933da325fffda7643a69ca99015cdd2ed3d    FEATURE     test/suites: Update devlxd suite for improved permission validation.
+76d53fa9b3f393f5e2894a65ee4f417e34138fc0    APPLIED     test/suites: Update clustering move suite for improved permission validation.
+3270ed56eba9a42fe9f01ca9f1504288c970f454    APPLIED     lxd: Require can_view on project when listing resources for fine-grained identities.
+38d616e8a0a96b5d6a0a8d89ab94c938824d97e7    APPLIED     lxd: Pass a bool to allow all-projects for restricted TLS clients.
+9e016530c1769f81f79206a89e0eab095c750b39    APPLIED     lxd: Update calls to allowProjectResourceList.
+837b2e911f62d45a0592b3b8bfcd8a578b2ffae6    APPLIED     lxd: Update event handler to use project list handler allowing all-projects for restricted TLS clients.
+fdd31214e007a8c03e37afd66e0ced5055bba0ab    APPLIED     test/suites: Assert listing in project with no view access returns error.
+81ce553ec70a8c4e379230ef6f76b46f2097bfb7    APPLIED     test/suites: Update project restrictions test for new group validation.
+6ba8eb7b99ae9290818f490e889773fe0563cc7d    APPLIED     lxd-agent: remove unneeded `time.Duration`
+dfdecaa1e86bbda1f0e25bd9564572e7b69c7f0d    APPLIED     lxd/api_metrics: remove unneeded `time.Duration()`
+50efb6eb5d9e1fb04305c34d62a8b145afdb4bc4    APPLIED     lxd/cluster/connect: remove unneeded `time.Duration()`
+25c72f49bd94b3a3c20045fe5e5ec00168a36e5b    APPLIED     lxd/cluster/events: remove unneeded `time.Duration()`
+b8c370b7c19f49352404a1e51bc4e8ce82f0dcef    APPLIED     lxd/device/device_utils_network: remove unneeded `time.Duration()`
+b61e8b42bbe311ee513cc8d5e248cae833ca60ea    APPLIED     lxd/instance/drivers/qemu: remove unneeded `time.Duration()`
+bcef9e1802bc0fe0970c419b3ce6c14054c5e050    APPLIED     lxd/network/bridge: remove unneeded `time.Duration()`
+993102a3e10f413edc20302fd10ba280a2f98783    APPLIED     lxd/network/ovn: remove unneeded `time.Duration()`
+78b5a27ace27ef6d0211aecb48d42b65d2251141    APPLIED     lxd/networks: remove unneeded `time.Duration()`
+8aba5d3e5826eab7af0fb3581aacfee5ef1dab26    APPLIED     lxd/storage: remove unneeded `time.Duration()`
+1070df81cdc2cefd8f6eaec4ad65ebd3101fa5e9    APPLIED     lxd/storage/backend_lxd: remove unneeded `time.Duration()`
+c783de78bcb100e3119b217b6c32f9a089e97039    APPLIED     lxd/storage/drivers/cephobject_buckets: remove unneeded `time.Duration()`
+2a22bf88571c17113edbf268c53fd1044907ec1c    APPLIED     lxd/storage/drivers/lvm: remove unneeded `time.Duration()`
+fe718248c5c068badbd542f8ddd6cee8fe391292    APPLIED     lxd/storage/drivers/zfs_volumes: remove unneeded `time.Duration()`
+5d6269921fdba9187ab3273dc196e462140748d5    APPLIED     lxd/storage/s3/miniod: remove unneeded `time.Duration()`
+5738d0585ee6ec26619e8a19f1ab3d807a613258    APPLIED     doc: add security hardening how-to guide
+4dee153404a94279d891f80561077578a7d749cb    APPLIED     doc/explanation/security: move name leakage section to hardening howto
+609374e322939181d5b5de5d55604d349ff20322    FEATURE     shared/api: Add DevLXD environment to state for trusted clients
+dcf52282e3290a9618750707a094c1bacb3df133    FEATURE     lxd/devlxd: Populate server_clustered when client is authenticated
+554f6b5808d0fb9d19b98742c4dbaa70e42e755d    FEATURE     lxd-agent/devlxd: Return untrusted response if user is not authenticated
+564da90692bebe2f214b33ccf96e695c7fb82e07    FEATURE     test/devlxd-client: Add query command to allow arbitrary DevLXD API invocations
+b1f96018d6342027f1d3eb75f4d60fb906af837c    FEATURE     test/devlxd: Ensure server_clustered is reported only when client is authenticated
+f65d40507859bd8d30a5209be948d02d26e9396e    APPLIED     lxd: Rename operation list permission checker variable.
+1771e79ffa10136a7d03857045784e27397f9f0a    APPLIED     lxd: Add a variable for the operation project.
+5a70cfbf33f9b053ed66564f3de04446dc70a2f2    APPLIED     lxd: Allow filtering operations by requestor.
+69ed6374eade376e325d6dff9ecf6638c0d2b9db    APPLIED     lxd: Handle view access for operations with no project.
+eb4bf028b47fb1d0e8999425dac6b8a93bb4ffd2    APPLIED     lxd: Add access handling on GET /1.0/operations/{id}.
+181e7a4b84fe4313ed98fdafe503ec5415750f3d    APPLIED     lxd: Perform access handling in GET /1.0/operations/{id}/wait.
+f7c039793f17221ce9e7ef17e297e6e8e8f92bbe    APPLIED     lxd: Allow --all-projects for restricted TLS clients on operation list.
+1c2f90494bd3b5599b78af189e9a58a35a4932e9    APPLIED     lxd: Allow specifying project in operation testing endpoint.
+23cab68f2ba7a53549a63ca35febe607b6651c46    APPLIED     test/includes: Allow specifying project in operation utils.
+75dc4a734497874ea246277e3f1657b5bf71e6c6    APPLIED     test/includes: Add comment explaining variables in single quotes.
+a06ec4d15bd9a7b35d9c903503269bb3c703bdbe    APPLIED     test/suites: Test event and operation filtering for restricted TLS clients.
+286721bc090fc4c193c473b1d07525c20e7adef5    APPLIED     lxd: Extract operation operation access check to function.
+aae79b3542b2abec968b980fa8831f61c60f8a39    APPLIED     test/includes/lxc: avoid using `eval` that was re-parsing arguments
+0fc8dabdfb95d5978165be81c606cc79871ca60c    APPLIED     test/suites/completions: use `_LXC` var pointing to the real binary
+02ab0b2c946306c94c081dc5ac46155a6db695af    APPLIED     test/includes/operations: simplify quoting
+032ab6bd18baeee857bd0d9eb9df7a856207b958    APPLIED     test/suites/auth: simplify quoting
+708d782b3e1ff3caaccf5847defc06ee2594fe0e    APPLIED     test/suites/backup: simplify quoting
+91843075613504e496883a280c7c120bb17be108    APPLIED     test/suites/basic: simplify quoting
+274d4927b053882fcad574ea9ce13a8680f9b248    DIFFERS     test/suites/clustering: simplify quoting
+b48f5b7fcd95281862c80afaf8755aaf8e7a7065    APPLIED     test/suites/container_devices_disk: simplify quoting
+559198775ec9a2306dfeb777127bd86d20ba58d5    APPLIED     test/suites/exec: simplify quoting
+07e32de4c7a25bcc02c2f48b0778b523066bd0f5    IRRELEVANT  test/suites/devlxd: simplify quoting
+5af56638c197b5d8d740bdcf1def44b6654c9846    FEATURE     test/suites/backup: Add UUID checks for custom volume snapshot recovery
+d01ad4c04d862e88cd83f861e2540503bec7a6fb    APPLIED     test/suites/metrics: simplify quoting
+1c5437d5385e9dabc290f865192ada5a894cb64f    APPLIED     test/suites/metrics: improve `grep` and `awk` usage
+64ee054f86d6b38884431f9931c3c08b972b05e6    APPLIED     test/suites/network: simplify quoting
+0222c6a911d8c8b5a1d281f8ee5207beddca0dea    APPLIED     test/suites/network_acl: simplify quoting
+8f0729793d2c704a64f4b058b9ea98b331b8fdc5    DIFFERS     test/suites/projects: simplify quoting
+4df2781cf8bf04d6adacd5cc93134d71c4dbfc74    APPLIED     test/suites/query: simplify quoting
+1c2af05ef9336dbb930b30eb4526b2eeefca99fa    APPLIED     test/suites/query: use empty container
+2c0637612b1aae8c29cc58413cf32251e739d6ec    APPLIED     test/suites/query: improve `grep` pattern
+2099933c03784919aa74d66436f38152ae86cfeb    APPLIED     test/suites/remote: use CSV output for trust
+7d97b172fec43794761250081e7f265b197edcec    DIFFERS     test/suites/remote: simplify quoting
+a4ac9d909a05ee4a3a671d729553081fb54a5eb0    APPLIED     test/suites/remote: use `--quiet` instead of `tail -n1`
+a44ef2f2db1cd5317cc30cc37d11fb6043c28367    APPLIED     test/suites/snapshots: simplify quoting
+d552ae95727554acf7fdeeb357bae88121e686cf    APPLIED     test/suites/storage: simplify quoting
+e6e4af5810f05747a48fc0b660e7b05a6f570349    DIFFERS     test/suites/serverconfig: simplify quoting
+64243ac9a55a7421f6654ba52635f618e527ba9f    APPLIED     test/suites/tls_restrictions: simplify quoting
+480130d8d4c0e511058a30fe4be2e94f31f96771    APPLIED     test/suites/warnings: simplify quoting
+1e4eb8f7bb668d86883a203ef97c2b3fd8d17e06    APPLIED     test/suites/warnings: capitalize SQL commands
+1a625e7102134228d93fe365d0c0d1e4a447fe4f    APPLIED     doc: fix incorrect value in security hardening page
+82f1401157043ee21a4b7ba6d30eb8be6d8d6acc    FEATURE     lxd/cluster/config: change `core.remote_token_expiry` default to expire after 15 days
+2065ddc790124e787174e6bc82c7ab891305f028    FEATURE     doc: Update metadata
+9790f3a04f896c8ff55a705c57c1469b71a7a0b5    FEATURE     doc/api-extensions: document new default validity of 15 days for `core.remote_token_expiry`
+be9bce7d6b122ff6021779fa567857890f0992d0    APPLIED     doc/api-extensions: add empty line after each heading
+e77ba6ccc9814a27b39173ce78ffca4b110174f2    APPLIED     test/suites/basic: remove extraneous (but meaningless) space
+4876c62eb5fef9c79f9a7fb04f3c2af52ae58b19    APPLIED     test/suites/container_devices_nic_p2p: use consistent method to check MTU
+fd3d1c93909a325a9eb8fb0323d180cf7191e0ec    APPLIED     test/suites/container_devices_nic_macvlan: quote command substitution
+db4e56dd22e8e3d95f2d55faea70ccea1107c519    APPLIED     test/lint/empty-test-fail: report violating line numbers
+1e4cbc37d0fe28dc609c354ba0e4735f38129472    APPLIED     test/lint/empty-test-fail: fix error message
+fb2a4197db7158eec733be69e082536807061f75    APPLIED     test/lint/mixed-whitespace: report violating line numbers
+4c3b471a819fd604a430dd9aeedfc9154419f1a7    APPLIED     test/lint/negated-is-bool: report violating line numbers
+9ca9ee822b88d6f4529a25c38f8f8ba2d424a34c    APPLIED     test/lint/test-tests: report violating line numbers
+134b9a62024b177d90f4227f6c60a5761b31d307    APPLIED     test/lint/unneeded-format-variant: report violating line numbers
+84ffae544259274bb9f4a31adf763cdc903f3379    APPLIED     test/lint/unneeded-format-variant: report violating line numbers
+a24ab2fdf9183d987e3994f03b324752d3259eb0    APPLIED     lxd/request: Add user agent parser.
+08195b5a2baf57812275211747238ef710f0cbc5    IRRELEVANT  gomod: Update dependencies
+aac3f6547255fc318534d3c91801cb641673e38d    APPLIED     doc: Update on network_acls.md Edited: ACL rules bulletpoints-updated
+7d80d341a867fd9923aa6e042d430b0229c1dac5    DIFFERS     lxd/storage: rename backupConfigCache to storageCache
+5c38ea1c9e38e5e511a7508527e243524154499f    APPLIED     lxd/storage: export NewStorageCache()
+f923da0a899621e144164ee7738ce50828e825bc    APPLIED     lxd/storage: replace NewStorageCache() *lxdBackend param with Pool param
+2a19ab7c23406d2d45b3c167cc93401fdb8d4dff    DIFFERS     lxd/storage: export (*storageCache).GetPool()
+d59e51e0ccec4ac2d51a4cc98cd71398a6aa9307    DIFFERS     lxd/storage: update storage cache usage
+fd9595041886cbdf31886152d5dc6267352ce7c5    IRRELEVANT  github: add go version to copilot-instructions.md
+3ffdc97d87a9e87a77098f6fd85d28e71f57beba    IRRELEVANT  Makefile: add check for go version mentioned in copilot-instructions
+efddb34584df8683d72beb8ae44ea31747778715    APPLIED     Makefile: add update-gomin target
+f85962da1b9af24307c4d1b723dece53029f6ddf    FEATURE     client/devlxd: Add UseBearerToken function that allows changing token without creating a new client
+49289ee38ea753dc2051b0e789793f47db84ff60    FEATURE     client/devlxd: Simplify UseTarget
+246e170283c9649a1ebe56b7134036ccbdc59d60    APPLIED     lxd/instance_post: Prevent migration to evacuted member
+1023f331b6fb446de6bbc923952ead3dd62e9faa    APPLIED     test: Check instance migration to evacuated member not allowed
