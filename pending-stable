@@ -1,7 +1,8 @@
 #!/bin/bash -eu
 PROJECT=$(basename "$(git rev-parse --show-toplevel)")
 BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref @{upstream} | cut -d/ -f2)
-PARENT_BRANCH=${2:-"main"}
+PARENT_BRANCH=${PARENT_BRANCH:-"main"}
+START_COMMIT=${START_COMMIT:-""}
 
 # shellcheck disable=SC2128
 SOURCE=$(dirname "$(readlink -f "${BASH_SOURCE}")")
@@ -74,6 +75,15 @@ for line in $(git log --oneline --cherry-pick --right-only --no-merges --topo-or
     IFS=${OLD_IFS}
     # shellcheck disable=SC2086
     set -- ${line}
+
+    # Check if we need to start at a specific commit.
+    if [ "${START_COMMIT}" != "" ]; then
+	if [ "${1}" != "${START_COMMIT}" ]; then
+		continue
+	else
+		START_COMMIT=""
+	fi
+    fi
 
     # Check if the commit is already processed.
     grep -q "^${1}" "${SOURCE}/${PROJECT}/${BRANCH}" && continue
