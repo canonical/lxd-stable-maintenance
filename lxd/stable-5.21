@@ -9615,3 +9615,6 @@ f8f3589ca74dfbf1273cc4c670de54e65a011bb1    APPLIED     lxd/storage/drivers/alle
 f9e409cac70e4ff8728ce91bee042de589bfbc4b    APPLIED     github: reduce TTL of cached images
 e7189dbc8ea9752b47b75104b623872d95eff066    APPLIED     github: stop using `actions/download-virtiofsd`
 ad24bc3aa01508485793a79c796d56faa8cfbd7b    APPLIED     github: remove `actions/download-virtiofsd` now that we use 24.04 runners exclusively
+c9ab96ef79f4f1128391d1a8b766561627b5ce85    DIFFERS     Makefile: Replace pin for tags.cncf.io/container-device-interface@v0.8.1 with github.com/opencontainers/runtime-spec@v1.2.1
+6282064bf4d5c3b80492834ce97b2a598fa92c49    DIFFERS     go: Update deps
+a215cbc4d0683dcfaacb92b874480caeff55e478    APPLIED     test: Run VM tests in standalone mode
