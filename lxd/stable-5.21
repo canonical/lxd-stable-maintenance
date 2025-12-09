@@ -9618,3 +9618,121 @@ ad24bc3aa01508485793a79c796d56faa8cfbd7b    APPLIED     github: remove `actions/
 c9ab96ef79f4f1128391d1a8b766561627b5ce85    DIFFERS     Makefile: Replace pin for tags.cncf.io/container-device-interface@v0.8.1 with github.com/opencontainers/runtime-spec@v1.2.1
 6282064bf4d5c3b80492834ce97b2a598fa92c49    DIFFERS     go: Update deps
 a215cbc4d0683dcfaacb92b874480caeff55e478    APPLIED     test: Run VM tests in standalone mode
+0548566912dc807d106df6925ac56132ef943544    DIFFERS     doc: Add RCG and journaling to wordlist
+11473fcc85ba008fe236f3f295c6dcbd20cb9e4a    APPLIED     doc/reference/storage_drivers: Add volume recovery support to matrix
+5f5f2f52961367564503fe266c1c192efa5f08cd    APPLIED     doc/howto/disaster_recovery_replication: Add new how-to
+24077f1005ade515b194a696c05467377a3c0e80    APPLIED     doc: List the recover with storage replication in the index
+64e4aa2cc8762606f789a16efdd771af493ae5d3    APPLIED     storage/drivers/utils: Ensure default loopdev size is always larger or equal to 5GiB
+3895f5a7d0359dab573585ca39041981e09cf948    DIFFERS     doc: improve disaster recovery replication page
+a15fc0f2701caf502b4688ac3447f001066350f1    APPLIED     lxd/devlxd: Check security flag on /1.0 endpoint
+a3e3e8a7ec6839f410d2b2a548e0cc8f2e50a241    APPLIED     lxd/devlxd: Check security flag on / endpoint
+97afcbf4059c1b793cfa190c37a095f18c1e4f07    APPLIED     lxd-agent: Check DevLXD connection manually
+96f25ae20adeaa839a8df673a763052f01cb26a5    IRRELEVANT  Revert "github: reintroduce CLA check in commits job"
+17df0e72107f9521f84b66adc68eb81fd8458899    APPLIED     build(deps): bump actions/setup-python from 6.0.0 to 6.1.0
+3a42e3c7619606e6a83f483c201ee695af1d8849    IRRELEVANT  build(deps): bump github/codeql-action from 4.31.5 to 4.31.6
+99ce40131f28356514a2cb7f25da8661e601499c    IRRELEVANT  build(deps): bump github.com/go-acme/lego/v4 from 4.28.1 to 4.29.0
+07907f6a6e53a113756f07bde832d52b8d9f96c4    APPLIED     lxd-agent: Make event processing synchronous
+34b342e0a5c8073e7aa7fb277f2d6063fbf9e3e0    APPLIED     lxd/db: Add comments to RaftNode role constants
+db97a0a3dbd718cfca7cdfc1fa076aece06f0d73    APPLIED     lxd/db: Add comments to ClusterRole constants
+426b9cb4a5656d26a8a82db8639586496386f1fa    APPLIED     doc: Add dqlite developer documentation
+8f3f48125bb2f64cdd5cf55553392e178f24e84d    APPLIED     doc: Ignore linkcheck for kubernetes.io host
+658e532727626a843f9ea65493f233faffb05918    APPLIED     client: Call mkdir instead of file stat.
+24acf60096d7f6007855dc5635d5f779d77eac15    APPLIED     doc: use static replacements.txt instead of build_requirements.py
+cc2f4ceac3c17e2d35591a6fc5e7346afd58738f    DIFFERS     doc: merge custom_conf.py into conf.py
+a4e24e8965137358af397c77b2dcce9599705fc6    APPLIED     doc: Add qemu installation packages.
+c9b2a9689a4e8b83ca94b8b006f9a74348678237    FEATURE     lxc/auth: Add a newline on bearer identity creation message.
+ab8df98e301d6e2f4cfdd2ecd87657d6f3c38cb7    APPLIED     Makefile: add target for `lxd-client` test binary
+00c16150f96e88f2b01caea6abf28fe9fab9555d    APPLIED     test/main: check for `lxd-client` deps
+2d7a1d0eecfce2c1597dee6b9f2ce28379ad37e3    APPLIED     test/suites/filemanip: avoid building `lxd-client`
+a355bb5a1fecafcc32e246fb4eabc938b669ea7c    APPLIED     github: add `lxd-client` binary to `system-tests` artifact
+34885adb31cf5df74306fecdf8c74e361116aaa6    APPLIED     github: system-tests do not need Go installed
+539775e0e19ed8f57a0a2d3f8652e5147c80cdcf    APPLIED     test/main: avoid accidentally downloading Go toolchain
+78a9ef0c0f952d383ba390ab8622779bdd6a3372    APPLIED     lxd: Fix in-memory config corruption on update failure
+d1745a95ee76d5220eb62d67d70fab676a4f263c    DIFFERS     test/suites/network: stop testing OVS from deb
+73d433e53edce70ac02cfad299523f20e97c69bc    APPLIED     doc/lxd-test: stop installing `openvswitch-switch` deb
+9d5edd141eb51235fdc61bc3fce0de437caa7b84    APPLIED     doc/installing: remove dependency on `openvswitch-switch` deb
+f000c850b72711eab71ecf090e08199a051cd37f    APPLIED     github: stop installing `openvswitch-switch` deb in `actions/install-lxd-runtimedeps`
+b80fedd8c47d2ef093c37226e7405412eba42961    APPLIED     test/suites/syslog: cleanup OVN log file
+e8f6a2173d22dc081ff8d2fa5240445d324206d2    APPLIED     test/suites/syslog: do not ignore failure to kill
+19b6e0519682c9f4c9f86b95beddaa3b525c4e02    APPLIED     test/suites/syslog: sleep less
+5f2a6c594c8a6e359ba7a702086018f2d8617988    APPLIED     lxd/storage/drivers: Return actual mount error from TryMount to figure why it potentially fails
+6ee81e86e43c44a2d3827e78a25ee8c8337970c5    APPLIED     lxd/storage/drivers: Add test for TryMount cancelled context
+fcc92293dd2a510b21a017207d61e35b221d3a17    APPLIED     lxd/linux/ioctls: Add IoctlBlkZname
+9bb335f6842d68c5122b54149dfa9e399a90533a    APPLIED     lxd/storage/zfs: Rework zvol resolution logic
+79c2ff65b7f47a56c49748f9a0e753d649bb0f39    APPLIED     lxd/storage/drivers/zfs_volumes: cache `entry.Name()`
+e0e80648ce5bd137e1e80d6bf7d0e66fdc67a462    APPLIED     Revert "lxd/storage/drivers/driver_zfs_volumes: fix typos in comment"
+b16f66b325b0bbaf0e54a04c8514d90bebc2eddb    APPLIED     Revert "lxd/storage/drivers/zfs: fix ZFS blockmode with XFS/btrfs"
+98a395f524f71c0ef9591f01b9e1faa113a97990    APPLIED     lxd/storage/drivers/zfs_volumes: improve `getVolumeDiskPathFromDataset()`
+e74d37d14e45ef1776cdb6275a3c14bb4994adc8    APPLIED     lxd/storage/drivers/zfs_volumes: use `bytes.TrimRight()` as null bytes are at the end
+320ccab7cc24165f6279e2c09cf370c8ddf5a518    APPLIED     lxd/storage/drivers/zfs_volumes: stop waiting for `udev` now that only `/dev/zd*` files are used
+0d844ff65efe775461840afacd6f3409550c95cc    APPLIED     lxd/linux/ioctls: export `ZFSMaxDatasetNameLen`
+bcffb91cbe582a4f9c1b36b4dcbae45bfa97ea20    APPLIED     lxd/storage/drivers/zfs_volumes: do not hardcode buffer size for `ioctl`
+a92cc858550b780be76e7e832fc4a83bc671f167    APPLIED     lxd/instance/drivers: Ignore expected ErrInUse
+ce171ced0182553f18d7b0de5acbf0095232d0a6    APPLIED     test/lint/bin-size: check `lxc` and `lxd-agent` sizes
+2cd8b64ce2e75f0c72c2dc1df07f8ebae249dc0e    DIFFERS     github: stop checking `lxc` and `lxd-agent` sizes in Action code
+74646764a5546d9f81a90e56093479b57058052c    APPLIED     test/lint/bin-go: check Go version used when compiling on GH runners
+bfc18a4b4960eda2f2c88676eaa884e660ddd339    APPLIED     github: stop checking Go version used to compile binaries
+d10f850db30fed7dc94b3581e2b85cc45ae97357    APPLIED     doc: remove edit button from manpages
+4f427c1b1bab620e21a8e32b770f8ad99cedb00f    APPLIED     test/suites/oidc: kill OIDC provider during cleanup
+74b58fc75d753830fd29f6b101bf92eca7b1a95a    APPLIED     test/suites/auth: kill OIDC provider during cleanup
+46576a06d71145c21e965013b6108898daad2965    APPLIED     test/suites/auth: delete `oidc/test-user@example.com` auth identity during cleanup
+cc2ea438452c53539ffe6621f48b743497fee8d4    APPLIED     test/suites/basic: the `localhost` remote must be removed after distrusting the cert
+d698439e1b95fb389742a0304be560b0f073a91c    APPLIED     test/suites/basic: avoid clash between `foo` cert from `ensure_has_localhost_remote` and `tls/foo`
+254a2c9e6eb142304f6927af2134283b802f1015    APPLIED     test/suites/lxd_user: improve cleanup to allow repeating `lxd_user()`
+19a9ffaf3297bff9299a75e487e950b0d1d0d1dd    APPLIED     test/suites/lxd_user: improve cleanup to allow repeating `snap_lxd_user()`
+e317d5343da0d394e3e17ba83c4558acc0f1bc3e    APPLIED     test/suites/tls_restrictions: ensure the old cert is in place in `certificate_edit()`
+778bf34f33c43984af825ece109efde4e84e27cd    APPLIED     test/suites/tls_restrictions: only check for PENDING|RUNNING websocket operations test/suites/tls_restrictions: only check access to websocket operations
+bf6c9e4bd4e52812c572c0e8beb754d47ccf45e7    APPLIED     test/suites/tls_restrictions: ignore allocations for the default `lxdbr0`
+ef09ac8d694cb7d91a44bd59217d797d5e5f725a    APPLIED     test/suites/filemanip: minor tweak
+a9db549b4cb49ea08aa2e797d2d8bf75bea1d8f6    APPLIED     test/suites/filemanip: test authenticated SFTP
+b98e2a4442611706033c0d626fdf8c23e8b40838    FEATURE     test/suites/projects: delete `testimage` if present when starting `projects_images_volume`
+1439bad31ca8f2fd178dea1c54be9d3e77340d96    APPLIED     test/suites/projects: do not delete `testimage`
+7a77856778801bd2876ebe4774f6f7a7501e3b3e    APPLIED     test/suites/projects: improve `grep`
+5b02bdac239c58a83523983fa4ee6fa677d6c53d    APPLIED     test/suites/projects: avoid repeated `lxc project info` calls
+b3b7bec2dfcbacf87a9b158b8489ebeac2fb26a2    APPLIED     test/suites/projects: create less snapshots
+c04c693db779a17b2f61764b0dcc31d49024cfe1    APPLIED     test/suites/projects: use small volume in `projects_copy`
+aaf6adcff6a96b80d039ec46433d308cdaa028ec    APPLIED     test/suites/projects: use shell comparison and property set/get
+d6d9683227e8dc7abba5a7109b0c3b3f50e0725f    APPLIED     test/suites/storage_driver_zfs: avoid `rm -f` for stopped instances
+dce95d4a70ce6c7a29036f9ef625b64a30f4bbf7    APPLIED     test/suites/storage_driver_zfs: use smaller rootfs
+bde589df135243414688c142cd0869d19fa7cb2a    APPLIED     test/suites/storage_driver_zfs: use `TEST_UNMET_REQUIREMENT` when skipping test
+8ad7fdc7f4588ee8bb1e3dc4f03ca18dbc825825    APPLIED     doc: merge docs makefiles
+0384552ab1c2169667dffb7af9411d465190457b    APPLIED     doc: set html_baseurl dynamically
+071d6bd077fd9999471aa8a800132888447a076f    APPLIED     doc: improve sitemap functionality
+c299fb65a3affdaf5168e7cdea471d608e1da321    DIFFERS     github: move `sudo --preserve-env` list to env variable
+d57f58462aefc3f8cbe0f5c732124035ae3c1f96    DIFFERS     github: preserve `SNAP_CACHE_DIR` to have snap tests install from the cache
+1ee439421fcc5187ce5f373ca3c444d6660b2db2    APPLIED     test/suites/query: no need to import `localhost` remote
+5cc0ce95ff27a8135ac5723e775c7e70b8e76612    APPLIED     test/suites/remote: remove any leftover `localhost` remote from prior tests
+961094b7d632ae6cf5c20c1820d39ed3cd7be81c    APPLIED     test/suites/network_ovn: use `TEST_UNMET_REQUIREMENT` when skipping test
+b97570eb286d71967c1c397dd84c2df7b548b6d0    APPLIED     test/suites/storage_driver_btrfs: use `TEST_UNMET_REQUIREMENT` when skipping test
+f54f5bd3500d6018a2a8b2d11a025b02da589c7f    APPLIED     test/suites/storage_driver_cephfs: use `TEST_UNMET_REQUIREMENT` when skipping test
+e1f2bfb8d65213a7ab461d14f6af90d3de9144e8    APPLIED     test/suites/storage_driver_ceph: use `TEST_UNMET_REQUIREMENT` when skipping test
+db77dfde977738796ac5b7d93f7da13d0bfaf9a3    APPLIED     test/suites/storage_driver_dir: use `TEST_UNMET_REQUIREMENT` when skipping test
+188767b0de68b711f6cf7eca8753a16f7529e2dc    APPLIED     test/suites/storage_driver_dir: drop pointless shebang
+dde5d2211c6e7deb15fd3216cd7874a187b2ce28    APPLIED     test/suites/storage_driver_pure: use `TEST_UNMET_REQUIREMENT` when skipping test
+1b3ed88a22061eda85a5536aece87a430b075720    APPLIED     test/suites/kernel_limits: simplify test
+e823eecaf05be9370381f04ee3b5c7caddc7e1e3    APPLIED     test/suites/clustering: Cleanup all daemons in test_clustering_evacuation_restore_operations
+41a4a2c763c2f98c9011c184434e616b43542c5e    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Don't immediately deactivate temporary volume in mountVolumeSnapshot
+c909dd226feaca68db862ad61fcf266e3439a956    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Use d.tryGetVolumeDiskPathFromDataset in mountVolumeSnapshot
+f79b69b241fc3eb9298ddd449d16079cae80ded4    APPLIED     test/suites/storage_driver_zfs: fix `/dev/zfs` permissions if `udev` didn't do it
+1429b4025128aedef32c497308b9a2c9f0d4470a    APPLIED     doc: use Go 1.25
+946b781260afa34232728ecce56674e67c30cd82    APPLIED     lxd/storage/drivers/btrfs: Add getDiskPathFromFSUUID func
+4a0da8e96f65575f2ad0542c613a5aa1bbf8fb13    APPLIED     lxd/storage/drivers/btrfs: Don't resolve UUID disk path during pool creation
+d51ea6bb2c6dea1cda41a110d4b882b361f12eb5    APPLIED     lxd/storage/drivers/btrfs: Get the actual disk hosting the filesystem during mount
+0b6670a3ab1f00c3bb061f98f1c9077420d58d6b    APPLIED     lxd/storage/drivers/utils: Drop unused tryExists func
+d17ae59c859083f179b604357bcc60e746a7e066    APPLIED     lxd/network/acl: Don't get instance usage within project ACL loop.
+ef2bc5428bb87fd3a87608b7bf0a16c3ec341320    APPLIED     Makefile: don't build `lxd-metadata` when building `all`
+673f1de8fbde7e5d6e64ddc93be4bc9235b37752    APPLIED     github: list each binaries that should go in the `system-test-deps` artifact
+fcec4399850627110b5b026c8be45322cebe7be5    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Rebase fixes
+1be548cba8f8c6d2b8636dcfff0fa3c1308049ea    APPLIED     lxd/storage/drivers/driver/zfs: Use long flag names to zfs command for clarity
+423f28859f6dffc2823efc0959db4ab719a94c80    APPLIED     lxd/storage/drivers/driver/zfs/volumes: Simplify zfs send command construction
+beb51cdfd032a5e0d3658882fc85339785405320    APPLIED     lxd/storage/drivers/zfs/volumes: Add comment to explain why rebase logic isn't needed when copying in `--replicate` mode
+2a4af30d7dc9870aaa67a1750a19fab12e00402a    APPLIED     test: Add test for zfs.clone_copy=rebase
+3e35c3100e607995aeea0b7d67677e02836c8168    APPLIED     test/suites/clustering: Cleanup pool after cluster evacuation tests
+1b38d0a98c5325a53140af69d1f8847ca136d4c1    APPLIED     lxd-benchmark: use `runtime.NumCPU()` for default batch size
+8804d8d63022e8e3722c98429b046e71d5d076f6    APPLIED     lxd-benchmark: simplify `getBatchSize()`
+fc2fbaf35e533ffa49824eee272cb6a67178752b    APPLIED     lxd-benchmark: fix typo
+8a29f299debc28902c547c4445614ea5a6de3d75    APPLIED     lxd-benchmark: replace `container` by `driver`
+b392e04ab55a5dfc228a0e05c61b2b6f4733f791    APPLIED     lxd-benchmark/benchmark: log an error when unable to get the desired image
+baaad8af4c2e9d53077dfde417091f776f0d598b    APPLIED     lxd: Rebalance when there are too many voters or standby nodes
+ff0f7dcecb0819fd6ab99da4848463ac06b7fccf    APPLIED     lxd: Clean up rebalance and upgrade in nodeRefreshTask()
+40fdd806884a8127377f9203fa528c87ec55cf89    IRRELEVANT  build(deps): bump github.com/spf13/cobra from 1.10.1 to 1.10.2
