@@ -440,3 +440,57 @@ e940f257bf8d6768dc4361253ec000020e21f5e0    APPLIED     daemon.start: `cut` usin
 14bd3a7de1bf50c52c3fafe70204bc1d450a9dad    APPLIED     snapcraft/commands/daemon.start: fix startup on non AppArmor systems
 37ede7948e4071ff3f23fb3f3357827c191b066e    APPLIED     daemon.start: `return 0` in non-fatal fallback
 c720eafd869f462f74965602d7dc877b317c5b94    APPLIED     daemon.start: `return 0` instead of the implicit `return $?`
+402ef5480971560fbe1e5ada2bb75b421dbe5c6f    APPLIED     zfs-2-2: bump to 2.2.9
+cf51fba03f4f2aa621e5a38d9d663df98c024f97    APPLIED     zfs-2-3: bump to 2.3.5
+0fd8fa16fe7fdf0f5a102d57e8462196988b2012    APPLIED     qemu: bump to 8.2.2+ds-0ubuntu1.11
+ec690ef3ee7ab1a69507cec493ab7ff2097a6691    APPLIED     lxd-qemu-snap: bump QEMU/virglrenderer versions
+25b49fa39bfd0012d15fec88583d482dd3170563    APPLIED     lxd-qemu-snap: add more explanations to README
+054b33ff43608ab16c508c76c310b7103a5750f0    APPLIED     nvidia: update nvidia-container and toolkit to 1.18.1
+c2867b29e62678150143255f2fa23c12d1bc23f8    APPLIED     qemu: bump to import/1%10.1.0+ds-5ubuntu3 (26.04)
+d3bb750a6d41c04730073ca2f631c168a61834de    APPLIED     qemu: drop patches backported from 9.2.2
+04f1855fbdfa60c27d4c6e2b351af4c7b8005b67    APPLIED     qemu: remove `--disable-pvrdma` (dropped in 9.1)
+b099ab955248b478b4d85fa4f1f4615fe9cd1a58    APPLIED     qemu: remove `virtfs-proxy-helper` (dropped in 9.2)
+72835f6fe22212160eb7397e9155f12b8a96e845    APPLIED     qemu: stop shipping `s390-netboot.img` (dropped in 9.2)
+c41d6a192319fa9f0d0ddc7c2173812db16c9563    APPLIED     qemu: download some Python wheels needed for building on 24.04
+3d5dff5a09d2c1a4478f15eacc360bbb261ab96a    APPLIED     qemu: Bump to import/1%10.2.0+ds-1
+be0fb37f737a4327a15fe7c92a700147a407a5f1    APPLIED     qemu: Bump to import/1%10.2.0+ds-2
+05e5456b5f0a1cf7b052b446431cdd0904be55b6    APPLIED     README: modern `snapcraft` requires to use `pack`
+62d698974dfbe48db052f612ca5a5b964b8c1b1b    APPLIED     nvidia: Bump to v1.18.2
+d0cf090b1d5009f4d73f6b8fb0eefe172be88999    APPLIED     amd: add amd-ctk CDI spec generator
+651fd0507a7e1f32edd753d9e92e2d1b8f3a3c34    APPLIED     amd-ctk: Pin to Go and release version
+4066babbd4c52499ec799ef3a9db98a6dde67a44    APPLIED     strip: run after `amd-ctk` part
+d64db9fedd4f911592ccbf3d53a5c76b3cbc89b5    APPLIED     snapcraft: always enable the LXD UI if available
+413ffd03c833e32e28e4e9ee5902782143f2ee70    APPLIED     configure: remove `ui.enable`/`ui_enable` config (always on)
+0c36cb86de46da1a1a6b9a0161704376d5376186    APPLIED     daemon.start: the LXD UI not (yet) available on `riscv64`
+83b7eda06f501c2f651760f25581b9543b0a7d3e    APPLIED     patches/nasm-0000-disable-manpages: drop long unneeded patch
+4d39f8312c79e4bc82a17ad48e75b93d6dcd9a48    APPLIED     patches/qemu-0001-kvm-Allow-kvm_arch_get-put_registers-to-accept-Error: drop long unneeded patch
+6d491bae9fa3328ca66fd93f28958078eed4743d    APPLIED     patches/qemu-0002-target-i386-kvm-Report-which-action-failed-in-kvm_ar.patch drop long unneeded patch
+7933c5b7828ef9994e5c1f6d9702c78879a0bafc    APPLIED     lxd: replace ZFS 2.1 by 2.2 for `PATH`
+b8003bf8f785fe816a79a8997246b8a9dfd9dd1f    APPLIED     zfs: drop 2.1 tooling
+263d815e33dbcac7e30c5319020ec274fc5b17c9    APPLIED     strip: remove `zfs-2-1` part
+29bec8b0a9f536c157adb207eed015458e297671    APPLIED     edk2: switch to Resolute sources on Launchpad
+128ef986710b9c28b91ecc918b8f83a20d2cce71    APPLIED     edk2: let snapcraft automatically download git submodules
+6d92ff52350fcd289599eb31d7feabc08aa5ce82    APPLIED     edk2: stop applying patches/edk2-0004-gcc-errors.patch
+8baf9dbbdce4f1bac34be3ba0d7550e3b16a55b7    APPLIED     patches/edk2-0004-gcc-errors: no longer applied/needed
+2173f54d324129b70691d5356e34a0bd949f32d3    APPLIED     edk2: stop applying patches/edk2-0005-disable-dynamic-mmio-winsize
+ce00f5b402125d1323d191a98d899b3f494f5f3c    APPLIED     patches/edk2-0005-disable-dynamic-mmio-winsize: no longer applied/needed
+149a7a48a09208d6211252a72164d05f9d1f311e    APPLIED     edk2: stop applying patches/edk2-0006-disable-EFI-memory-attributes-protocol.patch
+b2f513891a55ab2b9dd00b0c548203df4116e994    APPLIED     patches/edk2-0006-disable-EFI-memory-attributes-protocol: no longer applied/needed
+21a0670746ae9fb86840e60aae981a78257d6610    APPLIED     edk2: stop applying patches/edk2-0007-Disable-the-Shell-when-SecureBoot-is-enabled.patch
+8b1f50d75614505d959705d3a5ef95b64b461253    APPLIED     patches/edk2-0007-Disable-the-Shell-when-SecureBoot-is-enabled: no longer applied/needed
+39103a11938740cd16ffc8036d2cf26a5a2f049e    APPLIED     edk2: stop applying patches/edk2-0008-Revert-ArmVirtPkg-make-EFI_LOADER_DATA-non-execurable.patch
+c8d732665077a4541a17f4e3146296497b9dedb5    APPLIED     patches/edk2-0008-Revert-ArmVirtPkg-make-EFI_LOADER_DATA-non-execurable: no longer applied/needed
+ea095f8651f5d78540bd44b1bc842255c4a9af98    APPLIED     edk2: apply patches from Ubuntu sources and invoke Ubuntu's `debian/rules`
+53912ee1e4d9621c4452e88e5efacc85589a9427    APPLIED     edk2: update build deps
+5be245fb53f1936d48c471738d472e7154c0a1c7    APPLIED     edk2: add needed deps to build VARS files
+476d4b76fab5a61a15a8f75fb0fb17f45c36689b    APPLIED     edk2: copy generated VARS files
+7f72dfcbf50a9b53e285b5b038602fc4ca0e468b    APPLIED     edk2: generating secure boot vars requires QEMU
+3b427b0d5adb3a2d255eec57ab6705a74ab22db5    APPLIED     qemu-ovmf-secureboot: drop now unused part
+dd7bd3a5ba11ee58d86348facc27c22579d2ea1f    APPLIED     edk2-vars-generator: now unused
+bca2110bdacb17606674640da90ca6944c2339cf    APPLIED     edk2: simplify handling of `amd64` and `arm64` in `run_build`
+146af7676208c919aef3fd4d078584cef0255516    APPLIED     edk2: enable KVM acceleration when generating NVRAM var files
+ac28097258045b5b94f5cd4176e1de697f2e0fe7    APPLIED     qemu: disable TCG (except on `arm64`)
+a34045b2048be1103b23ec53702f69870172008e    APPLIED     qemu: explain how TCG is re-enabled for `arm64`
+8e26ad2a7d94dd1faf9847904a0b8b7966b57e26    APPLIED     edk2: have `sed` create a backup copy before doing the in-place edit
+aac4f5db2a7c31b00f2e266e213053db3cae0631    APPLIED     edk2: use `local` vars in `run_build` helper
+2ba6fa8bacc92cfb20201d9e4f5758c8c79ec1dc    APPLIED     edk2: add comment for print error level tweaks used for `DEBUG` builds
