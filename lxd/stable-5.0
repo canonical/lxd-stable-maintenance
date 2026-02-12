@@ -8304,3 +8304,13 @@ e47c1c4b1cb5a896cef03e2504f411228ef70127    IRRELEVANT  test/suites/clustering: 
 c9c9554c170c29d43401b73e932989e5576fb25c    IRRELEVANT  doc/custom/conf: Ignore link checking of https://www.schlachter.tech/solutions/pongo2-template-engine/
 01dccd9428cbd1678b9924577f9551926f613bd0    IRRELEVANT  test/suites/clustering: fix typo (`s/firth/fifth/`)
 ff90692bddb77e9311f790e34fd7bab356cf5d1e    IRRELEVANT  github: rework how GOCOVERDIR is handled
+d5fb64651ddf5781de752676b78aad2d059c5962    DIFFERS     shared/util: Add SingleQuote
+60d9d276232b738d16c201ebf6f21cc903bf92d6    DIFFERS     shared/util: Rework SingleQuote to ShellQuote
+8f07a1dca0455c591555d06357c49bc0fd00d38c    DIFFERS     lxd/instance/drivers/lxc: Use ShellQuote instead of Quote
+6787086400aa552eed6ed20a429f225d8b22e965    DIFFERS     lxd/instance/drivers/driver/lxc: Reduce duplicated calls to ShellQuote
+af1e57364777e8295e87aef243fafe2aea8fc48c    IRRELEVANT  shared/osarch/architectures: Work around CPC metadata duplicate architecture issue
+5e57e2cd2ed9bc38c04e059970ef5f33f0f2f167    DIFFERS     lxd/instance/instancetype/instance: Prevent line breaks in environment variables
+30243bf666cf158ba329bcaa2f9a89e11c5bbda6    IRRELEVANT  doc: Update metadata
+77d519009da7752b47ecc76e33ca59e70fc5a216    DIFFERS     test: Adds tests to check for line breaks not being accepted in env vars
+29ec347592d3e96f600b223b89dc26371b8888f6    APPLIED     lxd/instance/drivers/driver/lxc: Restrict path of template files and targets
+27f35f471a7fd19f637f8b91d878f7460b16f0e9    APPLIED     lxd/instance/drivers/driver/lxc: Rework template security checks to allow error wrapping
