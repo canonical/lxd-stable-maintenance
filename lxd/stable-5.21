@@ -9736,3 +9736,21 @@ b392e04ab55a5dfc228a0e05c61b2b6f4733f791    APPLIED     lxd-benchmark/benchmark:
 baaad8af4c2e9d53077dfde417091f776f0d598b    APPLIED     lxd: Rebalance when there are too many voters or standby nodes
 ff0f7dcecb0819fd6ab99da4848463ac06b7fccf    APPLIED     lxd: Clean up rebalance and upgrade in nodeRefreshTask()
 40fdd806884a8127377f9203fa528c87ec55cf89    IRRELEVANT  build(deps): bump github.com/spf13/cobra from 1.10.1 to 1.10.2
+54c6e11cfc556aff9e77f6b13c1dc02f19efb257    APPLIED     github: temporarily pin golangci-lint to v2.7.2 to avoid new linter errors
+e1b97783c9b231b1eb46382c57a68e4b6e2e3292    APPLIED     lxd/apparmor: Allow all mounts in unprivileged containers
+cf3e6d2d32310094cb0bb560068a24852be5dfaf    APPLIED     lxd/seccomp/seccomp: mknod: continue syscall for whiteouts
+b6eb5dbfd51c940c379c407fdf49b3109f852bf5    APPLIED     test/mini-oidc/storage: Wrap bool value into oidc.Bool
+5eb698f8f3d9e5f03474180c5415bd16890f3bef    DIFFERS     doc: pin myst-parser version
+6e6b022e5fd333b2f08fd3b38b4c12708f649407    APPLIED     shared/util: Add SingleQuote
+64337057969403b443d381a1e18a26c363492266    APPLIED     shared/util: Rework SingleQuote to ShellQuote
+dbc132381807a8fee20cd4cfbd12065acb6c9971    APPLIED     lxd/instance/drivers/lxc: Use ShellQuote instead of Quote
+24fc8929b0a9b68fd9fec1d47a72cfda1594ec79    APPLIED     lxd/instance/drivers/driver/lxc: Reduce duplicated calls to ShellQuote
+09d90346be9e70d77b186459ac3694db390f73cb    APPLIED     shared/osarch/architectures: Work around CPC metadata duplicate architecture issue
+a53d166d34c7b7c5c0b90bc85276122c3f6142dd    APPLIED     lxd/instance/instancetype/instance: Prevent line breaks in environment variables
+42d828736eec2275319da9724348fa827b04caaf    APPLIED     doc: Update metadata
+7d5a13b8bad69954ca7af7626049793b913a9bd5    APPLIED     test: Adds tests to check for line breaks not being accepted in env vars
+d1c8ba15d1602d72fcf4ca6783a204c7b6e6f358    APPLIED     lxd/instance/drivers/driver/lxc: Restrict path of template files and targets
+c981c478b5087c8d263097278be1e6becd4e672c    APPLIED     lxd/instance/drivers/driver/lxc: Rework template security checks to allow error wrapping
+ec4aa433dd1f77686d1d241b1e88e8cd377f32d2    APPLIED     doc: fix cloud-init cloud config link
+497c63fefc2222bd551ea174905d7707bc17acf2    APPLIED     doc: fix cloud-init configuration types link
+5053215a720ea58180a86f4c68b911731fbbb8ca    APPLIED     doc: fix cloud-init cloud-config ref link
