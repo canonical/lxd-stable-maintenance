@@ -9754,3 +9754,28 @@ c981c478b5087c8d263097278be1e6becd4e672c    APPLIED     lxd/instance/drivers/dri
 ec4aa433dd1f77686d1d241b1e88e8cd377f32d2    APPLIED     doc: fix cloud-init cloud config link
 497c63fefc2222bd551ea174905d7707bc17acf2    APPLIED     doc: fix cloud-init configuration types link
 5053215a720ea58180a86f4c68b911731fbbb8ca    APPLIED     doc: fix cloud-init cloud-config ref link
+772656619e99ce1a11c49eb7dbdc84aac611e938    APPLIED     lxd/db/network_forwards: Handle null strings when fetching forwards by uplink
+98b61b03550bab6d9f432555b27a19cc494c8dfe    APPLIED     lxd/db/network_load_balancers: Handle null strings when fetching load balancers by uplink
+a85579c6f0e9f3aa7333e8990d7db0b2d3d9de2a    APPLIED     test: Check forwards and load balancers can be created for IPv4 only OVN network
+a203c6b39cc7bbf398ab6d9db77cbf8bca874a60    APPLIED     test: Check forwards and load balancers can be created for IPv6 only OVN network
+0d833394093bbe3a9890be4229d59271d7575503    APPLIED     test/includes/logging: Add sub_test logging helper
+9eec11a2b79b73b81601e7a231f473ea79ea5594    APPLIED     github: rework `actions/setup-microceph` to reduce time lost sleeping
+8e13dcf66c5585c1bf496b5b5c0f1c88c2699de4    APPLIED     github: action `inputs` are always of `type` string (`actions/setup-microceph`)
+7891a85d177ea81dff159d226ab5045748f1f67b    APPLIED     github: action `inputs` are always of `type` string (`actions/setup-microovn`)
+4360018395d1877db33ecdaa78af6635f4107c03    APPLIED     github: use `latest/beta` for `snapd` (`actions/setup-microceph`)
+a6734307c7faea092915b03aae3bd6bbea3bf2e2    APPLIED     github: use `latest/beta` for `snapd` (`actions/setup-microovn`)
+0616d86e26ac8716b1e72b917681887a18809865    APPLIED     github: add helper script to `actions/setup-microceph`
+d84d9bb56bc7aa246d01e01716eafc519670efcb    APPLIED     github: allow using the `actions/setup-microceph` on 22.04 runners
+7a8d621fe9c62aa978c8ce3a06941cbf5582d6c9    APPLIED     github: update `actions/setup-microceph` to remove ref to old issue
+beb00fbd60b2e838e8c501a3f480ea631c119f15    APPLIED     github: use helper script in `actions/setup-microceph`
+b23aee372fe983a6758de68bf619af6563272a5a    APPLIED     test/includes/setup-microceph: allow using MicroCeph helper functions on local runners
+ad56198604c34411390232e20754a5f713a935b9    APPLIED     github: `actions/setup-microceph` support partitions of on a loop device (setup-microceph)
+4e06eef0a8fdd84bb125e13b4e5a1f265a0f5a8b    APPLIED     github: `actions/setup-microceph` fallback to using a loop device if no ephemeral disk is found
+8d1509d76b49c3556053bac1491a70d0ca740c7e    APPLIED     github: `actions/setup-microceph` show `ceph.conf` (DEBUG)
+4ee9cfe3fb1aa4aa7b322a01e66c324a330d4179    APPLIED     github: always use loop devices for `actions/setup-microceph`
+d3628be06c91f504658099c151a9e240143911ad    APPLIED     Revert "github: `actions/setup-microceph` show `ceph.conf` (DEBUG)"
+c0dbf120c205c4aed68e1c55d6a3af8eaeb26203    APPLIED     github: bump the size (5G->10G) of each OSD in `actions/setup-microceph`
+a0008677b48cefc4a105addbd421fbcd9f810c03    APPLIED     lxc: Add utils to get entity name from operations.
+7cb754cf4d4775444a597a177e7134344406c015    APPLIED     lxc/export: Get backup name from metadata if possible.
+23675036eab1d0cfc6c2b111a763c4c701cc7905    DIFFERS     lxc/init: Get instance name from metadata if possible (and necessary).
+c6238700ea8acb1b20b9a994ca9dc79f94401f43    APPLIED     lxc/storage: Get custom volume backup name from metadata if possible.
