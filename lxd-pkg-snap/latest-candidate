@@ -494,3 +494,5 @@ a34045b2048be1103b23ec53702f69870172008e    APPLIED     qemu: explain how TCG is
 8e26ad2a7d94dd1faf9847904a0b8b7966b57e26    APPLIED     edk2: have `sed` create a backup copy before doing the in-place edit
 aac4f5db2a7c31b00f2e266e213053db3cae0631    APPLIED     edk2: use `local` vars in `run_build` helper
 2ba6fa8bacc92cfb20201d9e4f5758c8c79ec1dc    APPLIED     edk2: add comment for print error level tweaks used for `DEBUG` builds
+ef0061a0f367324be0a28b392676065127e1e534    APPLIED     qemu: bump to `10.2.1+ds-1ubuntu1`
+081f47f573abcb7a902a5e26bec65de964a8a020    DIFFERS     lxd: explicitly use git full clone
