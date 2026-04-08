@@ -9961,3 +9961,61 @@ c0f6e4548620ebf6bb80c6d7374c5521969fcce1    APPLIED     shared/validate: Tighten
 7de3f4cf4269fc898bc61b35f31cf72395f98ed6    APPLIED     lxd/instance_backup: Fail fast if compression algorithm is unsupported
 db35b646f6ac140f2237c049c1fb36aa181d0c0c    APPLIED     lxd/storage_volumes_backup: Fail fast if compression algorith is unsupported
 94cf6dd2c04bdb8f7462f5bc9bac8180b72a710d    APPLIED     test/suites/basic: Test invalid compression algorithm
+d22dd31de9e5e67581f130fc9eadd8606dfc7967    DIFFERS     lxd/instance/drivers: Only load parent and acquire lock for backup file refresh when deleting snapshots
+fde2518d37a28b199da99fc66e21ef02ac7e994c    IRRELEVANT  Revert "lxd: Require all cluster member to process forced project delete notifications"
+39852aae32f8acb44721e957a96d8f5938c85c3f    IRRELEVANT  lxd: Require all cluster members to process notifications in project api handlers
+e396d187b7970bfc1b9bd4a35e08ed4279f380eb    IRRELEVANT  lxd/cluster/gateway: Use dqlite WithBusyTimeout with 5s timeout
+77376088cce67b9e52b21c7aaa7c5ecbf93a6918    DIFFERS     lxd: Refactor evacuateClusterSelectTarget()
+918e59738fc40c67a87ebb40442e8bf99b9940cb    DIFFERS     lxd: Set "volatile.cluster.group" on instance migration
+2bd3fb94729707acbd82f0bcf60a3ad1f098dd34    DIFFERS     lxd: Remove clusterGroupValidateName()
+ea9fbe3115a137cda1f7a39afd91c04357239a83    DIFFERS     tests: Convert comments to echos in test_clustering_groups()
+0c46a31ebb01c560ec39c504b78f740f0884f76e    DIFFERS     tests: Convert comments to echos in test_clustering_evacuation()
+e703a1ecbccefc9ce07e77357a6b48c8a196e8e1    DIFFERS     lxd: Extract instancesPostSelectClusterMember()
+98dec074ba3be3c62613794a08b2c43bf948890d    APPLIED     lxd: Use ctx param instead of request context during evacuation
+43ac02b89bdcbfefb2f792bee4bafb2f3c917be8    APPLIED     lxd: Replace request context with context.TODO()
+ab1429d3d58775aecfc2646016b4f6a09697ea2d    APPLIED     doc: Add Local Peering Documentation (Networks)
+6631fe2e14fdcb09d59bbe9fa59d85320877b932    APPLIED     test/suites/network_ovn: use local variables
+75b9fac37afca4a485e441fdba153b8f1d07ea3e    APPLIED     test/suites/network_ovn: bulk operations
+39ab7171cddb57ceddb439348c9f6ce21a66dd31    APPLIED     test/suites/network_ovn: use `jq` assertion
+99e2dedb1e1ef97b9082e820edcdc6b84890d6a7    APPLIED     github: properly skip the `concurrent` test during CI (too flakey)
+f60b300029d9c6dc293edd737f768cdca2796f0c    APPLIED     github: fix `LXD_REQUIRED_TESTS` to be space-delimited list
+fe4f7d53f6764f4b8f87f91cac4c4e954aa76b58    APPLIED     github: move `sudo --preserve-env` list to env variable for Code job
+2b96a7ecbbb3f5aed9d9a5efbcb3aa2a80605e65    APPLIED     github: move `sudo --preserve-env` list to env variable for System job
+f1887b0c0b6f259fb76a496fa3cbcac2c2e758e2    DIFFERS     lxc/utils_properties: use `%w` for errors
+06d49462726a05c1b0eec2e53a01f3e204bf3060    FEATURE     lxc/console: remove `i18n`
+bc6f628cf7aadef1d2c1a8e5033c8f6b36d3efff    FEATURE     lxc/import: remove `i18n`
+d8e1bb5cc3ecad5b84c4d9621a1d04f114f53014    FEATURE     lxc/launch: remove `i18n`
+d29dabaa91e6f830d8b5e7568cf63731022739c8    FEATURE     lxc/main_aliases: remove `i18n`
+3b78330db0d143cf3ba990024c9414e6d470ec72    FEATURE     lxc/main: remove `i18n`
+48cc40a8bc155890960d0ab28ce09c4f1d737656    FEATURE     lxc/manpage: remove `i18n`
+4a3a4f7971c8bd55beb704e3f405eb42ad8eab83    FEATURE     lxc/restore: remove `i18n`
+ca70203eff59dd0c28a68dd7cd459aa008acbf18    FEATURE     lxc/version: remove `i18n`
+70c400a51885d0bc6f75f097fcd6fb3751e454e1    FEATURE     lxc/list: remove `i18n`
+0c1467e59f21fdcf8304a5a70e0a8fb125ed8e79    DIFFERS     lxc/console: fix typo
+b7c5a680bdc0a32b5a73389942b5b727d946d9b8    APPLIED     lxd/operations: Return a copy of the metadata to avoid concurrent access
+8fb2765d6742393a4fd03b40c9ab87a03a6a59b3    APPLIED     doc/howto/instances_troubleshoot: update link to systemd debugging
+60477a91666ce9f82039cdf75b420b3566fee16e    APPLIED     github: use a more direct URL to the forum
+84415cf45588774a7b9c6b29c17f22c132001d2c    APPLIED     test/includes: Fix project argument for volume operation.
+8ceb839ed4c2bbabd4e43be2825499a783acd35b    IRRELEVANT  tests: Convert comments to echos in test_clustering_move()
+92adfad004358df77c780e773f10ade3b9cc3dfc    APPLIED     lxc/move: Reword error messages for consistency
+4ae3be499301bc43498c44aac6bb02de34183b15    APPLIED     lxd/operations: Remove contractions from error messages.
+9c9324366ab048bddaab675f2d12a9f3613edc79    APPLIED     test/includes/lxd: simplify how LXD graceful shutdown is monitored
+920c3907350438e3fee7331da020a48a634aa036    APPLIED     doc/howto/security_harden: update links to avoid permanent redirects
+fdebe97797380b42eee4f4be1c77e72fadc07903    APPLIED     doc/explanation/authorization: update link to avoid permanent redirection
+6eaaca38f2253fb6e0eb482c608bab800a6f9f0e    APPLIED     doc/howto/oidc_ory: update links to avoid permanent redirects
+5413bcaaff40e90fb352e64cd5837c85230c7cd9    APPLIED     doc/howto/oidc_keycloak: avoid linking to an old Keycloak release
+9a0af955479da0e93ddfe82352b5460689a7320d    IRRELEVANT  shared/api: Clarify ClusterMember.Database godoc
+0cf31ad8d59ff8d950288c6f1ef83709afb6a195    IRRELEVANT  doc/rest-api: Refresh swagger YAML
+fc84a2b83cc91453e8cb1f789fcfec51728c5c1c    IRRELEVANT  lxd/db: Rename ClusterRoleDatabase to ClusterRoleDatabaseVoter
+6f3cecec4d9fd9297e776d2f6adef30243da2ab2    IRRELEVANT  lxd/db: Add database-voter role only for non-leader voters
+fcfff76a61b9883893b3e460d031178dd75da45b    IRRELEVANT  lxd/db: Reword manual cluster role godocs
+3b7c25a5370a36d7ab051d8294247d36c13bc72e    APPLIED     lxd/device/tpm: Make incompatible with live-migration
+ce56eef57f566d1ebe7be8235c5128a8242789bc    APPLIED     test/includes/operations: add `check_registered_operations()` and `terminate_leftovers()` helpers
+eafa3e43e6cefe334459c172f7af7c9d230217f9    APPLIED     test/suites/shutdown: use `check_registered_operations()` and `terminate_leftovers()` helpers
+8dec438211ba401b82e5e095d4e0c1183ac06d7f    DIFFERS     lxd/operations: Remove unused UpdateResources function.
+556d649d48af6f0a57dc1a2230a4b60b863b1c5b    APPLIED     doc: Clarify output is an example
+93d5492702e62fe6074218d7ef02012fd3ca8235    APPLIED     lxd: Don't error if default profile is not found on feature change.
+ca6638a5fee440a675f354db71333d1010c7ff4b    APPLIED     Makefile: don't print as much when entering `test-shell`
+48e70238efaf65fa600dc0a2d6dc9657a683d719    DIFFERS     doc: configure spelling and woke checks to use vale
+1d794039d469fc8a54fca56f55b9f4a70ad8881f    DIFFERS     doc: add vale ignore rules and vocabulary updates
+f0bdd4ade36f3f56ca2bce2c89d06e5a14bf0b5f    DIFFERS     doc: migrate off canonical-sphinx-extensions
