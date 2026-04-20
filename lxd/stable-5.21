@@ -10019,3 +10019,5 @@ ca6638a5fee440a675f354db71333d1010c7ff4b    APPLIED     Makefile: don't print as
 48e70238efaf65fa600dc0a2d6dc9657a683d719    DIFFERS     doc: configure spelling and woke checks to use vale
 1d794039d469fc8a54fca56f55b9f4a70ad8881f    DIFFERS     doc: add vale ignore rules and vocabulary updates
 f0bdd4ade36f3f56ca2bce2c89d06e5a14bf0b5f    DIFFERS     doc: migrate off canonical-sphinx-extensions
+a1654d78452c0a9a526b832f1001cd36915b9242    APPLIED     lxd/instance/post: Don't hang on migration connection when handling a request to move an instance to its existng member
+b724330fd175c4edcfb7f8acbd89d589876b627e    APPLIED     test: Check that moving an instance to its existing member fails with a proper error
