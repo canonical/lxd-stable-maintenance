@@ -496,3 +496,52 @@ aac4f5db2a7c31b00f2e266e213053db3cae0631    APPLIED     edk2: use `local` vars i
 2ba6fa8bacc92cfb20201d9e4f5758c8c79ec1dc    APPLIED     edk2: add comment for print error level tweaks used for `DEBUG` builds
 ef0061a0f367324be0a28b392676065127e1e534    APPLIED     qemu: bump to `10.2.1+ds-1ubuntu1`
 081f47f573abcb7a902a5e26bec65de964a8a020    DIFFERS     lxd: explicitly use git full clone
+d8da17ae1bbba41c919cb4729b93b23365275b40    IRRELEVANT  github: ask Dependabot to implement a 7-day cooldown and to group updates
+6361add5e99f3dca26c2d35ad9a4b8e37da97eba    APPLIED     snapcraft/wrappers/editors: prevent mount namespace inheritance in editor wrapper to avoid 'dataset is busy' errors
+5a6556bd4c9027310acd148d76e23492be0e4127    APPLIED     dqlite: Pin to dqlite v1.18.x branch
+565fb73500458bad9b625c5fc59b1fb54c2bf3b5    APPLIED     nvidia: update nvidia-container-toolkit to 1.19.0
+24791640a6560b05d19eead75c80ea9a10eaba3c    APPLIED     configure: remove `minio.path` config
+172332795f25eeeb0be8280358f497c5951ada17    APPLIED     snapcraft: remove `minio.path` config
+442becd9cf569f4ee43c726e651191ec874e4c17    APPLIED     daemon.start: remove MinIO support
+2df9000c928b878e68c79cf8a9535b15d7521689    APPLIED     plugs: Add `ovn-env` plug for connecting with MicroOVN slot
+1cdcc86ff3561d2aee367f25a5f376394e061ae3    APPLIED     snapcraft: bump go version to go1.26
+766177b43ce95dad5a2dae9888efb4bfa7dceda2    APPLIED     snapcraft: edk2: update logo
+07e20573d6a6f70c2fc96a1206ef474b5762cd64    APPLIED     edk2: use a 8-bit version of the logo
+7172374041ac3c22ad88d01858acd351e1dacbd1    APPLIED     edk2: bump to 2025.11-3ubuntu6
+c24893ef300807bfb7f59d049f00309dcb1b99de    APPLIED     edk2: add new build-deps
+adc95337e948d6de8392858c4559aebff76017d5    APPLIED     edk2: fix paths to files
+3a0e2f5c7efcdf1537ef376ecbd68ff07e85ac31    APPLIED     edk2: modern build don't use QEMU for key enrollment
+b2908f52ffb129ae85d5eff995da095e6ae89d72    APPLIED     qemu: unconditionally disable TCG now that QEMU isn't used for key enrollment
+588212433dacc7b2551322d157bcb552897216bb    APPLIED     edk2: disable (again) the `EFI_MEMORY_ATTRIBUTE_PROTOCOL` for `arm64`
+cb5f41e6aa96a7c81777e5b42ad7b965936b60ec    APPLIED     github: add `zizmorcore/zizmor-action` workflow
+fd69c648ad0431f4a4b43751a9857c057353238e    APPLIED     github: the commits workflow doesn't even need read access
+9fa4a8fd2bca6bdde761fe6660f30e9aa786d761    APPLIED     github: align commits workflow with LXD's
+af9545bfacbbfde0b5db339d0bd1b99482609ff3    APPLIED     github: do not persist git credentials beyond checkout in builds workflow
+d3cd45f2e8dee138c394420df3c476f6cc839fda    APPLIED     github: do not persist git credentials beyond checkout in tests workflow
+5c4d620e5f7b4add31fe5d201ea70bc4072f5871    APPLIED     github: ignore some `zizmor` alerts in builds workflow
+11706ff4eb41a3ed74b399cac456cd469ad37cba    APPLIED     github: ignore `zizmor` alert for `unpinned-uses` in test workflow
+0e9b0788688eacc6fa73e0b7b900607694d1b56d    APPLIED     daemon.start: the `/ui/` handler in LXD ensures the dir exist
+f65c8371531ac0135b008e1db1408bb23f75bd77    APPLIED     setup-zfs: extract ZFS version/PATH handling to a helper script
+b965ebc284eded3462a0dc82991cf1b40a36a0ad    APPLIED     daemon.start: use `setup-zfs` helper script
+2544670a709864f8163095f0bfc3078dc81f9d21    APPLIED     setup-zfs: fallback to `snapctl` if the `configure` hook was not run
+d1d23012027fd128ef94b52b3d250e57563dc053    APPLIED     lxd: use `setup-zfs` helper script
+d84ad6781068a01b126b1444d7c6b47b91869edc    APPLIED     Revert "daemon.start: check if the host's `/var/lib/snapd/cgroup/snap.lxd.device` exists"
+fbfdb82115804327a468812c44c3a2d86bb4b092    APPLIED     Revert "Revert "Revert "snapcraft: apply temporary workaround for core24 to fix snap reload"""
+4205228eee6bfb4614018d90de0c1dc351c75171    APPLIED     setup-zfs: report errors on `stderr`
+cbbebf2842aaccc354cf6d3ce85668e77cfbd9a6    APPLIED     lxd: suppress `stdout` output from `setup-zfs`
+4306b35dd63194b90340d7e4a9b47b3044bd8d4b    APPLIED     configure: do `getent group` lookups after checking for sockets
+52e026c6234dd519885cd5d3870c38fd9e17ad56    APPLIED     daemon.activate: do `getent group` lookups after checking for sockets
+1505b232f4ef72cd87dea142db1e187f44fb571f    APPLIED     daemon.activate: drop obsolete socket activation check
+6ff275b799d03a1817017425f34a745dac160cde    APPLIED     daemon.start: `lxcfs` now defaults to using `pidfs`
+94893a7ccdfefed0f3d36f4e626c5eb6f9490fe9    APPLIED     snapcraft: remove `lxcfs.pidfd`
+f164fb60a41002a22d546cda7acc8d8db087726d    APPLIED     configure: remove `lxcfs.pidfd`
+360a4434e828709768e681ae9f2347e1a2edcca5    APPLIED     daemon.start: replace `cut|grep` with `read+case` for LXCFS cleanup
+bd9bad7385b0e303cd9a6042d4aa8d510a3a6eb1    APPLIED     daemon.start: replace `cut|grep` pipeline with `is_mounted()` helper
+80b36716de619c0c441096911567ec0763a6575a    APPLIED     github: drop unneeded `actions/require-gha-pinning` (replaced by zizmor)
+ada96bb062e0d184c8daf9ce03617f307033eb91    APPLIED     qemu: bump to 10.2.1+ds-1ubuntu3
+b5e870864e6d9e74b7cd77a668d8856ec3fd23bb    APPLIED     uefivars: switch to 26.04 sources on LP
+a7af4a22b4743fb0f35cf9f7d1b6bd1e3f4eb664    APPLIED     uefivars: apply `debian/patches`
+f494afcc7bded291650fee15f39fe554f7a38fde    APPLIED     uefivars: add a note about the `.py` extension
+d0f49d365acd90e9d8f061b1b6583a8be50c11db    APPLIED     edk2: Bump to import/2025.11-3ubuntu7
+95aa8ac28bfd863d47b78e54e90ba52767aedc5d    APPLIED     edk2: use the hash tied to 2025.11-3ubuntu7
+edf87aa1cf8427aed331b0420c7c5a648e1f1605    APPLIED     github: ask Copilot to pay attention to git parts' commit/version
