@@ -545,3 +545,32 @@ f494afcc7bded291650fee15f39fe554f7a38fde    APPLIED     uefivars: add a note abo
 d0f49d365acd90e9d8f061b1b6583a8be50c11db    APPLIED     edk2: Bump to import/2025.11-3ubuntu7
 95aa8ac28bfd863d47b78e54e90ba52767aedc5d    APPLIED     edk2: use the hash tied to 2025.11-3ubuntu7
 edf87aa1cf8427aed331b0420c7c5a648e1f1605    APPLIED     github: ask Copilot to pay attention to git parts' commit/version
+ffe67477630b33c5e2469ad2a248267cfef434ed    DIFFERS     snapcraft: require `snapd` >= 2.64 (released in Jul 2024)
+47ee5317a72dd6c3c78bf0968474d1274e0a94a3    APPLIED     lxd-snapcraft: copy/adapt from `lxd-ci`
+0e1bf5eec6d1e35eda0e01ffb26c5edf74d14550    DIFFERS     gitignore: ignore `lxd-snapcraft` binary
+9f786b4b4e29464a3e1d0cbaaed7417046e61cd1    APPLIED     github: copy/adapt `actions/lp-snap-build` from LXD repo
+a3d73866033fb5456bdf1aa06b95c06c73483f0d    IRRELEVANT  github: update Dependabot for `lxd-snapcraft` tool
+a82e17ce6e4da1dcb3974fe92d8b236aa1976138    APPLIED     github: update builds workflow for new location of `actions/lp-snap-build`
+935d2b814d44afbc2f57257d826653f51febeead    APPLIED     README: document how to use `actions/lp-snap-build`
+b9ae1976bc9073b48bcbb94467a779b2d5700339    APPLIED     README: minor Markdown lint fixes
+1d0f2f689f031da1aa684378a7262fa3b51a2dd6    APPLIED     lxd-snapcraft: switch to `go.yaml.in/yaml/v3` to access YAML comments
+cca58c0ff6eeba92d24cb9702cb20c3390ff28ed    APPLIED     lxd-snapcraft: add `-verify-source-commits` flag
+6d0ff45e208eee49f24b0f388848225b17ee3596    APPLIED     lxd-snapcraft: safe type assertions in `getVersionInfo`
+d86ae573ba9e8a25b9df10da0ecf8ad8f87e1522    APPLIED     lxd-snapcraft: `nil` guard and avoid dup calls
+64f5f6c679eeee3736e00e469b907894cf69439f    APPLIED     lxd-snapcraft: use explicit Unix file mode
+55f702a55e386d0d7beaf7ef2fe5b785f3bde899    APPLIED     lxd-snapcraft: use `io.Reader`
+2e37edf67bc78be63aacb8d9ed32fda54d77d786    APPLIED     lxd-snapcraft: add unit tests
+4f1042f5cd7d6a4d1c32b559359eea3d1e5e146c    APPLIED     github: run `lxd-snapcraft` tests and verify snap `source-commit` in CI
+40f0bd04ff801113a22c100c5937132195e407f6    APPLIED     github: explicitly unload the SSH key in `snap` job
+4a6c53a17831ab825b860fc83f422be3feccd23e    APPLIED     github: fix zizmor workflow
+ca6a769b2a9942879d60d0a43e104069ee2897e2    APPLIED     github: seed LP SSH host key in `actions/lp-snap-build`
+04989d8072ed780ed2d3e60b64263686ff4a3b17    APPLIED     Revert "edk2: disable (again) the `EFI_MEMORY_ATTRIBUTE_PROTOCOL` for `arm64`"
+d1ead74c5abe46dd8c8f0b017805db3208a8bfad    APPLIED     github: use `github.repository_owner` to avoid running on forks
+22e085f41cc742fe2d9556a976d60c41be30dd8c    DIFFERS     github: tweak branch filtering to ease reuse
+b5e035a064c7c3a305ef14f890c3ef17784727bc    APPLIED     lxd-snapcraft: moved at the root for easy install
+ca1f12fa77ca2f90ac20ab5ba9ee92396cd513ad    APPLIED     lxd-snapcraft: update path to `snapcraft.yaml` to test
+e808faf143dc876508510bdfbc78054ce6f7f793    APPLIED     github: use `go install` in `actions/lp-snap-build`
+6fdf2e73a44d049238a11a27f082b473110058ad    IRRELEVANT  github: update path to `lxd-snapcraft` in Dependabot config
+8013039c22cf5c712fb0345fb02da0f95f1cff4f    APPLIED     github: update path to `lxd-snapcraft` in tests workflow
+0d9f7f93df709823d9ecfbdb956464b6582e73fd    APPLIED     gitignore: update path for `lxd-snapcraft`
+55538455502047d937933789cddaf42d37492d5b    APPLIED     README: update path for `lxd-snapcraft`
