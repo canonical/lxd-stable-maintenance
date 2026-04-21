@@ -574,3 +574,7 @@ e808faf143dc876508510bdfbc78054ce6f7f793    APPLIED     github: use `go install`
 8013039c22cf5c712fb0345fb02da0f95f1cff4f    APPLIED     github: update path to `lxd-snapcraft` in tests workflow
 0d9f7f93df709823d9ecfbdb956464b6582e73fd    APPLIED     gitignore: update path for `lxd-snapcraft`
 55538455502047d937933789cddaf42d37492d5b    APPLIED     README: update path for `lxd-snapcraft`
+e3ad4245356d798e2de3a5a7319f24c46f0c7ea8    APPLIED     lxd-snapcraft: ignore `# pre ` comments during `-verify-source-commits`
+906a22bd479b2767a63f16e692bc1d4105826849    APPLIED     lxd-snapcraft: add ignore `# pre ` comments tests
+0f07a1055333fddefeca30dd8525874097d0294c    APPLIED     lxd-snapcraft: include remote URL in failed `git ls-remote`
+5881905fa46604175ff4bca22f9a943fa38f907c    APPLIED     lxd-snapcraft: warn on `git ls-remote` error
