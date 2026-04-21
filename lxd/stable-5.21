@@ -10021,3 +10021,15 @@ ca6638a5fee440a675f354db71333d1010c7ff4b    APPLIED     Makefile: don't print as
 f0bdd4ade36f3f56ca2bce2c89d06e5a14bf0b5f    DIFFERS     doc: migrate off canonical-sphinx-extensions
 a1654d78452c0a9a526b832f1001cd36915b9242    APPLIED     lxd/instance/post: Don't hang on migration connection when handling a request to move an instance to its existng member
 b724330fd175c4edcfb7f8acbd89d589876b627e    APPLIED     test: Check that moving an instance to its existing member fails with a proper error
+a4205c396c608e2ef85eff6e34d5193bc3b3a551    APPLIED     lxd/device/device/utils/network: Adds networkCalculatePairMTU function and tests
+28ad89d5641556e0b74e9ee00a2d44e7e1e8d4f9    DIFFERS     lxd/device/device/utils/network: Switch networkCreateVethPair to use networkCalculatePairMTU
+35788f0a36610319d085b764395261bf3a11965e    DIFFERS     lxd/device/device/utils/network: Update networkCreateTap to use networkCalculatePairMTU
+fe673a08183d37c1528b4e22f87f2881c7d7e1f1    APPLIED     lxd/instance/drivers/driver/qemu: Apply instance MTU to tap devices
+7eb52c8c0c8bacbd2b1aca64e55d024513b8d326    APPLIED     lxd/device/nic/ovn: Pass the OVN integration bridge interface as veth/tap pair parent
+3dedf2a68d732b8f239bd69b0cfef95411ca398d    DIFFERS     shared/validate/validate: Update IsNetworkMTU to allow MTU down to IPv4 minimum (68 bytes)
+a5543b9223b21427eef7abd2525511440b5a00af    IRRELEVANT  lxd/instance/drivers/driver/lxc: Fix non-sensical log message
+a7d5391bea1d9fece8b03e67ab7b586d465b3068    APPLIED     test: Update bridge mtu tests to allow bridge mtu down to 68 bytes
+788d6c439be78f24a4f538e72005f6ef257eb879    APPLIED     test: Adds OVN container and VM MTU tests
+def529cf5f2289f24413051968bd54fc164b5605    APPLIED     doc: Fix healing command
+d612029b54f30d192457d50c992ffb95757aa60f    DIFFERS     lxd/api/cluster/member: Fix cluster healing functionality
+06cbb615c851c1ada8a3defa2eb052854bcfbbd9    DIFFERS     lxd/api/cluster/member: Improve cluster member evacuation error
