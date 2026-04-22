@@ -578,3 +578,4 @@ e3ad4245356d798e2de3a5a7319f24c46f0c7ea8    APPLIED     lxd-snapcraft: ignore `#
 906a22bd479b2767a63f16e692bc1d4105826849    APPLIED     lxd-snapcraft: add ignore `# pre ` comments tests
 0f07a1055333fddefeca30dd8525874097d0294c    APPLIED     lxd-snapcraft: include remote URL in failed `git ls-remote`
 5881905fa46604175ff4bca22f9a943fa38f907c    APPLIED     lxd-snapcraft: warn on `git ls-remote` error
+aef1d4e69be186fdca620620ca2b36805500a98b    APPLIED     github: Add go bin path to PATH
