@@ -10033,3 +10033,22 @@ a7d5391bea1d9fece8b03e67ab7b586d465b3068    APPLIED     test: Update bridge mtu 
 def529cf5f2289f24413051968bd54fc164b5605    APPLIED     doc: Fix healing command
 d612029b54f30d192457d50c992ffb95757aa60f    DIFFERS     lxd/api/cluster/member: Fix cluster healing functionality
 06cbb615c851c1ada8a3defa2eb052854bcfbbd9    DIFFERS     lxd/api/cluster/member: Improve cluster member evacuation error
+1444c3fba8bb76ce8ae3d36cf7e11c20d058a648    IRRELEVANT  lxd/api: Don't mention node in error messages
+d94d0cba1512372959ffe9ecc6b89692edf07fed    APPLIED     lxd/api: Return HTTP 400 when trying to change cluster.https_address
+d3d59fa22c238e8e4de25619f270bb504da9436f    DIFFERS     lxd/api: Only setup reverter if local config changed in doAPI10Update
+8643250eeffbd9589829e75c9a57b84b00022d62    DIFFERS     lxd/api: Only setup reverter and cluster notification if global config changed
+c88b945f58d3c764ff9866877890360e6bf5677f    IRRELEVANT  lxd/api: Remove unnecessary map.Copy in api10Put
+38721c87b67607e9debc73e3b97959b1f3fc1490    DIFFERS     lxd/api: Remove unnecessary map.Copy in doAPI10Update
+15a7c08914af1a5be54220a0abd1ddef7457f6f8    APPLIED     lxd/api: Remove unnecessary map initialisation in doAPI10Update
+6bf53893746bb3931a13f524eda661918df6b1fb    DIFFERS     lxd/api: Use old config in revert rather than partial local config in PATCH requests
+31bd70f472f05ea59be136abb13cf0af604705be    APPLIED     lxd/api: Use local var scope for reverters in doAPI10Update
+98b01a30a979973424a27dd98bc77899a954b3f6    APPLIED     lxd/api: Fix typo
+3db81137d2ef5c35bdab9cd07b66c02e0c7754e5    DIFFERS     lxd/cluster/config/config: Fix incorrect mention of node config
+77444b64a908d446c2ddbedd90c63f2d9defdcb8    IRRELEVANT  lxd: Don't mention node in errors
+e1bd711fc30b74538c1b6a4cd7a0aed56dd384ff    IRRELEVANT  lxd/db/cluster/update: Remove trailing whitespace
+41cfad1c05ccaa2f8a15f9d4b107ab803a6217db    APPLIED     test: Test that a covering core.https_address can be unset and the cluster.https_address is reinstated
+116e7a2c3dfc1fe12eb14eadd35d6a0682da113b    APPLIED     lxd/api: Re-activate the cluster HTTPS address listener if a previously covering core.https_address is unset
+5ee3f52c29e4263de165bcdb7787adcb4fa51fb6    APPLIED     lxd/api: Fix potential crash if non string config sent as notification in api10Put
+a3f8ade2edadbd5826a73e5960b23aa7cfecb171    APPLIED     lxd/endpoints: Improve logging of changes
+f8aa72ebc8efba4e9055b06648ed6fca5542f4c1    APPLIED     lxd/endpoints/pprof: Fix incorrect address comparison when changing address
+b1a99748bb93efe9877d05875d0d186828fe03f9    IRRELEVANT  lxd/db/cluster/schema: drop trailing space (fixes `make check-schema`)
