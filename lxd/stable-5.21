@@ -10052,3 +10052,26 @@ e1bd711fc30b74538c1b6a4cd7a0aed56dd384ff    IRRELEVANT  lxd/db/cluster/update: R
 a3f8ade2edadbd5826a73e5960b23aa7cfecb171    APPLIED     lxd/endpoints: Improve logging of changes
 f8aa72ebc8efba4e9055b06648ed6fca5542f4c1    APPLIED     lxd/endpoints/pprof: Fix incorrect address comparison when changing address
 b1a99748bb93efe9877d05875d0d186828fe03f9    IRRELEVANT  lxd/db/cluster/schema: drop trailing space (fixes `make check-schema`)
+6605c49c2a99fae12d1a7f6cbbda66aaaad970ca    APPLIED     lxd: Limit tarball YAML reads to 1MiB
+c234bb4bc706f79e567cf8dd557fb9bd542984c0    APPLIED     lxd/util/reader/test: Adds missing tests for MaxBytesReader
+de7b779311f4dd9556777a2119b5ef44c18ece62    APPLIED     lxd/backup/backup/config/utils: Update ParseConfigYamlFile to use MaxBytesReader
+a20555e5d65e76021be0961345f1a8ffbb05fcb5    APPLIED     lxd/cluster/recover: Switch DatabaseReplaceFromTarball to use util.MaxBytesReader
+fbf64e4bfe5cb5a7221c977456ef3e188b5eea23    APPLIED     lxd/instance/drivers/util: Adds ParseImageMetadataFile function
+2edfac2260ba4b09ac9bed9f2bb3e19a8f602538    DIFFERS     lxd/instance/drivers: Switch Export to util.MaxBytesReader via ParseImageMetadataFile
+89a0f4d45291d5817b5a32ed49a59f6466edda81    DIFFERS     lxd/instance/drivers: Switch templateApplyNow to util.MaxBytesReader via ParseImageMetadataFile
+29f5dfbffbdf49aeebaf34b4504d2549ff0f8559    DIFFERS     lxd/instance/instance/types: Switch instanceLoadCache to use util.MaxBytesReader
+a074409a0eb18eda92be5043770c106d03e254da    DIFFERS     lxd/instance/metadata: Switch to util.MaxBytesReader via ParseImageMetadataFile
+c4f33206c7018d9f2b2029f7a38977f043254753    APPLIED     lxd/lxd-metadata: Switch to util.MaxBytesReader
+74863e6ffad617dd3c8cd907805f47a1a92bdcf4    APPLIED     lxd/subprocess/manager: Switch ImportProcess to util.MaxBytesReader
+c41ad1f0c22ac5c476e0950404c538781b5b9199    APPLIED     lxd/backup/backup/config/utils: Use existing file handle to stat
+3c16b6c1f59f70c499ad9256e7793e74487fae2b    APPLIED     lxd/instance/metadata: Replace c with inst in instanceMetadataGet
+3a8de18dcf38efa7cf5f018bff0c7033686a9ae4    APPLIED     lxd/instance/drivers/qmp: Fix crash on nil qmp handler in RunJSON
+cad143440c25c3b6c0ae681a64d55b167e482ec8    APPLIED     lxd/instance/drivers/driver/qemu: Use timeouts for agent operations
+fb9a3da341647da8cd72069c2414ef15907f1543    DIFFERS     lxd/instance/drivers/driver/qemu: Switch to constant for agent connect timeout
+05bc2729e99707a766d5c4705167a3322c9ef424    APPLIED     lxd: Validate snapshots from backup.yaml are non-nil
+960e0c35eef39b7cec81615f51b49fae2c643c7f    DIFFERS     lxd: Validate Volumes from backup.yaml are non-nil
+8257fe9546393ee6f1f2aa76994e872296d7a0a5    APPLIED     lxd/storage/backend/lxd: Fix comment typo
+ccfcc1b1375393b78f9f415ede920b182beae50f    APPLIED     lxd/storage/backend/lxd: Fix bad snapshot index calculation
+91677dfce13f4ffc99c24f11a1b4472d0dc29e49    DIFFERS     lxd/backup/backup/config/utils: Fix nil pointer dereference in instance backup restore
+cd55c5111bf0f430c09ecacf019a3e50e003b8be    APPLIED     lxd/instances/post: Initialise config maps (if needed) before writing to them in createFromBackup
+85e87bce862c1544b10ddb22e5427aa26818e073    APPLIED     lxd/api/internal/recover: Detect nil backup volume config during recovery scan in internalRecoverScan
