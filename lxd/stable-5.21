@@ -10075,3 +10075,14 @@ ccfcc1b1375393b78f9f415ede920b182beae50f    APPLIED     lxd/storage/backend/lxd:
 91677dfce13f4ffc99c24f11a1b4472d0dc29e49    DIFFERS     lxd/backup/backup/config/utils: Fix nil pointer dereference in instance backup restore
 cd55c5111bf0f430c09ecacf019a3e50e003b8be    APPLIED     lxd/instances/post: Initialise config maps (if needed) before writing to them in createFromBackup
 85e87bce862c1544b10ddb22e5427aa26818e073    APPLIED     lxd/api/internal/recover: Detect nil backup volume config during recovery scan in internalRecoverScan
+1000cf6b86cd3472f214699ea4c92f00d6b12e9d    APPLIED     lxd/project/limits/permissions: Fix typo in description of fetchProject
+edf1b94038a8432882f174412f0a0bd0e50770f4    APPLIED     lxd/project/limits: Export FetchProject and ProjectInfo
+4faa8e18318c194dbbb84aa2c1aa4a9842ed4a96    IRRELEVANT  lxd/project/limits/permissions: Allow volatile.uuid.generation and volatile.cloud-init.instance-id when importing instances into restricted projects
+74f06ba1e4cc8ad595043e35d7fae8958f0f35be    DIFFERS     lxd/project/limits/permissions: Update AllowInstanceCreation to accept a ProjectInfo argument
+83af713afa50cacaf11a045b79b8a10ee10bf227    APPLIED     lxd/project/limits/permissions: Removes unused tx argument from checkInstanceRestrictionsAndAggregateLimits and AllowInstanceCreation
+c101df3873efd57d9a6a73074f5ab02abff6fa4c    APPLIED     lxd/project/limits/permissions: Removes unused ctx argument from AllowInstanceCreation
+5aac658c888d52e3a2480a8f879799ac643fdc49    APPLIED     lxd/instances/post: Validate whether instance snapshot can be created in createFromBackup
+94eb67bb81101073e8fecf18790e7d4967806ee7    DIFFERS     shared/osarch: Quote architecture name supplied
+61d0572db40ba1a5eb6b0d2e766a2e4c8cdace3c    APPLIED     test: Updates backup import tests with snapshot validation checks
+70a815af907c1013dc3ee576e09a1f6e220ba441    APPLIED     lxd/project/limits/permissions: Clarify comment on FetchProject
+208f9ca094e3f3ac418e012523c0d7185d261231    APPLIED     test: Remove unnecessary forced instance deletion
