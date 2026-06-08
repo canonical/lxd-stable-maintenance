@@ -10086,3 +10086,20 @@ c101df3873efd57d9a6a73074f5ab02abff6fa4c    APPLIED     lxd/project/limits/permi
 61d0572db40ba1a5eb6b0d2e766a2e4c8cdace3c    APPLIED     test: Updates backup import tests with snapshot validation checks
 70a815af907c1013dc3ee576e09a1f6e220ba441    APPLIED     lxd/project/limits/permissions: Clarify comment on FetchProject
 208f9ca094e3f3ac418e012523c0d7185d261231    APPLIED     test: Remove unnecessary forced instance deletion
+c7cdfadb6044dfeaac592dc225978b4125ee23fe    APPLIED     lxd/storage/backend/lxd: Validate snapshot.ExpiresAt is non-nil
+02242abe66ddfd80febd336fa882c2462e3e9043    APPLIED     lxd/events/connects: Log error close websocket connection in Reader
+c8dcc7e9583f3ae2b7d037a261039f750ec2f35c    APPLIED     lxd/events/connections: Add read deadline when reading from web socket in Reader
+2ff5a6c9bbafb436c065041c84f42e2553c2577e    APPLIED     lxd/events/connects: Use wait group in Reader to ensure it doesn't return until both goroutines have completed
+a492e25877e1b47ea4c9e1078a83f5155c0db232    APPLIED     lxd/events/connections: Improve comments in Reader
+ce948a0c736154a9331c1484265cbe089f1172ec    APPLIED     client: Disconnect websocket if there are no listeners.
+e7ca747202eee9b5afbd2497198e1ac4169e79dc    APPLIED     lxd: Cancel connection context on Disconnect.
+364509027b642c6992b3d3b5357078e4188f9efb    APPLIED     lxd/instances/get: Rename doContainersFullGetFromNode to doInstancesFullGetFromNode
+8ca8ba125f1844f46540712db6db490d58162310    APPLIED     lxd/instances/get: Rename doContainersGetFromNode to doInstancesGetFromNode
+677143da3e75a2b36684c66c1fe25f6b5613d52d    DIFFERS     lxd/cluster/connect: Use lxd.ConnectLXDWithContext
+0a8a6461aa417a925a47efcbc654a7a1b00c98a7    DIFFERS     lxd/cluster/connect: Update Connect comment to explain it uses ConnectLXDWithContext
+34d4dcc1f9abdd221fd2dc976a8eb349804fb035    APPLIED     lxd/cluster/connect: Don't shadow ctx and cancel event wait context when ctx argument is canceled in connect
+7b0c9698c4ccd322fc97c0d68dfdb1e47dcab45c    DIFFERS     lxd/instances/get: Add context support to doInstancesGetFromNode and doInstancesFullGetFromNode
+359270157547da3cdd5365d5ed04ce8fa99791da    APPLIED     lxd/instances/get: Access instance list by index in instancesGet
+6ad08db238c31492327de9cfa5ddf105619951b0    DIFFERS     lxd/images: Don't use request context in background operation imageSyncBetweenNodes
+6ab8406fb21eadc9910fb5fcdcd5b71e6c2137b9    DIFFERS     lxd/instances/get: Update references to containers to instances in doInstancesGetFromNode
+000d2ccde78493d39bdb6d4ef79869a633372763    DIFFERS     lxd/images: Remove unnecessary (and buggy) go routine from autoSyncImages now that imageSyncBetweenNodes supports context cancellation
