@@ -584,3 +584,48 @@ aef1d4e69be186fdca620620ca2b36805500a98b    APPLIED     github: Add go bin path 
 0412eac4decbd7af4ffc482af044748b5beedd7c    APPLIED     qemu: remove unneeded `pycotap` wheel
 05b8f404c4bf1f154ec0eb50d446605cb62d6713    APPLIED     openvswitch: specifically prime just the `vswitch.ovsschema`
 3c50512a2c1adc3d54a1f559ff2b86b54f3bb289    APPLIED     edk2: disable (again) the `EFI_MEMORY_ATTRIBUTE_PROTOCOL`
+e61fdecd853222dc87058d45549bf4f0f3c3797c    APPLIED     github: move the `lxd-snapcraft` bin into `PATH`
+f91ca26be0c2f64880393f57b0bd161d1561d74a    APPLIED     README: update for best practice when using `actions/lp-snap-build`
+d8af8ab04584a653653a88cc8aad1d1a25f862fe    APPLIED     lxd-ui: build using `node24` (same as used in CI)
+b27a0bd15146ccb990b9590854a1eddc1b90c7bd    APPLIED     lxd-ui: exclude from `armhf`
+6834f2e686e1703896ec145962ba596a66dd057e    APPLIED     github: `GITHUB_ACTION_REF` is not available to composite actions called from external repos
+835cb6ba5d5a81375f6eca1753d0f8517857331d    APPLIED     github: hardcode action path prefix to strip in `actions/lp-snap-build`
+d2a6691b0f53b2521b2906f7be7c3d8d8d4fce4e    APPLIED     github: do a test snap build on PRs and manually triggered runs
+0969ef58da6464572c299bfe097bc2e28fa82dde    APPLIED     RISC-V: Support virtual machines on riscv64
+3caf4f80a8e28f8402ea37973a155edc6f8ba43d    APPLIED     RISC-V: build QEMU on riscv64 with --enable-tcg
+f00340e417559723588794543e39e4732fd7fd3e    APPLIED     RISC-V: Build EDK II for riscv64
+7354054b147e4e40519f2a16ea3133a9469231ba    APPLIED     RISC-V: stage OpenSBI
+7f2b25f22e94a88c01cffca7d8222d2927da8044    APPLIED     RISC-V: libatomic1 is needed on riscv64
+6b75bd7ce18ac1ce4349af50dc7b5c6a5a0afa6d    APPLIED     lxcfs: don't leave `.orig` patch backup file behind
+cbd3c7c0523808cab8a1dfd0113c0040ab8c6d1d    APPLIED     ovn: prime `libevent-2.1.so`
+f87aada35b1d29b9e550cdc95c119080b3e1d196    APPLIED     lxd-qemu-snap/README: address markdown lint issues
+a2ae8bd90638edee35728712883de1d2eee95a46    APPLIED     strip: create an empty `libdrm` dir for `mesa-2404`
+1c46de89618f3c6fc2de246ae4156fc64e493d1c    APPLIED     edk2: enable parallel builds
+8b7be59196055da3f225ba23bb7ae0083f849510    APPLIED     edk2: discard DEBUG build output
+2244172cdbcbdf415234e4287899a0acf1a81b30    APPLIED     qemu: stop shipping some unused FW blobs
+0ad93fea298c0a0010e0d949ae38ce1b79a5a7b6    APPLIED     qemu: use advanced grammar to prime just the needed FW
+9de71339ac13c69afdea637872aa1aba2c5d5a38    APPLIED     SECURITY: new policy
+96a518058a81e3f2e95d208cbec9706c3866c7ff    APPLIED     qemu: only prime `efi-virtio.rom` on `amd64`
+47e254f7ca2d5c969c39444aa0a93f09b92b5de1    APPLIED     edk2: speed up `riscv64` builds by skipping DEBUG build
+5f2956af3a51ac7a085b38936edf437b20a3b258    APPLIED     github: add smoke-test to tests workflow
+a8994cbb41b7dc4cb58da4fd62445d752af96673    APPLIED     github: use `latest/candidate` channel for `snapcraft`
+1bb28525a2368a8791e6983ff052b5694398b35a    APPLIED     github: fix typo (cosmetic)
+8bf888cb8199ad875f94c0a656e34c4aabedc5af    APPLIED     build(deps): bump canonical/setup-lxd
+7e2be42ab58fbaa818ba150ef0cbece56c1127ef    APPLIED     strip: ensure `qemu-external` plug target dir exist
+cf677d74bc3be38887b2b047076fa566d0e83fb5    APPLIED     amd-ctk: use `GOTOOLCHAIN=local` and `-trimpath`
+f6e2b70c208a633b0bf4e159dc550c022a94cd5f    APPLIED     nvidia-container: use `-trimpath`
+867d54b11989ee3643dccf6d7e13af0af47c2e46    APPLIED     nvidia-container-toolkit: use `-trimpath`
+e5648cfd948b31feeb86e01f5478ef9ac467f41b    APPLIED     github: avoid redundant `git commit --all` after the `git add --all`
+7ebb7fd7f18e461800b4a52d0996df0f04e35ca2    APPLIED     github: put the `git show` output in a foldable log group
+3dfeb3692e4634d71a5b90835e14c6a33fda5f28    APPLIED     README: update the suggested workflow snippet for LP builds
+47639fbc9f0a0fceee92c61a6a91056f9aab9d40    APPLIED     remote-viewer: add `/run/bin` to `PATH`
+a94a8d5142f2be2d4cf307e247c360803f07298d    APPLIED     zfs-2-2: bump to 2.2.10
+00b4b55a6577bec0db980b971f638308bf77879c    APPLIED     zfs-2-3: bump to 2.3.8
+0ab2dfc3486654e17d660f9f5a51d745c03c1e6e    APPLIED     zfs-2-4: bump to 2.4.3
+15c41aa72767f272d4fd401e460cc2cf984f4620    APPLIED     remote-viewer: fix typo
+de218954abd870113ea00466baea2502e2216404    APPLIED     remote-viewer: look for a SPICE client by walking a standard `PATH`
+73fa5c247baa49cc8f5fb766ce571d313096418a    APPLIED     remote-viewer: execute the SPICE client from the fully qualified path
+f31245cceaddb8042a6ab43c1079312094182821    APPLIED     buginfo: Use lxc list --all-projects
+846813f1bb3f29b03391b40454eed60d877730b0    APPLIED     build(deps): bump actions/checkout
+4603a538fe0a1ecd3b6f10bf2db3552cf77d30fb    APPLIED     libnvidia-container: Bump to v1.19.1
+85d0c383ae682990aa391166d030f42662e2f365    APPLIED     ROCm: Bump to v1.3.0
